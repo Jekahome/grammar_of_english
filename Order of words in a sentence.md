@@ -38,17 +38,17 @@ $${\color{blue}Do}\space{\color{red}you}\space{\color{blue}have}\space a\space p
 $${\color{blue}Is}\space{\color{red}she}\space at\space home\space now?\space –\space Она\space сейчас\space дома?$$ 
 
 - В предложениях, начинающихся с there:
-$$ There {\color{blue}plays}\space{\color{red}Jane}\space with\space her\space son\space in\space the\space garden.\space –\space В\space саду\space играет\space Джейн\space со\space своим\space сыном.$$
+$${There\space {\color{blue}plays}\space{\color{red}Jane}\space with\space her\space son\space in\space the\space garden.\space –\space В\space саду\space играет\space Джейн\space со\space своим\space сыном.}$$
 
 - В предложениях, начинающихся со слова here - вот (кроме случая когда подлежащее выражено местоимением):
-$${ Here\space {\color{blue}is}\space your\space  {\color{red}Teddy}$$. – Вот твой мишка.}$$
+$${Here\space {\color{blue}is}\space your\space  {\color{red}Teddy}. – Вот твой мишка.}$$
 Here he your is! – Вот он!
 
 - В простых восклицательных предложениях:
 $${\color{blue}May}\space{\color{red}all\space your\space wishes}\space{\color{blue}come\space true}!\space –\space Желаю,\space чтоб\space все\space твои\space желания\space сбылись!$$
 
 - После наречий, указывающих направление ( in, out, down, away, up) если они стоят в начале предложения.
-$${ Away\space {\color{blue}ran}\space{\color{red}children}.\space –\space Дети\space убежали\space прочь.}$$
+$${Away\space {\color{blue}ran}\space{\color{red}children}.\space –\space Дети\space убежали\space прочь.}$$
 
 - И другие случаи которые нет смысла изучать, а практиковать из источников!
 
