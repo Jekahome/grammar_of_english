@@ -18,6 +18,7 @@ Here is a cat. – Вот кот.
 
 <details>
 <summary>Примеры:</summary>
+
     I entered the room quietly – Я тихо вошел в комнату
 
     - Времени (time adverbs) - now, then, today, tomorrow, tonight, yesterday, etc.:

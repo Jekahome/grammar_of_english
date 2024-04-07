@@ -79,7 +79,7 @@ $${Away\space {\color{blue}ran}\space{\color{red}children}.\space –\space Де
 - **My silk polka-dot skirt and cotton blouse** are dirty. – Моя шелковая юбка в горошек и хлопковая блузка грязные.
 
 
-## $${\color{blue}The\space Predicate}\space (Что делает?\space В\space каком\space состоянии\space находится?\space Кем\space или\space чем\space является?)$$ 
+## $${\color{blue}The\space Predicate}\space (Что\space делает?\space В\space каком\space состоянии\space находится?\space Кем\space или\space чем\space является?)$$ 
 
 Сказуемое (предикат) в английских предложениях указывает на действие, совершаемое подлежащим, или же описывает состояние и то, что с подлежащим происходит. Основой сказуемого всегда является смысловой, модальный или вспомогательный глагол.
 
