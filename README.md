@@ -1,13 +1,14 @@
 ## Grammar
 
-* [Порядок слов](https://github.com/Jekahome/grammar_of_english/blob/main/Order%20of%20words%20in%20a%20sentence.md) 
-* [Parts of speech](https://github.com/Jekahome/grammar_of_english/blob/main/Parts%20of%20speech.md)
-* [Артикли the,a,an](https://github.com/Jekahome/grammar_of_english/blob/main/Articles%20a%2Can%2Cthe.md) 
-* [Pronouns](https://github.com/Jekahome/grammar_of_english/blob/main/Pronouns.md) 
-* [Prepositions in,at,on](https://github.com/Jekahome/grammar_of_english/blob/main/Prepositions%20in%2Cat%2Con.md) 
-* [Preposition for](https://github.com/Jekahome/grammar_of_english/blob/main/Preposition%20for.md) 
-* [Preposition to](https://github.com/Jekahome/grammar_of_english/blob/main/Preposition%20to.md) 
-* [Preposition of](https://github.com/Jekahome/grammar_of_english/blob/main/Preposition%20of.md) 
+* [Порядок слов](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Order%20of%20words%20in%20a%20sentence.md) 
+* [Parts of speech](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Parts%20of%20speech.md)
+* [Артикли the,a,an](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Articles%20a%2Can%2Cthe.md) 
+* [to be](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/to%20abe.md) 
+* [Pronouns](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Pronouns.md) 
+* [Prepositions in,at,on](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Prepositions%20in%2Cat%2Con.md) 
+* [Preposition for](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20for.md) 
+* [Preposition to](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20to.md) 
+* [Preposition of](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20of.md) 
 * []() 
 * []() 
 * []() 
@@ -26,15 +27,18 @@
 
 Для начала необходим примерно 3 тыс. словарный запас (7 тыс это 80% текста).
 Слова имеют конкретную частоту встречаемости, так что следует начать с самых частотных, сгруппированных по части речи (глаголы, существительные, наречие ... ). Так же фразовые глаголы, у них так же есть частота употребления в речи.
+
 Грамматика делится по уровням A1-C1 ..., имеет смысл ее изучать только с достаточным количеством практики. 
 Т.е. не просто понять грамматику, а именно **использовать** в нужной ситуации.
+
 Практика состоит из ГОВОРИТЬ, СЛУШАТЬ, ПИСАТЬ, ЧИТАТЬ.
 Для чтения начинают с адаптивных текстов или чтения субтитров из мультиков, аудирование развивается через диктант под диктовку и просмотр видео.
 Произношение корректируется учителем и самокоррекцией после прослушивания себя, сравнивая с оригиналом (диктором).
-Ни слова,ни словесные конструкции, ни грамматика не запомнятся без необходимого контекста, эмоциональной **добавки** и n-го количества раз использования.
-Это легче всего получить разговаривая с человеком. Так как активное использование языка способствует его запоминанию, мозг сохраняет надолго если **он искал и нашел, то что помогло**
 
-Возможна компенсация недостатка обшения с человеком используя возможности браузера и библиотек работы с голосом.
+Ни слова,ни словесные конструкции, ни грамматика не запомнятся без необходимого контекста, эмоциональной **добавки** и n-го количества раз использования.
+Это легче всего получить разговаривая с человеком. Так как активное использование языка способствует его запоминанию, мозг сохраняет надолго, если **он искал и нашел, то что помогло**
+
+Возможна компенсация недостатка обшения с человеком, используя возможности браузера и библиотек работы с голосом.
 Браузер может **voice to text** и **text to voice**, эта комбинация может заменить роль тренера.
 
 Но остается проблема с контентом, трудно подобрать обучающий материал по уровню и теме, необходимо показать **контекст** с озвучиванием и в нужной грамматике с нужными словами.
