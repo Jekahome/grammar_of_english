@@ -1,4 +1,4 @@
-## Порядок слов в предложении
+# Порядок слов в предложении
 
 За основу взят "Новый Самоучитель английского языка А.В.Петрова, И.С.Орлова"
 
@@ -6,7 +6,7 @@
 
 Неверно: About what are you talking?
 
-### Прямой порядок слов в предложении
+## Прямой порядок слов в предложении
 
 $${\color{red}Subject} \space -> \space {\color{blue}Predicate} \space -> \space Object \space -> \space Adverbial\space Modifier$$
  
@@ -20,7 +20,7 @@ $${\color{red}Little \space Jenny} \space {\color{blue}plays}  \space with \spac
 
 
 
-### Непрямой порядок слов в предложении
+## Непрямой порядок слов в предложении
 
 $${\color{blue}Predicate} \space -> \space{\color{red}Subject} \space-> \space Object \space -> \space Adverbial \space Modifier$$
 
@@ -60,23 +60,23 @@ $${Away\space {\color{blue}ran}\space{\color{red}children}.\space –\space Де
 **Simple Subject** (простое подлежащее)
 состоит из одного главного слова (часто местоимения или существительного без артиклей), отвечающего на вопрос What? (что?) или Who? (кто?)
 
-- **She** is beautiful. – Она прекрасна
+    - **She** is beautiful. – Она прекрасна
 
-- **Students** often skip their classes. – Студенты часто прогуливают уроки.
+    - **Students** often skip their classes. – Студенты часто прогуливают уроки.
 
 **Compound Subject** (составное подлежащее)
 состоит из двух или более простых подлежащих, которые относятся к общему сказуемому
 
-- **My friend** and **I** go jogging every Sunday. – Я и мой друг ходим на пробежку каждое воскресенье.
+    - **My friend** and **I** go jogging every Sunday. – Я и мой друг ходим на пробежку каждое воскресенье.
 
-- **There were boys** and **girls** playing together in the school yard. – В школьном дворе вместе играли мальчики и девочки.
+    - **There were boys** and **girls** playing together in the school yard. – В школьном дворе вместе играли мальчики и девочки.
 
 **Full Subject** (полное подлежащее)
 состоит из простого подлежащего или же составного подлежащего (ключевых слов) и других слов, которые к нему относятся
 
-- **This jacket** is not new. – Эта куртка не новая.
+    - **This jacket** is not new. – Эта куртка не новая.
 
-- **My silk polka-dot skirt and cotton blouse** are dirty. – Моя шелковая юбка в горошек и хлопковая блузка грязные.
+    - **My silk polka-dot skirt and cotton blouse** are dirty. – Моя шелковая юбка в горошек и хлопковая блузка грязные.
 
 
 ## $${\color{blue}The\space Predicate}\space (Что делает?\space В\space каком\space состоянии\space находится?\space Кем\space или\space чем\space является?)$$ 
@@ -86,29 +86,29 @@ $${Away\space {\color{blue}ran}\space{\color{red}children}.\space –\space Де
 **Simple Predicate** (простое сказуемое)
 состоит только из глагола в определенной личной или временной форме.
 
-- Kate **likes** you. – Ты нравишься Кейт.
+    - Kate **likes** you. – Ты нравишься Кейт.
 
-- We **worked** hard to meet a deadline. – Мы усердно работали, чтобы закончить работу в срок.
+    - We **worked** hard to meet a deadline. – Мы усердно работали, чтобы закончить работу в срок.
 
-- (фраз.гл.): John **takes care of** his sister. – Джон заботится о своей сестре.
+    - (фраз.гл.): John **takes care of** his sister. – Джон заботится о своей сестре.
 
-- (фраз.гл.): Jane **moved in with** her boyfriend last month. – Джейн переехала к своему парню в прошлом месяце.
+    - (фраз.гл.): Jane **moved in with** her boyfriend last month. – Джейн переехала к своему парню в прошлом месяце.
 
 **Compound Predicate** (составное сказуемое)
 может состоять из нескольких простых сказуемых, которые относятся к общему простому или составному подлежащему.
 
-- Kelly and Jane **called** Peter and **invited** him to their party. – Келли и Джейн позвонили Питеру и пригласили его на свою вечеринку.
+    - Kelly and Jane **called** Peter and **invited** him to their party. – Келли и Джейн позвонили Питеру и пригласили его на свою вечеринку.
 
-- I **haven’t finished** my work yet. – Я еще не закончил свою работу.
+    - I **haven’t finished** my work yet. – Я еще не закончил свою работу.
 
-- I **will keep on telling** my story. – Я продолжу рассказывать свою историю.
+    - I **will keep on telling** my story. – Я продолжу рассказывать свою историю.
 
-- She **feels bad and looks tired.** – Она чувствует себя плохо и выглядит уставшей.
+    - She **feels bad and looks tired.** – Она чувствует себя плохо и выглядит уставшей.
 
 **Full Predicate** (полное сказуемое)
 состоит из простого или составного сказуемого и всех второстепенных членов предложения, которые относятся и зависят от данного сказуемого.
 
-- My friend Matt **is a kind and intelligent guy.** – Мой друг Мэтт – добрый и умный парень.
+    - My friend Matt **is a kind and intelligent guy.** – Мой друг Мэтт – добрый и умный парень.
 
 
 ![table](https://github.com/Jekahome/grammar_of_english/blob/main/_img/ex.png "table")
