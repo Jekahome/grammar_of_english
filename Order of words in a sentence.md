@@ -8,21 +8,21 @@
 
 ### Прямой порядок слов в предложении
 
-$${\color{red}Subject} -> {\color{blue}Predicate} -> Object -> Adverbial Modifier$$
+$${\color{red}Subject} \space -> \space {\color{blue}Predicate} \space -> \space Object \space -> \space Adverbial\space Modifier$$
  
-$${\color{red}I} {\color{blue}sent} you a letter yesterday. – Я послал тебе письмо вчера.$$ 
+$${\color{red}I} \space {\color{blue}sent} \space you \space a \space letter \space yesterday.\space  – \space Я\space послал\space тебе \spaceписьмо \spaceвчера.$$ 
 
 Определение не учитывается в данной последовательности, так как может относиться как к подлежащему,
 
 так и к дополнению, и поэтому оно может занимать разное положение в предложении: 
 
-$${\color{red}Little Jenny}$$  $${\color{blue}plays}$$  with her friends every day. – Маленькая Дженни играет со своими друзьями каждый день.
+$${\color{red}Little \spaceJenny}\space{\color{blue}plays}  \spacewith \spaceher \spacefriends \spaceevery \spaceday. \space– \spaceМаленькая \spaceДженни \spaceиграет \spaceсо \spaceсвоими \spaceдрузьями \spaceкаждый \spaceдень.$$
 
 
 
 ### Непрямой порядок слов в предложении
 
-$${\color{blue}Predicate}$$ -> $${\color{red}Subject}$$ -> Object -> Adverbial Modifier
+$${\color{blue}Predicate} \space-> \space{\color{red}Subject} \space-> \space Object \space -> \space Adverbial \space Modifier$$
 
 - Используется в большинстве вопросительных предложений или, модальный глагол в начале предложения:
 $${\color{blue}Didn’t}$$ $${\color{red}you}$$ $${\color{blue}go}$$ to the cinema yesterday? – Разве ты вчера не ходил в кино?
