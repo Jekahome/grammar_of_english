@@ -331,7 +331,7 @@ Doctor White, Professor — Доктор Уайт, профессор
 - They have no new teachers. — У них нет новых учителей.
 
 
-
+[Артикли в английском языке — в чем разница](https://skyeng.ru/articles/v-chem-raznitsa-mezhdu-opredelennym-i-neopredelennym-artiklem-v-anglijskom-yazyke/)
 
 
 

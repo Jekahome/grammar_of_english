@@ -217,3 +217,11 @@ In 5 hours/5 days/5 years etc – через 5 часов/5 дней/ 5 лет �
 - spend time/money on — тратить время/деньги на
 
 
+[puzzle-english.com](https://puzzle-english.com/directory/prepositions-of-place#:~:text=%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%20in%20%2F%20at%20%2F%20on,on%20the%20table%20%E2%80%94%20%D0%BD%D0%B0%20%D1%81%D1%82%D0%BE%D0%BB%D0%B5)
+
+[www.englishdom.com](https://www.englishdom.com/blog/znaj-raznicu-chto-zhe-postavit-at-on-ili-in/)
+
+[skysmart.ru](https://skysmart.ru/articles/english/predlogi-v-anglijskom-yazyke)
+
+[www.bkc.ru](https://www.bkc.ru/blog/about-language/grammar/predlogi-v-angliyskom-yazyke/)
+

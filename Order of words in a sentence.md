@@ -114,3 +114,12 @@ $${Away\space {\color{blue}ran}\space{\color{red}children}.\space –\space Де
 ![table](https://github.com/Jekahome/grammar_of_english/blob/main/_img/ex.png "table")
 
 
+[Порядок слов в предложении в английском языке](https://grammarway.com/ru/word-order)
+
+[The Subject, The Predicate](https://grammarway.com/ru/principal-parts-of-the-sentence)
+
+[Части речи в английском – классификация и употребление](https://yappicorp.com.ua/ru/grammatika-anglijskogo/chasti-rechi-v-anglijskom-klassifikaciya-i-upotreblenie)
+
+[Основные формы глагола в английском языке](https://englishprime.ua/formy-glagola-v-anglijskom-yazyke/)
+
+
