@@ -3,7 +3,7 @@
 * [Порядок слов](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Order%20of%20words%20in%20a%20sentence.md) 
 * [Parts of speech](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Parts%20of%20speech.md)
 * [Артикли the,a,an](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Articles%20a%2Can%2Cthe.md) 
-* [to be](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/to%20abe.md) 
+* [to be](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/to%20be.md) 
 * [Pronouns](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Pronouns.md) 
 * [Prepositions in,at,on](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Prepositions%20in%2Cat%2Con.md) 
 * [Preposition for](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20for.md) 
