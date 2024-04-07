@@ -1,12 +1,13 @@
 ## Grammar
 
 * [Порядок слов]() 
+* [Parts of speech]()
 * [Артикли the,a,an](https://github.com/Jekahome/grammar_of_english/blob/main/Articles%20a%2Can%2Cthe.md) 
 * [Pronouns](https://github.com/Jekahome/grammar_of_english/blob/main/Pronouns.md) 
 * [Prepositions in,at,on](https://github.com/Jekahome/grammar_of_english/blob/main/Prepositions%20in%2Cat%2Con.md) 
-* [Preposition for]() 
-* [Preposition to]() 
-* [Preposition of]() 
+* [Preposition for](https://github.com/Jekahome/grammar_of_english/blob/main/Preposition%20for.md) 
+* [Preposition to](https://github.com/Jekahome/grammar_of_english/blob/main/Preposition%20to.md) 
+* [Preposition of](https://github.com/Jekahome/grammar_of_english/blob/main/Preposition%20of.md) 
 * []() 
 * []() 
 * []() 
