@@ -19,37 +19,53 @@ Here is a cat. – Вот кот.
 <details>
 <summary>Примеры:</summary>
 
-    I entered the room quietly – Я тихо вошел в комнату
+I entered the room quietly – Я тихо вошел в комнату
 
-    - Времени (time adverbs) - now, then, today, tomorrow, tonight, yesterday, etc.:
-    Говорят нам о том, когда именно что-то происходит
-    I’d prefer to leave early. – Я предпочел бы уйти раньше.
+- Времени (time adverbs) - now, then, today, tomorrow, tonight, yesterday, etc.:
 
-    - Места (place adverbs) - behind, below, downward, everywhere, forward, etc.:
-    Указывают на то, где именно что-то происходит или где что-то находится
-    There was somebody standing nearby. – Рядом кто-то стоял.
+Говорят нам о том, когда именно что-то происходит
 
-    - Способа действия (manner adverbs):
-    Такие наречия часто образуются от прилагательных с добавлением -ly: slowly, quickly, sadly, softly, etc.
-    Рассказывают, как именно что-то происходит или делается.
-    She spoke very loudly. We could all hear what she was saying. – Она говорила очень громко. Мы все слышали, что она сказала.
+I’d prefer to leave early. – Я предпочел бы уйти раньше.
 
-    - Степени (degree adverbs) - really, too, very, strongly, highly, incredibly, etc. :
-    Выражают степени качеств, свойств, состояний, условий и отношений
-    She was quite surprised they came. – Она была очень удивлена, что они пришли.
+- Места (place adverbs) - behind, below, downward, everywhere, forward, etc.:
 
-    - Частоты (frequency adverbs) - often, seldom, rarely, every now and then, hardly ever, sometimes, etc.:
-    Употребляются в предложении для предоставления информации о периодичности
-    Nick always plays tennis in the evening. – Ник всегда играет в теннис вечером.
+Указывают на то, где именно что-то происходит или где что-то находится
 
-    - Уверенности (adverbs of certainty) - definitely, probably maybe, certainly undoubtedly, clearly, etc.:
-    Описывают, насколько мы уверены в чем-то
-    Undoubtedly, he is the best player of all time. – Несомненно, он самый лучший игрок всех времен.
+There was somebody standing nearby. – Рядом кто-то стоял.
 
-    - Связующие (linking adverbs) - then, however, etc.:
-    Указывают на связь между двумя пунктами или предложениями (например, последовательность во времени, причина и следствие, контраст)
-    We talked until the early hours and consequently I overslept the next morning – Мы разговаривали до раннего утра, и
-    поэтому на следующее утро я проспал (результатом поздней ночи является то, что я заснул на следующее утро).
+- Способа действия (manner adverbs):
+
+Такие наречия часто образуются от прилагательных с добавлением -ly: slowly, quickly, sadly, softly, etc.
+
+Рассказывают, как именно что-то происходит или делается.
+
+She spoke very loudly. We could all hear what she was saying. – Она говорила очень громко. Мы все слышали, что она сказала.
+
+- Степени (degree adverbs) - really, too, very, strongly, highly, incredibly, etc. :
+
+Выражают степени качеств, свойств, состояний, условий и отношений
+
+She was quite surprised they came. – Она была очень удивлена, что они пришли.
+
+- Частоты (frequency adverbs) - often, seldom, rarely, every now and then, hardly ever, sometimes, etc.:
+
+Употребляются в предложении для предоставления информации о периодичности
+
+Nick always plays tennis in the evening. – Ник всегда играет в теннис вечером.
+
+- Уверенности (adverbs of certainty) - definitely, probably maybe, certainly undoubtedly, clearly, etc.:
+
+Описывают, насколько мы уверены в чем-то
+
+Undoubtedly, he is the best player of all time. – Несомненно, он самый лучший игрок всех времен.
+
+- Связующие (linking adverbs) - then, however, etc.:
+
+Указывают на связь между двумя пунктами или предложениями (например, последовательность во времени, причина и следствие, контраст)
+
+We talked until the early hours and consequently I overslept the next morning – Мы разговаривали до раннего утра, и
+поэтому на следующее утро я проспал (результатом поздней ночи является то, что я заснул на следующее утро).
+
 </details>
 
  
