@@ -16,7 +16,7 @@ $${\color{red}I} \space {\color{blue}sent} \space you \space a \space letter \sp
 
 так и к дополнению, и поэтому оно может занимать разное положение в предложении: 
 
-$${\color{red}Little \spaceJenny}\space{\color{blue}plays}  \spacewith \spaceher \spacefriends \spaceevery \spaceday. \space– \spaceМаленькая \spaceДженни \spaceиграет \spaceсо \spaceсвоими \spaceдрузьями \spaceкаждый \spaceдень.$$
+$${\color{red}Little \space Jenny} \space {\color{blue}plays}  \space with \space her \space friends \space every \space day. \space – \space Маленькая \space Дженни \space играет \space со \space своими \space друзьями \space каждый \space день.$$
 
 
 
