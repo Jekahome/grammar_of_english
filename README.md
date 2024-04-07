@@ -1,7 +1,7 @@
 ## Grammar
 
-* [Порядок слов]() 
-* [Parts of speech]()
+* [Порядок слов](https://github.com/Jekahome/grammar_of_english/blob/main/Order%20of%20words%20in%20a%20sentence.md) 
+* [Parts of speech](https://github.com/Jekahome/grammar_of_english/blob/main/Parts%20of%20speech.md)
 * [Артикли the,a,an](https://github.com/Jekahome/grammar_of_english/blob/main/Articles%20a%2Can%2Cthe.md) 
 * [Pronouns](https://github.com/Jekahome/grammar_of_english/blob/main/Pronouns.md) 
 * [Prepositions in,at,on](https://github.com/Jekahome/grammar_of_english/blob/main/Prepositions%20in%2Cat%2Con.md) 
