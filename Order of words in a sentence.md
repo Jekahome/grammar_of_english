@@ -8,7 +8,7 @@
 
 ### Прямой порядок слов в предложении
 
-$${\begin{flushleft} \color{red}Subject} \space -> \space {\color{blue}Predicate} \space -> \space Object \space -> \space Adverbial\space Modifier \end{flushleft}$$
+$${\color{red}Subject} \space -> \space {\color{blue}Predicate} \space -> \space Object \space -> \space Adverbial\space Modifier$$
  
 $${\color{red}I} \space {\color{blue}sent} \space you \space a \space letter \space yesterday.\space  – \space Я\space послал\space тебе \spaceписьмо \spaceвчера.$$ 
 
@@ -22,33 +22,33 @@ $${\color{red}Little \space Jenny} \space {\color{blue}plays}  \space with \spac
 
 ### Непрямой порядок слов в предложении
 
-$${\color{blue}Predicate} \space-> \space{\color{red}Subject} \space-> \space Object \space -> \space Adverbial \space Modifier$$
+$${\color{blue}Predicate} \space -> \space{\color{red}Subject} \space-> \space Object \space -> \space Adverbial \space Modifier$$
 
 - Используется в большинстве вопросительных предложений или, модальный глагол в начале предложения:
-$${\color{blue}Didn’t}$$ $${\color{red}you}$$ $${\color{blue}go}$$ to the cinema yesterday? – Разве ты вчера не ходил в кино?
-$${\color{blue}Would}$$ $${\color{red}you}$$ $${\color{blue}bring}$$ me some tea, please? – Не мог бы ты принести мне чаю, пожалуйста?
+$${\color{blue}Didn’t} \space {\color{red}you} \space {\color{blue}go}\space to\space the\space cinema\space yesterday?\space –\space Разве\space ты\space вчера\space не\space ходил \space в \space кино?$$
+$${\color{blue}Would} \space {\color{red}you}\space {\color{blue}bring} \space me \space some \space  tea,\space  please?\space  – \space Не \space мог \space бы \space ты \space принести \space мне \space чаю, \space пожалуйста?$$
 
 - Повелительное наклонение глагола (приказа, просьбы, пожелания, запрета и пр.):
-$${\color{blue}Таке}$$ $${\color{red}а реn}$$! – Возьмите ручку!
-$${\color{blue}Маке}$$ $${\color{red}а plan}$$! – Составьте план!
+$${\color{blue}Таке}\space{\color{red}а реn}!\space –\space Возьмите\space ручку!$$
+$${\color{blue}Маке}\space{\color{red}а plan}!\space –\space Составьте\space план!$$
 
 - Если сказуемое (Predicate) выражено глаголом to be (быть) или to have (иметь), то они стоят перед подлежащим (Subject):
-$${\color{blue}Have}$$ $${\color{red}you}$$ a pen? – У тебя есть ручка?
-$${\color{blue}Do}$$ $${\color{red}you}$$ $${\color{blue}have}$$ a pen? – У тебя есть ручка?
-$${\color{blue}Is}$$ $${\color{red}she}$$ at home now? – Она сейчас дома?
+$${\color{blue}Have}\space{\color{red}you}\space a\space pen?\space – \space У\space тебя\space есть\space ручка?$$
+$${\color{blue}Do}\space{\color{red}you}$$ $${\color{blue}have}\space a\space pen?\space –\space У\space тебя\space есть\space ручка?$$
+$${\color{blue}Is}\space{\color{red}she}\space at\space home\space now?\space –\space Она\space сейчас\space дома?$$ 
 
 - В предложениях, начинающихся с there:
-There $${\color{blue}plays}$$ $${\color{red}Jane}$$ with her son in the garden. – В саду играет Джейн со своим сыном.
+$${There {\color{blue}plays}\space{\color{red}Jane}\space with\space her\space son\space in\space the\space garden.\space –\space В\space саду\space играет\space Джейн\space со\space своим\space сыном.$$
 
 - В предложениях, начинающихся со слова here - вот (кроме случая когда подлежащее выражено местоимением):
-Here $${\color{blue}is}$$ your $${\color{red}Teddy}$$. – Вот твой мишка.
+$${Here\space {\color{blue}is}\space your\space  {\color{red}Teddy}$$. – Вот твой мишка.$$
 Here he your is! – Вот он!
 
 - В простых восклицательных предложениях:
-$${\color{blue}May}$$ $${\color{red}all your wishes}$$ $${\color{blue}come true}$$! – Желаю, чтоб все твои желания сбылись!
+$${\color{blue}May}\space{\color{red}all\space your\space wishes}\space{\color{blue}come\space true}!\space –\space Желаю,\space чтоб\space все\space твои\space желания\space сбылись!$$
 
 - После наречий, указывающих направление ( in, out, down, away, up) если они стоят в начале предложения.
-Away $${\color{blue}ran}$$ $${\color{red}children}$$. – Дети убежали прочь.
+$$ Away\space {\color{blue}ran}\space{\color{red}children}.\space –\space Дети\space убежали\space прочь.$$
 
 - И другие случаи которые нет смысла изучать, а практиковать из источников!
 
