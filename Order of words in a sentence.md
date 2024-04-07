@@ -34,14 +34,14 @@ $${\color{blue}Маке}\space{\color{red}а plan}!\space –\space Состав
 
 - Если сказуемое (Predicate) выражено глаголом to be (быть) или to have (иметь), то они стоят перед подлежащим (Subject):
 $${\color{blue}Have}\space{\color{red}you}\space a\space pen?\space – \space У\space тебя\space есть\space ручка?$$
-$${\color{blue}Do}\space{\color{red}you}$$ $${\color{blue}have}\space a\space pen?\space –\space У\space тебя\space есть\space ручка?$$
+$${\color{blue}Do}\space{\color{red}you}\space{\color{blue}have}\space a\space pen?\space –\space У\space тебя\space есть\space ручка?$$
 $${\color{blue}Is}\space{\color{red}she}\space at\space home\space now?\space –\space Она\space сейчас\space дома?$$ 
 
 - В предложениях, начинающихся с there:
-$${There {\color{blue}plays}\space{\color{red}Jane}\space with\space her\space son\space in\space the\space garden.\space –\space В\space саду\space играет\space Джейн\space со\space своим\space сыном.$$
+$$ There {\color{blue}plays}\space{\color{red}Jane}\space with\space her\space son\space in\space the\space garden.\space –\space В\space саду\space играет\space Джейн\space со\space своим\space сыном.$$
 
 - В предложениях, начинающихся со слова here - вот (кроме случая когда подлежащее выражено местоимением):
-$${Here\space {\color{blue}is}\space your\space  {\color{red}Teddy}$$. – Вот твой мишка.$$
+$$ Here\space {\color{blue}is}\space your\space  {\color{red}Teddy}$$. – Вот твой мишка.$$
 Here he your is! – Вот он!
 
 - В простых восклицательных предложениях:
