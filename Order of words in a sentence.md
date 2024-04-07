@@ -8,7 +8,7 @@
 
 ### Прямой порядок слов в предложении
 
-$${\color{red}Subject} \space -> \space {\color{blue}Predicate} \space -> \space Object \space -> \space Adverbial\space Modifier$$
+$${\raggedleft \color{red}Subject} \space -> \space {\color{blue}Predicate} \space -> \space Object \space -> \space Adverbial\space Modifier$$
  
 $${\color{red}I} \space {\color{blue}sent} \space you \space a \space letter \space yesterday.\space  – \space Я\space послал\space тебе \spaceписьмо \spaceвчера.$$ 
 
