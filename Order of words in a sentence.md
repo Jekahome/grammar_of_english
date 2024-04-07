@@ -61,16 +61,21 @@ $${Away\space {\color{blue}ran}\space{\color{red}children}.\space –\space Де
 состоит из одного главного слова (часто местоимения или существительного без артиклей), отвечающего на вопрос What? (что?) или Who? (кто?)
 
 She is beautiful. – Она прекрасна
+
 Students often skip their classes. – Студенты часто прогуливают уроки.
 
 **Compound Subject** (составное подлежащее)
 состоит из двух или более простых подлежащих, которые относятся к общему сказуемому
+
 My friend and I go jogging every Sunday. – Я и мой друг ходим на пробежку каждое воскресенье.
+
 There were boys and girls playing together in the school yard. – В школьном дворе вместе играли мальчики и девочки.
 
 **Full Subject** (полное подлежащее)
 состоит из простого подлежащего или же составного подлежащего (ключевых слов) и других слов, которые к нему относятся
+
 This jacket is not new. – Эта куртка не новая.
+
 My silk polka-dot skirt and cotton blouse are dirty. – Моя шелковая юбка в горошек и хлопковая блузка грязные.
 
 
@@ -80,20 +85,29 @@ My silk polka-dot skirt and cotton blouse are dirty. – Моя шелковая
 
 **Simple Predicate** (простое сказуемое)
 состоит только из глагола в определенной личной или временной форме.
+
 (likes): Kate likes you. – Ты нравишься Кейт.
+
 (worked): We worked hard to meet a deadline. – Мы усердно работали, чтобы закончить работу в срок.
+
 (фраз.гл. takes care of): John takes care of his sister. – Джон заботится о своей сестре.
+
 (фраз.гл. moved in with): Jane moved in with her boyfriend last month. – Джейн переехала к своему парню в прошлом месяце.
 
 **Compound Predicate** (составное сказуемое)
 может состоять из нескольких простых сказуемых, которые относятся к общему простому или составному подлежащему.
+
 (called и invited): Kelly and Jane called Peter and invited him to their party. – Келли и Джейн позвонили Питеру и пригласили его на свою вечеринку.
+
 (haven’t finished): I haven’t finished my work yet. – Я еще не закончил свою работу.
+
 (will keep on telling): I will keep on telling my story. – Я продолжу рассказывать свою историю.
+
 (feels bad и looks tired): She feels bad and looks tired. – Она чувствует себя плохо и выглядит уставшей.
 
 **Full Predicate** (полное сказуемое)
 состоит из простого или составного сказуемого и всех второстепенных членов предложения, которые относятся и зависят от данного сказуемого.
+
 (is a kind and intelligent guy): My friend Matt is a kind and intelligent guy. – Мой друг Мэтт – добрый и умный парень.
 
 
