@@ -9,12 +9,19 @@
 * [Singular and plural nouns](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Singular%20and%20plural%20nouns.md)
 * [Demonstrative pronouns this,that,these,those](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Demonstrative%20pronouns%20this%2Cthat%2Cthese%2Cthose.md)
 * [Possessive pronouns my,our,your,his,her,its](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Possessive%20pronouns%20my%2Cour%2Cyour%2Chis%2Cher%2Cits.md)
+* [There is/are]()
+* []() 
+* []() 
+* []() 
+* []() 
+* []() 
+* []() 
 * [Preposition for](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20for.md) 
 * [Preposition to](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20to.md) 
 * [Preposition of](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20of.md) 
 * []() 
 * []() 
-* [Possessive pronouns mine,yours,ours,theirs,his,hers,its]() 
+* [Possessive pronouns mine,yours,ours,theirs,his,hers,its](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Possessive%20pronouns%20mine%2Cyours%2Cours%2Ctheirs%2Chis%2Chers%2Cits.md) 
 
 
 
