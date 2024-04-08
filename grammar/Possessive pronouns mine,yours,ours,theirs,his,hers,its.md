@@ -24,3 +24,32 @@ My pen is blue but yours is black. - Моя ручка синяя,а твоя - 
 (зависимая) These are their books. - Это их книги.
 
 (абсолютная) These books are theirs. - Эти книги - их.
+
+## Практика
+
+1. Переписать используя абсолютную форму
+- That is their dog. - That dog is theirs
+- This is his table.  - This table is
+- These are our houses.
+- Those are my pencils.
+- This is his book.
+- These are her dolls.
+- This is my work.
+
+2. Ответь на вопрос
+- Whose jacket is this? (I) - It's mine.
+- Whose glasses are these?(she)- They are
+- Whose moneyis this? (they) -
+- Whose bagsare these?(we)-
+- Whose pencilsare these?(he) -
+- Whose cat is this? (I)
+
+3. Сформировать вопрос, учитывая ответ
+- Is it Aour ball? - Yes, it's mine.
+- butterflies ... - Yes,it's theirs.
+- mony ... - Yes,it's hers
+- pen ... - Yes,it's his.
+
+
+
+
