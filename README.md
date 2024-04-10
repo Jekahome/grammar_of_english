@@ -12,12 +12,12 @@
 * [Possessive pronouns my,our,your,his,her,its](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Possessive%20pronouns%20my%2Cour%2Cyour%2Chis%2Cher%2Cits.md)
 * [There is/are](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/There%20is%2Care.md)
 * [Preposition of](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Preposition%20of.md)
-* [Questions with what,who,whose,where,when,why,how,how much (many)](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Questions%20with%20what%2Cwho%2Cwhere%2Cwhen%2Cwhy%2Chow%2Chow%20much%20(many).md) 
+* [Questions with what,who,whose](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Questions%20with%20what%2Cwho%2Cwhome.md) 
+* [Questions with where,when,why,how,how much (many)]() 
 * []() 
 * []() 
 * []() 
-* []() 
-* []() 
+* [Базовая английская лексика]() 
 
 ## A2
 
@@ -92,12 +92,14 @@
 - Притяжательные местоимения my/our/your/his/her/its
 - There is/are
 - Притяжательный предлог of
-- Вопросы с what/who/whose/where/when/why/how/how much (many)
+- Вопросы с what/who/whose
+- Вопросы с where/when/why/how/how much (many)
 - Модальный глагол can/can't
 - Неопределенные местоимения some/any
 - Наречия частотности always/often/never
 - Present Simple/Past Simple/Future Simple
 - Present Continuous
+- Базовая английская лексика
 
 ## A2 (Pre-Intermediate)
 
