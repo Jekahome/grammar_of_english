@@ -48,34 +48,34 @@
 
 He `often` <ins>goes</ins> to school by bus. — Он часто добирается до школы на автобусе.
 
-Sara `always` goes out on Saturday evenings. — Сара всегда гуляет в субботние вечера.
+Sara `always` <ins>goes</ins> out on Saturday evenings. — Сара всегда гуляет в субботние вечера.
 
-I `sometimes` go clubbing with my best friends. — Я иногда хожу в клуб с друзьями.
+I `sometimes` <ins>go</ins> clubbing with my best friends. — Я иногда хожу в клуб с друзьями.
 
-Her boyfriend `usually` picks her up and they drive into the city centre. — Ее парень обычно забирает ее на машине и они едут в центр города.
+Her boyfriend `usually` <ins>picks</ins> her up and they drive into the city centre. — Ее парень обычно забирает ее на машине и они едут в центр города.
 
-They `often` meet friends and have a drink together. — Они часто встречаются с друзьями и идут в бар.
+They `often` <ins>meet</ins> friends and have a drink together. — Они часто встречаются с друзьями и идут в бар.
 
-In the winter they `sometimes` go to the cinema. — Зимой они иногда ходят в кино.
+In the winter they `sometimes` <ins>go</ins> to the cinema. — Зимой они иногда ходят в кино.
 
-They `rarely` go in the summer because they prefer to stay outside. — Летом они редко ходят в кино, так как предпочитают оставаться на свежем воздухе.
+They `rarely` <ins>go</ins> in the summer because they prefer to stay outside. — Летом они редко ходят в кино, так как предпочитают оставаться на свежем воздухе.
 
-They `never` get home before midnight. — Они никогда не возвращаются домой до полуночи.
+They `never` <ins>get</ins> home before midnight. — Они никогда не возвращаются домой до полуночи.
 
-He `never` gets up before 9. — Он никогда не встаёт до 9.
+He `never` <ins>gets</ins> up before 9. — Он никогда не встаёт до 9.
 
  
 ## В предложениях с глаголом to be наречие частотности встает после глагола, как в этих примерах:
 
-I am `always` late! - Я всегда опаздываю!
+I <ins>am</ins> `always` late! - Я всегда опаздываю!
 
-She is usually in Kharkiv during Holidays. — Во время каникул она обычно в Харькове.
+She <ins>is</ins> usually in Kharkiv during Holidays. — Во время каникул она обычно в Харькове.
 
-There are `always` lots of people in the city centre on Saturday nights. — По субботним вечерам в центре города (есть) всегда много людей.
+There <ins>are</ins> `always` lots of people in the city centre on Saturday nights. — По субботним вечерам в центре города (есть) всегда много людей.
 
-It’s `often` difficult to find a place to park. — (Это есть) часто сложно найти место для парковки.
+It <ins>is</ins> `often` difficult to find a place to park. — (Это есть) часто сложно найти место для парковки.
 
-But our friends are `never` on time so it doesn’t matter if we’re late. — Но наши друзья (есть) никогда [не приходят] вовремя, так что не так важно, опоздаем ли мы.
+But our friends <ins>are</ins> `never` on time so it doesn’t matter if we’re late. — Но наши друзья (есть) никогда [не приходят] вовремя, так что не так важно, опоздаем ли мы.
 
 Но sometimes и usually могут стоять и в начале.
 
@@ -107,16 +107,16 @@ But our friends are `never` on time so it doesn’t matter if we’re late. — 
 
 (С модальными глаголами (can/may/must/should) наречия частоты употребляются после них)
 
-- I can `always` help you. — Я всегда могу прийти к тебе на помощь.
-- You must `always` try your best. — Тебе следует (ты должен) всегда стараться изо всех сил.
-- We can `usually` find a seat on our train. — Мы можем обычно найти место в нашем поезде.
-- They should `never` be rude to customers. — Они не могут никогда быть грубы с клиентами. 
+- I <ins>can</ins> `always` help you. — Я всегда могу прийти к тебе на помощь.
+- You <ins>must</ins> `always` try your best. — Тебе следует (ты должен) всегда стараться изо всех сил.
+- We <ins>can</ins> `usually` find a seat on our train. — Мы можем обычно найти место в нашем поезде.
+- They <ins>should</ins> `never` be rude to customers. — Они не могут никогда быть грубы с клиентами. 
 
 (Это же правило действует для вспомогательных глаголов)
 
-- I `have never visited` Turkey. — Я никогда не был в Турции.
-- He’`s always taking` things from my desk. It’s really annoying. — Он все время берет вещи с моего стола. Это очень раздражает.
-- You `had rarely arrived` late at work until yesterday. — Ты редко опаздывал на работу до вчерашнего дня.
+- I <ins>have</ins> `never` visited Turkey. — Я никогда не был в Турции.
+- He <ins>is</ins> `always` taking things from my desk. It’s really annoying. — Он все время берет вещи с моего стола. Это очень раздражает.
+- You <ins>had</ins> `rarely` arrived late at work until yesterday. — Ты редко опаздывал на работу до вчерашнего дня.
 
 ## Наречия определенной частоты действия 
 
