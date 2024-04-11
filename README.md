@@ -17,7 +17,10 @@
 * [Modal verbs can](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Modal%20verbs%20can.md) 
 * [Indefinite pronouns some, any](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Indefinite%20pronouns%20some%2C%20any.md) 
 * [Adverbs of frequency always,usually,often,sometimes,never](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Adverbs%20of%20frequency%20always%2Cusually%2Coften%2Csometimes%2Cnever.md) 
-* []()
+* [Present Simple]()
+* [Past Simple]()
+* [Future Simple]()
+* [Present Continuous]()
 * [что пропустил....]() 
 * [have got]() 
 * [Базовая английская лексика]() 
@@ -100,7 +103,9 @@
 - Модальный глагол can/can't
 - Неопределенные местоимения some/any
 - Наречия частотности always/often/never
-- Present Simple/Past Simple/Future Simple
+- Present Simple 
+- Past Simple
+- Future Simple
 - Present Continuous
 - Базовая английская лексика
 
