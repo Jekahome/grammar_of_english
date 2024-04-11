@@ -2,9 +2,9 @@
 
 ## A1
 
-* [Порядок слов](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Order%20of%20words%20in%20a%20sentence.md) 
+* [Word order in english](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Order%20of%20words%20in%20a%20sentence.md) 
 * [Parts of speech](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Parts%20of%20speech.md)
-* [Артикли the,a,an](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Articles%20a%2Can%2Cthe.md) 
+* [Articles the,a,an](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Articles%20a%2Can%2Cthe.md) 
 * [to be](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/to%20be.md) 
 * [Pronouns I,he,she,it,we,you,they,me,him,her,that,these...](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Pronouns.md) 
 * [Singular and plural nouns](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Singular%20and%20plural%20nouns.md)
@@ -114,6 +114,7 @@
 
 - Притяжательные местоимения mine/yours/ours/theirs/his/hers/its
 - Предлоги времени in/on/at
+- Предлоги направления to/into
 - Модальный глагол could/couldn't
 - Сравнительная и превосходная степень прилагательных
 - Исчесляемые и неисчесляемые существетельные (some,any,many,much, a lot)
@@ -122,7 +123,7 @@
 - Наречия с ly/ily
 - Условные предложения нулевого типа
 - Present Perfect
-
+- Глагол have/have got
 
 ## B1 (Intermediate)
 
