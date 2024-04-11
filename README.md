@@ -6,7 +6,7 @@
 * [Parts of speech](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Parts%20of%20speech.md)
 * [Артикли the,a,an](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Articles%20a%2Can%2Cthe.md) 
 * [to be](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/to%20be.md) 
-* [Pronouns](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Pronouns.md) 
+* [Pronouns I,he,she,it,we,you,they,me,him,her,that,these...](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Pronouns.md) 
 * [Singular and plural nouns](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Singular%20and%20plural%20nouns.md)
 * [Demonstrative pronouns this,that,these,those](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Demonstrative%20pronouns%20this%2Cthat%2Cthese%2Cthose.md)
 * [Possessive pronouns my,our,your,his,her,its](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Possessive%20pronouns%20my%2Cour%2Cyour%2Chis%2Cher%2Cits.md)
@@ -17,14 +17,15 @@
 * [Modal verbs can](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Modal%20verbs%20can.md) 
 * [Indefinite pronouns some, any](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Indefinite%20pronouns%20some%2C%20any.md) 
 * [Adverbs of frequency always,usually,often,sometimes,never](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Adverbs%20of%20frequency%20always%2Cusually%2Coften%2Csometimes%2Cnever.md) 
-* [Present Simple]()
-* [Past Simple]()
-* [Future Simple]()
-* [Present Continuous]()
+* [Present Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Present%20Simple.md)
+* [Past Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Past%20Simple.md)
+* [Future Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Future%20Simple.md)
+* [Present Continuous](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Present%20Continuous.md)
 * [что пропустил....]() 
 * [have got]() 
 * [Базовая английская лексика]() 
 * [Kit words]
+
 ## A2
 
 * [Prepositions in,at,on](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Prepositions%20in%2Cat%2Con.md) 
@@ -90,10 +91,10 @@
 ## A1 (Beginner,Elementary)
 
 - Порядок слов
-- Личные местоимения I/we/you/they/he/she/it
 - Глагол to be
 - Артикли a/an/the
 - Единственное и множественное число сушественных (-s,-es)
+- Личные местоимения I/we/you/they/he/she/it
 - Указательные местоимения this/that/these/those
 - Притяжательные местоимения my/our/your/his/her/its
 - There is/are

@@ -35,6 +35,13 @@ am - predicate
   
 `He is at school. - Он в школе.`
 
+Вопрос - ответ:
+
+`Is she funny? - Yes, she is.`
+
+`Are you tired? - No, I'm not.`
+
+
 Обратите внимание, что в настоящем времени в русском варианте «быть» пропадает. 
 
 В прошедшем `was` и будущем `will` времени мы используем необходимые формы и в русском, и в английском языках: 
@@ -65,6 +72,37 @@ am - predicate
 `Our cottage was built five years ago. - Наш коттедж был построен пять лет назад.`
 
 В страдательном залоге формы `to be` переводятся в прошедшем и будущем времени, но не в настоящем.
+
+
+## Упражнение
+
+1. Преобразовать в вопрос
+- I'm sad. - Am I sad?
+- He's a driver. - 
+- We are from Ukraine.- 
+- They're teachers.- 
+- She'spretty.- 
+- It's a river.- 
+- You're happy.- 
+
+2. Дать ответ
+- Is it a doll? - Yes,it ts.
+- Is shea teacher? - No,
+- Are they happy?- Yes
+- Is he tired? - No,
+- Are you sad?- No,
+- Is he a pilot? - Yes
+
+
+
+
+
+
+
+
+
+
+
 
 
 
