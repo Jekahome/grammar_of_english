@@ -15,10 +15,13 @@
 * [Questions with what,who,whom,whose](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Questions%20with%20what%2Cwho%2Cwhom%2Cwhose.md) 
 * [Special questions with what,where,when,why,who,which,whose,whome,how,how much (many)](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Special%20questions%20with%20what%2Cwhere%2Cwhen%2Cwhy%2Cwho%2Cwhich%2Cwhose%2Cwhome%2Chow%2Chow%20much%20(many).md) 
 * [Modal verbs can](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Modal%20verbs%20can.md) 
-* []() 
-* []() 
+* [Indefinite pronouns some, any]() 
+* [Adverbs of frequency always,usually,often,sometimes,never]() 
+* []()
+* [что пропустил....]() 
+* [have got]() 
 * [Базовая английская лексика]() 
-
+* [Kit words]
 ## A2
 
 * [Prepositions in,at,on](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Prepositions%20in%2Cat%2Con.md) 
