@@ -40,6 +40,7 @@ to be:
 - My father sometimes plays tennis. - Мой отец иногда играет в теннис.
 - I very seldom go to the cinema. - Я очень редко хожу в кино.
 - My sister never plays football. - Моя сестра никогда не играет в футбол.
+- The train arrives at 3:45. - Поезд прибывает в 3:45.
 
 
 Пассив:
@@ -63,8 +64,7 @@ to be:
 
 
 **где - V это V1 но без окончания `-s`, т.е. Does забирает на себя весь смысл поэтому глагол `play` для he/she/it остается `play`**
-
-
+ 
 
 - `Do` you like pizza? Yes, I do.  (Тебе нравится пицца? - Да)
 - `Does` he like in Spain? - Yes, he does. (Ему нравится в Испании?)
@@ -72,6 +72,7 @@ to be:
 - `Do` you like milk? - No, I don't (Тебе нравится молоко - Нет)
 - `Does` your brother speak English? - No, he doesn't (Твой брат говорит по-английски? - Нет)
 - `Does` he play football on Sundays? - Yes, he does. (Он играет в футбол по воскресеньям? - Да)
+- When `do` your classes finish? - Когда заканчивается твои занятия?
 
 Так как вспомогательный глагол do/does не переводится, и нам нужен смысловой `do - делать/заниматься` то пишем их дважды:
 
