@@ -17,6 +17,7 @@
 * [Modal verbs can](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Modal%20verbs%20can.md) 
 * [Indefinite pronouns some, any](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Indefinite%20pronouns%20some%2C%20any.md) 
 * [Adverbs of frequency always,usually,often,sometimes,never](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Adverbs%20of%20frequency%20always%2Cusually%2Coften%2Csometimes%2Cnever.md) 
+* [It is construction](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/It%20is%20construction.md)
 * [Present Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Present%20Simple.md)
 * [Past Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Past%20Simple.md)
 * [Future Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Future%20Simple.md)
@@ -109,6 +110,7 @@
 - Past Simple
 - Future Simple
 - Present Continuous
+- It is construction
 - Базовая английская лексика
 
 ## A2 (Pre-Intermediate)
@@ -184,6 +186,8 @@
 [Книги бесплатно без уровня](https://www.gutenberg.org/)
 
 [Книги https://archive.org/](https://archive.org/)
+
+[Книги](https://www.topenglishcenter.com/zona-del-estudiante/english-reader-plan.php)
 
 [Книга по грамматике](https://ntbooks.pro/zhivaja-grammatika-anglijskogo-jazyka-uroven-1.html)
 
