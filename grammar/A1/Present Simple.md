@@ -1,4 +1,4 @@
-# Present Simple
+# The Present Simple Tense
 
 Настоящее простое время
  
@@ -16,12 +16,17 @@ to be:
 - He/She/It - is
 - We/You/They - are
 
+Существует четыре формы глагола:
+- Indefinite (Present Simple Tense) V1
+- Present Participle ing-овое окончание
+- Past Indefinite V2 это когда окончание +ed
+- Past Participle V3 это когда окончание +ed
 
 ## Утверждение
 
 Актив:
 
-`I/We/You/They + V`
+`I/We/You/They + V1`
 
 `She/He/It + V1 (+s,+es,+ies)`
 
@@ -56,6 +61,11 @@ to be:
 
 `Does + he/she/it + V?`
 
+
+**где - V это V1 но без окончания `-s`, т.е. Does забирает на себя весь смысл поэтому глагол `play` для he/she/it остается `play`**
+
+
+
 - `Do` you like pizza? Yes, I do.  (Тебе нравится пицца? - Да)
 - `Does` he like in Spain? - Yes, he does. (Ему нравится в Испании?)
 - `Do` you go to school? - Yes, I do. (Ты ходишь в школу? - Да)
@@ -76,7 +86,7 @@ to be:
 
 `You/We/They are + V3 (+ed)`
 
-- Is the house sold? - Этот дом продается?
+- Is the house sold? - Этот дом продан?
 
 ## Отрицание
 
@@ -86,7 +96,7 @@ to be:
 
 `She/He/It + does not(doesn't) + V` 
 
-т.е. does забирает у глагола для третьего лица (he/she/it) окончание -s
+**V - т.е. does забирает у глагола для третьего лица (he/she/it) окончание -s**
 
 - They don't drink beer - Они не пьют пиво.
 - I do not get up early. - Я не встаю рано.
@@ -198,8 +208,7 @@ to be:
 - Does she speak German?- No, ...
 - Does he do sport? - No, ...
 - Does she drink coffee?- Yes, ..
-
-
+ 
 
 
 

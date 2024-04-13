@@ -201,6 +201,51 @@ Whom а для **дополнения** есть вопросительное с
 `Whose books are these?- Чьи это книги?`
 
 
+## Упражнение
+
+1. Задай вопросы к этим упражнениям:
+- Somebody broke the window yesterday. - Who broke the window?
+- I met somebody yesterday. - Who did you meet?
+- I want someting. - ...
+- i phoned somebody yesterday evening. - ...
+- Somebody wants to talk yo you. - ...
+- Somebody stole my purse yesterday. - ...
+- I am going to read something. - ...
+- Something is happening. - ...
+- I play something every day. - ...
+
+2.Перевести
+- Кто тебе это сказал? - ...
+- Кого ты ждешь? - ...
+- С кем ты собираешся поехать в отпуск? - ...
+- Что ты пьешь? - ...
+- Что случится, если я не приду? - ...
+- Кто здесь говорит по-китайски? - ...
+
+3. Дополни
+- ... are you waiting ...? - My brother.
+- ... is he looking ...? - Those beautiful birds.
+- ... is she looking ...? - Her son
+- ... are you afride ...? Snakes and darkness.
+- ... is she laughing ...? That new joke.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [Виды вопросов в английском языке](https://skyeng.ru/articles/vidy-voprosov-v-anglijskom-yazyke/)
 
 

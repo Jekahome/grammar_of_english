@@ -23,6 +23,7 @@
 * [Present Continuous](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Present%20Continuous.md)
 * [что пропустил....]() 
 * [have got]() 
+* [Irregular verbs]() 
 * [Базовая английская лексика]() 
 * [Kit words]
 
