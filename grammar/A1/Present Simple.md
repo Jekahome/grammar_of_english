@@ -2,12 +2,19 @@
 
 Настоящее простое время
  
-Про факт, регулярное действие.
+Про факт, регулярное действие или переодически повторяющихся.
 
 Слова маркеры:
 - usualy
 - every day/morning
 - always
+- often
+- sometimes
+- rarely
+- from time to time
+- never
+- once a month
+- twice a year
 - ... (Adverbs of frequency)
 
 
@@ -41,7 +48,7 @@ to be:
 - I very seldom go to the cinema. - Я очень редко хожу в кино.
 - My sister never plays football. - Моя сестра никогда не играет в футбол.
 - The train arrives at 3:45. - Поезд прибывает в 3:45.
-
+- Every day Barky walks in the garden. - Каждый день Барки гуляет по саду.
 
 Пассив:
 
