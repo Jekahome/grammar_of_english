@@ -66,3 +66,31 @@
 - You ... a beautiful house.
 - She ... a nice dress
 
+
+3. Преобразовать в отрицательные предложения:
+- I've got somefriends here. - I haven't got ana friends here.
+- She's got a sister. - ...
+- They've got a nice house. - ...
+- My friends have got some books. - ...
+- We'ye got some money. - ...
+- He's got a brother. - ...
+- You've got some time - ...
+
+4. Залать вопрос используя have got и дать ответ:
+- (he / train. Yes) - Has he eot a train? - Yes.he has.
+- (she / doll. No)
+- (we /sugar. No)
+- (they / friends. Yes)
+- (you / time. No)
+- (she / money. Yes)
+- (your friends / flowers. No)
+- (baby/ toy.Yes)
+- (he / car. No)
+
+
+
+
+
+
+
+
