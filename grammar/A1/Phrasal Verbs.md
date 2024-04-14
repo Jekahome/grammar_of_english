@@ -19,7 +19,7 @@
 - `come across something` — наткнуться,
 - `put something on` — надеть,
 - `take off` — снять.
-
+ 
 Зато непереходные фразовые глаголы не требуют существительного или еще какого-то вспомогательного слова.
 - `pass out` — терять сознание,
 - `go on` — продолжаться, тянуться,
@@ -27,21 +27,29 @@
 - `come in` — входить,
 - `run out` — исчерпываться, заканчиваться.
 
+Непереходный глагол:
+- "The plane took off." (Самолет взлетел.)
+
+Переходный глагол:
+- "She took off her coat." (Она сняла свое пальто.) - Здесь "coat" является объектом, который получает действие "take off".
+
 ## Cписок из 30 самых популярных фразовых глаголов
 
-1. #### `Look after` - заботиться о (не переходной и не разделяемый)
+1. #### `Look after` - заботиться о (переходной и не разделяемый)
 
 - She `looks after` her little brother every day after school. – Она присматривает за своим младшим братом каждый день после школы.
 - Jane didn't `look after` her children. – Джейн не присматривала за своими детьми.
+- She `looks after` her elderly grandmother. –  Она заботится о своей пожилой бабушке. 
+- He `looked after` the children while his wife was at work. – Он присматривал за детьми, пока его жена была на работе. 
 
 2. #### `Look forward to` - ждать с нетерпением (не переходной и не разделяемый)
 
 - We `look forward to` seeing you next week. – Мы с нетерпением ждем встречи с вами на следующей неделе.
 - Alice is `looking forward to` playing volleyball on the beach. – Элис предвкушает игру в волейбол на пляже.
 
-3. #### `Take off` - снимать (одежду), взлетать (о самолете);уменьшиться, снизиться, ослабеть;взять выходной (не переходной но разделяемый)
+3. #### `Take off` - снимать (одежду), взлетать (о самолете);уменьшиться, снизиться, ослабеть;взять выходной (не переходной/переходной но разделяемый)
 
-- She `took off` her coat as she entered the warm house. – Она «сняла» пальто, войдя в теплый дом.
+- She `took off` her coat as she entered the warm house. – Она  сняла  пальто, войдя в теплый дом.
 - Her plane `took off` in the evening. – Её самолёт вылетел вечером. 
 - The boy didn't want to `take` his hat `off`. – Мальчик не хотел снимать свою шляпу. 
 - The wind is `taking off`. — Ветер стихает. 
@@ -49,7 +57,7 @@
 
 4. #### `Put off` - откладывать на потом, отвлекать, смущать ;отделаться (не переходной но разделяемый)
 
-- Don't `put off` until tomorrow what you can do today. – Не «откладывайте» на завтра то, что можно сделать сегодня.
+- Don't `put off` until tomorrow what you can do today. – Не откладывайте на завтра то, что можно сделать сегодня.
 - The manager `put off` Mister Green until twelve o'clock. – Менеджер перенёс встречу с мистером Грином на двенадцать часов. 
 - Sarah's assuredness was `putting` him `off`. – Наглая самоуверенность Сары выводила его из себя. 
 - Don't `put` your schoolmates `off`. They need to concentrate. – Не мешай своим одноклассникам. Они должны сосредоточиться. 
@@ -60,58 +68,80 @@
 5. #### `Bring up` - воспитывать, поднимать (тему)
 
 - She was `brought up` in a small village in the countryside. – Она выросла в маленькой деревне в сельской местности.
+- She `brought up` an interesting topic during the meeting. – Она подняла интересную тему на собрании. 
+- Parents should `bring up` their children to be polite and respectful. – Родители должны воспитывать своих детей так, чтобы они были вежливыми и уважительными.
+- The topic of salary was `brought up` during the interview. – Вопрос о зарплате был поднят во время интервью. 
+- He never `brings up` his past. – Он никогда не упоминает о своем прошлом.
 
-6. #### `Get up` - вставать с постели, встать (не переходной но разделяемый)
 
-- I `get up` early every morning to go for a run. – Каждое утро я «встаю» рано, чтобы пойти на пробежку.
+6. #### `Get up` - вставать с постели, встать (не переходной/переходной но разделяемый)
+
+- I `get up` early every morning to go for a run. – Каждое утро я встаю рано, чтобы пойти на пробежку.
 - You need to `get up` from your chair and move a bit more. – Тебе надо чаще вставать со стула и двигаться.  
-- `Get up`, breakfast is ready. – Вставай, завтрак готов. Get your children up at nine o'clock. – Разбуди своих детей в девять часов.
+- `Get up`, breakfast is ready. – Вставай, завтрак готов. 
+- `Get` your children `up` at nine o'clock. – Разбуди своих детей в девять часов.
+- She `gets` her children `up` for school every morning.  – Она будит своих детей на школу каждое утро. (переходной)
 
 7. #### `Give up` - бросить, отказаться от чего-либо; сдаться, забросить, прекратить  (не переходной и не разделяемый)
 
+- He `gave up` smoking. – Он бросил курить. 
 - Don't `give up` on your dreams, keep working hard! – Не отказывайтесь от своей мечты, продолжайте усердно работать!
 - I `give up`, I can't solve this puzzle. – Я сдаюсь, я не могу решить эту головоломку.
 
-8. #### `Turn on/off` - включить/выключить  (не переходной но разделяемый)
+8. #### `Turn on/off` - включить/выключить  (переходной но разделяемый)
 
-- Could you please `turn off` the lights when you leave the room? – Не могли бы вы, пожалуйста, «выключать» свет, когда выходите из комнаты?
+- Please turn on the lights. – Пожалуйста, включи свет. 
+- Could you please `turn off` the lights when you leave the room? – Не могли бы вы, пожалуйста, выключать свет, когда выходите из комнаты?
 - Could you `turn` the cooling fan `off`, please? – Ты не мог бы выключить вентилятор, пожалуйста? 
 - This dish `turns` me `off`. – Это блюдо вызывает у меня отвращение. 
 - Elisabeth `turned off` the country road. – Элизабет свернула с просёлочной дороги.
 - Could you `turn` the cooling fan `on`, please? – Включи, пожалуйста, вентилятор. 
 - The dog suddenly `turned on` the cat. – Собака внезапно набросилась на кошку.
 
-9. #### `Take out` - вынимать, доставать ;приглашать, выходить куда-то (в кафе и т.п.);удалить (зуб, пятно и т.п.) (не переходной но разделяемый)
+9. #### `Take out` - вынимать, доставать ;приглашать, выходить куда-то (в кафе и т.п.);удалить (зуб, пятно и т.п.) (не переходной/переходной но разделяемый)
 
-- She `took out` her wallet to pay for the groceries. – Она «достала» бумажник, чтобы заплатить за продукты.
+- She `took out` her wallet to pay for the groceries. – Она достала бумажник, чтобы заплатить за продукты. (переходной)
+- He `took out` the trash. – Он вынес мусор.  (переходной)
 - The children had to `take out` their copybooks. – Дети должны были достать свои тетради. 
 - Jack `took` his sister `out` for dinner. – Джек пригласил свою сестру на ужин.
 - Your tooth must be `taken out`. – Ваш зуб необходимо удалить.
+- They `took` the kids `out` for dinner. – Они отвели детей на ужин. 
+- Let's `take out` pizza tonight. – Давайте сегодня заказать пиццу на вынос. 
 
-10. #### `Look up` - искать (в словаре, в Интернете), подниматься вверх глазами (не переходной но разделяемый)
+10. #### `Look up` - искать (в словаре, в Интернете), подниматься вверх глазами (не переходной/переходной но разделяемый)
 
-- If you don't know the meaning of a word, you can `look` it `up` in the dictionary. – Если вы не знаете значения слова, вы можете «поискать» его в словаре.
+- If you don't know the meaning of a word, you can `look` it `up` in the dictionary. – Если вы не знаете значения слова, вы можете поискать его в словаре.
 - He has to look the term up in the dictionary. – Он должен посмотреть этот термин в словаре.
+- She `looked up` the word in the dictionary. – Она нашла слово в словаре. (переходной)
+- I `looked up` his address online. –  Я нашел его адрес в Интернете. (переходной)
+- She `looked up` at the stars. –  Она взглянула на звезды. (не переходной)
+- He `looked up` from his book. –  Он отвел взгляд от книги. (не переходной)
 
-11. #### `Go on` - продолжать, происходить (не переходной и не разделяемый)
+11. #### `Go on` - продолжать, происходить (не переходной/переходной и не разделяемый)
 
-- The concert was interrupted by a loud noise, but then it `went on` as planned. – Концерт был прерван громким шумом, но затем все «прошло», как и было запланировано.
+- The concert was interrupted by a loud noise, but then it `went on` as planned. – Концерт был прерван громким шумом, но затем все  прошло , как и было запланировано.
 - Sarah `went on` making dinner. – Сара продолжала готовить обед. 
 - John's parents were always `going on` about his wife. – Родители Джона всегда брюзжали относительно его жены. 
 - What was `going on` in the yard? – Что происходило во дворе?
+- The meeting `went on` until late in the evening. – Собрание продолжалось до позднего вечера. (не переходной)
+- Life `goes on`.  – Жизнь продолжается. (не переходной)
+- `Go on` a diet. – Пойти на диету. (переходной)
+- `Go on` a trip. – Совершить поездку. (переходной)
 
-12. #### `Come up with` - придумать, предложить
+12. #### `Come up with` - придумать, предложить (переходной)
 
-- They need to `come up with` a solution to the problem as soon as possible. – Им необходимо как можно скорее «придумать» решение проблемы.
+- They need to `come up with` a solution to the problem as soon as possible. – Им необходимо как можно скорее придумать решение проблемы.
+- She `came up with` a brilliant idea for the project. – Она придумала блестящую идею для проекта. 
+- Can you `come up with` a solution to this problem? – Можешь ли ты предложить решение этой проблемы?
 
-13. #### `Turn up` - усилить (о звуке), прибавить (газ и т. п.);подвернуть (рукава и т. п.)  (не переходной но разделяемый)
+13. #### `Turn up` - усилить (о звуке), прибавить (газ и т. п.);подвернуть (рукава и т. п.)  (не переходной/переходной но разделяемый)
 
-- He didn't `turn up` at the meeting, so we had to start without him. – Он не «явился» на встречу, поэтому нам пришлось начинать без него.
+- He didn't `turn up` at the meeting, so we had to start without him. – Он не явился на встречу, поэтому нам пришлось начинать без него.
 - Mary was surprised when Jane `turned up` at the restaurant. – Мэри удивилась, когда Джейн появилась в ресторане. 
 - The job `turned up` well-timed. – Работа подвернулась своевременно. 
 - He has to `turn` the song `up`. – Он должен сделать эту песню погромче. 
 - `Turn` your sleeves `up`! – Закатай рукава!
-
+- I'm sure something will `turn up` soon. – Я уверен, что скоро что-то случится.
 
 14. #### `Get out` - выходить, выбираться наружу (не переходной но разделяемый)
 
@@ -161,6 +191,9 @@
 
 - They had to `call off` the picnic because of the bad weather.  – Пикник пришлось отменить из-за плохой погоды.
 - Our classes can be `called off` as a result of the disaster at the city power plant. – Наши занятия могут быть отменены в результате аварии на городской электростанции.
+- They `called off` the meeting due to bad weather. – Они отменили встречу из-за плохой погоды.)
+- The game was `called off` because of the heavy rain. – Игра была отменена из-за сильного дождя.
+
 
 20. #### `Come across` - наткнуться, встретить случайно, доходить до кого-то (не переходной и не разделяемый)
 
@@ -171,6 +204,10 @@
 21. #### `Bring back` - вернуть, восстановить
 
 - This song `brings back` memories of my childhood. – Эта песня возвращает воспоминания о моем детстве.
+- Please `bring back` the book you borrowed from me. – Пожалуйста, верните книгу, которую вы заняли у меня.
+- The smell of cookies baking in the oven `brings back` memories of my childhood. – Запах печенек, выпекающихся в духовке, вызывает воспоминания о моем детстве.
+- The company is `bringing back` its popular product after receiving numerous requests from customers. – Компания возвращает на рынок свой популярный продукт после получения многочисленных запросов от клиентов.
+
 
 22. #### `Set up` - настраивать, создавать, восстановить (силы, здоровье и т.п.);выдавать себя за кого-то;подводить кого-то, подставить (не переходной но разделяемый)
 
@@ -185,6 +222,10 @@
 
 - `Look out`! There's a car coming! – Берегись! Идет машина!
 - Her living-room `looked out` across the park. – Окна её гостиной выходили на парк.
+- `Look out` for pedestrians when you're driving. – Будьте внимательны к пешеходам, когда вы едете на машине.
+- `Look out` the window and tell me what you see. – Посмотрите в окно и скажите мне, что вы видите.
+- He `looked out` his passport before leaving for the airport. – Он проверил свой паспорт перед отъездом в аэропорт.
+
 
 24. #### `Get away` - уходить, уезжать, сбегать (не переходной и не разделяемый)
 
@@ -207,13 +248,15 @@
 
 - Let's `go back` to that restaurant, the food was amazing! – Вернёмся в тот ресторан, еда была восхитительной!
 - Jane wanted to `go back` to her winter holiday. – Джейн хотела вернуться в свой зимний отпуск.
-- I don't want to `go back` to teaching. – Я не хочу возвращаться к преподаванию.  
+- I don't want to `go back` to teaching. – Я не хочу возвращаться к преподаванию. 
 - My bestie and I `go back` to highschool. – Мы с моей лучшей подружкой дружим аж со старшей школы.
 
 
 28. #### `Look into` - изучить, исследовать
 
-- The police promised to `look into` the matter and find the culprit.
+- The police promised to `look into` the matter and find the culprit. – Полиция обещала изучить этот вопрос и найти виновного. 
+- We need to `look into` the problem and find a solution as soon as possible. – Нам нужно рассмотреть эту проблему и найти решение как можно скорее.
+
 
 29. #### `Turn into` - превращаться во что-то (не переходной но разделяемый)
 
