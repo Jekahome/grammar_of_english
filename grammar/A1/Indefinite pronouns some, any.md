@@ -29,7 +29,7 @@ I haven't got `any` brothers or sisters. - У меня нет братьев и 
 
 Are there `any` books in the bookcase - В книжном шкафу есть книги?
 
-## Задание
+## Упражнение
 
 1. Вставить some/any
 

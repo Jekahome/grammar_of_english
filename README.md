@@ -23,7 +23,7 @@
 * [Future Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Future%20Simple.md)
 * [Present Continuous](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Present%20Continuous.md)
 * [что пропустил....]() 
-* [have got]() 
+* [have got](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/have%20got.md) 
 * [Irregular verbs]() 
 * [Базовая английская лексика]() 
 * [Kit words]
