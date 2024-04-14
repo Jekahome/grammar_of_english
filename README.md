@@ -23,10 +23,10 @@
 19. [Past Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Past%20Simple.md)
 20. [Future Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Future%20Simple.md)
 21. [Present Continuous](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Present%20Continuous.md)
-22. [Phrasal Verbs part 1](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Phrasal%20Verbs.md)
-* [что пропустил....]() 
-* [Irregular verbs]() 
+22. [Phrasal Verbs (first 30)](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Phrasal%20Verbs.md)
+23. [Irregular verbs](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Irregular%20verbs.md) 
 * [Базовая английская лексика]() 
+* [что пропустил....]() 
 * [Kit words/]
 
 ## A2
