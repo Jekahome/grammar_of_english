@@ -25,9 +25,11 @@
 21. [Present Continuous](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Present%20Continuous.md)
 22. [Phrasal Verbs (first 30)](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Phrasal%20Verbs.md)
 23. [Irregular verbs](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Irregular%20verbs.md) 
-* [Базовая английская лексика]() 
+24. Kit words
+    * [The Oxford 3000 is the list of the 3000 most important words to learn in English, from A1 to B2 level.](https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/American_Oxford_3000.pdf)
+    * Oxford Word Skills Elementary Vocabulary
+    * English for Everyone Vocabulary
 * [что пропустил....]() 
-* [Kit words/]
 
 ## A2
 
