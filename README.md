@@ -25,7 +25,7 @@
 21. [Present Continuous](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Present%20Continuous.md)
 22. [Phrasal Verbs (first 30)](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Phrasal%20Verbs.md)
 23. [Irregular verbs](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Irregular%20verbs.md) 
-24. [Kit words]()
+24. [Kit words](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Kit%20A1.md)
     * [The Oxford 3000 is the list of the 3000 most important words to learn in English, from A1 to B2 level.](https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/American_Oxford_3000.pdf)
     * [A1 words](https://www.oxfordlearnersdictionaries.com/wordlists/oxford3000-5000)
     * Oxford Word Skills Elementary Vocabulary
@@ -37,7 +37,7 @@
 * [Prepositions in,at,on](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Prepositions%20in%2Cat%2Con.md) 
 * [Preposition for](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20for.md) 
 * [Preposition to](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20to.md) 
-* []() 
+* [A2 words]() 
 * []() 
 * [Possessive pronouns mine,yours,ours,theirs,his,hers,its](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Possessive%20pronouns%20mine%2Cyours%2Cours%2Ctheirs%2Chis%2Chers%2Cits.md) 
 
