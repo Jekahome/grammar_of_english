@@ -165,7 +165,7 @@ Example: "Do you want **a bottle** of water? - Вы хотите бутылку 
 ## Упражнение
 1. Ответить:
 
-![containers and quantities](https://github.com/Jekahome/grammar_of_english/blob/main/_img/containers%20and%20quantities%20matching%20exercises%20esl%20worksheet.pdf "containers and quantities")
+![containers and quantities](https://github.com/Jekahome/grammar_of_english/blob/main/_img/containers_and_quantities_matching_exercises.png "containers and quantities")
 
 
 
