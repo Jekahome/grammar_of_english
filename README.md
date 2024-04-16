@@ -30,11 +30,11 @@
     * [A1 words](https://www.oxfordlearnersdictionaries.com/wordlists/oxford3000-5000)
     * Oxford Word Skills Elementary Vocabulary
     * English for Everyone Vocabulary
-* [что пропустил....]() 
 
 ## A2
 
-* [Prepositions in,at,on](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Prepositions%20in%2Cat%2Con.md) 
+* [Possessive pronouns mine,yours,ours,theirs,his,hers,its](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A2/Possessive%20pronouns%20mine%2Cyours%2Cours%2Ctheirs%2Chis%2Chers%2Cits.md)
+* [Prepositions of Time/Place in,at,on](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Prepositions%20in%2Cat%2Con.md) 
 * [Preposition for](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20for.md) 
 * [Preposition to](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20to.md) 
 * [Kit words A2](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A2/Kit%20A2.md) 
@@ -130,7 +130,7 @@
 - Наречия с ly/ily
 - Условные предложения нулевого типа
 - Present Perfect
-- Глагол have/have got
+
 
 ## B1 (Intermediate)
 
