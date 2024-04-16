@@ -1,4 +1,4 @@
-# Oxford 3000 (first words for A1)
+# Oxford 3000 (first words for A2)
 
 |	a indefinite - translate	|	article	|	example	|	
 |	:---	|	:---	|	:---	| 
