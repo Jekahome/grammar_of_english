@@ -304,7 +304,7 @@
 |	face	|	noun	|	(face - лицо)	|	"He has a friendly face." - У него дружелюбное лицо. (face - лицо)	|
 |	fact	|	noun	|	(fact - факт)	|	"It's a fact that the Earth orbits the Sun." - Это факт, что Земля вращается вокруг Солнца. (fact - факт)	|
 |	fall	|	verb	|	(fall - падать)	|	"Be careful not to fall." - Будь осторожен, чтобы не упасть. (fall - падать)	|
-|	FALSE	|	adjective	|	(false - ложный)	|	"That statement is false." - Это утверждение ложное. (false - ложный)	|
+|	false	|	adjective	|	(false - ложный)	|	"That statement is false." - Это утверждение ложное. (false - ложный)	|
 |	family	|	adjective	|	(family - семейный)	|	"They're having a family reunion next weekend." - В следующий уикенд у них будет семейное воссоединение. (family - семейный)	|
 |	family	|	noun	|	My family and I went on vacation together. - Моя семья и я поехали в отпуск вместе.	|	"My family and I went on vacation together." - Моя семья и я поехали в отпуск вместе.	|
 |	famous	|	adjective	|	(famous - известный)	|	"He's a famous actor." - Он известный актер. (famous - известный)	|
@@ -634,9 +634,9 @@
 |	office	|	noun	|	(office - офис)	|	"She works in an office downtown." - Она работает в офисе в центре города. (office - офис)	|
 |	often	|	adverb	|	(often - часто)	|	"I often go for a walk in the evening." - Я часто гуляю вечером. (often - часто)	|
 |	oh	|	exclamation	|	(oh - ой)	|	"Oh, I forgot to bring my umbrella." - Ой, я забыл взять свой зонт. (oh - ой)	|
-|	OK	|	adjective	|	(OK - нормальный)	|	"That's an OK idea." - Это неплохая идея. (OK - нормальный)	|
-|	OK	|	adverb	|	(OK - нормально)	|	"He did his job OK." - Он справился со своей работой нормально. (OK - нормально)	|
-|	OK	|	exclamation	|	(OK - хорошо)	|	"OK, let's go!" - Хорошо, пошли! (OK - хорошо)	|
+|	ok	|	adjective	|	(ok - нормальный)	|	"That's an ok idea." - Это неплохая идея. (ok - нормальный)	|
+|	ok	|	adverb	|	(ok - нормально)	|	"He did his job ok." - Он справился со своей работой нормально. (ok - нормально)	|
+|	ok	|	exclamation	|	(ok - хорошо)	|	"OK, let's go!" - Хорошо, пошли! (ok - хорошо)	|
 |	old	|	adjective	|	(old - старый)	|	"She has an old car." - У нее старая машина. (old - старый)	|
 |	on	|	adverb	|	(on - на)	|	"He put the book on the table." - Он положил книгу на стол. (on - на)	|
 |	on	|	preposition	|	(on - на)	|	"The keys are on the kitchen counter." - Ключи на кухонном столе. (on - на)	|
@@ -970,7 +970,7 @@
 |	tree	|	noun	|	(tree - дерево)	|	"The tree is tall and green." - Дерево высокое и зеленое. (tree - дерево)	|
 |	trip	|	noun	|	(trip - поездка)	|	"We're planning a trip to Paris." - Мы планируем поездку в Париж. (trip - поездка)	|
 |	trousers	|	noun	|	(trousers - брюки)	|	"He needs new trousers." - Ему нужны новые брюки. (trousers - брюки)	|
-|	TRUE	|	adjective	|	(true - правда)	|	"It's true what they say." - Это правда, что они говорят. (true - правда)	|
+|	true	|	adjective	|	(true - правда)	|	"It's true what they say." - Это правда, что они говорят. (true - правда)	|
 |	try	|	verb	|	(try - попробовать)	|	"I'll try my best." - Я постараюсь изо всех сил. (try - попробовать)	|
 |	Tuesday	|	noun	|	(Tuesday - вторник)	|	"We'll meet on Tuesday." - Мы встретимся во вторник. (Tuesday - вторник)	|
 |	turn	|	noun	|	(turn - поворот)	|	"Take the second turn on the left." - Поверните на втором повороте налево. (turn - поворот)	|
