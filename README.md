@@ -7,11 +7,11 @@
 3. [Articles the,a,an](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Articles%20a%2Can%2Cthe.md) 
 4. [to be](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/to%20be.md) 
 5. [Pronouns I,he,she,it,we,you,they,me,him,her,that,these...](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Pronouns.md) 
-6. [Singular and plural nouns](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Singular%20and%20plural%20nouns.md)
+6. [Countable, uncountable, singular and plural nouns nouns](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Singular%20and%20plural%20nouns.md)
 7. [Demonstrative pronouns this,that,these,those](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Demonstrative%20pronouns%20this%2Cthat%2Cthese%2Cthose.md)
 8. [Possessive pronouns my,our,your,his,her,its](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Possessive%20pronouns%20my%2Cour%2Cyour%2Chis%2Cher%2Cits.md)
 9. [There is/are](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/There%20is%2Care.md)
-10. [Preposition of](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Preposition%20of.md)
+10. [Preposition of, quantity nouns](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Preposition%20of.md)
 11. [Questions with what,who,whom,whose](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Questions%20with%20what%2Cwho%2Cwhom%2Cwhose.md) 
 12. [Special questions with what,where,when,why,who,which,whose,whome,how,how much (many)](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Special%20questions%20with%20what%2Cwhere%2Cwhen%2Cwhy%2Cwho%2Cwhich%2Cwhose%2Cwhome%2Chow%2Chow%20much%20(many).md) 
 13. [Modal verbs can](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Modal%20verbs%20can.md) 
@@ -93,6 +93,8 @@
 
 Проходить по уровням грамматики с текущим набором частотных слов (Какой формат?)
 Разработать bot-trainer или найти аналог по типу "Andy", для закрепления тем грамматики и слов.
+
+A1 грамматика хорошо, но набор из 1000 слов это много, его тоже следует разбить на части, как слова для выживания: набор глаголов, существительных ...
 
 ## A1 (Beginner,Elementary)
 
