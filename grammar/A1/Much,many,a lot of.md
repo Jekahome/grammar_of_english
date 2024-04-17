@@ -22,8 +22,8 @@ much (= a lot of) salt - много соли (salt - неисчисляемое)
 
 ## Вопрос
 
-- How,many people are there in the room? - Сколько человек в комнате?
-- How much milk is there in the fridge? - Сколько молока в холодильнике?
+- How `many` people are there in the room? - Сколько человек в комнате?
+- How `much` milk is there in the fridge? - Сколько молока в холодильнике?
 
 
 

@@ -6,11 +6,11 @@ Some/Any - некоторое/несколько количество
 
 `Any` (какой-нибудь,любой) - **вообщем при единственном числе** (для **исчиляемых** или **вопросительных или отрицательных** предложений)
 
-- There are `some` people in the square. - На площади находятся несколько человек.
-- There is `some` sugar in my cup. - В моей чашке есть сахар.
+- There are `some` people in the square. - На площади находятся несколько человек. (some - так как people это неисчиляемое)
+- There is `some` sugar in my cup. - В моей чашке есть сахар. (some - так как sugar это неисчиляемое)
 - There are `some` people in the street. - На улице есть люди.
-- There's `some` money in my bag. - В моей сумке есть немного денег.
-- There are `some` children in the yard. - Во дворе несколько детей.
+- There's `some` money in my bag. - В моей сумке есть немного денег. (some - так как money это неисчиляемое)
+- There are `some` children in the yard. - Во дворе несколько детей. (some - так как children во множ. числе)
 - There are `some` new houses in this street. - На этой улице есть несколько новых домов.
 - There are `some` big windows in the room. - В комнате несколько больших окон.
 
