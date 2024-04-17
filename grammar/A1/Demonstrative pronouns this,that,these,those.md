@@ -12,6 +12,14 @@
 - `These` books are interesting. - Эти книги интересные. (близко к нам мн.число)
 - `Those` cats are white - Те коты белые. (далеко от нас мн.число)
 
+- `That` sea - это море 
+- `This` word - это слово 
+- `That` white apple - это белое яблоко 
+- `This` good book - эта хорошая книга 
+- `Those` seas - те моря 
+- `These` words - эти слова 
+- `Those` white apples - те белые яблоки 
+- `These` good books - эти хорошие книги 
 
 ## This (эта/это)
 

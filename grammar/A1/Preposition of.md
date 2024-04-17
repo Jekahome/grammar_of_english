@@ -167,15 +167,17 @@ Example: "Do you want **a bottle** of water? - Вы хотите бутылку 
 
 ![containers and quantities](https://github.com/Jekahome/grammar_of_english/blob/main/_img/containers_and_quantities_matching_exercises.png "containers and quantities")
 
-
-
-
-
-
-
-
-
-
+2.Выбрать верный вариант (set,tube,stick,stack,slice,loaf,box):
+- I need to get a ___ of butter.
+- Would you like a ___ of cake?
+- I can't believe you finish a ___ of cereal every week! You must really love cereal!
+- Mom is thinking about getting a new ___ of knives because hers aren't sharp enough anymore.
+- Look at that huge ___ of work! How can I possibly finish it today?
+- Can you get me a new ___ of toothpaste?
+- Would it be possible to get me a ___ of brown bread?
+- Can you grab me a ___ of pizza from the fridge?
+- You really love reading! Is that a ___ of story books on your desk?
+- I think I should buy another ___ of choc-chip cookies. It's so delicious!
 
 
 

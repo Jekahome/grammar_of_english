@@ -28,7 +28,7 @@
 - `They` are clever - Они умные.
 
 
-  
+**Личные местоимения в косвенном падеже:**
 - He sees `me` - Он видит меня 
 - Give `them` the books - Дайте им книги 
 - Tell `him` - Скажите ему 
@@ -36,21 +36,14 @@
 - I look at `him` - Я смотрю на него 
 - I see `you` - Я вижу тебя 
 - Tell `me` - Скажи мне 
-- Take `it` - Возьит это 
+- Take `it` - Возьми это 
 - Let `me` take an apple - Позвольте мне взять яблоко 
 - Give `them` a lamp - Дай им лампу 
 - Give `us` the boxes - Дайте нам коробки 
 - Put `them` on the table - Положи их на стол 
 - He sees `me` - Он меня 
 - Take `this` map - Возьмите эту карту 
-- `That` sea - это море 
-- `This` word - это слово 
-- `That` white apple - это белое яблоко 
-- `This` good book - эта хорошая книга 
-- `Those` seas - те моря 
-- `These` words - эти слова 
-- `Those` white apples - те белые яблоки 
-- `These` good books - эти хорошие книги 
+ 
 - Tell `us` - Скажите нам 
 - Tell `them` - Скажите им 
 - Tell `her` - Скажите ей 
@@ -59,14 +52,14 @@
 - Find `it` (the book) - Найдите ее (книгу) 
 - Find `her` (student) - Найдите ее (студентку) 
 - Find `them` - Найдите их 
-- `I` see `them` Я вижу их 
-- `They` see `me` - Они видят меня 
-- `We` see `him` - Мы видим его 
-- `He` sees `her` - Он видит ее 
-- `You` see `us` - Вы видите нас 
-- `She` sees `you` - Она видит вас 
+- I see `them` Я вижу их 
+- They see `me` - Они видят меня 
+- We see `him` - Мы видим его 
+- He sees `her` - Он видит ее 
+- You see `us` - Вы видите нас 
+- She sees `you` - Она видит вас 
 - Look at `her` - По­смотри на нее 
-- `She` looks at `us` - Она смотрит на нас 
+- She looks at `us` - Она смотрит на нас 
 
 
 
