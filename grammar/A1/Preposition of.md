@@ -136,7 +136,7 @@ Example: "Do you want **a bottle** of water? - Вы хотите бутылку 
 - **a piece of** - кусок - это часть, созданная любыми способами (разрезанием, разрывом, разбиванием, откусыванием и т. д.) и любой формы и размера., например: «a piece of cake - плитка торта»
 - **a slice of**  - ломтик - это piece (кусок) но с ограничением на клиновидную форму или имеет тонкую толщину, например: «a slice of pizza - ломтик пиццы»
 
- 
+- **bags of cookies** - пакеты с печеньем
 - **a bar of** chocolate - плитка шоколада
 - **a bottle of** water - бутилка воды
 - **a box of** cerea - коробка хлопьев
@@ -161,6 +161,70 @@ Example: "Do you want **a bottle** of water? - Вы хотите бутылку 
 Если само количество стоит во множественном числе, убедитесь, что слова количества также стоят во множественном числе.
 - "A pair of sunglass**es** - Пара солнцезащитных очков"
 - "2 pair**s** of sunglasses - Две пары солнцезащитных очков"
+
+Other:
+-	A bag of flour/oats	-	Мешок муки/овсянки
+-	A bar of chocolate	-	Плитка шоколада
+-	A bar/cake of soap	-	Кусок/кусок мыла
+-	A ball of cotton	-	Комок хлопка
+-	A bottle of perfume	-	Флакон духов
+-	A bottle of wine	-	Бутылка вина
+-	A bowl of rice/cereal/fruit	-	Миска риса/хлопьев/фруктов
+-	A bowl of soup	-	Миска супа
+-	A carton of cream/yogurt	-	Упаковка сливок/йогурта
+-	A can of coke/beer	-	Банка колы/пива
+-	A cup of tea	-	Чашка чая
+-	A clove of garlic	-	Зубчик чеснока
+-	A cube of ice	-	Кубик льда
+-	A cloud of smoke	-	Облако дыма
+-	A coat of nail polish	-	Слой лака для ногтей
+-	A dash of lemon juice	-	Немного лимонного сока
+-	A dose of medicine	-	Доза лекарства
+-	A drop of milk/rain	-	Капля молока/дождя
+-	A dash of lemon juice	-	Немного лимонного сока
+-	A dab of perfume	-	Немного парфюма
+-	A dose of medicine	-	Доза лекарства
+-	An item of clothing	-	Предмет одежды
+-	A glass of water/wine	-	Стакан воды/вина
+-	A grain of rice	-	Зерно риса
+-	A flash of lightning	-	Вспышка молнии
+-	A handful of olives/nuts	-	Горсть оливок/орехов
+-	A head of lettuce	-	Головка салата
+-	A litre/gallon of petrol	-	Литр/галлон бензина
+-	A jar of jam/honey	-	Банка варенья/меда
+-	A jug/pitcher of water	-	Кувшин/кувшин с водой
+-	A knob/pat of butter	-	кусочек сливочного масла
+-	A loaf of bread	-	Буханка хлеба
+-	A lump of sugar	-	Кусок сахара
+-	A mouthful of coffee	-	Глоток кофе
+-	A pint of milk/beer	-	Пинта молока/пива
+-	A pot of tea	-	Чайник с чаем
+-	A pool of blood	-	Лужа крови
+-	A pinch of salt	-	Щепотка соли
+-	A piece of news	-	Новость
+-	A piece of luggage	-	Часть багажа
+-	A pile of money	-	Куча денег
+-	A quart (2 pints) of milk	-	Кварта (2 пинты) молока
+-	A ray of sunshine	-	Солнечный луч
+-	A roll of toilet paper	-	Рулон туалетной бумаги
+-	A scoop of ice-cream	-	шарик мороженого
+-	A slice of bread/cake	-	Кусочек хлеба/торта
+-	A sprig of parsley/thyme	-	Веточка петрушки/тимьяна
+-	A square of chocolate	-	Квадрат шоколада
+-	A stalk of celery/rhubarb	-	Стебель сельдерея/ревень
+-	A stick of cinnamon	-	Палочка корицы
+-	A stick of chalk	-	Палочка мела
+-	A stick of deodorant	-	Палочка дезодоранта
+-	A sheet of paper	-	Лист бумаги
+-	A speck of dust	-	Пылинка
+-	A string of pearls	-	Нитка жемчуга
+-	A stroke of luck	-	Удача
+-	A shot of vodka	-	Рюмка водки
+-	A sip of water/tea/beer	-	Глоток воды/чая/пива
+-	A spoonful of medicine	-	Ложка лекарства
+-	A thimble of whisky	-	Наперсток виски
+-	A trickle of water	-	Струйка воды
+-	A tube of toothpaste	-	Тюбик зубной пасты
 
 ## Упражнение
 1. Ответить:
