@@ -205,3 +205,5 @@ A1 грамматика хорошо, но набор из 1000 слов это 
 
 [Американское произношение: слушайте и повторяйте слова](https://www.youtube.com/@rachelsenglish/playlists)
 
+[Наборы слов](https://englishwsheets.com/hobbies.html)
+
