@@ -1,6 +1,6 @@
-# Demonstrative pronouns this/that/these/those
+# Demonstrative pronouns this, that, these, those
 
-Указательные местоимения this/that/these/those
+Указательные местоимения this, that, these, those
 
 | Указательные местоимения | this             |  that         | these      | those |
 | ------ | ------ | ------ | ------ | ------ | 

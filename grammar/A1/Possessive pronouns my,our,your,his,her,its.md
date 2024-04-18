@@ -1,6 +1,6 @@
-# Possessive pronouns my/our/your/his/her/its
+# Possessive pronouns my, our, your, his, her, its
 
-Притяжательные местоимения my/our/your/his/her/its
+Притяжательные местоимения my, our, your, his, her, its
 
 - **my** - мой,моя,мое,мои
 - **your** - твой,твоя,твое,твои,ваш,ваша,ваше,ваши
@@ -12,26 +12,20 @@
 
 ## Притяжательный падеж существительных отвечает на вопрос Чей? (Whose?)
 
-`Whose T-shirt is this? - Чья это рубашка?`
-
-`my brother's car - машина моего брата`
-
-`a cat's tail - кошачий хвост`
-
-`Ivan's house - Ванин дом'`
+- Whose T-shirt is this? - Чья это рубашка?
+- my brother's car - машина моего брата
+- a cat's tail - кошачий хвост
+- Ivan's house - Ванин дом
 
 Для множественного числа:
-
-`my friends' house - дом моих друзей`
-`these girls' dolls - куклы этих девочек`
+- my friends' house - дом моих друзей
+- these girls' dolls - куклы этих девочек
 
 Нестандартные случаи:
+- children's room - детская комната
+- men's clothes - мужская одежда
 
-`children's room - детская комната`
-
-`men's clothes - мужская одежда`
-
-## Притяжательные местоимения my/our/your/his/her/its
+## Притяжательные местоимения my, our, your, his, her, its
 
 Притяжательные местоимения (зависимые) всегда употребляюся **с существительными**.
 

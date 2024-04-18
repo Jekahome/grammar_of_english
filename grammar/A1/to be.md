@@ -4,6 +4,7 @@
 Он может быть и смысловым глаголом, и вспомогательным, и связкой.
 
 Эдинственный глагол который изменяющийся по лицам и числам в настоящем времени, в прошедшем – по числам.
+
 Частица `to` означает что глагол находится в неопределенной форме.
 
 `be — was/were — been`
@@ -14,9 +15,9 @@
 - been (причастие прошедшего времени, оно же пресловутая третья форма
 
 ## Личные формы:
-- настоящего времени I `am`, he/she/it `is`, we/you/they `are`
-- прошедшего времени: для единственного числа (I, he, she, it) `was` и для множественного числа (we, you, they) `were`
-- будущего времени `will` (be) для всех лиц и чисел
+- настоящего времени: I `am`, he/she/it `is`, we/you/they `are`
+- прошедшего времени: `was` - для единственного числа (I, he, she, it) и `were` - для множественного числа (we, you, they) 
+- будущего времени: `will` (be) для всех лиц и чисел
 - Отрицательные формы получаются путём прибавления частицы not: am not (‘m not), is not (isn’t), are not (aren’t), was not (wasn’t), were not (weren’t), will not (won’t)
 - Вопросительные формы лишь изменяют порядок слов: `Are` you online? `Was` he here last Monday?
 
@@ -27,16 +28,17 @@
 
 По формуле: `Subject + Predicate + Object + Adverbial Modifier`
 
-I - subject.
+I - subject
+
 am - predicate
 
 - I `am` here. - Я (есть) здесь.
 - I `am` a boy. Я (есть) мальчик.
 - He `is` at school. - Он в школе.
 
-Вопрос - ответ:
+Вопрос - Ответ:
 - `Is` she funny? - Yes, she `is`.
-- `Are` you tired? - No, I`'m` not.
+- `Are` you tired? - No, I`'m` not. (Ты устал? Нет, Я не устал.)
 
 
 Обратите внимание, что в настоящем времени в русском варианте «быть» пропадает. 
@@ -65,16 +67,16 @@ am - predicate
 
 ## Упражнение
 
-1. Преобразовать в вопрос
+1. Преобразовать в вопрос:
 - I'm sad. - Am I sad?
 - He's a driver. - 
-- We are from Ukraine.- 
-- They're teachers.- 
-- She'spretty.- 
-- It's a river.- 
-- You're happy.- 
+- We are from Ukraine. - 
+- They're teachers. - 
+- She'spretty. - 
+- It's a river. - 
+- You're happy. - 
 
-2. Дать ответ
+2. Дать ответ:
 - Is it a doll? - Yes,it ts.
 - Is shea teacher? - No,
 - Are they happy?- Yes
