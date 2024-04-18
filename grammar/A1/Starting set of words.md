@@ -181,7 +181,7 @@
 -	Coffee - кофе
 
 # Глаголы (Verbs):
--	Eat - есть
+-	Eat - есть (eat Inf., ate V2, eaten V3)
 -	Drink - пить
 -	Sleep - спать
 -	Run - бегать
