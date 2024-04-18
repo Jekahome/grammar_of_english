@@ -32,6 +32,7 @@
     * [A1 words](https://www.oxfordlearnersdictionaries.com/wordlists/oxford3000-5000)
     * Oxford Word Skills Elementary Vocabulary
     * English for Everyone Vocabulary
+    * [Starting set of words](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Starter%20set%20of%2050%20words%20by%20type.md)
 
 ## A2
 
