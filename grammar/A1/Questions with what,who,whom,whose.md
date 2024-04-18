@@ -1,4 +1,4 @@
-# Questions - what,who,whom,whose
+# Questions - what, who, whom, whose
 
 Вопрос к подлежащему/дополнению
 
@@ -40,7 +40,7 @@
    - Isn't it a beautiful day? - Это не замечательный день?
 
 
-## Вопрос к подлежащему (who/whome/what question)
+## Вопрос к подлежащему (who, whome, what)
  
 `Who` при вопросе о подлежащем, отвечает на вопрос "Кто?", **вспомогательный глагол не нужен**.
 

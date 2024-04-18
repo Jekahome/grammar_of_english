@@ -1,4 +1,4 @@
-# Special questions with what,where,when,why,who,which,whose,whome,how,how much (many)
+# Special questions with what, where, when, why, who, which, whose, whome, how, how much (many)
 
 Цель вопроса - целью выяснить какую-то конкретную информацию о предмете или явлении.
 
@@ -8,7 +8,7 @@
 
 где:
 
-модальные глаголы(should, ought, may, must, can и другие) 
+модальные глаголы (should, ought, may, must, can и другие) 
 
 вспомогательный глагол - (do/does,have/has, to be и другие)
 
@@ -50,55 +50,38 @@
 Например, к предложению:
 
 - Maria bakes bread once a week. — Мария печет хлеб раз в неделю.
-
-можно задать несколько вопросов:
-
-- `Who` bakes bread once a week? — Кто печет хлеб раз в неделю?
-
-- `How` often does Maria bake bread? — Как часто Мария печет хлеб?
-
-- `What` does Maria bake once a week? — Что Мария печет раз в неделю?
-
-- `Where` does Maria bake once a week? — Где Мария печет раз в неделю?
+   - `Who` bakes bread once a week? — Кто печет хлеб раз в неделю?
+   - `How` often does Maria bake bread? — Как часто Мария печет хлеб?
+   - `What` does Maria bake once a week? — Что Мария печет раз в неделю?
+   - `Where` does Maria bake once a week? — Где Мария печет раз в неделю?
 
 
 При формировании специального вопроса за основу берется общий вопрос и трансформируется.
 
 Пример утверждение:
-
-She saw this film. — Она смотрела этот фильм
-
-Did she see this film? — Она смотрела этот фильм? (общий вопрос)
-
-`When` did she see this film? — Когда она смотрела этот фильм? (специальный вопрос)
+- She saw this film. — Она смотрела этот фильм
+ - Did she see this film? — Она смотрела этот фильм? (общий вопрос)
+ - `When` did she see this film? — Когда она смотрела этот фильм? (специальный вопрос)
 
 **С модальными глаголами (can, may, should, must и т.д.).**
 
 Пример утверждение:
-
-We can meet at the station. — Мы можем встретиться на станции.
-
-`Where` can we meet? — Где мы можем встретиться?
+- We can meet at the station. — Мы можем встретиться на станции.
+ - `Where` can we meet? — Где мы можем встретиться?
 
 Пример утверждение:
-
-I should eat a banana for lunch. — Мне следует съесть банан на обед.
-
-`What` should I eat for lunch? — Что мне следует съесть на обед?
+- I should eat a banana for lunch. — Мне следует съесть банан на обед.
+ - `What` should I eat for lunch? — Что мне следует съесть на обед?
 
 **С глаголом to be (am, are, is, was, were, will be).**
 
 Пример утверждение:
-
-Last night you were at the theatre. — Прошлым вечером ты был в театре.
-
-`Where` were you last night? — Где ты был прошлым вечером?
+- Last night you were at the theatre. — Прошлым вечером ты был в театре.
+ - `Where` were you last night? — Где ты был прошлым вечером?
 
 Пример утверждение:
-
-I don’t know why it was so difficult. — Я не знаю, почему это было так сложно.
-
-`Why` was it so difficult? — Почему это было так сложно?
+- I don’t know why it was so difficult. — Я не знаю, почему это было так сложно.
+ - `Why` was it so difficult? — Почему это было так сложно?
 
 
 
