@@ -181,7 +181,9 @@
 -	Coffee - кофе
 
 # Глаголы (Verbs):
--	Eat - есть (eat Inf., ate V2, eaten V3)
+Могут быть irregular т.е. иметь не стандартную форму образования в прошлом/будущем времени. Где Inf. - это `Infinitive`, V2 - это `Past Simple`, V3 - `Particle ||`
+
+-	Eat - есть (**eat** Inf., **ate** V2, **eaten** V3)
 -	Drink - пить
 -	Sleep - спать
 -	Run - бегать
