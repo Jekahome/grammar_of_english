@@ -181,146 +181,196 @@
 -	Coffee - кофе
 
 # Глаголы (Verbs):
-Могут быть irregular т.е. иметь не стандартную форму образования в прошлом/будущем времени. Где Inf. - это `Infinitive`, V2 - это `Past Simple`, V3 - `Particle ||`
+Могут быть `irregular` т.е. иметь не стандартную форму образования в прошлом/будущем времени. Так `irregular` исторически сформировались, часто употреблялись и их не меняли. 
 
--	Eat - есть (**eat** Inf., **ate** V2, **eaten** V3)
--	Drink - пить
--	Sleep - спать
--	Run - бегать
--	Walk - ходить
--	Talk - разговаривать
--	Read - читать
--	Write - писать
--	Play - играть
--	Study - учиться
--	Work - работать
--	Dance - танцевать
--	Sing - петь
+Стандартная форма `regular` образования прошлого времени - `V +ed` окончание: Walk -> Walked
+
+Где Inf. - это `Infinitive`, V2 - это `Past Simple`, V3 - `Particle ||`
+
+A:
+-	Adapt - адаптироваться
+-	Achieve - достигать
+-	Argue - спорить
+-	Accept - принимать
+-	Apologize - извиняться
+
+B:
+-   Be - быть,являться (**be** Inf., **was (were)** V2, **been** V3)
+-   Buy - покупать (**buy** Inf., **bought** V2, **bought** V3)
+-   Bring - приносить (**bring** Inf., **brought** V2, **brought** V3)
+-	Benefit - приносить пользу
+-	Betray - предавать
+-	Build - строить (**build** Inf., **built** V2, **built** V3)
+-	Break - ломать (**break** Inf., **broke** V2, **broken** V3)
+-	Believe - верить
+
+C:
+-	Cry - плакать
+-	Communicate - общаться
+-	Create - создавать
+-   Cost - стоить (о цене) (**cost** Inf., **cost** V2, **cost** V3)
+-   Call - называть,звать
+-   Can - уметь (мочь)
+-   Close - закрывать
 -	Cook - готовить
 -	Clean - чистить
--	Drive - водить машину
--	Fly - летать
--	Swim - плавать
--	Jump - прыгать
--	Sit - сидеть
--	Stand - стоять
--	Listen - слушать
--	Watch - смотреть
--	Wait - ждать
--	Love - любить
--	Hate - ненавидеть
--	Like - нравиться
+-	Choose - выбирать (**choose** Inf., **chose** V2, **chosen** V3)
+-	Control - контролировать
+-	Challenge - оспаривать, вызывать на борьбу
+-	Change - изменять что-то
+-	Compete - конкурировать, соревноваться
+
+D:
+-	Drive - водить машину (**drive** Inf., **drove** V2, **driven** V3)
 -	Dislike - не нравиться
--	Need - нуждаться
--	Want - хотеть
--	Learn - учить
--	Teach - учить (кого-то)
--	Understand - понимать
--	Know - знать
--	Forget - забывать
--	Remember - помнить
--	Believe - верить
+-	Discuss - обсуждать
 -	Doubt - сомневаться
--	Hope - надеяться
--	Wish - желать
+-	Destroy - разрушать
+-	Develop - развиваться
+-	Decide - принимать решение
+-	Disengage - отстраняться
+-	Discourage - отговаривать
+-	Dare - осмеливаться
+-	Drink - пить (**drink** Inf., **drank** V2, **drunk** V3)
+-   Do - делать (**do** Inf., **did** V2, **done** V3)
+-	Dance - танцевать
 -	Dream - мечтать
--	Laugh - смеяться
--	Cry - плакать
--	Smile - улыбаться
+
+E:
+-	Eat - есть (**eat** Inf., **ate** V2, **eaten** V3)
+-	Engage - вовлекать
+-	Encourage - поощрять
+-	Earn - зарабатывать
+-	Explain - объяснять
+-	Express - выражать
+
+F:
+-	Fail - провалиться 
+-	Fix - чинить
+-	Fight - сражаться (**fight** Inf., **fought** V2, **fought** V3)
+-   Feel - чувствовать (**feel** Inf., **felt** V2, **felt** V3)
+-	Fly - летать (**fly** Inf., **flew** V2, **flown** V3)
+-	Forget - забывать  (**forget** Inf., **forgot** V2, **forgotten** V3)
+-	Follow - следовать
 -	Frown - хмуриться
--	Apologize - извиняться
--	Forgive - прощать
--	Thank - благодарить
--	Welcome - приветствовать
--	Help - помогать
--	Sit - сидеть
--	Stand - стоять
--	Wait - ждать
--	Love - любить
+-	Forgive - прощать  (**forgive** Inf., **forgave** V2, **forgiven** V3)
+
+G:
+-   Go - идти, ехать (**go** Inf., **went** V2, **gone** V3)
+-   Get - получать (**get** Inf., **got** V2, **got (gotten)** V3)
+-	Give - давать (**give** Inf., **gave** V2, **given** V3)
+-	Grow - расти
+
+
+H:
+-	Hear - слышать (**hear** Inf., **heard** V2, **heard** V3)
+-   Have - иметь (**have** Inf., **had** V2, **had** V3)
+-	Harm - вредить, наносить ущерб
 -	Hate - ненавидеть
--	Like - нравиться
--	Dislike - не нравиться
--	Need - нуждаться
--	Want - хотеть
--	Forget - забывать
--	Remember - помнить
--	Believe - верить
--	Doubt - сомневаться
+-	Help - помогать
 -	Hope - надеяться
--	Wish - желать
--	Laugh - смеяться
--	Cry - плакать
--	Smile - улыбаться
--	Frown - хмуриться
--	Welcome - приветствовать
 -	Hurt - причинять боль
 -	Heal - излечивать
--	Explain - объяснять
--	Communicate - общаться
--	Express - выражать
--	Share - делиться
--	Hear - слышать
--	See - видеть
--	Look - смотреть
--	Speak - говорить
--	Discuss - обсуждать
--	Converse - беседовать
--	Argue - спорить
--	Fight - сражаться
--	Win - побеждать
--	Lose - проигрывать
--	Compete - соревноваться
--	Practice - практиковаться
--	Perform - выступать
--	Create - создавать
--	Destroy - разрушать
--	Build - строить
--	Break - ломать
--	Fix - чинить
+
+I:
 -	Improve - улучшать
--	Change - изменять что-то
--	Achieve - достигать
--	Fail - провалиться
--	Change - изменять
--	Adapt - адаптироваться
--	Succeed - преуспевать
--	Grow - расти
--	Develop - развиваться
--	Manage - управлять
--	Lead - вести
--	Follow - следовать
--	Accept - принимать
--	Reject - отвергать
--	Solve - решать
--	Decide - принимать решение
--	Choose - выбирать
--	Control - контролировать
 -	Influence - влиять
 -	Impact - воздействовать
--	Support - поддерживать
--	Oppose - противостоять
--	Trust - доверять
--	Betray - предавать
--	Engage - вовлекать
--	Disengage - отстраняться
--	Encourage - поощрять
--	Discourage - отговаривать
--	Challenge - вызывать на борьбу
--	Dare - осмеливаться
--	Conquer - завоёвывать
--	Surrender - сдаваться
--	Protect - защищать
--	Harm - вредить
--	Benefit - приносить пользу
 -	Invest - инвестировать
+
+J:
+-	Jump - прыгать
+
+K:
+-	Know - знать (**know** Inf., **knew** V2, **known** V3)
+
+L:
+-	Love - любить
+-	Like - нравиться
+-	Laugh - смеяться
+-	Learn - учить (**learn** Inf., **learnt (learned)** V2, **learnt (learned)** V3)
+-	Listen - слушать
+-	Look - смотреть
+-	Lead - вести, лидировать (**lead** Inf., **led** V2, **led** V3)
+-	Lose - проигрывать,терять (**lose** Inf., **lost** V2, **lost** V3)
+
+M:
+-   Make - совершать (**make** Inf., **made** V2, **made** V3)
+-   Move - двигаться
+-   Mean - значить (**mean** Inf., **meant** V2, **meant** V3)
+-   Meet - встречать (**meet** Inf., **met** V2, **met** V3)
+-	Manage - управлять
+
+N:
+-	Need - нуждаться
+
+O:
+-   Open - открывать 
+-	Oppose - противостоять
+
+P:
+-   Put - класть (**put** Inf., **put** V2, **put** V3)
+-   Pay - платить (**pay** Inf., **paid** V2, **paid** V3)
+-	Play - играть (**play** Inf., **paid** V2, **paid** V3)
+-	Practice - практиковаться
+-	Perform - выступать
+-	Protect - защищать
+
+R:
+-	Read - читать (**read** Inf., **read** V2, **read** V3)
+-	Receive - получать, принимать
+-	Reject - отвергать
+-	Run - бегать (**run** Inf., **ran** V2, **run** V3)
+-	Remember - помнить
+
+S:
+-   Say  - говорить, сказать (**say** Inf., **said** V2, **said** V3)
+-   Send - отправлять (**send** Inf., **sent** V2, **sent** V3)
+-   Sell - продавать (**sell** Inf., **sold** V2, **sold** V3)
+-   Start - начинать
+-   Stop - останавливаться
+-	Sleep - спать (**sleep** Inf., **slept** V2, **slept** V3)
+-	Study - учиться
+-	Sing - петь (**sing** Inf., **sang** V2, **sung** V3)
+-	Sit - сидеть (**sit** Inf., **sat** V2, **sat** V3)
+-	Stand - стоять (**stand** Inf., **stood** V2, **stood** V3)
+-	Swim - плавать (**sqim** Inf., **swam** V2, **swum** V3)
+-	Share - делиться
+-	Smile - улыбаться
+-	See - видеть (**see** Inf., **saw** V2, **seen** V3)
+-	Speak - говорить  (**speak** Inf., **spoke** V2, **spoken** V3)
+-	Solve - решать
 -	Save - сохранять
--	Spend - тратить
--	Earn - зарабатывать
--	Lose - терять
--	Win - выигрывать
--	Give - давать
--	Take - брать
--	Receive - получать
+-	Spend - тратить (**spend** Inf., **spent** V2, **spent** V3)
+-	Succeed - преуспевать
+-	Support - поддерживать
+
+T:
+-   Try - пробовать
+-   Think - думать (**think** Inf., **thought** V2, **thought** V3)
+-   Tell - сказать (**tell** Inf., **told** V2, **told** V3)
+-	Talk - разговаривать
+-   Travel - путешествовать
+-	Teach - учить (кого-то)  (**teach** Inf., **taught** V2, **taught** V3)
+-	Thank - благодарить
+-	Trust - доверять
+ -	Take - брать  (**take** Inf., **took** V2, **taken** V3)
+
+U:
+-   Use - использовать
+-	Understand - понимать  (**understand** Inf., **understood** V2, **understood** V3)
+
+W:
+-   Will - воля, желание
+-	Walk - ходить
+-	Write - писать (**write** Inf., **wrote** V2, **written** V3)
+-	Work - работать
+-	Want - хотеть
+-	Wish - желать
+-	Welcome - приветствовать
+-	Win - побеждать,выигрывать (**win** Inf., **won** V2, **won** V3)
+-	Watch - смотреть
+-	Wait - ждать
 
 # Прилагательные (Adjectives):
 -	Big - большой
