@@ -346,7 +346,11 @@ I can jump over the fence, and you? - Я могу перепрыгнуть че�
 After losing his job, he’s getting by on savings. – После потери работы он обходится сбережениями.
 
 
-## Четыре формы глагола Indefinite (Present Simple Tense) V1/Present Participle ing-овое окончание/Past Indefinite V2/Past Participle V3
+## Четыре формы глагола:
+- Indefinite (Present Simple Tense) V1
+- Present Participle (ing-овое окончание)
+- Past Indefinite (V2)
+- Past Participle (V3)
 
 **Indefinite (Present Simple Tense) V1:**
 Её называют Root Form (корневая) или Base Form (базовая форма), а также Indefinite Form. Сократим это до V1
