@@ -46,46 +46,46 @@
 |               |  rarely         | | 
 |               |  never          | | 
 
-He `often` <ins>goes</ins> to school by bus. — Он часто добирается до школы на автобусе.
+- He `often` <ins>goes</ins> to school by bus. — Он часто добирается до школы на автобусе.
 
-Sara `always` <ins>goes</ins> out on Saturday evenings. — Сара всегда гуляет в субботние вечера.
+- Sara `always` <ins>goes</ins> out on Saturday evenings. — Сара всегда гуляет в субботние вечера.
 
-I `sometimes` <ins>go</ins> clubbing with my best friends. — Я иногда хожу в клуб с друзьями.
+- I `sometimes` <ins>go</ins> clubbing with my best friends. — Я иногда хожу в клуб с друзьями.
 
-Her boyfriend `usually` <ins>picks</ins> her up and they drive into the city centre. — Ее парень обычно забирает ее на машине и они едут в центр города.
+- Her boyfriend `usually` <ins>picks</ins> her up and they drive into the city centre. — Ее парень обычно забирает ее на машине и они едут в центр города.
 
-They `often` <ins>meet</ins> friends and have a drink together. — Они часто встречаются с друзьями и идут в бар.
+- They `often` <ins>meet</ins> friends and have a drink together. — Они часто встречаются с друзьями и идут в бар.
 
-In the winter they `sometimes` <ins>go</ins> to the cinema. — Зимой они иногда ходят в кино.
+- In the winter they `sometimes` <ins>go</ins> to the cinema. — Зимой они иногда ходят в кино.
 
-They `rarely` <ins>go</ins> in the summer because they prefer to stay outside. — Летом они редко ходят в кино, так как предпочитают оставаться на свежем воздухе.
+- They `rarely` <ins>go</ins> in the summer because they prefer to stay outside. — Летом они редко ходят в кино, так как предпочитают оставаться на свежем воздухе.
 
-They `never` <ins>get</ins> home before midnight. — Они никогда не возвращаются домой до полуночи.
+- They `never` <ins>get</ins> home before midnight. — Они никогда не возвращаются домой до полуночи.
 
-He `never` <ins>gets</ins> up before 9. — Он никогда не встаёт до 9.
+- He `never` <ins>gets</ins> up before 9. — Он никогда не встаёт до 9.
 
  
-## В предложениях с глаголом <ins>to be</ins> наречие частотности встает после глагола, как в этих примерах:
+## В предложениях с глаголом <ins>to be</ins> наречие частотности встает после глагола:
 
-I <ins>am</ins> `always` late! - Я всегда опаздываю!
+- I <ins>am</ins> `always` late! - Я всегда опаздываю!
 
-She <ins>is</ins> usually in Kharkiv during Holidays. — Во время каникул она обычно в Харькове.
+- She <ins>is</ins> usually in Kharkiv during Holidays. — Во время каникул она обычно в Харькове.
 
-There <ins>are</ins> `always` lots of people in the city centre on Saturday nights. — По субботним вечерам в центре города (есть) всегда много людей.
+- There <ins>are</ins> `always` lots of people in the city centre on Saturday nights. — По субботним вечерам в центре города (есть) всегда много людей.
 
-It <ins>is</ins> `often` difficult to find a place to park. — (Это есть) часто сложно найти место для парковки.
+- It <ins>is</ins> `often` difficult to find a place to park. — (Это есть) часто сложно найти место для парковки.
 
-But our friends <ins>are</ins> `never` on time so it doesn’t matter if we’re late. — Но наши друзья (есть) никогда [не приходят] вовремя, так что не так важно, опоздаем ли мы.
+- But our friends <ins>are</ins> `never` on time so it doesn’t matter if we’re late. — Но наши друзья (есть) никогда [не приходят] вовремя, так что не так важно, опоздаем ли мы.
 
-Но sometimes и usually могут стоять и в начале.
+- Но sometimes и usually могут стоять и в начале.
 
-`Sometimes` she does her homework with friends. — Иногда она делает домашнее задание с друзьями.
+- `Sometimes` she does her homework with friends. — Иногда она делает домашнее задание с друзьями.
 
-`Usually` they study on their own. — Обычно они занимаются самостоятельно.
+- `Usually` they study on their own. — Обычно они занимаются самостоятельно.
 
-`Often`, she chose the weak, the sick. — Часто она выбирала слабых, больных.
+- `Often`, she chose the weak, the sick. — Часто она выбирала слабых, больных.
 
-## Вопрос как часто совершается какое-то действие
+## Вопрос "как часто" совершается какое-то действие
 
 `How often …? – «Как часто…?»`
 

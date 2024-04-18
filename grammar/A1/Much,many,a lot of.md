@@ -1,4 +1,4 @@
-# Many/much/a lot of
+# Many, much, a lot of
 
 
 `Many` (много) - перед исчисляемыми сущ. во множественном числе

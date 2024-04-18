@@ -183,6 +183,8 @@ A1 грамматика хорошо, но набор из 1000 слов это 
 
 [Частотные слова](https://github.com/Jekahome/Frequency-Dictionary-of-English-Words)
 
+[A Frequency Dictionary of Contemporary American English filetype:pdf](https://www.wordfrequency.info/files/book.pdf)
+
 [Список слов](https://libguides.tii.qa/c.php?g=655316&p=8065488#:~:text=The%20Oxford%203000%20is%20a,know%20at%20A1%2DB2%20level.)
 
 [Список грамматики по уровням](https://github.com/Jekahome/grammar_of_english/blob/main/Checklist.md)

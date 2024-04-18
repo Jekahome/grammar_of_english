@@ -82,7 +82,7 @@ Are there `any` books in the bookcase - В книжном шкафу есть к
 - I've got some meat on my plate - 
 - She's got some pets - 
 
-
+[Упражнение some any](https://englishwsheets.com/some_any.html)
 
 
 
