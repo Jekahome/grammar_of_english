@@ -1,10 +1,16 @@
 # Существительные (Nouns):
+
+a:
 -	ability - способность
 -	achievement - достижение
 -	adventure - приключение
 -	air - воздух
 -	answer - ответ
 -	apartment - квартира
+-   area - область
+-   autumn - осень
+
+b:
 -	bag - сумка
 -	bathroom - ванная комната
 -	beach - пляж
@@ -17,6 +23,11 @@
 -	bread - хлеб
 -	brother - брат
 -	building - здание
+-   back - защитник, спина
+-   body - тело
+-   business - дело
+
+c:
 -	car - машина
 -	cat - кошка
 -	chair - стул
@@ -32,6 +43,12 @@
 -	computer - компьютер
 -	country - страна
 -	courage - мужество
+-   center - центр, середина
+-   change - изменение, перемена
+-   community - община
+-   company - компания
+
+d:
 -	day - день
 -	death - смерть
 -	desk - письменный стол
@@ -40,6 +57,8 @@
 -	door - дверь
 -	dream - мечта
 -	dress - платье
+
+e:
 -	earth - земля
 -	earth - земля (планета)
 -	education - образование
@@ -47,6 +66,10 @@
 -	energy - энергия
 -	environment - окружающая среда
 -	experience - опыт
+-   end - конец
+-   eye - глаз
+
+f:
 -	fact - факт
 -	failure - неудача
 -	family - семья
@@ -63,9 +86,17 @@
 -	friendship - дружба
 -	fruit - фрукт
 -	furniture - мебель
+-   face - лицо
+-   father - папа, отец
+
+g:
 -	game - игра
 -	glasses - очки
 -	grass - трава
+-   government - правительство
+-   group - группа
+
+h:
 -	happiness - счастье
 -	hat - шляпа
 -	hate - ненависть
@@ -77,18 +108,34 @@
 -	hope - надежда
 -	hospital - больница
 -	house - дом
+-   hand - рука
+-   head - голова
+-   history - история
+-   hour - час
+
+i:
 -	idea - идея
 -	illness - болезнь
 -	interest - интерес
 -	interest - интерес
+-   information - информация
+-   issue - проблема
+
+j:
 -	jacket - куртка
 -	job - работа
 -	journey - путешествие
 -	joy - радость
 -	juice - сок
+
+k:
 -	kitchen - кухня
 -	knowledge - знание
 -	knowledge - знания
+-   kid - ребенок, малыш
+-   kind - добрый
+
+l:
 -	lake - озеро
 -	lamp - лампа
 -	leaf - лист
@@ -97,6 +144,12 @@
 -	life - жизнь
 -	living room - гостиная
 -	love - любовь
+-   law - закон
+-   level - уровень
+-   line - линия
+-   lot - много
+
+m:
 -	meat - мясо
 -	medicine - медицина
 -	memory - память
@@ -107,10 +160,27 @@
 -	mountain - гора
 -	movie - фильм
 -	music - музыка
+-   man - мужчина
+-   member - член
+-   might - мощь
+-   minute - минута
+-   month - месяц
+-   morning - утро
+-   mother - мать
+
+n:
 -	nature - природа
 -	night - ночь
+-   name - имя
+-   news - новости
+-   nickname - прозвище
+-   number - число
+
+o:
 -	ocean - океан
 -	office - офис
+
+p:
 -	pants - брюки
 -	paper - бумага
 -	parent - родитель
@@ -124,7 +194,19 @@
 -	power - сила
 -	power - сила, энергия
 -	problem - проблема
+-   part - часть
+-   party - вечеринка
+-   people - люди
+-   percent - процент
+-   place - место
+-   point - точка
+-   president - президент
+-   program - программа
+
+q:
 -	question - вопрос
+
+r:
 -	rain - дождь
 -	reality - реальность
 -	river - река
@@ -132,6 +214,10 @@
 -	rock - скала
 -	room - комната
 -	root - корень
+-   reason - причина
+-   right - верно
+
+s:
 -	sadness - печаль
 -	sand - песок
 -	school - школа
@@ -157,6 +243,14 @@
 -	success - успех
 -	sun - солнце
 -	sunlight - солнечный свет
+-   service - служба
+-   side - сторона
+-   state - состояние
+-   story - история
+-   study - изучать
+-   system - система
+
+t:
 -	table - стол
 -	talent - талант
 -	tea - чай
@@ -166,10 +260,18 @@
 -	town - городок
 -	tree - дерево
 -	truth - правда
+-   team - команда
+-   thing - вещь
+
+u:
 -	university - университет
+
+v:
 -	valley - долина
 -	vegetable - овощ
 -	village - деревня
+
+w:
 -	watch - часы
 -	water - вода
 -	weakness - слабость
@@ -179,67 +281,13 @@
 -	window - окно
 -	wisdom - мудрость
 -	world - мир
--   area - область
--   autumn - осень
--   back - защитник, спина
--   body - тело
--   business - дело
--   center - центр, середина
--   change - изменение, перемена
--   community - община
--   company - компания
--   end - конец
--   eye - глаз
--   face - лицо
--   father - папа, отец
--   government - правительство
--   group - группа
--   hand - рука
--   head - голова
--   history - история
--   hour - час
--   information - информация
--   issue - проблема
--   kid - ребенок, малыш
--   kind - добрый
--   law - закон
--   level - уровень
--   line - линия
--   lot - много
--   man - мужчина
--   member - член
--   might - мощь
--   minute - минута
--   month - месяц
--   morning - утро
--   mother - мать
--   name - имя
--   news - новости
--   nickname - прозвище
--   number - число
--   part - часть
--   party - вечеринка
--   people - люди
--   percent - процент
--   place - место
--   point - точка
--   president - президент
--   program - программа
--   reason - причина
--   right - верно
--   service - служба
--   side - сторона
--   state - состояние
--   story - история
--   study - изучать
--   system - система
--   team - команда
--   thing - вещь
 -   war - война
 -   week - неделя
 -   woman - женщина
 -   word - слово
 -   work - работа
+ 
+y:
 -   year - год
 
 # Глаголы (Verbs):
@@ -550,286 +598,369 @@ w:
  
 
 # Прилагательные (Adjectives):
--	just - просто, только что
--	high - высокий
--	only - только
--	great - великий, замечательный
--	first - первый
--	last - последний
--	large - большой
--	national - национальный
--	different - разный, отличающийся
--	black - черный
--	important - важный
--	political - политический
--	real - настоящий, реальный
--	white - белый
--	best - лучший
--	right - правильный, правый
--	public - общественный
--	social - социальный
--	sure - уверенный
--	both - оба
--	able - способный, в состоянии
--	local - местный
--	major - главный, основной
--	possible - возможный
--	strong - сильный
--	whole - целый, весь
--	economic - экономический
--	free - свободный
--	true - верный, истинный
--	military - военный
--	federal - федеральный
--	full - полный
--	international - международный
--	early - ранний
--	special - специальный
--	comparative - сравнительный
--	persistent - упорный, настойчивый
--	american - американский
--	clear - ясный, чистый
--	recent - недавний
--	certain - определенный, уверенный
--	personal - личный, персональный
--	general - общий, главный
--	open - открытый
--	noisy - шумный
--	difficult - сложный, трудный
--	red - красный
--	available - доступный, имеющийся в наличии
--	private - частный, личный
--	autumn - осень (сезон)
--	single - один
--	wrong - неправильный
--	spatial - пространственный
--	medical - медицинский
--	top - верхний, лучший
--	foreign - иностранный
--	current - текущий, нынешний
--	fine - хороший, отличный, штраф
--	near - близкий
--	common - общий, распространенный
--	other - другой
--	natural - естественный, природный
--	dead - мертвый
--	significant - значительный
--	similar - похожий
--	central - центральный, основной
--	ready - готовый
--	left - левый, оставленный
--	simple - простой
--	standard - стандартный
--	little - маленький, немного
--	blue - синий
--	various - различный, разнообразный
--	ok - в порядке, хорошо
--	entire - весь, полный
--	close - близкий, закрытый
--	environmental - экологический, окружающей среды
--	democratic - демократический
--	main - главный, основной
--	financial - финансовый
--	final - заключительный
--	legal - законный, правовой
--	nice - приятный, милый
--	firm - крепкий, твердый
--	huge - огромный
--	popular - популярный
 
+a:
+-	able - способный, в состоянии
+-	american - американский
 -	ancient - древний
+-	autumn - осень (сезон)
+-	available - доступный, имеющийся в наличии
+
+b:
 -	bad - плохой
 -	beautiful - красивый
+-	best - лучший
 -	big - большой
 -	bitter - горький
+-	black - черный
+-	blue - синий
 -	boring - скучный
+-	both - оба
 -	bright - яркий
+
+c:
+-	central - центральный, основной
+-	certain - определенный, уверенный
 -	cheap - дешевый
 -	clean - чистый
+-	clear - ясный, чистый
+-	close - близкий, закрытый
 -	cold - холодный
 -	comfortable - комфортный
+-	common - общий, распространенный
+-	comparative - сравнительный
 -	cool - прохладный
+-	current - текущий, нынешний
+
+d:
 -	dangerous - опасный
 -	dark - темный
+-	dead - мертвый
+-	democratic - демократический
+-	different - разный, отличающийся
+-	difficult - сложный, трудный
 -	dirty - грязный
 -	dry - сухой
+
+e:
+-	early - ранний
+-	economic - экономический
+-	entire - весь, полный
+-	environmental - экологический, окружающей среды
 -	exciting - захватывающий
 -	expensive - дорогой
+
+f:
 -	fast - быстрый
+-	federal - федеральный
+-	final - заключительный
+-	financial - финансовый
+-	fine - хороший, отличный, штраф
+-	firm - крепкий, твердый
+-	first - первый
+-	foreign - иностранный
+-	free - свободный
 -	fresh - свежий
+-	full - полный
 -	funny - смешной
+
+g:
+-	general - общий, главный
 -	good - хороший
+-	great - великий, замечательный
+
+h:
 -	happy - счастливый
 -	hard - твердый
 -	heavy - тяжелый
+-	high - высокий
 -	hot - горячий
+-	huge - огромный
+
+i:
+-	important - важный
 -	interesting - интересный
+-	international - международный
+
+j:
+-	just - просто, только что
+
+l:
+-	large - большой
+-	last - последний
+-	left - левый, оставленный
+-	legal - законный, правовой
 -	light - легкий
+-	little - маленький, немного
+-	local - местный
 -	long - длинный
 -	loud - громкий
+
+m:
+-	main - главный, основной
+-	major - главный, основной
+-	medical - медицинский
+-	military - военный
 -	modern - современный
+
+n:
 -	narrow - узкий
+-	national - национальный
+-	natural - естественный, природный
+-	near - близкий
 -	new - новый
+-	nice - приятный, милый
+-	noisy - шумный
+
+o:
+-	ok - в порядке, хорошо
 -	old - старый
+-	only - только
+-	open - открытый
+-	other - другой
+
+p:
+-	persistent - упорный, настойчивый
+-	personal - личный, персональный
+-	political - политический
 -	poor - бедный
+-	popular - популярный
+-	possible - возможный
+-	private - частный, личный
+-	public - общественный
+
+q:
 -	quiet - тихий
+
+r:
+-	ready - готовый
+-	real - настоящий, реальный
+-	recent - недавний
+-	red - красный
 -	rich - богатый
+-	right - правильный, правый
+
+s:
 -	sad - грустный
 -	safe - безопасный
 -	serious - серьезный
 -	short - короткий
 -	short - низкий
+-	significant - значительный
+-	similar - похожий
+-	simple - простой
+-	single - один
 -	slow - медленный
 -	small - маленький
+-	social - социальный
 -	soft - мягкий
 -	sour - кислый
+-	spatial - пространственный
+-	special - специальный
 -	stale - черствый
+-	standard - стандартный
+-	strong - сильный
+-	sure - уверенный
 -	sweet - сладкий
+
+t:
 -	tall - высокий
 -	tasty - вкусный
 -	thick - толстый
 -	thin - тонкий
+-	top - верхний, лучший
+-	true - верный, истинный
+
+u:
 -	ugly - уродливый
 -	uncomfortable - некомфортный
+-	various - различный, разнообразный
+
+w:
 -	warm - теплый
 -	wet - мокрый
+-	white - белый
+-	whole - целый, весь
 -	wide - широкий
+-	wrong - неправильный
+
+y:
 -	young - молодой
 
 	
 # Наречия (Adverbs):
--   this - это, этот
--   all - все
--   as - как, в то время как
--   how - как
--   more - больше
--   way - способ, путь
--   also - также
--   only - только
--   very - очень
--   even - даже
--   back - назад, обратно
--   still - все еще, по-прежнему
--   too - тоже, слишком
--   any - любой, какой-либо
--   really - действительно, на самом деле
--   most - большинство, наиболее
--   much - много
--   out - вне, снаружи
--   on - на
--   why - почему
--   where - где
--   about - о, касательно
--   over - над, сверх
--   again - снова
--   so - так, поэтому
--   off - вне, выключенный
--   home - домой, дома
--   right - правильно, направо
--   after - после
--   around - вокруг
--   long - долго
--   away - в стороне, далеко
--   however - однако, тем не менее
--   yet - еще, уже
--   ever - когда-либо
--   almost - почти
--   later - позже
--   once - однажды
--   least - по крайней мере
--   both - оба
--   ago - назад, недавно
--   together - вместе
--   already - уже
--   low - низкий, маленький
--   before - перед
--   enough - достаточно
--   across - через
--   maybe - может быть
--   probably - вероятно
--   actually - на самом деле
--   perhaps - возможно
--   little - немного, мало
--   else - еще, другой
--   along - вдоль
--   finally - наконец
--   less - меньше
--   better - лучше
--   especially - особенно
--   easy - легко, просто
--   quite - довольно
--   simply - просто, просто так
--   nearly - почти, приблизительно
--   likely - вероятно
--   certainly - конечно, определенно
--   recently - недавно
--   thus - таким образом
--   beyond - за пределами
--   particularly - особенно
--   pretty - довольно, красивый
--   parallel - параллельно
--   indeed - действительно
--   predominantly - преимущественно
--   rather - скорее, лучше
--   that - это, тот
--   tonight - сегодня вечером
--   suddenly - внезапно
-	
--   exactly - точно
--	now - сейчас
--	then - потом
--	here - здесь
--	there - там
--	quickly - быстро
--	slowly - медленно
+
+a:
+-	about - о, касательно
+-	across - через
+-	actually - на самом деле
+-	after - после
+-	again - снова
+-	ago - назад, недавно
+-	all - все
+-	almost - почти
+-	along - вдоль
+-	already - уже
+-	also - также
 -	always - всегда
--	never - никогда
--	often - часто
--	rarely - редко
--	sometimes - иногда
--	usually - обычно
--	seldom - редко
--	today - сегодня
--	tomorrow - завтра
--	yesterday - вчера
--	soon - скоро
--	early - рано
--	well - хорошо
+-	any - любой, какой-либо
+-	around - вокруг
+-	as - как, в то время как
+-	away - в стороне, далеко
+
+b:
+-	back - назад, обратно
+-	backward - назад
 -	badly - плохо
+-	before - перед
+-	better - лучше
+-	beyond - за пределами
+-	both - оба
+
+c:
 -	carefully - осторожно
 -	carelessly - небрежно
--	quietly - тихо
--	loudly - громко
+-	certainly - конечно, определенно
 -	clearly - ясно
--	unclearly - неясно
--	directly - прямо
--	indirectly - косвенно
--	far - далеко
--	near - близко
--	hard - трудно
--	easily - легко
 -	correctly - правильно
--	incorrectly - неправильно
--	openly - открыто
--	secretly - тайно
--	freely - свободно
--	tightly - крепко
--	loosely - свободно
--	fully - полностью
--	partly - частично
--	up - вверх
--	down - вниз
--	inside - внутри
--	outside - снаружи
--	backward - назад
--	forward - вперёд
--	late - поздно
 
+d:
+-	directly - прямо
+-	down - вниз
+
+e:
+-	early - рано
+-	easily - легко
+-	easy - легко, просто
+-	else - еще, другой
+-	enough - достаточно
+-	especially - особенно
+-	even - даже
+-	ever - когда-либо
+-	exactly - точно
+
+f:
+-	far - далеко
+-	finally - наконец
+-	forward - вперёд
+-	freely - свободно
+-	fully - полностью
+
+h:
+-	hard - трудно
+-	here - здесь
+-	home - домой, дома
+-	how - как
+-	however - однако, тем не менее
+
+i:
+-	incorrectly - неправильно
+-	indeed - действительно
+-	indirectly - косвенно
+-	inside - внутри
+
+l:
+-	late - поздно
+-	later - позже
+-	least - по крайней мере
+-	less - меньше
+-	likely - вероятно
+-	little - немного, мало
+-	long - долго
+-	loosely - свободно
+-	loudly - громко
+-	low - низкий, маленький
+
+m:
+-	maybe - может быть
+-	more - больше
+-	most - большинство, наиболее
+-	much - много
+
+n:
+-	near - близко
+-	nearly - почти, приблизительно
+-	never - никогда
+-	now - сейчас
+
+o:
+-	off - вне, выключенный
+-	often - часто
+-	on - на
+-	once - однажды
+-	only - только
+-	openly - открыто
+-	out - вне, снаружи
+-	outside - снаружи
+-	over - над, сверх
+
+p:
+-	parallel - параллельно
+-	particularly - особенно
+-	partly - частично
+-	perhaps - возможно
+-	predominantly - преимущественно
+-	pretty - довольно, красивый
+-	probably - вероятно
+
+q:
+-	quickly - быстро
+-	quietly - тихо
+-	quite - довольно
+
+r:
+-	rarely - редко
+-	rather - скорее, лучше
+-	really - действительно, на самом деле
+-	recently - недавно
+-	right - правильно, направо
+
+s:
+-	secretly - тайно
+-	seldom - редко
+-	simply - просто, просто так
+-	slowly - медленно
+-	so - так, поэтому
+-	sometimes - иногда
+-	soon - скоро
+-	still - все еще, по-прежнему
+-	suddenly - внезапно
+
+t:
+-	that - это, тот
+-	then - потом
+-	there - там
+-	this - это, этот
+-	thus - таким образом
+-	tightly - крепко
+-	today - сегодня
+-	together - вместе
+-	tomorrow - завтра
+-	tonight - сегодня вечером
+-	too - тоже, слишком
+
+u:
+-	unclearly - неясно
+-	up - вверх
+-	usually - обычно
+
+v:
+-	very - очень
+
+w:
+-	way - способ, путь
+-	well - хорошо
+-	where - где
+-	why - почему
+
+y:
+-	yesterday - вчера
+-	yet - еще, уже
 	
 	
 Остальные части речи найти самостоятельно: местоимения (pronouns) I,you,he,she,it,we,they ... , предлоги (prepositions) at,in,on ..., артикли (articles) the,a,an, числительные (numerals) one,two,three,... twenty-first 
 	
-Вообщем, этих основных слов достаточно для освоения грамматики A1 и развития навыка выражать свои мысли, чувства, хотелки ...
+Вообщем, этих 765 основных слов достаточно для освоения грамматики A1 и развития навыка выражать свои мысли, чувства, хотелки ...
 Знать и понимать это конечно - важно, но все эти слова необходимо собирать в предложения и высказывать кому-то или чему-то.
 	
 	
