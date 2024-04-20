@@ -212,3 +212,5 @@ A1 грамматика хорошо, но набор из 1000 слов это 
 
 [Наборы слов](https://englishwsheets.com/hobbies.html)
 
+[Таблица уровней английского языка](https://englex.ru/english-levels-table/)
+
