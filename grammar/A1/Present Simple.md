@@ -38,7 +38,7 @@ to be:
 `She/He/It + V1 (+s,+es,+ies)`
 
 - I try -> She tries - Она пытается
-- I play -> He plays - Он играет (не в данные момент,а вообще)
+- I play -> He plays - Он играет (не в данный момент,а вообще)
 - She brings me coffee very morning - Утром она приносит мне кофе.
 - The Earth goes round the Sun. - Земля вращается вокруг Солнца.
 - My brother always gets up early. - Мой брат всегда встает рано.
