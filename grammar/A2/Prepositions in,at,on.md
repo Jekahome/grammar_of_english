@@ -216,6 +216,132 @@ In 5 hours/5 days/5 years etc – через 5 часов/5 дней/ 5 лет �
 - congratulate on — поздравлять с
 - spend time/money on — тратить время/деньги на
 
+## Examples
+
+- in the woods	-	в лесах
+- in the sky	-	в небе
+- Don't get lost in the woods	-	Не заблудись в лесу
+- in the building	-	в здании
+- I don't feel comfortable in your room.	-	Мне некомфортно в твоей комнате.
+- in Ukraine	-	в Украине
+- in Kharkiv	-	в Харькове
+- in the west	-	на Западе
+- I've lived in Berlin for six years	-	Я живу в Берлине шесть лет
+- in the photo	-	на фотографии
+- in the newspaper	-	в газете
+- All you need to know is written in this book	-	Все, что вам нужно знать, написано в этой книге
+- in the mirror	-	в зеркале
+- She stared at her reflection in the mirror	-	Она посмотрела на свое отражение в зеркале
+- in the mood	-	в настроении
+- be in the pink	-	быть в розовом
+- Stop making jokes, I'm not in the mood today	-	Хватит шутить, я сегодня не в настроении.
+- at school	-	в школе
+- at university	-	в университете
+- at work	-	на работе
+- at the library	-	в библиотеке
+- I never got a single prize while I was at school	-	Пока я учился в школе, я не получил ни одного приза.
+- He got this book at the library	-	Он взял эту книгу в библиотеке
+- at a lecture	-	на лекции
+- at a conference	-	на конференции
+- at a concert	-	на концерте
+- I'll see John tomorrow at the lecture	-	Увижу Джона завтра на лекции
+- at the door	-	у двери
+- at the table	-	В таблице
+- There's a woman at the door, asking for Mr Smith	-	У двери женщина спрашивает мистера Смита.
+- at the bus station	-	на автовокзале
+- Let's meet at the bus station	-	Давай встретимся на автовокзале
+- at the top of	-	в верхней части
+- at the bottom of	-	в нижней части
+- We had to stop at the top of the hill and wait for the engine to cool down	-	Нам пришлось остановиться на вершине холма и подождать, пока двигатель остынет.
+- on the floor	-	на полу
+- It's time for me to play with the baby on the floor	-	Мне пора играть с ребенком на полу
+- on the… floor	-	на полу
+- I'm used to live on the first floor	-	Я привык жить на первом этаже
+- on the bus	-	на автобусе
+- on foot	-	пешком
+- There is free wi-fi on the train	-	В поезде есть бесплатный Wi-Fi.
+- on the road	-	на дороге
+- on my way	-	на моем пути
+- There was heavy traffic on the roads	-	На дорогах было интенсивное движение
+- on the page	-	на странице
+- This exercise is on page 14	-	Это упражнение находится на странице 14.
+- on the map	-	на карте
+- on the menu	-	в меню
+- I cannot find his name on the guest list	-	Я не могу найти его имя в списке гостей
+- on television	-	по телевизору
+- on the radio	-	на радио
+- I've heard this song on the radio	-	Я слышал эту песню по радио
+- on the left	-	слева
+- on the right	-	справа
+- You will see the hospital on the left	-	Вы увидите больницу слева.
+- on holiday	-	на выходных
+- on sale	-	в продаже
+- on business	-	по делу
+- Who will double for the secretary while she is on holiday?	-	Кто будет дублировать секретаршу, пока она в отпуске?
+- in the armchair	-	в кресле
+- on the chair	-	на стуле
+- in bed	-	в постели
+- on the sofa	-	на диван
+- She threw herself down on the sofa	-	Она бросилась на диван
+- in the armchair	-	в кресле
+- on the chair	-	на стуле
+- in bed	-	в постели
+- on the sofa	-	на диван
+- She threw herself down on the sofa	-	Она бросилась на диван
+- in hospital	-	в больнице
+- in prison	-	в тюрьме
+- Henry takes charge of it while I am in the hospital	-	Генри возьмет на себя ответственность, пока я в больнице.
+- at home	-	дома
+- in the house	-	в доме
+- I want to stay at home	-	Я хочу остаться дома
+- I was at my granny's house	-	я был в доме моей бабушки
+- It's so cold in her house	-	В ее доме так холодно
+- on the plane	-	на самолете
+- on the train	-	на поезде
+- I left my bag in the bus	-	Я оставил свою сумку в автобусе
+- I opened the book at page 44	-	Я открыл книгу на странице 44.
+- When the teacher saw the boy squinting at the page, she thought that he might need glasses	-	Когда учительница увидела, что мальчик щурится на страницу, она - подумала, что ему, возможно, понадобятся очки.
+- At 8 o'clock	-	В 8 часов
+- at midnight	-	в полночь
+- at night	-	ночью
+- at noon	-	в полдень
+- at daytime	-	днем
+- at 5.30 pm	-	в 17.30
+- at Christmas	-	в Рождество
+- in the morning	-	утром
+- in the afternoon	-	днем
+- in the evening	-	вечером
+- On Monday	-	В понедельник
+- on April day	-	в апрельский день
+- on Halloween	-	на Хэллоуин
+- on 21 May	-	21 мая
+- at weekend	-	в выходные
+- at the weekend	-	в выходные
+- In April	-	В апреле
+- in lifetime	-	при жизни
+- in XX century	-	в XX веке
+- At 8 am, 15 May, 2006	-	В 8 утра 15 мая 2006 г.
+- On 15 May 2006	-	15 мая 2006 г.
+- In 2006, XXI century.	-	В 2006 году XXI век.
+- In 5 hours	-	Через 5 часов
+- In 5 days	-	Через 5 дней
+- In 5 years	-	Через 5 лет
+- look at	-	посмотри на
+- stare at	-	уставиться на
+- at a good price	-	по хорошей цене
+- at our convenience	-	в удобное для нас время
+- succeed in	-	преуспеть в
+- result in	-	результат в
+- interested in	-	увлекающийся
+- in general	-	в общем
+- in time	-	во время
+- in advance	-	заранее
+- insist on	-	настаивать на
+- depend on	-	зависит от
+- congratulate on	-	поздравить с
+- spend time on	-	тратить время на
+- spend money on	-	тратить деньги на
+
 
 [puzzle-english.com](https://puzzle-english.com/directory/prepositions-of-place#:~:text=%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%20in%20%2F%20at%20%2F%20on,on%20the%20table%20%E2%80%94%20%D0%BD%D0%B0%20%D1%81%D1%82%D0%BE%D0%BB%D0%B5)
 
