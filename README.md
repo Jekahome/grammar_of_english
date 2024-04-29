@@ -1,7 +1,8 @@
 # Grammar of English
 
-## База слов
+## [База слов](https://github.com/Jekahome/grammar_of_english/tree/main/db)
 
+[word-by-word.ru](https://word-by-word.ru/)
 
 ## A1
 
