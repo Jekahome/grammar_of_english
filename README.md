@@ -142,6 +142,10 @@ Present Simple, Past Simple, Future Simple, Present Continuous ... (Я ем, Я 
 - Артикли a/an/the
 - Единственное и множественное число сушественных (-s,-es)
 - Личные местоимения I/we/you/they/he/she/it
+- Present Simple 
+- Past Simple
+- Future Simple
+- Present Continuous
 - Указательные местоимения this/that/these/those
 - Притяжательные местоимения my/our/your/his/her/its
 - There is/are
@@ -149,12 +153,8 @@ Present Simple, Past Simple, Future Simple, Present Continuous ... (Я ем, Я 
 - Вопросы с what/who/whose
 - Вопросы с where/when/why/how/how much (many)
 - Модальный глагол can/can't
-- Неопределенные местоимения some/any
+- Исчесляемые и неисчесляемые существетельные (some,any,many,much, a lot)
 - Наречия частотности always/often/never
-- Present Simple 
-- Past Simple
-- Future Simple
-- Present Continuous
 - It is construction
 - Конкретный набор слов
 
@@ -165,7 +165,6 @@ Present Simple, Past Simple, Future Simple, Present Continuous ... (Я ем, Я 
 - Предлоги направления to/into
 - Модальный глагол could/couldn't
 - Сравнительная и превосходная степень прилагательных
-- Исчесляемые и неисчесляемые существетельные (some,any,many,much, a lot)
 - Конструкция to be going to (Future)
 - Конструкция would like
 - Наречия с ly/ily
