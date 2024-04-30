@@ -166,7 +166,7 @@ Present Simple, Past Simple, Future Simple, Present Continuous ... (Я ем, Я 
 - Модальный глагол could/couldn't
 - Сравнительная и превосходная степень прилагательных
 - Исчесляемые и неисчесляемые существетельные (some,any,many,much, a lot)
-- Конструкция to be going to
+- Конструкция to be going to (Future)
 - Конструкция would like
 - Наречия с ly/ily
 - Условные предложения нулевого типа
