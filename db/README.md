@@ -1,4 +1,4 @@
-# Слова A1-C2 (5460 слов)
+# Слова A1-C2 (5449 слов)
 
 ```sql
 CREATE TABLE IF NOT EXISTS words(
