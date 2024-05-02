@@ -119,15 +119,14 @@ Present Simple, Past Simple, Future Simple, Present Continuous ... (Я ем, Я 
 
 Далее, с этими словами необходимо самостоятельно составлять предложения/истории используя времена: Present Simple, Past Simple, Future Simple, Present Continuous.
 
-Как составлять предложения:
-1. Написать основные случаи использования VERB в его контексте (тут примеры https://word-by-word.ru/)
-2. Придумать самостоятельные примеры с примесью NOUN и ADVERB
-3. С помощью ChatGPT VERB + NOUN + ADJECTIVE в одном предложении
-4. Для ADVERBS отдельные примеры с его контекстом применения (тут примеры https://word-by-word.ru/)
-
+Как составлять предложения. Для частей речи по отдельности  Verb, Nouns, Adjectivs, Adverbs:
+1. Написать основные случаи использования (например Verb) в его контексте (тут примеры https://word-by-word.ru/)
+2. Придумать самостоятельные примеры 
+3. С помощью ChatGPT 
+ 
  
 Помощь ChatGPT:
-- "Создай простые предложения состоящие из слов: do (verb) и man (noun) и new (Adjective) в одном предложении в таких временах: Present Simple, Past Simple, Future Simple, Present Continuous"
+- "Создай простые предложения состоящие из слова: do (verb) в таких временах: Present Simple, Past Simple, Future Simple, Present Continuous"
 
 Из этих предложений создать аудио в формате "EN - пауза - RU", прослушивать и писать их снова под диктовку.
 
