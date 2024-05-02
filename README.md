@@ -128,6 +128,44 @@ Present Simple, Past Simple, Future Simple, Present Continuous ... (Я ем, Я 
 Помощь ChatGPT:
 - "Создай простые предложения состоящие из слова: do (verb) в таких временах: Present Simple, Past Simple, Future Simple, Present Continuous"
 
+```
+Verb: 
+   get	    gets	getting	got	got	1	получать;попасть;становится	41
+
+Present Simple: 
+People get a newspaper every morning. - Люди получают газету каждое утро.
+I need to get some bread on the way home. - Мне нужно купить немного хлеба по дороге домой.
+She gets a money every day. - Она получает деньги каждый день.
+I get a job today - Я получаю работу сегодня
+Get me out of here! - Выведи меня отсюда!
+Get out of my house! - Убирайтесь из моего дома!
+We need to get help quickly! - Нам нужна помощь, срочно!
+
+Past Simple: 
+People got a gift for their anniversary last year. - Люди получили подарок ко дню рождения в прошлом году.
+I got money for my work. - Я получил деньги за свою работу.
+Did you get money for work? - Вы получили деньги за работу?
+I didn't get money for work. - Денег за работу я не получил.
+I didn't get a newspaper last morning. - Вчера утром я не получил газету.
+Did you get an email last week? - Вы получили электронное письмо на прошлой неделе?
+When did you get home? - Когда ты пришёл домой?
+He got into debts. - Он погряз в долгах.
+Great shoes. Where did you get them? - Отличная обувь. Где ты достал их?
+Did you get anything nice for your birthday? - Тебе подарили что-нибудь приятное на день рождения?
+I got these jeans for $100. - Я купил эти джинсы за сто долларов.
+
+Future Simple: 
+People will get their salaries next Friday. - Люди получат свои зарплаты в следующую пятницу.
+People will get a new car next month. - Люди получат новую машину в следующем месяце.
+I will get you a chair. - Я принесу вам стул.
+What time will we get there? - В котором часу мы туда попадём?
+
+Present Continuous: 
+People are getting ready for the party. - Люди готовятся к вечеринке.
+What is he getting at? - Что он имеет в виду?
+Our odds are getting better - Наши шансы становятся выше
+```
+
 Из этих предложений создать аудио в формате "EN - пауза - RU", прослушивать и писать их снова под диктовку.
 
 Дополнительно развивать LISTEN:
