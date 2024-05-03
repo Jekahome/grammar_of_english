@@ -128,6 +128,8 @@ Present Simple, Past Simple, Future Simple, Present Continuous ... (Я ем, Я 
 Помощь ChatGPT:
 - "Создай простые предложения состоящие из слова: do (verb) в таких временах: Present Simple, Past Simple, Future Simple, Present Continuous"
 
+Пример составления предложений для глагола `get`:
+
 ```
 Verb: 
    get	    gets	getting	got	got	1	получать;попасть;становится	41
