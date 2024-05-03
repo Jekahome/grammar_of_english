@@ -464,10 +464,13 @@ Past Simple (простое прошедшее)
 
 I **attended** painting classes when I **was** a child. — Я ходил на кружок живописи, когда был ребенком.
 
-Пример: глагол think имеет V2 форму thought
-I **thought** she is right. - Я думал, что она права.
- 
+Пример: глагол think имеет V2 форму **thought**
 
+`I thought she is right. - Я думал, что она права.`
+ 
+Пример: глагол know имеет V2 форму **knew**
+
+`I knew the answer. - Я знал ответ.`
 
 **Past Participle V3:**
 
