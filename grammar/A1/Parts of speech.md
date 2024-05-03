@@ -352,7 +352,7 @@ After losing his job, he’s getting by on savings. – После потери 
 - **Past Indefinite (V2)**
 - **Past Participle (V3)**
 
-#### Indefinite (Present Simple Tense) V1: 
+### Indefinite (Present Simple Tense) V1: 
 Её называют Root Form (корневая) или Base Form (базовая форма), а также Indefinite Form. Сократим это до V1
 Кстати, Infinitive (инфинитив) — это та же V1 с добавленным к ней to: to see, to talk, to listen.
 Если говорится о третьем лице в единственном числе (he, she, it), то к V1 добавляем окончание -s:sees, talks, listens.
@@ -397,7 +397,7 @@ I didn’t recognize him. – Я его не узнал.
 Yeah, I will come for sure. – Да, точно приеду
 </details>
 
-#### Present Participle ing-овое окончание:
+### Present Participle ing-овое окончание:
 
 По сути, окончание -ing, добавленное к глаголу, делает из действия описание: sit — sitting (сидеть — сидящий), pray — praying (молиться — молящийся).
 Выходит, эта форма рассказывает о состоянии человека или предмета в конкретный момент. Где чаще всего понадобится ing форма
@@ -448,7 +448,7 @@ I adore having parties! — Обожаю устраивать вечеринки
 </details>
 
 
-#### Past Indefinite V2: 
+### Past Indefinite V2: 
 
 Вторая форма глагола — это форма прошедшего времени (Past Form, Past Indefinite или -ed form)
 
@@ -474,7 +474,7 @@ Past Simple (простое прошедшее)
 
 `I knew the answer. - Я знал ответ.`
 
-#### Past Participle V3: 
+### Past Participle V3: 
 
 Как образуется 3 форма глагола в английском? Как и V2, эта форма строится по-разному.
 
