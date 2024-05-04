@@ -20,7 +20,7 @@ $${\color{red}Little \space Jenny} \space {\color{blue}plays}  \space with \spac
 
 $${\color{red}I} \space {\color{blue}go} \space home.\space  – \space Я\space иду\space домой.$$ 
 
-$${\color{red}People} \space {\color{blue}was} \space here.\space  – \space Люди\space были\space здесь.$$ 
+$${\color{red}People} \space {\color{blue}was} \space here.\space  – \space Здесь\space были\space Люди.$$ 
    
 $${\color{red}It} \space {\color{blue}is} \space great!\space  – \space Здорово!$$ 
 
