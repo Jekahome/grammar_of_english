@@ -319,37 +319,43 @@ Infinitive - это неизменяемая форма глагола, кото
  
 любовь - любить - love - to love
 
-    - `I need to do... - Тебе нужно сделать`
-    - `They need to start... - Им нужно начать`
-    - `She needs to take... - Ей нужно взять`
+    - I need to do... - Тебе нужно сделать
+    - They need to start... - Им нужно начать
+    - She needs to take... - Ей нужно взять
 
 - **Глаголы состояния** (non-action verbs or stative verbs): касаются чувств или состояний субъекта
 
-want, need, prefer, love, hate, like, dislike, know, believe.
+Основные глаголы состояния `to be (am,is are,was,were)` и другие: want, need, prefer, love, hate, like, dislike, know, believe.
+
+    - I want to be (I wonna be)... - Я хочу быть
+    - She is beautiful - Она красивая
+    - You were a good friends - Они были хорошими друзьями
+    - They were happy - Они были счастливы
+    - It was fan - Это было весело
+
 Учти, что они не используются в Continuous Tenses. Преимущественно Simple Tenses, иногда Perfect.
 
 - Некоторые глаголы могут быть **как action, так и non-action** в зависимости от конкретного значения в предложении и способа их использования:
 
-`He is nice to everyone. – Он добр ко всем` (выражает постоянное состояние или черту личности).
-
-`He was just being nice to everyone to get a promotion – Он просто любезно относился ко всем, чтобы получить повышение` (выражает временное/преднамеренное поведение).
+    - He is nice to everyone. – Он добр ко всем (выражает постоянное состояние или черту личности).
+    - He was just being nice to everyone to get a promotion – Он просто любезно относился ко всем, чтобы получить повышение (выражает временное/преднамеренное поведение).
 
 - **Вспомогательные глаголы** (auxiliary verbs) - to be, to have, to do, will. :
 
 Помогают основным глаголам образовывать времена.
 
-`I have eaten sushi many times before. – Я ел суши много раз раньше` (have помогает показать наш опыт)
+    - I have eaten sushi many times before. – Я ел суши много раз раньше (have помогает показать наш опыт)
 
 - **Модальные вспомогательные глаголы** (modal auxiliary verbs) - can, may, could, should, would, must, ought, might:
 
 прилагаются к другому глаголу, чтобы показать необходимость, возможность или способность, поменять его значение
 
 `She must be the strongest person on the team, and might be the strongest person in the region. –
-Она должна быть самым сильным человеком в команде и, возможно, самым сильным человеком в регионе.`
+Она должна быть самым сильным человеком в команде и, возможно, самым сильным человеком в регионе.
 
 После модальных глашолов не ставится to, если дальше идет другой глагол.
 
-`I can jump over the fence, and you? - Я могу перепрыгнуть через этот забор, а ты?`
+    - I can jump over the fence, and you? - Я могу перепрыгнуть через этот забор, а ты?
 
 Модальные глаголы не меняются в зависимости от лица, не имеют окончания -s, как и глагол после них
 
@@ -359,7 +365,7 @@ want, need, prefer, love, hate, like, dislike, know, believe.
 
 Глагол get, например, становится разными фразовыми глаголами в сочетании с разными предлогами.
 
-`After losing his job, he’s getting by on savings. – После потери работы он обходится сбережениями.`
+    - After losing his job, he’s getting by on savings. – После потери работы он обходится сбережениями.
 
 
 ## Четыре формы глагола:
