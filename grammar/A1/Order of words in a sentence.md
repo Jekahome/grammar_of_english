@@ -6,7 +6,7 @@
 
 Неверно: About what are you talking?
 
-## Прямой порядок слов в предложении
+## Direct word order (Прямой порядок слов в предложении)
 
 $${\color{red}Subject} \space -> \space {\color{blue}Predicate} \space -> \space Object \space -> \space Adverbial\space Modifier$$
  
@@ -18,9 +18,13 @@ $${\color{red}I} \space {\color{blue}sent} \space you \space a \space letter \sp
 
 $${\color{red}Little \space Jenny} \space {\color{blue}plays}  \space with \space her \space friends \space every \space day. \space – \space Маленькая \space Дженни \space играет \space со \space своими \space друзьями \space каждый \space день.$$
 
+$${\color{red}I} \space {\color{blue}go} \space home.\space  – \space Я\space иду\space домой.$$ 
 
+$${\color{red}People} \space {\color{blue}was} \space here.\space  – \space Люди\space были\space здесь.$$ 
+   
+$${\color{red}It} \space {\color{blue}is} \space great!\space  – \space Здорово!$$ 
 
-## Непрямой порядок слов в предложении
+## Indirect word order (Непрямой порядок слов в предложении)
 
 $${\color{blue}Predicate} \space -> \space{\color{red}Subject} \space-> \space Object \space -> \space Adverbial \space Modifier$$
 
