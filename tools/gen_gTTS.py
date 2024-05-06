@@ -5,16 +5,12 @@
 Озвучка текста
 Для аудирования английского языка
 
-
 https://gtts.readthedocs.io/en/latest/
 
 dependency:
 $ sudo apt install python3-pip
 $ python -mpip install gTTS 
-$ python -mpip install playsound
 '''
-
-
 
 '''
 Use
@@ -22,8 +18,6 @@ Use
 $ python gen_gTTS.py 'How aare you?' 'en'
 $ python gen_gTTS.py 'Как твои дела?' 'ru'
 
-Use cli:
-$ gtts-cli 'Nick takes sub. the maps and puts them in his bag.' --nocheck --lang en --output play.mp3
 '''
 from gtts import gTTS,tokenizer
 import sys
@@ -46,13 +40,7 @@ def main(text, lang):
         tts.save("play.mp3")
     else:  
         print("Формат ввода не верен")
-        
-        
-    # возможно не сохранять
-    #mp3_fp = open("play.mp3",'wb+') 
-    #mp3_fp.truncate(0)
-    #tts = gTTS("{}".format(text), lang='en', tld='com', slow=False)
-    #tts.write_to_fp(mp3_fp)    
+          
 
 if __name__ == "__main__":
     #print("gTTS_gen:{}".format(sys.argv[1]))
