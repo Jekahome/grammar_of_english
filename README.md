@@ -120,7 +120,7 @@ Present Simple, Past Simple, Future Simple, Present Continuous ... (Я ем, Я 
 Далее, с этими словами необходимо самостоятельно составлять предложения/истории используя времена: Present Simple, Past Simple, Future Simple, Present Continuous.
 
 Как составлять предложения. Для частей речи по отдельности  Verb, Nouns, Adjectivs, Adverbs:
-1. Взять контекст из словарей (тут примеры [1](https://word-by-word.ru/), [2](https://dictionary.cambridge.org/ru/%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/%D0%B0%D0%BD%D0%B3%D0%BB%D0%BE-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/get), [3](https://wooordhunt.ru/))
+1. Взять контекст из словарей (тут примеры [1](https://dictionary.cambridge.org/ru/%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/%D0%B0%D0%BD%D0%B3%D0%BB%D0%BE-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/get), [2](https://wooordhunt.ru/), [3](https://word-by-word.ru/))
 2. Разнообразить с помощью ChatGPT 
 3. Придумать самостоятельные примеры (на основе уже имеющихся примеров это легче сделать)
  
