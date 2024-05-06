@@ -132,7 +132,7 @@ Present Simple, Past Simple, Future Simple, Present Continuous ... (Я ем, Я 
 
 ```
 Verb: 
-   get	    gets	getting	got	got	1	получать;попасть;становится	41
+   get (gets)/getting/got/got	 irregular 	получать;попасть;становится	 
 
 Present Simple: 
 People get a newspaper every morning. - Люди получают газету каждое утро.
