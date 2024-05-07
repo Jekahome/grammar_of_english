@@ -86,16 +86,35 @@ def save_line_to_mp3(line):
        os.mkdir('sound')
     if len(line) == 0:
         print("Text не обнаружен")
-    text = line.split('-',1)
-    if len(text) < 2:
+    
+    text_en = text_ru = text_en_slowly = ''
+    # для случая множества тире
+    count_dash = line.count("-")
+    if  count_dash == 1:  
+        text = line.split('-',1)
+        if len(text) < 2:
+            return 1
+        text_en = text[0].rstrip()
+        text_ru = text[1].lstrip()
+        text_en_slowly = text_en
+    elif count_dash > 1:
+        index_dash = 0
+        for char in line:
+            index_dash +=1
+            if 'а' <= char <= 'я' or 'А' <= char <= 'Я':
+                break;
+        text_en = line[:index_dash-1].rstrip()
+        text_en = text_en[:-1].rstrip()
+        text_ru = line[index_dash-1:].lstrip()
+        text_en_slowly = text_en
+    else:
         return 1
 
-    text_en = "<speak><prosody rate=\"slow\">" + text[0].rstrip() + "</prosody></speak>"
-    text_ru = text[1].lstrip() 
-    text_en_slowly = ", ".join(text[0].rstrip().split(' '))
+    text_en = "<speak><prosody rate=\"slow\">" + text_en + "</prosody></speak>"
+    text_en_slowly = ", ".join(text_en_slowly.split(' '))
     text_en_slowly = "<speak><prosody rate=\"slow\">" + text_en_slowly + "</prosody></speak>"
     # <prosody rate="x-fast"> … </prosody> x-slow, slow, medium, fast, x-fast https://github.com/snakers4/silero-models/wiki/SSML
-
+ 
     output = model_en.save_wav(ssml_text=text_en,
         speaker=speaker_en,
         sample_rate=sample_rate,
