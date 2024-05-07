@@ -103,6 +103,8 @@ def save_line_to_mp3(line):
             index_dash +=1
             if 'а' <= char <= 'я' or 'А' <= char <= 'Я':
                 break;
+        if  index_dash == len(line):
+            return 1
         text_en = line[:index_dash-1].rstrip()
         text_en = text_en[:-1].rstrip()
         text_ru = line[index_dash-1:].lstrip()
