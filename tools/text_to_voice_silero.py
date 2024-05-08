@@ -59,7 +59,7 @@ def combined():
     chunk_en_slowly = AudioSegment.from_file("sound/play_en_slowly.wav", format="wav")
     chunk_ru = AudioSegment.from_file("sound/play_ru.wav", format="wav")
   
-    chunk_pause_2 = AudioSegment.silent(duration=2000)
+    chunk_pause_2 = AudioSegment.silent(duration=1000)
     chunk_pause_1 = AudioSegment.silent(duration=1000)
 
     if os.path.exists('sound/play.wav') == False:
