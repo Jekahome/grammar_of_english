@@ -143,14 +143,14 @@ I am a good friend. - Я хороший друг.
 They are good friends. - Они хорошие друзья.
 I am not a thing, I'm a man - Я не вещь, я мужчина.
 Who are you? - Кто ты?
-Do you at home? - Ты дома?
-No, I do not at home. - Нет, меня нет дома.
-Does she at home? - Она дома?
+Do you at home? - Ты д+ома?
+No, I do not at home. - Нет, меня нет д+ома.
+Does she at home? - Она д+ома?
 Am I a man? - Я мужчина?
 Are you a man? - Вы мужчина?
 Yes, I am a man - Да, Я мужчина!
 
-I was tired yesterday. - Вчера Я устал.
+I was tired yesterday. - Вчера я устал.
 I was a good friend. - Я был хорошим другом.
 I was child - я был ребенком.
 We were children - Мы были детьми.
