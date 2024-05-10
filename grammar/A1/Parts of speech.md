@@ -319,7 +319,7 @@ Infinitive - это неизменяемая форма глагола, кото
  
 любовь - любить - love - to love
 
-    - I need to do... - Тебе нужно сделать
+    - I need to do... - Мне нужно сделать
     - They need to start... - Им нужно начать
     - She needs to take... - Ей нужно взять
 
