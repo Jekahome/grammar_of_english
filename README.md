@@ -132,44 +132,33 @@ Present Simple, Past Simple, Future Simple, Present Continuous ... (Я ем, Я 
        - "Создай простые предложения состоящие из слова: get (verb) в таких временах: Present Simple, Past Simple, Future Simple, Present Continuous"
        - "Продолжи несколько раз предложение на английском и добавь перевод: I take"
 
-Пример составления предложений для глагола `get`:
+Пример составления предложений для глагола `be`:
 
 ```
-Verb: 
-   get (gets)/getting/got/got	 irregular 	получать;попасть;становится	 
+be, am, is, are, was, were - быть, явл+ятся
+She is a doctor. - Она врач.
+I am a good friend. - Я хороший друг.
+They are good friends. - Они хорошие друзья.
+I am not a thing, I'm a man - Я не вещь, я мужчина.
+Who are you? - Кто ты?
+Do you at home? - Ты дома?
+No, I do not at home. - Нет, меня нет дома.
+Does she at home? - Она дома?
+Am I a man? - Я мужчина?
+Are you a man? - Вы мужчина?
+Yes, I am a man - Да, Я мужчина!
 
-Present Simple: 
-People get a newspaper every morning. - Люди получают газету каждое утро.
-I need to get some bread on the way home. - Мне нужно купить немного хлеба по дороге домой.
-She gets a money every day. - Она получает деньги каждый день.
-I get a job today - Я получаю работу сегодня
-Get me out of here! - Выведи меня отсюда!
-Get out of my house! - Убирайтесь из моего дома!
-We need to get help quickly! - Нам нужна помощь, срочно!
+I was tired yesterday. - Вчера Я устал.
+I was a good friend. - Я был хорошим другом.
+I was child - я был ребенком.
+We were children - Мы были детьми.
+Did you tire yesterday - Ты вчера устал?
+Yes, I was tired yesterday - Да, я вчера устал.
 
-Past Simple: 
-People got a gift for their anniversary last year. - Люди получили подарок ко дню рождения в прошлом году.
-I got money for my work. - Я получил деньги за свою работу.
-Did you get money for work? - Вы получили деньги за работу?
-I didn't get money for work. - Денег за работу я не получил.
-I didn't get a newspaper last morning. - Вчера утром я не получил газету.
-Did you get an email last week? - Вы получили электронное письмо на прошлой неделе?
-When did you get home? - Когда ты пришёл домой?
-He got into debts. - Он погряз в долгах.
-Great shoes. Where did you get them? - Отличная обувь. Где ты достал их?
-Did you get anything nice for your birthday? - Тебе подарили что-нибудь приятное на день рождения?
-I got these jeans for $100. - Я купил эти джинсы за сто долларов.
-
-Future Simple: 
-People will get their salaries next Friday. - Люди получат свои зарплаты в следующую пятницу.
-People will get a new car next month. - Люди получат новую машину в следующем месяце.
-I will get you a chair. - Я принесу вам стул.
-What time will we get there? - В котором часу мы туда попадём?
-
-Present Continuous: 
-People are getting ready for the party. - Люди готовятся к вечеринке.
-What is he getting at? - Что он имеет в виду?
-Our odds are getting better - Наши шансы становятся выше
+I will be happy tomorrow. - Завтра я буду счастлив.
+I will be strong and smart. - Я буду сильным и умным.
+Will you be smart or stupid? - Ты будешь умным или глупым?
+Yes, I will be smart. - Да, я буду умным.
 ```
 
 Из этих предложений [создать аудио](https://github.com/Jekahome/grammar_of_english/blob/main/tools/gen_gTTS_from_file.py) в формате "EN - пауза - RU", прослушивать и писать их снова под диктовку. Основная задача после составления и прослушивания предложений, это перенести использование словесных конструкций из области **понимамания** в область **применение**, по началу можно просто повторять за голосом и отвечать на вопросы из аудио. Как еще увеличить применение ?  ... (в процессе)
