@@ -129,7 +129,9 @@ Present Simple, Past Simple, Future Simple, Present Continuous ... (Я ем, Я 
  
      
     Помощь ChatGPT:
+
        - "Создай простые предложения состоящие из слова: get (verb) в таких временах: Present Simple, Past Simple, Future Simple, Present Continuous"
+
        - "Продолжи несколько раз предложение на английском и добавь перевод: I take"
 
 Пример составления предложений для глагола `be`:
