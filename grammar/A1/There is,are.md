@@ -77,6 +77,6 @@ There are some big windows in the room. -
 
 
 
-
+[Оборот there is/are](https://englex.ru/english-grammar-for-beginners-part-3/?utm_source=funnel&utm_medium=funnel2&utm_campaign=ebook&utm_content=grammar_plan)
 
 
