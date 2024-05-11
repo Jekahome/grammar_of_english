@@ -4,7 +4,7 @@
 
 [sqlite word database](https://github.com/Jekahome/grammar_of_english/tree/main/db)
 
-[generate voice from text use gTTS](https://github.com/Jekahome/grammar_of_english/tree/main/tools)
+[tools text to voice](https://github.com/Jekahome/grammar_of_english/tree/main/tools)
 
 ## A1
 
@@ -13,7 +13,7 @@
 3. [Articles the,a,an](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Articles%20a%2Can%2Cthe.md) 
 4. [to be](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/to%20be.md) 
 5. [Pronouns I,he,she,it,we,you,they,me,him,her,that,these...](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Pronouns.md) 
-6. [Countable, uncountable, singular and plural nouns nouns](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Singular%20and%20plural%20nouns.md)
+6. [Countable, uncountable, singular and plural nouns](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Singular%20and%20plural%20nouns.md)
 7. [Present Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Present%20Simple.md)
 8. [Past Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Past%20Simple.md)
 9. [Future Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Future%20Simple.md)
@@ -97,7 +97,7 @@
 Следовательно расписать себе самостоятельно: 
 - **SPEAK** ГОВОРИТЬ учиться/привыкать следует при чтении в слух и повторяя за диктором с [самопроверкой](https://www.google.com/intl/en/chrome/demos/speech.html),[самопроверкой](https://voicenotebook.com/) (проверить в браузере как распознается речь). Для привыкания речевого аппарата необходим обьем наговоренного текста, можно читать в слух, повторять за диктором и произвольно сочинять, (научиться говорить о себе: личная информация, распорядок дня, привычки, погода, работа, увлечения); Записывать аудио-сообщения о планах на день, и как прошел день. Отвечать/задавать вопросы в тренажоре который реагирует (приложения могут такое или самостоятельно разработать используя возможности браузерного API распознавать речь speech-to-text, библиотеки на python могут text-to-speech). Все же лучшим решением будет ежедневный собеседник.
 - **LISTEN** СЛУШАТЬ мультики, фильмы, прослушивать адаптивные книги, найти приятный голос блогера,.... Записать аудио в формате "вопрос en - пауза 5 сек - ответ en" и во время прогулки отвечать на эти вопросы. Самостоятельно создать файл субтитров (в формате vtt для видео в формате mkv) придется слушать каждую реплику в адаптированном/легком видео и переводить для себя, [Онлайн-диктанты](https://www.learnenglish.de/dictationpage.html#elem), [Онлайн-диктанты](https://www.englishclub.com/listening/dictation.php);
-- **WRITE** ПИСАТЬ при прослушивании адаптивных книг, при прохождении грамматики по учебникам, отвечать на форумах, личный блог про то как идет изучения языка. Составлять простые предложения в различных Present временах из слов набора A1 и проверять их [грамматику](https://languagetool.org/ru) или [www.onlinecorrection.com](https://www.onlinecorrection.com/); 
+- **WRITE** ПИСАТЬ при прослушивании адаптивных книг, при прохождении грамматики по учебникам, отвечать на форумах, личный блог про то как идет изучения языка. Составлять простые предложения в различных Simple временах из слов набора A1 и проверять их [грамматику](https://languagetool.org/ru) или [www.onlinecorrection.com](https://www.onlinecorrection.com/); 
 - **READ** ЧИТАТЬ адаптивные книги по уровням;
 
 Проходить по уровням грамматики с текущим набором частотных слов (Какой формат?)
@@ -183,7 +183,7 @@ I will be smart. - Я буду умным.
 - брать любое слово из текущего уровня A1 и писать про него все что знаете, "круг слова", темы в которых его часто использую, слово как вы его понимаете. Несколько предложений на english;
 
 Дополнительно:
-- описывать диалог о обыденных ситуациях (общение с продавцом, ситуация в такси, вы в лифте, вы в тренажерном зале, в ресторане, в холле гостиницы), продумать простой диалог, что бы вы спросили или ответили. Каждая така тема имеет уникальные слова, которые часто употребляются именно в выбранной вами ситуации. Что-то похожее на сценарий, который следует проговорить. Коллекционируйте такие мини-сценарии.
+- описывать диалог о обыденных ситуациях (общение с продавцом, ситуация в такси, вы в лифте, вы в тренажерном зале, в ресторане, в холле гостиницы), продумать простой диалог, что бы вы спросили или ответили. Каждая такая тема имеет уникальные слова, которые часто употребляются именно в выбранной вами ситуации. Что-то похожее на сценарий, который следует проговорить. Коллекционируйте такие мини-сценарии.
 
 В тему хобби на английском, придумать себе хобби.
  
