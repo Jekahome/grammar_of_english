@@ -4,7 +4,7 @@
 
 [sqlite word database](https://github.com/Jekahome/grammar_of_english/tree/main/db)
 
-[tools text to voice](https://github.com/Jekahome/grammar_of_english/tree/main/tools)
+[tools text to speech](https://github.com/Jekahome/grammar_of_english/tree/main/tools)
 
 ## A1
 
