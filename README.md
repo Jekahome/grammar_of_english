@@ -201,33 +201,33 @@ I will be smart. - Я буду умным.
 - Глагол to be
 - Артикли a/an/the
 - Единственное и множественное число сушественных (-s,-es)
-- Личные местоимения I/we/you/they/he/she/it
+- Личные местоимения I,we,you,they,he,she,it
 - Present Simple 
 - Past Simple
 - Future Simple
 - Present Continuous
-- Указательные местоимения this/that/these/those
-- Притяжательные местоимения my/our/your/his/her/its
-- There is/are
+- Указательные местоимения this,that,these,those
+- Притяжательные местоимения my,our,your,his,her,its
+- There is,are
 - Притяжательный предлог of
-- Вопросы с what/who/whose
-- Вопросы с where/when/why/how/how much (many)
-- Модальный глагол can/can't
+- Вопросы с what,who,whose
+- Вопросы с where,when,why,how,how much (many)
+- Модальный глагол can,can't
 - Исчесляемые и неисчесляемые существетельные (some,any,many,much, a lot)
-- Наречия частотности always/often/never
+- Наречия частотности always,often,never
 - It is construction
 - Конкретный набор слов
 
 ## A2 (Pre-Intermediate)
 
-- Притяжательные местоимения mine/yours/ours/theirs/his/hers/its
-- Предлоги времени in/on/at
-- Предлоги направления to/into
-- Модальный глагол could/couldn't
+- Притяжательные местоимения mine,yours,ours,theirs,his,hers,its
+- Предлоги времени in,on,at
+- Предлоги направления to,into
+- Модальный глагол could,couldn't
 - Сравнительная и превосходная степень прилагательных
 - Конструкция to be going to (Future)
 - Конструкция would like
-- Наречия с ly/ily
+- Наречия с ly,ily
 - Условные предложения нулевого типа
 - Present Perfect
 
@@ -235,25 +235,25 @@ I will be smart. - Я буду умным.
 ## B1 (Intermediate)
 
 - Глаголы состояния
-- Определенные придаточные предложения с that/who/which/where
+- Определенные придаточные предложения с that,who,which,where
 - Герундий
-- Модальные глаголы have to/don't have to/must/mustn't/should/shouldn't/may/might/might not
+- Модальные глаголы have to,don't have to,must,mustn't,should,shouldn't,may,might,might not
 - Условные предложения первого, второго и терьего типа
 - Пассивный залог
-- Конструкция used to/didn't use to
+- Конструкция used to,didn't use to
 - Косвенная речь, разница между say и tell
-- Квантификаторы too much/too many/enough
+- Квантификаторы too much,too many,enough
 - Фразовые глаголы
-- Обороты с наречиями so/neither/nor
-- Союзы because/so/but/although
+- Обороты с наречиями so,neither,nor
+- Союзы because,so,but,although
 - Разделительные вопросы
-- Past Continuous/Present Perfect Continuous
+- Past Continuous,Present Perfect Continuous
 
 ## B2 (Upper Intermediate)
 
 - Нулевой артикль
-- Модальные глаголы для выражения предположений can't/might/must
-- Указатели множества a little/little/a few/few/plenty of/a lot of/all/every/both/no/none/most
+- Модальные глаголы для выражения предположений can't,might,must
+- Указатели множества a little,little,a few,few,plenty of,a lot of,all,every,both,no,none,most
 - Косвенные вопросы
 - Глаголы для передачи косвенной речи
 - Собирательные существительные
