@@ -550,7 +550,6 @@ s:
 -	support - поддерживать
 -   seek - искать (**seek** inf., **sought** v2, **sought** v3)
 -   shoot - стрелять (**shoot** inf., **shot** v2, **shot** v3)
--   state - утверждать
 -   sound - звучать
 -   split - разделять, раскалывать (**split** inf., **split** v2, **split** v3)
 
@@ -586,7 +585,6 @@ w:
 -	watch - смотреть
 -	wait - ждать
 -   wear - носить (одежду), одевать (одежду) (**wear** inf., **wore** v2, **worn** v3)
--   wonder - удивляться, интересоваться
 -   wake - будить  (**wake** inf., **woke** v2, **woken** v3)
  
 
@@ -595,7 +593,6 @@ w:
 a:
 -	able - способный, в состоянии
 -	american - американский
--	ancient - древний
 -	autumn - осень (сезон)
 -	available - доступный, имеющийся в наличии
 
@@ -604,11 +601,9 @@ b:
 -	beautiful - красивый
 -	best - лучший
 -	big - большой
--	bitter - горький
 -	black - черный
 -	blue - синий
 -	boring - скучный
--	both - оба
 -	bright - яркий
 
 c:
@@ -621,7 +616,6 @@ c:
 -	cold - холодный
 -	comfortable - комфортный
 -	common - общий, распространенный
--	comparative - сравнительный
 -	cool - прохладный
 -	current - текущий, нынешний
 
@@ -638,8 +632,6 @@ d:
 e:
 -	early - ранний
 -	economic - экономический
--	entire - весь, полный
--	environmental - экологический, окружающей среды
 -	exciting - захватывающий
 -	expensive - дорогой
 
@@ -649,7 +641,6 @@ f:
 -	final - заключительный
 -	financial - финансовый
 -	fine - хороший, отличный, штраф
--	firm - крепкий, твердый
 -	first - первый
 -	foreign - иностранный
 -	free - свободный
@@ -668,7 +659,6 @@ h:
 -	heavy - тяжелый
 -	high - высокий
 -	hot - горячий
--	huge - огромный
 
 i:
 -	important - важный
@@ -676,7 +666,7 @@ i:
 -	international - международный
 
 j:
--	just - просто, только что
+-	just - справедливый
 
 l:
 -	large - большой
@@ -697,7 +687,6 @@ m:
 -	modern - современный
 
 n:
--	narrow - узкий
 -	national - национальный
 -	natural - естественный, природный
 -	near - близкий
@@ -728,7 +717,6 @@ q:
 r:
 -	ready - готовый
 -	real - настоящий, реальный
--	recent - недавний
 -	red - красный
 -	rich - богатый
 -	right - правильный, правый
@@ -737,9 +725,7 @@ s:
 -	sad - грустный
 -	safe - безопасный
 -	serious - серьезный
--	short - короткий
--	short - низкий
--	significant - значительный
+-	short - короткий, низкий
 -	similar - похожий
 -	simple - простой
 -	single - один
@@ -747,10 +733,7 @@ s:
 -	small - маленький
 -	social - социальный
 -	soft - мягкий
--	sour - кислый
--	spatial - пространственный
 -	special - специальный
--	stale - черствый
 -	standard - стандартный
 -	strong - сильный
 -	sure - уверенный
@@ -759,7 +742,6 @@ s:
 t:
 -	tall - высокий
 -	tasty - вкусный
--	thick - толстый
 -	thin - тонкий
 -	top - верхний, лучший
 -	true - верный, истинный
@@ -807,13 +789,10 @@ b:
 -	badly - плохо
 -	before - перед
 -	better - лучше
--	beyond - за пределами
 -	both - оба
 
 c:
 -	carefully - осторожно
--	carelessly - небрежно
--	certainly - конечно, определенно
 -	clearly - ясно
 -	correctly - правильно
 
@@ -836,8 +815,6 @@ f:
 -	far - далеко
 -	finally - наконец
 -	forward - вперёд
--	freely - свободно
--	fully - полностью
 
 h:
 -	hard - трудно
@@ -848,8 +825,6 @@ h:
 
 i:
 -	incorrectly - неправильно
--	indeed - действительно
--	indirectly - косвенно
 -	inside - внутри
 
 l:
@@ -860,7 +835,6 @@ l:
 -	likely - вероятно
 -	little - немного, мало
 -	long - долго
--	loosely - свободно
 -	loudly - громко
 -	low - низкий, маленький
 
@@ -882,17 +856,14 @@ o:
 -	on - на
 -	once - однажды
 -	only - только
--	openly - открыто
 -	out - вне, снаружи
 -	outside - снаружи
 -	over - над, сверх
 
 p:
 -	parallel - параллельно
--	particularly - особенно
 -	partly - частично
 -	perhaps - возможно
--	predominantly - преимущественно
 -	pretty - довольно, красивый
 -	probably - вероятно
 
@@ -903,14 +874,11 @@ q:
 
 r:
 -	rarely - редко
--	rather - скорее, лучше
 -	really - действительно, на самом деле
--	recently - недавно
 -	right - правильно, направо
 
 s:
 -	secretly - тайно
--	seldom - редко
 -	simply - просто, просто так
 -	slowly - медленно
 -	so - так, поэтому
@@ -924,8 +892,6 @@ t:
 -	then - потом
 -	there - там
 -	this - это, этот
--	thus - таким образом
--	tightly - крепко
 -	today - сегодня
 -	together - вместе
 -	tomorrow - завтра
@@ -933,7 +899,6 @@ t:
 -	too - тоже, слишком
 
 u:
--	unclearly - неясно
 -	up - вверх
 -	usually - обычно
 
