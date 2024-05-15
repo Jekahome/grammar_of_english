@@ -1,8 +1,6 @@
 # Существительные (Nouns):
 
 a:
--	ability - способность
--	achievement - достижение
 -	adventure - приключение
 -	air - воздух
 -	answer - ответ
@@ -16,7 +14,6 @@ b:
 -	beach - пляж
 -	bed - кровать
 -	bedroom - спальня
--	beverage - напиток
 -	bird - птица
 -	book - книга
 -	branch - ветка
@@ -41,7 +38,6 @@ c:
 -	coffee - кофе
 -	computer - компьютер
 -	country - страна
--	courage - мужество
 -   center - центр, середина
 -   change - изменение, перемена
 -   community - община
@@ -60,7 +56,6 @@ d:
 e:
 -	earth - земля (планета)
 -	education - образование
--	enemy - враг
 -	energy - энергия
 -	environment - окружающая среда
 -	experience - опыт
@@ -69,10 +64,7 @@ e:
 
 f:
 -	fact - факт
--	failure - неудача
 -	family - семья
--	fear - страх
--	fiction - вымысел
 -	fire - огонь
 -	fish - рыба
 -	floor - пол
@@ -80,7 +72,6 @@ f:
 -	food - пища, еда
 -	forest - лес
 -	friend - друг
--	friendship - дружба
 -	fruit - фрукт
 -	furniture - мебель
 -   face - лицо
@@ -111,7 +102,6 @@ h:
 
 i:
 -	idea - идея
--	illness - болезнь
 -	interest - интерес
 -   information - информация
 -   issue - проблема
@@ -120,7 +110,6 @@ j:
 -	jacket - куртка
 -	job - работа
 -	journey - путешествие
--	joy - радость
 -	juice - сок
 
 k:
@@ -183,8 +172,6 @@ p:
 -	pencil - карандаш
 -	person - человек
 -	phone - телефон
--	pollution - загрязнение
--	poverty - бедность
 -	power - сила, энергия
 -	problem - проблема
 -   part - часть
@@ -211,8 +198,6 @@ r:
 -   right - верно
 
 s:
--	sadness - печаль
--	sand - песок
 -	school - школа
 -	science - наука
 -	shirt - рубашка
@@ -225,13 +210,11 @@ s:
 -	sofa - диван
 -	soil - почва
 -	solution - решение
--	sorrow - горе
 -	space - космос
 -	star - звезда
 -	starlight - звездный свет
 -	stone - камень
 -	street - улица
--	strength - сила
 -	student - студент
 -	success - успех
 -	sun - солнце
@@ -260,19 +243,15 @@ u:
 -	university - университет
 
 v:
--	valley - долина
 -	vegetable - овощ
 -	village - деревня
 
 w:
 -	watch - часы
 -	water - вода
--	weakness - слабость
--	wealth - богатство
 -	weather - погода
 -	wind - ветер
 -	window - окно
--	wisdom - мудрость
 -	world - мир
 -   war - война
 -   week - неделя
@@ -292,19 +271,12 @@ y:
 
 a:
 -   agree - соглашаться
--   appear - появляться, казаться
 -   add - добавлять
 -   allow - позволять, допускать
 -   ask - просить, спрашивать
--	adapt - адаптироваться
--	achieve - достигать
--	argue - спорить
 -	accept - принимать
--	apologize - извиняться
 -   arrive - приехать, приезжать
 -   answer - отвечать
--   act - действовать, поступать
--   avoid - избежать, избегать
 -   awake - пробуждать (**awake** inf., **awoke** v2, **awoken** v3)
 
 b:
@@ -313,8 +285,6 @@ b:
 -   be - быть,являться (**be** inf., **was (were)** v2, **been** v3)
 -   buy - покупать (**buy** inf., **bought** v2, **bought** v3)
 -   bring - приносить (**bring** inf., **brought** v2, **brought** v3)
--	benefit - приносить пользу
--	betray - предавать
 -	build - строить (**build** inf., **built** v2, **built** v3)
 -	break - ломать (**break** inf., **broke** v2, **broken** v3)
 -	believe - верить
@@ -323,7 +293,6 @@ b:
 c:
 -   carry - нести, проводить
 -   cut - резать (**cut** inf., **cut** v2, **cut** v3)
--   consider - рассматривать, учитывать, считаться
 -   continue - продолжать
 -   come - приходить, приехать (**come** inf., **came** v2, **come** v3)
 -	cry - плакать
@@ -337,29 +306,20 @@ c:
 -	clean - чистить
 -	choose - выбирать (**choose** inf., **chose** v2, **chosen** v3)
 -	control - контролировать
--	challenge - оспаривать, вызывать на борьбу
 -	change - изменять что-то
--	compete - конкурировать, соревноваться
 -   cover - охватывать, покрывать
 -   catch - ловить (**catch** inf., **caught** v2, **caught** v3)
--   cause - вызывать, быть причиной, причинять
 -   check - проверять, контролировать
 -   compare - сравнить
--   claim - требовать, претендовать
--   care - заботиться, ухаживать
 
 d:
 -   die - умирать
 -	drive - водить машину (**drive** inf., **drove** v2, **driven** v3)
 -	dislike - не нравиться
 -	discuss - обсуждать
--	doubt - сомневаться
 -	destroy - разрушать
 -	develop - развиваться
 -	decide - принимать решение
--	disengage - отстраняться
--	discourage - отговаривать
--	dare - осмеливаться
 -	drink - пить (**drink** inf., **drank** v2, **drunk** v3)
 -   do - делать (**do** inf., **did** v2, **done** v3)
 -	dance - танцевать
@@ -368,14 +328,11 @@ d:
 -   draw - рисовать, тянуть (**draw** inf., **drew** v2, **drawn** v3)
 -   deal - вести дела (**deal** inf., **dealt** v2, **dealt** v3)
 -   drop - падать, уронить
--   determine - определять, устанавливать
 -   design - проектировать, разрабатывать
 
 e:
 -   expect - ожидать, рассчитывать
 -	eat - есть (**eat** inf., **ate** v2, **eaten** v3)
--	engage - вовлекать
--	encourage - поощрять
 -	earn - зарабатывать
 -	explain - объяснять
 -	express - выражать
@@ -394,7 +351,6 @@ f:
 -	fly - летать (**fly** inf., **flew** v2, **flown** v3)
 -	forget - забывать  (**forget** inf., **forgot** v2, **forgotten** v3)
 -	follow - следовать
--	frown - хмуриться
 -	forgive - прощать  (**forgive** inf., **forgave** v2, **forgiven** v3)
 -   face - сталкиваться, находиться лицом к
 -   fuck - трахаться
@@ -429,7 +385,6 @@ i:
 -   include - включать, содержать в себе
 -	improve - улучшать
 -	influence - влиять
--	impact - воздействовать
 -	invest - инвестировать
 -   involve - включать, вовлекать, содержать
 -   increase - увеличивать
