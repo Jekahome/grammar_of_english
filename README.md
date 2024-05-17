@@ -25,7 +25,7 @@
 15. [Questions with what,who,whom,whose](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Questions%20with%20what%2Cwho%2Cwhom%2Cwhose.md) 
 16. [Special questions with what,where,when,why,who,which,whose,whome,how,how much (many)](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Special%20questions%20with%20what%2Cwhere%2Cwhen%2Cwhy%2Cwho%2Cwhich%2Cwhose%2Cwhome%2Chow%2Chow%20much%20(many).md) 
 17. [Modal verbs can](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Modal%20verbs%20can.md) 
-18. [Quantifiers Much, many, a lot of, a little, a few, some, any](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Quantifiers%20Much%2C%20many%2C%20a%20lot%20of%2C%20a%20little%2C%20a%20few%2C%20some%2C%20any.md) 
+18. [Quantifiers Much, many, a lot of, a little, a few, some, any](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Quantifiers%20much%2Cmany%2Ca%20lot%20of%2Ca%20little%2Ca%20few%2Csome%2Cany.md) 
 19. [have got](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/have%20got.md) 
 20. [Adverbs of frequency always,usually,often,sometimes,never](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Adverbs%20of%20frequency%20always%2Cusually%2Coften%2Csometimes%2Cnever.md) 
 21. [It is construction](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/It%20is%20construction.md)
