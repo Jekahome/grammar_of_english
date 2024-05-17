@@ -136,7 +136,7 @@ There are `some` chairs in the room. - В комнате есть несколь
 
 Give me `any` chair from the room - Дайте мне любой стул из комнаты (any - так как исчисляемое в единственном числе)
 
-There's some sugar in your tea. - В твоем чае есть сахар. (some - так как sugar это исчиляемое в plural в утверждении)
+There's `some` sugar in your tea. - В твоем чае есть сахар. (some - так как sugar это исчиляемое в plural в утверждении)
 
 There isn't `any` salt in the soup. - В супе нет соли. (any - так как отрицание)
 
