@@ -41,7 +41,7 @@
 ## A2
 
 * [Possessive pronouns mine,yours,ours,theirs,his,hers,its](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A2/Possessive%20pronouns%20mine%2Cyours%2Cours%2Ctheirs%2Chis%2Chers%2Cits.md)
-* [Prepositions of Time/Place in,at,on](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Prepositions%20in%2Cat%2Con.md) 
+* [Prepositions of Time/Place in,at,on](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A2/Prepositions%20in%2Cat%2Con.md) 
 * [Preposition for](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20for.md) 
 * [Preposition to](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20to.md) 
 * [going to](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A2/Going%20to.md) 
