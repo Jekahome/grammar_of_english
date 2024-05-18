@@ -175,11 +175,11 @@ She threw herself down on the sofa — Она упала на диван.
 
 at — о периоде времени, меньше суток: At 8 o’clock, at midnight, at night, at noon, at daytime, at 5.30 pm at Christmas
 
-Исключения:``` in the morning, in the afternoon, in the evening ```
+Исключения: `in the morning, in the afternoon, in the evening`
 
 on — о периоде времени, меньше недели: On Monday, on April day, on Halloween, on 21 May
 
-Исключения: ``` at weekend, at the weekend ```
+Исключения: `at weekend, at the weekend`
 
 in — о периоде времени, больше недели: In April, in lifetime, in XX century и тд
 
