@@ -27,6 +27,7 @@ I was a good friend. - Я был хорошим другом.
 from gtts import gTTS,tokenizer
 import sys
 import os
+import time
 from pydub import AudioSegment
 
 def combined():
@@ -67,17 +68,17 @@ def save_line_to_mp3(line):
     # )
     # tokenizer.pre_processors.word_sub("{}".format(text))
     
-    # корреция произношения:
+    # коррекция произношения:
     # заменить слово его транскрипцией "Where do you [ˈuːʒʊəli] go on vacation?"
 
     tts = gTTS(text="{}".format(text_en), lang='en', tld='com', slow=True, lang_check=False)   
     tts.save("play_en.mp3")
-
+    time.sleep(1.5)
     text_en_slowly = text_en.split(' ')
     text_en_slowly = ", ".join(text_en_slowly)
     tts = gTTS(text="{}".format(text_en_slowly), lang='en', tld='com', slow=True, lang_check=False)   
     tts.save("play_en_slowly.mp3")
-
+    time.sleep(1.5)
     tts = gTTS(text="{}".format(text_ru), lang='ru', slow=False, lang_check=False)   
     tts.save("play_ru.mp3")
     
@@ -91,6 +92,7 @@ def main(file_path):
     
     for line in resource:
        save_line_to_mp3(line)       
+       time.sleep(1.5)
 
     resource.close() 
  

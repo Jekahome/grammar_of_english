@@ -120,7 +120,7 @@ def save_line_to_mp3(line):
     # )
     # tokenizer.pre_processors.word_sub("{}".format(text))
     
-    # корреция произношения:
+    # коррекция произношения:
     # заменить слово его транскрипцией "Where do you [ˈuːʒʊəli] go on vacation?"
 
     tts = gTTS(text="{}".format(text_en), lang='en', slow=False, lang_check=False)   
