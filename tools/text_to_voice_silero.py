@@ -49,9 +49,9 @@ speaker_ru = 'xenia'  # 'aidar', 'baya', 'kseniya', 'xenia', 'random'
 speaker_en = 'en_74' # famale en_74 en_117 en_39 en_52 en_97 en_60 en_111  male en_31 https://oobabooga.github.io/silero-samples/
 
  
-def quality_improvement_audio(file_output):
+def quality_improvement_audio(file_to):
     audio = AudioSegment.from_wav("sound/play.wav")
-    audio.export(file_output, format="mp3", bitrate="128k") # 192/128
+    audio.export(file_to, format="mp3") #  bitrate="128k" 192/128
     os.remove("sound/play.wav")
 
 def combined():
@@ -112,9 +112,8 @@ def save_line_to_mp3(line):
     else:
         return 1
 
-    text_en = "<speak><prosody rate=\"slow\">" + text_en + "</prosody></speak>"
+    text_en = "<speak><prosody rate=\"medium\">" + text_en + "</prosody></speak>"
     text_en_slowly = ", ".join(text_en_slowly.split(' '))
-    text_en_slowly = "<speak><prosody rate=\"slow\">" + text_en_slowly + "</prosody></speak>"
     # <prosody rate="x-fast"> … </prosody> x-slow, slow, medium, fast, x-fast https://github.com/snakers4/silero-models/wiki/SSML
  
     output = model_en.save_wav(ssml_text=text_en,
@@ -123,7 +122,7 @@ def save_line_to_mp3(line):
     )
     os.rename(output,'sound/play_en.wav')
 
-    output = model_en.save_wav(ssml_text=text_en_slowly,
+    output = model_en.save_wav(text=text_en_slowly,
         speaker=speaker_en,
         sample_rate=sample_rate,
     )
@@ -151,5 +150,4 @@ def main(file_path):
     quality_improvement_audio("sound/play.mp3")
 
 if __name__ == "__main__":
-    #print("gTTS_gen:{}".format(sys.argv[1]))
     main(sys.argv[1])
