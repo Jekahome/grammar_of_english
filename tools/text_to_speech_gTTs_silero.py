@@ -59,7 +59,7 @@ AudioSegment.converter = which("ffmpeg")
  
 def quality_improvement_audio(file_to):
     # Загрузка аудиофайла
-    audio = AudioSegment.from_mp3("play_gTTS.mp3")
+    #audio = AudioSegment.from_mp3("play_total.mp3")
 
     # Изменение битрейта на 320/192 кбит/с
     #audio = audio.set_frame_rate(19200)
@@ -71,11 +71,12 @@ def quality_improvement_audio(file_to):
     # audio = audio + 10
 
     # Сохранение улучшенного аудиофайла
-    audio.export(file_to, format="mp3")
+    #audio.export(file_to, format="mp3")
+    os.rename("play_total.mp3",file_to)
     os.remove("play_en.mp3")
     os.remove("play_en_slowly.mp3")  
     os.remove("play_ru.mp3")  
-    os.remove("play_gTTS.mp3") 
+   
 
 def combined():
     # Загрузка аудиофайлов
@@ -88,20 +89,20 @@ def combined():
     chunk_pause_1 = AudioSegment.silent(duration=1000)
 
  
-    if os.path.exists("play_gTTS.mp3") == False:
+    if os.path.exists("play_total.mp3") == False:
         # Склеивание аудиофайлов
         #combined_audio = chunk_en_slowly  + chunk_en + chunk_ru + chunk_pause_1
         combined_audio = chunk_en_slowly + chunk_en + chunk_ru 
         
         # Сохранение объединенного аудиофайла
-        combined_audio.export("play_gTTS.mp3", format="mp3")
+        combined_audio.export("play_total.mp3", format="mp3")
     else:
-        full_play = AudioSegment.from_file("play_gTTS.mp3",format="mp3")
+        full_play = AudioSegment.from_file("play_total.mp3",format="mp3")
         # Склеивание аудиофайлов
         combined_audio = full_play + chunk_en_slowly + chunk_en  + chunk_ru
         
         # Сохранение объединенного аудиофайла
-        combined_audio.export("play_gTTS.mp3", format="mp3")
+        combined_audio.export("play_total.mp3", format="mp3")
         
  
 def save_line_to_mp3(line):
