@@ -13,9 +13,9 @@ https://models.silero.ai/models/tts/
  
 Use
 $ cd tools
-$ python text_to_voice_silero.py file_sentences.txt
+$ python text_to_voice_silero.py from_sentences.txt
 
-file_sentences.txt:
+from_sentences.txt:
 Where do you usually go on vacation? - Куда вы обычно ездите на каникулы?
 He was tired yesterday. - Он вчера устал.
 I was a good friend. - Я был хорошим другом.
