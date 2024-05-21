@@ -13,7 +13,7 @@ https://models.silero.ai/models/tts/
  
 Use
 $ cd tools
-$ python text_to_voice_silero.py from_sentences.txt
+$ python text_to_speech_silero.py from_sentences.txt
 
 from_sentences.txt:
 Where do you usually go on vacation? - Куда вы обычно ездите на каникулы?
@@ -81,7 +81,7 @@ def combined():
     os.remove("sound/play_ru.wav")   
  
 
-def save_line_to_mp3(line):
+def save_line_to_wav(line):
     if os.path.exists('sound') == False:
        os.mkdir('sound')
     if len(line) == 0:
@@ -144,7 +144,7 @@ def main(file_path):
     resource = open(file_path,'r')
     
     for line in resource:
-       save_line_to_mp3(line)       
+       save_line_to_wav(line)       
     
     resource.close() 
     quality_improvement_audio("sound/play.mp3")
