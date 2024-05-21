@@ -4,7 +4,7 @@
 
 ```
 $ cd tools
-$ python text_to_voice_silero.py from_sentences.txt
+$ python text_to_speech_silero.py from_sentences.txt
 ```
 
 Где файл с текстом `from_sentences.txt` в формате "EN - RU":
