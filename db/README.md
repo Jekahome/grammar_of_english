@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS words(
 );
 
 
-
+-- A1
 SELECT id,
     noun_singular_default,
     noun_plural,
@@ -39,4 +39,31 @@ SELECT id,
     frequency,
     level_group
 FROM words WHERE level_group = 'A1'
+
+
+-- Verbs A1 
+SELECT w.verb_1_i_you_we_they, w.verb_1_he_she_it, w.verb_present_participle, w.verb_2_past_tense ,w.verb_3_past_participle,w.verb_irregular  
+FROM words w WHERE w.level_group  = 'A1' AND w.word_type = 'Verb' ORDER By w.verb_1_i_you_we_they
+
+-- Verbs modal level_group A1  
+SELECT w.verb_1_i_you_we_they, w.verb_1_he_she_it, w.verb_present_participle, w.verb_2_past_tense ,w.verb_3_past_participle,w.verb_irregular,w.translate_define, w.frequency   
+FROM words w WHERE w.level_group  = 'A1' AND w.word_type = 'Verb modal' ORDER By w.frequency  
+
+-- Nouns level_group A1 
+SELECT w.noun_singular_default , w.noun_plural,w.translate_define,  w.frequency  
+FROM words w WHERE w.level_group  = 'A1' AND w.word_type = 'Noun' ORDER By w.frequency
+
+-- Adverbs level_group A1 
+SELECT w.noun_singular_default,w.translate_define, w.frequency
+FROM words w WHERE w.level_group  = 'A1' AND w.word_type = 'Adverbs' ORDER By w.frequency
+
+-- Adjective level_group A1 
+SELECT w.noun_singular_default ,w.translate_define, w.frequency
+FROM words w WHERE w.level_group  = 'A1' AND w.word_type = 'Adjective' ORDER By w.frequency
+
+-- Other level_group A1 
+SELECT w.noun_singular_default, w.word_type FROM words w 
+WHERE w.level_group  = 'A1' AND w.word_type NOT IN ('Verb','Noun','Adverbs','Adjective')
+
+
 ```
