@@ -1,5 +1,7 @@
 # Слова A1-C2 (5449 слов)
 
+p.s. База данных слов ни как не задействована в сценариях.
+
 ```sql
 CREATE TABLE IF NOT EXISTS words(
     id INTEGER PRIMARY KEY,
