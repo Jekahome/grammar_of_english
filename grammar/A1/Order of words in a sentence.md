@@ -9,7 +9,7 @@
 ## Direct word order (Прямой порядок слов в предложении)
 
 $${\color{red}Subject} \space -> \space {\color{blue}Predicate} \space -> \space Object \space -> \space Adverbial\space Modifier$$
- 
+
 $${\color{red}I} \space {\color{blue}sent} \space you \space a \space letter \space yesterday.\space  – \space Я\space послал\space тебе \spaceписьмо \spaceвчера.$$ 
 
 Определение не учитывается в данной последовательности, так как может относиться как к подлежащему,
@@ -21,7 +21,7 @@ $${\color{red}Little \space Jenny} \space {\color{blue}plays}  \space with \spac
 $${\color{red}I} \space {\color{blue}go} \space home.\space  – \space Я\space иду\space домой.$$ 
 
 $${\color{red}People} \space {\color{blue}was} \space here.\space  – \space Здесь\space были\space Люди.$$ 
-   
+
 $${\color{red}It} \space {\color{blue}is} \space great!\space  – \space Здорово!$$ 
 
 ## Indirect word order (Непрямой порядок слов в предложении)
