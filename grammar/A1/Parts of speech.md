@@ -339,33 +339,33 @@ Infinitive - это неизменяемая форма глагола, кото
  
 любовь - любить - love - to love
 
-    - I need **to do**... – Мне нужно сделать
-    - They need **to start**... – Им нужно начать
-    - She needs **to take**... – Ей нужно взять
+- I need **to do**... – Мне нужно сделать
+- They need **to start**... – Им нужно начать
+- She needs **to take**... – Ей нужно взять
 
 - **Глаголы состояния** (non-action verbs or stative verbs): касаются чувств или состояний субъекта
 
 Основные глаголы состояния `to be (am,is are,was,were)` и другие: <i>want, need, prefer, love, hate, like, dislike, know, believe</i>.
 
-    - I want **to be** (I wonna be)... – Я хочу быть
-    - She **is** beautiful – Она красивая
-    - You **were** a good friends – Они были хорошими друзьями
-    - They **were** happy – Они были счастливы
-    - It **was** fan – Это было весело
-    - I **am** working – Я работающий/Я работаю в данный момент (working это глагол work в роли прилагательного Adjective, и так как предложению, все же нужен Predicate (глагол) то присутсвует to be в форме am)
+- I want **to be** (I wonna be)... – Я хочу быть
+- She **is** beautiful – Она красивая
+- You **were** a good friends – Они были хорошими друзьями
+- They **were** happy – Они были счастливы
+- It **was** fan – Это было весело
+- I **am** working – Я работающий/Я работаю в данный момент (working это глагол work в роли прилагательного Adjective, и так как предложению, все же нужен Predicate (глагол) то присутсвует to be в форме am)
 
 Учти, что они не используются в Continuous Tenses. Преимущественно Simple Tenses, иногда Perfect.
 
 - Некоторые глаголы могут быть **как action, так и non-action** в зависимости от конкретного значения в предложении и способа их использования:
 
-    - He is nice to everyone. – Он добр ко всем (выражает постоянное состояние или черту личности).
-    - He was just being nice to everyone to get a promotion – Он просто любезно относился ко всем, чтобы получить повышение (выражает временное/преднамеренное поведение).
+- He is nice to everyone. – Он добр ко всем (выражает постоянное состояние или черту личности).
+- He was just being nice to everyone to get a promotion – Он просто любезно относился ко всем, чтобы получить повышение (выражает временное/преднамеренное поведение).
 
 - **Вспомогательные глаголы** (auxiliary verbs) - to be, to have, to do, will. :
 
 Помогают основным глаголам образовывать времена.
 
-    - I have eaten sushi many times before. – Я ел суши много раз раньше (have помогает показать наш опыт)
+- I have eaten sushi many times before. – Я ел суши много раз раньше (have помогает показать наш опыт)
 
 - **Модальные вспомогательные глаголы** (modal auxiliary verbs) - will, can, may, must, have to, could, should, would, ought, might, had to:
 
@@ -373,14 +373,14 @@ Infinitive - это неизменяемая форма глагола, кото
 
 Это глаголы **намерения**, они выражают отношение говорящего к действию. После них нужно ставить глаголы в инфинитиве.
 
-    - I **must** reach the end. – Я должен дойти до конца.
-    - I **have** to start work. – Мне пора приступить к работе.
-    - She **must** be the strongest person on the team, and might be the strongest person in the region. –
+- I **must** reach the end. – Я должен дойти до конца.
+- I **have** to start work. – Мне пора приступить к работе.
+- She **must** be the strongest person on the team, and might be the strongest person in the region. –
 Она должна быть самым сильным человеком в команде и, возможно, самым сильным человеком в регионе.
 
 После модальных глаголов не ставится to, если дальше идет другой глагол.
 
-    - I **can jump** over the fence, and you? - Я могу перепрыгнуть через этот забор, а ты?
+- I **can jump** over the fence, and you? - Я могу перепрыгнуть через этот забор, а ты?
 
 Модальные глаголы не меняются в зависимости от лица, не имеют окончания -s, как и глагол после них
 
@@ -390,7 +390,7 @@ Infinitive - это неизменяемая форма глагола, кото
 
 Глагол get, например, становится разными фразовыми глаголами в сочетании с разными предлогами.
 
-    - After losing his job, he’s **getting** by on savings. – После потери работы он обходится сбережениями.
+- After losing his job, he’s **getting** by on savings. – После потери работы он обходится сбережениями.
 
 
 ## Четыре формы глагола:
