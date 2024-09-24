@@ -66,21 +66,21 @@ $${Away\space {\color{blue}ran}\space{\color{red}children}.\space –\space Де
 
 - $${\color{red}She}$$ is beautiful. – Она прекрасна
 
-- **Students** often skip their classes. – Студенты часто прогуливают уроки.
+- $${\color{red}Students}$$ often skip their classes. – Студенты часто прогуливают уроки.
 
 **Compound Subject** (составное подлежащее)
 состоит из двух или более простых подлежащих, которые относятся к общему сказуемому
 
-- **My friend** and **I** go jogging every Sunday. – Я и мой друг ходим на пробежку каждое воскресенье.
+- $${\color{red}My\space friend}$$ and $${\color{red}I}$$ go jogging every Sunday. – Я и мой друг ходим на пробежку каждое воскресенье.
 
-- **There were boys** and **girls** playing together in the school yard. – В школьном дворе вместе играли мальчики и девочки.
+- $${\color{red}Ther\space were\space boys}$$ and $${\color{red}girls}$$ playing together in the school yard. – В школьном дворе вместе играли мальчики и девочки.
 
 **Full Subject** (полное подлежащее)
 состоит из простого подлежащего или же составного подлежащего (ключевых слов) и других слов, которые к нему относятся
 
-- **This jacket** is not new. – Эта куртка не новая.
+- $${\color{red}This\space jacket}$$ is not new. – Эта куртка не новая.
 
-- **My silk polka-dot skirt and cotton blouse** are dirty. – Моя шелковая юбка в горошек и хлопковая блузка грязные.
+- $${\color{red}My\space silk\space polka-dot\space skirt\space and\space cotton\space blouse}$$ are dirty. – Моя шелковая юбка в горошек и хлопковая блузка грязные.
 
 
 ## $${\color{blue}The\space Predicate}\space (Что\space делает?\space В\space каком\space состоянии\space находится?\space Кем\space или\space чем\space является?)$$ 
