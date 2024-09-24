@@ -90,29 +90,29 @@ $${Away\space {\color{blue}ran}\space{\color{red}children}.\space –\space Де
 **Simple Predicate** (простое сказуемое)
 состоит только из глагола в определенной личной или временной форме.
 
-- Kate **likes** you. – Ты нравишься Кейт.
+- Kate $${\color{blue}likes}$$ you. – Ты нравишься Кейт.
 
-- We **worked** hard to meet a deadline. – Мы усердно работали, чтобы закончить работу в срок.
+- We $${\color{blue}worked}$$ hard to meet a deadline. – Мы усердно работали, чтобы закончить работу в срок.
 
-- (фраз.гл.): John **takes care of** his sister. – Джон заботится о своей сестре.
+- (фраз.гл.): John $${\color{blue}takes\space care\space of}$$ his sister. – Джон заботится о своей сестре.
 
-- (фраз.гл.): Jane **moved in with** her boyfriend last month. – Джейн переехала к своему парню в прошлом месяце.
+- (фраз.гл.): Jane $${\color{blue}moved\space in\space with}$$ her boyfriend last month. – Джейн переехала к своему парню в прошлом месяце.
 
 **Compound Predicate** (составное сказуемое)
 может состоять из нескольких простых сказуемых, которые относятся к общему простому или составному подлежащему.
 
-- Kelly and Jane **called** Peter and **invited** him to their party. – Келли и Джейн позвонили Питеру и пригласили его на свою вечеринку.
+- Kelly and Jane $${\color{blue}called}$$ Peter and $${\color{blue}invited}$$ him to their party. – Келли и Джейн позвонили Питеру и пригласили его на свою вечеринку.
 
-- I **haven’t finished** my work yet. – Я еще не закончил свою работу.
+- I $${\color{blue}haven’t\space finished}$$ my work yet. – Я еще не закончил свою работу.
 
-- I **will keep on telling** my story. – Я продолжу рассказывать свою историю.
+- I $${\color{blue}will\space keep\space on\space telling}$$ my story. – Я продолжу рассказывать свою историю.
 
-- She **feels bad and looks tired.** – Она чувствует себя плохо и выглядит уставшей.
+- She $${\color{blue}feels\space bad\space and\space looks\space tired}$$. – Она чувствует себя плохо и выглядит уставшей.
 
 **Full Predicate** (полное сказуемое)
 состоит из простого или составного сказуемого и всех второстепенных членов предложения, которые относятся и зависят от данного сказуемого.
 
-- My friend Matt **is a kind and intelligent guy.** – Мой друг Мэтт – добрый и умный парень.
+- My friend Matt $${\color{blue}is\space a\space kind\space and\space intelligent\space guy}$$. – Мой друг Мэтт – добрый и умный парень.
 
 
 ![table](https://github.com/Jekahome/grammar_of_english/blob/main/_img/ex.png "table")
