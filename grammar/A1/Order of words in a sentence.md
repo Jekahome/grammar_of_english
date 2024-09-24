@@ -28,11 +28,11 @@ $${\color{red}It} \space {\color{blue}is} \space great!\space  – \space Здо
 
 $${\color{blue}Predicate} \space -> \space{\color{red}Subject} \space-> \space Object \space -> \space Adverbial \space Modifier$$
 
-- Используется в большинстве вопросительных предложений или, модальный глагол в начале предложения:
+- Используется в большинстве вопросительных предложений или когда модальный глагол в начале предложения:
 $${\color{blue}Didn’t} \space {\color{red}you} \space {\color{blue}go}\space to\space the\space cinema\space yesterday?\space –\space Разве\space ты\space вчера\space не\space ходил \space в \space кино?$$
 $${\color{blue}Would} \space {\color{red}you}\space {\color{blue}bring} \space me \space some \space  tea,\space  please?\space  – \space Не \space мог \space бы \space ты \space принести \space мне \space чаю, \space пожалуйста?$$
 
-- Повелительное наклонение глагола (приказа, просьбы, пожелания, запрета и пр.):
+- Повелительное наклонение глагола (приказ, просьба, пожелание, запрет и пр.):
 $${\color{blue}Таке}\space{\color{red}а реn}!\space –\space Возьмите\space ручку!$$
 $${\color{blue}Маке}\space{\color{red}а plan}!\space –\space Составьте\space план!$$
 
@@ -54,7 +54,7 @@ $${\color{blue}May}\space{\color{red}all\space your\space wishes}\space{\color{b
 - После наречий, указывающих направление ( in, out, down, away, up) если они стоят в начале предложения.
 $${Away\space {\color{blue}ran}\space{\color{red}children}.\space –\space Дети\space убежали\space прочь.}$$
 
-- И другие случаи которые нет смысла изучать, а практиковать из источников!
+- И другие случаи которые нет смысла изучать, но практиковать из источников!
 
 
 ## $${\color{red}The\space Subject}\space (Кто?\space Что?)$$ 
@@ -64,7 +64,7 @@ $${Away\space {\color{blue}ran}\space{\color{red}children}.\space –\space Де
 **Simple Subject** (простое подлежащее)
 состоит из одного главного слова (часто местоимения или существительного без артиклей), отвечающего на вопрос What? (что?) или Who? (кто?)
 
-- **She** is beautiful. – Она прекрасна
+- $${\color{red}She}$$ is beautiful. – Она прекрасна
 
 - **Students** often skip their classes. – Студенты часто прогуливают уроки.
 
