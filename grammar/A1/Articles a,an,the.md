@@ -294,13 +294,14 @@ Doctor White, Professor — Доктор Уайт, профессор
 
 <i>Артикль не употребляется, если перед существительным стоит притяжательное или указательное местоимение, другое существительное в притяжательном падеже, количественное числительное или отрицание «no» (не “not”)</i>
 
+Exercise:
 - I have … sister. My … sister is … engineer.
 - I can see … paper on your … table, but I can’t see no … pen.
 - They have … dog and two … cats.
 - I have … spoon in my … plate, but I have no … soup in it.
 - This … pen is good, and that … pen is bad.
 
-Ответ:
+Answers:
 - I have a sister. My sister is an engineer.
 - I can see a paper on your table, but I can’t see no pen.
 - They have a dog and two cats.
@@ -309,13 +310,14 @@ Doctor White, Professor — Доктор Уайт, профессор
 
 <i>Упоминая предмет впервые, мы употребляем перед ним неопределенный артикль a (an). Упоминая этот предмет вторично, нужно ставить перед ним определенный артикль the.</i> 
 
+Exercise:
 - We wrote …dictation yesterday …dictation was long.
 - I got … letter from my … friend yesterday … letter was not interesting.
 - I can see three …boys. … boys are playing.
 - Our …room is large.
 - I have … bicycle. ….bicycle is black. 
 
-Ответ:
+Answers:
 - We wrote a dictation yesterday. The dictation was long.
 - I got a letter from my friend yesterday. The letter was not interesting.
 - I can see three boys. The boys are playing.
@@ -327,13 +329,14 @@ Doctor White, Professor — Доктор Уайт, профессор
 множественном числе артикль a (an) опускается.
 Артикль the употребляется как с исчисляемыми, так и с неисчисляемыми существительными в единственном или множественном числе.</i>
 
+Exercise:
 - This is … soup. … soup is tasty.
 - In the morning I eat … sandwich and drink … tea.
 - She gave me … coffee and … cake. … coffee was hot . … cake was tasty.
 - I see …book in your hand. Is … book interesting?
 - She bought … meat, …butter and potatoes yesterday. She also bought … cake. … cake was very tasty. We are eating … cake with … tea.
 
-Ответ:
+Answers:
 - This is the soup. The soup is tasty.
 - In the morning I eat a sandwich and drink tea.
 - She gave me a coffee and a cake. The coffee was hot. The cake was tasty.
@@ -343,6 +346,7 @@ Doctor White, Professor — Доктор Уайт, профессор
 <i>Запомните следующие словосочетания, в которых артикль не употребляется:
 At school, at home, at work</i>
 
+Exercise:
 - We are at … home.
 - My … brother is not at … home, he is at … school.
 - Her … mother is at … work. She is … doctor.
@@ -350,7 +354,7 @@ At school, at home, at work</i>
 - Is your … father at … home? – No, he is at … work.
 - Where is your … brother? – He is at … home.
 
-Ответ:
+Answers:
 - We are at home.
 - My brother is not at home, he is at school.
 - Her mother is at work. She is a doctor.
@@ -361,14 +365,14 @@ At school, at home, at work</i>
 <i>Если перед существительным употребляется прилагательное, оно ставится между артиклем и существительным.
 е.g. This is a book. This is a good book.</i>
 
-
+Exercise:
 - I have … large … family.
 - My granny often tells us … long … interesting … stories.
 - My … father is … engineer. He works at … factory. … factory is large.
 - Her … sister is at … school. She is … good …pupil.
 - My cousin’s … cat has two … kittens. … cat likes milk. … kittens like … milk, too.
 
-Ответ:
+Answers:
 - I have a large family.
 - My granny often tells us long and interesting stories.
 - My father is an engineer. He works at a factory. The factory is large.
@@ -381,6 +385,7 @@ At school, at home, at work</i>
 б) если этот предмет является определенным по ситуации:
    е.g. Put the book on the table.</i>
 
+Exercise:
 - What’s … weather like today? - … weather is fine.
 -  … sun is yellow.
 -  … sky is grey today.
@@ -389,7 +394,7 @@ At school, at home, at work</i>
 - Where is your … brother? – He is at … home. He is in his … room. He is sitting at … table. He is doing his … homework. …homework is difficult.
 - Are you … worker? – No, I am … student.
 
-Ответ:
+Answers:
 - What’s the weather like today? – The weather is fine.
 - The sun is yellow.
 - The sky is grey today.
@@ -410,6 +415,7 @@ At school, at home, at work</i>
 Существительное, стоящее в скобках, а также прилагательное могут быть любыми. 
 Вместо предлога on может употребляться любой другой предлог или заменяющее его словосочетание, например: `in front of`</i>
 
+Exercise:
 - Where is … cat? - … cat is on … sofa.
 - Where is … book? - … book is on … shelf.
 - Where are … flowers? - … flowers are in … beautiful vase.
@@ -420,7 +426,7 @@ At school, at home, at work</i>
 - There is no … bread on … table. Where is … bread?
 - There is … little white cloud in … sky.
 
-Ответ:
+Answers:
 - Where is the cat? – The cat is on the sofa.
 - Where is the book? – The book is on the shelf.
 - - Where are the flowers? – The flowers are in a beautiful vase.
@@ -437,6 +443,7 @@ At school, at home, at work</i>
 - I see a … It is a … She is a … There is a …
 </i>
 
+Exercise:
 - We have … big dog. … is very clever.
 - My friend has … very good computer.
 - This …boy is big. He is …student.
@@ -447,7 +454,7 @@ At school, at home, at work</i>
 - There was … beautiful flower in this … vase yesterday.
 - Where is … flower now?
 
-Ответ:
+Answers:
 - We have a big dog. It is very clever.
 - My friend has a very good computer.
 - This boy is big. He is a student.
@@ -463,7 +470,7 @@ At school, at home, at work</i>
 - In the middle to the left ....   on the left
 - In the corner</i> 
 
-
+Exercise:
 - There is … thick red …carpet in my … room. … carpet is on … floor in … front of … sofa.
 - Where is … table in your brother’s … room? – His …table is near … window.
 - We have no … piano in our … living room.
@@ -471,7 +478,7 @@ At school, at home, at work</i>
 - Our … TV-set is on … little … table in … corner of … room.
 - There is … beautiful picture in my … father’s …study. … picture is on … wall to … left of … window.
 
-Ответ:
+Answers:
 - There is a thick red carpet in my room. The carpet is on the floor in front of the sofa.
 - Where is the table in your brother’s room? – His table is near the window.
 - We have no piano in our living room.
@@ -479,7 +486,7 @@ At school, at home, at work</i>
 - Our TV set is on a little table in the corner of the room.
 - There is a beautiful picture in my father’s study. The picture is on the wall to the left of the window.
 
- 
+Exercise:
 - My aunt’s flat is in … new house. There is … living room, … bedroom, … study, … bathroom and … kitchen in … flat. 
 - … bedroom is … large room with … two windows. 
 - …room is light as … windows are large. 
@@ -494,7 +501,7 @@ At school, at home, at work</i>
 - … carpet is dark green. 
 - … room is very cosy. 
 
-Ответ:
+Answers:
 - My aunt’s flat is in a new house. There is a living room, a bedroom, a study, a bathroom, and a kitchen in the flat.
 - The bedroom is a large room with two windows.
 - The room is light as the windows are large.
@@ -513,6 +520,7 @@ At school, at home, at work</i>
 <i>Если после конструкции `There is/ There are` стоит неисчисляемое существительное или существительное во множественном числе, вместо опущенного неопределенного артикля a, an
 часто (не обязательно) употребляется слово `some`</i>
 
+Exercise:
 - Look into … refrigerator. What can you see on… shelves? 
 - There is … butter in … butter-dish. 
 - There is …sausage, but there is no … cheese. 
@@ -523,7 +531,7 @@ At school, at home, at work</i>
 - Oh, all …boys are playing football at … stadium.
 - There is …tea in my … glass/ there is no … tea in my friend’s … glass. His … glass is empty. 
 
-Ответ:
+Answers:
 - Look into the refrigerator. What can you see on the shelves?
 - There is butter in the butter-dish.
 - There is sausage, but there is no cheese.
@@ -544,7 +552,7 @@ At school, at home, at work</i>
 - To come _ home at a quarter past five
 - To leave _ home for_work (for_school)</i>
 
-
+Exercise:
 - My brother is … pupil. He goes to … school. 
 - He goes to … school in … morning. 
 - He has five or six lessons… every day. 
@@ -554,7 +562,7 @@ At school, at home, at work</i>
 - He usually goes to … bed at … half past ten. 
 - At … night he sleeps.
 
-Ответ:
+Answers:
 - My brother is a pupil. He goes to school.
 - He goes to school in the morning.
 - He has five or six lessons every day.
@@ -564,14 +572,14 @@ At school, at home, at work</i>
 - He usually goes to bed at half past ten.
 - At night he sleeps.
 
-
+Exercise:
 - My father goes to … work in … morning and comes … home in … evening.
 - I get up at …half past seven in … morning and go to … bed at …quarter to eleven in … evening.
 - Where does your mother leave … home for … work? –
 - She leaves …home for … work at … quarter past eight.
 - When do you leave … home for … school? – I leave … home for … school at … half past … eight.
 
-Ответ:
+Answers:
 - My father goes to work in the morning and comes home in the evening.
 - I get up at half past seven in the morning and go to bed at a quarter to eleven in the evening.
 - Where does your mother leave home for work? – She leaves home for work at a quarter past eight.
@@ -589,7 +597,7 @@ At school, at home, at work</i>
 - After _ work from _ work
 - After _ school from _school </i>
 
-
+Exercise:
 - What is … date today? It is … seventh … of May.
 - …fourth lesson today is … lesson of English.
 - After … school I usually go … home.
@@ -598,7 +606,7 @@ At school, at home, at work</i>
 - My daughter came … home from … school on … Monday and said to me: “There will be … parent’s meeting on … tenth of December at six o’clock in … evening”.
 - We don’t go to … school on Sunday.
 
-Ответ:
+Answers:
 - What is the date today? It is the seventh of May.
 - The fourth lesson today is a lesson of English.
 - After school I usually go home.
@@ -624,6 +632,7 @@ At school, at home, at work</i>
 
 </i>
 
+Exercise:
 - … people usually have … breakfast in … morning, … dinner in … afternoon, in … evening … people have … supper.
 - There is a proverb: “After … dinner sleep awhile, after … supper walk … mile”.
 - Who cooks … dinner in your family?
@@ -634,7 +643,7 @@ At school, at home, at work</i>
 - I watch TV in … evening. 
 
 
-Ответ:
+Answers:
 - People usually have breakfast in the morning, dinner in the afternoon, in the evening people have supper.
 - There is a proverb: “After dinner sleep awhile, after supper walk a mile.”
 - Who cooks dinner in your family?
@@ -650,6 +659,7 @@ At school, at home, at work</i>
 - е.g. What _color is your cat?
 - I want to know what _book you are reading. </i>
 
+Exercise:
 - What … color is your new … hat? – It is … red.
 - Is there… refrigerator in your … kitchen?
 - Where is … refrigerator in … your of … kitchen? – It is in … corner of … kitchen.
@@ -661,7 +671,7 @@ At school, at home, at work</i>
 - On … bookshelf we can see … newspapers and … book by … Jack London. 
 
 
-Ответ:
+Answers:
 - What color is your new hat? – It is red.
 - Is there a refrigerator in your kitchen?
 - Where is the refrigerator in the corner of the kitchen? – It is in the corner of the kitchen.
@@ -682,6 +692,7 @@ At school, at home, at work</i>
 - е.g. _ Chinese is difficult.
 - The Chinese language is difficult. </i>
 
+Exercise:
 - When my grandfather was …young man, he studied … physics.
 - Do you speak … Spanish?
 - My aunt is … great specialist in …biology.
@@ -693,7 +704,7 @@ At school, at home, at work</i>
 - wrote … test paper in …mathematics. … teacher said: ”I shall correct … test-papers in …evening.
 - I study … English. I attend …English classes in … evening.
 
-Ответ:
+Answers:
 - When my grandfather was a young man, he studied - physics.
 - Do you speak - Spanish?
 - My aunt is a great specialist in - biology.
@@ -710,7 +721,7 @@ At school, at home, at work</i>
 - To play _football to play the guitar
 - Out of _doors</i>
 
-
+Exercise:
 - Do you play …piano?
 - There is … big black piano in our living room. It is at …wall to … left of … door opposite … sideboard. 
 - My sister likes to play …piano. She often plays…piano in…evering.
@@ -720,7 +731,7 @@ At school, at home, at work</i>
 - Do you like to play …guitar? What … colour is your guitar?
 - She likes to play … tennis. 
 
-Ответ:
+Answers:
 - Do you play the piano?
 - There is a big black piano in our living room. It is at the wall to the left of the door opposite the sideboard.
 - My sister likes to play the piano. She often plays the piano in the evening.
@@ -743,7 +754,7 @@ At school, at home, at work</i>
 - The Crimea, etc.</i>
 
 
- 
+Exercise:
 - … Moscow is situated on … Moscow River. …Moscow is a
 river that moves very slowly. There is … canal called … MoscowVolga Canal which joins … Moscow to … Volga. …Volga runs into
 … Caspian Sea.
@@ -752,7 +763,7 @@ river that moves very slowly. There is … canal called … MoscowVolga Canal wh
 …Lena, …Amur.
 - …Altai mountains are …higher than …Urals.
 
-Ответ:
+Answers:
 - Moscow is situated on the Moscow River. The Moscow is a river that moves very slowly. There is a canal called the Moscow-Volga Canal which joins Moscow to the Volga. The Volga runs into the Caspian Sea.
 - Several rivers run into the sea at New York. The most important is the Hudson River which empties into the Atlantic Ocean. Besides the Hudson, there are two other rivers: the East River and the Harlem River.
 - In Siberia, there are many long rivers: the Ob, the Yenissei, the Lena, the Amur.
@@ -764,7 +775,7 @@ river that moves very slowly. There is … canal called … MoscowVolga Canal wh
 - In the east to the east
 - In the west to the west</i>
 
-
+Exercise:
 - …Neva flows into …Gulf of … Finland.
 - …Pacific Ocean is very deep.
 - …Urals are not very high.
@@ -781,7 +792,7 @@ river that moves very slowly. There is … canal called … MoscowVolga Canal wh
 - … Europe and …America are separated by … Atlantic Ocean.
 - …Baltic Sea is stormy in winter.
 
-Ответ:
+Answers:
 - The Neva flows into the Gulf of Finland.
 - The Pacific Ocean is very deep.
 - The Urals are not very high.
@@ -798,7 +809,7 @@ river that moves very slowly. There is … canal called … MoscowVolga Canal wh
 - Europe and America are separated by the Atlantic Ocean.
 - The Baltic Sea is stormy in winter.
 
-
+Exercise:
 - …Russia occupies …eastern half of … Europe and …northern third of …Asia.
 - This winter is …true Russian winter with …hard frosts.
 - It is warm in …Crimea and … Caucasus.
@@ -810,7 +821,7 @@ river that moves very slowly. There is … canal called … MoscowVolga Canal wh
 - There are six continents in … world.
 - … France is to … north of … Italy.
 
-Ответ:
+Answers:
 - Russia occupies the eastern half of Europe and the northern third of Asia.
 - This winter is a true Russian winter with hard frosts.
 - It is warm in Crimea and the Caucasus.
