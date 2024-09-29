@@ -294,86 +294,86 @@ Doctor White, Professor — Доктор Уайт, профессор
 
 <i>Артикль не употребляется, если перед существительным стоит притяжательное или указательное местоимение, другое существительное в притяжательном падеже, количественное числительное или отрицание «no» (не “not”)</i>
 
-I have … sister. My … sister is … engineer.
-I can see … paper on your … table, but I can’t see no … pen.
-They have … dog and two … cats.
-I have … spoon in my … plate, but I have no … soup in it.
-This … pen is good, and that … pen is bad.
+- I have … sister. My … sister is … engineer.
+- I can see … paper on your … table, but I can’t see no … pen.
+- They have … dog and two … cats.
+- I have … spoon in my … plate, but I have no … soup in it.
+- This … pen is good, and that … pen is bad.
 
 Ответ:
-I have a sister. My sister is an engineer.
-I can see a paper on your table, but I can’t see no pen.
-They have a dog and two cats.
-I have a spoon in my plate, but I have no soup in it.
-This pen is good, and that pen is bad.
+- I have a sister. My sister is an engineer.
+- I can see a paper on your table, but I can’t see no pen.
+- They have a dog and two cats.
+- I have a spoon in my plate, but I have no soup in it.
+- This pen is good, and that pen is bad.
 
 <i>Упоминая предмет впервые, мы употребляем перед ним неопределенный артикль a (an). Упоминая этот предмет вторично, нужно ставить перед ним определенный артикль the.</i> 
 
-We wrote …dictation yesterday …dictation was long.
-I got … letter from my … friend yesterday … letter was not interesting.
-I can see three …boys. … boys are playing.
-Our …room is large.
-I have … bicycle. ….bicycle is black. 
+- We wrote …dictation yesterday …dictation was long.
+- I got … letter from my … friend yesterday … letter was not interesting.
+- I can see three …boys. … boys are playing.
+- Our …room is large.
+- I have … bicycle. ….bicycle is black. 
 
 Ответ:
-We wrote a dictation yesterday. The dictation was long.
-I got a letter from my friend yesterday. The letter was not interesting.
-I can see three boys. The boys are playing.
-Our room is large.
-I have a bicycle. The bicycle is black.
+- We wrote a dictation yesterday. The dictation was long.
+- I got a letter from my friend yesterday. The letter was not interesting.
+- I can see three boys. The boys are playing.
+- Our room is large.
+- I have a bicycle. The bicycle is black.
 
 <i>Артикль a (an) можно употреблять только с исчисляемыми
 существительными, стоящими в единственном числе. Перед неисчисляемыми существительными или существительными во
 множественном числе артикль a (an) опускается.
 Артикль the употребляется как с исчисляемыми, так и с неисчисляемыми существительными в единственном или множественном числе.</i>
 
-This is … soup. … soup is tasty.
-In the morning I eat … sandwich and drink … tea.
-She gave me … coffee and … cake. … coffee was hot . … cake was tasty.
-I see …book in your hand. Is … book interesting?
-She bought … meat, …butter and potatoes yesterday. She also bought … cake. … cake was very tasty. We are eating … cake with … tea.
+- This is … soup. … soup is tasty.
+- In the morning I eat … sandwich and drink … tea.
+- She gave me … coffee and … cake. … coffee was hot . … cake was tasty.
+- I see …book in your hand. Is … book interesting?
+- She bought … meat, …butter and potatoes yesterday. She also bought … cake. … cake was very tasty. We are eating … cake with … tea.
 
 Ответ:
-This is the soup. The soup is tasty.
-In the morning I eat a sandwich and drink tea.
-She gave me a coffee and a cake. The coffee was hot. The cake was tasty.
-I see a book in your hand. Is the book interesting?
-She bought meat, butter, and potatoes yesterday. She also bought a cake. The cake was very tasty. We are eating the cake with tea.
+- This is the soup. The soup is tasty.
+- In the morning I eat a sandwich and drink tea.
+- She gave me a coffee and a cake. The coffee was hot. The cake was tasty.
+- I see a book in your hand. Is the book interesting?
+- She bought meat, butter, and potatoes yesterday. She also bought a cake. The cake was very tasty. We are eating the cake with tea.
 
 <i>Запомните следующие словосочетания, в которых артикль не употребляется:
 At school, at home, at work</i>
 
-We are at … home.
-My … brother is not at … home, he is at … school.
-Her … mother is at … work. She is … doctor.
-He has … child.
-Is your … father at … home? – No, he is at … work.
-Where is your … brother? – He is at … home.
+- We are at … home.
+- My … brother is not at … home, he is at … school.
+- Her … mother is at … work. She is … doctor.
+- He has … child.
+- Is your … father at … home? – No, he is at … work.
+- Where is your … brother? – He is at … home.
 
 Ответ:
-We are at home.
-My brother is not at home, he is at school.
-Her mother is at work. She is a doctor.
-He has a child.
-Is your father at home? – No, he is at work.
-Where is your brother? – He is at home.
+- We are at home.
+- My brother is not at home, he is at school.
+- Her mother is at work. She is a doctor.
+- He has a child.
+- Is your father at home? – No, he is at work.
+- Where is your brother? – He is at home.
 
 <i>Если перед существительным употребляется прилагательное, оно ставится между артиклем и существительным.
 е.g. This is a book. This is a good book.</i>
 
 
-I have … large … family.
-My granny often tells us … long … interesting … stories.
-My … father is … engineer. He works at … factory. … factory is large.
-Her … sister is at … school. She is … good …pupil.
-My cousin’s … cat has two … kittens. … cat likes milk. … kittens like … milk, too.
+- I have … large … family.
+- My granny often tells us … long … interesting … stories.
+- My … father is … engineer. He works at … factory. … factory is large.
+- Her … sister is at … school. She is … good …pupil.
+- My cousin’s … cat has two … kittens. … cat likes milk. … kittens like … milk, too.
 
 Ответ:
-I have a large family.
-My granny often tells us long and interesting stories.
-My father is an engineer. He works at a factory. The factory is large.
-Her sister is at school. She is a good pupil.
-My cousin’s cat has two kittens. The cat likes milk. The kittens like milk, too.
+- I have a large family.
+- My granny often tells us long and interesting stories.
+- My father is an engineer. He works at a factory. The factory is large.
+- Her sister is at school. She is a good pupil.
+- My cousin’s cat has two kittens. The cat likes milk. The kittens like milk, too.
 
 <i>При упоминании предмета впервые мы тем не менее употребляем перед ним артикль the в следующих случаях:
 а) если упоминаемый предмет является единственным в мире:
@@ -381,435 +381,446 @@ My cousin’s cat has two kittens. The cat likes milk. The kittens like milk, to
 б) если этот предмет является определенным по ситуации:
    е.g. Put the book on the table.</i>
 
-What’s … weather like today? - … weather is fine.
- … sun is yellow.
- … sky is grey today.
- … Earth is … planet. 
-We had … English lesson yesterday. … teacher asked me many … questions. … questions were difficult.
-Where is your … brother? – He is at … home. He is in his … room. He is sitting at … table. He is doing his … homework. …homework is difficult.
-Are you … worker? – No, I am … student.
+- What’s … weather like today? - … weather is fine.
+-  … sun is yellow.
+-  … sky is grey today.
+-  … Earth is … planet. 
+- We had … English lesson yesterday. … teacher asked me many … questions. … questions were difficult.
+- Where is your … brother? – He is at … home. He is in his … room. He is sitting at … table. He is doing his … homework. …homework is difficult.
+- Are you … worker? – No, I am … student.
 
 Ответ:
-What’s the weather like today? – The weather is fine.
-The sun is yellow.
-The sky is grey today.
-The Earth is a planet.
-We had an English lesson yesterday. The teacher asked me many questions. The questions were difficult.
-Where is your brother? – He is at home. He is in his room. He is sitting at the table. He is doing his homework. The homework is difficult.
-Are you a worker? – No, I am a student.
+- What’s the weather like today? – The weather is fine.
+- The sun is yellow.
+- The sky is grey today.
+- The Earth is a planet.
+- We had an English lesson yesterday. The teacher asked me many questions. The questions were difficult.
+- Where is your brother? – He is at home. He is in his room. He is sitting at the table. He is doing his homework. The homework is difficult.
+- Are you a worker? – No, I am a student.
 
 <i>Существует множество так называемых «застывших» словосочетаний, в которых артикль употребляется или отсутствует
 традиционно. Эти словосочетания следует заучивать наизусть.
-Запомните:
-There is a …
-Where is the …
-The (book) is on the (table).
-Но: The (book) is on a little (table).
-Существительное, стоящее в скобках, а также прилагательное могут быть любыми. 
-Вместо предлога on может употребляться любой другой предлог или заменяющее его словосочетание, например: in front of.</i>
 
-Where is … cat? - … cat is on … sofa.
-Where is … book? - … book is on … shelf.
-Where are … flowers? - … flowers are in … beautiful vase.
-Where is… vase? - … vase is on … little table near … window.
-Open … window, please. … weather is fine today. I can see … sun in … sky. I can see … nice little bird. … bird is sitting in … big tree. …tree is green.
-Where are … cutlets? - …cutlets are in … refrigerator on … little plate.
-There is … little brown coffee-table in our … room in front of … sofa.
-There is no … bread on … table. Where is … bread?
-There is … little white cloud in … sky.
+Запомните:
+- There is a …
+- Where is the …
+- The (book) is on the (table).
+Но: The (book) is on a little (table).
+
+Существительное, стоящее в скобках, а также прилагательное могут быть любыми. 
+Вместо предлога on может употребляться любой другой предлог или заменяющее его словосочетание, например: `in front of`</i>
+
+- Where is … cat? - … cat is on … sofa.
+- Where is … book? - … book is on … shelf.
+- Where are … flowers? - … flowers are in … beautiful vase.
+- Where is… vase? - … vase is on … little table near … window.
+- Open … window, please. … weather is fine today. I can see … sun in … sky. I can see … nice little bird. … bird is sitting in … big tree. …tree is green.
+- Where are … cutlets? - …cutlets are in … refrigerator on … little plate.
+- There is … little brown coffee-table in our … room in front of … sofa.
+- There is no … bread on … table. Where is … bread?
+- There is … little white cloud in … sky.
 
 Ответ:
-Where is the cat? – The cat is on the sofa.
-Where is the book? – The book is on the shelf.
-Where are the flowers? – The flowers are in a beautiful vase.
-Where is the vase? – The vase is on a little table near the window.
-Open the window, please. The weather is fine today. I can see the sun in the sky. I can see a nice little bird. The bird is sitting in a big tree. The tree is green.
-Where are the cutlets? – The cutlets are in the refrigerator on a little plate.
-There is a little brown coffee-table in our room in front of the sofa.
-There is no bread on the table. Where is the bread?
-There is a little white cloud in the sky.
+- Where is the cat? – The cat is on the sofa.
+- Where is the book? – The book is on the shelf.
+- - Where are the flowers? – The flowers are in a beautiful vase.
+- Where is the vase? – The vase is on a little table near the window.
+- Open the window, please. The weather is fine today. I can see the sun in the sky. I can see a nice little bird. The bird is sitting in a big tree. The tree is green.
+- Where are the cutlets? – The cutlets are in the refrigerator on a little plate.
+- There is a little brown coffee-table in our room in front of the sofa.
+- There is no bread on the table. Where is the bread?
+- There is a little white cloud in the sky.
 
 <i>Запомните конструкции, требующие неопределенного артикля:
-I have a … This is a … I am a …
-He has a … That is a …. He is a …
-I see a … It is a … She is a … There is a …
+- I have a … This is a … I am a …
+- He has a … That is a …. He is a …
+- I see a … It is a … She is a … There is a …
 </i>
 
-We have … big dog. … is very clever.
-My friend has … very good computer.
-This …boy is big. He is …student.
-My … sister is at … work. She is … secretary. She works at … large office.
-This is… very difficult question. I don’t know …answer to it.
-Do you see … little girl with … big ball in her … hands?
-She is … pupil of our … school.
-There was … beautiful flower in this … vase yesterday.
-Where is … flower now?
+- We have … big dog. … is very clever.
+- My friend has … very good computer.
+- This …boy is big. He is …student.
+- My … sister is at … work. She is … secretary. She works at … large office.
+- This is… very difficult question. I don’t know …answer to it.
+- Do you see … little girl with … big ball in her … hands?
+- She is … pupil of our … school.
+- There was … beautiful flower in this … vase yesterday.
+- Where is … flower now?
 
 Ответ:
-We have a big dog. It is very clever.
-My friend has a very good computer.
-This boy is big. He is a student.
-My sister is at work. She is a secretary. She works at a large office.
-This is a very difficult question. I don’t know the answer to it.
-Do you see a little girl with a big ball in her hands?
-She is a pupil of our school.
-There was a beautiful flower in this vase yesterday.
-Where is the flower now?
+- We have a big dog. It is very clever.
+- My friend has a very good computer.
+- This boy is big. He is a student.
+- My sister is at work. She is a secretary. She works at a large office.
+- This is a very difficult question. I don’t know the answer to it.
+- Do you see a little girl with a big ball in her hands?
+- She is a pupil of our school.
+- There was a beautiful flower in this vase yesterday.
+- Where is the flower now?
 
 <i>Запомните следующие «застывшие» словосочетания:
-In _ front to the right .... on the right
-In the middle to the left ....   on the left
-In the corner</i> 
+- In _ front to the right .... on the right
+- In the middle to the left ....   on the left
+- In the corner</i> 
 
 
-There is … thick red …carpet in my … room. … carpet is on … floor in … front of … sofa.
-Where is … table in your brother’s … room? – His …table is near … window.
-We have no … piano in our … living room.
-I can see … nice … coffee-table in …middle of … room to …right of … door. It is black and …red. I like … coffee table.
-Our … TV-set is on … little … table in … corner of … room.
-There is … beautiful picture in my … father’s …study. … picture is on … wall to … left of … window.
+- There is … thick red …carpet in my … room. … carpet is on … floor in … front of … sofa.
+- Where is … table in your brother’s … room? – His …table is near … window.
+- We have no … piano in our … living room.
+- I can see … nice … coffee-table in …middle of … room to …right of … door. It is black and …red. I like … coffee table.
+- Our … TV-set is on … little … table in … corner of … room.
+- There is … beautiful picture in my … father’s …study. … picture is on … wall to … left of … window.
 
 Ответ:
-There is a thick red carpet in my room. The carpet is on the floor in front of the sofa.
-Where is the table in your brother’s room? – His table is near the window.
-We have no piano in our living room.
-I can see a nice coffee table in the middle of the room to the right of the door. It is black and red. I like the coffee table.
-Our TV set is on a little table in the corner of the room.
-There is a beautiful picture in my father’s study. The picture is on the wall to the left of the window.
+- There is a thick red carpet in my room. The carpet is on the floor in front of the sofa.
+- Where is the table in your brother’s room? – His table is near the window.
+- We have no piano in our living room.
+- I can see a nice coffee table in the middle of the room to the right of the door. It is black and red. I like the coffee table.
+- Our TV set is on a little table in the corner of the room.
+- There is a beautiful picture in my father’s study. The picture is on the wall to the left of the window.
 
  
-My aunt’s flat is in … new house. There is … living room, … bedroom, … study, … bathroom and … kitchen in … flat. … bedroom is … large room with … two windows. …room is light as … windows are large. There are … white curtains on … windows. There are … two beds with … large pillows on them. There are … small tables near … beds. There are … lamps on them. To …left of …door there is … dressing-table with … looking- glass on it. There is … low chair at … dressing table. There are … several pictures on …pale green walls. There is … thick carpet on floor. … carpet is dark green. … room is very cosy. 
+- My aunt’s flat is in … new house. There is … living room, … bedroom, … study, … bathroom and … kitchen in … flat. 
+- … bedroom is … large room with … two windows. 
+- …room is light as … windows are large. 
+- There are … white curtains on … windows. 
+- There are … two beds with … large pillows on them. 
+- There are … small tables near … beds. 
+- There are … lamps on them. 
+- To …left of …door there is … dressing-table with … looking- glass on it. 
+- There is … low chair at … dressing table. 
+- There are … several pictures on …pale green walls. 
+- There is … thick carpet on floor. 
+- … carpet is dark green. 
+- … room is very cosy. 
 
 Ответ:
-My aunt’s flat is in a new house. There is a living room, a bedroom, a study, a bathroom, and a kitchen in the flat.
-The bedroom is a large room with two windows.
-The room is light as the windows are large.
-There are white curtains on the windows.
-There are two beds with large pillows on them.
-There are small tables near the beds.
-There are lamps on them.
-To the left of the door there is a dressing-table with a looking-glass on it.
-There is a low chair at the dressing-table.
-There are several pictures on the pale green walls.
-There is a thick carpet on the floor.
-The carpet is dark green.
-The room is very cosy.
+- My aunt’s flat is in a new house. There is a living room, a bedroom, a study, a bathroom, and a kitchen in the flat.
+- The bedroom is a large room with two windows.
+- The room is light as the windows are large.
+- There are white curtains on the windows.
+- There are two beds with large pillows on them.
+- There are small tables near the beds.
+- There are lamps on them.
+- To the left of the door there is a dressing-table with a looking-glass on it.
+- There is a low chair at the dressing-table.
+- There are several pictures on the pale green walls.
+- There is a thick carpet on the floor.
+- The carpet is dark green.
+- The room is very cosy.
 
 
 <i>Если после конструкции `There is/ There are` стоит неисчисляемое существительное или существительное во множественном числе, вместо опущенного неопределенного артикля a, an
 часто (не обязательно) употребляется слово `some`</i>
 
-Look into … refrigerator. What can you see on… shelves? – There is … butter in … butter-dish. There is …sausage, but there is no … cheese. There are… eggs and … apples. There is … orange, … lemon, and … jam in … little vase.
-There is … juice in this cup. May I drink … juice?
-There are …girls in … yard, but I can see no … boys. Where are … boys? Oh, all …boys are playing football at … stadium.
-There is …tea in my … glass/ there is no … tea in my friend’s … glass. His … glass is empty. 
+- Look into … refrigerator. What can you see on… shelves? 
+- There is … butter in … butter-dish. 
+- There is …sausage, but there is no … cheese. 
+- There are… eggs and … apples.
+-  There is … orange, … lemon, and … jam in … little vase.
+- There is … juice in this cup. May I drink … juice?
+- There are …girls in … yard, but I can see no … boys. Where are … boys? 
+- Oh, all …boys are playing football at … stadium.
+- There is …tea in my … glass/ there is no … tea in my friend’s … glass. His … glass is empty. 
 
 Ответ:
-Look into the refrigerator. What can you see on the shelves?
-There is butter in the butter-dish.
-There is sausage, but there is no cheese.
-There are eggs and apples.
-There is an orange, a lemon, and jam in a little vase.
-There is juice in this cup. May I drink the juice?
-There are girls in the yard, but I can see no boys. Where are the boys?
-Oh, all the boys are playing football at the stadium.
-There is tea in my glass; there is no tea in my friend’s glass. His glass is empty.
+- Look into the refrigerator. What can you see on the shelves?
+- There is butter in the butter-dish.
+- There is sausage, but there is no cheese.
+- There are eggs and apples.
+- There is an orange, a lemon, and jam in a little vase.
+- There is juice in this cup. May I drink the juice?
+- There are girls in the yard, but I can see no boys. Where are the boys?
+- Oh, all the boys are playing football at the stadium.
+- There is tea in my glass; there is no tea in my friend’s glass. His glass is empty.
 
-
-
+ 
 <i>Запомните следующие «застывшие» словосочетания:
-In the morning to go to _ bed
-In the evening to go to _ school
-In the afternoon to go to _ work
-At _ night
-To go _ home at _ half past five
-To come _ home at a quarter past five
-To leave _ home for_work (for_school)</i>
+- In the morning to go to _ bed
+- In the evening to go to _ school
+- In the afternoon to go to _ work
+- At _ night
+- To go _ home at _ half past five
+- To come _ home at a quarter past five
+- To leave _ home for_work (for_school)</i>
 
 
-My brother is … pupil. He goes to … school. 
-He goes to … school in … morning. 
-He has five or six lessons… every day. 
-In … afternoon he goes … home. 
-At … home he does his … homework. 
-In …evening he reads … books. 
-He usually goes to … bed at … half past ten. 
-At … night he sleeps.
-
-Ответ:
-My brother is a pupil. He goes to school.
-He goes to school in the morning.
-He has five or six lessons every day.
-In the afternoon he goes home.
-At home he does his homework.
-In the evening he reads books.
-He usually goes to bed at half past ten.
-At night he sleeps.
-
-
-My father goes to … work in … morning and comes … home in … evening.
-I get up at …half past seven in … morning and go to … bed at …quarter to eleven in … evening.
-Where does your mother leave … home for … work? –
-She leaves …home for … work at … quarter past eight.
-When do you leave … home for … school? – I leave … home for … school at … half past … eight.
+- My brother is … pupil. He goes to … school. 
+- He goes to … school in … morning. 
+- He has five or six lessons… every day. 
+- In … afternoon he goes … home. 
+- At … home he does his … homework. 
+- In …evening he reads … books. 
+- He usually goes to … bed at … half past ten. 
+- At … night he sleeps.
 
 Ответ:
-My father goes to work in the morning and comes home in the evening.
-I get up at half past seven in the morning and go to bed at a quarter to eleven in the evening.
-Where does your mother leave home for work? – She leaves home for work at a quarter past eight.
-When do you leave home for school? – I leave home for school at half past eight.
+- My brother is a pupil. He goes to school.
+- He goes to school in the morning.
+- He has five or six lessons every day.
+- In the afternoon he goes home.
+- At home he does his homework.
+- In the evening he reads books.
+- He usually goes to bed at half past ten.
+- At night he sleeps.
+
+
+- My father goes to … work in … morning and comes … home in … evening.
+- I get up at …half past seven in … morning and go to … bed at …quarter to eleven in … evening.
+- Where does your mother leave … home for … work? –
+- She leaves …home for … work at … quarter past eight.
+- When do you leave … home for … school? – I leave … home for … school at … half past … eight.
+
+Ответ:
+- My father goes to work in the morning and comes home in the evening.
+- I get up at half past seven in the morning and go to bed at a quarter to eleven in the evening.
+- Where does your mother leave home for work? – She leaves home for work at a quarter past eight.
+- When do you leave home for school? – I leave home for school at half past eight.
 
 
 <i>Перед названиями месяцев и дней недели артикль не употребляется.
-е.g. School begins in _ September.
-We rest on _ Sunday.
-Перед порядковыми числительными употребляется артикль
-the.
-е.g. Our classroom is on the second floor. Today is the third of May.
+- е.g. School begins in _ September.
+- We rest on _ Sunday.
+- 
+Перед порядковыми числительными употребляется артикль the.
+- е.g. Our classroom is on the second floor. Today is the third of May.
 
 Запомните следующие «застывшие» словосочетания:
-After _ work from _ work
-After _ school from _school </i>
+- After _ work from _ work
+- After _ school from _school </i>
 
 
-What is … date today? It is … seventh … of May.
-…fourth lesson today is … lesson of English.
-After … school I usually go … home.
-My sister always comes from … work late: at eight o’clock or at …half past eight. But on… Friday she comes…home early: at half past four or at…quarter to five. On …Saturday and on… Sunday she doesn’t go to … work.
-My daughter came … home from … school on … Monday and said to me: “There will be … parent’s meeting on … tenth of December at six o’clock in … evening”.
-We don’t go to … school on Sunday.
+- What is … date today? It is … seventh … of May.
+- …fourth lesson today is … lesson of English.
+- After … school I usually go … home.
+- My sister always comes from … work late: at eight o’clock or at …half past eight. But on… Friday she comes…home early: at half past four or at…quarter to five. 
+- On …Saturday and on… Sunday she doesn’t go to … work.
+- My daughter came … home from … school on … Monday and said to me: “There will be … parent’s meeting on … tenth of December at six o’clock in … evening”.
+- We don’t go to … school on Sunday.
 
 Ответ:
-What is the date today? It is the seventh of May.
-The fourth lesson today is a lesson of English.
-After school I usually go home.
-My sister always comes from work late: at eight o’clock or at half past eight. But on Friday she comes home early: at half past four or at a quarter to five.
-On Saturday and on Sunday she doesn’t go to work.
-My daughter came home from school on Monday and said to me: “There will be a parent’s meeting on the tenth of December at six o’clock in the evening.”
-We don’t go to school on Sunday.
+- What is the date today? It is the seventh of May.
+- The fourth lesson today is a lesson of English.
+- After school I usually go home.
+- My sister always comes from work late: at eight o’clock or at half past eight. But on Friday she comes home early: at half past four or at a quarter to five.
+- On Saturday and on Sunday she doesn’t go to work.
+- My daughter came home from school on Monday and said to me: “There will be a parent’s meeting on the tenth of December at six o’clock in the evening.”
+- We don’t go to school on Sunday.
 
 
 
 <i>Запомните следующие «застывшие» словосочетания:
-After _breakfast before _breakfast
-After _lunch before _lunch
-After _tea before _tea
-After _dinner before _dinner
-After _supper before _supper
-At _breakfast for _breakfast
-At _lunch for _lunch
-At _tea for _tea
-At _dinner for _dinner
-At _supper for _supper
-To have (cook, make, prepare)   - breakfast
-                                - lunch
-                                - tea
-                                - dinner
-                                - supper
+- After _breakfast before _breakfast
+- After _lunch before _lunch
+- After _tea before _tea
+- After _dinner before _dinner
+- After _supper before _supper
+- At _breakfast for _breakfast
+- At _lunch for _lunch
+- At _tea for _tea
+- At _dinner for _dinner
+- At _supper for _supper
+- To have (cook, make, prepare) - breakfast/lunch/tea/dinner/supper
 
 </i>
 
-… people usually have … breakfast in … morning, … dinner in … afternoon, in … evening … people have … supper.
-There is a proverb: “After … dinner sleep awhile, after … supper walk … mile”.
-Who cooks … dinner in your family?
-When do you clean your teeth in … morning: before … breakfast or after… breakfast?
-What does your mother do after … breakfast? – She goes to … work.
-We usually have … butter for … lunch. Where is … butter? - … butter is on … little plate.
-There is … white and … brown bread on … table.
-I watch TV in … evening. 
+- … people usually have … breakfast in … morning, … dinner in … afternoon, in … evening … people have … supper.
+- There is a proverb: “After … dinner sleep awhile, after … supper walk … mile”.
+- Who cooks … dinner in your family?
+- When do you clean your teeth in … morning: before … breakfast or after… breakfast?
+- What does your mother do after … breakfast? – She goes to … work.
+- We usually have … butter for … lunch. Where is … butter? - … butter is on … little plate.
+- There is … white and … brown bread on … table.
+- I watch TV in … evening. 
 
 
 Ответ:
-People usually have breakfast in the morning, dinner in the afternoon, in the evening people have supper.
-There is a proverb: “After dinner sleep awhile, after supper walk a mile.”
-Who cooks dinner in your family?
-When do you clean your teeth in the morning: before breakfast or after breakfast?
-What does your mother do after breakfast? – She goes to work.
-We usually have butter for lunch. Where is the butter? – The butter is on a little plate.
-There is white and brown bread on the table.
-I watch TV in the evening.
+- People usually have breakfast in the morning, dinner in the afternoon, in the evening people have supper.
+- There is a proverb: “After dinner sleep awhile, after supper walk a mile.”
+- Who cooks dinner in your family?
+- When do you clean your teeth in the morning: before breakfast or after breakfast?
+- What does your mother do after breakfast? – She goes to work.
+- We usually have butter for lunch. Where is the butter? – The butter is on a little plate.
+- There is white and brown bread on the table.
+- I watch TV in the evening.
 
 
 <i>Если перед существительным стоит вопросительное или
 относительное местоимение, артикль опускается.
-е.g. What _color is your cat?
-I want to know what _book you are reading. </i>
+- е.g. What _color is your cat?
+- I want to know what _book you are reading. </i>
 
-What … color is your new … hat? – It is … red.
-Is there… refrigerator in your … kitchen?
-Where is … refrigerator in … your of … kitchen? – It is in … corner of … kitchen.
-I have … tea in my … cup.
-He has no … coffee in his … cup. What … book did you take from … library on … Tuesday?
-I go to …office in … morning. As … office is far from … house I live in, I take ... bus to get there.
-What … bus do you take to get to … work?
-Whose … pen is this?
-On … bookshelf we can see … newspapers and … book by … Jack London. 
+- What … color is your new … hat? – It is … red.
+- Is there… refrigerator in your … kitchen?
+- Where is … refrigerator in … your of … kitchen? – It is in … corner of … kitchen.
+- I have … tea in my … cup.
+- He has no … coffee in his … cup. What … book did you take from … library on … Tuesday?
+- I go to …office in … morning. As … office is far from … house I live in, I take ... bus to get there.
+- What … bus do you take to get to … work?
+- Whose … pen is this?
+- On … bookshelf we can see … newspapers and … book by … Jack London. 
 
 
 Ответ:
-What color is your new hat? – It is red.
-Is there a refrigerator in your kitchen?
-Where is the refrigerator in the corner of the kitchen? – It is in the corner of the kitchen.
-I have tea in my cup.
-He has no coffee in his cup.
-What book did you take from the library on Tuesday?
-I go to the office in the morning. As the office is far from the house I live in, I take a bus to get there.
-What bus do you take to get to work?
-Whose pen is this?
-On the bookshelf we can see newspapers and a book by Jack London.
+- What color is your new hat? – It is red.
+- Is there a refrigerator in your kitchen?
+- Where is the refrigerator in the corner of the kitchen? – It is in the corner of the kitchen.
+- I have tea in my cup.
+- He has no coffee in his cup.
+- What book did you take from the library on Tuesday?
+- I go to the office in the morning. As the office is far from the house I live in, I take a bus to get there.
+- What bus do you take to get to work?
+- Whose pen is this?
+- On the bookshelf we can see newspapers and a book by Jack London.
 
-
-
+ 
 <i>Перед названиями наук, учебных предметов и языков артикль не употребляется.
-е.g. He studies _chemistry.
-We speak _English.
+- е.g. He studies _chemistry.
+- We speak _English.
 
 Но если после названия языка стоит слово language, то употребляется артикль the.
-е.g. _ Chinese is difficult.
-The Chinese language is difficult. </i>
+- е.g. _ Chinese is difficult.
+- The Chinese language is difficult. </i>
 
-When my grandfather was …young man, he studied … physics.
-Do you speak … Spanish?
-My aunt is … great specialist in …biology.
-…Japanese is more difficult than… French.
-We listened to … very interesting lecture on … English literature yesterday.
-At …lesson of … geography … teacher told us … very interesting things about … famous travelers.
-My mother speaks … English and … French, but she doesn’t speak … German.
-We had …lesson of … higher mathematics yesterday. We
-wrote … test paper in …mathematics. … teacher said: ”I shall correct … test-papers in …evening.
-I study … English. I attend …English classes in … evening.
+- When my grandfather was …young man, he studied … physics.
+- Do you speak … Spanish?
+- My aunt is … great specialist in …biology.
+- …Japanese is more difficult than… French.
+- We listened to … very interesting lecture on … English literature yesterday.
+- At …lesson of … geography … teacher told us … very interesting things about … famous travelers.
+- My mother speaks … English and … French, but she doesn’t speak … German.
+- We had …lesson of … higher mathematics yesterday. We
+- wrote … test paper in …mathematics. … teacher said: ”I shall correct … test-papers in …evening.
+- I study … English. I attend …English classes in … evening.
 
 Ответ:
-When my grandfather was a young man, he studied - physics.
-Do you speak - Spanish?
-My aunt is a great specialist in - biology.
+- When my grandfather was a young man, he studied - physics.
+- Do you speak - Spanish?
+- My aunt is a great specialist in - biology.
 - Japanese is more difficult than - French.
-We listened to a very interesting lecture on - English literature yesterday.
-At the lesson of - geography the teacher told us - very interesting things about - famous travelers.
-My mother speaks - English and - French, but she doesn’t speak - German.
-We had a lesson of - higher mathematics yesterday. We wrote a test paper in - mathematics. The teacher said: "I shall correct the test-papers in the evening."
-I study - English. I attend - English classes in the evening.
+- We listened to a very interesting lecture on - English literature yesterday.
+- At the lesson of - geography the teacher told us - very interesting things about - famous travelers.
+- My mother speaks - English and - French, but she doesn’t speak - German.
+- We had a lesson of - higher mathematics yesterday. We wrote a test paper in - mathematics. The teacher said: "I shall correct the test-papers in the evening."
+- I study - English. I attend - English classes in the evening.
 
 
 <i>Запомните следующие «застывшие» словосочетания:
-To play _chess to play the piano
-To play _football to play the guitar
-Out of _doors</i>
+- To play _chess to play the piano
+- To play _football to play the guitar
+- Out of _doors</i>
 
 
-Do you play …piano?
-There is … big black piano in our living room. It is at …wall to … left of … door opposite … sideboard. My sister likes to play …piano. She often plays…piano in…evering.
-…boys like to play …football.
-What do you do in …evening? – I often play … chess with my brother.
-Where are … children? – They are out of … doors. … weather is fine today. They are playing … badminton in … yard.
-Do you like to play …guitar? What … colour is your guitar?
-She likes to play … tennis. 
+- Do you play …piano?
+- There is … big black piano in our living room. It is at …wall to … left of … door opposite … sideboard. 
+- My sister likes to play …piano. She often plays…piano in…evering.
+- …boys like to play …football.
+- What do you do in …evening? – I often play … chess with my brother.
+- Where are … children? – They are out of … doors. … weather is fine today. They are playing … badminton in … yard.
+- Do you like to play …guitar? What … colour is your guitar?
+- She likes to play … tennis. 
 
 Ответ:
-Do you play the piano?
-There is a big black piano in our living room. It is at the wall to the left of the door opposite the sideboard.
-My sister likes to play the piano. She often plays the piano in the evening.
-Boys like to play football.
-What do you do in the evening? – I often play chess with my brother.
-Where are the children? – They are out of doors. The weather is fine today. They are playing badminton in the yard.
-Do you like to play the guitar? What color is your guitar?
-She likes to play tennis.
-
-
+- Do you play the piano?
+- There is a big black piano in our living room. It is at the wall to the left of the door opposite the sideboard.
+- My sister likes to play the piano. She often plays the piano in the evening.
+- Boys like to play football.
+- What do you do in the evening? – I often play chess with my brother.
+- Where are the children? – They are out of doors. The weather is fine today. They are playing badminton in the yard.
+- Do you like to play the guitar? What color is your guitar?
+- She likes to play tennis.
  
 <i>Запомните правила употребления артикля с географическими названиями.
 Определенный артикль the употребляется перед названиями рек, каналов, морей, проливов, океанов, архипелагов, горных
 цепей, систем озёр.
 Без артикля употребляются названия отдельных озер, гор,
 островов, континентов, городов, стран.
+
 Исключения:
-The United States of America
-The United Kingdom of Great Britain and Northern Ireland
-The Netherlands
-The Crimea, etc.</i>
+- The United States of America
+- The United Kingdom of Great Britain and Northern Ireland
+- The Netherlands
+- The Crimea, etc.</i>
 
 
  
-1.… Moscow is situated on … Moscow River. …Moscow is a
+- … Moscow is situated on … Moscow River. …Moscow is a
 river that moves very slowly. There is … canal called … MoscowVolga Canal which joins … Moscow to … Volga. …Volga runs into
 … Caspian Sea.
-2.Several rivers run into …sea at …New York. … most important is … Hudson River which empties into … Atlantic Ocean. Besides … Hudson there are two other rivers: …East River and … Harlem River. 
-.In …Siberia there are many long rivers: … Ob, …Yenissei,
+- Several rivers run into …sea at …New York. … most important is … Hudson River which empties into … Atlantic Ocean. Besides … Hudson there are two other rivers: …East River and … Harlem River. 
+- In …Siberia there are many long rivers: … Ob, …Yenissei,
 …Lena, …Amur.
-4.…Altai mountains are …higher than …Urals.
+- …Altai mountains are …higher than …Urals.
 
 Ответ:
-Moscow is situated on the Moscow River. The Moscow is a river that moves very slowly. There is a canal called the Moscow-Volga Canal which joins Moscow to the Volga. The Volga runs into the Caspian Sea.
-Several rivers run into the sea at New York. The most important is the Hudson River which empties into the Atlantic Ocean. Besides the Hudson, there are two other rivers: the East River and the Harlem River.
-In Siberia, there are many long rivers: the Ob, the Yenissei, the Lena, the Amur.
-The Altai mountains are higher than the Urals.
+- Moscow is situated on the Moscow River. The Moscow is a river that moves very slowly. There is a canal called the Moscow-Volga Canal which joins Moscow to the Volga. The Volga runs into the Caspian Sea.
+- Several rivers run into the sea at New York. The most important is the Hudson River which empties into the Atlantic Ocean. Besides the Hudson, there are two other rivers: the East River and the Harlem River.
+- In Siberia, there are many long rivers: the Ob, the Yenissei, the Lena, the Amur.
+- The Altai mountains are higher than the Urals.
 
 <i>Запомните следующие «застывшие» словосочетания
-In the north to the north
-In the south to the south
-In the east to the east
-In the west to the west</i>
+- In the north to the north
+- - In the south to the south
+- In the east to the east
+- In the west to the west</i>
 
 
-1.…Neva flows into …Gulf of … Finland.
-2.…Pacific Ocean is very deep.
-3.…Urals are not very high.
-4.…Kazbek is …highest peak of …Caucasus.
-5.…Alps are covered with …snow.
-6.… Shetland Islands are situated to … north of … Great Britain.
-7.…USA is … largest country in …America.
-8.…Crimea is washed by … Black Sea.
-9.…Lake Baikal is …deepest lake in … world.
-10. …Paris is … capital of … France.
-11. Lomonosov was born in … small village on …shore of
-…White Sea.
-12. Gogol was born in … Ukraine in 1809.
-13. …Caucasus separates … Black Sea from …Caspian Sea.
-14. … Europe and …America are separated by … Atlantic
-Ocean.
-15. …Baltic Sea is stormy in winter.
+- …Neva flows into …Gulf of … Finland.
+- …Pacific Ocean is very deep.
+- …Urals are not very high.
+- …Kazbek is …highest peak of …Caucasus.
+- …Alps are covered with …snow.
+- … Shetland Islands are situated to … north of … Great Britain.
+- …USA is … largest country in …America.
+- …Crimea is washed by … Black Sea.
+- …Lake Baikal is …deepest lake in … world.
+- 10. …Paris is … capital of … France.
+- 11. Lomonosov was born in … small village on …shore of …White Sea.
+- Gogol was born in … Ukraine in 1809.
+- …Caucasus separates … Black Sea from …Caspian Sea.
+- … Europe and …America are separated by … Atlantic Ocean.
+- …Baltic Sea is stormy in winter.
 
 Ответ:
-The Neva flows into the Gulf of Finland.
-The Pacific Ocean is very deep.
-The Urals are not very high.
-Kazbek is the highest peak of the Caucasus.
-The Alps are covered with snow.
-The Shetland Islands are situated to the north of Great Britain.
-The USA is the largest country in America.
-Crimea is washed by the Black Sea.
-Lake Baikal is the deepest lake in the world.
-Paris is the capital of France.
-Lomonosov was born in a small village on the shore of the White Sea.
-Gogol was born in Ukraine in 1809.
-The Caucasus separates the Black Sea from the Caspian Sea.
-Europe and America are separated by the Atlantic Ocean.
-The Baltic Sea is stormy in winter.
+- The Neva flows into the Gulf of Finland.
+- The Pacific Ocean is very deep.
+- The Urals are not very high.
+- Kazbek is the highest peak of the Caucasus.
+- The Alps are covered with snow.
+- The Shetland Islands are situated to the north of Great Britain.
+- The USA is the largest country in America.
+- Crimea is washed by the Black Sea.
+- Lake Baikal is the deepest lake in the world.
+- Paris is the capital of France.
+- Lomonosov was born in a small village on the shore of the White Sea.
+- Gogol was born in Ukraine in 1809.
+- The Caucasus separates the Black Sea from the Caspian Sea.
+- Europe and America are separated by the Atlantic Ocean.
+- The Baltic Sea is stormy in winter.
 
 
-1. …Russia occupies …eastern half of … Europe and …northern third of …Asia.
-2. This winter is …true Russian winter with …hard frosts.
-3. It is warm in …Crimea and … Caucasus.
-4. …Washington is …capital of …United States of America.
-5. I want to go to …New York some day.
-6. …best way to know and understand …people of …other
-countries is to meet them in their own homes.
-7. Is …Australia …island or …continent?
-8. … Red Sea is between …Africa and …Asia.
-9. There are six continents in … world.
-10. … France is to … north of … Italy.
+- …Russia occupies …eastern half of … Europe and …northern third of …Asia.
+- This winter is …true Russian winter with …hard frosts.
+- It is warm in …Crimea and … Caucasus.
+- …Washington is …capital of …United States of America.
+- I want to go to …New York some day.
+- …best way to know and understand …people of …other countries is to meet them in their own homes.
+- Is …Australia …island or …continent?
+- … Red Sea is between …Africa and …Asia.
+- There are six continents in … world.
+- … France is to … north of … Italy.
 
 Ответ:
-Russia occupies the eastern half of Europe and the northern third of Asia.
-This winter is a true Russian winter with hard frosts.
-It is warm in Crimea and the Caucasus.
-Washington is the capital of the United States of America.
-I want to go to New York some day.
-The best way to know and understand the people of other countries is to meet them in their own homes.
-Is Australia an island or a continent?
-The Red Sea is between Africa and Asia.
-There are six continents in the world.
-France is to the north of Italy.
+- Russia occupies the eastern half of Europe and the northern third of Asia.
+- This winter is a true Russian winter with hard frosts.
+- It is warm in Crimea and the Caucasus.
+- Washington is the capital of the United States of America.
+- I want to go to New York some day.
+- The best way to know and understand the people of other countries is to meet them in their own homes.
+- Is Australia an island or a continent?
+- The Red Sea is between Africa and Asia.
+- There are six continents in the world.
+- France is to the north of Italy.
 
 
 [Артикли в английском языке — в чем разница](https://skyeng.ru/articles/v-chem-raznitsa-mezhdu-opredelennym-i-neopredelennym-artiklem-v-anglijskom-yazyke/)
