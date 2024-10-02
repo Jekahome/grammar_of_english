@@ -85,13 +85,13 @@ am/is - predicate
 - He's a driver. - 
 - We are from Ukraine. - 
 - They're teachers. - 
-- She'spretty. - 
+- She's pretty. - 
 - It's a river. - 
 - You're happy. - 
 
 2. Дать ответ:
 - Is it a doll? - Yes,it ts.
-- Is shea teacher? - No,
+- Is she a teacher? - No,
 - Are they happy?- Yes
 - Is he tired? - No,
 - Are you sad?- No,
