@@ -12,6 +12,7 @@
 
 <details>
 <summary>Examples:</summary>
+
 - `I` am a boy - Я (есть/являюсь) мальчик.
 - `He` is a doctor - Он врач.
 - `She` is a teacher - Она учительница.
@@ -34,6 +35,7 @@
 
 <details>
 <summary>Examples:</summary>
+
 - He sees `me` - Он видит меня.
 - Give `them` the books - Дайте им книги.
 - Tell `him` - Скажите ему.
