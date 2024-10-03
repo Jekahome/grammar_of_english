@@ -10,48 +10,48 @@
 
 ## A1
 
-1. [Word order in english](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Order%20of%20words%20in%20a%20sentence.md) 
-2. [Parts of speech](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Parts%20of%20speech.md)
-3. [Articles the,a,an](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Articles%20a%2Can%2Cthe.md) 
-4. [to be](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/to%20be.md) 
-5. [Pronouns I,he,she,it,we,you,they,me,him,her,that,these...](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Pronouns.md) 
-6. [Countable, uncountable, singular and plural nouns](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Singular%20and%20plural%20nouns.md)
-7. [Present Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Present%20Simple.md)
-8. [Past Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Past%20Simple.md)
-9. [Future Simple](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Future%20Simple.md)
-10. [Present Continuous](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Present%20Continuous.md)
-11. [Demonstrative pronouns this,that,these,those](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Demonstrative%20pronouns%20this%2Cthat%2Cthese%2Cthose.md)
-12. [Possessive pronouns my,our,your,his,her,its](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Possessive%20pronouns%20my%2Cour%2Cyour%2Chis%2Cher%2Cits.md)
-13. [Preposition of, quantity nouns](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Preposition%20of.md)
-14. [There is/are](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/There%20is%2Care.md)
-15. [Questions with what,who,whom,whose](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Questions%20with%20what%2Cwho%2Cwhom%2Cwhose.md) 
-16. [Special questions with what,where,when,why,who,which,whose,whome,how,how much (many)](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Special%20questions%20with%20what%2Cwhere%2Cwhen%2Cwhy%2Cwho%2Cwhich%2Cwhose%2Cwhome%2Chow%2Chow%20much%20(many).md) 
-17. [Modal verbs can](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Modal%20verbs%20can.md) 
-18. [Quantifiers Much, many, a lot of, a little, a few, some, any](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Quantifiers%20much%2Cmany%2Ca%20lot%20of%2Ca%20little%2Ca%20few%2Csome%2Cany.md) 
-19. [have got](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/have%20got.md) 
-20. [Adverbs of frequency always,usually,often,sometimes,never](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Adverbs%20of%20frequency%20always%2Cusually%2Coften%2Csometimes%2Cnever.md) 
-21. [It is construction](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/It%20is%20construction.md)
-22. [Phrasal Verbs (first 30)](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Phrasal%20Verbs.md)
-23. [Irregular verbs](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Irregular%20verbs.md) 
-24. [Kit words A1](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Kit%20A1.md)
+1. [Word order in english](/grammar/A1/Order%20of%20words%20in%20a%20sentence.md) 
+2. [Parts of speech](/grammar/A1/Parts%20of%20speech.md)
+3. [Articles the,a,an](/grammar/A1/Articles%20a%2Can%2Cthe.md) 
+4. [to be](/grammar/A1/to%20be.md) 
+5. [Pronouns I,he,she,it,we,you,they,me,him,her,that,these...](/grammar/A1/Pronouns.md) 
+6. [Countable, uncountable, singular and plural nouns](/grammar/A1/Singular%20and%20plural%20nouns.md)
+7. [Present Simple](/grammar/A1/Present%20Simple.md)
+8. [Past Simple](/grammar/A1/Past%20Simple.md)
+9. [Future Simple](/grammar/A1/Future%20Simple.md)
+10. [Present Continuous](/grammar/A1/Present%20Continuous.md)
+11. [Demonstrative pronouns this,that,these,those](/grammar/A1/Demonstrative%20pronouns%20this%2Cthat%2Cthese%2Cthose.md)
+12. [Possessive pronouns my,our,your,his,her,its](/grammar/A1/Possessive%20pronouns%20my%2Cour%2Cyour%2Chis%2Cher%2Cits.md)
+13. [Preposition of, quantity nouns](/grammar/A1/Preposition%20of.md)
+14. [There is/are](/grammar/A1/There%20is%2Care.md)
+15. [Questions with what,who,whom,whose](/grammar/A1/Questions%20with%20what%2Cwho%2Cwhom%2Cwhose.md) 
+16. [Special questions with what,where,when,why,who,which,whose,whome,how,how much (many)](/grammar/A1/Special%20questions%20with%20what%2Cwhere%2Cwhen%2Cwhy%2Cwho%2Cwhich%2Cwhose%2Cwhome%2Chow%2Chow%20much%20(many).md) 
+17. [Modal verbs can](/grammar/A1/Modal%20verbs%20can.md) 
+18. [Quantifiers Much, many, a lot of, a little, a few, some, any](/grammar/A1/Quantifiers%20much%2Cmany%2Ca%20lot%20of%2Ca%20little%2Ca%20few%2Csome%2Cany.md) 
+19. [have got](/grammar/A1/have%20got.md) 
+20. [Adverbs of frequency always,usually,often,sometimes,never](/grammar/A1/Adverbs%20of%20frequency%20always%2Cusually%2Coften%2Csometimes%2Cnever.md) 
+21. [It is construction](/grammar/A1/It%20is%20construction.md)
+22. [Phrasal Verbs (first 30)](/grammar/A1/Phrasal%20Verbs.md)
+23. [Irregular verbs](/grammar/A1/Irregular%20verbs.md) 
+24. [Kit words A1](/grammar/A1/Kit%20A1.md)
     * [The Oxford 3000 is the list of the 3000 most important words to learn in English, from A1 to B2 level.](https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/American_Oxford_3000.pdf)
     * [A1 words](https://www.oxfordlearnersdictionaries.com/wordlists/oxford3000-5000)
     * Oxford Word Skills Elementary Vocabulary
     * English for Everyone Vocabulary
-    * [Starting set of words](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A1/Starting%20set%20of%20words.md)
+    * [Starting set of words](/grammar/A1/Starting%20set%20of%20words.md)
 
 <i>p.s. Составить тест для A1</i>
 
 ## A2
 
-* [Possessive pronouns mine,yours,ours,theirs,his,hers,its](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A2/Possessive%20pronouns%20mine%2Cyours%2Cours%2Ctheirs%2Chis%2Chers%2Cits.md)
-* [Prepositions of Time/Place in,at,on](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A2/Prepositions%20in%2Cat%2Con.md) 
-* [Movement Prepositions](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A2/Movement%20Prepositions.md)
-* [Preposition for](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20for.md) 
-* [Preposition to](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Preposition%20to.md) 
-* [going to](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A2/Going%20to.md) 
-* [Kit words A2](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/A2/Kit%20A2.md) 
-* [Possessive pronouns mine,yours,ours,theirs,his,hers,its](https://github.com/Jekahome/grammar_of_english/blob/main/grammar/Possessive%20pronouns%20mine%2Cyours%2Cours%2Ctheirs%2Chis%2Chers%2Cits.md) 
+* [Possessive pronouns mine,yours,ours,theirs,his,hers,its](/grammar/A2/Possessive%20pronouns%20mine%2Cyours%2Cours%2Ctheirs%2Chis%2Chers%2Cits.md)
+* [Prepositions of Time/Place in,at,on](/grammar/A2/Prepositions%20in%2Cat%2Con.md) 
+* [Movement Prepositions](/grammar/A2/Movement%20Prepositions.md)
+* [Preposition for](/grammar/Preposition%20for.md) 
+* [Preposition to](/grammar/Preposition%20to.md) 
+* [going to](/grammar/A2/Going%20to.md) 
+* [Kit words A2](/grammar/A2/Kit%20A2.md) 
+* [Possessive pronouns mine,yours,ours,theirs,his,hers,its](/grammar/Possessive%20pronouns%20mine%2Cyours%2Cours%2Ctheirs%2Chis%2Chers%2Cits.md) 
 
 
 
@@ -103,7 +103,7 @@
 Но так как найти людей, которым интересно было бы с тобой обсуждать твои темы - мало (приложение HelloTalk), то на самостоятельную работу будет приходить основное время обучения.
 
 Следовательно расписать себе самостоятельно: 
-- **SPEAK** ГОВОРИТЬ учиться/привыкать следует при чтении в слух и повторяя за диктором с [самопроверкой](https://www.google.com/intl/en/chrome/demos/speech.html),[самопроверкой](https://voicenotebook.com/) (проверить в браузере как распознается речь). Для привыкания речевого аппарата необходим обьем наговоренного текста, можно читать в слух, повторять за диктором и произвольно сочинять, (научиться говорить о себе: личная информация, распорядок дня, привычки, погода, работа, увлечения); Записывать аудио-сообщения о планах на день, и как прошел день. Отвечать/задавать вопросы в тренажоре который реагирует (приложения могут такое или самостоятельно разработать используя возможности браузерного API распознавать речь speech-to-text, библиотеки на python могут text-to-speech). Брать картинку и описывать все что на ней происходит. Все же лучшим решением будет ежедневный собеседник. Рассмотреть различные подходы для улучшения навыка говорить - [методика обучения говорению на английском языке](https://github.com/Jekahome/grammar_of_english/blob/main/sources/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%BD%D0%B0%20%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%BC%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5.md)
+- **SPEAK** ГОВОРИТЬ учиться/привыкать следует при чтении в слух и повторяя за диктором с [самопроверкой](https://www.google.com/intl/en/chrome/demos/speech.html),[самопроверкой](https://voicenotebook.com/) (проверить в браузере как распознается речь). Для привыкания речевого аппарата необходим обьем наговоренного текста, можно читать в слух, повторять за диктором и произвольно сочинять, (научиться говорить о себе: личная информация, распорядок дня, привычки, погода, работа, увлечения); Записывать аудио-сообщения о планах на день, и как прошел день. Отвечать/задавать вопросы в тренажоре который реагирует (приложения могут такое или самостоятельно разработать используя возможности браузерного API распознавать речь speech-to-text, библиотеки на python могут text-to-speech). Брать картинку и описывать все что на ней происходит. Все же лучшим решением будет ежедневный собеседник. Рассмотреть различные подходы для улучшения навыка говорить - [методика обучения говорению на английском языке](/sources/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%BD%D0%B0%20%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%BC%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5.md)
 - **LISTEN** СЛУШАТЬ мультики, фильмы, прослушивать адаптивные книги, найти приятный голос блогера,.... Записать аудио в формате "вопрос en - пауза 5 сек - ответ en" и во время прогулки отвечать на эти вопросы. Самостоятельно создать файл субтитров (в формате vtt для видео в формате mkv) придется слушать каждую реплику в адаптированном/легком видео и переводить для себя, [Онлайн-диктанты](https://www.learnenglish.de/dictationpage.html#elem), [Онлайн-диктанты](https://www.englishclub.com/listening/dictation.php);
 - **WRITE** ПИСАТЬ при прослушивании адаптивных книг, при прохождении грамматики по учебникам, отвечать на форумах, личный блог про то как идет изучения языка. Составлять простые предложения в различных Simple временах из слов набора A1 и проверять их [грамматику](https://languagetool.org/ru) или [www.onlinecorrection.com](https://www.onlinecorrection.com/); 
 - **READ** ЧИТАТЬ адаптивные книги по уровням;
@@ -194,7 +194,7 @@ I will be smart. - Я буду умным.
 
 #### 2. Чтение в голос
 
-- 2.1. Повторять эти предложения за диктором, слушать и повторять. [создать аудио](https://github.com/Jekahome/grammar_of_english/blob/main/tools/)
+- 2.1. Повторять эти предложения за диктором, слушать и повторять. [создать аудио](/tools/)
 
 - 2.2. Самостоятельно читать в голос EN предложения до полного понимания всех слов. Несколько проходов. (привыкаем к построению предложения)
 
@@ -206,7 +206,7 @@ I will be smart. - Я буду умным.
 
 Писать под диктовку предложения с EN на EN. Несколько проходов. (нарабатываем LISTEN и WRITE)
 
-[создать аудио](https://github.com/Jekahome/grammar_of_english/blob/main/tools/) в формате "EN - пауза - RU", прослушивать и писать их снова под диктовку. 
+[создать аудио](/tools/) в формате "EN - пауза - RU", прослушивать и писать их снова под диктовку. 
 
 Как развивать LISTEN:
 - слушать (и писать под диктовку) на english адаптивные книги;
@@ -243,7 +243,7 @@ I will be smart. - Я буду умным.
 Два варианта:
 1. Найти собеседника/группу и обмениваться/проговаривать заданную тему/слова каждый день/через день. Ну точно не раз в неделю с преподавателем в течении одного час, проговорив от силы 15 минут и все остальное время "грузишся" грамматикой (проблема в том, что трудно найти таких людей). Но если есть такие люди, то даже без модератора можно организоваться и проговариавать (1. Что вы сделали и что будете делать и задавать друг другу уточняющие вопросы; 2. Просить сказать как собеседник понимает очередное слова из набора A1; 3. Использовать в течении разговора предложения только с конкретным глаголом)
 2. Использовать [речевой тренажер](https://callannie.ai/call) или приложение Andy. Пробую сделать свой вариант с моими сценариями нужных тем и слов.
-3. Вариант для владельцев iPhone и платной версии ChatGPT. Настроить чат на роль репетитора (используя различные prompts) и разговаривать с ним. Настроить [Customize chatGPT](https://github.com/Jekahome/grammar_of_english/blob/main/sources/Customize%20chatGPT.md) для удобства.
+3. Вариант для владельцев iPhone и платной версии ChatGPT. Настроить чат на роль репетитора (используя различные prompts) и разговаривать с ним. Настроить [Customize chatGPT](/sources/Customize%20chatGPT.md) для удобства.
 </i>
 
 --- 
@@ -354,7 +354,7 @@ I will be smart. - Я буду умным.
 
 [Список слов](https://libguides.tii.qa/c.php?g=655316&p=8065488#:~:text=The%20Oxford%203000%20is%20a,know%20at%20A1%2DB2%20level.)
 
-[Список грамматики по уровням](https://github.com/Jekahome/grammar_of_english/blob/main/Checklist.md)
+[Список грамматики по уровням](/Checklist.md)
 
 [Книги бесплатно по уровню vocab.today](https://vocab.today/reader/)
 
