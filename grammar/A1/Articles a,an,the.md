@@ -1,3 +1,8 @@
+---
+layout: default
+title: Articles the,a,an 
+---
+
 # Articles the,a,an 
 
 Артикль — это служебное слово, обычно ставится перед существительным.

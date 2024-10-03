@@ -1,3 +1,8 @@
+---
+layout: default
+title: Grammar of English
+---
+
 # Grammar of English
 
 ## [transfer to Github Pages](https://jekahome.github.io/grammar_of_english)
