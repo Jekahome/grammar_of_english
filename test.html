@@ -10,14 +10,81 @@
             margin: 0;
             padding: 0;
             display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        h1, h2, h3, h4, h5 {
+            margin: 10px 0;
+        }
+
+        code {
+            background-color: #e7f3f3;
+            padding: 3px;
+            border-radius: 3px;
+            font-size: 1.1em;
+        }
+
+        p {
+            text-align: left; 
+        }
+
+        ul, ol {
+            text-align: left;
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        details {
+            margin-bottom: 10px;
+            margin: 20px 0;
+            text-align: left;
+            padding: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
         }
 
         /* Левый блок с алфавитом */
         .left-block {
-            width: 20%;
-            background-color: #f0f0f0;
+            width: 25%; /* Ширина левого блока */
             padding: 20px;
+            background-color: #f0f0f0;
             box-sizing: border-box;
+            margin-right: 20px;
+            min-height: 100vh; /* Растянуть на всю высоту страницы */
         }
 
         .left-block ul {
@@ -31,82 +98,230 @@
 
         /* Правый блок с основным контентом */
         .right-block {
-            width: 80%;
+            width: 75%; /* Ширина правого блока */
             padding: 20px;
             background-color: #ffffff;
             box-sizing: border-box;
+            min-height: 100vh; /* Растянуть на всю высоту страницы */
         }
 
-        /* Общий стиль для ссылок */
-        a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
+        /* Адаптация для мобильных устройств */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column; /* Переключаем на вертикальный вид для мобильных устройств */
+            }
 
-        a:hover {
-            color: #007BFF;
+            .left-block, .right-block {
+                width: 100%; /* Блоки занимают 100% ширины экрана на мобильных устройствах */
+                margin: 0;
+            }
         }
     </style>
 </head>
 <body>
-
-    <!-- Левый блок с алфавитом -->
-    <div class="left-block">
-        <h2>Alphabet</h2>
-        <ul>
-            <li><a href="#">A</a></li>
-            <li><a href="#">B</a></li>
-            <li><a href="#">C</a></li>
-            <li><a href="#">D</a></li>
-            <li><a href="#">E</a></li>
-            <li><a href="#">F</a></li>
-            <li><a href="#">G</a></li>
-            <li><a href="#">A</a></li>
-            <li><a href="#">B</a></li>
-            <li><a href="#">C</a></li>
-            <li><a href="#">D</a></li>
-            <li><a href="#">E</a></li>
-            <li><a href="#">F</a></li>
-            <li><a href="#">G</a></li>
-            <li><a href="#">A</a></li>
-            <li><a href="#">B</a></li>
-            <li><a href="#">C</a></li>
-            <li><a href="#">D</a></li>
-            <li><a href="#">E</a></li>
-            <li><a href="#">F</a></li>
-            <li><a href="#">G</a></li>
-            <li><a href="#">A</a></li>
-            <li><a href="#">B</a></li>
-            <li><a href="#">C</a></li>
-            <li><a href="#">D</a></li>
-            <li><a href="#">E</a></li>
-            <li><a href="#">F</a></li>
-            <li><a href="#">G</a></li>
-            <li><a href="#">A</a></li>
-            <li><a href="#">B</a></li>
-            <li><a href="#">C</a></li>
-            <li><a href="#">D</a></li>
-            <li><a href="#">E</a></li>
-            <li><a href="#">F</a></li>
-            <li><a href="#">G</a></li>
-            <li><a href="#">A</a></li>
-            <li><a href="#">B</a></li>
-            <li><a href="#">C</a></li>
-            <li><a href="#">D</a></li>
-            <li><a href="#">E</a></li>
-            <li><a href="#">F</a></li>
-            <li><a href="#">G</a></li>
-            <!-- Добавьте остальные буквы алфавита -->
-        </ul>
-    </div>
-
-    <!-- Правый блок с основным контентом -->
-    <div class="right-block">
-        <h1>Main Content</h1>
-        <p>This is the main content area. You can put anything you want here, such as text, images, or other HTML elements.</p>
-        <p>For example, this layout can be used for educational purposes where the left side shows the alphabet, and the right side displays content related to the selected letter.</p>
-    </div>
-
+  
+        <div class="left-block">
+            <h2>Alphabet</h2>
+            <ul>
+                <ul>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">D</a></li>
+                    <li><a href="#">E</a></li>
+                    <li><a href="#">F</a></li>
+                    <li><a href="#">G</a></li>
+                    <li><a href="#">H</a></li>
+                    <li><a href="#">I</a></li>
+                    <li><a href="#">J</a></li>
+                    <li><a href="#">K</a></li>
+                    <li><a href="#">L</a></li>
+                    <li><a href="#">M</a></li>
+                    <li><a href="#">N</a></li>
+                    <li><a href="#">O</a></li>
+                    <li><a href="#">P</a></li>
+                    <li><a href="#">Q</a></li>
+                    <li><a href="#">R</a></li>
+                    <li><a href="#">S</a></li>
+                    <li><a href="#">T</a></li>
+                    <li><a href="#">U</a></li>
+                    <li><a href="#">V</a></li>
+                    <li><a href="#">W</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Y</a></li>
+                    <li><a href="#">Z</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="right-block">
+            <h1>Порядок слов в предложении</h1>
+            <p>
+                За основу взят "Новый Самоучитель английского языка А.В.Петрова, И.С.Орлова"<br><br>
+    
+                <strong>Верно:</strong> What are you talking about? - <i>О чём ты говоришь?</i><br>
+                <strong>Неверно:</strong> About what are you talking?            
+            </p>
+    
+            <h2>Direct word order (Прямой порядок слов в предложении)</h2>
+            <span style="color:red;">Subject</span> → <span style="color:blue;">Predicate</span> → Object → Adverbial Modifier <br>
+            <span style="color:red;">I</span> <span style="color:blue;">sent</span> you a letter yesterday. – <i>Я послал тебе письмо вчера.</i> <br>
+            
+            <p>Определение не учитывается в данной последовательности, так как может относиться как к подлежащему, 
+                так и к дополнению, и поэтому оно может занимать разное положение в предложении:
+                <ul>
+                    <li><span style="color:red;">Little Jenny</span> <span style="color:blue;">plays</span> with her friends every day. – <i>Маленькая Дженни играет со своими друзьями каждый день.</i></li>
+                    <li><span style="color:red;">I</span> <span style="color:blue;">go</span> home. – <i>Я иду домой.</i></li>
+                    <li><span style="color:red;">People</span> <span style="color:blue;">was</span> here. – <i>Здесь были люди.</i></li>
+                    <li><span style="color:red;">It</span> <span style="color:blue;">is</span> great! – <i>Здорово!</i></li>
+                </ul>            
+            </p>
+    
+            <h2>Indirect word order (Непрямой порядок слов в предложении)</h2>
+            <span style="color:blue;">Predicate</span> → <span style="color:red;">Subject</span> → Object → Adverbial Modifier
+        
+            <ul>
+                <li>
+                    Используется в большинстве вопросительных предложений или когда модальный глагол в начале предложения:
+                        <ul>
+                            <li><span style="color:blue;">Didn’t</span> <span style="color:red;">you</span> <span style="color:blue;">go</span> to the cinema yesterday? – <i>Разве ты вчера не ходил в кино?</i></li>
+                            <li><span style="color:blue;">Would</span> <span style="color:red;">you</span> <span style="color:blue;">bring</span> me some tea, please? – <i>Не мог бы ты принести мне чаю, пожалуйста?</i></li>
+                        </ul>
+                </li>
+                <li>
+                    Повелительное наклонение глагола (приказ, просьба, пожелание, запрет и пр.): 
+                        <ul>
+                            <li><span style="color:blue;">Take</span> <span style="color:red;">a pen</span>! – <i>Возьмите ручку!</i></li>
+                            <li><span style="color:blue;">Make</span> <span style="color:red;">a plan</span>! – <i>Составьте план!</i></li>
+                        </ul>            
+                </li>
+                <li>
+                    Если сказуемое (Predicate) выражено глаголом to be (быть) или to have (иметь), то они стоят перед подлежащим (Subject):
+                        <ul>
+                            <li><span style="color:blue;">Have</span> <span style="color:red;">you</span> a pen? – <i>У тебя есть ручка?</i></li>
+                            <li><span style="color:blue;">Do</span> <span style="color:red;">you</span> <span style="color:blue;">have</span> a pen? – <i>У тебя есть ручка?</i></li>
+                            <li><span style="color:blue;">Is</span> <span style="color:red;">she</span> at home now? – <i>Она сейчас дома?</i></li>
+                        </ul>            
+                </li>
+                <li>
+                    В предложениях, начинающихся с there:
+                        <ul>
+                            <li>
+                                There <span style="color:blue;">plays</span> <span style="color:red;">Jane</span> with her son in the garden. – <i>В саду играет Джейн со своим сыном.</i>
+                            </li>
+                        </ul>
+                </li>
+                <li>
+                    В предложениях, начинающихся со слова here - вот (кроме случая когда подлежащее выражено местоимением):
+                        <ul>
+                            <li>
+                                Here <span style="color:blue;">is</span> your <span style="color:red;">Teddy</span>. – <i>Вот твой мишка.</i>
+                            </li>
+                            <li>Here he your is! – Вот он!</li>
+                        </ul>
+                </li>
+                <li>
+                    В простых восклицательных предложениях:
+                    <ul>
+                        <li>
+                            <span style="color:blue;">May</span> <span style="color:red;">all your wishes</span> <span style="color:blue;">come true</span>! – <i>Желаю, чтобы все твои желания сбылись!</i>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    После наречий, указывающих направление (in, out, down, away, up), если они стоят в начале предложения:
+                    <ul>
+                        <li>
+                            Away <span style="color:blue;">ran</span> <span style="color:red;">children</span>. – <i>Дети убежали прочь.</i>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+    
+            <h2><span style="color:red;">The Subject</span> (Кто? Что?)</h2>
+            <p>Подлежащее в английском предложении выражает лицо или предмет, который совершает действие, или же предмет или лицо, о котором идет речь в предложении.</p>
+    
+            <h3>Simple Subject (простое подлежащее)</h3>
+            <p>Состоит из одного главного слова (часто местоимения или существительного без артиклей), отвечающего на вопрос What? (что?) или Who? (кто?)
+                <ul>
+                    <li>
+                        <span style="color:red;">She</span> is beautiful. – <i>Она прекрасна.</i>
+                    </li>
+                    <li>
+                        <span style="color:red;">Students</span> often skip their classes. – <i>Студенты часто прогуливают уроки.</i>
+                    </li>
+                </ul>
+            </p>
+    
+            <h3>Compound Subject (составное подлежащее)</h3>
+            <p>Состоит из двух или более простых подлежащих, которые относятся к общему сказуемому.
+                <ul>
+                    <li>
+                        <span style="color:red;">My friend</span> and <span style="color:red;">I</span> go jogging every Sunday. – <i>Я и мой друг ходим на пробежку каждое воскресенье.</i>
+                    </li>
+                    <li>
+                        <span style="color:red;">There were boys</span> and <span style="color:red;">girls</span> playing together in the school yard. – <i>В школьном дворе вместе играли мальчики и девочки.</i>
+                    </li>
+                </ul>
+            </p>
+    
+            <h3>Full Subject (полное подлежащее)</h3>
+            <p>Состоит из простого подлежащего или же составного подлежащего (ключевых слов) и других слов, которые к нему относятся.
+                <ul>
+                    <li>
+                    <span style="color:red;">This jacket</span> is not new. – <i>Эта куртка не новая.</i>
+                    </li>
+                    <li>
+                        <span style="color:red;">My silk polka-dot skirt and cotton blouse</span> are dirty. – <i>Моя шелковая юбка в горошек и хлопковая блузка грязные.</i>
+                    </li>
+                </ul>
+            </p>
+    
+            <h2><span style="color:blue;">The Predicate</span> (Что делает? В каком состоянии находится? Кем или чем является?)</h2>
+            <p>Сказуемое (предикат) в английских предложениях указывает на действие, совершаемое подлежащим, или же описывает состояние и то,
+                что с подлежащим происходит. Основой сказуемого всегда является смысловой, модальный или вспомогательный глагол.</p>
+    
+    
+            <h3>Simple Predicate (простое сказуемое)</h3>
+            <p>Состоит только из глагола в определенной личной или временной форме.
+                <ul>
+                    <li>
+                        Kate <span style="color:blue;">likes</span> you. – <i>Ты нравишься Кейт.</i>
+                    </li>
+                    <li> We <span style="color:blue;">worked</span> hard to meet a deadline. – <i>Мы усердно работали, чтобы закончить работу в срок.</i></li>
+                    <li>John <span style="color:blue;">takes care of</span> his sister. – <i>Джон заботится о своей сестре.</i></li>
+                    <li>Jane <span style="color:blue;">moved in with</span> her boyfriend last month. – <i>Джейн переехала к своему парню в прошлом месяце.</i></li>
+                </ul>
+            </p>
+    
+            <h3>Compound Predicate (составное сказуемое)</h3>
+            <p>Может состоять из нескольких простых сказуемых, которые относятся к общему простому или составному подлежащему.
+                <ul>
+                    <li>Kelly and Jane <span style="color:blue;">called</span> Peter and <span style="color:blue;">invited</span> him to their party. – <i>Келли и Джейн позвонили Питеру и пригласили его на свою вечеринку.</i></li>
+                    <li>I <span style="color:blue;">haven’t finished</span> my work yet. – <i>Я еще не закончил свою работу.</i></li>
+                    <li>I <span style="color:blue;">will keep on telling</span> my story. – <i>Я продолжу рассказывать свою историю.</i></li>
+                    <li>She <span style="color:blue;">feels bad and looks tired</span>. – <i>Она чувствует себя плохо и выглядит уставшей.</i></li>
+                </ul>
+            </p>
+    
+            <h3>Full Predicate (полное сказуемое)</h3>
+            <p>Состоит из простого или составного сказуемого и всех второстепенных членов предложения, которые относятся и зависят от данного сказуемого.
+                <ul>
+                    <li> My friend Matt <span style="color:blue;">is a kind and intelligent guy</span>. – <i>Мой друг Мэтт – добрый и умный парень.</i></li>
+                </ul>
+            </p>
+            <img src="/grammar_of_english/img/ex.png" alt="table">
+    
+            
+            <h2>Links:</h2> 
+            <ul>
+                <li><a href="https://grammarway.com/ru/word-order">Порядок слов в предложении в английском языке</a></li>
+                <li><a href="https://grammarway.com/ru/principal-parts-of-the-sentence">The Subject, The Predicate</a></li>
+                <li><a href="https://yappicorp.com.ua/ru/grammatika-anglijskogo/chasti-rechi-v-anglijskom-klassifikaciya-i-upotreblenie">Части речи в английском – классификация и употребление</a></li>
+                <li><a href="https://englishprime.ua/formy-glagola-v-anglijskom-yazyke/">Основные формы глагола в английском языке</a></li>
+            </ul>            
+    
+        </div>
+   
 </body>
 </html>
