@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It is construction</title>
+    <link rel="stylesheet" href="/grammar_of_english/css/styles.css">
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        fetch('/grammar_of_english/alphabet.html')
+            .then(response => response.text())
+            .then(data => {
+                    document.getElementById('alphabet-block').innerHTML = data;
+            });
+        });
+    </script>
+
+    <div class="left-block">
+        <div id="alphabet-block"></div>
+    </div>
+
+    <div class="right-block">
+        <h1>It is construction</h1>
+        <p>В предложениях, где нет лица и выполняемого действия, используется конструкция <strong>it is ...</strong>, которая не переводится напрямую, но необходима для соблюдения правильной структуры предложения. Конструкция включает в себя: <strong>Subject + Verb + ...</strong></p>
+    
+        <h2>Конструкция "it is ..." часто используется в следующих случаях:</h2>
+    
+        <h3>1. Время:</h3>
+        <ul>
+            <li>What time <strong>is it</strong>? — Который сейчас час?</li>
+            <li><strong>It's</strong> half past nine (9:30). — Сейчас полдесятого.</li>
+            <li><strong>It's</strong> time to go home. — Время идти домой.</li>
+        </ul>
+    
+        <h3>2. День, месяц, год:</h3>
+        <ul>
+            <li>What day <strong>is it</strong>? — Какой сегодня день?</li>
+            <li><strong>It's</strong> Monday. — Сегодня понедельник.</li>
+            <li><strong>It's</strong> 2013 now. — Сейчас 2013 год.</li>
+        </ul>
+    
+        <h3>3. Расстояние:</h3>
+        <ul>
+            <li><strong>It's</strong> not far from here. — Это недалеко отсюда.</li>
+            <li>How far <strong>is it</strong> from Paris to San Francisco? — Как далеко от Парижа до Сан-Франциско?</li>
+        </ul>
+    
+        <h3>4. Погода и окружающая среда:</h3>
+        <ul>
+            <li><strong>It's</strong> sunny outside. — На улице солнечно.</li>
+            <li><strong>It isn't</strong> dark now. — Сейчас не темно.</li>
+            <li><strong>Is it</strong> windy? — Сейчас ветрено?</li>
+        </ul>
+    
+        <h3>5. Наше мнение о чем-то:</h3>
+        <ul>
+            <li><strong>It's</strong> funny. — Смешно.</li>
+            <li><strong>It is</strong> important to know. — Важно знать.</li>
+            <li><strong>It's</strong> very nice that you help me. — Очень мило, что ты помогаешь мне.</li>
+        </ul>
+    
+        <h2>Примеры:</h2>
+        <ul>
+            <li><strong>It's</strong> sunny today. — Сегодня солнечно.</li>
+            <li><strong>It is</strong> very nice that you help me. — Очень мило, что ты помогаешь мне.</li>
+        </ul>
+    </div>
+</body>
+</html>
