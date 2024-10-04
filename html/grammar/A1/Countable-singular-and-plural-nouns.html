@@ -9,7 +9,21 @@
     
 </head>
 <body>
-    <div class="container">
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            fetch('/grammar_of_english/alphabet.html')
+                .then(response => response.text())
+                .then(data => {
+                        document.getElementById('alphabet-block').innerHTML = data;
+                });
+            });
+    </script>
+
+    <div class="left-block">
+            <div id="alphabet-block"></div>
+    </div>
+    
+    <div class="right-block">
                 
         <h2>Singular and Plural Nouns</h2>
         <p>Существительные единственного и множественного числа.</p>
