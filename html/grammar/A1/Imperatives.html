@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperatives</title>
+    <link rel="stylesheet" href="/grammar_of_english/css/styles.css">
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        fetch('/grammar_of_english/alphabet.html')
+            .then(response => response.text())
+            .then(data => {
+                    document.getElementById('alphabet-block').innerHTML = data;
+            });
+        });
+    </script>
+
+    <div class="left-block">
+        <div id="alphabet-block"></div>
+    </div>
+
+    <div class="right-block">
+        <h1>Imperatives</h1>
+ 
+            Повелительное наклонение для приказов, советов и предложений (например, Sit down, Don't go).
+
+    </div>
+</body>
+</html>
