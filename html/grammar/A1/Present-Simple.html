@@ -9,13 +9,13 @@
 </head>
 <body>
     <script>
-            document.addEventListener('DOMContentLoaded', function () {
-            fetch('/grammar_of_english/alphabet.html')
-                .then(response => response.text())
-                .then(data => {
-                        document.getElementById('alphabet-block').innerHTML = data;
-                });
+        document.addEventListener('DOMContentLoaded', function () {
+        fetch('/grammar_of_english/alphabet.html')
+            .then(response => response.text())
+            .then(data => {
+                    document.getElementById('alphabet-block').innerHTML = data;
             });
+        });
     </script>
 
     <div class="left-block">
