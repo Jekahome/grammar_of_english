@@ -354,15 +354,15 @@
     
         function generateForm() {
             exercises.forEach((exercise, index) => {
-                const questionHTML = `
-                    <p>
-                        <input type="text" id="q${index + 1}" class="input-size" oninput="checkAnswer(this, '${exercise[1]}')" />
-                        ${exercise[0]}
-                        <span id="result${index + 1}" class="result"></span>
-                    </p>
-                `;
-                exerciseForm.innerHTML += questionHTML;
-            });
+            const inputHTML = `<input type="text" id="q${index + 1}" class="input-size" oninput="checkAnswer(this, '${exercise[1]}')" />`;
+            const questionHTML = `
+                <p>
+                    ${exercise[0].replace("___", inputHTML)}
+                    <span id="result${index + 1}" class="result"></span>
+                </p>
+            `;
+            exerciseForm.innerHTML += questionHTML;
+        });
         }
     
         generateForm();
