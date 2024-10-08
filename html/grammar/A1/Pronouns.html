@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="/grammar_of_english/css/styles.css">
 </head>
 <body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .input-size {
+            width: 100px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .result {
+            display: inline-block;
+            padding-left: 10px;
+        }
+    </style>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
         fetch('/grammar_of_english/alphabet.html')
@@ -307,6 +327,174 @@
             </ol>
         </details>
 
+
+
+
+
+
+
+        <h1>Упражнение 1: Подставьте правильное личное местоимение</h1>
+
+        <form id="exerciseForm"></form>
+
     </div>
+
+    <script>
+        const exercises = [
+            ["___ (Моя сестра) is very smart.", "she"],
+            ["___ (Твои друзья) are coming to the party.", "they"],
+            ["___ (Папа и я) went to the cinema.", "we"],
+            ["___ (Моя мама) loves cooking.", "she"],
+            ["___ (Собака) is very playful.", "it"],
+            ["___ (Джон) is my friend.", "he"],
+            ["___ (Машина) is blue.", "it"]
+        ];
+    
+        const exerciseForm = document.getElementById('exerciseForm');
+    
+        function generateForm() {
+            exercises.forEach((exercise, index) => {
+                const questionHTML = `
+                    <p>
+                        <input type="text" id="q${index + 1}" class="input-size" oninput="checkAnswer(this, '${exercise[1]}')" />
+                        ${exercise[0]}
+                        <span id="result${index + 1}" class="result"></span>
+                    </p>
+                `;
+                exerciseForm.innerHTML += questionHTML;
+            });
+        }
+    
+        generateForm();
+    
+        function checkAnswer(inputElement, correctAnswer) {
+            const userAnswer = inputElement.value.trim().toLowerCase();
+            const resultElement = document.getElementById('result' + inputElement.id.slice(1));
+    
+            if (userAnswer === correctAnswer) {
+                resultElement.textContent = 'Правильно';
+                resultElement.className = 'correct result'; 
+            } else if (userAnswer.length === 0) {
+                resultElement.textContent = ''; 
+            } else {
+                resultElement.textContent = 'Неправильно';
+                resultElement.className = 'incorrect result'; 
+            }
+        }
+    </script>
 </body>
 </html>
+<!--
+Для темы "Личные местоимения в именительном падеже" и "Личные местоимения в косвенном падеже" можно придумать различные упражнения для закрепления материала. Вот несколько идей:
+
+---
+
+## **Упражнения для личных местоимений в именительном падеже:**
+
+### Упражнение 1: Подставьте правильное личное местоимение
+Замените существительные на соответствующие местоимения в именительном падеже.
+
+1. ___ (Моя сестра) is very smart.
+2. ___ (Твои друзья) are coming to the party.
+3. ___ (Папа и я) went to the cinema.
+4. ___ (Моя мама) loves cooking.
+5. ___ (Собака) is very playful.
+6. ___ (Джон) is my friend.
+7. ___ (Машина) is blue.
+
+---
+
+### Упражнение 2: Переведите на английский с правильными местоимениями
+Переведите предложения с использованием личных местоимений в именительном падеже.
+
+1. Мы идем в парк.
+2. Он работает учителем.
+3. Ты всегда веселый.
+4. Они часто читают книги.
+5. Она занимается спортом.
+6. Я люблю кошек.
+7. Оно (животное) играет с мячом.
+
+---
+
+### Упражнение 3: Вставьте правильное местоимение в вопросе
+Заполните пропуски личными местоимениями.
+
+1. ___ am reading a book. (Я)
+2. ___ is your teacher? (Кто)
+3. ___ are my best friends. (Они)
+4. ___ is from Russia. (Она)
+5. ___ is your favorite color? (Что)
+
+---
+
+### Упражнение 4: Преобразуйте предложения
+Замените подлежащее на соответствующее местоимение.
+
+1. The boy is running → ___ is running.
+2. My parents are at work → ___ are at work.
+3. The cat is sleeping → ___ is sleeping.
+4. Lisa and I are going to the shop → ___ are going to the shop.
+
+---
+
+## **Упражнения для личных местоимений в косвенном падеже:**
+
+### Упражнение 1: Подставьте правильное личное местоимение в косвенном падеже
+Заполните пропуски, используя местоимения в косвенном падеже (me, him, her, us, them, it, you).
+
+1. She gave ___ a gift. (мне)
+2. We invited ___ to the party. (их)
+3. I saw ___ yesterday at the park. (его)
+4. Could you lend ___ some money? (мне)
+5. They told ___ about the meeting. (нам)
+6. The teacher asked ___ a question. (ее)
+7. I bought ___ a new phone. (тебе)
+
+---
+
+### Упражнение 2: Переведите на английский с правильными местоимениями
+Переведите предложения, используя личные местоимения в косвенном падеже.
+
+1. Я помог ему.
+2. Мы дали им книги.
+3. Она позвонила мне вчера.
+4. Ты можешь сказать ей?
+5. Он принес нам кофе.
+6. Я увидел его вчера.
+7. Они видели нас в магазине.
+
+---
+
+### Упражнение 3: Составьте предложение
+Используя предложенные элементы, составьте предложения с личными местоимениями в косвенном падеже.
+
+1. I / see / her / yesterday.
+2. They / give / us / the keys.
+3. He / told / me / the news.
+4. She / sent / him / an email.
+5. We / found / it / in the garden.
+
+---
+
+### Упражнение 4: Вопросы с косвенными местоимениями
+Ответьте на вопросы с личными местоимениями в косвенном падеже.
+
+1. Who gave you the book? – She gave ___ the book.
+2. Did he call you yesterday? – Yes, he called ___.
+3. Who will help them? – We will help ___.
+4. Can you bring me some water? – Sure, I’ll bring ___ some water.
+
+---
+
+### Упражнение 5: Распределите местоимения в предложении
+Замените существительные в предложениях на личные местоимения в именительном и косвенном падежах.
+
+1. My brother gave the book to my sister. → ___ gave the book to ___.
+2. The teacher asked the students a question. → ___ asked ___ a question.
+3. John told his parents the news. → ___ told ___ the news.
+
+---
+
+Эти упражнения помогут практиковать правильное использование личных местоимений в именительном и косвенном падежах, улучшат понимание грамматики и навыки построения предложений.
+-->
