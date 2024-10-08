@@ -372,12 +372,12 @@
             const resultElement = document.getElementById('result' + inputElement.id.slice(1));
     
             if (userAnswer === correctAnswer) {
-                resultElement.textContent = 'Правильно';
+                resultElement.textContent = 'correct';
                 resultElement.className = 'correct result'; 
             } else if (userAnswer.length === 0) {
                 resultElement.textContent = ''; 
             } else {
-                resultElement.textContent = 'Неправильно';
+                resultElement.textContent = 'incorrect';
                 resultElement.className = 'incorrect result'; 
             }
         }
