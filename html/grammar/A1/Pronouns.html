@@ -386,14 +386,30 @@
             ["John told his parents the news. → ___ told ___ the news.", ["He", "them"]]
         ];
     
-       
+        let exerciseForm_1 = document.getElementById('exerciseForm_1');
+        let exerciseForm_2 = document.getElementById('exerciseForm_2');
+
     function generateExercises() {
         let index=0;
        
+        exercises.forEach((exercise, index) => {
+          
+            const inputsHTML = exercise[1].map((answer, i) => 
+                `<input type="text" id="q_${index}_${i}" class="input-size" oninput="checkAnswer(this, '${answer}', ${index})" />`
+            ).join(" ");
+
+            const questionHTML = `
+                <p>
+                    ${exercise[0].replace(/___/g, () => inputsHTML)} <!-- Заменяем все подстановки -->
+                </p>
+            `;
+            exerciseForm_1.innerHTML += questionHTML;
+        });
+
         exercises_1.forEach((exercise) => {
             const inputHTMLs = exercise[1].map((_, i) => {
                 index+=1;
-                `<input type="text" id="q_${index}_${i}" class="input-size" oninput="checkAnswer(this, '${exercise[1][i]}', ${index})" />`
+                return `<input type="text" id="q_${index}_${i}" class="input-size" oninput="checkAnswer(this, '${exercise[1][i]}', ${index})" />`;
             }).join(" ");  
 
             const questionHTML = `
@@ -405,51 +421,23 @@
             exerciseForm_1.innerHTML += questionHTML;
         });
 
-        exercises_2.forEach((exercise) => {
-            const inputHTMLs = exercise[1].map((_, i) => {
-                index+=1;
-                `<input type="text" id="q_${index}_${i}" class="input-size" oninput="checkAnswer(this, '${exercise[1][i]}', ${index})" />`
-            }).join(" ");  
-
-            const questionHTML = `
-                <p>
-                    ${exercise[0].replace(/___/g, () => inputHTMLs)}
-                    <span id="result_${index}" class="result"></span>
-                </p>
-            `;
-            exerciseForm_2.innerHTML += questionHTML;
-        });
+      
     }
 
     function checkAnswer(inputElement, correctAnswer, exerciseIndex) {
         const userAnswer = inputElement.value.trim().toLowerCase();
         const resultElement = document.getElementById('result_' + exerciseIndex);
 
-        // Проверяем правильные ответы для двух подстановок
-        if (Array.isArray(correctAnswer)) {
-            const allCorrect = correctAnswer.every((ans, idx) => {
-                const inputField = document.getElementById(`q_${exerciseIndex}_${idx}`);
-                return inputField.value.trim().toLowerCase() === ans.toLowerCase();
-            });
+        const allCorrect = correctAnswer.every((ans, idx) => {
+            const inputField = document.getElementById(`q_${exerciseIndex}_${idx}`);
+            return inputField.value.trim().toLowerCase() === ans.toLowerCase();
+        });
 
-            if (allCorrect) {
-                resultElement.textContent = 'correct';
-                resultElement.className = 'correct result';
-            } else {
-                resultElement.textContent = 'incorrect';
-                resultElement.className = 'incorrect result';
-            }
+        // Изменяем цвет поля ввода в зависимости от правильности ответа
+        if (allCorrect) {
+            inputElement.className = 'input-size correct'; // Зеленый для правильного ответа
         } else {
-            // Проверка для одного поля
-            if (userAnswer === correctAnswer[0].toLowerCase()) {
-                resultElement.textContent = 'correct';
-                resultElement.className = 'correct result';
-            } else if (userAnswer.length === 0) {
-                resultElement.textContent = '';
-            } else {
-                resultElement.textContent = 'incorrect';
-                resultElement.className = 'incorrect result';
-            }
+            inputElement.className = 'input-size incorrect'; // Красный для неправильного ответа
         }
     }
 
