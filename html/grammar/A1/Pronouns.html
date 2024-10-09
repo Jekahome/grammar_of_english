@@ -292,45 +292,6 @@
             </ul>
         </ol>
 
-        
-        <details>
-            <summary> Упражнение 1: Подставь правильное личное местоимение</summary>
-            <ol>
-                <li>___ am going to the store. (Я)</li>
-                <li>___ is reading a book. (Он)</li>
-                <li>___ are my friends. (Они)</li>
-                <li>Can you help ___ with my homework? (Мне)</li>
-                <li>___ love this movie! (Мы)</li>
-            </ol>
-        </details>
-
-        <details>
-            <summary> Упражнение 2: Переведи с русского на английский</summary>
-            <ol>
-                <li>Он дал мне книгу.</li>
-                <li>Мы видели их в парке.</li>
-                <li>Я позвонил ей вчера.</li>
-                <li>Ты можешь помочь ему?</li>
-                <li>Они придут завтра.</li>
-            </ol>
-        </details>
-
-        <h3>Упражнения на указательные местоимения:</h3>
-
-        <details>
-            <summary> Упражнение 1: Выбери правильное указательное местоимение</summary>
-            <ol>
-                <li>___ car is mine. (Этот, рядом)</li>
-                <li>___ houses over there are very old. (Те, далеко)</li>
-                <li>___ is my phone. (Это, рядом)</li>
-                <li>___ shoes are new. (Эти, рядом)</li>
-            </ol>
-        </details>
-
-
-
-
-
 <!-- 
 Простой (Easy) replace
 Умеренный (Medium) write
@@ -338,13 +299,17 @@
 Экстремальный (Extreme) speak        
 -->
 
-        <h3>Упражнение 1 (Easy): Подставьте правильное личное местоимение</h3>
-        <form id="exerciseForm_1"></form>
+        <details>
+            <summary>Упражнение 1 (Easy): Подставьте правильное личное местоимение</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
 
-        <h3>Упражнение 2 (Easy): Преобразуйте предложения</h3>
-        Замените <a href="https://jekahome.github.io/grammar_of_english/html/grammar/A1/Parts-of-speech.html" target="_blank">подлежащее</a> на соответствующее местоимение.<br>
-        <form id="exerciseForm_2"></form>
-
+        <details>
+            <summary>Упражнение 2 (Easy): Преобразуйте предложения</summary>
+            Замените <a href="https://jekahome.github.io/grammar_of_english/html/grammar/A1/Parts-of-speech.html" target="_blank">подлежащее</a> на соответствующее местоимение.<br>
+            <form id="exerciseForm_2"></form>
+        </details>
+ 
     </div>
 
     <script>
@@ -470,7 +435,7 @@
 
             exerciseForm_1.innerHTML += `<p>${sentence}</p>`;
         });
-        
+
         const ex_2 = getRandomThird(exercises_2);
         exercises_2.forEach(item => {
             let sentence = item[0];
