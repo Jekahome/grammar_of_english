@@ -345,73 +345,115 @@
 
     <script>
         const exercises_1 = [
-            ["___ (Моя сестра) is very smart.", "she"],
-            ["___ (Твои друзья) are coming to the party.", "they"],
-            ["___ (Папа и я) went to the cinema.", "we"],
-            ["___ (Моя мама) loves cooking.", "she"],
-            ["___ (Собака) is very playful.", "it"],
-            ["___ (Джон) is my friend.", "he"],
-            ["___ (Машина) is blue.", "it"],
-            ["___ am reading a book. (Я)", "I"],
-            ["Who is ___ teacher? (Кто)", "your"],
-            ["___ are my best friends. (Они)", "They"],
-            ["___ is from Ukraine. (Она)", "She"],
-            ["What is ___ favorite color? (Кто)", "your"],
+            ["___ (Моя сестра) is very smart.", ["she"]],
+            ["___ (Твои друзья) are coming to the party.", ["they"]],
+            ["___ (Папа и я) went to the cinema.",[ "we"]],
+            ["___ (Моя мама) loves cooking.", ["she"]],
+            ["___ (Собака) is very playful.", ["it"]],
+            ["___ (Джон) is my friend.", ["he"]],
+            ["___ (Машина) is blue.", ["it"]],
+            ["___ am reading a book. (Я)", ["I"]],
+            ["Who is ___ teacher? (Кто)", ["your"]],
+            ["___ are my best friends. (Они)", ["They"]],
+            ["___ is from Ukraine. (Она)", ["She"]],
+            ["What is ___ favorite color? (Кто)", ["your"]],
+
+            ["She gave ___ a gift. (мне)", ["me"]],
+            ["We invited ___ to the party. (их)", ["them"]],
+            ["I saw ___ yesterday at the park. (его)", ["him"]],
+            ["Could you lend ___ some money? (мне)", ["me"]],
+            ["They told ___ about the meeting. (нам)", ["us"]],
+            ["The teacher asked ___ a question. (ее)", ["her"]],
+            ["I bought ___ a new phone. (тебе)", ["you"]],
+
+
         ];
 
         const exercises_2 = [
-            ["The boy is running → ___ is running.", "He"],
-            ["The boys are running → ___ are running.", "They"],
-            ["My parents are at work → ___ are at work.", "They"],
-            ["The cat is sleeping → ___ is sleeping.", "It"],
-            ["Lisa and I are going to the shop → ___ are going to the shop.", "We"]
+            ["The boy is running → ___ is running.", ["He"]],
+            ["The boys are running → ___ are running.", ["They"]],
+            ["My parents are at work → ___ are at work.", ["They"]],
+            ["The cat is sleeping → ___ is sleeping.", ["It"]],
+            ["Lisa and I are going to the shop → ___ are going to the shop.", ["We"]],
+
+            ["Who gave you the book? – She gave ___ the book.", ["me"]],
+            ["Did he call you yesterday? – Yes, he called ___.", ["me"]],
+            ["Who will help them? – We will help ___.", ["them"]],
+            ["Can you bring me some water? – Sure, I’ll bring ___ some water.", ["you"]],
+
+            ["My brother gave the book to my sister. → ___ gave the book to ___.", ["He", "her"]],
+            ["The teacher asked the students a question. → ___ asked ___ a question.", ["She", "them"]],
+            ["John told his parents the news. → ___ told ___ the news.", ["He", "them"]]
         ];
     
-        const exerciseForm_1 = document.getElementById('exerciseForm_1');
-        const exerciseForm_2 = document.getElementById('exerciseForm_2');
+       
+    function generateExercises() {
+        let index=0;
+       
+        exercises_1.forEach((exercise) => {
+            const inputHTMLs = exercise[1].map((_, i) => {
+                index+=1;
+                `<input type="text" id="q_${index}_${i}" class="input-size" oninput="checkAnswer(this, '${exercise[1][i]}', ${index})" />`
+            }).join(" ");  
 
-        function generateExercises() {
-            let index = 0;
-            exercises_1.forEach((exercise) => {
+            const questionHTML = `
+                <p>
+                    ${exercise[0].replace(/___/g, () => inputHTMLs)}
+                    <span id="result_${index}" class="result"></span>
+                </p>
+            `;
+            exerciseForm_1.innerHTML += questionHTML;
+        });
+
+        exercises_2.forEach((exercise) => {
+            const inputHTMLs = exercise[1].map((_, i) => {
                 index+=1;
-                const inputHTML = `<input type="text" id="q${index}" class="input-size" oninput="checkAnswer(this, '${exercise[1]}')" />`;
-                const questionHTML = `
-                    <p>
-                        ${exercise[0].replace("___", inputHTML)}
-                        <span id="result${index + 1}" class="result"></span>
-                    </p>
-                `;
-                exerciseForm_1.innerHTML += questionHTML;
+                `<input type="text" id="q_${index}_${i}" class="input-size" oninput="checkAnswer(this, '${exercise[1][i]}', ${index})" />`
+            }).join(" ");  
+
+            const questionHTML = `
+                <p>
+                    ${exercise[0].replace(/___/g, () => inputHTMLs)}
+                    <span id="result_${index}" class="result"></span>
+                </p>
+            `;
+            exerciseForm_2.innerHTML += questionHTML;
+        });
+    }
+
+    function checkAnswer(inputElement, correctAnswer, exerciseIndex) {
+        const userAnswer = inputElement.value.trim().toLowerCase();
+        const resultElement = document.getElementById('result_' + exerciseIndex);
+
+        // Проверяем правильные ответы для двух подстановок
+        if (Array.isArray(correctAnswer)) {
+            const allCorrect = correctAnswer.every((ans, idx) => {
+                const inputField = document.getElementById(`q_${exerciseIndex}_${idx}`);
+                return inputField.value.trim().toLowerCase() === ans.toLowerCase();
             });
-            exercises_2.forEach((exercise, index) => {
-                index+=1;
-                const inputHTML = `<input type="text" id="q${index}" class="input-size" oninput="checkAnswer(this, '${exercise[1]}')" />`;
-                const questionHTML = `
-                    <p>
-                        ${exercise[0].replace("___", inputHTML)}
-                        <span id="result${index + 1}" class="result"></span>
-                    </p>
-                `;
-                exerciseForm_2.innerHTML += questionHTML;
-            });
-        }
-    
-        generateExercises();
-    
-        function checkAnswer(inputElement, correctAnswer) {
-            const userAnswer = inputElement.value.trim().toLowerCase();
-            const resultElement = document.getElementById('result' + inputElement.id.slice(1));
-    
-            if (userAnswer === correctAnswer) {
+
+            if (allCorrect) {
                 resultElement.textContent = 'correct';
-                resultElement.className = 'correct result'; 
-            } else if (userAnswer.length === 0) {
-                resultElement.textContent = ''; 
+                resultElement.className = 'correct result';
             } else {
                 resultElement.textContent = 'incorrect';
-                resultElement.className = 'incorrect result'; 
+                resultElement.className = 'incorrect result';
+            }
+        } else {
+            // Проверка для одного поля
+            if (userAnswer === correctAnswer[0].toLowerCase()) {
+                resultElement.textContent = 'correct';
+                resultElement.className = 'correct result';
+            } else if (userAnswer.length === 0) {
+                resultElement.textContent = '';
+            } else {
+                resultElement.textContent = 'incorrect';
+                resultElement.className = 'incorrect result';
             }
         }
+    }
+
+    generateExercises();
     </script>
 </body>
 </html>
@@ -436,38 +478,9 @@
 
  
 
+
 ---
-
-### Упражнение 4: Преобразуйте предложения
-Замените подлежащее на соответствующее местоимение.
-
-1. The boy is running → ___ is running.
-2. My parents are at work → ___ are at work.
-3. The cat is sleeping → ___ is sleeping.
-4. Lisa and I are going to the shop → ___ are going to the shop.
-
-[
-    ["The boy is running → ___ is running.", "He"],
-    ["The boys are running → ___ are running.", "They"],
-    ["My parents are at work → ___ are at work.", "They"],
-    ["The cat is sleeping → ___ is sleeping.", "It"],
-    ["Lisa and I are going to the shop → ___ are going to the shop.", "We"]
-]
----
-
-## **Упражнения для личных местоимений в косвенном падеже:**
-
-### Упражнение 1: Подставьте правильное личное местоимение в косвенном падеже
-Заполните пропуски, используя местоимения в косвенном падеже (me, him, her, us, them, it, you).
-
-1. She gave ___ a gift. (мне)
-2. We invited ___ to the party. (их)
-3. I saw ___ yesterday at the park. (его)
-4. Could you lend ___ some money? (мне)
-5. They told ___ about the meeting. (нам)
-6. The teacher asked ___ a question. (ее)
-7. I bought ___ a new phone. (тебе)
-
+ 
 ---
 
 ### Упражнение 2: Переведите на английский с правильными местоимениями
@@ -492,15 +505,7 @@
 4. She / sent / him / an email.
 5. We / found / it / in the garden.
 
----
-
-### Упражнение 4: Вопросы с косвенными местоимениями
-Ответьте на вопросы с личными местоимениями в косвенном падеже.
-
-1. Who gave you the book? – She gave ___ the book.
-2. Did he call you yesterday? – Yes, he called ___.
-3. Who will help them? – We will help ___.
-4. Can you bring me some water? – Sure, I’ll bring ___ some water.
+ 
 
 ---
 
