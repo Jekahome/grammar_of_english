@@ -412,15 +412,13 @@
         });
     }
 
-    function checkAnswer(inputElement, correctAnswer) {
+    function checkAnswer(inputElement, correctAns) {
         const userAnswer = inputElement.value.trim().toLowerCase();
-        const correctAnswer = correctAnswer.toLowerCase();
 
-        // Изменяем цвет поля ввода в зависимости от правильности ответа
-        if (userAnswer == correctAnswer) {
-            inputElement.className = 'input-size correct'; // Зеленый для правильного ответа
+        if (userAnswer == correctAnswer.toLowerCase()) {
+            inputElement.className = 'input-size correct'; 
         } else {
-            inputElement.className = 'input-size incorrect'; // Красный для неправильного ответа
+            inputElement.className = 'input-size incorrect'; 
         }
     }
 
