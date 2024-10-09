@@ -333,9 +333,13 @@
 
 
 
-        <h1>Упражнение 1: Подставьте правильное личное местоимение</h1>
+        <h3>Упражнение 1: Подставьте правильное личное местоимение</h3>
 
-        <form id="exerciseForm"></form>
+        <form id="exerciseForm_1"></form>
+
+        <h3>Упражнение 2: Преобразуйте предложения</h3>
+        Замените подлежащее на соответствующее местоимение.<br>
+        <form id="exerciseForm_2"></form>
 
     </div>
 
@@ -347,25 +351,49 @@
             ["___ (Моя мама) loves cooking.", "she"],
             ["___ (Собака) is very playful.", "it"],
             ["___ (Джон) is my friend.", "he"],
-            ["___ (Машина) is blue.", "it"]
+            ["___ (Машина) is blue.", "it"],
+            ["___ am reading a book. (Я)", "I"],
+            ["Who is ___ teacher? (Кто)", "your"],
+            ["___ are my best friends. (Они)", "They"],
+            ["___ is from Ukraine. (Она)", "She"],
+            ["What is ___ favorite color? (Кто)", "your"],
+        ];
+
+        const exercises_2 = [
+            ["The boy is running → ___ is running.", "He"],
+            ["The boys are running → ___ are running.", "They"],
+            ["My parents are at work → ___ are at work.", "They"],
+            ["The cat is sleeping → ___ is sleeping.", "It"],
+            ["Lisa and I are going to the shop → ___ are going to the shop.", "We"]
         ];
     
-        const exerciseForm = document.getElementById('exerciseForm');
-    
-        function generateForm() {
+        const exerciseForm_1 = document.getElementById('exerciseForm_1');
+        const exerciseForm_2 = document.getElementById('exerciseForm_2');
+
+        function generateExercises() {
             exercises_1.forEach((exercise, index) => {
-            const inputHTML = `<input type="text" id="q${index + 1}" class="input-size" oninput="checkAnswer(this, '${exercise[1]}')" />`;
-            const questionHTML = `
-                <p>
-                    ${exercise[0].replace("___", inputHTML)}
-                    <span id="result${index + 1}" class="result"></span>
-                </p>
-            `;
-            exerciseForm.innerHTML += questionHTML;
-        });
+                const inputHTML = `<input type="text" id="q${index + 1}" class="input-size" oninput="checkAnswer(this, '${exercise[1]}')" />`;
+                const questionHTML = `
+                    <p>
+                        ${exercise[0].replace("___", inputHTML)}
+                        <span id="result${index + 1}" class="result"></span>
+                    </p>
+                `;
+                exerciseForm_1.innerHTML += questionHTML;
+            });
+            exercises_2.forEach((exercise, index) => {
+                const inputHTML = `<input type="text" id="q${index + 1}" class="input-size" oninput="checkAnswer(this, '${exercise[1]}')" />`;
+                const questionHTML = `
+                    <p>
+                        ${exercise[0].replace("___", inputHTML)}
+                        <span id="result${index + 1}" class="result"></span>
+                    </p>
+                `;
+                exerciseForm_2.innerHTML += questionHTML;
+            });
         }
     
-        generateForm();
+        generateExercises();
     
         function checkAnswer(inputElement, correctAnswer) {
             const userAnswer = inputElement.value.trim().toLowerCase();
@@ -391,19 +419,7 @@
 
 ## **Упражнения для личных местоимений в именительном падеже:**
 
-### Упражнение 1: Подставьте правильное личное местоимение
-Замените существительные на соответствующие местоимения в именительном падеже.
-
-1. ___ (Моя сестра) is very smart.
-2. ___ (Твои друзья) are coming to the party.
-3. ___ (Папа и я) went to the cinema.
-4. ___ (Моя мама) loves cooking.
-5. ___ (Собака) is very playful.
-6. ___ (Джон) is my friend.
-7. ___ (Машина) is blue.
-
----
-
+ 
 ### Упражнение 2: Переведите на английский с правильными местоимениями
 Переведите предложения с использованием личных местоимений в именительном падеже.
 
@@ -415,16 +431,7 @@
 6. Я люблю кошек.
 7. Оно (животное) играет с мячом.
 
----
-
-### Упражнение 3: Вставьте правильное местоимение в вопросе
-Заполните пропуски личными местоимениями.
-
-1. ___ am reading a book. (Я)
-2. ___ is your teacher? (Кто)
-3. ___ are my best friends. (Они)
-4. ___ is from Russia. (Она)
-5. ___ is your favorite color? (Что)
+ 
 
 ---
 
@@ -436,6 +443,13 @@
 3. The cat is sleeping → ___ is sleeping.
 4. Lisa and I are going to the shop → ___ are going to the shop.
 
+[
+    ["The boy is running → ___ is running.", "He"],
+    ["The boys are running → ___ are running.", "They"],
+    ["My parents are at work → ___ are at work.", "They"],
+    ["The cat is sleeping → ___ is sleeping.", "It"],
+    ["Lisa and I are going to the shop → ___ are going to the shop.", "We"]
+]
 ---
 
 ## **Упражнения для личных местоимений в косвенном падеже:**
