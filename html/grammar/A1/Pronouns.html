@@ -390,14 +390,12 @@
         let exerciseForm_2 = document.getElementById('exerciseForm_2');
 
     function generateExercises() {
-        let index=0;
 
         exercises_1.forEach(item => {
             let sentence = item[0];
             let answers = item[1];
             answers.forEach(answer => {
-                index+=1;
-                sentence = sentence.replace('___', `<input type="text" id="q_${index}" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
             });
 
             exerciseForm_1.innerHTML += `<p>${sentence}</p>`;
@@ -407,8 +405,7 @@
             let sentence = item[0];
             let answers = item[1];
             answers.forEach(answer => {
-                index+=1;
-                sentence = sentence.replace('___', `<input type="text" id="q_${index}" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
             });
 
             exerciseForm_2.innerHTML += `<p>${sentence}</p>`;
