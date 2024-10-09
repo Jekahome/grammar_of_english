@@ -340,7 +340,7 @@
     </div>
 
     <script>
-        const exercises = [
+        const exercises_1 = [
             ["___ (Моя сестра) is very smart.", "she"],
             ["___ (Твои друзья) are coming to the party.", "they"],
             ["___ (Папа и я) went to the cinema.", "we"],
@@ -353,7 +353,7 @@
         const exerciseForm = document.getElementById('exerciseForm');
     
         function generateForm() {
-            exercises.forEach((exercise, index) => {
+            exercises_1.forEach((exercise, index) => {
             const inputHTML = `<input type="text" id="q${index + 1}" class="input-size" oninput="checkAnswer(this, '${exercise[1]}')" />`;
             const questionHTML = `
                 <p>
