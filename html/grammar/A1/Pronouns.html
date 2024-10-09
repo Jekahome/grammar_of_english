@@ -391,37 +391,21 @@
 
     function generateExercises() {
         let index=0;
-       
-        exercises.forEach((exercise, index) => {
-          
-            const inputsHTML = exercise[1].map((answer, i) => 
-                `<input type="text" id="q_${index}_${i}" class="input-size" oninput="checkAnswer(this, '${answer}', ${index})" />`
-            ).join(" ");
+        exercises_2.forEach((exercise, index) => {
+            // Создаем HTML для всех полей ввода
+            const inputsHTML = exercise[1].map((answer, i) => {
+                index+=1;
+                return `<input type="text" id="q_${index}_${i}" class="input-size" oninput="checkAnswer(this, '${answer}', ${index})" />`
+            }).join(" ");
 
             const questionHTML = `
                 <p>
                     ${exercise[0].replace(/___/g, () => inputsHTML)} <!-- Заменяем все подстановки -->
                 </p>
             `;
-            exerciseForm_1.innerHTML += questionHTML;
+            exerciseForm_2.innerHTML += questionHTML;
         });
 
-        exercises_1.forEach((exercise) => {
-            const inputHTMLs = exercise[1].map((_, i) => {
-                index+=1;
-                return `<input type="text" id="q_${index}_${i}" class="input-size" oninput="checkAnswer(this, '${exercise[1][i]}', ${index})" />`;
-            }).join(" ");  
-
-            const questionHTML = `
-                <p>
-                    ${exercise[0].replace(/___/g, () => inputHTMLs)}
-                    <span id="result_${index}" class="result"></span>
-                </p>
-            `;
-            exerciseForm_1.innerHTML += questionHTML;
-        });
-
-      
     }
 
     function checkAnswer(inputElement, correctAnswer, exerciseIndex) {
