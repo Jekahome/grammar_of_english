@@ -181,10 +181,10 @@
         </table>
 
         <p>
-            1. <code>This</code> — этот, эта, это (для указания на один предмет, находящийся близко к говорящему).<br>
-            2. <code>That</code> — тот, та, то (для указания на один предмет, находящийся дальше от говорящего).<br>
-            3. <code>These</code> — эти (для указания на несколько предметов, находящихся близко к говорящему).<br>
-            4. <code>Those</code> — те (для указания на несколько предметов, находящихся дальше от говорящего).
+            1. <code>This</code> — этот, эта, это (для указания на один предмет, находящийся <strong>близко</strong> к говорящему).<br>
+            2. <code>That</code> — тот, та, то (для указания на один предмет, находящийся <strong>дальше</strong> от говорящего).<br>
+            3. <code>These</code> — эти (для указания на несколько предметов, находящихся <strong>близко</strong> к говорящему).<br>
+            4. <code>Those</code> — те (для указания на несколько предметов, находящихся <strong>дальше</strong> от говорящего).
         </p>
 
         <details>
@@ -243,54 +243,7 @@
             <li>What are those? - Those are trees./They are trees. (Что то? - То деревья.)</li>
         </ul>
     
-        <h3>Упражнения на личные местоимения:</h3>
-    
-        <ol>
-            <li>Подставить местоимение <code>this</code>/<code>these</code>:</li>
-            <ul>
-                <li>this chair</li>
-                <li>... tables</li>
-                <li>... children</li>
-                <li>... girl</li>
-                <li>... car</li>
-                <li>... toys</li>
-                <li>... picture</li>
-                <li>... trains</li>
-                <li>... men</li>
-            </ul>
-    
-            <li>Подставить местоимение <code>that</code>/<code>those</code>:</li>
-            <ul>
-                <li>that tree</li>
-                <li>... houses</li>
-                <li>... horse</li>
-                <li>... mice</li>
-                <li>... women</li>
-                <li>... trousers</li>
-                <li>... goat</li>
-                <li>... cow</li>
-                <li>... boys</li>
-            </ul>
-    
-            <li>Преобразовать в вопросительные предложения:</li>
-            <ul>
-                <li>This is a doll. - Is this a doll? - Это кукла?</li>
-                <li>These are trains.</li>
-                <li>Those are cars.</li>
-                <li>This is a boy.</li>
-                <li>Those are children.</li>
-                <li>That is a wolf.</li>
-            </ul>
-    
-            <li>Задать вопрос используя слова:</li>
-            <ul>
-                <li>(what / this / train) - What is this? - This is a train.</li>
-                <li>(what / that / flower)</li>
-                <li>(what / those / boys)</li>
-                <li>(what / these / children)</li>
-                <li>(what / this / pen)</li>
-            </ul>
-        </ol>
+
 
 <!-- 
 Простой (Easy) replace
@@ -298,22 +251,59 @@
 Сложный (Hard) listen
 Экстремальный (Extreme) speak        
 -->
+        <h2>Упражнения</h2>
 
         <details>
-            <summary>Упражнение 1 (Easy): Подставьте правильное личное местоимение</summary>
+            <summary>Упражнение 1 (Easy): Подставить местоимение <code>this</code>/<code>these</code></summary>
             <form id="exerciseForm_1"></form>
         </details>
 
         <details>
-            <summary>Упражнение 2 (Easy): Преобразуйте предложения</summary>
-            Замените <a href="https://jekahome.github.io/grammar_of_english/html/grammar/A1/Parts-of-speech.html" target="_blank">подлежащее</a> на соответствующее местоимение.<br>
+            <summary>Упражнение 2 (Easy): Подставить местоимение <code>that</code>/<code>those</code></summary>
             <form id="exerciseForm_2"></form>
         </details>
- 
+
+
+        <details>
+            <summary>Упражнение 3 (Easy): Подставьте правильное местоимение</summary>
+            <form id="exerciseForm_3"></form>
+        </details>
+
+        <details>
+            <summary>Упражнение 4 (Easy): Преобразуйте предложения</summary>
+            (замените <a href="https://jekahome.github.io/grammar_of_english/html/grammar/A1/Parts-of-speech.html" target="_blank">подлежащее</a> на соответствующее местоимение)<br>
+            <form id="exerciseForm_4"></form>
+        </details>
+
     </div>
 
     <script>
         const exercises_1 = [
+            ["___ chair",["this"]], 
+            ["___ tables",["these"]], 
+            ["___ children",["these"]], 
+            ["___ girl",["this"]], 
+            ["___ car",["this"]], 
+            ["___ toys",["these"]], 
+            ["___ picture",["this"]], 
+            ["___ trains",["these"]], 
+            ["___ men",["these"]], 
+            ["___ man",["this"]], 
+        ];
+
+        const exercises_2 = [
+            ["___ tree", ["that"]],
+            ["___ houses", ["those"]],
+            ["___ horse", ["that"]],
+            ["___ mice", ["those"]],
+            ["___ women", ["those"]],
+            ["___ trousers", ["those"]],
+            ["___ goat", ["that"]],
+            ["___ cow", ["that"]],
+            ["___ boys", ["those"]]
+        ];
+
+        const exercises_3 = [
             ["___ (Моя сестра) is very smart.", ["she"]],
             ["___ (Твои друзья) are coming to the party.", ["they"]],
             ["___ (Папа и я) went to the cinema.",[ "we"]],
@@ -378,7 +368,7 @@
             ["What are these? → ___ are toys. (Что это? - Это игрушки.)",["These"]], 
         ];
 
-        const exercises_2 = [
+        const exercises_4 = [
 
             ["The boy is running → ___ is running. (Парень бегает → Он бегает.)", ["He"]],
             ["The boys are running → ___ are running. (Парени бегают → Они бегают.)", ["They"]],
@@ -421,55 +411,59 @@
 
         ];
     
-        let exerciseForm_1 = document.getElementById('exerciseForm_1');
-        let exerciseForm_2 = document.getElementById('exerciseForm_2');
 
-    function generateExercises() {
-        const ex_1 = getRandomThird(exercises_1);
-        ex_1.forEach(item => {
-            let sentence = item[0];
-            let answers = item[1];
-            answers.forEach(answer => {
-                sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+        let exerciseForm_4 = document.getElementById('exerciseForm_4');
+
+        generateExercises(getRandomThird(exercises_1), document.getElementById('exerciseForm_1'));
+        generateExercises(getRandomThird(exercises_2), document.getElementById('exerciseForm_2'));
+        generateExercises(getRandomThird(exercises_3), document.getElementById('exerciseForm_3'));
+        generateExercises(getRandomThird(exercises_4), document.getElementById('exerciseForm_4'));
+
+        function generateExercises(exercises, exerciseForm) {
+            
+            ex_1.forEach(item => {
+                let sentence = item[0];
+                let answers = item[1];
+                answers.forEach(answer => {
+                    sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                });
+
+                exerciseForm_1.innerHTML += `<p>${sentence}</p>`;
             });
 
-            exerciseForm_1.innerHTML += `<p>${sentence}</p>`;
-        });
+            const ex_2 = getRandomThird(exercises_2);
+            ex_2.forEach(item => {
+                let sentence = item[0];
+                let answers = item[1];
+                answers.forEach(answer => {
+                    sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                });
 
-        const ex_2 = getRandomThird(exercises_2);
-        exercises_2.forEach(item => {
-            let sentence = item[0];
-            let answers = item[1];
-            answers.forEach(answer => {
-                sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                exerciseForm_2.innerHTML += `<p>${sentence}</p>`;
             });
-
-            exerciseForm_2.innerHTML += `<p>${sentence}</p>`;
-        });
-    }
-
-    function checkAnswer(inputElement, correctAnswer) {
-        const userAnswer = inputElement.value.trim().toLowerCase();
-
-        if (userAnswer == correctAnswer.toLowerCase()) {
-            inputElement.className = 'input-size correct'; 
-        } else {
-            inputElement.className = 'input-size incorrect'; 
         }
-    }
 
-    function getRandomThird(arr) {
-        const thirdLength = Math.ceil(arr.length / 3); 
-        const randomIndices = new Set(); 
-        while (randomIndices.size < thirdLength) {
-            const randomIndex = Math.floor(Math.random() * arr.length);
-            randomIndices.add(randomIndex);
+        function checkAnswer(inputElement, correctAnswer) {
+            const userAnswer = inputElement.value.trim().toLowerCase();
+
+            if (userAnswer == correctAnswer.toLowerCase()) {
+                inputElement.className = 'input-size correct'; 
+            } else {
+                inputElement.className = 'input-size incorrect'; 
+            }
         }
-        const randomElements = Array.from(randomIndices).map(index => arr[index]);
-        return randomElements;
-    }
 
-    generateExercises();
+        function getRandomThird(arr) {
+            const thirdLength = Math.ceil(arr.length / 3); 
+            const randomIndices = new Set(); 
+            while (randomIndices.size < thirdLength) {
+                const randomIndex = Math.floor(Math.random() * arr.length);
+                randomIndices.add(randomIndex);
+            }
+            const randomElements = Array.from(randomIndices).map(index => arr[index]);
+            return randomElements;
+        }
+
     </script>
 </body>
 </html>
