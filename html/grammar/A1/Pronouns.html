@@ -391,34 +391,36 @@
 
     function generateExercises() {
         let index=0;
-        exercises_2.forEach((exercise, index) => {
-            // Создаем HTML для всех полей ввода
-            const inputsHTML = exercise[1].map((answer, i) => {
-                index+=1;
-                return `<input type="text" id="q_${index}_${i}" class="input-size" oninput="checkAnswer(this, '${answer}', ${index})" />`
-            }).join(" ");
 
-            const questionHTML = `
-                <p>
-                    ${exercise[0].replace(/___/g, () => inputsHTML)} <!-- Заменяем все подстановки -->
-                </p>
-            `;
-            exerciseForm_2.innerHTML += questionHTML;
+        exercises_1.forEach(item => {
+            let sentence = item[0];
+            let answers = item[1];
+            answers.forEach(answer => {
+                index+=1;
+                sentence = sentence.replace('___', `<input type="text" id="q_${index}" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+            });
+
+            exerciseForm_1.innerHTML += `<p>${sentence}</p>`;
         });
 
+        exercises_2.forEach(item => {
+            let sentence = item[0];
+            let answers = item[1];
+            answers.forEach(answer => {
+                index+=1;
+                sentence = sentence.replace('___', `<input type="text" id="q_${index}" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+            });
+
+            exerciseForm_2.innerHTML += `<p>${sentence}</p>`;
+        });
     }
 
-    function checkAnswer(inputElement, correctAnswer, exerciseIndex) {
+    function checkAnswer(inputElement, correctAnswer) {
         const userAnswer = inputElement.value.trim().toLowerCase();
-        const resultElement = document.getElementById('result_' + exerciseIndex);
-
-        const allCorrect = correctAnswer.every((ans, idx) => {
-            const inputField = document.getElementById(`q_${exerciseIndex}_${idx}`);
-            return inputField.value.trim().toLowerCase() === ans.toLowerCase();
-        });
+        const correctAnswer = correctAnswer.toLowerCase();
 
         // Изменяем цвет поля ввода в зависимости от правильности ответа
-        if (allCorrect) {
+        if (userAnswer == correctAnswer) {
             inputElement.className = 'input-size correct'; // Зеленый для правильного ответа
         } else {
             inputElement.className = 'input-size incorrect'; // Красный для неправильного ответа
