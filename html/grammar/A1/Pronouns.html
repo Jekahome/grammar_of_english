@@ -254,23 +254,23 @@
         <h2>Упражнения</h2>
 
         <details>
-            <summary>Упражнение 1 (Easy): Подставить местоимение <code>this</code>/<code>these</code></summary>
+            <summary>1 (Easy): Подставить местоимение <code>this</code>/<code>these</code></summary>
             <form id="exerciseForm_1"></form>
         </details>
 
         <details>
-            <summary>Упражнение 2 (Easy): Подставить местоимение <code>that</code>/<code>those</code></summary>
+            <summary>2 (Easy): Подставить местоимение <code>that</code>/<code>those</code></summary>
             <form id="exerciseForm_2"></form>
         </details>
 
 
         <details>
-            <summary>Упражнение 3 (Easy): Подставьте правильное местоимение</summary>
+            <summary>3 (Easy): Подставьте правильное местоимение</summary>
             <form id="exerciseForm_3"></form>
         </details>
 
         <details>
-            <summary>Упражнение 4 (Easy): Преобразуйте предложения</summary>
+            <summary>4 (Easy): Преобразуйте предложения</summary>
             (замените <a href="https://jekahome.github.io/grammar_of_english/html/grammar/A1/Parts-of-speech.html" target="_blank">подлежащее</a> на соответствующее местоимение)<br>
             <form id="exerciseForm_4"></form>
         </details>
@@ -420,26 +420,14 @@
         generateExercises(getRandomThird(exercises_4), document.getElementById('exerciseForm_4'));
 
         function generateExercises(exercises, exerciseForm) {
-            
-            ex_1.forEach(item => {
+            exercises.forEach(item => {
                 let sentence = item[0];
                 let answers = item[1];
                 answers.forEach(answer => {
                     sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
                 });
 
-                exerciseForm_1.innerHTML += `<p>${sentence}</p>`;
-            });
-
-            const ex_2 = getRandomThird(exercises_2);
-            ex_2.forEach(item => {
-                let sentence = item[0];
-                let answers = item[1];
-                answers.forEach(answer => {
-                    sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
-                });
-
-                exerciseForm_2.innerHTML += `<p>${sentence}</p>`;
+                exerciseForm.innerHTML += `<p>${sentence}</p>`;
             });
         }
 
