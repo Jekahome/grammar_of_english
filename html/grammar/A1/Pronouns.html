@@ -644,6 +644,19 @@
         generateExercisesEasy(getRandomThird(exercises_easy_3), document.getElementById('exerciseForm_3'));
         generateExercisesEasy(getRandomThird(exercises_easy_4), document.getElementById('exerciseForm_4'));
 
+        const generateExercisesMedium = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+                    let sentence = item[0];
+                    sentence = `${sentence} — <input type="text" class="input-size" oninput="checkAnswer(this, '${item[1]}')" /> <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> <span class="text-span" id="clue-medium-${index}">${item[1]}</span>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+        })();
+
         generateExercisesMedium(getRandomThird(exercises_medium_5), document.getElementById('exerciseForm_5'));
         generateExercisesMedium(getRandomThird(exercises_medium_6), document.getElementById('exerciseForm_6'));
         generateExercisesMedium(getRandomThird(exercises_medium_7), document.getElementById('exerciseForm_7'));
@@ -661,20 +674,7 @@
                 exerciseForm.innerHTML += `<p>${sentence}</p>`;
             });
         }
-
-        const generateExercisesMedium = (() => {
-            let index = 0; 
-
-            return (exercises, exerciseForm) => {
-                exercises.forEach(item => {
-                    index += 1;  
-                    let sentence = item[0];
-                    sentence = `${sentence} — <input type="text" class="input-size" oninput="checkAnswer(this, '${item[1]}')" /> <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> <span class="text-span" id="clue-medium-${index}">${item[1]}</span>`;
-                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
-                });
-            };
-        })();
-
+ 
         /*function generateExercisesMedium(exercises, exerciseForm) {
             let index = 0;
             exercises.forEach(item => {
