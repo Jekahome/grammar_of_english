@@ -17,6 +17,7 @@ class Practice {
     static isActivePractice3 = false;
 
     speak(val){
+        console.log(val);
         // Browser speak
         Practice.utterThis.text = val;
         Practice.synth.speak(Practice.utterThis);
