@@ -275,10 +275,15 @@
             <form id="exerciseForm_4"></form>
         </details>
 
+        <details>
+            <summary>5 (Medium): Перевести</summary>
+            <form id="exerciseForm_5"></form>
+        </details>
+
     </div>
 
     <script>
-        const exercises_1 = [
+        const exercises_easy_1 = [
             ["___ chair",["this"]], 
             ["___ tables",["these"]], 
             ["___ children",["these"]], 
@@ -306,7 +311,7 @@
             ["___ cup", ["this"]]
         ];
 
-        const exercises_2 = [
+        const exercises_easy_2 = [
             ["___ tree", ["that"]],
             ["___ houses", ["those"]],
             ["___ horse", ["that"]],
@@ -333,7 +338,7 @@
             ["___ child", ["that"]]
         ];
 
-        const exercises_3 = [
+        const exercises_easy_3 = [
             ["___ (Моя сестра) is very smart.", ["she"]],
             ["___ (Твои друзья) are coming to the party.", ["they"]],
             ["___ (Папа и я) went to the cinema.",[ "we"]],
@@ -398,7 +403,7 @@
             ["What are these? → ___ are toys. (Что это? - Это игрушки.)",["These"]], 
         ];
 
-        const exercises_4 = [
+        const exercises_easy_4 = [
 
             ["The boy is running → ___ is running. (Парень бегает → Он бегает.)", ["He"]],
             ["The boys are running → ___ are running. (Парени бегают → Они бегают.)", ["They"]],
@@ -441,15 +446,45 @@
 
         ];
     
+        const exercises_medium_5 = [
+            ["этот стул", "this chair"], 
+            ["эти столы", "these tables"], 
+            ["эти дети", "these children"], 
+            ["эта девочка", "this girl"], 
+            ["эта машина", "this car"], 
+            ["эти игрушки", "these toys"], 
+            ["эта картина", "this picture"], 
+            ["эти поезда", "these trains"], 
+            ["эти мужчины", "these men"], 
+            ["этот мужчина", "this man"], 
+            ["это яблоко", "this apple"], 
+            ["эти апельсины", "these oranges"], 
+            ["эта книга", "this book"], 
+            ["эти кошки", "these cats"], 
+            ["этот телефон", "this phone"], 
+            ["эти туфли", "these shoes"], 
+            ["этот ноутбук", "this laptop"], 
+            ["эти стулья", "these chairs"], 
+            ["эта птица", "this bird"], 
+            ["эти собаки", "these dogs"], 
+            ["эта ручка", "this pen"], 
+            ["эти цветы", "these flowers"], 
+            ["этот компьютер", "this computer"], 
+            ["эти велосипеды", "these bicycles"], 
+            ["эта чашка", "this cup"]
+        ];
 
-        let exerciseForm_4 = document.getElementById('exerciseForm_4');
+        
 
-        generateExercises(getRandomThird(exercises_1), document.getElementById('exerciseForm_1'));
-        generateExercises(getRandomThird(exercises_2), document.getElementById('exerciseForm_2'));
-        generateExercises(getRandomThird(exercises_3), document.getElementById('exerciseForm_3'));
-        generateExercises(getRandomThird(exercises_4), document.getElementById('exerciseForm_4'));
+        generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+        generateExercisesEasy(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_2'));
+        generateExercisesEasy(getRandomThird(exercises_easy_3), document.getElementById('exerciseForm_3'));
+        generateExercisesEasy(getRandomThird(exercises_easy_4), document.getElementById('exerciseForm_4'));
 
-        function generateExercises(exercises, exerciseForm) {
+        generateExercisesMedium(getRandomThird(exercises_medium_5), document.getElementById('exerciseForm_5'));
+
+
+        function generateExercisesEasy(exercises, exerciseForm) {
             exercises.forEach(item => {
                 let sentence = item[0];
                 let answers = item[1];
@@ -457,6 +492,14 @@
                     sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
                 });
 
+                exerciseForm.innerHTML += `<p>${sentence}</p>`;
+            });
+        }
+
+        function generateExercisesMedium(exercises, exerciseForm) {
+            exercises.forEach(item => {
+                let sentence = item[0];
+                sentence = `${sentence} — <input type="text" class="input-size" oninput="checkAnswer(this, '${item[1]}')" />`;
                 exerciseForm.innerHTML += `<p>${sentence}</p>`;
             });
         }
