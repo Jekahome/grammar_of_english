@@ -13,7 +13,7 @@
         }
         .input-size {
             width: 45px;
-            padding: 0px;
+            padding-right: 6px;
             margin: 0px;
             font-size: 16px;
             box-sizing: content-box;
@@ -508,7 +508,7 @@
 
         function checkAnswer(inputElement, correctAnswer) {
             inputElement.style.width = (inputElement.value.length + 1) + 'ch';
-            
+
             const userAnswer = inputElement.value.trim().toLowerCase();
 
             if (userAnswer == correctAnswer.toLowerCase()) {
