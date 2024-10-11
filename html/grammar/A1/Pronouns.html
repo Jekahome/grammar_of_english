@@ -313,8 +313,10 @@
         Начать со слов, потом словосочетаний, потом предложений
 
     </div>
-
+    <script src='/grammar_of_english/practice.js'></script>
     <script>
+        let practice = new Practice();
+
         const exercises_easy_1 = [
             ["___ chair",["this"]], 
             ["___ tables",["these"]], 
@@ -692,6 +694,8 @@
                 inputElement.style.width = (inputElement.value.length + 1) + 'ch';
             }
             
+            practice.speak(correctAnswer);
+
             const userAnswer = inputElement.value.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
             const normalizedCorrectAnswer = correctAnswer.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
 
