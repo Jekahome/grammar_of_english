@@ -28,6 +28,16 @@
             display: inline-block;
             padding-left: 10px;
         }
+
+        #text-field {
+            display: none;  
+            margin-top: 10px;
+        }
+        .icon {
+            cursor: pointer;  
+            width: 15px;  
+            height: 15px; 
+        }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -499,9 +509,11 @@
         }
 
         function generateExercisesMedium(exercises, exerciseForm) {
+            let index = 0;
             exercises.forEach(item => {
+                index+=1;
                 let sentence = item[0];
-                sentence = `${sentence} — <input type="text" class="input-size" oninput="checkAnswer(this, '${item[1]}')" />`;
+                sentence = `${sentence} — <input type="text" class="input-size" oninput="checkAnswer(this, '${item[1]}')" /> <img src="clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> <span id="clue-medium-${index}">${item[1]}</span>`;
                 exerciseForm.innerHTML += `<p>${sentence}</p>`;
             });
         }
@@ -531,6 +543,14 @@
             return randomElements;
         }
 
+        function showClue(id) {
+            var inputField = document.getElementById(id);
+            inputField.style.display = "block"; 
+
+            setTimeout(function() {
+                inputField.style.display = "none";
+            }, 5000);
+        }
     </script>
 </body>
 </html>
