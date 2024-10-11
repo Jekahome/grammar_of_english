@@ -292,6 +292,11 @@
             <form id="exerciseForm_5"></form>
         </details>
 
+        <details>
+            <summary>6 (Medium): Перевести</summary>
+            <form id="exerciseForm_6"></form>
+        </details>
+
     </div>
 
     <script>
@@ -486,7 +491,32 @@
             ["эта чашка", "this cup"]
         ];
 
-        
+        const exercises_medium_6 = [
+            ["то дерево", "that tree"], 
+            ["те дома", "those houses"], 
+            ["та лошадь", "that horse"], 
+            ["те мыши", "those mice"], 
+            ["те женщины", "those women"], 
+            ["те брюки", "those trousers"], 
+            ["та коза", "that goat"], 
+            ["та корова", "that cow"], 
+            ["те мальчики", "those boys"], 
+            ["тот велосипед", "that bicycle"], 
+            ["те горы", "those mountains"], 
+            ["тот кот", "that cat"], 
+            ["те собаки", "those dogs"], 
+            ["тот мост", "that bridge"], 
+            ["те деревья", "those trees"], 
+            ["та река", "that river"], 
+            ["те птицы", "those birds"], 
+            ["та машина", "that car"], 
+            ["те туфли", "those shoes"], 
+            ["тот лев", "that lion"], 
+            ["те звезды", "those stars"], 
+            ["тот стул", "that chair"], 
+            ["те окна", "those windows"], 
+            ["тот ребенок", "that child"]
+        ];
 
         generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
         generateExercisesEasy(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_2'));
@@ -494,7 +524,7 @@
         generateExercisesEasy(getRandomThird(exercises_easy_4), document.getElementById('exerciseForm_4'));
 
         generateExercisesMedium(getRandomThird(exercises_medium_5), document.getElementById('exerciseForm_5'));
-
+        generateExercisesMedium(getRandomThird(exercises_medium_6), document.getElementById('exerciseForm_6'));
 
         function generateExercisesEasy(exercises, exerciseForm) {
             exercises.forEach(item => {
@@ -549,7 +579,7 @@
 
             setTimeout(function() {
                 el.style.visibility = "hidden";
-            }, 5000);
+            }, 3500);
         }
     </script>
 </body>
