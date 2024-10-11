@@ -297,6 +297,18 @@
             <form id="exerciseForm_6"></form>
         </details>
 
+        <details>
+            <summary>7 (Medium): Перевести</summary>
+            <form id="exerciseForm_7"></form>
+        </details>
+
+        <details>
+            <summary>8 (Medium): Перевести и преобразовать предложения</summary>
+            (замените <a href="https://jekahome.github.io/grammar_of_english/html/grammar/A1/Parts-of-speech.html" target="_blank">подлежащее</a> на соответствующее местоимение)<br>
+            <form id="exerciseForm_8"></form>
+        </details>
+
+
     </div>
 
     <script>
@@ -449,6 +461,10 @@
             ["My parents live in the countryside → ___ live in the countryside. (Мои родители живут в деревне → Они живут в деревне.)", ["They"]],
             ["The trees are blooming → ___ are blooming. (Деревья цветут → Они цветут.)", ["They"]],
 
+
+
+
+
             ["Who helped you? → He helped ___. (Кто помог тебе? → Он помог мне.)", ["me"]],
             ["Did she send you a message? → Yes, she sent ___ a message. (Она отправила тебе сообщение? → Да, она отправила мне сообщение.)", ["me"]],
             ["Who gave you advice? → They gave ___ advice. (Кто дал тебе совет? → Они дали мне совет.)", ["me"]],
@@ -518,6 +534,117 @@
             ["тот ребенок", "that child"]
         ];
 
+        const exercises_medium_7 = [
+            ["Она очень умная.", "She is very smart."],
+            ["Они придут на вечеринку.", "They are coming to the party."],
+            ["Мы с папой ходили в кино.", "We went to the cinema."],
+            ["Она любит готовить.", "She loves cooking."],
+            ["Она очень игривая.", "It is very playful."],
+            ["Он мой друг.", "He is my friend."],
+            ["Она синяя.", "It is blue."],
+            ["Я читаю книгу.", "I am reading a book."],
+            ["Кто твой учитель?", "Who is your teacher?"],
+            ["Они мои лучшие друзья.", "They are my best friends."],
+            ["Она из Украины.", "She is from Ukraine."],
+            ["Какой твой любимый цвет?", "What is your favorite color?"],
+
+            ["Она дала мне подарок.", "She gave me a gift."],
+            ["Мы пригласили их на вечеринку.", "We invited them to the party."],
+            ["Я видел его вчера в парке.", "I saw him yesterday at the park."],
+            ["Можешь одолжить мне немного денег?", "Could you lend me some money?"],
+            ["Они рассказали нам о встрече.", "They told us about the meeting."],
+            ["Учитель задал ей вопрос.", "The teacher asked her a question."],
+            ["Я купил тебе новый телефон.", "I bought you a new phone."],
+
+            ["Мой брат очень хорошо играет в футбол.", "My brother plays football very well."],
+            ["Наши родители работают в городе.", "Our parents work in the city."],
+            ["Ты мой лучший друг.", "You are my best friend."],
+            ["Эта кошка любит молоко.", "This cat likes milk."],
+            ["Моя бабушка рассказывает интересные истории.", "My grandmother tells interesting stories."],
+            ["Птицы поют на деревьях.", "The birds are singing in the trees."],
+            ["Эти люди очень добры.", "These people are very kind."],
+            ["Он мой дядя.", "He is my uncle."],
+            ["Снаружи очень холодно.", "It is very cold outside."],
+            ["Мы завтра идем в парк.", "We are going to the park tomorrow."],
+
+            ["Я дал тебе книгу.", "I gave you a book."],
+            ["Она рассказала ему новости.", "She told him the news."],
+            ["Можешь показать нам дорогу?", "Can you show us the way?"],
+            ["Он отправил ей письмо.", "He sent her a letter."],
+            ["Пожалуйста, помоги им.", "Please give them a hand."],
+            ["Я купил ему подарок.", "I bought him a gift."],
+            ["Они принесли мне немного воды.", "They brought me some water."],
+            ["Ты одолжил ей немного денег?", "Did you lend her some money?"],
+            ["Можешь сказать нам время?", "Can you tell us the time?"],
+            ["Покажи ему свой рисунок.", "Show him your drawing."],
+
+            ["Мой брат дал мне книгу.", "My brother gave me a book."],
+            ["Она сказала ему позвонить ей.", "She told him to give her a call."],
+            ["Учитель попросил нас помочь ему.", "The teacher asked us to help him."],
+            ["Они показали нам свой дом.", "They showed us their house."],
+            ["Я одолжу ему свой велосипед, если он ему понадобится.", "I will lend him my bike if he needs it."],
+            ["Можешь сказать мне ответ?", "Could you tell me the answer?"],
+            ["Джон представил нас им.", "John introduced us to them."],
+            ["Мы пригласили их присоединиться к нам.", "We invited them to join us."],
+            ["Она объяснила мне правила.", "She explained the rules to me."],
+            ["Он подарил ей подарок, и она поблагодарила его.", "He gave her a present, and she thanked him."],
+
+            ["То книга.", "That is a book."],
+            ["То туфли.", "Those are shoes."],
+            ["То машина.", "That is a car."],
+            ["То деревья.", "Those are trees."],
+            ["Это кукла.", "This is a doll."],
+            ["Это дома.", "These are houses."],
+            ["Это поезд.", "This is a train."],
+            ["Это игрушки.", "These are toys."]
+        ];
+
+        const exercises_easy_8 = [
+            ["Парень бегает.", "He is running."],
+            ["Парени бегают.", "They are running."],
+            ["Мои родители на работе.", "They are at work."],
+            ["Кот спит.", "It is sleeping."],
+            ["Лиза и я идем в магазин.", "We are going to the shop."],
+
+            ["Кто дал тебе книгу? (Она)", "She gave me the book."],
+            ["Он звонил тебе вчера? (Да)", "Yes, he called me."],
+            ["Кто им поможет? (Мы)", "We will help them."],
+            ["Можешь принести мне воды? (Да)", "Sure, I’ll bring you some water."],
+
+            ["Мой брат отдал книгу моей сестре.", "He gave the book to her."],
+            ["Учитель задала вопрос ученикам.", "She asked them a question."],
+            ["Джон рассказал родителям новости.", "He told them the news."],
+
+            ["Моя мама готовит ужин", "She is cooking dinner."],
+            ["Дети играют на улице.", "They are playing outside."],
+            ["Мой друг и я учимся вместе.", "We are studying together."],
+            ["Собака лает.", "It is barking."],
+            ["Моя сестра любит петь.", "She loves singing."],
+
+            ["Том и Джерри снова дерутся.", "They are fighting again."],
+            ["Анна читает книгу.", "She is reading a book."],
+            ["Машина припаркована снаружи.", "It is parked outside."],
+            ["Мои родители живут в деревне.", "They live in the countryside."],
+            ["Деревья цветут.", "They are blooming."],
+
+
+
+
+
+            ["Кто помог тебе? (Он)", "He helped me."],
+            ["Она отправила тебе сообщение? (Да)", "Yes, she sent me a message."],
+
+            ["Кто дал тебе совет?", "Who gave you advice? → They gave me advice."],
+            ["Можешь рассказать нам историю?", "Can you tell us the story? → Sure, I’ll tell you the story."],
+            ["Кто поможет ей?", "Who will help her? → We will help her."],
+
+            ["Учитель объяснил задание им.", "The teacher explained the task to the students."],
+            ["Они рассказали секрет им.", "The children told the secret to their friends."],
+            ["Он показал рисунок им.", "The boy showed his drawing to his parents."],
+            ["Мы принесем еду им.", "Mary and I will bring food to the party."],
+            ["Он отправил письмо им.", "The manager sent an email to his colleagues."]
+        ];
+
         generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
         generateExercisesEasy(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_2'));
         generateExercisesEasy(getRandomThird(exercises_easy_3), document.getElementById('exerciseForm_3'));
@@ -525,6 +652,9 @@
 
         generateExercisesMedium(getRandomThird(exercises_medium_5), document.getElementById('exerciseForm_5'));
         generateExercisesMedium(getRandomThird(exercises_medium_6), document.getElementById('exerciseForm_6'));
+        generateExercisesMedium(getRandomThird(exercises_medium_7), document.getElementById('exerciseForm_7'));
+        generateExercisesMedium(getRandomThird(exercises_medium_8), document.getElementById('exerciseForm_8'));
+
 
         function generateExercisesEasy(exercises, exerciseForm) {
             exercises.forEach(item => {
@@ -553,9 +683,10 @@
                 inputElement.style.width = (inputElement.value.length + 1) + 'ch';
             }
             
-            const userAnswer = inputElement.value.trim().toLowerCase();
+            const userAnswer = inputElement.value.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
+            const normalizedCorrectAnswer = correctAnswer.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
 
-            if (userAnswer == correctAnswer.toLowerCase()) {
+            if (userAnswer === normalizedCorrectAnswer) {
                 inputElement.className = 'input-size correct'; 
             } else {
                 inputElement.className = 'input-size incorrect'; 
