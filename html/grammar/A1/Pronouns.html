@@ -507,8 +507,10 @@
         }
 
         function checkAnswer(inputElement, correctAnswer) {
-            inputElement.style.width = (inputElement.value.length + 1) + 'ch';
-
+            if (inputElement.value.length > 6){
+                inputElement.style.width = (inputElement.value.length + 1) + 'ch';
+            }
+            
             const userAnswer = inputElement.value.trim().toLowerCase();
 
             if (userAnswer == correctAnswer.toLowerCase()) {
