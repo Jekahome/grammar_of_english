@@ -314,8 +314,13 @@
         аудио
         Начать со слов, потом словосочетаний, потом предложений
         <details>
-            <summary>9 (Hard): Подставить местоимение <code>this</code>/<code>these</code></summary>
+            <summary>9 (Hard): Написать en и ru вариант</summary>
             <form id="exerciseForm_9"></form>
+        </details>
+
+        <details>
+            <summary>10 (Hard): Подставить местоимение <code>this</code>/<code>these</code></summary>
+            <form id="exerciseForm_10"></form>
         </details>
 
     </div>
@@ -649,8 +654,28 @@
             ["Менеджер отправил письмо своим коллегам.", "He sent an email to them."]
         ];
 
-
         const exercises_hard_9 = [
+            ["I", "я"],
+            ["he", "он"],
+            ["she", "она"],
+            ["it", "это"],
+            ["we", "мы"],
+            ["you", "ты"],
+            ["they", "они"],
+            ["me", "меня"],
+            ["him", "его"],
+            ["her", "ее"],
+            ["it", "это"],  
+            ["us", "нас"],
+            ["you", "вас"],
+            ["them", "их"],
+            ["this", "это"],
+            ["that", "то"],
+            ["these", "эти"],
+            ["those", "те"]
+        ];
+
+        const exercises_hard_10 = [
             ["this chair"], 
             ["these tables"], 
             ["these children"], 
@@ -699,6 +724,23 @@
             };
         })();
 
+        const generateExercisesHard_9 = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+
+                    sentence = `<img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]}")'> 
+                    <input type="text" class="input-size" id="input-hard-9-${index}"'/> —
+                    <input type="text" class="input-size" oninput='checkAnswerHard9(this, "input-hard-9-${index}", "${item[0]}", "${item[1]}")'/> 
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-hard-9-${index}')"> 
+                    <span class="text-span" id="clue-hard-9-${index}">${item[0]} — ${item[1]}</span>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+        })();
+
         const generateExercisesHard = (() => {
             let index = 0; 
 
@@ -717,7 +759,9 @@
         generateExercisesMedium(getRandomThird(exercises_medium_7), document.getElementById('exerciseForm_7'));
         generateExercisesMedium(getRandomThird(exercises_medium_8), document.getElementById('exerciseForm_8'));
 
-        generateExercisesHard(getRandomThird(exercises_hard_9), document.getElementById('exerciseForm_9'));
+
+        generateExercisesHard_9(getRandomThird(exercises_hard_9), document.getElementById('exerciseForm_9')); 
+        generateExercisesHard(getRandomThird(exercises_hard_10), document.getElementById('exerciseForm_10'));
 
         function generateExercisesEasy(exercises, exerciseForm) {
             exercises.forEach(item => {
@@ -746,6 +790,23 @@
             } else {
                 inputElement.className = 'input-size incorrect'; 
             }
+        }
+
+        function checkAnswerHard9(inputElementRu, IDinputElementEn, en, ru){
+            var inputElementEn = document.getElementById(IDinputElementEn);
+            const userAnswerRu = inputElementRu.value.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
+            const userAnswerEn = inputElementEn.value.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
+            const normalizedCorrectAnswerEn = en.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
+            const normalizedCorrectAnswerRu = ru.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
+
+            if (userAnswerEn === normalizedCorrectAnswerEn && userAnswerRu === normalizedCorrectAnswerRu) {
+                inputElement.className = 'input-size correct'; 
+                inputElementEn.className = 'input-size correct'; 
+            } else {
+                inputElement.className = 'input-size incorrect'; 
+                inputElementEn.className = 'input-size correct'; 
+            }
+
         }
 
         function getRandomThird(arr) {
