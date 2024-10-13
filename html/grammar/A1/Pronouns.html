@@ -310,18 +310,26 @@
             <form id="exerciseForm_8"></form>
         </details>
 
+
+
         <hr>
         аудио
         Начать со слов, потом словосочетаний, потом предложений
         <details>
-            <summary>9 (Hard): Написать en и ru вариант</summary>
+            <summary>9 (Hard): Прослушать и написать en — ru вариант</summary>
             <form id="exerciseForm_9"></form>
         </details>
 
         <details>
-            <summary>10 (Hard): Подставить местоимение <code>this</code>/<code>these</code></summary>
+            <summary>10 (Hard): Прослушать и подставить местоимение <code>this</code>/<code>these</code></summary>
             <form id="exerciseForm_10"></form>
         </details>
+        <details>
+            <summary>11 (Hard): Прослушать и подставить местоимение <code>that</code>/<code>those</code></summary>
+            <form id="exerciseForm_11"></form>
+        </details>
+
+
 
     </div>
     <script src='/grammar_of_english/practice.js'></script>
@@ -675,33 +683,60 @@
         ];
 
         const exercises_hard_10 = [
-            ["this chair"], 
-            ["these tables"], 
-            ["these children"], 
-            ["this girl"], 
-            ["this car"], 
-            ["these toys"], 
-            ["this picture"], 
-            ["these trains"], 
-            ["these men"], 
-            ["this man"], 
-            ["this apple"],
-            ["these oranges"],
-            ["this book"],
-            ["these cats"],
-            ["this phone"],
-            ["these shoes"],
-            ["this laptop"],
-            ["these chairs"],
-            ["this bird"],
-            ["these dogs"],
-            ["this pen"],
-            ["these flowers"],
-            ["this computer"],
-            ["these bicycles"],
-            ["this cup"]
+            ["this chair", "этот стул"], 
+            ["these tables", "эти столы"], 
+            ["these children", "эти дети"], 
+            ["this girl", "эта девочка"], 
+            ["this car", "этот автомобиль"], 
+            ["these toys", "эти игрушки"], 
+            ["this picture", "это изображение"], 
+            ["these trains", "эти поезда"], 
+            ["these men", "эти мужчины"], 
+            ["this man", "этот человек"], 
+            ["this apple", "это яблоко"],
+            ["these oranges", "эти апельсины"],
+            ["this book", "эта книга"],
+            ["these cats", "эти кошки"],
+            ["this phone", "этот телефон"],
+            ["these shoes", "эти туфли"],
+            ["this laptop", "этот ноутбук"],
+            ["these chairs", "эти стулья"],
+            ["this bird", "эта птица"],
+            ["these dogs", "эти собаки"],
+            ["this pen", "эта ручка"],
+            ["these flowers", "эти цветы"],
+            ["this computer", "этот компьютер"],
+            ["these bicycles", "эти велосипеды"],
+            ["this cup", "эта чашка"]
         ];
 
+
+        const exercises_hard_11 = [
+            ["that tree", "это дерево"],
+            ["those houses", "те дома"],
+            ["that horse", "та лошадь"],
+            ["those mice", "те мыши"],
+            ["those women", "те женщины"],
+            ["those trousers", "те брюки"],
+            ["that goat", "та коза"],
+            ["that cow", "та корова"],
+            ["those boys", "те мальчики"],
+            ["that bicycle", "тот велосипед"],
+            ["those mountains", "те горы"],
+            ["that cat", "та кошка"],
+            ["those dogs", "те собаки"],
+            ["that bridge", "тот мост"],
+            ["those trees", "те деревья"],
+            ["that river", "та река"],
+            ["those birds", "те птицы"],
+            ["that car", "тот автомобиль"],
+            ["those shoes", "те обувь"],
+            ["that lion", "тот лев"],
+            ["those stars", "те звезды"],
+            ["that chair", "тот стул"],
+            ["those windows", "те окна"],
+            ["that child", "тот ребенок"]
+        ];
 
 
 
@@ -723,7 +758,7 @@
             };
         })();
 
-        const generateExercisesHard_9 = (() => {
+        const generateExercisesHard = (() => {
             let index = 0; 
 
             return (exercises, exerciseForm) => {
@@ -733,25 +768,29 @@
                     sentence = `<img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]}")'> 
                     <input type="text" class="input-size" oninput="checkAnswer(this, '${item[0]}')"/> —
                     <input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")'/> 
-                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-hard-9-${index}')"> 
-                    <span class="text-span" id="clue-hard-9-${index}">${item[0]} — ${item[1]}</span>`;
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-hard-${index}')"> 
+                    <span class="text-span" id="clue-hard-${index}">${item[0]} — ${item[1]}</span>`;
                     exerciseForm.innerHTML += `<p>${sentence}</p>`;
                 });
             };
         })();
 
-        const generateExercisesHard = (() => {
+        /*const generateExercisesHard = (() => {
             let index = 0; 
 
             return (exercises, exerciseForm) => {
                 exercises.forEach(sentence => {
                     index += 1;  
 
-                    sentence = `<img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${sentence}")'> <input type="text" class="input-size" oninput="checkAnswer(this, '${sentence}')"/> <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-hard-${index}')"><span class="text-span" id="clue-hard-${index}">${sentence}</span>`;
+                    sentence = `<img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${sentence}")'> 
+                    <input type="text" class="input-size" oninput="checkAnswer(this, '${sentence}')"/>  —
+
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-hard-${index}')">
+                    <span class="text-span" id="clue-hard-${index}">${sentence}</span>`;
                     exerciseForm.innerHTML += `<p>${sentence}</p>`;
                 });
             };
-        })();
+        })();*/
 
         generateExercisesMedium(getRandomThird(exercises_medium_5), document.getElementById('exerciseForm_5'));
         generateExercisesMedium(getRandomThird(exercises_medium_6), document.getElementById('exerciseForm_6'));
@@ -759,8 +798,9 @@
         generateExercisesMedium(getRandomThird(exercises_medium_8), document.getElementById('exerciseForm_8'));
 
 
-        generateExercisesHard_9(getRandomThird(exercises_hard_9), document.getElementById('exerciseForm_9')); 
+        generateExercisesHard(getRandomThird(exercises_hard_9), document.getElementById('exerciseForm_9')); 
         generateExercisesHard(getRandomThird(exercises_hard_10), document.getElementById('exerciseForm_10'));
+        generateExercisesHard(getRandomThird(exercises_hard_11), document.getElementById('exerciseForm_11'));
 
         function generateExercisesEasy(exercises, exerciseForm) {
             exercises.forEach(item => {
