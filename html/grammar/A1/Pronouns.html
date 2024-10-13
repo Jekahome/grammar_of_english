@@ -311,10 +311,7 @@
         </details>
 
 
-
         <hr>
-        аудио
-        Начать со слов, потом словосочетаний, потом предложений
         <details>
             <summary>9 (Hard): Прослушать и написать en — ru вариант</summary>
             <form id="exerciseForm_9"></form>
@@ -881,8 +878,6 @@
             if (inputElement.value.length > 4){
                 inputElement.style.width = (inputElement.value.length + 1) + 'ch';
             }
-            
-            
 
             const userAnswer = inputElement.value.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
             const normalizedCorrectAnswer = correctAnswer.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
@@ -912,7 +907,7 @@
 
             setTimeout(function() {
                 el.style.visibility = "hidden";
-            }, 2500);
+            }, 2000);
         }
 
         function playSentence(sentence){
