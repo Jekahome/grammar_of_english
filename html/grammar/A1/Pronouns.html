@@ -321,14 +321,18 @@
         </details>
 
         <details>
-            <summary>10 (Hard): Прослушать и подставить местоимение <code>this</code>/<code>these</code></summary>
+            <summary>10 (Hard): Прослушать и написать предложения с местоимением <code>this</code>/<code>these</code></summary>
             <form id="exerciseForm_10"></form>
         </details>
         <details>
-            <summary>11 (Hard): Прослушать и подставить местоимение <code>that</code>/<code>those</code></summary>
+            <summary>11 (Hard): Прослушать и написать предложения с местоимением <code>that</code>/<code>those</code></summary>
             <form id="exerciseForm_11"></form>
         </details>
-
+        <details> 
+            <summary>12 (Hard): Прослушать и написать предложения</summary>
+            (личные местоимения в именительном и в косвенном падежах)
+            <form id="exerciseForm_12"></form>
+        </details>
 
 
     </div>
@@ -673,7 +677,6 @@
             ["me", "меня"],
             ["him", "его"],
             ["her", "ее"],
-            ["it", "это"],  
             ["us", "нас"],
             ["them", "их"],
             ["this", "это"],
@@ -738,6 +741,65 @@
             ["that child", "тот ребенок"]
         ];
 
+        const exercises_hard_12 = [
+            // Именительный падеж
+            ["I am a student.", "Я студент."],
+            ["I like coffee.", "Я люблю кофе."],
+            ["I will go to the store.", "Я пойду в магазин."],
+            
+            ["He is my friend.", "Он мой друг."],
+            ["He works at the office.", "Он работает в офисе."],
+            ["He plays football.", "Он играет в футбол."],
+            
+            ["She is happy.", "Она счастлива."],
+            ["She cooks dinner.", "Она готовит ужин."],
+            ["She reads a lot.", "Она много читает."],
+            
+            ["It is a book.", "Это книга."],
+            ["It is raining.", "Идет дождь."],
+            ["It looks interesting.", "Это выглядит интересно."],
+            
+            ["We are going to the park.", "Мы идем в парк."],
+            ["We enjoy movies.", "Мы любим фильмы."],
+            ["We will help you.", "Мы поможем тебе."],
+            
+            ["You are my teacher.", "Ты мой учитель."],
+            ["You look great.", "Ты выглядишь отлично."],
+            ["You should try this.", "Ты должен попробовать это."],
+            
+            ["They are playing outside.", "Они играют на улице."],
+            ["They are friends.", "Они друзья."],
+            ["They will arrive soon.", "Они скоро приедут."],
+
+            // Косвенный падеж
+            ["Can you help me?", "Ты можешь мне помочь?"],
+            ["He gave me a book.", "Он дал мне книгу."],
+            ["She showed me the way.", "Она показала мне дорогу."],
+            
+            ["I saw him yesterday.", "Я видел его вчера."],
+            ["I sent him a message.", "Я отправил ему сообщение."],
+            ["She likes him.", "Она любит его."],
+            
+            ["I talked to her.", "Я говорил с ней."],
+            ["I gave her a present.", "Я дал ей подарок."],
+            ["They invited her to the party.", "Они пригласили её на вечеринку."],
+            
+            ["I gave it to him.", "Я дал это ему."],
+            ["Can you hold it?", "Ты можешь подержать это?"],
+            ["She lost it.", "Она потеряла это."],
+            
+            ["They invited us to the party.", "Они пригласили нас на вечеринку."],
+            ["The teacher gave us homework.", "Учитель дал нам домашнее задание."],
+            ["She told us a story.", "Она рассказала нам историю."],
+            
+            ["I will call you later.", "Я позвоню тебе позже."],
+            ["She gave you a gift.", "Она дала тебе подарок."],
+            ["We need you here.", "Ты нам нужен здесь."],
+            
+            ["She gave them a gift.", "Она дала им подарок."],
+            ["I will show them the way.", "Я покажу им дорогу."],
+            ["They asked them for help.", "Они попросили их о помощи."]
+        ];
 
 
         generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
@@ -801,6 +863,7 @@
         generateExercisesHard(getRandomThird(exercises_hard_9), document.getElementById('exerciseForm_9')); 
         generateExercisesHard(getRandomThird(exercises_hard_10), document.getElementById('exerciseForm_10'));
         generateExercisesHard(getRandomThird(exercises_hard_11), document.getElementById('exerciseForm_11'));
+        generateExercisesHard(getRandomThird(exercises_hard_12), document.getElementById('exerciseForm_12'));
 
         function generateExercisesEasy(exercises, exerciseForm) {
             exercises.forEach(item => {
