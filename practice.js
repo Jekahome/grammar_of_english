@@ -4,8 +4,6 @@ if (!('webkitSpeechRecognition' in window)) {
     upgrade();
 }
 
-// import User from './user.js'; 
-// export default class Practice { 
 class Practice { 
     #voice; 
     #recognizerResult = '';
