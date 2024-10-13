@@ -314,7 +314,7 @@
         аудио
         Начать со слов, потом словосочетаний, потом предложений
         <details>
-            <summary>1 (Hard): Подставить местоимение <code>this</code>/<code>these</code></summary>
+            <summary>9 (Hard): Подставить местоимение <code>this</code>/<code>these</code></summary>
             <form id="exerciseForm_9"></form>
         </details>
 
@@ -649,6 +649,38 @@
             ["Менеджер отправил письмо своим коллегам.", "He sent an email to them."]
         ];
 
+
+        const exercises_hard_9 = [
+            ["this chair"], 
+            ["these tables"], 
+            ["these children"], 
+            ["this girl"], 
+            ["this car"], 
+            ["these toys"], 
+            ["this picture"], 
+            ["these trains"], 
+            ["these men"], 
+            ["this man"], 
+            ["this apple"],
+            ["these oranges"],
+            ["this book"],
+            ["these cats"],
+            ["this phone"],
+            ["these shoes"],
+            ["this laptop"],
+            ["these chairs"],
+            ["this bird"],
+            ["these dogs"],
+            ["this pen"],
+            ["these flowers"],
+            ["this computer"],
+            ["these bicycles"],
+            ["this cup"]
+        ];
+
+
+
+
         generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
         generateExercisesEasy(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_2'));
         generateExercisesEasy(getRandomThird(exercises_easy_3), document.getElementById('exerciseForm_3'));
@@ -685,6 +717,7 @@
         generateExercisesMedium(getRandomThird(exercises_medium_7), document.getElementById('exerciseForm_7'));
         generateExercisesMedium(getRandomThird(exercises_medium_8), document.getElementById('exerciseForm_8'));
 
+        generateExercisesHard(getRandomThird(exercises_hard_9), document.getElementById('exerciseForm_9'));
 
         function generateExercisesEasy(exercises, exerciseForm) {
             exercises.forEach(item => {
