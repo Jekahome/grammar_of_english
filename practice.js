@@ -7,6 +7,8 @@ if (!('webkitSpeechRecognition' in window)) {
 class Practice { 
     #voice; 
     #recognizerResult = '';
+    #callbackRecognition;
+
     static recognizer = null;
     static synth = null;
     static utterThis = null;
@@ -44,12 +46,12 @@ Practice.utterThis.lang = 'en-US';
         }
     }
 
-    constructor({rate=0.9, pitch=0.9, lang='en-US'}) {
+    constructor({rate=0.9, pitch=0.9, lang='en-US', callback}) {
 
         Practice.synth = window.speechSynthesis;
         //Practice.storeAudio = storeAudio;
         this.#voice = null;
-
+        this.#callbackRecognition = callback;
         //this.#play_success = document.getElementById("play_success");
         //this.#play_success.load();
         //this.#play_success.volume = 0.3;
@@ -121,7 +123,7 @@ Practice.utterThis.lang = 'en-US';
 
 
             console.log(`распознано: ${this.#recognizerResult}`)
-            
+            this.#callbackRecognition(this.#recognizerResult);
             // управление должно быть в методе инициировавшим распознание
             // if (Practice.speechStart == false){Practice.recognizer.start();}
             this.#recognizerResult='';
@@ -171,7 +173,7 @@ Practice.utterThis.lang = 'en-US';
             console.info('onaudioend закончил захват звука');
             if (this.#recognizerResult != ''){
                 console.log('----->',`${this.#recognizerResult}`);
-
+                this.#callbackRecognition(this.#recognizerResult);
                 this.#recognizerResult='';
             }
             Practice.recognizer.stop();

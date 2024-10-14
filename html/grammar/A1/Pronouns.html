@@ -278,12 +278,12 @@
 
 
         <details>
-            <summary>3 (Easy): Подставьте правильное местоимение</summary>
+            <summary>3 (Easy): Подставить правильное местоимение</summary>
             <form id="exerciseForm_3"></form>
         </details>
 
         <details>
-            <summary>4 (Easy): Преобразуйте предложения</summary>
+            <summary>4 (Easy): Преобразовать предложения</summary>
             (замените <a href="https://jekahome.github.io/grammar_of_english/html/grammar/A1/Parts-of-speech.html" target="_blank">подлежащее</a> на соответствующее местоимение)<br>
             <form id="exerciseForm_4"></form>
         </details>
@@ -333,11 +333,21 @@
 
         <hr>
         произнести словосочетания, предложения не более 4 слов
+        <details> 
+            <summary>13 (Extreme): Произнестеи предложения с местоимением <code>this</code>/<code>these</code></summary>
+            <form id="exerciseForm_13"></form>
+        </details>
+
 
     </div>
     <script src='/grammar_of_english/practice.js'></script>
     <script>
-        let practice = new Practice({});
+
+        let practice = new Practice({callbackRecognition:recognition});
+
+        function recognition(recognition){
+            console.log(`recognition=${recognition}`);
+        }
 
         const exercises_easy_1 = [
             ["___ chair",["this"]], 
@@ -801,6 +811,62 @@
         ];
 
 
+        const exercises_extreme_13 = [
+            ["this chair", "этот стул"], 
+            ["these tables", "эти столы"], 
+            ["these children", "эти дети"], 
+            ["this girl", "эта девочка"], 
+            ["this car", "эта машина"], 
+            ["these toys", "эти игрушки"], 
+            ["this picture", "эта картина"], 
+            ["these trains", "эти поезда"], 
+            ["these men", "эти мужчины"], 
+            ["this man", "этот человек"], 
+            ["this apple", "это яблоко"],
+            ["these oranges", "эти апельсины"],
+            ["this book", "эта книга"],
+            ["these cats", "эти кошки"],
+            ["this phone", "этот телефон"],
+            ["these shoes", "эти туфли"],
+            ["this laptop", "этот ноутбук"],
+            ["these chairs", "эти стулья"],
+            ["this bird", "эта птица"],
+            ["these dogs", "эти собаки"],
+            ["this pen", "эта ручка"],
+            ["these flowers", "эти цветы"],
+            ["this computer", "этот компьютер"],
+            ["these bicycles", "эти велосипеды"],
+            ["this cup", "эта чашка"]
+        ];
+
+        const exercises_extreme_14 = [
+            ["that tree", "то дерево"],
+            ["those houses", "те дома"],
+            ["that horse", "та лошадь"],
+            ["those mice", "те мыши"],
+            ["those women", "те женщины"],
+            ["those trousers", "те брюки"],
+            ["that goat", "та коза"],
+            ["that cow", "та корова"],
+            ["those boys", "те мальчики"],
+            ["that bicycle", "тот велосипед"],
+            ["those mountains", "те горы"],
+            ["that cat", "та кошка"],
+            ["those dogs", "те собаки"],
+            ["that bridge", "тот мост"],
+            ["those trees", "те деревья"],
+            ["that river", "та река"],
+            ["those birds", "те птицы"],
+            ["that car", "та машина"],
+            ["those shoes", "те туфли"],
+            ["that lion", "тот лев"],
+            ["those stars", "те звезды"],
+            ["that chair", "тот стул"],
+            ["those windows", "те окна"],
+            ["that child", "тот ребенок"]
+        ];
+
+
         generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
         generateExercisesEasy(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_2'));
         generateExercisesEasy(getRandomThird(exercises_easy_3), document.getElementById('exerciseForm_3'));
@@ -813,7 +879,9 @@
                 exercises.forEach(item => {
                     index += 1;  
                     let sentence = item[0];
-                    sentence = `${sentence} — <input type="text" class="input-size" oninput="checkAnswer(this, '${item[1]}')"/> <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> <span class="text-span" id="clue-medium-${index}">${item[1]}</span>`;
+                    sentence = `${sentence} — <input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")'/> 
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> 
+                    <span class="text-span" id="clue-medium-${index}">${item[1]}</span>`;
                     exerciseForm.innerHTML += `<p>${sentence}</p>`;
                 });
             };
@@ -827,10 +895,25 @@
                     index += 1;  
 
                     sentence = `<img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]}")'> 
-                    <input type="text" class="input-size" oninput="checkAnswer(this, '${item[0]}')"/> —
+                    <input type="text" class="input-size" oninput='checkAnswer(this, "${item[0]}")'/> —
                     <input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")'/> 
                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-hard-${index}')"> 
                     <span class="text-span" id="clue-hard-${index}">${item[0]} — ${item[1]}</span>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+        })();
+
+        const generateExercisesExtreme = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+
+                    sentence = `<span class="text-span">${item[1]}</span>
+                    <img src="/grammar_of_english/img/microphone.png" class="icon" onclick='micSentence("input-extreme-${index}")'> 
+                    <input type="text" class="input-size" id='input-extreme-${index}' oninput='checkAnswer(this, "${item[1]}")'/>`;
                     exerciseForm.innerHTML += `<p>${sentence}</p>`;
                 });
             };
@@ -864,6 +947,9 @@
         generateExercisesHard(getRandomThird(exercises_hard_11), document.getElementById('exerciseForm_11'));
         generateExercisesHard(getRandomThird(exercises_hard_12), document.getElementById('exerciseForm_12'));
 
+        generateExercisesExtreme(getRandomThird(exercises_extreme_13), document.getElementById('exerciseForm_13'));
+
+
         function generateExercisesEasy(exercises, exerciseForm) {
             exercises.forEach(item => {
                 let sentence = item[0];
@@ -888,6 +974,18 @@
                 inputElement.className = 'input-size correct'; 
             } else {
                 inputElement.className = 'input-size incorrect'; 
+            }
+        }
+
+        function micSentence(id){
+            if (Practice.speechStart == false){
+                
+                    Practice.recognizer.start();
+                    
+            }else{
+                Practice.speechStart = false;
+                Practice.recognizer.stop();
+
             }
         }
 
