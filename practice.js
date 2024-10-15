@@ -8,6 +8,7 @@ class Practice {
     #voice; 
     #recognizerResult = '';
     #callbackId = null;
+    #micEl = null;
     #callbackRecognition = null;
 
     static recognizer = null;
@@ -25,13 +26,16 @@ class Practice {
         Practice.utterThis.text = null;                
     }
 
-    micOn(id){
+    micOn(micEl, id){
         this.#callbackId = id;
+        this.#micEl = micEl;
         if (Practice.speechStart == false){
             Practice.recognizer.start();
+            this.#micEl.style.backgroundColor = '#e95400';
         }else{
             Practice.speechStart = false;
             Practice.recognizer.stop();
+            this.#micEl.style.backgroundColor = '';
         }
     }
 
@@ -126,23 +130,24 @@ Practice.utterThis.lang = 'en-US';
             } else {
                 console.log(`Точность ${result[0].confidence.toFixed(4)}: ${result[0].transcript}`);
                 // TODO: даже если ответ не будет распознан до состояния isFinal то возможно промежуточный результат что-то даст
-                if (result[0].confidence > 0.0098 /*0.5*/){
+                if (result[0].confidence > 0.7 /*0.5*/){
                     //result_speak = result[0].transcript;
                     //console.log('Результат: ', result[0].transcript);
                     this.#recognizerResult = result[0].transcript;
                 }
             }
 
-
             console.log(`распознано: ${this.#recognizerResult}`)
-            /*
-            this.#callbackRecognition(this.#callbackId, this.#recognizerResult);
-            // управление должно быть в методе инициировавшим распознание
-            // if (Practice.speechStart == false){Practice.recognizer.start();}
-            this.#recognizerResult='';
-            Practice.recognizer.stop();
-            Practice.speechStart = false;
-            */
+            if (this.#recognizerResult != ''){
+                this.#callbackRecognition(this.#callbackId, this.#recognizerResult);
+                // управление должно быть в методе инициировавшим распознание
+                // if (Practice.speechStart == false){Practice.recognizer.start();}
+                this.#recognizerResult='';
+                Practice.recognizer.stop();
+                Practice.speechStart = false;
+                this.#micEl.style.backgroundColor = '';                
+            }
+
         }.bind(this);
 
         Practice.recognizer.onstart = function (event) {
@@ -192,6 +197,7 @@ Practice.utterThis.lang = 'en-US';
             }
             Practice.recognizer.stop();
             Practice.speechStart = false;
+            this.#micEl.style.backgroundColor = '';
         }.bind(this);
         
         Practice.recognizer.onnomatch = function (event) {
