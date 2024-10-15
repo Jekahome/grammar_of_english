@@ -135,12 +135,14 @@ Practice.utterThis.lang = 'en-US';
 
 
             console.log(`распознано: ${this.#recognizerResult}`)
+            /*
             this.#callbackRecognition(this.#callbackId, this.#recognizerResult);
             // управление должно быть в методе инициировавшим распознание
             // if (Practice.speechStart == false){Practice.recognizer.start();}
             this.#recognizerResult='';
             Practice.recognizer.stop();
             Practice.speechStart = false;
+            */
         }.bind(this);
 
         Practice.recognizer.onstart = function (event) {
