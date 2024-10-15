@@ -353,7 +353,10 @@
             <summary>14: Произнести предложения с местоимением <code>that</code>/<code>those</code></summary>
             <form id="exerciseForm_14"></form>
         </details>
-
+        <details> 
+            <summary>15: Произнести предложения</summary>
+            <form id="exerciseForm_15"></form>
+        </details>
     </div>
     <script src='/grammar_of_english/practice.js'></script>
     <script>
@@ -742,7 +745,6 @@
             ["this cup", "эта чашка"]
         ];
 
-
         const exercises_hard_11 = [
             ["that tree", "это дерево"],
             ["those houses", "те дома"],
@@ -970,6 +972,8 @@
 
         generateExercisesExtreme(exercises_extreme_13, document.getElementById('exerciseForm_13'));
         generateExercisesExtreme(exercises_extreme_14, document.getElementById('exerciseForm_14'));
+        generateExercisesExtreme(getRandomThird(exercises_hard_12), document.getElementById('exerciseForm_15'));
+        
 
         function generateExercisesEasy(exercises, exerciseForm) {
             exercises.forEach(item => {
