@@ -258,7 +258,7 @@
             
         <hr>
         <h2>Артикль не нужен</h2>
-        Когда перед существительным ("book") стоит указательное местоимение ("this" — этот, эта), артикль не нужен, потому что "this" <b>уже</b> выполняет функцию определения конкретного объекта.<br>
+        Когда перед существительным ("book") стоит указательное местоимение ("this" — этот, эта), артикль не нужен, потому что "this" <b>уже</b> выполняет функцию определения конкретного объекта.<br><br>
 
         Пример:
         <ul>
@@ -274,79 +274,85 @@
 Экстремальный (Extreme) speak        
 -->
         <h2>Упражнения</h2>
-
+        <h3>Replace (Easy)</h3>
         <details>
-            <summary>1 (Easy): Подставить местоимение <code>this</code>/<code>these</code></summary>
+            <summary>1: Подставить местоимение <code>this</code>/<code>these</code></summary>
             <form id="exerciseForm_1"></form>
         </details>
 
         <details>
-            <summary>2 (Easy): Подставить местоимение <code>that</code>/<code>those</code></summary>
+            <summary>2: Подставить местоимение <code>that</code>/<code>those</code></summary>
             <form id="exerciseForm_2"></form>
         </details>
 
 
         <details>
-            <summary>3 (Easy): Подставить правильное местоимение</summary>
+            <summary>3: Подставить правильное местоимение</summary>
             <form id="exerciseForm_3"></form>
         </details>
 
         <details>
-            <summary>4 (Easy): Преобразовать предложения</summary>
+            <summary>4: Преобразовать предложения</summary>
             (замените <a href="https://jekahome.github.io/grammar_of_english/html/grammar/A1/Parts-of-speech.html" target="_blank">подлежащее</a> на соответствующее местоимение)<br>
             <form id="exerciseForm_4"></form>
         </details>
         
         <hr>
+        <h3>Write (Medium)</h3>
         <details>
-            <summary>5 (Medium): Перевести словосочетания</summary>
+            <summary>5: Перевести словосочетания</summary>
             <form id="exerciseForm_5"></form>
         </details>
 
         <details>
-            <summary>6 (Medium): Перевести словосочетания</summary>
+            <summary>6: Перевести словосочетания</summary>
             <form id="exerciseForm_6"></form>
         </details>
 
         <details>
-            <summary>7 (Medium): Перевести предложения</summary>
+            <summary>7: Перевести предложения</summary>
             <form id="exerciseForm_7"></form>
         </details>
 
         <details>
-            <summary>8 (Medium): Перевести и преобразовать предложения</summary>
+            <summary>8: Перевести и преобразовать предложения</summary>
             (замените <a href="https://jekahome.github.io/grammar_of_english/html/grammar/A1/Parts-of-speech.html" target="_blank">подлежащее</a> на соответствующее местоимение)<br>
             <form id="exerciseForm_8"></form>
         </details>
 
 
         <hr>
+        <h3>Listen (Hard)</h3>
         <details>
-            <summary>9 (Hard): Прослушать и написать en — ru вариант</summary>
+            <summary>9: Прослушать и написать en — ru вариант</summary>
             <form id="exerciseForm_9"></form>
         </details>
 
         <details>
-            <summary>10 (Hard): Прослушать и написать предложения с местоимением <code>this</code>/<code>these</code></summary>
+            <summary>10: Прослушать и написать предложения с местоимением <code>this</code>/<code>these</code></summary>
             <form id="exerciseForm_10"></form>
         </details>
         <details>
-            <summary>11 (Hard): Прослушать и написать предложения с местоимением <code>that</code>/<code>those</code></summary>
+            <summary>11: Прослушать и написать предложения с местоимением <code>that</code>/<code>those</code></summary>
             <form id="exerciseForm_11"></form>
         </details>
         <details> 
-            <summary>12 (Hard): Прослушать и написать предложения</summary>
+            <summary>12: Прослушать и написать предложения</summary>
             (личные местоимения в именительном и в косвенном падежах)
             <form id="exerciseForm_12"></form>
         </details>
 
         <hr>
+        <h3>Speak (Extreme)</h3>
         произнести словосочетания, предложения не более 4 слов
         <details> 
-            <summary>13 (Extreme): Произнести предложения с местоимением <code>this</code>/<code>these</code></summary>
+            <summary>13: Произнести предложения с местоимением <code>this</code>/<code>these</code></summary>
             <form id="exerciseForm_13"></form>
         </details>
-
+        <details> 
+            <summary>14: Произнести предложения с местоимением <code>that</code>/<code>those</code></summary>
+            <form id="exerciseForm_14"></form>
+        </details>
 
     </div>
     <script src='/grammar_of_english/practice.js'></script>
@@ -963,7 +969,7 @@
         generateExercisesHard(getRandomThird(exercises_hard_12), document.getElementById('exerciseForm_12'));
 
         generateExercisesExtreme(getRandomThird(exercises_extreme_13), document.getElementById('exerciseForm_13'));
-
+        generateExercisesExtreme(getRandomThird(exercises_extreme_14), document.getElementById('exerciseForm_14'));
 
         function generateExercisesEasy(exercises, exerciseForm) {
             exercises.forEach(item => {
