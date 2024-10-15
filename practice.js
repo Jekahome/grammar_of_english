@@ -8,7 +8,7 @@ class Practice {
     #voice; 
     #recognizerResult = '';
     #callbackId;
-    #callbackRecognition = null;
+    static callbackRecognition = null;
 
     static recognizer = null;
     static synth = null;
@@ -62,8 +62,8 @@ Practice.utterThis.lang = 'en-US';
         Practice.synth = window.speechSynthesis;
         //Practice.storeAudio = storeAudio;
         this.#voice = null;
-        this.#callbackRecognition = callback;
-        this.#callbackRecognition = this.#callbackRecognition.bind(this);
+        Practice.callbackRecognition = callback;
+
         //this.#play_success = document.getElementById("play_success");
         //this.#play_success.load();
         //this.#play_success.volume = 0.3;
@@ -135,7 +135,7 @@ Practice.utterThis.lang = 'en-US';
 
 
             console.log(`распознано: ${this.#recognizerResult}`)
-            this.#callbackRecognition(this.#callbackId, this.#recognizerResult);
+            Practice.callbackRecognition(this.#callbackId, this.#recognizerResult);
             // управление должно быть в методе инициировавшим распознание
             // if (Practice.speechStart == false){Practice.recognizer.start();}
             this.#recognizerResult='';
@@ -185,7 +185,7 @@ Practice.utterThis.lang = 'en-US';
             console.info('onaudioend закончил захват звука');
             if (this.#recognizerResult != ''){
                 console.log('----->',`${this.#recognizerResult}`);
-                this.#callbackRecognition(this.#callbackId, this.#recognizerResult);
+                Practice.callbackRecognition(this.#callbackId, this.#recognizerResult);
                 this.#recognizerResult='';
             }
             Practice.recognizer.stop();
