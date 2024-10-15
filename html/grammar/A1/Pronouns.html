@@ -347,7 +347,7 @@
             console.log(`id=${id} recognition=${recognition}`);
         }
 
-        let practice = new Practice({callbackRecognition:recognition});
+        let practice = new Practice({callback:recognition});
 
         const exercises_easy_1 = [
             ["___ chair",["this"]], 
@@ -514,6 +514,7 @@
 
         ];
     
+
         const exercises_medium_5 = [
             ["этот стул", "this chair"], 
             ["эти столы", "these tables"], 
