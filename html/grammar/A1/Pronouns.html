@@ -343,11 +343,11 @@
     <script src='/grammar_of_english/practice.js'></script>
     <script>
 
-        let practice = new Practice({callbackRecognition:recognition});
-
         function recognition(id, recognition){
             console.log(`id=${id} recognition=${recognition}`);
         }
+
+        let practice = new Practice({callbackRecognition:recognition});
 
         const exercises_easy_1 = [
             ["___ chair",["this"]], 
