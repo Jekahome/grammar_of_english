@@ -345,8 +345,8 @@
 
         let practice = new Practice({callbackRecognition:recognition});
 
-        function recognition(recognition){
-            console.log(`recognition=${recognition}`);
+        function recognition(id, recognition){
+            console.log(`id=${id} recognition=${recognition}`);
         }
 
         const exercises_easy_1 = [
@@ -911,9 +911,9 @@
                 exercises.forEach(item => {
                     index += 1;  
 
-                    sentence = `<span class="text-span">${item[1]}</span>
+                    sentence = `<span>${item[1]}</span>
                     <img src="/grammar_of_english/img/microphone.png" class="icon" onclick='micSentence("input-extreme-${index}")'> 
-                    <input type="text" class="input-size" id='input-extreme-${index}' oninput='checkAnswer(this, "${item[1]}")'/>`;
+                    <input type="text" class="input-size" id='input-extreme-${index}' oninput='checkAnswer(this, "${item[0]}")'/>`;
                     exerciseForm.innerHTML += `<p>${sentence}</p>`;
                 });
             };
@@ -978,15 +978,7 @@
         }
 
         function micSentence(id){
-            if (Practice.speechStart == false){
-                
-                    Practice.recognizer.start();
-                    
-            }else{
-                Practice.speechStart = false;
-                Practice.recognizer.stop();
-
-            }
+            practice.micOn(id);
         }
 
         function getRandomThird(arr) {

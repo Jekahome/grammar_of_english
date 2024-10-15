@@ -8,6 +8,7 @@ class Practice {
     #voice; 
     #recognizerResult = '';
     #callbackRecognition;
+    #callbackId;
 
     static recognizer = null;
     static synth = null;
@@ -22,6 +23,16 @@ class Practice {
         Practice.utterThis.text = val;
         Practice.synth.speak(Practice.utterThis);
         Practice.utterThis.text = null;                
+    }
+
+    micOn(id){
+        this.#callbackId = id;
+        if (Practice.speechStart == false){
+            Practice.recognizer.start();
+        }else{
+            Practice.speechStart = false;
+            Practice.recognizer.stop();
+        }
     }
 
 /*
@@ -123,7 +134,7 @@ Practice.utterThis.lang = 'en-US';
 
 
             console.log(`распознано: ${this.#recognizerResult}`)
-            this.#callbackRecognition(this.#recognizerResult);
+            this.#callbackRecognition(this.#callbackId, this.#recognizerResult);
             // управление должно быть в методе инициировавшим распознание
             // if (Practice.speechStart == false){Practice.recognizer.start();}
             this.#recognizerResult='';
@@ -173,7 +184,7 @@ Practice.utterThis.lang = 'en-US';
             console.info('onaudioend закончил захват звука');
             if (this.#recognizerResult != ''){
                 console.log('----->',`${this.#recognizerResult}`);
-                this.#callbackRecognition(this.#recognizerResult);
+                this.#callbackRecognition(this.#callbackId, this.#recognizerResult);
                 this.#recognizerResult='';
             }
             Practice.recognizer.stop();
