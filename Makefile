@@ -1,3 +1,3 @@
 
 all:
-	git add * && git commit -m "fmt" && git push
+	git add * && git commit -m "what" && git push
