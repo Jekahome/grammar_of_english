@@ -934,7 +934,7 @@
                     index += 1;  
 
                     sentence = `<span><i>${item[1]}</i></span>
-                    <img src="/grammar_of_english/img/microphone.png" class="icon" onclick='micSentence("input-extreme-${index}")'> 
+                    <img src="/grammar_of_english/img/microphone.png" class="icon" onclick='micSentence(this,"input-extreme-${index}")'> 
                     <input type="text" class="input-size" id='input-extreme-${index}' oninput='checkAnswer(this, "${item[0]}")'/>
                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick='playSentence("${item[0]}")'>`;
                     exerciseForm.innerHTML += `<p>${sentence}</p>`;
@@ -1002,8 +1002,8 @@
             }
         }
 
-        function micSentence(id){
-            practice.micOn(id);
+        function micSentence(micEl, id){
+            practice.micOn(micEl, id);
         }
 
         function getRandomThird(arr) {
