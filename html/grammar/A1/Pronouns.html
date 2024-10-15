@@ -345,6 +345,8 @@
 
         function recognition(id, recognition){
             console.log(`id=${id} recognition=${recognition}`);
+            var el = document.getElementById(id);
+            el.value = recognition;
         }
 
         let practice = new Practice({callback:recognition});
