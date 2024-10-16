@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             leftBlock.appendChild(div);
         });
 
+        // построение таблиц для адаптации к мобильным устройствам
         document.querySelectorAll('table').forEach(table => {
             const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.textContent);
 
