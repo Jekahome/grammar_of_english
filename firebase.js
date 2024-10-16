@@ -167,28 +167,29 @@ function add_input_login(loginBlock){
 
 // Функция для проверки авторизации и модификации страницы
 function checkAuthAndModifyPage() {
-    const leftBlock = document.getElementById('login-block');
-    if (!leftBlock) {
-        console.error("Element with class 'left-block' not found.");
+    const loginBlock = document.getElementById('login-block');
+    if (!loginBlock) {
+        console.error("Element with class 'login-block' not found.");
         return;
     }
     onAuthStateChanged(auth, (user) => {
         if (user) {
-            leftBlock.innerHTML = `
+            currentUser = user;
+            loginBlock.innerHTML = `
                 <p>Welcome, ${user.email.split('@')[0]}</p>
                 <button id="logout-btn">Log Out</button>
             `;
 
             document.getElementById('logout-btn').addEventListener('click', () => {
-                click_logout_btn(leftBlock);
+                click_logout_btn(loginBlock);
             });
             document.getElementById('logout-btn').addEventListener('touchstart', () => {
-                click_logout_btn(leftBlock);
+                click_logout_btn(loginBlock);
             });
             currentUser = user;
         } else {
             currentUser = null;
-            add_input_login(leftBlock);
+            add_input_login(loginBlock);
         }
     });
 }
