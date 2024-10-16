@@ -83,6 +83,10 @@ export async function logOut() {
 async function click_sign_up_btn(){
     const email = document.getElementById('email-input').value;
     const password = document.getElementById('password-input').value;
+    if (!email) {
+        alert('Please enter your email address.');
+        return;
+    }
     if (!password) {
         alert('Please enter password.');
         return;
