@@ -94,18 +94,18 @@ async function click_sign_up_btn(){
     signUp(email, password);
 }
 
-async function click_logout_btn(leftBlock){
+async function click_logout_btn(loginBlock){
     await logOut(); 
-    add_input_login(leftBlock);
+    add_input_login(loginBlock);
 }
 
-async function click_sign_in_btn(leftBlock){
+async function click_sign_in_btn(loginBlock){
     const email = document.getElementById('email-input').value;
     const password = document.getElementById('password-input').value;
     try {
         const user = await signIn(email, password); 
         
-        leftBlock.innerHTML = `
+        loginBlock.innerHTML = `
             <p>Welcome, ${user.email.split('@')[0]}</p>
             <button id="logout-btn">Log Out</button>
         `;
@@ -119,9 +119,9 @@ async function click_sign_in_btn(leftBlock){
     }
 }
 
-function add_input_login(leftBlock){
+function add_input_login(loginBlock){
     // Пользователь не авторизован, показываем форму регистрации и входа
-    leftBlock.innerHTML = `
+    loginBlock.innerHTML = `
         <input type="email" id="email-input" placeholder="Email" required>
         <input type="password" id="password-input" placeholder="Password">
         <button id="sign-up-btn">Register</button>
@@ -140,10 +140,10 @@ function add_input_login(leftBlock){
     const signInBtn = document.getElementById('sign-in-btn');
     signInBtn.style.pointerEvents = 'auto';
     document.getElementById('sign-in-btn').addEventListener('touchstart', () => {
-        click_sign_in_btn(leftBlock);
+        click_sign_in_btn(loginBlock);
     });
     document.getElementById('sign-in-btn').addEventListener('click', async () => {
-        click_sign_in_btn(leftBlock);
+        click_sign_in_btn(loginBlock);
     });
 
     document.getElementById('reset-password-btn').addEventListener('touchstart', async () => {
@@ -167,7 +167,7 @@ function add_input_login(leftBlock){
 
 // Функция для проверки авторизации и модификации страницы
 function checkAuthAndModifyPage() {
-    const leftBlock = document.querySelector('.left-block');
+    const leftBlock = document.getElementById('login-block');
     if (!leftBlock) {
         console.error("Element with class 'left-block' not found.");
         return;
