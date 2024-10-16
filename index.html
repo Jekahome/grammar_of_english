@@ -6,8 +6,7 @@
     <title>Grammar of English</title>
     <link rel="stylesheet" href="/grammar_of_english/css/styles.css">
 
-    
-    <script type="module" src="/grammar_of_english/firebase.js"></script>
+    <!-- <script type="module" src="/grammar_of_english/firebase.js"></script> -->
 </head>
 <body>
 
@@ -489,9 +488,17 @@
         </ul>
 
     </div>
-<script>
+
+<script type="module">
+    import { getCurrentUser } from '/grammar_of_english/firebase.js';
+
     document.addEventListener('DOMContentLoaded', function () {
-        console.log(`hello ${getCurrentUser()}`);
+        const user = getCurrentUser();
+        if (user) {
+            console.log(`Hello, ${user.email}`);
+        } else {
+            console.log('No user is signed in.');
+        }
     });
 </script>
 </body>
