@@ -75,9 +75,66 @@ export async function logOut() {
     }
 }
 
+async function click_sign_up_btn(){
+    const email = document.getElementById('email-input').value;
+    const password = document.getElementById('password-input').value;
+    signUp(email, password);
+}
+async function click_logout_btn(leftBlock){
 
+    await logOut(); 
 
+    add_input_login(leftBlock);
+}
 
+async function click_sign_in_btn(leftBlock){
+    const email = document.getElementById('email-input').value;
+    const password = document.getElementById('password-input').value;
+    
+    try {
+        const user = await signIn(email, password); 
+        
+        leftBlock.innerHTML = `
+            <p>Welcome, ${user.email.split('@')[0]}</p>
+            <button id="logout-btn">Log Out</button>
+        `;
+
+        document.getElementById('logout-btn').addEventListener('click', async () => {
+            click_logout_btn();
+            
+        });
+
+    } catch (error) {
+        console.error('Error during sign in:', error);
+    }
+}
+
+function add_input_login(leftBlock){
+    // Пользователь не авторизован, показываем форму регистрации и входа
+    leftBlock.innerHTML = `
+        <input type="email" id="email-input" placeholder="Email">
+        <input type="password" id="password-input" placeholder="Password">
+        <button id="sign-up-btn">Register</button>
+        <button id="sign-in-btn">Sign In</button>
+    `;
+
+    // Добавляем события для регистрации и входа
+    document.getElementById('sign-up-btn').addEventListener('touchstart', () => {
+        click_sign_up_btn();
+    });
+    document.getElementById('sign-up-btn').addEventListener('click', () => {
+        click_sign_up_btn();
+    });
+
+    const signInBtn = document.getElementById('sign-in-btn');
+    signInBtn.style.pointerEvents = 'auto';
+    document.getElementById('sign-in-btn').addEventListener('touchstart', () => {
+        click_sign_in_btn(leftBlock);
+    });
+    document.getElementById('sign-in-btn').addEventListener('click', async () => {
+        click_sign_in_btn(leftBlock);
+    });
+}
 
 // Функция для проверки авторизации и модификации страницы
 function checkAuthAndModifyPage() {
@@ -96,59 +153,15 @@ function checkAuthAndModifyPage() {
 
             // Добавляем событие для кнопки выхода
             document.getElementById('logout-btn').addEventListener('click', () => {
-                logOut();
+                click_logout_btn(leftBlock);
+            });
+            document.getElementById('logout-btn').addEventListener('touchstart', () => {
+                click_logout_btn(leftBlock);
             });
             currentUser = user;
         } else {
             currentUser = null;
-            // Пользователь не авторизован, показываем форму регистрации и входа
-            leftBlock.innerHTML = `
-                <input type="email" id="email-input" placeholder="Email">
-                <input type="password" id="password-input" placeholder="Password">
-                <button id="sign-up-btn">Register</button>
-                <button id="sign-in-btn">Sign In</button>
-            `;
-
-            // Добавляем события для регистрации и входа
-            document.getElementById('sign-up-btn').addEventListener('click', () => {
-                const email = document.getElementById('email-input').value;
-                const password = document.getElementById('password-input').value;
-                signUp(email, password);
-            });
-
-            const signInBtn = document.getElementById('sign-in-btn');
-            signInBtn.style.pointerEvents = 'auto';
-            document.getElementById('sign-in-btn').addEventListener('touchstart', () => {
-                alert('Touch event detected on Sign In button!');
-            });
-            document.getElementById('sign-in-btn').addEventListener('click', async () => {
-                alert('Hi Sign In button!');
-                const email = document.getElementById('email-input').value;
-                const password = document.getElementById('password-input').value;
-                
-                try {
-                    const user = await signIn(email, password); 
-                    
-                    leftBlock.innerHTML = `
-                        <p>Welcome, ${user.email.split('@')[0]}</p>
-                        <button id="logout-btn">Log Out</button>
-                    `;
-            
-                    document.getElementById('logout-btn').addEventListener('click', async () => {
-                        await logOut(); 
-
-                        leftBlock.innerHTML = `
-                            <input type="email" id="email-input" placeholder="Email">
-                            <input type="password" id="password-input" placeholder="Password">
-                            <button id="sign-up-btn">Register</button>
-                            <button id="sign-in-btn">Sign In</button>
-                        `;
-                    });
-            
-                } catch (error) {
-                    console.error('Error during sign in:', error);
-                }
-            });
+            add_input_login(leftBlock);
         }
     });
 }
