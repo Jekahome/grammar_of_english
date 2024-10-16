@@ -11,4 +11,15 @@ document.addEventListener('DOMContentLoaded', function () {
             div.innerHTML = data;
             leftBlock.appendChild(div);
         });
+
+        document.querySelectorAll('table').forEach(table => {
+            const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.textContent);
+
+            table.querySelectorAll('tbody tr').forEach(row => {
+                row.querySelectorAll('td').forEach((cell, index) => {
+                    cell.setAttribute('data-label', headers[index]);
+                });
+            });
+        });        
 });
+
