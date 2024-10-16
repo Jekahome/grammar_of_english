@@ -1,8 +1,7 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js";
 
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
+import { getAuth, sendPasswordResetEmail, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
 import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
 
@@ -24,17 +23,13 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
-// Инициализация Firestore
 const db = getFirestore(app);
-
-//const auth = firebase.auth();
 const auth = getAuth(app);
 
 export let currentUser = null;
 
 export function getCurrentUser() {
-    return currentUser; // Возвращаем текущее значение currentUser
+    return currentUser;
 }
 
 // Функция регистрации
@@ -46,7 +41,7 @@ export async function signUp(email, password) {
         return currentUser;
     } catch (error) {
         console.error('Error signing up:', error);
-        throw error; // Передаем ошибку дальше
+        throw error; 
     }
 }
 
@@ -59,11 +54,21 @@ export async function signIn(email, password) {
         return currentUser;
     } catch (error) {
         console.error('Error signing in:', error);
-        throw error; // Передаем ошибку дальше
+        throw error; 
     }
 }
 
-
+// Функция сброса пароля
+export async function resetPassword(email) {
+    try {
+        await sendPasswordResetEmail(auth, email);
+        console.log('Password reset email sent!');
+        alert('Password reset email sent! Check your inbox.');
+    } catch (error) {
+        console.error('Error sending password reset email:', error);
+        alert('Error sending password reset email. Please try again.');
+    }
+}
 
 // Функция выхода из аккаунта
 export async function logOut() {
@@ -78,19 +83,21 @@ export async function logOut() {
 async function click_sign_up_btn(){
     const email = document.getElementById('email-input').value;
     const password = document.getElementById('password-input').value;
+    if (!password) {
+        alert('Please enter password.');
+        return;
+    }
     signUp(email, password);
 }
+
 async function click_logout_btn(leftBlock){
-
     await logOut(); 
-
     add_input_login(leftBlock);
 }
 
 async function click_sign_in_btn(leftBlock){
     const email = document.getElementById('email-input').value;
     const password = document.getElementById('password-input').value;
-    
     try {
         const user = await signIn(email, password); 
         
@@ -103,7 +110,6 @@ async function click_sign_in_btn(leftBlock){
             click_logout_btn();
             
         });
-
     } catch (error) {
         console.error('Error during sign in:', error);
     }
@@ -112,10 +118,11 @@ async function click_sign_in_btn(leftBlock){
 function add_input_login(leftBlock){
     // Пользователь не авторизован, показываем форму регистрации и входа
     leftBlock.innerHTML = `
-        <input type="email" id="email-input" placeholder="Email">
+        <input type="email" id="email-input" placeholder="Email" required>
         <input type="password" id="password-input" placeholder="Password">
         <button id="sign-up-btn">Register</button>
         <button id="sign-in-btn">Sign In</button>
+        <button id="reset-password-btn">Reset Password</button>
     `;
 
     // Добавляем события для регистрации и входа
@@ -134,24 +141,40 @@ function add_input_login(leftBlock){
     document.getElementById('sign-in-btn').addEventListener('click', async () => {
         click_sign_in_btn(leftBlock);
     });
+
+    document.getElementById('reset-password-btn').addEventListener('touchstart', async () => {
+        const email = document.getElementById('email-input').value;
+        if (!email) {
+            alert('Please enter your email address.');
+            return;
+        }
+        await resetPassword(email);
+    });
+
+    document.getElementById('reset-password-btn').addEventListener('click', async () => {
+        const email = document.getElementById('email-input').value;
+        if (!email) {
+            alert('Please enter your email address.'); 
+            return; 
+        }
+        await resetPassword(email);
+    });
 }
 
 // Функция для проверки авторизации и модификации страницы
 function checkAuthAndModifyPage() {
-    const leftBlock = document.querySelector('.left-block');  // Селектор для вашего блока
+    const leftBlock = document.querySelector('.left-block');
     if (!leftBlock) {
         console.error("Element with class 'left-block' not found.");
         return;
     }
     onAuthStateChanged(auth, (user) => {
         if (user) {
-            // Пользователь авторизован, показываем приветствие и кнопку выхода
             leftBlock.innerHTML = `
                 <p>Welcome, ${user.email.split('@')[0]}</p>
                 <button id="logout-btn">Log Out</button>
             `;
 
-            // Добавляем событие для кнопки выхода
             document.getElementById('logout-btn').addEventListener('click', () => {
                 click_logout_btn(leftBlock);
             });
