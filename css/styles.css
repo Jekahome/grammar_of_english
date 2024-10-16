@@ -108,4 +108,34 @@ img {
         width: 100%; /* Блоки занимают 100% ширины экрана на мобильных устройствах */
         margin: 0;
     }
+
+    table, thead, tbody, th, td, tr {
+        display: block; /* Делает каждый элемент таблицы блочным */
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px; /* Скрываем заголовки */
+        left: -9999px;
+    }
+
+    tr {
+        margin: 0 0 1rem 0; /* Отступы между строками */
+    }
+
+    td {
+        border: none; /* Убираем границы ячеек */
+        position: relative; /* Относительное позиционирование для псевдоэлементов */
+        padding-left: 50%; /* Добавляем отступ слева для меток */
+    }
+
+    td:before {
+        position: absolute;
+        left: 0;
+        width: 50%; /* Задаем ширину для меток */
+        padding-left: 10px; /* Отступ для меток */
+        white-space: nowrap; /* Предотвращаем перенос строк */
+        font-weight: bold; /* Жирный шрифт для меток */
+    }
+
 }
