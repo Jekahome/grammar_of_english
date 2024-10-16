@@ -108,7 +108,6 @@ img {
         width: 100%; /* Блоки занимают 100% ширины экрана на мобильных устройствах */
         margin: 0;
     }
-
     table, thead, tbody, th, td, tr {
         display: block; /* Делает каждый элемент таблицы блочным */
     }
@@ -136,6 +135,7 @@ img {
         padding-left: 10px; /* Отступ для меток */
         white-space: nowrap; /* Предотвращаем перенос строк */
         font-weight: bold; /* Жирный шрифт для меток */
+        content: attr(data-label); /* Используем атрибут data-label */
     }
 
 }
