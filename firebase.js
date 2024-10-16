@@ -109,9 +109,6 @@ function checkAuthAndModifyPage() {
                 <button id="sign-in-btn">Sign In</button>
             `;
 
-            const signInBtn = document.getElementById('sign-in-btn');
-            signInBtn.style.pointerEvents = 'auto';
-
             // Добавляем события для регистрации и входа
             document.getElementById('sign-up-btn').addEventListener('click', () => {
                 const email = document.getElementById('email-input').value;
@@ -119,7 +116,13 @@ function checkAuthAndModifyPage() {
                 signUp(email, password);
             });
 
+            const signInBtn = document.getElementById('sign-in-btn');
+            signInBtn.style.pointerEvents = 'auto';
+            document.getElementById('sign-in-btn').addEventListener('touchstart', () => {
+                alert('Touch event detected on Sign In button!');
+            });
             document.getElementById('sign-in-btn').addEventListener('click', async () => {
+                alert('Hi Sign In button!');
                 const email = document.getElementById('email-input').value;
                 const password = document.getElementById('password-input').value;
                 
