@@ -29,7 +29,17 @@ const auth = getAuth(app);
 export let currentUser = null;
 
 export function getCurrentUser() {
-    return currentUser;
+    return new Promise((resolve, reject) => {
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                currentUser = user;
+                resolve(currentUser);
+            } else {
+                currentUser = null;
+                reject("No authenticated user");
+            }
+        });
+    });
 }
 
 // Функция регистрации

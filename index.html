@@ -491,8 +491,8 @@
 <script type="module">
     import { getCurrentUser } from '/grammar_of_english/firebase.js';
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const user = getCurrentUser();
+    document.addEventListener('DOMContentLoaded', async function () {
+        const user = await getCurrentUser();
         if (user) {
             console.log(`Hello, ${user.email}`);
         } else {
