@@ -119,11 +119,32 @@ function checkAuthAndModifyPage() {
                 signUp(email, password);
             });
 
-            document.getElementById('sign-in-btn').addEventListener('click', () => {
-                alert('Hi');
+            document.getElementById('sign-in-btn').addEventListener('click', async () => {
                 const email = document.getElementById('email-input').value;
                 const password = document.getElementById('password-input').value;
-                signIn(email, password);
+                
+                try {
+                    const user = await signIn(email, password); 
+                    
+                    leftBlock.innerHTML = `
+                        <p>Welcome, ${user.email.split('@')[0]}</p>
+                        <button id="logout-btn">Log Out</button>
+                    `;
+            
+                    document.getElementById('logout-btn').addEventListener('click', async () => {
+                        await logOut(); 
+
+                        leftBlock.innerHTML = `
+                            <input type="email" id="email-input" placeholder="Email">
+                            <input type="password" id="password-input" placeholder="Password">
+                            <button id="sign-up-btn">Register</button>
+                            <button id="sign-in-btn">Sign In</button>
+                        `;
+                    });
+            
+                } catch (error) {
+                    console.error('Error during sign in:', error);
+                }
             });
         }
     });
