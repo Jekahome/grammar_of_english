@@ -356,7 +356,8 @@
 
         generateExercises(getRandomThird(exercises_direct), document.getElementById('exerciseForm_1'));
         generateExercises(getRandomThird(exercises_indirect), document.getElementById('exerciseForm_2'));
-        generateExercises(getRandomThird(exercises_direct.concat(exercises_indirect)), document.getElementById('exerciseForm_3'));
+        let exercises_all = exercises_direct.concat(exercises_indirect);
+        generateExercises(getRandomThird(exercises_all), document.getElementById('exerciseForm_3'));
 
         function generateExercises(exercises, exerciseForm) {
             exercises.forEach(item => {
