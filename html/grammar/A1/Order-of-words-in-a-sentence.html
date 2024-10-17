@@ -7,6 +7,39 @@
     <link rel="stylesheet" href="/grammar_of_english/css/styles.css">
 </head>
 <body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .input-size {
+            width: 45px;
+            padding-left: 4px;
+            padding-right: 6px;
+            margin: 0px;
+            font-size: 16px;
+            box-sizing: content-box;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .result {
+            display: inline-block;
+            padding-left: 10px;
+        }
+
+        .text-span {
+            visibility: hidden;  
+            margin-left: 10px;
+        }
+        .icon {
+            cursor: pointer;  
+            width: 15px;  
+            height: 15px; 
+        }
+    </style>
     <script type="module" src="/grammar_of_english/firebase.js"></script>
     <script src="/grammar_of_english/preload.js"></script>
 
@@ -182,8 +215,195 @@
             <li><a href="https://englishprime.ua/formy-glagola-v-anglijskom-yazyke/">Основные формы глагола в английском языке</a></li>
         </ul>            
 
-    </div>
+        <h2>Упражнения</h2>
+        <details>
+            <summary>Собрать корректное предложение с прямым порядком</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+        <details>
+            <summary>Собрать корректное предложение с непрямым порядком</summary>
+            <form id="exerciseForm_2"></form>
+        </details>
 
+        <details>
+            <summary>Собрать корректное предложение</summary>
+            <form id="exerciseForm_3"></form>
+        </details>
+
+    </div>
+    <script>
+        const exercises_direct = [
+            ["I go home", "Я иду домой"],
+            ["People were here", "Здесь были люди"],
+            ["She reads a book", "Она читает книгу"],
+            ["The cat sleeps on the couch", "Кот спит на диване"],
+            ["They watch TV every evening", "Они смотрят телевизор каждый вечер"],
+            ["He drinks coffee in the morning", "Он пьёт кофе утром"],
+            ["We play football on Sundays", "Мы играем в футбол по воскресеньям"],
+            ["The sun shines brightly today", "Сегодня ярко светит солнце"],
+            ["My brother works in an office", "Мой брат работает в офисе"],
+            ["You study English every day", "Ты учишь английский каждый день"],
+            ["The kids eat lunch at school", "Дети обедают в школе"],
+            ["She visits her grandmother every week", "Она навещает бабушку каждую неделю"],
+            ["I listen to music while I work", "Я слушаю музыку, когда работаю"],
+            ["They go to the gym in the evening", "Они ходят в спортзал вечером"],
+            ["We travel by car", "Мы путешествуем на машине"],
+            ["The teacher explains the lesson", "Учитель объясняет урок"],
+            ["Birds sing in the trees", "Птицы поют на деревьях"],
+            ["She dances beautifully", "Она красиво танцует"],
+            ["We celebrate birthdays together", "Мы вместе отмечаем дни рождения"],
+            ["The flowers bloom in the spring", "Цветы распускаются весной"],
+            ["I run", "Я бегу"],
+            ["She eats", "Она ест"],
+            ["We swim", "Мы плаваем"],
+            ["They talk", "Они разговаривают"],
+            ["He sleeps", "Он спит"],
+            ["It rains", "Идет дождь"],
+            ["You cook", "Ты готовишь"],
+            ["The dog barks", "Собака лает"],
+            ["I read", "Я читаю"],
+            ["Birds fly", "Птицы летают"],
+            ["I go home", "Я иду домой"],
+            ["People were here", "Здесь были люди"],
+            ["She reads a book", "Она читает книгу"],
+            ["The cat sleeps on the couch", "Кот спит на диване"],
+            ["They watch TV every evening", "Они смотрят телевизор каждый вечер"],
+            ["He drinks coffee in the morning", "Он пьёт кофе утром"],
+            ["We play football on Sundays", "Мы играем в футбол по воскресеньям"],
+            ["The sun shines brightly today", "Сегодня ярко светит солнце"],
+            ["My brother works in an office", "Мой брат работает в офисе"],
+            ["You study English every day", "Ты учишь английский каждый день"]
+        ];
+
+        const exercises_indirect = [ 
+            ["Can you help me?", "Можешь помочь мне?"],
+            ["Will she come tomorrow?", "Придет ли она завтра?"],
+            ["Do they know the answer?", "Знают ли они ответ?"],
+            ["Is he your brother?", "Он твой брат?"],
+            ["Should we go now?", "Нам следует идти сейчас?"],
+            ["Did you finish your homework?", "Ты закончил домашнее задание?"],
+            ["Have they seen this movie?", "Они видели этот фильм?"],
+            ["Must I do it today?", "Должен ли я сделать это сегодня?"],
+            ["Can we start the meeting?", "Мы можем начать встречу?"],
+            ["Does it work?", "Это работает?"],
+
+            ["Close the door!", "Закрой дверь!"],
+            ["Please sit down.", "Пожалуйста, садитесь."],
+            ["Don't be late!", "Не опаздывай!"],
+            ["Turn off the light.", "Выключи свет."],
+            ["Be quiet!", "Будь тише!"],
+            ["Stop talking!", "Перестань разговаривать!"],
+            ["Call me later.", "Позвони мне позже."],
+            ["Let's go!", "Пойдем!"],
+            ["Help me with this.", "Помоги мне с этим."],
+            ["Don't forget your keys.", "Не забудь ключи."],
+
+            ["Is she happy?", "Она счастлива?"],
+            ["Are we late?", "Мы опаздываем?"],
+            ["Was he at the party?", "Он был на вечеринке?"],
+            ["Is it raining?", "Идет дождь?"],
+            ["Are you ready?", "Ты готов?"],
+            ["Have you been to London?", "Ты был в Лондоне?"],
+            ["Has he finished his work?", "Он закончил свою работу?"],
+            ["Were they in the meeting?", "Они были на встрече?"],
+            ["Is she your friend?", "Она твоя подруга?"],
+            ["Have you seen my keys?", "Ты видел мои ключи?"],
+
+            ["There is a book on the table.", "На столе лежит книга."],
+            ["There are two apples in the fridge.", "В холодильнике два яблока."],
+            ["There is a problem with the car.", "С машиной проблема."],
+            ["There was a party yesterday.", "Вчера была вечеринка."],
+            ["There were many people at the concert.", "На концерте было много людей."],
+            ["There is no time left.", "Не осталось времени."],
+            ["There was a knock at the door.", "В дверь постучали."],
+            ["There are no chairs in the room.", "В комнате нет стульев."],
+            ["There is someone outside.", "Кто-то снаружи."],
+            ["There will be a meeting tomorrow.", "Завтра будет собрание."],
+
+            ["Here comes the bus", "Вот идет автобус"],
+            ["Here is your book", "Вот твоя книга"],
+            ["Here comes the sun", "Вот идет солнце"],
+            ["Here is the result", "Вот результат"],
+            ["Here comes my train", "Вот идет мой поезд"],
+            ["Here are the documents", "Вот документы"],
+            ["Here comes the waiter", "Вот идет официант"],
+            ["Here is your answer", "Вот твой ответ"],
+            ["Here comes trouble", "Вот и проблема"],
+            ["Here is the solution", "Вот решение"],
+
+            ["What a beautiful day!", "Какой прекрасный день!"],
+            ["How nice of you!", "Как это мило с твоей стороны!"],
+            ["What a surprise!", "Какой сюрприз!"],
+            ["How fast he runs!", "Как быстро он бегает!"],
+            ["What a great idea!", "Какая отличная идея!"],
+            ["How wonderful!", "Как замечательно!"],
+            ["What an interesting book!", "Какая интересная книга!"],
+            ["How lucky you are!", "Как тебе повезло!"],
+            ["What a pity!", "Какая жалость!"],
+            ["How strange!", "Как странно!"],
+
+            ["Out went the cat", "Кот ушел"],
+            ["Up flew the bird", "Взлетела птица"],
+            ["Down fell the tree", "Дерево упало"],
+            ["Away ran the dog", "Собака убежала"],
+            ["In came the guests", "Вошли гости"],
+            ["Up climbed the monkey", "Обезьяна взобралась вверх"],
+            ["Out came the truth", "Правда вышла наружу"],
+            ["Down went the prices", "Цены упали"],
+            ["Away flew the plane", "Самолет улетел"],
+            ["Up jumped the boy", "Мальчик вскочил"]
+        ];
+
+        generateExercises(getRandomThird(exercises_direct), document.getElementById('exerciseForm_1'));
+        generateExercises(getRandomThird(exercises_indirect), document.getElementById('exerciseForm_2'));
+        generateExercises(getRandomThird(exercises_direct.concat(exercises_indirect)), document.getElementById('exerciseForm_3'));
+
+        function generateExercises(exercises, exerciseForm) {
+            exercises.forEach(item => {
+                
+                let example = shuffleSentence(item[0]);
+                let ex = `${item[1]} – ${example} <input type="text" class="input-size" oninput="checkAnswer(this, '${item[0]}')" />`;
+                
+                exerciseForm.innerHTML += `<p>${ex}</p>`;
+            });
+        }
+
+        function checkAnswer(inputElement, correctAnswer) {
+            if (inputElement.value.length > 4){
+                inputElement.style.width = (inputElement.value.length + 1) + 'ch';
+            }
+
+            const userAnswer = inputElement.value.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
+            const normalizedCorrectAnswer = correctAnswer.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
+
+            if (userAnswer === normalizedCorrectAnswer) {
+                inputElement.className = 'input-size correct'; 
+            } else {
+                inputElement.className = 'input-size incorrect'; 
+            }
+        }
+
+        function getRandomThird(arr) {
+            if (arr.length < 20){return arr}
+            const thirdLength = Math.ceil(arr.length / 3); 
+            const randomIndices = new Set(); 
+            while (randomIndices.size < thirdLength) {
+                const randomIndex = Math.floor(Math.random() * arr.length);
+                randomIndices.add(randomIndex);
+            }
+            const randomElements = Array.from(randomIndices).map(index => arr[index]);
+            return randomElements;
+        }
+
+        function shuffleSentence(sentence) {
+            const words = sentence.split(" ");
+            for (let i = words.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));   
+                [words[i], words[j]] = [words[j], words[i]];    
+            }
+            return words.join(" ");
+        }
+    </script>
 </body>
 </html>
 
