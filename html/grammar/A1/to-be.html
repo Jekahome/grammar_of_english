@@ -457,7 +457,7 @@
         function generateExercisesEasy(exercises, exerciseForm) {
             exercises.forEach(item => {
                 let sentence = item[2];
-                sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[3]}')" />`);   
+                sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[3][0]}')" />`);   
                 exerciseForm.innerHTML += `<p>${sentence} — ${item[1]}</p>`;
             });
         }
