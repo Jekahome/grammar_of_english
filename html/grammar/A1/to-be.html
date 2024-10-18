@@ -663,8 +663,9 @@
                 const randomIndex = Math.floor(Math.random() * arr.length);
                 randomIndices.add(randomIndex);
             }
-            const randomElements = Array.from(randomIndices).map(index => arr[index]);
-            return randomElements;
+            let result = [];
+            let randomElements = Array.from(randomIndices).map(index => {result.push( arr[index]);});
+            return result;
         }
         
 
