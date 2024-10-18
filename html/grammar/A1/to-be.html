@@ -89,9 +89,9 @@
             <li>
                 <strong>Настоящее время (Present Simple):</strong> I <code>am</code>, he/she/it <code>is</code>, we/you/they <code>are</code>
                 <ul>
-                    <li>I am (I'm) happy. —  <i>Я счастлив.</i></li>
-                    <li>He is (He's) a doctor. — <i>Он врач.</i></li>
-                    <li>They are (They're) students. — <i>Они студенты.</i></li>
+                    <li>I <code>am</code> (I'm) happy. —  <i>Я счастлив.</i></li>
+                    <li>He <code>is</code> (He's) a doctor. — <i>Он врач.</i></li>
+                    <li>They <code>are</code> (They're) students. — <i>Они студенты.</i></li>
                 </ul>  
             </li>
 
@@ -99,18 +99,18 @@
             <li>
                 <strong>Прошедшее время (Past Simple):</strong> <code>was</code> для единственного числа (I, he, she, it) и <code>were</code> для множественного числа (we, you, they)
                 <ul>
-                    <li>I was at home yesterday. —  <i>Я вчера был дома.</i></li>
-                    <li>She was tired. — <i>Она устала.</i></li>
-                    <li>They were in the park. —  <i>Они были в парке.</i></li>
-                    <li>You were happy. — <i>Ты был счастлив.</i></li>
+                    <li>I <code>was</code> at home yesterday. —  <i>Я вчера был дома.</i></li>
+                    <li>She <code>was</code> tired. — <i>Она устала.</i></li>
+                    <li>They <code>were</code> in the park. —  <i>Они были в парке.</i></li>
+                    <li>You <code>were</code> happy. — <i>Ты был счастлив.</i></li>
                 </ul>
             </li>
 
             <li>
                 <strong>Будущее время (Future Simple):</strong> <code>will be</code> для всех лиц и чисел
                 <ul>
-                    <li>I will be (I'll be) there tomorrow. —  <i>Я буду там завтра.</i></li>
-                    <li>They will be (They'll be) at the party. — <i>Они будут на вечеринке.</i></li>
+                    <li>I <code>will be</code> (I'll be) there tomorrow. —  <i>Я буду там завтра.</i></li>
+                    <li>They <code>will be</code> (They'll be) at the party. — <i>Они будут на вечеринке.</i></li>
                 </ul>
             </li>
 
@@ -457,10 +457,7 @@
         function generateExercisesEasy(exercises, exerciseForm) {
             exercises.forEach(item => {
                 let sentence = item[2];
-                let answers = item[3];
-
-                sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
-                
+                sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[3]}')" />`);   
                 exerciseForm.innerHTML += `<p>${sentence} — ${item[1]}</p>`;
             });
         }
