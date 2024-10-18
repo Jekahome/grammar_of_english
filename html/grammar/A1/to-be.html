@@ -258,34 +258,18 @@
         <h3>Write (Medium)</h3>
         <details>
             <summary>4: Перевести предложения</summary>
+            (примеры в Present Simple и Present Continuous)
             <form id="exerciseForm_4"></form>
         </details>
 
+        <hr>
+        <h3>Listen (Hard)</h3>
+        <details>
+            <summary>5: Прослушать и написать en — ru вариант</summary>
+            <form id="exerciseForm_5"></form>
+        </details>
 
-        <ol>
-            <li>Преобразовать в вопрос:
-                <ul>
-                    <li>I'm sad. — Am I sad?</li>
-                    <li>He's a driver.</li>
-                    <li>We are from Ukraine.</li>
-                    <li>They're teachers.</li>
-                    <li>She's pretty.</li>
-                    <li>It's a river.</li>
-                    <li>You're happy.</li>
-                </ul>
-            </li>
-
-            <li>Дать ответ:
-                <ul>
-                    <li>Is it a doll? — Yes, it is.</li>
-                    <li>Is she a teacher? — No,</li>
-                    <li>Are they happy? — Yes,</li>
-                    <li>Is he tired? — No,</li>
-                    <li>Are you sad? — No,</li>
-                    <li>Is he a pilot? — Yes,</li>
-                </ul>
-            </li>
-        </ol>
+        
     </div>
     <script src='/grammar_of_english/practice.js'></script>
     <script>
@@ -639,6 +623,23 @@
             };
         })();
 
+        const generateExercisesHard = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+
+                    sentence = `<img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]}")'> 
+                    <input type="text" class="input-size" oninput='checkAnswer(this, "${item[0]}")'/> —
+                    <input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")'/> 
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-hard-${index}')"> 
+                    <span class="text-span" id="clue-hard-${index}">${item[0]} — <i>${item[1]}</i></span>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+        })();
+
         // Present Simple, Present Continuous
         generateExercisesEasy(getRandomThird(exercises_present_simple.concat(exercises_present_continuous)), document.getElementById('exerciseForm_1'));
         // Past Simple, Past Continuous, Future Simple
@@ -651,6 +652,7 @@
 
         generateExercisesMedium(getRandomThird(exercises_present_simple_medium.concat(exercises_present_continuous_medium)), document.getElementById('exerciseForm_4'));
         
+        generateExercisesHard(getRandomThird(exercises_present_simple.concat(exercises_present_continuous)), document.getElementById('exerciseForm_5')); 
 
         // skip to A2...
         // Past Perfect, Future Perfect, "Being" (Gerund and Present Participle)
