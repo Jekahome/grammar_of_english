@@ -282,12 +282,31 @@
             <form id="exerciseForm_7"></form>
         </details>
 
-
+        <hr>
+        <h3>Speak (Extreme)</h3>
+        <details> 
+            <summary>8: Произнести предложения</summary>
+            (примеры в Present Simple и Present Continuous)
+            <form id="exerciseForm_8"></form>
+        </details>
+        <details> 
+            <summary>9: Произнести предложения</summary>
+            (примеры в Past Simple и Future Simple)
+            <form id="exerciseForm_9"></form>
+        </details>
 
     </div>
     <script src='/grammar_of_english/practice.js'></script>
     <script>
-        let practice = new Practice({});
+        function recognition(id, recognition){
+            console.log(`id=${id} recognition=${recognition}`);
+            var el = document.getElementById(id);
+            el.value = recognition;
+            const inputEvent = new Event('input');
+            el.dispatchEvent(inputEvent);
+        }
+
+        let practice = new Practice({callback: recognition});
 
         const exercises_present_simple = [
             // Present Simple
@@ -666,6 +685,22 @@
             };
         })();
 
+        const generateExercisesExtreme = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+
+                    sentence = `<span><i>${item[1]}</i></span>
+                    <img src="/grammar_of_english/img/microphone.png" class="icon" onclick='micSentence(this,"input-extreme-${index}")'> 
+                    <input type="text" class="input-size" id='input-extreme-${index}' oninput='checkAnswer(this, "${item[0]}")'/>
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick='playSentence("${item[0]}")'>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+        })();
+
         // Present Simple, Present Continuous
         generateExercisesEasy(getRandomThird(exercises_present_simple.concat(exercises_present_continuous)), document.getElementById('exerciseForm_1'));
         // Past Simple, Past Continuous, Future Simple
@@ -682,7 +717,8 @@
         generateExercisesHard(getRandomThird(exercises_present_simple.concat(exercises_present_continuous)), document.getElementById('exerciseForm_6')); 
         generateExercisesHard(getRandomThird(exercises_past_simple.concat(exercises_future_simple)), document.getElementById('exerciseForm_7')); 
 
-
+        generateExercisesExtreme(getRandomThird(exercises_present_simple.concat(exercises_present_continuous)), document.getElementById('exerciseForm_8'));
+        generateExercisesExtreme(getRandomThird(exercises_past_simple.concat(exercises_future_simple)), document.getElementById('exerciseForm_9'));
 
         // skip to A2...
         // Past Perfect, Future Perfect, "Being" (Gerund and Present Participle)
@@ -716,6 +752,10 @@
             } else {
                 inputElement.className = 'input-size incorrect'; 
             }
+        }
+        
+        function micSentence(micEl, id){
+            practice.micOn(micEl, id);
         }
 
         function showClue(id) {
