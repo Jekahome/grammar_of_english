@@ -7,6 +7,39 @@
     <link rel="stylesheet" href="/grammar_of_english/css/styles.css">
 </head>
 <body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .input-size {
+            width: 45px;
+            padding-left: 4px;
+            padding-right: 6px;
+            margin: 0px;
+            font-size: 16px;
+            box-sizing: content-box;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .result {
+            display: inline-block;
+            padding-left: 10px;
+        }
+
+        .text-span {
+            visibility: hidden;  
+            margin-left: 10px;
+        }
+        .icon {
+            cursor: pointer;  
+            width: 15px;  
+            height: 15px; 
+        }
+    </style>
     <script type="module" src="/grammar_of_english/firebase.js"></script>
     <script src="/grammar_of_english/preload.js"></script>
 
@@ -32,21 +65,21 @@
             <li>
                 to be (инфинитив)
                 <ul>
-                    <li>I want to be a teacher. — <i>Я хочу быть учителем.</i></li>
-                    <li>It’s important to be honest. — <i>Важно быть честным.</i></li>
+                    <li>I want <code>to be</code> a teacher. — <i>Я хочу быть учителем.</i></li>
+                    <li>It’s important <code>to be</code> honest. — <i>Важно быть честным.</i></li>
                 </ul>
             </li>
-            <li>being (герундий, причастие настоящего времени)
+            <li>being (Gerund and Present Participle, герундий, причастие настоящего времени)
                 <ul>
-                    <li>He is being funny. —  <i>Он ведет себя смешно</i></li>
-                    <li>I enjoy being here. —  <i>Мне нравится быть здесь</i></li>
+                    <li>He is <code>being</code> funny. —  <i>Он ведет себя смешно</i></li>
+                    <li>I enjoy <code>being</code> here. —  <i>Мне нравится быть здесь</i></li>
                 </ul>
             </li>
             <li>
-                been (причастие прошедшего времени, оно же пресловутая третья форма)
+                been (Present Perfect, причастие прошедшего времени, оно же пресловутая третья форма)
                 <ul>
-                    <li>I have been to London. —  <i>Я был в Лондоне</i></li>
-                    <li>She has been working all day. —  <i>Она работала весь день</i></li>
+                    <li>I <code>have been</code> to London. —  <i>Я был в Лондоне</i></li>
+                    <li>She <code>has been</code> working all day. —  <i>Она работала весь день</i></li>
                 </ul>
             </li>
         </ul>
@@ -201,7 +234,13 @@
         
 
 
-        <h2>Упражнение:</h2>
+        <h2>Упражнения</h2>
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Заполнить пропуск правильной формой глагола "to be" <code>am</code>/<code>is</code>/<code>are</code></summary>
+            (примеры в Present Simple и Present Continuous)
+            <form id="exerciseForm_1"></form>
+        </details>
 
         <ol>
             <li>Преобразовать в вопрос:
@@ -229,152 +268,229 @@
         </ol>
     </div>
     <script>
-        
-        const exercises = [
+
+        const exercises_present_simple = [
             // Present Simple
-            ["I am happy", "Я счастлив"],
-            ["You are a teacher", "Ты учитель"],
-            ["He is a doctor", "Он доктор"],
-            ["She is my sister", "Она моя сестра"],
-            ["It is cold today", "Сегодня холодно"],
-            ["We are friends", "Мы друзья"],
-            ["They are at school", "Они в школе"],
-            ["I am not tired", "Я не устал"],
-            ["You are not late", "Ты не опоздал"],
-            ["He is not here", "Он не здесь"],
-            ["She is not angry", "Она не сердится"],
-            ["It is not raining", "Не идет дождь"],
-            ["We are not in a hurry", "Мы не спешим"],
-            ["They are not playing", "Они не играют"],
-            ["Is he your brother?", "Он твой брат?"],
-            ["Are they ready?", "Они готовы?"],
-
-            // Past Simple
-            ["I was at home", "Я был дома"],
-            ["You were happy", "Ты был счастлив"],
-            ["He was my friend", "Он был моим другом"],
-            ["She was at the party", "Она была на вечеринке"],
-            ["It was a good day", "Это был хороший день"],
-            ["We were tired", "Мы были уставшими"],
-            ["They were at school", "Они были в школе"],
-            ["I was not there", "Меня там не было"],
-            ["You were not late", "Ты не опоздал"],
-            ["He was not happy", "Он не был счастлив"],
-            ["She was not angry", "Она не была сердита"],
-            ["It was not cold", "Не было холодно"],
-            ["We were not friends", "Мы не были друзьями"],
-            ["They were not playing", "Они не играли"],
-            ["Was he at home?", "Он был дома?"],
-            ["Were they happy?", "Они были счастливы?"],
-
-            // Future Simple
-            ["I will be there", "Я буду там"],
-            ["You will be happy", "Ты будешь счастлив"],
-            ["He will be a doctor", "Он будет доктором"],
-            ["She will be at the party", "Она будет на вечеринке"],
-            ["It will be sunny", "Будет солнечно"],
-            ["We will be friends", "Мы будем друзьями"],
-            ["They will be at school", "Они будут в школе"],
-            ["I will not be late", "Я не буду опаздывать"],
-            ["You will not be sad", "Ты не будешь грустным"],
-            ["He will not be angry", "Он не будет сердитым"],
-            ["She will not be here", "Она не будет здесь"],
-            ["It will not rain", "Не будет дождя"],
-            ["We will not be tired", "Мы не будем уставшими"],
-            ["They will not be playing", "Они не будут играть"],
-            ["Will he be there?", "Он будет там?"],
-            ["Will they be happy?", "Они будут счастливы?"],
-
-            // Present Continuous
-            ["I am reading a book", "Я читаю книгу"],
-            ["You are studying English", "Ты учишь английский"],
-            ["He is watching TV", "Он смотрит телевизор"],
-            ["She is working hard", "Она усердно работает"],
-            ["It is raining", "Идет дождь"],
-            ["We are having fun", "Мы развлекаемся"],
-            ["They are playing football", "Они играют в футбол"],
-            ["I am not sleeping", "Я не сплю"],
-            ["You are not studying", "Ты не учишься"],
-            ["He is not working", "Он не работает"],
-            ["She is not angry", "Она не сердится"],
-            ["It is not snowing", "Не идет снег"],
-            ["We are not leaving", "Мы не уходим"],
-            ["They are not playing", "Они не играют"],
-            ["Is he working?", "Он работает?"],
-            ["Are they studying?", "Они учатся?"],
-
-            // Past Continuous
-            ["I was reading a book", "Я читал книгу"],
-            ["You were studying English", "Ты учил английский"],
-            ["He was watching TV", "Он смотрел телевизор"],
-            ["She was working hard", "Она усердно работала"],
-            ["It was raining", "Идет дождь"],
-            ["We were having fun", "Мы развлекались"],
-            ["They were playing football", "Они играли в футбол"],
-            ["I was not sleeping", "Я не спал"],
-            ["You were not studying", "Ты не учился"],
-            ["He was not working", "Он не работал"],
-            ["She was not angry", "Она не была сердита"],
-            ["It was not snowing", "Не шел снег"],
-            ["We were not leaving", "Мы не уезжали"],
-            ["They were not playing", "Они не играли"],
-            ["Was he reading?", "Он читал?"],
-            ["Were they studying?", "Они учились?"],
-
-            // Present Perfect
-            ["I have been here", "Я был здесь"],
-            ["You have been busy", "Ты был занят"],
-            ["He has been to Paris", "Он был в Париже"],
-            ["She has been my friend", "Она была моей подругой"],
-            ["It has been a long day", "Это был длинный день"],
-            ["We have been waiting", "Мы ждали"],
-            ["They have been working", "Они работали"],
-            ["I have not been there", "Я не был там"],
-            ["You have not been happy", "Ты не был счастлив"],
-            ["He has not been to London", "Он не был в Лондоне"],
-            ["She has not been feeling well", "Она не чувствовала себя хорошо"],
-            ["It has not been easy", "Это не было легко"],
-            ["We have not been invited", "Нас не пригласили"],
-            ["They have not been playing", "Они не играли"],
-            ["Have you been here?", "Ты был здесь?"],
-            ["Has he been to school?", "Он был в школе?"],
-
-            // Past Perfect
-            ["I had been there", "Я был там"],
-            ["You had been busy", "Ты был занят"],
-            ["He had been my friend", "Он был моим другом"],
-            ["She had been happy", "Она была счастлива"],
-            ["It had been a good day", "Это был хороший день"],
-            ["We had been waiting", "Мы ждали"],
-            ["They had been working", "Они работали"],
-            ["I had not been there", "Я не был там"],
-            ["You had not been happy", "Ты не был счастлив"],
-            ["He had not been to London", "Он не был в Лондоне"],
-            ["She had not been feeling well", "Она не чувствовала себя хорошо"],
-            ["It had not been easy", "Это не было легко"],
-            ["We had not been invited", "Нас не пригласили"],
-            ["They had not been playing", "Они не играли"],
-            ["Had you been there?", "Ты был там?"],
-            ["Had she been happy?", "Она была счастлива?"],
-
-            // Future Perfect
-            ["I will have been there", "Я буду там"],
-            ["You will have been busy", "Ты будешь занят"],
-            ["He will have been my friend", "Он будет моим другом"],
-            ["She will have been happy", "Она будет счастлива"],
-            ["It will have been a good day", "Это будет хороший день"],
-            ["We will have been waiting", "Мы будем ждать"],
-            ["They will have been working", "Они будут работать"],
-            ["I will not have been there", "Я не буду там"],
-            ["You will not have been happy", "Ты не будешь счастлив"],
-            ["He will not have been to London", "Он не будет в Лондоне"],
-            ["She will not have been feeling well", "Она не будет чувствовать себя хорошо"],
-            ["It will not have been easy", "Это не будет легко"],
-            ["We will not have been invited", "Нас не пригласят"],
-            ["They will not have been playing", "Они не будут играть"],
-            ["Will you have been there?", "Ты будешь там?"],
-            ["Will he have been happy?", "Он будет счастлив?"]
+            ["I am happy", "Я счастлив", "I ___ happy", ["am"]],
+            ["You are a teacher", "Ты учитель", "You ___ a teacher", ["are"]],
+            ["He is a doctor", "Он доктор", "He ___ a doctor", ["is"]],
+            ["She is my sister", "Она моя сестра", "She ___ my sister", ["is"]],
+            ["It is cold today", "Сегодня холодно", "It ___ cold today", ["is"]],
+            ["We are friends", "Мы друзья", "We ___ friends", ["are"]],
+            ["They are at school", "Они в школе", "They ___ at school", ["are"]],
+            ["I am not tired", "Я не устал", "I ___ not tired", ["am"]],
+            ["You are not late", "Ты не опоздал", "You ___ not late", ["are"]],
+            ["He is not here", "Он не здесь", "He ___ not here", ["is"]],
+            ["She is not angry", "Она не сердится", "She ___ not angry", ["is"]],
+            ["It is not raining", "Не идет дождь", "It ___ not raining", ["is"]],
+            ["We are not in a hurry", "Мы не спешим", "We ___ not in a hurry", ["are"]],
+            ["They are not playing", "Они не играют", "They ___ not playing", ["are"]],
+            ["Is he your brother?", "Он твой брат?", "___ he your brother?", ["Is"]],
+            ["Are they ready?", "Они готовы?", "___ they ready?", ["Are"]],
         ];
+
+        const exercises_present_continuous = [
+            // Present Continuous
+            ["I am reading a book", "Я читаю книгу", "I ___ reading a book", ["am"]],
+            ["You are studying English", "Ты учишь английский", "You ___ studying English", ["are"]],
+            ["He is watching TV", "Он смотрит телевизор", "He ___ watching TV", ["is"]],
+            ["She is working hard", "Она усердно работает", "She ___ working hard", ["is"]],
+            ["It is raining", "Идет дождь", "It ___ raining", ["is"]],
+            ["We are having fun", "Мы развлекаемся", "We ___ having fun", ["are"]],
+            ["They are playing football", "Они играют в футбол", "They ___ playing football", ["are"]],
+            ["I am not sleeping", "Я не сплю", "I ___ not sleeping", ["am"]],
+            ["You are not studying", "Ты не учишься", "You ___ not studying", ["are"]],
+            ["He is not working", "Он не работает", "He ___ not working", ["is"]],
+            ["She is not angry", "Она не сердится", "She ___ not angry", ["is"]],
+            ["It is not snowing", "Не идет снег", "It ___ not snowing", ["is"]],
+            ["We are not leaving", "Мы не уходим", "We ___ not leaving", ["are"]],
+            ["They are not playing", "Они не играют", "They ___ not playing", ["are"]],
+            ["Is he working?", "Он работает?", "___ he working?", ["Is"]],
+            ["Are they studying?", "Они учатся?", "___ they studying?", ["Are"]],
+        ];
+
+        const exercises_past_simple = [
+            // Past Simple
+            ["I was at home", "Я был дома", "I ___ at home", ["was"]],
+            ["You were happy", "Ты был счастлив", "You ___ happy", ["were"]],
+            ["He was my friend", "Он был моим другом", "He ___ my friend", ["was"]],
+            ["She was at the party", "Она была на вечеринке", "She ___ at the party", ["was"]],
+            ["It was a good day", "Это был хороший день", "It ___ a good day", ["was"]],
+            ["We were tired", "Мы были уставшими", "We ___ tired", ["were"]],
+            ["They were at school", "Они были в школе", "They ___ at school", ["were"]],
+            ["I was not there", "Меня там не было", "I ___ not there", ["was"]],
+            ["You were not late", "Ты не опоздал", "You ___ not late", ["were"]],
+            ["He was not happy", "Он не был счастлив", "He ___ not happy", ["was"]],
+            ["She was not angry", "Она не была сердита", "She ___ not angry", ["was"]],
+            ["It was not cold", "Не было холодно", "It ___ not cold", ["was"]],
+            ["We were not friends", "Мы не были друзьями", "We ___ not friends", ["were"]],
+            ["They were not playing", "Они не играли", "They ___ not playing", ["were"]],
+            ["Was he at home?", "Он был дома?", "___ he at home?", ["Was"]],
+            ["Were they happy?", "Они были счастливы?", "___ they happy?", ["Were"]],
+        ];
+
+        const exercises_future_simple = [
+            // Future Simple
+            ["I will be there", "Я буду там", "I ___ be there", ["will"]],
+            ["You will be happy", "Ты будешь счастлив", "You ___ be happy", ["will"]],
+            ["He will be a doctor", "Он будет доктором", "He ___ be a doctor", ["will"]],
+            ["She will be at the party", "Она будет на вечеринке", "She ___ be at the party", ["will"]],
+            ["It will be sunny", "Будет солнечно", "It ___ be sunny", ["will"]],
+            ["We will be friends", "Мы будем друзьями", "We ___ be friends", ["will"]],
+            ["They will be at school", "Они будут в школе", "They ___ be at school", ["will"]],
+            ["I will not be late", "Я не буду опаздывать", "I ___ not be late", ["will"]],
+            ["You will not be sad", "Ты не будешь грустным", "You ___ not be sad", ["will"]],
+            ["He will not be angry", "Он не будет сердитым", "He ___ not be angry", ["will"]],
+            ["She will not be here", "Она не будет здесь", "She ___ not be here", ["will"]],
+            ["It will not rain", "Не будет дождя", "It ___ not rain", ["will"]],
+            ["We will not be tired", "Мы не будем уставшими", "We ___ not be tired", ["will"]],
+            ["They will not be playing", "Они не будут играть", "They ___ not be playing", ["will"]],
+            ["Will he be there?", "Он будет там?", "___ he be there?", ["Will"]],
+            ["Will they be happy?", "Они будут счастливы?", "___ they be happy?", ["Will"]],
+        ];
+
+
+        const exercises_past_continuous = [
+            // Past Continuous
+            ["I was reading a book", "Я читал книгу", "I ___ reading a book", ["was"]],
+            ["You were studying English", "Ты учил английский", "You ___ studying English", ["were"]],
+            ["He was watching TV", "Он смотрел телевизор", "He ___ watching TV", ["was"]],
+            ["She was working hard", "Она усердно работала", "She ___ working hard", ["was"]],
+            ["It was raining", "Идет дождь", "It ___ raining", ["was"]],
+            ["We were having fun", "Мы развлекались", "We ___ having fun", ["were"]],
+            ["They were playing football", "Они играли в футбол", "They ___ playing football", ["were"]],
+            ["I was not sleeping", "Я не спал", "I ___ not sleeping", ["was"]],
+            ["You were not studying", "Ты не учился", "You ___ not studying", ["were"]],
+            ["He was not working", "Он не работал", "He ___ not working", ["was"]],
+            ["She was not angry", "Она не была сердита", "She ___ not angry", ["was"]],
+            ["It was not snowing", "Не шел снег", "It ___ not snowing", ["was"]],
+            ["We were not leaving", "Мы не уезжали", "We ___ not leaving", ["were"]],
+            ["They were not playing", "Они не играли", "They ___ not playing", ["were"]],
+            ["Was he reading?", "Он читал?", "___ he reading?", ["Was"]],
+            ["Were they studying?", "Они учились?", "___ they studying?", ["Were"]],
+        ];
+
+        const exercises_present_perfect = [
+            // Present Perfect
+            ["I have been here", "Я был здесь", "I ___ here", ["have been"]],
+            ["You have been busy", "Ты был занят", "You ___ busy", ["have been"]],
+            ["He has been to Paris", "Он был в Париже", "He ___ to Paris", ["has been"]],
+            ["She has been my friend", "Она была моей подругой", "She ___ my friend", ["has been"]],
+            ["It has been a long day", "Это был длинный день", "It ___ a long day", ["has been"]],
+            ["We have been waiting", "Мы ждали", "We ___ waiting", ["have been"]],
+            ["They have been working", "Они работали", "They ___ working", ["have been"]],
+            ["I have not been there", "Я не был там", "I ___ not been there", ["have been"]],
+            ["You have not been happy", "Ты не был счастлив", "You ___ not been happy", ["have been"]],
+            ["He has not been to London", "Он не был в Лондоне", "He ___ not been to London", ["has been"]],
+            ["She has not been feeling well", "Она не чувствовала себя хорошо", "She ___ not been feeling well", ["has been"]],
+            ["It has not been easy", "Это не было легко", "It ___ not been easy", ["has been"]],
+            ["We have not been invited", "Нас не пригласили", "We ___ not been invited", ["have been"]],
+            ["They have not been playing", "Они не играли", "They ___ not been playing", ["have been"]],
+            ["Have you been here?", "Ты был здесь?", "___ you been here?", ["Have been"]],
+            ["Has he been to school?", "Он был в школе?", "___ he been to school?", ["Has been"]],
+        ];
+
+
+
+        const exercises_past_perfect = [
+            // Past Perfect
+            ["I had been there", "Я был там", "I ___ there", ["had been"]],
+            ["You had been busy", "Ты был занят", "You ___ busy", ["had been"]],
+            ["He had been my friend", "Он был моим другом", "He ___ my friend", ["had been"]],
+            ["She had been happy", "Она была счастлива", "She ___ happy", ["had been"]],
+            ["It had been a good day", "Это был хороший день", "It ___ a good day", ["had been"]],
+            ["We had been waiting", "Мы ждали", "We ___ waiting", ["had been"]],
+            ["They had been working", "Они работали", "They ___ working", ["had been"]],
+            ["I had not been there", "Я не был там", "I ___ not been there", ["had been"]],
+            ["You had not been happy", "Ты не был счастлив", "You ___ not been happy", ["had been"]],
+            ["He had not been to London", "Он не был в Лондоне", "He ___ not been to London", ["had been"]],
+            ["She had not been feeling well", "Она не чувствовала себя хорошо", "She ___ not been feeling well", ["had been"]],
+            ["It had not been easy", "Это не было легко", "It ___ not been easy", ["had been"]],
+            ["We had not been invited", "Нас не пригласили", "We ___ not been invited", ["had been"]],
+            ["They had not been playing", "Они не играли", "They ___ not been playing", ["had been"]],
+            ["Had you been there?", "Ты был там?", "___ you been there?", ["Had been"]],
+            ["Had she been happy?", "Она была счастлива?", "___ she been happy?", ["Had been"]],
+        ];
+
+
+        const exercises_future_perfect = [
+            // Future Perfect
+            ["I will have been there", "Я буду там", "I ___ there", ["will have been"]],
+            ["You will have been busy", "Ты будешь занят", "You ___ busy", ["will have been"]],
+            ["He will have been my friend", "Он будет моим другом", "He ___ my friend", ["will have been"]],
+            ["She will have been happy", "Она будет счастлива", "She ___ happy", ["will have been"]],
+            ["It will have been a good day", "Это будет хороший день", "It ___ a good day", ["will have been"]],
+            ["We will have been waiting", "Мы будем ждать", "We ___ waiting", ["will have been"]],
+            ["They will have been working", "Они будут работать", "They ___ working", ["will have been"]],
+            ["I will not have been there", "Я не буду там", "I ___ not been there", ["will have been"]],
+            ["You will not have been happy", "Ты не будешь счастлив", "You ___ not been happy", ["will have been"]],
+            ["He will not have been to London", "Он не будет в Лондоне", "He ___ not been to London", ["will have been"]],
+            ["She will not have been feeling well", "Она не будет чувствовать себя хорошо", "She ___ not been feeling well", ["will have been"]],
+            ["It will not have been easy", "Это не будет легко", "It ___ not been easy", ["will have been"]],
+            ["We will not have been invited", "Нас не пригласят", "We ___ not been invited", ["will have been"]],
+            ["They will not have been playing", "Они не будут играть", "They ___ not been playing", ["will have been"]],
+            ["Will you have been there?", "Ты будешь там?", "___ you have been there?", ["Will have been"]],
+            ["Will he have been happy?", "Он будет счастлив?", "___ he have been happy?", ["Will have been"]],
+        ];
+
+        const exercises_being = [
+            // "Being" (Gerund and Present Participle)
+            ["He is being funny", "Он ведет себя смешно", "He is ___ funny", ["being"]],
+            ["She is being kind", "Она ведет себя доброжелательно", "She is ___ kind", ["being"]],
+            ["You are being rude", "Ты ведешь себя грубо", "You are ___ rude", ["being"]],
+            ["They are being helpful", "Они ведут себя полезно", "They are ___ helpful", ["being"]],
+            ["We are being quiet", "Мы ведем себя тихо", "We are ___ quiet", ["being"]],
+            ["I enjoy being here", "Мне нравится быть здесь", "I enjoy ___ here", ["being"]],
+            ["She likes being with friends", "Ей нравится быть с друзьями", "She likes ___ with friends", ["being"]],
+            ["They dislike being late", "Они не любят опаздывать", "They dislike ___ late", ["being"]],
+            ["He enjoys being alone", "Ему нравится быть одному", "He enjoys ___ alone", ["being"]],
+            ["She is tired of being ignored", "Она устала от того, что её игнорируют", "She is tired of ___ ignored", ["being"]],
+            ["He is afraid of being wrong", "Он боится ошибаться", "He is afraid of ___ wrong", ["being"]],
+            ["We are proud of being chosen", "Мы гордимся тем, что нас выбрали", "We are proud of ___ chosen", ["being"]],
+            ["They regret being late", "Они сожалеют, что опоздали", "They regret ___ late", ["being"]],
+            ["He was tired of being alone", "Он устал от того, что был один", "He was tired of ___ alone", ["being"]],
+            ["She enjoys being creative", "Ей нравится быть креативной", "She enjoys ___ creative", ["being"]],
+        ];
+
+        generateExercisesEasy(getRandomThird(exercises_present_simple.concat(exercises_present_continuous)), document.getElementById('exerciseForm_1'));
+
+        function generateExercisesEasy(exercises, exerciseForm) {
+            exercises.forEach(item => {
+                let sentence = item[2];
+                let answers = item[3];
+
+                sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                
+                exerciseForm.innerHTML += `<p>${sentence} — ${item[1]}</p>`;
+            });
+        }
+
+        function getRandomThird(arr) {
+            if (arr.length < 20){return arr}
+            const thirdLength = Math.ceil(arr.length / 3); 
+            const randomIndices = new Set(); 
+            while (randomIndices.size < thirdLength) {
+                const randomIndex = Math.floor(Math.random() * arr.length);
+                randomIndices.add(randomIndex);
+            }
+            const randomElements = Array.from(randomIndices).map(index => arr[index]);
+            return randomElements;
+        }
+
+        function checkAnswer(inputElement, correctAnswer) {
+            if (inputElement.value.length > 4){
+                inputElement.style.width = (inputElement.value.length + 1) + 'ch';
+            }
+
+            const userAnswer = inputElement.value.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
+            const normalizedCorrectAnswer = correctAnswer.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
+
+            if (userAnswer === normalizedCorrectAnswer) {
+                inputElement.className = 'input-size correct'; 
+            } else {
+                inputElement.className = 'input-size incorrect'; 
+            }
+        }
 
     </script>
 </body>
