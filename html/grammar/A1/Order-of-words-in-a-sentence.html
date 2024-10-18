@@ -410,6 +410,15 @@
             }
             return words.join(" ");
         }
+
+        function showClue(id) {
+            var el = document.getElementById(id);
+            el.style.visibility = "visible"; 
+
+            setTimeout(function() {
+                el.style.visibility = "hidden";
+            }, 2000);
+        }
     </script>
 </body>
 </html>
