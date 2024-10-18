@@ -354,23 +354,26 @@
             ["Up jumped the boy", "Мальчик вскочил"]
         ];
 
+        const generateExercises = (() => {
+            let index = 0; 
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index +=1;
+                    let example = shuffleSentence(item[0]);
+                    let ex = `${item[1]} – ${example} <input type="text" class="input-size" oninput="checkAnswer(this, '${item[0]}')" />
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-${index}')"> 
+                    <span class="text-span" id="clue-${index}">${item[0]}</span>
+                    `;
+                    
+                    exerciseForm.innerHTML += `<p>${ex}</p>`;
+                });
+            };
+        })();
+            
         generateExercises(getRandomThird(exercises_direct), document.getElementById('exerciseForm_1'));
         generateExercises(getRandomThird(exercises_indirect), document.getElementById('exerciseForm_2'));
         generateExercises(getRandomThird(exercises_direct.concat(exercises_indirect)), document.getElementById('exerciseForm_3'));
-        var index = 0;
 
-        function generateExercises(exercises, exerciseForm) {
-            exercises.forEach(item => {
-                index +=1;
-                let example = shuffleSentence(item[0]);
-                let ex = `${item[1]} – ${example} <input type="text" class="input-size" oninput="checkAnswer(this, '${item[0]}')" />
-                <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-${index}')"> 
-                <span class="text-span" id="clue-${index}">${item[0]}</span>
-                `;
-                
-                exerciseForm.innerHTML += `<p>${ex}</p>`;
-            });
-        }
 
         function checkAnswer(inputElement, correctAnswer) {
             if (inputElement.value.length > 4){
