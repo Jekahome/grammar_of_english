@@ -655,16 +655,18 @@
         // skip to A2...
         // Past Perfect, Future Perfect, "Being" (Gerund and Present Participle)
 
+        
         function getRandomThird(arr) {
             if (arr.length < 20){return arr}
-            const thirdLength = Math.ceil(arr.length / 3);
+            const flatArray = arr.flat();
+            const thirdLength = Math.ceil(flatArray.length / 3);
+            if (flatArray.length === 0) return [];
             const randomIndices = new Set();
             while (randomIndices.size < thirdLength) {
-                const randomIndex = Math.floor(Math.random() * arr.length);
+                const randomIndex = Math.floor(Math.random() * flatArray.length);
                 randomIndices.add(randomIndex);
             }
-
-            const randomElements = Array.from(randomIndices).map(index => arr[index]);
+            const randomElements = Array.from(randomIndices).map(index => flatArray[index]);
             return randomElements;
         }
 
