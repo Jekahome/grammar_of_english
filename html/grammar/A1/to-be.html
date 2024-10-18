@@ -664,7 +664,9 @@
                 randomIndices.add(randomIndex);
             }
             let result = [];
-            let randomElements = Array.from(randomIndices).map(index => {result.push( arr[index]);});
+            Array.from(randomIndices).forEach(index => {
+                result.push(arr[index]);
+            });
             return result;
         }
         
