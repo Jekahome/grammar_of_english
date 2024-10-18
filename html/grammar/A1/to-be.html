@@ -278,14 +278,10 @@
         </details>
         <details>
             <summary>7: Прослушать и написать en — ru вариант</summary>
-            (примеры в Past Simple)
+            (примеры в Past Simple и Future Simple)
             <form id="exerciseForm_7"></form>
         </details>
-        <details>
-            <summary>8: Прослушать и написать en — ru вариант</summary>
-            (примеры в Future Simple)
-            <form id="exerciseForm_8"></form>
-        </details>
+
 
 
     </div>
@@ -684,8 +680,8 @@
         generateExercisesMedium2(getRandomThird(examples_medium.concat(exercises_future_simple)), document.getElementById('exerciseForm_5'));
 
         generateExercisesHard(getRandomThird(exercises_present_simple.concat(exercises_present_continuous)), document.getElementById('exerciseForm_6')); 
-        generateExercisesHard(exercises_past_simple, document.getElementById('exerciseForm_7')); 
-        generateExercisesHard(exercises_future_simple, document.getElementById('exerciseForm_8')); 
+        generateExercisesHard(getRandomThird(exercises_past_simple.concat(exercises_future_simple)), document.getElementById('exerciseForm_7')); 
+
 
 
         // skip to A2...
