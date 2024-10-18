@@ -261,15 +261,33 @@
             (примеры в Present Simple и Present Continuous)
             <form id="exerciseForm_4"></form>
         </details>
+        <details>
+            <summary>5: Перевести предложения</summary>
+            (примеры в Present Simple и Past Simple и Future Simple)
+            <form id="exerciseForm_5"></form>
+        </details>
+        
+
 
         <hr>
         <h3>Listen (Hard)</h3>
         <details>
-            <summary>5: Прослушать и написать en — ru вариант</summary>
-            <form id="exerciseForm_5"></form>
+            <summary>6: Прослушать и написать en — ru вариант</summary>
+            (примеры в Present Simple и Present Continuous)
+            <form id="exerciseForm_6"></form>
+        </details>
+        <details>
+            <summary>7: Прослушать и написать en — ru вариант</summary>
+            (примеры в Past Simple)
+            <form id="exerciseForm_7"></form>
+        </details>
+        <details>
+            <summary>8: Прослушать и написать en — ru вариант</summary>
+            (примеры в Future Simple)
+            <form id="exerciseForm_8"></form>
         </details>
 
-        
+
     </div>
     <script src='/grammar_of_english/practice.js'></script>
     <script>
@@ -622,7 +640,19 @@
                 });
             };
         })();
-
+        const generateExercisesMedium2 = (() => {
+            let index = 0; 
+            return (exercises, exerciseForm) => {
+                exercises.forEach(row => {
+                    
+                        index += 1;
+                        exerciseForm.innerHTML += `<p>${row[1]} — <input type="text" class="input-size" oninput="checkAnswer(this, '${row[0]}')" />
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${row[0]}")'> 
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> 
+                        <span class="text-span" id="clue-medium-${index}">${row[0]}</span></p>`;
+                });
+            };
+        })();
         const generateExercisesHard = (() => {
             let index = 0; 
 
@@ -643,16 +673,20 @@
         // Present Simple, Present Continuous
         generateExercisesEasy(getRandomThird(exercises_present_simple.concat(exercises_present_continuous)), document.getElementById('exerciseForm_1'));
         // Past Simple, Past Continuous, Future Simple
-        let examples = exercises_past_simple.concat(exercises_past_continuous);
-        examples = examples.concat(exercises_future_simple);
-        generateExercisesEasy(getRandomThird(examples), document.getElementById('exerciseForm_2'));
+        let examples_easy = exercises_past_simple.concat(exercises_past_continuous);
+        generateExercisesEasy(getRandomThird(examples_easy.concat(exercises_future_simple)), document.getElementById('exerciseForm_2'));
         // Present Perfect
         generateExercisesEasy(getRandomThird(exercises_present_perfect), document.getElementById('exerciseForm_3'));
 
 
         generateExercisesMedium(getRandomThird(exercises_present_simple_medium.concat(exercises_present_continuous_medium)), document.getElementById('exerciseForm_4'));
-        
-        generateExercisesHard(getRandomThird(exercises_present_simple.concat(exercises_present_continuous)), document.getElementById('exerciseForm_5')); 
+        let examples_medium = exercises_present_simple.concat(exercises_past_simple);
+        generateExercisesMedium2(getRandomThird(examples_medium.concat(exercises_future_simple)), document.getElementById('exerciseForm_5'));
+
+        generateExercisesHard(getRandomThird(exercises_present_simple.concat(exercises_present_continuous)), document.getElementById('exerciseForm_6')); 
+        generateExercisesHard(exercises_past_simple, document.getElementById('exerciseForm_7')); 
+        generateExercisesHard(exercises_future_simple, document.getElementById('exerciseForm_8')); 
+
 
         // skip to A2...
         // Past Perfect, Future Perfect, "Being" (Gerund and Present Participle)
