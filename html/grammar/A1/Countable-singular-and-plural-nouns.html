@@ -376,11 +376,18 @@
             <form id="exerciseForm_7"></form>
         </details>
 
+
         <hr>
         <h3>Write (Medium)</h3>
         <details>
             <summary>8: Перевести существительное</summary>
             <form id="exerciseForm_8"></form>
+        </details>
+        <details>
+
+        </details>
+            <summary>9: Перевести</summary>
+            <form id="exerciseForm_9"></form>
         </details>
 
     </div>
@@ -820,6 +827,29 @@
             ["She showed ___ enthusiasm for the project.", "Она проявила энтузиазм к проекту.", ["-"]]
         ];
 
+        const exercises_numerals_incompatibility_medium = [
+            ["Three pieces of advice.", "Три совета."],
+            ["Two glasses of water.", "Два стакана воды."],
+            ["Five bags of flour.", "Пять пакетов муки."],
+            ["Ten slices of bread.", "Десять кусочков хлеба."],
+            ["Three apples.", "Три яблока."],
+            ["Two liters of milk.", "Два литра молока."],
+            ["Seven types of coffee.", "Семь видов кофе."],
+            ["Four loaves of bread.", "Четыре буханки хлеба."],
+            ["A lot of furniture.", "Много мебели."],
+            ["Three pieces of luggage.", "Три чемодана."],
+            ["Six bottles of wine.", "Шесть бутылок вина."],
+            ["Two shirts.", "Две рубашки."],
+            ["Three jars of honey.", "Три банки меда."],
+            ["Four kilograms of rice.", "Четыре килограмма риса."],
+            ["Five chairs.", "Пять стульев."],
+            ["A little bit of sugar.", "Немного сахара."],
+            ["Three pounds of meat.", "Три фунта мяса."],
+            ["Two oranges.", "Два апельсина."],
+            ["One piece of cake.", "Один кусок торта."],
+            ["Many kinds of fruit.", "Много видов фруктов."],
+            ["A few pieces of advice.", "Несколько советов."]
+        ];
 
         const generateExercisesEasy = (() => {
             let index = 0; 
@@ -879,6 +909,21 @@
                 });
             };
         })();
+        const generateExercisesMedium2 = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+
+                    let sentence = `${item[1]} — <input type="text" class="input-size" oninput='checkAnswer(this, "${item[0]}")'/> 
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]}")'>
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-2-${index}')"> 
+                    <span class="text-span" id="clue-medium-2-${index}">${item[0]}</span>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+        })();
 
         generateExercisesEasy(getRandomThird(exercises_nouns.concat(exercises_nouns_normal)), document.getElementById('exerciseForm_1'));
         generateExercisesEasy2(getRandomThird(exercises_sentences_easy), document.getElementById('exerciseForm_2'));
@@ -887,9 +932,11 @@
         generateExercisesEasy2(getRandomThird(exercises_determiners_easy), document.getElementById('exerciseForm_5'));
         generateExercisesEasy2(getRandomThird(exercises_context_change_easy), document.getElementById('exerciseForm_6'));
         generateExercisesEasy2(getRandomThird(exercises_article_compatibility_easy), document.getElementById('exerciseForm_7'));
-
-        generateExercisesMedium(getRandomThird(exercises_nouns.concat(exercises_nouns_normal)), document.getElementById('exerciseForm_8'));
         
+        
+        generateExercisesMedium(getRandomThird(exercises_nouns.concat(exercises_nouns_normal)), document.getElementById('exerciseForm_8'));
+        generateExercisesMedium2(exercises_numerals_incompatibility_medium, document.getElementById('exerciseForm_9'));
+
 
         function getRandomBinary() {
             return Math.floor(Math.random() * 2); // 0 or 1
