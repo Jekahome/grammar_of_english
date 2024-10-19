@@ -370,11 +370,17 @@
             <form id="exerciseForm_6"></form>
         </details>
 
+        <details>
+            <summary>7: Подставить артикль</summary>
+            (Отсутсвие артикля заменить на символ "-")
+            <form id="exerciseForm_7"></form>
+        </details>
+
         <hr>
         <h3>Write (Medium)</h3>
         <details>
-            <summary>7: Перевести существительное</summary>
-            <form id="exerciseForm_7"></form>
+            <summary>8: Перевести существительное</summary>
+            <form id="exerciseForm_8"></form>
         </details>
 
     </div>
@@ -768,6 +774,52 @@
         ];
 
 
+        const exercises_article_compatibility_easy = [
+            ["___ milk is on the table.", "Молоко на столе.", ["The"]],
+            ["Do you want ___ water?", "Ты хочешь воды?", ["some"]],
+            ["He loves ___ cheese.", "Он любит сыр.", ["-"]],
+            
+            ["___ news is shocking.", "Новости шокирующие.", ["The"]],
+            ["I have ___ homework to do.", "У меня есть домашнее задание.", ["-"]],
+            ["She gave me ___ advice.", "Она дала мне совет.", ["some"]],
+            
+            ["I saw ___ deer in the park.", "Я видел оленей в парке.", ["-"]],
+            ["Can you pass me ___ bread?", "Ты можешь передать мне хлеб?", ["the"]],
+            ["We bought ___ furniture for our new house.", "Мы купили мебель для нашего нового дома.", ["-"]],
+            
+            ["___ information is very useful.", "Эта информация очень полезна.", ["The"]],
+            ["He has ___ idea for the project.", "У него есть идея для проекта.", ["an"]],
+            ["I need ___ help with my homework.", "Мне нужна помощь с домашним заданием.", ["some"]],
+            
+            ["___ money is tight this month.", "Деньги в этом месяце на исходе.", ["-"]],
+            ["There is ___ air in the balloon.", "В шарике есть воздух.", ["-"]],
+            ["Can I have ___ piece of cake?", "Могу я получить кусок торта?", ["a"]],
+            
+            ["She bought ___ dozen eggs.", "Она купила дюжину яиц.", ["a"]],
+            ["He wants to be ___ engineer.", "Он хочет стать инженером.", ["an"]],
+            ["We saw ___ beautiful sunset yesterday.", "Вчера мы видели красивый закат.", ["a"]],
+            
+            ["___ information is critical for the project.", "Информация критически важна для проекта.", ["-"]],
+            ["___ happiness is the key to success.", "Счастье - это ключ к успеху.", ["-"]],
+            ["___ advice is always welcome.", "Советы всегда приветствуются.", ["-"]],
+            
+            ["She enjoys ___ music while studying.", "Она наслаждается музыкой во время учебы.", ["-"]],
+            ["I need ___ help with my assignment.", "Мне нужна помощь с моим заданием.", ["-"]],
+            ["___ love is essential in relationships.", "Любовь важна в отношениях.", ["-"]],
+            
+            ["___ education is important for everyone.", "Образование важно для всех.", ["-"]],
+            ["There was ___ chaos at the event.", "На мероприятии был хаос.", ["-"]],
+            ["Do you have ___ information about the meeting?", "У вас есть информация о встрече?", ["some"]],
+            
+            ["He has ___ talent for music.", "У него есть талант к музыке.", ["-"]],
+            ["They experienced ___ difficulty in the exam.", "Они испытали трудности на экзамене.", ["-"]],
+            ["___ patience is a virtue.", "Терпение - это добродетель.", ["-"]],
+            
+            ["___ traffic was terrible this morning.", "Утреннее движение было ужасным.", ["-"]],
+            ["I found ___ pleasure in reading.", "Я нашел удовольствие в чтении.", ["-"]],
+            ["She showed ___ enthusiasm for the project.", "Она проявила энтузиазм к проекту.", ["-"]]
+        ];
+
 
         const generateExercisesEasy = (() => {
             let index = 0; 
@@ -834,8 +886,9 @@
         generateExercisesEasy2(getRandomThird(exercises_groups_verbs_easy), document.getElementById('exerciseForm_4'));
         generateExercisesEasy2(getRandomThird(exercises_determiners_easy), document.getElementById('exerciseForm_5'));
         generateExercisesEasy2(getRandomThird(exercises_context_change_easy), document.getElementById('exerciseForm_6'));
-        
-        generateExercisesMedium(getRandomThird(exercises_nouns.concat(exercises_nouns_normal)), document.getElementById('exerciseForm_7'));
+        generateExercisesEasy2(getRandomThird(exercises_article_compatibility_easy), document.getElementById('exerciseForm_7'));
+
+        generateExercisesMedium(getRandomThird(exercises_nouns.concat(exercises_nouns_normal)), document.getElementById('exerciseForm_8'));
         
 
         function getRandomBinary() {
