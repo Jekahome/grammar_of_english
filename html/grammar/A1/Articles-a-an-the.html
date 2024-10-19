@@ -922,24 +922,24 @@
 
          const mixed_articles_exercises = [
             // 1. Артикль не употребляется перед притяжательными и указательными местоимениями, количественными числительными или отрицанием "no"
-            ["I have ___ sister. ___ sister is an engineer.", "У меня есть сестра. Моя сестра инженер.", ["a", "My"]],
-            ["I can see ___ paper on ___ table, but I can’t see ___ pen.", "Я вижу бумагу на твоем столе, но не вижу ни одной ручки.", ["a", "your", "no"]],
-            ["They have ___ dog and ___ cats.", "У них есть собака и две кошки.", ["a", "two"]],
-            ["I have ___ spoon in ___ plate, but I have ___ soup in it.", "У меня есть ложка в тарелке, но нет супа.", ["a", "my", "no"]],
-            ["___ pen is good, and ___ pen is bad.", "Эта ручка хорошая, а та — плохая.", ["This", "that"]],
-            ["He saw ___ car and ___ bikes.", "Он видел машину и три велосипеда.", ["a", "three"]],
-            ["There is ___ coffee in ___ cup, but there is ___ sugar.", "В чашке есть кофе, но нет сахара.", ["some", "the", "no"]],
-            ["She bought ___ books and ___ pens.", "Она купила три книги и две ручки.", ["three", "two"]],
-            ["I see ___ people here, but I see ___ chairs.", "Я вижу людей, но не вижу стульев.", ["some", "no"]],
-            ["We found ___ problem in ___ code, but there is ___ solution yet.", "Мы нашли проблему в коде, но пока нет решения.", ["a", "the", "no"]],
+            ["I have ___ sister. My ___ sister is ___ engineer.", "У меня есть сестра. Моя сестра инженер.", ["a", "-", "an"]],
+            ["I can see ___ paper on your ___ table, but I can’t see no ___ pen.", "Я вижу бумагу на твоем столе, но не вижу ни одной ручки.", ["a", "-", "-"]],
+            ["They have ___ dog and two ___ cats.", "У них есть собака и две кошки.", ["a", "-"]],
+            ["I have ___ spoon in my ___ plate, but I have no ___ soup in it.", "У меня есть ложка в тарелке, но нет супа.", ["a", "-", "-"]],
+            ["This ___ pen is good, and that ___ pen is bad.", "Эта ручка хорошая, а та — плохая.", ["-", "-"]],
+            ["He saw ___ car and three ___ bikes.", "Он видел машину и три велосипеда.", ["a", "-"]],
+            ["There is some ___ coffee in ___ cup, but there is no ___ sugar.", "В чашке есть кофе, но нет сахара.", ["-", "the", "-"]],
+            ["She bought ___ three books and two ___ pens.", "Она купила три книги и две ручки.", ["-", "-"]],
+            ["I see some ___ people here, but I see no ___ chairs.", "Я вижу людей, но не вижу стульев.", ["-", "-"]],
+            ["We found ___ problem in ___ code, but there is no ___ solution yet.", "Мы нашли проблему в коде, но пока нет решения.", ["a", "the", "-"]],
 
 
             // 2. Артикль "a/an" употребляется только с исчисляемыми существительными в единственном числе
             ["This is ___ soup. ___ soup is tasty.", "Это суп. Суп вкусный.", ["the", "The"]],
-            ["In the morning, I eat ___ sandwich and drink ___ tea.", "Утром я ем бутерброд и пью чай.", ["a", ""]],
+            ["In the morning, I eat ___ sandwich and drink ___ tea.", "Утром я ем бутерброд и пью чай.", ["a", "-"]],
             ["She gave me ___ coffee and ___ cake.", "Она дала мне кофе и торт.", ["a", "a"]],
-            ["I see ___ book in ___ hand. Is ___ book interesting?", "Я вижу книгу в твоей руке. Книга интересная?", ["a", "your", "the"]],
-            ["She bought ___ meat, ___ butter, and ___ potatoes.", "Она купила мясо, масло и картофель.", ["", "", ""]],
+            ["I see ___ book in your ___ hand. Is ___ book interesting?", "Я вижу книгу в твоей руке. Книга интересная?", ["a", "-", "the"]],
+            ["She bought ___ meat, ___ butter, and ___ potatoes.", "Она купила мясо, масло и картофель.", ["-", "-", "-"]],
             ["___ soup is cold, but ___ sandwich is hot.", "Суп холодный, но сэндвич горячий.", ["The", "the"]],
             ["I have ___ idea about ___ solution.", "У меня есть идея о решении.", ["an", "the"]],
             ["There is ___ cat on ___ roof.", "На крыше кошка.", ["a", "the"]],
@@ -953,19 +953,19 @@
             ["My brother is not ___ home; he is ___ school.", "Моего брата нет дома, он в школе.", ["at", "at"]],
             ["Her mother is ___ work. She is ___ doctor.", "Её мама на работе. Она доктор.", ["at", "a"]],
             ["He has ___ child.", "У него есть ребёнок.", ["a"]],
-            ["Is your father ___ home? – No, he is ___ work.", "Твой отец дома? — Нет, он на работе.", ["", "at"]],
+            ["Is your father ___ home? – No, he is ___ work.", "Твой отец дома? — Нет, он на работе.", ["-", "at"]],
             ["Where is your brother? – He is ___ home.", "Где твой брат? – Он дома.", ["-"]],
             ["I study ___ English in the evening.", "Я изучаю английский вечером.", ["-"]],
-            ["We learned ___ geography at ___ school.", "Мы изучали географию в школе.", ["", ""]],
-            ["He plays ___ football every day after ___ school.", "Он играет в футбол каждый день после школы.", ["", ""]],
-            ["She goes ___ shopping after ___ work.", "Она ходит за покупками после работы.", ["", ""]],
+            ["We learned ___ geography at ___ school.", "Мы изучали географию в школе.", ["-", "-"]],
+            ["He plays ___ football every day after ___ school.", "Он играет в футбол каждый день после школы.", ["-", "-"]],
+            ["She goes ___ shopping after ___ work.", "Она ходит за покупками после работы.", ["-", "-"]],
 
             // 4. Артикль ставится перед прилагательным
             ["I have ___ large family.", "У меня большая семья.", ["a"]],
-            ["My granny often tells us ___ long and interesting stories.", "Моя бабушка часто рассказывает нам длинные и интересные истории.", [""]],
+            ["My granny often tells us ___ long and interesting stories.", "Моя бабушка часто рассказывает нам длинные и интересные истории.", ["-"]],
             ["My father is an engineer. He works at ___ factory. The factory is large.", "Мой отец инженер. Он работает на заводе. Завод большой.", ["the"]],
             ["Her sister is at school. She is ___ good pupil.", "Ее сестра в школе. Она хорошая ученица.", ["a"]],
-            ["My cousin’s cat has ___ two kittens. The cat likes milk. The kittens like milk, too.", "У кошки моего двоюродного брата есть два котенка. Кошка любит молоко. Котята тоже любят молоко.", [""]],
+            ["My cousin’s cat has ___ two kittens. The cat likes milk. The kittens like milk, too.", "У кошки моего двоюродного брата есть два котенка. Кошка любит молоко. Котята тоже любят молоко.", ["-"]],
 
 
             // 5. Конструкции с неопределённым артиклем
