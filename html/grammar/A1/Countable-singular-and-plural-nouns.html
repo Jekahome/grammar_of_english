@@ -346,11 +346,16 @@
             <form id="exerciseForm_2"></form>
         </details>
 
+        <details>
+            <summary>3: Подставить существительное</summary>
+            <form id="exerciseForm_3"></form>
+        </details>
+
         <hr>
         <h3>Write (Medium)</h3>
         <details>
-            <summary>3: Перевести существительное</summary>
-            <form id="exerciseForm_3"></form>
+            <summary>4: Перевести существительное</summary>
+            <form id="exerciseForm_4"></form>
         </details>
 
     </div>
@@ -529,6 +534,58 @@
             ["The ___ are astonishing to witness.", "Явления потрясающи на вид.", ["Phenomena"]]
         ];
 
+        const exercises_groups_easy = [
+            // Liquids (Жидкость)
+            ["The ___ was spilled all over the table.", "Молоко пролилось по всему столу.", ["milk"]],
+            ["Can you bring some ___ to the table?", "Можешь принести воды на стол?", ["water"]],
+            ["They poured the ___ into the glass.", "Они налили вино в бокал.", ["wine"]],
+
+            // Solid substances (Твердые вещества)
+            ["There was too much ___ in the fridge.", "В холодильнике было слишком много хлеба.", ["bread"]],
+            ["The ___ is melting on the counter.", "Масло тает на столе.", ["butter"]],
+            ["They ate all the ___ for lunch.", "Они съели весь сыр на обед.", ["cheese"]],
+
+            // Granular/loose substances (Гранулированные/сыпучие вещества)
+            ["We need more ___ for the recipe.", "Нам нужно больше риса для рецепта.", ["rice"]],
+            ["The ___ was scattered across the table.", "Соль была рассыпана по столу.", ["salt"]],
+            ["There’s too much ___ in this dish.", "В этом блюде слишком много перца.", ["pepper"]],
+
+            // Materials (Материалы)
+            ["The ___ was stacked in the corner of the yard.", "Дерево было сложено в углу двора.", ["wood"]],
+            ["They bought a lot of ___ for the construction.", "Они купили много пластика для строительства.", ["plastic"]],
+            ["The windows were made of clear ___.", "Окна были сделаны из прозрачного стекла.", ["glass"]],
+
+            // Abstract concepts/ideas (Абстрактные концепции/идеи)
+            ["He gave us valuable ___.", "Он дал нам ценные советы.", ["advice"]],
+            ["The ___ we gained was invaluable.", "Полученная нами информация была бесценной.", ["information"]],
+            ["She works to spread ___.", "Она работает над распространением свободы.", ["freedom"]],
+
+            // Feelings and qualities (Чувства и качества)
+            ["His ___ was apparent in his speech.", "Его гордость была очевидна в его речи.", ["pride"]],
+            ["She couldn’t contain her ___.", "Она не могла сдержать свою радость.", ["joy"]],
+            ["The ___ in the room was overwhelming.", "Грусть в комнате была подавляющей.", ["sadness"]],
+
+            // Mass nouns (Нарицательные существительные)
+            ["All the ___ was too heavy to carry.", "Весь багаж был слишком тяжелым для переноса.", ["luggage"]],
+            ["We bought some new ___.", "Мы купили новую мебель.", ["furniture"]],
+            ["Their ___ was well prepared for the event.", "Их оборудование было хорошо подготовлено для мероприятия.", ["equipment"]],
+
+            // Activities and sports (Мероприятия и спорт)
+            ["The ___ took all day to finish.", "Домашняя работа заняла целый день.", ["homework"]],
+            ["He plays ___ every weekend.", "Он играет в теннис каждые выходные.", ["tennis"]],
+            ["The ___ needs to be done before dinner.", "Домашняя работа должна быть выполнена до ужина.", ["housework"]],
+
+            // Gases (Газы)
+            ["The room was filled with ___.", "Комната была наполнена кислородом.", ["oxygen"]],
+            ["The ___ was leaking from the balloon.", "Гелий вытекал из воздушного шара.", ["helium"]],
+            ["___ was rising from the chimney.", "Дым поднимался из дымохода.", ["smoke"]],
+
+            // Natural phenomena (Природные явления)
+            ["The ___ was dangerous during the storm.", "Молния была опасной во время шторма.", ["lightning"]],
+            ["We expect more ___ tomorrow.", "Мы ожидаем больше дождя завтра.", ["rain"]],
+            ["The ___ is very strong today.", "Сегодня очень сильное солнце.", ["sunshine"]]
+        ];
+
 
         const generateExercisesEasy = (() => {
             let index = 0; 
@@ -591,8 +648,9 @@
 
         generateExercisesEasy(getRandomThird(exercises_nouns.concat(exercises_nouns_normal)), document.getElementById('exerciseForm_1'));
         generateExercisesEasy2(getRandomThird(exercises_sentences_easy), document.getElementById('exerciseForm_2'));
+        generateExercisesEasy2(getRandomThird(exercises_groups_easy), document.getElementById('exerciseForm_3'));
 
-        generateExercisesMedium(getRandomThird(exercises_nouns.concat(exercises_nouns_normal)), document.getElementById('exerciseForm_3'));
+        generateExercisesMedium(getRandomThird(exercises_nouns.concat(exercises_nouns_normal)), document.getElementById('exerciseForm_4'));
         
 
         function getRandomBinary() {
