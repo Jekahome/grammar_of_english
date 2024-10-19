@@ -383,6 +383,19 @@
             const randomElements = Array.from(randomIndices).map(index => arr[index]);
             return randomElements;
         }
+
+        function showClue(id) {
+            var el = document.getElementById(id);
+            el.style.visibility = "visible"; 
+
+            setTimeout(function() {
+                el.style.visibility = "hidden";
+            }, 2000);
+        }
+
+        function playSentence(sentence){
+            practice.speak(sentence);
+        }
     </script>
 </body>
 </html>
