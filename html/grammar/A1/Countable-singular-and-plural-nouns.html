@@ -352,11 +352,29 @@
             <form id="exerciseForm_3"></form>
         </details>
 
+        <details>
+            <summary>4: Подставить глагол</summary>
+            (Присутствуют группы неисчесляемых существительных)
+            <form id="exerciseForm_4"></form>
+        </details>
+
+        <details>
+            <summary>5: Подставить определитель количества</summary>
+            (такие как some, any, much, little, a bit of, a piece of, a glass of и другие.)
+            <form id="exerciseForm_5"></form>
+        </details>
+
+        <details>
+            <summary>6: Подставить существительное</summary>
+            (Учитывая изменение контекста применения существительного)
+            <form id="exerciseForm_6"></form>
+        </details>
+
         <hr>
         <h3>Write (Medium)</h3>
         <details>
-            <summary>4: Перевести существительное</summary>
-            <form id="exerciseForm_4"></form>
+            <summary>7: Перевести существительное</summary>
+            <form id="exerciseForm_7"></form>
         </details>
 
     </div>
@@ -619,6 +637,137 @@
 
         ];
 
+        const exercises_groups_verbs_easy = [
+            // Liquids
+            ["The milk ___ cold.", "Молоко холодное.", ["is"]],
+            ["The water ___ very refreshing.", "Вода очень освежающая.", ["is"]],
+            ["The coffee ___ too hot to drink.", "Кофе слишком горячий, чтобы пить.", ["is"]],
+
+            // Solid substances
+            ["The bread ___ fresh from the bakery.", "Хлеб свежий из пекарни.", ["is"]],
+            ["The cheese ___ very expensive here.", "Сыр здесь очень дорогой.", ["is"]],
+            ["The ice ___ melting quickly.", "Лёд тает быстро.", ["is"]],
+
+            // Granular/loose substances
+            ["The rice ___ cooked perfectly.", "Рис приготовлен идеально.", ["is"]],
+            ["The salt ___ too much for this dish.", "Соли слишком много для этого блюда.", ["is"]],
+            ["The sand ___ soft under my feet.", "Песок мягкий под моими ногами.", ["is"]],
+
+            // Materials
+            ["The glass ___ fragile.", "Стекло хрупкое.", ["is"]],
+            ["The paper ___ thin and easy to tear.", "Бумага тонкая и легко рвётся.", ["is"]],
+            ["The wood ___ strong and durable.", "Древесина крепкая и долговечная.", ["is"]],
+
+            // Abstract concepts/ideas
+            ["The information ___ hard to understand.", "Информация сложная для понимания.", ["is"]],
+            ["The advice ___ really helpful.", "Совет действительно полезен.", ["is"]],
+            ["The research ___ very promising.", "Исследование очень перспективное.", ["is"]],
+
+            // Feelings and qualities
+            ["The happiness ___ evident in her smile.", "Счастье очевидно в её улыбке.", ["is"]],
+            ["The love ___ endless.", "Любовь бесконечна.", ["is"]],
+            ["The honesty ___ refreshing in politics.", "Честность освежающая в политике.", ["is"]],
+
+            // Mass nouns
+            ["The money ___ in the safe.", "Деньги в сейфе.", ["is"]],
+            ["The equipment ___ ready to use.", "Оборудование готово к использованию.", ["is"]],
+            ["The furniture ___ elegant and modern.", "Мебель элегантная и современная.", ["is"]],
+
+            // Activities and sports
+            ["The homework ___ difficult today.", "Домашняя работа сложная сегодня.", ["is"]],
+            ["The surveillance ___ constant in the area.", "Наблюдение постоянное в этом районе.", ["is"]],
+            ["The work ___ very rewarding.", "Работа очень удовлетворяющая.", ["is"]],
+
+            // Gases
+            ["The air ___ fresh after the rain.", "Воздух свежий после дождя.", ["is"]],
+            ["The smoke ___ filling the room.", "Дым заполняет комнату.", ["is"]],
+            ["The oxygen ___ essential for life.", "Кислород жизненно необходим.", ["is"]],
+
+            // Natural phenomena
+            ["The rain ___ heavy today.", "Дождь сильный сегодня.", ["is"]],
+            ["The lightning ___ bright in the sky.", "Молния яркая на небе.", ["is"]],
+            ["The heat ___ unbearable.", "Жара невыносимая.", ["is"]],
+
+            // Countable
+            ["The car ___ fast.", "Машина быстрая.", ["is"]],
+            ["The books ___ interesting.", "Книги интересные.", ["are"]],
+            ["The apple ___ red and juicy.", "Яблоко красное и сочное.", ["is"]],
+            ["The cats ___ sleeping.", "Коты спят.", ["are"]],
+            ["The house ___ big and beautiful.", "Дом большой и красивый.", ["is"]],
+            ["The box ___ full of toys.", "Коробка полна игрушек.", ["is"]],
+            ["The buses ___ crowded in the morning.", "Автобусы переполнены утром.", ["are"]],
+            ["The watches ___ expensive.", "Часы дорогие.", ["are"]],
+            ["The babies ___ crying.", "Младенцы плачут.", ["are"]],
+            ["The city ___ full of people.", "Город полон людей.", ["is"]],
+            ["The dogs ___ barking loudly.", "Собаки громко лают.", ["are"]],
+            ["The chairs ___ made of wood.", "Стулья сделаны из дерева.", ["are"]],
+            ["The windows ___ open.", "Окна открыты.", ["are"]],
+            ["The students ___ studying for exams.", "Студенты готовятся к экзаменам.", ["are"]],
+            ["The computers ___ running smoothly.", "Компьютеры работают без перебоев.", ["are"]],
+            ["The flowers ___ blooming in the garden.", "Цветы цветут в саду.", ["are"]],
+            ["The birds ___ flying in the sky.", "Птицы летают в небе.", ["are"]],
+            ["The trees ___ losing their leaves.", "Деревья теряют свои листья.", ["are"]],
+            ["The cars ___ parked outside.", "Машины припаркованы снаружи.", ["are"]],
+            ["The phones ___ ringing non-stop.", "Телефоны звонят без остановки.", ["are"]]
+        ];
+
+        const exercises_determiners_easy  = [
+            ["Can I have ___ water?", "Можно мне немного воды?", ["some"]],
+            ["There isn't ___ information available.", "Нет много доступной информации.", ["much"]],
+            ["I need ___ advice.", "Мне нужен совет.", ["a piece of"]],
+            ["We have ___ coffee left.", "У нас осталось немного кофе.", ["a little"]],
+            ["I bought ___ wine for the party.", "Я купил бутылку вина для вечеринки.", ["a bottle of"]],
+            ["There was only ___ sugar in the jar.", "В банке было лишь немного сахара.", ["a bit of"]],
+            ["She gave me ___ good advice.", "Она дала мне один хороший совет.", ["some"]],
+            ["He doesn't have ___ patience with kids.", "У него нет терпения с детьми.", ["much"]],
+            ["I need ___ more time to finish this project.", "Мне нужно еще немного времени, чтобы завершить этот проект.", ["a bit of"]],
+            ["They offered me ___ help with my homework.", "Они предложили мне помощь с домашним заданием.", ["some"]],
+            // Countable
+            ["Can I have ___ apples?", "Можно мне несколько яблок?", ["some"]],
+            ["There aren't ___ chairs left.", "Не осталось никаких стульев.", ["any"]],
+            ["She bought ___ new books from the store.", "Она купила несколько новых книг в магазине.", ["some"]],
+            ["He doesn't have ___ friends in this city.", "У него нет друзей в этом городе.", ["many"]],
+            ["I need ___ more pencils for the class.", "Мне нужно еще несколько карандашей для урока.", ["a few"]],
+            ["There were ___ students in the classroom.", "В классе было много студентов.", ["many"]],
+            ["Could you give me ___ examples?", "Можешь дать мне несколько примеров?", ["a few"]],
+            ["We don't have ___ cups left.", "У нас не осталось никаких чашек.", ["any"]],
+            ["She saw ___ birds in the park yesterday.", "Вчера она видела несколько птиц в парке.", ["some"]],
+            ["Do you have ___ extra chairs?", "У тебя есть дополнительные стулья?", ["any"]]
+        ];
+
+        const exercises_context_change_easy  = [
+            ["I drank ___ this morning.", "Я выпил немного кофе этим утром.", ["some coffee"]],
+            ["I'll have two ___, please.", "Я возьму две чашки кофе, пожалуйста.", ["coffees"]],
+            
+            ["She ate ___ with butter.", "Она съела немного хлеба с маслом.", ["some bread"]],
+            ["I need two ___ from the bakery.", "Мне нужно две буханки хлеба из пекарни.", ["loaves of bread"]],
+            
+            ["There's ___ on the floor.", "На полу немного волос.", ["some hair"]],
+            ["She found three ___ on her jacket.", "Она нашла три волоска на своей куртке.", ["hairs"]],
+            
+            ["He has ___ of experience.", "У него есть много опыта.", ["a lot"]],
+            ["They told interesting ___ about the project.", "Они рассказали интересные факты о проекте.", ["experiences"]],
+            
+            ["We need ___ for the cake.", "Нам нужно немного сахара для торта.", ["some sugar"]],
+            ["He added two ___ of sugar to his tea.", "Он добавил две ложки сахара в свой чай.", ["spoons"]],
+
+            ["I need to buy ___ for dinner.", "Мне нужно купить немного рыбы на ужин.", ["some fish"]],
+            ["We caught three big ___ today.", "Мы поймали три большие рыбы сегодня.", ["fishes"]],
+            
+            ["There is ___ on the street.", "На улице много света.", ["a lot of light"]],
+            ["He turned on two ___ in the living room.", "Он включил две лампы в гостиной.", ["lights"]],
+            
+            ["She gave me ___ about the exam.", "Она дала мне информацию о экзамене.", ["some advice"]],
+            ["He shared two ___ during the meeting.", "Он поделился двумя советами на встрече.", ["pieces of advice"]],
+
+            ["I had ___ for lunch.", "Я съел немного курицы на обед.", ["some chicken"]],
+            ["We saw five ___ in the yard.", "Мы видели пять куриц во дворе.", ["chickens"]],
+            
+            ["There was ___ on the road.", "На дороге была грязь.", ["a lot of mud"]],
+            ["The kids left their ___ everywhere.", "Дети оставили свои грязные следы повсюду.", ["muds"]]
+        ];
+
+
 
         const generateExercisesEasy = (() => {
             let index = 0; 
@@ -682,8 +831,11 @@
         generateExercisesEasy(getRandomThird(exercises_nouns.concat(exercises_nouns_normal)), document.getElementById('exerciseForm_1'));
         generateExercisesEasy2(getRandomThird(exercises_sentences_easy), document.getElementById('exerciseForm_2'));
         generateExercisesEasy2(getRandomThird(exercises_groups_easy), document.getElementById('exerciseForm_3'));
-
-        generateExercisesMedium(getRandomThird(exercises_nouns.concat(exercises_nouns_normal)), document.getElementById('exerciseForm_4'));
+        generateExercisesEasy2(getRandomThird(exercises_groups_verbs_easy), document.getElementById('exerciseForm_4'));
+        generateExercisesEasy2(getRandomThird(exercises_determiners_easy), document.getElementById('exerciseForm_5'));
+        generateExercisesEasy2(getRandomThird(exercises_context_change_easy), document.getElementById('exerciseForm_6'));
+        
+        generateExercisesMedium(getRandomThird(exercises_nouns.concat(exercises_nouns_normal)), document.getElementById('exerciseForm_7'));
         
 
         function getRandomBinary() {
