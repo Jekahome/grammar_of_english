@@ -384,6 +384,21 @@
             return randomElements;
         }
 
+        function checkAnswer(inputElement, correctAnswer) {
+            if (inputElement.value.length > 4){
+                inputElement.style.width = (inputElement.value.length + 1) + 'ch';
+            }
+
+            const userAnswer = inputElement.value.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
+            const normalizedCorrectAnswer = correctAnswer.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
+
+            if (userAnswer === normalizedCorrectAnswer) {
+                inputElement.className = 'input-size correct'; 
+            } else {
+                inputElement.className = 'input-size incorrect'; 
+            }
+        }
+        
         function showClue(id) {
             var el = document.getElementById(id);
             el.style.visibility = "visible"; 
