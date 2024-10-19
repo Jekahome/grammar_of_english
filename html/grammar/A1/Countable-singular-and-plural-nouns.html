@@ -284,6 +284,10 @@
             <form id="exerciseForm_1"></form>
         </details>
 
+        <details>
+            <summary>2: Подставить существительное</summary>
+            <form id="exerciseForm_2"></form>
+        </details>
 
     </div>
     <script src='/grammar_of_english/practice.js'></script>
@@ -354,6 +358,114 @@
             ["Zoo", "Zoos", "зоопарк", "зоопарки"]
         ];
 
+        const exercises_sentences_easy = [
+            ["I drive my ___ to work every day.", "Я езжу на своей машине на работу каждый день.", ["Car"]],
+            ["Many ___ are parked outside the mall.", "Много машин припарковано у торгового центра.", ["cars"]],
+            
+            ["I read a ___ before going to bed.", "Я читаю книгу перед сном.", ["Book"]],
+            ["There are many ___ on the shelf.", "На полке много книг.", ["books"]],
+
+            ["I ate an ___ for breakfast.", "Я съел яблоко на завтрак.", ["Apple"]],
+            ["She bought some ___ at the market.", "Она купила яблоки на рынке.", ["apples"]],
+
+            ["My ___ is very friendly.", "Мой кот очень дружелюбный.", ["Cat"]],
+            ["The ___ are playing in the garden.", "Коты играют в саду.", ["cats"]],
+
+            ["This ___ is very old.", "Этот дом очень старый.", ["House"]],
+            ["There are many ___ in the neighborhood.", "В округе много домов.", ["houses"]],
+
+            ["I put my lunch in a ___ for school.", "Я положил свой обед в коробку для школы.", ["Box"]],
+            ["There are several ___ on the table.", "На столе несколько коробок.", ["boxes"]],
+
+            ["I take the ___ to school every day.", "Я каждый день езжу на автобусе в школу.", ["Bus"]],
+            ["Many ___ stop at the station.", "На станции останавливается много автобусов.", ["buses"]],
+
+            ["I bought a new ___ for my wrist.", "Я купил новые часы для запястья.", ["Watch"]],
+            ["He has several ___ in his collection.", "У него есть несколько часов в коллекции.", ["watches"]],
+
+            ["I went to the ___ on Sunday.", "Я пошел в церковь в воскресенье.", ["Church"]],
+            ["Many ___ are beautifully decorated.", "Многие церкви красиво украшены.", ["churches"]],
+
+            ["The ___ is crying.", "Младенец плачет.", ["Baby"]],
+            ["The ___ are playing in the park.", "Младенцы играют в парке.", ["babies"]],
+
+            ["I live in a big ___.", "Я живу в большом городе.", ["City"]],
+            ["There are many ___ in the world.", "В мире много городов.", ["cities"]],
+
+            ["She is a ___ of the group.", "Она леди группы.", ["Lady"]],
+            ["The ___ are very polite.", "Леди очень вежливы.", ["ladies"]],
+
+            ["I traveled to another ___.", "Я путешествовал в другую страну.", ["Country"]],
+            ["Several ___ are in Europe.", "Несколько стран находятся в Европе.", ["countries"]],
+
+            ["I cut the bread with a ___.", "Я нарезал хлеб ножом.", ["Knife"]],
+            ["I have two ___ in my kitchen.", "У меня есть два ножа на кухне.", ["knives"]],
+
+            ["My ___ is very supportive.", "Моя жена очень поддерживает.", ["Wife"]],
+            ["Many ___ love their husbands.", "Многие жены любят своих мужей.", ["wives"]],
+
+            ["I picked a green ___.", "Я сорвал зеленый лист.", ["Leaf"]],
+            ["The ___ are changing color in autumn.", "Листья меняют цвет осенью.", ["leaves"]],
+
+            ["I saw a ___ in the forest.", "Я видел волка в лесу.", ["Wolf"]],
+            ["Several ___ were howling at night.", "Несколько волков выли в ночи.", ["wolves"]],
+
+            ["I placed the book on the ___.", "Я положил книгу на полку.", ["Shelf"]],
+            ["There are many ___ in the library.", "В библиотеке много полок.", ["shelves"]],
+
+            ["The ___ saved the village.", "Герой спас деревню.", ["Hero"]],
+            ["Many ___ are found in stories.", "Много героев встречается в историях.", ["heroes"]],
+
+            ["I planted a ___.", "Я посадил кактус.", ["Cactus"]],
+            ["The ___ are thriving in the desert.", "Кактусы процветают в пустыне.", ["cacti"]],
+
+            ["I saw a beautiful ___.", "Я увидел красивый гриб.", ["Fungus"]],
+            ["Many ___ grow in the forest.", "В лесу растет много грибов.", ["Fungi"]],
+
+            ["This ___ is very important.", "Это ядро очень важно.", ["Nucleus"]],
+            ["The ___ are part of every cell.", "Ядра являются частью каждой клетки.", ["Nuclei"]],
+
+            ["He is an ___ of the university.", "Он выпускник университета.", ["Alumnus"]],
+            ["The ___ gathered for the reunion.", "Выпускники собрались на встречу.", ["Alumni"]],
+
+            ["This ___ is interesting.", "Это явление интересно.", ["Phenomenon"]],
+            ["The ___ in nature are amazing.", "Явления в природе удивительны.", ["Phenomena"]],
+
+            ["This ___ is quite challenging.", "Этот кризис довольно сложен.", ["Crisis"]],
+            ["The ___ were caused by economic downturns.", "Кризисы были вызваны экономическими спадами.", ["Crises"]],
+
+            ["I wrote a ___ for my research.", "Я написал тезис для своего исследования.", ["Thesis"]],
+            ["The ___ were reviewed by the committee.", "Тезисы были рассмотрены комитетом.", ["Theses"]],
+
+            ["I conducted an ___ on the topic.", "Я провел анализ по этой теме.", ["Analysis"]],
+            ["The ___ were published in a journal.", "Анализы были опубликованы в журнале.", ["Analyses"]],
+
+            ["This ___ is not straight.", "Эта ось не прямая.", ["Axis"]],
+            ["The ___ are labeled in the diagram.", "Оси обозначены на диаграмме.", ["Axes"]],
+
+            ["I checked the ___ for details.", "Я проверил индекс для деталей.", ["Index"]],
+            ["The ___ can be found in the back of the book.", "Индексы можно найти в конце книги.", ["Indices"]],
+
+            ["The ___ is useful for references.", "Аппендикс полезен для ссылок.", ["Appendix"]],
+            ["Several ___ are included in the report.", "В отчете включены несколько аппендиксов.", ["Appendices"]],
+
+            ["I saw a ___ on my hike.", "Я увидел кактус во время похода.", ["Cactus"]],
+            ["The ___ are very unique.", "Кактусы очень уникальны.", ["Cacti"]],
+
+            ["The ___ is growing on the ground.", "Грибок растет на земле.", ["Fungus"]],
+            ["The ___ are vital to the ecosystem.", "Грибы жизненно важны для экосистемы.", ["Fungi"]],
+
+            ["This ___ is very fragile.", "Это ядро очень хрупкое.", ["Nucleus"]],
+            ["Many ___ are found in cells.", "Много ядер встречается в клетках.", ["Nuclei"]],
+
+            ["He is an ___ of the university.", "Он выпускник университета.", ["Alumnus"]],
+            ["The ___ gathered for a meeting.", "Выпускники собрались на встречу.", ["Alumni"]],
+            
+            ["I saw a ___ yesterday.", "Я видел явление вчера.", ["Phenomenon"]],
+            ["The ___ are astonishing to witness.", "Явления потрясающи на вид.", ["Phenomena"]]
+        ];
+
+
         const generateExercisesEasy = (() => {
             let index = 0; 
 
@@ -370,7 +482,31 @@
                 });
             };
         })();
+
+        const generateExercisesEasy2 = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+
+                    let sentence = item[0].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[2][0]}')" />`);
+                    let answer = item[0].replace('___',item[2][0]);
+
+                    sentence += `— ${item[1]}
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                    <span class="text-span" id="clue-easy-2-${index}">${answer}</span>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+        })();
+
         generateExercisesEasy(getRandomThird(exercises_nouns.concat(exercises_nouns_normal)), document.getElementById('exerciseForm_1'));
+        generateExercisesEasy2(getRandomThird(exercises_sentences_easy), document.getElementById('exerciseForm_2'));
+
+        
+
 
         function getRandomThird(arr) {
             if (arr.length < 20){return arr}
@@ -398,7 +534,7 @@
                 inputElement.className = 'input-size incorrect'; 
             }
         }
-        
+
         function showClue(id) {
             var el = document.getElementById(id);
             el.style.visibility = "visible"; 
