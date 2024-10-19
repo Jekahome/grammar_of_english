@@ -798,6 +798,311 @@
    [Книга "Самоучитель для дебилов. Автор - Макс Инглиш" раздел с артиклями](https://coollib.net/b/641980-maks-inglish-angliyskiy-samouchitel-dlya-debilov#)
       </pre>
       -->
+
+      <h2>Упражнения</h2>
+      <h3>Replace (Easy)</h3>
+      <details>
+         <summary>1: Подставить артикль</summary>
+         (Отсутсвие артикля заменить на символ "-")
+         <form id="exerciseForm_1"></form>
+      </details>
+      <details>
+         <summary>2: Подставить артикль</summary>
+         (Отсутсвие артикля заменить на символ "-")
+         <form id="exerciseForm_2"></form>
+      </details>
+      <details>
+         <summary>3: Подставить артикль с учетом контекста</summary>
+         (Отсутсвие артикля заменить на символ "-")
+         <form id="exerciseForm_3"></form>
+      </details>
+      <details>
+         <summary>4: Подставить артикль</summary>
+         (Отсутсвие артикля заменить на символ "-")
+         <form id="exerciseForm_4"></form>
+      </details>
+
+
+
+
+      <script src='/grammar_of_english/practice.js'></script>
+      <script>
+         let practice = new Practice({});
+
+         const exercises_articles_choice_easy = [
+            ["I saw ___ dog in the park.", "Я видел собаку в парке.", ["a"]],
+            ["We went to ___ cinema last night.", "Мы ходили в кино прошлой ночью.", ["the"]],
+            ["She is ___ best student in the class.", "Она лучшая ученица в классе.", ["the"]],
+            ["Can I have ___ apple, please?", "Можно мне яблоко, пожалуйста?", ["an"]],
+            ["She doesn’t like ___ coffee.", "Она не любит кофе.", ["-"]],
+            ["He bought ___ new car yesterday.", "Он купил новую машину вчера.", ["a"]],
+            ["I visited ___ Eiffel Tower last summer.", "Я посетил Эйфелеву башню прошлым летом.", ["the"]],
+            ["___ life is full of surprises.", "Жизнь полна сюрпризов.", ["-"]],
+            ["There is ___ book on the table.", "На столе книга.", ["a"]],
+            ["___ books on that shelf belong to me.", "Книги на той полке принадлежат мне.", ["The"]],
+            ["We are going to ___ beach tomorrow.", "Мы собираемся на пляж завтра.", ["the"]],
+            ["He has ___ cat named Felix.", "У него есть кот по имени Феликс.", ["a"]],
+            ["___ sun is shining brightly.", "Солнце ярко светит.", ["The"]],
+            ["She found ___ interesting article online.", "Она нашла интересную статью в интернете.", ["an"]],
+            ["He is ___ engineer by profession.", "Он инженер по профессии.", ["an"]],
+            ["I saw ___ bird flying over the lake.", "Я увидел птицу, летящую над озером.", ["a"]],
+            ["___ air is fresh in the mountains.", "Воздух в горах свежий.", ["The"]],
+            ["She has ___ idea for the project.", "У нее есть идея для проекта.", ["an"]],
+            ["We had ___ wonderful holiday in Spain.", "Мы прекрасно провели отпуск в Испании.", ["a"]],
+            ["He’s looking for ___ job.", "Он ищет работу.", ["a"]],
+
+            ["___ sun rises in the east.", "Солнце встаёт на востоке.", ["The"]],
+            ["We can see ___ moon tonight.", "Сегодня мы можем увидеть луну.", ["the"]],
+            ["___ internet is an amazing tool for learning.", "Интернет — потрясающий инструмент для обучения.", ["The"]],
+            ["___ Queen of England lives in Buckingham Palace.", "Королева Англии живёт в Букингемском дворце.", ["The"]],
+            ["He is interested in studying ___ universe.", "Он интересуется изучением вселенной.", ["the"]],
+            ["___ President of the United States gave a speech.", "Президент Соединённых Штатов выступил с речью.", ["The"]],
+            ["We looked at ___ stars through the telescope.", "Мы смотрели на звезды через телескоп.", ["the"]],
+            ["She dreams of traveling to ___ space.", "Она мечтает отправиться в космос.", ["-"]],
+            ["___ Earth orbits the sun.", "Земля вращается вокруг солнца.", ["The"]],
+            ["He watched ___ sunrise from the mountain.", "Он смотрел на восход солнца с горы.", ["the"]],
+            ["They are studying ___ human brain.", "Они изучают человеческий мозг.", ["the"]],
+            ["He took a picture of ___ Milky Way.", "Он сделал фотографию Млечного Пути.", ["the"]],
+            ["They explored ___ ocean depths.", "Они исследовали глубины океана.", ["the"]],
+            ["She stared at ___ night sky.", "Она смотрела на ночное небо.", ["the"]],
+            ["___ heart pumps blood throughout the body.", "Сердце перекачивает кровь по всему телу.", ["The"]],
+            ["They are researching ___ origins of life.", "Они исследуют происхождение жизни.", ["the"]],
+            ["He read a book about ___ history of the world.", "Он прочитал книгу об истории мира.", ["the"]],
+            ["She loves studying ___ ancient civilizations.", "Она любит изучать древние цивилизации.", ["-"]],
+            ["He is fascinated by ___ mysteries of the universe.", "Он очарован тайнами вселенной.", ["the"]],
+            ["They are mapping ___ surface of the moon.", "Они составляют карту поверхности Луны.", ["the"]]
+         ];
+
+         const exercises_geo_articles_easy = [
+            ["___ Mount Everest is the highest mountain in the world.", "Гора Эверест — самая высокая гора в мире.", ["-"]],
+            ["___ Amazon River flows through South America.", "Река Амазонка протекает через Южную Америку.", ["The"]],
+            ["They are traveling to ___ United States next month.", "Они поедут в Соединённые Штаты в следующем месяце.", ["the"]],
+            ["___ London is the capital of England.", "Лондон — столица Англии.", ["-"]],
+            ["___ Alps are in Europe.", "Альпы находятся в Европе.", ["The"]],
+            ["We sailed across ___ Atlantic Ocean.", "Мы пересекли Атлантический океан.", ["the"]],
+            ["___ Nile is the longest river in the world.", "Нил — самая длинная река в мире.", ["The"]],
+            ["___ Lake Baikal is in Russia.", "Озеро Байкал находится в России.", ["-"]],
+            ["___ Sahara Desert is the largest desert in the world.", "Пустыня Сахара — самая большая пустыня в мире.", ["The"]],
+            ["He lives in ___ Tokyo.", "Он живет в Токио.", ["-"]],
+            ["She visited ___ Great Wall of China.", "Она посетила Великую китайскую стену.", ["the"]],
+            ["We will travel to ___ Europe next summer.", "Мы поедем в Европу следующим летом.", ["-"]],
+            ["___ River Thames flows through London.", "Река Темза протекает через Лондон.", ["The"]],
+            ["___ Himalayas are a mountain range in Asia.", "Гималаи — это горный хребет в Азии.", ["The"]],
+            ["She flew over ___ Pacific Ocean.", "Она пролетела над Тихим океаном.", ["the"]],
+            ["___ Danube River flows through several countries.", "Река Дунай протекает через несколько стран.", ["The"]],
+            ["They are hiking in ___ Rocky Mountains.", "Они совершают поход в Скалистых горах.", ["the"]],
+            ["We are visiting ___ Louvre in Paris.", "Мы посещаем Лувр в Париже.", ["the"]],
+            ["She moved to ___ Australia.", "Она переехала в Австралию.", ["-"]],
+            ["___ Andes are located in South America.", "Анды расположены в Южной Америке.", ["The"]]
+         ];
+
+         const exercises_context_articles_easy = [
+            ["___ computer on the desk is mine.", "Компьютер на столе — мой.", ["The"]],
+            ["I want to buy ___ computer.", "Я хочу купить компьютер.", ["a"]],
+            ["She studies ___ art at university.", "Она изучает искусство в университете.", ["-"]],
+            ["___ art of this museum is famous worldwide.", "Искусство этого музея известно во всем мире.", ["The"]],
+            ["We went to ___ theater last night.", "Мы ходили в театр прошлой ночью.", ["the"]],
+            ["I want to become ___ actor.", "Я хочу стать актером.", ["an"]],
+            ["___ movie we saw was fantastic.", "Фильм, который мы посмотрели, был потрясающим.", ["The"]],
+            ["She found ___ wallet on the street.", "Она нашла кошелек на улице.", ["a"]],
+            ["___ teacher gave us homework.", "Учитель дал нам домашнее задание.", ["The"]],
+            ["___ homework is due tomorrow.", "Домашнее задание нужно сдать завтра.", ["The"]],
+            ["He plays ___ guitar in a band.", "Он играет на гитаре в группе.", ["the"]],
+            ["I bought ___ new guitar.", "Я купил новую гитару.", ["a"]],
+            ["She likes to read ___ books in her free time.", "Она любит читать книги в свободное время.", ["-"]],
+            ["I finished ___ book you recommended.", "Я закончил книгу, которую ты рекомендовал.", ["the"]],
+            ["___ project was completed on time.", "Проект был завершен вовремя.", ["The"]],
+            ["He is working on ___ new project.", "Он работает над новым проектом.", ["a"]],
+            ["She is ___ best friend I have.", "Она моя лучшая подруга.", ["the"]],
+            ["___ moon is full tonight.", "Сегодня полная луна.", ["The"]],
+            ["He has ___ idea for the new game.", "У него есть идея для новой игры.", ["an"]],
+            ["We went to ___ restaurant last night.", "Мы ходили в ресторан прошлой ночью.", ["the"]]
+         ];
+
+
+         const mixed_articles_exercises = [
+            // 1. Артикль не употребляется перед притяжательными и указательными местоимениями, количественными числительными или отрицанием "no"
+            ["I have ___ sister. ___ sister is an engineer.", "У меня есть сестра. Моя сестра инженер.", ["a", "My"]],
+            ["I can see ___ paper on ___ table, but I can’t see ___ pen.", "Я вижу бумагу на твоем столе, но не вижу ни одной ручки.", ["a", "your", "no"]],
+            ["They have ___ dog and ___ cats.", "У них есть собака и две кошки.", ["a", "two"]],
+            ["I have ___ spoon in ___ plate, but I have ___ soup in it.", "У меня есть ложка в тарелке, но нет супа.", ["a", "my", "no"]],
+            ["___ pen is good, and ___ pen is bad.", "Эта ручка хорошая, а та — плохая.", ["This", "that"]],
+            ["He saw ___ car and ___ bikes.", "Он видел машину и три велосипеда.", ["a", "three"]],
+            ["There is ___ coffee in ___ cup, but there is ___ sugar.", "В чашке есть кофе, но нет сахара.", ["some", "the", "no"]],
+            ["She bought ___ books and ___ pens.", "Она купила три книги и две ручки.", ["three", "two"]],
+            ["I see ___ people here, but I see ___ chairs.", "Я вижу людей, но не вижу стульев.", ["some", "no"]],
+            ["We found ___ problem in ___ code, but there is ___ solution yet.", "Мы нашли проблему в коде, но пока нет решения.", ["a", "the", "no"]],
+
+
+            // 2. Артикль "a/an" употребляется только с исчисляемыми существительными в единственном числе
+            ["This is ___ soup. ___ soup is tasty.", "Это суп. Суп вкусный.", ["the", "The"]],
+            ["In the morning, I eat ___ sandwich and drink ___ tea.", "Утром я ем бутерброд и пью чай.", ["a", ""]],
+            ["She gave me ___ coffee and ___ cake.", "Она дала мне кофе и торт.", ["a", "a"]],
+            ["I see ___ book in ___ hand. Is ___ book interesting?", "Я вижу книгу в твоей руке. Книга интересная?", ["a", "your", "the"]],
+            ["She bought ___ meat, ___ butter, and ___ potatoes.", "Она купила мясо, масло и картофель.", ["", "", ""]],
+            ["___ soup is cold, but ___ sandwich is hot.", "Суп холодный, но сэндвич горячий.", ["The", "the"]],
+            ["I have ___ idea about ___ solution.", "У меня есть идея о решении.", ["an", "the"]],
+            ["There is ___ cat on ___ roof.", "На крыше кошка.", ["a", "the"]],
+            ["He wants ___ computer and ___ mouse.", "Он хочет компьютер и мышь.", ["a", "a"]],
+            ["___ cake was delicious, but ___ tea was cold.", "Торт был вкусным, но чай холодным.", ["The", "the"]],
+
+
+
+            // 3. Устоявшиеся выражения без артикля
+            ["We are ___ home.", "Мы дома.", ["-"]],
+            ["My brother is not ___ home; he is ___ school.", "Моего брата нет дома, он в школе.", ["at", "at"]],
+            ["Her mother is ___ work. She is ___ doctor.", "Её мама на работе. Она доктор.", ["at", "a"]],
+            ["He has ___ child.", "У него есть ребёнок.", ["a"]],
+            ["Is your father ___ home? – No, he is ___ work.", "Твой отец дома? — Нет, он на работе.", ["", "at"]],
+            ["Where is your brother? – He is ___ home.", "Где твой брат? – Он дома.", ["-"]],
+            ["I study ___ English in the evening.", "Я изучаю английский вечером.", ["-"]],
+            ["We learned ___ geography at ___ school.", "Мы изучали географию в школе.", ["", ""]],
+            ["He plays ___ football every day after ___ school.", "Он играет в футбол каждый день после школы.", ["", ""]],
+            ["She goes ___ shopping after ___ work.", "Она ходит за покупками после работы.", ["", ""]],
+
+            // 4. Артикль ставится перед прилагательным
+            ["I have ___ large family.", "У меня большая семья.", ["a"]],
+            ["My granny often tells us ___ long and interesting stories.", "Моя бабушка часто рассказывает нам длинные и интересные истории.", [""]],
+            ["My father is an engineer. He works at ___ factory. The factory is large.", "Мой отец инженер. Он работает на заводе. Завод большой.", ["the"]],
+            ["Her sister is at school. She is ___ good pupil.", "Ее сестра в школе. Она хорошая ученица.", ["a"]],
+            ["My cousin’s cat has ___ two kittens. The cat likes milk. The kittens like milk, too.", "У кошки моего двоюродного брата есть два котенка. Кошка любит молоко. Котята тоже любят молоко.", [""]],
+
+
+            // 5. Конструкции с неопределённым артиклем
+            ["We have ___ big dog. ___ dog is very clever.", "У нас большая собака. Собака очень умная.", ["a", "The"]],
+            ["My friend has ___ very good computer.", "У моего друга очень хороший компьютер.", ["a"]],
+            ["This boy is ___ student.", "Этот мальчик студент.", ["a"]],
+            ["My sister is ___ secretary.", "Моя сестра секретарь.", ["a"]],
+            ["This is ___ difficult question.", "Это сложный вопрос.", ["a"]],
+            ["Do you see ___ little girl with ___ ball?", "Ты видишь маленькую девочку с большим мячом?", ["a", "a"]],
+            ["She is ___ pupil of our school.", "Она ученица нашей школы.", ["a"]],
+            ["There was ___ flower in this vase yesterday.", "В этой вазе вчера был цветок.", ["a"]],
+            ["Where is ___ flower now?", "Где цветок сейчас?", ["the"]],
+            ["I have ___ idea.", "У меня есть идея.", ["an"]],
+
+            // 6. Названия месяцев и дней недели без артикля
+            ["My birthday is in ___ June.", "Мой день рождения в июне.", ["-"]],
+            ["We have a meeting on ___ Monday.", "У нас встреча в понедельник.", ["-"]],
+            ["___ summer is my favorite season.", "Лето — мое любимое время года.", ["-"]],
+            ["I usually visit my grandparents in ___ August.", "Я обычно навещаю бабушку и дедушку в августе.", ["-"]],
+            ["She was born on ___ Friday.", "Она родилась в пятницу.", ["-"]],
+            ["I have a test on ___ Wednesday.", "У меня тест в среду.", ["-"]],
+            ["We are planning a trip in ___ December.", "Мы планируем поездку в декабре.", ["-"]],
+            ["He came to visit us last ___ Saturday.", "Он навестил нас в прошлую субботу.", ["-"]],
+            ["We are going to the concert on ___ Thursday.", "Мы идем на концерт в четверг.", ["-"]],
+            ["She finished the project in ___ February.", "Она закончила проект в феврале.", ["-"]],
+
+            // 7. Артикль "the" с порядковыми числительными
+            ["Our classroom is on ___ second floor.", "Наш класс находится на втором этаже.", ["the"]],
+            ["Today is ___ third of May.", "Сегодня третье мая.", ["the"]],
+            ["He finished ___ first task quickly.", "Он быстро закончил первое задание.", ["the"]],
+            ["She came in ___ last place.", "Она заняла последнее место.", ["the"]],
+            ["This is ___ fourth time I'm visiting this city.", "Это четвертый раз, когда я посещаю этот город.", ["the"]],
+            ["They live on ___ tenth floor.", "Они живут на десятом этаже.", ["the"]],
+            ["She won ___ first prize.", "Она выиграла первый приз.", ["the"]],
+            ["We are in ___ final round.", "Мы в финальном раунде.", ["the"]],
+            ["He got ___ second job offer.", "Он получил второе предложение о работе.", ["the"]],
+            ["They moved to ___ third apartment this year.", "Они переехали в третью квартиру в этом году.", ["the"]],
+
+            // 8. Артикль опускается при вопросительных местоимениях
+            ["What ___ color is your new car?", "Какого цвета твоя новая машина?", ["-"]],
+            ["Whose ___ book is this?", "Чья это книга?", ["-"]],
+            ["What ___ bus do you take to work?", "На каком автобусе ты ездишь на работу?", ["-"]],
+            ["Which ___ pen do you prefer?", "Какую ручку ты предпочитаешь?", ["-"]],
+            ["What ___ drink would you like?", "Какой напиток вы бы хотели?", ["-"]],
+            ["Whose ___ hat is on the table?", "Чья шляпа на столе?", ["-"]],
+            ["What ___ day is your birthday?", "Какого числа твой день рождения?", ["-"]],
+            ["Whose ___ car is parked outside?", "Чья машина припаркована снаружи?", ["-"]],
+            ["What ___ subject do you like the most?", "Какой предмет тебе больше всего нравится?", ["-"]],
+            ["Whose ___ phone is ringing?", "Чей телефон звонит?", ["-"]]
+         ];
+
+
+         const generateExercisesEasy = (() => {
+               let index = 0; 
+
+               return (exercises, exerciseForm) => {
+                  exercises.forEach(item => {
+                     index += 1;  
+
+                     let sentence = item[0].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[2][0]}')" />`);
+                     let answer = item[0].replace('___',item[2][0]);
+
+                     sentence += `— ${item[1]}
+                     <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>
+                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                     <span class="text-span" id="clue-easy-${index}">${answer}</span>`;
+                     exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                  });
+               };
+         })();
+
+         function generateExercisesEasy2(exercises, exerciseForm) {
+            let index = 0;
+            exercises.forEach(item => {
+               index +=1;
+                  let sentence = item[0];
+                  let answers = item[2];
+                  let origin = sentence;
+                  answers.forEach(answer => {
+                     sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                     origin = origin.replace('___',answer);
+                  });
+
+                  exerciseForm.innerHTML += `<p>${sentence} - ${item[1]}
+                     <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${origin}")'>
+                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                     <span class="text-span" id="clue-easy-2-${index}">${origin}</span>
+                     </p>`;
+               });
+         }
+
+         generateExercisesEasy(getRandomThird(exercises_articles_choice_easy), document.getElementById('exerciseForm_1'));
+         generateExercisesEasy(getRandomThird(exercises_geo_articles_easy), document.getElementById('exerciseForm_2'));
+         generateExercisesEasy(getRandomThird(exercises_context_articles_easy), document.getElementById('exerciseForm_3'));
+         generateExercisesEasy2(getRandomThird(mixed_articles_exercises), document.getElementById('exerciseForm_4'));
+         
+         function getRandomThird(arr) {
+               if (arr.length < 20){return arr}
+               const thirdLength = Math.ceil(arr.length / 3); 
+               const randomIndices = new Set(); 
+               while (randomIndices.size < thirdLength) {
+                  const randomIndex = Math.floor(Math.random() * arr.length);
+                  randomIndices.add(randomIndex);
+               }
+               const randomElements = Array.from(randomIndices).map(index => arr[index]);
+               return randomElements;
+         }
+
+         function checkAnswer(inputElement, correctAnswer) {
+               if (inputElement.value.length > 4){
+                  inputElement.style.width = (inputElement.value.length + 1) + 'ch';
+               }
+
+               const userAnswer = inputElement.value.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
+               const normalizedCorrectAnswer = correctAnswer.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
+
+               if (userAnswer === normalizedCorrectAnswer) {
+                  inputElement.className = 'input-size correct'; 
+               } else {
+                  inputElement.className = 'input-size incorrect'; 
+               }
+         }
+
+         function showClue(id) {
+               var el = document.getElementById(id);
+               el.style.visibility = "visible"; 
+
+               setTimeout(function() {
+                  el.style.visibility = "hidden";
+               }, 2000);
+         }
+
+         function playSentence(sentence){
+               practice.speak(sentence);
+         }
+      </script>
+
    </div>
 </body>
 </html>
