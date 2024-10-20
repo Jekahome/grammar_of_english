@@ -8,6 +8,39 @@
     
 </head>
 <body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .input-size {
+            width: 45px;
+            padding-left: 4px;
+            padding-right: 6px;
+            margin: 0px;
+            font-size: 16px;
+            box-sizing: content-box;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .result {
+            display: inline-block;
+            padding-left: 10px;
+        }
+
+        .text-span {
+            visibility: hidden;  
+            margin-left: 10px;
+        }
+        .icon {
+            cursor: pointer;  
+            width: 15px;  
+            height: 15px; 
+        }
+    </style>
     <script type="module" src="/grammar_of_english/firebase.js"></script>
     <script src="/grammar_of_english/preload.js"></script>
 
@@ -148,119 +181,317 @@
         <ul>
             <li>The flowers are not watered - Цветы не поливают.</li>
         </ul>
-        
-        <h2>Упражнение</h2>
-        
-        <ol>
-            <li>Поставить глаголы в правильную форму:
+
+
+        <h2>Наречия частоты в Present Simple</h2>
+
+        <p>Наречия частоты используются для того, чтобы показать, как часто происходит действие. 
+            В Present Simple эти наречия особенно важны для описания привычек, регулярных или повторяющихся действий.
+        </p>
+
+        <h3>Основные наречия частоты:</h3>
+        <table>
+        <thead>
+            <tr>
+            <th data-label="Наречие">Наречие</th>
+            <th data-label="Перевод">Перевод</th>
+            <th data-label="Частота">Частота</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td data-label="Наречие">Always</td>
+            <td data-label="Перевод">всегда</td>
+            <td data-label="Частота">100%</td>
+            </tr>
+            <tr>
+            <td data-label="Наречие">Usually</td>
+            <td data-label="Перевод">обычно</td>
+            <td data-label="Частота">90%</td>
+            </tr>
+            <tr>
+            <td data-label="Наречие">Often</td>
+            <td data-label="Перевод">часто</td>
+            <td data-label="Частота">70%</td>
+            </tr>
+            <tr>
+            <td data-label="Наречие">Sometimes</td>
+            <td data-label="Перевод">иногда</td>
+            <td data-label="Частота">50%</td>
+            </tr>
+            <tr>
+            <td data-label="Наречие">Rarely</td>
+            <td data-label="Перевод">редко</td>
+            <td data-label="Частота">20%</</td>
+            </tr>
+            <tr>
+            <td data-label="Наречие">Seldom</td>
+            <td data-label="Перевод">редко</td>
+            <td data-label="Частота">10%</td>
+            </tr>
+            <tr>
+            <td data-label="Наречие">Never</td>
+            <td data-label="Перевод">никогда</td>
+            <td data-label="Частота">0%</td>
+            </tr>
+        </tbody>
+        </table>
+
+        <h3>Порядок слов с наречиями частоты:</h3>
+        <ul>
+            <li><strong>Наречия частоты</strong> ставятся перед основным глаголом, но после глагола "to be".</li>
+            <li>Примеры:
                 <ul>
-                    <li>You watch - He watches</li>
-                    <li>I do - It</li>
-                    <li>I copy - She</li>
-                    <li>We go - He</li>
-                    <li>I guess - She</li>
-                    <li>I match - You</li>
+                <li>I <strong>always</strong> drink coffee in the morning.</li>
+                <li>He is <strong>never</strong> late.</li>
                 </ul>
             </li>
+        </ul>
+
+        <h3>Примеры с наречиями частоты:</h3>
+        <ul>
+            <li>She <strong>always</strong> brushes her teeth before bed.</li>
+            <li>We <strong>usually</strong> go to the park on Sundays.</li>
+            <li>He <strong>often</strong> visits his grandparents.</li>
+            <li>They <strong>sometimes</strong> watch movies together.</li>
+            <li>She <strong>rarely</strong> eats out.</li>
+            <li>I <strong>never</strong> smoke.</li>
+        </ul>
+
+        <h3>Можно ли ставить наречие частоты в начале или конце предложения?</h3> 
+        Да, такие наречия, как sometimes и usually, могут стоять в начале предложения для усиления.
+        <br>
+        Пример: Sometimes I go for a walk in the evening. — <i>Иногда я гуляю по вечерам.</i> (Но обычно это характерно для разговорного стиля.)
+
+        <h3>Частотные фразы (например, once a week, twice a month):</h3> 
+        Эти фразы обычно ставятся в конце предложения:
+        <br>
+        Пример: I go to the gym twice a week. — <i>Я хожу в спортзал дважды в неделю.</i>
+
+
+        <h2>Упражнения</h2>
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Заполнить пропуски, используя правильную форму глагола в Present Simple</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+        <details>
+            <summary>2: Заполнить пропуски отрицательной формой</summary>
+            <form id="exerciseForm_2"></form>
+        </details>
+        <details>
+            <summary>3: Заполнить пропуски вопросительной формой</summary>
+            <form id="exerciseForm_3"></form>
+        </details>
+        <details>
+            <summary>4: Заполнить пропуски правильной формой <code>do/does</code> или <code>don't/doesn't</code></summary>
+            <form id="exerciseForm_4"></form>
+        </details>
+        <details>
+            <summary>5: Заполнить пропуски наречием частоты</summary>
+            <form id="exerciseForm_5"></form>
+        </details>
+        <details>
+            <summary>6: Преобразовать</summary>
+            <form id="exerciseForm_6"></form>
+        </details>
         
-            <li>Составить предложения:
-                <ul>
-                    <li>(get up / 8.00) - He usually gets up at 8.00.</li>
-                    <li>(have breakfast / 9.00)</li>
-                    <li>(go to the swimming pool / 11.00)</li>
-                    <li>(have dinner / 14.00)</li>
-                    <li>(wash up / 15.00)</li>
-                    <li>(do his homework / 16.00)</li>
-                    <li>(play football / 18.00)</li>
-                    <li>(watch TV / 20.00)</li>
-                    <li>(go to bed / 21.00)</li>
-                </ul>
-            </li>
-        
-            <li>Вставить верный вспомогательный глагол:
-                <ul>
-                    <li>Do you eat apples every day?</li>
-                    <li>... he often play football?</li>
-                    <li>... they often go to the theatre?</li>
-                    <li>... she work on Saturdays?</li>
-                    <li>... he like milk?</li>
-                    <li>... you usually get up early?</li>
-                    <li>... he often eat fish?</li>
-                </ul>
-            </li>
-        
-            <li>Продолжить вопрос:
-                <ul>
-                    <li>(ice-cream) Do you like ice-cream?</li>
-                    <li>(apples)</li>
-                    <li>(dogs)</li>
-                    <li>(candies)</li>
-                    <li>(sing)</li>
-                </ul>
-            </li>
-        
-            <li>Задай вопрос:
-                <ul>
-                    <li>I go to school. And you? - Do you go to school?</li>
-                    <li>I like swimming. And you? - ...</li>
-                    <li>I watch TV every day. And you? - ...</li>
-                    <li>I play tennis very well. And you? - ...</li>
-                    <li>I often go to the cinema. And you? - ...</li>
-                    <li>I go to bed early. And you? - ...</li>
-                    <li>I have tea every morning. And you? - ...</li>
-                </ul>
-            </li>
-        
-            <li>Ответь кратко:
-                <ul>
-                    <li>Do you live in a big city?</li>
-                    <li>Do you like Mathematics?</li>
-                    <li>Does your mother speak English?</li>
-                    <li>Do you play the piano?</li>
-                    <li>Do you go to the swimming pool?</li>
-                </ul>
-            </li>
-        
-            <li>Преобразовать в отрицательные:
-                <ul>
-                    <li>He plays tennis every Saturday. - He doesn't play tennis every Saturday.</li>
-                    <li>I know the answer. - ...</li>
-                    <li>My mother likes music. - ...</li>
-                    <li>My friend's cat likes fish. - ...</li>
-                    <li>They go to the swimming pool every day. - ...</li>
-                    <li>She runs very fast. - ...</li>
-                    <li>We speak English. - ...</li>
-                    <li>My father speaks German. - ...</li>
-                </ul>
-            </li>
-        
-            <li>Преобразовать наоборот:
-                <ul>
-                    <li>I like fruit. - I don't like fruit.</li>
-                    <li>My father doesn't smoke. - My father smokes.</li>
-                    <li>I don't like ice-cream. - ...</li>
-                    <li>My brother goes swimming. - ...</li>
-                    <li>My mother doesn't like fish. - ...</li>
-                    <li>I play tennis on Sunday. - ...</li>
-                    <li>I don't go to the cinema. - ...</li>
-                    <li>My uncle knows Chinese. - ...</li>
-                </ul>
-            </li>
-        
-            <li>Ответить кратко и полно:
-                <ul>
-                    <li>Does he live in London? - No, he doesn't. He doesn't live in London.</li>
-                    <li>Do they drink milk? - Yes, ...</li>
-                    <li>Does she like dogs? - No, ...</li>
-                    <li>Does he travel every month? - Yes, ...</li>
-                    <li>Do you like music? - No, ...</li>
-                    <li>Does she speak German? - No, ...</li>
-                    <li>Does he do sport? - No, ...</li>
-                    <li>Does she drink coffee? - Yes, ...</li>
-                </ul>
-            </li>
-        </ol>        
+
 
     </div>
+    <script src='/grammar_of_english/practice.js'></script>
+    <script>
+
+        function recognition(id, recognition){
+            console.log(`id=${id} recognition=${recognition}`);
+            var el = document.getElementById(id);
+            el.value = recognition;
+            const inputEvent = new Event('input');
+            el.dispatchEvent(inputEvent);
+        }
+        let practice = new Practice({callback: recognition});
+
+        const exercises_present_simple_affirmative_easy = [
+            ["She ___ (go) to school every day.", "Она ходит в школу каждый день.", ["goes"]],
+            ["We ___ (like) pizza.", "Мы любим пиццу.", ["like"]],
+            ["He ___ (play) football on weekends.", "Он играет в футбол по выходным.", ["plays"]],
+            ["I ___ (read) books in the evening.", "Я читаю книги по вечерам.", ["read"]],
+            ["They ___ (work) in an office.", "Они работают в офисе.", ["work"]],
+            ["The sun ___ (rise) in the east.", "Солнце встает на востоке.", ["rises"]],
+            ["My father ___ (drive) a car to work.", "Мой отец ездит на работу на машине.", ["drives"]],
+            ["We ___ (study) English at school.", "Мы учим английский в школе.", ["study"]],
+            ["He ___ (eat) breakfast at 8 AM.", "Он завтракает в 8 утра.", ["eats"]],
+            ["The cat ___ (sleep) on the sofa.", "Кошка спит на диване.", ["sleeps"]],
+        ];
+
+        const exercises_present_simple_negative_easy = [
+            ["She ___ (not/go) to school every day.", "Она не ходит в школу каждый день.", ["does not go"]],
+            ["We ___ (not/like) pizza.", "Мы не любим пиццу.", ["do not like"]],
+            ["He ___ (not/play) football on weekends.", "Он не играет в футбол по выходным.", ["does not play"]],
+            ["I ___ (not/read) books in the evening.", "Я не читаю книги по вечерам.", ["do not read"]],
+            ["They ___ (not/work) in an office.", "Они не работают в офисе.", ["do not work"]],
+            ["The sun ___ (not/rise) in the west.", "Солнце не встает на западе.", ["does not rise"]],
+            ["My father ___ (not/drive) a car to work.", "Мой отец не ездит на работу на машине.", ["does not drive"]],
+            ["We ___ (not/study) French at school.", "Мы не учим французский в школе.", ["do not study"]],
+            ["He ___ (not/eat) breakfast at 7 AM.", "Он не завтракает в 7 утра.", ["does not eat"]],
+            ["The cat ___ (not/sleep) on the floor.", "Кошка не спит на полу.", ["does not sleep"]],
+        ];
+
+        const exercises_present_simple_questions_easy = [
+            ["___ she ___ (go) to school every day?", "Она ходит в школу каждый день?", ["Does", "go"]],
+            ["___ you ___ (like) pizza?", "Ты любишь пиццу?", ["Do", "like"]],
+            ["___ he ___ (play) football on weekends?", "Он играет в футбол по выходным?", ["Does", "play"]],
+            ["___ I ___ (read) books in the evening?", "Я читаю книги по вечерам?", ["Do", "read"]],
+            ["___ they ___ (work) in an office?", "Они работают в офисе?", ["Do", "work"]],
+            ["___ the sun ___ (rise) in the east?", "Солнце встает на востоке?", ["Does", "rise"]],
+            ["___ your father ___ (drive) a car to work?", "Твой отец ездит на работу на машине?", ["Does", "drive"]],
+            ["___ we ___ (study) English at school?", "Мы учим английский в школе?", ["Do", "study"]],
+            ["___ he ___ (eat) breakfast at 8 AM?", "Он завтракает в 8 утра?", ["Does", "eat"]],
+            ["___ the cat ___ (sleep) on the sofa?", "Кошка спит на диване?", ["Does", "sleep"]],
+        ];
+
+        const exercises_present_simple_do_does_easy = [
+            ["___ you like coffee?", "Ты любишь кофе?", ["Do"]],
+            ["She ___ play tennis.", "Она не играет в теннис.", ["doesn't"]],
+            ["___ they go to the gym?", "Они ходят в спортзал?", ["Do"]],
+            ["He ___ read newspapers.", "Он не читает газеты.", ["doesn't"]],
+            ["We ___ have a car.", "У нас нет машины.", ["don't"]],
+            ["___ your sister work here?", "Твоя сестра работает здесь?", ["Does"]],
+            ["I ___ like chocolate.", "Мне не нравится шоколад.", ["don't"]],
+            ["___ she drive a car?", "Она водит машину?", ["Does"]],
+            ["They ___ live in New York.", "Они не живут в Нью-Йорке.", ["don't"]],
+            ["___ it rain often?", "Часто идет дождь?", ["Does"]],
+        ];
+
+        const exercises_present_simple_adverbs_easy = [
+            ["He ___ (always/go) to work by bus.", "Он всегда ездит на работу на автобусе.", ["always goes"]],
+            ["I ___ (never/eat) fast food.", "Я никогда не ем фастфуд.", ["never eat"]],
+            ["They ___ (usually/play) football on Sundays.", "Они обычно играют в футбол по воскресеньям.", ["usually play"]],
+            ["We ___ (often/watch) movies in the evening.", "Мы часто смотрим фильмы по вечерам.", ["often watch"]],
+            ["She ___ (sometimes/read) books in the park.", "Она иногда читает книги в парке.", ["sometimes reads"]],
+            ["He ___ (rarely/drink) coffee.", "Он редко пьет кофе.", ["rarely drinks"]],
+            ["I ___ (always/wake) up early.", "Я всегда встаю рано.", ["always wake"]],
+            ["They ___ (never/go) to the beach.", "Они никогда не ходят на пляж.", ["never go"]],
+            ["We ___ (often/visit) our grandparents.", "Мы часто навещаем наших бабушку и дедушку.", ["often visit"]],
+            ["She ___ (sometimes/cook) dinner.", "Она иногда готовит ужин.", ["sometimes cooks"]],
+        ];
+
+        const exercises_present_simple_easy = [
+            // Утвердительное -> Отрицательное
+            ["She drinks coffee every morning. (отрицательное)", "Она пьет кофе каждое утро.", "She doesn't drink coffee every morning."],
+            ["They play tennis on weekends. (отрицательное)", "Они играют в теннис по выходным.", "They don't play tennis on weekends."],
+            ["He works at a bank. (отрицательное)", "Он работает в банке.", "He doesn't work at a bank."],
+            ["We live in New York. (отрицательное)", "Мы живем в Нью-Йорке.", "We don't live in New York."],
+            ["The train leaves at 9 a.m. (отрицательное)", "Поезд отправляется в 9 утра.", "The train doesn't leave at 9 a.m."],
+            
+            // Отрицательное -> Утвердительное
+            ["I don't watch TV in the evening. (утвердительное)", "Я не смотрю телевизор вечером.", "I watch TV in the evening."],
+            ["They don't speak Spanish. (утвердительное)", "Они не говорят по-испански.", "They speak Spanish."],
+            ["She doesn't like chocolate. (утвердительное)", "Она не любит шоколад.", "She likes chocolate."],
+            ["We don't go to the gym every day. (утвердительное)", "Мы не ходим в спортзал каждый день.", "We go to the gym every day."],
+            ["He doesn't read books. (утвердительное)", "Он не читает книги.", "He reads books."],
+
+            // Утвердительное -> Вопросительное
+            ["They travel to Europe every summer. (вопросительное)", "Они путешествуют в Европу каждое лето.", "Do they travel to Europe every summer?"],
+            ["She studies French. (вопросительное)", "Она учит французский.", "Does she study French?"],
+            ["He plays football on Fridays. (вопросительное)", "Он играет в футбол по пятницам.", "Does he play football on Fridays?"],
+            ["We need more time. (вопросительное)", "Нам нужно больше времени.", "Do we need more time?"],
+            ["The bus arrives at 8 p.m. (вопросительное)", "Автобус прибывает в 8 вечера.", "Does the bus arrive at 8 p.m.?"],
+
+            // Вопросительное -> Утвердительное
+            ["Do they like ice cream? (утвердительное)", "Они любят мороженое?", "They like ice cream."],
+            ["Does she live in London? (утвердительное)", "Она живет в Лондоне?", "She lives in London."],
+            ["Do you work here? (утвердительное)", "Ты работаешь здесь?", "You work here."],
+            ["Does he know the answer? (утвердительное)", "Он знает ответ?", "He knows the answer."],
+            ["Do we have a meeting today? (утвердительное)", "У нас сегодня встреча?", "We have a meeting today."],
+
+            // Вопросительное -> Отрицательное
+            ["Do they play the piano? (отрицательное)", "Они играют на пианино?", "They don't play the piano."],
+            ["Does she go to the gym? (отрицательное)", "Она ходит в спортзал?", "She doesn't go to the gym."],
+            ["Do you know this person? (отрицательное)", "Ты знаешь этого человека?", "You don't know this person."],
+            ["Does he drive a car? (отрицательное)", "Он водит машину?", "He doesn't drive a car."],
+            ["Do we need to hurry? (отрицательное)", "Нам нужно спешить?", "We don't need to hurry."]
+        ];
+
+
+        const generateExercisesEasy = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+                    let sentence = item[0];
+                    let answers = item[2];
+                    let origin = item[0];
+                    answers.forEach(answer => {
+                        sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                        origin = origin.replace('___', answer);
+                    });
+
+                    sentence += `— ${item[1]}
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                    <span class="text-span" id="clue-easy-${index}">${removeParentheses(origin)}</span>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+        })();
+        const generateExercisesEasy2 = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+
+                    let sentence = `${removeParentheses(item[0])}— ${item[1]}
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                    <span class="text-span" id="clue-easy-2-${index}">${item[2]}</span>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+        })();
+
+
+        generateExercisesEasy(getRandomThird(exercises_present_simple_affirmative_easy), document.getElementById('exerciseForm_1'));
+        generateExercisesEasy(getRandomThird(exercises_present_simple_negative_easy), document.getElementById('exerciseForm_2'));
+        generateExercisesEasy(getRandomThird(exercises_present_simple_questions_easy), document.getElementById('exerciseForm_3'));
+        generateExercisesEasy(getRandomThird(exercises_present_simple_do_does_easy), document.getElementById('exerciseForm_4'));
+        generateExercisesEasy(getRandomThird(exercises_present_simple_adverbs_easy), document.getElementById('exerciseForm_5'));
+        generateExercisesEasy2(getRandomThird(exercises_present_simple_easy), document.getElementById('exerciseForm_6'));
+
+        function micSentence(micEl, id){
+            practice.micOn(micEl, id);
+        }
+
+        function getRandomThird(arr) {
+            if (arr.length < 20){return arr}
+            const thirdLength = Math.ceil(arr.length / 3); 
+            const randomIndices = new Set(); 
+            while (randomIndices.size < thirdLength) {
+                const randomIndex = Math.floor(Math.random() * arr.length);
+                randomIndices.add(randomIndex);
+            }
+            const randomElements = Array.from(randomIndices).map(index => arr[index]);
+            return randomElements;
+        }
+
+        function showClue(id) {
+            var el = document.getElementById(id);
+            el.style.visibility = "visible"; 
+
+            setTimeout(function() {
+                el.style.visibility = "hidden";
+            }, 2000);
+        }
+
+        function playSentence(sentence){
+            practice.speak(sentence);
+        }
+
+        function removeParentheses(text) {
+            return text.replace(/\(.*?\)/g, '').trim();
+        }
+    </script>
 </body>
 </html>
