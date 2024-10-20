@@ -374,22 +374,6 @@
         generateExercises(getRandomThird(exercises_indirect), document.getElementById('exerciseForm_2'));
         generateExercises(getRandomThird(exercises_direct.concat(exercises_indirect)), document.getElementById('exerciseForm_3'));
 
-
-        function checkAnswer(inputElement, correctAnswer) {
-            if (inputElement.value.length > 4){
-                inputElement.style.width = (inputElement.value.length + 1) + 'ch';
-            }
-
-            const userAnswer = inputElement.value.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
-            const normalizedCorrectAnswer = correctAnswer.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
-
-            if (userAnswer === normalizedCorrectAnswer) {
-                inputElement.className = 'input-size correct'; 
-            } else {
-                inputElement.className = 'input-size incorrect'; 
-            }
-        }
-
         function getRandomThird(arr) {
             if (arr.length < 20){return arr}
             const thirdLength = Math.ceil(arr.length / 3); 

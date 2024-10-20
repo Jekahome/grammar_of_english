@@ -461,8 +461,6 @@
             ["She goes shopping on Saturdays. (воп.)", "Она ходит за покупками по субботам.", "Does she go shopping on Saturdays?"],
             ["They have lunch at noon. (воп.)", "Они обедают в полдень.", "Do they have lunch at noon?"],
 
-
-
             // Вопросительное -> Утвердительное
             ["Do they like ice cream? (утв.)", "Они любят мороженое?", "They like ice cream."],
             ["Does she live in London? (утв.)", "Она живет в Лондоне?", "She lives in London."],
@@ -477,7 +475,6 @@
             ["Does he drive a car? (отр.)", "Он водит машину?", "He doesn't drive a car."],
             ["Do we need to hurry? (отр.)", "Нам нужно спешить?", "We don't need to hurry."]
         ];
-
 
         const generateExercisesEasy = (() => {
             let index = 0; 
@@ -501,6 +498,7 @@
                 });
             };
         })();
+
         const generateExercisesEasy2 = (() => {
             let index = 0; 
 
@@ -516,7 +514,6 @@
                 });
             };
         })();
-
 
         generateExercisesEasy(getRandomThird(exercises_present_simple_affirmative_easy), document.getElementById('exerciseForm_1'));
         generateExercisesEasy(getRandomThird(exercises_present_simple_negative_easy), document.getElementById('exerciseForm_2'));
