@@ -8,6 +8,39 @@
     
 </head>
 <body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .input-size {
+            width: 45px;
+            padding-left: 4px;
+            padding-right: 6px;
+            margin: 0px;
+            font-size: 16px;
+            box-sizing: content-box;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .result {
+            display: inline-block;
+            padding-left: 10px;
+        }
+
+        .text-span {
+            visibility: hidden;  
+            margin-left: 10px;
+        }
+        .icon {
+            cursor: pointer;  
+            width: 15px;  
+            height: 15px; 
+        }
+    </style>
     <script type="module" src="/grammar_of_english/firebase.js"></script>
     <script src="/grammar_of_english/preload.js"></script>
 
@@ -124,120 +157,871 @@
         </ul>
 
         <h2>Упражнение</h2>
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Заполнить пропуски, используя правильную форму глагола в Past Simple</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+        <details>
+            <summary>2: Преобразовать</summary>
+            <form id="exerciseForm_2"></form>
+        </details>
+        <details>
+            <summary>3: Заполнить пропуски, используя правильную форму глагола в Past Simple</summary>
+            <form id="exerciseForm_3"></form>
+        </details>
+        <details>
+            <summary>4: Преобразовать в Past Simple</summary>
+            <form id="exerciseForm_4"></form>
+        </details>
 
-        <ol>
-        <li>Поставить глаголы в Past Simple Tense
-            <ul>
-            <li>hurry - hurried</li>
-            <li>cry -</li>
-            <li>stop -</li>
-            <li>play -</li>
-            <li>marry -</li>
-            <li>work -</li>
-            <li>dry -</li>
-            <li>travel -</li>
-            <li>hop -</li>
-            <li>need -</li>
-            <li>watch -</li>
-            <li>carry -</li>
-            <li>plan -</li>
-            <li>study -</li>
-            <li>enjoy -</li>
-            </ul>
-        </li>
+    <script src='/grammar_of_english/practice.js'></script>
+    <script>
 
-        <li>Переписать в Past Simple Tense
-            <ul>
-            <li>I watch TV every day. -</li>
-            <li>I play tennis every Sunday.</li>
-            <li>Jack lives in London</li>
-            <li>My father works for a big company. -</li>
-            <li>I want to be an architect. -</li>
-            <li>My mother is an economist. -</li>
-            <li>We are tired today. -</li>
-            <li>I study English at school.</li>
-            </ul>
-        </li>
+        function recognition(id, recognition){
+            console.log(`id=${id} recognition=${recognition}`);
+            var el = document.getElementById(id);
+            el.value = recognition;
+            const inputEvent = new Event('input');
+            el.dispatchEvent(inputEvent);
+        }
 
-        <li>Заполнить пропуски (start, watch, finish, play, die, snow, rain, open, look, laugh, smoke, be, want, ask, die):
-            <ul>
-            <li>My brother ... TV last night.</li>
-            <li>The concert last night ... at 7.30 and ... at 11 p.m.</li>
-            <li>William Shakespeare ... in 1616.</li>
-            <li>When my sister ... a child, she ... to be a doctor.</li>
-            <li>It ... heavily on Sunday, so we couldn't go to the park.</li>
-            <li>Yesterday the weather was good, so we ... tennis.</li>
-            <li>It was hot in the room, so I ... Tom to open the window.</li>
-            <li>Kevin ... the door and ... in.</li>
-            <li>Bernie ... a lot, that is why he ... young.</li>
-            <li>The story was so funny that everybody ...</li>
-            <li>It ... a lot last winter and everything was white.</li>
-            </ul>
-        </li>
+        let practice = new Practice({callback: recognition});
 
-        <li>Написать верную форму глагола
-            <ul>
-            <li>Yesterday I (have) a very interesting day.</li>
-            <li>I (get up) at 7 o'clock, (wash) my face, (clean) my teeth and (have) breakfast.</li>
-            <li>Then I (go) to school.</li>
-            <li>At school we (celebrate) Halloween.</li>
-            <li>I (be) a pumpkin and my friend Kate (be) a witch.</li>
-            <li>After the play we (eat) cakes and (drink) juice.</li>
-            <li>We (laugh) a lot and (have) a lot of fun.</li>
-            <li>After school I (go) home.</li>
-            <li>I (tell) my parents about my day, we (watch) TV and then I (take) a shower and (go) to bed.</li>
-            <li>I (be) very happy.</li>
-            </ul>
-        </li>
+        const exercises_past_simple_affirmative_easy = [
+            ["She ___ (visit) her grandmother last weekend.", "Она навестила свою бабушку на прошлых выходных.", ["visited"]],
+            ["We ___ (see) a great movie yesterday.", "Мы посмотрели отличный фильм вчера.", ["saw"]],
+            ["He ___ (buy) a new car last month.", "Он купил новую машину в прошлом месяце.", ["bought"]],
+            ["They ___ (go) to Paris last summer.", "Они ездили в Париж прошлым летом.", ["went"]],
+            ["I ___ (meet) my friend at the park.", "Я встретил своего друга в парке.", ["met"]],
+            ["The company ___ (hire) a new employee last week.", "Компания наняла нового сотрудника на прошлой неделе.", ["hired"]],
+            ["She ___ (finish) her homework before dinner.", "Она закончила домашнюю работу перед ужином.", ["finished"]],
+            ["He ___ (eat) a sandwich for lunch.", "Он съел бутерброд на обед.", ["ate"]],
+            ["We ___ (move) to a new house in 2020.", "Мы переехали в новый дом в 2020 году.", ["moved"]],
+            ["They ___ (start) the project on Monday.", "Они начали проект в понедельник.", ["started"]],
 
-        <li>Подставить глаголы (begin, move, study, do, play, participate, win, enter, be, leave, take, attend, go)
-            <ul>
-            <li>Brad Pitt ... born on 18 December 1963 in Oklahoma but soon his family ... to Springfield, Missouri.</li>
-            <li>The boy ... Kickapoo High School.</li>
-            <li>At school he ... sports - he ... golf and tennis.</li>
-            <li>He ... in school debates and musicals.</li>
-            <li>After school, in 1982, Brad ... the University of Missouri.</li>
-            <li>He ... journalism and advertising, but his love for films ... so great that two weeks before graduating Brad ... the university and ... to Los Angeles.</li>
-            <li>He ... acting lessons there.</li>
-            <li>The future film star ... his onscreen career in 1987.</li>
-            <li>In 2011 Brad Pitt ... the Best Actor award.</li>
-            </ul>
-        </li>
+            ["She ___ (not/visit) her grandmother last weekend.", "Она не навестила свою бабушку на прошлых выходных.", ["did not visit"]],
+            ["We ___ (not/see) a great movie yesterday.", "Мы не посмотрели отличный фильм вчера.", ["did not see"]],
+            ["He ___ (not/buy) a new car last month.", "Он не купил новую машину в прошлом месяце.", ["did not buy"]],
+            ["They ___ (not/go) to Paris last summer.", "Они не ездили в Париж прошлым летом.", ["did not go"]],
+            ["I ___ (not/meet) my friend at the park.", "Я не встретил своего друга в парке.", ["did not meet"]],
+            ["The company ___ (not/hire) a new employee last week.", "Компания не наняла нового сотрудника на прошлой неделе.", ["did not hire"]],
+            ["She ___ (not/finish) her homework before dinner.", "Она не закончила домашнюю работу перед ужином.", ["did not finish"]],
+            ["He ___ (not/eat) a sandwich for lunch.", "Он не съел бутерброд на обед.", ["did not eat"]],
+            ["We ___ (not/move) to a new house in 2020.", "Мы не переехали в новый дом в 2020 году.", ["did not move"]],
+            ["They ___ (not/start) the project on Monday.", "Они не начали проект в понедельник.", ["did not start"]],
 
-        <li>Инверсия предложения:
-            <ul>
-            <li>I didn't see an interesting film yesterday - ...</li>
-            <li>I read an interesting book yesterday - ...</li>
-            <li>I played football yesterday - ...</li>
-            <li>I went to the country yesterday - ...</li>
-            <li>I didn't go to school yesterday - ...</li>
-            <li>I played computer games yesterday - ...</li>
-            <li>I bought a new book yesterday - ...</li>
-            <li>I didn't study English yesterday - ...</li>
-            </ul>
-        </li>
+            ["___ she ___ (visit) her grandmother last weekend?", "Она навестила свою бабушку на прошлых выходных?", ["Did", "visit"]],
+            ["___ you ___ (see) a great movie yesterday?", "Ты посмотрел отличный фильм вчера?", ["Did", "see"]],
+            ["___ he ___ (buy) a new car last month?", "Он купил новую машину в прошлом месяце?", ["Did", "buy"]],
+            ["___ they ___ (go) to Paris last summer?", "Они ездили в Париж прошлым летом?", ["Did", "go"]],
+            ["___ I ___ (meet) my friend at the park?", "Я встретил своего друга в парке?", ["Did", "meet"]],
+            ["___ the company ___ (hire) a new employee last week?", "Компания наняла нового сотрудника на прошлой неделе?", ["Did", "hire"]],
+            ["___ she ___ (finish) her homework before dinner?", "Она закончила домашнюю работу перед ужином?", ["Did", "finish"]],
+            ["___ he ___ (eat) a sandwich for lunch?", "Он съел бутерброд на обед?", ["Did", "eat"]],
+            ["___ we ___ (move) to a new house in 2020?", "Мы переехали в новый дом в 2020 году?", ["Did", "move"]],
+            ["___ they ___ (start) the project on Monday?", "Они начали проект в понедельник?", ["Did", "start"]],
+ 
+        ];
 
-        <li>Заполнить пропуски:
-            <ul>
-            <li>When did you start (you start) acting in films?</li>
-            <li>What was (be) your first film?</li>
-            <li>Where (you live) when you were a child?</li>
-            <li>(you have) many friends now?</li>
-            <li>When (you get) married?</li>
-            <li>(your wife act) in films too?</li>
-            <li>When (be) your first child born?</li>
-            </ul>
-        </li>
 
-        <li>Какие действия я выполнил вчера (do my homework, read an interesting book, watch TV, go to the country, take a shower, cook breakfast, go to school):
-            <ul>
-            <li>I didn't watch TV yesterday</li>
-            <li>I read an interesting book yesterday</li>
-            <li>...</li>
-            </ul>
-        </li>
-        </ol>
+        const exercises_past_simple_affirmative_to_questions_negative_easy = [
+            // Утвердительное -> Вопросительное
+            ["They traveled to Europe last year. (воп.)", "Они путешествовали в Европу в прошлом году.", "Did they travel to Europe last year?"],
+            ["She studied French. (воп.)", "Она учила французский.", "Did she study French?"],
+            ["He played football yesterday. (воп.)", "Он играл в футбол вчера.", "Did he play football yesterday?"],
+            
+            // Утвердительное -> Отрицательное
+            ["They traveled to Europe last year. (отр.)", "Они путешествовали в Европу в прошлом году.", "They did not travel to Europe last year."],
+            ["She studied French. (отр.)", "Она учила французский.", "She did not study French."],
+            ["He played football yesterday. (отр.)", "Он играл в футбол вчера.", "He did not play football yesterday."],
 
+            ["Did they travel to Europe last year? (отр.)", "Они путешествовали в Европу в прошлом году.", "They did not travel to Europe last year."],
+            ["Did she study French? (отр.)", "Она учила французский.", "She did not study French."],
+            ["Did he play football yesterday? (отр.)", "Он играл в футбол вчера.", "He did not play football yesterday."],
+            ["Did they eat at that restaurant? (отр.)", "Они поели в том ресторане.", "They did not eat at that restaurant."],
+            ["Did she finish her homework? (отр.)", "Она закончила свое домашнее задание.", "She did not finish her homework."],
+            ["Did he go to the party? (отр.)", "Он пошел на вечеринку.", "He did not go to the party."],
+            ["Did they watch a movie? (отр.)", "Они посмотрели фильм.", "They did not watch a movie."],
+            ["Did she call you last night? (отр.)", "Она звонила тебе прошлой ночью.", "She did not call you last night."],
+            ["Did he buy a new car? (отр.)", "Он купил новую машину.", "He did not buy a new car."],
+            ["Did they meet the new teacher? (отр.)", "Они встретили нового учителя.", "They did not meet the new teacher."],
+
+            ["Did they travel to Europe last year? (утв.)", "Они путешествовали в Европу в прошлом году.", "They traveled to Europe last year."],
+            ["Did she study French? (утв.)", "Она учила французский.", "She studied French."],
+            ["Did he play football yesterday? (утв.)", "Он играл в футбол вчера.", "He played football yesterday."],
+            ["Did they eat at that restaurant? (утв.)", "Они поели в том ресторане.", "They ate at that restaurant."],
+            ["Did she finish her homework? (утв.)", "Она закончила свое домашнее задание.", "She finished her homework."],
+            ["Did he go to the party? (утв.)", "Он пошел на вечеринку.", "He went to the party."],
+            ["Did they watch a movie? (утв.)", "Они посмотрели фильм.", "They watched a movie."],
+            ["Did she call you last night? (утв.)", "Она звонила тебе прошлой ночью.", "She called you last night."],
+            ["Did he buy a new car? (утв.)", "Он купил новую машину.", "He bought a new car."],
+            ["Did they meet the new teacher? (утв.)", "Они встретили нового учителя.", "They met the new teacher."],
+
+            ["They traveled to Europe last year. (воп.)", "Они путешествовали в Европу в прошлом году.", "Did they travel to Europe last year?"],
+            ["She studied French. (воп.)", "Она учила французский.", "Did she study French?"],
+            ["He played football yesterday. (воп.)", "Он играл в футбол вчера.", "Did he play football yesterday?"],
+            ["They ate at that restaurant. (воп.)", "Они поели в том ресторане.", "Did they eat at that restaurant?"],
+            ["She finished her homework. (воп.)", "Она закончила свое домашнее задание.", "Did she finish her homework?"],
+            ["He went to the party. (воп.)", "Он пошел на вечеринку.", "Did he go to the party?"],
+            ["They watched a movie. (воп.)", "Они посмотрели фильм.", "Did they watch a movie?"],
+            ["She called you last night. (воп.)", "Она звонила тебе прошлой ночью.", "Did she call you last night?"],
+            ["He bought a new car. (воп.)", "Он купил новую машину.", "Did he buy a new car?"],
+            ["They met the new teacher. (воп.)", "Они встретили нового учителя.", "Did they meet the new teacher?"],
+
+            ["They did not travel to Europe last year. (утв.)", "Они путешествовали в Европу в прошлом году.", "They traveled to Europe last year."],
+            ["She did not study French. (утв.)", "Она учила французский.", "She studied French."],
+            ["He did not play football yesterday. (утв.)", "Он играл в футбол вчера.", "He played football yesterday."],
+            ["They did not eat at that restaurant. (утв.)", "Они поели в том ресторане.", "They ate at that restaurant."],
+            ["She did not finish her homework. (утв.)", "Она закончила свое домашнее задание.", "She finished her homework."],
+            ["He did not go to the party. (утв.)", "Он пошел на вечеринку.", "He went to the party."],
+            ["They did not watch a movie. (утв.)", "Они посмотрели фильм.", "They watched a movie."],
+            ["She did not call you last night. (утв.)", "Она звонила тебе прошлой ночью.", "She called you last night."],
+            ["He did not buy a new car. (утв.)", "Он купил новую машину.", "He bought a new car."],
+            ["They did not meet the new teacher. (утв.)", "Они встретили нового учителя.", "They met the new teacher."],
+
+            ["They traveled to Europe last year. (отр.)", "Они путешествовали в Европу в прошлом году.", "They did not travel to Europe last year."],
+            ["She studied French. (отр.)", "Она учила французский.", "She did not study French."],
+            ["He played football yesterday. (отр.)", "Он играл в футбол вчера.", "He did not play football yesterday."],
+            ["They ate at that restaurant. (отр.)", "Они поели в том ресторане.", "They did not eat at that restaurant."],
+            ["She finished her homework. (отр.)", "Она закончила свое домашнее задание.", "She did not finish her homework."],
+            ["He went to the party. (отр.)", "Он пошел на вечеринку.", "He did not go to the party."],
+            ["They watched a movie. (отр.)", "Они посмотрели фильм.", "They did not watch a movie."],
+            ["She called you last night. (отр.)", "Она звонила тебе прошлой ночью.", "She did not call you last night."],
+            ["He bought a new car. (отр.)", "Он купил новую машину.", "He did not buy a new car."],
+            ["They met the new teacher. (отр.)", "Они встретили нового учителя.", "They did not meet the new teacher."],
+        ];
+
+
+        const irregular_verbs_exercises = [
+            // arise
+            ["He ___ (arise) early this morning.", "Он встал рано этим утром.", ["arose"]],
+            ["He ___ (not/arise) early this morning.", "Он не встал рано этим утром.", ["did not arise"]],
+            ["___ he ___ (arise) early this morning?", "Он встал рано этим утром?", ["Did", "arise"]],
+
+            // awake
+            ["She ___ (awake) at 7 AM.", "Она проснулась в 7 утра.", ["awoke"]],
+            ["She ___ (not/awake) at 7 AM.", "Она не проснулась в 7 утра.", ["did not awake"]],
+            ["___ she ___ (awake) at 7 AM?", "Она проснулась в 7 утра?", ["Did", "awake"]],
+
+            // be
+            ["He ___ (be) tired yesterday.", "Он был уставшим вчера.", ["was"]],
+            ["He ___ (not/be) tired yesterday.", "Он не был уставшим вчера.", ["was not"]],
+            ["___ he ___ (be) tired yesterday?", "Он был уставшим вчера?", ["Was", "be"]],
+
+            // bear
+            ["She ___ (bear) the pain bravely.", "Она стойко вынесла боль.", ["bore"]],
+            ["She ___ (not/bear) the pain bravely.", "Она не вынесла боль стойко.", ["did not bear"]],
+            ["___ she ___ (bear) the pain bravely?", "Она вынесла боль стойко?", ["Did", "bear"]],
+
+            // beat
+            ["He ___ (beat) the drum loudly.", "Он громко бил в барабан.", ["beat"]],
+            ["He ___ (not/beat) the drum loudly.", "Он не бил громко в барабан.", ["did not beat"]],
+            ["___ he ___ (beat) the drum loudly?", "Он громко бил в барабан?", ["Did", "beat"]],
+
+            // become
+            ["She ___ (become) a doctor last year.", "Она стала врачом в прошлом году.", ["became"]],
+            ["She ___ (not/become) a doctor last year.", "Она не стала врачом в прошлом году.", ["did not become"]],
+            ["___ she ___ (become) a doctor last year?", "Она стала врачом в прошлом году?", ["Did", "become"]],
+
+            // begin
+            ["The class ___ (begin) at 9 AM.", "Урок начался в 9 утра.", ["began"]],
+            ["The class ___ (not/begin) at 9 AM.", "Урок не начался в 9 утра.", ["did not begin"]],
+            ["___ the class ___ (begin) at 9 AM?", "Урок начался в 9 утра?", ["Did", "begin"]],
+
+            // bend
+            ["He ___ (bend) the metal bar.", "Он согнул металлическую полосу.", ["bent"]],
+            ["He ___ (not/bend) the metal bar.", "Он не согнул металлическую полосу.", ["did not bend"]],
+            ["___ he ___ (bend) the metal bar?", "Он согнул металлическую полосу?", ["Did", "bend"]],
+
+            // bet
+            ["She ___ (bet) on the race.", "Она сделала ставку на гонку.", ["bet"]],
+            ["She ___ (not/bet) on the race.", "Она не сделала ставку на гонку.", ["did not bet"]],
+            ["___ she ___ (bet) on the race?", "Она сделала ставку на гонку?", ["Did", "bet"]],
+
+            // bind
+            ["He ___ (bind) the package with string.", "Он перевязал посылку веревкой.", ["bound"]],
+            ["He ___ (not/bind) the package with string.", "Он не перевязал посылку веревкой.", ["did not bind"]],
+            ["___ he ___ (bind) the package with string?", "Он перевязал посылку веревкой?", ["Did", "bind"]],
+
+            // bite
+            ["The dog ___ (bite) the mailman.", "Собака укусила почтальона.", ["bit"]],
+            ["The dog ___ (not/bite) the mailman.", "Собака не укусила почтальона.", ["did not bite"]],
+            ["___ the dog ___ (bite) the mailman?", "Собака укусила почтальона?", ["Did", "bite"]],
+
+            // bleed
+            ["He ___ (bleed) after the accident.", "Он кровоточил после аварии.", ["bled"]],
+            ["He ___ (not/bleed) after the accident.", "Он не кровоточил после аварии.", ["did not bleed"]],
+            ["___ he ___ (bleed) after the accident?", "Он кровоточил после аварии?", ["Did", "bleed"]],
+
+            // blow
+            ["The wind ___ (blow) hard last night.", "Ветер сильно дул прошлой ночью.", ["blew"]],
+            ["The wind ___ (not/blow) hard last night.", "Ветер не дул сильно прошлой ночью.", ["did not blow"]],
+            ["___ the wind ___ (blow) hard last night?", "Ветер сильно дул прошлой ночью?", ["Did", "blow"]],
+
+            // break
+            ["He ___ (break) the window.", "Он разбил окно.", ["broke"]],
+            ["He ___ (not/break) the window.", "Он не разбил окно.", ["did not break"]],
+            ["___ he ___ (break) the window?", "Он разбил окно?", ["Did", "break"]],
+
+            // breed
+            ["They ___ (breed) horses on the farm.", "Они разводили лошадей на ферме.", ["bred"]],
+            ["They ___ (not/breed) horses on the farm.", "Они не разводили лошадей на ферме.", ["did not breed"]],
+            ["___ they ___ (breed) horses on the farm?", "Они разводили лошадей на ферме?", ["Did", "breed"]],
+
+            // bring
+            ["She ___ (bring) flowers to the party.", "Она принесла цветы на вечеринку.", ["brought"]],
+            ["She ___ (not/bring) flowers to the party.", "Она не принесла цветы на вечеринку.", ["did not bring"]],
+            ["___ she ___ (bring) flowers to the party?", "Она принесла цветы на вечеринку?", ["Did", "bring"]],
+
+            // build
+            ["They ___ (build) a new house.", "Они построили новый дом.", ["built"]],
+            ["They ___ (not/build) a new house.", "Они не построили новый дом.", ["did not build"]],
+            ["___ they ___ (build) a new house?", "Они построили новый дом?", ["Did", "build"]],
+            
+            // buy
+            ["She ___ (buy) a new dress yesterday.", "Она купила новое платье вчера.", ["bought"]],
+            ["She ___ (not/buy) a new dress yesterday.", "Она не купила новое платье вчера.", ["did not buy"]],
+            ["___ she ___ (buy) a new dress yesterday?", "Она купила новое платье вчера?", ["Did", "buy"]],
+
+            // catch
+            ["He ___ (catch) the ball.", "Он поймал мяч.", ["caught"]],
+            ["He ___ (not/catch) the ball.", "Он не поймал мяч.", ["did not catch"]],
+            ["___ he ___ (catch) the ball?", "Он поймал мяч?", ["Did", "catch"]],
+
+            // choose
+            ["They ___ (choose) the best restaurant.", "Они выбрали лучший ресторан.", ["chose"]],
+            ["They ___ (not/choose) the best restaurant.", "Они не выбрали лучший ресторан.", ["did not choose"]],
+            ["___ they ___ (choose) the best restaurant?", "Они выбрали лучший ресторан?", ["Did", "choose"]],
+
+            // cling
+            ["The child ___ (cling) to his mother.", "Ребенок цеплялся за свою маму.", ["clung"]],
+            ["The child ___ (not/cling) to his mother.", "Ребенок не цеплялся за свою маму.", ["did not cling"]],
+            ["___ the child ___ (cling) to his mother?", "Ребенок цеплялся за свою маму?", ["Did", "cling"]],
+
+            // come
+            ["She ___ (come) to the party last night.", "Она пришла на вечеринку прошлой ночью.", ["came"]],
+            ["She ___ (not/come) to the party last night.", "Она не пришла на вечеринку прошлой ночью.", ["did not come"]],
+            ["___ she ___ (come) to the party last night?", "Она пришла на вечеринку прошлой ночью?", ["Did", "come"]],
+
+            // cost
+            ["The car ___ (cost) a lot of money.", "Машина стоила много денег.", ["cost"]],
+            ["The car ___ (not/cost) a lot of money.", "Машина не стоила много денег.", ["did not cost"]],
+            ["___ the car ___ (cost) a lot of money?", "Машина стоила много денег?", ["Did", "cost"]],
+
+            // cut
+            ["He ___ (cut) the paper with scissors.", "Он разрезал бумагу ножницами.", ["cut"]],
+            ["He ___ (not/cut) the paper with scissors.", "Он не разрезал бумагу ножницами.", ["did not cut"]],
+            ["___ he ___ (cut) the paper with scissors?", "Он разрезал бумагу ножницами?", ["Did", "cut"]],
+
+            // deal
+            ["They ___ (deal) with the issue quickly.", "Они быстро разобрались с проблемой.", ["dealt"]],
+            ["They ___ (not/deal) with the issue quickly.", "Они не разобрались с проблемой быстро.", ["did not deal"]],
+            ["___ they ___ (deal) with the issue quickly?", "Они быстро разобрались с проблемой?", ["Did", "deal"]],
+
+            // dig
+            ["He ___ (dig) a hole in the garden.", "Он выкопал яму в саду.", ["dug"]],
+            ["He ___ (not/dig) a hole in the garden.", "Он не выкопал яму в саду.", ["did not dig"]],
+            ["___ he ___ (dig) a hole in the garden?", "Он выкопал яму в саду?", ["Did", "dig"]],
+
+            // do
+            ["She ___ (do) her homework last night.", "Она сделала домашнее задание вчера вечером.", ["did"]],
+            ["She ___ (not/do) her homework last night.", "Она не сделала домашнее задание вчера вечером.", ["did not do"]],
+            ["___ she ___ (do) her homework last night?", "Она сделала домашнее задание вчера вечером?", ["Did", "do"]],
+
+            // draw
+            ["He ___ (draw) a picture of a tree.", "Он нарисовал картину дерева.", ["drew"]],
+            ["He ___ (not/draw) a picture of a tree.", "Он не нарисовал картину дерева.", ["did not draw"]],
+            ["___ he ___ (draw) a picture of a tree?", "Он нарисовал картину дерева?", ["Did", "draw"]],
+
+            // drink
+            ["She ___ (drink) a glass of water.", "Она выпила стакан воды.", ["drank"]],
+            ["She ___ (not/drink) a glass of water.", "Она не выпила стакан воды.", ["did not drink"]],
+            ["___ she ___ (drink) a glass of water?", "Она выпила стакан воды?", ["Did", "drink"]],
+
+            // drive
+            ["He ___ (drive) to the city yesterday.", "Он поехал в город вчера.", ["drove"]],
+            ["He ___ (not/drive) to the city yesterday.", "Он не поехал в город вчера.", ["did not drive"]],
+            ["___ he ___ (drive) to the city yesterday?", "Он поехал в город вчера?", ["Did", "drive"]],
+
+            // eat
+            ["They ___ (eat) dinner at 7 PM.", "Они поужинали в 7 вечера.", ["ate"]],
+            ["They ___ (not/eat) dinner at 7 PM.", "Они не поужинали в 7 вечера.", ["did not eat"]],
+            ["___ they ___ (eat) dinner at 7 PM?", "Они поужинали в 7 вечера?", ["Did", "eat"]],
+
+            // fall
+            ["He ___ (fall) off his bike.", "Он упал с велосипеда.", ["fell"]],
+            ["He ___ (not/fall) off his bike.", "Он не упал с велосипеда.", ["did not fall"]],
+            ["___ he ___ (fall) off his bike?", "Он упал с велосипеда?", ["Did", "fall"]],
+
+            // feed
+            ["She ___ (feed) the birds in the morning.", "Она покормила птиц утром.", ["fed"]],
+            ["She ___ (not/feed) the birds in the morning.", "Она не покормила птиц утром.", ["did not feed"]],
+            ["___ she ___ (feed) the birds in the morning?", "Она покормила птиц утром?", ["Did", "feed"]],
+
+            // feel
+            ["He ___ (feel) happy yesterday.", "Он чувствовал себя счастливым вчера.", ["felt"]],
+            ["He ___ (not/feel) happy yesterday.", "Он не чувствовал себя счастливым вчера.", ["did not feel"]],
+            ["___ he ___ (feel) happy yesterday?", "Он чувствовал себя счастливым вчера?", ["Did", "feel"]],
+
+            // fight
+            ["They ___ (fight) bravely in the war.", "Они мужественно сражались на войне.", ["fought"]],
+            ["They ___ (not/fight) bravely in the war.", "Они не сражались мужественно на войне.", ["did not fight"]],
+            ["___ they ___ (fight) bravely in the war?", "Они мужественно сражались на войне?", ["Did", "fight"]],
+
+            // find
+            ["He ___ (find) his keys on the table.", "Он нашел свои ключи на столе.", ["found"]],
+            ["He ___ (not/find) his keys on the table.", "Он не нашел свои ключи на столе.", ["did not find"]],
+            ["___ he ___ (find) his keys on the table?", "Он нашел свои ключи на столе?", ["Did", "find"]],
+
+            // flee
+            ["They ___ (flee) the country during the war.", "Они сбежали из страны во время войны.", ["fled"]],
+            ["They ___ (not/flee) the country during the war.", "Они не сбежали из страны во время войны.", ["did not flee"]],
+            ["___ they ___ (flee) the country during the war?", "Они сбежали из страны во время войны?", ["Did", "flee"]],
+
+            // fly
+            ["She ___ (fly) to Paris last week.", "Она полетела в Париж на прошлой неделе.", ["flew"]],
+            ["She ___ (not/fly) to Paris last week.", "Она не полетела в Париж на прошлой неделе.", ["did not fly"]],
+            ["___ she ___ (fly) to Paris last week?", "Она полетела в Париж на прошлой неделе?", ["Did", "fly"]],
+            
+            // forbid
+            ["He ___ (forbid) me to go there.", "Он запретил мне туда идти.", ["forbade"]],
+            ["He ___ (not/forbid) me to go there.", "Он не запретил мне туда идти.", ["did not forbid"]],
+            ["___ he ___ (forbid) you to go there?", "Он запретил тебе туда идти?", ["Did", "forbid"]],
+
+            // forget
+            ["She ___ (forget) to call him.", "Она забыла позвонить ему.", ["forgot"]],
+            ["She ___ (not/forget) to call him.", "Она не забыла позвонить ему.", ["did not forget"]],
+            ["___ she ___ (forget) to call him?", "Она забыла позвонить ему?", ["Did", "forget"]],
+
+            // forgive
+            ["They ___ (forgive) him for his mistake.", "Они простили его за ошибку.", ["forgave"]],
+            ["They ___ (not/forgive) him for his mistake.", "Они не простили его за ошибку.", ["did not forgive"]],
+            ["___ they ___ (forgive) him for his mistake?", "Они простили его за ошибку?", ["Did", "forgive"]],
+
+            // freeze
+            ["The water ___ (freeze) overnight.", "Вода замерзла за ночь.", ["froze"]],
+            ["The water ___ (not/freeze) overnight.", "Вода не замерзла за ночь.", ["did not freeze"]],
+            ["___ the water ___ (freeze) overnight?", "Вода замерзла за ночь?", ["Did", "freeze"]],
+
+            // get
+            ["He ___ (get) a new job.", "Он получил новую работу.", ["got"]],
+            ["He ___ (not/get) a new job.", "Он не получил новую работу.", ["did not get"]],
+            ["___ he ___ (get) a new job?", "Он получил новую работу?", ["Did", "get"]],
+
+            // give
+            ["She ___ (give) him a present.", "Она дала ему подарок.", ["gave"]],
+            ["She ___ (not/give) him a present.", "Она не дала ему подарок.", ["did not give"]],
+            ["___ she ___ (give) him a present?", "Она дала ему подарок?", ["Did", "give"]],
+
+            // go
+            ["They ___ (go) to the park.", "Они пошли в парк.", ["went"]],
+            ["They ___ (not/go) to the park.", "Они не пошли в парк.", ["did not go"]],
+            ["___ they ___ (go) to the park?", "Они пошли в парк?", ["Did", "go"]],
+
+            // grow
+            ["The plant ___ (grow) fast.", "Растение быстро выросло.", ["grew"]],
+            ["The plant ___ (not/grow) fast.", "Растение не выросло быстро.", ["did not grow"]],
+            ["___ the plant ___ (grow) fast?", "Растение быстро выросло?", ["Did", "grow"]],
+
+            // hang
+            ["He ___ (hang) the picture on the wall.", "Он повесил картину на стену.", ["hung"]],
+            ["He ___ (not/hang) the picture on the wall.", "Он не повесил картину на стену.", ["did not hang"]],
+            ["___ he ___ (hang) the picture on the wall?", "Он повесил картину на стену?", ["Did", "hang"]],
+
+            // have
+            ["I ___ (have) lunch at 1 PM.", "Я пообедал в 13:00.", ["had"]],
+            ["I ___ (not/have) lunch at 1 PM.", "Я не пообедал в 13:00.", ["did not have"]],
+            ["___ you ___ (have) lunch at 1 PM?", "Ты пообедал в 13:00?", ["Did", "have"]],
+
+            // hear
+            ["She ___ (hear) the news.", "Она услышала новости.", ["heard"]],
+            ["She ___ (not/hear) the news.", "Она не услышала новости.", ["did not hear"]],
+            ["___ she ___ (hear) the news?", "Она услышала новости?", ["Did", "hear"]],
+
+            // hide
+            ["He ___ (hide) behind the tree.", "Он спрятался за деревом.", ["hid"]],
+            ["He ___ (not/hide) behind the tree.", "Он не спрятался за деревом.", ["did not hide"]],
+            ["___ he ___ (hide) behind the tree?", "Он спрятался за деревом?", ["Did", "hide"]],
+
+            // hit
+            ["She ___ (hit) the ball hard.", "Она сильно ударила по мячу.", ["hit"]],
+            ["She ___ (not/hit) the ball hard.", "Она не ударила по мячу сильно.", ["did not hit"]],
+            ["___ she ___ (hit) the ball hard?", "Она сильно ударила по мячу?", ["Did", "hit"]],
+
+            // hold
+            ["He ___ (hold) the baby.", "Он держал ребенка.", ["held"]],
+            ["He ___ (not/hold) the baby.", "Он не держал ребенка.", ["did not hold"]],
+            ["___ he ___ (hold) the baby?", "Он держал ребенка?", ["Did", "hold"]],
+
+            // hurt
+            ["I ___ (hurt) my knee yesterday.", "Я повредил колено вчера.", ["hurt"]],
+            ["I ___ (not/hurt) my knee yesterday.", "Я не повредил колено вчера.", ["did not hurt"]],
+            ["___ you ___ (hurt) your knee yesterday?", "Ты повредил колено вчера?", ["Did", "hurt"]],
+
+            // keep
+            ["She ___ (keep) the secret.", "Она сохранила секрет.", ["kept"]],
+            ["She ___ (not/keep) the secret.", "Она не сохранила секрет.", ["did not keep"]],
+            ["___ she ___ (keep) the secret?", "Она сохранила секрет?", ["Did", "keep"]],
+
+            // know
+            ["They ___ (know) the answer.", "Они знали ответ.", ["knew"]],
+            ["They ___ (not/know) the answer.", "Они не знали ответ.", ["did not know"]],
+            ["___ they ___ (know) the answer?", "Они знали ответ?", ["Did", "know"]],
+
+            // lay
+            ["She ___ (lay) the table for dinner.", "Она накрыла стол к ужину.", ["laid"]],
+            ["She ___ (not/lay) the table for dinner.", "Она не накрыла стол к ужину.", ["did not lay"]],
+            ["___ she ___ (lay) the table for dinner?", "Она накрыла стол к ужину?", ["Did", "lay"]],
+
+            // lead
+            ["He ___ (lead) the team to victory.", "Он привел команду к победе.", ["led"]],
+            ["He ___ (not/lead) the team to victory.", "Он не привел команду к победе.", ["did not lead"]],
+            ["___ he ___ (lead) the team to victory?", "Он привел команду к победе?", ["Did", "lead"]],
+
+            // learn
+            ["She ___ (learn) the poem by heart.", "Она выучила стихотворение наизусть.", ["learnt"]],
+            ["She ___ (not/learn) the poem by heart.", "Она не выучила стихотворение наизусть.", ["did not learn"]],
+            ["___ she ___ (learn) the poem by heart?", "Она выучила стихотворение наизусть?", ["Did", "learn"]],
+
+            // leave
+            ["They ___ (leave) the party early.", "Они ушли с вечеринки рано.", ["left"]],
+            ["They ___ (not/leave) the party early.", "Они не ушли с вечеринки рано.", ["did not leave"]],
+            ["___ they ___ (leave) the party early?", "Они ушли с вечеринки рано?", ["Did", "leave"]],
+
+            // lend
+            ["He ___ (lend) me his book.", "Он одолжил мне свою книгу.", ["lent"]],
+            ["He ___ (not/lend) me his book.", "Он не одолжил мне свою книгу.", ["did not lend"]],
+            ["___ he ___ (lend) you his book?", "Он одолжил тебе свою книгу?", ["Did", "lend"]],
+
+            // let
+            ["She ___ (let) him go to the party.", "Она позволила ему пойти на вечеринку.", ["let"]],
+            ["She ___ (not/let) him go to the party.", "Она не позволила ему пойти на вечеринку.", ["did not let"]],
+            ["___ she ___ (let) him go to the party?", "Она позволила ему пойти на вечеринку?", ["Did", "let"]],
+
+
+            // lie
+            ["He ___ (lie) down on the bed.", "Он лег на кровать.", ["lay"]],
+            ["He ___ (not/lie) down on the bed.", "Он не лег на кровать.", ["did not lie"]],
+            ["___ he ___ (lie) down on the bed?", "Он лег на кровать?", ["Did", "lie"]],
+
+            // light
+            ["She ___ (light) the candles for dinner.", "Она зажгла свечи для ужина.", ["lit"]],
+            ["She ___ (not/light) the candles for dinner.", "Она не зажгла свечи для ужина.", ["did not light"]],
+            ["___ she ___ (light) the candles for dinner?", "Она зажгла свечи для ужина?", ["Did", "light"]],
+
+            // lose
+            ["He ___ (lose) his keys yesterday.", "Он потерял свои ключи вчера.", ["lost"]],
+            ["He ___ (not/lose) his keys yesterday.", "Он не потерял свои ключи вчера.", ["did not lose"]],
+            ["___ he ___ (lose) his keys yesterday?", "Он потерял свои ключи вчера?", ["Did", "lose"]],
+
+            // make
+            ["She ___ (make) a cake for the party.", "Она испекла торт для вечеринки.", ["made"]],
+            ["She ___ (not/make) a cake for the party.", "Она не испекла торт для вечеринки.", ["did not make"]],
+            ["___ she ___ (make) a cake for the party?", "Она испекла торт для вечеринки?", ["Did", "make"]],
+
+            // mean
+            ["He ___ (mean) to help, but he was late.", "Он хотел помочь, но опоздал.", ["meant"]],
+            ["He ___ (not/mean) to help.", "Он не собирался помогать.", ["did not mean"]],
+            ["___ he ___ (mean) to help?", "Он собирался помочь?", ["Did", "mean"]],
+
+            // meet
+            ["They ___ (meet) at the café.", "Они встретились в кафе.", ["met"]],
+            ["They ___ (not/meet) at the café.", "Они не встретились в кафе.", ["did not meet"]],
+            ["___ they ___ (meet) at the café?", "Они встретились в кафе?", ["Did", "meet"]],
+
+            // pay
+            ["She ___ (pay) the bill.", "Она оплатила счет.", ["paid"]],
+            ["She ___ (not/pay) the bill.", "Она не оплатила счет.", ["did not pay"]],
+            ["___ she ___ (pay) the bill?", "Она оплатила счет?", ["Did", "pay"]],
+
+            // put
+            ["He ___ (put) the book on the table.", "Он положил книгу на стол.", ["put"]],
+            ["He ___ (not/put) the book on the table.", "Он не положил книгу на стол.", ["did not put"]],
+            ["___ he ___ (put) the book on the table?", "Он положил книгу на стол?", ["Did", "put"]],
+
+            // read
+            ["She ___ (read) a book last night.", "Она прочитала книгу прошлой ночью.", ["read"]],
+            ["She ___ (not/read) a book last night.", "Она не прочитала книгу прошлой ночью.", ["did not read"]],
+            ["___ she ___ (read) a book last night?", "Она прочитала книгу прошлой ночью?", ["Did", "read"]],
+
+            // ride
+            ["He ___ (ride) his bike to school.", "Он ехал на велосипеде в школу.", ["rode"]],
+            ["He ___ (not/ride) his bike to school.", "Он не ехал на велосипеде в школу.", ["did not ride"]],
+            ["___ he ___ (ride) his bike to school?", "Он ехал на велосипеде в школу?", ["Did", "ride"]],
+
+            // ring
+            ["The phone ___ (ring) during the meeting.", "Телефон зазвонил во время собрания.", ["rang"]],
+            ["The phone ___ (not/ring) during the meeting.", "Телефон не звонил во время собрания.", ["did not ring"]],
+            ["___ the phone ___ (ring) during the meeting?", "Телефон звонил во время собрания?", ["Did", "ring"]],
+
+            // rise
+            ["The sun ___ (rise) at 6 AM.", "Солнце взошло в 6 утра.", ["rose"]],
+            ["The sun ___ (not/rise) at 6 AM.", "Солнце не взошло в 6 утра.", ["did not rise"]],
+            ["___ the sun ___ (rise) at 6 AM?", "Солнце взошло в 6 утра?", ["Did", "rise"]],
+
+            // run
+            ["He ___ (run) a marathon last year.", "Он пробежал марафон в прошлом году.", ["ran"]],
+            ["He ___ (not/run) a marathon last year.", "Он не пробежал марафон в прошлом году.", ["did not run"]],
+            ["___ he ___ (run) a marathon last year?", "Он пробежал марафон в прошлом году?", ["Did", "run"]],
+
+            // say
+            ["She ___ (say) goodbye and left.", "Она попрощалась и ушла.", ["said"]],
+            ["She ___ (not/say) goodbye.", "Она не попрощалась.", ["did not say"]],
+            ["___ she ___ (say) goodbye?", "Она попрощалась?", ["Did", "say"]],
+
+            // see
+            ["They ___ (see) a movie last night.", "Они посмотрели фильм прошлой ночью.", ["saw"]],
+            ["They ___ (not/see) a movie last night.", "Они не смотрели фильм прошлой ночью.", ["did not see"]],
+            ["___ they ___ (see) a movie last night?", "Они смотрели фильм прошлой ночью?", ["Did", "see"]],
+
+            // seek
+            ["He ___ (seek) advice from a friend.", "Он искал совета у друга.", ["sought"]],
+            ["He ___ (not/seek) advice from a friend.", "Он не искал совета у друга.", ["did not seek"]],
+            ["___ he ___ (seek) advice from a friend?", "Он искал совета у друга?", ["Did", "seek"]],
+
+            // sell
+            ["She ___ (sell) her car last week.", "Она продала свою машину на прошлой неделе.", ["sold"]],
+            ["She ___ (not/sell) her car last week.", "Она не продала свою машину на прошлой неделе.", ["did not sell"]],
+            ["___ she ___ (sell) her car last week?", "Она продала свою машину на прошлой неделе?", ["Did", "sell"]],
+
+            // send
+            ["He ___ (send) the email this morning.", "Он отправил письмо этим утром.", ["sent"]],
+            ["He ___ (not/send) the email this morning.", "Он не отправил письмо этим утром.", ["did not send"]],
+            ["___ he ___ (send) the email this morning?", "Он отправил письмо этим утром?", ["Did", "send"]],
+
+            // set
+            ["She ___ (set) the table for dinner.", "Она накрыла на стол к ужину.", ["set"]],
+            ["She ___ (not/set) the table for dinner.", "Она не накрыла на стол к ужину.", ["did not set"]],
+            ["___ she ___ (set) the table for dinner?", "Она накрыла на стол к ужину?", ["Did", "set"]],
+
+            // shake
+            ["He ___ (shake) hands with the guest.", "Он пожал руку гостю.", ["shook"]],
+            ["He ___ (not/shake) hands with the guest.", "Он не пожал руку гостю.", ["did not shake"]],
+            ["___ he ___ (shake) hands with the guest?", "Он пожал руку гостю?", ["Did", "shake"]],
+            
+            // shine
+            ["The sun ___ (shine) brightly today.", "Сегодня ярко светило солнце.", ["shone"]],
+            ["The sun ___ (not/shine) brightly today.", "Сегодня солнце не светило ярко.", ["did not shine"]],
+            ["___ the sun ___ (shine) brightly today?", "Солнце светило ярко сегодня?", ["Did", "shine"]],
+            // shoot
+            ["He ___ (shoot) the target last week.", "Он попал в цель на прошлой неделе.", ["shot"]],
+            ["He ___ (not/shoot) the target last week.", "Он не попал в цель на прошлой неделе.", ["did not shoot"]],
+            ["___ he ___ (shoot) the target last week?", "Он попал в цель на прошлой неделе?", ["Did", "shoot"]],
+
+            // show
+            ["She ___ (show) her painting at the gallery.", "Она показала свою картину в галерее.", ["showed"]],
+            ["She ___ (not/show) her painting at the gallery.", "Она не показала свою картину в галерее.", ["did not show"]],
+            ["___ she ___ (show) her painting at the gallery?", "Она показала свою картину в галерее?", ["Did", "show"]],
+
+            // shrink
+            ["The sweater ___ (shrink) in the wash.", "Свитер сел в стирке.", ["shrank"]],
+            ["The sweater ___ (not/shrink) in the wash.", "Свитер не сел в стирке.", ["did not shrink"]],
+            ["___ the sweater ___ (shrink) in the wash?", "Свитер сел в стирке?", ["Did", "shrink"]],
+
+            // shut
+            ["He ___ (shut) the door quietly.", "Он тихо закрыл дверь.", ["shut"]],
+            ["He ___ (not/shut) the door quietly.", "Он не тихо закрыл дверь.", ["did not shut"]],
+            ["___ he ___ (shut) the door quietly?", "Он тихо закрыл дверь?", ["Did", "shut"]],
+
+            // sing
+            ["They ___ (sing) a song at the party.", "Они спели песню на вечеринке.", ["sang"]],
+            ["They ___ (not/sing) a song at the party.", "Они не спели песню на вечеринке.", ["did not sing"]],
+            ["___ they ___ (sing) a song at the party?", "Они спели песню на вечеринке?", ["Did", "sing"]],
+
+            // sit
+            ["He ___ (sit) down for dinner.", "Он сел ужинать.", ["sat"]],
+            ["He ___ (not/sit) down for dinner.", "Он не сел ужинать.", ["did not sit"]],
+            ["___ he ___ (sit) down for dinner?", "Он сел ужинать?", ["Did", "sit"]],
+
+            // sleep
+            ["She ___ (sleep) for eight hours last night.", "Она спала восемь часов прошлой ночью.", ["slept"]],
+            ["She ___ (not/sleep) for eight hours last night.", "Она не спала восемь часов прошлой ночью.", ["did not sleep"]],
+            ["___ she ___ (sleep) for eight hours last night?", "Она спала восемь часов прошлой ночью?", ["Did", "sleep"]],
+
+            // slide
+            ["The ice ___ (slide) down the hill.", "Лед скользнул вниз по холму.", ["slid"]],
+            ["The ice ___ (not/slide) down the hill.", "Лед не скользнул вниз по холму.", ["did not slide"]],
+            ["___ the ice ___ (slide) down the hill?", "Лед скользнул вниз по холму?", ["Did", "slide"]],
+
+            // smell
+            ["The flowers ___ (smell) wonderful.", "Цветы пахли чудесно.", ["smelled"]],
+            ["The flowers ___ (not/smell) wonderful.", "Цветы не пахли чудесно.", ["did not smell"]],
+            ["___ the flowers ___ (smell) wonderful?", "Цветы пахли чудесно?", ["Did", "smell"]],
+
+            // speak
+            ["He ___ (speak) at the conference yesterday.", "Он выступал на конференции вчера.", ["spoke"]],
+            ["He ___ (not/speak) at the conference yesterday.", "Он не выступал на конференции вчера.", ["did not speak"]],
+            ["___ he ___ (speak) at the conference yesterday?", "Он выступал на конференции вчера?", ["Did", "speak"]],
+
+            // spell
+            ["She ___ (spell) her name correctly.", "Она правильно написала свое имя.", ["spelled"]],
+            ["She ___ (not/spell) her name correctly.", "Она неправильно написала свое имя.", ["did not spell"]],
+            ["___ she ___ (spell) her name correctly?", "Она правильно написала свое имя?", ["Did", "spell"]],
+
+            // spend
+            ["They ___ (spend) a lot of money last month.", "Они потратили много денег в прошлом месяце.", ["spent"]],
+            ["They ___ (not/spend) a lot of money last month.", "Они не потратили много денег в прошлом месяце.", ["did not spend"]],
+            ["___ they ___ (spend) a lot of money last month?", "Они потратили много денег в прошлом месяце?", ["Did", "spend"]],
+
+            // spill
+            ["She ___ (spill) coffee on the table.", "Она пролила кофе на стол.", ["spilled"]],
+            ["She ___ (not/spill) coffee on the table.", "Она не пролила кофе на стол.", ["did not spill"]],
+            ["___ she ___ (spill) coffee on the table?", "Она пролила кофе на стол?", ["Did", "spill"]],
+
+            // spin
+            ["He ___ (spin) the wheel.", "Он прокрутил колесо.", ["spun"]],
+            ["He ___ (not/spin) the wheel.", "Он не прокрутил колесо.", ["did not spin"]],
+            ["___ he ___ (spin) the wheel?", "Он прокрутил колесо?", ["Did", "spin"]],
+
+            // split
+            ["They ___ (split) the bill evenly.", "Они разделили счет поровну.", ["split"]],
+            ["They ___ (not/split) the bill evenly.", "Они не разделили счет поровну.", ["did not split"]],
+            ["___ they ___ (split) the bill evenly?", "Они разделили счет поровну?", ["Did", "split"]],
+
+            // spoil
+            ["The food ___ (spoil) quickly in the heat.", "Еда испортилась быстро от жары.", ["spoiled"]],
+            ["The food ___ (not/spoil) quickly in the heat.", "Еда не испортилась быстро от жары.", ["did not spoil"]],
+            ["___ the food ___ (spoil) quickly in the heat?", "Еда испортилась быстро от жары?", ["Did", "spoil"]],
+
+            // spread
+            ["They ___ (spread) the news yesterday.", "Они распространили новость вчера.", ["spread"]],
+            ["They ___ (not/spread) the news yesterday.", "Они не распространили новость вчера.", ["did not spread"]],
+            ["___ they ___ (spread) the news yesterday?", "Они распространили новость вчера?", ["Did", "spread"]],
+
+            // stand
+            ["He ___ (stand) in line for tickets.", "Он стоял в очереди за билетами.", ["stood"]],
+            ["He ___ (not/stand) in line for tickets.", "Он не стоял в очереди за билетами.", ["did not stand"]],
+            ["___ he ___ (stand) in line for tickets?", "Он стоял в очереди за билетами?", ["Did", "stand"]],
+
+            // steal
+            ["Someone ___ (steal) my wallet last night.", "Кто-то украл мой кошелек прошлой ночью.", ["stole"]],
+            ["Someone ___ (not/steal) my wallet last night.", "Кто-то не украл мой кошелек прошлой ночью.", ["did not steal"]],
+            ["___ someone ___ (steal) my wallet last night?", "Кто-то украл мой кошелек прошлой ночью?", ["Did", "steal"]],
+
+            // sting
+            ["The bee ___ (sting) him on the arm.", "Пчела укусила его за руку.", ["stung"]],
+            ["The bee ___ (not/sting) him on the arm.", "Пчела не укусила его за руку.", ["did not sting"]],
+            ["___ the bee ___ (sting) him on the arm?", "Пчела укусила его за руку?", ["Did", "sting"]],
+
+            // stink
+            ["The trash ___ (stink) after a week.", "Мусор начал вонять через неделю.", ["stank"]],
+            ["The trash ___ (not/stink) after a week.", "Мусор не начал вонять через неделю.", ["did not stink"]],
+            ["___ the trash ___ (stink) after a week?", "Мусор начал вонять через неделю?", ["Did", "stink"]],
+
+            // strike
+            ["He ___ (strike) the ball.", "Он ударил по мячу.", ["struck"]],
+            ["He ___ (not/strike) the ball.", "Он не ударил по мячу.", ["did not strike"]],
+            ["___ he ___ (strike) the ball?", "Он ударил по мячу?", ["Did", "strike"]],
+
+            // swear
+            ["She ___ (swear) to tell the truth.", "Она поклялась говорить правду.", ["swore"]],
+            ["She ___ (not/swear) to tell the truth.", "Она не поклялась говорить правду.", ["did not swear"]],
+            ["___ she ___ (swear) to tell the truth?", "Она поклялась говорить правду?", ["Did", "swear"]],
+
+            // sweep
+            ["He ___ (sweep) the floor yesterday.", "Он подмел пол вчера.", ["swept"]],
+            ["He ___ (not/sweep) the floor yesterday.", "Он не подмел пол вчера.", ["did not sweep"]],
+            ["___ he ___ (sweep) the floor yesterday?", "Он подмел пол вчера?", ["Did", "sweep"]],
+
+            // swell
+            ["Her ankle ___ (swell) after the injury.", "Ее лодыжка распухла после травмы.", ["swelled"]],
+            ["Her ankle ___ (not/swell) after the injury.", "Ее лодыжка не распухла после травмы.", ["did not swell"]],
+            ["___ her ankle ___ (swell) after the injury?", "Ее лодыжка распухла после травмы?", ["Did", "swell"]],
+
+            // swim
+            ["They ___ (swim) in the lake last summer.", "Они плавали в озере прошлым летом.", ["swam"]],
+            ["They ___ (not/swim) in the lake last summer.", "Они не плавали в озере прошлым летом.", ["did not swim"]],
+            ["___ they ___ (swim) in the lake last summer?", "Они плавали в озере прошлым летом?", ["Did", "swim"]],
+
+            // take
+            ["She ___ (take) a picture of the sunset.", "Она сделала фотографию заката.", ["took"]],
+            ["She ___ (not/take) a picture of the sunset.", "Она не сделала фотографию заката.", ["did not take"]],
+            ["___ she ___ (take) a picture of the sunset?", "Она сделала фотографию заката?", ["Did", "take"]],
+
+            // teach
+            ["He ___ (teach) a class last semester.", "Он преподавал класс в прошлом семестре.", ["taught"]],
+            ["He ___ (not/teach) a class last semester.", "Он не преподавал класс в прошлом семестре.", ["did not teach"]],
+            ["___ he ___ (teach) a class last semester?", "Он преподавал класс в прошлом семестре?", ["Did", "teach"]],
+
+            // tear
+            ["She ___ (tear) the paper by accident.", "Она случайно порвала бумагу.", ["tore"]],
+            ["She ___ (not/tear) the paper by accident.", "Она не порвала бумагу случайно.", ["did not tear"]],
+            ["___ she ___ (tear) the paper by accident?", "Она случайно порвала бумагу?", ["Did", "tear"]],
+
+            // tell
+            ["He ___ (tell) a funny story.", "Он рассказал смешную историю.", ["told"]],
+            ["He ___ (not/tell) a funny story.", "Он не рассказал смешную историю.", ["did not tell"]],
+            ["___ he ___ (tell) a funny story?", "Он рассказал смешную историю?", ["Did", "tell"]],
+
+            // think
+            ["They ___ (think) about the future.", "Они думали о будущем.", ["thought"]],
+            ["They ___ (not/think) about the future.", "Они не думали о будущем.", ["did not think"]],
+            ["___ they ___ (think) about the future?", "Они думали о будущем?", ["Did", "think"]],
+
+            // throw
+            ["He ___ (throw) the ball to his friend.", "Он бросил мяч своему другу.", ["threw"]],
+            ["He ___ (not/throw) the ball to his friend.", "Он не бросил мяч своему другу.", ["did not throw"]],
+            ["___ he ___ (throw) the ball to his friend?", "Он бросил мяч своему другу?", ["Did", "throw"]],
+
+            // understand
+            ["She ___ (understand) the lesson yesterday.", "Она поняла урок вчера.", ["understood"]],
+            ["She ___ (not/understand) the lesson yesterday.", "Она не поняла урок вчера.", ["did not understand"]],
+            ["___ she ___ (understand) the lesson yesterday?", "Она поняла урок вчера?", ["Did", "understand"]],
+
+            // wake
+            ["He ___ (wake) up late this morning.", "Он проснулся поздно сегодня утром.", ["woke"]],
+            ["He ___ (not/wake) up late this morning.", "Он не проснулся поздно сегодня утром.", ["did not wake"]],
+            ["___ he ___ (wake) up late this morning?", "Он проснулся поздно сегодня утром?", ["Did", "wake"]],
+
+            // wear
+            ["She ___ (wear) a beautiful dress yesterday.", "Она надела красивое платье вчера.", ["wore"]],
+            ["She ___ (not/wear) a beautiful dress yesterday.", "Она не надела красивое платье вчера.", ["did not wear"]],
+            ["___ she ___ (wear) a beautiful dress yesterday?", "Она надела красивое платье вчера?", ["Did", "wear"]],
+
+            // win
+            ["They ___ (win) the game last night.", "Они выиграли игру прошлой ночью.", ["won"]],
+            ["They ___ (not/win) the game last night.", "Они не выиграли игру прошлой ночью.", ["did not win"]],
+            ["___ they ___ (win) the game last night?", "Они выиграли игру прошлой ночью?", ["Did", "win"]],
+
+            // wind
+            ["The clock ___ (wind) down last night.", "Часы остановились прошлой ночью.", ["wound"]],
+            ["The clock ___ (not/wind) down last night.", "Часы не остановились прошлой ночью.", ["did not wind"]],
+            ["___ the clock ___ (wind) down last night?", "Часы остановились прошлой ночью?", ["Did", "wind"]],
+
+            // write
+            ["He ___ (write) a letter yesterday.", "Он написал письмо вчера.", ["wrote"]],
+            ["He ___ (not/write) a letter yesterday.", "Он не написал письмо вчера.", ["did not write"]],
+            ["___ he ___ (write) a letter yesterday?", "Он написал письмо вчера?", ["Did", "write"]],
+
+            
+        ];
+
+        const exercises_present_future_to_past_simple_easy = [
+            // Present Simple -> Past Simple
+            ["She walks to school every day.", "Она ходит в школу каждый день.", "She walked to school every day."],
+            ["He eats breakfast at 7 AM.", "Он завтракает в 7 утра.", "He ate breakfast at 7 AM."],
+            ["They play football on weekends.", "Они играют в футбол по выходным.", "They played football on weekends."],
+            ["I read books in the evening.", "Я читаю книги по вечерам.", "I read books in the evening."],
+            ["We often visit our grandparents.", "Мы часто навещаем наших бабушку и дедушку.", "We often visited our grandparents."],
+            ["The sun rises in the east.", "Солнце встает на востоке.", "The sun rose in the east."],
+            ["She usually drinks coffee in the morning.", "Она обычно пьет кофе утром.", "She usually drank coffee in the morning."],
+            ["He drives to work every day.", "Он ездит на работу каждый день.", "He drove to work every day."],
+            ["They often go to the gym.", "Они часто ходят в спортзал.", "They often went to the gym."],
+            ["I sometimes watch movies at night.", "Я иногда смотрю фильмы ночью.", "I sometimes watched movies at night."],
+
+            // Future Simple -> Past Simple
+            ["She will go to the party tomorrow.", "Она пойдет на вечеринку завтра.", "She went to the party tomorrow."],
+            ["He will visit his grandparents next week.", "Он посетит своих бабушку и дедушку на следующей неделе.", "He visited his grandparents next week."],
+            ["They will play football next Sunday.", "Они будут играть в футбол в следующее воскресенье.", "They played football next Sunday."],
+            ["I will read that book next month.", "Я прочитаю эту книгу в следующем месяце.", "I read that book next month."],
+            ["We will eat at the new restaurant tonight.", "Мы поедим в новом ресторане сегодня вечером.", "We ate at the new restaurant tonight."],
+            ["She will drink tea in the evening.", "Она будет пить чай вечером.", "She drank tea in the evening."],
+            ["He will drive to the beach on Saturday.", "Он поедет на пляж в субботу.", "He drove to the beach on Saturday."],
+            ["They will watch a movie tonight.", "Они будут смотреть фильм сегодня вечером.", "They watched a movie tonight."],
+            ["I will finish my homework by 6 PM.", "Я закончу свое домашнее задание к 6 вечера.", "I finished my homework by 6 PM."],
+            ["We will meet at the cafe tomorrow.", "Мы встретимся в кафе завтра.", "We met at the cafe tomorrow."],
+
+            // More Present Simple -> Past Simple
+            ["He feels happy today.", "Он чувствует себя счастливым сегодня.", "He felt happy today."],
+            ["They often sing in the shower.", "Они часто поют в душе.", "They often sang in the shower."],
+            ["She teaches English at school.", "Она преподает английский в школе.", "She taught English at school."],
+            ["I know the answer.", "Я знаю ответ.", "I knew the answer."],
+            ["We buy groceries every weekend.", "Мы покупаем продукты каждую неделю.", "We bought groceries every weekend."],
+            ["He learns new things every day.", "Он учит новые вещи каждый день.", "He learned new things every day."],
+            ["They fight for their rights.", "Они борются за свои права.", "They fought for their rights."],
+            ["She sits at the desk.", "Она сидит за столом.", "She sat at the desk."],
+            ["I send emails every morning.", "Я отправляю электронные письма каждое утро.", "I sent emails every morning."],
+            ["We hold meetings every week.", "Мы проводим собрания каждую неделю.", "We held meetings every week."],
+
+            // More Future Simple -> Past Simple
+            ["He will find a new job soon.", "Он скоро найдет новую работу.", "He found a new job soon."],
+            ["They will write a letter to the manager.", "Они напишут письмо менеджеру.", "They wrote a letter to the manager."],
+            ["She will build a sandcastle at the beach.", "Она построит песочницу на пляже.", "She built a sandcastle at the beach."],
+            ["I will take a photo of the sunset.", "Я сделаю фото заката.", "I took a photo of the sunset."],
+            ["We will show our project next week.", "Мы покажем наш проект на следующей неделе.", "We showed our project next week."],
+            ["He will break the record.", "Он побьет рекорд.", "He broke the record."],
+            ["They will choose a movie to watch.", "Они выберут фильм для просмотра.", "They chose a movie to watch."],
+            ["She will ride her bike to work.", "Она поедет на работу на велосипеде.", "She rode her bike to work."],
+            ["I will hang the picture on the wall.", "Я повешу картину на стене.", "I hung the picture on the wall."],
+            ["We will swim in the pool tomorrow.", "Мы будем плавать в бассейне завтра.", "We swam in the pool tomorrow."],
+        ];
+
+
+        const generateExercisesEasy = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+                    let sentence = item[0];
+                    let answers = item[2];
+                    let origin = item[0];
+                    answers.forEach(answer => {
+                        sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                        origin = origin.replace('___', answer);
+                    });
+
+                    sentence += `— ${item[1]}
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                    <span class="text-span" id="clue-easy-${index}">${removeParentheses(origin)}</span>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+        })();
+
+        const generateExercisesEasy2 = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+
+                    let sentence = `${item[0]} — ${item[1]} <input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                    <span class="text-span" id="clue-easy-2-${index}">${item[2]}</span>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+        })();
+
+        generateExercisesEasy(getRandomThird(exercises_past_simple_affirmative_easy), document.getElementById('exerciseForm_1'));
+        generateExercisesEasy2(getRandomThird(exercises_past_simple_affirmative_to_questions_negative_easy), document.getElementById('exerciseForm_2'));
+        generateExercisesEasy(getRandomThird(irregular_verbs_exercises), document.getElementById('exerciseForm_3'));
+        generateExercisesEasy2(getRandomThird(exercises_present_future_to_past_simple_easy), document.getElementById('exerciseForm_4'));
+        
+
+        function getRandomThird(arr) {
+            if (arr.length < 20){return arr}
+            const thirdLength = Math.ceil(arr.length / 3); 
+            const randomIndices = new Set(); 
+            while (randomIndices.size < thirdLength) {
+                const randomIndex = Math.floor(Math.random() * arr.length);
+                randomIndices.add(randomIndex);
+            }
+            const randomElements = Array.from(randomIndices).map(index => arr[index]);
+            return randomElements;
+        }
+
+        function showClue(id) {
+            var el = document.getElementById(id);
+            el.style.visibility = "visible"; 
+
+            setTimeout(function() {
+                el.style.visibility = "hidden";
+            }, 2000);
+        }
+
+        function playSentence(sentence){
+            practice.speak(sentence);
+        }
+
+        function removeParentheses(text) {
+            return text.replace(/\(.*?\)/g, '').trim();
+        }
+    </script>
     </div>
 </body>
 </html>
