@@ -62,52 +62,65 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>I</td>
-                    <td><strong>my</strong></td>
-                    <td>My room is big.</td>
-                    <td>Моя комната большая.</td>
+                    <td data-label="Личное местоимение">I</td>
+                    <td data-label="Притяжательное местоимение"><strong>my</strong></td>
+                    <td data-label="Пример">My room is big.</td>
+                    <td data-label="Перевод">Моя комната большая.</td>
                 </tr>
                 <tr>
-                    <td>he</td>
-                    <td><strong>his</strong></td>
-                    <td>His sister is ten.</td>
-                    <td>Его сестре десять лет.</td>
+                    <td data-label="Личное местоимение">he</td>
+                    <td data-label="Притяжательное местоимение"><strong>his</strong></td>
+                    <td data-label="Пример">His sister is ten.</td>
+                    <td data-label="Перевод">Его сестре десять лет.</td>
                 </tr>
                 <tr>
-                    <td>she</td>
-                    <td><strong>her</strong></td>
-                    <td>Her hair is long.</td>
-                    <td>Ее волосы длинные.</td>
+                    <td data-label="Личное местоимение">she</td>
+                    <td data-label="Притяжательное местоимение"><strong>her</strong></td>
+                    <td data-label="Пример">Her hair is long.</td>
+                    <td data-label="Перевод">Ее волосы длинные.</td>
                 </tr>
                 <tr>
-                    <td>it</td>
-                    <td><strong>its</strong></td>
-                    <td>I have a cat. Its tail is white.</td>
-                    <td>У меня есть кот. Его хвост белый.</td>
+                    <td data-label="Личное местоимение">it</td>
+                    <td data-label="Притяжательное местоимение"><strong>its</strong></td>
+                    <td data-label="Пример">I have a cat. Its tail is white.</td>
+                    <td data-label="Перевод">У меня есть кот. Его хвост белый.</td>
                 </tr>
                 <tr>
-                    <td>we</td>
-                    <td><strong>our</strong></td>
-                    <td>This is our house.</td>
-                    <td>Это наш дом.</td>
+                    <td data-label="Личное местоимение">we</td>
+                    <td data-label="Притяжательное местоимение"><strong>our</strong></td>
+                    <td data-label="Пример">This is our house.</td>
+                    <td data-label="Перевод">Это наш дом.</td>
                 </tr>
                 <tr>
-                    <td>you</td>
-                    <td><strong>your</strong></td>
-                    <td>Your pen is black.</td>
-                    <td>Твоя ручка черная.</td>
+                    <td data-label="Личное местоимение">you</td>
+                    <td data-label="Притяжательное местоимение"><strong>your</strong></td>
+                    <td data-label="Пример">Your pen is black.</td>
+                    <td data-label="Перевод">Твоя ручка черная.</td>
                 </tr>
                 <tr>
-                    <td>they</td>
-                    <td><strong>their</strong></td>
-                    <td>Their friend's name is Jack.</td>
-                    <td>Их друга зовут Джек.</td>
+                    <td data-label="Личное местоимение">they</td>
+                    <td data-label="Притяжательное местоимение"><strong>their</strong></td>
+                    <td data-label="Пример">Their friend's name is Jack.</td>
+                    <td data-label="Перевод">Их друга зовут Джек.</td>
                 </tr>
             </tbody>
         </table>
     
         <h2>Упражнение</h2>
-    
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Подставить правильное притяжательное местоимение</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+        <details>
+            <summary>2: Подставить правильное притяжательное местоимение</summary>
+            <form id="exerciseForm_2"></form>
+        </details>
+        <details>
+            <summary>3: Преобразовать предложения</summary>
+            <form id="exerciseForm_3"></form>
+        </details>
+
         <ol>
             <li>Перевести:</li>
             <ul>
@@ -140,6 +153,140 @@
                 <li>(Jack / book)</li>
             </ul>
         </ol>
+
+        <script src='/grammar_of_english/practice.js'></script>
+        <script>
+    
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+    
+            let practice = new Practice({callback: recognition});
+
+
+            const exercises_possessive_pronouns_easy_1 = [
+                ["___ book", "Книга моя.", ["my"]],
+                ["___ dog", "Собака его.", ["his"]],
+                ["___ house", "Дом наш.", ["our"]],
+                ["___ keys", "Ключи её.", ["her"]],
+                ["___ laptop", "Ноутбук твой.", ["your"]],
+                ["___ car", "Машина их.", ["their"]],
+                ["___ phone", "Телефон мой.", ["my"]],
+                ["___ computer", "Компьютер его.", ["his"]],
+                ["___ school", "Школа наша.", ["our"]],
+                ["___ shoes", "Туфли её.", ["her"]],
+                ["___ bag", "Сумка твоя.", ["your"]],
+                ["___ toys", "Игрушки их.", ["their"]],
+                ["___ coat", "Пальто моё.", ["my"]],
+                ["___ homework", "Домашнее задание наше.", ["our"]],
+                ["___ bike", "Велосипед его.", ["his"]],
+                ["___ project", "Проект её.", ["her"]],
+                ["___ cat", "Кошка его.", ["its"]],
+                ["___ team", "Команда наша.", ["our"]],
+                ["___ problem", "Проблема их.", ["their"]],
+                ["___ watch", "Часы его.", ["his"]],
+                ["___ hat", "Шляпа моя.", ["my"]],
+                ["___ room", "Комната твоя.", ["your"]],
+                ["___ family", "Семья их.", ["their"]],
+                ["___ book", "Книга её.", ["her"]],
+                ["___ car", "Машина наша.", ["our"]],
+            ];
+
+            const possessive_pronouns_easy = [
+                ["This is ___ laptop.", "Это мой ноутбук.", ["my"]],
+                ["They invited us to ___ wedding.", "Они пригласили нас на свою свадьбу.", ["their"]],
+                ["He lost ___ wallet at the mall.", "Он потерял свой кошелек в торговом центре.", ["his"]],
+                ["We finished ___ project last week.", "Мы закончили наш проект на прошлой неделе.", ["our"]],
+                ["Is this ___ cup?", "Это твоя чашка?", ["your"]],
+                ["The dog wagged ___ tail.", "Собака виляла своим хвостом.", ["its"]],
+                ["She is looking for ___ phone.", "Она ищет свой телефон.", ["her"]],
+                ["They parked ___ car in front of the house.", "Они припарковали свою машину перед домом.", ["their"]],
+                ["I forgot ___ jacket at home.", "Я забыл свою куртку дома.", ["my"]],
+                ["We invited them to ___ party.", "Мы пригласили их на нашу вечеринку.", ["our"]],
+                ["She showed us ___ new apartment.", "Она показала нам свою новую квартиру.", ["her"]],
+                ["He loves spending time with ___ family.", "Он любит проводить время со своей семьей.", ["his"]],
+                ["They took ___ children to the zoo.", "Они отвели своих детей в зоопарк.", ["their"]],
+                ["Do you like ___ idea?", "Тебе нравится твоя идея?", ["your"]],
+                ["I always bring ___ notebook to class.", "Я всегда приношу свой блокнот на занятия.", ["my"]],
+                ["We are decorating ___ living room.", "Мы украшаем нашу гостиную.", ["our"]],
+                ["The bird is building ___ nest in the tree.", "Птица строит свое гнездо на дереве.", ["its"]],
+                ["She lent me ___ umbrella.", "Она одолжила мне свой зонт.", ["her"]],
+                ["They are visiting ___ grandparents this weekend.", "Они навещают своих бабушку и дедушку в эти выходные.", ["their"]],
+                ["He forgot to bring ___ lunch to work.", "Он забыл принести свой обед на работу.", ["his"]],
+            ];
+
+            const exercises_possessive_pronouns_transformations = [
+                ["This is my book → This book is ___.", "Это моя книга → Эта книга моя.", ["mine"]],
+                ["These are our toys → These toys are ___.", "Это наши игрушки → Эти игрушки наши.", ["ours"]],
+                ["Is this your pen? → Is this ___?", "Это твоя ручка? → Это ___?", ["yours"]],
+                ["He forgot his keys → The keys are ___.", "Он забыл свои ключи → Ключи ___.", ["his"]],
+                ["She loves her cat → The cat is ___.", "Она любит свою кошку → Кошка ___.", ["hers"]],
+                ["They are proud of their school → The school is ___.", "Они гордятся своей школой → Школа ___.", ["theirs"]],
+                ["I found my wallet → The wallet is ___.", "Я нашел свой кошелек → Кошелек ___.", ["mine"]],
+                ["We enjoyed our trip → The trip was ___.", "Мы наслаждались нашей поездкой → Поездка была ___.", ["ours"]],
+                ["Is that your car? → Is that ___?", "Это твоя машина? → Это ___?", ["yours"]],
+                ["He is using his phone → The phone is ___.", "Он использует свой телефон → Телефон ___.", ["his"]],
+                ["She loves her job → The job is ___.", "Она любит свою работу → Работа ___.", ["hers"]],
+                ["They shared their snacks → The snacks are ___.", "Они поделились своими закусками → Закуски ___.", ["theirs"]],
+                ["I like my new shoes → The shoes are ___.", "Мне нравятся мои новые туфли → Туфли ___.", ["mine"]],
+                ["We packed our bags → The bags are ___.", "Мы собрали наши сумки → Сумки ___.", ["ours"]],
+                ["Is this your bike? → Is this ___?", "Это твой велосипед? → Это ___?", ["yours"]],
+                ["He lost his wallet → The wallet is ___.", "Он потерял свой кошелек → Кошелек ___.", ["his"]],
+                ["She forgot her umbrella → The umbrella is ___.", "Она забыла свой зонт → Зонт ___.", ["hers"]],
+                ["They admired their garden → The garden is ___.", "Они восхищались своим садом → Сад ___.", ["theirs"]],
+                ["I forgot my password → The password is ___.", "Я забыл свой пароль → Пароль ___.", ["mine"]],
+                ["We planned our vacation → The vacation was ___.", "Мы спланировали наш отпуск → Отпуск был ___.", ["ours"]],
+                ["Is that your book? → Is that ___?", "Это твоя книга? → Это ___?", ["yours"]],
+                ["He cleaned his room → The room is ___.", "Он убрал свою комнату → Комната ___.", ["his"]],
+                ["She showed me her artwork → The artwork is ___.", "Она показала мне свои произведения искусства → Произведения искусства ___.", ["hers"]],
+                ["They finished their homework → The homework is ___.", "Они выполнили свое домашнее задание → Домашнее задание ___.", ["theirs"]],
+                ["I love my job → The job is ___.", "Я люблю свою работу → Работа ___.", ["mine"]],
+                ["We enjoyed our dinner → The dinner was ___.", "Мы наслаждались нашим ужином → Ужин был ___.", ["ours"]],
+                ["Is this your notebook? → Is this ___?", "Это твой блокнот? → Это ___?", ["yours"]],
+                ["He found his keys → The keys are ___.", "Он нашел свои ключи → Ключи ___.", ["his"]],
+                ["She returned her library books → The books are ___.", "Она вернула свои библиотечные книги → Книги ___.", ["hers"]],
+                ["They completed their homework → The homework is ___.", "Они выполнили свое домашнее задание → Домашнее задание ___.", ["theirs"]],
+                ["I misplaced my glasses → The glasses are ___.", "Я потерял свои очки → Очки ___.", ["mine"]],
+                ["We love our friends → The friends are ___.", "Мы любим наших друзей → Друзья ___.", ["ours"]],
+            ];
+
+
+            const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let sentence = item[0];
+                        let answers = item[2];
+                        let origin = item[0];
+                        answers.forEach(answer => {
+                            sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                            origin = origin.replace('___', answer);
+                        });
+
+                        sentence += `— ${item[1]}
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                        <span class="text-span" id="clue-easy-${index}">${removeParentheses(origin)}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+            generateExercisesEasy(getRandomThird(exercises_possessive_pronouns_easy_1), document.getElementById('exerciseForm_1'));
+            generateExercisesEasy(getRandomThird(possessive_pronouns_easy), document.getElementById('exerciseForm_2'));
+            generateExercisesEasy(getRandomThird(exercises_possessive_pronouns_transformations), document.getElementById('exerciseForm_2'));
+
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
+
+        </script>
     </div>
 </body>
 </html>
