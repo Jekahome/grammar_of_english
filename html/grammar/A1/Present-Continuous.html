@@ -83,38 +83,196 @@
     </ul>
 
     <h2>Упражнение</h2>
+    <h3>Replace (Easy)</h3>
+    <details>
+        <summary>1: Заполнить пропуски, используя правильную форму глагола в Present Continuous</summary>
+        <form id="exerciseForm_1"></form>
+    </details>
+    <details>
+        <summary>2: Преобразовать в Present Continuous</summary>
+        <form id="exerciseForm_2"></form>
+    </details>
 
-    <ol>
-        <li>Дополнить речь:</li>
-        <p>The tall one <strong>(talk)</strong> to somebody on the phone. The short one <strong>(smoke)</strong>. What ... the fat one <strong>(do)</strong>? ... he <strong>(smoke)</strong>, too? No, he <strong>(smoke)</strong>. He <strong>(watch)</strong> TV. What programme ... he <strong>(watch)</strong>? I am not sure. A talk show, I guess. Oh, the tall one is in the kitchen now. He <strong>(cook)</strong> something. What ... he <strong>(cook)</strong>? He <strong>(fry)</strong> eggs. And the short one <strong>(drink)</strong> Cola. ... they <strong>(do)</strong> anything suspicious? No, they aren't. Everything is very quiet here.</p>
+    <script src='/grammar_of_english/practice.js'></script>
+    <script>
 
-        <li>Поставить глаголы в правильную форму:</li>
-        <ul>
-            <li>In summer it <strong>(rain)</strong> a lot in the tropics. But right now it <strong>(not rain)</strong> and the sun <strong>(shine)</strong> brightly.</li>
-            <li>My mother is a singer. She <strong>(sing)</strong> a beautiful song. She <strong>(give)</strong> a concert right now.</li>
-            <li>My sister Lulu always <strong>(wear)</strong> trousers. But today is a special day - it's her birthday and she <strong>(wear)</strong> a fantastic dress.</li>
-            <li>My dad is usually very busy, but this week he <strong>(not work)</strong> and we <strong>(spend)</strong> a lot of time together.</li>
-            <li>Usually people <strong>(start)</strong> leaving these places early in September. But this year is different. It is October, and they <strong>(stay)</strong>.</li>
-            <li>It <strong>(get)</strong> dark early in winter. It's 4 p.m. only and it <strong>(get)</strong> dark now.</li>
-            <li>I <strong>(not eat)</strong> much in the mornings.</li>
-        </ul>
+        function recognition(id, recognition){
+            console.log(`id=${id} recognition=${recognition}`);
+            var el = document.getElementById(id);
+            el.value = recognition;
+            const inputEvent = new Event('input');
+            el.dispatchEvent(inputEvent);
+        }
 
-        <li>Составить утверждение, вопрос, отрицание:</li>
-        <ul>
-            <li>I, remember, his address - I remember his address.</li>
-            <li>you, like, your new teacher? - Do you like your new teacher?</li>
-            <li>you, need, my help - You don't need my help.</li>
-            <li>What, this, word, mean? - What does this word mean?</li>
-            <li>Polly, want, to see the doctor - Polly wants to see the doctor.</li>
-            <li>I, hate, this hot weather - I hate this hot weather.</li>
-            <li>My friends, cheat, at the moment - My friends are cheating at the moment.</li>
-            <li>In, Norway, it, snow, hard, in winter - In Norway, it snows hard in winter.</li>
-            <li>Ellie, wear, a beautiful blouse, today - Ellie is wearing a beautiful blouse today.</li>
-            <li>My mom, wear, glasses - My mom wears glasses.</li>
-            <li>Jack's, teacher, be, very kind - Jack's teacher is very kind.</li>
-            <li>You, have breakfast, now? - Are you having breakfast now?</li>
-        </ul>
-    </ol>
+        let practice = new Practice({callback: recognition});
+
+        const exercises_present_continuous_easy = [
+            // Утвердительные предложения
+            ["I ___ (go) to the gym right now.", "Я иду в спортзал прямо сейчас.", ["am going"]],
+            ["She ___ (study) for her exams.", "Она готовится к экзаменам.", ["is studying"]],
+            ["We ___ (play) football at the moment.", "Мы играем в футбол в данный момент.", ["are playing"]],
+            ["They ___ (work) on a new project this week.", "Они работают над новым проектом на этой неделе.", ["are working"]],
+            ["He ___ (drive) to work now.", "Он едет на работу сейчас.", ["is driving"]],
+            ["You ___ (watch) a movie.", "Ты смотришь фильм.", ["are watching"]],
+            ["The children ___ (sleep) in their beds.", "Дети спят в своих кроватях.", ["are sleeping"]],
+            ["We ___ (have) lunch at the moment.", "Мы обедаем в данный момент.", ["are having"]],
+            ["She ___ (cook) dinner.", "Она готовит ужин.", ["is cooking"]],
+            ["I ___ (read) a book now.", "Я читаю книгу сейчас.", ["am reading"]],
+            ["They ___ (travel) to Italy this summer.", "Они путешествуют в Италию этим летом.", ["are traveling"]],
+            ["He ___ (fix) the car.", "Он чинит машину.", ["is fixing"]],
+            ["The dog ___ (bark) loudly.", "Собака громко лает.", ["is barking"]],
+            ["She ___ (paint) a picture.", "Она рисует картину.", ["is painting"]],
+            ["We ___ (wait) for the bus.", "Мы ждем автобус.", ["are waiting"]],
+
+            // Вопросительные предложения
+            ["___ you ___ (go) to the gym now?", "Ты идешь в спортзал сейчас?", ["Are", "going"]],
+            ["___ she ___ (study) for her exams?", "Она готовится к экзаменам?", ["Is", "studying"]],
+            ["___ they ___ (work) on a new project?", "Они работают над новым проектом?", ["Are", "working"]],
+            ["___ he ___ (drive) to work?", "Он едет на работу?", ["Is", "driving"]],
+            ["___ we ___ (play) football?", "Мы играем в футбол?", ["Are", "playing"]],
+            ["___ you ___ (watch) TV right now?", "Ты смотришь телевизор прямо сейчас?", ["Are", "watching"]],
+            ["___ the children ___ (sleep) now?", "Дети спят сейчас?", ["Are", "sleeping"]],
+            ["___ she ___ (cook) dinner?", "Она готовит ужин?", ["Is", "cooking"]],
+            ["___ they ___ (travel) to Italy this summer?", "Они путешествуют в Италию этим летом?", ["Are", "traveling"]],
+            ["___ he ___ (fix) the car?", "Он чинит машину?", ["Is", "fixing"]],
+            ["___ the dog ___ (bark) loudly?", "Собака громко лает?", ["Is", "barking"]],
+            ["___ she ___ (paint) a picture?", "Она рисует картину?", ["Is", "painting"]],
+            ["___ we ___ (wait) for the bus?", "Мы ждем автобус?", ["Are", "waiting"]],
+            ["___ you ___ (read) a book?", "Ты читаешь книгу?", ["Are", "reading"]],
+            ["___ they ___ (plan) a trip?", "Они планируют поездку?", ["Are", "planning"]],
+
+            // Отрицательные предложения
+            ["I ___ (not/go) to the gym now.", "Я не иду в спортзал сейчас.", ["am not going"]],
+            ["She ___ (not/study) for her exams.", "Она не готовится к экзаменам.", ["is not studying"]],
+            ["We ___ (not/play) football at the moment.", "Мы не играем в футбол в данный момент.", ["are not playing"]],
+            ["They ___ (not/work) on a new project this week.", "Они не работают над новым проектом на этой неделе.", ["are not working"]],
+            ["He ___ (not/drive) to work now.", "Он не едет на работу сейчас.", ["is not driving"]],
+            ["You ___ (not/watch) a movie.", "Ты не смотришь фильм.", ["are not watching"]],
+            ["The children ___ (not/sleep) in their beds.", "Дети не спят в своих кроватях.", ["are not sleeping"]],
+            ["We ___ (not/have) lunch at the moment.", "Мы не обедаем в данный момент.", ["are not having"]],
+            ["She ___ (not/cook) dinner.", "Она не готовит ужин.", ["is not cooking"]],
+            ["I ___ (not/read) a book now.", "Я не читаю книгу сейчас.", ["am not reading"]],
+            ["They ___ (not/travel) to Italy this summer.", "Они не путешествуют в Италию этим летом.", ["are not traveling"]],
+            ["He ___ (not/fix) the car.", "Он не чинит машину.", ["is not fixing"]],
+            ["The dog ___ (not/bark) loudly.", "Собака не лает громко.", ["is not barking"]],
+            ["She ___ (not/paint) a picture.", "Она не рисует картину.", ["is not painting"]],
+            ["We ___ (not/wait) for the bus.", "Мы не ждем автобус.", ["are not waiting"]],
+        ];
+
+        const exercises_to_present_continuous = [
+            ["I work every day.", "Я работаю каждый день.", "I am working every day."],
+            ["She reads books in the evening.", "Она читает книги по вечерам.", "She is reading books in the evening."],
+            ["We play football on weekends.", "Мы играем в футбол по выходным.", "We are playing football on weekends."],
+            ["They live in New York.", "Они живут в Нью-Йорке.", "They are living in New York."],
+            ["He drinks coffee every morning.", "Он пьет кофе каждое утро.", "He is drinking coffee every morning."],
+            ["The sun rises in the east.", "Солнце встает на востоке.", "The sun is rising in the east."],
+            ["You always forget your keys.", "Ты всегда забываешь свои ключи.", "You are always forgetting your keys."],
+            ["We study English at school.", "Мы изучаем английский в школе.", "We are studying English at school."],
+            ["She often visits her grandmother.", "Она часто навещает свою бабушку.", "She is often visiting her grandmother."],
+            ["I cook dinner every night.", "Я готовлю ужин каждый вечер.", "I am cooking dinner every night."],
+            ["They travel to Europe every year.", "Они путешествуют в Европу каждый год.", "They are traveling to Europe every year."],
+            ["He plays the guitar in the evenings.", "Он играет на гитаре по вечерам.", "He is playing the guitar in the evenings."],
+            ["I read the news every morning.", "Я читаю новости каждое утро.", "I am reading the news every morning."],
+            ["She works at a bank.", "Она работает в банке.", "She is working at a bank."],
+            ["We exercise every day.", "Мы занимаемся спортом каждый день.", "We are exercising every day."],
+            ["They go to the gym regularly.", "Они регулярно ходят в спортзал.", "They are going to the gym regularly."],
+            ["He drives to work every day.", "Он ездит на работу каждый день.", "He is driving to work every day."],
+            ["I write emails every day.", "Я пишу электронные письма каждый день.", "I am writing emails every day."],
+            ["She teaches at the university.", "Она преподает в университете.", "She is teaching at the university."],
+            ["We meet our friends every weekend.", "Мы встречаемся с друзьями каждые выходные.", "We are meeting our friends every weekend."],
+
+            ["I will work tomorrow.", "Я буду работать завтра.", "I am working tomorrow."],
+            ["She will read a book tonight.", "Она будет читать книгу вечером.", "She is reading a book tonight."],
+            ["We will play football on Sunday.", "Мы будем играть в футбол в воскресенье.", "We are playing football on Sunday."],
+            ["They will travel to Europe next month.", "Они поедут в Европу в следующем месяце.", "They are traveling to Europe next month."],
+            ["He will drink coffee later.", "Он будет пить кофе позже.", "He is drinking coffee later."],
+            ["I will write an email tomorrow.", "Я напишу письмо завтра.", "I am writing an email tomorrow."],
+            ["She will cook dinner tonight.", "Она будет готовить ужин вечером.", "She is cooking dinner tonight."],
+            ["We will visit our grandparents next weekend.", "Мы навестим наших бабушку и дедушку на следующих выходных.", "We are visiting our grandparents next weekend."],
+            ["He will study for the exam tomorrow.", "Он будет готовиться к экзамену завтра.", "He is studying for the exam tomorrow."],
+            ["They will go to the gym next week.", "Они пойдут в спортзал на следующей неделе.", "They are going to the gym next week."],
+            ["I will call you later.", "Я позвоню тебе позже.", "I am calling you later."],
+            ["She will meet her friend tomorrow.", "Она встретится с подругой завтра.", "She is meeting her friend tomorrow."],
+            ["We will have a meeting next Monday.", "У нас будет встреча в следующий понедельник.", "We are having a meeting next Monday."],
+            ["He will fix the car tomorrow.", "Он починит машину завтра.", "He is fixing the car tomorrow."],
+            ["I will fly to New York next month.", "Я полечу в Нью-Йорк в следующем месяце.", "I am flying to New York next month."],
+            ["They will paint the house next week.", "Они будут красить дом на следующей неделе.", "They are painting the house next week."],
+            ["We will attend the concert next Saturday.", "Мы будем на концерте в следующую субботу.", "We are attending the concert next Saturday."],
+            ["She will take a test next Friday.", "Она будет сдавать тест в следующую пятницу.", "She is taking a test next Friday."],
+            ["I will help you with the project tomorrow.", "Я помогу тебе с проектом завтра.", "I am helping you with the project tomorrow."],
+            ["He will move to a new apartment next month.", "Он переедет в новую квартиру в следующем месяце.", "He is moving to a new apartment next month."],
+
+            ["I worked yesterday.", "Я работал вчера.", "I am working now."],
+            ["She read a book last night.", "Она читала книгу прошлой ночью.", "She is reading a book now."],
+            ["We played football last Sunday.", "Мы играли в футбол в прошлое воскресенье.", "We are playing football now."],
+            ["They traveled to Europe last year.", "Они путешествовали в Европу в прошлом году.", "They are traveling to Europe now."],
+            ["He drank coffee in the morning.", "Он пил кофе утром.", "He is drinking coffee now."],
+            ["I wrote an email yesterday.", "Я написал письмо вчера.", "I am writing an email now."],
+            ["She cooked dinner last night.", "Она приготовила ужин прошлой ночью.", "She is cooking dinner now."],
+            ["We visited our grandparents last weekend.", "Мы навещали наших бабушку и дедушку на прошлых выходных.", "We are visiting our grandparents now."],
+            ["He studied for the exam last week.", "Он готовился к экзамену на прошлой неделе.", "He is studying for the exam now."],
+            ["They went to the gym yesterday.", "Они ходили в спортзал вчера.", "They are going to the gym now."],
+            ["I called you yesterday.", "Я звонил тебе вчера.", "I am calling you now."],
+            ["She met her friend yesterday.", "Она встретилась с подругой вчера.", "She is meeting her friend now."],
+            ["We had a meeting last Monday.", "У нас была встреча в прошлый понедельник.", "We are having a meeting now."],
+            ["He fixed the car last weekend.", "Он починил машину на прошлых выходных.", "He is fixing the car now."],
+            ["I flew to New York last month.", "Я летал в Нью-Йорк в прошлом месяце.", "I am flying to New York now."],
+            ["They painted the house last week.", "Они красили дом на прошлой неделе.", "They are painting the house now."],
+            ["We attended the concert last Saturday.", "Мы были на концерте в прошлую субботу.", "We are attending the concert now."],
+            ["She took a test last Friday.", "Она сдавала тест в прошлую пятницу.", "She is taking a test now."],
+            ["I helped you with the project last week.", "Я помог тебе с проектом на прошлой неделе.", "I am helping you with the project now."],
+            ["He moved to a new apartment last month.", "Он переехал в новую квартиру в прошлом месяце.", "He is moving to a new apartment now."]
+
+        ];
+
+
+        const generateExercisesEasy = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+                    let sentence = item[0];
+                    let answers = item[2];
+                    let origin = item[0];
+                    answers.forEach(answer => {
+                        sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                        origin = origin.replace('___', answer);
+                    });
+
+                    sentence += `— ${item[1]}
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                    <span class="text-span" id="clue-easy-${index}">${removeParentheses(origin)}</span>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+        })();
+
+        const generateExercisesEasy2 = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+
+                        let sentence = `${item[0]} — ${item[1]} <input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                        <span class="text-span" id="clue-easy-2-${index}">${item[2]}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+        generateExercisesEasy(getRandomThird(exercises_present_continuous_easy), document.getElementById('exerciseForm_1'));
+        generateExercisesEasy2(getRandomThird(exercises_to_present_continuous), document.getElementById('exerciseForm_2'));
+
+        function playSentence(sentence){
+            practice.speak(sentence);
+        }
+
+    </script>
     </div>
 </body>
 </html>
