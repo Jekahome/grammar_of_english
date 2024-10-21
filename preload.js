@@ -82,3 +82,27 @@ function checkAnswer(inputElement, correctAnswer) {
     }
 }
 
+function getRandomThird(arr) {
+    if (arr.length < 20){return arr}
+    const thirdLength = Math.ceil(arr.length / 3); 
+    const randomIndices = new Set(); 
+    while (randomIndices.size < thirdLength) {
+        const randomIndex = Math.floor(Math.random() * arr.length);
+        randomIndices.add(randomIndex);
+    }
+    const randomElements = Array.from(randomIndices).map(index => arr[index]);
+    return randomElements;
+}
+
+function showClue(id) {
+    var el = document.getElementById(id);
+    el.style.visibility = "visible"; 
+
+    setTimeout(function() {
+        el.style.visibility = "hidden";
+    }, 2000);
+}
+
+function removeParentheses(text) {
+    return text.replace(/\(.*?\)/g, '').trim();
+}

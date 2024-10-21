@@ -7,39 +7,6 @@
     <link rel="stylesheet" href="/grammar_of_english/css/styles.css">
 </head>
 <body>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .input-size {
-            width: 45px;
-            padding-left: 4px;
-            padding-right: 6px;
-            margin: 0px;
-            font-size: 16px;
-            box-sizing: content-box;
-        }
-        .correct {
-            color: green;
-        }
-        .incorrect {
-            color: red;
-        }
-        .result {
-            display: inline-block;
-            padding-left: 10px;
-        }
-
-        .text-span {
-            visibility: hidden;  
-            margin-left: 10px;
-        }
-        .icon {
-            cursor: pointer;  
-            width: 15px;  
-            height: 15px; 
-        }
-    </style>
     <script type="module" src="/grammar_of_english/firebase.js"></script>
     <script src="/grammar_of_english/preload.js"></script>
 
@@ -723,33 +690,10 @@
         // skip to A2...
         // Past Perfect, Future Perfect, "Being" (Gerund and Present Participle)
 
-        function getRandomThird(arr) {
-            if (arr.length < 20){return arr}
-            const thirdLength = Math.ceil(arr.length / 3); 
-            const randomIndices = new Set(); 
-            while (randomIndices.size < thirdLength) {
-                const randomIndex = Math.floor(Math.random() * arr.length);
-                randomIndices.add(randomIndex);
-            }
-            let result = [];
-            Array.from(randomIndices).forEach(index => {
-                result.push(arr[index]);
-            });
-            return result;
-        }
-
         function micSentence(micEl, id){
             practice.micOn(micEl, id);
         }
 
-        function showClue(id) {
-            var el = document.getElementById(id);
-            el.style.visibility = "visible"; 
-
-            setTimeout(function() {
-                el.style.visibility = "hidden";
-            }, 2000);
-        }
         function playSentence(sentence){
             practice.speak(sentence);
         }
