@@ -132,7 +132,7 @@
             <li>Money will not be paid - Деньги не будут уплачены.</li>
         </ul>
     
-        <h2>Упражнение</h2>
+        <h2>Упражнения</h2>
         <h3>Replace (Easy)</h3>
         <details>
             <summary>1: Заполнить пропуски, используя правильную форму глагола в Future Simple</summary>
@@ -142,54 +142,6 @@
             <summary>2: Преобразовать в Future Simple</summary>
             <form id="exerciseForm_2"></form>
         </details>
-
-        <ol>
-            <li>Построить предложения о свойствах робота:</li>
-            <ul>
-                <li>(help with housework) It will help us with housework</li>
-                <li>(walk the dog)</li>
-                <li>(peel potatoes)</li>
-                <li>(water plants)</li>
-                <li>(tidy the house)</li>
-                <li>(wash up)</li>
-            </ul>
-    
-            <li>Продолжи:</li>
-            <ul>
-                <li>(look after children) - Will it look after children?</li>
-                <li>(tell children bed stories)</li>
-                <li>(wash the windows)</li>
-                <li>(cook dinner)</li>
-                <li>(dry-clean the clothes)</li>
-                <li>(play chess)</li>
-            </ul>
-    
-            <li>Продолжи:</li>
-            <ul>
-                <li>I'll watch TV. - I won't watch TV.</li>
-                <li>I'll go for a walk. - ...</li>
-                <li>I won't wash up. - ...</li>
-                <li>I'll tidy my room. - ...</li>
-                <li>I won't go to the cinema. - ...</li>
-                <li>I'll do my homework tomorrow. - ...</li>
-                <li>I won't play football. - ...</li>
-                <li>I'll play tennis. - ...</li>
-            </ul>
-    
-            <li>Продолжи:</li>
-            <ul>
-                <li>It's very dark in here. - Ok, I (switch on) the light.</li>
-                <li>My sister is (get married) next week.</li>
-                <li>It's Mark's birthday on Saturday. We (organize) a surprise party for him. (you/come)?</li>
-                <li>What (you/do) in the summer? - I am not sure. I (probably/go) to the seaside.</li>
-                <li>What time (train/leave)? - It (leave) at 8:45.</li>
-                <li>Don't go out now. It's pouring and you (get) wet.</li>
-                <li>Look at those dark clouds? It (rain).</li>
-                <li>When (your classes/finish)?</li>
-                <li>We have no sugar left. - Really? Ok, I (buy) some today.</li>
-                <li>We have no sugar left. - I know, I (buy) some on my way from work.</li>
-            </ul>
-        </ol>
 
         <script src='/grammar_of_english/practice.js'></script>
         <script>
@@ -328,6 +280,10 @@
             generateExercisesEasy(getRandomThird(exercises_future_simple_easy), document.getElementById('exerciseForm_1'));
             generateExercisesEasy2(getRandomThird(exercises_to_future_simple_easy), document.getElementById('exerciseForm_2'));
             
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
+
         </script>
     </div>
 </body>
