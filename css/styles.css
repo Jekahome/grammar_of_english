@@ -98,6 +98,36 @@ img {
     min-height: 100vh; /* Растянуть на всю высоту страницы */
 }
 
+/* Упражнения */
+.input-size {
+    width: 45px;
+    padding-left: 4px;
+    padding-right: 6px;
+    margin: 0px;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+.correct {
+    color: green;
+}
+.incorrect {
+    color: red;
+}
+.result {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.text-span {
+    visibility: hidden;  
+    margin-left: 10px;
+}
+.icon {
+    cursor: pointer;  
+    width: 15px;  
+    height: 15px; 
+}
+
 /* Адаптация для мобильных устройств */
 @media (max-width: 768px) {
     body {

@@ -133,7 +133,16 @@
         </ul>
     
         <h2>Упражнение</h2>
-    
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Заполнить пропуски, используя правильную форму глагола в Future Simple</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+        <details>
+            <summary>2: Преобразовать в Future Simple</summary>
+            <form id="exerciseForm_2"></form>
+        </details>
+
         <ol>
             <li>Построить предложения о свойствах робота:</li>
             <ul>
@@ -181,6 +190,145 @@
                 <li>We have no sugar left. - I know, I (buy) some on my way from work.</li>
             </ul>
         </ol>
+
+        <script src='/grammar_of_english/practice.js'></script>
+        <script>
+
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+
+            let practice = new Practice({callback: recognition});
+
+            const exercises_future_simple_easy = [
+                ["I ___ (go) to the gym tomorrow.", "Я пойду в спортзал завтра.", ["will go"]],
+                ["She ___ (call) you later.", "Она позвонит тебе позже.", ["will call"]],
+                ["They ___ (travel) to Paris next week.", "Они поедут в Париж на следующей неделе.", ["will travel"]],
+                ["We ___ (have) dinner at 7 PM.", "Мы поужинаем в 7 вечера.", ["will have"]],
+                ["He ___ (finish) his homework soon.", "Он скоро закончит домашнее задание.", ["will finish"]],
+                ["The company ___ (launch) a new product next year.", "Компания выпустит новый продукт в следующем году.", ["will launch"]],
+                ["I ___ (meet) my friends after work.", "Я встречусь с друзьями после работы.", ["will meet"]],
+                ["She ___ (buy) a new car next month.", "Она купит новую машину в следующем месяце.", ["will buy"]],
+                ["They ___ (move) to a new house next year.", "Они переедут в новый дом в следующем году.", ["will move"]],
+                ["We ___ (watch) a movie tonight.", "Мы посмотрим фильм сегодня вечером.", ["will watch"]],
+
+                ["I ___ (not/go) to the gym tomorrow.", "Я не пойду в спортзал завтра.", ["will not go"]],
+                ["She ___ (not/call) you later.", "Она не позвонит тебе позже.", ["will not call"]],
+                ["They ___ (not/travel) to Paris next week.", "Они не поедут в Париж на следующей неделе.", ["will not travel"]],
+                ["We ___ (not/have) dinner at 7 PM.", "Мы не поужинаем в 7 вечера.", ["will not have"]],
+                ["He ___ (not/finish) his homework soon.", "Он не закончит домашнее задание скоро.", ["will not finish"]],
+                ["The company ___ (not/launch) a new product next year.", "Компания не выпустит новый продукт в следующем году.", ["will not launch"]],
+                ["I ___ (not/meet) my friends after work.", "Я не встречусь с друзьями после работы.", ["will not meet"]],
+                ["She ___ (not/buy) a new car next month.", "Она не купит новую машину в следующем месяце.", ["will not buy"]],
+                ["They ___ (not/move) to a new house next year.", "Они не переедут в новый дом в следующем году.", ["will not move"]],
+                ["We ___ (not/watch) a movie tonight.", "Мы не будем смотреть фильм сегодня вечером.", ["will not watch"]],
+
+                ["___ you ___ (go) to the gym tomorrow?", "Ты пойдешь в спортзал завтра?", ["Will", "go"]],
+                ["___ she ___ (call) you later?", "Она позвонит тебе позже?", ["Will", "call"]],
+                ["___ they ___ (travel) to Paris next week?", "Они поедут в Париж на следующей неделе?", ["Will", "travel"]],
+                ["___ we ___ (have) dinner at 7 PM?", "Мы поужинаем в 7 вечера?", ["Will", "have"]],
+                ["___ he ___ (finish) his homework soon?", "Он скоро закончит домашнее задание?", ["Will", "finish"]],
+                ["___ the company ___ (launch) a new product next year?", "Компания выпустит новый продукт в следующем году?", ["Will", "launch"]],
+                ["___ you ___ (meet) your friends after work?", "Ты встретишься с друзьями после работы?", ["Will", "meet"]],
+                ["___ she ___ (buy) a new car next month?", "Она купит новую машину в следующем месяце?", ["Will", "buy"]],
+                ["___ they ___ (move) to a new house next year?", "Они переедут в новый дом в следующем году?", ["Will", "move"]],
+                ["___ we ___ (watch) a movie tonight?", "Мы посмотрим фильм сегодня вечером?", ["Will", "watch"]],
+            ];
+
+            const exercises_to_future_simple_easy = [
+                ["I work every day.", "Я работаю каждый день.", "I will work every day."],
+                ["She studies French.", "Она учит французский.", "She will study French."],
+                ["We play football on Saturdays.", "Мы играем в футбол по субботам.", "We will play football on Saturdays."],
+                ["He drives to work every morning.", "Он ездит на работу каждое утро.", "He will drive to work every morning."],
+                ["They visit their grandparents.", "Они навещают своих бабушку и дедушку.", "They will visit their grandparents."],
+                ["I do not watch TV in the evening.", "Я не смотрю телевизор вечером.", "I will not watch TV in the evening."],
+                ["She does not go to the gym every day.", "Она не ходит в спортзал каждый день.", "She will not go to the gym every day."],
+                ["They do not read books often.", "Они не читают книги часто.", "They will not read books often."],
+                ["We do not eat fast food.", "Мы не едим фастфуд.", "We will not eat fast food."],
+                ["He does not speak English well.", "Он плохо говорит по-английски.", "He will not speak English well."],
+                ["Will you go to the cinema tomorrow?", "Ты пойдешь в кино завтра?", "Will you go to the cinema tomorrow?"],
+                ["Will she study math tomorrow?", "Она будет учить математику завтра?", "Will she study math tomorrow?"],
+                ["Will they play basketball next week?", "Они будут играть в баскетбол на следующей неделе?", "Will they play basketball next week?"],
+                ["Will we visit the museum on Sunday?", "Мы посетим музей в воскресенье?", "Will we visit the museum on Sunday?"],
+                ["Will he finish his homework tonight?", "Он закончит домашнее задание сегодня вечером?", "Will he finish his homework tonight?"],
+                ["I help you tomorrow.", "Я помогу тебе завтра.", "I will help you tomorrow."],
+                ["They do not travel next month.", "Они не будут путешествовать в следующем месяце.", "They will not travel next month."],
+                ["Will you work from home tomorrow?", "Ты будешь работать из дома завтра?", "Will you work from home tomorrow?"],
+                ["We have a party on Saturday.", "У нас будет вечеринка в субботу.", "We will have a party on Saturday."],
+                ["Will she start a new job soon?", "Она скоро начнет новую работу?", "Will she start a new job soon?"],
+
+                ["They traveled to Europe last year.", "Они путешествовали в Европу в прошлом году.", "They will travel to Europe next year."],
+                ["She studied French last summer.", "Она учила французский прошлым летом.", "She will study French next summer."],
+                ["He played football yesterday.", "Он играл в футбол вчера.", "He will play football tomorrow."],
+                ["We visited our friends last weekend.", "Мы навещали наших друзей на прошлых выходных.", "We will visit our friends next weekend."],
+                ["I read this book last month.", "Я читал эту книгу в прошлом месяце.", "I will read this book next month."],
+                ["They did not leave the city last year.", "Они не уезжали из города в прошлом году.", "They will not leave the city next year."],
+                ["She did not finish her project yesterday.", "Она не закончила свой проект вчера.", "She will not finish her project tomorrow."],
+                ["He did not eat breakfast this morning.", "Он не завтракал сегодня утром.", "He will not eat breakfast tomorrow morning."],
+                ["We did not go to the beach last summer.", "Мы не ездили на пляж прошлым летом.", "We will not go to the beach next summer."],
+                ["I did not buy a new car last year.", "Я не купил новую машину в прошлом году.", "I will not buy a new car next year."],
+                ["Did they go to Europe last year?", "Они ездили в Европу в прошлом году?", "Will they go to Europe next year?"],
+                ["Did she learn French last summer?", "Она учила французский прошлым летом?", "Will she learn French next summer?"],
+                ["Did he play football yesterday?", "Он играл в футбол вчера?", "Will he play football tomorrow?"],
+                ["Did we visit our friends last weekend?", "Мы навещали наших друзей на прошлых выходных?", "Will we visit our friends next weekend?"],
+                ["Did you read that book last month?", "Ты читал эту книгу в прошлом месяце?", "Will you read that book next month?"],
+                ["I saw him last night.", "Я видел его прошлой ночью.", "I will see him tomorrow night."],
+                ["She did not write the report yesterday.", "Она не написала отчет вчера.", "She will not write the report tomorrow."],
+                ["Did they finish the project last week?", "Они закончили проект на прошлой неделе?", "Will they finish the project next week?"],
+                ["We did not attend the meeting last Friday.", "Мы не присутствовали на собрании в прошлую пятницу.", "We will not attend the meeting next Friday."],
+                ["Did he call you yesterday?", "Он звонил тебе вчера?", "Will he call you tomorrow?"],
+                ["They built the house last year.", "Они построили дом в прошлом году.", "They will build a new house next year."],
+
+            ];
+
+
+            const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let sentence = item[0];
+                        let answers = item[2];
+                        let origin = item[0];
+                        answers.forEach(answer => {
+                            sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                            origin = origin.replace('___', answer);
+                        });
+
+                        sentence += `— ${item[1]}
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                        <span class="text-span" id="clue-easy-${index}">${removeParentheses(origin)}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+            const generateExercisesEasy2 = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+
+                        let sentence = `${item[0]} — ${item[1]} <input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                        <span class="text-span" id="clue-easy-2-${index}">${item[2]}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+            
+            generateExercisesEasy(getRandomThird(exercises_future_simple_easy), document.getElementById('exerciseForm_1'));
+            generateExercisesEasy2(getRandomThird(exercises_to_future_simple_easy), document.getElementById('exerciseForm_2'));
+            
+        </script>
     </div>
 </body>
 </html>
