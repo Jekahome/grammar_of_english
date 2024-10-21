@@ -125,7 +125,10 @@
             <summary>4: Преобразовать предложения</summary>
             <form id="exerciseForm_4"></form>
         </details>
-
+        <details>
+            <summary>5: Ответить на вопрос</summary>
+            <form id="exerciseForm_5"></form>
+        </details>
 
         <ol>
             <li>Перевести:</li>
@@ -310,27 +313,29 @@
                 ["__ suitcase", "You", "Твой чемодан", "Your"],
             ];
 
-            const generateExercisesEasy2 = (() => {
-                let index = 0; 
+            const exercises_possessive_pronouns_whose = [
+                ["Whose cat is this?", "This cat is ___.", "Чей это кот?", "Этот кот его." , "His"],
+                ["Whose dog is that?", "That dog is ___.", "Чья это собака?", "Эта собака её.", "Her"],
+                ["Whose house is this?", "This house is ___.", "Чей это дом?", "Этот дом их.", "Their"],
+                ["Whose book is that?", "That book is ___.", "Чья это книга?", "Эта книга моя.", "My"],
+                ["Whose car is this?", "This car is ___.", "Чья это машина?", "Эта машина твоя.", "Your"],
+                ["Whose phone is that?", "That phone is ___.", "Чей это телефон?", "Этот телефон его.", "His"],
+                ["Whose bike is this?", "This bike is ___.", "Чей это велосипед?", "Этот велосипед её.", "Her"],
+                ["Whose garden is that?", "That garden is ___.", "Чей это сад?", "Этот сад наш.", "Our"],
+                ["Whose toy is this?", "This toy is ___.", "Чья это игрушка?", "Эта игрушка твоя.", "Your"],
+                ["Whose wallet is that?", "That wallet is ___.", "Чей это кошелек?", "Этот кошелек мой.", "My"],
+                ["Whose hat is this?", "This hat is ___.", "Чья это шляпа?", "Эта шляпа его.", "His"],
+                ["Whose dress is that?", "That dress is ___.", "Чье это платье?", "Это платье её.", "Her"],
+                ["Whose table is this?", "This table is ___.", "Чей это стол?", "Этот стол их.", "Their"],
+                ["Whose pen is that?", "That pen is ___.", "Чья это ручка?", "Эта ручка твоя.", "Your"],
+                ["Whose laptop is this?", "This laptop is ___.", "Чей это ноутбук?", "Этот ноутбук мой.", "My"],
+                ["Whose shoes are those?", "Those shoes are ___.", "Чья это обувь?", "Эта обувь наша.", "Our"],
+                ["Whose backpack is this?", "This backpack is ___.", "Чей это рюкзак?", "Этот рюкзак его.", "His"],
+                ["Whose notebook is that?", "That notebook is ___.", "Чей это блокнот?", "Этот блокнот её.", "Her"],
+                ["Whose chair is this?", "This chair is ___.", "Чей это стул?", "Этот стул их.", "Their"],
+                ["Whose clock is that?", "That clock is ___.", "Чьи это часы?", "Эти часы твои.", "Your"],
+            ];
 
-                return (exercises, exerciseForm) => {
-                    exercises.forEach(item => {
-                        index += 1;  
-                        
-                        let answers = item[2];
-                        let origin = item[0];
-
-                        let sentence = item[0].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />`);
-                        origin = origin.replace('___', item[2]);
-                        
-                        sentence += `(${item[1]}) — ${item[2]}
-                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
-                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
-                        <span class="text-span" id="clue-easy-2-${index}">${removeParentheses(origin)}</span>`;
-                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
-                    });
-                };
-            })();
 
             const generateExercisesEasy = (() => {
                 let index = 0; 
@@ -354,12 +359,54 @@
                     });
                 };
             })();
+
+            const generateExercisesEasy2 = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        
+                        let origin = item[0];
+
+                        let sentence = item[0].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />`);
+                        origin = origin.replace('___', item[2]);
+                        
+                        sentence += `(${item[1]}) — ${item[2]}
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                        <span class="text-span" id="clue-easy-2-${index}">${removeParentheses(origin)}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+            const generateExercisesEasy3 = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        
+                        let origin = item[1];
+
+                        let sentence = item[1].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[4]}')" />`);
+                        origin = origin.replace('___', item[4]);
+                        
+                        sentence = `${item[0]} — ${sentence} (${item[2]} — ${item[3]})
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-3-${index}')"> 
+                        <span class="text-span" id="clue-easy-3-${index}">${removeParentheses(origin)}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
             generateExercisesEasy(getRandomThird(exercises_possessive_pronouns_easy_1), document.getElementById('exerciseForm_1'));
             generateExercisesEasy2(getRandomThird(exercises_possessive_pronouns_nouns), document.getElementById('exerciseForm_2'));
             generateExercisesEasy(getRandomThird(possessive_pronouns_easy), document.getElementById('exerciseForm_3'));
             generateExercisesEasy(getRandomThird(exercises_possessive_pronouns_transformations), document.getElementById('exerciseForm_4'));
-
-
+            generateExercisesEasy3(getRandomThird(exercises_possessive_pronouns_whose), document.getElementById('exerciseForm_5'));
+            
             
 
             function playSentence(sentence){
