@@ -116,10 +116,16 @@
             <summary>2: Подставить правильное притяжательное местоимение</summary>
             <form id="exerciseForm_2"></form>
         </details>
+
         <details>
-            <summary>3: Преобразовать предложения</summary>
+            <summary>3: Подставить правильное притяжательное местоимение</summary>
             <form id="exerciseForm_3"></form>
         </details>
+        <details>
+            <summary>4: Преобразовать предложения</summary>
+            <form id="exerciseForm_4"></form>
+        </details>
+
 
         <ol>
             <li>Перевести:</li>
@@ -254,9 +260,77 @@
                 ["We love ___ friends → The friends are ___.", "Мы любим наших друзей → Друзья наши.", ["our", "ours"]],
             ];
 
+            const exercises_possessive_pronouns_nouns = [
+                ["__ cat", "He", "Его кот", "His"],
+                ["__ dog", "She", "Её собака", "Her"],
+                ["__ house", "They", "Их дом", "Their"],
+                ["__ book", "I", "Моя книга", "My"],
+                ["__ car", "You", "Твоя машина", "Your"],
+                ["__ phone", "He", "Его телефон", "His"],
+                ["__ bike", "She", "Её велосипед", "Her"],
+                ["__ garden", "We", "Наш сад", "Our"],
+                ["__ toy", "You", "Твоя игрушка", "Your"],
+                ["__ wallet", "I", "Мой кошелек", "My"],
+                ["__ hat", "He", "Его шляпа", "His"],
+                ["__ dress", "She", "Её платье", "Her"],
+                ["__ table", "They", "Их стол", "Their"],
+                ["__ pen", "You", "Твоя ручка", "Your"],
+                ["__ laptop", "I", "Мой ноутбук", "My"],
+                ["__ shoes", "We", "Наша обувь", "Our"],
+                ["__ backpack", "He", "Его рюкзак", "His"],
+                ["__ notebook", "She", "Её блокнот", "Her"],
+                ["__ chair", "They", "Их стул", "Their"],
+                ["__ clock", "You", "Твои часы", "Your"],
+                ["__ picture", "I", "Моя картина", "My"],
+                ["__ pillow", "We", "Наши подушки", "Our"],
+                ["__ glasses", "He", "Его очки", "His"],
+                ["__ sweater", "She", "Её свитер", "Her"],
+                ["__ fridge", "They", "Их холодильник", "Their"],
+                ["__ suitcase", "You", "Твой чемодан", "Your"],
+                ["__ computer", "He", "Его компьютер", "His"],
+                ["__ bookcase", "She", "Её книжный шкаф", "Her"],
+                ["__ necklace", "They", "Их ожерелье", "Their"],
+                ["__ camera", "I", "Моя камера", "My"],
+                ["__ bicycle", "You", "Твой велосипед", "Your"],
+                ["__ umbrella", "He", "Его зонт", "His"],
+                ["__ wallet", "She", "Её кошелек", "Her"],
+                ["__ plant", "We", "Наше растение", "Our"],
+                ["__ radio", "You", "Твое радио", "Your"],
+                ["__ desk", "I", "Мой стол", "My"],
+                ["__ jacket", "They", "Их куртка", "Their"],
+                ["__ camera", "He", "Его камера", "His"],
+                ["__ ticket", "She", "Её билет", "Her"],
+                ["__ toothbrush", "We", "Наша зубная щетка", "Our"],
+                ["__ toy", "You", "Твоя игрушка", "Your"],
+                ["__ guitar", "I", "Моя гитара", "My"],
+                ["__ sandwich", "They", "Их сэндвич", "Their"],
+                ["__ shoes", "He", "Его обувь", "His"],
+                ["__ laptop", "She", "Её ноутбук", "Her"],
+                ["__ watch", "We", "Наши часы", "Our"],
+                ["__ suitcase", "You", "Твой чемодан", "Your"],
+            ];
 
+            const generateExercisesEasy2 = (() => {
+                let index = 0; 
 
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        
+                        let answers = item[2];
+                        let origin = item[0];
 
+                        let sentence = item[0].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />`);
+                        origin = origin.replace('___', item[2]);
+                        
+                        sentence += `(${item[1]}) — ${item[2]}
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                        <span class="text-span" id="clue-easy-2-${index}">${removeParentheses(origin)}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
 
             const generateExercisesEasy = (() => {
                 let index = 0; 
@@ -280,10 +354,13 @@
                     });
                 };
             })();
-
             generateExercisesEasy(getRandomThird(exercises_possessive_pronouns_easy_1), document.getElementById('exerciseForm_1'));
-            generateExercisesEasy(getRandomThird(possessive_pronouns_easy), document.getElementById('exerciseForm_2'));
-            generateExercisesEasy(getRandomThird(exercises_possessive_pronouns_transformations), document.getElementById('exerciseForm_3'));
+            generateExercisesEasy2(getRandomThird(exercises_possessive_pronouns_nouns), document.getElementById('exerciseForm_2'));
+            generateExercisesEasy(getRandomThird(possessive_pronouns_easy), document.getElementById('exerciseForm_3'));
+            generateExercisesEasy(getRandomThird(exercises_possessive_pronouns_transformations), document.getElementById('exerciseForm_4'));
+
+
+            
 
             function playSentence(sentence){
                 practice.speak(sentence);
