@@ -83,7 +83,7 @@ function checkAnswer(inputElement, correctAnswer) {
 }
 
 function getRandomThird(arr) {
-    if (arr.length < 20){return arr}
+    if (arr.length <= 20){return arr}
     const thirdLength = Math.ceil(arr.length / 3); 
     const randomIndices = new Set(); 
     while (randomIndices.size < thirdLength) {
