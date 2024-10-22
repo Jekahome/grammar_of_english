@@ -254,75 +254,75 @@
         </details>
 
         <details>
-            <summary>4.1: Преобразовать предложения</summary>
+            <summary>4: Преобразовать предложения</summary>
             (замените <a href="https://jekahome.github.io/grammar_of_english/html/grammar/A1/Parts-of-speech.html" target="_blank">подлежащее</a> на соответствующее местоимение)<br>
             <form id="exerciseForm_4"></form>
         </details>
         
         <details>
-            <summary>4.2: Ответить на вопрос</summary>
+            <summary>5: Ответить на вопрос</summary>
             "кому?" (to whom?), "чему?" (to what?), "с кем?" (with whom?), "с чем?" (with what?) и аналогичные.
-            <form id="exerciseForm_16"></form>
+            <form id="exerciseForm_5"></form>
         </details>
 
         <hr>
         <h3>Write (Medium)</h3>
         <details>
-            <summary>5: Перевести словосочетания</summary>
-            <form id="exerciseForm_5"></form>
-        </details>
-
-        <details>
-            <summary>6: Перевести словосочетания</summary>
+            <summary>1: Перевести словосочетания</summary>
             <form id="exerciseForm_6"></form>
         </details>
 
         <details>
-            <summary>7: Перевести предложения</summary>
+            <summary>2: Перевести словосочетания</summary>
             <form id="exerciseForm_7"></form>
         </details>
 
         <details>
-            <summary>8: Перевести и преобразовать предложения</summary>
-            (замените <a href="https://jekahome.github.io/grammar_of_english/html/grammar/A1/Parts-of-speech.html" target="_blank">подлежащее</a> на соответствующее местоимение)<br>
+            <summary>3: Перевести предложения</summary>
             <form id="exerciseForm_8"></form>
+        </details>
+
+        <details>
+            <summary>4: Перевести и преобразовать предложения</summary>
+            (замените <a href="https://jekahome.github.io/grammar_of_english/html/grammar/A1/Parts-of-speech.html" target="_blank">подлежащее</a> на соответствующее местоимение)<br>
+            <form id="exerciseForm_9"></form>
         </details>
 
 
         <hr>
         <h3>Listen (Hard)</h3>
         <details>
-            <summary>9: Прослушать и написать en — ru вариант</summary>
-            <form id="exerciseForm_9"></form>
+            <summary>1: Прослушать и написать en — ru вариант</summary>
+            <form id="exerciseForm_10"></form>
         </details>
 
         <details>
-            <summary>10: Прослушать и написать предложения с местоимением <code>this</code>/<code>these</code></summary>
-            <form id="exerciseForm_10"></form>
-        </details>
-        <details>
-            <summary>11: Прослушать и написать предложения с местоимением <code>that</code>/<code>those</code></summary>
+            <summary>2: Прослушать и написать предложения с местоимением <code>this</code>/<code>these</code></summary>
             <form id="exerciseForm_11"></form>
         </details>
-        <details> 
-            <summary>12: Прослушать и написать предложения</summary>
-            (личные местоимения в именительном и в косвенном падежах)
+        <details>
+            <summary>3: Прослушать и написать предложения с местоимением <code>that</code>/<code>those</code></summary>
             <form id="exerciseForm_12"></form>
+        </details>
+        <details> 
+            <summary>4: Прослушать и написать предложения</summary>
+            (личные местоимения в именительном и в косвенном падежах)
+            <form id="exerciseForm_13"></form>
         </details>
 
         <hr>
         <h3>Speak (Extreme)</h3>
         <details> 
-            <summary>13: Произнести предложения с местоимением <code>this</code>/<code>these</code></summary>
-            <form id="exerciseForm_13"></form>
-        </details>
-        <details> 
-            <summary>14: Произнести предложения с местоимением <code>that</code>/<code>those</code></summary>
+            <summary>1: Произнести предложения с местоимением <code>this</code>/<code>these</code></summary>
             <form id="exerciseForm_14"></form>
         </details>
         <details> 
-            <summary>15: Произнести предложения</summary>
+            <summary>2: Произнести предложения с местоимением <code>that</code>/<code>those</code></summary>
             <form id="exerciseForm_15"></form>
+        </details>
+        <details> 
+            <summary>3: Произнести предложения</summary>
+            <form id="exerciseForm_16"></form>
         </details>
     </div>
     <script src='/grammar_of_english/practice.js'></script>
@@ -503,7 +503,7 @@
 
         ];
     
-        const exercises_indirect_case_pronouns_easy = [
+        const exercises_easy_5 = [
             ["Whom did you give the book to? → I gave the book to ___.", "Кому ты дал книгу? → Я дал книгу ему.", ["him"]],
             ["Whom did she invite to the party? → She invited ___ to the party.", "Кого она пригласила на вечеринку? → Она пригласила их на вечеринку.", ["them"]],
             ["Who are you going with? → I am going with ___.", "С кем ты идёшь? → Я иду с ней.", ["her"]],
@@ -907,7 +907,7 @@
         generateExercisesEasy(exercises_easy_2, document.getElementById('exerciseForm_2'));
         generateExercisesEasy(getRandomThird(exercises_easy_3), document.getElementById('exerciseForm_3'));
         generateExercisesEasy(getRandomThird(exercises_easy_4), document.getElementById('exerciseForm_4'));
-        generateExercisesEasy2(getRandomThird(exercises_indirect_case_pronouns_easy), document.getElementById('exerciseForm_16'));
+        generateExercisesEasy2(getRandomThird(exercises_easy_5), document.getElementById('exerciseForm_5'));
         
 
         const generateExercisesMedium = (() => {
@@ -959,20 +959,20 @@
             };
         })();
 
-        generateExercisesMedium(exercises_medium_5, document.getElementById('exerciseForm_5'));
-        generateExercisesMedium(exercises_medium_6, document.getElementById('exerciseForm_6'));
-        generateExercisesMedium(getRandomThird(exercises_medium_7), document.getElementById('exerciseForm_7'));
-        generateExercisesMedium(getRandomThird(exercises_medium_8), document.getElementById('exerciseForm_8'));
+        generateExercisesMedium(exercises_medium_5, document.getElementById('exerciseForm_6'));
+        generateExercisesMedium(exercises_medium_6, document.getElementById('exerciseForm_7'));
+        generateExercisesMedium(getRandomThird(exercises_medium_7), document.getElementById('exerciseForm_8'));
+        generateExercisesMedium(getRandomThird(exercises_medium_8), document.getElementById('exerciseForm_9'));
 
 
-        generateExercisesHard(exercises_hard_9, document.getElementById('exerciseForm_9')); 
-        generateExercisesHard(exercises_hard_10, document.getElementById('exerciseForm_10'));
-        generateExercisesHard(exercises_hard_11, document.getElementById('exerciseForm_11'));
-        generateExercisesHard(getRandomThird(exercises_hard_12), document.getElementById('exerciseForm_12'));
+        generateExercisesHard(exercises_hard_9, document.getElementById('exerciseForm_10')); 
+        generateExercisesHard(exercises_hard_10, document.getElementById('exerciseForm_11'));
+        generateExercisesHard(exercises_hard_11, document.getElementById('exerciseForm_12'));
+        generateExercisesHard(getRandomThird(exercises_hard_12), document.getElementById('exerciseForm_13'));
 
-        generateExercisesExtreme(exercises_extreme_13, document.getElementById('exerciseForm_13'));
-        generateExercisesExtreme(exercises_extreme_14, document.getElementById('exerciseForm_14'));
-        generateExercisesExtreme(getRandomThird(exercises_hard_12), document.getElementById('exerciseForm_15'));
+        generateExercisesExtreme(exercises_extreme_13, document.getElementById('exerciseForm_14'));
+        generateExercisesExtreme(exercises_extreme_14, document.getElementById('exerciseForm_15'));
+        generateExercisesExtreme(getRandomThird(exercises_hard_12), document.getElementById('exerciseForm_16'));
         
 
         function generateExercisesEasy(exercises, exerciseForm) {
