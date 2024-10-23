@@ -209,6 +209,11 @@
             <summary>5: Ответить на вопрос</summary>
             <form id="exerciseForm_5"></form>
         </details>
+        <details>
+            <summary>6: Преобразовать в притяжательное предложение</summary>
+            (Преобразовать предложение в различные формы притяжательного)
+            <form id="exerciseForm_6"></form>
+        </details>
 
         <script src='/grammar_of_english/practice.js'></script>
         <script>
@@ -384,6 +389,73 @@
             ];
 
 
+            const exercises_four_form = [
+                ["John has a bicycle.", 
+                    ["This is his bicycle.", "Это его велосипед."], 
+                    ["This bicycle is his.", "Этот велосипед его."], 
+                    ["This is John's bicycle.", "Это велосипед Джона."], 
+                    ["This is the bicycle of John.", "Это велосипед Джона."]
+                ],
+                
+                ["Sarah has a dog.", 
+                    ["This is her dog.", "Это её собака."], 
+                    ["This dog is hers.", "Эта собака принадлежит ей."], 
+                    ["This is Sarah's dog.", "Это собака Сары."], 
+                    ["This is the dog of Sarah.", "Это собака Сары."]
+                ],
+
+                ["We have a house.", 
+                    ["This is our house.", "Это наш дом."], 
+                    ["This house is ours.", "Этот дом наш."], 
+                    ["-", "-"], 
+                    ["-", "-"]
+                ],
+
+                ["They have a car.", 
+                    ["This is their car.", "Это их машина."], 
+                    ["This car is theirs.", "Эта машина их."], 
+                    ["-", "-"], 
+                    ["-", "-"]
+                ],
+
+                ["I have a laptop.", 
+                    ["This is my laptop.", "Это мой ноутбук."], 
+                    ["This laptop is mine.", "Этот ноутбук мой."], 
+                    ["-", "-"], 
+                    ["-", "-"]
+                ],
+
+                ["You have a book.", 
+                    ["This is your book.", "Это твоя книга."], 
+                    ["This book is yours.", "Эта книга твоя."], 
+                    ["-", "-"], 
+                    ["-", "-"]
+                ],
+
+                ["Jack has a bicycle.", 
+                    ["This is his bicycle.", "Это его велосипед."], 
+                    ["This bicycle is his.", "Этот велосипед его."], 
+                    ["This is Jack's bicycle.", "Это велосипед Джека."], 
+                    ["This is the bicycle of Jack.", "Это велосипед Джека."]
+                ],
+
+                ["The teacher (woman) has a pen.", 
+                    ["This is her pen.", "Это её ручка."], 
+                    ["This pen is hers.", "Эта ручка её."], 
+                    ["This is the teacher's pen.", "Это ручка учительницы."], 
+                    ["This is the pen of the teacher.", "Это ручка учительницы."]
+                ],
+
+                ["The teacher (man) has a pen.", 
+                    ["This is his pen.", "Это его ручка."], 
+                    ["This pen is his.", "Эта ручка его."], 
+                    ["This is the teacher's pen.", "Это ручка учителя."], 
+                    ["This is the pen of the teacher.", "Это ручка учителя."]
+                ]
+            ];
+
+
+
             const generateExercisesEasy = (() => {
                 let index = 0; 
 
@@ -448,12 +520,51 @@
                     });
                 };
             })();
+
+            const generateExercisesEasy4 = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        
+                        let sentence = `<b>${item[0]}</b>:<br>
+                        Притяжательное прилагательное:
+                        <input type="text" class="input-size" oninput="checkAnswer(this, '${item[1][0]}')" />
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[1][0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index}')"> 
+                        <span class="text-span" id="clue-easy-4-${index}">${item[1][0]}</span><br>
+
+                        Притяжательное местоимение: 
+                        <input type="text" class="input-size" oninput="checkAnswer(this, '${item[2][0]}')" />
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2][0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index+1}')"> 
+                        <span class="text-span" id="clue-easy-4-${index+1}">${item[2][0]}</span><br>
+
+                        Притяжательный падеж с апострофом:
+                        <input type="text" class="input-size" oninput="checkAnswer(this, '${item[3][0]}')" />
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[3][0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index+2}')"> 
+                        <span class="text-span" id="clue-easy-4-${index+2}">${item[3][0]}</span><br>
+
+                        Предлог "of": 
+                        <input type="text" class="input-size" oninput="checkAnswer(this, '${item[4][0]}')" />
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[4][0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index+3}')"> 
+                        <span class="text-span" id="clue-easy-4-${index+3}">${item[4][0]}</span><br>
+                        `;
+                        index+=3;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
             generateExercisesEasy(getRandomThird(exercises_possessive_pronouns_easy_1), document.getElementById('exerciseForm_1'));
             generateExercisesEasy2(getRandomThird(exercises_possessive_pronouns_nouns), document.getElementById('exerciseForm_2'));
             generateExercisesEasy(getRandomThird(possessive_pronouns_easy), document.getElementById('exerciseForm_3'));
             generateExercisesEasy(getRandomThird(exercises_possessive_pronouns_transformations), document.getElementById('exerciseForm_4'));
             generateExercisesEasy3(getRandomThird(exercises_possessive_pronouns_whose), document.getElementById('exerciseForm_5'));
-            
+            generateExercisesEasy4(getRandomThird(exercises_four_form), document.getElementById('exerciseForm_6'));
             
 
             function playSentence(sentence){
