@@ -154,25 +154,7 @@
             <li>a loaf of – буханка, например: <em>a loaf of bread</em> – <i>буханка хлеба</i></li>
         </ul>
         
-
-
-
-        <h3>1. Ответить на вопросы:</h3>
         <img src="/grammar_of_english/img/containers_and_quantities_matching_exercises.png" alt="containers and quantities">
-
-        <h3>2. Выбрать верный вариант (set, tube, stick, stack, slice, loaf, box):</h3>
-        <ul>
-            <li>I need to get a ___ of butter.</li>
-            <li>Would you like a ___ of cake?</li>
-            <li>I can't believe you finish a ___ of cereal every week! You must really love cereal!</li>
-            <li>Mom is thinking about getting a new ___ of knives because hers aren't sharp enough anymore.</li>
-            <li>Look at that huge ___ of work! How can I possibly finish it today?</li>
-            <li>Can you get me a new ___ of toothpaste?</li>
-            <li>Would it be possible to get me a ___ of brown bread?</li>
-            <li>Can you grab me a ___ of pizza from the fridge?</li>
-            <li>You really love reading! Is that a ___ of story books on your desk?</li>
-            <li>I think I should buy another ___ of choc-chip cookies. It's so delicious!</li>
-        </ul>
 
         <h2>Упражнения</h2>
         <h3>Replace (Easy)</h3>
@@ -231,7 +213,11 @@
             (Устойчивые выражения с предлогом of)
             <form id="exerciseForm_11"></form>
         </details>
-
+        <details>
+            <summary>12: Составьте грамматически правильное предложение.</summary>
+            (Количественная оценка существительных)
+            <form id="exerciseForm_12"></form>
+        </details>
 
         <script src='/grammar_of_english/practice.js'></script>
         <script>
@@ -513,6 +499,50 @@
                 ["to think highly of", "высоко ценить"]
             ];
 
+            const exercises_of_quantitative_nouns = [
+                ["A piece of cheese.", "Кусочек сыра."],
+                ["A slice of bread.", "Ломтик хлеба."],
+                ["A bar of chocolate.", "Плитка шоколада."],
+                ["A drop of rain.", "Капля дождя."],
+                ["A crumb of pie.", "Крошка пирога."],
+                ["A glass of juice.", "Стакан сока."],
+                ["A scoop of sugar.", "Ложка сахара."],
+                ["A pair of gloves.", "Пара перчаток."],
+                ["A set of rules.", "Набор правил."],
+                ["A pack of candy.", "Пачка конфет."],
+                ["A cup of coffee.", "Чашка кофе."],
+                ["A bottle of water.", "Бутылка воды."],
+                ["A bowl of soup.", "Тарелка супа."],
+                ["A handful of nuts.", "Горсть орехов."],
+                ["A spoonful of honey.", "Ложка мёда."],
+                ["A slice of pizza.", "Ломтик пиццы."],
+                ["A loaf of bread.", "Буханка хлеба."],
+                ["A sheet of paper.", "Лист бумаги."],
+                ["A tube of toothpaste.", "Тюбик зубной пасты."],
+                ["A can of soda.", "Банка содовой."],
+                ["Give me a piece of cheese.", "Дай мне кусочек сыра."],
+                ["Can you cut a slice of bread?", "Ты можешь отрезать ломтик хлеба?"],
+                ["Take a bar of chocolate.", "Возьми плитку шоколада."],
+                ["I felt a drop of rain.", "Я почувствовал каплю дождя."],
+                ["There's a crumb of pie left.", "Осталась крошка пирога."],
+                ["Pour me a glass of juice.", "Налей мне стакан сока."],
+                ["Add a scoop of sugar to the tea.", "Добавь ложку сахара в чай."],
+                ["I bought a pair of gloves.", "Я купил пару перчаток."],
+                ["We need a set of rules for the game.", "Нам нужен набор правил для игры."],
+                ["She handed me a pack of candy.", "Она дала мне пачку конфет."],
+                ["Please make a cup of coffee.", "Пожалуйста, сделай чашку кофе."],
+                ["Could you pass me a bottle of water?", "Можешь передать мне бутылку воды?"],
+                ["I made a bowl of soup for lunch.", "Я приготовил тарелку супа на обед."],
+                ["He grabbed a handful of nuts.", "Он взял горсть орехов."],
+                ["Give me a spoonful of honey.", "Дай мне ложку мёда."],
+                ["Can I have a slice of pizza?", "Можно мне ломтик пиццы?"],
+                ["Sell me a loaf of bread, please.", "Продайте мне буханку хлеба, пожалуйста."],
+                ["Take a sheet of paper from the printer.", "Возьми лист бумаги из принтера."],
+                ["I need a tube of toothpaste.", "Мне нужен тюбик зубной пасты."],
+                ["Could you open a can of soda?", "Можешь открыть банку содовой?"]
+
+            ];
+
             const generateExercisesEasy = (() => {
                 let index = 0; 
 
@@ -540,8 +570,8 @@
             generateExercisesEasy(getRandomThird(exercises_of_comparison_with_others), document.getElementById('exerciseForm_9'));
             generateExercisesEasy(getRandomThird(exercises_of_loss_or_deprivation_of_something), document.getElementById('exerciseForm_10'));
             generateExercisesEasy(getRandomThird(exercises_of_set_expressions), document.getElementById('exerciseForm_11'));
+            generateExercisesEasy(getRandomThird(exercises_of_quantitative_nouns), document.getElementById('exerciseForm_12'));
             
-
             function micSentence(micEl, id){
                 practice.micOn(micEl, id);
             }
