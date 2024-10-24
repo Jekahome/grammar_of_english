@@ -108,7 +108,11 @@ function removeParentheses(text) {
 }
 
 function shuffleSentence(sentence) {
-    const cleanedSentence = sentence.replace(/[.,]/g, "");
+    const cleanedSentence = sentence
+        .replace(/[.,]/g, "")        // Убираем точки и запятые
+        .replace(/([!?])/g, " $1 ")  // Отделяем ? и ! пробелами
+        .toLowerCase();              // Приводим к нижнему регистру
+
     const words = cleanedSentence.split(" ");
     for (let i = words.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));   
