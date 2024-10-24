@@ -155,7 +155,12 @@
         </ul>
         
 
-        <h2>Упражнение</h2>
+        <h2>Упражнения</h2>
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Составьте грамматически правильное предложение.</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
 
         (Easy) Составить из набора перемешанных слов корректное граммотное предложение (набрать по каждой группе примеры и сгруппировать их в три упражнения)
 
@@ -176,265 +181,315 @@
             <li>You really love reading! Is that a ___ of story books on your desk?</li>
             <li>I think I should buy another ___ of choc-chip cookies. It's so delicious!</li>
         </ul>
+
+        <script src='/grammar_of_english/practice.js'></script>
         <script>
+    
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+    
+            let practice = new Practice({callback: recognition});
 
-        const exercises_of_possessive_ = [
-            ["The name of the book", "Название книги"],
-            ["The color of the sky", "Цвет неба"],
-            ["A friend of mine", "Один из моих друзей"],
-            ["The sound of music", "Звук музыки"],
-            ["The door of the house", "Дверь дома"],
-            ["The picture of a cat", "Картина кота"],
-            ["The tail of a dog", "Хвост собаки"],
-            ["The flavor of ice cream", "Вкус мороженого"],
-            ["The height of the building", "Высота здания"],
-            ["The leg of the table", "Нога стола"],
-            ["The title of the song", "Название песни"],
-            ["The capital of France", "Столица Франции"],
-            ["The cost of the ticket", "Цена билета"],
-            ["The owner of the car", "Владелец машины"],
-            ["The story of my life", "История моей жизни"],
-            ["The length of the road", "Длина дороги"],
-            ["The heart of a lion", "Сердце льва"],
-            ["The edge of the cliff", "Край обрыва"],
-            ["The pride of the team", "Гордость команды"],
-            ["The purpose of this project", "Цель этого проекта"]
-        ];
+            // Притяжательный предлог of
+            const exercises_of_possessive = [
+                ["The name of the book", "Название книги"],
+                ["The color of the sky", "Цвет неба"],
+                ["A friend of mine", "Один из моих друзей"],
+                ["The sound of music", "Звук музыки"],
+                ["The door of the house", "Дверь дома"],
+                ["The picture of a cat", "Картина кота"],
+                ["The tail of a dog", "Хвост собаки"],
+                ["The flavor of ice cream", "Вкус мороженого"],
+                ["The height of the building", "Высота здания"],
+                ["The leg of the table", "Нога стола"],
+                ["The title of the song", "Название песни"],
+                ["The capital of France", "Столица Франции"],
+                ["The cost of the ticket", "Цена билета"],
+                ["The owner of the car", "Владелец машины"],
+                ["The story of my life", "История моей жизни"],
+                ["The length of the road", "Длина дороги"],
+                ["The heart of a lion", "Сердце льва"],
+                ["The edge of the cliff", "Край обрыва"],
+                ["The pride of the team", "Гордость команды"],
+                ["The purpose of this project", "Цель этого проекта"]
+            ];
 
-        const exercises_of_count =  [
-            ["A cup of coffee", "Чашка кофе"],
-            ["A bottle of water", "Бутылка воды"],
-            ["A piece of cake", "Кусочек торта"],
-            ["A dozen of eggs", "Дюжина яиц"],
-            ["A pair of shoes", "Пара обуви"],
-            ["A set of tools", "Набор инструментов"],
-            ["A slice of pizza", "Ломтик пиццы"],
-            ["A jar of honey", "Банка меда"],
-            ["A pound of meat", "Фунт мяса"],
-            ["A mile of road", "Миля дороги"],
-            ["A lot of flowers", "Много цветов"],
-            ["A range of options", "Ряд вариантов"],
-            ["A stack of papers", "Стопка бумаг"],
-            ["A group of friends", "Группа друзей"],
-            ["A collection of stamps", "Коллекция марок"],
-            ["A series of books", "Серия книг"],
-            ["A number of issues", "Количество вопросов"],
-            ["A handful of nuts", "Горсть орехов"],
-            ["A pack of cards", "Колода карт"],
-            ["A bunch of grapes", "Гроздь винограда"],
-            ["A load of laundry", "Груз стирки"]
-        ];
+            // Количество, единицы измерения, выделение из группы
+            const exercises_of_count =  [
+                ["A cup of coffee", "Чашка кофе"],
+                ["A bottle of water", "Бутылка воды"],
+                ["A piece of cake", "Кусочек торта"],
+                ["A dozen of eggs", "Дюжина яиц"],
+                ["A pair of shoes", "Пара обуви"],
+                ["A set of tools", "Набор инструментов"],
+                ["A slice of pizza", "Ломтик пиццы"],
+                ["A jar of honey", "Банка меда"],
+                ["A pound of meat", "Фунт мяса"],
+                ["A mile of road", "Миля дороги"],
+                ["A lot of flowers", "Много цветов"],
+                ["A range of options", "Ряд вариантов"],
+                ["A stack of papers", "Стопка бумаг"],
+                ["A group of friends", "Группа друзей"],
+                ["A collection of stamps", "Коллекция марок"],
+                ["A series of books", "Серия книг"],
+                ["A number of issues", "Количество вопросов"],
+                ["A handful of nuts", "Горсть орехов"],
+                ["A pack of cards", "Колода карт"],
+                ["A bunch of grapes", "Гроздь винограда"],
+                ["A load of laundry", "Груз стирки"]
+            ];
 
-        const exercises_of_materia = [
-            ["A chair made of wood", "Стул из дерева"],
-            ["A shirt made of cotton", "Рубашка из хлопка"],
-            ["A necklace made of gold", "Ожерелье из золота"],
-            ["A table made of glass", "Стол из стекла"],
-            ["A house made of stone", "Дом из камня"],
-            ["A dress made of silk", "Платье из шелка"],
-            ["A ring made of platinum", "Кольцо из платины"],
-            ["A sculpture made of marble", "Скульптура из мрамора"],
-            ["A bag made of leather", "Сумка из кожи"],
-            ["A fence made of metal", "Забор из металла"],
-            ["A bottle made of plastic", "Бутылка из пластика"],
-            ["A book made of paper", "Книга из бумаги"],
-            ["A toy made of plastic", "Игрушка из пластика"],
-            ["A cup made of ceramic", "Чашка из керамики"],
-            ["A coat made of wool", "Пальто из шерсти"],
-            ["A carpet made of fibers", "Ковер из волокон"],
-            ["A roof made of tiles", "Крыша из черепицы"],
-            ["A wall made of bricks", "Стена из кирпичей"],
-            ["A sandwich made of bread", "Сэндвич из хлеба"],
-            ["A quilt made of fabric", "Одеяло из ткани"]
-        ];
+            // Материал, из чего что-то сделано или что-то содержит
+            const exercises_of_materia = [
+                ["A chair made of wood", "Стул из дерева"],
+                ["A shirt made of cotton", "Рубашка из хлопка"],
+                ["A necklace made of gold", "Ожерелье из золота"],
+                ["A table made of glass", "Стол из стекла"],
+                ["A house made of stone", "Дом из камня"],
+                ["A dress made of silk", "Платье из шелка"],
+                ["A ring made of platinum", "Кольцо из платины"],
+                ["A sculpture made of marble", "Скульптура из мрамора"],
+                ["A bag made of leather", "Сумка из кожи"],
+                ["A fence made of metal", "Забор из металла"],
+                ["A bottle made of plastic", "Бутылка из пластика"],
+                ["A book made of paper", "Книга из бумаги"],
+                ["A toy made of plastic", "Игрушка из пластика"],
+                ["A cup made of ceramic", "Чашка из керамики"],
+                ["A coat made of wool", "Пальто из шерсти"],
+                ["A carpet made of fibers", "Ковер из волокон"],
+                ["A roof made of tiles", "Крыша из черепицы"],
+                ["A wall made of bricks", "Стена из кирпичей"],
+                ["A sandwich made of bread", "Сэндвич из хлеба"],
+                ["A quilt made of fabric", "Одеяло из ткани"]
+            ];
 
-        const exercises_of_date = [
-            ["The first of January", "Первое января"],
-            ["The fifth of May", "Пятое мая"],
-            ["The tenth of October", "Десятое октября"],
-            ["The twenty-third of April", "Двадцать третье апреля"],
-            ["The fifteenth of August", "Пятнадцатое августа"],
-            ["The thirtieth of November", "Тридцатое ноября"],
-            ["The second of February", "Второе февраля"],
-            ["The twenty-seventh of July", "Двадцать седьмое июля"],
-            ["The eighth of March", "Восьмое марта"],
-            ["The twelfth of June", "Двенадцатое июня"],
-            ["The twenty-first of December", "Двадцать первое декабря"],
-            ["The sixth of September", "Шестое сентября"],
-            ["The ninth of October", "Девятое октября"],
-            ["The fourteenth of February", "Четырнадцатое февраля"],
-            ["The twenty-ninth of February", "Двадцать девятое февраля"],
-            ["The seventeenth of November", "Семнадцатое ноября"],
-            ["The third of March", "Третье марта"],
-            ["The twenty-fifth of December", "Двадцать пятое декабря"],
-            ["The fourth of April", "Четвертое апреля"],
-            ["The eighteenth of January", "Восемнадцатое января"]
-        ];
+            // Дата (число и месяц)
+            const exercises_of_date = [
+                ["The first of January", "Первое января"],
+                ["The fifth of May", "Пятое мая"],
+                ["The tenth of October", "Десятое октября"],
+                ["The twenty-third of April", "Двадцать третье апреля"],
+                ["The fifteenth of August", "Пятнадцатое августа"],
+                ["The thirtieth of November", "Тридцатое ноября"],
+                ["The second of February", "Второе февраля"],
+                ["The twenty-seventh of July", "Двадцать седьмое июля"],
+                ["The eighth of March", "Восьмое марта"],
+                ["The twelfth of June", "Двенадцатое июня"],
+                ["The twenty-first of December", "Двадцать первое декабря"],
+                ["The sixth of September", "Шестое сентября"],
+                ["The ninth of October", "Девятое октября"],
+                ["The fourteenth of February", "Четырнадцатое февраля"],
+                ["The twenty-ninth of February", "Двадцать девятое февраля"],
+                ["The seventeenth of November", "Семнадцатое ноября"],
+                ["The third of March", "Третье марта"],
+                ["The twenty-fifth of December", "Двадцать пятое декабря"],
+                ["The fourth of April", "Четвертое апреля"],
+                ["The eighteenth of January", "Восемнадцатое января"]
+            ];
 
-        const exercises_of_similar = [
-            ["He has the heart of a lion", "У него сердце льва"],
-            ["She has the voice of an angel", "У нее голос ангела"],
-            ["This cake tastes of chocolate", "Этот торт на вкус шоколадный"],
-            ["The city has the charm of old Europe", "Город обладает очарованием старой Европы"],
-            ["His manner is of a true gentleman", "Его манера – настоящего джентльмена"],
-            ["She has the spirit of a warrior", "У нее дух воина"],
-            ["He spoke with the authority of an expert", "Он говорил с авторитетом эксперта"],
-            ["The painting has the beauty of a sunset", "Картина имеет красоту заката"],
-            ["Her dress is of the latest fashion", "Ее платье – последняя мода"],
-            ["This fabric has the softness of silk", "Эта ткань на ощупь мягкая, как шелк"],
-            ["His attitude is of a true leader", "Его отношение – истинного лидера"],
-            ["She showed the patience of a saint", "Она проявила терпение святой"],
-            ["The movie has the thrill of a classic adventure", "Фильм полон волнения классического приключения"],
-            ["His stories have the depth of a great novel", "Его истории имеют глубину великого романа"],
-            ["This dish has the flavor of the Mediterranean", "Это блюдо имеет вкус средиземноморья"],
-            ["She has the grace of a dancer", "У нее грация танцовщицы"],
-            ["His smile has the warmth of summer", "Его улыбка имеет тепло лета"],
-            ["The sound of the music was of the 80s", "Звук музыки из 80-х"],
-            ["This plant has the resilience of a cactus", "Это растение имеет стойкость как кактус"],
-            ["Her expression was of pure joy", "Ее выражение было полным радости"]
-        ];
+            // Характерный для, похожий на
+            const exercises_of_similar = [
+                ["He has the heart of a lion", "У него сердце льва"],
+                ["She has the voice of an angel", "У нее голос ангела"],
+                ["This cake tastes of chocolate", "Этот торт на вкус шоколадный"],
+                ["The city has the charm of old Europe", "Город обладает очарованием старой Европы"],
+                ["His manner is of a true gentleman", "Его манера – настоящего джентльмена"],
+                ["She has the spirit of a warrior", "У нее дух воина"],
+                ["He spoke with the authority of an expert", "Он говорил с авторитетом эксперта"],
+                ["The painting has the beauty of a sunset", "Картина имеет красоту заката"],
+                ["Her dress is of the latest fashion", "Ее платье – последняя мода"],
+                ["This fabric has the softness of silk", "Эта ткань на ощупь мягкая, как шелк"],
+                ["His attitude is of a true leader", "Его отношение – истинного лидера"],
+                ["She showed the patience of a saint", "Она проявила терпение святой"],
+                ["The movie has the thrill of a classic adventure", "Фильм полон волнения классического приключения"],
+                ["His stories have the depth of a great novel", "Его истории имеют глубину великого романа"],
+                ["This dish has the flavor of the Mediterranean", "Это блюдо имеет вкус средиземноморья"],
+                ["She has the grace of a dancer", "У нее грация танцовщицы"],
+                ["His smile has the warmth of summer", "Его улыбка имеет тепло лета"],
+                ["The sound of the music was of the 80s", "Звук музыки из 80-х"],
+                ["This plant has the resilience of a cactus", "Это растение имеет стойкость как кактус"],
+                ["Her expression was of pure joy", "Ее выражение было полным радости"]
+            ];
 
-        const exercises_of_relative = [
-            ["Speaking of dinner, are you hungry?", "Говоря о ужине, ты голоден?"],
-            ["What do you think of her dress?", "Что ты думаешь о её платье?"],
-            ["I heard about the news from him.", "Я услышал новости от него."],
-            ["We talked about the project yesterday.", "Мы говорили о проекте вчера."],
-            ["Do you know of any good restaurants?", "Ты знаешь о хороших ресторанах?"],
-            ["She spoke of her travels.", "Она говорила о своих путешествиях."],
-            ["I have a question about the assignment.", "У меня есть вопрос по заданию."],
-            ["Let’s discuss the issue of funding.", "Давайте обсудим вопрос финансирования."],
-            ["What’s your opinion of this movie?", "Какое у тебя мнение об этом фильме?"],
-            ["I read a book about history.", "Я прочитал книгу об истории."],
-            ["He complained of feeling tired.", "Он пожаловался на усталость."],
-            ["We were talking of our plans.", "Мы говорили о наших планах."],
-            ["She knows a lot about art.", "Она много знает об искусстве."],
-            ["I have some thoughts on the topic.", "У меня есть мысли по этой теме."],
-            ["They are concerned about the weather.", "Они обеспокоены погодой."],
-            ["Can you tell me about your job?", "Ты можешь рассказать о своей работе?"],
-            ["He asked about your family.", "Он спрашивал о твоей семье."],
-            ["Let’s not speak of the past.", "Давайте не говорить о прошлом."],
-            ["I learned about this place from her.", "Я узнал об этом месте от неё."],
-            ["What do you remember of our trip?", "Что ты помнишь о нашей поездке?"],
-            ["He spoke of his childhood memories.", "Он говорил о своих воспоминаниях о детстве."]
-        ];
+            // О, относительно чего-то
+            const exercises_of_relative = [
+                ["Speaking of dinner, are you hungry?", "Говоря об ужине, ты голоден?"],
+                ["What do you think of her dress?", "Что ты думаешь о её платье?"],
+                ["Do you know of any good restaurants?", "Ты знаешь о хороших ресторанах?"],
+                ["She spoke of her travels.", "Она говорила о своих путешествиях."],
+                ["What’s your opinion of this movie?", "Какое у тебя мнение об этом фильме?"],
+                ["He complained of feeling tired.", "Он пожаловался на усталость."],
+                ["We were talking of our plans.", "Мы говорили о наших планах."],
+                ["Let’s discuss the issue of funding.", "Давайте обсудим вопрос финансирования."],
+                ["What do you remember of our trip?", "Что ты помнишь о нашей поездке?"],
+                ["He spoke of his childhood memories.", "Он говорил о своих воспоминаниях о детстве."],
+                ["Let’s not speak of the past.", "Давайте не говорить о прошлом."],
+                ["She knows of many artists.", "Она знает о многих художниках."],
+                ["He asked of your well-being.", "Он спросил о твоём самочувствии."],
+                ["Do you think of her often?", "Ты часто думаешь о ней?"],
+                ["They dreamed of a better future.", "Они мечтали о лучшем будущем."],
+                ["He boasted of his accomplishments.", "Он хвастался своими достижениями."],
+                ["She spoke of her experiences abroad.", "Она говорила о своём опыте за границей."],
+                ["He thought of his family constantly.", "Он постоянно думал о своей семье."],
+                ["What do you think of my idea?", "Что ты думаешь о моей идее?"],
+                ["I reminded him of our agreement.", "Я напомнил ему о нашем соглашении."]
+            ];
 
-        const exercises_of_cause = [
-            ["He cried out of joy.", "Он закричал от радости."],
-            ["She was shivering out of cold.", "Она дрожала от холода."],
-            ["They laughed out of happiness.", "Они смеялись от счастья."],
-            ["He sighed out of relief.", "Он вздохнул с облегчением."],
-            ["She left out of frustration.", "Она ушла от разочарования."],
-            ["He was trembling out of fear.", "Он дрожал от страха."],
-            ["She smiled out of kindness.", "Она улыбнулась от доброты."],
-            ["They cheered out of excitement.", "Они закричали от восторга."],
-            ["He stumbled out of surprise.", "Он споткнулся от неожиданности."],
-            ["She spoke out of concern.", "Она говорила от беспокойства."],
-            ["They danced out of joy.", "Они танцевали от радости."],
-            ["He ran out of anger.", "Он убежал от злости."],
-            ["She whispered out of secrecy.", "Она шептала от секретности."],
-            ["They smiled out of happiness.", "Они улыбнулись от счастья."],
-            ["He shuddered out of disgust.", "Он содрогнулся от отвращения."],
-            ["She blushed out of embarrassment.", "Она покраснела от смущения."],
-            ["He groaned out of pain.", "Он застонал от боли."],
-            ["They celebrated out of relief.", "Они отпраздновали от облегчения."],
-            ["She sighed out of disappointment.", "Она вздохнула от разочарования."],
-            ["He laughed out of disbelief.", "Он засмеялся от недоверия."]
-        ];
+            // Причина чего-то
+            const exercises_of_cause = [
+                ["He cried out of joy.", "Он закричал от радости."],
+                ["She was shivering out of cold.", "Она дрожала от холода."],
+                ["They laughed out of happiness.", "Они смеялись от счастья."],
+                ["He sighed out of relief.", "Он вздохнул с облегчением."],
+                ["She left out of frustration.", "Она ушла от разочарования."],
+                ["He was trembling out of fear.", "Он дрожал от страха."],
+                ["She smiled out of kindness.", "Она улыбнулась от доброты."],
+                ["They cheered out of excitement.", "Они закричали от восторга."],
+                ["He stumbled out of surprise.", "Он споткнулся от неожиданности."],
+                ["She spoke out of concern.", "Она говорила от беспокойства."],
+                ["They danced out of joy.", "Они танцевали от радости."],
+                ["He ran out of anger.", "Он убежал от злости."],
+                ["She whispered out of secrecy.", "Она шептала от секретности."],
+                ["They smiled out of happiness.", "Они улыбнулись от счастья."],
+                ["He shuddered out of disgust.", "Он содрогнулся от отвращения."],
+                ["She blushed out of embarrassment.", "Она покраснела от смущения."],
+                ["He groaned out of pain.", "Он застонал от боли."],
+                ["They celebrated out of relief.", "Они отпраздновали от облегчения."],
+                ["She sighed out of disappointment.", "Она вздохнула от разочарования."],
+                ["He laughed out of disbelief.", "Он засмеялся от недоверия."]
+            ];
 
-        const exercises_of_behavior_assessment = [
-            ["It was rude of him.", "С его стороны было грубо."],
-            ["How kind of you!", "Как мило с тебя!"],
-            ["It was careless of her.", "С ее стороны было неосторожно."],
-            ["How generous of them!", "Как щедро с них!"],
-            ["It was selfish of him.", "С его стороны было эгоистично."],
-            ["How brave of her!", "Как смело с нее!"],
-            ["It was inconsiderate of you.", "С твоей стороны было невежливо."],
-            ["How thoughtful of him!", "Как заботливо с его стороны!"],
-            ["It was foolish of them.", "С их стороны было глупо."],
-            ["How polite of you!", "Как вежливо с тебя!"],
-            ["It was naive of her.", "С ее стороны было наивно."],
-            ["How exciting of them!", "Как захватывающе с них!"],
-            ["It was thoughtless of him.", "С его стороны было невнимательно."],
-            ["How diligent of you!", "Как усердно с тебя!"],
-            ["It was inspiring of her.", "С ее стороны было вдохновляюще."],
-            ["How amazing of him!", "Как удивительно с него!"],
-            ["It was unfortunate of you.", "С твоей стороны было несчастливо."],
-            ["How considerate of them!", "Как заботливо с них!"],
-            ["It was brave of you.", "С твоей стороны было смело."],
-            ["How clever of her!", "Как умно с нее!"]
-        ];
+            // Оценка поведения
+            const exercises_of_behavior_assessment = [
+                ["It was rude of him.", "С его стороны было грубо."],
+                ["How kind of you!", "Как мило с тебя!"],
+                ["It was careless of her.", "С ее стороны было неосторожно."],
+                ["How generous of them!", "Как щедро с них!"],
+                ["It was selfish of him.", "С его стороны было эгоистично."],
+                ["How brave of her!", "Как смело с нее!"],
+                ["It was inconsiderate of you.", "С твоей стороны было невежливо."],
+                ["How thoughtful of him!", "Как заботливо с его стороны!"],
+                ["It was foolish of them.", "С их стороны было глупо."],
+                ["How polite of you!", "Как вежливо с тебя!"],
+                ["It was naive of her.", "С ее стороны было наивно."],
+                ["How exciting of them!", "Как захватывающе с них!"],
+                ["It was thoughtless of him.", "С его стороны было невнимательно."],
+                ["How diligent of you!", "Как усердно с тебя!"],
+                ["It was inspiring of her.", "С ее стороны было вдохновляюще."],
+                ["How amazing of him!", "Как удивительно с него!"],
+                ["It was unfortunate of you.", "С твоей стороны было несчастливо."],
+                ["How considerate of them!", "Как заботливо с них!"],
+                ["It was brave of you.", "С твоей стороны было смело."],
+                ["How clever of her!", "Как умно с нее!"]
+            ];
 
-        const exercises_of_comparison_with_others = [
-            ["She sings best of all.", "Она поёт лучше всех."],
-            ["This book is the most interesting.", "Эта книга самая интересная."],
-            ["He runs fastest.", "Он бегает быстрее."],
-            ["This is the best cake.", "Это лучший торт."],
-            ["She is the smartest.", "Она самая умная."],
-            ["That was the worst movie.", "Это был худший фильм."],
-            ["He is the tallest.", "Он самый высокий."],
-            ["This game is the most exciting.", "Эта игра самая захватывающая."],
-            ["She has the nicest smile.", "У неё самая приятная улыбка."],
-            ["This problem is the easiest.", "Эта задача самая лёгкая."],
-            ["He is the strongest.", "Он самый сильный."],
-            ["This is the coldest day.", "Это самый холодный день."],
-            ["She is the kindest.", "Она самая добрая."],
-            ["That was the hardest test.", "Это был самый трудный тест."],
-            ["He is the richest.", "Он самый богатый."],
-            ["This is the least interesting topic.", "Это самая неинтересная тема."],
-            ["She responds quickest.", "Она отвечает быстрее."],
-            ["This lecture was the most boring.", "Эта лекция была самой скучной."],
-            ["He is the most talented.", "Он самый талантливый."],
-            ["This pizza is the best.", "Эта пицца лучшая."]
-        ];
+            // Сравнение с остальными
+            const exercises_of_comparison_with_others = [
+                ["She sings best of all.", "Она поёт лучше всех."],
+                ["This is the most interesting book of all.", "Это самая интересная книга из всех."],
+                ["He runs the fastest of them all.", "Он бегает быстрее всех."],
+                ["This is the best cake of all.", "Это лучший торт из всех."],
+                ["She is the smartest of all.", "Она самая умная из всех."],
+                ["That was the worst movie of all.", "Это был худший фильм из всех."],
+                ["He is the tallest of the group.", "Он самый высокий в группе."],
+                ["This game is the most exciting of all.", "Эта игра самая захватывающая из всех."],
+                ["She has the nicest smile of all.", "У неё самая приятная улыбка из всех."],
+                ["This is the easiest problem of all.", "Это самая лёгкая задача из всех."],
+                ["He is the strongest of them all.", "Он самый сильный из всех."],
+                ["This is the coldest day of the year.", "Это самый холодный день года."],
+                ["She is the kindest of them all.", "Она самая добрая из всех."],
+                ["That was the hardest test of all.", "Это был самый трудный тест из всех."],
+                ["He is the richest of them all.", "Он самый богатый из всех."],
+                ["This is the least interesting topic of all.", "Это самая неинтересная тема из всех."],
+                ["She responds quickest of all.", "Она отвечает быстрее всех."],
+                ["This lecture was the most boring of all.", "Эта лекция была самой скучной из всех."],
+                ["He is the most talented of them all.", "Он самый талантливый из всех."],
+                ["This is the best pizza of all.", "Это лучшая пицца из всех."]
+            ];
 
-        const exercises_of_loss_or_deprivation_of_something = [
-            ["He was robbed of his wallet.", "У него украли кошелёк."],
-            ["She suffered the loss of her job.", "Она потеряла работу."],
-            ["They took away my freedom.", "Они лишили меня свободы."],
-            ["He was deprived of sleep.", "Его лишили сна."],
-            ["She mourned the death of her cat.", "Она скорбела о смерти своей кошки."],
-            ["I was cheated of my money.", "У меня украли деньги."],
-            ["They stole her phone.", "У неё украли телефон."],
-            ["He felt the pain of loss.", "Он чувствовал боль утраты."],
-            ["She experienced the loss of her home.", "Она пережила потерю дома."],
-            ["He grieved the passing of his friend.", "Он горевал о смерти друга."],
-            ["They took away his rights.", "Они лишили его прав."],
-            ["She was stripped of her title.", "Её лишили титула."],
-            ["He suffered the loss of a loved one.", "Он пережил утрату близкого."],
-            ["They removed his privileges.", "Они лишили его привилегий."],
-            ["She faced the loss of her savings.", "Она столкнулась с потерей сбережений."],
-            ["He lamented the loss of his youth.", "Он сожалел о потере юности."],
-            ["They deprived her of opportunities.", "Они лишили её возможностей."],
-            ["He was stripped of his dignity.", "Его лишили достоинства."],
-            ["She mourned the loss of her childhood.", "Она скорбела о потерянном детстве."],
-            ["He experienced the pain of loss.", "Он испытал боль утраты."],
-            ["They took away his possessions.", "Они забрали его вещи."]
-        ];
+            // Потеря или лишение чего-то
+            const exercises_of_loss_or_deprivation_of_something = [
+                ["He was robbed of his wallet.", "У него украли кошелёк."],
+                ["She suffered the loss of her job.", "Она потеряла работу."],
+                ["He was deprived of his freedom.", "Его лишили свободы."],
+                ["He was deprived of sleep.", "Его лишили сна."],
+                ["She mourned the death of her cat.", "Она скорбела о смерти своей кошки."],
+                ["I was cheated of my money.", "У меня украли деньги."],
+                ["She was robbed of her phone.", "У неё украли телефон."],
+                ["He felt the pain of loss.", "Он чувствовал боль утраты."],
+                ["She experienced the loss of her home.", "Она пережила потерю дома."],
+                ["He grieved the passing of his friend.", "Он горевал о смерти друга."],
+                ["He was deprived of his rights.", "Его лишили прав."],
+                ["She was stripped of her title.", "Её лишили титула."],
+                ["He suffered the loss of a loved one.", "Он пережил утрату близкого."],
+                ["He was deprived of his privileges.", "Его лишили привилегий."],
+                ["She faced the loss of her savings.", "Она столкнулась с потерей сбережений."],
+                ["He lamented the loss of his youth.", "Он сожалел о потере юности."],
+                ["They deprived her of opportunities.", "Они лишили её возможностей."],
+                ["He was stripped of his dignity.", "Его лишили достоинства."],
+                ["She mourned the loss of her childhood.", "Она скорбела о потерянном детстве."],
+                ["He experienced the pain of loss.", "Он испытал боль утраты."],
+                ["He was stripped of his possessions.", "Его лишили имущества."]
+            ];
 
-        const exercises_of_set_expressions = [
-            ["to be fond of", "быть в восторге от"],
-            ["to be afraid of", "бояться чего-то"],
-            ["to be tired of", "устать от чего-то"],
-            ["to be sure of", "быть уверенным в чем-то"],
-            ["to be proud of", "гордиться чем-то"],
-            ["to be capable of", "быть способным на"],
-            ["to be jealous of", "завидовать кому-то"],
-            ["to be aware of", "осознавать что-то"],
-            ["to be made of", "быть сделанным из"],
-            ["to be part of", "быть частью"],
-            ["to be full of", "быть полным чего-то"],
-            ["to be in need of", "нуждаться в"],
-            ["to be bored of", "скучать от чего-то"],
-            ["to be sick of", "быть сытым по горло чем-то"],
-            ["to be tired of", "устать от"],
-            ["to be afraid of", "бояться"],
-            ["to take care of", "заботиться о"],
-            ["to be critical of", "быть критичным к"],
-            ["to be supportive of", "поддерживать"],
-            ["to be guilty of", "нести вину за"],
-            ["to think highly of", "высоко ценить"]
-        ];
+            // Устойчивые выражения с предлогом of
+            const exercises_of_set_expressions = [
+                ["to be fond of", "быть в восторге от"],
+                ["to be afraid of", "бояться чего-то"],
+                ["to be tired of", "устать от чего-то"],
+                ["to be sure of", "быть уверенным в чем-то"],
+                ["to be proud of", "гордиться чем-то"],
+                ["to be capable of", "быть способным на"],
+                ["to be jealous of", "завидовать кому-то"],
+                ["to be aware of", "осознавать что-то"],
+                ["to be made of", "быть сделанным из"],
+                ["to be part of", "быть частью"],
+                ["to be full of", "быть полным чего-то"],
+                ["to be in need of", "нуждаться в"],
+                ["to be bored of", "скучать от чего-то"],
+                ["to be sick of", "быть сытым по горло чем-то"],
+                ["to be tired of", "устать от"],
+                ["to be afraid of", "бояться"],
+                ["to take care of", "заботиться о"],
+                ["to be critical of", "быть критичным к"],
+                ["to be supportive of", "поддерживать"],
+                ["to be guilty of", "нести вину за"],
+                ["to think highly of", "высоко ценить"]
+            ];
 
+            const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let sentence = shuffleSentence(item[0]);
+                        sentence = `${sentence}: <input type="text" class="input-size" oninput='checkAnswer(this, "${item[0]}")'/>  —  <i>${item[1]}</i>
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> 
+                        <span class="text-span" id="clue-medium-${index}">${item[0]}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+            generateExercisesEasy(getRandomThird(exercises_of_possessive), document.getElementById('exerciseForm_1'));
+
+
+            
+
+            function micSentence(micEl, id){
+                practice.micOn(micEl, id);
+            }
+
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
         </script>
     </div>
 </body>
