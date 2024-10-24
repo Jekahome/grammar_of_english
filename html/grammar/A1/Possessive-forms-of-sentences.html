@@ -523,7 +523,7 @@
                             origin = origin.replace('___', answer);
                         });
 
-                        sentence += `— ${item[1]}
+                        sentence += `<br>(${item[1]})
                         <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
                         <span class="text-span" id="clue-easy-${index}">${removeParentheses(origin)}</span>`;
