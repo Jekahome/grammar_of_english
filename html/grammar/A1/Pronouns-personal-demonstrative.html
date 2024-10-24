@@ -894,7 +894,7 @@
                         origin = origin.replace('___', answer);
                     });
 
-                    sentence += ` — ${item[1]}
+                    sentence += ` — <i>${item[1]}</i>
                     <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-3-${index}')"> 
                     <span class="text-span" id="clue-easy-3-${index}">${removeParentheses(origin)}</span>`;
