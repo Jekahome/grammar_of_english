@@ -526,7 +526,7 @@
                         sentence += `<img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
                         <span class="text-span" id="clue-easy-${index}">${removeParentheses(origin)}</span>
-                        <br>(${item[1]})`;
+                        <br>(<i>${item[1]}</i>)`;
                         exerciseForm.innerHTML += `<p>${sentence}</p>`;
                     });
                 };
@@ -544,10 +544,11 @@
                         let sentence = item[1].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[4]}')" />`);
                         origin = origin.replace('___', item[4]);
                         
-                        sentence = `${item[0]} — ${sentence} (${item[2]} — ${item[3]})
+                        sentence = `${item[0]} — ${sentence} 
                         <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-3-${index}')"> 
-                        <span class="text-span" id="clue-easy-3-${index}">${removeParentheses(origin)}</span>`;
+                        <span class="text-span" id="clue-easy-3-${index}">${removeParentheses(origin)}</span>
+                        <br>(<i>${item[2]} — ${item[3]}</i>)`;
                         exerciseForm.innerHTML += `<p>${sentence}</p>`;
                     });
                 };

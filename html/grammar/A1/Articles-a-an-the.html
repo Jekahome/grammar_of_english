@@ -1028,7 +1028,7 @@
                      let sentence = item[0].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[2][0]}')" />`);
                      let answer = item[0].replace('___',item[2][0]);
 
-                     sentence += `— ${item[1]}
+                     sentence += `— <i>${item[1]}</i>
                      <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>
                      <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
                      <span class="text-span" id="clue-easy-${index}">${answer}</span>`;
@@ -1049,7 +1049,7 @@
                      origin = origin.replace('___',answer);
                   });
 
-                  exerciseForm.innerHTML += `<p>${sentence} - ${item[1]}
+                  exerciseForm.innerHTML += `<p>${sentence} — <i>${item[1]}</i>
                      <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${origin}")'>
                      <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
                      <span class="text-span" id="clue-easy-2-${index}">${origin}</span>
@@ -1062,42 +1062,6 @@
          generateExercisesEasy(getRandomThird(exercises_context_articles_easy), document.getElementById('exerciseForm_3'));
          generateExercisesEasy2(getRandomThird(mixed_articles_exercises), document.getElementById('exerciseForm_4'));
          
-         function getRandomThird(arr) {
-               if (arr.length < 20){return arr}
-               const thirdLength = Math.ceil(arr.length / 3); 
-               const randomIndices = new Set(); 
-               while (randomIndices.size < thirdLength) {
-                  const randomIndex = Math.floor(Math.random() * arr.length);
-                  randomIndices.add(randomIndex);
-               }
-               const randomElements = Array.from(randomIndices).map(index => arr[index]);
-               return randomElements;
-         }
-
-         function checkAnswer(inputElement, correctAnswer) {
-               if (inputElement.value.length > 4){
-                  inputElement.style.width = (inputElement.value.length + 1) + 'ch';
-               }
-
-               const userAnswer = inputElement.value.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
-               const normalizedCorrectAnswer = correctAnswer.trim().toLowerCase().replace(/[^a-zа-яё]/g, '');
-
-               if (userAnswer === normalizedCorrectAnswer) {
-                  inputElement.className = 'input-size correct'; 
-               } else {
-                  inputElement.className = 'input-size incorrect'; 
-               }
-         }
-
-         function showClue(id) {
-               var el = document.getElementById(id);
-               el.style.visibility = "visible"; 
-
-               setTimeout(function() {
-                  el.style.visibility = "hidden";
-               }, 2000);
-         }
-
          function playSentence(sentence){
                practice.speak(sentence);
          }
