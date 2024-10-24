@@ -281,7 +281,6 @@
     
             let practice = new Practice({callback: recognition});
 
-
             const exercises_possessive_pronouns_easy_1 = [
                 ["___ book", "Книга моя.", ["my"]],
                 ["___ dog", "Собака его.", ["his"]],
@@ -416,7 +415,6 @@
                 ["We love ___ friends → The friends are ___.", "Мы любим наших друзей → Друзья наши.", ["our", "ours"]],
             ];
 
-
             const exercises_possessive_pronouns_whose = [
                 ["Whose cat is this?", "This cat is ___.", "Чей это кот?", "Этот кот его.", "His"],
                 ["Whose dog is that?", "That dog is ___.", "Чья это собака?", "Эта собака её.", "Hers"],
@@ -439,8 +437,6 @@
                 ["Whose chair is this?", "This chair is ___.", "Чей это стул?", "Этот стул их.", "Theirs"],
                 ["Whose clock is that?", "That clock is ___.", "Чьи это часы?", "Эти часы твои.", "Yours"],
             ];
-
-
 
             const exercises_four_form = [
                 ["John has a bicycle.", 
@@ -507,8 +503,6 @@
                 ]
             ];
 
-
-
             const generateExercisesEasy = (() => {
                 let index = 0; 
 
@@ -523,7 +517,7 @@
                             origin = origin.replace('___', answer);
                         });
 
-                        sentence += `<img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
+                        sentence += ` <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${removeParentheses(origin)}")'>
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
                         <span class="text-span" id="clue-easy-${index}">${removeParentheses(origin)}</span>
                         <br>(<i>${item[1]}</i>)`;
