@@ -21,7 +21,8 @@
 
         <p><strong>Can</strong> — мочь что-то сделать.</p>
 
-        <p><strong>Can</strong> не имеет различных форм (например, -ing, -ed), и его форма не меняется в зависимости от подлежащего. После глагола <strong>can</strong> основной глагол используется без частицы <em>to</em>.</p>
+        <p><strong>Can</strong> не имеет различных форм (например, -ing, -ed), и его форма не меняется в зависимости от подлежащего.<br> 
+            После глагола <strong>can</strong> основной глагол используется без частицы <em>to</em>.</p>
 
         <h3>Выражение способности или умения:</h3>
         <ul>
@@ -63,7 +64,21 @@
         </ul>
 
 
-        <h2>Упражнение</h2>
+        <h2>Упражнениея</h2>
+        <h3>Replace (Easy)</h3>
+        Составить грамматически правильные предложения.
+        <details>
+            <summary>1: Выражение способности или умения и Разрешение или возможность</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+        <details>
+            <summary>2: Глагол can в прошедшем времени и Вопросительная форма</summary>
+            <form id="exerciseForm_2"></form>
+        </details>
+        <details>
+            <summary>3: Сформировать вопрос и ответить</summary>
+            <form id="exerciseForm_3"></form>
+        </details>
 
         <h3>1. Поставить вопрос и ответить:</h3>
         <ul>
@@ -84,6 +99,209 @@
             <li>(bird) — It can sing. It can't run.</li>
             <li>(fish) — It can swim. It can't talk.</li>
         </ul>
+
+        <script src='/grammar_of_english/practice.js'></script>
+        <script>
+    
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+    
+            let practice = new Practice({callback: recognition});
+
+            // Выражение способности или умения
+            const exercises_easy_1 = [
+                ["I can ride a bike.", "Я умею ездить на велосипеде."],
+                ["She can cook pasta.", "Она умеет готовить пасту."],
+                ["He can play the guitar.", "Он умеет играть на гитаре."],
+                ["We can dance very well.", "Мы умеем хорошо танцевать."],
+                ["They can run fast.", "Они умеют быстро бегать."],
+                ["I can draw a cat.", "Я умею рисовать кошку."],
+                ["He can't sing.", "Он не умеет петь."],
+                ["She can't drive a car.", "Она не умеет водить машину."],
+                ["We can't speak Chinese.", "Мы не говорим по-китайски."],
+                ["Can you swim?", "Ты умеешь плавать?"],
+                ["I can play chess.", "Я умею играть в шахматы."],
+                ["She can solve this problem.", "Она может решить эту проблему."],
+                ["He can speak English.", "Он говорит по-английски."],
+                ["We can fix the car.", "Мы можем починить машину."],
+                ["I can't read Japanese.", "Я не умею читать по-японски."],
+                ["They can't run marathons.", "Они не умеют бегать марафоны."],
+                ["Can she bake a cake?", "Она умеет печь торт?"],
+                ["I can jump high.", "Я умею прыгать высоко."],
+                ["She can paint well.", "Она умеет хорошо рисовать."],
+                ["Can he use a computer?", "Он умеет пользоваться компьютером?"],
+                ["He can play basketball.", "Он умеет играть в баскетбол."],
+                ["I can make coffee.", "Я умею делать кофе."],
+                ["She can't skate.", "Она не умеет кататься на коньках."],
+                ["Can they sew clothes?", "Они умеют шить одежду?"],
+                ["We can play cards.", "Мы умеем играть в карты."]
+            ];
+
+            // Разрешение или возможность
+            const exercises_easy_2 = [
+                ["Can I go outside?", "Можно мне выйти на улицу?"],
+                ["You can leave now.", "Ты можешь идти сейчас."],
+                ["Can I borrow your book?", "Можно мне взять твою книгу?"],
+                ["He can stay at home.", "Он может остаться дома."],
+                ["Can we watch TV?", "Можно нам посмотреть телевизор?"],
+                ["You can use my laptop.", "Ты можешь использовать мой ноутбук."],
+                ["Can I sit here?", "Можно мне сесть здесь?"],
+                ["They can visit us tomorrow.", "Они могут навестить нас завтра."],
+                ["Can you help me with this?", "Можешь помочь мне с этим?"],
+                ["She can join us later.", "Она может присоединиться к нам позже."],
+                ["Can I call you later?", "Можно мне позвонить тебе позже?"],
+                ["You can take the bus.", "Ты можешь поехать на автобусе."],
+                ["Can they come to the party?", "Они могут прийти на вечеринку?"],
+                ["Can we go to the cinema?", "Можно нам пойти в кино?"],
+                ["You can open the window.", "Ты можешь открыть окно."],
+                ["Can I ask a question?", "Можно задать вопрос?"],
+                ["Can we play outside?", "Можно нам поиграть на улице?"],
+                ["They can visit us anytime.", "Они могут навестить нас в любое время."],
+                ["Can I use your phone?", "Можно воспользоваться твоим телефоном?"],
+                ["He can sleep here if he wants.", "Он может спать здесь, если хочет."],
+                ["Can we eat now?", "Можно нам поесть сейчас?"],
+                ["Can I take this seat?", "Можно занять это место?"],
+                ["You can go to the park.", "Ты можешь пойти в парк."],
+                ["Can she drive my car?", "Можно ей водить мою машину?"],
+                ["Can you bring me some water?", "Можешь принести мне воды?"]
+            ];
+
+            // Глагол can в прошедшем времени (could)
+            const exercises_easy_3 = [
+                ["I could swim when I was five.", "Я умел плавать, когда мне было пять."],
+                ["She could sing beautifully.", "Она могла прекрасно петь."],
+                ["Could you help me yesterday?", "Мог ли ты помочь мне вчера?"],
+                ["We could go to the park last week.", "Мы могли пойти в парк на прошлой неделе."],
+                ["They could finish the project on time.", "Они могли завершить проект вовремя."],
+                ["I could speak Spanish when I was young.", "Я умел говорить по-испански, когда был молод."],
+                ["Could she play the piano when she was little?", "Она умела играть на пианино, когда была маленькой?"],
+                ["He could read when he was four.", "Он умел читать в четыре года."],
+                ["We could visit them last summer.", "Мы могли навестить их прошлым летом."],
+                ["Could you understand that movie?", "Ты мог понять тот фильм?"],
+                ["I could not solve the puzzle.", "Я не мог решить головоломку."],
+                ["She could not come to the meeting.", "Она не могла прийти на встречу."],
+                ["Could they swim in the ocean?", "Они могли плавать в океане?"],
+                ["We could go to the party, but we didn’t.", "Мы могли пойти на вечеринку, но не пошли."],
+                ["He could not answer the question.", "Он не мог ответить на вопрос."],
+                ["Could you hear the noise last night?", "Ты мог слышать шум прошлой ночью?"],
+                ["They could visit us last year.", "Они могли навестить нас в прошлом году."],
+                ["I could walk for hours.", "Я мог ходить часами."],
+                ["She could finish the task quickly.", "Она могла быстро завершить задание."],
+                ["Could he drive at sixteen?", "Он мог водить машину в шестнадцать лет?"],
+                ["We could not find the keys.", "Мы не могли найти ключи."],
+                ["He could write letters at five.", "Он умел писать письма в пять лет."],
+                ["Could you help me with my homework?", "Ты мог помочь мне с домашним заданием?"],
+                ["She could see the stars clearly.", "Она могла ясно видеть звезды."],
+                ["I could not believe my eyes.", "Я не мог поверить своим глазам."]
+            ];
+
+            // Вопросительная форма
+            const exercises_easy_4 = [
+                ["Can you swim?", "Ты умеешь плавать?"],
+                ["Can she play the piano?", "Она умеет играть на пианино?"],
+                ["Can they come to the meeting?", "Они могут прийти на встречу?"],
+                ["Can we go home now?", "Мы можем пойти домой сейчас?"],
+                ["Can I borrow your car?", "Можно взять твою машину?"],
+                ["Can he finish the task today?", "Он может завершить задание сегодня?"],
+                ["Can they play soccer?", "Они умеют играть в футбол?"],
+                ["Can you speak French?", "Ты говоришь по-французски?"],
+                ["Can I ask a question?", "Можно задать вопрос?"],
+                ["Can we leave early?", "Мы можем уйти пораньше?"],
+                ["Can she help me with this?", "Она может помочь мне с этим?"],
+                ["Can I see the menu?", "Можно мне посмотреть меню?"],
+                ["Can he fix the car?", "Он может починить машину?"],
+                ["Can they join us later?", "Они могут присоединиться к нам позже?"],
+                ["Can you hear me?", "Ты меня слышишь?"],
+                ["Can I close the window?", "Можно закрыть окно?"],
+                ["Can we start the meeting?", "Мы можем начать встречу?"],
+                ["Can she visit us tomorrow?", "Она может навестить нас завтра?"],
+                ["Can they solve this problem?", "Они могут решить эту проблему?"],
+                ["Can you bring me a glass of water?", "Можешь принести мне стакан воды?"],
+                ["Can we park here?", "Мы можем припарковаться здесь?"],
+                ["Can I use your phone?", "Можно воспользоваться твоим телефоном?"],
+                ["Can she draw well?", "Она умеет хорошо рисовать?"],
+                ["Can you open the door?", "Ты можешь открыть дверь?"],
+                ["Can we watch a movie tonight?", "Мы можем посмотреть фильм сегодня вечером?"]
+            ];
+
+            const exercises_easy_5 = [
+                ["Can you ski?", "Yes, I can.", "Вы умеете кататься на лыжах?", "Да, умею."],
+                ["Can you swim?", "No, I can't.", "Вы умеете плавать?", "Нет, не умею."],
+                ["Can she play the piano?", "Yes, she can.", "Она умеет играть на пианино?", "Да, умеет."],
+                ["Can he ride a bike?", "No, he can't.", "Он умеет ездить на велосипеде?", "Нет, не умеет."],
+                ["Can they cook?", "Yes, they can.", "Они умеют готовить?", "Да, умеют."],
+                ["Can you drive a car?", "Yes, I can.", "Вы умеете водить машину?", "Да, умею."],
+                ["Can she speak French?", "No, she can't.", "Она говорит по-французски?", "Нет, не говорит."],
+                ["Can we go to the park?", "Yes, we can.", "Мы можем пойти в парк?", "Да, можем."],
+                ["Can he fix the computer?", "No, he can't.", "Он может починить компьютер?", "Нет, не может."],
+                ["Can you help me?", "Yes, I can.", "Вы можете помочь мне?", "Да, могу."],
+                ["Can they play soccer?", "Yes, they can.", "Они умеют играть в футбол?", "Да, умеют."],
+                ["Can she ride a horse?", "No, she can't.", "Она умеет ездить на лошади?", "Нет, не умеет."],
+                ["Can you speak Spanish?", "No, I can't.", "Вы говорите по-испански?", "Нет, не говорю."],
+                ["Can he sing?", "Yes, he can.", "Он умеет петь?", "Да, умеет."],
+                ["Can we start the meeting?", "Yes, we can.", "Мы можем начать встречу?", "Да, можем."],
+                ["Can you play chess?", "No, I can't.", "Вы умеете играть в шахматы?", "Нет, не умею."],
+                ["Can she draw?", "Yes, she can.", "Она умеет рисовать?", "Да, умеет."],
+                ["Can you dance?", "Yes, I can.", "Вы умеете танцевать?", "Да, умею."],
+                ["Can they come to the party?", "No, they can't.", "Они могут прийти на вечеринку?", "Нет, не могут."],
+                ["Can he speak English?", "Yes, he can.", "Он говорит по-английски?", "Да, говорит."],
+                ["Can you play the guitar?", "No, I can't.", "Вы умеете играть на гитаре?", "Нет, не умею."],
+                ["Can she drive a car?", "Yes, she can.", "Она умеет водить машину?", "Да, умеет."],
+                ["Can they swim?", "No, they can't.", "Они умеют плавать?", "Нет, не умеют."],
+                ["Can you ride a bike?", "Yes, I can.", "Вы умеете ездить на велосипеде?", "Да, умею."],
+                ["Can he play tennis?", "No, he can't.", "Он умеет играть в теннис?", "Нет, не умеет."]
+            ];
+
+
+            const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+
+                        let sentence = `${shuffleSentence(item[0])}: <input type="text" class="input-size" oninput='checkAnswer(this, "${item[0]}")'/>    
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                        <span class="text-span" id="clue-easy-${index}">${item[0]}</span>
+                        <br>(<i>${item[1]}</i>)`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+            const generateExercisesEasy2 = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+
+                        let sentence = `${shuffleSentence(item[0])}: <input type="text" class="input-size" oninput='checkAnswer(this, "${item[0]}")'/> 
+                        answer: <input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")'/>
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]} ${item[1]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                        <span class="text-span" id="clue-easy-2-${index}">${item[0]} ${item[1]}</span>
+                        <br>(<i>${item[2]} ${item[3]}</i>)`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+            generateExercisesEasy(getRandomThird(exercises_easy_1.concat(exercises_easy_2)), document.getElementById('exerciseForm_1'));
+            generateExercisesEasy(getRandomThird(exercises_easy_3.concat(exercises_easy_4)), document.getElementById('exerciseForm_2'));
+            generateExercisesEasy2(getRandomThird(exercises_easy_5), document.getElementById('exerciseForm_3'));
+
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
+
+        </script>
     </div>
 </body>
 </html>
