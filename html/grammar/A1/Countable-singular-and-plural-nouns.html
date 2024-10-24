@@ -825,7 +825,7 @@
                     index += 1;  
 
                     let sentence = `${item[0]} — <input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")'/>
-                    (${item[2]} — ${item[3]})
+                    (<i>${item[2]} — ${item[3]}</i>)
                     <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[1]}")'>
                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
                     <span class="text-span" id="clue-easy-${index}">${item[1]}</span>`;
@@ -844,7 +844,7 @@
                     let sentence = item[0].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[2][0]}')" />`);
                     let answer = item[0].replace('___',item[2][0]);
 
-                    sentence += `— ${item[1]}
+                    sentence += `— <i>${item[1]}</i>
                     <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>
                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
                     <span class="text-span" id="clue-easy-2-${index}">${answer}</span>`;
