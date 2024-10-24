@@ -108,7 +108,8 @@ function removeParentheses(text) {
 }
 
 function shuffleSentence(sentence) {
-    const words = sentence.split(" ");
+    const cleanedSentence = sentence.replace(/[.,]/g, "");
+    const words = cleanedSentence.split(" ");
     for (let i = words.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));   
         [words[i], words[j]] = [words[j], words[i]];    
