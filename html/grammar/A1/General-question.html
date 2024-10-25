@@ -90,31 +90,31 @@
     <h2>Вспомогательные глаголы для общих вопросов</h2>
     <p>В зависимости от времени, наклонения или модальности используются различные вспомогательные глаголы:</p>
     <ul>
-        <li><strong>Do/Does/Did</strong> — для настоящего и прошедшего времени:</li>
+        <li><strong>Do/Does/Did</strong> — для образования общих вопросов в настоящем и прошедшем времени (Present Simple и Past Simple):</li>
         <ul>
             <li><em>Do you speak English?</em> — <i>Ты говоришь по-английски?</i></li>
             <li><em>Does he like coffee?</em> — <i>Ему нравится кофе?</i></li>
             <li><em>Did they go to the park?</em> — <i>Они ходили в парк?</i></li>
         </ul>
     
-        <li><strong>Am/Is/Are</strong> — для настоящего продолженного времени:</li>
+        <li><strong>Am/Is/Are</strong> — для образования общих вопросов в настоящем продолженном времени (Present Continuous) и для выражения состояния (например, Is she happy? – Она счастлива?):</li>
         <ul>
             <li><em>Is she reading a book?</em> — <i>Она читает книгу?</i></li>
             <li><em>Are they playing football?</em> — <i>Они играют в футбол?</i></li>
         </ul>
     
-        <li><strong>Was/Were</strong> — для прошедшего продолженного времени:</li>
+        <li><strong>Was/Were</strong> — для образования общих вопросов в прошедшем продолженном времени (Past Continuous):</li>
         <ul>
             <li><em>Was he working yesterday?</em> — <i>Он работал вчера?</i></li>
             <li><em>Were they watching TV?</em> — <i>Они смотрели телевизор?</i></li>
         </ul>
     
-        <li><strong>Will</strong> — для будущего времени:</li>
+        <li><strong>Will</strong> — для образования общих вопросов в будущем времени (Future Simple):</li>
         <ul>
             <li><em>Will you come to the party?</em> — <i>Ты придешь на вечеринку?</i></li>
         </ul>
     
-        <li><strong>Can/Could/May/Might/Must</strong> — для выражения модальности:</li>
+        <li><strong>Can/Could/May/Might/Must</strong> — для выражения модальности (то есть выражения возможностей, просьб, разрешений, обязательств и вероятностей):</li>
         <ul>
             <li><em>Can you help me?</em> — <i>Ты можешь мне помочь?</i></li>
             <li><em>Could you open the window?</em> — <i>Не мог бы ты открыть окно?</i></li>
@@ -123,7 +123,7 @@
     </ul>
     
     <h2>Отрицательные общие вопросы</h2>
-    <p>Отрицательные общие вопросы формируются с помощью частицы <strong>not</strong>:</p>
+    <p>Отрицательные общие вопросы формируются с помощью частицы <strong>not (don't, isn't, won't)</strong>:</p>
     <ul>
         <li><em>Don't you like ice cream?</em> — <i>Разве тебе не нравится мороженое?</i></li>
         <li><em>Isn't she your friend?</em> — <i>Разве она не твоя подруга?</i></li>
@@ -171,6 +171,123 @@
 
     <p>Эти вопросы помогают ученикам привыкнуть к базовой структуре английского языка и начать использовать его для простого общения.</p>
 
+    <h2>Упражнениея</h2>
+    <h3>Replace (Easy)</h3>
+    <p>Составить грамматически правильные предложения.</p>
+    <details>
+        <summary>1: Вспомогательные глаголы для общих вопросов</summary>
+        <form id="exerciseForm_1"></form>
+    </details>
+
+    <details>
+        <summary>2: Отрицательные общие вопросы</summary>
+        <form id="exerciseForm_2"></form>
+    </details>
+
+    <script src='/grammar_of_english/practice.js'></script>
+    <script>
+
+        function recognition(id, recognition){
+            console.log(`id=${id} recognition=${recognition}`);
+            var el = document.getElementById(id);
+            el.value = recognition;
+            const inputEvent = new Event('input');
+            el.dispatchEvent(inputEvent);
+        }
+
+        let practice = new Practice({callback: recognition});
+
+        const exercises_easy_1 = [
+            ["Do you like music?", "Yes, I do.", "Ты любишь музыку?", "Да, я люблю."],
+            ["Does she have a cat?", "Yes, she does.", "У нее есть кошка?", "Да, у нее есть."],
+            ["Did they go to school?", "No, they didn't.", "Они ходили в школу?", "Нет, не ходили."],
+            ["Can you swim?", "Yes, I can.", "Ты умеешь плавать?", "Да, умею."],
+            ["Is he a teacher?", "Yes, he is.", "Он учитель?", "Да, он учитель."],
+            ["Are you happy?", "Yes, I am.", "Ты счастлив?", "Да, я счастлив."],
+            ["Will she come tomorrow?", "No, she won't.", "Она придет завтра?", "Нет, не придет."],
+            ["Can they drive a car?", "Yes, they can.", "Они умеют водить машину?", "Да, умеют."],
+            ["Do we need more water?", "Yes, we do.", "Нам нужно больше воды?", "Да, нужно."],
+            ["Does it work?", "No, it doesn't.", "Это работает?", "Нет, не работает."],
+            ["Am I late?", "No, you're not.", "Я опоздал?", "Нет, не опоздал."],
+            ["Are they friends?", "Yes, they are.", "Они друзья?", "Да, они друзья."],
+            ["Did she call you?", "Yes, she did.", "Она звонила тебе?", "Да, звонила."],
+            ["Can he cook?", "No, he can't.", "Он умеет готовить?", "Нет, не умеет."],
+            ["Will it rain today?", "Yes, it will.", "Сегодня пойдет дождь?", "Да, пойдет."],
+            ["Do you live here?", "Yes, I do.", "Ты живешь здесь?", "Да, живу."],
+            ["Is this your book?", "No, it's not.", "Это твоя книга?", "Нет, не моя."],
+            ["Are we ready?", "Yes, we are.", "Мы готовы?", "Да, готовы."],
+            ["Does he play football?", "Yes, he does.", "Он играет в футбол?", "Да, играет."],
+            ["Did you see her?", "No, I didn't.", "Ты видел ее?", "Нет, не видел."],
+            ["Can she dance?", "Yes, she can.", "Она умеет танцевать?", "Да, умеет."],
+            ["Will you help me?", "Yes, I will.", "Ты поможешь мне?", "Да, помогу."],
+            ["Is he your brother?", "No, he's not.", "Он твой брат?", "Нет, не брат."],
+            ["Are you at home?", "Yes, I am.", "Ты дома?", "Да, я дома."],
+            ["Do they know each other?", "Yes, they do.", "Они знают друг друга?", "Да, знают."],
+            ["Does it hurt?", "No, it doesn't.", "Больно?", "Нет, не больно."],
+            ["Can you read this?", "Yes, I can.", "Ты можешь прочитать это?", "Да, могу."],
+            ["Did he buy a car?", "No, he didn't.", "Он купил машину?", "Нет, не купил."],
+            ["Will they arrive soon?", "Yes, they will.", "Они скоро прибудут?", "Да, скоро."],
+            ["Are we late?", "No, we're not.", "Мы опоздали?", "Нет, не опоздали."]
+        ];
+
+        const exercises_easy_2 = [
+            ["Don't you like coffee?", "Yes, I do.", "Разве тебе не нравится кофе?", "Нет, мне нравится."],
+            ["Isn't he a doctor?", "Yes, he is.", "Разве он не доктор?", "Нет, он доктор."],
+            ["Won't they come tomorrow?", "Yes, they will.", "Разве они не придут завтра?", "Нет, они придут."],
+            ["Can't you swim?", "Yes, I can.", "Разве ты не умеешь плавать?", "Нет, умею."],
+            ["Didn't she call you?", "No, she didn't.", "Разве она тебе не звонила?", "Нет, не звонила."],
+            ["Doesn't he live here?", "Yes, he does.", "Разве он не живет здесь?", "Нет, живет."],
+            ["Aren't we friends?", "Yes, we are.", "Разве мы не друзья?", "Нет, друзья."],
+            ["Hasn't she finished?", "No, she hasn't.", "Разве она не закончила?", "Нет, не закончила."],
+            ["Isn't this your book?", "Yes, it is.", "Разве это не твоя книга?", "Нет, моя."],
+            ["Don't you work on Mondays?", "Yes, I do.", "Разве ты не работаешь по понедельникам?", "Нет, работаю."],
+            ["Isn't he coming?", "Yes, he is.", "Разве он не идет?", "Нет, идет."],
+            ["Doesn't she know?", "No, she doesn't.", "Разве она не знает?", "Нет, не знает."],
+            ["Can't we start now?", "Yes, we can.", "Разве мы не можем начать сейчас?", "Нет, можем."],
+            ["Didn't they leave?", "Yes, they did.", "Разве они не ушли?", "Нет, ушли."],
+            ["Aren't you tired?", "Yes, I am.", "Разве ты не устал?", "Нет, устал."],
+            ["Doesn't it hurt?", "Yes, it does.", "Разве это не больно?", "Нет, больно."],
+            ["Won't she help us?", "Yes, she will.", "Разве она не поможет нам?", "Нет, поможет."],
+            ["Can't you drive?", "Yes, I can.", "Разве ты не умеешь водить?", "Нет, умею."],
+            ["Aren't they ready?", "No, they aren't.", "Разве они не готовы?", "Нет, не готовы."],
+            ["Didn't you hear that?", "No, I didn't.", "Разве ты это не слышал?", "Нет, не слышал."],
+            ["Doesn't he like music?", "Yes, he does.", "Разве ему не нравится музыка?", "Нет, нравится."],
+            ["Hasn't she arrived?", "Yes, she has.", "Разве она не приехала?", "Нет, приехала."],
+            ["Don't they need help?", "Yes, they do.", "Разве им не нужна помощь?", "Нет, нужна."],
+            ["Isn't it beautiful?", "Yes, it is.", "Разве это не красиво?", "Нет, красиво."],
+            ["Didn't you go to school?", "Yes, I did.", "Разве ты не ходил в школу?", "Нет, ходил."],
+            ["Doesn't she speak English?", "Yes, she does.", "Разве она не говорит по-английски?", "Нет, говорит."],
+            ["Aren't we going?", "Yes, we are.", "Разве мы не идем?", "Нет, идем."],
+            ["Won't he join us?", "Yes, he will.", "Разве он не присоединится к нам?", "Нет, присоединится."],
+            ["Can't they read?", "Yes, they can.", "Разве они не умеют читать?", "Нет, умеют."],
+            ["Doesn't it work?", "No, it doesn't.", "Разве это не работает?", "Нет, не работает."]
+        ];
+
+        const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+
+                        let sentence = `${shuffleSentence(item[0])}: <input type="text" class="input-size" oninput='checkAnswer(this, "${item[0]}")'/> 
+                        answer: <input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")'/>
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]} ${item[1]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                        <span class="text-span" id="clue-easy-2-${index}">${item[0]} ${item[1]}</span>
+                        <br>(<i>${item[2]} ${item[3]}</i>)`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+            generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+            generateExercisesEasy(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_2'));
+
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
+    </script>
     </div>
 </body>
 </html>
