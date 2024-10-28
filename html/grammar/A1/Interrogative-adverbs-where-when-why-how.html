@@ -317,13 +317,13 @@
 
                         <input type="text" class="input-size" oninput="checkAnswer(this, '${item[4][0]}')" /> — ${item[4][1]}
                         <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[4][0]}")'>
-                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index}')"> 
-                        <span class="text-span" id="clue-easy-4-${index}">${item[4][0]}</span><br> 
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index+2}')"> 
+                        <span class="text-span" id="clue-easy-4-${index+2}">${item[4][0]}</span><br> 
 
                         <input type="text" class="input-size" oninput="checkAnswer(this, '${item[5][0]}')" /> — ${item[5][1]}
                         <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[5][0]}")'>
-                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index}')"> 
-                        <span class="text-span" id="clue-easy-4-${index}">${item[5][0]}</span><br> 
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index+3}')"> 
+                        <span class="text-span" id="clue-easy-4-${index+3}">${item[5][0]}</span><br> 
                         `;
                         index += 3;
                         exerciseForm.innerHTML += `<p>${sentence}</p>`;
