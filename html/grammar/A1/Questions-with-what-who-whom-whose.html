@@ -69,43 +69,392 @@
             <li><code>Whose books are these?</code> — Чьи это книги?</li>
          </ul>
    
-         <h2>Упражнение</h2>
-   
-         <ol>
-            <li>Задай вопросы к этим упражнениям:</li>
-            <ul>
-               <li>Somebody broke the window yesterday. — Who broke the window?</li>
-               <li>I met somebody yesterday. — Who did you meet?</li>
-               <li>I want something. — What do you want?</li>
-               <li>I phoned somebody yesterday evening. — Who did you phone yesterday evening?</li>
-               <li>Somebody wants to talk to you. — Who wants to talk to you?</li>
-               <li>Somebody stole my purse yesterday. — Who stole your purse yesterday?</li>
-               <li>I am going to read something. — What are you going to read?</li>
-               <li>Something is happening. — What is happening?</li>
-               <li>I play something every day. — What do you play every day?</li>
-            </ul>
-   
-            <li>Перевести:</li>
-            <ul>
-               <li>Кто тебе это сказал? — Who told you this?</li>
-               <li>Кого ты ждешь? — Who are you waiting for?</li>
-               <li>С кем ты собираешься поехать в отпуск? — Who are you going on vacation with?</li>
-               <li>Что ты пьешь? — What are you drinking?</li>
-               <li>Что случится, если я не приду? — What will happen if I don't come?</li>
-               <li>Кто здесь говорит по-китайски? — Who speaks Chinese here?</li>
-            </ul>
-   
-            <li>Дополни:</li>
-            <ul>
-               <li>... are you waiting ...? — My brother.</li>
-               <li>... is he looking ...? — Those beautiful birds.</li>
-               <li>... is she looking ...? — Her son.</li>
-               <li>... are you afraid ...? — Snakes and darkness.</li>
-               <li>... is she laughing ...? — That new joke.</li>
-            </ul>
-         </ol>
+         <a href="https://skyeng.ru/articles/vidy-voprosov-v-anglijskom-yazyke/">Виды вопросов в английском языке</a> 
 
-      <a href="https://skyeng.ru/articles/vidy-voprosov-v-anglijskom-yazyke/">Виды вопросов в английском языке</a>   
+         <h2>Упражнениея</h2>
+         <h3>Replace (Easy)</h3>
+         <details>
+            <summary>1: Заполнить пропуски</summary>
+            <form id="exerciseForm_1"></form>
+         </details>
+
+         <details>
+               <summary>2: Составить грамматически правильные предложения</summary>
+               <form id="exerciseForm_2"></form>
+         </details>
+
+         <details>
+               <summary>3: Задать вопросы к этим предложениям</summary>
+               <form id="exerciseForm_3"></form>
+         </details>
+
+         <details>
+               <summary>4: Составить вопросы на основе предложения</summary>
+               <form id="exerciseForm_4"></form>
+         </details>
+
+
+
+      <script src='/grammar_of_english/practice.js'></script>
+      <script>
+
+         function recognition(id, recognition){
+            console.log(`id=${id} recognition=${recognition}`);
+            var el = document.getElementById(id);
+            el.value = recognition;
+            const inputEvent = new Event('input');
+            el.dispatchEvent(inputEvent);
+         }
+
+         let practice = new Practice({callback: recognition});
+
+         const exercises_easy_1 = [
+            ["He goes to the gym.", "Он ходит в спортзал.", "What does he do?", "Что он делает?"],
+            ["She loves playing the piano.", "Она любит играть на пианино.", "What does she love?", "Что она любит?"],
+            ["They are having a picnic in the park.", "Они устраивают пикник в парке.", "Where are they having a picnic?", "Где они устраивают пикник?"],
+            ["John is studying for his exams.", "Джон готовится к экзаменам.", "What is John studying for?", "К чему Джон готовится?"],
+            ["Mia invited her friends to her birthday party.", "Миа пригласила своих друзей на день рождения.", "Who did Mia invite?", "Кого пригласила Миа?"],
+            ["The cat chased the mouse.", "Кошка гонялась за мышью.", "What did the cat chase?", "Кого гонялась кошка?"],
+            ["They are reading an interesting book.", "Они читают интересную книгу.", "What are they reading?", "Что они читают?"],
+            ["He met his old friends at the reunion.", "Он встретил своих старых друзей на встрече.", "Whom did he meet?", "Кого он встретил?"],
+            ["The teacher gave a lecture on history.", "Учитель провел лекцию по истории.", "What did the teacher give?", "Что дал учитель?"],
+            ["The dog belongs to my neighbor.", "Эта собака принадлежит моему соседу.", "Whose dog is it?", "Чья это собака?"],
+            ["She bought a new dress for the party.", "Она купила новое платье для вечеринки.", "What did she buy?", "Что она купила?"],
+            ["Tom plays soccer every weekend.", "Том играет в футбол каждые выходные.", "What does Tom play?", "Во что играет Том?"],
+            ["They visited their grandparents last summer.", "Они навестили бабушку и дедушку прошлым летом.", "Whom did they visit?", "Кого они навестили?"],
+            ["The students are preparing for the exam.", "Студенты готовятся к экзамену.", "What are the students preparing for?", "К чему готовятся студенты?"],
+            ["My brother loves to travel.", "Мой брат любит путешествовать.", "What does my brother love?", "Что любит мой брат?"],
+            ["She enjoys reading mystery novels.", "Она любит читать детективные романы.", "What does she enjoy?", "Что ей нравится?"],
+            ["The cake was baked by her mother.", "Торт был испечен её мамой.", "Who baked the cake?", "Кто испек торт?"],
+            ["They are planning a trip to Europe.", "Они планируют поездку в Европу.", "What are they planning?", "Что они планируют?"],
+            ["He always helps his friends with homework.", "Он всегда помогает своим друзьям с домашними заданиями.", "Whom does he help?", "Кому он помогает?"],
+            ["The car belongs to my father.", "Эта машина принадлежит моему отцу.", "Whose car is it?", "Чья это машина?"],
+            ["Lisa wrote an email to her teacher.", "Лиза написала электронное письмо своему учителю.", "Who did Lisa write to?", "Кому написала Лиза?"],
+            ["They found a wallet on the street.", "Они нашли кошелек на улице.", "What did they find?", "Что они нашли?"],
+            ["The dog chased the ball across the yard.", "Собака гонялась за мячом по двору.", "What did the dog chase?", "Что гонялась собака?"],
+            ["Emma is learning Spanish.", "Эмма учит испанский язык.", "What is Emma learning?", "Что учит Эмма?"],
+            ["John repaired his bicycle yesterday.", "Джон починил свой велосипед вчера.", "What did John repair?", "Что починил Джон?"],
+            ["They watched a documentary about space.", "Они смотрели документальный фильм о космосе.", "What did they watch?", "Что они смотрели?"],
+            ["The project was completed on time.", "Проект был завершён вовремя.", "What was completed on time?", "Что было завершено вовремя?"],
+            ["She borrowed a book from the library.", "Она одолжила книгу в библиотеке.", "What did she borrow?", "Что она одолжила?"],
+            ["My friends are coming over for dinner.", "Мои друзья приходят на ужин.", "Who is coming over?", "Кто приходит?"],
+            ["He bought flowers for his mother.", "Он купил цветы для своей мамы.", "Whom did he buy flowers for?", "Кому он купил цветы?"],
+            ["They will visit the museum next week.", "Они посетят музей на следующей неделе.", "What will they visit?", "Что они посетят?"],
+            ["The kitten played with a ball of yarn.", "Котенок играл с клубком пряжи.", "What did the kitten play with?", "С чем играл котенок?"],
+            ["She has a beautiful singing voice.", "У нее красивый голос для пения.", "What does she have?", "Что у неё есть?"]
+         ];
+
+
+         const exercises_easy_2 = [
+               [
+                  "Yesterday, Sarah met someone new at John's party.",
+                  "Вчера Сара встретила кого-то нового на вечеринке Джона.",
+                  [
+                        ["What did Sarah do?", "Что сделала Сара?"],
+                        ["Who did Sarah meet?", "Кого встретила Сара?"],
+                        ["Whom did Sarah meet at the party?", "С кем Сара познакомилась на вечеринке?"],
+                        ["Whose party was it?", "Чья это была вечеринка?"]
+                  ]
+               ],
+               [
+                  "Last week, Mark read a fascinating book about history.",
+                  "На прошлой неделе Марк прочитал увлекательную книгу об истории.",
+                  [
+                        ["What did Mark read?", "Что прочитал Марк?"],
+                        ["Who read a fascinating book?", "Кто прочитал увлекательную книгу?"],
+                        ["Whom did Mark tell about the book?", "Кому Марк рассказал о книге?"],
+                        ["Whose book was it?", "Чья это была книга?"]
+                  ]
+               ],
+               [
+                  "This morning, Lisa baked a delicious cake for the celebration.",
+                  "Этим утром Лиза испекла вкусный торт для праздника.",
+                  [
+                        ["What did Lisa bake?", "Что испекла Лиза?"],
+                        ["Who baked a cake?", "Кто испек торт?"],
+                        ["Whom did Lisa invite to the celebration?", "Кого Лиза пригласила на праздник?"],
+                        ["Whose cake was it?", "Чей это был торт?"]
+                  ]
+               ],
+               [
+                  "Tomorrow, Alex will play soccer with his friends at the park.",
+                  "Завтра Алекс будет играть в футбол с друзьями в парке.",
+                  [
+                        ["What will Alex do?", "Что будет делать Алекс?"],
+                        ["Who will play soccer with Alex?", "Кто будет играть в футбол с Алексом?"],
+                        ["Whom did Alex ask to join the game?", "Кого Алекс пригласил присоединиться к игре?"],
+                        ["Whose friends are they?", "Чьи это друзья?"]
+                  ]
+               ],
+               [
+                  "On Friday, Emma found an old photo album in the attic.",
+                  "В пятницу Эмма нашла старый фотоальбом на чердаке.",
+                  [
+                        ["What did Emma find?", "Что нашла Эмма?"],
+                        ["Who found the photo album?", "Кто нашел фотоальбом?"],
+                        ["Whom did Emma show the album to?", "Кому Эмма показала альбом?"],
+                        ["Whose photo album was it?", "Чей это был фотоальбом?"]
+                  ]
+               ],
+               [
+                  "Last night, David watched a thrilling movie with his family.",
+                  "Вчера вечером Дэвид смотрел захватывающий фильм с семьей.",
+                  [
+                        ["What did David watch?", "Что смотрел Дэвид?"],
+                        ["Who watched the movie with David?", "Кто смотрел фильм с Дэвидом?"],
+                        ["Whom did David recommend the movie to?", "Кому Дэвид рекомендовал фильм?"],
+                        ["Whose family was there?", "Чья семья была там?"]
+                  ]
+               ],
+               [
+                  "Yesterday, Mia attended a fascinating lecture on climate change.",
+                  "Вчера Миа посетила увлекательную лекцию о изменении климата.",
+                  [
+                        ["What did Mia attend?", "Что посетила Миа?"],
+                        ["Who attended the lecture?", "Кто посетил лекцию?"],
+                        ["Whom did Mia sit next to?", "С кем Миа сидела рядом?"],
+                        ["Whose lecture was it?", "Чья это была лекция?"]
+                  ]
+               ],
+               [
+                  "Last weekend, Ryan went hiking in the mountains with his friends.",
+                  "В прошлые выходные Райан ходил в поход в горы с друзьями.",
+                  [
+                        ["What did Ryan do?", "Что сделал Райан?"],
+                        ["Who went hiking with Ryan?", "Кто ходил в поход с Райаном?"],
+                        ["Whom did Ryan take with him?", "Кого Райан взял с собой?"],
+                        ["Whose idea was the hike?", "Чья была идея похода?"]
+                  ]
+               ],
+               [
+                  "This afternoon, Clara painted a beautiful landscape.",
+                  "Сегодня днем Клара написала красивый пейзаж.",
+                  [
+                        ["What did Clara paint?", "Что нарисовала Клара?"],
+                        ["Who painted the landscape?", "Кто нарисовал пейзаж?"],
+                        ["Whom did Clara invite to see her painting?", "Кого Клара пригласила посмотреть на её картину?"],
+                        ["Whose landscape was it?", "Чей это был пейзаж?"]
+                  ]
+               ],
+               [
+                  "Next week, Tom is going to visit his grandparents in the countryside.",
+                  "На следующей неделе Том собирается навестить бабушку и дедушку в деревне.",
+                  [
+                        ["What is Tom going to do?", "Что собирается делать Том?"],
+                        ["Who is going to visit his grandparents?", "Кто собирается навестить бабушку и дедушку?"],
+                        ["Whom does Tom plan to take with him?", "Кого Том планирует взять с собой?"],
+                        ["Whose grandparents are they?", "Чьи это бабушка и дедушка?"]
+                  ]
+               ],
+               [
+                  "On Saturday, Anna organized a surprise birthday party for her sister.",
+                  "В субботу Анна организовала вечеринку-сюрприз для своей сестры.",
+                  [
+                        ["What did Anna organize?", "Что организовала Анна?"],
+                        ["Who organized the birthday party?", "Кто организовал вечеринку?"],
+                        ["Whom did Anna invite to the party?", "Кого Анна пригласила на вечеринку?"],
+                        ["Whose birthday was it?", "Чей это был день рождения?"]
+                  ]
+               ],
+               [
+                  "This evening, Paul is cooking dinner for his family.",
+                  "Сегодня вечером Пол готовит ужин для своей семьи.",
+                  [
+                        ["What is Paul cooking?", "Что готовит Пол?"],
+                        ["Who is cooking dinner?", "Кто готовит ужин?"],
+                        ["Whom does Paul want to impress with his cooking?", "Кого Пол хочет впечатлить своей готовкой?"],
+                        ["Whose family is he cooking for?", "Для чьей семьи он готовит?"]
+                  ]
+               ],
+               [
+                  "Last month, Olivia completed a challenging marathon.",
+                  "В прошлом месяце Оливия завершила сложный марафон.",
+                  [
+                        ["What did Olivia complete?", "Что завершила Оливия?"],
+                        ["Who completed the marathon?", "Кто завершил марафон?"],
+                        ["Whom did Olivia train with?", "С кем Оливия тренировалась?"],
+                        ["Whose marathon was the hardest?", "Чей марафон был самым сложным?"]
+                  ]
+               ],
+               [
+                  "This morning, Ben repaired his bicycle after the accident.",
+                  "Этим утром Бен починил свой велосипед после аварии.",
+                  [
+                        ["What did Ben repair?", "Что починил Бен?"],
+                        ["Who repaired the bicycle?", "Кто починил велосипед?"],
+                        ["Whom did Ben ask for help?", "Кого Бен попросил о помощи?"],
+                        ["Whose bicycle was damaged?", "Чей велосипед был поврежден?"]
+                  ]
+               ],
+               [
+                  "On Tuesday, Laura wrote a letter to her friend abroad.",
+                  "В вторник Лаура написала письмо своей подруге за границей.",
+                  [
+                        ["What did Laura write?", "Что написала Лаура?"],
+                        ["Who wrote a letter?", "Кто написал письмо?"],
+                        ["Whom did Laura send the letter to?", "Кому Лаура отправила письмо?"],
+                        ["Whose friend is she?", "Чья это подруга?"]
+                  ]
+               ],
+               [
+                  "This afternoon, Chris is fixing his computer.",
+                  "Сегодня днем Крис чинит свой компьютер.",
+                  [
+                        ["What is Chris fixing?", "Что чинит Крис?"],
+                        ["Who is fixing the computer?", "Кто чинит компьютер?"],
+                        ["Whom did Chris ask for technical advice?", "Кого Крис попросил о технической помощи?"],
+                        ["Whose computer is it?", "Чей это компьютер?"]
+                  ]
+               ],
+               [
+                  "Yesterday, Emma started a new job at a local bakery.",
+                  "Вчера Эмма начала новую работу в местной пекарне.",
+                  [
+                        ["What did Emma start?", "Что начала Эмма?"],
+                        ["Who started a new job?", "Кто начал новую работу?"],
+                        ["Whom did Emma tell about her new job?", "Кому Эмма рассказала о своей новой работе?"],
+                        ["Whose bakery is it?", "Чья это пекарня?"]
+                  ]
+               ],
+               [
+                  "Last summer, Daniel traveled to Japan for a vacation.",
+                  "Прошлым летом Даниэл поехал в Японию на отдых.",
+                  [
+                        ["What did Daniel do?", "Что сделал Даниэл?"],
+                        ["Who traveled to Japan?", "Кто поехал в Японию?"],
+                        ["Whom did Daniel meet during his travels?", "С кем Даниэл встретился во время своих путешествий?"],
+                        ["Whose idea was the vacation?", "Чья была идея отпуска?"]
+                  ]
+               ],
+               [
+                  "Tomorrow, Sophie will attend a conference on technology.",
+                  "Завтра Софи будет участвовать в конференции по технологиям.",
+                  [
+                        ["What will Sophie attend?", "Что будет делать Софи?"],
+                        ["Who will attend the conference?", "Кто будет участвовать в конференции?"],
+                        ["Whom does Sophie hope to meet at the conference?", "С кем Софи надеется встретиться на конференции?"],
+                        ["Whose conference is it?", "Чья это конференция?"]
+                  ]
+               ],
+               [
+                  "Next month, Lucas will graduate from university.",
+                  "В следующем месяце Лукас окончит университет.",
+                  [
+                        ["What will Lucas do?", "Что сделает Лукас?"],
+                        ["Who will graduate from university?", "Кто окончит университет?"],
+                        ["Whom did Lucas invite to his graduation ceremony?", "Кого Лукас пригласил на свою выпускную церемонию?"],
+                        ["Whose graduation is it?", "Чей это выпускной?"]
+                  ]
+               ],
+               [
+                  "This weekend, Julia is going to a concert with her friends.",
+                  "В эти выходные Джулия собирается на концерт с друзьями.",
+                  [
+                        ["What is Julia going to do?", "Что собирается делать Джулия?"],
+                        ["Who is going to the concert?", "Кто собирается на концерт?"],
+                        ["Whom did Julia ask to join her?", "Кого Джулия пригласила пойти с ней?"],
+                        ["Whose concert is it?", "Чей это концерт?"]
+                  ]
+               ]
+            ];
+
+            const generateExercisesEasy = (() => {
+               let index = 0; 
+
+               return (exercises, exerciseForm) => {
+                  exercises.forEach(item => {
+                        index += 1;  
+                        let question = replace_question(item[2]);
+                        let sentence = question.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />`);
+
+                        sentence = `${sentence} — ${item[3]} 
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                        <span class="text-span" id="clue-easy-${index}">${item[2]}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                  });
+               };
+            })();
+            const generateExercisesEasy2 = (() => {
+               let index = 0; 
+
+               return (exercises, exerciseForm) => {
+                  exercises.forEach(item => {
+                        index += 1;  
+
+                        let sentence = `${shuffleSentence(item[2])}: <input type="text" class="input-size" oninput='checkAnswer(this, "${item[2]}")'/>
+                        
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                        <span class="text-span" id="clue-easy-2-${index}">${item[2]}</span>
+                        <br>(<i>${item[3]}</i>)`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                  });
+               };
+            })();
+            const generateExercisesEasy3 = (() => {
+               let index = 0; 
+
+               return (exercises, exerciseForm) => {
+                  exercises.forEach(item => {
+                        index += 1;  
+
+                        let sentence = `${item[0]} question: <input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-3-${index}')"> 
+                        <span class="text-span" id="clue-easy-3-${index}">${item[2]}</span><br>(${item[1]})`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                  });
+               };
+            })();
+            const generateExercisesEasy4 = (() => {
+               let index = 0; 
+
+               return (exercises, exerciseForm) => {
+                  exercises.forEach(item => {
+                        index += 1;  
+                        let questions = item[2];
+                        let sentence = `${item[0]} <br> (${item[1]}) <br> 
+                        <input type="text" class="input-size" oninput="checkAnswer(this, '${questions[0][0]}')" /> — ${questions[0][1]}
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${questions[0][0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index}')"> 
+                        <span class="text-span" id="clue-easy-4-${index}">${questions[0][0]}</span><br> 
+
+                        <input type="text" class="input-size" oninput="checkAnswer(this, '${questions[1][0]}')" /> — ${questions[1][1]}
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${questions[1][0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index+1}')"> 
+                        <span class="text-span" id="clue-easy-4-${index+1}">${questions[1][0]}</span><br> 
+
+                        <input type="text" class="input-size" oninput="checkAnswer(this, '${questions[2][0]}')" /> — ${questions[2][1]}
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${questions[2][0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index+2}')"> 
+                        <span class="text-span" id="clue-easy-4-${index+2}">${questions[2][0]}</span><br> 
+
+                        <input type="text" class="input-size" oninput="checkAnswer(this, '${questions[3][0]}')" /> — ${questions[3][1]}
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${questions[3][0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index+3}')"> 
+                        <span class="text-span" id="clue-easy-4-${index+3}">${questions[3][0]}</span><br> 
+                        `;
+                        index += 3;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                  });
+               };
+            })();
+            generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+            generateExercisesEasy2(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_2'));
+            generateExercisesEasy3(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_3'));
+            generateExercisesEasy4(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_4'));
+
+            function playSentence(sentence){
+               practice.speak(sentence);
+            }
+
+            function replace_question(sentrnce){
+               let ret = sentrnce.replace("What","___").replace("Who","___").replace("Whom","___").replace("Whose","___");
+               return ret;  
+            }
+
+      </script>
    </div>
 </body>
 </html>
