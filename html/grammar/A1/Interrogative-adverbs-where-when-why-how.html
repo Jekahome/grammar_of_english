@@ -34,7 +34,7 @@
                 </li>
 
                 <li>
-                    <b>Общие сложные и косвенные вопросы</b> — для ответа «да» или «нет». (A2) <br>
+                    <b>Общие сложные и косвенные вопросы</b>(A2) <br>
                     <code>Do</code> you know <code>why</code> she is late? — <i>Ты знаешь, почему она опоздала?</i><br>
                     <code>Can</code> you explain <code>how</code> this works? — <i>Можешь объяснить, как это работает?</i><br>
                     <code>Can</code> you tell me <code>where</code> the bus stop is? — <i>Ты можешь сказать, где находится автобусная остановка?</i><br>
@@ -81,35 +81,269 @@
                 <li><code>How do you get to school?</code> — Как ты добираешься до школы?</li>
             </ul>
 
-            <h2>Упражнения</h2>
+            <h2>Упражнениея</h2>
+            <h3>Replace (Easy)</h3>
+            <details>
+                <summary>1: Заполнить пропуски</summary>
+                <form id="exerciseForm_1"></form>
+            </details>
 
-            <ol>
-                <li>Задай вопросы к этим предложениям:</li>
-                <ul>
-                <li>He goes to the gym. — <strong>Where does he go?</strong></li>
-                <li>She arrived at 5 p.m. — <strong>When did she arrive?</strong></li>
-                <li>They are studying English. — <strong>Why are they studying English?</strong></li>
-                <li>I travel by train. — <strong>How do you travel?</strong></li>
-                </ul>
+            <details>
+                <summary>2: Составить грамматически правильные предложения</summary>
+                <form id="exerciseForm_2"></form>
+            </details>
 
-                <li>Переведи на английский:</li>
-                <ul>
-                <li>Где ты живешь? — <strong>Where do you live?</strong></li>
-                <li>Когда начнется фильм? — <strong>When will the movie start?</strong></li>
-                <li>Почему ты не пришел вчера? — <strong>Why didn't you come yesterday?</strong></li>
-                <li>Как ты это узнал? — <strong>How did you find out?</strong></li>
-                </ul>
+            <details>
+                <summary>3: Задать вопросы к этим предложениям</summary>
+                <form id="exerciseForm_3"></form>
+            </details>
 
-                <li>Заполни пропуски:</li>
-                <ul>
-                <li>... did you buy that book? — At the bookstore.</li>
-                <li>... does she feel? — She feels great.</li>
-                <li>... are you going? — To the supermarket.</li>
-                <li>... will the concert start? — At 7 p.m.</li>
-                </ul>
-            </ol>
+            <details>
+                <summary>4: Составить вопросы на основе предложения</summary>
+                <form id="exerciseForm_4"></form>
+            </details>
+
 
         <a href="https://skyeng.ru/articles/vidy-voprosov-v-anglijskom-yazyke/">Виды вопросов в английском языке</a>   
+
+        <script src='/grammar_of_english/practice.js'></script>
+        <script>
+    
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+    
+            let practice = new Practice({callback: recognition});
+
+
+            const exercises_easy_1 = [
+                ["He goes to the gym.", "Он ходит в спортзал.", "Where does he go?", "Куда он ходит?"],
+                ["She arrived at 5 p.m.", "Она прибыла в 5 вечера.", "When did she arrive?", "Когда она прибыла?"],
+                ["They are studying English.", "Они учат английский.", "Why are they studying English?", "Почему они учат английский?"],
+                ["I travel by train.", "Я путешествую на поезде.", "How do you travel?", "Как ты путешествуешь?"],
+                
+                ["The meeting starts at 10 a.m.", "Встреча начинается в 10 утра.", "When does the meeting start?", "Когда начинается встреча?"],
+                ["She lives in New York.", "Она живет в Нью-Йорке.", "Where does she live?", "Где она живет?"],
+                ["We are learning Spanish.", "Мы учим испанский.", "Why are you learning Spanish?", "Почему вы учите испанский?"],
+                ["He drives to work.", "Он ездит на работу на машине.", "How does he go to work?", "Как он ездит на работу?"],
+                
+                ["They moved to Canada.", "Они переехали в Канаду.", "Where did they move?", "Куда они переехали?"],
+                ["She called in the afternoon.", "Она позвонила днем.", "When did she call?", "Когда она позвонила?"],
+                ["He is exercising to stay fit.", "Он занимается спортом, чтобы оставаться в форме.", "Why is he exercising?", "Почему он занимается спортом?"],
+                ["I cook with fresh ingredients.", "Я готовлю со свежими ингредиентами.", "How do you cook?", "Как ты готовишь?"],
+                
+                ["He works at a bank.", "Он работает в банке.", "Where does he work?", "Где он работает?"],
+                ["The concert starts at 8 p.m.", "Концерт начинается в 8 вечера.", "When does the concert start?", "Когда начинается концерт?"],
+                ["She volunteers to help others.", "Она занимается волонтерством, чтобы помогать другим.", "Why does she volunteer?", "Почему она занимается волонтерством?"],
+                ["They communicate by email.", "Они общаются по электронной почте.", "How do they communicate?", "Как они общаются?"],
+                
+                ["He lives near the ocean.", "Он живет рядом с океаном.", "Where does he live?", "Где он живет?"],
+                ["They went on vacation in July.", "Они отправились в отпуск в июле.", "When did they go on vacation?", "Когда они отправились в отпуск?"],
+                ["We practice to improve.", "Мы тренируемся, чтобы улучшиться.", "Why do you practice?", "Почему вы тренируетесь?"],
+                ["She writes with a fountain pen.", "Она пишет перьевой ручкой.", "How does she write?", "Как она пишет?"],
+
+                ["He plays football every weekend.", "Он играет в футбол каждые выходные.", "When does he play football?", "Когда он играет в футбол?"],
+                ["She enjoys painting landscapes.", "Ей нравится рисовать пейзажи.", "Why does she enjoy painting?", "Почему ей нравится рисовать?"],
+                ["They walk their dog in the park.", "Они выгуливают свою собаку в парке.", "Where do they walk their dog?", "Где они выгуливают свою собаку?"],
+                ["I read books before bed.", "Я читаю книги перед сном.", "When do you read books?", "Когда ты читаешь книги?"],
+                
+                ["The train arrives at 6:30 a.m.", "Поезд прибывает в 6:30 утра.", "When does the train arrive?", "Когда прибывает поезд?"],
+                ["He studies at the university.", "Он учится в университете.", "Where does he study?", "Где он учится?"],
+                ["They are playing chess.", "Они играют в шахматы.", "Why are they playing chess?", "Почему они играют в шахматы?"],
+                ["She rides her bicycle to work.", "Она ездит на работу на велосипеде.", "How does she get to work?", "Как она добирается до работы?"],
+                
+                ["We go hiking in the mountains.", "Мы ходим в походы в горы.", "Where do we go hiking?", "Куда мы ходим в походы?"],
+                ["The movie starts at 7 p.m.", "Фильм начинается в 7 вечера.", "When does the movie start?", "Когда начинается фильм?"],
+                ["He runs every morning to stay healthy.", "Он бегает каждое утро, чтобы быть здоровым.", "Why does he run every morning?", "Почему он бегает каждое утро?"],
+                ["I write emails to my friends.", "Я пишу электронные письма своим друзьям.", "How do you communicate with your friends?", "Как ты общаешься с друзьями?"],
+                
+                ["She dances at a local studio.", "Она танцует в местной студии.", "Where does she dance?", "Где она танцует?"],
+                ["They had a picnic last Sunday.", "У них был пикник в прошлое воскресенье.", "When did they have a picnic?", "Когда у них был пикник?"],
+                ["He practices martial arts.", "Он занимается боевыми искусствами.", "Why does he practice martial arts?", "Почему он занимается боевыми искусствами?"],
+                ["We travel by bus during the summer.", "Мы путешествуем на автобусе летом.", "How do we travel during the summer?", "Как мы путешествуем летом?"],
+                
+                ["She teaches mathematics at school.", "Она преподает математику в школе.", "Where does she teach?", "Где она преподает?"],
+                ["The festival occurs in the fall.", "Фестиваль проходит осенью.", "When does the festival occur?", "Когда проходит фестиваль?"],
+                ["He reads newspapers to stay informed.", "Он читает газеты, чтобы быть в курсе событий.", "Why does he read newspapers?", "Почему он читает газеты?"],
+                ["I take notes during lectures.", "Я делаю заметки во время лекций.", "How do you stay focused during lectures?", "Как ты остаешься сосредоточенным во время лекций?"]
+
+            ];
+
+
+            const exercises_easy_2 = [
+                ["Anna bakes a cake in the kitchen every weekend, carefully following the recipe to make it delicious.", 
+                "Анна готовит торт на кухне каждые выходные, тщательно следуя рецепту, чтобы он получился вкусным.",
+                    ["Where does Anna bake the cake?", "Где Анна готовит торт?", "Anna bakes the cake in the kitchen", "Анна готовит торт на кухне"],
+                    ["When does Anna bake the cake?", "Когда Анна готовит торт?", "Anna bakes the cake every weekend", "Анна готовит торт каждые выходные"],
+                    ["Why does Anna bake the cake every weekend?", "Почему Анна готовит торт каждые выходные?", "Anna bakes it to make it delicious", "Анна готовит торт, чтобы он получился вкусным"],
+                    ["How does Anna bake the cake?", "Как Анна готовит торт?", "Anna follows the recipe carefully", "Анна тщательно следует рецепту"]
+                ],
+
+                ["Sasha reads foreign language articles in the library every morning, focusing intensely to improve her skills.", "Саша каждое утро читает статьи на иностранном языке в библиотеке, сосредоточенно работая, чтобы улучшить свои навыки.",
+                    ["Where does Sasha read the articles?", "Где Саша читает статьи?", "Sasha reads the articles in the library", "Саша читает статьи в библиотеке"],
+                    ["When does Sasha read the articles?", "Когда Саша читает статьи?", "Sasha reads every morning", "Саша читает каждое утро"],
+                    ["Why does Sasha read foreign language articles?", "Почему Саша читает статьи на иностранном языке?", "Sasha reads to improve her skills", "Саша читает, чтобы улучшить свои навыки"],
+                    ["How does Sasha read the articles?", "Как Саша читает статьи?", "Sasha reads with focus", "Саша читает сосредоточенно"]
+                ],
+
+                ["Birds sing near the lake every morning, making beautiful sounds to attract other birds.", "Птицы каждое утро поют возле озера, издавая красивые звуки, чтобы привлечь других птиц.",
+                    ["Where do birds sing?", "Где поют птицы?", "Birds sing near the lake", "Птицы поют возле озера"],
+                    ["When do birds sing?", "Когда поют птицы?", "Birds sing every morning", "Птицы поют каждое утро"],
+                    ["Why do birds sing near the lake?", "Почему птицы поют возле озера?", "Birds sing to attract others", "Птицы поют, чтобы привлечь других"],
+                    ["How do birds sing?", "Как поют птицы?", "Birds sing beautifully", "Птицы поют красиво"]
+                ],
+
+                ["Ivan practices guitar in his room every evening, slowly repeating chords to improve his playing.", "Иван каждый вечер упражняется в игре на гитаре в своей комнате, медленно повторяя аккорды, чтобы улучшить игру.",
+                    ["Where does Ivan practice guitar?", "Где Иван занимается игрой на гитаре?", "Ivan practices in his room", "Иван занимается в своей комнате"],
+                    ["When does Ivan practice guitar?", "Когда Иван занимается игрой на гитаре?", "Ivan practices every evening", "Иван занимается каждый вечер"],
+                    ["Why does Ivan practice guitar?", "Почему Иван занимается игрой на гитаре?", "Ivan practices to improve his playing", "Иван занимается, чтобы улучшить игру"],
+                    ["How does Ivan practice guitar?", "Как Иван занимается игрой на гитаре?", "Ivan practices by slowly repeating chords", "Иван занимается, медленно повторяя аккорды"]
+                ],
+
+                ["Every evening, Maria writes in her journal at her desk, quietly reflecting to clear her thoughts.", "Каждый вечер Мария пишет в дневнике за своим столом, тихо размышляя, чтобы упорядочить свои мысли.",
+                    ["Where does Maria write?", "Где Мария пишет?", "Maria writes at her desk", "Мария пишет за своим столом"],
+                    ["When does Maria write?", "Когда Мария пишет?", "Maria writes every evening", "Мария пишет каждый вечер"],
+                    ["Why does Maria write in her journal?", "Почему Мария пишет в дневнике?", "Maria writes to clear her thoughts", "Мария пишет, чтобы упорядочить свои мысли"],
+                    ["How does Maria write?", "Как Мария пишет?", "Maria writes quietly, reflecting", "Мария пишет тихо, размышляя"]
+                ],
+                ["Nina takes photos in the city park every afternoon, carefully choosing angles to capture the scenery beautifully.", "Нина фотографирует в городском парке каждый день после обеда, тщательно выбирая ракурсы, чтобы красиво запечатлеть пейзаж.",
+                    ["Where does Nina take photos?", "Где Нина фотографирует?", "Nina takes photos in the city park", "Нина фотографирует в городском парке"],
+                    ["When does Nina take photos?", "Когда Нина фотографирует?", "Nina takes photos every afternoon", "Нина фотографирует каждый день после обеда"],
+                    ["Why does Nina take photos in the park?", "Почему Нина фотографирует в парке?", "Nina takes photos to capture the scenery", "Нина фотографирует, чтобы запечатлеть пейзаж"],
+                    ["How does Nina take photos?", "Как Нина фотографирует?", "Nina carefully chooses angles", "Нина тщательно выбирает ракурсы"]
+                ],
+
+                ["Alex prepares presentations in the office every Monday, organizing data clearly to impress his colleagues.", "Алекс готовит презентации в офисе каждый понедельник, четко структурируя данные, чтобы впечатлить коллег.",
+                    ["Where does Alex prepare presentations?", "Где Алекс готовит презентации?", "Alex prepares presentations in the office", "Алекс готовит презентации в офисе"],
+                    ["When does Alex prepare presentations?", "Когда Алекс готовит презентации?", "Alex prepares presentations every Monday", "Алекс готовит презентации каждый понедельник"],
+                    ["Why does Alex prepare presentations?", "Почему Алекс готовит презентации?", "Alex prepares to impress his colleagues", "Алекс готовит презентации, чтобы впечатлить коллег"],
+                    ["How does Alex prepare presentations?", "Как Алекс готовит презентации?", "Alex organizes data clearly", "Алекс четко структурирует данные"]
+                ],
+
+                ["Lena jogs around the neighborhood every evening, keeping a steady pace to improve her stamina.", "Лена бегает по своему району каждый вечер, сохраняя ровный темп, чтобы улучшить выносливость.",
+                    ["Where does Lena jog?", "Где Лена бегает?", "Lena jogs around the neighborhood", "Лена бегает по району"],
+                    ["When does Lena jog?", "Когда Лена бегает?", "Lena jogs every evening", "Лена бегает каждый вечер"],
+                    ["Why does Lena jog every evening?", "Почему Лена бегает каждый вечер?", "Lena jogs to improve her stamina", "Лена бегает, чтобы улучшить выносливость"],
+                    ["How does Lena jog?", "Как Лена бегает?", "Lena keeps a steady pace", "Лена бегает в ровном темпе"]
+                ],
+
+                ["Every Saturday, Tom practices the piano at home, playing each note slowly to perfect his technique.", "Каждую субботу Том играет на пианино дома, медленно нажимая на каждую клавишу, чтобы улучшить технику.",
+                    ["Where does Tom practice the piano?", "Где Том занимается на пианино?", "Tom practices at home", "Том занимается дома"],
+                    ["When does Tom practice the piano?", "Когда Том занимается на пианино?", "Tom practices every Saturday", "Том занимается каждую субботу"],
+                    ["Why does Tom practice the piano?", "Почему Том занимается на пианино?", "Tom practices to perfect his technique", "Том занимается, чтобы улучшить технику"],
+                    ["How does Tom practice the piano?", "Как Том занимается на пианино?", "Tom plays each note slowly", "Том медленно нажимает на каждую клавишу"]
+                ],
+
+                ["Olga waters her plants on the balcony every morning, carefully pouring just enough water to keep them healthy.", 
+                "Ольга каждое утро поливает растения на балконе, осторожно добавляя ровно столько воды, сколько нужно для их здоровья.",
+
+                    ["Where does Olga water her plants?", "Где Ольга поливает растения?", "Olga waters her plants on the balcony", "Ольга поливает растения на балконе"],
+                    ["When does Olga water her plants?", "Когда Ольга поливает растения?", "Olga waters them every morning", "Ольга поливает их каждое утро"],
+                    ["Why does Olga water her plants?", "Почему Ольга поливает растения?", "Olga waters them to keep them healthy", "Ольга поливает растения, чтобы они были здоровыми"],
+                    ["How does Olga water her plants?", "Как Ольга поливает растения?", "Olga pours just enough water", "Ольга добавляет ровно столько воды, сколько нужно"]
+                ]
+            ];
+
+            const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let question = replace_question(item[2]);
+                        let sentence = question.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />`);
+
+                        sentence = `${sentence} — ${item[3]} 
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                        <span class="text-span" id="clue-easy-${index}">${item[2]}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+            const generateExercisesEasy2 = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+
+                        let sentence = `${shuffleSentence(item[2])}: <input type="text" class="input-size" oninput='checkAnswer(this, "${item[2]}")'/>
+                        
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                        <span class="text-span" id="clue-easy-2-${index}">${item[2]}</span>
+                        <br>(<i>${item[3]}</i>)`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+            const generateExercisesEasy3 = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+
+                        let sentence = `${item[0]} — ${item[1]} question: <input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-3-${index}')"> 
+                        <span class="text-span" id="clue-easy-3-${index}">${item[2]}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+            const generateExercisesEasy4 = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+
+                        let sentence = `${item[0]} <br> (${item[1]}) <br> 
+                        Where:<input type="text" class="input-size" oninput="checkAnswer(this, '${item[2][0]}')" /> — ${item[2][1]}
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2][0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index}')"> 
+                        <span class="text-span" id="clue-easy-4-${index}">${item[2][0]}</span>
+
+                        When:<input type="text" class="input-size" oninput="checkAnswer(this, '${item[3][0]}')" /> — ${item[3][1]}
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[3][0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index+1}')"> 
+                        <span class="text-span" id="clue-easy-4-${index+1}">${item[3][0]}</span>
+
+                        Why:<input type="text" class="input-size" oninput="checkAnswer(this, '${item[4][0]}')" /> — ${item[4][1]}
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[4][0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index}')"> 
+                        <span class="text-span" id="clue-easy-4-${index}">${item[4][0]}</span>
+
+                        How:<input type="text" class="input-size" oninput="checkAnswer(this, '${item[5][0]}')" /> — ${item[5][1]}
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[5][0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index}')"> 
+                        <span class="text-span" id="clue-easy-4-${index}">${item[5][0]}</span>
+                        `;
+                        index += 3;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+            generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+            generateExercisesEasy2(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_2'));
+            generateExercisesEasy3(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_3'));
+            generateExercisesEasy4(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_4'));
+
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
+
+            function replace_question(sentrnce){
+                let ret = sentrnce.replace("Where","___").replace("When","___").replace("Why","___").replace("How","___");
+                return ret;
+            }
+        </script>
     </div>
 </body>
 </html>
