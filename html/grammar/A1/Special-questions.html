@@ -97,6 +97,21 @@
       <p>I don’t know why it was so difficult. — Я не знаю, почему это было так сложно.</p>
       <p><code>Why</code> was it so difficult? — Почему это было так сложно?</p>
 
+      <script src='/grammar_of_english/practice.js'></script>
+      <script>
+
+         function recognition(id, recognition){
+            console.log(`id=${id} recognition=${recognition}`);
+            var el = document.getElementById(id);
+            el.value = recognition;
+            const inputEvent = new Event('input');
+            el.dispatchEvent(inputEvent);
+         }
+
+         let practice = new Practice({callback: recognition});
+
+
+      </script>
    </div>
 </body>
 </html>
