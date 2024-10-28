@@ -97,6 +97,23 @@
       <p>I don’t know why it was so difficult. — Я не знаю, почему это было так сложно.</p>
       <p><code>Why</code> was it so difficult? — Почему это было так сложно?</p>
 
+      <h2>Упражнениея</h2>
+      <h3>Replace (Easy)</h3>
+      <details>
+         <summary>1: Заполнить пропуски</summary>
+         <form id="exerciseForm_1"></form>
+      </details>
+
+      <details>
+            <summary>2: Составить грамматически правильные предложения</summary>
+            <form id="exerciseForm_2"></form>
+      </details>
+
+      <details>
+            <summary>3: Задать вопросы к этим предложениям</summary>
+            <form id="exerciseForm_3"></form>
+      </details>
+
       <script src='/grammar_of_english/practice.js'></script>
       <script>
 
@@ -110,6 +127,201 @@
 
          let practice = new Practice({callback: recognition});
 
+         const exercises_special_questions = [
+            ["My favorite color is blue.", "Мой любимый цвет — синий.", "What is your favorite color?", "Какой твой любимый цвет?"],
+            ["I live in New York.", "Я живу в Нью-Йорке.", "Where do you live?", "Где ты живешь?"],
+            ["My birthday is on March 15th.", "Мой день рождения 15 марта.", "When is your birthday?", "Когда у тебя день рождения?"],
+            ["I am learning English to improve my career.", "Я учу английский, чтобы улучшить свою карьеру.", "Why are you learning English?", "Почему ты учишь английский?"],
+            ["My best friend is Anna.", "Моя лучшая подруга — Анна.", "Who is your best friend?", "Кто твой лучший друг?"],
+            ["I prefer reading fiction books.", "Я предпочитаю читать художественные книги.", "Which book do you prefer?", "Какую книгу ты предпочитаешь?"],
+            ["This bag belongs to my sister.", "Эта сумка принадлежит моей сестре.", "Whose bag is this?", "Чья это сумка?"],
+            ["I saw Mark at the party last night.", "Я видел Марка на вечеринке прошлой ночью.", "Whom did you see at the party?", "Кого ты видел на вечеринке?"],
+            ["I get to school by bus.", "Я добираюсь до школы на автобусе.", "How do you get to school?", "Как ты добираешься до школы?"],
+            ["This book costs $20.", "Эта книга стоит 20 долларов.", "How much does this book cost?", "Сколько стоит эта книга?"],
+            ["I have five close friends.", "У меня есть пять близких друзей.", "How many friends do you have?", "Сколько у тебя друзей?"],
+            ["The meeting starts at 10 AM.", "Встреча начинается в 10 утра.", "What time does the meeting start?", "Во сколько начинается встреча?"],
+            ["There is a good restaurant around the corner.", "В углу есть хороший ресторан.", "Where can I find a good restaurant?", "Где я могу найти хороший ресторан?"],
+            ["I will finish my homework by 6 PM.", "Я закончу домашнее задание к 6 вечера.", "When will you finish your homework?", "Когда ты закончишь домашнее задание?"],
+            ["I chose that university because of its reputation.", "Я выбрал этот университет из-за его репутации.", "Why did you choose that university?", "Почему ты выбрал этот университет?"],
+            ["This poem was written by Robert Frost.", "Это стихотворение написано Робертом Фростом.", "Who wrote this poem?", "Кто написал это стихотворение?"],
+            ["I am going to watch 'Inception' tonight.", "Я собираюсь посмотреть 'Начало' сегодня вечером.", "Which movie are you going to watch?", "Какой фильм ты собираешься посмотреть?"],
+            ["My friend's phone is ringing.", "Телефон моего друга звонит.", "Whose phone is ringing?", "Чей телефон звонит?"],
+            ["You should contact the manager for more information.", "Тебе следует связаться с менеджером для получения дополнительной информации.", "Whom should I contact for more information?", "Кого мне следует контактировать для получения дополнительной информации?"],
+            ["I learned to play the guitar from my father.", "Я научился играть на гитаре от моего отца.", "How did you learn to play the guitar?", "Как ты научился играть на гитаре?"],
+            ["I need $50 for the concert tickets.", "Мне нужно 50 долларов на билеты на концерт.", "How much money do you need?", "Сколько денег тебе нужно?"],
+            ["I can speak three languages: English, Spanish, and French.", "Я могу говорить на трех языках: английском, испанском и французском.", "How many languages can you speak?", "На скольких языках ты говоришь?"],
+            ["I enjoy listening to rock music.", "Мне нравится слушать рок-музыку.", "What kind of music do you like?", "Какую музыку ты любишь?"],
+            ["The nearest bus stop is two blocks away.", "Ближайшая автобусная остановка в двух кварталах.", "Where is the nearest bus stop?", "Где находится ближайшая автобусная остановка?"],
+
+            ["I usually have breakfast at 7 AM.", "Я обычно завтракаю в 7 утра.", "What time do you usually have breakfast?", "Во сколько ты обычно завтракаешь?"],
+            ["The museum opens at 9 AM.", "Музей открывается в 9 утра.", "When does the museum open?", "Когда открывается музей?"],
+            ["My father works as an engineer.", "Мой отец работает инженером.", "What does your father do?", "Кем работает твой отец?"],
+            ["We are going to the beach this weekend.", "Мы собираемся на пляж в эти выходные.", "Where are you going this weekend?", "Куда вы собираетесь в эти выходные?"],
+            ["I need to buy groceries after work.", "Мне нужно купить продукты после работы.", "What do you need to buy?", "Что тебе нужно купить?"],
+            ["The cat is sleeping on the sofa.", "Кошка спит на диване.", "Where is the cat sleeping?", "Где спит кошка?"],
+            ["She graduated from university last year.", "Она закончила университет в прошлом году.", "When did she graduate?", "Когда она окончила университет?"],
+            ["We chose this restaurant for dinner.", "Мы выбрали этот ресторан для ужина.", "Why did you choose this restaurant?", "Почему вы выбрали этот ресторан?"],
+            ["I saw my neighbor in the yard.", "Я видел своего соседа во дворе.", "Whom did you see in the yard?", "Кого ты видел во дворе?"],
+            ["I read the news online every morning.", "Я читаю новости в Интернете каждое утро.", "How do you read the news?", "Как ты читаешь новости?"],
+            ["It costs $10 to enter the park.", "Вход в парк стоит 10 долларов.", "How much does it cost to enter the park?", "Сколько стоит вход в парк?"],
+            ["I have two brothers and one sister.", "У меня два брата и одна сестра.", "How many siblings do you have?", "Сколько у тебя братьев и сестер?"],
+            ["My birthday is in June.", "Мой день рождения в июне.", "When is your birthday?", "Когда у тебя день рождения?"],
+            ["This song was performed by Adele.", "Эту песню исполнила Адель.", "Who performed this song?", "Кто исполнил эту песню?"],
+            ["The movie we watched was very interesting.", "Фильм, который мы посмотрели, был очень интересным.", "Which movie did you watch?", "Какой фильм вы посмотрели?"],
+            ["The house is owned by my grandparents.", "Этот дом принадлежит моим бабушке и дедушке.", "Whose house is it?", "Чей это дом?"],
+            ["I spoke with her about the project.", "Я говорил с ней о проекте.", "Whom did you speak with about the project?", "С кем ты говорил о проекте?"],
+            ["He learned to swim when he was five.", "Он научился плавать, когда ему было пять лет.", "When did he learn to swim?", "Когда он научился плавать?"],
+            ["They need a lot of time to complete the task.", "Им нужно много времени, чтобы завершить задание.", "How much time do they need?", "Сколько времени им нужно?"],
+            ["I enjoy hiking in the mountains.", "Мне нравится ходить в походы в горах.", "What do you enjoy doing?", "Что тебе нравится делать?"],
+            ["The nearest coffee shop is on the corner.", "Ближайшая кофейня находится на углу.", "Where is the nearest coffee shop?", "Где находится ближайшая кофейня?"],
+            ["The team won the championship last year.", "Команда выиграла чемпионат в прошлом году.", "When did the team win the championship?", "Когда команда выиграла чемпионат?"],
+            ["She bought a new car last month.", "Она купила новую машину в прошлом месяце.", "What did she buy last month?", "Что она купила в прошлом месяце?"],
+            ["I will visit my family for the holidays.", "Я навещу свою семью на праздники.", "Whom will you visit for the holidays?", "Кого ты навещаешь на праздники?"],
+
+            ["I plan to travel to Japan next year.", "Я планирую поехать в Японию в следующем году.", "Where do you plan to travel next year?", "Куда ты планируешь поехать в следующем году?"],
+            ["She enjoys painting landscapes.", "Она любит рисовать пейзажи.", "What does she enjoy doing?", "Что она любит делать?"],
+            ["The children play outside after school.", "Дети играют на улице после школы.", "When do the children play outside?", "Когда дети играют на улице?"],
+            ["I need to find a new job.", "Мне нужно найти новую работу.", "What do you need to find?", "Что тебе нужно найти?"],
+            ["My parents celebrate their anniversary in July.", "Мои родители отмечают свою годовщину в июле.", "When do your parents celebrate their anniversary?", "Когда твои родители отмечают свою годовщину?"],
+            ["She bought fresh vegetables at the market.", "Она купила свежие овощи на рынке.", "What did she buy at the market?", "Что она купила на рынке?"],
+            ["I met him at the coffee shop yesterday.", "Я встретил его в кафе вчера.", "Whom did you meet yesterday?", "Кого ты встретил вчера?"],
+            ["He loves to read science fiction novels.", "Он любит читать научно-фантастические романы.", "What kind of books does he love?", "Какую литературу он любит?"],
+            ["The weather is usually nice in the summer.", "Погода обычно хорошая летом.", "How is the weather in the summer?", "Какая погода летом?"],
+            ["My favorite dessert is chocolate cake.", "Мой любимый десерт — шоколадный торт.", "What is your favorite dessert?", "Какой твой любимый десерт?"],
+            ["There are many interesting places to visit in Paris.", "В Париже есть много интересных мест для посещения.", "How many interesting places are there in Paris?", "Сколько интересных мест в Париже?"],
+            ["I saw that movie last weekend.", "Я видел этот фильм в прошлые выходные.", "Which movie did you see last weekend?", "Какой фильм ты видел в прошлые выходные?"],
+            ["My sister's cat is very playful.", "Кошка моей сестры очень игривая.", "Whose cat is very playful?", "Чья кошка очень игривая?"],
+            ["They are looking for a new apartment.", "Они ищут новую квартиру.", "What are they looking for?", "Что они ищут?"],
+            ["I usually go jogging in the morning.", "Я обычно бегаю по утрам.", "When do you usually go jogging?", "Когда ты обычно бегаю?"],
+            ["He takes a shower after exercising.", "Он принимает душ после тренировки.", "When does he take a shower?", "Когда он принимает душ?"],
+            ["I like to listen to podcasts while cooking.", "Мне нравится слушать подкасты, пока я готовлю.", "What do you like to listen to while cooking?", "Что ты любишь слушать во время готовки?"],
+            ["The bakery sells fresh bread and pastries.", "Пекарня продает свежий хлеб и выпечку.", "What does the bakery sell?", "Что продает пекарня?"],
+            ["We went hiking in the mountains last summer.", "Мы ходили в поход в горы прошлым летом.", "Where did you go hiking last summer?", "Где ты ходил в поход в прошлом году?"],
+            ["The concert starts at 8 PM.", "Концерт начинается в 8 вечера.", "What time does the concert start?", "Во сколько начинается концерт?"],
+            ["I have three pets: a dog, a cat, and a hamster.", "У меня есть три питомца: собака, кошка и хомяк.", "How many pets do you have?", "Сколько у тебя питомцев?"],
+            ["She received an award for her artwork.", "Она получила награду за свое искусство.", "Why did she receive an award?", "Почему она получила награду?"],
+            ["We need to buy tickets for the show.", "Нам нужно купить билеты на шоу.", "What do you need to buy tickets for?", "Что тебе нужно купить?"],
+            ["My brother plays the guitar in a band.", "Мой брат играет на гитаре в группе.", "What does your brother play in the band?", "На чем играет твой брат в группе?"],
+
+            ["This car belongs to my neighbor.", "Эта машина принадлежит моему соседу.", "Whose car is this?", "Чья это машина?"],
+            ["She decided to study abroad for new experiences.", "Она решила учиться за границей ради нового опыта.", "Why did she decide to study abroad?", "Почему она решила учиться за границей?"],
+            ["Mark helped me with the project.", "Марк помог мне с проектом.", "Who helped you with the project?", "Кто помог тебе с проектом?"],
+            ["We should choose between tea and coffee.", "Нам нужно выбрать между чаем и кофе.", "Which drink should we choose?", "Какой напиток нам выбрать?"],
+            ["This sweater costs $30.", "Этот свитер стоит 30 долларов.", "How much does this sweater cost?", "Сколько стоит этот свитер?"],
+            ["She bought five apples at the market.", "Она купила пять яблок на рынке.", "How many apples did she buy?", "Сколько яблок она купила?"],
+            ["The book on the table belongs to Sarah.", "Книга на столе принадлежит Саре.", "Whose book is on the table?", "Чья книга на столе?"],
+            ["He joined the club to make new friends.", "Он вступил в клуб, чтобы завести новых друзей.", "Why did he join the club?", "Почему он вступил в клуб?"],
+            ["Emma is leading the meeting today.", "Эмма ведет собрание сегодня.", "Who is leading the meeting?", "Кто ведет собрание?"],
+            ["You can wear either the red or the blue dress.", "Ты можешь надеть либо красное, либо синее платье.", "Which dress should I wear?", "Какое платье мне надеть?"],
+            ["The ticket for the concert costs $50.", "Билет на концерт стоит 50 долларов.", "How much does the concert ticket cost?", "Сколько стоит билет на концерт?"],
+            ["There are twelve players on each team.", "В каждой команде по двенадцать игроков.", "How many players are on each team?", "Сколько игроков в каждой команде?"],
+            ["This laptop belongs to my brother.", "Этот ноутбук принадлежит моему брату.", "Whose laptop is this?", "Чей это ноутбук?"],
+            ["They are moving to a new city for a better job.", "Они переезжают в новый город ради лучшей работы.", "Why are they moving to a new city?", "Почему они переезжают в новый город?"],
+            ["Michael painted this portrait.", "Майкл нарисовал этот портрет.", "Who painted this portrait?", "Кто нарисовал этот портрет?"],
+            ["You can choose between the green and yellow paint.", "Ты можешь выбрать между зеленой и желтой краской.", "Which paint should we use?", "Какую краску нам использовать?"],
+            ["The new phone costs around $700.", "Новый телефон стоит около 700 долларов.", "How much does the new phone cost?", "Сколько стоит новый телефон?"],
+            ["There are six chairs around the table.", "Вокруг стола шесть стульев.", "How many chairs are there around the table?", "Сколько стульев вокруг стола?"],
+            ["That bicycle belongs to Alex.", "Этот велосипед принадлежит Алексу.", "Whose bicycle is that?", "Чей это велосипед?"],
+            ["She quit her job because she found a better one.", "Она уволилась, потому что нашла работу получше.", "Why did she quit her job?", "Почему она уволилась?"],
+            ["Liam made the birthday cake.", "Лиам приготовил торт на день рождения.", "Who made the birthday cake?", "Кто приготовил торт на день рождения?"],
+            ["We should pick either the red or the blue team.", "Нам нужно выбрать либо красную, либо синюю команду.", "Which team should we pick?", "Какую команду нам выбрать?"],
+            ["The service costs $15 per month.", "Услуга стоит 15 долларов в месяц.", "How much does the service cost per month?", "Сколько стоит услуга в месяц?"],
+            ["She invited eight friends to the party.", "Она пригласила на вечеринку восемь друзей.", "How many friends did she invite?", "Сколько друзей она пригласила?"],
+            ["The coat on the hanger belongs to my mom.", "Пальто на вешалке принадлежит моей маме.", "Whose coat is on the hanger?", "Чье пальто на вешалке?"],
+
+            ["I left my keys on the kitchen table.", "Я оставил свои ключи на кухонном столе.", "Where did you leave your keys?", "Где ты оставил свои ключи?"],
+            ["They are going on vacation to Italy.", "Они едут в отпуск в Италию.", "Where are they going on vacation?", "Куда они едут в отпуск?"],
+            ["We found the best coffee shop near the park.", "Мы нашли лучшую кофейню возле парка.", "Where did you find the best coffee shop?", "Где вы нашли лучшую кофейню?"],
+            ["I usually go jogging in the local park.", "Я обычно бегаю в местном парке.", "Where do you usually go jogging?", "Где ты обычно бегаешь?"],
+            ["She hid the present under the bed.", "Она спрятала подарок под кроватью.", "Where did she hide the present?", "Где она спрятала подарок?"],
+            ["He met his business partner at the conference.", "Он встретил своего делового партнера на конференции.", "Whom did he meet at the conference?", "Кого он встретил на конференции?"],
+            ["They invited all their classmates to the party.", "Они пригласили всех своих одноклассников на вечеринку.", "Whom did they invite to the party?", "Кого они пригласили на вечеринку?"],
+            ["She called her friend to share the good news.", "Она позвонила своему другу, чтобы поделиться хорошей новостью.", "Whom did she call to share the good news?", "Кому она позвонила, чтобы поделиться хорошей новостью?"],
+            ["He asked his teacher for advice.", "Он попросил своего учителя совета.", "Whom did he ask for advice?", "У кого он попросил совета?"],
+            ["I consulted a doctor about my symptoms.", "Я проконсультировался с врачом по поводу своих симптомов.", "Whom did you consult about your symptoms?", "С кем ты проконсультировался по поводу своих симптомов?"],
+            ["She learned to play the piano when she was a child.", "Она научилась играть на пианино в детстве.", "How did she learn to play the piano?", "Как она научилась играть на пианино?"],
+            ["They managed to finish the project on time.", "Им удалось завершить проект вовремя.", "How did they manage to finish the project on time?", "Как им удалось завершить проект вовремя?"],
+            ["He solved the puzzle quickly.", "Он быстро решил головоломку.", "How did he solve the puzzle so quickly?", "Как он так быстро решил головоломку?"],
+            ["She improved her English by practicing every day.", "Она улучшила свой английский, практикуясь каждый день.", "How did she improve her English?", "Как она улучшила свой английский?"],
+            ["They prepared for the test by studying together.", "Они готовились к тесту, занимаясь вместе.", "How did they prepare for the test?", "Как они готовились к тесту?"],
+            ["We plan to visit our grandparents this weekend.", "Мы планируем навестить наших бабушку и дедушку в эти выходные.", "Where do you plan to visit this weekend?", "Куда вы планируете поехать в эти выходные?"],
+            ["She keeps her important documents in a safe.", "Она хранит свои важные документы в сейфе.", "Where does she keep her important documents?", "Где она хранит свои важные документы?"],
+            ["The company is based in New York.", "Компания базируется в Нью-Йорке.", "Where is the company based?", "Где базируется компания?"],
+            ["He left his car in the garage.", "Он оставил свою машину в гараже.", "Where did he leave his car?", "Где он оставил свою машину?"],
+            ["We saw our friends at the concert.", "Мы увидели наших друзей на концерте.", "Whom did you see at the concert?", "Кого вы увидели на концерте?"],
+            ["I consulted a lawyer about my case.", "Я проконсультировался с юристом по своему делу.", "Whom did you consult about your case?", "С кем ты проконсультировался по своему делу?"],
+            ["They discussed the project with the manager.", "Они обсудили проект с менеджером.", "Whom did they discuss the project with?", "С кем они обсуждали проект?"],
+            ["She understood the lesson by asking questions.", "Она поняла урок, задавая вопросы.", "How did she understand the lesson?", "Как она поняла урок?"],
+            ["They saved money by cooking at home.", "Они сэкономили деньги, готовя дома.", "How did they save money?", "Как они сэкономили деньги?"],
+            ["I found this book at the library.", "Я нашел эту книгу в библиотеке.", "Where did you find this book?", "Где ты нашел эту книгу?"]
+
+
+         ];
+
+            const generateExercisesEasy = (() => {
+               let index = 0; 
+
+               return (exercises, exerciseForm) => {
+                  exercises.forEach(item => {
+                        index += 1;  
+                        let question = replace_question(item[2]);
+                        let sentence = question.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />`);
+
+                        sentence = `${sentence} — ${item[3]} 
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                        <span class="text-span" id="clue-easy-${index}">${item[2]}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                  });
+               };
+            })();
+            const generateExercisesEasy2 = (() => {
+               let index = 0; 
+
+               return (exercises, exerciseForm) => {
+                  exercises.forEach(item => {
+                        index += 1;  
+
+                        let sentence = `${shuffleSentence(item[2])}: <input type="text" class="input-size" oninput='checkAnswer(this, "${item[2]}")'/>
+                        
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                        <span class="text-span" id="clue-easy-2-${index}">${item[2]}</span>
+                        <br>(<i>${item[3]}</i>)`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                  });
+               };
+            })();
+            const generateExercisesEasy3 = (() => {
+               let index = 0; 
+
+               return (exercises, exerciseForm) => {
+                  exercises.forEach(item => {
+                        index += 1;  
+
+                        let sentence = `${item[0]} question: <input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-3-${index}')"> 
+                        <span class="text-span" id="clue-easy-3-${index}">${item[2]}</span><br>(${item[1]})`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                  });
+               };
+            })();
+            generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+            generateExercisesEasy2(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_2'));
+            generateExercisesEasy3(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_3'));
+
+            function playSentence(sentence){
+               practice.speak(sentence);
+            }
+
+            function replace_question(sentrnce){
+               let ret = sentrnce.replace("What","___").replace("Where","___").replace("Whom","___")
+               .replace("Whose","___").replace("When","___").replace("Why","___").replace("Who","___")
+               .replace("Which","___").replace("How much","___").replace("How many","___").replace("How","___");
+               return ret;  
+
+            }
 
       </script>
    </div>
