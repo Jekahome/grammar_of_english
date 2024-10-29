@@ -103,7 +103,10 @@
             <form id="exerciseForm_1"></form>
         </details>
 
-
+        <details>
+            <summary>2: Составить грамматически правильные предложения</summary>
+            <form id="exerciseForm_2"></form>
+        </details>
 
 
 
@@ -214,7 +217,6 @@
                 ["There's a picture in the hallway.", "В коридоре картина.", "Is there a picture in the hallway?", "В коридоре есть картина?"],
                 ["There are drinks in the cooler.", "В холодильнике напитки.", "Are there drinks in the cooler?", "В холодильнике есть напитки?"],
                 ["There's a rainbow in the sky.", "На небе радуга.", "Is there a rainbow in the sky?", "На небе есть радуга?"]
-
             ];
 
                 
@@ -234,8 +236,28 @@
                     });
                 };
             })();
+            const generateExercisesEasy2 = (() => {
+                let index = 0; 
 
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        
+                        let sentence = `${shuffleSentence(item[0])}: <input type="text" class="input-size" oninput="checkAnswer(this, '${item[0]}')" /><br>
+                        (${item[1]})
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                        <span class="text-span" id="clue-easy-2-${index}">${item[0]}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
             generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+            const transformedArray = exercises_easy_1.flatMap(([statementEn, statementRu, questionEn, questionRu]) => [
+                [statementEn, statementRu],
+                [questionEn, questionRu]
+            ]);
+            generateExercisesEasy(getRandomThird(transformedArray), document.getElementById('exerciseForm_2'));
 
             function playSentence(sentence){
                 practice.speak(sentence);
