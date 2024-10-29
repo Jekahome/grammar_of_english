@@ -113,21 +113,11 @@
             <form id="exerciseForm_3"></form>
         </details>
 
+        <details>
+            <summary>4: Ответить на вопросы</summary>
+            <form id="exerciseForm_4"></form>
+        </details>
 
-
-        <ol>
-            
-
-            <li>Сформировать предложения о городе из слов:</li>
-            <ul>
-                <li>(university - No) — There is not a university in his town.</li>
-                <li>(hotel - Yes) — There is a hotel in his town.</li>
-                <li>(school - Yes, three) — There are three schools in his town.</li>
-                <li>(hospital - Yes) — There is a hospital in his town.</li>
-                <li>(river - No) — There is not a river in his town.</li>
-                <li>(cinema - Yes) — There is a cinema in his town.</li>
-            </ul>
-        </ol>
 
         <a href="https://englex.ru/english-grammar-for-beginners-part-3/?utm_source=funnel&utm_medium=funnel2&utm_campaign=ebook&utm_content=grammar_plan">Оборот there is/are</a>
         <script src='/grammar_of_english/practice.js'></script>
@@ -242,6 +232,46 @@
 
             ];
 
+            const exercises_easy_3 = [
+                ["What is there in the box? (toy)", "Что в коробке?", "There is a toy in the box.", "В коробке игрушка."],
+                ["Where are the keys? (table)", "Где ключи?", "There are no keys on the table.", "На столе нет ключей."],
+                ["How many chairs are there in the room? (four)", "Сколько стульев в комнате?", "There are four chairs in the room.", "В комнате четыре стула."],
+                ["How much water is there in the bottle? (some)", "Сколько воды в бутылке?", "There is some water in the bottle.", "В бутылке есть немного воды."],
+                ["Who is there at the door? (delivery person)", "Кто там у двери?", "There is a delivery person at the door.", "У двери курьер."],
+                ["What is there on the shelf? (books)", "Что на полке?", "There are books on the shelf.", "На полке книги."],
+                ["Where is the nearest bus stop? (around the corner)", "Где ближайшая автобусная остановка?", "There is a bus stop around the corner.", "Автобусная остановка за углом."],
+                ["How many apples are there in the basket? (three)", "Сколько яблок в корзине?", "There are three apples in the basket.", "В корзине три яблока."],
+                ["How much sugar is there in the cup? (none)", "Сколько сахара в чашке?", "There isn't any sugar in the cup.", "В чашке нет сахара."],
+                ["Who is there in the kitchen? (chef)", "Кто там на кухне?", "There is a chef in the kitchen.", "На кухне шеф-повар."],
+                ["What is there on the table? (papers)", "Что на столе?", "There are some papers on the table.", "На столе несколько бумаг."],
+                ["Where are my shoes? (hallway)", "Где мои туфли?", "There are no shoes in the hallway.", "В коридоре нет туфель."],
+                ["How many rooms are there in the house? (five)", "Сколько комнат в доме?", "There are five rooms in the house.", "В доме пять комнат."],
+                ["How much milk is there in the fridge? (none)", "Сколько молока в холодильнике?", "There isn't any milk in the fridge.", "В холодильнике нет молока."],
+                ["Who are there at the party? (friends)", "Кто на вечеринке?", "There are many friends at the party.", "На вечеринке много друзей."],
+                ["What is there in the fridge? (cake)", "Что в холодильнике?", "There is a cake in the fridge.", "В холодильнике торт."],
+                ["Where are the documents? (desk)", "Где документы?", "There are no documents on the desk.", "На столе нет документов."],
+                ["How many toys are there in the box? (several)", "Сколько игрушек в коробке?", "There are several toys in the box.", "В коробке несколько игрушек."],
+                ["How much time is there before the meeting? (an hour)", "Сколько времени осталось до встречи?", "There is an hour before the meeting.", "До встречи остался час."],
+                ["Who is there on the phone? (client)", "Кто на телефоне?", "There is a client on the phone.", "На телефоне клиент."],
+                ["What is there behind the curtain? (window)", "Что за занавеской?", "There is a window behind the curtain.", "За занавеской окно."],
+                ["What is there under the bed? (dust)", "Что под кроватью?", "There is dust under the bed.", "Под кроватью пыль."],
+                ["Where are the snacks? (kitchen)", "Где закуски?", "There are no snacks in the kitchen.", "В кухне нет закусок."],
+                ["How many books are there on the shelf? (ten)", "Сколько книг на полке?", "There are ten books on the shelf.", "На полке десять книг."],
+                ["How much coffee is there in the pot? (some)", "Сколько кофе в кофейнике?", "There is some coffee in the pot.", "В кофейнике немного кофе."],
+                ["Who is there in the garden? ( gardener)", "Кто в саду?", "There is a gardener in the garden.", "В саду садовник."],
+                ["What is there on your desk? (laptop)", "Что на твоем столе?", "There is a laptop on my desk.", "На моем столе ноутбук."],
+                ["Where is the nearest hospital? (two blocks away)", "Где ближайшая больница?", "There is a hospital two blocks away.", "Больница в двух кварталах отсюда."],
+                ["How many bikes are there in the garage? (five)", "Сколько велосипедов в гараже?", "There are five bikes in the garage.", "В гараже пять велосипедов."],
+                ["How much fruit is there in the bowl? (none)", "Сколько фруктов в миске?", "There isn't any fruit in the bowl.", "В миске нет фруктов."],
+                ["Who is there in the library? (student)", "Кто в библиотеке?", "There is a student in the library.", "В библиотеке студент."],
+                ["What is there at the end of the street? (park)", "Что в конце улицы?", "There is a park at the end of the street.", "В конце улицы парк."],
+                ["Where are my glasses? (table)", "Где мои очки?", "There are no glasses on the table.", "На столе нет очков."],
+                ["How many floors are there in the building? (three)", "Сколько этажей в здании?", "There are three floors in the building.", "В здании три этажа."],
+                ["How much juice is there in the fridge? (little)", "Сколько сока в холодильнике?", "There is little juice in the fridge.", "В холодильнике немного сока."],
+                ["Who is there in the meeting? (manager)", "Кто на встрече?", "There is a manager in the meeting.", "На встрече менеджер."]
+            ];
+
+
 
             const generateExercisesEasy = (() => {
                 let index = 0; 
@@ -291,14 +321,30 @@
                     });
                 };
             })();
+            const generateExercisesEasy4 = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        
+                        let sentence = `${item[0]} — <input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index}')"> 
+                        <span class="text-span" id="clue-easy-4-${index}">${item[2]}</span>
+                        <br>(${item[1]} — ${item[3]})`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
             generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
             const transformedArray = exercises_easy_1.flatMap(([statementEn, statementRu, questionEn, questionRu]) => [
                 [statementEn, statementRu],
                 [questionEn, questionRu]
             ]);
             generateExercisesEasy2(getRandomThird(transformedArray), document.getElementById('exerciseForm_2'));
-            generateExercisesEasy3(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_3'))
-
+            generateExercisesEasy3(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_3'));
+            generateExercisesEasy4(getRandomThird(exercises_easy_3), document.getElementById('exerciseForm_4'));
 
             function playSentence(sentence){
                 practice.speak(sentence);
