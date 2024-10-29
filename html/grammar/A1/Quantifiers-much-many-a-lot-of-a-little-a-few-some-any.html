@@ -196,8 +196,12 @@
         <form id="exerciseForm_1"></form>
     </details>
     <details>
-        <summary>1: Заполнить пропуски, используя (a few, a little, some, any)</summary>
+        <summary>2: Заполнить пропуски, используя (a few, a little, some, any)</summary>
         <form id="exerciseForm_2"></form>
+    </details>
+    <details>
+        <summary>3: Ответить на вопрос, используя (a few, a little, some, any)</summary>
+        <form id="exerciseForm_3"></form>
     </details>
 
     <script src='/grammar_of_english/practice.js'></script>
@@ -340,7 +344,9 @@
             let ret = sentrnce.replace("few","___").replace("little","___").replace("some","___").replace("any","___");
             return ret;  
         }
-        
+        function playSentence(sentence){
+            practice.speak(sentence);
+        }
     </script>
     </div>
 </body>
