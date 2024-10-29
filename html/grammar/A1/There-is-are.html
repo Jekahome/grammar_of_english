@@ -108,37 +108,15 @@
             <form id="exerciseForm_2"></form>
         </details>
 
+        <details>
+            <summary>3: Преобразовать предложения в отрицательные</summary>
+            <form id="exerciseForm_3"></form>
+        </details>
+
 
 
         <ol>
-            <li>Преобразовать предложения в вопросительные:</li>
-            <ul>
-                <li>There's a cat on the sofa. — Is there a cat on the sofa?</li>
-                <li>There are some people in the street. — Are there any people in the street?</li>
-                <li>There's some money in my bag. — Is there any money in your bag?</li>
-                <li>There are some children in the yard. — Are there any children in the yard?</li>
-                <li>There's a picture on the wall. — Is there a picture on the wall?</li>
-                <li>There's a bird in the cage. — Is there a bird in the cage?</li>
-            </ul>
-
-            <li>Преобразовать предложения в отрицательные:</li>
-            <ul>
-                <li>There's a piano in the room. — There isn't a piano in the room.</li>
-                <li>There are some new houses in this street. — There aren't any new houses in this street.</li>
-                <li>There's a pen in my hand. — There isn't a pen in my hand.</li>
-                <li>There are some big windows in the room. — There aren't any big windows in the room.</li>
-            </ul>
-
-            <li>Сформировать вопрос что в сундуке используя слова:</li>
-            <ul>
-                <li>a doll — Is there a doll in the box?</li>
-                <li>any money — Is there any money in the box?</li>
-                <li>any sweets — Are there any sweets in the box?</li>
-                <li>any books — Are there any books in the box?</li>
-                <li>a ball — Is there a ball in the box?</li>
-                <li>a train — Is there a train in the box?</li>
-                <li>any sugar — Is there any sugar in the box?</li>
-            </ul>
+            
 
             <li>Сформировать предложения о городе из слов:</li>
             <ul>
@@ -219,7 +197,52 @@
                 ["There's a rainbow in the sky.", "На небе радуга.", "Is there a rainbow in the sky?", "На небе есть радуга?"]
             ];
 
-                
+            const exercises_easy_2 = [
+                ["There's a piano in the room.", "There isn't a piano in the room.", "В комнате есть пианино.", "В комнате нет пианино."],
+                ["There are some new houses in this street.", "There aren't any new houses in this street.", "На этой улице есть новые дома.", "На этой улице нет новых домов."],
+                ["There's a pen in my hand.", "There isn't a pen in my hand.", "У меня в руке ручка.", "У меня в руке нет ручки."],
+                ["There are some big windows in the room.", "There aren't any big windows in the room.", "В комнате есть большие окна.", "В комнате нет больших окон."],
+                ["There's a car in the garage.", "There isn't a car in the garage.", "В гараже есть машина.", "В гараже нет машины."],
+                ["There are books on the shelf.", "There aren't any books on the shelf.", "На полке есть книги.", "На полке нет книг."],
+                ["There's a cat in the garden.", "There isn't a cat in the garden.", "В саду есть кошка.", "В саду нет кошки."],
+                ["There are two apples in the fridge.", "There aren't any apples in the fridge.", "В холодильнике два яблока.", "В холодильнике нет яблок."],
+                ["There's a message on my phone.", "There isn't a message on my phone.", "На моем телефоне есть сообщение.", "На моем телефоне нет сообщений."],
+                ["There are chairs on the balcony.", "There aren't any chairs on the balcony.", "На балконе стоят стулья.", "На балконе нет стульев."],
+                ["There's milk in the fridge.", "There isn't any milk in the fridge.", "В холодильнике есть молоко.", "В холодильнике нет молока."],
+                ["There are flowers in the vase.", "There aren't any flowers in the vase.", "В вазе есть цветы.", "В вазе нет цветов."],
+                ["There's water in the bottle.", "There isn't any water in the bottle.", "В бутылке есть вода.", "В бутылке нет воды."],
+                ["There are pictures on the wall.", "There aren't any pictures on the wall.", "На стене есть картины.", "На стене нет картин."],
+                ["There's a bus stop near the school.", "There isn't a bus stop near the school.", "Рядом со школой есть автобусная остановка.", "Рядом со школой нет автобусной остановки."],
+                ["There are people at the event.", "There aren't any people at the event.", "На мероприятии есть люди.", "На мероприятии нет людей."],
+                ["There's a candle on the table.", "There isn't a candle on the table.", "На столе стоит свеча.", "На столе нет свечи."],
+                ["There are stars in the sky tonight.", "There aren't any stars in the sky tonight.", "Сегодня ночью на небе звезды.", "Сегодня ночью на небе нет звезд."],
+                ["There's a movie on tonight.", "There isn't a movie on tonight.", "Сегодня вечером идет фильм.", "Сегодня вечером фильма не будет."],
+                ["There are toys on the floor.", "There aren't any toys on the floor.", "На полу лежат игрушки.", "На полу нет игрушек."],
+                ["There's a letter in the mailbox.", "There isn't a letter in the mailbox.", "В почтовом ящике письмо.", "В почтовом ящике нет письма."],
+                ["There are clouds in the sky.", "There aren't any clouds in the sky.", "В небе облака.", "В небе нет облаков."],
+                ["There's a park nearby.", "There isn't a park nearby.", "Рядом есть парк.", "Рядом нет парка."],
+                ["There are trees along the road.", "There aren't any trees along the road.", "Вдоль дороги растут деревья.", "Вдоль дороги нет деревьев."],
+                ["There's a ticket on the table.", "There isn't a ticket on the table.", "На столе лежит билет.", "На столе нет билета."],
+
+                ["There's a dog in the yard.", "There isn't a dog in the yard.", "Во дворе есть собака.", "Во дворе нет собаки."],
+                ["There are cookies in the jar.", "There aren't any cookies in the jar.", "В банке есть печенье.", "В банке нет печенья."],
+                ["There's a lamp on the desk.", "There isn't a lamp on the desk.", "На столе есть лампа.", "На столе нет лампы."],
+                ["There are some trees in the park.", "There aren't any trees in the park.", "В парке есть деревья.", "В парке нет деревьев."],
+                ["There's sugar in the cupboard.", "There isn't any sugar in the cupboard.", "В шкафу есть сахар.", "В шкафу нет сахара."],
+                ["There are several rooms in the house.", "There aren't any rooms in the house.", "В доме несколько комнат.", "В доме нет комнат."],
+                ["There's a key on the table.", "There isn't a key on the table.", "На столе лежит ключ.", "На столе нет ключа."],
+                ["There are posters on the wall.", "There aren't any posters on the wall.", "На стене висят постеры.", "На стене нет постеров."],
+                ["There's a coffee machine in the kitchen.", "There isn't a coffee machine in the kitchen.", "На кухне есть кофемашина.", "На кухне нет кофемашины."],
+                ["There are pencils in the drawer.", "There aren't any pencils in the drawer.", "В ящике есть карандаши.", "В ящике нет карандашей."],
+                ["There's a letter on the counter.", "There isn't a letter on the counter.", "На прилавке лежит письмо.", "На прилавке нет письма."],
+                ["There are people in the office.", "There aren't any people in the office.", "В офисе есть люди.", "В офисе нет людей."],
+                ["There's ice in the freezer.", "There isn't any ice in the freezer.", "В морозилке есть лёд.", "В морозилке нет льда."],
+                ["There are pillows on the bed.", "There aren't any pillows on the bed.", "На кровати есть подушки.", "На кровати нет подушек."],
+                ["There's a bicycle in the shed.", "There isn't a bicycle in the shed.", "В сарае есть велосипед.", "В сарае нет велосипеда."]
+
+            ];
+
+
             const generateExercisesEasy = (() => {
                 let index = 0; 
 
@@ -252,12 +275,30 @@
                     });
                 };
             })();
+            const generateExercisesEasy3 = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        
+                        let sentence = `${item[0]} — <input type="text" class="input-size" oninput="checkAnswer(this, '${item[1]}')" /><br>
+                        (${item[2]} — ${item[3]})
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[1]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-3-${index}')"> 
+                        <span class="text-span" id="clue-easy-3-${index}">${item[1]}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
             generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
             const transformedArray = exercises_easy_1.flatMap(([statementEn, statementRu, questionEn, questionRu]) => [
                 [statementEn, statementRu],
                 [questionEn, questionRu]
             ]);
             generateExercisesEasy(getRandomThird(transformedArray), document.getElementById('exerciseForm_2'));
+            generateExercisesEasy3(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_2'))
+
 
             function playSentence(sentence){
                 practice.speak(sentence);
