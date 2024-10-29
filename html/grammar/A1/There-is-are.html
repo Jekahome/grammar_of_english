@@ -250,11 +250,11 @@
                     exercises.forEach(item => {
                         index += 1;  
                         
-                        let sentence = `${item[0]} <input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" /><br>
-                        (${item[1]} — ${item[3]})
+                        let sentence = `${item[0]} — <input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />
                         <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
-                        <span class="text-span" id="clue-easy-${index}">${item[2]}</span>`;
+                        <span class="text-span" id="clue-easy-${index}">${item[2]}</span>
+                        <br>(${item[1]} — ${item[3]})`;
                         exerciseForm.innerHTML += `<p>${sentence}</p>`;
                     });
                 };
@@ -296,8 +296,8 @@
                 [statementEn, statementRu],
                 [questionEn, questionRu]
             ]);
-            generateExercisesEasy(getRandomThird(transformedArray), document.getElementById('exerciseForm_2'));
-            generateExercisesEasy3(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_2'))
+            generateExercisesEasy2(getRandomThird(transformedArray), document.getElementById('exerciseForm_2'));
+            generateExercisesEasy3(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_3'))
 
 
             function playSentence(sentence){
