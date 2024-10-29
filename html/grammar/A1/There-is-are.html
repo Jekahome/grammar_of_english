@@ -96,8 +96,16 @@
         <p><strong>Answer:</strong> There is a delivery person. — <i>Там курьер.</i></p>
         
         
-        
-        <h2>Упражнение</h2>
+        <h2>Упражнения</h2>
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Преобразовать предложения в вопросительные</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+
+
+
+
 
         <ol>
             <li>Преобразовать предложения в вопросительные:</li>
@@ -141,7 +149,98 @@
         </ol>
 
         <a href="https://englex.ru/english-grammar-for-beginners-part-3/?utm_source=funnel&utm_medium=funnel2&utm_campaign=ebook&utm_content=grammar_plan">Оборот there is/are</a>
+        <script src='/grammar_of_english/practice.js'></script>
+        <script>
 
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+    
+            let practice = new Practice({callback: recognition});
+
+            const exercises_easy_1 = [
+                ["There's a book on the table.", "На столе книга.", "Is there a book on the table?", "На столе есть книга?"],
+                ["There are three chairs in the kitchen.", "На кухне три стула.", "Are there three chairs in the kitchen?", "На кухне три стула?"],
+                ["There's a park near my house.", "Рядом с моим домом есть парк.", "Is there a park near your house?", "Рядом с твоим домом есть парк?"],
+                ["There are two apples in the fridge.", "В холодильнике два яблока.", "Are there two apples in the fridge?", "В холодильнике есть два яблока?"],
+                ["There's a lot of noise outside.", "Снаружи много шума.", "Is there a lot of noise outside?", "Снаружи много шума?"],
+                ["There are some toys on the floor.", "На полу несколько игрушек.", "Are there any toys on the floor?", "На полу есть игрушки?"],
+                ["There's a cat in the garden.", "В саду кошка.", "Is there a cat in the garden?", "В саду есть кошка?"],
+                ["There are many students in the classroom.", "В классе много учеников.", "Are there many students in the classroom?", "В классе много учеников?"],
+                ["There's a computer on my desk.", "На моем столе компьютер.", "Is there a computer on your desk?", "На твоем столе есть компьютер?"],
+                ["There are books on the shelf.", "На полке книги.", "Are there books on the shelf?", "На полке есть книги?"],
+                ["There's a coffee shop nearby.", "Рядом есть кофейня.", "Is there a coffee shop nearby?", "Рядом есть кофейня?"],
+                ["There are two dogs in the backyard.", "На заднем дворе два пса.", "Are there two dogs in the backyard?", "На заднем дворе есть два пса?"],
+                ["There's a message on the phone.", "На телефоне сообщение.", "Is there a message on the phone?", "На телефоне есть сообщение?"],
+                ["There are clouds in the sky.", "В небе облака.", "Are there clouds in the sky?", "В небе есть облака?"],
+                ["There's water in the bottle.", "В бутылке вода.", "Is there water in the bottle?", "В бутылке есть вода?"],
+                ["There are five pencils in the box.", "В коробке пять карандашей.", "Are there five pencils in the box?", "В коробке пять карандашей?"],
+                ["There's milk in the fridge.", "В холодильнике молоко.", "Is there milk in the fridge?", "В холодильнике есть молоко?"],
+                ["There are flowers in the vase.", "В вазе цветы.", "Are there flowers in the vase?", "В вазе есть цветы?"],
+                ["There's a bus stop near the school.", "Рядом со школой есть автобусная остановка.", "Is there a bus stop near the school?", "Рядом со школой есть автобусная остановка?"],
+                ["There are birds in the tree.", "На дереве птицы.", "Are there birds in the tree?", "На дереве есть птицы?"],
+                ["There's a movie tonight.", "Сегодня вечером будет фильм.", "Is there a movie tonight?", "Сегодня вечером будет фильм?"],
+                ["There are cars in the parking lot.", "На парковке машины.", "Are there cars in the parking lot?", "На парковке есть машины?"],
+                ["There's a light on in the hallway.", "В коридоре горит свет.", "Is there a light on in the hallway?", "В коридоре горит свет?"],
+                ["There are many people at the event.", "На мероприятии много людей.", "Are there many people at the event?", "На мероприятии много людей?"],
+                ["There's an email in your inbox.", "В твоей почте есть письмо.", "Is there an email in your inbox?", "В твоей почте есть письмо?"],
+
+                ["There's a bicycle in the garage.", "В гараже велосипед.", "Is there a bicycle in the garage?", "В гараже есть велосипед?"],
+                ["There are four windows in the living room.", "В гостиной четыре окна.", "Are there four windows in the living room?", "В гостиной четыре окна?"],
+                ["There's a painting on the wall.", "На стене картина.", "Is there a painting on the wall?", "На стене есть картина?"],
+                ["There are students in the library.", "В библиотеке студенты.", "Are there students in the library?", "В библиотеке есть студенты?"],
+                ["There's a bakery on this street.", "На этой улице есть пекарня.", "Is there a bakery on this street?", "На этой улице есть пекарня?"],
+                ["There are posters on the classroom walls.", "На стенах класса висят плакаты.", "Are there posters on the classroom walls?", "На стенах класса есть плакаты?"],
+                ["There's a mistake in the report.", "В отчёте ошибка.", "Is there a mistake in the report?", "В отчёте есть ошибка?"],
+                ["There are instructions in the manual.", "В руководстве есть инструкции.", "Are there instructions in the manual?", "В руководстве есть инструкции?"],
+                ["There's a candle on the table.", "На столе свеча.", "Is there a candle on the table?", "На столе есть свеча?"],
+                ["There are vegetables in the garden.", "В саду овощи.", "Are there vegetables in the garden?", "В саду есть овощи?"],
+                ["There's an umbrella in the car.", "В машине зонт.", "Is there an umbrella in the car?", "В машине есть зонт?"],
+                ["There are stars in the sky tonight.", "Сегодня ночью на небе звезды.", "Are there stars in the sky tonight?", "Сегодня ночью на небе есть звезды?"],
+                ["There's a bench by the lake.", "У озера скамейка.", "Is there a bench by the lake?", "У озера есть скамейка?"],
+                ["There are toys under the bed.", "Под кроватью игрушки.", "Are there toys under the bed?", "Под кроватью есть игрушки?"],
+                ["There's a concert in the park tomorrow.", "Завтра в парке концерт.", "Is there a concert in the park tomorrow?", "Завтра в парке будет концерт?"],
+                ["There are cushions on the sofa.", "На диване подушки.", "Are there cushions on the sofa?", "На диване есть подушки?"],
+                ["There's a clock above the door.", "Над дверью часы.", "Is there a clock above the door?", "Над дверью есть часы?"],
+                ["There are birds singing outside.", "На улице поют птицы.", "Are there birds singing outside?", "На улице поют птицы?"],
+                ["There's a path through the forest.", "Через лес проходит тропинка.", "Is there a path through the forest?", "Через лес проходит тропинка?"],
+                ["There are dishes in the sink.", "В раковине посуда.", "Are there dishes in the sink?", "В раковине есть посуда?"],
+                ["There's a letter in the mailbox.", "В почтовом ящике письмо.", "Is there a letter in the mailbox?", "В почтовом ящике есть письмо?"],
+                ["There are candles on the cake.", "На торте свечи.", "Are there candles on the cake?", "На торте есть свечи?"],
+                ["There's a picture in the hallway.", "В коридоре картина.", "Is there a picture in the hallway?", "В коридоре есть картина?"],
+                ["There are drinks in the cooler.", "В холодильнике напитки.", "Are there drinks in the cooler?", "В холодильнике есть напитки?"],
+                ["There's a rainbow in the sky.", "На небе радуга.", "Is there a rainbow in the sky?", "На небе есть радуга?"]
+
+            ];
+
+                
+            const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        
+                        let sentence = `${item[0]} <input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" /><br>
+                        (${item[1]} — ${item[3]})
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                        <span class="text-span" id="clue-easy-${index}">${item[2]}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+            generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
+        </script>
     </div>
 </body>
 </html>
