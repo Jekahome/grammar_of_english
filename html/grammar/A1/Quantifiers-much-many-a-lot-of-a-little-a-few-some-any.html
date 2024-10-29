@@ -189,6 +189,159 @@
         <li><a href="https://wordwall.net/ru-ar/community/quiz-quantifiers" target="_blank">Quantifiers games (wordwall 2)</a></li>
     </ul>
 
+    <h2>Упражнения</h2>
+    <h3>Replace (Easy)</h3>
+    <details>
+        <summary>1: Заполнить пропуски, используя (many, much, a lot of)</summary>
+        <form id="exerciseForm_1"></form>
+    </details>
+    <details>
+        <summary>1: Заполнить пропуски, используя (a few, a little, some, any)</summary>
+        <form id="exerciseForm_2"></form>
+    </details>
+
+    <script src='/grammar_of_english/practice.js'></script>
+    <script>
+
+        function recognition(id, recognition){
+            console.log(`id=${id} recognition=${recognition}`);
+            var el = document.getElementById(id);
+            el.value = recognition;
+            const inputEvent = new Event('input');
+            el.dispatchEvent(inputEvent);
+        }
+
+        let practice = new Practice({callback: recognition});
+
+        const exercises_easy_1 = [
+            ["How ___ books do you have?", "many", "Сколько у тебя книг?", "I have ___ books.", "few", "У меня есть несколько книг."],
+            ["How ___ money is left?", "much", "Сколько денег осталось?", "There is ___ money left.", "little", "Осталось немного денег."],
+            ["Are there ___ people at the party?", "a lot of", "На вечеринке много людей?", "There are ___ people at the party.", "few", "На вечеринке мало людей."],
+            ["Do you have ___ friends?", "many", "У тебя много друзей?", "I have ___ good friends.", "a few", "У меня есть несколько хороших друзей."],
+            ["How ___ milk is in the fridge?", "much", "Сколько молока в холодильнике?", "There is ___ milk left.", "little", "Осталось немного молока."],
+            ["Is there ___ homework today?", "a lot of", "Много ли сегодня домашней работы?", "There is ___ homework, but not too much.", "some", "Есть немного домашней работы, но не слишком много."],
+            ["How ___ apples are in the basket?", "many", "Сколько яблок в корзине?", "There are ___ apples in the basket.", "few", "В корзине мало яблок."],
+            ["Do we have ___ time before the meeting?", "much", "У нас много времени до встречи?", "We have ___ time left.", "little", "У нас мало времени."],
+            ["Are there ___ tasks to complete?", "a lot of", "Много ли задач нужно выполнить?", "There are ___ tasks left to complete.", "a few", "Осталось выполнить несколько задач."],
+            ["How ___ cups are on the table?", "many", "Сколько чашек на столе?", "There are ___ cups on the table.", "few", "На столе мало чашек."],
+            ["Do you need ___ help with your project?", "much", "Тебе нужна большая помощь с проектом?", "I need ___ help, but not much.", "some", "Мне нужна небольшая помощь, но не слишком много."],
+            ["Is there ___ food for the picnic?", "a lot of", "Для пикника много еды?", "There is ___ food, but not a lot.", "some", "Еда есть, но немного."],
+            ["How ___ students are in the classroom?", "many", "Сколько студентов в классе?", "There are ___ students in the classroom.", "few", "В классе мало студентов."],
+            ["Do you have ___ information about the topic?", "much", "У тебя много информации по теме?", "I have ___ information about it.", "little", "У меня мало информации по этой теме."],
+            ["Is there ___ water left in the bottle?", "a lot of", "В бутылке осталось много воды?", "There is ___ water left.", "little", "Осталось немного воды."],
+            ["Are there ___ chairs in the room?", "many", "В комнате много стульев?", "There are ___ chairs in the room.", "few", "В комнате мало стульев."],
+            ["How ___ coffee do we have?", "much", "Сколько у нас кофе?", "We have ___ coffee left.", "little", "У нас осталось мало кофе."],
+            ["Do they have ___ experience?", "a lot of", "У них много опыта?", "They have ___ experience.", "little", "У них мало опыта."],
+            ["How ___ cookies are in the jar?", "many", "Сколько печенья в банке?", "There are ___ cookies in the jar.", "few", "В банке мало печенья."],
+            ["Is there ___ rain expected today?", "much", "Сегодня ожидается много дождя?", "There is ___ rain expected.", "little", "Ожидается немного дождя."],
+            ["Do you have ___ questions?", "a lot of", "У тебя много вопросов?", "I have ___ questions.", "a few", "У меня есть несколько вопросов."],
+            ["Are there ___ cars in the parking lot?", "many", "На парковке много машин?", "There are ___ cars in the parking lot.", "few", "На парковке мало машин."],
+            ["How ___ sugar is in the cupboard?", "much", "Сколько сахара в шкафу?", "There is ___ sugar in the cupboard.", "little", "В шкафу мало сахара."],
+            ["Do they need ___ advice?", "a lot of", "Им нужно много советов?", "They need ___ advice.", "a little", "Им нужно немного советов."],
+            ["How ___ emails did you receive?", "many", "Сколько писем ты получил?", "I received ___ emails today.", "few", "Я получил мало писем сегодня."],
+            ["Is there ___ traffic on the road?", "a lot of", "На дороге много транспорта?", "There is ___ traffic right now.", "little", "Сейчас немного транспорта."],
+            ["Are there ___ flowers in the garden?", "many", "В саду много цветов?", "There are ___ flowers, but not many.", "some", "В саду есть цветы, но не много."],
+            ["Do you have ___ free time?", "a lot of", "У тебя много свободного времени?", "I have ___ free time.", "little", "У меня мало свободного времени."],
+            ["How ___ students passed the exam?", "many", "Сколько студентов сдали экзамен?", "___ students passed the exam.", "few", "Мало студентов сдали экзамен."],
+
+            ["Do you have ___ information about the topic?", "much", "У тебя много информации по теме?", "I have ___ information about it.", "little", "У меня мало информации по этой теме."],
+            ["Is there ___ water left in the bottle?", "a lot of", "В бутылке осталось много воды?", "There is ___ water left.", "little", "Осталось немного воды."],
+            ["Are there ___ chairs in the room?", "many", "В комнате много стульев?", "There are ___ chairs in the room.", "few", "В комнате мало стульев."],
+            ["How ___ coffee do we have?", "much", "Сколько у нас кофе?", "We have ___ coffee left.", "little", "У нас осталось мало кофе."],
+            ["Do they have ___ experience?", "a lot of", "У них много опыта?", "They have ___ experience.", "little", "У них мало опыта."],
+            ["How ___ cookies are in the jar?", "many", "Сколько печенья в банке?", "There are ___ cookies in the jar.", "few", "В банке мало печенья."],
+            ["Is there ___ rain expected today?", "much", "Сегодня ожидается много дождя?", "There is ___ rain expected.", "little", "Ожидается немного дождя."],
+            ["Do you have ___ questions?", "a lot of", "У тебя много вопросов?", "I have ___ questions.", "a few", "У меня есть несколько вопросов."],
+            ["Are there ___ cars in the parking lot?", "many", "На парковке много машин?", "There are ___ cars in the parking lot.", "few", "На парковке мало машин."],
+            ["How ___ sugar is in the cupboard?", "much", "Сколько сахара в шкафу?", "There is ___ sugar in the cupboard.", "little", "В шкафу мало сахара."],
+            ["Do they need ___ advice?", "a lot of", "Им нужно много советов?", "They need ___ advice.", "a little", "Им нужно немного советов."],
+            ["How ___ emails did you receive?", "many", "Сколько писем ты получил?", "I received ___ emails today.", "few", "Я получил мало писем сегодня."],
+            ["Is there ___ traffic on the road?", "a lot of", "На дороге много транспорта?", "There is ___ traffic right now.", "little", "Сейчас немного транспорта."],
+            ["Are there ___ flowers in the garden?", "many", "В саду много цветов?", "There are ___ flowers, but not many.", "some", "В саду есть цветы, но не много."],
+            ["Do you have ___ free time?", "a lot of", "У тебя много свободного времени?", "I have ___ free time.", "little", "У меня мало свободного времени."],
+            ["How ___ students passed the exam?", "many", "Сколько студентов сдали экзамен?", "___ students passed the exam.", "few", "Мало студентов сдали экзамен."],
+            ["Is there ___ snow in the mountains?", "much", "В горах много снега?", "There is ___ snow, but not much.", "some", "В горах немного снега, но не много."],
+            ["How ___ people are in the waiting room?", "many", "Сколько людей в зале ожидания?", "There are ___ people in the waiting room.", "a few", "В зале ожидания несколько человек."],
+            ["Do we have ___ work left?", "much", "У нас осталось много работы?", "We have ___ work left.", "little", "У нас осталось мало работы."],
+            ["How ___ guests are at the party?", "many", "Сколько гостей на вечеринке?", "There are ___ guests at the party.", "few", "На вечеринке мало гостей."],
+            ["Is there ___ information in the report?", "a lot of", "В отчете много информации?", "There is ___ information, but not a lot.", "some", "Есть информация, но не много."],
+            ["Do they own ___ properties?", "many", "У них много собственности?", "They own ___ properties.", "a few", "У них несколько объектов собственности."],
+            ["How ___ space is in the car?", "much", "Сколько места в машине?", "There is ___ space left.", "little", "Осталось мало места."],
+            ["Are there ___ options available?", "many", "Есть ли много доступных вариантов?", "There are ___ options available.", "a few", "Есть несколько доступных вариантов."],
+            ["Do you have ___ time to decide?", "a lot of", "У тебя много времени, чтобы решить?", "I have ___ time to decide.", "little", "У меня мало времени на принятие решения."],
+            ["How ___ animals are in the zoo?", "many", "Сколько животных в зоопарке?", "There are ___ animals, but ___ rare ones.", ["a lot of", "few"], "Много животных, но мало редких."],
+            ["Is there ___ noise in the office?", "much", "В офисе много шума?", "There is ___ noise in the office.", "little", "В офисе мало шума."],
+            ["How ___ energy do we need?", "much", "Сколько энергии нам нужно?", "We need ___ energy.", "a little", "Нам нужно немного энергии."],
+            ["Are there ___ tasks to complete?", "many", "Есть много задач для выполнения?", "There are ___ tasks left.", "few", "Осталось мало задач."],
+            ["Do you have ___ interest in art?", "much", "У тебя есть большой интерес к искусству?", "I have ___ interest in art.", "a little", "У меня есть небольшой интерес к искусству."],
+            ["How ___ pages are in this book?", "many", "Сколько страниц в этой книге?", "There are ___ pages in the book.", "few", "В книге мало страниц."],
+            ["Is there ___ food left?", "much", "Осталось много еды?", "There is ___ food left, but not much.", "some", "Осталось немного еды, но не много."],
+            ["Are there ___ pens in the drawer?", "many", "В ящике много ручек?", "There aren’t ___ pens in the drawer.", "any", "В ящике нет ручек."],
+            ["Do you have ___ food left?", "much", "У тебя осталось много еды?", "I don’t have ___ food left.", "any", "У меня не осталось еды."],
+            ["Is there ___ information available?", "a lot of", "Доступно много информации?", "There isn’t ___ information available.", "any", "Нет никакой доступной информации."],
+            ["Are there ___ toys in the box?", "many", "В коробке много игрушек?", "There aren’t ___ toys in the box.", "any", "В коробке нет игрушек."],
+            ["Do you have ___ money for shopping?", "much", "У тебя много денег на покупки?", "I don’t have ___ money for shopping.", "any", "У меня нет денег на покупки."],
+            ["Is there ___ sugar in the pantry?", "a lot of", "В кладовке много сахара?", "There isn’t ___ sugar in the pantry.", "any", "В кладовке нет сахара."],
+            ["Are there ___ seats available on the train?", "many", "На поезде много свободных мест?", "There aren’t ___ seats available.", "any", "Нет свободных мест."],
+            ["Do you have ___ questions?", "any", "У тебя есть вопросы?", "I don’t have ___ questions.", "any", "У меня нет вопросов."],
+            ["Is there ___ juice in the fridge?", "much", "В холодильнике много сока?", "There isn’t ___ juice left.", "any", "Сока не осталось."],
+            ["Are there ___ participants in the meeting?", "many", "На собрании много участников?", "There aren’t ___ participants yet.", "any", "Пока нет участников."],
+            ["Do you have ___ space in your suitcase?", "much", "В твоем чемодане много места?", "There isn’t ___ space left.", "any", "Места не осталось."],
+            ["Is there ___ milk for coffee?", "a lot of", "Для кофе много молока?", "There isn’t ___ milk left.", "any", "Молока не осталось."],
+            ["Are there ___ people in line?", "many", "В очереди много людей?", "There aren’t ___ people in line.", "any", "В очереди никого нет."],
+            ["Do we have ___ oil for cooking?", "much", "У нас много масла для готовки?", "We don’t have ___ oil left.", "any", "У нас не осталось масла."],
+            ["Is there ___ luggage to carry?", "much", "Много багажа для переноски?", "There isn’t ___ luggage to carry.", "any", "Нет никакого багажа для переноски."]
+        ];
+
+        const generateExercisesEasy = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+                    let original = item[0].replace('___',item[1]);
+                    let sentence = item[0].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[1]}')" />`);
+
+                    sentence = `${sentence} — ${item[2]} 
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${original}")'>
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                    <span class="text-span" id="clue-easy-${index}">${original}</span>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+            })();
+
+        const generateExercisesEasy2 = (() => {
+            let index = 0; 
+
+            return (exercises, exerciseForm) => {
+                exercises.forEach(item => {
+                    index += 1;  
+                    let original = item[3].replace('___',item[4]);
+                    let sentence = item[3].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[4]}')" />`);
+
+                    sentence = `${sentence} — ${item[5]} 
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${original}")'>
+                    <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                    <span class="text-span" id="clue-easy-2-${index}">${original}</span>`;
+                    exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                });
+            };
+        })();
+
+        generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+        generateExercisesEasy2(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_2'));
+
+        function replace_question(sentrnce){
+            let ret = sentrnce.replace("How many","___").replace("many","___").replace("much","___").replace("a lot of","___");
+            return ret;  
+        }
+        function replace_quantifiers(sentrnce){
+            let ret = sentrnce.replace("few","___").replace("little","___").replace("some","___").replace("any","___");
+            return ret;  
+        }
+        
+    </script>
     </div>
 </body>
 </html>
