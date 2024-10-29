@@ -300,7 +300,7 @@
                 exercises.forEach(item => {
                     index += 1;  
                     let original = item[0].replace('___',item[1]);
-                    let sentence = item[0].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[1]}')" />`);
+                    let sentence = item[0].replace('___', `<input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")' />`);
 
                     sentence = `${sentence} — ${item[2]} 
                     <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${original}")'>
@@ -318,7 +318,7 @@
                 exercises.forEach(item => {
                     index += 1;  
                     let original = item[3].replace('___',item[4]);
-                    let sentence = item[3].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[4]}')" />`);
+                    let sentence = item[3].replace('___', `<input type="text" class="input-size" oninput='checkAnswer(this, "${item[4]}")' />`);
 
                     sentence = `${sentence} — ${item[5]} 
                     <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${original}")'>
