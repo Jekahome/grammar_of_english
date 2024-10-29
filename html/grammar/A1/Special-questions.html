@@ -254,8 +254,6 @@
             ["She understood the lesson by asking questions.", "Она поняла урок, задавая вопросы.", "How did she understand the lesson?", "Как она поняла урок?"],
             ["They saved money by cooking at home.", "Они сэкономили деньги, готовя дома.", "How did they save money?", "Как они сэкономили деньги?"],
             ["I found this book at the library.", "Я нашел эту книгу в библиотеке.", "Where did you find this book?", "Где ты нашел эту книгу?"]
-
-
          ];
 
             const generateExercisesEasy = (() => {
@@ -302,7 +300,7 @@
                         let sentence = `${item[0]} question: <input type="text" class="input-size" oninput="checkAnswer(this, '${item[2]}')" />
                         <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-3-${index}')"> 
-                        <span class="text-span" id="clue-easy-3-${index}">${item[2]}</span><br>(${item[1]})`;
+                        <span class="text-span" id="clue-easy-3-${index}">${item[2]}</span><br>(${item[3]})`;
                         exerciseForm.innerHTML += `<p>${sentence}</p>`;
                   });
                };
