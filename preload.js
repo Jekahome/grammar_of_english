@@ -31,7 +31,7 @@ function checkAnswer(inputElement, correctAnswer) {
     let userAnswer = inputElement.value.trim().toLowerCase();
     userAnswer = userAnswer.replace("’","'");
 
-    let normalizedCorrectAnswer = correctAnswer.value.trim().toLowerCase(); 
+    let normalizedCorrectAnswer = correctAnswer.trim().toLowerCase(); 
     normalizedCorrectAnswer = normalizedCorrectAnswer.replace("’","'");
     
     const contractions = {
