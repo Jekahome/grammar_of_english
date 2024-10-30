@@ -287,12 +287,12 @@
                return (exercises, exerciseForm) => {
                   exercises.forEach(item => {
                         index += 1;  
-
-                        let sentence = `${shuffleSentence(item[2])}: <input type="text" class="input-size" oninput='checkAnswer(this, "${item[2]}")'/>
+                        let original = item[2].replace('___',item[3]);
+                        let sentence = `${shuffleSentence(original)}: <input type="text" class="input-size" oninput='checkAnswer(this, "${original}")'/>
                         
-                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[2]}")'>
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${original}")'>
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
-                        <span class="text-span" id="clue-easy-2-${index}">${item[2]}</span>
+                        <span class="text-span" id="clue-easy-2-${index}">${original}</span>
                         <br>(<i>${item[4]}</i>)`;
                         exerciseForm.innerHTML += `<p>${sentence}</p>`;
                   });
