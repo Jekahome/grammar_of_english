@@ -28,11 +28,11 @@ function checkAnswer(inputElement, correctAnswer) {
     if (inputElement.value.length > 4){
         inputElement.style.width = (inputElement.value.length + 1) + 'ch';
     }
-    let inputElement = inputElement.value.trim().toLowerCase();
-    inputElement = inputElement.replace("’","'");
+    let userAnswer = inputElement.value.trim().toLowerCase();
+    userAnswer = userAnswer.replace("’","'");
 
-    let correctAnswer = correctAnswer.value.trim().toLowerCase(); 
-    correctAnswer = correctAnswer.replace("’","'");
+    let normalizedCorrectAnswer = correctAnswer.value.trim().toLowerCase(); 
+    normalizedCorrectAnswer = normalizedCorrectAnswer.replace("’","'");
     
     const contractions = {
         "don't": "do not",
@@ -75,10 +75,10 @@ function checkAnswer(inputElement, correctAnswer) {
         return text;
     }
 
-    let userAnswer = inputElement.replace(/[^a-zа-яё']/g, '');
+    userAnswer = userAnswer.replace(/[^a-zа-яё']/g, '');
     userAnswer = replaceContractions(userAnswer);
 
-    let normalizedCorrectAnswer = correctAnswer.replace(/[^a-zа-яё']/g, '');
+    normalizedCorrectAnswer = normalizedCorrectAnswer.replace(/[^a-zа-яё']/g, '');
     normalizedCorrectAnswer = replaceContractions(normalizedCorrectAnswer);
 
     if (userAnswer === normalizedCorrectAnswer) {
