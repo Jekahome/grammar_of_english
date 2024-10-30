@@ -28,9 +28,12 @@ function checkAnswer(inputElement, correctAnswer) {
     if (inputElement.value.length > 4){
         inputElement.style.width = (inputElement.value.length + 1) + 'ch';
     }
-
+    inputElement = inputElement.replace("’","'");
+    correctAnswer = correctAnswer.replace("’","'");
+    
     const contractions = {
         "don't": "do not",
+
         "can't": "cannot",
         "won't": "will not",
         "isn't": "is not",
