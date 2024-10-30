@@ -36,7 +36,6 @@ function checkAnswer(inputElement, correctAnswer) {
     
     const contractions = {
         "don't": "do not",
-
         "can't": "cannot",
         "won't": "will not",
         "isn't": "is not",
@@ -75,11 +74,12 @@ function checkAnswer(inputElement, correctAnswer) {
         return text;
     }
 
-    userAnswer = userAnswer.replace(/[^a-zа-яё']/g, '');
     userAnswer = replaceContractions(userAnswer);
-
-    normalizedCorrectAnswer = normalizedCorrectAnswer.replace(/[^a-zа-яё']/g, '');
+    userAnswer = userAnswer.replace(/[^a-zа-яё']/g, '');
+    
     normalizedCorrectAnswer = replaceContractions(normalizedCorrectAnswer);
+    normalizedCorrectAnswer = normalizedCorrectAnswer.replace(/[^a-zа-яё']/g, '');
+    
     console.log(`[${userAnswer}] == [${normalizedCorrectAnswer}]`);
     if (userAnswer === normalizedCorrectAnswer) {
         inputElement.className = 'input-size correct'; 
