@@ -75,10 +75,10 @@ function checkAnswer(inputElement, correctAnswer) {
     }
 
     userAnswer = replaceContractions(userAnswer);
-    userAnswer = userAnswer.replace(/[^a-zа-яё']/g, '');
+    userAnswer = userAnswer.replace(/[^a-zа-яё ']/g, '');
     
     normalizedCorrectAnswer = replaceContractions(normalizedCorrectAnswer);
-    normalizedCorrectAnswer = normalizedCorrectAnswer.replace(/[^a-zа-яё']/g, '');
+    normalizedCorrectAnswer = normalizedCorrectAnswer.replace(/[^a-zа-яё ']/g, '');
     
     console.log(`[${userAnswer}] == [${normalizedCorrectAnswer}]`);
     if (userAnswer === normalizedCorrectAnswer) {
