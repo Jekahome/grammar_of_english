@@ -80,7 +80,7 @@ function checkAnswer(inputElement, correctAnswer) {
 
     normalizedCorrectAnswer = normalizedCorrectAnswer.replace(/[^a-zа-яё']/g, '');
     normalizedCorrectAnswer = replaceContractions(normalizedCorrectAnswer);
-
+    console.log(`[${userAnswer}] == [${normalizedCorrectAnswer}]`);
     if (userAnswer === normalizedCorrectAnswer) {
         inputElement.className = 'input-size correct'; 
     } else {
