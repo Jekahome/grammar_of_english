@@ -168,8 +168,133 @@
             <li>Let's have a break. – Давайте сделаем перерыв.</li>
         </ul>
 
+        <h2>Упражнения</h2>
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Составить грамматически правильные предложения</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+    
 
+    
+        <script src='/grammar_of_english/practice.js'></script>
+        <script>
+    
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+    
+            let practice = new Practice({callback: recognition});
+    
+            const exercises_easy_1 = [
+                ["I have a dog.", "У меня есть собака."],
+                ["I don't have a dog.", "У меня нет собаки."],
+                ["Do you have a dog?", "У тебя есть собака?"],
+                
+                ["I have a car.", "У меня есть машина."],
+                ["I don't have a car.", "У меня нет машины."],
+                ["Do you have a car?", "У тебя есть машина?"],
+                
+                ["I have to go to work.", "Мне нужно идти на работу."],
+                ["I don't have to go to work.", "Мне не нужно идти на работу."],
+                ["Do you have to go to work?", "Тебе нужно идти на работу?"],
+                
+                ["I have to finish this project.", "Мне нужно закончить этот проект."],
+                ["I don’t have to finish this project.", "Мне не нужно заканчивать этот проект."],
+                ["Do you have to finish this project?", "Тебе нужно закончить этот проект?"],
+                
+                ["I have breakfast at 8 a.m.", "Я завтракаю в 8 утра."],
+                ["I don't have breakfast at 8 a.m.", "Я не завтракаю в 8 утра."],
+                ["Do you have breakfast at 8 a.m.?", "Ты завтракаешь в 8 утра?"],
+                
+                ["I have lunch with my friends.", "Я обедаю с друзьями."],
+                ["I don’t have lunch with my friends.", "Я не обедаю с друзьями."],
+                ["Do you have lunch with your friends?", "Ты обедаешь с друзьями?"],
+                
+                ["I have a new book.", "У меня есть новая книга."],
+                ["I don't have a new book.", "У меня нет новой книги."],
+                ["Do you have a new book?", "У тебя есть новая книга?"],
+                
+                ["I have a cold.", "У меня простуда."],
+                ["I don’t have a cold.", "У меня нет простуды."],
+                ["Do you have a cold?", "Ты простужен?"],
+                
+                ["I have an idea.", "У меня есть идея."],
+                ["I don’t have an idea.", "У меня нет идеи."],
+                ["Do you have an idea?", "У тебя есть идея?"],
+                
+                ["I have to study tonight.", "Мне нужно учиться вечером."],
+                ["I don’t have to study tonight.", "Мне не нужно учиться вечером."],
+                ["Do you have to study tonight?", "Тебе нужно учиться вечером?"],
 
+                ["I have a meeting at noon.", "У меня встреча в полдень."],
+                ["I don't have a meeting at noon.", "У меня нет встречи в полдень."],
+                ["Do you have a meeting at noon?", "У тебя встреча в полдень?"],
+                
+                ["I have a friend in New York.", "У меня есть друг в Нью-Йорке."],
+                ["I don't have a friend in New York.", "У меня нет друга в Нью-Йорке."],
+                ["Do you have a friend in New York?", "У тебя есть друг в Нью-Йорке?"],
+                
+                ["I have to wake up early tomorrow.", "Мне нужно рано вставать завтра."],
+                ["I don’t have to wake up early tomorrow.", "Мне не нужно рано вставать завтра."],
+                ["Do you have to wake up early tomorrow?", "Тебе нужно рано вставать завтра?"],
+                
+                ["I have a test next week.", "У меня тест на следующей неделе."],
+                ["I don’t have a test next week.", "У меня нет теста на следующей неделе."],
+                ["Do you have a test next week?", "У тебя тест на следующей неделе?"],
+                
+                ["I have a lot of work to do.", "У меня много работы."],
+                ["I don't have a lot of work to do.", "У меня не так много работы."],
+                ["Do you have a lot of work to do?", "У тебя много работы?"],
+                
+                ["I have dinner at 7 p.m.", "Я ужинаю в 7 вечера."],
+                ["I don't have dinner at 7 p.m.", "Я не ужинаю в 7 вечера."],
+                ["Do you have dinner at 7 p.m.?", "Ты ужинаешь в 7 вечера?"],
+                
+                ["I have a new laptop.", "У меня новый ноутбук."],
+                ["I don't have a new laptop.", "У меня нет нового ноутбука."],
+                ["Do you have a new laptop?", "У тебя есть новый ноутбук?"],
+                
+                ["I have a headache.", "У меня болит голова."],
+                ["I don’t have a headache.", "У меня не болит голова."],
+                ["Do you have a headache?", "У тебя болит голова?"],
+                
+                ["I have a question for you.", "У меня есть к тебе вопрос."],
+                ["I don’t have a question for you.", "У меня нет к тебе вопросов."],
+                ["Do you have a question for me?", "У тебя есть ко мне вопрос?"],
+                
+                ["I have to call my parents.", "Мне нужно позвонить родителям."],
+                ["I don’t have to call my parents.", "Мне не нужно звонить родителям."],
+                ["Do you have to call your parents?", "Тебе нужно позвонить родителям?"]
+            ];
+
+            const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let answer = item[0].replace(/'/g, "&#39;");
+                        let sentence = `${shuffleSentence(item[0])}: <input type="text" class="input-size" oninput='checkAnswer(this, "${answer}")'/> 
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                        <span class="text-span" id="clue-easy-2-${index}">${answer}</span>
+                        <br>(<i>${item[1]}</i>)`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+            generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+            
+
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
+        </script>
     </div>
 </body>
 </html>
