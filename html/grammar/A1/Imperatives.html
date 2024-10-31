@@ -82,6 +82,13 @@
             </ul>
         </div>
     
+        <h2>Упражнения</h2>
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Составить грамматически правильные предложения</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+
         <script src='/grammar_of_english/practice.js'></script>
         <script>
     
@@ -95,6 +102,77 @@
     
             let practice = new Practice({callback: recognition});
 
+            const exercises_easy_1 = [
+                ["Sit down!", "Садись!"],
+                ["Close the door.", "Закрой дверь."],
+                ["Please, be quiet.", "Пожалуйста, потише."],
+                ["Don’t touch that.", "Не трогай это."],
+                ["Do not enter.", "Не входите."],
+                ["Listen carefully.", "Слушай внимательно."],
+                ["Let’s go!", "Пойдем!"],
+                ["Let's have lunch.", "Давайте пообедаем."],
+                ["Let him explain.", "Пусть он объяснит."],
+                ["Let them speak.", "Пусть они говорят."],
+                ["Turn off the lights.", "Выключи свет."],
+                ["Watch out!", "Осторожно!"],
+                ["Open the box, take out the contents, and follow the instructions.", "Откройте коробку, достаньте содержимое и следуйте инструкциям."],
+                ["Please, take your seats.", "Пожалуйста, занимайте места."],
+                ["Stay here.", "Оставайся здесь."],
+                ["Don't be late.", "Не опаздывай."],
+                ["Let’s start the meeting.", "Давайте начнем собрание."],
+                ["Let me help you.", "Позволь мне помочь тебе."],
+                ["Let him do it himself.", "Пусть он сделает это сам."],
+                ["Let's go for a walk.", "Давайте прогуляемся."],
+                ["Don’t be afraid.", "Не бойся."],
+                ["Just relax and enjoy.", "Просто расслабься и наслаждайся."],
+                ["Don't forget to call.", "Не забудь позвонить."],
+                ["Look here.", "Посмотри сюда."],
+                ["Let's finish this later.", "Давайте закончим это позже."],
+                ["Do not disturb.", "Не беспокоить."],
+                ["Let her know we're here.", "Сообщите ей, что мы здесь."],
+                ["Please, don’t talk loudly.", "Пожалуйста, не говорите громко."],
+                ["Try this on.", "Примерь это."],
+                ["Don't move.", "Не двигайся."],
+                ["Help yourself.", "Угощайся."],
+                ["Please, wait a moment.", "Пожалуйста, подождите минуту."],
+                ["Take a seat.", "Садитесь."],
+                ["Let’s make a decision together.", "Давайте примем решение вместе."],
+                ["Be careful.", "Будь осторожен."],
+                ["Let him know the plan.", "Сообщите ему план."],
+                ["Keep quiet.", "Сохраняйте тишину."],
+                ["Follow me.", "Следуйте за мной."],
+                ["Don’t worry about it.", "Не переживай об этом."],
+                ["Let’s discuss this tomorrow.", "Давайте обсудим это завтра."],
+                ["Please, pass the salt.", "Пожалуйста, передайте соль."],
+                ["Turn left at the corner.", "Поверни налево на углу."],
+                ["Let them work in peace.", "Пусть они работают спокойно."],
+                ["Take your time.", "Не торопись."],
+                ["Come here quickly!", "Подойди сюда скорее!"],
+                ["Don’t tell anyone.", "Никому не говори."],
+                ["Let me know if you need help.", "Сообщите, если вам нужна помощь."],
+                ["Leave it on the table.", "Оставь это на столе."],
+                ["Please, don’t touch anything.", "Пожалуйста, ничего не трогайте."],
+                ["Let’s stay in touch.", "Давайте будем на связи."]
+            ];
+
+            const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let answer = item[0].replace(/'/g, "&#39;");
+                        let sentence = `${shuffleSentence(item[0])}: <input type="text" class="input-size" oninput='checkAnswer(this, "${answer}")'/>
+                        
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                        <span class="text-span" id="clue-easy-${index}">${answer}</span>
+                        <br>(${item[1]})`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+            generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
 
             function playSentence(sentence){
                 practice.speak(sentence);
