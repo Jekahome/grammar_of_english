@@ -66,11 +66,112 @@
             <li><strong>It is</strong> difficult to solve this problem. — <i>Сложно решить эту проблему.</i></li>
         </ul>
 
-        <h2>Примеры:</h2>
+        <p>Примеры:</p>
         <ul>
             <li><strong>It's</strong> sunny today. — <i>Сегодня солнечно.</i></li>
             <li><strong>It is</strong> very nice that you help me. — <i>Очень мило, что ты помогаешь мне.</i></li>
         </ul>
+        <h2>Упражнения</h2>
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Составить грамматически правильные предложения</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+        
+
+        <script src='/grammar_of_english/practice.js'></script>
+        <script>
+    
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+    
+            let practice = new Practice({callback: recognition});
+
+            const exercises_easy_1 = [
+                ["What time is it?", "Который сейчас час?"],
+                ["It's ten o'clock.", "Сейчас десять часов."],
+                ["It is 5 PM.", "Сейчас 5 часов вечера."],
+                ["It's time to go home.", "Время идти домой."],
+                ["What day is it?", "Какой сегодня день?"],
+                ["It's Wednesday.", "Сегодня среда."],
+                ["It's 2024 now.", "Сейчас 2024 год."],
+                ["It's not far from here.", "Это недалеко отсюда."],
+                ["How far is it from London to Berlin?", "Как далеко от Лондона до Берлина?"],
+                ["It's sunny outside.", "На улице солнечно."],
+                ["It isn't cold today.", "Сегодня не холодно."],
+                ["Is it rainy?", "Сегодня дождливо?"],
+                ["It is raining.", "Идет дождь."],
+                ["It's funny.", "Смешно."],
+                ["It is important to study.", "Важно учиться."],
+                ["It's very nice that you help me.", "Очень мило, что ты помогаешь мне."],
+                ["It is good to see you.", "Хорошо вас видеть."],
+                ["It is interesting to read books.", "Интересно читать книги."],
+                ["It is easy to learn.", "Легко учить."],
+                ["It is difficult to understand.", "Сложно понять."],
+                ["It is nice to visit new places.", "Приятно посещать новые места."],
+                ["It is exciting to travel.", "Увлекательно путешествовать."],
+                ["It is important to stay healthy.", "Важно оставаться здоровым."],
+                ["It is nice to talk to you.", "Приятно с вами поговорить."],
+                ["It is essential to be on time.", "Важно приходить вовремя."],
+                ["It is great to see you again.", "Здорово снова вас видеть."],
+                ["It is a beautiful day.", "Прекрасный день."],
+                ["It is fun to play games.", "Весело играть в игры."],
+                ["It is clear that we must act.", "Ясно, что мы должны действовать."],
+                ["It is a pleasure to help you.", "Мне приятно помочь вам."],
+                ["It is common to feel nervous.", "Это нормально — чувствовать себя нервно."],
+                ["It is nice to relax on weekends.", "Приятно отдыхать на выходных."],
+                ["It's important to save money.", "Важно экономить деньги."],
+                ["It is often hot in summer.", "Летом часто жарко."],
+                ["It is nice to have friends.", "Приятно иметь друзей."],
+                ["It is surprising how quickly time flies.", "Удивительно, как быстро летит время."],
+                ["It is possible to learn anything.", "Возможно выучить что угодно."],
+                ["It is wise to plan ahead.", "Мудро планировать на будущее."],
+                ["It is difficult to find a good job.", "Сложно найти хорошую работу."],
+                ["It is unusual to see snow here.", "Необычно видеть снег здесь."],
+                ["It is relaxing to listen to music.", "Приятно слушать музыку."],
+                ["It is exciting to watch a movie.", "Увлекательно смотреть фильм."],
+                ["It is important to eat healthy food.", "Важно есть здоровую пищу."],
+                ["It is often dark in winter.", "Зимой часто темно."],
+                ["It is nice to get a gift.", "Приятно получать подарок."],
+                ["It is beneficial to exercise regularly.", "Полезно регулярно заниматься спортом."],
+                ["It is common for people to be busy.", "Обычно люди заняты."],
+                ["It is fun to try new things.", "Весело пробовать новое."],
+                ["It is essential to communicate well.", "Важно хорошо общаться."],
+                ["It is okay to make mistakes.", "Это нормально — делать ошибки."],
+                ["It is hard to keep a secret.", "Сложно хранить секрет."],
+                ["It is typical for children to be curious.", "Для детей обычно характерно быть любопытными."]
+
+            ];
+
+            const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let origin = item[0].replace("___",item[1]);
+                        let sentence = `${shuffleSentence(origin)}: <input type="text" class="input-size" oninput='checkAnswer(this, "${origin}")'/>
+                        
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${origin}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                        <span class="text-span" id="clue-easy-${index}">${origin}</span>
+                        <br>(${item[2]})`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+            generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+            
+
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
+        </script>
     </div>
 </body>
 </html>
