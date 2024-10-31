@@ -67,11 +67,11 @@
                 Перед основным глаголом.  
                 <li>She <strong>always</strong> arrives on time. — <i>Она всегда приходит вовремя.</i></li>
 
-                После глагола to be (am, is, are). 
-                <i>He is <strong>often</strong> late. — <i>Он часто опаздывает.</i></i>
+                <br>После глагола to be (am, is, are). 
+                <li>He is <strong>often</strong> late. — <i>Он часто опаздывает.</i></li>
             </ul>
         </p>
-        
+
         <table>
             <tr>
                 <th>Pronouns</th>
@@ -110,9 +110,14 @@
             </tr>
         </table>
         
-    
-        <h3>Примеры:</h3>
+        
+        
+        
+        <p>Примеры:</p>
         <ul>
+            <li>They <strong>rarely</strong> go to the gym — <i>Они редко ходят в спортзал.</i></li>
+            <li>I <strong>sometimes</strong> read books — <i>Я иногда читаю книги.</i></li>
+            <li>We <strong>never</strong> miss our meetings — <i>Мы никогда не пропускаем встречи.</i></li>
             <li>He <strong>often</strong> <ins>goes</ins> to school by bus. — <i>Он часто добирается до школы на автобусе.</i></li>
             <li>Sara <strong>always</strong> <ins>goes</ins> out on Saturday evenings. — <i>Сара всегда гуляет в субботние вечера.</i></li>
             <li>I <strong>sometimes</strong> <ins>go</ins> clubbing with my best friends. — <i>Я иногда хожу в клуб с друзьями.</i></li>
@@ -124,10 +129,10 @@
             <li>He <strong>never</strong> <ins>gets</ins> up before 9. — <i>Он никогда не встает до 9.</i></li>
         </ul>
         
-        <h2>Место наречия с глаголом <ins>to be</ins>:</h2>
+        <h3>Место наречия с глаголом <ins>to be</ins>:</h3>
         <ul>
             <li>I <ins>am</ins> <strong>always</strong> late! — <i>Я всегда опаздываю!</i></li>
-            <li>She <ins>is</ins> usually in Kharkiv during holidays. — <i>Во время каникул она обычно в Харькове.</i></li>
+            <li>She <ins>is</ins> <strong>usually</strong> in Kharkiv during holidays. — <i>Во время каникул она обычно в Харькове.</i></li>
             <li>There <ins>are</ins> <strong>always</strong> lots of people in the city centre on Saturday nights. — <i>По субботним вечерам в центре города всегда много людей.</i></li>
             <li>It <ins>is</ins> <strong>often</strong> difficult to find a place to park. — <i>Часто бывает сложно найти место для парковки.</i></li>
             <li>Our friends <ins>are</ins> <strong>never</strong> on time, so it doesn’t matter if we’re late. — <i>Наши друзья никогда не приходят вовремя, так что неважно, опоздаем ли мы.</i></li>
@@ -142,7 +147,7 @@
         
     
         <h2>Вопрос "Как часто" совершается действие:</h2>
-        <p><code>How often …? – Как часто…?</code></p>
+        <p><code>How often …?</code> – <i>Как часто…?</i></p>
         <p>(Для вопросов вместо <strong>never</strong> используется <strong>ever</strong>.)</p>
     
         <ul>
@@ -196,7 +201,30 @@
         </ul>        
     
         <p><a href="https://www.wallstreetenglish.ru/blog/adverbs-of-frequency/" target="_blank">Источник: Wall Street English</a></p>
+        <h2>Упражнения</h2>
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Составить грамматически правильные предложения</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
     
+
+    
+        <script src='/grammar_of_english/practice.js'></script>
+        <script>
+    
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+    
+            let practice = new Practice({callback: recognition});
+
+            
+        </script>
     </div>
 </body>
 </html>
