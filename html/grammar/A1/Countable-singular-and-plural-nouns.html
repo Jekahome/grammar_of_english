@@ -823,12 +823,12 @@
             return (exercises, exerciseForm) => {
                 exercises.forEach(item => {
                     index += 1;  
-
-                    let sentence = `${item[0]} — <input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")'/>
+                    let val = item[1].replace(/'/g, "&#39;");
+                    let sentence = `${item[0]} — <input type="text" class="input-size" oninput='checkAnswer(this, "${val}")'/>
                     (<i>${item[2]} — ${item[3]}</i>)
-                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[1]}")'>
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${val}")'>
                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
-                    <span class="text-span" id="clue-easy-${index}">${item[1]}</span>`;
+                    <span class="text-span" id="clue-easy-${index}">${val}</span>`;
                     exerciseForm.innerHTML += `<p>${sentence}</p>`;
                 });
             };
@@ -840,9 +840,9 @@
             return (exercises, exerciseForm) => {
                 exercises.forEach(item => {
                     index += 1;  
-
-                    let sentence = item[0].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[2][0]}')" />`);
-                    let answer = item[0].replace('___',item[2][0]);
+                    let val = item[2][0].replace(/'/g, "&#39;");
+                    let sentence = item[0].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${val}')" />`);
+                    let answer = item[0].replace('___',val);
 
                     sentence += `— <i>${item[1]}</i>
                     <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>
@@ -866,11 +866,11 @@
                         sentence = item[3];
                         answer = item[1];
                     }
-
-                    sentence = `${sentence} — <input type="text" class="input-size" oninput='checkAnswer(this, "${answer}")'/> 
-                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>
+                    let val = answer.replace(/'/g, "&#39;");
+                    sentence = `${sentence} — <input type="text" class="input-size" oninput='checkAnswer(this, "${val}")'/> 
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${val}")'>
                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> 
-                    <span class="text-span" id="clue-medium-${index}">${answer}</span>`;
+                    <span class="text-span" id="clue-medium-${index}">${val}</span>`;
                     exerciseForm.innerHTML += `<p>${sentence}</p>`;
                 });
             };
@@ -881,11 +881,11 @@
             return (exercises, exerciseForm) => {
                 exercises.forEach(item => {
                     index += 1;  
-
-                    let sentence = `${item[1]} — <input type="text" class="input-size" oninput='checkAnswer(this, "${item[0]}")'/> 
-                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]}")'>
+                    let val = item[0].replace(/'/g, "&#39;");
+                    let sentence = `${item[1]} — <input type="text" class="input-size" oninput='checkAnswer(this, "${val}")'/> 
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${val}")'>
                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-2-${index}')"> 
-                    <span class="text-span" id="clue-medium-2-${index}">${item[0]}</span>`;
+                    <span class="text-span" id="clue-medium-2-${index}">${val}</span>`;
                     exerciseForm.innerHTML += `<p>${sentence}</p>`;
                 });
             };

@@ -69,7 +69,7 @@
         <div>
             <ul>
                 <li><strong>Please sit down.</strong> – <i>Пожалуйста, сядь.</i></li>
-                <li><strong>Could you open the window, please?</strong> – <i>Не могли бы вы открыть окно, пожалуйста?</i></li>
+                <li><strong>Open the window, please.</strong> – <i>Откройте окно, пожалуйста.</i></li>
             </ul>
         </div>
     
@@ -87,6 +87,10 @@
         <details>
             <summary>1: Составить грамматически правильные предложения</summary>
             <form id="exerciseForm_1"></form>
+        </details>
+        <details>
+            <summary>2: Преобразовать предложения в повелительные</summary>
+            <form id="exerciseForm_2"></form>
         </details>
 
         <script src='/grammar_of_english/practice.js'></script>
@@ -152,7 +156,65 @@
                 ["Let me know if you need help.", "Сообщите, если вам нужна помощь."],
                 ["Leave it on the table.", "Оставь это на столе."],
                 ["Please, don’t touch anything.", "Пожалуйста, ничего не трогайте."],
-                ["Let’s stay in touch.", "Давайте будем на связи."]
+                ["Let’s stay in touch.", "Давайте будем на связи."],
+                ["Sit down.", "Сядь."],
+                ["Don't talk.", "Не разговаривай."],
+                ["Close the door.", "Закрой дверь."],
+                ["Be careful!", "Будь осторожен!"],
+                ["Turn off the lights.", "Выключи свет."],
+                ["Read the instructions carefully.", "Внимательно прочитай инструкции."],
+                ["Stand up.", "Встань."],
+                ["Don't touch that!", "Не трогай это!"],
+                ["Don't run.", "Не беги."],
+                ["Don't worry.", "Не волнуйся."],
+                ["Take your time.", "Не торопись."],
+                ["Try this cake, it’s delicious!", "Попробуй этот торт, он вкусный!"],
+                ["Let's go to the park.", "Давай пойдем в парк."],
+                ["Please sit down.", "Пожалуйста, сядь."],
+                ["Could you open the window, please?", "Не могли бы вы открыть окно, пожалуйста?"],
+                ["Let's go for a walk.", "Давай пойдем на прогулку."],
+                ["Let's stay home tonight.", "Давай останемся дома сегодня вечером."],
+                ["Please, be careful.", "Пожалуйста, будь осторожен."],
+                ["Don’t be late.", "Не опаздывай."],
+                ["Let’s try something new.", "Давайте попробуем что-то новое."]
+            ];
+
+            const exercises_easy_2 = [
+                ["Could you please close the window?", "Не могли бы вы закрыть окно?", "Close the window, please.", "Закройте окно, пожалуйста."],
+                ["Would you mind turning off the lights?", "Вы не против выключить свет?", "Turn off the lights.", "Выключите свет."],
+                ["Could you help me with this task?", "Не могли бы вы помочь мне с этим заданием?", "Help me with this task.", "Помогите мне с этим заданием."],
+                ["Would you please pass me the salt?", "Не могли бы вы передать мне соль?", "Pass me the salt, please.", "Передайте мне соль, пожалуйста."],
+                ["Could you come here for a moment?", "Не могли бы вы подойти на минутку?", "Come here for a moment.", "Подойдите на минутку."],
+                ["Would you mind staying quiet for a bit?", "Не могли бы вы немного помолчать?", "Stay quiet for a bit.", "Помолчите немного."],
+                ["Can you please hand me that book?", "Не могли бы вы передать мне ту книгу?", "Hand me that book, please.", "Передайте мне ту книгу, пожалуйста."],
+                ["Would you let him know we're here?", "Не могли бы вы сообщить ему, что мы здесь?", "Let him know we're here.", "Сообщите ему, что мы здесь."],
+                ["Could you kindly stop talking?", "Не могли бы вы перестать говорить?", "Stop talking, please.", "Перестаньте говорить, пожалуйста."],
+                ["Would you please start the meeting?", "Не могли бы вы начать собрание?", "Start the meeting.", "Начните собрание."],
+                ["Could you open the door, please?", "Не могли бы вы открыть дверь, пожалуйста?", "Open the door, please.", "Откройте дверь, пожалуйста."],
+                ["Would you mind helping me carry this?", "Не могли бы вы помочь мне это нести?", "Help me carry this.", "Помогите мне это нести."],
+                ["Could you call me back later?", "Не могли бы вы перезвонить мне позже?", "Call me back later.", "Перезвоните мне позже."],
+                ["Would you please take a seat?", "Не могли бы вы присесть?", "Take a seat.", "Садитесь, пожалуйста."],
+                ["Could you pass me the remote?", "Не могли бы вы передать мне пульт?", "Pass me the remote.", "Передайте мне пульт."],
+                ["Would you mind cleaning the table?", "Не могли бы вы убрать со стола?", "Clean the table.", "Уберите со стола."],
+                ["Could you please bring me a glass of water?", "Не могли бы вы принести мне стакан воды?", "Bring me a glass of water, please.", "Принесите мне стакан воды, пожалуйста."],
+                ["Would you mind closing the curtains?", "Не могли бы вы закрыть шторы?", "Close the curtains.", "Закройте шторы."],
+                ["Could you move this chair over there?", "Не могли бы вы переставить этот стул туда?", "Move this chair over there.", "Переставьте этот стул туда."],
+                ["Would you mind keeping an eye on my bag?", "Не могли бы вы присмотреть за моей сумкой?", "Keep an eye on my bag.", "Присмотрите за моей сумкой."],
+                ["Could you please turn down the music?", "Не могли бы вы сделать музыку потише?", "Turn down the music, please.", "Сделайте музыку потише, пожалуйста."],
+                ["Would you mind picking up the phone?", "Не могли бы вы ответить на звонок?", "Pick up the phone.", "Ответьте на звонок."],
+                ["Could you take the trash out, please?", "Не могли бы вы вынести мусор, пожалуйста?", "Take the trash out, please.", "Вынесите мусор, пожалуйста."],
+                ["Would you mind watching the kids for a moment?", "Не могли бы вы присмотреть за детьми на минутку?", "Watch the kids for a moment.", "Присмотрите за детьми на минутку."],
+                ["Could you please send me that file?", "Не могли бы вы отправить мне этот файл?", "Send me that file, please.", "Отправьте мне этот файл, пожалуйста."],
+                ["Would you please turn on the lights?", "Не могли бы вы включить свет?", "Turn on the lights.", "Включите свет, пожалуйста."],
+                ["Could you kindly pass me the napkin?", "Не могли бы вы передать мне салфетку?", "Pass me the napkin, please.", "Передайте мне салфетку, пожалуйста."],
+                ["Would you mind lowering your voice?", "Не могли бы вы говорить тише?", "Lower your voice.", "Говорите тише."],
+                ["Could you please pick me up at 5?", "Не могли бы вы забрать меня в 5?", "Pick me up at 5.", "Заберите меня в 5."],
+                ["Would you please make some tea?", "Не могли бы вы приготовить чай?", "Make some tea.", "Приготовьте чай."],
+                ["Could you lend me a pen?", "Не могли бы вы одолжить мне ручку?", "Lend me a pen.", "Одолжите мне ручку."],
+                ["Would you mind holding the door?", "Не могли бы вы подержать дверь?", "Hold the door.", "Подержите дверь."],
+                ["Could you please answer the door?", "Не могли бы вы открыть дверь?", "Answer the door, please.", "Откройте дверь, пожалуйста."],
+                ["Would you mind checking the mail?", "Не могли бы вы проверить почту?", "Check the mail.", "Проверьте почту."],
+                ["Could you bring your report tomorrow?", "Не могли бы вы принести свой отчет завтра?", "Bring your report tomorrow.", "Принесите свой отчет завтра."]
             ];
 
             const generateExercisesEasy = (() => {
@@ -172,7 +234,26 @@
                     });
                 };
             })();
+            const generateExercisesEasy2 = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let question = item[0].replace(/'/g, "&#39;");
+                        let answer = item[2].replace(/'/g, "&#39;");
+                        let sentence = `${question}: <input type="text" class="input-size" oninput='checkAnswer(this, "${answer}")'/>
+                        
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                        <span class="text-span" id="clue-easy-2-${index}">${answer}</span>
+                        <br>(${item[1]} – ${item[3]})`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
             generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+            generateExercisesEasy2(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_2'));
 
             function playSentence(sentence){
                 practice.speak(sentence);
