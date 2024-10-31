@@ -158,9 +158,11 @@
             <summary>1: Составить грамматически правильные предложения</summary>
             <form id="exerciseForm_1"></form>
         </details>
-    
+        <details>
+            <summary>2: Заполнить проруски</summary>
+            <form id="exerciseForm_2"></form>
+        </details>
 
-    
         <script src='/grammar_of_english/practice.js'></script>
         <script>
     
@@ -174,7 +176,202 @@
     
             let practice = new Practice({callback: recognition});
 
+            const exercises_easy_1 = [
+                ["He is ___ late.", "often", "Он часто опаздывает."],
+                ["I am ___ late!", "always", "Я всегда опаздываю!"],
+                ["She is ___ in Kharkiv during holidays.", "usually", "Во время каникул она обычно в Харькове."],
+                ["There are ___ lots of people in the city centre on Saturday nights.", "always", "По субботним вечерам в центре города всегда много людей."],
+                ["It is ___ difficult to find a place to park.", "often", "Часто бывает сложно найти место для парковки."],
+                ["Our friends are ___ on time, so it doesn’t matter if we’re late.", "never", "Наши друзья никогда не приходят вовремя, так что неважно, опоздаем ли мы."],
+                ["He ___ goes to school by bus.", "often", "Он часто добирается до школы на автобусе."],
+                ["Sara ___ goes out on Saturday evenings.", "always", "Сара всегда гуляет в субботние вечера."],
+                ["I ___ go clubbing with my best friends.", "sometimes", "Я иногда хожу в клуб с друзьями."],
+                ["Her boyfriend ___ picks her up and they drive into the city centre.", "usually", "Ее парень обычно забирает ее на машине, и они едут в центр города."],
+                ["They ___ meet friends and have a drink together.", "often", "Они часто встречаются с друзьями и идут в бар."],
+                ["In the winter, they ___ go to the cinema.", "sometimes", "Зимой они иногда ходят в кино."],
+                ["They ___ go in the summer because they prefer to stay outside.", "rarely", "Летом они редко ходят в кино, так как предпочитают оставаться на свежем воздухе."],
+                ["They ___ get home before midnight.", "never", "Они никогда не возвращаются домой до полуночи."],
+                ["He ___ gets up before 9.", "never", "Он никогда не встает до 9."],
+                ["She ___ arrives on time.", "always", "Она всегда приходит вовремя."],
+                ["They ___ go to the gym.", "rarely", "Они редко ходят в спортзал."],
+                ["I ___ read books.", "sometimes", "Я иногда читаю книги."],
+                ["We ___ miss our meetings.", "never", "Мы никогда не пропускаем встречи."],
+                ["Sometimes, she does her homework with friends.", "sometimes", "Иногда она делает домашнее задание с друзьями."],
+                ["Usually, they study on their own.", "usually", "Обычно они занимаются самостоятельно."],
+                ["___, she chose the weak, the sick.", "Often", "Часто она выбирала слабых, больных."],
+                ["___, he goes to bed after midnight.", "Usually", "Обычно он ложится спать после полуночи."],
+                ["___, we go to the mountains in summer.", "Often", "Часто летом мы едем в горы."],
+                ["They ___ arrive late to family gatherings.", "always", "Они всегда опаздывают на семейные встречи."],
+                ["I ___ get up early on weekdays.", "usually", "Я обычно встаю рано в будние дни."],
+                ["___, we meet at the same coffee shop.", "Usually", "Обычно мы встречаемся в одном и том же кафе."],
+                ["My cat ___ sleeps on my bed.", "always", "Моя кошка всегда спит на моей кровати."],
+                ["The train ___ arrives on time in the morning.", "never", "По утрам поезд никогда не приходит вовремя."],
+                ["My friends ___ bring snacks to the party.", "often", "Мои друзья часто приносят закуски на вечеринку."],
+                ["I ___ eat breakfast at 7 AM.", "always", "Я всегда завтракаю в 7 утра."],
+                ["She ___ goes for a run.", "usually", "Она обычно бегает."],
+                ["They ___ play soccer on weekends.", "often", "Они часто играют в футбол по выходным."],
+                ["He ___ forgets his keys.", "sometimes", "Он иногда забывает свои ключи."],
+                ["We ___ watch movies together.", "rarely", "Мы редко смотрим фильмы вместе."],
+                ["You ___ help me with my homework.", "never", "Ты никогда не помогаешь мне с домашкой."],
+                ["I am ___ tired after work.", "always", "Я всегда уставший после работы."],
+                ["They are ___ in the park on Sundays.", "usually", "Они обычно в парке по воскресеньям."],
+                ["He is ___ late for meetings.", "often", "Он часто опаздывает на встречи."],
+                ["She is ___ cheerful in the mornings.", "always", "Она всегда радостная по утрам."],
+                ["___, I forget to lock the door.", "Sometimes", "Иногда я забываю запереть дверь."],
+                ["___, we have breakfast at 9 AM.", "Usually", "Обычно мы завтракаем в 9 утра."],
+                ["___, they go to the theater.", "Often", "Часто они ходят в театр."],
+                ["My brother ___ plays video games.", "always", "Мой брат всегда играет в видеоигры."],
+                ["I ___ travel for work.", "sometimes", "Я иногда путешествую по работе."],
+                ["She ___ drinks coffee in the morning.", "usually", "Она обычно пьет кофе утром."],
+                ["He ___ helps his neighbors.", "rarely", "Он редко помогает своим соседям."],
+                ["They ___ go hiking in the summer.", "often", "Они часто ходят в походы летом."],
+                ["I ___ clean my room.", "sometimes", "Я иногда убираю свою комнату."],
+                ["We ___ eat out on Fridays.", "usually", "Мы обычно ужинаем вне дома по пятницам."],
+                ["You are ___ so helpful.", "always", "Ты всегда так полезен."],
 
+                ["I visit my grandmother ___ every week.", "weekly", "Я навещаю бабушку раз в неделю."],
+                ["She goes to the gym ___ every day.", "daily", "Она ходит в спортзал каждый день."],
+                ["They have a team meeting ___ every month.", "monthly", "У них командное собрание раз в месяц."],
+                ["We travel ___ once a year.", "annually", "Мы путешествуем раз в год."],
+                ["He checks his email ___ every hour.", "hourly", "Он проверяет свою почту каждый час."],
+                ["I go shopping ___ twice a month.", "twice", "Я хожу за покупками дважды в месяц."],
+                ["She eats out ___ once a week.", "once", "Она ужинает вне дома раз в неделю."],
+                ["They visit their parents ___ every Sunday.", "weekly", "Они навещают своих родителей каждое воскресенье."],
+                ["We go hiking ___ on weekends.", "on weekends", "Мы ходим в походы по выходным."],
+                ["He plays basketball ___ three times a week.", "three times", "Он играет в баскетбол трижды в неделю."],
+                ["I clean the house ___ once a month.", "once", "Я убираю в доме раз в месяц."],
+                ["She takes a vacation ___ every year.", "annually", "Она берёт отпуск каждый год."],
+                ["They have a party ___ every Friday.", "weekly", "У них вечеринка каждую пятницу."],
+                ["I study English ___ twice a week.", "twice", "Я изучаю английский дважды в неделю."],
+                ["We meet our friends ___ once a month.", "once", "Мы встречаемся с друзьями раз в месяц."],
+                ["He goes to the dentist ___ every six months.", "monthly", "Он ходит к стоматологу раз в шесть месяцев."],
+                ["They celebrate their anniversary ___ every year.", "annually", "Они отмечают годовщину каждый год."],
+                ["I work out ___ every day.", "daily", "Я занимаюсь спортом каждый день."],
+                ["She checks her calendar ___ every week.", "weekly", "Она проверяет свой календарь каждую неделю."],
+                ["We have family dinner ___ every Sunday.", "weekly", "У нас семейный ужин каждое воскресенье."],
+                ["I can ___ help you with your homework.", "always", "Я всегда могу помочь тебе с домашкой."],
+
+                ["I can ___ help you.", "always", "Я всегда могу тебе помочь."],
+                ["You must ___ try your best.", "always", "Ты всегда должен стараться изо всех сил."],
+                ["We can ___ find a seat on our train.", "usually", "Мы обычно можем найти место в поезде."],
+                ["They should ___ be rude to customers.", "never", "Они никогда не должны быть грубы с клиентами."],
+                ["I have ___ visited Turkey.", "never", "Я никогда не был в Турции."],
+                ["He is ___ taking things from my desk. It’s really annoying.", "always", "Он все время берет вещи с моего стола. Это очень раздражает."],
+                ["You had ___ arrived late at work until yesterday.", "rarely", "Ты редко опаздывал на работу до вчерашнего дня."],
+                ["They must ___ be on time for the meeting.", "always", "Они всегда должны приходить вовремя на собрание."],
+                ["I may ___ go to the party tonight.", "possibly", "Я, возможно, пойду на вечеринку сегодня вечером."],
+                ["She might ___ help us with the project.", "often", "Она часто может помочь нам с проектом."],
+                ["You should ___ listen to your teacher.", "always", "Ты всегда должен слушать своего учителя."],
+                ["They must ___ finish the project by Friday.", "definitely", "Они определенно должны закончить проект к пятнице."],
+                ["He can ___ speak three languages.", "usually", "Он обычно говорит на трёх языках."],
+                ["She may ___ come to the party later.", "possibly", "Она, возможно, придёт на вечеринку позже."],
+                ["You must ___ be careful when driving.", "always", "Ты всегда должен быть осторожным за рулем."],
+                ["I have ___ seen that movie before.", "never", "Я никогда не видел этот фильм раньше."],
+                ["They could ___ join us for dinner.", "sometimes", "Они иногда могут присоединиться к нам на ужин."],
+                ["We should ___ practice more often.", "definitely", "Мы определенно должны практиковаться чаще."],
+                ["He is ___ working on his thesis right now.", "always", "Он всегда работает над своей диссертацией прямо сейчас."],
+
+                ["She works a day shift ___ every day.", "every day", "Она работает в дневную смену каждый день."],
+                ["We still hang out ___ on weekends.", "on weekends", "Мы до сих пор зависаем по выходным."],
+                ["He goes to the gym ___ daily.", "daily", "Он ходит в спортзал ежедневно."],
+                ["I clean my house ___ once a week.", "once a week", "Я убираю свой дом раз в неделю."],
+                ["They travel to the mountains ___ every summer.", "every summer", "Они путешествуют в горы каждое лето."],
+                ["We meet for coffee ___ once a month.", "once a month", "Мы встречаемся за кофе раз в месяц."],
+                ["She plays tennis ___ twice a week.", "twice a week", "Она играет в теннис дважды в неделю."],
+                ["He goes to the doctor ___ every six months.", "every six months", "Он ходит к врачу раз в шесть месяцев."],
+                ["I check my email ___ every hour.", "every hour", "Я проверяю свою почту каждый час."],
+                ["We have a family gathering ___ every year.", "every year", "У нас семейное собрание каждый год."],
+                ["She attends yoga classes ___ every Tuesday.", "every Tuesday", "Она посещает занятия по йоге каждую среду."],
+                ["We play board games ___ on weekends.", "on weekends", "Мы играем в настольные игры по выходным."],
+                ["He visits the dentist ___ twice a year.", "twice a year", "Он ходит к стоматологу дважды в год."],
+                ["I go for a run ___ every morning.", "every morning", "Я бегаю каждое утро."],
+                ["They take a vacation ___ every summer.", "every summer", "Они берут отпуск каждое лето."],
+                ["We have a team meeting ___ once a month.", "once a month", "У нас командное собрание раз в месяц."],
+                ["She attends a seminar ___ every quarter.", "every quarter", "Она посещает семинар каждый квартал."],
+                ["I clean my room ___ once a week.", "once a week", "Я убираю свою комнату раз в неделю."],
+                ["He works overtime ___ occasionally.", "occasionally", "Он иногда работает сверхурочно."],
+                ["We usually go hiking ___ every Saturday.", "every Saturday", "Мы обычно ходим в поход каждую субботу."]
+            ];
+
+            const exercises_easy_2 = [
+                ["Does she always work so hard?", "Она всегда работает так усердно?", "Yes, she __ works so hard.", "always", "Да, она всегда так много работает."],
+                ["How often do you watch films?", "Как часто ты смотришь фильмы?", "I __ watch films, usually a couple of times a week.", "often", "Я часто смотрю фильмы, обычно пару раз в неделю."],
+                ["How often does he play tennis?", "Как часто он играет в теннис?", "He __ plays tennis on weekends.", "usually", "Он обычно играет в теннис по выходным."],
+                ["How often do the trains arrive late?", "Как часто поезда опаздывают?", "They __ arrive late during rush hour.", "often", "Они часто опаздывают в час пик."],
+                ["Do you often come here?", "Ты часто приходишь сюда?", "Yes, I __ come here almost every day.", "often", "Да, я часто прихожу сюда почти каждый день."],
+                ["Does she ever go to the gym?", "Она вообще когда-нибудь ходит в спортзал?", "Yes, she __ goes to the gym sometimes.", "sometimes", "Да, она иногда ходит в спортзал."],
+                ["Do they always pay on time?", "Они всегда платят вовремя?", "No, they __ pay on time rarely.", "rarely", "Нет, они редко платят вовремя."],
+                ["How often do you travel?", "Как часто ты путешествуешь?", "I __ travel abroad once a year.", "once", "Я путешествую за границу раз в год."],
+                ["Does he usually eat breakfast?", "Он обычно завтракает?", "Yes, he __ eats breakfast every morning.", "usually", "Да, он обычно завтракает каждое утро."],
+                ["Do you ever go hiking?", "Ты когда-нибудь ходишь в походы?", "Yes, I __ go hiking a few times a year.", "sometimes", "Да, я иногда хожу в походы несколько раз в год."],
+                ["How often do you exercise?", "Как часто ты занимаешься спортом?", "I __ exercise three times a week.", "often", "Я часто занимаюсь спортом три раза в неделю."],
+                ["Does she ever visit her grandparents?", "Она когда-нибудь навещает бабушку с дедушкой?", "Yes, she __ visits them every month.", "usually", "Да, она обычно навещает их каждый месяц."],
+                ["How often does he cook dinner?", "Как часто он готовит ужин?", "He __ cooks dinner on Sundays.", "usually", "Он обычно готовит ужин по воскресеньям."],
+                ["Do you often read books?", "Ты часто читаешь книги?", "Yes, I __ read books in my free time.", "often", "Да, я часто читаю книги в свободное время."],
+                ["How often do they go to the cinema?", "Как часто они ходят в кино?", "They __ go to the cinema once a month.", "once", "Они ходят в кино раз в месяц."],
+                ["Does he always bring lunch to work?", "Он всегда приносит обед на работу?", "No, he __ brings lunch occasionally.", "sometimes", "Нет, он иногда приносит обед."],
+                ["How often do you play video games?", "Как часто ты играешь в видеоигры?", "I __ play video games on weekends.", "often", "Я часто играю в видеоигры по выходным."],
+                ["Do they ever travel abroad?", "Они когда-нибудь путешествуют за границу?", "Yes, they __ travel abroad every summer.", "usually", "Да, они обычно путешествуют за границу каждое лето."],
+                ["How often do you clean your room?", "Как часто ты убираешь свою комнату?", "I __ clean my room once a week.", "once", "Я убираю свою комнату раз в неделю."],
+                ["Does she usually take the bus?", "Она обычно ездит на автобусе?", "Yes, she __ takes the bus every day.", "always", "Да, она всегда ездит на автобусе каждый день."],
+                ["How often do you meet your friends?", "Как часто ты встречаешься с друзьями?", "I __ meet my friends every Friday.", "usually", "Я обычно встречаюсь с друзьями каждую пятницу."],
+                ["Do you ever go shopping?", "Ты когда-нибудь ходишь за покупками?", "Yes, I __ go shopping every weekend.", "usually", "Да, я обычно хожу за покупками каждые выходные."],
+                ["How often does he listen to music?", "Как часто он слушает музыку?", "He __ listens to music while working.", "often", "Он часто слушает музыку во время работы."],
+                ["Does she ever write in her journal?", "Она когда-нибудь пишет в своем дневнике?", "Yes, she __ writes in her journal daily.", "always", "Да, она всегда пишет в своем дневнике каждый день."],
+                ["How often do they attend meetings?", "Как часто они посещают собрания?", "They __ attend meetings once a week.", "once", "Они посещают собрания раз в неделю."],
+                ["Do you often drink coffee?", "Ты часто пьёшь кофе?", "Yes, I __ drink coffee every morning.", "always", "Да, я всегда пью кофе каждое утро."],
+                ["How often does she take vacations?", "Как часто она берёт отпуска?", "She __ takes vacations every summer.", "usually", "Она обычно берёт отпуска каждое лето."],
+                ["Do you ever watch documentaries?", "Ты когда-нибудь смотришь документальные фильмы?", "Yes, I __ watch documentaries sometimes.", "sometimes", "Да, я иногда смотрю документальные фильмы."],
+                ["How often do they have family dinners?", "Как часто у них семейные ужины?", "They __ have family dinners every Sunday.", "always", "У них всегда семейные ужины каждое воскресенье."],
+                ["Does he usually arrive early?", "Он обычно приходит рано?", "Yes, he __ arrives early for meetings.", "always", "Да, он всегда приходит рано на собрания."],
+                ["How often do you visit your doctor?", "Как часто ты посещаешь врача?", "I __ visit my doctor once a year.", "once", "Я посещаю врача раз в год."],
+                ["Do they ever attend concerts?", "Они когда-нибудь ходят на концерты?", "Yes, they __ attend concerts frequently.", "often", "Да, они часто ходят на концерты."],
+                ["How often do you use social media?", "Как часто ты пользуешься социальными сетями?", "I __ use social media daily.", "daily", "Я пользуюсь социальными сетями ежедневно."]
+            ];
+
+
+            const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let origin = item[0].replace("___",item[1]);
+                        let sentence = `${shuffleSentence(origin)}: <input type="text" class="input-size" oninput='checkAnswer(this, "${origin}")'/>
+                        
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[1]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                        <span class="text-span" id="clue-easy-${index}">${item[1]}</span>
+                        <br>(${item[2]})`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+            const generateExercisesEasy2 = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let origin = item[0].replace("___",item[1]);
+                        let sentence = item[0].replace("___",`<input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")'/>`);
+                        sentence = `${sentence} — <i>${item[2]}</i>
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${origin}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                        <span class="text-span" id="clue-easy-2-${index}">${origin}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+
+
+            generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+            generateExercisesEasy2(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_2'));
+
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
         </script>
     </div>
 </body>
