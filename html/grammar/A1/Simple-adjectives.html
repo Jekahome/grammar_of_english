@@ -69,7 +69,7 @@
             <li><strong>old</strong> → <strong>older</strong> (старше) → <strong>the oldest</strong> (самый старый)</li>
         </ul>
     
-        <h3>Примеры в сравнении</h3>
+        <p>Примеры в сравнении</p>
         <div>
             <ul>
                 <li><strong>My house is bigger than yours.</strong> – Мой дом больше твоего.</li>
@@ -584,6 +584,23 @@
             </tbody>
         </table>
 
+
+        <h2>Упражнения</h2>
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Составить грамматически правильные предложения</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+
+        <hr>
+        <h3>Write (Medium)</h3>
+        <details>
+            <summary>1: Перевести словосочетания</summary>
+            <form id="exerciseForm_2"></form>
+        </details>
+
+
+
         <script src='/grammar_of_english/practice.js'></script>
         <script>
     
@@ -597,7 +614,48 @@
     
             let practice = new Practice({callback: recognition});
 
-            const exercises_easy_1 = [
+            const exercises_medium_1 = [
+                ["A big house.", "Большой дом."],
+                ["A small car.", "Маленькая машина."],
+                ["An old man.", "Старый мужчина."],
+                ["A beautiful flower.", "Красивый цветок."],
+                ["The house is big.", "Дом большой."],
+                ["The car is small.", "Машина маленькая."],
+                ["The man is old.", "Мужчина старый."],
+                ["The flowers are beautiful.", "Цветы красивые."],
+                ["My house is bigger than yours.", "Мой дом больше твоего."],
+                ["She is the oldest in her family.", "Она самая старшая в своей семье."],
+                ["This car is smaller than that one.", "Эта машина меньше той."],
+                ["A bright star.", "Яркая звезда."],
+                ["A cold winter.", "Холодная зима."],
+                ["A warm sweater.", "Теплый свитер."],
+                ["The star is bright.", "Звезда яркая."],
+                ["The winter is cold.", "Зима холодная."],
+                ["The sweater is warm.", "Свитер теплый."],
+                ["My sister is taller than me.", "Моя сестра выше меня."],
+                ["This book is more interesting than that one.", "Эта книга более интересная, чем та."],
+                ["He is the strongest in the team.", "Он самый сильный в команде."],
+                ["This exercise is easier than the last one.", "Это упражнение легче, чем предыдущее."],
+                ["A tall building.", "Высокое здание."],
+                ["A noisy street.", "Шумная улица."],
+                ["The building is tall.", "Здание высокое."],
+                ["The street is noisy.", "Улица шумная."],
+                ["My brother is younger than me.", "Мой брат младше меня."],
+                ["She is the kindest person I know.", "Она самый добрый человек, которого я знаю."],
+                ["This task is more difficult than the last one.", "Эта задача сложнее предыдущей."],
+                ["An interesting story.", "Интересная история."],
+                ["A lovely garden.", "Прекрасный сад."],
+                ["The story is interesting.", "История интересная."],
+                ["The garden is lovely.", "Сад прекрасный."],
+                ["Her dress is prettier than mine.", "Ее платье красивее моего."],
+                ["This pizza is tastier than that one.", "Эта пицца вкуснее той."],
+                ["He is the fastest runner in the group.", "Он самый быстрый бегун в группе."],
+                ["A fast train.", "Быстрый поезд."],
+                ["The train is fast.", "Поезд быстрый."]
+            ];
+
+
+            const exercises_easy_2 = [
                 ["able", "способный", "abler", "способнее", "ablest", "самый способный"],
                 ["american", "американский", "", "", "", ""],
                 ["autumn", "осенний", "", "", "", ""],
@@ -727,7 +785,31 @@
                 ["young", "молодой", "younger", "моложе", "youngest", "самый молодой"]
             ];
 
+            const generateExercisesMedium = (() => {
+                let index = 0; 
 
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let question = item[0].replace(/'/g, "&#39;");
+                    
+                        let sentence = `<input type="text" class="input-size" oninput='checkAnswer(this, "${question}")'/> – ${item[1]}
+                        
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${question}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> 
+                        <span class="text-span" id="clue-medium-${index}">${question}</span>
+                        `;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+            generateExercisesMedium(getRandomThird(exercises_medium_1), document.getElementById('exerciseForm_2'));
+
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
+                        
         </script>
         
     </div>
