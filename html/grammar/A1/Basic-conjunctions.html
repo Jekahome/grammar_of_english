@@ -97,30 +97,105 @@
             <li>Неправильное употребление: <em>I wanted to go, but I was tired and went to bed.</em> (правильно: <em>I wanted to go, but I was tired, so I went to bed.</em>)</li>
         </ul>
         
-        <h3>Упражнения для практики</h3>
-        <p>Попробуйте выполнить следующие задания:</p>
-        <ul>
-            <li>Напишите свои примеры предложений с использованием различных союзов.</li>
-            <li>Заполните пропуски в предложениях с использованием подходящих союзов.</li>
-        </ul>
-        
+        <h2>Упражнения</h2>
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Заполнить пропуски, используя союзы</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
 
 
-            <script src='/grammar_of_english/practice.js'></script>
-            <script>
+        <script src='/grammar_of_english/practice.js'></script>
+        <script>
+    
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+    
+            let practice = new Practice({callback: recognition});   
+            
+            const exercises_easy_1 = [
+                ["I’ll call you ___ I get home.", "when", "Я позвоню тебе, когда вернусь домой."],
+                ["I want to go for a walk ___ it’s raining.", "but", "Я хочу пойти на прогулку, но идет дождь."],
+                ["You can have tea ___ coffee.", "or", "Ты можешь выпить чай или кофе."],
+                ["I studied hard ___ I wanted to pass the exam.", "because", "Я усердно учился, потому что хотел сдать экзамен."],
+                ["___ it was cold, we went for a walk.", "Although", "Хотя было холодно, мы пошли на прогулку."],
+                ["You can either stay home ___ go to the party.", "or", "Ты можешь остаться дома или пойти на вечеринку."],
+                ["She likes both apples ___ oranges.", "and", "Ей нравятся как яблоки, так и апельсины."],
+                ["He will neither confirm ___ deny the allegations.", "nor", "Он не подтвердит и не опровергнет обвинения."],
+                ["I’ll go outside ___ it stops raining.", "if", "Я выйду на улицу, если дождь прекратится."],
+                ["We can finish the project ___ we work together.", "if", "Мы можем закончить проект, если будем работать вместе."],
+                ["While I enjoy swimming, I prefer running.", "___", "Хотя я люблю плавание, я предпочитаю бег."],
+                ["She is both smart ___ hardworking.", "and", "Она и умная, и трудолюбивая."],
+                ["You should study hard ___ you want to pass the exam.", "if", "Ты должен усердно учиться, если хочешь сдать экзамен."],
+                ["We went home ___ the movie ended.", "after", "Мы пошли домой после того, как фильм закончился."],
+                ["You can choose ___ the blue dress ___ the red one.", "either", "Ты можешь выбрать либо синее платье, либо красное."],
+                ["I like tea ___ coffee.", "and", "Мне нравится чай и кофе."],
+                ["You can stay home ___ go out.", "or", "Ты можешь остаться дома или выйти."],
+                ["He is tired ___ he will finish his work.", "but", "Он устал, но закончит свою работу."],
+                ["I will call you ___ I arrive.", "when", "Я позвоню тебе, когда приеду."],
+                ["___ it was late, we went to bed.", "Since", "Поскольку было поздно, мы легли спать."],
+                ["I like both pizza ___ pasta.", "and", "Мне нравятся как пицца, так и паста."],
+                ["She will either sing ___ dance.", "or", "Она либо споет, либо станцует."],
+                ["You should do your homework ___ you can play.", "before", "Ты должен сделать домашнее задание, прежде чем играть."],
+                ["We stayed inside ___ it was raining.", "because", "Мы остались внутри, потому что шел дождь."],
+                ["I enjoy reading ___ I don’t have much time.", "but", "Мне нравится читать, но у меня не хватает времени."],
+                ["I will eat ___ I finish my work.", "after", "Я поем после того, как закончу свою работу."],
+                ["You should wear a jacket ___ it’s cold outside.", "since", "Тебе стоит надеть куртку, так как на улице холодно."],
+                ["___ she is busy, she will join us later.", "Although", "Хотя она занята, она присоединится к нам позже."],
+                ["I like strawberries ___ blueberries.", "and", "Мне нравятся клубника и черника."],
+                ["We can either go to the beach ___ stay home.", "or", "Мы можем либо пойти на пляж, либо остаться дома."],
+                ["He won’t go ___ he finishes his homework.", "until", "Он не уйдет, пока не закончит домашнее задание."],
+                ["I like to run ___ swim.", "and", "Я люблю бегать и плавать."],
+                ["You should study hard ___ you want to succeed.", "if", "Ты должен усердно учиться, если хочешь добиться успеха."],
+                ["We can leave ___ it stops raining.", "when", "Мы можем уехать, когда дождь прекратится."],
+                ["I will not eat ___ I am hungry.", "until", "Я не буду есть, пока не проголодаюсь."],
+                ["___ she studied hard, she passed the exam.", "Since", "Поскольку она усердно училась, она сдала экзамен."],
+                ["You can’t have ice cream ___ you finish your dinner.", "until", "Ты не можешь есть мороженое, пока не закончишь ужин."],
+                ["She is neither shy ___ outgoing.", "nor", "Она не стеснительная и не общительная."],
+                ["I will go to the party ___ I finish my project.", "if", "Я пойду на вечеринку, если закончу проект."],
+                ["I want to play outside ___ it’s too cold.", "but", "Я хочу поиграть на улице, но слишком холодно."],
+                ["I will help you ___ you ask nicely.", "if", "Я помогу тебе, если ты попросишь вежливо."],
+                ["___ it is sunny, we will go for a picnic.", "If", "Если будет солнечно, мы пойдем на пикник."],
+                ["He will finish his work ___ he goes home.", "before", "Он закончит свою работу, прежде чем пойдет домой."],
+                ["I prefer tea ___ coffee.", "to", "Я предпочитаю чай кофе."],
+                ["You can choose ___ the red shirt ___ the blue one.", "either", "Ты можешь выбрать либо красную рубашку, либо синюю."],
+                ["She wants to travel ___ she needs to save money.", "but", "Она хочет путешествовать, но ей нужно сэкономить деньги."],
+                ["I can stay ___ I finish my homework.", "if", "Я могу остаться, если закончу домашнее задание."],
+                ["He will go ___ she asks him to.", "if", "Он пойдет, если она попросит его."],
+                ["I don’t like apples ___ oranges.", "nor", "Мне не нравятся ни яблоки, ни апельсины."]
+            ];
+
+            const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        
+                        let origin = item[0].replace('___',item[1]).replace(/'/g, "&#39;");
+
+                        let sentence = item[0].replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${item[1]}')" />`);
+
+                        sentence += `— <i>${item[1]}</i>
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${origin}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                        <span class="text-span" id="clue-easy-${index}">${origin}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+            generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
         
-                function recognition(id, recognition){
-                    console.log(`id=${id} recognition=${recognition}`);
-                    var el = document.getElementById(id);
-                    el.value = recognition;
-                    const inputEvent = new Event('input');
-                    el.dispatchEvent(inputEvent);
-                }
-        
-                let practice = new Practice({callback: recognition});   
-                
-                
-            </script>
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
+        </script>
     </div>
 </body>
 </html>
