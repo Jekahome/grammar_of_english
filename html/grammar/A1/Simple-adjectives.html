@@ -593,8 +593,30 @@
         </details>
         <details>
             <summary>2: Перевести словосочетания</summary>
+            <p>Набор №1</p>
             <form id="exerciseForm_2"></form>
         </details>
+        <details>
+            <summary>3: Перевести словосочетания</summary>
+            <p>Набор №2</p>
+            <form id="exerciseForm_3"></form>
+        </details>
+        <details>
+            <summary>4: Перевести словосочетания</summary>
+            <p>Набор №3</p>
+            <form id="exerciseForm_4"></form>
+        </details>
+        <details>
+            <summary>5: Перевести словосочетания</summary>
+            <p>Набор №4</p>
+            <form id="exerciseForm_5"></form>
+        </details>
+        <details>
+            <summary>6: Перевести словосочетания</summary>
+            <p>Набор №5</p>
+            <form id="exerciseForm_6"></form>
+        </details>
+
 
 
         <script src='/grammar_of_english/practice.js'></script>
@@ -831,8 +853,18 @@
                 };
             })();
             generateExercisesMedium(getRandomThird(exercises_medium_1), document.getElementById('exerciseForm_1'));
-            generateExercisesMedium2(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_2'));
-            
+
+            const arr1 = exercises_easy_2.slice(0, 30);
+            const arr2 = exercises_easy_2.slice(30, 60);
+            const arr3 = exercises_easy_2.slice(60, 90);
+            const arr4 = exercises_easy_2.slice(90, 110);
+            const arr5 = exercises_easy_2.slice(110, 140);
+            generateExercisesMedium2(arr1, document.getElementById('exerciseForm_2'));
+            generateExercisesMedium2(arr2, document.getElementById('exerciseForm_3'));
+            generateExercisesMedium2(arr3, document.getElementById('exerciseForm_4'));
+            generateExercisesMedium2(arr4, document.getElementById('exerciseForm_5'));
+            generateExercisesMedium2(arr5, document.getElementById('exerciseForm_6'));
+
             function playSentence(sentence){
                 practice.speak(sentence);
             }
