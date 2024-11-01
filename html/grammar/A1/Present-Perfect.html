@@ -76,8 +76,146 @@
                 <li><strong>for</strong> – на протяжении (например, <em>They have lived here for five years.</em> – <i>Они живут здесь пять лет.</i>)</li>
                 <li><strong>since</strong> – с какого-то момента (например, <em>We have known each other since 2010.</em> – <i>Мы знаем друг друга с 2010 года.</i>)</li>
             </ul>
-            
 
+
+            <h2>Упражнения</h2>
+            <h3>Replace (Easy)</h3>
+            <details>
+                <summary>1: Составить грамматически правильные предложения</summary>
+                <form id="exerciseForm_1"></form>
+            </details>
+            <details>
+                <summary>2: Заполнить пропуск используя правильную форму глагола</summary>
+                <form id="exerciseForm_2"></form>
+            </details>
+            <details>
+                <summary>3: Преобразовать предложение в Present Perfect</summary>
+                <form id="exerciseForm_3"></form>
+            </details>
+
+
+            <script src='/grammar_of_english/practice.js'></script>
+            <script>
+        
+                function recognition(id, recognition){
+                    console.log(`id=${id} recognition=${recognition}`);
+                    var el = document.getElementById(id);
+                    el.value = recognition;
+                    const inputEvent = new Event('input');
+                    el.dispatchEvent(inputEvent);
+                }
+        
+                let practice = new Practice({callback: recognition});  
+                
+                const exercises_easy_1 = [
+                    ["He visited his grandmother last week.", "He ___ his grandmother last week.", "has visited", "Он навестил свою бабушку."],
+                    ["They saw that movie before.", "They ___ that movie before.", "have seen", "Они видели этот фильм раньше."],
+                    ["I ate sushi several times.", "I ___ sushi several times.", "have eaten", "Я ел суши несколько раз."],
+                    ["She finished her homework yesterday.", "She ___ her homework.", "has finished", "Она закончила свою домашнюю работу."],
+                    ["We traveled to Australia last year.", "We ___ to Australia last year.", "have traveled", "Мы путешествовали в Австралию в прошлом году."],
+                    ["You arrived at the airport yesterday.", "You ___ at the airport yesterday.", "have arrived", "Ты приехал в аэропорт вчера."],
+                    ["I lived in this city since 2010.", "I ___ in this city since 2010.", "have lived", "Я живу в этом городе с 2010 года."],
+                    ["They tried the new restaurant last week.", "They ___ the new restaurant last week.", "have tried", "Они попробовали новый ресторан на прошлой неделе."],
+                    ["He read that book three times.", "He ___ that book three times.", "has read", "Он читал эту книгу три раза."],
+                    ["She was to Japan once.", "She ___ to Japan once.", "has been", "Она была в Японии однажды."],
+
+                    ["I saw that movie yesterday.", "I ___ that movie yesterday.", "have seen", "Я видел этот фильм вчера."],
+                    ["She cleaned her room this morning.", "She ___ her room this morning.", "has cleaned", "Она убрала свою комнату этим утром."],
+                    ["We visited our friends last weekend.", "We ___ our friends last weekend.", "have visited", "Мы навещали наших друзей на выходных."],
+                    ["They played soccer last Saturday.", "They ___ soccer last Saturday.", "have played", "Они играли в футбол в прошлую субботу."],
+                    ["He bought a new car last month.", "He ___ a new car last month.", "has bought", "Он купил новую машину в прошлом месяце."],
+                    ["I wrote a letter to my friend.", "I ___ a letter to my friend.", "have written", "Я написал письмо своему другу."],
+                    ["She finished her project last night.", "She ___ her project last night.", "has finished", "Она закончила свой проект прошлой ночью."],
+                    ["We hiked in the mountains last summer.", "We ___ in the mountains last summer.", "have hiked", "Мы ходили в поход в горах прошлым летом."],
+                    ["They studied English last year.", "They ___ English last year.", "have studied", "Они изучали английский язык в прошлом году."],
+                    ["He drew a picture in class.", "He ___ a picture in class.", "has drawn", "Он нарисовал картину на занятиях."],
+                    ["I learned a lot this week.", "I ___ a lot this week.", "have learned", "Я многому научился на этой неделе."],
+                    ["She called me yesterday.", "She ___ me yesterday.", "has called", "Она позвонила мне вчера."],
+                    ["We baked cookies last Sunday.", "We ___ cookies last Sunday.", "have baked", "Мы испекли печенье в прошлое воскресенье."],
+                    ["They traveled to Italy last summer.", "They ___ to Italy last summer.", "have traveled", "Они путешествовали в Италию прошлым летом."],
+                    ["He fixed the computer yesterday.", "He ___ the computer yesterday.", "has fixed", "Он починил компьютер вчера."],
+                    ["I bought groceries this morning.", "I ___ groceries this morning.", "have bought", "Я купил продукты этим утром."],
+                    ["She made a cake for the party.", "She ___ a cake for the party.", "has made", "Она испекла торт для вечеринки."],
+                    ["We saw a beautiful sunset last night.", "We ___ a beautiful sunset last night.", "have seen", "Мы видели красивый закат прошлой ночью."],
+                    ["They visited a museum last week.", "They ___ a museum last week.", "have visited", "Они посетили музей на прошлой неделе."],
+                    ["He played the guitar at the concert.", "He ___ the guitar at the concert.", "has played", "Он играл на гитаре на концерте."],
+                    ["I read three books last month.", "I ___ three books last month.", "have read", "Я прочитал три книги в прошлом месяце."],
+                    ["She washed her car yesterday.", "She ___ her car yesterday.", "has washed", "Она помыла свою машину вчера."],
+                    ["We danced at the party.", "We ___ at the party.", "have danced", "Мы танцевали на вечеринке."],
+                    ["They painted the house last summer.", "They ___ the house last summer.", "have painted", "Они покрасили дом прошлым летом."],
+                    ["He found his keys this morning.", "He ___ his keys this morning.", "has found", "Он нашел свои ключи этим утром."],
+                    ["I spoke to him last week.", "I ___ to him last week.", "have spoken", "Я говорил с ним на прошлой неделе."],
+                    ["She visited her parents last month.", "She ___ her parents last month.", "has visited", "Она навещала своих родителей в прошлом месяце."],
+                    ["We enjoyed the concert.", "We ___ the concert.", "have enjoyed", "Мы наслаждались концертом."],
+                    ["They took a lot of photos.", "They ___ a lot of photos.", "have taken", "Они сделали много фотографий."],
+                    ["He studied hard for the exam.", "He ___ hard for the exam.", "has studied", "Он усердно учился к экзамену."],
+                    ["I gave her a gift.", "I ___ her a gift.", "have given", "Я подарил ей подарок."],
+                    ["She wrote a poem.", "She ___ a poem.", "has written", "Она написала стихотворение."],
+                    ["We traveled by train.", "We ___ by train.", "have traveled", "Мы путешествовали на поезде."],
+                    ["They met him at the party.", "They ___ him at the party.", "have met", "Они встретили его на вечеринке."]
+                ];
+
+                const generateExercisesEasy = (() => {
+                    let index = 0; 
+
+                    return (exercises, exerciseForm) => {
+                        exercises.forEach(item => {
+                            index += 1;  
+                            let origin = item[1].replace('___', item[2]).replace(/'/g, "&#39;");
+                            let sentence = `${shuffleSentence(origin)}: <input type="text" class="input-size" oninput='checkAnswer(this, "${origin}")'/>
+                            
+                            <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${origin}")'>
+                            <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                            <span class="text-span" id="clue-easy-${index}">${origin}</span>
+                            <br>(${item[3]})`;
+                            exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                        });
+                    };
+                })();
+                const generateExercisesEasy2 = (() => {
+                    let index = 0; 
+
+                    return (exercises, exerciseForm) => {
+                        exercises.forEach(item => {
+                            index += 1;  
+                            let origin = item[1].replace('___', item[2]).replace(/'/g, "&#39;");
+                            let sentence = `${item[1]} – <input type="text" class="input-size" oninput='checkAnswer(this, "${item[2]}")'/>
+                            
+                            <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${origin}")'>
+                            <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-2-${index}')"> 
+                            <span class="text-span" id="clue-easy-2-${index}">${origin}</span>`;
+                            exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                        });
+                    };
+                })();
+                const generateExercisesEasy3 = (() => {
+                    let index = 0; 
+
+                    return (exercises, exerciseForm) => {
+                        exercises.forEach(item => {
+                            index += 1;  
+                            let origin = item[0].replace(/'/g, "&#39;");
+                            let answer = item[1].replace('___', item[2]).replace(/'/g, "&#39;");
+                            let sentence = `${origin} – <input type="text" class="input-size" oninput='checkAnswer(this, "${answer}")'/>
+                            
+                            <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${origin}")'>
+                            <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-3-${index}')"> 
+                            <span class="text-span" id="clue-easy-3-${index}">${origin}</span>
+                            <br>(${item[3]})`;
+                            exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                        });
+                    };
+                })();
+
+                generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+                generateExercisesEasy2(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_2'));
+                generateExercisesEasy3(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_3'));
+
+                function playSentence(sentence){
+                    practice.speak(sentence);
+                }
+
+            </script>
     </div>
 </body>
 </html>
