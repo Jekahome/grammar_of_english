@@ -7,15 +7,8 @@
     <link rel="stylesheet" href="/grammar_of_english/css/styles.css">
 </head>
 <body>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-        fetch('/grammar_of_english/alphabet.html')
-            .then(response => response.text())
-            .then(data => {
-                    document.getElementById('alphabet-block').innerHTML = data;
-            });
-        });
-    </script>
+    <script type="module" src="/grammar_of_english/firebase.js"></script>
+    <script src="/grammar_of_english/preload.js"></script>
 
     <div class="left-block">
         <div id="alphabet-block"></div>
