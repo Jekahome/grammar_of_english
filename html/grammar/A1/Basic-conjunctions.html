@@ -103,6 +103,12 @@
             <summary>1: Заполнить пропуски, используя союзы</summary>
             <form id="exerciseForm_1"></form>
         </details>
+        <hr>
+        <h3>Write (Medium)</h3>
+        <details>
+            <summary>1: Перевести словосочетания</summary>
+            <form id="exerciseForm_2"></form>
+        </details>
 
 
         <script src='/grammar_of_english/practice.js'></script>
@@ -170,6 +176,27 @@
                 ["I don’t like apples ___ oranges.", "nor", "Мне не нравятся ни яблоки, ни апельсины."]
             ];
 
+            const exercises_medium_1 = [
+                ["and", "и"],
+                ["but", "но"],
+                ["or", "или"],
+                ["nor", "ни"],
+                ["for", "потому что"],
+                ["so", "поэтому"],
+                ["yet", "всё же"],
+                ["because", "потому что"],
+                ["although", "хотя"],
+                ["if", "если"],
+                ["when", "когда"],
+                ["while", "в то время как"],
+                ["since", "поскольку"],
+                ["after", "после того как"],
+                ["before", "прежде чем"],
+                ["both...and", "и...и"],
+                ["either...or", "либо...либо"],
+                ["neither...nor", "ни...ни"]
+            ];
+
             const generateExercisesEasy = (() => {
                 let index = 0; 
 
@@ -190,8 +217,25 @@
                 };
             })();
 
+            const generateExercisesMedium = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let sentence = item[0];
+                        sentence = `${sentence} — <input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")'/> 
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[1]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> 
+                        <span class="text-span" id="clue-medium-${index}">${item[1]}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
             generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
-        
+            generateExercisesMedium(getRandomThird(exercises_easy_2), document.getElementById('exerciseForm_2'));
+
             function playSentence(sentence){
                 practice.speak(sentence);
             }
