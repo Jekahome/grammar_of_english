@@ -996,7 +996,647 @@
                 </tr>
             </tbody>
         </table>
+        <script src='/grammar_of_english/practice.js'></script>
+        <script>
+    
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+    
+            let practice = new Practice({callback: recognition});
 
+            const exercises_easy_1 = [
+                ["arise", "arose", "arisen", "подниматься", "A problem arose during the meeting. - Проблема возникла во время встречи."],
+                ["awake", "awoke", "awoken", "пробуждать", "My alarm clock woke me up at 7 a.m., and I awoke to a sunny day. - Мой будильник разбудил меня в 7 утра, и я проснулся на солнечный день."],
+                ["be", "was (were)", "been", "быть", "She is happy. - Она счастлива."],
+                ["bear", "bore", "born", "рожать, переносить", "The mother bear cared for her cubs. - Мать медведица заботилась о своих детенышах."],
+                ["beat", "beat", "beaten", "бить", "She beat the drum rhythmically. - Она била по барабану ритмично."],
+                ["become", "became", "become", "становиться", "He became a doctor after many years of study. - Он стал врачом после многих лет учебы."],
+                ["begin", "began", "begun", "начинать", "Let's begin the meeting. - Давайте начнем собрание."],
+                ["bend", "bent", "bent", "наклонять", "He bent down to tie his shoes. - Он наклонился, чтобы завязать шнурки."],
+                ["bet", "bet", "bet", "заключать пари", "I bet $10 on the horse race. - Я поставил 10 долларов на лошадиные бега."],
+                ["bind", "bound", "bound", "связывать", "She bound the book with a ribbon. - Она связала книгу лентой."],
+                ["bite", "bit", "bitten", "кусать", "The dog bit the mailman. - Собака укусила почтальона."],
+                ["bleed", "bled", "bled", "кровоточить", "He cut his finger and it started to bleed. - Он порезал палец, и началось кровотечение."],
+                ["blow", "blew", "blown", "дуть", "The wind blew strongly, bending the trees. - Ветер дул сильно, изгибая деревья."],
+                ["break", "broke", "broken", "ломать", "She accidentally broke the vase. - Она случайно разбила вазу."],
+                ["breed", "bred", "bred", "разводить животных", "They breed champion horses on their farm. - Они разводят чемпионских лошадей на своей ферме."],
+                ["bring", "brought", "brought", "приносить", "Could you bring me a glass of water? - Не могли бы вы принести мне стакан воды?"],
+                ["build", "built", "built", "строить", "They built a new house on the corner. - Они построили новый дом на углу."],
+                ["buy", "bought", "bought", "покупать", "She bought a new dress for the party. - Она купила новое платье на вечеринку."],
+                ["catch", "caught", "caught", "ловить", "He caught the ball with one hand. - Он поймал мяч одной рукой."],
+                ["choose", "chose", "chosen", "выбирать", "I choose the blue shirt. - Я выбираю синюю рубашку."],
+                ["cling", "clung", "clung", "цепляться", "The dress clung to her body. - Платье прилипло к ее телу."],
+                ["come", "came", "come", "приходить", "He comes to visit us every weekend. - Он приходит в гости к нам каждые выходные."],
+                ["cost", "cost", "cost", "стоить", "The jacket costs $50. - Эта куртка стоит 50 долларов."],
+                ["cut", "cut", "cut", "резать", "She cut the cake into slices. - Она разрезала торт на кусочки."],
+                ["deal", "dealt", "dealt", "вести дела", "He deals with customer complaints on a daily basis. - Он ежедневно занимается жалобами клиентов."],
+                ["dig", "dug", "dug", "копать", "The dog dug a hole in the garden. - Собака вырыла яму в саду."],
+                ["do", "did", "done", "делать", "What are you doing? - Что ты делаешь?"],
+                ["draw", "drew", "drawn", "рисовать, тянуть", "She draws beautiful pictures. - Она рисует красивые картинки."],
+                ["drink", "drank", "drunk", "пить", "She drank a glass of water. - Она выпила стакан воды."],
+                ["drive", "drove", "driven", "водить автомобиль", "He drives to work every morning. - Он ездит на работу каждое утро."],
+                ["eat", "ate", "eaten", "кушать", "She eats breakfast every day. - Она завтракает каждый день."],
+                ["fall", "fell", "fallen", "падать", "The leaves fall from the trees in autumn. - Листья падают с деревьев осенью."],
+                ["feed", "fed", "fed", "кормить", "She feeds her cat every evening. - Она кормит своего кота каждый вечер."],
+                ["feel", "felt", "felt", "чувствовать", "He feels sad. - Он чувствует себя грустно."],
+                ["fight", "fought", "fought", "бороться", "They fought for their freedom. - Они боролись за свою свободу."],
+                ["find", "found", "found", "находить", "She found her keys in her bag. - Она нашла свои ключи в сумке."],
+                ["flee", "fled", "fled", "сбегать", "They fled the country to escape persecution. - Они сбежали из страны, чтобы избежать преследования."],
+                ["fly", "flew", "flown", "летать", "Birds fly in the sky. - Птицы летают в небе."],
+                ["forbid", "forbade", "forbidden", "запрещать", "She forbade her children from watching TV before doing their homework. - Она запретила своим детям смотреть телевизор перед выполнением домашнего задания."],
+                ["forget", "forgot", "forgotten", "забывать", "Don't forget to buy milk. - Не забудь купить молоко."],
+                ["forgive", "forgave", "forgiven", "прощать", "She forgave him for his mistake. - Она простила его за его ошибку."],
+                ["freeze", "froze", "frozen", "замораживать", "The lake freezes over in winter. - Озеро замерзает зимой."],
+                ["get", "got", "got (gotten)", "получать", "She got a new job. - Она получила новую работу."],
+                ["give", "gave", "given", "давать", "She gave me a present for my birthday. - Она подарила мне подарок на мой день рождения."],
+                ["go", "went", "gone", "идти", "I go to school every day. - Я хожу в школу каждый день."],
+                ["grow", "grew", "grown", "расти", "Plants grow in the garden. - Растения растут в саду."],
+                ["hang", "hung", "hung", "висеть", "The picture hangs on the wall. - Картина висит на стене."],
+                ["have", "had", "had", "иметь", "She has a dog. - У нее есть собака."],
+                ["hear", "heard", "heard", "слышать", "She hears music coming from the room. - Она слышит музыку, идущую из комнаты."],
+                ["hide", "hid", "hidden", "прятать", "The cat hides under the bed. - Кошка прячется под кроватью."],
+                ["hit", "hit", "hit", "ударять, попадать", "He hit the ball with a bat. - Он ударил мяч битой."],
+                ["hold", "held", "held", "держать", "She holds the baby in her arms. - Она держит младенца на руках."],
+                ["hurt", "hurt", "hurt", "причинять боль", "She hurt her leg while hiking. - Она повредила ногу во время похода."],
+                ["keep", "kept", "kept", "сохранять, соблюдать", "She keeps her jewelry in a box. - Она хранит свои украшения в коробке."],
+                ["know", "knew", "known", "знать", "She knows the answer to the question. - Она знает ответ на вопрос."],
+                ["lay", "laid", "laid", "класть, стелить", "She lays the table for dinner. - Она накрывает стол на ужин."],
+                ["lead", "led", "led", "вести, лидировать", "He leads the team to victory. - Он ведет команду к победе."],
+                ["learn", "learnt (learned)", "learnt (learned)", "учиться, узнавать", "She learns French at school. - Она учит французский в школе."],
+                ["leave", "left", "left", "покидать, оставлять", "She leaves for work early in the morning. - Она уходит на работу рано утром."],
+                ["lend", "lent", "lent", "давать взаймы", "She lent me her car for the weekend. - Она одолжила мне свою машину на выходные."],
+                ["let", "let", "let", "позволять", "Let me help you with that. - Позвольте мне помочь вам с этим."],
+                ["lie", "lay", "lain", "класть", "The book lies on the table. - Книга лежит на столе."],
+                ["light", "lit", "lit", "зажигать, освещать", "The light in the room is too bright. - Свет в комнате слишком яркий."],
+
+                ["lose", "lost", "lost", "терять", "I always lose my keys. - Я всегда теряю свои ключи."],
+                ["make", "made", "made", "делать, мастерить", "She makes delicious cakes. - Она делает вкусные торты."],
+                ["mean", "meant", "meant", "значить", "What does this word mean? - Что означает это слово?"],
+                ["meet", "met", "met", "встречать, знакомиться", "We met at the café for lunch. - Мы встретились в кафе на обед."],
+                ["pay", "paid", "paid", "платить", "She pays her bills online. - Она оплачивает свои счета онлайн."],
+                ["put", "put", "put", "класть, ставить", "She puts the dishes in the dishwasher. - Она кладет посуду в посудомоечную машину."],
+                ["read", "read", "read", "читать", "She reads a book every evening. - Она читает книгу каждый вечер."],
+                ["ride", "rode", "ridden", "ездить верхом", "She rides her bike to work. - Она ездит на работу на велосипеде."],
+                ["ring", "rang", "rung", "звонить", "She rings the doorbell. - Она звонит в дверной звонок."],
+                ["rise", "rose", "risen", "возрастать, подниматься", "The sun rises in the east. - Солнце встает на востоке."],
+                ["run", "ran", "run", "бежать", "She runs five miles every morning. - Она бегает пять миль каждое утро."],
+                ["say", "said", "said", "сказать", "She said goodbye before leaving. - Она попрощалась перед уходом."],
+                ["see", "saw", "seen", "видеть", "I see a bird in the tree. - Я вижу птицу на дереве."],
+                ["seek", "sought", "sought", "искать", "We seek happiness in life. - Мы стремимся к счастью в жизни."],
+                ["sell", "sold", "sold", "продавать", "He sells his old car. - Он продает свою старую машину."],
+                ["send", "sent", "sent", "посылать", "She sends a letter to her friend. - Она отправляет письмо своему другу."],
+                ["set", "set", "set", "устанавливать", "She sets the table for dinner. - Она накрывает стол на ужин."],
+                ["shake", "shook", "shaken", "трясти", "The earthquake shakes the ground. - Землетрясение трясет землей."],
+                ["shine", "shone", "shone", "светить, сиять", "The sun shines brightly in the sky. - Солнце ярко светит на небе."],
+                ["shoot", "shot", "shot", "стрелять", "He shoots a target with his bow. - Он стреляет в мишень из своего лука."],
+                ["show", "showed", "shown", "показывать", "She shows her paintings at the art gallery. - Она показывает свои картины в художественной галерее."],
+                ["shrink", "shrank", "shrunk", "сжиматься", "The sweater shrinks in the wash. - Свитер сжимается в стирке."],
+                ["shut", "shut", "shut", "закрывать, затворять", "He shuts the door behind him. - Он закрывает дверь за собой."],
+                ["sing", "sang", "sung", "петь", "She sings beautifully. - Она поет красиво."],
+                ["sit", "sat", "sat", "сидеть", "She sits on the bench in the park. - Она сидит на скамейке в парке."],
+                ["sleep", "slept", "slept", "спать", "She sleeps soundly at night. - Она спит крепко ночью."],
+                ["slide", "slid", "slid", "скользить", "She slides the book across the table. - Она сдвигает книгу по столу."],
+                ["smell", "smelt", "smelt", "пахнуть, нюхать", "The food smells delicious. - Еда пахнет вкусно."],
+                ["speak", "spoke", "spoken", "говорить", "She speaks French fluently. - Она свободно говорит по-французски."],
+                ["spell", "spelt (spelled)", "spelt (spelled)", "произносить или писать по буквам", "The magician cast a spell on the audience. - Маг заколдовал аудиторию."],
+                ["spend", "spent", "spent", "тратить, проводить время", "He spends his weekends with his family. - Он проводит выходные с семьей."],
+                ["spill", "spilt (spilled)", "spilt (spilled)", "разлить", "He spills water on the floor. - Он разливает воду на пол."],
+                ["spin", "spun", "spun", "крутить", "The top spins around. - Вертится вертел."],
+                ["split", "split", "split", "разделять, раскалывать", "They split the bill evenly. - Они делят счет поровну."],
+                ["spoil", "spoilt (spoiled)", "spoilt (spoiled)", "портить", "She spoils her children. - Она балует своих детей."],
+                ["spread", "spread", "spread", "разворачивать, распространять", "She spreads butter on her toast. - Она намазывает масло на тост."],
+                ["stand", "stood", "stood", "стоять", "He stands by his decision. - Он стоит за свое решение."],
+
+                ["steal", "stole", "stolen", "воровать", "He steals a glance at his watch. - Он крадет взгляд на свои часы."],
+                ["sting", "stung", "stung", "жалить", "The bee stings him on the arm. - Пчела жалит его за руку."],
+                ["stink", "stank", "stunk", "вонять", "The garbage stinks. - Мусор воняет."],
+                ["strike", "struck", "struck", "бастовать, ударять", "He strikes the match against the box. - Он ударяет спичку о коробку."],
+                ["swear", "swore", "sworn", "клясться, ругаться", "She swears to tell the truth. - Она клянется говорить правду."],
+                ["sweep", "swept", "swept", "подметать", "She sweeps the floor every morning. - Она метет пол каждое утро."],
+                ["swell", "swelled", "swollen (swelled)", "опухать", "The river swells after heavy rain. - Река набухает после сильного дождя."],
+                ["swim", "swam", "swum", "плавать", "He swims across the lake. - Он переплывает озеро."],
+                ["take", "took", "taken", "брать", "She takes the bus to work. - Она едет на работу на автобусе."],
+                ["teach", "taught", "taught", "учить, преподавать", "She teaches math at the school. - Она преподает математику в школе."],
+                ["tear", "tore", "torn", "рвать", "He tears the paper in half. - Он рвет бумагу пополам."],
+                ["tell", "told", "told", "рассказывать", "She tells a story to her friends. - Она рассказывает историю своим друзьям."],
+                ["think", "thought", "thought", "думать", "She thinks about her future. - Она думает о своем будущем."],
+                ["throw", "threw", "thrown", "бросать", "He throws the ball to his friend. - Он бросает мяч своему другу."],
+                ["understand", "understood", "understood", "понимать", "She understands the instructions. - Она понимает инструкции."],
+                ["wake", "woke", "woken", "просыпаться", "He wakes up early in the morning. - Он просыпается рано утром."],
+                ["wear", "wore", "worn", "носить (одежду)", "She wears a warm coat in winter. - Она носит теплое пальто зимой."],
+                ["win", "won", "won", "выигрывать", "They win the championship. - Они выигрывают чемпионат."],
+                ["write", "wrote", "written", "писать", "She writes a letter to her friend. - Она пишет письмо своему другу."]
+            ];
+
+            const exercises_easy_2 = [
+                ["A problem ___ during the meeting.", "arise", "Проблема возникла во время встречи."],
+                ["A problem ___ during the meeting yesterday.", "arose", "Проблема возникла во время встречи вчера."],
+                ["Several issues have ___ from this misunderstanding.", "arisen", "Несколько проблем возникло из-за этого недоразумения."],
+
+                ["I ___ at 7 a.m. every day.", "awake", "Я просыпаюсь в 7 утра каждый день."],
+                ["He ___ suddenly from a deep sleep.", "awoke", "Он внезапно проснулся от глубокого сна."],
+                ["She has ___ feeling refreshed this morning.", "awoken", "Она проснулась, чувствуя себя отдохнувшей сегодня утром."],
+
+                ["I ___ happy to see you.", "be", "Я счастлив тебя видеть."],
+                ["She ___ very tired after the trip.", "was", "Она была очень уставшей после поездки."],
+                ["He has ___ a great friend to me.", "been", "Он был для меня отличным другом."],
+
+                ["The mother ___ her cubs with care.", "bear", "Мать медведица заботилась о своих детенышах."],
+                ["She ___ a son last year.", "bore", "Она родила сына в прошлом году."],
+                ["Many children have ___ in this family.", "been", "Многие дети были в этой семье."],
+
+                ["She ___ the drum rhythmically.", "beat", "Она била по барабану ритмично."],
+                ["He ___ the champion in the last match.", "beat", "Он победил чемпиона в последнем матче."],
+                ["The record has been ___ many times.", "beaten", "Рекорд был побит много раз."],
+
+                ["He ___ a doctor after many years of study.", "become", "Он стал врачом после многих лет учебы."],
+                ["She ___ an artist at heart.", "became", "Она стала художником по призванию."],
+                ["He has ___ successful in his career.", "become", "Он стал успешным в своей карьере."],
+
+                ["Let's ___ the meeting now.", "begin", "Давайте начнем собрание сейчас."],
+                ["They ___ the project last week.", "began", "Они начали проект на прошлой неделе."],
+                ["The project has ___ successfully.", "begun", "Проект был успешно начат."],
+
+                ["He ___ down to tie his shoes.", "bend", "Он наклонился, чтобы завязать шнурки."],
+                ["She ___ the rules to understand them better.", "bent", "Она наклонилась, чтобы лучше понять правила."],
+                ["The metal has ___ easily under pressure.", "bent", "Металл легко изгибается под давлением."],
+
+                ["I ___ $10 on the race.", "bet", "Я сделал ставку в 10 долларов на гонку."],
+                ["He ___ on his favorite team last night.", "bet", "Он поставил на свою любимую команду прошлой ночью."],
+                ["She has ___ wisely in the past.", "bet", "Она ставила разумно в прошлом."],
+
+                ["She ___ the book with a ribbon.", "bind", "Она связала книгу лентой."],
+                ["They ___ the documents together.", "bound", "Они связали документы вместе."],
+                ["The pages have been ___ securely.", "bound", "Страницы были надежно связаны."],
+
+                ["The dog ___ the mailman.", "bite", "Собака укусила почтальона."],
+                ["He ___ into his sandwich at lunch.", "bit", "Он укусил свой сэндвич на обеде."],
+                ["She has ___ her lip in nervousness.", "bitten", "Она покусала губу от нервозности."],
+
+                ["He ___ his finger and it started to bleed.", "bleed", "Он порезал палец, и он начал кровоточить."],
+                ["She ___ heavily during the accident.", "bled", "Он сильно кровоточил во время аварии."],
+                ["The wound has ___ a lot.", "bled", "Рана сильно кровоточила."],
+
+                ["The wind ___ strongly last night.", "blow", "Ветер сильно дул прошлой ночью."],
+                ["He ___ the leaves off the tree.", "blew", "Он сдул листья с дерева."],
+                ["The leaves have ___ away with the wind.", "blown", "Листья были сдуты ветром."],
+
+                ["She accidentally ___ the vase.", "break", "Она случайно разбила вазу."],
+                ["He ___ the window during the storm.", "broke", "Он разбил окно во время шторма."],
+                ["The vase has been ___ into pieces.", "broken", "Ваза была разбита на куски."],
+
+                ["They ___ champion horses on their farm.", "breed", "Они разводят чемпионских лошадей на своей ферме."],
+                ["The farmers ___ various animals on their land.", "bred", "Фермеры разводили разные животные на своей земле."],
+                ["These horses have been ___ for racing.", "bred", "Эти лошади были выведены для скачек."],
+
+                ["Could you ___ me a glass of water?", "bring", "Не могли бы вы принести мне стакан воды?"],
+                ["She ___ her brother to the party last week.", "brought", "Она привела своего брата на вечеринку на прошлой неделе."],
+                ["They have ___ many gifts to the event.", "brought", "Они принесли много подарков на мероприятие."],
+
+                ["They ___ a new house on the corner.", "build", "Они построили новый дом на углу."],
+                ["He ___ a garage last summer.", "built", "Он построил гараж прошлым летом."],
+                ["The house has been ___ beautifully.", "built", "Дом был построен красиво."],
+
+                ["She ___ a new dress for the party.", "buy", "Она купила новое платье на вечеринку."],
+                ["He ___ a car last month.", "bought", "Он купил машину в прошлом месяце."],
+                ["They have ___ groceries for the week.", "bought", "Они купили продукты на неделю."],
+
+                ["He ___ the ball with one hand.", "catch", "Он поймал мяч одной рукой."],
+                ["She ___ a cold last winter.", "caught", "Она подхватила простуду прошлой зимой."],
+                ["They have ___ many fish this season.", "caught", "Они поймали много рыбы в этом сезоне."],
+
+                ["I always ___ the blue shirt.", "choose", "Я всегда выбираю синюю рубашку."],
+                ["He ___ the best option last time.", "chose", "Он выбрал лучший вариант в прошлый раз."],
+                ["She has ___ wisely in her life.", "chosen", "Она выбрала разумно в своей жизни."],
+
+                ["The dress ___ to her body.", "cling", "Платье прилипло к ее телу."],
+                ["She ___ tightly to her mother during the storm.", "clung", "Она крепко держалась за свою мать во время шторма."],
+                ["The fabric has ___ nicely to the figure.", "clung", "Ткань прекрасно облегает фигуру."],
+
+                ["He ___ to visit us every weekend.", "come", "Он приходит в гости к нам каждые выходные."],
+                ["She ___ to the party last night.", "came", "Она пришла на вечеринку прошлой ночью."],
+                ["They have ___ from far away.", "come", "Они пришли издалека."],
+
+                ["The jacket ___ $50.", "cost", "Эта куртка стоит 50 долларов."],
+                ["The meal ___ us a lot last time.", "cost", "Эта еда стоила нам много в прошлый раз."],
+                ["It has ___ more than I expected.", "cost", "Это стоило больше, чем я ожидал."],
+
+                ["She ___ the cake into slices.", "cut", "Она разрезала торт на кусочки."],
+                ["He ___ the paper into smaller pieces.", "cut", "Он порезал бумагу на более мелкие кусочки."],
+                ["The cake has been ___ perfectly.", "cut", "Торт был идеально нарезан."],
+
+                ["He ___ with customer complaints daily.", "deal", "Он ежедневно занимается жалобами клиентов."],
+                ["They ___ with many challenges last year.", "dealt", "Они столкнулись с многими вызовами в прошлом году."],
+                ["The team has ___ effectively with the issue.", "dealt", "Команда эффективно справилась с этой проблемой."],
+
+                ["The dog ___ a hole in the garden.", "dig", "Собака вырыла яму в саду."],
+                ["He ___ a trench last summer.", "dug", "Он выкопал траншею прошлым летом."],
+                ["They have ___ a deep hole for the well.", "dug", "Они вырыли глубокую яму для колодца."],
+
+                ["What are you ___?", "do", "Что ты делаешь?"],
+                ["He ___ his best to help.", "did", "Он сделал все возможное, чтобы помочь."],
+                ["The homework has been ___ already.", "done", "Домашняя работа уже была сделана."],
+
+                ["She ___ beautiful pictures in her free time.", "draw", "Она рисует красивые картинки в свободное время."],
+                ["He ___ a sketch of the landscape yesterday.", "drew", "Он нарисовал эскиз пейзажа вчера."],
+                ["The picture has been ___ with great care.", "drawn", "Картина была нарисована с большой заботой."],
+
+                ["She ___ a glass of water.", "drink", "Она выпила стакан воды."],
+                ["He ___ juice with breakfast.", "drank", "Он выпил сок за завтраком."],
+                ["They have ___ all the soda in the fridge.", "drunk", "Они выпили весь газированный напиток в холодильнике."],
+
+                ["He ___ to work every morning.", "drive", "Он ездит на работу каждое утро."],
+                ["She ___ to the store last night.", "drove", "Она поехала в магазин прошлой ночью."],
+                ["They have ___ through heavy traffic today.", "driven", "Они проехали через плотный трафик сегодня."],
+
+                ["She ___ breakfast every day.", "eat", "Она завтракает каждый день."],
+                ["He ___ a sandwich for lunch yesterday.", "ate", "Он съел сэндвич на обед вчера."],
+                ["They have ___ all the cookies already.", "eaten", "Они уже съели все печенья."],
+
+                ["The leaves ___ from the trees in autumn.", "fall", "Листья падают с деревьев осенью."],
+                ["It ___ heavily last night.", "fell", "Прошлой ночью сильно шел дождь."],
+                ["Many leaves have ___ to the ground.", "fallen", "Много листьев упало на землю."],
+
+                ["She ___ her cat every evening.", "feed", "Она кормит своего кота каждый вечер."],
+                ["He ___ the birds during the winter.", "fed", "Он кормил птиц зимой."],
+                ["The animals have been ___ regularly.", "fed", "Животные регулярно кормили."],
+
+                ["He ___ sad.", "feel", "Он чувствует себя грустно."],
+                ["He ___ sad yesterday.", "felt", "Он чувствовал себя грустно вчера."],
+                ["He has ___ sad lately.", "felt", "Он чувствовал себя грустно в последнее время."],
+
+                ["They ___ for their freedom.", "fight", "Они боролись за свою свободу."],
+                ["They ___ for their freedom last year.", "fought", "Они боролись за свою свободу в прошлом году."],
+                ["They have ___ for their freedom.", "fought", "Они боролись за свою свободу."],
+
+                ["She ___ her keys in her bag.", "find", "Она нашла свои ключи в сумке."],
+                ["She ___ her keys in the drawer yesterday.", "found", "Она нашла свои ключи в ящике вчера."],
+                ["She has ___ her keys.", "found", "Она нашла свои ключи."],
+
+                ["They ___ the country to escape persecution.", "flee", "Они сбежали из страны, чтобы избежать преследования."],
+                ["They ___ the country last year.", "fled", "Они сбежали из страны в прошлом году."],
+                ["They have ___ the country.", "fled", "Они сбежали из страны."],
+
+                ["Birds ___ in the sky.", "fly", "Птицы летают в небе."],
+                ["Birds ___ south for the winter.", "flew", "Птицы улетели на юг зимой."],
+                ["Birds have ___ south.", "flown", "Птицы улетели на юг."],
+
+                ["She ___ her children from watching TV.", "forbid", "Она запретила своим детям смотреть телевизор."],
+                ["She ___ her children from watching TV last week.", "forbade", "Она запретила своим детям смотреть телевизор на прошлой неделе."],
+                ["She has ___ her children from watching TV.", "forbidden", "Она запретила своим детям смотреть телевизор."],
+
+                ["Don't ___ to buy milk.", "forget", "Не забудь купить молоко."],
+                ["He ___ to bring the documents yesterday.", "forgot", "Он забыл принести документы вчера."],
+                ["I have ___ to buy milk.", "forgotten", "Я забыл купить молоко."],
+
+                ["She ___ him for his mistake.", "forgive", "Она простила его за его ошибку."],
+                ["She ___ him last year.", "forgave", "Она простила его в прошлом году."],
+                ["She has ___ him.", "forgiven", "Она простила его."],
+
+                ["The lake ___ over in winter.", "freeze", "Озеро замерзает зимой."],
+                ["The lake ___ last winter.", "froze", "Озеро замерзло прошлой зимой."],
+                ["The lake has ___ over.", "frozen", "Озеро замерзло."],
+
+                ["She ___ a new job.", "get", "Она получила новую работу."],
+                ["She ___ the promotion last week.", "got", "Она получила повышение на прошлой неделе."],
+                ["She has ___ a new job.", "gotten", "Она получила новую работу."],
+
+                ["She ___ me a present for my birthday.", "give", "Она подарила мне подарок на мой день рождения."],
+                ["She ___ me a book yesterday.", "gave", "Она подарила мне книгу вчера."],
+                ["She has ___ me many gifts.", "given", "Она подарила мне много подарков."],
+
+                ["I ___ to school every day.", "go", "Я хожу в школу каждый день."],
+                ["I ___ to school yesterday.", "went", "Я ходил в школу вчера."],
+                ["I have ___ to school many times.", "gone", "Я ходил в школу много раз."],
+
+                ["Plants ___ in the garden.", "grow", "Растения растут в саду."],
+                ["Plants ___ quickly this spring.", "grew", "Растения быстро росли этой весной."],
+                ["Plants have ___ well.", "grown", "Растения хорошо выросли."],
+
+                ["The picture ___ on the wall.", "hang", "Картина висит на стене."],
+                ["The picture ___ crooked yesterday.", "hung", "Картина висела наклонно вчера."],
+                ["The picture has ___ there for years.", "hung", "Картина висит там много лет."],
+
+                ["She ___ a dog.", "have", "У нее есть собака."],
+                ["She ___ a cat last year.", "had", "У нее был кот в прошлом году."],
+                ["She has ___ a pet for years.", "had", "У нее есть питомец уже много лет."],
+
+                ["She ___ music coming from the room.", "hear", "Она слышит музыку, идущую из комнаты."],
+                ["She ___ a strange sound last night.", "heard", "Она услышала странный звук прошлой ночью."],
+                ["She has ___ the news.", "heard", "Она слышала новости."],
+
+                ["The cat ___ under the bed.", "hide", "Кошка прячется под кроватью."],
+                ["The cat ___ behind the sofa yesterday.", "hid", "Кошка спряталась за диваном вчера."],
+                ["The cat has ___ from the dog.", "hidden", "Кошка спряталась от собаки."],
+
+                ["He ___ the ball with a bat.", "hit", "Он ударил мяч битой."],
+                ["He ___ the ball during the game.", "hit", "Он ударил мяч во время игры."],
+                ["He has ___ the ball before.", "hit", "Он уже ударял мяч раньше."],
+
+                ["She ___ the baby in her arms.", "hold", "Она держит младенца на руках."],
+                ["She ___ the baby yesterday.", "held", "Она держала младенца вчера."],
+                ["She has ___ the baby several times.", "held", "Она держала младенца несколько раз."],
+
+                ["She ___ her leg while hiking.", "hurt", "Она повредила ногу во время похода."],
+                ["She ___ her leg last summer.", "hurt", "Она повредила ногу прошлым летом."],
+                ["She has ___ her leg before.", "hurt", "Она уже повредила ногу раньше."],
+
+                ["She ___ her jewelry in a box.", "keep", "Она хранит свои украшения в коробке."],
+                ["She ___ her money safe last month.", "kept", "Она хранила свои деньги в безопасности в прошлом месяце."],
+                ["She has ___ her secrets.", "kept", "Она хранила свои секреты."],
+
+                ["She ___ the answer to the question.", "know", "Она знает ответ на вопрос."],
+                ["She ___ the answer yesterday.", "knew", "Она знала ответ вчера."],
+                ["She has ___ the answer for a long time.", "known", "Она знала ответ долгое время."],
+
+                ["She ___ the table for dinner.", "lay", "Она накрывает стол на ужин."],
+                ["She ___ the table last night.", "laid", "Она накрыла стол прошлой ночью."],
+                ["She has ___ the table for many occasions.", "laid", "Она накрывала стол для многих случаев."],
+
+                ["He ___ the team to victory.", "lead", "Он ведет команду к победе."],
+                ["He ___ the team last year.", "led", "Он возглавлял команду в прошлом году."],
+                ["He has ___ the team successfully.", "led", "Он успешно возглавлял команду."],
+
+                ["She ___ French at school.", "learn", "Она учит французский в школе."],
+                ["She ___ French last year.", "learnt", "Она учила французский в прошлом году."],
+                ["She has ___ French for years.", "learnt", "Она учит французский уже много лет."],
+
+                ["She ___ for work early in the morning.", "leave", "Она уходит на работу рано утром."],
+                ["She ___ for work last week.", "left", "Она ушла на работу на прошлой неделе."],
+                ["She has ___ for work many times.", "left", "Она уходила на работу много раз."],
+
+                ["She ___ me her car for the weekend.", "lend", "Она одолжила мне свою машину на выходные."],
+                ["She ___ me her umbrella yesterday.", "lent", "Она одолжила мне свой зонт вчера."],
+                ["She has ___ me her book.", "lent", "Она одолжила мне свою книгу."],
+
+                ["Let me ___ you with that.", "let", "Позвольте мне помочь вам с этим."],
+                ["Let him ___ you know.", "let", "Пусть он даст тебе знать."],
+                ["Let her ___ you the details.", "let", "Позволь ей рассказать тебе детали."],
+
+                ["The book ___ on the table.", "lie", "Книга лежит на столе."],
+                ["The book ___ on the shelf yesterday.", "lay", "Книга лежала на полке вчера."],
+                ["The book has ___ there for a week.", "lain", "Книга лежит там уже неделю."],
+
+                ["The light ___ in the room.", "light", "Свет зажигался в комнате."],
+                ["The candle ___ yesterday.", "lit", "Свеча горела вчера."],
+                ["The room has ___ brightly.", "lit", "Комната освещена ярко."],
+
+                ["I always ___ my keys.", "lose", "Я всегда теряю свои ключи."],
+                ["I ___ my keys yesterday.", "lost", "Я потерял свои ключи вчера."],
+                ["I have ___ my keys before.", "lost", "Я уже терял свои ключи раньше."],
+
+                ["She ___ delicious cakes.", "make", "Она делает вкусные торты."],
+                ["She ___ a cake for the party.", "made", "Она сделала торт для вечеринки."],
+                ["She has ___ a lot of cakes this week.", "made", "Она сделала много тортов на этой неделе."],
+
+                ["What does this word ___?", "mean", "Что означает это слово?"],
+                ["What did he ___ by that statement?", "mean", "Что он имел в виду в этом утверждении?"],
+                ["What has this word ___ throughout history?", "meant", "Что это слово означало на протяжении истории?"],
+
+                ["We ___ at the café for lunch.", "meet", "Мы встретились в кафе на обед."],
+                ["We ___ last week.", "met", "Мы встретились на прошлой неделе."],
+                ["We have ___ before.", "met", "Мы уже встречались раньше."],
+
+                ["She ___ her bills online.", "pay", "Она оплачивает свои счета онлайн."],
+                ["She ___ her bills last month.", "paid", "Она оплатила свои счета в прошлом месяце."],
+                ["She has ___ her bills already.", "paid", "Она уже оплатила свои счета."],
+
+                ["She ___ the dishes in the dishwasher.", "put", "Она кладет посуду в посудомоечную машину."],
+                ["She ___ the dishes away yesterday.", "put", "Она убрала посуду вчера."],
+                ["She has ___ the dishes in the sink.", "put", "Она положила посуду в раковину."],
+
+                ["She ___ a book every evening.", "read", "Она читает книгу каждый вечер."],
+                ["She ___ a novel last week.", "read", "Она читала роман на прошлой неделе."],
+                ["She has ___ many books this year.", "read", "Она прочитала много книг в этом году."],
+
+                ["She ___ her bike to work.", "ride", "Она ездит на работу на велосипеде."],
+                ["She ___ her bike yesterday.", "rode", "Она каталась на своем велосипеде вчера."],
+                ["She has ___ her bike for years.", "ridden", "Она каталась на своем велосипеде много лет."],
+
+                ["She ___ the doorbell.", "ring", "Она звонит в дверной звонок."],
+                ["She ___ the bell last night.", "rang", "Она позвонила в колокол прошлой ночью."],
+                ["She has ___ the bell many times.", "rung", "Она звонила в колокол много раз."],
+
+                ["The sun ___ in the east.", "rise", "Солнце встает на востоке."],
+                ["The sun ___ yesterday.", "rose", "Солнце встало вчера."],
+                ["The sun has ___ higher in the sky.", "risen", "Солнце поднялось выше в небе."],
+
+                ["She ___ five miles every morning.", "run", "Она бегает пять миль каждое утро."],
+                ["She ___ in a marathon last month.", "ran", "Она бегала на марафоне в прошлом месяце."],
+                ["She has ___ every day this week.", "run", "Она бегала каждый день на этой неделе."],
+
+                ["She ___ goodbye before leaving.", "say", "Она попрощалась перед уходом."],
+                ["She ___ hello when she arrived.", "said", "Она сказала привет, когда пришла."],
+                ["She has ___ what she felt.", "said", "Она сказала, что она чувствует."],
+
+                ["I ___ a bird in the tree.", "see", "Я вижу птицу на дереве."],
+                ["I ___ a movie last night.", "saw", "Я смотрел фильм прошлой ночью."],
+                ["I have ___ many interesting things.", "seen", "Я видел много интересных вещей."],
+
+                ["We ___ happiness in life.", "seek", "Мы стремимся к счастью в жизни."],
+                ["We ___ happiness for years.", "sought", "Мы искали счастья в течение многих лет."],
+                ["We have ___ happiness in different ways.", "sought", "Мы искали счастья разными способами."],
+
+                ["He ___ his old car.", "sell", "Он продает свою старую машину."],
+                ["He ___ his car last week.", "sold", "Он продал свою машину на прошлой неделе."],
+                ["He has ___ many cars in his life.", "sold", "Он продал много машин за свою жизнь."],
+
+                ["She ___ a letter to her friend.", "send", "Она отправляет письмо своему другу."],
+                ["She ___ a postcard last summer.", "sent", "Она отправила открытку прошлым летом."],
+                ["She has ___ many letters this year.", "sent", "Она отправила много писем в этом году."],
+
+                ["She ___ the table for dinner.", "set", "Она накрывает стол на ужин."],
+                ["She ___ the table last night.", "set", "Она накрыла стол прошлой ночью."],
+                ["She has ___ the table beautifully.", "set", "Она красиво накрыла стол."],
+
+                ["The earthquake ___ the ground.", "shake", "Землетрясение трясет землей."],
+                ["The wind ___ the trees yesterday.", "shook", "Ветер тряс деревья вчера."],
+                ["The earthquake has ___ the buildings.", "shaken", "Землетрясение потрясло здания."],
+
+                ["The sun ___ brightly in the sky.", "shine", "Солнце ярко светит на небе."],
+                ["The star ___ last night.", "shone", "Звезда светила прошлой ночью."],
+                ["The sun has ___ every day.", "shone", "Солнце светило каждый день."],
+
+                ["He ___ a target with his bow.", "shoot", "Он стреляет в мишень из своего лука."],
+                ["He ___ an arrow yesterday.", "shot", "Он выстрелил стрелу вчера."],
+                ["He has ___ his bow many times.", "shot", "Он стрелял из своего лука много раз."],
+
+                ["She ___ her paintings at the art gallery.", "show", "Она показывает свои картины в художественной галерее."],
+                ["She ___ her work at the exhibition last year.", "showed", "Она показала свою работу на выставке в прошлом году."],
+                ["She has ___ her work to many people.", "shown", "Она показала свою работу многим людям."],
+
+                ["The sweater ___ in the wash.", "shrink", "Свитер сжимается в стирке."],
+                ["The sweater ___ after the first wash.", "shrank", "Свитер уменьшился после первой стирки."],
+                ["The sweater has ___ since I bought it.", "shrunk", "Свитер уменьшился с тех пор, как я его купил."],
+
+                ["He ___ the door behind him.", "shut", "Он закрывает дверь за собой."],
+                ["He ___ the window yesterday.", "shut", "Он закрыл окно вчера."],
+                ["He has ___ the door quietly.", "shut", "Он тихо закрыл дверь."],
+
+                ["She ___ beautifully.", "sing", "Она поет красиво."],
+                ["She ___ a song yesterday.", "sang", "Она пела песню вчера."],
+                ["She has ___ many songs in her life.", "sung", "Она пела много песен за свою жизнь."],
+
+                ["She ___ on the bench in the park.", "sit", "Она сидит на скамейке в парке."],
+                ["She ___ there for an hour yesterday.", "sat", "Она сидела там час назад."],
+                ["She has ___ in that spot before.", "sat", "Она сидела в том месте раньше."],
+
+                ["She ___ soundly at night.", "sleep", "Она спит крепко ночью."],
+                ["She ___ well last night.", "slept", "Она спала хорошо прошлой ночью."],
+                ["She has ___ for eight hours.", "slept", "Она спала восемь часов."],
+
+                ["She ___ the book across the table.", "slide", "Она сдвигает книгу по столу."],
+                ["She ___ the note yesterday.", "slid", "Она сдвинула записку вчера."],
+                ["She has ___ the paper over to me.", "slid", "Она передала мне бумагу."],
+
+                ["The food ___ delicious.", "smell", "Еда пахнет вкусно."],
+                ["The flowers ___ lovely.", "smelt", "Цветы пахли прекрасно."],
+                ["The food has ___ great today.", "smelt", "Еда сегодня пахла прекрасно."],
+
+                ["She ___ French fluently.", "speak", "Она свободно говорит по-французски."],
+                ["She ___ to him yesterday.", "spoke", "Она говорила с ним вчера."],
+                ["She has ___ about her experiences.", "spoken", "Она говорила о своих переживаниях."],
+
+                ["The magician ___ a spell on the audience.", "spell", "Маг заколдовал аудиторию."],
+                ["The child ___ the word correctly yesterday.", "spelt", "Ребенок правильно произнес слово вчера."],
+                ["She has ___ the word many times.", "spelt", "Она произносила это слово много раз."],
+
+                ["He ___ his weekends with his family.", "spend", "Он проводит выходные с семьей."],
+                ["He ___ his holidays last year.", "spent", "Он провел отпуск в прошлом году."],
+                ["He has ___ a lot of time here.", "spent", "Он провел много времени здесь."],
+
+                ["He ___ water on the floor.", "spill", "Он разливает воду на пол."],
+                ["He ___ juice yesterday.", "spilt", "Он разлил сок вчера."],
+                ["He has ___ a lot of drinks before.", "spilt", "Он уже разливал много напитков."],
+
+                ["The top ___ around.", "spin", "Вертится вертел."],
+                ["The child ___ the wheel yesterday.", "spun", "Ребенок крутанул колесо вчера."],
+                ["The top has ___ many times.", "spun", "Вертел вертелся много раз."],
+
+                ["They ___ the bill evenly.", "split", "Они делят счет поровну."],
+                ["They ___ the pizza yesterday.", "split", "Они разделили пиццу вчера."],
+                ["They have ___ the profits.", "split", "Они разделили прибыль."],
+
+                ["She ___ her children.", "spoil", "Она балует своих детей."],
+                ["She ___ them yesterday.", "spoilt", "Она избаловала их вчера."],
+                ["She has ___ them before.", "spoilt", "Она уже баловала их раньше."],
+
+                ["She ___ butter on her toast.", "spread", "Она намазывает масло на тост."],
+                ["She ___ the jam yesterday.", "spread", "Она намазала варенье вчера."],
+                ["She has ___ the cream on the cake.", "spread", "Она намазала крем на торт."],
+
+                ["He ___ by his decision.", "stand", "Он стоит за свое решение."],
+                ["He ___ firm yesterday.", "stood", "Он стоял твердо вчера."],
+                ["He has ___ for what he believes in.", "stood", "Он стоял за то, во что верит."],
+
+                ["He ___ a glance at his watch.", "steal", "Он крадет взгляд на свои часы."],
+                ["He ___ a glance yesterday.", "stole", "Он украл взгляд вчера."],
+                ["He has ___ many glances before.", "stolen", "Он уже украл много взглядов раньше."],
+
+                ["The bee ___ him on the arm.", "sting", "Пчела жалит его за руку."],
+                ["The bee ___ him yesterday.", "stung", "Пчела ужалила его вчера."],
+                ["The bee has ___ him before.", "stung", "Пчела жалела его раньше."],
+
+                ["The garbage ___.", "stink", "Мусор воняет."],
+                ["The fish ___ last week.", "stank", "Рыба воняла на прошлой неделе."],
+                ["The trash has ___ for days.", "stunk", "Мусор вонял несколько дней."],
+
+                ["He ___ the match against the box.", "strike", "Он ударяет спичку о коробку."],
+                ["He ___ the match yesterday.", "struck", "Он ударил спичку вчера."],
+                ["He has ___ matches many times.", "struck", "Он ударил спички много раз."],
+
+                ["She ___ to tell the truth.", "swear", "Она клянется говорить правду."],
+                ["She ___ to tell the truth last time.", "swore", "Она поклялась сказать правду в прошлый раз."],
+                ["She has ___ to tell the truth before.", "sworn", "Она уже клялась говорить правду раньше."],
+
+                ["She ___ the floor every morning.", "sweep", "Она метет пол каждое утро."],
+                ["She ___ the floor yesterday.", "swept", "Она подмела пол вчера."],
+                ["She has ___ the floor already.", "swept", "Она уже подметала пол."],
+
+                ["The river ___ after heavy rain.", "swell", "Река набухает после сильного дождя."],
+                ["The river ___ last year.", "swelled", "Река набухла в прошлом году."],
+                ["The river has ___ since the rain started.", "swollen", "Река набухла с тех пор, как начался дождь."],
+
+                ["He ___ across the lake.", "swim", "Он переплывает озеро."],
+                ["He ___ across the lake yesterday.", "swam", "Он переплыл озеро вчера."],
+                ["He has ___ in this lake before.", "swum", "Он уже плавал в этом озере раньше."],
+
+                ["She ___ the bus to work.", "take", "Она едет на работу на автобусе."],
+                ["She ___ the bus yesterday.", "took", "Она села на автобус вчера."],
+                ["She has ___ the bus many times.", "taken", "Она ездила на автобусе много раз."],
+
+                ["She ___ math at the school.", "teach", "Она преподает математику в школе."],
+                ["She ___ math last year.", "taught", "Она преподавала математику в прошлом году."],
+                ["She has ___ math for many years.", "taught", "Она преподавала математику много лет."],
+
+                ["He ___ the paper in half.", "tear", "Он рвет бумагу пополам."],
+                ["He ___ the paper yesterday.", "tore", "Он порвал бумагу вчера."],
+                ["He has ___ the paper many times.", "torn", "Он рвал бумагу много раз."],
+
+                ["She ___ a story to her friends.", "tell", "Она рассказывает историю своим друзьям."],
+                ["She ___ a story yesterday.", "told", "Она рассказала историю вчера."],
+                ["She has ___ many stories.", "told", "Она рассказала много историй."],
+
+                ["She ___ about her future.", "think", "Она думает о своем будущем."],
+                ["She ___ about it yesterday.", "thought", "Она думала об этом вчера."],
+                ["She has ___ a lot about it.", "thought", "Она много думала об этом."],
+
+                ["He ___ the ball to his friend.", "throw", "Он бросает мяч своему другу."],
+                ["He ___ the ball yesterday.", "threw", "Он бросил мяч вчера."],
+                ["He has ___ the ball many times.", "thrown", "Он бросал мяч много раз."],
+
+                ["She ___ the instructions.", "understand", "Она понимает инструкции."],
+                ["She ___ the instructions yesterday.", "understood", "Она поняла инструкции вчера."],
+                ["She has ___ them for years.", "understood", "Она понимает их много лет."],
+
+                ["He ___ up early in the morning.", "wake", "Он просыпается рано утром."],
+                ["He ___ up suddenly yesterday.", "woke", "Он проснулся внезапно вчера."],
+                ["He has ___ up at six for years.", "woken", "Он просыпается в шесть уже много лет."],
+
+                ["She ___ a warm coat in winter.", "wear", "Она носит теплое пальто зимой."],
+                ["She ___ a coat yesterday.", "wore", "Она носила пальто вчера."],
+                ["She has ___ that coat many times.", "worn", "Она носила это пальто много раз."],
+
+                ["They ___ the championship.", "win", "Они выигрывают чемпионат."],
+                ["They ___ the championship last year.", "won", "Они выиграли чемпионат в прошлом году."],
+                ["They have ___ many matches.", "won", "Они выиграли много матчей."],
+
+                ["She ___ a letter to her friend.", "write", "Она пишет письмо своему другу."],
+                ["She ___ a letter yesterday.", "wrote", "Она написала письмо вчера."],
+                ["She has ___ many letters this month.", "written", "Она написала много писем в этом месяце."],
+
+            ];
+
+            const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let answer = item[0].replace(/'/g, "&#39;").replace('___',item[1]);
+                        let question = item[0].replace(/'/g, "&#39;").replace('___',`<input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")'/>`)
+                        let sentence = `${question} – ${item[2]}
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                        <span class="text-span" id="clue-easy-${index}">${answer}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+            generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+
+
+
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
+
+        </script>
     </div>
 </body>
 </html>
