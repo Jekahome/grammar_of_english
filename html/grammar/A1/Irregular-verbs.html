@@ -1001,7 +1001,28 @@
         <h3>Replace (Easy)</h3>
         <details>
             <summary>1: Заполнить пропуск используя правильную форму глагола</summary>
+            <p>Набо №1</p>
             <form id="exerciseForm_1"></form>
+        </details>
+        <details>
+            <summary>2: Заполнить пропуск используя правильную форму глагола</summary>
+            <p>Набо №2</p>
+            <form id="exerciseForm_2"></form>
+        </details>
+        <details>
+            <summary>3: Заполнить пропуск используя правильную форму глагола</summary>
+            <p>Набо №3</p>
+            <form id="exerciseForm_3"></form>
+        </details>
+        <details>
+            <summary>4: Заполнить пропуск используя правильную форму глагола</summary>
+            <p>Набо №4</p>
+            <form id="exerciseForm_4"></form>
+        </details>
+        <details>
+            <summary>5: Заполнить пропуск используя правильную форму глагола</summary>
+            <p>Набо №5</p>
+            <form id="exerciseForm_5"></form>
         </details>
 
         <script src='/grammar_of_english/practice.js'></script>
@@ -1636,7 +1657,19 @@
                     });
                 };
             })();
-            generateExercisesEasy(getRandomThird(exercises_easy_1), document.getElementById('exerciseForm_1'));
+
+            const arr1 = exercises_easy_2.slice(0, 30);
+            const arr2 = exercises_easy_2.slice(30, 60);
+            const arr3 = exercises_easy_2.slice(60, 90);
+            const arr4 = exercises_easy_2.slice(90, 110);
+            const arr5 = exercises_easy_2.slice(110, 130);
+
+
+            generateExercisesEasy(arr1, document.getElementById('exerciseForm_1'));
+            generateExercisesEasy(arr2, document.getElementById('exerciseForm_2'));
+            generateExercisesEasy(arr3, document.getElementById('exerciseForm_3'));
+            generateExercisesEasy(arr4, document.getElementById('exerciseForm_4'));
+            generateExercisesEasy(arr5, document.getElementById('exerciseForm_5'));
 
 
 
