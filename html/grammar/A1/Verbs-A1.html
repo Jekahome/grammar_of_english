@@ -1215,17 +1215,17 @@
                         //let answer3 = w3.split(" — ")[0];
                         
                         let sentence = `${sentence1}
-                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${w1}")'>
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick="playSentence('${w1}')">
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
                         <span class="text-span" id="clue-easy-${index}">${w1}</span><br>
                         
                         ${sentence2}
-                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${w2}")'>
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick="playSentence('${w2}')">
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index+1}')"> 
                         <span class="text-span" id="clue-easy-${index+1}">${w2}</span><br>
                         
                         ${sentence3}
-                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${w3}")'>
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick="playSentence('${w3}')">
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index+2}')"> 
                         <span class="text-span" id="clue-easy-${index+2}">${w3}</span><br>
                         
