@@ -352,6 +352,241 @@
                 </ul>
             </li>
         </ol>
+
+        <h2>Упражнения</h2>
+        <h3>Replace (Easy)</h3>
+        <details>
+            <summary>1: Заполнить пропуск используя правильный глагол</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+
+        <hr>
+        <h3>Write (Medium)</h3>
+        <details>
+            <summary>1: Перевести словосочетания</summary>
+            <form id="exerciseForm_2"></form>
+        </details>
+
+
+        <script src='/grammar_of_english/practice.js'></script>
+        <script>
+    
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+    
+            let practice = new Practice({callback: recognition});
+            const exercises_easy_1 = [
+                ["Jane didn't ___ her children.", ["look after"], "Джейн не присматривала за своими детьми."],
+                ["Mary ___ herself ___ to be a teacher.", ["sets", "up"], "Мэри выдаёт себя за преподавателя."],
+                ["We ___ ___ to seeing you next week.", ["look", "forward"], "Мы с нетерпением ждём встречи с вами на следующей неделе."],
+                ["She ___ off her coat as she entered the warm house.", ["took"], "Она сняла пальто, войдя в теплый дом."],
+                ["Don't ___ off until tomorrow what you can do today.", ["put"], "Не откладывайте на завтра то, что можно сделать сегодня."],
+                ["Parents should ___ up their children to be polite and respectful.", ["bring"], "Родители должны воспитывать своих детей так, чтобы они были вежливыми и уважительными."],
+                ["I ___ up early every morning to go for a run.", ["get"], "Каждое утро я встаю рано, чтобы пойти на пробежку."],
+                ["He ___ up smoking.", ["gave"], "Он бросил курить."],
+                ["Please ___ on the lights.", ["turn"], "Пожалуйста, включи свет."],
+                ["She ___ out her wallet to pay for the groceries.", ["took"], "Она достала бумажник, чтобы заплатить за продукты."],
+                ["If you don't know the meaning of a word, you can ___ it ___ in the dictionary.", ["look", "up"], "Если вы не знаете значения слова, вы можете поискать его в словаре."],
+                ["The concert was interrupted by a loud noise, but then it ___ on as planned.", ["went"], "Концерт был прерван громким шумом, но затем всё прошло, как и было запланировано."],
+                ["They need to ___ up with a solution to the problem as soon as possible.", ["come"], "Им необходимо как можно скорее придумать решение проблемы."],
+                ["He didn't ___ up at the meeting, so we had to start without him.", ["turn"], "Он не явился на встречу, поэтому нам пришлось начинать без него."],
+                ["Let's ___ out of the house and go for a walk in the park.", ["get"], "Давайте выйдем из дома и пойдем гулять в парк."],
+                ["After arguing for hours, he finally ___ in and agreed to her proposal.", ["gave"], "После нескольких часов споров он наконец сдался и согласился на её предложение."],
+                ["She ___ up an excuse for being late to the party.", ["made"], "Она придумала оправдание опозданию на вечеринку."],
+                ["She ___ on her coat and left the house.", ["put"], "Она надела пальто и вышла из дома."],
+                ["It ___ out that the train was delayed by two hours.", ["turned"], "Оказалось, что поезд задержался на два часа."],
+                ["They had to ___ off the picnic because of the bad weather.", ["call"], "Пикник пришлось отменить из-за плохой погоды."],
+                ["While walking in the forest, they ___ across an old abandoned cabin.", ["came"], "Гуляя по лесу, они наткнулись на старую заброшенную хижину."],
+                ["This song ___ back memories of my childhood.", ["brings"], "Эта песня возвращает воспоминания о моем детстве."],
+                ["They ___ a new company together last year.", ["set"], "В прошлом году они вместе основали новую компанию."],
+                ["Look out! There's a car coming!", ["look"], "Берегись! Идет машина!"],
+                ["They managed to ___ away from the city for the weekend.", ["get"], "Им удалось сбежать из города на выходные."],
+                ["The new CEO will ___ over the company next month.", ["take"], "Новый генеральный директор возглавит компанию в следующем месяце."],
+                ["She ___ on the bus and headed to work.", ["got"], "Она села в автобус и поехала на работу."],
+                ["Let's ___ back to that restaurant, the food was amazing!", ["go"], "Вернёмся в тот ресторан, еда была восхитительной."],
+                ["The police promised to ___ into the matter and find the culprit.", ["look"], "Полиция обещала изучить этот вопрос и найти виновного."],
+                ["The caterpillar ___ into a beautiful butterfly.", ["turned"], "Гусеница превратилась в прекрасную бабочку."],
+                ["We ___ off the train at the next station.", ["got"], "Мы сошли с поезда на следующей станции."],
+
+                ["Jane didn't ___ her children.", ["look after"], "Джейн не присматривала за своими детьми."],
+                ["We ___ to seeing you next week.", ["look forward"], "Мы с нетерпением ждем встречи с вами на следующей неделе."],
+                ["She ___ her coat as she entered the warm house.", ["took off"], "Она сняла пальто, войдя в теплый дом."],
+                ["Don't ___ until tomorrow what you can do today.", ["put off"], "Не откладывайте на завтра то, что можно сделать сегодня."],
+                ["Parents should ___ their children to be polite.", ["bring up"], "Родители должны воспитывать своих детей так, чтобы они были вежливыми."],
+                ["I ___ early every morning to go for a run.", ["get up"], "Каждое утро я встаю рано, чтобы пойти на пробежку."],
+                ["He ___ smoking last year.", ["gave up"], "Он бросил курить в прошлом году."],
+                ["Please ___ the lights.", ["turn on"], "Пожалуйста, включи свет."],
+                ["She ___ her wallet to pay for the groceries.", ["took out"], "Она достала бумажник, чтобы заплатить за продукты."],
+                ["If you don't know the meaning, you can ___ it ___ in the dictionary.", ["look", "up"], "Если вы не знаете значения слова, вы можете поискать его в словаре."],
+                ["The concert was interrupted, but then it ___ as planned.", ["went on"], "Концерт был прерван, но затем он продолжился, как и было запланировано."],
+                ["They need to ___ a solution to the problem.", ["come up with"], "Им необходимо придумать решение проблемы."],
+                ["He didn't ___ at the meeting.", ["turn up"], "Он не явился на встречу."],
+                ["Let's ___ of the house and go for a walk.", ["get out"], "Давайте выйдем из дома и пойдем гулять."],
+                ["After arguing, he finally ___ and agreed.", ["gave in"], "После спора он наконец сдался и согласился."],
+                ["She ___ an excuse for being late.", ["made up"], "Она придумала оправдание за опоздание."],
+                ["She ___ her coat and left the house.", ["put on"], "Она надела пальто и вышла из дома."],
+                ["It ___ that the train was delayed.", ["turned out"], "Оказалось, что поезд задержался."],
+                ["They had to ___ the picnic because of rain.", ["call off"], "Им пришлось отменить пикник из-за дождя."],
+                ["They ___ an old cabin in the forest.", ["came across"], "Они наткнулись на старую хижину в лесу."],
+                ["This song ___ memories of my childhood.", ["brings back"], "Эта песня возвращает воспоминания о моем детстве."],
+                ["They ___ a new company together last year.", ["set up"], "Они основали новую компанию вместе в прошлом году."],
+                ["Look out! There's a car coming!", ["look out"], "Берегись! Идет машина!"],
+                ["They managed to ___ from the city for the weekend.", ["get away"], "Им удалось сбежать из города на выходные."],
+                ["The new CEO will ___ the company next month.", ["take over"], "Новый генеральный директор возглавит компанию в следующем месяце."],
+                ["She ___ the bus and headed to work.", ["got on"], "Она села в автобус и поехала на работу."],
+                ["Let's ___ to that restaurant again.", ["go back"], "Давайте вернемся в тот ресторан снова."],
+                ["The police promised to ___ the matter.", ["look into"], "Полиция обещала изучить этот вопрос."],
+                ["The caterpillar ___ into a beautiful butterfly.", ["turned into"], "Гусеница превратилась в прекрасную бабочку."],
+                ["We ___ the train at the next station.", ["got off"], "Мы сошли с поезда на следующей станции."],
+
+                ["I need to ___ my dog while my friends are on vacation.", ["look after"], "Мне нужно присмотреть за своей собакой, пока мои друзья в отпуске."],
+                ["We're really ___ the holidays; they can't come soon enough!", ["look forward"], "Мы очень ждем каникул; они не могут наступить слишком скоро!"],
+                ["Make sure to ___ your shoes before entering the house.", ["take off"], "Не забудьте снять обувь перед входом в дом."],
+                ["She always ___ her assignments until the last minute.", ["puts off"], "Она всегда откладывает выполнение заданий до последней минуты."],
+                ["My parents ___ me to be independent.", ["brought up"], "Мои родители воспитывали меня независимым."],
+                ["I usually ___ at 6 AM to prepare for work.", ["get up"], "Я обычно встаю в 6 утра, чтобы подготовиться к работе."],
+                ["He ___ video games for a while, focusing on his studies instead.", ["gave up"], "Он бросил играть в видеоигры на время, сосредоточившись на учебе."],
+                ["Could you please ___ the music? It's too loud!", ["turn down"], "Не могли бы вы уменьшить звук музыки? Она слишком громкая!"],
+                ["She ___ her phone from her bag to check the time.", ["took out"], "Она достала телефон из сумки, чтобы проверить время."],
+                ["If you need help, don't hesitate to ___ me ___.", ["call", "up"], "Если вам нужна помощь, не стесняйтесь позвонить мне."],
+                ["Although it started raining, the event still ___.", ["went on"], "Хотя начался дождь, мероприятие все равно продолжилось."],
+                ["We need to ___ new strategies for marketing.", ["come up with"], "Нам нужно придумать новые стратегии для маркетинга."],
+                ["She finally ___ to the party after an hour.", ["turned up"], "Она наконец появилась на вечеринке через час."],
+                ["Let's ___ of the house and explore the city.", ["get out"], "Давайте выберемся из дома и исследуем город."],
+                ["After much debate, she ___ and apologized.", ["gave in"], "После долгих споров она сдалась и извинилась."],
+                ["He ___ a story to explain his absence.", ["made up"], "Он выдумал историю, чтобы объяснить свое отсутствие."],
+                ["She ___ her sweater because it was cold.", ["put on"], "Она надела свитер, потому что было холодно."],
+                ["It ___ that she had won the competition.", ["turned out"], "Оказалось, что она выиграла соревнование."],
+                ["The game was ___ due to bad weather.", ["called off"], "Игра была отменена из-за плохой погоды."],
+                ["I ___ an interesting book at the store yesterday.", ["came across"], "Вчера я наткнулся на интересную книгу в магазине."],
+                ["That smell really ___ memories of my grandmother's cooking.", ["brings back"], "Этот запах действительно вызывает воспоминания о кулинарии моей бабушки."],
+                ["They ___ a charity organization to help the community.", ["set up"], "Они основали благотворительную организацию для помощи обществу."],
+                ["___ for falling objects when you're walking under the tree.", ["Look out"], "Осторожно с падающими предметами, когда идете под деревом."],
+                ["They hope to ___ for the weekend to a cabin in the mountains.", ["get away"], "Они надеются сбежать на выходные в хижину в горах."],
+                ["The new manager will ___ the team next month.", ["take over"], "Новый менеджер возьмет на себя управление командой в следующем месяце."],
+                ["Everyone ___ the bus without a problem.", ["got on"], "Все без проблем сели в автобус."],
+                ["Let's ___ to that cafe we discovered last time.", ["go back"], "Давайте вернемся в то кафе, которое мы открыли в прошлый раз."],
+                ["The detective promised to ___ the case thoroughly.", ["look into"], "Детектив пообещал тщательно изучить дело."],
+                ["He ___ a monster in his dreams.", ["turned into"], "Он превратился в монстра в своих снах."],
+                ["We ___ the train just in time to catch it.", ["got off"], "Мы сошли с поезда как раз вовремя, чтобы успеть." ],
+
+                ["I have to ___ my younger brother after school.", ["look after"], "Мне нужно присмотреть за младшим братом после школы."],
+                ["I'm really ___ my birthday party next week!", ["looking forward"], "Я действительно жду свою вечеринку по случаю дня рождения на следующей неделе!"],
+                ["Don't forget to ___ your jacket before you go outside.", ["take off"], "Не забудь снять куртку перед тем, как выйдешь на улицу."],
+                ["He always ___ his homework until the last minute.", ["puts off"], "Он всегда откладывает выполнение домашнего задания до последней минуты."],
+                ["My grandmother ___ me to appreciate the little things in life.", ["brought up"], "Моя бабушка научила меня ценить мелочи в жизни."],
+                ["I usually ___ late on weekends to catch up on sleep.", ["get up"], "Я обычно встаю поздно по выходным, чтобы выспаться."],
+                ["She ___ smoking last year for her health.", ["gave up"], "Она бросила курить в прошлом году ради своего здоровья."],
+                ["Can you ___ the volume? I can hardly hear it!", ["turn down"], "Не мог бы ты уменьшить громкость? Я едва слышу это!"],
+                ["He ___ his wallet before entering the store.", ["took out"], "Он достал свой кошелек перед входом в магазин."],
+                ["If you need anything, just ___ me ___.", ["call", "up"], "Если тебе что-то нужно, просто позвони мне."],
+                ["Even though it was raining, the concert still ___.", ["went on"], "Несмотря на дождь, концерт все равно продолжился."],
+                ["We need to ___ a new plan to solve the issue.", ["come up with"], "Нам нужно придумать новый план для решения проблемы."],
+                ["She ___ to the meeting unexpectedly.", ["turned up"], "Она неожиданно появилась на встрече."],
+                ["Let's ___ of the city for a change of scenery.", ["get out"], "Давайте выберемся из города для изменения обстановки."],
+                ["He tried to argue, but eventually ___ and agreed.", ["gave in"], "Он пытался спорить, но в конечном итоге сдался и согласился."],
+                ["She ___ a story about her travels to entertain us.", ["made up"], "Она выдумала историю о своих путешествиях, чтобы развлечь нас."],
+                ["It was chilly, so he ___ a coat before heading out.", ["put on"], "Было прохладно, поэтому он надел пальто перед выходом."],
+                ["It ___ that they were actually distant cousins.", ["turned out"], "Оказалось, что они на самом деле дальние кузены."],
+                ["The event was ___ due to unforeseen circumstances.", ["called off"], "Мероприятие было отменено по независящим от нас причинам."],
+                ["I ___ an old friend while walking in the park.", ["came across"], "Я наткнулся на старого друга, прогуливаясь в парке."],
+                ["The smell of cookies ___ memories of my childhood.", ["brings back"], "Запах печенья вызывает воспоминания о моем детстве."],
+                ["They ___ a new project to support local artists.", ["set up"], "Они основали новый проект для поддержки местных художников."],
+                ["___ for other cars when you're driving!", ["Look out"], "Осторожно с другими автомобилями, когда ты за рулем!"],
+                ["We're planning to ___ to the beach this summer.", ["get away"], "Мы планируем выбраться на пляж этим летом."],
+                ["The new CEO will ___ the company next quarter.", ["take over"], "Новый генеральный директор возьмет на себя управление компанией в следующем квартале."],
+                ["Everyone ___ the bus promptly at the station.", ["got on"], "Все вовремя сели в автобус на станции."],
+                ["Let's ___ to that restaurant we loved last time.", ["go back"], "Давайте вернемся в тот ресторан, который нам так понравился в прошлый раз."],
+                ["The police promised to ___ the case as soon as possible.", ["look into"], "Полиция пообещала изучить дело как можно скорее."],
+                ["He ___ a superhero in his imagination.", ["turned into"], "Он превратился в супергероя в своем воображении."],
+                ["We ___ the train and arrived at the city center.", ["got off"], "Мы сошли с поезда и прибыли в центр города."]
+            ];
+
+            const exercises_medium_1 = [
+                ["look after", "заботиться о"],
+                ["look forward", "с нетерпением ждать"],
+                ["take off", "снимать"],
+                ["put off", "откладывать"],
+                ["bring up", "поднимать (вопрос)"],
+                ["get up", "вставать"],
+                ["give up", "бросать (привычку)"],
+                ["turn down", "уменьшать (громкость)"],
+                ["take out", "достать"],
+                ["call up", "позвонить"],
+                ["go on", "продолжаться"],
+                ["come up with", "придумывать"],
+                ["turn up", "появляться"],
+                ["get out", "выбираться"],
+                ["give in", "сдаваться"],
+                ["make up", "выдумывать"],
+                ["put on", "надевать"],
+                ["turn out", "оказаться"],
+                ["call off", "отменять"],
+                ["come across", "наткнуться на"],
+                ["bring back", "возвращать"],
+                ["set up", "основать"],
+                ["look out", "остерегаться"],
+                ["get away", "убежать"],
+                ["take over", "брать на себя"],
+                ["get on", "садиться"],
+                ["go back", "возвращаться"],
+                ["look into", "изучать"],
+                ["turn into", "превращаться в"],
+                ["get off", "сходить (с транспорта)"]
+            ];
+
+            const generateExercisesEasy = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let sentence = item[0];
+                        let origin = item[0];
+                        let answers = item[1];
+                        answers.forEach(answer => {
+                            sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                            origin = origin.replace('___', answer);
+                        });
+                        origin = origin.replace(/'/g, "&#39;");
+
+                        sentence += ` — <i>${item[1]}</i>
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${origin}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-3-${index}')"> 
+                        <span class="text-span" id="clue-easy-3-${index}">${origin}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+            const generateExercisesMedium = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        
+                        let sentence = `${item[1]} — <input type="text" class="input-size" oninput='checkAnswer(this, "${item[0]}")'/> 
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> 
+                        <span class="text-span" id="clue-medium-${index}">${item[0]}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+
+            generateExercisesEasy(exercises_easy_1, document.getElementById('exerciseForm_1'));
+            generateExercisesMedium(exercises_medium_1, document.getElementById('exerciseForm_2'));
+
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
+        </script>
     </div>
 </body>
 </html>
