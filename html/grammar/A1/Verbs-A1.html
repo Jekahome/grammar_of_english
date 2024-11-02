@@ -1353,30 +1353,29 @@
             const arr22 = exercises_easy_1.slice(210, 220);
             const arr23 = exercises_easy_1.slice(220, 230);
 
-            generateExercisesEasy(arr1, document.getElementById('exerciseForm_1'));
-            generateExercisesEasy(arr2, document.getElementById('exerciseForm_2'));
-            generateExercisesEasy(arr3, document.getElementById('exerciseForm_3'));
-            generateExercisesEasy(arr4, document.getElementById('exerciseForm_4'));
-            generateExercisesEasy(arr5, document.getElementById('exerciseForm_5'));
-            generateExercisesEasy(arr6, document.getElementById('exerciseForm_6'));
-            generateExercisesEasy(arr7, document.getElementById('exerciseForm_7'));
-            generateExercisesEasy(arr8, document.getElementById('exerciseForm_8'));
-            generateExercisesEasy(arr9, document.getElementById('exerciseForm_9'));
-            generateExercisesEasy(arr10, document.getElementById('exerciseForm_10'));
-            generateExercisesEasy(arr11, document.getElementById('exerciseForm_11'));
-            generateExercisesEasy(arr12, document.getElementById('exerciseForm_12'));
-            generateExercisesEasy(arr13, document.getElementById('exerciseForm_13'));
-            generateExercisesEasy(arr14, document.getElementById('exerciseForm_14'));
-            generateExercisesEasy(arr15, document.getElementById('exerciseForm_15'));
-            generateExercisesEasy(arr16, document.getElementById('exerciseForm_16'));
-            generateExercisesEasy(arr17, document.getElementById('exerciseForm_17'));
-            generateExercisesEasy(arr18, document.getElementById('exerciseForm_18'));
-            generateExercisesEasy(arr19, document.getElementById('exerciseForm_19'));
-            generateExercisesEasy(arr20, document.getElementById('exerciseForm_20'));
-            generateExercisesEasy(arr21, document.getElementById('exerciseForm_21'));
-            generateExercisesEasy(arr22, document.getElementById('exerciseForm_22'));
-            generateExercisesEasy(arr23, document.getElementById('exerciseForm_23'));
-
+            generateExercisesEasy(getRandomThird(arr1), document.getElementById('exerciseForm_1'));
+            generateExercisesEasy(getRandomThird(arr2), document.getElementById('exerciseForm_2'));
+            generateExercisesEasy(getRandomThird(arr3), document.getElementById('exerciseForm_3'));
+            generateExercisesEasy(getRandomThird(arr4), document.getElementById('exerciseForm_4'));
+            generateExercisesEasy(getRandomThird(arr5), document.getElementById('exerciseForm_5'));
+            generateExercisesEasy(getRandomThird(arr6), document.getElementById('exerciseForm_6'));
+            generateExercisesEasy(getRandomThird(arr7), document.getElementById('exerciseForm_7'));
+            generateExercisesEasy(getRandomThird(arr8), document.getElementById('exerciseForm_8'));
+            generateExercisesEasy(getRandomThird(arr9), document.getElementById('exerciseForm_9'));
+            generateExercisesEasy(getRandomThird(arr10), document.getElementById('exerciseForm_10'));
+            generateExercisesEasy(getRandomThird(arr11), document.getElementById('exerciseForm_11'));
+            generateExercisesEasy(getRandomThird(arr12), document.getElementById('exerciseForm_12'));
+            generateExercisesEasy(getRandomThird(arr13), document.getElementById('exerciseForm_13'));
+            generateExercisesEasy(getRandomThird(arr14), document.getElementById('exerciseForm_14'));
+            generateExercisesEasy(getRandomThird(arr15), document.getElementById('exerciseForm_15'));
+            generateExercisesEasy(getRandomThird(arr16), document.getElementById('exerciseForm_16'));
+            generateExercisesEasy(getRandomThird(arr17), document.getElementById('exerciseForm_17'));
+            generateExercisesEasy(getRandomThird(arr18), document.getElementById('exerciseForm_18'));
+            generateExercisesEasy(getRandomThird(arr19), document.getElementById('exerciseForm_19'));
+            generateExercisesEasy(getRandomThird(arr20), document.getElementById('exerciseForm_20'));
+            generateExercisesEasy(getRandomThird(arr21), document.getElementById('exerciseForm_21'));
+            generateExercisesEasy(getRandomThird(arr22), document.getElementById('exerciseForm_22'));
+            generateExercisesEasy(getRandomThird(arr23), document.getElementById('exerciseForm_23'));
 
             function playSentence(sentence){
                 practice.speak(sentence);
