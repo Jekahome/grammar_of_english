@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глаголы для A1</title>
+    <link rel="stylesheet" href="/grammar_of_english/css/styles.css">
+</head>
+<body>
+    <script type="module" src="/grammar_of_english/firebase.js"></script>
+    <script src="/grammar_of_english/preload.js"></script>
+
+    <div class="left-block">
+        <div id="login-block"></div>
+    </div>
+
+    <div class="right-block">
+        <h1>Глаголы для A1</h1>
+
+        <script src='/grammar_of_english/practice.js'></script>
+        <script>
+    
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+    
+            let practice = new Practice({callback: recognition});
+
+
+        </script>
+
+    </div>
+</body>
+</html>
+
