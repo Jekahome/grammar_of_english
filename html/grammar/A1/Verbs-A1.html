@@ -1202,9 +1202,9 @@
                         let w2 = item[1];
                         let w3 = item[2];
 
-                        let sentence1 = replaceWord(item[4][0],w1,`<input type="text" class="input-size" oninput='checkAnswer(this,"${w1}")'/>`);
-                        let sentence2 = replaceWord(item[4][1],w2,`<input type="text" class="input-size" oninput='checkAnswer(this,"${w2}")'/>`);
-                        let sentence3 = replaceWord(item[4][2],w3,`<input type="text" class="input-size" oninput='checkAnswer(this,"${w3}")'/>`);
+                        let sentence1 = replaceWord(item[4][0],w1,`<input type="text" class="input-size" oninput="checkAnswer(this,'${w1}')"/>`);
+                        let sentence2 = replaceWord(item[4][1],w2,`<input type="text" class="input-size" oninput="checkAnswer(this,'${w2}')"/>`);
+                        let sentence3 = replaceWord(item[4][2],w3,`<input type="text" class="input-size" oninput="checkAnswer(this,'${w3}')"/>`);
 
                         sentence1 = sentence1.replace(/'/g, "&#39;");
                         sentence2 = sentence2.replace(/'/g, "&#39;");
