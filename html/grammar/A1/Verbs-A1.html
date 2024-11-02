@@ -1202,32 +1202,32 @@
                         let w2 = item[1];
                         let w3 = item[2];
 
-                        let sentence1 = replaceWord(item[4][0],w1,'<input type="text" class="input-size" oninput=\"checkAnswer(this, "'+w1+'")\"/>');
-                        let sentence2 = replaceWord(item[4][1],w2,'<input type="text" class="input-size" oninput=\"checkAnswer(this, "'+w2+'")\"/>');
-                        let sentence3 = replaceWord(item[4][2],w3,'<input type="text" class="input-size" oninput=\"checkAnswer(this, "'+w3+'")\"/>');
+                        let sentence1 = replaceWord(item[4][0],w1,'<input type="text" class="input-size" oninput=\"checkAnswer(this,"'+w1+'")\"/>');
+                        let sentence2 = replaceWord(item[4][1],w2,'<input type="text" class="input-size" oninput=\"checkAnswer(this,"'+w2+'")\"/>');
+                        let sentence3 = replaceWord(item[4][2],w3,'<input type="text" class="input-size" oninput=\"checkAnswer(this,"'+w3+'")\"/>');
 
                         sentence1 = sentence1.replace(/'/g, "&#39;");
                         sentence2 = sentence2.replace(/'/g, "&#39;");
                         sentence3 = sentence3.replace(/'/g, "&#39;");
 
-                        let answer1 = w1.split(" — ")[0];
-                        let answer2 = w2.split(" — ")[0];
-                        let answer3 = w3.split(" — ")[0];
+                        //let answer1 = w1.split(" — ")[0];
+                        //let answer2 = w2.split(" — ")[0];
+                        //let answer3 = w3.split(" — ")[0];
                         
                         let sentence = `${sentence1}
-                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer1}")'>
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${w1}")'>
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
-                        <span class="text-span" id="clue-easy-${index}">${answer1}</span><br>
+                        <span class="text-span" id="clue-easy-${index}">${w1}</span><br>
                         
                         ${sentence2}
-                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer2}")'>
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${w2}")'>
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index+1}')"> 
-                        <span class="text-span" id="clue-easy-${index+1}">${answer2}</span><br>
+                        <span class="text-span" id="clue-easy-${index+1}">${w2}</span><br>
                         
                         ${sentence3}
-                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer3}")'>
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${w3}")'>
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index+2}')"> 
-                        <span class="text-span" id="clue-easy-${index+2}">${answer3}</span><br>
+                        <span class="text-span" id="clue-easy-${index+2}">${w3}</span><br>
                         
                         `;
                         index+=2;
