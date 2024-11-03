@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Существительные для A1</title>
+    <link rel="stylesheet" href="/grammar_of_english/css/styles.css">
+</head>
+<body>
+    <script type="module" src="/grammar_of_english/firebase.js"></script>
+    <script src="/grammar_of_english/preload.js"></script>
+
+    <div class="left-block">
+        <div id="login-block"></div>
+    </div>
+
+    <div class="right-block">
+        <h1>Существительные для A1</h1>
+
+        <h3>Write (Medium)</h3>
+        <details>
+            <summary>1: Перевести словосочетания</summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+
+
+        <script src='/grammar_of_english/practice.js'></script>
+        <script>
+    
+            function recognition(id, recognition){
+                console.log(`id=${id} recognition=${recognition}`);
+                var el = document.getElementById(id);
+                el.value = recognition;
+                const inputEvent = new Event('input');
+                el.dispatchEvent(inputEvent);
+            }
+    
+            let practice = new Practice({callback: recognition});
+            const exercises_medium_1 = [
+                ["adventure", "adventures", "приключение", "An adventure awaits.", "Начинается приключение."],
+                ["air", "airs", "воздух", "The air is fresh.", "Воздух свежий."],
+                ["answer", "answers", "ответ", "I need an answer.", "Мне нужен ответ."],
+                ["apartment", "apartments", "квартира", "This is my apartment.", "Это моя квартира."],
+                ["area", "areas", "область", "A quiet area.", "Тихая область."],
+                ["autumn", "autumns", "осень", "Autumn leaves fall.", "Падают осенние листья."],
+                ["bag", "bags", "сумка", "I have a bag.", "У меня есть сумка."],
+                ["bathroom", "bathrooms", "ванная комната", "The bathroom is clean.", "Ванная чистая."],
+                ["beach", "beaches", "пляж", "We went to the beach.", "Мы ходили на пляж."],
+                ["bed", "beds", "кровать", "The bed is comfortable.", "Кровать удобная."],
+                ["bedroom", "bedrooms", "спальня", "This is the bedroom.", "Это спальня."],
+                ["bird", "birds", "птица", "A bird is singing.", "Птица поет."],
+                ["book", "books", "книга", "I am reading a book.", "Я читаю книгу."],
+                ["branch", "branches", "ветка", "The branch is strong.", "Ветка крепкая."],
+                ["bread", "breads", "хлеб", "Fresh bread smells good.", "Свежий хлеб пахнет вкусно."],
+                ["brother", "brothers", "брат", "My brother is here.", "Мой брат здесь."],
+                ["building", "buildings", "здание", "It’s a tall building.", "Это высокое здание."],
+                ["back", "backs", "спина", "My back hurts.", "У меня болит спина."],
+                ["body", "bodies", "тело", "The body needs rest.", "Телу нужен отдых."],
+                ["business", "businesses", "дело", "Business is growing.", "Дело растет."],
+
+                ["car", "cars", "машина", "The car is fast.", "Машина быстрая."],
+                ["cat", "cats", "кошка", "The cat is sleeping.", "Кошка спит."],
+                ["chair", "chairs", "стул", "Take a chair.", "Возьми стул."],
+                ["cheese", "cheeses", "сыр", "I like cheese.", "Мне нравится сыр."],
+                ["child", "children", "ребенок", "The child is playing.", "Ребенок играет."],
+                ["city", "cities", "город", "The city is large.", "Город большой."],
+                ["classroom", "classrooms", "класс", "The classroom is ready.", "Класс готов."],
+                ["climate", "climates", "климат", "The climate is changing.", "Климат меняется."],
+                ["cloud", "clouds", "облако", "A cloud is floating.", "Облако плывет."],
+                ["coat", "coats", "пальто", "Wear a coat.", "Надень пальто."],
+                ["coffee", "coffees", "кофе", "Coffee is hot.", "Кофе горячий."],
+                ["computer", "computers", "компьютер", "The computer is on.", "Компьютер включен."],
+                ["country", "countries", "страна", "I love my country.", "Я люблю свою страну."],
+                ["center", "centers", "центр", "Meet me in the center.", "Встретимся в центре."],
+                ["change", "changes", "изменение", "Change is good.", "Изменения к лучшему."],
+                ["community", "communities", "община", "A strong community.", "Сильная община."],
+                ["company", "companies", "компания", "The company is growing.", "Компания растет."],
+                ["day", "days", "день", "It’s a sunny day.", "Сегодня солнечный день."],
+                ["death", "deaths", "смерть", "He faced death bravely.", "Он встретил смерть мужественно."],
+                ["desk", "desks", "письменный стол", "My desk is tidy.", "Мой стол в порядке."],
+                ["doctor", "doctors", "врач", "The doctor is kind.", "Доктор добрый."],
+                ["dog", "dogs", "собака", "The dog is barking.", "Собака лает."],
+                ["door", "doors", "дверь", "Open the door.", "Открой дверь."],
+                ["dream", "dreams", "мечта", "Follow your dream.", "Следуй за своей мечтой."],
+                ["dress", "dresses", "платье", "The dress is beautiful.", "Платье красивое."],
+                ["earth", "earths", "земля", "The Earth is round.", "Земля круглая."],
+                ["education", "educations", "образование", "Education is key.", "Образование — ключ к успеху."],
+                ["energy", "energies", "энергия", "Energy is vital.", "Энергия жизненно важна."],
+                ["environment", "environments", "окружающая среда", "Protect the environment.", "Защищайте окружающую среду."],
+                ["experience", "experiences", "опыт", "Experience is valuable.", "Опыт ценен."],
+                ["end", "ends", "конец", "This is the end.", "Это конец."],
+                ["eye", "eyes", "глаз", "Close your eyes.", "Закрой глаза."],
+
+                ["fact", "facts", "факт", "It's a known fact.", "Это известный факт."],
+                ["family", "families", "семья", "Family comes first.", "Семья на первом месте."],
+                ["fire", "fires", "огонь", "The fire is warm.", "Огонь теплый."],
+                ["fish", "fish", "рыба", "The fish is swimming.", "Рыба плывет."],
+                ["floor", "floors", "пол", "The floor is clean.", "Пол чистый."],
+                ["flower", "flowers", "цветок", "The flower is blooming.", "Цветок цветет."],
+                ["food", "foods", "пища", "Food is essential.", "Пища необходима."],
+                ["forest", "forests", "лес", "The forest is dense.", "Лес густой."],
+                ["friend", "friends", "друг", "He is my friend.", "Он мой друг."],
+                ["fruit", "fruits", "фрукт", "I love fresh fruit.", "Я люблю свежие фрукты."],
+                ["furniture", "furnitures", "мебель", "The furniture is new.", "Мебель новая."],
+                ["face", "faces", "лицо", "Her face is happy.", "Ее лицо счастливое."],
+                ["father", "fathers", "папа", "My father is kind.", "Мой папа добрый."],
+                
+                ["game", "games", "игра", "The game is fun.", "Игра веселая."],
+                ["glasses", "glasses", "очки", "He wears glasses.", "Он носит очки."],
+                ["grass", "grasses", "трава", "The grass is green.", "Трава зеленая."],
+                ["government", "governments", "правительство", "The government decided.", "Правительство решило."],
+                ["group", "groups", "группа", "The group is big.", "Группа большая."],
+                
+                ["happiness", "happinesses", "счастье", "Happiness is important.", "Счастье важно."],
+                ["hat", "hats", "шляпа", "Wear a hat.", "Надень шляпу."],
+                ["hate", "hates", "ненависть", "Hate is destructive.", "Ненависть разрушительна."],
+                ["health", "healths", "здоровье", "Health is wealth.", "Здоровье — богатство."],
+                ["hill", "hills", "холм", "We climbed the hill.", "Мы взобрались на холм."],
+                ["hobby", "hobbies", "хобби", "Reading is my hobby.", "Чтение — мое хобби."],
+                ["home", "homes", "дом", "Home is where the heart is.", "Дом там, где сердце."],
+                ["hope", "hopes", "надежда", "Never lose hope.", "Никогда не теряй надежду."],
+                ["hospital", "hospitals", "больница", "She works at the hospital.", "Она работает в больнице."],
+                ["house", "houses", "дом", "This is my house.", "Это мой дом."],
+                ["hand", "hands", "рука", "Hold my hand.", "Держи меня за руку."],
+                ["head", "heads", "голова", "My head hurts.", "У меня болит голова."],
+                ["history", "histories", "история", "History teaches us.", "История нас учит."],
+                ["hour", "hours", "час", "It takes an hour.", "Это займет час."],
+                ["idea", "ideas", "идея", "She has an idea.", "У нее есть идея."],
+                ["interest", "interests", "интерес", "I have an interest in art.", "У меня есть интерес к искусству."],
+                ["information", "informations", "информация", "Information is power.", "Информация — это сила."],
+                ["issue", "issues", "проблема", "This is a big issue.", "Это большая проблема."],
+                
+                ["jacket", "jackets", "куртка", "Put on a jacket.", "Надень куртку."],
+                ["job", "jobs", "работа", "He got a new job.", "Он получил новую работу."],
+                ["journey", "journeys", "путешествие", "Life is a journey.", "Жизнь — это путешествие."],
+                ["juice", "juices", "сок", "I like orange juice.", "Мне нравится апельсиновый сок."],
+                
+                ["kitchen", "kitchens", "кухня", "The kitchen is clean.", "Кухня чистая."],
+                ["knowledge", "knowledges", "знания", "Knowledge is valuable.", "Знания ценны."],
+                ["kid", "kids", "ребенок", "A kid is playing outside.", "Ребенок играет на улице."],
+                ["kind", "kinds", "добрый", "She is very kind.", "Она очень добрая."],
+                
+                ["lake", "lakes", "озеро", "The lake is calm.", "Озеро спокойное."],
+                ["lamp", "lamps", "лампа", "The lamp is on.", "Лампа включена."],
+                ["leaf", "leaves", "лист", "A leaf fell from the tree.", "Лист упал с дерева."],
+                ["lesson", "lessons", "урок", "The lesson was helpful.", "Урок был полезным."],
+                ["lie", "lies", "ложь", "A lie hurts trust.", "Ложь разрушает доверие."],
+                ["life", "lives", "жизнь", "Life is beautiful.", "Жизнь прекрасна."],
+                ["living room", "living rooms", "гостиная", "The living room is cozy.", "Гостиная уютная."],
+                ["love", "loves", "любовь", "Love is powerful.", "Любовь сильна."],
+                ["law", "laws", "закон", "The law protects us.", "Закон нас защищает."],
+                ["level", "levels", "уровень", "The water level is high.", "Уровень воды высокий."],
+                ["line", "lines", "линия", "Draw a straight line.", "Нарисуй прямую линию."],
+                ["lot", "lots", "много", "There are a lot of people here.", "Здесь много людей."],
+                ["meat", "meats", "мясо", "The meat is fresh.", "Мясо свежее."],
+                ["medicine", "medicines", "медицина", "Medicine is advancing.", "Медицина развивается."],
+                ["memory", "memories", "память", "She has a good memory.", "У нее хорошая память."],
+                ["milk", "milks", "молоко", "I drink milk every morning.", "Я пью молоко каждое утро."],
+                ["money", "monies", "деньги", "Money is important.", "Деньги важны."],
+                ["moon", "moons", "луна", "The moon is bright tonight.", "Сегодня ночью луна яркая."],
+                ["moonlight", "moonlights", "лунный свет", "The moonlight is beautiful.", "Лунный свет прекрасен."],
+                ["mountain", "mountains", "гора", "They climbed the mountain.", "Они взобрались на гору."],
+                ["movie", "movies", "фильм", "This movie is interesting.", "Этот фильм интересный."],
+                ["music", "musics", "музыка", "I love listening to music.", "Я люблю слушать музыку."],
+                ["man", "men", "мужчина", "He is a strong man.", "Он сильный мужчина."],
+                ["member", "members", "член", "She is a member of the team.", "Она член команды."],
+                ["might", "mights", "мощь", "With all his might, he lifted it.", "Со всей своей мощью он поднял это."],
+                ["minute", "minutes", "минута", "It will take a minute.", "Это займет минуту."],
+                ["month", "months", "месяц", "April is my favorite month.", "Апрель — мой любимый месяц."],
+                ["morning", "mornings", "утро", "Good morning!", "Доброе утро."],
+                ["mother", "mothers", "мать", "My mother is kind.", "Моя мать добрая."],
+
+                ["nature", "natures", "природа", "Nature is beautiful.", "Природа прекрасна."],
+                ["night", "nights", "ночь", "The night is quiet.", "Ночь тиха."],
+                ["name", "names", "имя", "What is your name?", "Как твое имя?"],
+                ["news", "news", "новости", "I have good news.", "У меня хорошие новости."],
+                ["nickname", "nicknames", "прозвище", "Her nickname is Sunny.", "Ее прозвище — Санни."],
+                ["number", "numbers", "число", "Pick a number.", "Выбери число."],
+
+                ["ocean", "oceans", "океан", "The ocean is vast.", "Океан обширен."],
+                ["office", "offices", "офис", "The office is quiet.", "В офисе тихо."],
+                ["pants", "pants", "брюки", "I bought new pants.", "Я купил новые брюки."],
+                ["paper", "papers", "бумага", "Write it on paper.", "Напиши это на бумаге."],
+                ["parent", "parents", "родитель", "My parent is supportive.", "Мой родитель поддерживает меня."],
+                ["patient", "patients", "пациент", "The patient is waiting.", "Пациент ждет."],
+                ["pen", "pens", "ручка", "I need a pen.", "Мне нужна ручка."],
+                ["pencil", "pencils", "карандаш", "Sharpen the pencil.", "Заточи карандаш."],
+                ["person", "persons", "человек", "He is a nice person.", "Он хороший человек."],
+                ["phone", "phones", "телефон", "I lost my phone.", "Я потерял телефон."],
+                ["power", "powers", "сила", "Knowledge is power.", "Знание — сила."],
+                ["problem", "problems", "проблема", "This is a difficult problem.", "Это сложная проблема."],
+                ["part", "parts", "часть", "This is my part.", "Это моя часть."],
+                ["party", "parties", "вечеринка", "The party was fun.", "Вечеринка была веселой."],
+                ["people", "people", "люди", "Many people attended.", "Много людей пришло."],
+                ["percent", "percents", "процент", "He got 90 percent correct.", "Он ответил на 90 процентов правильно."],
+                ["place", "places", "место", "This is a nice place.", "Это хорошее место."],
+                ["point", "points", "точка", "Make your point clear.", "Сформулируй свою точку зрения ясно."],
+                ["president", "presidents", "президент", "The president spoke today.", "Президент выступил сегодня."],
+                ["program", "programs", "программа", "The program starts now.", "Программа начинается сейчас."],
+
+                ["question", "questions", "вопрос", "I have a question.", "У меня есть вопрос."],
+
+                ["rain", "rains", "дождь", "The rain stopped.", "Дождь прекратился."],
+                ["reality", "realities", "реальность", "Face the reality.", "Смотри правде в глаза."],
+                ["river", "rivers", "река", "The river flows fast.", "Река течет быстро."],
+                ["road", "roads", "дорога", "The road is long.", "Дорога длинная."],
+                ["rock", "rocks", "скала", "The rock is huge.", "Скала огромная."],
+                ["room", "rooms", "комната", "This is my room.", "Это моя комната."],
+                ["root", "roots", "корень", "The tree has deep roots.", "У дерева глубокие корни."],
+                ["reason", "reasons", "причина", "Give me a reason.", "Дай мне причину."],
+                ["right", "rights", "верно", "You are right.", "Ты прав."],
+
+                ["school", "schools", "школа", "She goes to school.", "Она ходит в школу."],
+                ["science", "sciences", "наука", "Science is fascinating.", "Наука увлекательна."],
+                ["shirt", "shirts", "рубашка", "He wears a shirt.", "Он носит рубашку."],
+                ["shoe", "shoes", "обувь", "She bought new shoes.", "Она купила новую обувь."],
+                ["sister", "sisters", "сестра", "My sister is kind.", "Моя сестра добрая."],
+                ["skill", "skills", "навык", "He has many skills.", "У него много навыков."],
+                ["sky", "skies", "небо", "The sky is blue.", "Небо голубое."],
+                ["snow", "snows", "снег", "Snow is falling.", "Снег падает."],
+                ["socks", "socks", "носки", "I wear socks.", "Я ношу носки."],
+                ["sofa", "sofas", "диван", "The sofa is comfortable.", "Диван удобный."],
+                ["soil", "soils", "почва", "The soil is fertile.", "Почва плодородная."],
+                ["solution", "solutions", "решение", "We found a solution.", "Мы нашли решение."],
+                ["space", "spaces", "космос", "Space is vast.", "Космос обширен."],
+                ["star", "stars", "звезда", "A star is shining.", "Звезда светит."],
+                ["starlight", "starlights", "звездный свет", "The starlight is beautiful.", "Звездный свет прекрасен."],
+                ["stone", "stones", "камень", "He threw a stone.", "Он бросил камень."],
+                ["street", "streets", "улица", "The street is busy.", "Улица оживленная."],
+                ["student", "students", "студент", "The student is studying.", "Студент учится."],
+                ["success", "successes", "успех", "Success is important.", "Успех важен."],
+                ["sun", "suns", "солнце", "The sun is bright.", "Солнце яркое."],
+                ["sunlight", "sunlights", "солнечный свет", "Sunlight warms the earth.", "Солнечный свет греет землю."],
+                ["service", "services", "служба", "The service is excellent.", "Служба отличная."],
+                ["side", "sides", "сторона", "Choose a side.", "Выбери сторону."],
+                ["state", "states", "состояние", "The state is stable.", "Состояние стабильное."],
+                ["story", "stories", "история", "Tell me a story.", "Расскажи мне историю."],
+                ["study", "studies", "изучать", "She studies hard.", "Она усердно учится."],
+                ["system", "systems", "система", "The system works well.", "Система работает хорошо."],
+
+                ["table", "tables", "стол", "The table is wooden.", "Стол деревянный."],
+                ["talent", "talents", "талант", "She has a talent for singing.", "У нее есть талант к пению."],
+                ["tea", "teas", "чай", "I like green tea.", "Мне нравится зеленый чай."],
+                ["teacher", "teachers", "учитель", "The teacher is kind.", "Учитель добрый."],
+                ["technology", "technologies", "технология", "Technology is advancing.", "Технология развивается."],
+                ["time", "times", "время", "Time is precious.", "Время ценно."],
+                ["town", "towns", "городок", "The town is small.", "Городок маленький."],
+                ["tree", "trees", "дерево", "The tree is tall.", "Дерево высокое."],
+                ["truth", "truths", "правда", "Tell the truth.", "Скажи правду."],
+                ["team", "teams", "команда", "Our team is strong.", "Наша команда сильная."],
+                ["thing", "things", "вещь", "This thing is new.", "Эта вещь новая."],
+
+                ["university", "universities", "университет", "She attends university.", "Она учится в университете."],
+
+                ["vegetable", "vegetables", "овощ", "I eat vegetables daily.", "Я ем овощи ежедневно."],
+                ["village", "villages", "деревня", "The village is peaceful.", "Деревня спокойная."],
+
+                ["watch", "watches", "часы", "I wear a watch.", "Я ношу часы."],
+                ["water", "waters", "вода", "Drink water regularly.", "Пейте воду регулярно."],
+                ["weather", "weathers", "погода", "The weather is nice.", "Погода хорошая."],
+                ["wind", "winds", "ветер", "The wind is strong.", "Ветер сильный."],
+                ["window", "windows", "окно", "Open the window.", "Открой окно."],
+                ["world", "worlds", "мир", "The world is big.", "Мир большой."],
+                ["war", "wars", "война", "War is destructive.", "Война разрушительна."],
+                ["week", "weeks", "неделя", "It takes a week.", "Это займет неделю."],
+                ["woman", "women", "женщина", "The woman is kind.", "Женщина добрая."],
+                ["word", "words", "слово", "Say a word.", "Скажи слово."],
+                ["work", "works", "работа", "Work hard.", "Работай усердно."],
+
+                ["year", "years", "год", "This year is great.", "Этот год замечательный."]
+            ];
+
+            const generateExercisesMedium = (() => {
+                let index = 0; 
+
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        
+                        let sentence = `${item[4]} — <input type="text" class="input-size" oninput='checkAnswer(this, "${item[3]}")'/> 
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[3]}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> 
+                        <span class="text-span" id="clue-medium-${index}">${item[3]}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+            generateExercisesMedium(exercises_medium_1, document.getElementById('exerciseForm_1'));
+
+            function playSentence(sentence){
+                practice.speak(sentence);
+            }
+        </script>
+    </div>
+</body>
+</html>
