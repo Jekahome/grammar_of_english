@@ -146,9 +146,74 @@
             <summary>Личная информация</summary>
             <form id="exerciseForm_1"></form>
         </details>
-
-
-
+        <details>
+            <summary>Приветствия и прощания</summary>
+            <form id="exerciseForm_2"></form>
+        </details>
+        <details>
+            <summary>Числа и время</summary>
+            <form id="exerciseForm_3"></form>
+        </details>
+        <details>
+            <summary>Дом и жилье</summary>
+            <form id="exerciseForm_4"></form>
+        </details>
+        <details>
+            <summary>Еда и напитки</summary>
+            <form id="exerciseForm_5"></form>
+        </details>
+        <details>
+            <summary>Работа и профессии</summary>
+            <form id="exerciseForm_6"></form>
+        </details>
+        <details>
+            <summary>Покупки</summary>
+            <form id="exerciseForm_7"></form>
+        </details>
+        <details>
+            <summary>Здоровье</summary>
+            <form id="exerciseForm_8"></form>
+        </details>
+        <details>
+            <summary>Одежда</summary>
+            <form id="exerciseForm_9"></form>
+        </details>
+        <details>
+            <summary>Погода</summary>
+            <form id="exerciseForm_10"></form>
+        </details>
+        <details>
+            <summary>Хобби и увлечения</summary>
+            <form id="exerciseForm_11"></form>
+        </details>
+        <details>
+            <summary>Транспорт</summary>
+            <form id="exerciseForm_12"></form>
+        </details>
+        <details>
+            <summary>Ежедневная рутина</summary>
+            <form id="exerciseForm_13"></form>
+        </details>
+        <details>
+            <summary>Города и страны</summary>
+            <form id="exerciseForm_14"></form>
+        </details>
+        <details>
+            <summary>Путешествия и отпуск</summary>
+            <form id="exerciseForm_15"></form>
+        </details>
+        <details>
+            <summary>Школа и учеба</summary>
+            <form id="exerciseForm_16"></form>
+        </details>
+        <details>
+            <summary>Животные</summary>
+            <form id="exerciseForm_17"></form>
+        </details>
+        <details>
+            <summary>Тело и здоровье</summary>
+            <form id="exerciseForm_18"></form>
+        </details>
 
         <script>
             // Личная информация
@@ -759,15 +824,49 @@
                         let sentence = `<input type="text" class="input-size" oninput='checkAnswer(this, "${question_en}")'/> — <input type="text" class="input-size" oninput='checkAnswer(this, "${answer_en}")'/> 
                         <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${question_en} ${answer_en}")'>
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> 
-                        <span class="text-span" id="clue-medium-${index}">${question_en} ${answer_en}</span>
+                        <span class="text-span" id="clue-medium-${index}">${question_en} — ${answer_en}</span>
                         <br>${question_ru} — ${answer_ru}`;
                         exerciseForm.innerHTML += `<p>${sentence}</p>`;
                     });
                 };
             })();
 
-            generateExercisesMedium(exercises_personal_information, document.getElementById('exerciseForm_1'));
+            const generateExercisesMedium2 = (() => {
+                let index = 0; 
 
+                return (exercises, exerciseForm) => {
+                    exercises.forEach(item => {
+                        index += 1;  
+                        let question_en = item[0].replace(/'/g, "&#39;");
+                        let answer_ru = item[1].replace(/'/g, "&#39;");
+
+                        let sentence = `${answer_ru} — <input type="text" class="input-size" oninput='checkAnswer(this, "${question_en}")'/> 
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${question_en}")'>
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-2-${index}')"> 
+                        <span class="text-span" id="clue-medium-2-${index}">${question_en}</span>`;
+                        exerciseForm.innerHTML += `<p>${sentence}</p>`;
+                    });
+                };
+            })();
+            generateExercisesMedium(exercises_personal_information, document.getElementById('exerciseForm_1'));
+            generateExercisesMedium2(exercises_greetings, document.getElementById('exerciseForm_2'));
+            generateExercisesMedium2(exercises_date_time, document.getElementById('exerciseForm_3'));
+            generateExercisesMedium(exercises_home, document.getElementById('exerciseForm_4'));
+            generateExercisesMedium(exercises_food, document.getElementById('exerciseForm_5'));
+            generateExercisesMedium(exercises_work, document.getElementById('exerciseForm_6'));
+            generateExercisesMedium(exercises_shopping, document.getElementById('exerciseForm_7'));
+            generateExercisesMedium(exercises_health, document.getElementById('exerciseForm_8'));
+            generateExercisesMedium(exercises_clothing, document.getElementById('exerciseForm_9'));
+            generateExercisesMedium(exercises_weather, document.getElementById('exerciseForm_10'));
+            generateExercisesMedium(exercises_hobbies, document.getElementById('exerciseForm_11'));
+            generateExercisesMedium(exercises_transport, document.getElementById('exerciseForm_12'));
+            generateExercisesMedium(exercises_daily_routine, document.getElementById('exerciseForm_13'));
+            generateExercisesMedium(exercises_cities_and_countries, document.getElementById('exerciseForm_14'));
+            generateExercisesMedium(exercises_travel_and_vacation, document.getElementById('exerciseForm_15'));
+            generateExercisesMedium(exercises_school_and_study, document.getElementById('exerciseForm_16'));
+            generateExercisesMedium(exercises_animals, document.getElementById('exerciseForm_17'));
+            generateExercisesMedium(exercises_body_and_health, document.getElementById('exerciseForm_18'));
+            
             function playSentence(sentence){
                 practice.speak(sentence);
             }
