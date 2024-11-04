@@ -1,8 +1,25 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js";
 
-import { getAuth, sendPasswordResetEmail, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
+import { getAuth, sendPasswordResetEmail, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut, GoogleAuthProvider, signInWithPopup  } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
 import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+
+const provider = new GoogleAuthProvider();
+
+
+export async function signInWithPopupMethod() {
+    try {
+        const result = await signInWithPopup(auth, provider);
+        currentUser = result.user;
+        console.log('User signed in:', currentUser);
+        return currentUser;
+    } catch (error) {
+        console.error('Error during sign in with popup:', error);
+        throw error;
+    }
+}
+
 
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -56,7 +73,7 @@ export async function signUp(email, password) {
 }
 
 // Функция входа
-export async function signIn(email, password) {
+/*export async function signIn(email, password) {
     try {
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
         currentUser = userCredential.user;
@@ -66,7 +83,7 @@ export async function signIn(email, password) {
         console.error('Error signing in:', error);
         throw error; 
     }
-}
+}*/
 
 // Функция сброса пароля
 export async function resetPassword(email) {
@@ -109,7 +126,24 @@ async function click_logout_btn(loginBlock){
     add_input_login(loginBlock);
 }
 
-async function click_sign_in_btn(loginBlock){
+async function click_sign_in_btn(loginBlock) {
+    try {
+        const user = await signInWithPopupMethod(); // Используем signInWithPopupMethod вместо signIn
+
+        loginBlock.innerHTML = `
+            <p>Welcome, ${user.email.split('@')[0]}</p>
+            <button id="logout-btn">Log Out</button>
+        `;
+
+        document.getElementById('logout-btn').addEventListener('click', async () => {
+            click_logout_btn(loginBlock);
+        });
+    } catch (error) {
+        console.error('Error during sign in:', error);
+    }
+}
+
+/*async function click_sign_in_btn(loginBlock){
     const email = document.getElementById('email-input').value;
     const password = document.getElementById('password-input').value;
     try {
@@ -127,9 +161,23 @@ async function click_sign_in_btn(loginBlock){
     } catch (error) {
         console.error('Error during sign in:', error);
     }
+}*/
+
+function add_input_login(loginBlock) {
+    loginBlock.innerHTML = `
+        <button id="google-sign-in-btn">Sign In with Google</button>
+    `;
+
+    document.getElementById('google-sign-in-btn').addEventListener('click', async () => {
+        try {
+            await click_sign_in_btn(loginBlock); // Вход через Google
+        } catch (error) {
+            console.error('Error during Google sign in:', error);
+        }
+    });
 }
 
-function add_input_login(loginBlock){
+/*function add_input_login(loginBlock){
     // Пользователь не авторизован, показываем форму регистрации и входа
     loginBlock.innerHTML = `
         <input type="email" id="email-input" placeholder="Email" required>
@@ -173,7 +221,7 @@ function add_input_login(loginBlock){
         }
         await resetPassword(email);
     });
-}
+}*/
 
 // Функция для проверки авторизации и модификации страницы
 function checkAuthAndModifyPage() {
