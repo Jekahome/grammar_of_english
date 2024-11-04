@@ -311,8 +311,6 @@
 
             // Дом и жилье
             const exercises_home = [
-                [["What is your favorite food?", "Какое твое любимое блюдо?"], ["My favorite food is pizza.", "Мое любимое блюдо — пицца."]],
-
                 [["What parts does your house have?", "Какие части есть у твоего дома?"], ["My house has a kitchen, a living room, a bedroom, a bathroom, and a dining room.", "В моем доме есть кухня, гостиная, спальня, ванная и столовая."]],
                 
                 [["What furniture do you have in your living room?", "Какая мебель есть в твоей гостиной?"], ["In my living room, there is a sofa, a coffee table, an armchair, and a TV stand.", "В моей гостиной есть диван, кофейный столик, кресло и тумба для телевизора."]],
@@ -341,7 +339,7 @@
                 
                 [["Do you have curtains or blinds in your bedroom?", "У тебя есть шторы или жалюзи в спальне?"], ["Yes, I have curtains in my bedroom.", "Да, у меня есть шторы в спальне."]],
                 
-                [["What appliances do you use in your kitchen?", "Какие приборы ты используешь на кухне?"], ["I use a blender, a toaster, and a coffee maker.", "Я использую блендер, тостер и кофеварку."]]
+                [["What appliances do you use in your kitchen?", "Какие приборы ты используешь на кухне?"], ["I use a blender, a toaster, and a coffee maker.", "Я использую блендер, тостер и кофеварку."]],
                 
                 [["What color are the walls in your living room?", "Какого цвета стены в твоей гостиной?"], ["The walls are painted light blue.", "Стены окрашены в светло-голубой цвет."]],
                 
@@ -852,11 +850,11 @@
                 };
             })();
 
-            /*generateExercisesMedium(exercises_personal_information, document.getElementById('exerciseForm_1'));
+            generateExercisesMedium(exercises_personal_information, document.getElementById('exerciseForm_1'));
             generateExercisesMedium2(exercises_greetings, document.getElementById('exerciseForm_2'));
-            generateExercisesMedium2(exercises_date_time, document.getElementById('exerciseForm_3'));*/
+            generateExercisesMedium2(exercises_date_time, document.getElementById('exerciseForm_3'));
             generateExercisesMedium(exercises_home, document.getElementById('exerciseForm_4'));
-            /*generateExercisesMedium(exercises_food, document.getElementById('exerciseForm_5'));
+            generateExercisesMedium(exercises_food, document.getElementById('exerciseForm_5'));
             generateExercisesMedium(exercises_work, document.getElementById('exerciseForm_6'));
             generateExercisesMedium(exercises_shopping, document.getElementById('exerciseForm_7'));
             generateExercisesMedium(exercises_health, document.getElementById('exerciseForm_8'));
@@ -869,7 +867,7 @@
             generateExercisesMedium(exercises_travel_and_vacation, document.getElementById('exerciseForm_15'));
             generateExercisesMedium(exercises_school_and_study, document.getElementById('exerciseForm_16'));
             generateExercisesMedium(exercises_animals, document.getElementById('exerciseForm_17'));
-            generateExercisesMedium(exercises_body_and_health, document.getElementById('exerciseForm_18'));*/
+            generateExercisesMedium(exercises_body_and_health, document.getElementById('exerciseForm_18'));
             
             function playSentence(sentence){
                 practice.speak(sentence);
