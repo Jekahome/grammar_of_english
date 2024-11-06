@@ -327,7 +327,7 @@
                 exercises.forEach(item => {
                     index +=1;
                     let answer = item[0].replace(/'/g, "&#39;");
-                    let example = shuffleSentence(item[0]);
+                    let example = shuffleSentence(answer);
                     let ex = `<i>${item[1]}</i> – ${example} <input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />
                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-${index}')"> 
                     <span class="text-span" id="clue-${index}">${answer}</span>
