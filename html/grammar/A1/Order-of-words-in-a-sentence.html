@@ -211,7 +211,7 @@
             ["My brother works in an office", "Мой брат работает в офисе"],
             ["You study English every day", "Ты учишь английский каждый день"],
             ["The kids eat lunch at school", "Дети обедают в школе"],
-            ["She visits her grandmother every week", "Она навещает бабушку каждую неделю"],
+            ["She visits her grandmother every week", "Она навещает свою бабушку каждую неделю"],
             ["I listen to music while I work", "Я слушаю музыку, когда работаю"],
             ["They go to the gym in the evening", "Они ходят в спортзал вечером"],
             ["We travel by car", "Мы путешествуем на машине"],
@@ -326,10 +326,11 @@
             return (exercises, exerciseForm) => {
                 exercises.forEach(item => {
                     index +=1;
+                    let answer = item[0].replace(/'/g, "&#39;");
                     let example = shuffleSentence(item[0]);
-                    let ex = `<i>${item[1]}</i> – ${example} <input type="text" class="input-size" oninput="checkAnswer(this, '${item[0]}')" />
+                    let ex = `<i>${item[1]}</i> – ${example} <input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />
                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-${index}')"> 
-                    <span class="text-span" id="clue-${index}">${item[0]}</span>
+                    <span class="text-span" id="clue-${index}">${answer}</span>
                     `;
                     
                     exerciseForm.innerHTML += `<p>${ex}</p>`;

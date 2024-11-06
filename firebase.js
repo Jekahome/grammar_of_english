@@ -84,7 +84,7 @@ export async function signUp(email, password) {
         throw error; 
     }
 }*/
-
+/*
 // Функция сброса пароля
 export async function resetPassword(email) {
     try {
@@ -95,7 +95,7 @@ export async function resetPassword(email) {
         console.error('Error sending password reset email:', error);
         alert('Error sending password reset email. Please try again.');
     }
-}
+}*/
 
 // Функция выхода из аккаунта
 export async function logOut() {
