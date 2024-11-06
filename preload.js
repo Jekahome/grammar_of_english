@@ -29,10 +29,10 @@ function checkAnswer(inputElement, correctAnswer) {
         inputElement.style.width = (inputElement.value.length + 1) + 'ch';
     }
     let userAnswer = inputElement.value.trim().toLowerCase();
-    userAnswer = userAnswer.replace("’","'");
+    userAnswer = userAnswer.replace("’","'").replace(/'/g, "&#39;");
 
     let normalizedCorrectAnswer = correctAnswer.trim().toLowerCase(); 
-    normalizedCorrectAnswer = normalizedCorrectAnswer.replace("’","'");
+    normalizedCorrectAnswer = normalizedCorrectAnswer.replace("’","'").replace(/'/g, "&#39;");
     
     const contractions = {
         "don't": "do not",
