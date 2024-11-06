@@ -401,7 +401,7 @@ const a1_verbs = [
         "He became very successful. — Он стал очень успешным.",
         "They have become close friends. — Они стали близкими друзьями."
     ]],
-    ["be", "was (were)", "been", "быть, являться", [
+    ["be", "was","were", "been", "быть, являться", [
         "I want to be a writer. — Я хочу быть писателем.",
         "She was at the party. — Она была на вечеринке.",
         "We have been friends for years. — Мы были друзьями много лет."
@@ -1679,6 +1679,28 @@ const a1_pronouns = [
     ["themselves", "они сами"]
 ];
 
+const a1_prepositions = [
+    ["of", "из, о, от, для"],
+    ["in", "в, внутри"],
+    ["on", "на"],
+    ["at", "в, на (место или время)"],
+    ["by", "у, возле, рядом, с помощью"],
+    ["with", "с"],
+    ["about", "о, об"],
+    ["for", "для"],
+    ["to", "к, в, на"],
+    ["from", "от, с"],
+    ["under", "под"],
+    ["over", "над"],
+    ["between", "между"],
+    ["around", "вокруг"],
+    ["through", "через"],
+    ["behind", "за"],
+    ["next to", "рядом с"],
+    ["before", "до"],
+    ["after", "после"]
+];
+
 function checkWordsInArrays(sentence, arrays) {
     // Приводим предложение к нижнему регистру и разбиваем на слова
     const words = sentence.toLowerCase().split(" ").filter(word => word.length > 0);
@@ -1693,6 +1715,7 @@ function checkWordsInArrays(sentence, arrays) {
 
     for (let word of words) {
         if (!wordExists(word)) {
+            console.log(`${sentence} word:[${word}]`);
             return false;
         }
     }
@@ -1817,11 +1840,69 @@ const exercises_medium_1 = [
     ["yet", "еще, уже", "I haven't finished yet.", "Я еще не закончил."]
 ];
 
+const base = [
+    ["a", ""],["an", ""],["the", ""],["is", ""],["are", ""],["am", ""],["not", ""],["cannot",""],
+    ,["one",""],["two",""],["three",""],["four",""],["five",""],["six",""],["seven",""],["eight",""],["nine",""],["ten",""]
 
+];
 
+const contractions = {
+    "don't": "do not",
+    "can't": "cannot",
+    "won't": "will not",
+    "isn't": "is not",
+    "aren't": "are not",
+    "i'm": "i am",
+    "he's": "he is",
+    "she's": "she is",
+    "it's": "it is",
+    "we're": "we are",
+    "they're": "they are",
+    "i've": "i have",
+    "you've": "you have",
+    "we've": "we have",
+    "they've": "they have",
+    "i'll": "i will",
+    "you'll": "you will",
+    "he'll": "he will",
+    "she'll": "she will",
+    "it'll": "it will",
+    "we'll": "we will",
+    "they'll": "they will",
+    "i'd": "i would",
+    "you'd": "you would",
+    "he'd": "he would",
+    "she'd": "she would",
+    "it'd": "it would",
+    "we'd": "we would",
+    "they'd": "they would",
+    "haven't":"have not",
+    "let's":"let us"
+};
+
+function replaceContractions(text) {
+    text = text.trim().toLowerCase().replace(/[^a-zа-яё ']/g, '');
+    for (const contraction in contractions) {
+        const regex = new RegExp(`\\b${contraction}\\b`, 'gi');
+        text = text.replace(regex, contractions[contraction]);
+    }
+    return text;
+}
 
 // ===============================================================================================================================
 // Проверить все примеры в темах
-const sentence = "I love you";
-console.log(checkWordsInArrays(sentence, [a1_pronouns, a1_conjunctions, a1_adjectives, a1_verbs, a1_nouns, a1_adverbs])); // true
 
+function check_sentence(arr){
+    for (let i=0; i<arr.length; i++){
+        let sentence = replaceContractions(arr[i][2]);
+        if (checkWordsInArrays(sentence, [base, a1_prepositions, a1_pronouns, a1_conjunctions, a1_adjectives, a1_verbs, a1_nouns, a1_adverbs]) === false){
+            
+        }  else{
+            
+        } 
+    }
+
+}
+
+
+check_sentence(exercises_medium_1);
