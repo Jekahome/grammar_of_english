@@ -63,7 +63,9 @@ function checkAnswer(inputElement, correctAnswer) {
         "she'd": "she would",
         "it'd": "it would",
         "we'd": "we would",
-        "they'd": "they would"
+        "they'd": "they would",
+        "haven't":"have not",
+        "let's":"let us"
     };
 
     function replaceContractions(text) {

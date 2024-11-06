@@ -332,7 +332,7 @@
                         index += 1;  
                         let answer = item[2].replace(/'/g, "&#39;");
                         let question = item[0].replace(/'/g, "&#39;");
-                        let sentence = `${question} — <input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />
+                        let sentence = `${question} — <input type="text" class="input-size" oninput='checkAnswer(this,"${answer}")' />
                         <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>
                         <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-4-${index}')"> 
                         <span class="text-span" id="clue-easy-4-${index}">${item[2]}</span>
