@@ -185,23 +185,34 @@
         <h2>Упражнения</h2>
         <details>
             <summary>Собрать корректное предложение с прямым порядком</summary>
-            <p>После прочтения попробовать построить предложение на английском в уме, произнести его</p>
+            <p>(После прочтения попробовать построить предложение на английском в уме, произнести его)</p>
             <form id="exerciseForm_1"></form>
         </details>
         <details>
             <summary>Собрать корректное предложение с непрямым порядком</summary>
-            <p>После прочтения попробовать построить предложение на английском в уме, произнести его</p>
+            <p>(После прочтения попробовать построить предложение на английском в уме, произнести его)</p>
             <form id="exerciseForm_2"></form>
         </details>
 
         <details>
             <summary>Собрать корректное предложение</summary>
-            <p>После прочтения попробовать построить предложение на английском в уме, произнести его</p>
+            <p>(После прочтения попробовать построить предложение на английском в уме, произнести его)</p>
             <form id="exerciseForm_3"></form>
         </details>
 
     </div>
+    <script src='/grammar_of_english/practice.js'></script>
     <script>
+
+        function recognition(id, recognition){
+            console.log(`id=${id} recognition=${recognition}`);
+            var el = document.getElementById(id);
+            el.value = recognition;
+            const inputEvent = new Event('input');
+            el.dispatchEvent(inputEvent);
+        }
+
+        let practice = new Practice({callback: recognition});
         const exercises_direct = [
             ["I go home", "Я иду домой"],
             ["People were here", "Здесь были люди"],
@@ -332,6 +343,7 @@
                     let answer = item[0].replace(/'/g, "&#39;");
                     let example = shuffleSentence(answer);
                     let ex = `<i>${item[1]}</i> – ${example} <input type="text" class="input-size" oninput='checkAnswer(this, "${answer}")' />
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>
                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-${index}')"> 
                     <span class="text-span" id="clue-${index}">${answer}</span>
                     `;
@@ -345,7 +357,9 @@
         generateExercises(getRandomThird(exercises_indirect), document.getElementById('exerciseForm_2'));
         generateExercises(getRandomThird(exercises_direct.concat(exercises_indirect)), document.getElementById('exerciseForm_3'));
 
-
+        function playSentence(sentence){
+                practice.speak(sentence);
+        }
     </script>
 </body>
 </html>
