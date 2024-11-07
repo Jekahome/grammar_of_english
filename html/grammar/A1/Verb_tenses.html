@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Временные формы глагола</title>
+    <link rel="stylesheet" href="/grammar_of_english/css/styles.css">
+</head>
+<body>
+    <script type="module" src="/grammar_of_english/firebase.js"></script>
+    <script src="/grammar_of_english/preload.js"></script>
+
+    <div class="left-block">
+        <div id="login-block"></div>
+    </div>
+    
+    <div class="right-block">
+        <h1>Временные формы глагола</h1>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 15px;
+                text-align: center;
+            }
+        </style>
+    
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>PRESENT</th>
+                <th>PAST</th>
+                <th>FUTURE</th>
+            </tr>
+            <tr style="border-top: 3px solid black;">
+                <td rowspan="3">SIMPLE<br>Действие "вообще",<br>Регулярно повторяющееся действие.</td>
+                <td><strong>+</strong></td>
+                <td><strong>I break</strong><br>Я ломаю</td>
+                <td><strong>I broke</strong><br>Я сломал</td>
+                <td><strong>I will break</strong><br>Я сломаю</td>
+            </tr>
+            <tr>
+                <td><strong>-</strong></td>
+                <td><strong>I do not break</strong><br>Я не ломаю</td>
+                <td><strong>I did not break</strong><br>Я не сломал</td>
+                <td><strong>I will not break</strong><br>Я не сломаю</td>
+            </tr>
+            <tr>
+                <td><strong>?</strong></td>
+                <td><strong>Do I break?</strong><br>Я ломаю?</td>
+                <td><strong>Did I break?</strong><br>Я сломал?</td>
+                <td><strong>Will I break?</strong><br>Я сломаю?</td>
+            </tr>
+    
+    
+            <tr style="border-top: 3px solid black;">
+                <td rowspan="3">CONTINUOUS<br>Действие происходящее в определенный момент или период времени.<br>Действие запланированное на ближайшее будушее (Present Continuous)</td>
+                <td><strong>+</strong></td>
+                <td><strong>I am breaking</strong><br>Я ломаю (сейчас)</td>
+                <td><strong>I was breaking</strong><br>Я ломал (в определенный момент в прошлом)</td>
+                <td><strong>I will be breaking</strong><br>Я буду ломать (в определенный момент в будущем)</td>
+            </tr>
+            <tr>
+                <td><strong>-</strong></td>
+                <td><strong>I am not breaking</strong><br>Я не ломаю (сейчас)</td>
+                <td><strong>I was not breaking</strong><br>Я не ломал (в определенный момент в прошлом)</td>
+                <td><strong>I will not be breaking</strong><br>Я не буду ломать (в определенный момент в будущем)</td>
+            </tr>
+            <tr>
+                <td><strong>?</strong></td>
+                <td><strong>Am I breaking?</strong><br>Я ломаю (сейчас)?</td>
+                <td><strong>Was I breaking?</strong><br>Я ломал (в определенный момент в прошлом)?</td>
+                <td><strong>Will I be breaking?</strong><br>Я буду ломать (в определенный момент в будущем)?</td>
+            </tr>
+    
+    
+            <tr style="border-top: 3px solid black;">
+                <td rowspan="3">PERFECT<br>Действие, завершенное <br>в момент речи, его результат имеется налицо к моменту речи.</td>
+                <td><strong>+</strong></td>
+                <td><strong>I have broken</strong><br>Я сломал (уже к настоящему моменту)</td>
+                <td><strong>I had broken</strong><br>Я сломал (к определенному моменту в прошлом)</td>
+                <td><strong>I will have broken</strong><br>Я сломаю (к определенному моменту в будущем)</td>
+            </tr>
+            <tr>
+                <td><strong>-</strong></td>
+                <td><strong>I have not broken</strong><br>Я не сломал (к настоящему моменту)</td>
+                <td><strong>I had not broken</strong><br>Я не сломал (к определенному моменту в прошлом)</td>
+                <td><strong>I will not have broken</strong><br>Я не сломаю (к определенному моменту в будущем)</td>
+            </tr>
+            <tr>
+                <td><strong>?</strong></td>
+                <td><strong>Have I broken?</strong><br>Я сломал (уже к настоящему моменту)?</td>
+                <td><strong>Had I broken?</strong><br>Я сломал (к определенному моменту в прошлом)?</td>
+                <td><strong>Will I have broken?</strong><br>Я сломаю (к определенному моменту в будущем)?</td>
+            </tr>
+        
+    
+            <tr style="border-top: 3px solid black;">
+                <td rowspan="3">PERFECT CONTINUOUS<br>Действие начавшееся и закончившееся до момента речи или только что.</td>
+                <td><strong>+</strong></td>
+                <td><strong>I have been breaking</strong><br>Я ломаю (какое-то время до настоящего момента)</td>
+                <td><strong>I had been breaking</strong><br>Я ломал (какое-то время до определенного момента в прошлом)</td>
+                <td><strong>I will have been breaking</strong><br>Я буду ломать (какое-то время до определенного момента в будущем)</td>
+            </tr>
+            <tr>
+                <td><strong>-</strong></td>
+                <td><strong>I have not been breaking</strong><br>Я не ломаю (какое-то время до настоящего момента)</td>
+                <td><strong>I had not been breaking</strong><br>Я не ломал (какое-то время до определенного момента в прошлом)</td>
+                <td><strong>I will not have been breaking</strong><br>Я не буду ломать (какое-то время до определенного момента в будущем)</td>
+            </tr>
+            <tr>
+                <td><strong>?</strong></td>
+                <td><strong>Have I been breaking?</strong><br>Я ломаю (какое-то время до настоящего момента)?</td>
+                <td><strong>Had I been breaking?</strong><br>Я ломал (какое-то время до определенного момента в прошлом)?</td>
+                <td><strong>Will I have been breaking?</strong><br>Я буду ломать (какое-то время до определенного момента в будущем)?</td>
+            </tr>
+    
+        </table>
+
+
+    </div>
+</body>
+</html>
