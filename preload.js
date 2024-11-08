@@ -66,7 +66,8 @@ function checkAnswer(inputElement, correctAnswer) {
         "they'd": "they would",
         "haven't":"have not",
         "let's":"let us",
-        "couldn't":"could not"
+        "couldn't":"could not",
+        "doesn't":"does not",
     };
 
     function replaceContractions(text) {
