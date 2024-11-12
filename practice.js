@@ -21,6 +21,7 @@ class Practice {
     speak(val){
         console.log(val);
         // Browser speak
+        Practice.synth.cancel();
         Practice.utterThis.text = val;
         Practice.synth.speak(Practice.utterThis);
         Practice.utterThis.text = null;                
