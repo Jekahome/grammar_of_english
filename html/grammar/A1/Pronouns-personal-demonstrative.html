@@ -890,6 +890,7 @@
                     let origin = item[0];
                     let answers = item[2];
                     answers.forEach(answer => {
+                        answer = answer.replace(/'/g, "&#39;");
                         sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
                         origin = origin.replace('___', answer);
                     });
@@ -917,10 +918,11 @@
                 exercises.forEach(item => {
                     index += 1;  
                     let sentence = item[0];
-                    sentence = `${sentence} — <input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")'/> 
-                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[1]}")'>
+                    let answer = item[1].replace(/'/g, "&#39;");
+                    sentence = `${sentence} — <input type="text" class="input-size" oninput='checkAnswer(this, "${answer}")'/> 
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>
                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> 
-                    <span class="text-span" id="clue-medium-${index}">${item[1]}</span>`;
+                    <span class="text-span" id="clue-medium-${index}">${answer}</span>`;
                     exerciseForm.innerHTML += `<p>${sentence}</p>`;
                 });
             };
@@ -932,12 +934,13 @@
             return (exercises, exerciseForm) => {
                 exercises.forEach(item => {
                     index += 1;  
-
-                    sentence = `<img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]}")'> 
-                    <input type="text" class="input-size" oninput='checkAnswer(this, "${item[0]}")'/> —
-                    <input type="text" class="input-size" oninput='checkAnswer(this, "${item[1]}")'/> 
+                    let answer = item[0].replace(/'/g, "&#39;");
+                    let answer1 = item[1].replace(/'/g, "&#39;");
+                    sentence = `<img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'> 
+                    <input type="text" class="input-size" oninput='checkAnswer(this, "${answer}")'/> —
+                    <input type="text" class="input-size" oninput='checkAnswer(this, "${answer1}")'/> 
                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-hard-${index}')"> 
-                    <span class="text-span" id="clue-hard-${index}">${item[0]} — <i>${item[1]}</i></span>`;
+                    <span class="text-span" id="clue-hard-${index}">${answer} — <i>${answer1}</i></span>`;
                     exerciseForm.innerHTML += `<p>${sentence}</p>`;
                 });
             };
@@ -949,11 +952,11 @@
             return (exercises, exerciseForm) => {
                 exercises.forEach(item => {
                     index += 1;  
-
+                    let answer = item[0].replace(/'/g, "&#39;");
                     sentence = `<span><i>${item[1]}</i></span>
                     <img src="/grammar_of_english/img/microphone.png" class="icon" onclick='micSentence(this,"input-extreme-${index}")'> 
-                    <input type="text" class="input-size" id='input-extreme-${index}' oninput='checkAnswer(this, "${item[0]}")'/>
-                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${item[0]}")'>`;
+                    <input type="text" class="input-size" id='input-extreme-${index}' oninput='checkAnswer(this, "${answer}")'/>
+                    <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'>`;
                     exerciseForm.innerHTML += `<p>${sentence}</p>`;
                 });
             };
@@ -980,7 +983,14 @@
                 let sentence = item[0];
                 let answers = item[1];
                 answers.forEach(answer => {
-                    sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />`);
+                    
+                    let help = sentence.replace("___",answer).replace(/'/g, "&#39;");
+                    answer = answer.replace(/'/g, "&#39;");
+                    sentence = sentence.replace('___', `<input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />
+                     <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${help}")'>
+                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                     <span class="text-span" id="clue-easy-${index}">${help}</span>
+                    `);
                 });
 
                 exerciseForm.innerHTML += `<p>${sentence}</p>`;
