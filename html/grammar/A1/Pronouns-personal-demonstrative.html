@@ -983,7 +983,6 @@
             exercises.forEach(item => {
                 let sentence = item[0];
                 let answers = item[1];
-                index += 1;  
                 let help = '';
                 answers.forEach(answer => {
                       
@@ -993,7 +992,8 @@
 
                     `);
                 });
-                sentence = sentence + `<img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${help}")'>
+                index += 1; 
+                sentence += `<img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${help}")'>
                      <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
                      <span class="text-span" id="clue-easy-${index}">${help}</span>`;
                 exerciseForm.innerHTML += `<p>${sentence}</p>`;
