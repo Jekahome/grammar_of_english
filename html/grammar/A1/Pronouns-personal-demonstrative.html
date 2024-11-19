@@ -979,20 +979,23 @@
         
 
         function generateExercisesEasy(exercises, exerciseForm) {
+            let index = 0; 
             exercises.forEach(item => {
                 let sentence = item[0];
                 let answers = item[1];
+                index += 1;  
+                let help = '';
                 answers.forEach(answer => {
-                    
-                    let help = sentence.replace("___",answer).replace(/'/g, "&#39;");
+                      
+                    help += sentence.replace("___",answer).replace(/'/g, "&#39;");
                     answer = answer.replace(/'/g, "&#39;");
                     sentence = sentence.replace('___', `<input type="text" class="input-size" oninput='checkAnswer(this, "${answer}")' />
-                     <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${help}")'>
-                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
-                     <span class="text-span" id="clue-easy-${index}">${help}</span>
+
                     `);
                 });
-
+                sentence = sentence + `<img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${help}")'>
+                     <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-easy-${index}')"> 
+                     <span class="text-span" id="clue-easy-${index}">${help}</span>`;
                 exerciseForm.innerHTML += `<p>${sentence}</p>`;
             });
         }
