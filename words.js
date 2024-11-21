@@ -1,4 +1,3 @@
-
 const a1_adverbs = [
     ["about", "о, касательно", "I read a book about history.", "Я прочитал книгу о истории."],
     ["across", "через", "She walked across the street.", "Она прошла через улицу."],
@@ -366,7 +365,6 @@ const a1_nouns = [
 
     ["year", "years", "год", "This year is great.", "Этот год замечательный."]
 ];
-
 
 const a1_verbs = [
     ["agree", "agrees", "agreed", "agreed", "agreeing", "соглашаться", [
