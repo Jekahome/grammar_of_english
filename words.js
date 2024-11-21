@@ -1528,217 +1528,1163 @@ const a1_verbs = [
 
 
 const a1_adjectives = [
-    ["able", "способный", "abler", "способнее", "ablest", "самый способный"],
-    ["american", "американский", "", "", "", ""],
-    ["autumn", "осенний", "", "", "", ""],
-    ["available", "доступный", "", "", "", ""],
-    ["bad", "плохой", "worse", "хуже", "worst", "самый плохой"],
-    ["beautiful", "красивый", "more beautiful", "более красивый", "most beautiful", "самый красивый"],
-    ["best", "лучший", "", "", "", ""],
-    ["big", "большой", "bigger", "больше", "biggest", "самый большой"],
-    ["black", "черный", "", "", "", ""],
-    ["blue", "синий", "", "", "", ""],
-    ["boring", "скучный", "more boring", "более скучный", "most boring", "самый скучный"],
-    ["bright", "яркий", "brighter", "ярче", "brightest", "самый яркий"],
-    ["central", "центральный, основной", "", "", "", ""],
-    ["certain", "определенный, уверенный", "", "", "", ""],
-    ["cheap", "дешевый", "", "", "", ""],
-    ["clean", "чистый", "cleaner", "чище", "cleanest", "самый чистый"],
-    ["clear", "ясный, чистый", "clearer", "яснее", "clearest", "самый ясный"],
-    ["close", "близкий, закрытый", "closer", "ближе", "closest", "самый близкий"],
-    ["cold", "холодный", "colder", "холоднее", "coldest", "самый холодный"],
-    ["comfortable", "комфортный", "more comfortable", "более комфортный", "most comfortable", "самый комфортный"],
-    ["common", "общий, распространенный", "more common", "более общий", "most common", "самый общий"],
-    ["cool", "прохладный", "cooler", "прохладнее", "coolest", "самый прохладный"],
-    ["current", "текущий, нынешний", "", "", "", ""],
-    ["dangerous", "опасный", "more dangerous", "более опасный", "most dangerous", "самый опасный"],
-    ["dark", "темный", "darker", "темнее", "darkest", "самый темный"],
-    ["dead", "мертвый", "", "", "", ""],
-    ["democratic", "демократический", "", "", "", ""],
-    ["different", "разный, отличающийся", "more different", "более разный", "most different", "самый разный"],
-    ["difficult", "сложный, трудный", "more difficult", "более сложный", "most difficult", "самый сложный"],
-    ["dirty", "грязный", "dirtier", "грязнее", "dirtiest", "самый грязный"],
-    ["dry", "сухой", "drier", "суше", "driest", "самый сухой"],
-    ["early", "ранний", "earlier", "раньше", "earliest", "самый ранний"],
-    ["economic", "экономический", "", "", "", ""],
-    ["exciting", "захватывающий", "more exciting", "более захватывающий", "most exciting", "самый захватывающий"],
-    ["expensive", "дорогой", "more expensive", "более дорогой", "most expensive", "самый дорогой"],
-    ["fast", "быстрый", "faster", "быстрее", "fastest", "самый быстрый"],
-    ["federal", "федеральный", "", "", "", ""],
-    ["final", "заключительный", "finaler", "финальнее", "finalest", "самый заключительный"],
-    ["financial", "финансовый", "", "", "", ""],
-    ["fine", "хороший, отличный, штраф", "finer", "лучше", "finest", "самый лучший"],
-    ["first", "первый", "", "", "", ""],
-    ["foreign", "иностранный", "more foreign", "более иностранный", "most foreign", "самый иностранный"],
-    ["free", "свободный", "freer", "свободнее", "freest", "самый свободный"],
-    ["fresh", "свежий", "fresher", "свежее", "freshest", "самый свежий"],
-    ["full", "полный", "fuller", "полнее", "fullest", "самый полный"],
-    ["funny", "смешной", "funnier", "смешнее", "funniest", "самый смешной"],
-    ["general", "общий, главный", "", "", "", ""],
-    ["good", "хороший", "better", "лучше", "best", "лучший"],
-    ["great", "великий, замечательный", "greater", "больше", "greatest", "самый великий"],
-    ["happy", "счастливый", "happier", "счастливее", "happiest", "самый счастливый"],
-    ["hard", "твердый", "harder", "тверже", "hardest", "самый твердый"],
-    ["heavy", "тяжелый", "heavier", "тяжелее", "heaviest", "самый тяжелый"],
-    ["high", "высокий", "higher", "выше", "highest", "самый высокий"],
-    ["hot", "горячий", "hotter", "горячее", "hottest", "самый горячий"],
-    ["important", "важный", "more important", "более важный", "most important", "самый важный"],
-    ["interesting", "интересный", "more interesting", "более интересный", "most interesting", "самый интересный"],
-    ["international", "международный", "", "", "", ""],
-    ["just", "справедливый", "", "", "", ""],
-    ["large", "большой", "larger", "больше", "largest", "самый большой"],
-    ["last", "последний", "later", "позже", "latest", "самый последний"],
-    ["left", "левый, оставленный", "", "", "", ""],
-    ["legal", "законный, правовой", "", "", "", ""],
-    ["light", "легкий", "lighter", "легче", "lightest", "самый легкий"],
-    ["little", "маленький, немного", "less", "меньше", "least", "наименьший"],
-    ["local", "местный", "", "", "", ""],
-    ["long", "длинный", "longer", "длиннее", "longest", "самый длинный"],
-    ["loud", "громкий", "", "", "", ""],
-    ["main", "главный, основной", "", "", "", ""],
-    ["major", "главный, основной", "", "", "", ""],
-    ["medical", "медицинский", "", "", "", ""],
-    ["military", "военный", "", "", "", ""],
-    ["modern", "современный", "more modern", "более современный", "most modern", "самый современный"],
-    ["national", "национальный", "", "", "", ""],
-    ["natural", "естественный, природный", "", "", "", ""],
-    ["near", "близкий", "", "", "", ""],
-    ["new", "новый", "newer", "новее", "newest", "самый новый"],
-    ["nice", "приятный, милый", "nicer", "приятнее", "nicest", "самый приятный"],
-    ["noisy", "шумный", "noisier", "шумнее", "noisiest", "самый шумный"],
-    ["ok", "в порядке, хорошо", "", "", "", ""],
-    ["old", "старый", "older", "старше", "oldest", "самый старый"],
-    ["only", "только", "", "", "", ""],
-    ["open", "открытый", "", "", "", ""],
-    ["other", "другой", "", "", "", ""],
-    ["persistent", "упорный, настойчивый", "more persistent", "более упорный", "most persistent", "самый настойчивый"],
-    ["personal", "личный, персональный", "", "", "", ""],
-    ["political", "политический", "", "", "", ""],
-    ["poor", "бедный", "poorer", "беднее", "poorest", "самый бедный"],
-    ["popular", "популярный", "more popular", "более популярный", "most popular", "самый популярный"],
-    ["possible", "возможный", "more possible", "более возможный", "most possible", "самый возможный"],
-    ["private", "частный, личный", "", "", "", ""],
-    ["public", "общественный", "", "", "", ""],
-    ["quiet", "тихий", "quieter", "тише", "quietest", "самый тихий"],
-    ["ready", "готовый", "", "", "", ""],
-    ["real", "настоящий, реальный", "more real", "более реальный", "most real", "самый реальный"],
-    ["red", "красный", "", "", "", ""],
-    ["rich", "богатый", "richer", "богаче", "richest", "самый богатый"],
-    ["right", "правильный, правый", "righter", "правильнее", "rightest", "самый правильный"],
-    ["sad", "грустный", "sadder", "грустнее", "saddest", "самый грустный"],
-    ["safe", "безопасный", "safer", "безопаснее", "safest", "самый безопасный"],
-    ["serious", "серьезный", "more serious", "более серьезный", "most serious", "самый серьезный"],
-    ["short", "короткий, низкий", "shorter", "короче", "shortest", "самый короткий"],
-    ["similar", "похожий", "more similar", "более похожий", "most similar", "самый похожий"],
-    ["simple", "простой", "simpler", "проще", "simplest", "самый простой"],
-    ["single", "один", "", "", "", ""],
-    ["slow", "медленный", "slower", "медленнее", "slowest", "самый медленный"],
-    ["small", "маленький", "smaller", "меньше", "smallest", "самый маленький"],
-    ["social", "социальный", "", "", "", ""],
-    ["soft", "мягкий", "softer", "мягче", "softest", "самый мягкий"],
-    ["special", "специальный", "more special", "более специальный", "most special", "самый специальный"],
-    ["standard", "стандартный", "", "", "", ""],
-    ["strong", "сильный", "stronger", "сильнее", "strongest", "самый сильный"],
-    ["sure", "уверенный", "surer", "увереннее", "surest", "самый уверенный"],
-    ["sweet", "сладкий", "sweeter", "слаще", "sweetest", "самый сладкий"],
-    ["tall", "высокий", "taller", "выше", "tallest", "самый высокий"],
-    ["tasty", "вкусный", "tastier", "вкуснее", "tastiest", "самый вкусный"],
-    ["thin", "тонкий", "thinner", "тоньше", "thinnest", "самый тонкий"],
-    ["top", "верхний, лучший", "", "", "", ""],
-    ["true", "верный, истинный", "", "", "", ""],
-    ["ugly", "уродливый", "uglier", "уродливее", "ugliest", "самый уродливый"],
-    ["uncomfortable", "некомфортный", "more uncomfortable", "более некомфортный", "most uncomfortable", "самый некомфортный"],
-    ["various", "различный, разнообразный", "more various", "более разнообразный", "most various", "самый разнообразный"],
-    ["warm", "теплый", "warmer", "теплее", "warmest", "самый теплый"],
-    ["wet", "мокрый", "", "", "", ""],
-    ["white", "белый", "", "", "", ""],
-    ["whole", "целый, весь", "", "", "", ""],
-    ["wrong", "неправильный", "wronger", "неправильнее", "wrongest", "самый неправильный"],
-    ["young", "молодой", "younger", "моложе", "youngest", "самый молодой"]
+    ["able", "способный", "abler", "способнее", "ablest", "самый способный", 
+        [
+            ["She is able to solve this problem.", "Она способна решить эту проблему."], 
+            ["He is abler than his classmates at math.", "Он способнее своих одноклассников в математике."], 
+            ["She is the ablest student in her class.", "Она самая способная ученица в классе."]
+        ]
+    ],
+    ["american", "американский", "", "", "", "", 
+        [
+            ["He likes American movies.", "Ему нравятся американские фильмы."]
+        ]
+    ],
+    ["autumn", "осенний", "", "", "", "", 
+        [
+            ["They enjoy the autumn colors.", "Им нравятся осенние краски."]
+        ]
+    ],
+    ["available", "доступный", "", "", "", "", 
+        [
+            ["The book is available online.", "Книга доступна онлайн."]
+        ]
+    ],
+    ["bad", "плохой", "worse", "хуже", "worst", "самый плохой", 
+        [
+            ["This movie is bad.", "Этот фильм плохой."], 
+            ["The second movie was worse than the first.", "Второй фильм был хуже, чем первый."], 
+            ["That was the worst movie I've ever seen.", "Это был самый плохой фильм, который я когда-либо видел."]
+        ]
+    ],
+    ["beautiful", "красивый", "more beautiful", "более красивый", "most beautiful", "самый красивый", 
+        [
+            ["The flowers are beautiful.", "Цветы красивые."], 
+            ["This garden is more beautiful than the other one.", "Этот сад красивее, чем другой."], 
+            ["This is the most beautiful place I've ever visited.", "Это самое красивое место, которое я когда-либо посещал."]
+        ]
+    ],
+    ["best", "лучший", "", "", "", "", 
+        [
+            ["This is the best idea.", "Это лучшая идея."]
+        ]
+    ],
+    ["big", "большой", "bigger", "больше", "biggest", "самый большой", 
+        [
+            ["He has a big dog.", "У него большая собака."], 
+            ["Her dog is bigger than mine.", "Её собака больше, чем моя."], 
+            ["That is the biggest dog I have ever seen.", "Это самая большая собака, которую я когда-либо видел."]
+        ]
+    ],
+    ["black", "черный", "", "", "", "", 
+        [
+            ["She wore a black dress.", "Она надела черное платье."]
+        ]
+    ],
+    ["blue", "синий", "", "", "", "", 
+        [
+            ["The sky is blue.", "Небо синее."]
+        ]
+    ],
+    ["boring", "скучный", "more boring", "более скучный", "most boring", "самый скучный", 
+        [
+            ["The lecture was boring.", "Лекция была скучной."], 
+            ["This class is more boring than the last one.", "Этот урок скучнее предыдущего."], 
+            ["That was the most boring lecture ever.", "Это была самая скучная лекция."]
+        ]
+    ],
+    ["bright", "яркий", "brighter", "ярче", "brightest", "самый яркий", 
+        [
+            ["The sun is very bright today.", "Сегодня солнце очень яркое."], 
+            ["This lamp is brighter than the old one.", "Эта лампа ярче старой."], 
+            ["The brightest star can be seen tonight.", "Сегодня ночью можно увидеть самую яркую звезду."]
+        ]
+    ],
+    ["central", "центральный, основной", "", "", "", "", 
+        [
+            ["The park is in the central part of the city.", "Парк находится в центральной части города."]
+        ]
+    ],
+    ["certain", "определенный, уверенный", "", "", "", "", 
+        [
+            ["I am certain about my choice.", "Я уверен в своем выборе."]
+        ]
+    ],
+    ["cheap", "дешевый", "", "", "", "", 
+        [
+            ["This shop sells cheap clothes.", "Этот магазин продает дешёвую одежду."]
+        ]
+    ],
+    ["clean", "чистый", "cleaner", "чище", "cleanest", "самый чистый", 
+        [
+            ["The kitchen is clean now.", "Кухня теперь чистая."], 
+            ["This room is cleaner than that one.", "Эта комната чище той."], 
+            ["This is the cleanest house I've ever seen.", "Это самый чистый дом, который я когда-либо видел."]
+        ]
+    ],
+
+    ["clear", "ясный, чистый", "clearer", "яснее", "clearest", "самый ясный", 
+        [
+            ["The sky is clear today.", "Сегодня небо ясное."], 
+            ["This explanation is clearer than the last one.", "Это объяснение яснее предыдущего."], 
+            ["This is the clearest water I've ever seen.", "Это самая чистая вода, которую я когда-либо видел."]
+        ]
+    ],
+    ["close", "близкий, закрытый", "closer", "ближе", "closest", "самый близкий", 
+        [
+            ["We are very close friends.", "Мы очень близкие друзья."], 
+            ["The store is closer than I thought.", "Магазин ближе, чем я думал."], 
+            ["This is the closest place to park.", "Это самое близкое место для парковки."]
+        ]
+    ],
+    ["cold", "холодный", "colder", "холоднее", "coldest", "самый холодный", 
+        [
+            ["The water is cold.", "Вода холодная."], 
+            ["Today is colder than yesterday.", "Сегодня холоднее, чем вчера."], 
+            ["This is the coldest winter in years.", "Это самая холодная зима за последние годы."]
+        ]
+    ],
+    ["comfortable", "комфортный", "more comfortable", "более комфортный", "most comfortable", "самый комфортный", 
+        [
+            ["This chair is comfortable.", "Этот стул комфортный."], 
+            ["This sofa is more comfortable than that one.", "Этот диван более комфортный, чем тот."], 
+            ["This is the most comfortable bed I've ever slept in.", "Это самая комфортная кровать, на которой я когда-либо спал."]
+        ]
+    ],
+    ["common", "общий, распространенный", "more common", "более общий", "most common", "самый общий", 
+        [
+            ["It's a common mistake.", "Это распространённая ошибка."], 
+            ["This style is more common in Europe.", "Этот стиль более распространён в Европе."], 
+            ["This is the most common name in the country.", "Это самое распространённое имя в стране."]
+        ]
+    ],
+    ["cool", "прохладный", "cooler", "прохладнее", "coolest", "самый прохладный", 
+        [
+            ["The weather is cool today.", "Сегодня прохладная погода."], 
+            ["It's cooler in the shade.", "В тени прохладнее."], 
+            ["This room is the coolest in the house.", "Эта комната самая прохладная в доме."]
+        ]
+    ],
+    ["current", "текущий, нынешний", "", "", "", "", 
+        [
+            ["This is the current situation.", "Это текущая ситуация."]
+        ]
+    ],
+    ["dangerous", "опасный", "more dangerous", "более опасный", "most dangerous", "самый опасный", 
+        [
+            ["The road is dangerous at night.", "Дорога опасна ночью."], 
+            ["This path is more dangerous than the other one.", "Эта тропинка более опасная, чем другая."], 
+            ["This is the most dangerous job in the world.", "Это самая опасная работа в мире."]
+        ]
+    ],
+    ["dark", "темный", "darker", "темнее", "darkest", "самый темный", 
+        [
+            ["The room is dark.", "Комната тёмная."], 
+            ["It gets darker earlier in winter.", "Зимой темнеет раньше."], 
+            ["This is the darkest night I've ever seen.", "Это самая тёмная ночь, которую я когда-либо видел."]
+        ]
+    ],
+    ["dead", "мертвый", "", "", "", "", 
+        [
+            ["The tree is dead.", "Дерево мёртвое."]
+        ]
+    ],
+    ["democratic", "демократический", "", "", "", "", 
+        [
+            ["The country has a democratic government.", "В стране демократическое правительство."]
+        ]
+    ],
+    ["different", "разный, отличающийся", "more different", "более разный", "most different", "самый разный", 
+        [
+            ["This book is different from the other one.", "Эта книга отличается от другой."], 
+            ["This idea is more different than we expected.", "Эта идея более отличающаяся, чем мы ожидали."], 
+            ["This is the most different approach we've seen.", "Это самый отличный подход, который мы видели."]
+        ]
+    ],
+    ["difficult", "сложный, трудный", "more difficult", "более сложный", "most difficult", "самый сложный", 
+        [
+            ["The task is difficult.", "Задача сложная."], 
+            ["This question is more difficult than the last one.", "Этот вопрос сложнее предыдущего."], 
+            ["This is the most difficult exam I've ever taken.", "Это самый сложный экзамен, который я когда-либо сдавал."]
+        ]
+    ],
+    ["dirty", "грязный", "dirtier", "грязнее", "dirtiest", "самый грязный", 
+        [
+            ["The floor is dirty.", "Пол грязный."], 
+            ["This shirt is dirtier than mine.", "Эта рубашка грязнее, чем моя."], 
+            ["This is the dirtiest room in the house.", "Это самая грязная комната в доме."]
+        ]
+    ],
+
+    ["early", "ранний", "earlier", "раньше", "earliest", "самый ранний", 
+        [
+            ["She woke up early.", "Она проснулась рано."], 
+            ["He arrived earlier than expected.", "Он приехал раньше, чем ожидалось."], 
+            ["This is the earliest train in the morning.", "Это самый ранний поезд утром."]
+        ]
+    ],
+    ["economic", "экономический", "", "", "", "", 
+        [
+            ["The country faces economic challenges.", "Страна сталкивается с экономическими вызовами."]
+        ]
+    ],
+    ["exciting", "захватывающий", "more exciting", "более захватывающий", "most exciting", "самый захватывающий", 
+        [
+            ["The game was exciting.", "Игра была захватывающей."], 
+            ["This trip is more exciting than the last one.", "Эта поездка более захватывающая, чем предыдущая."], 
+            ["This is the most exciting adventure I've had.", "Это самое захватывающее приключение в моей жизни."]
+        ]
+    ],
+    ["expensive", "дорогой", "more expensive", "более дорогой", "most expensive", "самый дорогой", 
+        [
+            ["This watch is expensive.", "Эти часы дорогие."], 
+            ["This car is more expensive than that one.", "Эта машина дороже, чем та."], 
+            ["This is the most expensive hotel in the city.", "Это самый дорогой отель в городе."]
+        ]
+    ],
+    ["fast", "быстрый", "faster", "быстрее", "fastest", "самый быстрый", 
+        [
+            ["The car is fast.", "Машина быстрая."], 
+            ["This train is faster than the previous one.", "Этот поезд быстрее предыдущего."], 
+            ["This is the fastest way to get there.", "Это самый быстрый способ добраться туда."]
+        ]
+    ],
+    ["federal", "федеральный", "", "", "", "", 
+        [
+            ["The country has a federal government.", "В стране федеральное правительство."]
+        ]
+    ],
+    ["final", "заключительный", "finaler", "финальнее", "finalest", "самый заключительный", 
+        [
+            ["This is the final chapter of the book.", "Это заключительная глава книги."], 
+            ["This version is finaler than the draft.", "Эта версия более заключительная, чем черновик."], 
+            ["This is the finalest step in the process.", "Это самый заключительный шаг в процессе."]
+        ]
+    ],
+    ["financial", "финансовый", "", "", "", "", 
+        [
+            ["They need financial support.", "Им нужна финансовая поддержка."]
+        ]
+    ],
+    ["fine", "хороший, отличный, штраф", "finer", "лучше", "finest", "самый лучший", 
+        [
+            ["The weather is fine today.", "Сегодня отличная погода."], 
+            ["This fabric is finer than the other one.", "Эта ткань лучше, чем другая."], 
+            ["This is the finest wine in the collection.", "Это самое лучшее вино в коллекции."]
+        ]
+    ],
+    ["first", "первый", "", "", "", "", 
+        [
+            ["He was the first to arrive.", "Он был первым, кто приехал."]
+        ]
+    ],
+    ["foreign", "иностранный", "more foreign", "более иностранный", "most foreign", "самый иностранный", 
+        [
+            ["She loves foreign languages.", "Она любит иностранные языки."], 
+            ["This book feels more foreign than the others.", "Эта книга кажется более иностранной, чем другие."], 
+            ["This is the most foreign culture I've encountered.", "Это самая иностранная культура, с которой я сталкивался."]
+        ]
+    ],
+    ["free", "свободный", "freer", "свободнее", "freest", "самый свободный", 
+        [
+            ["The room is free now.", "Комната сейчас свободна."], 
+            ["This schedule is freer than mine.", "Это расписание свободнее, чем мое."], 
+            ["This is the freest country in the world.", "Это самая свободная страна в мире."]
+        ]
+    ],
+    ["fresh", "свежий", "fresher", "свежее", "freshest", "самый свежий", 
+        [
+            ["The air is fresh here.", "Здесь свежий воздух."], 
+            ["This bread is fresher than yesterday's.", "Этот хлеб свежее, чем вчерашний."], 
+            ["This is the freshest fruit in the market.", "Это самый свежий фрукт на рынке."]
+        ]
+    ],
+    ["full", "полный", "fuller", "полнее", "fullest", "самый полный", 
+        [
+            ["The glass is full.", "Стакан полный."], 
+            ["This bag is fuller than that one.", "Эта сумка полнее, чем та."], 
+            ["This is the fullest box on the shelf.", "Это самая полная коробка на полке."]
+        ]
+    ],
+    ["funny", "смешной", "funnier", "смешнее", "funniest", "самый смешной", 
+        [
+            ["The joke was funny.", "Шутка была смешной."], 
+            ["This movie is funnier than the last one.", "Этот фильм смешнее, чем предыдущий."], 
+            ["This is the funniest story I've ever heard.", "Это самая смешная история, которую я когда-либо слышал."]
+        ]
+    ],
+    ["general", "общий, главный", "", "", "", "", 
+        [
+            ["This is a general rule.", "Это общее правило."]
+        ]
+    ],
+    ["good", "хороший", "better", "лучше", "best", "лучший", 
+        [
+            ["This is a good idea.", "Это хорошая идея."], 
+            ["This book is better than the other one.", "Эта книга лучше другой."], 
+            ["This is the best day of my life.", "Это лучший день в моей жизни."]
+        ]
+    ],
+
+    ["great", "великий, замечательный", "greater", "больше", "greatest", "самый великий", 
+        [
+            ["This is a great achievement.", "Это великое достижение."], 
+            ["The city is greater than it was ten years ago.", "Город больше, чем был десять лет назад."], 
+            ["He is the greatest leader in history.", "Он самый великий лидер в истории."]
+        ]
+    ],
+    ["happy", "счастливый", "happier", "счастливее", "happiest", "самый счастливый", 
+        [
+            ["She looks happy today.", "Она выглядит счастливой сегодня."], 
+            ["He is happier now than before.", "Сейчас он счастливее, чем раньше."], 
+            ["This is the happiest moment of my life.", "Это самый счастливый момент в моей жизни."]
+        ]
+    ],
+    ["hard", "твердый", "harder", "тверже", "hardest", "самый твердый", 
+        [
+            ["The ground is hard here.", "Здесь земля твердая."], 
+            ["This material is harder than wood.", "Этот материал тверже дерева."], 
+            ["Diamond is the hardest natural material.", "Алмаз — самый твердый природный материал."]
+        ]
+    ],
+    ["heavy", "тяжелый", "heavier", "тяжелее", "heaviest", "самый тяжелый", 
+        [
+            ["This box is heavy.", "Эта коробка тяжелая."], 
+            ["This bag is heavier than mine.", "Эта сумка тяжелее моей."], 
+            ["This is the heaviest load I've ever carried.", "Это самый тяжелый груз, который я когда-либо носил."]
+        ]
+    ],
+    ["high", "высокий", "higher", "выше", "highest", "самый высокий", 
+        [
+            ["The mountain is high.", "Гора высокая."], 
+            ["The building is higher than I thought.", "Здание выше, чем я думал."], 
+            ["This is the highest point in the city.", "Это самая высокая точка в городе."]
+        ]
+    ],
+    ["hot", "горячий", "hotter", "горячее", "hottest", "самый горячий", 
+        [
+            ["The tea is hot.", "Чай горячий."], 
+            ["Today is hotter than yesterday.", "Сегодня жарче, чем вчера."], 
+            ["This is the hottest day of the year.", "Это самый жаркий день года."]
+        ]
+    ],
+    ["important", "важный", "more important", "более важный", "most important", "самый важный", 
+        [
+            ["This is an important meeting.", "Это важная встреча."], 
+            ["This task is more important than the others.", "Эта задача важнее других."], 
+            ["This is the most important decision we've made.", "Это самое важное решение, которое мы приняли."]
+        ]
+    ],
+    ["interesting", "интересный", "more interesting", "более интересный", "most interesting", "самый интересный", 
+        [
+            ["The story is interesting.", "История интересная."], 
+            ["This book is more interesting than that one.", "Эта книга интереснее, чем та."], 
+            ["This is the most interesting place I've visited.", "Это самое интересное место, которое я посетил."]
+        ]
+    ],
+    ["international", "международный", "", "", "", "", 
+        [
+            ["This is an international conference.", "Это международная конференция."]
+        ]
+    ],
+    ["just", "справедливый", "", "", "", "", 
+        [
+            ["He is a just and honest person.", "Он справедливый и честный человек."]
+        ]
+    ],
+    ["large", "большой", "larger", "больше", "largest", "самый большой", 
+        [
+            ["The house is large.", "Дом большой."], 
+            ["This room is larger than the one upstairs.", "Эта комната больше той, что наверху."], 
+            ["This is the largest park in the city.", "Это самый большой парк в городе."]
+        ]
+    ],
+    ["last", "последний", "later", "позже", "latest", "самый последний", 
+        [
+            ["This is the last chapter of the book.", "Это последняя глава книги."], 
+            ["He arrived later than expected.", "Он приехал позже, чем ожидалось."], 
+            ["This is the latest version of the app.", "Это самая последняя версия приложения."]
+        ]
+    ],
+    ["left", "левый, оставленный", "", "", "", "", 
+        [
+            ["The car is parked on the left side of the road.", "Машина припаркована с левой стороны дороги."]
+        ]
+    ],
+    ["legal", "законный, правовой", "", "", "", "", 
+        [
+            ["It's a legal requirement.", "Это законное требование."]
+        ]
+    ],
+    ["light", "легкий", "lighter", "легче", "lightest", "самый легкий", 
+        [
+            ["The bag is light.", "Сумка легкая."], 
+            ["This fabric is lighter than the other one.", "Эта ткань легче другой."], 
+            ["This is the lightest material we have.", "Это самый легкий материал, который у нас есть."]
+        ]
+    ],
+    ["little", "маленький, немного", "less", "меньше", "least", "наименьший", 
+        [
+            ["There is little time left.", "Осталось мало времени."], 
+            ["This problem is less complicated than the other one.", "Эта проблема менее сложная, чем другая."], 
+            ["This is the least important task.", "Это наименее важная задача."]
+        ]
+    ],
+    ["local", "местный", "", "", "", "", 
+        [
+            ["This is a local market.", "Это местный рынок."]
+        ]
+    ],
+
+    ["long", "длинный", "longer", "длиннее", "longest", "самый длинный", 
+        [
+            ["This road is long.", "Эта дорога длинная."], 
+            ["This bridge is longer than the other one.", "Этот мост длиннее, чем другой."], 
+            ["This is the longest river in the country.", "Это самая длинная река в стране."]
+        ]
+    ],
+    ["loud", "громкий", "", "", "", "", 
+        [
+            ["The music is too loud.", "Музыка слишком громкая."]
+        ]
+    ],
+    ["main", "главный, основной", "", "", "", "", 
+        [
+            ["This is the main entrance.", "Это главный вход."]
+        ]
+    ],
+    ["major", "главный, основной", "", "", "", "", 
+        [
+            ["This is a major problem.", "Это главная проблема."]
+        ]
+    ],
+    ["medical", "медицинский", "", "", "", "", 
+        [
+            ["She needs medical attention.", "Ей нужна медицинская помощь."]
+        ]
+    ],
+    ["military", "военный", "", "", "", "", 
+        [
+            ["He served in the military.", "Он служил в армии."]
+        ]
+    ],
+    ["modern", "современный", "more modern", "более современный", "most modern", "самый современный", 
+        [
+            ["The building has a modern design.", "Здание имеет современный дизайн."], 
+            ["This city is more modern than it was 20 years ago.", "Этот город более современный, чем был 20 лет назад."], 
+            ["This is the most modern hospital in the area.", "Это самая современная больница в районе."]
+        ]
+    ],
+    ["national", "национальный", "", "", "", "", 
+        [
+            ["They celebrated the national holiday.", "Они праздновали национальный праздник."]
+        ]
+    ],
+    ["natural", "естественный, природный", "", "", "", "", 
+        [
+            ["This is a natural process.", "Это естественный процесс."]
+        ]
+    ],
+    ["near", "близкий", "", "", "", "", 
+        [
+            ["The park is near our house.", "Парк находится рядом с нашим домом."]
+        ]
+    ],
+    ["new", "новый", "newer", "новее", "newest", "самый новый", 
+        [
+            ["She bought a new car.", "Она купила новую машину."], 
+            ["This model is newer than the old one.", "Эта модель новее старой."], 
+            ["This is the newest smartphone on the market.", "Это самый новый смартфон на рынке."]
+        ]
+    ],
+    ["nice", "приятный, милый", "nicer", "приятнее", "nicest", "самый приятный", 
+        [
+            ["The weather is nice today.", "Сегодня приятная погода."], 
+            ["This dress is nicer than the one she wore yesterday.", "Это платье приятнее, чем то, которое она носила вчера."], 
+            ["This is the nicest restaurant in the town.", "Это самый приятный ресторан в городе."]
+        ]
+    ],
+    ["noisy", "шумный", "noisier", "шумнее", "noisiest", "самый шумный", 
+        [
+            ["The street is noisy.", "Улица шумная."], 
+            ["This market is noisier than the park.", "Этот рынок шумнее, чем парк."], 
+            ["This is the noisiest place in the city.", "Это самое шумное место в городе."]
+        ]
+    ],
+    ["ok", "в порядке, хорошо", "", "", "", "", 
+        [
+            ["Everything is OK now.", "Сейчас всё в порядке."]
+        ]
+    ],
+    ["old", "старый", "older", "старше", "oldest", "самый старый", 
+        [
+            ["This is an old house.", "Это старый дом."], 
+            ["He is older than his brother.", "Он старше своего брата."], 
+            ["This is the oldest tree in the park.", "Это самое старое дерево в парке."]
+        ]
+    ],
+    ["only", "только", "", "", "", "", 
+        [
+            ["This is the only book I have.", "Это единственная книга, которая у меня есть."]
+        ]
+    ],
+    ["open", "открытый", "", "", "", "", 
+        [
+            ["The store is open now.", "Магазин сейчас открыт."]
+        ]
+    ],
+
+    ["other", "другой", "", "", "", "", 
+        [
+            ["Do you have any other questions?", "У вас есть другие вопросы?"]
+        ]
+    ],
+    ["persistent", "упорный, настойчивый", "more persistent", "более упорный", "most persistent", "самый настойчивый", 
+        [
+            ["She is a persistent learner.", "Она упорный ученик."], 
+            ["He is more persistent than others in his goals.", "Он более упорен в своих целях, чем другие."], 
+            ["She is the most persistent person I know.", "Она самый настойчивый человек из всех, кого я знаю."]
+        ]
+    ],
+    ["personal", "личный, персональный", "", "", "", "", 
+        [
+            ["This is my personal opinion.", "Это мое личное мнение."]
+        ]
+    ],
+    ["political", "политический", "", "", "", "", 
+        [
+            ["He is interested in political science.", "Он интересуется политической наукой."]
+        ]
+    ],
+    ["poor", "бедный", "poorer", "беднее", "poorest", "самый бедный", 
+        [
+            ["He grew up in a poor family.", "Он вырос в бедной семье."], 
+            ["This region is poorer than others.", "Этот регион беднее других."], 
+            ["This is the poorest village in the area.", "Это самая бедная деревня в этом районе."]
+        ]
+    ],
+    ["popular", "популярный", "more popular", "более популярный", "most popular", "самый популярный", 
+        [
+            ["This song is very popular.", "Эта песня очень популярна."], 
+            ["This artist is more popular than the others.", "Этот артист популярнее других."], 
+            ["She is the most popular student in the school.", "Она самая популярная ученица в школе."]
+        ]
+    ],
+    ["possible", "возможный", "more possible", "более возможный", "most possible", "самый возможный", 
+        [
+            ["Is it possible to meet tomorrow?", "Возможно ли встретиться завтра?"], 
+            ["This plan seems more possible than the other one.", "Этот план кажется более возможным, чем другой."], 
+            ["This is the most possible outcome.", "Это самый возможный исход."]
+        ]
+    ],
+    ["private", "частный, личный", "", "", "", "", 
+        [
+            ["This is a private property.", "Это частная собственность."]
+        ]
+    ],
+    ["public", "общественный", "", "", "", "", 
+        [
+            ["This is a public park.", "Это общественный парк."]
+        ]
+    ],
+    ["quiet", "тихий", "quieter", "тише", "quietest", "самый тихий", 
+        [
+            ["The room is quiet.", "Комната тихая."], 
+            ["This library is quieter than the one downtown.", "Эта библиотека тише, чем та, что в центре."], 
+            ["This is the quietest place in the building.", "Это самое тихое место в здании."]
+        ]
+    ],
+    ["ready", "готовый", "", "", "", "", 
+        [
+            ["I am ready to go.", "Я готов идти."]
+        ]
+    ],
+    ["real", "настоящий, реальный", "more real", "более реальный", "most real", "самый реальный", 
+        [
+            ["This story is real.", "Эта история настоящая."], 
+            ["This problem feels more real to me.", "Эта проблема кажется мне более реальной."], 
+            ["This is the most real experience I've ever had.", "Это самый реальный опыт, который у меня был."]
+        ]
+    ],
+    ["red", "красный", "", "", "", "", 
+        [
+            ["The car is red.", "Машина красная."]
+        ]
+    ],
+    ["rich", "богатый", "richer", "богаче", "richest", "самый богатый", 
+        [
+            ["He is a rich man.", "Он богатый человек."], 
+            ["This area is richer than the others.", "Этот район богаче остальных."], 
+            ["This is the richest family in the town.", "Это самая богатая семья в городе."]
+        ]
+    ],
+
+
+    ["right", "правильный, правый", "righter", "правильнее", "rightest", "самый правильный", 
+        [
+            ["This is the right answer.", "Это правильный ответ."], 
+            ["This solution is righter than the previous one.", "Это решение правильнее, чем предыдущее."], 
+            ["This is the rightest decision for everyone.", "Это самое правильное решение для всех."]
+        ]
+    ],
+    ["sad", "грустный", "sadder", "грустнее", "saddest", "самый грустный", 
+        [
+            ["She looks sad today.", "Она сегодня грустная."], 
+            ["He is sadder than his friends.", "Он грустнее своих друзей."], 
+            ["This is the saddest movie I’ve ever seen.", "Это самый грустный фильм, который я когда-либо видел."]
+        ]
+    ],
+    ["safe", "безопасный", "safer", "безопаснее", "safest", "самый безопасный", 
+        [
+            ["This place feels safe.", "Здесь чувствуется безопасно."], 
+            ["This car is safer than the old one.", "Этот автомобиль безопаснее старого."], 
+            ["This is the safest area in the city.", "Это самый безопасный район в городе."]
+        ]
+    ],
+    ["serious", "серьезный", "more serious", "более серьезный", "most serious", "самый серьезный", 
+        [
+            ["This is a serious issue.", "Это серьезная проблема."], 
+            ["The problem is more serious than I thought.", "Проблема серьезнее, чем я думал."], 
+            ["This is the most serious accident this year.", "Это самый серьезный несчастный случай в этом году."]
+        ]
+    ],
+    ["short", "короткий, низкий", "shorter", "короче", "shortest", "самый короткий", 
+        [
+            ["He has a short haircut.", "У него короткая стрижка."], 
+            ["This path is shorter than the main road.", "Эта тропа короче, чем главная дорога."], 
+            ["This is the shortest route to the station.", "Это самый короткий путь до станции."]
+        ]
+    ],
+    ["similar", "похожий", "more similar", "более похожий", "most similar", "самый похожий", 
+        [
+            ["These two paintings are similar.", "Эти две картины похожи."], 
+            ["This design is more similar to what we need.", "Этот дизайн больше похож на то, что нам нужно."], 
+            ["These are the most similar twins I have seen.", "Это самые похожие близнецы, которых я видел."]
+        ]
+    ],
+    ["simple", "простой", "simpler", "проще", "simplest", "самый простой", 
+        [
+            ["The instructions are simple.", "Инструкции просты."], 
+            ["This method is simpler than the previous one.", "Этот метод проще предыдущего."], 
+            ["This is the simplest solution.", "Это самое простое решение."]
+        ]
+    ],
+    ["single", "один", "", "", "", "", 
+        [
+            ["He answered every single question.", "Он ответил на каждый отдельный вопрос."]
+        ]
+    ],
+    ["slow", "медленный", "slower", "медленнее", "slowest", "самый медленный", 
+        [
+            ["The traffic is slow today.", "Движение сегодня медленное."], 
+            ["This car is slower than the others.", "Эта машина медленнее остальных."], 
+            ["This is the slowest train on this line.", "Это самый медленный поезд на этой линии."]
+        ]
+    ],
+    ["small", "маленький", "smaller", "меньше", "smallest", "самый маленький", 
+        [
+            ["The room is small.", "Комната маленькая."], 
+            ["This apartment is smaller than mine.", "Эта квартира меньше моей."], 
+            ["This is the smallest dog I’ve ever seen.", "Это самая маленькая собака, которую я видел."]
+        ]
+    ],
+    ["social", "социальный", "", "", "", "", 
+        [
+            ["He works on social projects.", "Он работает над социальными проектами."]
+        ]
+    ],
+    ["soft", "мягкий", "softer", "мягче", "softest", "самый мягкий", 
+        [
+            ["The blanket is soft.", "Одеяло мягкое."], 
+            ["This pillow is softer than the old one.", "Эта подушка мягче старой."], 
+            ["This is the softest fabric in the store.", "Это самая мягкая ткань в магазине."]
+        ]
+    ],
+    ["special", "специальный", "more special", "более специальный", "most special", "самый специальный", 
+        [
+            ["This is a special occasion.", "Это особый случай."], 
+            ["This gift is more special than the others.", "Этот подарок более особенный, чем другие."], 
+            ["This is the most special day of my life.", "Это самый особенный день в моей жизни."]
+        ]
+    ],
+    ["standard", "стандартный", "", "", "", "", 
+        [
+            ["The product meets the standard requirements.", "Продукт соответствует стандартным требованиям."]
+        ]
+    ],
+    ["strong", "сильный", "stronger", "сильнее", "strongest", "самый сильный", 
+        [
+            ["He is a strong man.", "Он сильный мужчина."], 
+            ["She is stronger than her teammates.", "Она сильнее своих товарищей по команде."], 
+            ["This is the strongest storm we’ve experienced.", "Это самый сильный шторм, который мы пережили."]
+        ]
+    ],
+
+    ["sure", "уверенный", "surer", "увереннее", "surest", "самый уверенный", 
+        [
+            ["I am sure about my answer.", "Я уверен в своем ответе."], 
+            ["She is surer of herself now.", "Она теперь увереннее в себе."], 
+            ["This is the surest way to solve the problem.", "Это самый уверенный способ решить проблему."]
+        ]
+    ],
+    ["sweet", "сладкий", "sweeter", "слаще", "sweetest", "самый сладкий", 
+        [
+            ["This candy is sweet.", "Эта конфета сладкая."], 
+            ["The second cake is sweeter than the first.", "Второй торт слаще первого."], 
+            ["This is the sweetest fruit I’ve ever eaten.", "Это самый сладкий фрукт, который я когда-либо ел."]
+        ]
+    ],
+    ["tall", "высокий", "taller", "выше", "tallest", "самый высокий", 
+        [
+            ["He is a tall man.", "Он высокий мужчина."], 
+            ["She is taller than her brother.", "Она выше своего брата."], 
+            ["This is the tallest building in the city.", "Это самое высокое здание в городе."]
+        ]
+    ],
+    ["tasty", "вкусный", "tastier", "вкуснее", "tastiest", "самый вкусный", 
+        [
+            ["The food is very tasty.", "Еда очень вкусная."], 
+            ["This dish is tastier than the one I tried yesterday.", "Это блюдо вкуснее того, которое я пробовал вчера."], 
+            ["This is the tastiest pizza in town.", "Это самая вкусная пицца в городе."]
+        ]
+    ],
+    ["thin", "тонкий", "thinner", "тоньше", "thinnest", "самый тонкий", 
+        [
+            ["The paper is thin.", "Бумага тонкая."], 
+            ["This slice is thinner than the last one.", "Этот кусок тоньше предыдущего."], 
+            ["This is the thinnest wire we have.", "Это самая тонкая проволока у нас."]
+        ]
+    ],
+    ["top", "верхний, лучший", "", "", "", "", 
+        [
+            ["She reached the top of the mountain.", "Она достигла вершины горы."]
+        ]
+    ],
+    ["true", "верный, истинный", "", "", "", "", 
+        [
+            ["His words are true.", "Его слова истинны."]
+        ]
+    ],
+    ["ugly", "уродливый", "uglier", "уродливее", "ugliest", "самый уродливый", 
+        [
+            ["This house is ugly.", "Этот дом уродливый."], 
+            ["This old building is uglier than the new one.", "Это старое здание уродливее нового."], 
+            ["This is the ugliest painting in the gallery.", "Это самая уродливая картина в галерее."]
+        ]
+    ],
+    ["uncomfortable", "некомфортный", "more uncomfortable", "более некомфортный", "most uncomfortable", "самый некомфортный", 
+        [
+            ["The chair is uncomfortable.", "Стул неудобный."], 
+            ["This seat is more uncomfortable than the one I had yesterday.", "Это место менее удобное, чем то, что у меня было вчера."], 
+            ["This is the most uncomfortable bed I’ve ever slept on.", "Это самая неудобная кровать, на которой я когда-либо спал."]
+        ]
+    ],
+    ["various", "различный, разнообразный", "more various", "более разнообразный", "most various", "самый разнообразный", 
+        [
+            ["There are various options available.", "Доступны различные варианты."], 
+            ["This project offers more various opportunities.", "Этот проект предлагает более разнообразные возможности."], 
+            ["This is the most various collection of items I’ve seen.", "Это самая разнообразная коллекция предметов, которую я видел."]
+        ]
+    ],
+    ["warm", "теплый", "warmer", "теплее", "warmest", "самый теплый", 
+        [
+            ["The room is warm.", "Комната теплая."], 
+            ["This jacket is warmer than the old one.", "Эта куртка теплее старой."], 
+            ["This is the warmest sweater in my closet.", "Это самый теплый свитер в моем шкафу."]
+        ]
+    ],
+    ["wet", "мокрый", "", "", "", "", 
+        [
+            ["His clothes are wet from the rain.", "Его одежда мокрая от дождя."]
+        ]
+    ],
+    ["white", "белый", "", "", "", "", 
+        [
+            ["The walls are painted white.", "Стены выкрашены в белый цвет."]
+        ]
+    ],
+    ["whole", "целый, весь", "", "", "", "", 
+        [
+            ["He ate the whole cake.", "Он съел весь торт."]
+        ]
+    ],
+    ["wrong", "неправильный", "wronger", "неправильнее", "wrongest", "самый неправильный", 
+        [
+            ["The answer is wrong.", "Ответ неправильный."], 
+            ["This method is wronger than the one we tried before.", "Этот метод неправильнее, чем тот, что мы пробовали раньше."], 
+            ["This is the wrongest choice you could make.", "Это самый неправильный выбор, который вы могли сделать."]
+        ]
+    ],
+    ["young", "молодой", "younger", "моложе", "youngest", "самый молодой", 
+        [
+            ["She is a young artist.", "Она молодая художница."], 
+            ["He is younger than his classmates.", "Он моложе своих одноклассников."], 
+            ["This is the youngest member of our team.", "Это самый молодой участник нашей команды."]
+        ]
+    ]
 ];
 
 
 const a1_conjunctions = [
-    ["and", "и"],
-    ["but", "но"],
-    ["or", "или"],
-    ["nor", "ни"],
-    ["for", "потому что"],
-    ["so", "поэтому"],
-    ["yet", "всё же"],
-    ["because", "потому что"],
-    ["although", "хотя"],
-    ["if", "если"],
-    ["when", "когда"],
-    ["while", "в то время как"],
-    ["since", "поскольку"],
-    ["after", "после того как"],
-    ["before", "прежде чем"],
-    ["both", "и...и"],
-    ["either", "либо...либо"],
-    ["neither", "ни...ни"]
+    ["and", "и", 
+        [
+            ["I like tea and coffee.", "Мне нравятся чай и кофе."]
+        ]
+    ],
+    ["but", "но", 
+        [
+            ["I want to go, but I am tired.", "Я хочу идти, но я устал."]
+        ]
+    ],
+    ["or", "или", 
+        [
+            ["You can have tea or coffee.", "Ты можешь взять чай или кофе."]
+        ]
+    ],
+    ["nor", "ни", 
+        [
+            ["He neither talks nor listens.", "Он ни говорит, ни слушает."]
+        ]
+    ],
+    ["for", "потому что", 
+        [
+            ["I am going for I need some rest.", "Я иду, потому что мне нужно отдохнуть."]
+        ]
+    ],
+    ["so", "поэтому", 
+        [
+            ["It is raining, so I will stay home.", "Идёт дождь, поэтому я останусь дома."]
+        ]
+    ],
+    ["yet", "всё же", 
+        [
+            ["It is late, yet I am not sleepy.", "Поздно, всё же я не хочу спать."]
+        ]
+    ],
+    ["because", "потому что", 
+        [
+            ["I am happy because I passed the exam.", "Я счастлив, потому что сдал экзамен."]
+        ]
+    ],
+    ["although", "хотя", 
+        [
+            ["Although it is cold, she is wearing a T-shirt.", "Хотя холодно, она носит футболку."]
+        ]
+    ],
+    ["if", "если", 
+        [
+            ["If it rains, we will stay inside.", "Если будет дождь, мы останемся внутри."]
+        ]
+    ],
+    ["when", "когда", 
+        [
+            ["I will call you when I arrive.", "Я позвоню тебе, когда приеду."]
+        ]
+    ],
+    ["while", "в то время как", 
+        [
+            ["I read while waiting for the bus.", "Я читаю, в то время как жду автобус."]
+        ]
+    ],
+    ["since", "поскольку", 
+        [
+            ["Since you are here, we can start.", "Поскольку ты здесь, мы можем начать."]
+        ]
+    ],
+    ["after", "после того как", 
+        [
+            ["I will eat after I finish work.", "Я поем после того как закончу работу."]
+        ]
+    ],
+    ["before", "прежде чем", 
+        [
+            ["You must clean your room before going out.", "Ты должен убраться в комнате прежде чем выйти."]
+        ]
+    ],
+    ["both", "и...и", 
+        [
+            ["Both Tom and Jerry are my friends.", "И Том, и Джерри — мои друзья."]
+        ]
+    ],
+    ["either", "либо...либо", 
+        [
+            ["You can either sit here or stand.", "Ты можешь либо сидеть здесь, либо стоять."]
+        ]
+    ],
+    ["neither", "ни...ни", 
+        [
+            ["Neither the cat nor the dog is here.", "Ни кошка, ни собака здесь."]
+        ]
+    ]
 ];
+
 
 const a1_pronouns = [
-    ["I", "я"],
-    ["you", "ты/вы"],
-    ["he", "он"],
-    ["she", "она"],
-    ["it", "оно"],
-    ["we", "мы"],
-    ["they", "они"],
-    ["me", "меня/мне"],
-    ["him", "его/ему"],
-    ["her", "ее/ей"],
-    ["us", "нас/нам"],
-    ["them", "их/им"],
-    ["my", "мой/моя/мое/мои"],
-    ["your", "твой/ваш"],
-    ["his", "его (принадлежность)"],
-    ["her", "ее (принадлежность)"],
-    ["its", "его/ее (для неодушевленных)"],
-    ["our", "наш/наша/наше/наши"],
-    ["their", "их (принадлежность)"],
-    ["mine", "мой/моя/мое (в абсолютной форме)"],
-    ["yours", "твой/ваш (в абсолютной форме)"],
-    ["ours", "наш (в абсолютной форме)"],
-    ["theirs", "их (в абсолютной форме)"],
-    ["myself", "я сам/сама"],
-    ["yourself", "ты сам/вы сами"],
-    ["himself", "он сам"],
-    ["herself", "она сама"],
-    ["itself", "оно само"],
-    ["ourselves", "мы сами"],
-    ["themselves", "они сами"],
-    ["anything","что-нибудь"]
+    ["I", "я", 
+        [
+            ["I am happy.", "Я счастлив."]
+        ]
+    ],
+    ["you", "ты/вы", 
+        [
+            ["You are my friend.", "Ты мой друг."]
+        ]
+    ],
+    ["he", "он", 
+        [
+            ["He is tall.", "Он высокий."]
+        ]
+    ],
+    ["she", "она", 
+        [
+            ["She is nice.", "Она милая."]
+        ]
+    ],
+    ["it", "оно", 
+        [
+            ["It is cold.", "Оно холодное."]
+        ]
+    ],
+    ["we", "мы", 
+        [
+            ["We are going to the park.", "Мы идём в парк."]
+        ]
+    ],
+    ["they", "они", 
+        [
+            ["They are my friends.", "Они мои друзья."]
+        ]
+    ],
+    ["me", "меня/мне", 
+        [
+            ["She gave me a book.", "Она дала мне книгу."]
+        ]
+    ],
+    ["him", "его/ему", 
+        [
+            ["I saw him yesterday.", "Я видел его вчера."]
+        ]
+    ],
+    ["her", "ее/ей", 
+        [
+            ["I talked to her yesterday.", "Я разговаривал с ней вчера."]
+        ]
+    ],
+    ["us", "нас/нам", 
+        [
+            ["Can you help us?", "Ты можешь помочь нам?"]
+        ]
+    ],
+    ["them", "их/им", 
+        [
+            ["We will meet them at the park.", "Мы встретим их в парке."]
+        ]
+    ],
+    ["my", "мой/моя/мое/мои", 
+        [
+            ["This is my book.", "Это моя книга."]
+        ]
+    ],
+    ["your", "твой/ваш", 
+        [
+            ["Your name is Anna.", "Твоё имя — Анна."]
+        ]
+    ],
+    ["his", "его (принадлежность)", 
+        [
+            ["This is his car.", "Это его машина."]
+        ]
+    ],
+    ["her", "ее (принадлежность)", 
+        [
+            ["This is her pen.", "Это её ручка."]
+        ]
+    ],
+    ["its", "его/ее (для неодушевленных)", 
+        [
+            ["The cat licked its paw.", "Кошка вылизала свою лапку."]
+        ]
+    ],
+    ["our", "наш/наша/наше/наши", 
+        [
+            ["This is our house.", "Это наш дом."]
+        ]
+    ],
+    ["their", "их (принадлежность)", 
+        [
+            ["This is their dog.", "Это их собака."]
+        ]
+    ],
+    ["mine", "мой/моя/мое (в абсолютной форме)", 
+        [
+            ["This book is mine.", "Эта книга моя."]
+        ]
+    ],
+    ["yours", "твой/ваш (в абсолютной форме)", 
+        [
+            ["Is this pen yours?", "Это твоя/ваша ручка?"]
+        ]
+    ],
+    ["ours", "наш (в абсолютной форме)", 
+        [
+            ["This is ours.", "Это наше."]
+        ]
+    ],
+    ["theirs", "их (в абсолютной форме)", 
+        [
+            ["That car is theirs.", "Та машина — их."]
+        ]
+    ],
+    ["myself", "я сам/сама", 
+        [
+            ["I did it myself.", "Я сделал это сам."]
+        ]
+    ],
+    ["yourself", "ты сам/вы сами", 
+        [
+            ["You can do it yourself.", "Ты можешь сделать это сам."]
+        ]
+    ],
+    ["himself", "он сам", 
+        [
+            ["He did it himself.", "Он сделал это сам."]
+        ]
+    ],
+    ["herself", "она сама", 
+        [
+            ["She can dress herself.", "Она может одеться сама."]
+        ]
+    ],
+    ["itself", "оно само", 
+        [
+            ["The dog cleaned itself.", "Собака вылизала себя."]
+        ]
+    ],
+    ["ourselves", "мы сами", 
+        [
+            ["We should do it ourselves.", "Мы должны сделать это сами."]
+        ]
+    ],
+    ["themselves", "они сами", 
+        [
+            ["They built it themselves.", "Они построили это сами."]
+        ]
+    ],
+    ["anything", "что-нибудь", 
+        [
+            ["Do you want anything?", "Ты хочешь что-нибудь?"]
+        ]
+    ]
 ];
 
+
 const a1_prepositions = [
-    ["of", "из, о, от, для"],
-    ["in", "в, внутри"],
-    ["on", "на"],
-    ["at", "в, на (место или время)"],
-    ["by", "у, возле, рядом, с помощью"],
-    ["with", "с"],
-    ["about", "о, об"],
-    ["for", "для"],
-    ["to", "к, в, на"],
-    ["from", "от, с"],
-    ["under", "под"],
-    ["over", "над"],
-    ["between", "между"],
-    ["around", "вокруг"],
-    ["through", "через"],
-    ["behind", "за"],
-    ["next to", "рядом с"],
-    ["before", "до"],
-    ["after", "после"]
+    ["of", "из, о, от, для", 
+        [
+            ["This is a book of poems.", "Это книга о стихах."]
+        ]
+    ],
+    ["in", "в, внутри", 
+        [
+            ["The ball is in the box.", "Мяч в коробке."]
+        ]
+    ],
+    ["on", "на", 
+        [
+            ["The book is on the table.", "Книга на столе."]
+        ]
+    ],
+    ["at", "в, на (место или время)", 
+        [
+            ["I am at the park.", "Я в парке."]
+        ]
+    ],
+    ["by", "у, возле, рядом, с помощью", 
+        [
+            ["The school is by the river.", "Школа рядом с рекой."]
+        ]
+    ],
+    ["with", "с", 
+        [
+            ["I am with my friend.", "Я с другом."]
+        ]
+    ],
+    ["about", "о, об", 
+        [
+            ["I am reading a book about animals.", "Я читаю книгу о животных."]
+        ]
+    ],
+    ["for", "для", 
+        [
+            ["This gift is for you.", "Этот подарок для тебя."]
+        ]
+    ],
+    ["to", "к, в, на", 
+        [
+            ["I am going to the store.", "Я иду в магазин."]
+        ]
+    ],
+    ["from", "от, с", 
+        [
+            ["This letter is from my friend.", "Это письмо от моего друга."]
+        ]
+    ],
+    ["under", "под", 
+        [
+            ["The cat is under the table.", "Кошка под столом."]
+        ]
+    ],
+    ["over", "над", 
+        [
+            ["The picture is over the sofa.", "Картина над диваном."]
+        ]
+    ],
+    ["between", "между", 
+        [
+            ["The ball is between the shoes.", "Мяч между туфлями."]
+        ]
+    ],
+    ["around", "вокруг", 
+        [
+            ["There are trees around the house.", "Вокруг дома есть деревья."]
+        ]
+    ],
+    ["through", "через", 
+        [
+            ["The cat went through the door.", "Кошка прошла через дверь."]
+        ]
+    ],
+    ["behind", "за", 
+        [
+            ["The dog is behind the house.", "Собака за домом."]
+        ]
+    ],
+    ["next to", "рядом с", 
+        [
+            ["The park is next to the school.", "Парк рядом со школой."]
+        ]
+    ],
+    ["before", "до", 
+        [
+            ["We eat dinner before 7 o'clock.", "Мы едим ужин до 7 часов."]
+        ]
+    ],
+    ["after", "после", 
+        [
+            ["We go home after work.", "Мы идём домой после работы."]
+        ]
+    ]
 ];
 
 const a1_interjections = [
-    ["each","каждый"]
+    ["each", "каждый", 
+        [
+            ["Each student has a book.", "Каждый студент имеет книгу."]
+        ]
+    ]
 ];
 
+/*
 function checkWordsInArrays(sentence, arrays) {
     // Приводим предложение к нижнему регистру и разбиваем на слова
     const words = sentence.toLowerCase().split(" ").filter(word => word.length > 0);
@@ -1921,6 +2867,7 @@ const exercises_easy_2 = [
 
 
 // ================================================================================================================================
+
 const base = [
     ["a", ""],["an", ""],["the", ""],["is", ""],["are", ""],["am", ""],["not", ""],["cannot",""],
     ,["one",""],["two",""],["three",""],["four",""],["five",""],["six",""],["seven",""],["eight",""],["nine",""],["ten",""],["sorry",""],["should",""]
@@ -1990,4 +2937,4 @@ function check_sentence(arr){
 }
 
 
-check_sentence(exercises_easy_1);
+check_sentence(exercises_easy_1);*/
