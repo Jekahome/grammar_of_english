@@ -18,6 +18,72 @@
         <h1>Check words</h1>
         С каждый словом есть предложение состоящее из слов A1. 
         Поработать с этими предложениями (писать под диктовку, переводить ...)
+
+        <h2>Упражнения</h2>
+        <h3>Write (Medium)</h3>
+        <details>
+            <summary>Перевести предложения (adverbs) </summary>
+            <form id="exerciseForm_1"></form>
+        </details>
+
     </div>
+    <script src='/grammar_of_english/practice.js'></script>
+    <script>
+        function recognition(id, recognition){
+            console.log(`id=${id} recognition=${recognition}`);
+            var el = document.getElementById(id);
+            el.value = recognition;
+            const inputEvent = new Event('input');
+            el.dispatchEvent(inputEvent);
+        }
+
+        let practice = new Practice({callback: recognition});
+
+        const generateExercisesMedium = (() => {
+            let index = 0; 
+            return (exercises, exerciseForm) => {
+                exercises.forEach(rows => {
+                    
+                     
+                        index += 1;
+                        let answer = rows[1].replace(/'/g, "&#39;");
+                        exerciseForm.innerHTML += `<p>${rows[2]} — <input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'> 
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> 
+                        <span class="text-span" id="clue-medium-${index}">${answer}</span></p>`;
+                    
+                });
+            };
+        })();
+        const generateExercisesMedium2 = (() => {
+            let index = 0; 
+            return (exercises, exerciseForm) => {
+                exercises.forEach(rows => {
+                    
+                    rows.forEach(row => {
+                        index += 1;
+                        let answer = row[1].replace(/'/g, "&#39;");
+                        exerciseForm.innerHTML += `<p>${row[1]} — <input type="text" class="input-size" oninput="checkAnswer(this, '${answer}')" />
+                        <img src="/grammar_of_english/img/play.png" class="icon" onclick='playSentence("${answer}")'> 
+                        <img src="/grammar_of_english/img/clue.png" class="icon" onclick="showClue('clue-medium-${index}')"> 
+                        <span class="text-span" id="clue-medium-${index}">${answer}</span></p>`;
+                    });
+                });
+            };
+        })();
+
+
+        generateExercisesMedium(a1_adverbs, document.getElementById('exerciseForm_1'));
+
+
+        function micSentence(micEl, id){
+            practice.micOn(micEl, id);
+        }
+
+        function playSentence(sentence){
+            practice.speak(sentence);
+        }
+
+    </script>
 </body>
 </html>
