@@ -1,1 +1,73 @@
-He is running. — Парень бегает.
+SIMPLE — Действие "вообще".Регулярно повторяющееся действие.
+I break — Я ломаю.
+He breaks — Он ломает.
+I broke — Я сломал
+I will break — Я сломаю
+I do not break — Я не ломаю
+I did not break — Я не сломал
+I will not break — Я не сломаю
+Do I break? — Я ломаю?
+Did I break? — Я сломал?
+Will I break? — Я сломаю?
+I do — Я делаю
+I did — Я сделал
+I will do — Я сделаю
+I do not do — Я не делаю
+I did not do — Я не сделал
+I will not do — Я не сделаю
+Do I do? — Я делаю?
+Did I do? — Я сделал?
+Will I do? — Я сделаю?
+I am — Я есть
+I was — Я был
+You were — Ты был
+I will be — Я буду
+I am not — Я не есть
+I was not — Я не был
+You were not — Ты не был
+I will not be — Я не буду
+Am I? — Я есть?
+Was I? — Я был?
+Were You? — А ты был?
+Will I be? — Я буду?
+CONTINUOUS — Действие происходящее в определенный момент или период времени.
+I am breaking — Я ломаю сейчас
+I was breaking — Я ломал
+You were breaking — Ты ломал
+I will be breaking — Я буду ломать
+I am not breaking — Я не ломаю сейчас
+I was not breaking — Я не ломал
+You were not breaking — Ты не ломал
+I will not be breaking — Я не буду ломать
+Am I breaking? — Я ломаю?
+Was I breaking? — Я ломал?
+Were you breaking? — Ты ломал?
+Will I be breaking? — Я буду ломать?
+I am doing — Я делаю
+I was doing — Я делал
+I will be doing — Я буду делать
+I am not doing — Я не делаю
+I was not doing — Я не делал
+I will not be doing — Я не буду делать
+Am I doing? — Я делаю
+Was I doing? — Я делал?
+Will I be doing? — Я буду делать?
+I am being — Я нахожусь
+I was being — Я находился
+I will be being — Я буду находиться
+I am not being — Я не нахожусь
+I was not being — Я не находился
+I will not be being — Я не буду находиться
+Am I being? — Я нахожусь?
+Was I being? — Я находился?
+Will I be being? — Я буду находиться?
+PERFECT Perfect — Действие, завершенное в момент речи, его результат имеется налицо к моменту речи.
+I have broken — Я сломал
+She has broken — Она сломала
+I have been — Я был
+I have not broken — Я не сломал
+I have not done — Я не сделал
+I have not been — Я не был
+Have I broken? — Я сломал?
+Have I done? — Я сделал?
+Have I been? — Я был?
