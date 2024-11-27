@@ -10,10 +10,18 @@ https://habr.com/ru/articles/660565/
 https://github.com/snakers4/silero-models?tab=readme-ov-file
 https://models.silero.ai/models/tts/
 
+Dependencies:
+sudo apt update && sudo apt install ffmpeg
+pip install numpy
+pip install pydub --break-system-packages
+pip install torch --break-system-packages
+
  
 Use
 $ cd tools
 $ python text_to_speech_silero.py from_sentences.txt
+или
+$ pipx run python text_to_speech_silero.py from_sentences.txt
 
 from_sentences.txt:
 Where do you usually go on vacation? - Куда вы обычно ездите на каникулы?
@@ -89,28 +97,36 @@ def save_line_to_wav(line):
     
     text_en = text_ru = text_en_slowly = ''
     # для случая множества тире
-    count_dash = line.count("-")
-    if  count_dash == 1:  
-        text = line.split('-',1)
+    if "—" in line:
+        text = line.split('—',1)
         if len(text) < 2:
             return 1
         text_en = text[0].rstrip()
         text_ru = text[1].lstrip()
         text_en_slowly = text_en
-    elif count_dash > 1:
-        index_dash = 0
-        for char in line:
-            index_dash +=1
-            if 'а' <= char <= 'я' or 'А' <= char <= 'Я':
-                break;
-        if  index_dash == len(line):
-            return 1
-        text_en = line[:index_dash-1].rstrip()
-        text_en = text_en[:-1].rstrip()
-        text_ru = line[index_dash-1:].lstrip()
-        text_en_slowly = text_en
     else:
-        return 1
+        count_dash = line.count("-")
+        if  count_dash == 1:  
+            text = line.split('-',1)
+            if len(text) < 2:
+                return 1
+            text_en = text[0].rstrip()
+            text_ru = text[1].lstrip()
+            text_en_slowly = text_en
+        elif count_dash > 1:
+            index_dash = 0
+            for char in line:
+                index_dash +=1
+                if 'а' <= char <= 'я' or 'А' <= char <= 'Я':
+                    break;
+            if  index_dash == len(line):
+                return 1
+            text_en = line[:index_dash-1].rstrip()
+            text_en = text_en[:-1].rstrip()
+            text_ru = line[index_dash-1:].lstrip()
+            text_en_slowly = text_en
+        else:
+            return 1
 
     text_en = "<speak><prosody rate=\"medium\">" + text_en + "</prosody></speak>"
     text_en_slowly = ", ".join(text_en_slowly.split(' '))
