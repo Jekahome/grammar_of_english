@@ -1,73 +1,59 @@
-SIMPLE — Действие "вообще".Регулярно повторяющееся действие.
-I break — Я ломаю.
-He breaks — Он ломает.
-I broke — Я сломал
-I will break — Я сломаю
-I do not break — Я не ломаю
-I did not break — Я не сломал
-I will not break — Я не сломаю
-Do I break? — Я ломаю?
-Did I break? — Я сломал?
-Will I break? — Я сломаю?
-I do — Я делаю
-I did — Я сделал
-I will do — Я сделаю
-I do not do — Я не делаю
-I did not do — Я не сделал
-I will not do — Я не сделаю
-Do I do? — Я делаю?
-Did I do? — Я сделал?
-Will I do? — Я сделаю?
-I am — Я есть
-I was — Я был
-You were — Ты был
-I will be — Я буду
-I am not — Я не есть
-I was not — Я не был
-You were not — Ты не был
-I will not be — Я не буду
-Am I? — Я есть?
-Was I? — Я был?
-Were You? — А ты был?
-Will I be? — Я буду?
-CONTINUOUS — Действие происходящее в определенный момент или период времени.
-I am breaking — Я ломаю сейчас
-I was breaking — Я ломал
-You were breaking — Ты ломал
-I will be breaking — Я буду ломать
-I am not breaking — Я не ломаю сейчас
-I was not breaking — Я не ломал
-You were not breaking — Ты не ломал
-I will not be breaking — Я не буду ломать
-Am I breaking? — Я ломаю?
-Was I breaking? — Я ломал?
-Were you breaking? — Ты ломал?
-Will I be breaking? — Я буду ломать?
-I am doing — Я делаю
-I was doing — Я делал
-I will be doing — Я буду делать
-I am not doing — Я не делаю
-I was not doing — Я не делал
-I will not be doing — Я не буду делать
-Am I doing? — Я делаю
-Was I doing? — Я делал?
-Will I be doing? — Я буду делать?
-I am being — Я нахожусь
-I was being — Я находился
-I will be being — Я буду находиться
-I am not being — Я не нахожусь
-I was not being — Я не находился
-I will not be being — Я не буду находиться
-Am I being? — Я нахожусь?
-Was I being? — Я находился?
-Will I be being? — Я буду находиться?
-PERFECT Perfect — Действие, завершенное в момент речи, его результат имеется налицо к моменту речи.
-I have broken — Я сломал
-She has broken — Она сломала
-I have been — Я был
-I have not broken — Я не сломал
-I have not done — Я не сделал
-I have not been — Я не был
-Have I broken? — Я сломал?
-Have I done? — Я сделал?
-Have I been? — Я был?
+1. Глагол break
+Present Perfect
+
+<strong>I have broken my phone, so I can't call you now.</strong><br> — Я сломал телефон, поэтому не могу тебе позвонить.<br>
+<strong>I haven't broken anything today.</strong><br> — Я ничего не сломал сегодня.<br>
+<strong>Have I broken anything in the house?</strong><br> — Я сломал что-то в доме?<br>
+Past Perfect
+
+<strong>I had broken my leg before the accident happened.</strong><br> — Я сломал ногу до того, как произошел инцидент.<br>
+<strong>I hadn't broken anything when I moved in.</strong><br> — Я ничего не сломал, когда переехал.<br>
+<strong>Had I broken the vase before you arrived?</strong><br> — Я сломал вазу до твоего прихода?<br>
+Future Perfect
+
+<strong>I will have broken the record by next week.</strong><br> — Я побью рекорд к следующей неделе.<br>
+<strong>I won't have broken anything by the time I leave.</strong><br> — Я ничего не сломаю, к тому времени как уеду.<br>
+<strong>Will I have broken this glass by the end of the day?</strong><br> — Я сломаю этот стакан к концу дня?<br>
+
+
+
+
+
+
+2. Глагол do
+Present Perfect
+
+<strong>I have done all my homework, so now I can relax.</strong><br> — Я сделал всю домашку, так что теперь могу отдохнуть.<br>
+<strong>I haven't done my chores yet.</strong><br> — Я еще не сделал свои дела по дому.<br>
+<strong>Have I done everything you asked?</strong><br> — Я сделал все, что ты просил?<br>
+Past Perfect
+
+<strong>I had done the project before the deadline.</strong><br> — Я сделал проект до крайнего срока.<br>
+<strong>I hadn't done my work when the boss called.</strong><br> — Я не сделал свою работу, когда позвонил начальник.<br>
+<strong>Had I done the dishes before you arrived?</strong><br> — Я помыл посуду до твоего прихода?<br>
+Future Perfect
+
+<strong>I will have done my part by tomorrow.</strong><br> — Я сделаю свою часть к завтрашнему дню.<br>
+<strong>I won't have done the tasks by then.</strong><br> — Я не сделаю задания к тому времени.<br>
+<strong>Will I have done enough to pass?</strong><br> — Я сделал достаточно, чтобы сдать?<br>
+
+
+
+
+
+3. Глагол be
+Present Perfect
+
+<strong>I have been to Paris three times.</strong><br> — Я был в Париже трижды.<br>
+<strong>I haven't been to the new restaurant yet.</strong><br> — Я еще не был в новом ресторане.<br>
+<strong>Have I been clear about what I want?</strong><br> — Я ясно сказал, что хочу?<br>
+Past Perfect
+
+<strong>I had been waiting for hours before the train arrived.</strong><br> — Я ждал несколько часов, прежде чем поезд приехал.<br>
+<strong>I hadn't been to the gym for weeks.</strong><br> — Я не ходил в спортзал несколько недель.<br>
+<strong>Had I been invited to the event?</strong><br> — Меня пригласили на мероприятие?<br>
+Future Perfect
+
+<strong>I will have been here for a year by next month.</strong><br> — Я буду здесь уже год к следующему месяцу.<br>
+<strong>I won't have been at the party when you arrive.</strong><br> — Я не буду на вечеринке, когда ты приедешь.<br>
+<strong>Will I have been married for five years by then?</strong><br> — Я буду женат(а) пять лет к тому времени?<br>
