@@ -28,6 +28,7 @@ He was angry with the children for misbehaving. — Он разозлился н
 I am proud of you for telling the truth. — Я горжусь тобой, за то, что ты сказал правду.
 
 FOR в значении времени/продолжительности/протяженности, как долго длилось действие, «в течение какого времени»:
+I wasn't late for the meeting. – Я не опоздал на встречу.
 The conference lasted for 2 hours. – Конференция длилась 2 часа.
 I haven’t played piano for 5 years. – Я не играла на пианино 5 лет.
 I have worked as a teacher for eleven years. — Я работаю преподавателем одиннадцать лет.
