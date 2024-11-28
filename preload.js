@@ -68,6 +68,8 @@ function checkAnswer(inputElement, correctAnswer) {
         "let's":"let us",
         "couldn't":"could not",
         "doesn't":"does not",
+        "weren't":"were not",
+        "wasn't":"was not"
     };
 
     function replaceContractions(text) {
