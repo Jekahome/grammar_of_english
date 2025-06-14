@@ -271,7 +271,7 @@ I will be smart. - Я буду умным.
 - Порядок слов
 - Глагол to be
 - Артикли a/an/the
-- Единственное и множественное число сушественных (-s,-es)
+- Единственное и множественное число существительных (-s,-es)
 - Личные местоимения I,we,you,they,he,she,it
 - Present Simple 
 - Past Simple
@@ -284,7 +284,7 @@ I will be smart. - Я буду умным.
 - Вопросы с what,who,whose
 - Вопросы с where,when,why,how,how much (many)
 - Модальный глагол can,can't
-- Исчесляемые и неисчесляемые существетельные (some,any,many,much, a lot)
+- Исчисляемые и неисчисляемые существетельные (some,any,many,much, a lot)
 - Наречия частотности always,often,never
 - It is construction
 - Конкретный набор слов
@@ -309,7 +309,7 @@ I will be smart. - Я буду умным.
 - Определенные придаточные предложения с that,who,which,where
 - Герундий
 - Модальные глаголы have to,don't have to,must,mustn't,should,shouldn't,may,might,might not
-- Условные предложения первого, второго и терьего типа
+- Условные предложения первого, второго и третьего типа
 - Пассивный залог
 - Конструкция used to,didn't use to
 - Косвенная речь, разница между say и tell
