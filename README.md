@@ -1,6 +1,6 @@
 # Grammar of English
 
-## [transfer to Github Pages](https://jekahome.github.io/grammar_of_english)
+## [Open Github Pages](https://jekahome.github.io/grammar_of_english)
 
 ## Tools
 
