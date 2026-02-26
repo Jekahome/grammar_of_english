@@ -26,5 +26,5 @@ level = 0
 command = "bin/mdbook-callouts"
 
 [build]
-build-dir = "public"
+build-dir = "book"
 create-missing = true
