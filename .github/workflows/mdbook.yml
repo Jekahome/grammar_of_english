@@ -30,17 +30,24 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - uses: actions/checkout@v4
+      
       - name: Make binaries executable (mdbook 0.4.52)
         run: |
           chmod +x ./bin/mdbook
           chmod +x ./bin/mdbook-callouts
+          ls -la ./bin/  # Проверяем бинарники
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
       - name: Build with mdBook
-        run: ./bin/mdbook build
+        run: |
+          ./bin/mdbook build
+          echo "=== После сборки ==="
+          pwd  # Показываем текущую директорию
+          ls -la  # Показываем все файлы в корне
+          ls -la book/  # Пробуем показать содержимое book, если папка существует
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
