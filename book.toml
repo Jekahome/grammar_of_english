@@ -1,0 +1,30 @@
+[book]
+authors = ["Jeka"]
+language = "en"
+src = "src"
+title = "Grammar of English"
+
+
+[output.html]
+smart-punctuation = false
+no-section-label = false
+additional-css = ["theme/css/theme.css",]
+additional-js = ["src/js/general.js","src/js/practice.js","src/js/editorVoice.js","src/js/editor_img.js","src/js/editor_symbol.js"]
+
+[output.html.print]
+enable = false    
+page-break = false  
+
+[output.html.fold]
+enable = true    
+level = 0         
+
+# ADD THIS https://github.com/GrayJack/rs-mdbook-callouts
+# [preprocessor.callouts]
+
+[preprocessor.callouts]
+command = "bin/mdbook-callouts"
+
+[build]
+build-dir = "public"
+create-missing = true

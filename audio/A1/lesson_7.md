@@ -1,0 +1,724 @@
+## 
+
+There is a cat in the bedroom. — В спальне есть кот.
+There are apples on the table. — На столе есть яблоки.
+There is no sugar in the kitchen. — На кухне нет сахара.
+There are no trains today. — Сегодня нет поездов.
+
+There was a noise last night. — Прошлой ночью был шум.
+There were vegetables in the fridge. — В холодильнике были овощи.
+There was not a hat on the chair. — На стуле не было шляпы.
+There were no apples in the basket. — В корзине не было яблок.
+
+There will be a party tomorrow. — Завтра будет вечеринка.
+There will be rice for dinner. — На ужин будет рис.
+There will not be milk in the fridge. — В холодильнике не будет молока.
+There will not be fruits in the shop. — В магазине не будет фруктов.
+
+There is dancing in the square now. — Сейчас на площади танцуют.
+There are people swimming in the ocean. — В океане плавают люди.
+There is not a person cooking in the kitchen. — В кухне никто не готовит.
+There are not chairs near the desk. — Возле стола нет стульев.
+
+There was dancing at the party yesterday. — Вчера на вечеринке танцевали.
+There were guests dining in the restaurant. — В ресторане ужинали гости.
+There was not rice in the meal. — В еде не было риса.
+There were not people riding bikes. — Не было людей, едущих на велосипедах.
+
+There will be fun at the holiday next week. — На празднике на следующей неделе будет весело.
+There will be vegetables for dinner. — На ужин будут овощи.
+There will not be noise in the flat tomorrow. — Завтра в квартире не будет шума.
+There will not be milk in the shop. — В магазине не будет молока.
+
+There is a sentence to practise. — Есть предложение, чтобы потренироваться.
+There are hats on the grass. — На траве лежат шляпы.
+
+There is salt on the table. — На столе есть соль.
+There are dresses in the shop. — В магазине есть платья.
+There is a moon in the sky tonight. — Сегодня ночью на небе есть луна.
+There are shirts in my bedroom. — В моей спальне есть рубашки.
+
+There was a dress at the party. — На вечеринке было платье.
+There were meals for everyone yesterday. — Вчера были блюда для всех.
+There was not a tooth in the glass. — В стакане не было зуба.
+There were no addresses in the letter. — В письме не было адресов.
+
+There will be a bedroom in the new flat. — В новой квартире будет спальня.
+There will be bread for breakfast. — На завтрак будет хлеб.
+There will not be rice in the shop tomorrow. — Завтра в магазине не будет риса.
+There will not be fun without music. — Без музыки не будет веселья.
+
+There is a noise in the kitchen now. — Сейчас на кухне шум.
+There are fruits on the table. — На столе есть фрукты.
+There is no ocean near here. — Здесь рядом нет океана.
+There are hats on the grass now. — Сейчас на траве лежат шляпы.
+
+There was dancing at the event yesterday. — Вчера на мероприятии танцевали.
+There were vegetables for lunch. — На обед были овощи.
+There was not milk in the fridge. — В холодильнике не было молока.
+There were no apples in the basket. — В корзине не было яблок.
+
+There will be a meal at the restaurant tomorrow. — Завтра в ресторане будет еда.
+There will be a dance show tonight. — Сегодня вечером будет танцевальное шоу.
+There will not be noise in the flat later. — Позже в квартире не будет шума.
+There will not be salt in the soup. — В супе не будет соли.
+
+There is a sentence to fix. — Есть предложение, которое нужно исправить.
+There are drinks for everyone. — Для всех есть напитки.
+
+There is good weather today. — Сегодня хорошая погода.
+There are trains at the station. — На станции есть поезда.
+There is fruit on the table. — На столе есть фрукты.
+There are apples in the basket. — В корзине есть яблоки.
+There is a nose on the doll. — На кукле есть нос.
+There are shirts in the shop. — В магазине есть рубашки.
+There is an address in the letter. — В письме есть адрес.
+There is a drink on the desk. — На столе есть напиток.
+There are vegetables in the fridge. — В холодильнике есть овощи.
+
+There was good weather yesterday. — Вчера была хорошая погода.
+There were trains late at night. — Поздно ночью были поезда.
+There was fruit at the party. — На вечеринке были фрукты.
+There were apples on the plate. — На тарелке были яблоки.
+There was a nose in the picture. — На картине был нос.
+There were shirts in the closet. — В шкафу были рубашки.
+There was an address in the note. — В записке был адрес.
+There was a drink in the glass. — В стакане был напиток.
+There were vegetables in the soup. — В супе были овощи.
+
+There will be good weather tomorrow. — Завтра будет хорошая погода.
+There will be trains in the morning. — Утром будут поезда.
+There will be fruit for dinner. — На ужин будут фрукты.
+There will be apples in the shop. — В магазине будут яблоки.
+There will be shirts in the sale. — На распродаже будут рубашки.
+There will be a drink for everyone. — Для всех будет напиток.
+There will be vegetables for lunch. — На обед будут овощи.
+
+There is a man drinking tea. — Мужчина пьёт чай.
+There are people riding bikes. — Люди катаются на велосипедах.
+There is a woman cooking dinner. — Женщина готовит ужин.
+There are children inviting friends. — Дети приглашают друзей.
+There is an artist painting a wall. — Художник красит стену.
+There is a boy waking up early. — Мальчик просыпается рано.
+There is news influencing people. — Новости влияют на людей.
+There is a player kicking the ball. — Игрок бьёт по мячу.
+There is a teacher solving a problem. — Учитель решает задачу.
+There are people fixing a car. — Люди чинят машину.
+There is a woman cleaning the room. — Женщина убирает комнату.
+There is a man investing money. — Мужчина вкладывает деньги.
+There is a child washing hands. — Ребёнок моет руки.
+There is a man smoking outside. — Мужчина курит на улице.
+There are people communicating online. — Люди общаются онлайн.
+There are swimmers swimming in the pool. — Пловцы плавают в бассейне.
+There is a student practising English. — Студент тренирует английский.
+There are guests dining in the restaurant. — Гости ужинают в ресторане.
+
+## There в значении — "там"
+ 
+There is good weather there today. — Там сегодня хорошая погода.
+There is fruit there in the basket. — Там есть фрукты в корзине.
+There is a dance there every Friday. — Там каждую пятницу танцы.
+There is a nose there on the statue. — Там нос на статуе.
+There is an address there in the letter. — Там адрес в письме.
+There are vegetables there in the market. — Там овощи на рынке.
+There is a drink there on the desk. — Там напиток на столе.
+There is salt there in the bowl. — Там соль в миске.
+There is sugar there in the cup. — Там сахар в чашке.
+There is a train there every morning. — Там поезд каждое утро.
+There is the moon there tonight. — Там сегодня ночь и луна.
+There is a meal there after the meeting. — Там еда после встречи.
+There is a cat there under the tree. — Там кот под деревом.
+There is a dress there in the shop. — Там платье в магазине.
+There is a shirt there on the bed. — Там рубашка на кровати.
+There is a tooth there in the glass. — Там зуб в стакане.
+There is a bedroom there upstairs. — Там спальня наверху.
+There is the ocean there in the distance. — Там океан вдали.
+There is fun there for everyone. — Там весело для всех.
+There is an apple there on the table. — Там яблоко на столе.
+There is a holiday there next week. — Там праздник на следующей неделе.
+There is a flat there near the park. — Там квартира рядом с парком.
+There is noise there in the street. — Там шум на улице.
+There is a hat there on the grass. — Там шляпа на траве.
+There is grass there in the garden. — Там трава в саду.
+There is a sentence there in the book. — Там предложение в книге.
+There is milk there in the fridge. — Там молоко в холодильнике.
+There is rice there for dinner. — Там рис на ужин.
+There is bread there on the plate. — Там хлеб на тарелке.
+
+ 
+
+There was weather there yesterday. — Там вчера была погода.
+There was fruit there at the party. — Там были фрукты на вечеринке.
+There was a dance there last night. — Там была танцевальная вечеринка вчера.
+There was an address there in the document. — Там был адрес в документе.
+There were vegetables there yesterday. — Там вчера были овощи.
+There was a drink there before dinner. — Там был напиток перед ужином.
+There was salt there in the soup. — Там была соль в супе.
+There was sugar there in the cake. — Там был сахар в торте.
+There was a train there last night. — Там был поезд прошлой ночью.
+There was the moon there last evening. — Там была луна вчера вечером.
+There was a meal there after the event. — Там был ужин после мероприятия.
+There was a cat there in the room. — Там был кот в комнате.
+There was a dress there for the party. — Там было платье для вечеринки.
+There was a shirt there in the box. — Там была рубашка в коробке.
+There was a tooth there in the box. — Там был зуб в коробке.
+There was a bedroom there for guests. — Там была спальня для гостей.
+There was the ocean there in summer. — Там был океан летом.
+There was fun there at the festival. — Там было весело на фестивале.
+There was an apple there on the branch. — Там было яблоко на ветке.
+There was a holiday there in December. — Там был праздник в декабре.
+There was a flat there in the city. — Там была квартира в городе.
+There was noise there during the night. — Там был шум ночью.
+There was a hat there in the shop. — Там была шляпа в магазине.
+There was grass there in the park. — Там была трава в парке.
+There was a sentence there in the text. — Там было предложение в тексте.
+There was milk there in the glass. — Там было молоко в стакане.
+There was rice there at dinner. — Там был рис на ужин.
+There was bread there on the table. — Там был хлеб на столе.
+
+ 
+
+There will be weather there tomorrow. — Там завтра будет погода.
+There will be fruit there at the market. — Там будут фрукты на рынке.
+There will be a dance there next Friday. — Там будут танцы в следующую пятницу.
+There will be a nose there on the face. — Там будет нос на лице.
+There will be an address there in the letter. — Там будет адрес в письме.
+There will be vegetables there for lunch. — Там будут овощи на обед.
+There will be a drink there after the meeting. — Там будет напиток после встречи.
+There will be salt there in the soup. — Там будет соль в супе.
+There will be sugar there in the cake. — Там будет сахар в торте.
+There will be a train there in the morning. — Там будет поезд утром.
+There will be the moon there tonight. — Там будет луна сегодня вечером.
+There will be a meal there for everyone. — Там будет еда для всех.
+There will be a cat there in the garden. — Там будет кот в саду.
+There will be a dress there for the party. — Там будет платье на вечеринку.
+There will be a shirt there in the shop. — Там будет рубашка в магазине.
+There will be a tooth there in the cup. — Там будет зуб в чашке.
+There will be a bedroom there for guests. — Там будет спальня для гостей.
+There will be the ocean there in summer. — Там будет океан летом.
+There will be fun there at the holiday camp. — Там будет весело в лагере.
+There will be an apple there on the tree. — Там будет яблоко на дереве.
+There will be a holiday there in July. — Там будет праздник в июле.
+There will be a flat there near the park. — Там будет квартира рядом с парком.
+There will be noise there during the festival. — Там будет шум во время фестиваля.
+There will be a hat there on the grass. — Там будет шляпа на траве.
+There will be grass there in the field. — Там будет трава на поле.
+There will be a sentence there in the book. — Там будет предложение в книге.
+There will be milk there in the cup. — Там будет молоко в чашке.
+There will be rice there for lunch. — Там будет рис на обед.
+There will be bread there in the bakery. — Там будет хлеб в пекарне.
+
+ 
+
+There is a man drinking tea there now. — Там сейчас мужчина пьёт чай.
+There are people riding bikes there now. — Там сейчас люди катаются на велосипедах.
+There is a woman cooking dinner there now. — Там сейчас женщина готовит ужин.
+There are children inviting friends there now. — Там сейчас дети приглашают друзей.
+There is an artist painting a wall there now. — Там сейчас художник красит стену.
+There is a boy waking up early there. — Там мальчик просыпается рано.
+There is news influencing people there now. — Там новости влияют на людей.
+There is a player kicking the ball there now. — Там игрок бьёт по мячу.
+There is a teacher solving a problem there now. — Там учитель решает задачу.
+There are people fixing a car there now. — Там люди чинят машину.
+There is a woman cleaning the room there now. — Там женщина убирает комнату.
+There is a man investing money there now. — Там мужчина вкладывает деньги.
+There is a child washing hands there now. — Там ребёнок моет руки.
+There is a man smoking outside there now. — Там мужчина курит на улице.
+There are people communicating online there now. — Там люди общаются онлайн.
+There are swimmers swimming in the pool there now. — Там пловцы плавают в бассейне.
+There is a student practising English there now. — Там студент тренирует английский.
+There are guests dining in the restaurant there now. — Там гости ужинают в ресторане.
+
+ 
+There is someone who rides a bike there. — Там кто-то катается на велосипеде.
+
+There is a chef who cooks dinner there. — Там шеф готовит ужин.
+
+There are people who invite friends there. — Там люди приглашают друзей.
+
+There is an artist who paints a wall there. — Там художник красит стену.
+
+There is a boy who wakes up early there. — Там мальчик просыпается рано.
+
+There is news which influences people there. — Там новости влияют на людей.
+
+There is a player who kicks the ball there. — Там игрок бьёт мяч.
+
+There is a teacher who solves problems there. — Там учитель решает задачи.
+
+There are mechanics who fix a car there. — Там механики чинят машину.
+
+There is a cleaner who cleans a room there. — Там уборщик убирает комнату.
+
+There is an investor who invests money there. — Там инвестор вкладывает деньги.
+
+There is a child who washes dishes there. — Там ребёнок моет посуду.
+
+There is a man who smokes outside there. — Там мужчина курит на улице.
+
+There are people who communicate there. — Там люди общаются.
+
+There are swimmers who swim there. — Там пловцы плавают.
+
+There is a student who practises English there. — Там студент практикует английский.
+
+There are guests who dine there. — Там гости ужинают.
+
+There is a person who practises dance there. — Там человек тренирует танец.
+
+ 
+
+There was a boy who rode a bike there yesterday.
+
+There was a chef who cooked dinner there last night.
+
+There were people who invited friends there.
+
+There was an artist who painted a wall there.
+
+There was a child who woke up early there.
+
+There was news which influenced people there.
+
+There was a player who kicked the ball there.
+
+There was a teacher who solved problems there.
+
+There were mechanics who fixed a car there.
+
+There was a cleaner who cleaned a room there.
+
+There was an investor who invested money there.
+
+There was a child who washed dishes there.
+
+There was a man who smoked outside there.
+
+There were people who communicated there.
+
+There were swimmers who swam there.
+
+There was a student who practised English there.
+
+There were guests who dined there.
+
+There was a person who practised dance there.
+
+ 
+There will be someone who rides a bike there tomorrow.
+
+There will be a chef who cooks dinner there.
+
+There will be people who invite guests there.
+
+There will be an artist who paints a wall there.
+
+There will be a child who wakes up early there.
+
+There will be news which influences people there.
+
+There will be a player who kicks a ball there.
+
+There will be a teacher who solves problems there.
+
+There will be mechanics who fix a car there.
+
+There will be a cleaner who cleans a room there.
+
+There will be an investor who invests money there.
+
+There will be a child who washes dishes there.
+
+There will be a man who smokes outside there.
+
+There will be people who communicate there.
+
+There will be swimmers who swim there.
+
+There will be a student who practises English there.
+
+There will be guests who dine there.
+
+There will be a person who practises dance there.
+
+ 
+
+There is someone riding a bike there.
+
+There is a chef cooking dinner there.
+
+There are people inviting friends there.
+
+There is an artist painting a wall there.
+
+There is a boy waking up early there.
+
+There is news influencing people there.
+
+There is a player kicking the ball there.
+
+There is a teacher solving problems there.
+
+There are mechanics fixing a car there.
+
+There is a cleaner cleaning a room there.
+
+There is an investor investing money there.
+
+There is a child washing dishes there.
+
+There is a man smoking outside there.
+
+There are people communicating there.
+
+There are swimmers swimming there.
+
+There is a student practising English there.
+
+There are guests dining there.
+
+There is a person practising dance there.
+
+
+## There is/are при ответах на вопросы (What,Where, How many, How much, Who)
+
+What is there on the desk? — There is sugar on the desk.
+
+Where are there apples? — There are apples in the basket.
+
+How many cats are there? — There are three cats in the room.
+
+Who is there? — There is a man cooking dinner.
+
+What is there near the ocean? — There is fun for tourists.
+
+What was there on the table yesterday? — There was bread on the table.
+
+Where were there vegetables? — There were vegetables at the market.
+
+How much milk was there? — There was some milk in the fridge.
+
+
+What was there in the bedroom? — There was a shirt on the bed.
+
+ 
+What will be there in the kitchen tomorrow? — There will be salt in the bowl.
+
+Where will there be noise? — There will be noise in the street.
+
+How many trains will be there? — There will be two trains in the station.
+
+Who will be there at the party? — There will be friends inviting guests.
+
+What will be there for dinner? — There will be rice and bread.
+
+
+What is there now in the shop? — There is a dress being painted.
+
+Where are there people? — There are people swimming in the ocean.
+
+How much sugar is there? — There is sugar in the cup.
+
+Who is there now? — There is a boy waking up early.
+
+What is there near the desk? — There is a drink being prepared.
+
+What is there in the bedroom? — There is a hat on the bed.
+
+Where is there grass? — There is grass in the garden.
+
+How many holidays are there this year? — There are two holidays this year.
+
+Who is there at the restaurant? — There is a man dining with guests.
+
+What is there in the address? — There is a sentence with information.
+
+Where are there trains? — There are trains at the station every morning.
+
+How much salt is there in the soup? — There is a lot of salt in the soup.
+
+Who is there at the party? — There is a woman inviting guests.
+
+What is there in the flat? — There is a bedroom and a kitchen.
+
+Where is there fun? — There is fun at the holiday camp.
+
+
+How many apples are there on the desk? — There are three apples on the desk. — There aren't any apples on the desk. — Сколько яблок на столе? — На столе три яблока. — На столе нет никаких яблок.
+
+Is there enough salt in the soup? — Yes, there is enough salt in the soup. — No, there isn't enough salt in the soup. — Достаточно ли соли в супе? — Да, в супе достаточно соли. — Нет, в супе недостаточно соли.
+
+Where do you clean the flat? — I clean the flat in the morning. — I don't clean the flat in the evening. — Где ты убираешь квартиру? — Я убираю квартиру утром. — Я не убираю квартиру вечером.
+
+
+How much milk was in the bottle? — There was a little milk in the bottle. — There wasn't any milk in the bottle. — Сколько молока было в бутылке? — В бутылке было немного молока. — В бутылке не было никакого молока.
+
+Were there any hats in the shop? — Yes, there were many cool hats there. — No, there weren't any hats there. — Были ли какие-нибудь шляпы в магазине? — Да, там было много классных шляп. — Нет, там не было никаких шляп.
+
+Where did he paint the bedroom? — He painted the bedroom blue. — He didn't paint the bedroom blue. — Где он покрасил спальню? — Он покрасил спальню в синий цвет. — Он не покрасил спальню в синий цвет.
+
+
+Will there be much noise at the party? — Yes, there will be a lot of noise there. — No, there won't be much noise. — Будет ли много шума на вечеринке? — Да, там будет много шума. — Нет, там не будет много шума.
+
+Where will you wash your dress? — I will wash my dress at home. — I won't wash my dress at work. — Где ты будешь стирать свое платье? — Я буду стирать свое платье дома. — Я не буду стирать свое платье на работе.
+
+How many meals will you cook? — I will cook two big meals today. — I won't cook any meals. — Сколько блюд ты приготовишь? — Я приготовлю два больших блюда сегодня. — Я не буду готовить никаких блюд.
+
+What is he drinking now? — He is drinking water (a drink). — He is not drinking milk. — Что он пьет сейчас? — Он пьет воду (напиток). — Он не пьет молоко.
+
+Where are they practising their dance? — They are practising their dance in the hall. — They are not practising their dance outside. — Где они репетируют свой танец? — Они репетируют свой танец в зале. — Они не репетируют свой танец на улице.
+
+How many vegetables are you washing? — I am washing a few vegetables for dinner. — I am not washing many vegetables. — Сколько овощей ты моешь? — Я мою несколько овощей для ужина. — Я не мою много овощей.
+
+
+## Quantifiers
+
+### Many/Much
+
+There isn't much fruit in the fridge. — В холодильнике не много фруктов.
+He doesn't drink much milk. — Он не пьёт много молока.
+We don't need much salt for this meal. — Нам не нужно много соли для этого блюда.
+Do you see many cats in the street? — Ты видишь много кошек на улице?
+She washes many shirts every week. — Она стирает много рубашек каждую неделю.
+I practise many dances for the show. — Я репетирую много танцев для шоу.
+They don't have much fun on their holiday. — Они не получают много удовольствия от своего отпуска.
+We didn't invite many people to our flat. — Мы не пригласили много людей в нашу квартиру.
+He didn't eat much bread with his soup. — Он не съел много хлеба с супом.
+I cleaned many desks in the office. — Я вычистил много рабочих столов в офисе.
+Did you hear much noise from the bedroom? — Ты слышал много шума из спальни?
+She fixed many dresses for the party. — Она починила много платьев для вечеринки.
+They didn't plant much grass in their garden. — Они не посадили много травы в своем саду.
+I will not need much sugar for the drink. — Мне не понадобится много сахара для напитка.
+We won't cook much rice for dinner. — Мы не будем готовить много риса на ужин.
+She will paint many pictures this year. — В этом году она напишет много картин.
+Will you have many apples from your tree? — У тебя будет много яблок с твоего дерева?
+He will solve many problems at work tomorrow. — Завтра он решит много проблем на работе.
+They will not buy many vegetables at the market. — Они не купят много овощей на рынке.
+He is not drinking much water right now. — Он прямо сейчас не пьёт много воды.
+They are not cooking many meals today. — Они сегодня не готовят много блюд.
+Is she making much progress in her practice? — Она делает большой прогресс в своей практике?
+Are you washing many hats for the trip? — Ты стираешь много шляп для поездки?
+He is riding many trains this month. — В этом месяце он ездит на многих поездах.
+
+We don't have many holidays in January. — У нас не много праздников в январе.
+
+He doesn't drink much milk. — Он не пьёт много молока.
+
+She solves many problems at work. — Она решает много проблем на работе.
+
+Does this recipe need much salt? — В этом рецепте нужно много соли?
+
+Do you have many dresses? — У тебя много платьев?
+ 
+
+We didn't invite many people to the party. — Мы не пригласили много людей на вечеринку.
+
+He didn't eat much fruit yesterday. — Он не съел много фруктов вчера.
+
+I cleaned many desks in the classroom. — Я вычистил много парт в классе.
+
+Did you have much fun at the festival? — Вы получили много удовольствия на фестивале?
+
+Did she buy many vegetables? — Она купила много овощей?
+ 
+
+I will not need much sugar for the cake. — Мне не понадобится много сахара для торта.
+
+They won't plant many trees in the park. — Они не посадят много деревьев в парке.
+
+She will cook many meals for the guests. — Она приготовит много блюд для гостей.
+
+Will you have much time tomorrow? — У тебя будет много времени завтра?
+
+Will he write many sentences? — Он напишет много предложений?
+ 
+
+He is not drinking much coffee today. — Он сегодня не пьёт много кофе.
+
+They are not buying many apples now. — Они сейчас не покупают много яблок.
+
+I am reading many books this month. — В этом месяце я читаю много книг.
+
+Is he making much noise? — Он производит много шума?
+
+Are you washing many shirts? — Ты стираешь много рубашек?
+
+We don't have many apples. — У нас не много яблок.
+
+He doesn't drink much milk. — Он не пьёт много молока.
+
+She solves many problems at work. — Она решает много проблем на работе.
+
+Does this recipe need much salt? — В этом рецепте нужно много соли?
+
+Do you have many dresses? — У тебя много платьев?
+
+I practise many sentences every day. — Я тренирую много предложений каждый день.
+
+They don't need much rice for the meal. — Им не нужно много риса для блюда.
+ 
+
+We didn't invite many people to the party. — Мы не пригласили много людей на вечеринку.
+
+He didn't eat much fruit yesterday. — Он не съел много фруктов вчера.
+
+I cleaned many desks in the classroom. — Я вычистил много парт в классе.
+
+Did you have much fun at the dance? — Ты получил много удовольствия на танцах?
+
+She fixed many chairs last week. — Она починила много стульев на прошлой неделе.
+
+They didn't make much noise during the movie. — Они не производили много шума во время фильма.
+ 
+I will not need much sugar for the cake. — Мне не понадобится много сахара для торта.
+
+They won't plant much grass in their garden. — Они не посадят много травы в своем саду.
+
+She will cook many meals for the guests. — Она приготовит много блюд для гостей.
+
+Will you have much time for your holiday? — У тебя будет много времени для отпуска?
+
+He will wash many shirts tomorrow. — Он постирает много рубашек завтра.
+
+We will not have much bread for breakfast. — У нас не будет много хлеба на завтрак.
+ 
+
+He is not drinking much water today. — Он сегодня не пьёт много воды.
+
+They are not buying many vegetables at the market now. — Они сейчас не покупают много овощей на рынке.
+
+I am reading many books this month. — В этом месяце я читаю много книг.
+
+Is he making much progress in his practice? — Он делает много прогресса в своей практике?
+
+Are you painting many pictures for the show? — Вы пишете много картин для шоу?
+
+She is answering many questions right now. — Она прямо сейчас отвечает на много вопросов.
+
+### a lot of/a few/a little
+
+We have a lot of fruit in the fridge. — У нас много фруктов в холодильнике.
+He doesn't drink a lot of milk. — Он не пьёт много молока.
+Do they have a lot of noise from the neighbours? — Они слышат много шума от соседей?
+
+She invited loads of people to her holiday. — Она пригласила множество людей на свои праздники.
+He didn't make loads of sentences for practice. — Он не составил множество предложений для практики.
+Will you need loads of apples for the meal? — Тебе понадобится множество яблок для трапезы?
+
+We have plenty of time to solve the problem. — У нас много времени, чтобы решить проблему.
+She isn't buying plenty of vegetables. — Она не покупает много овощей.
+Are they finding plenty of addresses? — Они находят много адресов?
+
+I need a few minutes to fix the desk. — Мне нужно несколько минут, чтобы починить парту.
+She didn't write a few sentences. — Она не написала несколько предложений.
+Will you buy a few hats? — Ты купишь несколько шляп?
+
+He drinks a lot of water. — Он пьёт много воды.
+She doesn't cook a lot of rice. — Она не готовит много риса.
+Do you practice a lot? — Ты много практикуешься?
+
+We had a lot of fun on the ocean. — Мы получили много удовольствия в океане.
+He didn't clean a lot of bedrooms. — Он не убирал много спален.
+Did they ride a lot of trains? — Они проехали на многих поездах?
+
+She will invest a lot of money. — Она вложит много денег.
+He won't smoke a lot. — Он не будет много курить.
+Will they communicate a lot? — Они будут много общаться?
+
+I am reading a lot of books. — Я читаю много книг.
+He is not eating a lot of bread. — Он не ест много хлеба.
+Are you washing a lot of shirts? — Ты стираешь много рубашек?
+
+There are a few cats in the flat. — В квартире есть несколько кошек.
+There weren't a few dances at the party. — На вечеринке было не так уж много танцев.
+Will there be a few drinks? — Будет несколько напитков?
+
+He paints a lot of pictures. — Он рисует много картин.
+She didn't wake a lot of people. — Она не разбудила много людей.
+Does the moon influence a lot of things? — Луна влияет на много вещей?
+
+I need a few teeth fixed. — Мне нужно починить несколько зубов.
+She didn't cook a few meals. — Она не приготовила несколько блюд.
+Are you growing a few vegetables? — Ты выращиваешь несколько овощей?
+
+
+I need a little salt for this meal. — Мне нужно немного соли для этого блюда.
+She doesn't have a little time to dance. — У неё нет немного времени потанцевать.
+Do you need a little sugar in your drink? — Тебе нужно немного сахара в напиток?
+
+We have a little milk left. — У нас осталось немного молока.
+He didn't add a little rice to the soup. — Он не добавил немного риса в суп.
+Is there a little bread in the kitchen? — На кухне есть немного хлеба?
+
+She will need a little practice to swim well. — Ей понадобится немного практики, чтобы хорошо плавать.
+He won't have a little fun at the party. — У него не будет немного веселья на вечеринке.
+Will you have a little time to fix the desk? — У тебя будет немного времени починить парту?
+
+I am using a little paint for this dress. — Я использую немного краски для этого платья.
+He is not feeling a little better. — Он не чувствует себя немного лучше.
+Are you adding a little fruit to the salad? — Ты добавляешь немного фруктов в салат?
+
+There is a little noise from the street. — С улицы доносится немного шума.
+There wasn't a little grass in the garden. — В саду не было немного травы.
+Will there be a little light tonight? — Сегодня вечером будет немного света?
+
+He needs a little help to solve this problem. — Ему нужно немного помощи, чтобы решить эту проблему.
+She didn't invite a little number of people. — Она пригласила не маленькое количество людей.
+Does the cat need a little milk? — Коту нужно немного молока?
+
+I have a little money to invest. — У меня есть немного денег для инвестиций.
+He didn't drink a little water after practice. — Он не выпил немного воды после тренировки.
+Are you cooking a little food for the holiday? — Ты готовишь немного еды на праздник?
+
+### some/any
+
+I need some sugar for the cake. — Мне нужно немного сахара для торта.
+She doesn't have any dresses for the party. — У неё нет никаких платьев для вечеринки.
+Do you have any fruit in the fridge? — У тебя есть какие-нибудь фрукты в холодильнике?
+
+We bought some apples at the market. — Мы купили несколько яблок на рынке.
+He didn't drink any milk this morning. — Он не пил молока этим утром.
+Did they invite any friends for the holiday? — Они пригласили каких-нибудь друзей на праздник?
+
+She will cook some meals for the week. — Она приготовит несколько блюд на неделю.
+He won't have any time to practice. — У него не будет никакого времени на практику.
+Will you need any help to clean the flat? — Тебе понадобится какая-нибудь помощь с уборкой квартиры?
+
+I am reading some interesting sentences. — Я читаю несколько интересных предложений.
+He is not making any noise while working. — Он не производит никакого шума во время работы.
+Are you growing any vegetables in the garden? — Ты выращиваешь какие-нибудь овощи в саду?
+
+There is some milk in the bottle. — В бутылке есть немного молока.
+There weren't any trains at that time. — В то время не было никаких поездов.
+Will there be any drinks at the party? — Будут ли какие-нибудь напитки на вечеринке?
+
+He needs some new shirts for work. — Ему нужно несколько новых рубашек на работу.
+She didn't solve any problems yesterday. — Она не решила никаких проблем вчера.
+Does the cat have any toys? — У кота есть какие-нибудь игрушки?
+
+I have some rice left for dinner. — У меня осталось немного риса на ужин.
+He didn't meet any people he knew. — Он не встретил никаких знакомых людей.
+Are you waiting for any guests tonight? — Ты ждёшь каких-нибудь гостей сегодня вечером?
+
+We should buy some bread and milk. — Нам стоит купить немного хлеба и молока.
+They don't have any information about it. — У них нет никакой информации об этом.
+Do you see any birds in the tree? — Ты видишь каких-нибудь птиц на дереве?
+
+She wants to paint some pictures this weekend. — Она хочет нарисовать несколько картин на этих выходных.
+He can't find any salt in the kitchen. — Он не может найти соли на кухне.
+Did you wash any dresses for the trip? — Ты постирала какие-нибудь платья для поездки?
+
+## другие местоимения
+
+I have some friends. — У меня есть несколько друзей.
+Someone is here. — Кто-то здесь.
+I want something to drink. — Я хочу что-нибудь выпить.
+Do you have any questions? — У вас есть какие-нибудь вопросы?
+There isn't any milk. — Здесь нет никакого молока.
+Do you know anyone here? — Ты знаешь кого-нибудь здесь?
+I don't know anybody. — Я не знаю никого.
+Is there anything interesting? — Здесь есть что-нибудь интересное?
+I don't see anything. — Я не вижу ничего.
+I see nothing. — Я не вижу ничего.
+I don't see anything. — Я не вижу ничего.
+Nobody knows. — Никто не знает.

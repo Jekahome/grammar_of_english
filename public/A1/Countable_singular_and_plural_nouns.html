@@ -1,0 +1,1116 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Nouns (countable, uncountable, singular, plural) - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="singular-and-plural-nouns"><a class="header" href="#singular-and-plural-nouns">Singular and Plural Nouns</a></h1>
+<p>Существительные единственного и множественного числа.</p>
+<h3 id="Окончание--s"><a class="header" href="#Окончание--s">Окончание <code>-s</code></a></h3>
+<p>Подавляющее большинство существительных превращается из формы единственного числа в форму множественного при помощи окончания <code>-s</code>.</p>
+<ul>
+<li>Game — games</li>
+<li>Computer — computers</li>
+<li>Phone — phones</li>
+<li>Friend — friends</li>
+</ul>
+<h3 id="Окончание--es"><a class="header" href="#Окончание--es">Окончание <code>-es</code></a></h3>
+<p>Если же существительное в единственном числе заканчивается на шипящий или свистящий звук <code>-ss, -sh, -ch, -x, -z</code>, подставляется <code>-es</code>.</p>
+<ul>
+<li>Bus — buses</li>
+<li>Boss — bosses</li>
+<li>Bush — bushes</li>
+<li>Sandwich — sandwiches</li>
+<li>Quiz — quizzes</li>
+</ul>
+<h3 id="Окончание--o"><a class="header" href="#Окончание--o">Окончание <code>-o</code></a></h3>
+<p>Если существительное заканчивается на <code>-o</code>, важно обратить внимание на предпоследнюю букву.</p>
+<ul>
+<li>Если это гласная: Portfolio — portfolios, zoo — zoos</li>
+<li>Если это согласная: Potato — potatoes, tomato — tomatoes</li>
+</ul>
+<h3 id="Окончание--f-и--fe"><a class="header" href="#Окончание--f-и--fe">Окончание <code>-f</code> и <code>-fe</code></a></h3>
+<p>Если слово заканчивается на -<code>f</code>, <code>-fe</code>, то меняем окончание на <code>-ves</code>:</p>
+<ul>
+<li>Knife — knives</li>
+<li>Leaf — leaves</li>
+<li>Исключения: Roof — roofs, giraffe — giraffes</li>
+</ul>
+<h3 id="Окончание--y"><a class="header" href="#Окончание--y">Окончание <code>-y</code></a></h3>
+<ul>
+<li>Body — bodies (если перед -y стоит согласная)</li>
+<li>Boy — boys (если перед -y стоит гласная)</li>
+</ul>
+<h3 id="Исключения"><a class="header" href="#Исключения">Исключения</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Единственное число</th><th>Множественное число</th></tr></thead><tbody>
+<tr><td>Man (мужчина)</td><td>Men (мужчины)</td></tr>
+<tr><td>Woman (женщина)</td><td>Women (женщины)</td></tr>
+<tr><td>Child (ребенок)</td><td>Children (дети)</td></tr>
+<tr><td>Person (человек)</td><td>People (люди)</td></tr>
+<tr><td>Foot (нога)</td><td>Feet (ноги)</td></tr>
+<tr><td>Tooth (зуб)</td><td>Teeth (зубы)</td></tr>
+<tr><td>Mouse (мышь)</td><td>Mice (мыши)</td></tr>
+<tr><td>Goose (гусь)</td><td>Geese (гуси)</td></tr>
+<tr><td>Louse (вошь)</td><td>Lice (вши)</td></tr>
+<tr><td>Ox (бык)</td><td>Oxen (быки)</td></tr>
+<tr><td>Sheep (овца)</td><td>Sheep (овцы)</td></tr>
+<tr><td>Deer (олень)</td><td>Deer (олени)</td></tr>
+<tr><td>Fish (рыба)</td><td>Fish (рыбы)</td></tr>
+<tr><td>Salmon (лосось)</td><td>Salmon (лососи)</td></tr>
+<tr><td>Trout (форель)</td><td>Trout (форели)</td></tr>
+<tr><td>Moose (лось)</td><td>Moose (лоси)</td></tr>
+<tr><td>Aircraft (самолет)</td><td>Aircraft (самолеты)</td></tr>
+<tr><td>Bureau (бюро)</td><td>Bureaux (бюро, мн. ч.)</td></tr>
+<tr><td>Phenomenon (явление)</td><td>Phenomena (явления)</td></tr>
+<tr><td>Species (вид)</td><td>Species (виды)</td></tr>
+<tr><td>Crisis (кризис)</td><td>Crises (кризисы)</td></tr>
+<tr><td>Thesis (тезис)</td><td>Theses (тезисы)</td></tr>
+<tr><td>Analysis (анализ)</td><td>Analyses (анализы)</td></tr>
+<tr><td>Axis (ось)</td><td>Axes (оси)</td></tr>
+<tr><td>Index (индекс)</td><td>Indices (индексы)</td></tr>
+<tr><td>Appendix (аппендикс)</td><td>Appendices (аппендиксы)</td></tr>
+<tr><td>Cactus (кактус)</td><td>Cacti (кактусы)</td></tr>
+<tr><td>Fungus (грибок)</td><td>Fungi (грибы)</td></tr>
+<tr><td>Nucleus (ядро)</td><td>Nuclei (ядра)</td></tr>
+<tr><td>Alumnus (выпускник)</td><td>Alumni (выпускники)</td></tr>
+</tbody></table>
+</div>
+<h2 id="countable-uncountable-nouns"><a class="header" href="#countable-uncountable-nouns">Countable, Uncountable Nouns</a></h2>
+<p>Исчисляемые и неисчисляемые существительные.</p>
+<h3 id="countable-nouns-Исчисляемые-существительные"><a class="header" href="#countable-nouns-Исчисляемые-существительные">Countable Nouns (Исчисляемые существительные)</a></h3>
+<p>Исчисляемые существительные – это отдельные предметы, люди, места и вещи, которые можно посчитать.</p>
+<p>Например: книги, дома, американцы, кошки, собаки, машины и т. д.</p>
+<p>Исчисляемое существительное может быть в единственном числе (a book) или во множественном числе (two books).</p>
+<p>Форма глагола в единственном числе употребляется с исчисляемым существительным в единственном числе: the apple is red.</p>
+<p>Глагол во множественном числе употребляется с исчисляемым существительным во множественном числе: the appleS ARE red.</p>
+<h3 id="uncountable-nouns-Неисчисляемые-существительные"><a class="header" href="#uncountable-nouns-Неисчисляемые-существительные">Uncountable Nouns (Неисчисляемые существительные)</a></h3>
+<p>Неисчисляемые существительные – это вещества, понятия, информация, материалы и т.п., которые не являются отдельными объектами и не могут быть посчитаны с помощью чисел. У них нет формы множественного числа. Например: «information» или «news». Мы не можем сказать «two informations» или «three news».</p>
+<p><strong>Разница по смыслу</strong></p>
+<ul>
+<li><em>a box of chocolates</em> – при условии что имеется ввиду коробка конфет. Конфеты как отдельные штуки, а они исчисляемые</li>
+<li><em>a box of chocolate</em> – при условии что имеется ввиду вещество, масса. Коробка шоколада (материала), а он неисчисляемый</li>
+</ul>
+<p>Примеры:</p>
+<ul>
+<li><strong>Liquids (Жидкость)</strong>: milk, water, coffee, wine, oil, ink (чернила), blood (кровь), petrol (бензин), vinegar (уксус)</li>
+<li><strong>Solid substances (Твердые вещества)</strong>: bread (хлеб), butter (масло), cheese, meat, pastry (выпечка), pasta, coal (уголь), ice</li>
+<li><strong>Granular/loose substances (Гранулированные/сыпучие вещества)</strong>: rice, salt, pepper, quinoa, wheat, dust, ash, sand</li>
+<li><strong>Materials (Материалы)</strong>: wood, plastic, glass, paper, iron, cotton, silk, gold, silver</li>
+<li><strong>Abstract concepts/ideas (Абстрактные концепции/идеи)</strong>: hope, peace, beauty, information, advice, freedom, research (исследовать)</li>
+<li><strong>Feelings and qualities (Чувства и качества)</strong>: joy (радость), anger (злость), efficiency (эффективность), honesty (честность), pride (гордость), love, happiness (счастье), sadness (грусть)</li>
+<li><strong>Mass nouns (Нарицательные существительные)</strong>: accommodation, luggage (багаж), food (еда), furniture (мебель), mail, money (деньги), equipment (оборудование)</li>
+<li><strong>Activities and sports (Мероприятия и спорт)</strong>: homework, housework, surveillance, work, tennis, rugby</li>
+<li><strong>Gases (Газы)</strong>: air, oxygen, helium, nitrogen, fog, smoke, steam</li>
+<li><strong>Natural phenomena (Природные явления)</strong>: electricity, gravity, heat, rain, dew, snow, sunshine, lightning</li>
+</ul>
+<h2 id="Особенности-использования-неисчисляемых-существительных"><a class="header" href="#Особенности-использования-неисчисляемых-существительных">Особенности использования неисчисляемых существительных</a></h2>
+<ul>
+<li>
+<p><strong>Не имеют формы множественного числа</strong>: Неисчисляемые существительные не могут использоваться во множественном числе. Мы не можем добавить к ним окончание "-s" или "-es".</p>
+<ul>
+<li>Correct: I need some water.</li>
+<li>Incorrect: I need some waters.</li>
+</ul>
+</li>
+<li>
+<p><strong>Использование с глаголом в единственном числе</strong>: Поскольку неисчисляемые существительные считаются единым целым, они требуют использования глагола в единственном числе.</p>
+<ul>
+<li>Correct: The news is interesting.</li>
+<li>Incorrect: The news are interesting.</li>
+</ul>
+<p>А когда речь идет не о самом неисчисляемом существительном, а например о его количестве, то глагол во множественном числе:</p>
+<ul>
+<li>Water <strong>is</strong> on the table. — Вода на столе. (речь про вещество, а оно неисчисляемое)</li>
+<li>Two bottles of water <strong>are</strong> on the table. — Две бутылки воды на столе. (речь про две бутылки, а они исчисляемые)</li>
+<li>Rice <strong>is</strong> in the kitchen. — Рис на кухне.</li>
+<li>Two bags of rice <strong>are</strong> in the kitchen. — Два пакета риса на кухне.</li>
+<li>This wood <strong>is</strong> good. — Это дерево хорошее.</li>
+<li>These pieces of wood <strong>are</strong> good. — Эти куски дерева хорошие.</li>
+<li>This information <strong>is</strong> useful. — Эта информация полезна.</li>
+<li>These pieces of information <strong>are</strong> useful. — Эти сведения полезны.</li>
+<li>The new furniture <strong>is</strong> in the room. — Новая мебель в комнате.</li>
+<li>Three pieces of furniture <strong>are</strong> in the room. — Три предмета мебели в комнате.</li>
+<li>My homework <strong>is</strong> difficult. — Моя домашняя работа трудная.</li>
+<li>My three homework assignments <strong>are</strong> difficult. — Мои три домашних задания трудные.</li>
+</ul>
+</li>
+<li>
+<p><strong>Определители и количество</strong>: Для указания количества неисчисляемых существительных используются слова-маркеры количества, такие как some, any, much, little, a bit of, a piece of, a glass of и другие.</p>
+<ul>
+<li>Can I have some water?</li>
+<li>There isn't much information available.</li>
+<li>I need a piece of advice.</li>
+</ul>
+</li>
+<li>
+<p><strong>Изменение контекста</strong>: Некоторые существительные могут быть исчисляемыми или неисчисляемыми в зависимости от контекста, например когде речт иден не о веществе кофе, а о количестве порций кофе:</p>
+<ul>
+<li>Coffee (неисчисляемое): I drank some coffee this morning.</li>
+<li>Coffee (исчисляемое): I'll have two coffees, please (две чашки кофе).</li>
+</ul>
+<p><strong>Неисчисляемое (вещество):</strong></p>
+<p>I don't drink <strong>coffee</strong> in the evening. — Я не пью <strong>кофе</strong> вечером.</p>
+<p>I smell coffee. — Я чувствую запах кофе.</p>
+<p>There is too much coffee in my cup. — В моей чашке слишком много кофе.</p>
+<p>Brazil exports a lot of coffee. — Бразилия экспортирует много кофе.</p>
+<p><strong>Исчисляемое (порция):</strong></p>
+<p>We ordered three <strong>coffees</strong> and two teas. — Мы заказали три <strong>кофе</strong> и два чая.</p>
+<p>Let's have a coffee. — Давай выпьем кофе (чашку кофе).</p>
+<p>We ordered two coffees. — Мы заказали две порции кофе.</p>
+<p>Three coffees, please. — Три кофе, пожалуйста.</p>
+<p><strong>Неисчисляемое (вещество):</strong> This cake has too much <strong>chocolate</strong>. — В этом торте слишком много <strong>шоколада</strong>.</p>
+<p><strong>Исчисляемое (конфета/плитка):</strong> She gave me a box of <strong>chocolates</strong>. — Она дала мне коробку <strong>шоколадных конфет</strong>.</p>
+<p><strong>Неисчисляемое (материал):</strong> The window is made of <strong>glass</strong>. — Окно сделано из <strong>стекла</strong>.</p>
+<p><strong>Исчисляемое (стакан):</strong> I broke two <strong>glasses</strong> yesterday. — Я разбил два <strong>стакана</strong> вчера.</p>
+<p><strong>Неисчисляемое (материал):</strong> We need more <strong>paper</strong> for the printer. — Нам нужно больше <strong>бумаги</strong> для принтера.</p>
+<p><strong>Исчисляемое (газета, документ):</strong> The teacher checked our <strong>papers</strong>. — Учитель проверил наши <strong>работы</strong> (документы).</p>
+<p><strong>Неисчисляемое (все волосы):</strong> Her <strong>hair</strong> is very long. — Её <strong>волосы</strong> очень длинные.</p>
+<p><strong>Исчисляемое (отдельный волос):</strong> I found a <strong>hair</strong> in my soup. — Я нашёл <strong>волос</strong> в своём супе.</p>
+<p><strong>Неисчисляемое (понятие):</strong> <strong>Time</strong> is money. — <strong>Время</strong> — деньги.</p>
+<p><strong>Исчисляемое (раз):</strong> I've been to Paris three <strong>times</strong>. — Я был в Париже три <strong>раза</strong>.</p>
+<p><strong>Исчисляемое (комната):</strong> There are three <strong>rooms</strong> in my flat. — В моей квартире три <strong>комнаты</strong>.</p>
+<p><strong>Неисчисляемое (пространство):</strong> Is there <strong>room</strong> for my bag? — Здесь есть <strong>место</strong> для моей сумки?</p>
+<p><strong>Неисчисляемое (мясо):</strong> We had <strong>chicken</strong> for dinner. — Мы ели <strong>курицу</strong> на ужин.</p>
+<p><strong>Исчисляемое (животное):</strong> My grandmother has ten <strong>chickens</strong>. — У моей бабушки десять <strong>кур</strong>.</p>
+<p><strong>Неисчисляемое (еда):</strong> I eat <strong>fish</strong> twice a week. — Я ем <strong>рыбу</strong> два раза в неделю.</p>
+<p><strong>Исчисляемое (животное):</strong> He caught three <strong>fish</strong>. — Он поймал три <strong>рыбы</strong>.</p>
+<p><strong>Неисчисляемое (опыт):</strong> He has a lot of <strong>experience</strong> in this field. — У него большой <strong>опыт</strong> в этой области.</p>
+<p><strong>Исчисляемое (случай, событие):</strong> Travelling to Japan was an amazing <strong>experience</strong>. — Путешествие в Японию было удивительным <strong>событием</strong>.</p>
+<p><strong>Неисчисляемое (свет):</strong> The <strong>light</strong> in this room is very bright. — <strong>Свет</strong> в этой комнате очень яркий.</p>
+<p><strong>Исчисляемое (лампа, огонек):</strong> We need to buy a new <strong>light</strong> for the kitchen. — Нам нужно купить новую <strong>лампу</strong> для кухни.</p>
+<p><strong>Неисчисляемое (деловая активность):</strong> <strong>Business</strong> is going well. — <strong>Бизнес</strong> идёт хорошо.</p>
+<p><strong>Исчисляемое (компания):</strong> He owns several <strong>businesses</strong>. — Ему принадлежит несколько <strong>компаний</strong>.</p>
+<p><strong>Неисчисляемое (металл):</strong> This gate is made of <strong>iron</strong>. — Эти ворота сделаны из <strong>железа</strong>.</p>
+<p><strong>Исчисляемое (утюг):</strong> I bought a new <strong>iron</strong>. — Я купил новый <strong>утюг</strong>.</p>
+</li>
+<li>
+<p><strong>Совместимость с артиклями</strong>: Неисчисляемые существительные могут использоваться с неопределенным артиклем a/an только в связке с выражениями количества, такими как a piece of, a bottle of, и т.д. С определенным артиклем the можно использовать неисчисляемое существительное, когда речь идет о чем-то конкретном.</p>
+<ul>
+<li>I need a piece of information.</li>
+<li>The furniture in this room is new.</li>
+</ul>
+</li>
+<li>
+<p><strong>Не могут использоваться с числительными напрямую</strong>: Неисчисляемые существительные, обозначающие вещества или абстрактные понятия, не сочетаются с числительными. Для указания количества используются единицы измерения (счетные слова).</p>
+<ul>
+<li>Incorrect: three advices, two breads, five informations</li>
+<li>Correct: three pieces of advice, two loaves of bread, five items of information</li>
+</ul>
+<p>Неисчисляемые существительные, которые МОГУТ стать исчисляемыми. Это, в основном, продукты и напитки. Вот здесь и происходит магия.</p>
+<ul>
+<li>Two coffees. — это сокращенная, разговорная форма от — two cups of coffee.</li>
+<li>She doesn't eat chocolate. — Она не ест шоколад. (речь про еду как сырье)</li>
+<li>She ate two chocolates. — Она съела две конфеты. (речь про количество)</li>
+</ul>
+</li>
+</ul>
+<h3 id="Примеры"><a class="header" href="#Примеры">Примеры:</a></h3>
+<ul>
+<li>Water is good. - Вода - это хорошо. (здесь главное слово water – это вещество, COUNTABLE NOUNS, поэтому глагол в ед. ч.исле <code>is</code>)</li>
+<li>Two bottles of water are good. - Две бутылки воды - это хорошо. (здесь главное слово "bottles" является исчисляемым и стоит во мн. числе, поэтому глагол тоже используется во множественном числе <code>are</code>.)</li>
+<li>Could I have a slice of bread, please? – Можно мне кусочек хлеба, пожалуйста?</li>
+<li>Have some cream with your strawberries. – Добавьте немного сливок к вашим клубникам.</li>
+<li>That's an interesting piece of information. – Это интересный факт.</li>
+<li>Here is the latest news. – Вот последние новости.</li>
+</ul>
+<details>
+<summary>Примеры:</summary>
+<pre><code>I see a cat. - Я вижу кота.
+I see nine cats. - Я вижу девять котов.
+This is a book. - Это книга.
+These are my books. - Это мои книги.
+I have a pen. - У меня есть ручка.
+I have nineteen pens. - У меня есть девятнадцать ручек.
+That is a big table. - Это большой стол.
+Those are big tables. - Это большие столы.
+She is a girl. - Она девочка.
+They are girls. - Они девочки.
+He is a boy. - Он мальчик.
+They are boys. - Они мальчики.
+I hear a dog. - Я слышу собаку.
+I hear many dogs. - Я слышу много собак.
+This flower is beautiful. - Этот цветок красивый.
+These flowers are beautiful. - Эти цветы красивые.
+Please, open the window. - Пожалуйста, открой окно.
+Please, open the windows. - Пожалуйста, открой окна.
+He has a new car. - У него есть новая машина.
+They have new cars. - У них есть новые машины.
+I'm waiting for a bus. - Я жду автобус.
+I'm waiting for the buses. - Я жду автобусы.
+We have an English class. - У нас урок английского.
+We have eighteen classes today. - У нас сегодня восемнадцать уроков.
+I wash a dish. - Я мою тарелку.
+I wash the dishes. - Я мою посуду.
+This is my watch. - Это мои часы.
+These are my watches. - Это мои часы (несколько).
+There is a box on the floor. - На полу коробка.
+There are boxes on the floor. - На полу коробки.
+I see a fox. - Я вижу лису.
+I see three foxes. - Я вижу трех лис.
+I need a brush. - Мне нужна кисть.
+I need four brushes. - Мне нужны четыре кисти.
+She eats a peach. - Она ест персик.
+She eats peaches. - Она ест персики.
+This is a tomato. - Это помидор.
+These are tomatoes. - Это помидоры.
+I have a potato. - У меня есть картофелина.
+I have many potatoes. - У меня есть много картофелин.
+I see a piano. — Я вижу пианино.
+I see five pianos. — Я вижу пять пианино.
+There is a wolf in the forest. - В лесу есть волк.
+There are many wolves in the forest. - В лесу много волков.
+I have a knife. — У меня есть нож.
+I have six knives. — У меня есть шесть ножей.
+I have one knife. - У меня есть один нож.
+I have twenty knives. - У меня есть двадцать ножей.
+The book is on the leaf. — Книга на листе.
+The books are on the leaves. — Книги на листьях.
+She has a scarf. - У нее есть шарф.
+She has many scarves. - У нее есть много шарфов.
+This is a leaf. - Это лист.
+These are leaves. - Это листья.
+This is a story. - Это история.
+These are stories. - Это истории.
+I see a baby. - Я вижу ребенка.
+I see many babies. - Я вижу много детей.
+The little city is nice. - Маленький город милый.
+Big cities are busy. - Большие города шумные.
+She has a diary. - У нее есть дневник.
+She has seven diaries. - У нее есть семь дневников.
+That is a strawberry. - Это клубника.
+Those are strawberries. - Это клубника (ягоды).
+I am a woman. - Я женщина.
+We are women. - Мы женщины.
+He is a man. - Он мужчина.
+They are men. - Они мужчины.
+The child is happy. - Ребенок счастлив.
+The children are happy. - Дети счастливы.
+My foot hurts. - Моя нога болит.
+My feet hurt. - Мои ноги болят.
+I see a mouse. - Я вижу мышь.
+I see eight mice. - Я вижу восемь мышей.
+This is a tooth. - Это зуб.
+These are teeth. - Это зубы.
+There is a fish in the river. - В реке есть рыба.
+There are many fish in the river. - В реке много рыб.
+A child is playing. - Ребенок играет.
+The children are playing. - Дети играют.
+This man is a teacher. - Этот мужчина — учитель.
+These men are teachers. - Эти мужчины — учителя.
+She is a woman. - Она женщина.
+They are strong women. - Они сильные женщины.
+I have one foot. - У меня одна нога.
+I have two feet. - У меня две ноги.
+My tooth is white. - Мой зуб белый.
+My teeth are white. - Мои зубы белые.
+Look, a mouse! - Смотри, мышь!
+Look, ten mice! - Смотри, десять мышей!
+There is one sheep. - Там одна овца.
+There are many sheep. - Там много овец.
+I see a fish. - Я вижу рыбу.
+I see many fish. - Я вижу много рыб.
+A person is here. - Здесь один человек.
+Many people are here. - Здесь много людей.
+
+I don't drink coffee in the evening. — Я не пью кофе вечером.
+I smell coffee. — Я чувствую запах кофе.
+There is too much coffee in my cup. — В моей чашке слишком много кофе.
+Brazil exports a lot of coffee. — Бразилия экспортирует много кофе.
+We ordered three coffees and eleven teas. — Мы заказали три кофе и одиннадцать чая.
+Let's have a coffee. — Давай выпьем кофе (чашку кофе).
+We ordered twelve coffees. — Мы заказали двенадцать порции кофе.
+Three coffees, please. — Три кофе, пожалуйста.
+Water is good. - Вода - это хорошо.
+Thirteen bottles of water are good. - Тринадцать бутылок воды - это хорошо.
+Water is on the table. — Вода на столе.
+Fourteen bottles of water are on the table. — Четырнадцать бутылок воды на столе.
+Rice is in the kitchen. — Рис на кухне. 
+Fifteen bags of rice are in the kitchen. — Пятнадцать пакетиков риса на кухне.
+This wood is good. — Это дерево хорошее.
+These pieces of wood are good. — Эти куски дерева хорошие.
+The new furniture is in the room. — Новая мебель в комнате.
+Thirty pieces of furniture are in the room. — Тридцать предметов мебели в комнате.
+My homework is difficult. — Моя домашняя работа трудная. 
+My three homework assignments are difficult. — Мои три домашних задания трудные.
+I put milk in my coffee every morning. — Я кладу молоко в свой кофе каждое утро. 
+We need to buy more water for the trip. — Нам нужно купить еще воды для поездки. 
+She doesn't drink coffee after 5 PM. — Она не пьёт кофе после 5 вечера. 
+My children eat bread with soup. — Мои дети едят хлеб с супом. 
+They never put salt on their food. — Они никогда не кладут соль на свою еду.
+Do your friends like cheese? — Твоим друзьям нравится сыр? 
+My parents give me good advice. — Мои родители дают мне хорошие советы.
+Our teachers need more information. — Нашим учителям нужно больше информации.
+Do your colleagues have enough work? — У твоих коллег достаточно работы? 
+These chairs are made of wood. — Эти стулья сделаны из дерева.
+The windows are clean glass. — Окна — это чистый стекло.
+Are your bags made of plastic? — Твои сумки сделаны из пластика? 
+Many people need help with this job. — Многим людям нужна помощь с этой работой.
+The students don't have much time. — У студентов нет много времени.
+Do your children get a lot of homework? — Твои дети получают много домашней работы?
+All plants need water and sun. — Все растения нуждаются в воде и солнце.
+The mountains have beautiful snow in winter. — На горах красивый снег зимой.
+Does this room have fresh air? — В этой комнате есть свежий воздух?
+The cars need petrol for the long journey. — Машинам нужен бензин для долгой поездки.
+My shoes are full of water after the beach. — Мои туфли полны воды после пляжа.
+Children often don't like to drink milk. — Дети часто не любят пить молоко.
+All living things need water to live. — Все живые существа нуждаются в воде, чтобы жить.
+My parents drink coffee every morning. — Мои родители пьют кофе каждое утро.
+Many people in this area produce oil. — Многие люди в этой местности производят масло.
+The doctors took blood for tests. — Врачи взяли кровь на анализы.
+Students usually eat bread for breakfast. — Студенты обычно едят хлеб на завтрак.
+Italians love pasta and cheese. — Итальянцы обожают пасту и сыр.
+Chefs often add salt and sugar to their dishes. — Повара часто добавляют соль и сахар в свои блюда.
+My friends don't eat meat. — Мои друзья не едят мясо.
+The children got ice for their drinks. — Дети взяли лёд для своих напитков.
+These houses are built from wood and stone. — Эти дома построены из дерева и камня.
+Most bottles are made of plastic or glass. — Большинство бутылок сделаны из пластика или стекла.
+The artists bought paper for their work. — Художники купили бумагу для своей работы.
+Many investors prefer to keep gold and silver. — Многие инвесторы предпочитают хранить золото и серебро.
+People all over the world want peace. — Люди по всему миру хотят мира.
+Young parents often need good advice. — Молодые родители часто нуждаются в хорошем совете.
+My colleagues always give me great help. — Мои коллеги всегда дают мне отличную помощь.
+All children want love and happiness. — Все дети хотят любви и счастья.
+The employees showed great honesty in that situation. — Сотрудники проявили большую честность в той ситуации.
+All passengers must check in their luggage. — Все пассажиры должны сдать свой багаж.
+The workers took out the furniture from the truck. — Рабочие вынесли мебель из грузовика.
+Most students need money for books. — Большинству студентов нужны деньги на книги.
+The people use modern equipment. — Люди используют современное оборудование.
+Kids usually have too much homework. — У детей обычно слишком много домашней работы.
+Many people enjoy tennis and golf. — Многие люди наслаждаются теннисом и гольфом.
+The workers finished their work early. — Рабочие закончили свою работу рано.
+The mountains look beautiful with snow on them. — Горы выглядят красиво с снегом на них.
+The firefighters entered the building full of smoke. — Пожарные вошли в здание, полное дыма.
+I need some water. — Мне нужна вода.
+The news is interesting. — Новости интересные.
+This cake has too much chocolate. — В этом торте слишком много шоколада.
+She gave me a box of chocolates. — Она дала мне коробку шоколадных конфет.
+The window is made of glass. — Окно сделано из стекла.
+I broke sixteen glasses yesterday. — Я разбил шестнадцать стаканов вчера.
+We need more paper for the printer. — Нам нужно больше бумаги для принтера.
+The teacher checked our papers. — Учитель проверил наши работы (документы).
+Her hair is very long. — Её волосы очень длинные.
+I found a hair in my soup. — Я нашёл волос в своём супе.
+Time is money. — Время — деньги.
+I've been to Paris forty times. — Я был в Париже сорок раз.
+There are three rooms in my flat. — В моей квартире три комнаты.
+Is there room for my bag? — Здесь есть место для моей сумки?
+We had chicken for dinner. — Мы ели курицу на ужин.
+My grandmother has ten chickens. — У моей бабушки десять кур.
+I eat fish twice a week. — Я ем рыбу два раза в неделю.
+He caught fifty fish. — Он поймал пятьдесят рыб.
+He has a lot of experience in this field. — У него большой опыт в этой области.
+Travelling to Japan was an amazing experience. — Путешествие в Японию было удивительным событием.
+The light in this room is very bright. — Свет в этой комнате очень яркий.
+We need to buy a new light for the kitchen. — Нам нужно купить новую лампу для кухни.
+Business is going well. — Бизнес идёт хорошо.
+Many businesses sell food. — Многие фирмы продают еду.
+This gate is made of iron. — Эти ворота сделаны из железа.
+I bought a new iron. — Я купил новый утюг.
+</code></pre>
+</details>
+<h2 id="exercise-listen-and-write"><a class="header" href="#exercise-listen-and-write">Exercise: listen and write</a></h2>
+<div id="control"></div>
+<div id="listen_and_write"></div>
+<script>
+
+const exercises_easy_listen_and_write = [
+    ["I see a cat.", "Я вижу кота."],
+    ["I see nine cats.", "Я вижу девять котов."],
+    ["This is a book.", "Это книга."],
+    ["These are my books.", "Это мои книги."],
+    ["I have a pen.", "У меня есть ручка."],
+    ["I have nineteen pens.", "У меня есть девятнадцать ручек."],
+    ["That is a big table.", "Это большой стол."],
+    ["Those are big tables.", "Это большие столы."],
+    ["She is a girl.", "Она девочка."],
+    ["They are girls.", "Они девочки."],
+    ["He is a boy.", "Он мальчик."],
+    ["They are boys.", "Они мальчики."],
+    ["I hear a dog.", "Я слышу собаку."],
+    ["I hear many dogs.", "Я слышу много собак."],
+    ["This flower is beautiful.", "Этот цветок красивый."],
+    ["These flowers are beautiful.", "Эти цветы красивые."],
+    ["Please, open the window.", "Пожалуйста, открой окно."],
+    ["Please, open the windows.", "Пожалуйста, открой окна."],
+    ["He has a new car.", "У него есть новая машина."],
+    ["They have new cars.", "У них есть новые машины."],
+    ["I'm waiting for a bus.", "Я жду автобус."],
+    ["I'm waiting for the buses.", "Я жду автобусы."],
+    ["We have an English class.", "У нас урок английского."],
+    ["We have eighteen classes today.", "У нас сегодня восемнадцать уроков."],
+    ["I wash a dish.", "Я мою тарелку."],
+    ["I wash the dishes.", "Я мою посуду."],
+    ["This is my watch.", "Это мои часы."],
+    ["These are my watches.", "Это мои часы (несколько)."],
+    ["There is a box on the floor.", "На полу коробка."],
+    ["There are boxes on the floor.", "На полу коробки."],
+    ["I see a fox.", "Я вижу лису."],
+    ["I see three foxes.", "Я вижу трех лис."],
+    ["I need a brush.", "Мне нужна кисть."],
+    ["I need four brushes.", "Мне нужны четыре кисти."],
+    ["She eats a peach.", "Она ест персик."],
+    ["She eats peaches.", "Она ест персики."],
+    ["This is a tomato.", "Это помидор."],
+    ["These are tomatoes.", "Это помидоры."],
+    ["I have a potato.", "У меня есть картофелина."],
+    ["I have many potatoes.", "У меня есть много картофелин."],
+    ["I see a piano.", "Я вижу пианино."],
+    ["I see five pianos.", "Я вижу пять пианино."],
+    ["There is a wolf in the forest.", "В лесу есть волк."],
+    ["There are many wolves in the forest.", "В лесу много волков."],
+    ["I have a knife.", "У меня есть нож."],
+    ["I have six knives.", "У меня есть шесть ножей."],
+    ["I have one knife.", "У меня есть один нож."],
+    ["I have twenty knives.", "У меня есть двадцать ножей."],
+    ["The book is on the leaf.", "Книга на листе."],
+    ["The books are on the leaves.", "Книги на листьях."],
+    ["She has a scarf.", "У нее есть шарф."],
+    ["She has many scarves.", "У нее есть много шарфов."],
+    ["This is a leaf.", "Это лист."],
+    ["These are leaves.", "Это листья."],
+    ["This is a story.", "Это история."],
+    ["These are stories.", "Это истории."],
+    ["I see a baby.", "Я вижу ребенка."],
+    ["I see many babies.", "Я вижу много детей."],
+    ["The little city is nice.", "Маленький город милый."],
+    ["Big cities are busy.", "Большие города шумные."],
+    ["She has a diary.", "У нее есть дневник."],
+    ["She has seven diaries.", "У нее есть семь дневников."],
+    ["That is a strawberry.", "Это клубника."],
+    ["Those are strawberries.", "Это клубника (ягоды)."],
+    ["I am a woman.", "Я женщина."],
+    ["We are women.", "Мы женщины."],
+    ["He is a man.", "Он мужчина."],
+    ["They are men.", "Они мужчины."],
+    ["The child is happy.", "Ребенок счастлив."],
+    ["The children are happy.", "Дети счастливы."],
+    ["My foot hurts.", "Моя нога болит."],
+    ["My feet hurt.", "Мои ноги болят."],
+    ["I see a mouse.", "Я вижу мышь."],
+    ["I see eight mice.", "Я вижу восемь мышей."],
+    ["This is a tooth.", "Это зуб."],
+    ["These are teeth.", "Это зубы."],
+    ["There is a fish in the river.", "В реке есть рыба."],
+    ["There are many fish in the river.", "В реке много рыб."],
+    ["A child is playing.", "Ребенок играет."],
+    ["The children are playing.", "Дети играют."],
+    ["This man is a teacher.", "Этот мужчина — учитель."],
+    ["These men are teachers.", "Эти мужчины — учителя."],
+    ["She is a woman.", "Она женщина."],
+    ["They are strong women.", "Они сильные женщины."],
+    ["I have one foot.", "У меня одна нога."],
+    ["I have two feet.", "У меня две ноги."],
+    ["My tooth is white.", "Мой зуб белый."],
+    ["My teeth are white.", "Мои зубы белые."],
+    ["Look, a mouse!", "Смотри, мышь!"],
+    ["Look, ten mice!", "Смотри, десять мышей!"],
+    ["There is one sheep.", "Там одна овца."],
+    ["There are many sheep.", "Там много овец."],
+    ["I see a fish.", "Я вижу рыбу."],
+    ["I see many fish.", "Я вижу много рыб."],
+    ["A person is here.", "Здесь один человек."],
+    ["Many people are here.", "Здесь много людей."],
+    ["I don't drink coffee in the evening.", "Я не пью кофе вечером."],
+    ["I smell coffee.", "Я чувствую запах кофе."],
+    ["There is too much coffee in my cup.", "В моей чашке слишком много кофе."],
+    ["Brazil exports a lot of coffee.", "Бразилия экспортирует много кофе."],
+    ["We ordered three coffees and eleven teas.", "Мы заказали три кофе и одиннадцать чая."],
+    ["Let's have a coffee.", "Давай выпьем кофе (чашку кофе)."],
+    ["We ordered twelve coffees.", "Мы заказали двенадцать порции кофе."],
+    ["Three coffees, please.", "Три кофе, пожалуйста."],
+    ["Water is good.", "Вода - это хорошо."],
+    ["Thirteen bottles of water are good.", "Тринадцать бутылок воды - это хорошо."],
+    ["Water is on the table.", "Вода на столе."],
+    ["Fourteen bottles of water are on the table.", "Четырнадцать бутылок воды на столе."],
+    ["Rice is in the kitchen.", "Рис на кухне."],
+    ["Fifteen bags of rice are in the kitchen.", "Пятнадцать пакетиков риса на кухне."],
+    ["This wood is good.", "Это дерево хорошее."],
+    ["These pieces of wood are good.", "Эти куски дерева хорошие."],
+    ["The new furniture is in the room.", "Новая мебель в комнате."],
+    ["Thirty pieces of furniture are in the room.", "Тридцать предметов мебели в комнате."],
+    ["My homework is difficult.", "Моя домашняя работа трудная."],
+    ["My three homework assignments are difficult.", "Мои три домашних задания трудные."],
+    ["I put milk in my coffee every morning.", "Я кладу молоко в свой кофе каждое утро."],
+    ["We need to buy more water for the trip.", "Нам нужно купить еще воды для поездки."],
+    ["She doesn't drink coffee after 5 PM.", "Она не пьёт кофе после 5 вечера."],
+    ["My children eat bread with soup.", "Мои дети едят хлеб с супом."],
+    ["They never put salt on their food.", "Они никогда не кладут соль на свою еду."],
+    ["Do your friends like cheese?", "Твоим друзьям нравится сыр?"],
+    ["My parents give me good advice.", "Мои родители дают мне хорошие советы."],
+    ["Our teachers need more information.", "Нашим учителям нужно больше информации."],
+    ["Do your colleagues have enough work?", "У твоих коллег достаточно работы?"],
+    ["These chairs are made of wood.", "Эти стулья сделаны из дерева."],
+    ["The windows are clean glass.", "Окна — это чистый стекло."],
+    ["Are your bags made of plastic?", "Твои сумки сделаны из пластика?"],
+    ["Many people need help with this job.", "Многим людям нужна помощь с этой работой."],
+    ["The students don't have much time.", "У студентов нет много времени."],
+    ["Do your children get a lot of homework?", "Твои дети получают много домашней работы?"],
+    ["All plants need water and sun.", "Все растения нуждаются в воде и солнце."],
+    ["The mountains have beautiful snow in winter.", "На горах красивый снег зимой."],
+    ["Does this room have fresh air?", "В этой комнате есть свежий воздух?"],
+    ["The cars need petrol for the long journey.", "Машинам нужен бензин для долгой поездки."],
+    ["My shoes are full of water after the beach.", "Мои туфли полны воды после пляжа."],
+    ["Children often don't like to drink milk.", "Дети часто не любят пить молоко."],
+    ["All living things need water to live.", "Все живые существа нуждаются в воде, чтобы жить."],
+    ["My parents drink coffee every morning.", "Мои родители пьют кофе каждое утро."],
+    ["Many people in this area produce oil.", "Многие люди в этой местности производят масло."],
+    ["The doctors took blood for tests.", "Врачи взяли кровь на анализы."],
+    ["Students usually eat bread for breakfast.", "Студенты обычно едят хлеб на завтрак."],
+    ["Italians love pasta and cheese.", "Итальянцы обожают пасту и сыр."],
+    ["Chefs often add salt and sugar to their dishes.", "Повара часто добавляют соль и сахар в свои блюда."],
+    ["My friends don't eat meat.", "Мои друзья не едят мясо."],
+    ["The children got ice for their drinks.", "Дети взяли лёд для своих напитков."],
+    ["These houses are built from wood and stone.", "Эти дома построены из дерева и камня."],
+    ["Most bottles are made of plastic or glass.", "Большинство бутылок сделаны из пластика или стекла."],
+    ["The artists bought paper for their work.", "Художники купили бумагу для своей работы."],
+    ["Many investors prefer to keep gold and silver.", "Многие инвесторы предпочитают хранить золото и серебро."],
+    ["People all over the world want peace.", "Люди по всему миру хотят мира."],
+    ["Young parents often need good advice.", "Молодые родители часто нуждаются в хорошем совете."],
+    ["My colleagues always give me great help.", "Мои коллеги всегда дают мне отличную помощь."],
+    ["All children want love and happiness.", "Все дети хотят любви и счастья."],
+    ["The employees showed great honesty in that situation.", "Сотрудники проявили большую честность в той ситуации."],
+    ["All passengers must check in their luggage.", "Все пассажиры должны сдать свой багаж."],
+    ["The workers took out the furniture from the truck.", "Рабочие вынесли мебель из грузовика."],
+    ["Most students need money for books.", "Большинству студентов нужны деньги на книги."],
+    ["The people use modern equipment.", "Люди используют современное оборудование."],
+    ["Kids usually have too much homework.", "У детей обычно слишком много домашней работы."],
+    ["Many people enjoy tennis and golf.", "Многие люди наслаждаются теннисом и гольфом."],
+    ["The workers finished their work early.", "Рабочие закончили свою работу рано."],
+    ["The mountains look beautiful with snow on them.", "Горы выглядят красиво с снегом на них."],
+    ["The firefighters entered the building full of smoke.", "Пожарные вошли в здание, полное дыма."],
+    ["I need some water.", "Мне нужна вода."],
+    ["The news is interesting.", "Новости интересные."],
+    ["This cake has too much chocolate.", "В этом торте слишком много шоколада."],
+    ["She gave me a box of chocolates.", "Она дала мне коробку шоколадных конфет."],
+    ["The window is made of glass.", "Окно сделано из стекла."],
+    ["I broke sixteen glasses yesterday.", "Я разбил шестнадцать стаканов вчера."],
+    ["We need more paper for the printer.", "Нам нужно больше бумаги для принтера."],
+    ["The teacher checked our papers.", "Учитель проверил наши работы (документы)."],
+    ["Her hair is very long.", "Её волосы очень длинные."],
+    ["I found a hair in my soup.", "Я нашёл волос в своём супе."],
+    ["Time is money.", "Время — деньги."],
+    ["I've been to Paris forty times.", "Я был в Париже сорок раз."],
+    ["There are three rooms in my flat.", "В моей квартире три комнаты."],
+    ["Is there room for my bag?", "Здесь есть место для моей сумки?"],
+    ["We had chicken for dinner.", "Мы ели курицу на ужин."],
+    ["My grandmother has ten chickens.", "У моей бабушки десять кур."],
+    ["I eat fish twice a week.", "Я ем рыбу два раза в неделю."],
+    ["He caught fifty fish.", "Он поймал пятьдесят рыб."],
+    ["He has a lot of experience in this field.", "У него большой опыт в этой области."],
+    ["Travelling to Japan was an amazing experience.", "Путешествие в Японию было удивительным событием."],
+    ["The light in this room is very bright.", "Свет в этой комнате очень яркий."],
+    ["We need to buy a new light for the kitchen.", "Нам нужно купить новую лампу для кухни."],
+    ["Business is going well.", "Бизнес идёт хорошо."],
+    ["Many businesses sell food.", "Многие фирмы продают еду."],
+    ["This gate is made of iron.", "Эти ворота сделаны из железа."],
+    ["I bought a new iron.", "Я купил новый утюг."]
+];
+
+
+let g_practice = null;
+   
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+ 
+        let editor_img = new EditorImg({callback: checkAnswer});
+        let editor_symbol = new EditorSymbol({callback: checkAnswer});
+
+        g_practice = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write'), 
+            el_exercise_control: document.getElementById('control'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write),
+            editor_img: editor_img,
+            editor_symbol: editor_symbol
+        });
+        g_practice.genExercisesListenAndWriteTest();
+ 
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+ 
+function checkAnswer(value){
+    value = g_practice.textNormalize(value);
+    return value==g_practice.getAnswer();
+}
+</script>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Pronouns_personal_demonstrative.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/Articles_a_an_the.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Pronouns_personal_demonstrative.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/Articles_a_an_the.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_img.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+
+
+
+    </div>
+    </body>
+</html>
