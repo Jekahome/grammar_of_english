@@ -70,7 +70,7 @@ class EditorImg {
                     char='apostrophe';
                 }
                 const letterCard = document.createElement('img');
-                letterCard.src = `/img/alphabet/${char.toLowerCase()}.png`;
+                letterCard.src = `/grammar_of_english/img/alphabet/${char.toLowerCase()}.png`;
                 letterCard.className = "alphabet-letter space-card";
                 letterCard.alt = `Letter ${char}`;
                 this.#editorText.appendChild(letterCard);
