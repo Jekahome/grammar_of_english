@@ -1,4 +1,6 @@
-.PHONY: all
+PORT ?= 3003
+
+.PHONY: all pull commit run stop
 
 all: commit
 
@@ -11,6 +13,11 @@ commit:  pull
 	git diff --cached --exit-code || git commit -m "$$DATE_STR"
 	git push
 
+run:
+	mdbook serve --hostname 127.0.0.1 --port $(PORT) 
 
-# Use pull + commit + push:
-# make
+stop:
+	kill $(shell lsof -t -i :$(PORT)) || echo "No process running on port $(PORT)"
+
+# Use: 
+# make # pull + commit + push

@@ -1,0 +1,123 @@
+:root {
+    --content-max-width: 90%; /* Установите желаемую ширину в процентах */
+    /* Или */
+    /*--content-max-width: 1200px;*/ /* Установите желаемую ширину в пикселях */
+}
+
+/* Вы также можете настроить отступы, если необходимо */
+.content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Импортируем шрифт из Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto Flex:wght@400;700&display=swap');
+
+
+body {
+    font-family: "Roboto Flex", sans-serif !important;
+}
+
+.text-span {
+    visibility: hidden;  
+    margin-left: 10px;
+}
+.icon {
+    cursor: pointer;  
+    width: 15px;  
+    height: 15px; 
+}
+.editor-container {
+    background: white;
+    border-radius: 2px;
+    padding: 5px;
+    box-shadow: 0 1px 1px #c5c6cb;;
+}
+
+.editor_img {
+    min-height: 150px;
+    padding: 20px;
+    border: 3px solid #c5c6cb;
+    border-radius: 2px;
+    /*background: transparent;*/
+    background: #242429;
+    line-height: 80px;
+    font-size: 0;
+    cursor: text;
+}
+
+.editor_symbol {
+    
+    padding: 5px;
+    border: 3px solid #c5c6cb;
+    border-radius: 2px;
+    background: transparent;
+    line-height: 40px;
+    font-size: 10;
+    cursor: text;
+}
+.space-card {
+    display: inline-block;
+    width: 2.4rem;
+    max-height: 3.5rem;
+    margin: 0px;
+    background: rgba(102, 126, 234, 0.2);
+    border-radius: 0px;
+    border: 0px dashed #667eea;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.clear-btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 30px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.clear-btn:hover {
+    background: #764ba2;
+}
+
+.debug {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.on {
+    border-color: #00ff00;
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+.error {
+    border-color: #f41606;
+    box-shadow: 0 0 5px #f41606;
+}
+
+/* font */
+@font-face {
+  font-family: 'HYWenHei';
+  src: url('/grammar_of_english/fonts/HYWenHei.ttf') format('truetype');
+}
+
+.font-HYWenHei {
+  font-family: 'HYWenHei', sans-serif;
+}

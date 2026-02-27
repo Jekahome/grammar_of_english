@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <code>
+const arr1 = ["we","classes","today"];<br>
+const arr2 = ["have"];<br>
+const arr3 = ["three"];<br><br>
+
+        </code>
+We have three classes p.m. today? - У нас сегодня три урока.<br><br>
+
+We classes today? - урока.<br><br>
+
+We have? - урока.<br><br>
+
+We three, We! - урока.<br><br>
+
+    </body>
+</html>
+<script>
+
+function normalizeWord(word) {
+  return word.toLowerCase().replace(/[^a-z\']/gi, "");
+}
+
+const arr1 = ["we","classes","today"];
+const arr2 = ["have"];
+const arr3 = ["three"];
+
+function checkText() {
+  const text = "We have three classes p.m. today? - У нас сегодня три урока.\n\
+  We classes today? - урока.\n\
+  We have? - урока.\n\
+  We three, We! - урока.";
+
+  if (!text.trim().length){
+    alert("Текст не обнаружен");
+  }
+  const sentences = text.split(/\r?\n/);
+  
+    let result_arr1 = [];// A1 1
+    let result_arr2 = [];// A2 2
+    let result_arr3 = [];// B1 3
+                         // B2 4
+                         // C1 5
+                         // C2 6
+    let result_other = [];//   7
+
+    let is_sort = false;
+    sentences.forEach(sentence => {
+        let wordsRaw = sentence.split(/\s+/).filter(Boolean);
+            //console.log(`wordsRaw=${wordsRaw}`)
+       
+            //console.log(`wordsNormalized=${wordsNormalized}`)
+        let word_calculate = [];
+        wordsRaw.forEach(word => {
+            let wordsNormalized = word.toLowerCase().replaceAll("’","'").replaceAll(/[^a-z\']/gi, "");
+            if (wordsNormalized){
+                //console.log(`word=${word}`)
+                // let prepare_sentence = wordsNormalized.join(" ").replace(word,`<b>${word}</b>`)
+                if (arr3.includes(wordsNormalized) ){
+                    word_calculate.push([word,3]);
+                    
+                }else if (arr2.includes(wordsNormalized)){
+                    word_calculate.push([word,2]);
+                    
+                }else if (arr1.includes(wordsNormalized)){
+                    word_calculate.push([word,1]);
+                    
+                }else  {
+                    word_calculate.push([word,7]);
+                    
+                }                
+            }
+
+        });    
+
+        word_calculate.sort((a, b) => b[1] - a[1]);
+        console.log(word_calculate);
+
+        let prepare_sentence = sentence.replace(word_calculate[0][0],`<b>${word_calculate[0][0]}</b>`);
+        switch (word_calculate[0][1]) {
+            case 1:
+                
+                result_arr1.push(prepare_sentence);
+                break;
+            case 2:
+                result_arr2.push(prepare_sentence);
+                break;
+            case 3:
+                result_arr3.push(prepare_sentence);
+                break;
+            case 4:
+                console.log("...");
+                break;
+            case 5:
+                console.log("...");
+                break;
+            case 6:
+                console.log("...");
+                break;
+            case 7:
+                result_other.push(prepare_sentence);
+                break;
+            default:
+                result_other.push(prepare_sentence);
+        }
+        
+  }); 
+
+  console.log('result_arr1');
+  result_arr1.forEach(s => {
+    console.log(s);
+  });
+
+  console.log('\nresult_arr2');
+  result_arr2.forEach(s => {
+    console.log(s);
+  });
+
+  console.log('\nresult_arr3');
+  result_arr3.forEach(s => {
+    console.log(s);
+  });
+
+  console.log('\nresult_other');
+  result_other.forEach(s => {
+    console.log(s);
+  });
+ 
+
+}
+checkText();
+ 
+
+</script>

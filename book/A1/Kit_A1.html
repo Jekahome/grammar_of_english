@@ -1,0 +1,1570 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Kit words A1 - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h2 id="tables-words-a1"><a class="header" href="#tables-words-a1">Tables words A1</a></h2>
+<p>(после добавления новых слов следунт переделать таблицы используя инструменты на <a href="/generate_markdown.html">generate_markdown.html</a>)</p>
+<details>
+<summary>Nouns A1</summary>
+<div class="table-wrapper"><table><thead><tr><th>Noun singular</th><th>Noun plural</th><th>Translate</th><th>Frequency</th></tr></thead><tbody>
+<tr><td>time</td><td>times</td><td>время</td><td>54</td></tr>
+<tr><td>year</td><td>years</td><td>год</td><td>55</td></tr>
+<tr><td>people</td><td>people</td><td>люди</td><td>63</td></tr>
+<tr><td>day</td><td>days</td><td>день</td><td>92</td></tr>
+<tr><td>man</td><td>men</td><td>мужчина</td><td>95</td></tr>
+<tr><td>thing</td><td>things</td><td>вещь</td><td>99</td></tr>
+<tr><td>woman</td><td>women</td><td>женщина</td><td>114</td></tr>
+<tr><td>life</td><td>lives</td><td>жизнь</td><td>115</td></tr>
+<tr><td>child</td><td>children</td><td>ребёнок</td><td>116</td></tr>
+<tr><td>world</td><td>worlds</td><td>мир</td><td>123</td></tr>
+<tr><td>school</td><td>schools</td><td>школа</td><td>129</td></tr>
+<tr><td>family</td><td>families</td><td>семья</td><td>149</td></tr>
+<tr><td>house</td><td>houses</td><td>дом</td><td>151</td></tr>
+<tr><td>group</td><td>groups</td><td>группа</td><td>167</td></tr>
+<tr><td>country</td><td>countries</td><td>страна</td><td>168</td></tr>
+<tr><td>problem</td><td>problems</td><td>проблема</td><td>170</td></tr>
+<tr><td>student</td><td>students</td><td>студент</td><td>173</td></tr>
+<tr><td>hand</td><td>hands</td><td>рука</td><td>175</td></tr>
+<tr><td>part</td><td>parts</td><td>часть</td><td>180</td></tr>
+<tr><td>place</td><td>places</td><td>место</td><td>186</td></tr>
+<tr><td>city</td><td>cities</td><td>город</td><td>188</td></tr>
+<tr><td>week</td><td>weeks</td><td>неделя</td><td>193</td></tr>
+<tr><td>question</td><td>questions</td><td>вопрос</td><td>201</td></tr>
+<tr><td>work</td><td>works</td><td>работа, произведения</td><td>204</td></tr>
+<tr><td>number</td><td>numbers</td><td>номер, число</td><td>206</td></tr>
+<tr><td>night</td><td>nights</td><td>ночь</td><td>214</td></tr>
+<tr><td>room</td><td>rooms</td><td>комната</td><td>231</td></tr>
+<tr><td>money</td><td></td><td>деньги</td><td>236</td></tr>
+<tr><td>water</td><td></td><td>вода</td><td>239</td></tr>
+<tr><td>mother</td><td>mothers</td><td>мама</td><td>240</td></tr>
+<tr><td>month</td><td>months</td><td>месяц</td><td>243</td></tr>
+<tr><td>book</td><td>books</td><td>книга</td><td>245</td></tr>
+<tr><td>eye</td><td>eyes</td><td>глаз</td><td>246</td></tr>
+<tr><td>job</td><td>jobs</td><td>работа</td><td>248</td></tr>
+<tr><td>word</td><td>words</td><td>слово</td><td>250</td></tr>
+<tr><td>friend</td><td>friends</td><td>друг</td><td>273</td></tr>
+<tr><td>father</td><td>fathers</td><td>папа</td><td>278</td></tr>
+<tr><td>hour</td><td>hours</td><td>час</td><td>279</td></tr>
+<tr><td>end</td><td>ends</td><td>конец</td><td>284</td></tr>
+<tr><td>game</td><td>games</td><td>игра</td><td>287</td></tr>
+<tr><td>car</td><td>cars</td><td>машина</td><td>296</td></tr>
+<tr><td>name</td><td>names</td><td>имя</td><td>299</td></tr>
+<tr><td>body</td><td>bodies</td><td>тело</td><td>320</td></tr>
+<tr><td>minute</td><td>minutes</td><td>минута</td><td>323</td></tr>
+<tr><td>table</td><td>tables</td><td>стол</td><td>324</td></tr>
+<tr><td>face</td><td>faces</td><td>лицо</td><td>335</td></tr>
+<tr><td>parent</td><td>parents</td><td>родитель</td><td>340</td></tr>
+<tr><td>person</td><td>people</td><td>человек</td><td>348</td></tr>
+<tr><td>door</td><td>doors</td><td>дверь</td><td>349</td></tr>
+<tr><td>street</td><td>streets</td><td>улица</td><td>352</td></tr>
+<tr><td>party</td><td>parties</td><td>вечеринка</td><td>355</td></tr>
+<tr><td>morning</td><td>mornings</td><td>утро</td><td>358</td></tr>
+<tr><td>girl</td><td>girls</td><td>девочка</td><td>381</td></tr>
+<tr><td>boy</td><td>boys</td><td>мальчик</td><td>382</td></tr>
+<tr><td>food</td><td></td><td>еда</td><td>384</td></tr>
+<tr><td>teacher</td><td>teachers</td><td>учитель</td><td>412</td></tr>
+<tr><td>home</td><td>homes</td><td>дом</td><td>413</td></tr>
+<tr><td>class</td><td>classes</td><td>класс</td><td>438</td></tr>
+<tr><td>photo</td><td>photos</td><td>фото</td><td>445</td></tr>
+<tr><td>music</td><td></td><td>музыка</td><td>464</td></tr>
+<tr><td>light</td><td>lights</td><td>свет</td><td>467</td></tr>
+<tr><td>color</td><td>colors</td><td>цвет</td><td>470</td></tr>
+<tr><td>wife</td><td>wives</td><td>жена</td><td>475</td></tr>
+<tr><td>son</td><td>sons</td><td>сын</td><td>494</td></tr>
+<tr><td>arm</td><td>arms</td><td>рука</td><td>495</td></tr>
+<tr><td>town</td><td>towns</td><td>город</td><td>506</td></tr>
+<tr><td>road</td><td>roads</td><td>дорога</td><td>515</td></tr>
+<tr><td>paper</td><td>papers</td><td>бумага</td><td>533</td></tr>
+<tr><td>player</td><td>players</td><td>игрок</td><td>540</td></tr>
+<tr><td>picture</td><td>pictures</td><td>картинка</td><td>562</td></tr>
+<tr><td>wall</td><td>walls</td><td>стена</td><td>568</td></tr>
+<tr><td>doctor</td><td>doctors</td><td>врач</td><td>569</td></tr>
+<tr><td>phone</td><td>phones</td><td>телефон</td><td>574</td></tr>
+<tr><td>test</td><td>tests</td><td>тест</td><td>580</td></tr>
+<tr><td>computer</td><td>computers</td><td>компьютер</td><td>586</td></tr>
+<tr><td>movie</td><td>movies</td><td>фильм</td><td>587</td></tr>
+<tr><td>baby</td><td>babies</td><td>малыш</td><td>599</td></tr>
+<tr><td>tree</td><td>trees</td><td>дерево</td><td>603</td></tr>
+<tr><td>film</td><td>films</td><td>фильм</td><td>604</td></tr>
+<tr><td>window</td><td>windows</td><td>окно</td><td>614</td></tr>
+<tr><td>park</td><td>parks</td><td>парк</td><td>615</td></tr>
+<tr><td>hair</td><td></td><td>волосы</td><td>618</td></tr>
+<tr><td>brother</td><td>brothers</td><td>брат</td><td>623</td></tr>
+<tr><td>summer</td><td>summers</td><td>лето</td><td>624</td></tr>
+<tr><td>letter</td><td>letters</td><td>письмо</td><td>629</td></tr>
+<tr><td>floor</td><td>floors</td><td>пол</td><td>640</td></tr>
+<tr><td>plant</td><td>plants</td><td>растение</td><td>648</td></tr>
+<tr><td>daughter</td><td>daughters</td><td>дочь</td><td>654</td></tr>
+<tr><td>husband</td><td>husbands</td><td>муж</td><td>656</td></tr>
+<tr><td>board</td><td>boards</td><td>доска</td><td>664</td></tr>
+<tr><td>hospital</td><td>hospitals</td><td>больница</td><td>667</td></tr>
+<tr><td>subject</td><td>subjects</td><td>предмет</td><td>673</td></tr>
+<tr><td>bed</td><td>beds</td><td>кровать</td><td>680</td></tr>
+<tr><td>store</td><td>stores</td><td>магазин</td><td>697</td></tr>
+<tr><td>bank</td><td>banks</td><td>банк</td><td>701</td></tr>
+<tr><td>page</td><td>pages</td><td>страница</td><td>716</td></tr>
+<tr><td>language</td><td>languages</td><td>язык</td><td>727</td></tr>
+<tr><td>river</td><td>rivers</td><td>река</td><td>728</td></tr>
+<tr><td>animal</td><td>animals</td><td>животное</td><td>741</td></tr>
+<tr><td>sport</td><td>sports</td><td>спорт</td><td>750</td></tr>
+<tr><td>answer</td><td>answers</td><td>ответ</td><td>769</td></tr>
+<tr><td>dog</td><td>dogs</td><td>собака</td><td>770</td></tr>
+<tr><td>dollar</td><td>dollars</td><td>доллар</td><td>795</td></tr>
+<tr><td>box</td><td>boxes</td><td>коробка</td><td>802</td></tr>
+<tr><td>cup</td><td>cups</td><td>кружка</td><td>827</td></tr>
+<tr><td>glass</td><td>glasses</td><td>стакан</td><td>833</td></tr>
+<tr><td>station</td><td>stations</td><td>станция</td><td>841</td></tr>
+<tr><td>example</td><td>examples</td><td>пример</td><td>850</td></tr>
+<tr><td>sister</td><td>sisters</td><td>сестра</td><td>854</td></tr>
+<tr><td>sun</td><td>suns</td><td>солнце</td><td>861</td></tr>
+<tr><td>leg</td><td>legs</td><td>нога</td><td>880</td></tr>
+<tr><td>song</td><td>songs</td><td>песня</td><td>908</td></tr>
+<tr><td>radio</td><td>radios</td><td>радио</td><td>910</td></tr>
+<tr><td>note</td><td>notes</td><td>заметка</td><td>943</td></tr>
+<tr><td>ball</td><td>balls</td><td>мяч</td><td>951</td></tr>
+<tr><td>chair</td><td>chairs</td><td>стул</td><td>959</td></tr>
+<tr><td>evening</td><td>evenings</td><td>вечер</td><td>969</td></tr>
+<tr><td>museum</td><td>museums</td><td>музей</td><td>986</td></tr>
+<tr><td>fish</td><td>fish</td><td>рыба</td><td>992</td></tr>
+<tr><td>april</td><td></td><td>апрель</td><td>1000</td></tr>
+<tr><td>november</td><td></td><td>ноябрь</td><td>1000</td></tr>
+<tr><td>january</td><td></td><td>январь</td><td>1000</td></tr>
+<tr><td>september</td><td></td><td>сентябрь</td><td>1000</td></tr>
+<tr><td>february</td><td></td><td>февраль</td><td>1000</td></tr>
+<tr><td>may</td><td></td><td>май</td><td>1000</td></tr>
+<tr><td>march</td><td></td><td>март</td><td>1000</td></tr>
+<tr><td>july</td><td></td><td>июль</td><td>1000</td></tr>
+<tr><td>june</td><td></td><td>июнь</td><td>1000</td></tr>
+<tr><td>october</td><td></td><td>октябрь</td><td>1000</td></tr>
+<tr><td>august</td><td></td><td>август</td><td>1000</td></tr>
+<tr><td>december</td><td></td><td>декабрь</td><td>1000</td></tr>
+<tr><td>mobile</td><td>mobiles</td><td>мобильный телефон</td><td>1000</td></tr>
+<tr><td>camera</td><td>cameras</td><td>камера</td><td>1018</td></tr>
+<tr><td>bar</td><td>bars</td><td>бар</td><td>1021</td></tr>
+<tr><td>hotel</td><td>hotels</td><td>отель</td><td>1022</td></tr>
+<tr><td>sea</td><td>seas</td><td>море</td><td>1026</td></tr>
+<tr><td>bag</td><td>bags</td><td>сумка</td><td>1045</td></tr>
+<tr><td>mom</td><td>moms</td><td>мама</td><td>1054</td></tr>
+<tr><td>thursday</td><td>thursdays</td><td>четверг</td><td>1068</td></tr>
+<tr><td>wednesday</td><td>wednesdays</td><td>среда</td><td>1068</td></tr>
+<tr><td>monday</td><td>mondays</td><td>понедельник</td><td>1068</td></tr>
+<tr><td>saturday</td><td>saturdays</td><td>суббота</td><td>1068</td></tr>
+<tr><td>friday</td><td>fridays</td><td>пятница</td><td>1068</td></tr>
+<tr><td>sunday</td><td>sundays</td><td>воскресенье</td><td>1068</td></tr>
+<tr><td>kitchen</td><td>kitchens</td><td>кухня</td><td>1074</td></tr>
+<tr><td>mouth</td><td>mouths</td><td>рот</td><td>1077</td></tr>
+<tr><td>dinner</td><td>dinners</td><td>ужин</td><td>1094</td></tr>
+<tr><td>newspaper</td><td>newspapers</td><td>газета</td><td>1123</td></tr>
+<tr><td>wind</td><td>winds</td><td>ветер</td><td>1124</td></tr>
+<tr><td>garden</td><td>gardens</td><td>сад</td><td>1130</td></tr>
+<tr><td>restaurant</td><td>restaurants</td><td>ресторан</td><td>1150</td></tr>
+<tr><td>forest</td><td>forests</td><td>лес</td><td>1158</td></tr>
+<tr><td>dad</td><td>dads</td><td>папа</td><td>1159</td></tr>
+<tr><td>plane</td><td>planes</td><td>самолёт</td><td>1169</td></tr>
+<tr><td>bird</td><td>birds</td><td>птица</td><td>1176</td></tr>
+<tr><td>afternoon</td><td>afternoons</td><td>день (после полудня)</td><td>1202</td></tr>
+<tr><td>beach</td><td>beaches</td><td>пляж</td><td>1216</td></tr>
+<tr><td>weekend</td><td>weekends</td><td>выходные</td><td>1219</td></tr>
+<tr><td>date</td><td>dates</td><td>дата</td><td>1220</td></tr>
+<tr><td>winter</td><td>winters</td><td>зима</td><td>1270</td></tr>
+<tr><td>horse</td><td>horses</td><td>лошадь</td><td>1292</td></tr>
+<tr><td>farm</td><td>farms</td><td>ферма</td><td>1305</td></tr>
+<tr><td>village</td><td>villages</td><td>деревня</td><td>1310</td></tr>
+<tr><td>boat</td><td>boats</td><td>лодка</td><td>1326</td></tr>
+<tr><td>shop</td><td>shops</td><td>магазин</td><td>1371</td></tr>
+<tr><td>lesson</td><td>lessons</td><td>урок</td><td>1384</td></tr>
+<tr><td>band</td><td>bands</td><td>группа</td><td>1389</td></tr>
+<tr><td>ear</td><td>ears</td><td>ухо</td><td>1390</td></tr>
+<tr><td>foot</td><td>feet</td><td>нога, ступня</td><td>1399</td></tr>
+<tr><td>coffee</td><td></td><td>кофе</td><td>1425</td></tr>
+<tr><td>egg</td><td>eggs</td><td>яйцо</td><td>1445</td></tr>
+<tr><td>shoe</td><td>shoes</td><td>обувь, туфля</td><td>1457</td></tr>
+<tr><td>clothes</td><td></td><td>одежда</td><td>1458</td></tr>
+<tr><td>internet</td><td></td><td>интернет</td><td>1470</td></tr>
+<tr><td>bus</td><td>buses</td><td>автобус</td><td>1479</td></tr>
+<tr><td>key</td><td>keys</td><td>ключ</td><td>1484</td></tr>
+<tr><td>flower</td><td>flowers</td><td>цветок</td><td>1537</td></tr>
+<tr><td>plate</td><td>plates</td><td>тарелка</td><td>1540</td></tr>
+<tr><td>rain</td><td>rains</td><td>дождь</td><td>1569</td></tr>
+<tr><td>football</td><td>footballs</td><td>футбол</td><td>1571</td></tr>
+<tr><td>ticket</td><td>tickets</td><td>билет</td><td>1612</td></tr>
+<tr><td>leaf</td><td>leaves</td><td>лист</td><td>1613</td></tr>
+<tr><td>classroom</td><td>classrooms</td><td>класс</td><td>1614</td></tr>
+<tr><td>lunch</td><td>lunches</td><td>обед</td><td>1616</td></tr>
+<tr><td>half</td><td>halves</td><td>половина</td><td>1639</td></tr>
+<tr><td>weather</td><td></td><td>погода</td><td>1641</td></tr>
+<tr><td>salt</td><td></td><td>соль</td><td>1654</td></tr>
+<tr><td>desk</td><td>desks</td><td>парта, стол</td><td>1668</td></tr>
+<tr><td>sugar</td><td></td><td>сахар</td><td>1677</td></tr>
+<tr><td>train</td><td>trains</td><td>поезд</td><td>1694</td></tr>
+<tr><td>moon</td><td>moons</td><td>луна</td><td>1718</td></tr>
+<tr><td>fruit</td><td>fruits</td><td>фрукты</td><td>1723</td></tr>
+<tr><td>dance</td><td>dances</td><td>танец</td><td>1724</td></tr>
+<tr><td>meal</td><td>meals</td><td>еда</td><td>1751</td></tr>
+<tr><td>nose</td><td>noses</td><td>нос</td><td>1766</td></tr>
+<tr><td>cat</td><td>cats</td><td>кот, кошка</td><td>1786</td></tr>
+<tr><td>dress</td><td>dresses</td><td>платье</td><td>1799</td></tr>
+<tr><td>shirt</td><td>shirts</td><td>рубашка</td><td>1805</td></tr>
+<tr><td>address</td><td>addresses</td><td>адрес</td><td>1864</td></tr>
+<tr><td>tooth</td><td>teeth</td><td>зуб</td><td>1880</td></tr>
+<tr><td>bedroom</td><td>bedrooms</td><td>спальня</td><td>1889</td></tr>
+<tr><td>ocean</td><td>oceans</td><td>океан</td><td>1906</td></tr>
+<tr><td>fun</td><td></td><td>веселье</td><td>1919</td></tr>
+<tr><td>apple</td><td>apples</td><td>яблоко</td><td>1983</td></tr>
+<tr><td>holiday</td><td>holidays</td><td>праздник, каникулы</td><td>1989</td></tr>
+<tr><td>flat</td><td>flats</td><td>квартира</td><td>2000</td></tr>
+<tr><td>noise</td><td>noises</td><td>шум</td><td>2020</td></tr>
+<tr><td>vegetable</td><td>vegetables</td><td>овощ</td><td>2024</td></tr>
+<tr><td>hat</td><td>hats</td><td>шляпа</td><td>2030</td></tr>
+<tr><td>grass</td><td>grasses</td><td>трава</td><td>2034</td></tr>
+<tr><td>sentence</td><td>sentences</td><td>предложение</td><td>2048</td></tr>
+<tr><td>drink</td><td>drinks</td><td>напиток</td><td>2054</td></tr>
+<tr><td>milk</td><td></td><td>молоко</td><td>2091</td></tr>
+<tr><td>rice</td><td></td><td>рис</td><td>2131</td></tr>
+<tr><td>bread</td><td></td><td>хлеб</td><td>2142</td></tr>
+<tr><td>factory</td><td>factories</td><td>завод</td><td>2170</td></tr>
+<tr><td>cheese</td><td></td><td>сыр</td><td>2222</td></tr>
+<tr><td>tea</td><td></td><td>чай</td><td>2230</td></tr>
+<tr><td>present</td><td>presents</td><td>подарок</td><td>2240</td></tr>
+<tr><td>knife</td><td>knives</td><td>нож</td><td>2269</td></tr>
+<tr><td>coat</td><td>coats</td><td>пальто</td><td>2284</td></tr>
+<tr><td>potato</td><td>potatoes</td><td>картофель</td><td>2311</td></tr>
+<tr><td>jacket</td><td>jackets</td><td>куртка</td><td>2321</td></tr>
+<tr><td>bean</td><td>beans</td><td>фасоль</td><td>2390</td></tr>
+<tr><td>stop</td><td>stops</td><td>остановка</td><td>2419</td></tr>
+<tr><td>juice</td><td>juices</td><td>сок</td><td>2429</td></tr>
+<tr><td>breakfast</td><td>breakfasts</td><td>завтрак</td><td>2433</td></tr>
+<tr><td>bathroom</td><td>bathrooms</td><td>ванная</td><td>2441</td></tr>
+<tr><td>watch</td><td>watches</td><td>часы</td><td>2471</td></tr>
+<tr><td>boot</td><td>boots</td><td>сапог</td><td>2476</td></tr>
+<tr><td>birthday</td><td>birthdays</td><td>день рождения</td><td>2496</td></tr>
+<tr><td>butter</td><td></td><td>масло</td><td>2551</td></tr>
+<tr><td>tomato</td><td>tomatoes</td><td>помидор</td><td>2581</td></tr>
+<tr><td>vacation</td><td>vacations</td><td>отпуск, каникулы</td><td>2627</td></tr>
+<tr><td>cake</td><td>cakes</td><td>торт, пирожное</td><td>2637</td></tr>
+<tr><td>clock</td><td>clocks</td><td>часы</td><td>2655</td></tr>
+<tr><td>chocolate</td><td>chocolates</td><td>шоколад</td><td>2736</td></tr>
+<tr><td>pants</td><td></td><td>штаны</td><td>2759</td></tr>
+<tr><td>bike</td><td>bikes</td><td>велосипед</td><td>3012</td></tr>
+<tr><td>soup</td><td>soups</td><td>суп</td><td>3049</td></tr>
+<tr><td>cow</td><td>cows</td><td>корова</td><td>3107</td></tr>
+<tr><td>tennis</td><td></td><td>теннис</td><td>3136</td></tr>
+<tr><td>shower</td><td>showers</td><td>душ</td><td>3256</td></tr>
+<tr><td>pet</td><td>pets</td><td>домашнее животное</td><td>3359</td></tr>
+<tr><td>actress</td><td>actresses</td><td>актриса</td><td>3365</td></tr>
+<tr><td>pig</td><td>pigs</td><td>свинья</td><td>3527</td></tr>
+<tr><td>jeans</td><td></td><td>джинсы</td><td>3591</td></tr>
+<tr><td>pen</td><td>pens</td><td>ручка</td><td>3616</td></tr>
+<tr><td>sandwich</td><td>sandwiches</td><td>бутерброд</td><td>3659</td></tr>
+<tr><td>orange</td><td>oranges</td><td>апельсин</td><td>3700</td></tr>
+<tr><td>skirt</td><td>skirts</td><td>юбка</td><td>3754</td></tr>
+<tr><td>cafe</td><td>cafes</td><td>кафе</td><td>3772</td></tr>
+<tr><td>bat</td><td>bats</td><td>летучая мышь</td><td>3793</td></tr>
+<tr><td>doll</td><td>dolls</td><td>кукла</td><td>3820</td></tr>
+<tr><td>bath</td><td>baths</td><td>ванна</td><td>3915</td></tr>
+<tr><td>guitar</td><td>guitars</td><td>гитара</td><td>3928</td></tr>
+<tr><td>lamp</td><td>lamps</td><td>лампа</td><td>3938</td></tr>
+<tr><td>website</td><td>websites</td><td>веб-сайт</td><td>4000</td></tr>
+<tr><td>waiter</td><td>waiters</td><td>официант</td><td>4000</td></tr>
+<tr><td>biscuit</td><td>biscuits</td><td>печенье</td><td>4000</td></tr>
+<tr><td>pizza</td><td>pizzas</td><td>пицца</td><td>4044</td></tr>
+<tr><td>toilet</td><td>toilets</td><td>туалет</td><td>4045</td></tr>
+<tr><td>sheep</td><td>sheep</td><td>овца</td><td>4224</td></tr>
+<tr><td>pencil</td><td>pencils</td><td>карандаш</td><td>4665</td></tr>
+<tr><td>supermarket</td><td>supermarkets</td><td>супермаркет</td><td>4721</td></tr>
+<tr><td>beard</td><td>beards</td><td>борода</td><td>4733</td></tr>
+<tr><td>banana</td><td>bananas</td><td>банан</td><td>4795</td></tr>
+<tr><td>homework</td><td></td><td>домашнее задание</td><td>4932</td></tr>
+<tr><td>trousers</td><td></td><td>брюки</td><td>5000</td></tr>
+<tr><td>taxi</td><td>taxis</td><td>такси</td><td>5000</td></tr>
+<tr><td>tuesday</td><td></td><td>вторник</td><td>5000</td></tr>
+<tr><td>bookcase</td><td>bookcases</td><td>книжный шкаф</td><td>5000</td></tr>
+<tr><td>email</td><td>emails</td><td>электронная почта</td><td>5000</td></tr>
+<tr><td>blouse</td><td>blouses</td><td>блузка</td><td>5000</td></tr>
+<tr><td>waitress</td><td>waitresses</td><td>официантка</td><td>5000</td></tr>
+<tr><td>mum</td><td>mums</td><td>мама</td><td>6000</td></tr>
+<tr><td>picnic</td><td>picnics</td><td>пикник</td><td>7000</td></tr>
+<tr><td>zoo</td><td>zoos</td><td>зоопарк</td><td>7000</td></tr>
+<tr><td>subway</td><td>subways</td><td>метро</td><td>8000</td></tr>
+<tr><td>classmate</td><td>classmates</td><td>одноклассник</td><td>9000</td></tr>
+<tr><td>tv</td><td>tvs</td><td>телевизор, телевидение</td><td>9500</td></tr>
+<tr><td>neighbor</td><td>neighbors</td><td>сосед</td><td>10000</td></tr>
+<tr><td>milkman</td><td>milkmen</td><td>молочник</td><td>10001</td></tr>
+<tr><td>postman</td><td>postmen</td><td>почтальон</td><td>10002</td></tr>
+<tr><td>cupboard</td><td>cupboards</td><td>шкаф</td><td>10003</td></tr>
+<tr><td>keychain</td><td>keychains</td><td>брелок</td><td>10004</td></tr>
+<tr><td>notebook</td><td>notebooks</td><td>тетрадь</td><td>10005</td></tr>
+<tr><td>eraser</td><td>erasers</td><td>ластик</td><td>10006</td></tr>
+<tr><td>bagpack</td><td>bagpacks</td><td>рюкзак</td><td>10007</td></tr>
+<tr><td>lampstand</td><td>lampstands</td><td>подставка для лампы</td><td>10008</td></tr>
+<tr><td>bottle</td><td>bottles</td><td>бутылка</td><td>10009</td></tr>
+<tr><td>spoon</td><td>spoons</td><td>ложка</td><td>10010</td></tr>
+<tr><td>fork</td><td>forks</td><td>вилка</td><td>10011</td></tr>
+<tr><td>knife</td><td>knives</td><td>нож</td><td>10012</td></tr>
+<tr><td>plate</td><td>plates</td><td>тарелка</td><td>10013</td></tr>
+<tr><td>cup</td><td>cups</td><td>чашка</td><td>10014</td></tr>
+<tr><td>clock</td><td>clocks</td><td>часы</td><td>10015</td></tr>
+<tr><td>window</td><td>windows</td><td>окно</td><td>10016</td></tr>
+<tr><td>door</td><td>doors</td><td>дверь</td><td>10017</td></tr>
+<tr><td>chair</td><td>chairs</td><td>стул</td><td>10018</td></tr>
+<tr><td>table</td><td>tables</td><td>стол</td><td>10019</td></tr>
+<tr><td>sofa</td><td>sofas</td><td>диван</td><td>10020</td></tr>
+<tr><td>bed</td><td>beds</td><td>кровать</td><td>10021</td></tr>
+<tr><td>mirror</td><td>mirrors</td><td>зеркало</td><td>10022</td></tr>
+<tr><td>television</td><td>televisions</td><td>телевизор</td><td>10023</td></tr>
+<tr><td>radio</td><td>radios</td><td>радио</td><td>10024</td></tr>
+<tr><td>computer</td><td>computers</td><td>компьютер</td><td>10025</td></tr>
+<tr><td>market</td><td>markets</td><td>рынок, базар</td><td>1000</td></tr>
+<tr><td>snow</td><td>snows</td><td>снег</td><td>1000</td></tr>
+<tr><td>meat</td><td>meats</td><td>мясо</td><td>1000</td></tr>
+<tr><td>one</td><td></td><td>один</td><td>1000</td></tr>
+<tr><td>two</td><td></td><td>два</td><td>1000</td></tr>
+<tr><td>three</td><td></td><td>три</td><td>1000</td></tr>
+<tr><td>four</td><td></td><td>четыре</td><td>1000</td></tr>
+<tr><td>five</td><td></td><td>пять</td><td>1000</td></tr>
+<tr><td>six</td><td></td><td>шесть</td><td>1000</td></tr>
+<tr><td>seven</td><td></td><td>семь</td><td>1000</td></tr>
+<tr><td>eight</td><td></td><td>восемь</td><td>1000</td></tr>
+<tr><td>nine</td><td></td><td>девять</td><td>1000</td></tr>
+<tr><td>ten</td><td></td><td>десять</td><td>1000</td></tr>
+<tr><td>eleven</td><td></td><td>одиннадцать</td><td>1000</td></tr>
+<tr><td>twelve</td><td></td><td>двенадцать</td><td>1000</td></tr>
+<tr><td>thirteen</td><td></td><td>тринадцать</td><td>1000</td></tr>
+<tr><td>fourteen</td><td></td><td>четырнадцать</td><td>1000</td></tr>
+<tr><td>fifteen</td><td></td><td>пятнадцать</td><td>1000</td></tr>
+<tr><td>sixteen</td><td></td><td>шестнадцать</td><td>1000</td></tr>
+<tr><td>seventeen</td><td></td><td>семнадцать</td><td>1000</td></tr>
+<tr><td>eighteen</td><td></td><td>восемнадцать</td><td>1000</td></tr>
+<tr><td>nineteen</td><td></td><td>девятнадцать</td><td>1000</td></tr>
+<tr><td>twenty</td><td></td><td>двадцать</td><td>1000</td></tr>
+<tr><td>thirty</td><td></td><td>тридцать</td><td>1000</td></tr>
+<tr><td>forty</td><td></td><td>сорок</td><td>1000</td></tr>
+<tr><td>fifty</td><td></td><td>пятьдесят</td><td>1000</td></tr>
+<tr><td>sixty</td><td></td><td>шестьдесят</td><td>1000</td></tr>
+<tr><td>seventy</td><td></td><td>семьдесят</td><td>1000</td></tr>
+<tr><td>eighty</td><td></td><td>восемьдесят</td><td>1000</td></tr>
+<tr><td>ninety</td><td></td><td>девяносто</td><td>1000</td></tr>
+<tr><td>hundred</td><td></td><td>сто</td><td>1000</td></tr>
+<tr><td>thousand</td><td></td><td>тысяча</td><td>1000</td></tr>
+<tr><td>million</td><td></td><td>миллион</td><td>1000</td></tr>
+<tr><td>billion</td><td></td><td>миллиард</td><td>4324</td></tr>
+<tr><td>mother-in-law</td><td></td><td>теща, свекровь</td><td>1000</td></tr>
+<tr><td>check-in</td><td></td><td>регистрация, отметка о прибытии</td><td>1000</td></tr>
+<tr><td>fox</td><td>foxes</td><td>лиса, лисица</td><td>5000</td></tr>
+<tr><td>wolf</td><td>wolves</td><td>волк</td><td>2677</td></tr>
+<tr><td>mouse</td><td>mice</td><td>мышь</td><td>3345</td></tr>
+<tr><td>piano</td><td>pianos</td><td>пианино, фортепьяно</td><td>3389</td></tr>
+<tr><td>mistake</td><td>mistakes</td><td>ошибка</td><td>1454</td></tr>
+<tr><td>kid</td><td>kids</td><td>ребёнок,  малыш</td><td>322</td></tr>
+<tr><td>printer</td><td>printers</td><td>принтер</td><td>5000</td></tr>
+<tr><td>grandmother</td><td>grandmothers</td><td>бабушка</td><td>2545</td></tr>
+<tr><td>way</td><td>ways</td><td>путь, способ, сторона, дорога</td><td>1000</td></tr>
+<tr><td>message</td><td>messages</td><td>сообщение, послание, письмо, идея, сигнализировать</td><td>1000</td></tr>
+<tr><td>soda</td><td>sodas</td><td>сода, газированная вода</td><td>1000</td></tr>
+<tr><td>jam</td><td>jams</td><td>джем, варенье</td><td>1000</td></tr>
+<tr><td>beginner</td><td>beginners</td><td>начинающий, новичок</td><td>1000</td></tr>
+<tr><td>toast</td><td>toasts</td><td>тост, гренки</td><td>1000</td></tr>
+</tbody></table>
+</div>
+<hr />
+</details>
+<details>
+<summary>Verbs A1</summary>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">verb_1_i_you_we_they</th><th style="text-align: left">verb_1_he_she_it</th><th style="text-align: left">verb_present_participle</th><th style="text-align: left">verb_2_past_tense</th><th style="text-align: left">verb_3_past_participle</th><th style="text-align: left">verb_irregular</th><th style="text-align: left">Translate</th><th style="text-align: left">Frequency</th></tr></thead><tbody>
+<tr><td style="text-align: left">am;were</td><td style="text-align: left">is</td><td style="text-align: left">being</td><td style="text-align: left">were;was</td><td style="text-align: left">been</td><td style="text-align: left">0</td><td style="text-align: left">быть</td><td style="text-align: left">2</td></tr>
+<tr><td style="text-align: left">have</td><td style="text-align: left">has</td><td style="text-align: left">having</td><td style="text-align: left">had</td><td style="text-align: left">had</td><td style="text-align: left">1</td><td style="text-align: left">иметь</td><td style="text-align: left">8</td></tr>
+<tr><td style="text-align: left">do</td><td style="text-align: left">does</td><td style="text-align: left">doing</td><td style="text-align: left">did</td><td style="text-align: left">done</td><td style="text-align: left">1</td><td style="text-align: left">делать</td><td style="text-align: left">18</td></tr>
+<tr><td style="text-align: left">say</td><td style="text-align: left">says</td><td style="text-align: left">saying</td><td style="text-align: left">said</td><td style="text-align: left">said</td><td style="text-align: left">1</td><td style="text-align: left">сказать;говорить</td><td style="text-align: left">20</td></tr>
+<tr><td style="text-align: left">go</td><td style="text-align: left">goes</td><td style="text-align: left">going</td><td style="text-align: left">went</td><td style="text-align: left">gone</td><td style="text-align: left">1</td><td style="text-align: left">идти;ехать</td><td style="text-align: left">36</td></tr>
+<tr><td style="text-align: left">can</td><td style="text-align: left">cans</td><td style="text-align: left">canning</td><td style="text-align: left">canned</td><td style="text-align: left">canned</td><td style="text-align: left">0</td><td style="text-align: left">мочь;иметь возможность</td><td style="text-align: left">40</td></tr>
+<tr><td style="text-align: left">get</td><td style="text-align: left">gets</td><td style="text-align: left">getting</td><td style="text-align: left">got</td><td style="text-align: left">got</td><td style="text-align: left">1</td><td style="text-align: left">получать;попасть;становится</td><td style="text-align: left">41</td></tr>
+<tr><td style="text-align: left">make</td><td style="text-align: left">makes</td><td style="text-align: left">making</td><td style="text-align: left">made</td><td style="text-align: left">made</td><td style="text-align: left">1</td><td style="text-align: left">делать;производить;заставлять</td><td style="text-align: left">46</td></tr>
+<tr><td style="text-align: left">know</td><td style="text-align: left">knows</td><td style="text-align: left">knowing</td><td style="text-align: left">knew</td><td style="text-align: left">known</td><td style="text-align: left">1</td><td style="text-align: left">знать;узнавать</td><td style="text-align: left">49</td></tr>
+<tr><td style="text-align: left">think</td><td style="text-align: left">thinks</td><td style="text-align: left">thinking</td><td style="text-align: left">thought</td><td style="text-align: left">thought</td><td style="text-align: left">1</td><td style="text-align: left">думать;мыслить</td><td style="text-align: left">57</td></tr>
+<tr><td style="text-align: left">see</td><td style="text-align: left">sees</td><td style="text-align: left">seeing</td><td style="text-align: left">saw</td><td style="text-align: left">seen</td><td style="text-align: left">1</td><td style="text-align: left">видеть;смотреть</td><td style="text-align: left">58</td></tr>
+<tr><td style="text-align: left">take</td><td style="text-align: left">takes</td><td style="text-align: left">taking</td><td style="text-align: left">took</td><td style="text-align: left">taken</td><td style="text-align: left">1</td><td style="text-align: left">брать, взять</td><td style="text-align: left">64</td></tr>
+<tr><td style="text-align: left">come</td><td style="text-align: left">comes</td><td style="text-align: left">coming</td><td style="text-align: left">came</td><td style="text-align: left">come</td><td style="text-align: left">1</td><td style="text-align: left">приехать;приходить</td><td style="text-align: left">70</td></tr>
+<tr><td style="text-align: left">want</td><td style="text-align: left">wants</td><td style="text-align: left">wanting</td><td style="text-align: left">wanted</td><td style="text-align: left">wanted</td><td style="text-align: left">0</td><td style="text-align: left">нуждаться;хотеть</td><td style="text-align: left">84</td></tr>
+<tr><td style="text-align: left">look</td><td style="text-align: left">looks</td><td style="text-align: left">looking</td><td style="text-align: left">looked</td><td style="text-align: left">looked</td><td style="text-align: left">0</td><td style="text-align: left">посмотреть;выглядеть</td><td style="text-align: left">87</td></tr>
+<tr><td style="text-align: left">use</td><td style="text-align: left">uses</td><td style="text-align: left">using</td><td style="text-align: left">used</td><td style="text-align: left">used</td><td style="text-align: left">0</td><td style="text-align: left">использовать;пользоваться</td><td style="text-align: left">94</td></tr>
+<tr><td style="text-align: left">find</td><td style="text-align: left">finds</td><td style="text-align: left">finding</td><td style="text-align: left">found</td><td style="text-align: left">found</td><td style="text-align: left">1</td><td style="text-align: left">находить;обрести</td><td style="text-align: left">97</td></tr>
+<tr><td style="text-align: left">give</td><td style="text-align: left">gives</td><td style="text-align: left">giving</td><td style="text-align: left">gave</td><td style="text-align: left">given</td><td style="text-align: left">1</td><td style="text-align: left">давать;придавать</td><td style="text-align: left">98</td></tr>
+<tr><td style="text-align: left">tell</td><td style="text-align: left">tells</td><td style="text-align: left">telling</td><td style="text-align: left">told</td><td style="text-align: left">told</td><td style="text-align: left">1</td><td style="text-align: left">сказать;рассказывать</td><td style="text-align: left">104</td></tr>
+<tr><td style="text-align: left">work</td><td style="text-align: left">works</td><td style="text-align: left">working</td><td style="text-align: left">worked</td><td style="text-align: left">worked</td><td style="text-align: left">0</td><td style="text-align: left">работать;трудитьс</td><td style="text-align: left">119</td></tr>
+<tr><td style="text-align: left">need</td><td style="text-align: left">needs</td><td style="text-align: left">needing</td><td style="text-align: left">needed</td><td style="text-align: left">needed</td><td style="text-align: left">0</td><td style="text-align: left">нуждаться</td><td style="text-align: left">134</td></tr>
+<tr><td style="text-align: left">feel</td><td style="text-align: left">feels</td><td style="text-align: left">feeling</td><td style="text-align: left">felt</td><td style="text-align: left">felt</td><td style="text-align: left">1</td><td style="text-align: left">чувствовать</td><td style="text-align: left">136</td></tr>
+<tr><td style="text-align: left">leave</td><td style="text-align: left">leaves</td><td style="text-align: left">leaving</td><td style="text-align: left">left</td><td style="text-align: left">left</td><td style="text-align: left">1</td><td style="text-align: left">оставлять;покидать</td><td style="text-align: left">152</td></tr>
+<tr><td style="text-align: left">put</td><td style="text-align: left">puts</td><td style="text-align: left">putting</td><td style="text-align: left">put</td><td style="text-align: left">put</td><td style="text-align: left">1</td><td style="text-align: left">класть;ставить</td><td style="text-align: left">153</td></tr>
+<tr><td style="text-align: left">begin</td><td style="text-align: left">begins</td><td style="text-align: left">beginning</td><td style="text-align: left">began</td><td style="text-align: left">begun</td><td style="text-align: left">1</td><td style="text-align: left">начинать</td><td style="text-align: left">164</td></tr>
+<tr><td style="text-align: left">talk</td><td style="text-align: left">talks</td><td style="text-align: left">talking</td><td style="text-align: left">talked</td><td style="text-align: left">talked</td><td style="text-align: left">0</td><td style="text-align: left">говорить;разговаривать</td><td style="text-align: left">169</td></tr>
+<tr><td style="text-align: left">help</td><td style="text-align: left">helps</td><td style="text-align: left">helping</td><td style="text-align: left">helped</td><td style="text-align: left">helped</td><td style="text-align: left">0</td><td style="text-align: left">помогать</td><td style="text-align: left">176</td></tr>
+<tr><td style="text-align: left">start</td><td style="text-align: left">starts</td><td style="text-align: left">starting</td><td style="text-align: left">started</td><td style="text-align: left">started</td><td style="text-align: left">0</td><td style="text-align: left">начинать;стартовать</td><td style="text-align: left">178</td></tr>
+<tr><td style="text-align: left">show</td><td style="text-align: left">shows</td><td style="text-align: left">showing</td><td style="text-align: left">showed</td><td style="text-align: left">shown</td><td style="text-align: left">1</td><td style="text-align: left">показывать;проявлять</td><td style="text-align: left">181</td></tr>
+<tr><td style="text-align: left">hear</td><td style="text-align: left">hears</td><td style="text-align: left">hearing</td><td style="text-align: left">heard</td><td style="text-align: left">heard</td><td style="text-align: left">1</td><td style="text-align: left">слышать</td><td style="text-align: left">198</td></tr>
+<tr><td style="text-align: left">run</td><td style="text-align: left">runs</td><td style="text-align: left">running</td><td style="text-align: left">ran</td><td style="text-align: left">run</td><td style="text-align: left">1</td><td style="text-align: left">бежать;работать</td><td style="text-align: left">205</td></tr>
+<tr><td style="text-align: left">play</td><td style="text-align: left">plays</td><td style="text-align: left">playing</td><td style="text-align: left">played</td><td style="text-align: left">played</td><td style="text-align: left">0</td><td style="text-align: left">играть</td><td style="text-align: left">209</td></tr>
+<tr><td style="text-align: left">like</td><td style="text-align: left">likes</td><td style="text-align: left">liking</td><td style="text-align: left">liked</td><td style="text-align: left">liked</td><td style="text-align: left">0</td><td style="text-align: left">нравиться;любить</td><td style="text-align: left">212</td></tr>
+<tr><td style="text-align: left">live</td><td style="text-align: left">lives</td><td style="text-align: left">living</td><td style="text-align: left">lived</td><td style="text-align: left">lived</td><td style="text-align: left">0</td><td style="text-align: left">жить;дожить</td><td style="text-align: left">219</td></tr>
+<tr><td style="text-align: left">write</td><td style="text-align: left">writes</td><td style="text-align: left">writing</td><td style="text-align: left">wrote</td><td style="text-align: left">written</td><td style="text-align: left">1</td><td style="text-align: left">писать</td><td style="text-align: left">235</td></tr>
+<tr><td style="text-align: left">sit</td><td style="text-align: left">sits</td><td style="text-align: left">sitting</td><td style="text-align: left">sat</td><td style="text-align: left">sat</td><td style="text-align: left">1</td><td style="text-align: left">сидеть (отдых с телом);заседать</td><td style="text-align: left">271</td></tr>
+<tr><td style="text-align: left">meet</td><td style="text-align: left">meets</td><td style="text-align: left">meeting</td><td style="text-align: left">met</td><td style="text-align: left">met</td><td style="text-align: left">1</td><td style="text-align: left">встречаться;соответствовать</td><td style="text-align: left">292</td></tr>
+<tr><td style="text-align: left">pay</td><td style="text-align: left">pays</td><td style="text-align: left">paying</td><td style="text-align: left">paid</td><td style="text-align: left">paid</td><td style="text-align: left">1</td><td style="text-align: left">платить</td><td style="text-align: left">293</td></tr>
+<tr><td style="text-align: left">change</td><td style="text-align: left">changes</td><td style="text-align: left">changing</td><td style="text-align: left">changed</td><td style="text-align: left">changed</td><td style="text-align: left">0</td><td style="text-align: left">изменить (что-то)</td><td style="text-align: left">309</td></tr>
+<tr><td style="text-align: left">learn</td><td style="text-align: left">learns</td><td style="text-align: left">learning</td><td style="text-align: left">learned</td><td style="text-align: left">learned</td><td style="text-align: left">1</td><td style="text-align: left">учиться</td><td style="text-align: left">321</td></tr>
+<tr><td style="text-align: left">understand</td><td style="text-align: left">understands</td><td style="text-align: left">understanding</td><td style="text-align: left">understood</td><td style="text-align: left">understood</td><td style="text-align: left">1</td><td style="text-align: left">понять;понимать</td><td style="text-align: left">326</td></tr>
+<tr><td style="text-align: left">watch</td><td style="text-align: left">watches</td><td style="text-align: left">watching</td><td style="text-align: left">watched</td><td style="text-align: left">watched</td><td style="text-align: left">0</td><td style="text-align: left">наблюдать;следить</td><td style="text-align: left">329</td></tr>
+<tr><td style="text-align: left">stop</td><td style="text-align: left">stops</td><td style="text-align: left">stopping</td><td style="text-align: left">stopped</td><td style="text-align: left">stopped</td><td style="text-align: left">0</td><td style="text-align: left">остановить;останавливать</td><td style="text-align: left">334</td></tr>
+<tr><td style="text-align: left">speak</td><td style="text-align: left">speaks</td><td style="text-align: left">speaking</td><td style="text-align: left">spoke</td><td style="text-align: left">spoken</td><td style="text-align: left">1</td><td style="text-align: left">говорить;выступать</td><td style="text-align: left">341</td></tr>
+<tr><td style="text-align: left">read</td><td style="text-align: left">reads</td><td style="text-align: left">reading</td><td style="text-align: left">read</td><td style="text-align: left">read</td><td style="text-align: left">1</td><td style="text-align: left">читать</td><td style="text-align: left">346</td></tr>
+<tr><td style="text-align: left">open</td><td style="text-align: left">opens</td><td style="text-align: left">opening</td><td style="text-align: left">opened</td><td style="text-align: left">opened</td><td style="text-align: left">0</td><td style="text-align: left">открыть</td><td style="text-align: left">359</td></tr>
+<tr><td style="text-align: left">walk</td><td style="text-align: left">walks</td><td style="text-align: left">walking</td><td style="text-align: left">walked</td><td style="text-align: left">walked</td><td style="text-align: left">0</td><td style="text-align: left">ходить;идти</td><td style="text-align: left">363</td></tr>
+<tr><td style="text-align: left">remember</td><td style="text-align: left">remembers</td><td style="text-align: left">remembering</td><td style="text-align: left">remembered</td><td style="text-align: left">remembered</td><td style="text-align: left">0</td><td style="text-align: left">запомнить;помнить</td><td style="text-align: left">378</td></tr>
+<tr><td style="text-align: left">damn</td><td style="text-align: left">damns</td><td style="text-align: left">damning</td><td style="text-align: left">damned</td><td style="text-align: left">damned</td><td style="text-align: left">0</td><td style="text-align: left">проклинать</td><td style="text-align: left">386</td></tr>
+<tr><td style="text-align: left">love</td><td style="text-align: left">loves</td><td style="text-align: left">loving</td><td style="text-align: left">loved</td><td style="text-align: left">loved</td><td style="text-align: left">0</td><td style="text-align: left">любить</td><td style="text-align: left">401</td></tr>
+<tr><td style="text-align: left">buy</td><td style="text-align: left">buys</td><td style="text-align: left">buying</td><td style="text-align: left">bought</td><td style="text-align: left">bought</td><td style="text-align: left">1</td><td style="text-align: left">покупать</td><td style="text-align: left">403</td></tr>
+<tr><td style="text-align: left">wait</td><td style="text-align: left">waits</td><td style="text-align: left">waiting</td><td style="text-align: left">waited</td><td style="text-align: left">waited</td><td style="text-align: left">0</td><td style="text-align: left">ждать;ожидать;дожидаться</td><td style="text-align: left">404</td></tr>
+<tr><td style="text-align: left">die</td><td style="text-align: left">dies</td><td style="text-align: left">dying</td><td style="text-align: left">died</td><td style="text-align: left">died</td><td style="text-align: left">0</td><td style="text-align: left">умирать</td><td style="text-align: left">405</td></tr>
+<tr><td style="text-align: left">send</td><td style="text-align: left">sends</td><td style="text-align: left">sending</td><td style="text-align: left">sent</td><td style="text-align: left">sent</td><td style="text-align: left">1</td><td style="text-align: left">отправлять;послать</td><td style="text-align: left">407</td></tr>
+<tr><td style="text-align: left">stay</td><td style="text-align: left">stays</td><td style="text-align: left">staying</td><td style="text-align: left">stayed</td><td style="text-align: left">stayed</td><td style="text-align: left">0</td><td style="text-align: left">оставаться;остановиться</td><td style="text-align: left">415</td></tr>
+<tr><td style="text-align: left">carry</td><td style="text-align: left">carries</td><td style="text-align: left">carrying</td><td style="text-align: left">carried</td><td style="text-align: left">carried</td><td style="text-align: left">0</td><td style="text-align: left">нести;проводить</td><td style="text-align: left">487</td></tr>
+<tr><td style="text-align: left">develop</td><td style="text-align: left">develops</td><td style="text-align: left">developing</td><td style="text-align: left">developed</td><td style="text-align: left">developed</td><td style="text-align: left">0</td><td style="text-align: left">развивать</td><td style="text-align: left">488</td></tr>
+<tr><td style="text-align: left">drive</td><td style="text-align: left">drives</td><td style="text-align: left">driving</td><td style="text-align: left">drove</td><td style="text-align: left">driven</td><td style="text-align: left">1</td><td style="text-align: left">водить (машину)</td><td style="text-align: left">493</td></tr>
+<tr><td style="text-align: left">wear</td><td style="text-align: left">wears</td><td style="text-align: left">wearing</td><td style="text-align: left">wore</td><td style="text-align: left">worn</td><td style="text-align: left">1</td><td style="text-align: left">носить (одежду);одевать (одежду)</td><td style="text-align: left">536</td></tr>
+<tr><td style="text-align: left">support</td><td style="text-align: left">supports</td><td style="text-align: left">supporting</td><td style="text-align: left">supported</td><td style="text-align: left">supported</td><td style="text-align: left">0</td><td style="text-align: left">поддерживать</td><td style="text-align: left">538</td></tr>
+<tr><td style="text-align: left">base</td><td style="text-align: left">bases</td><td style="text-align: left">basing</td><td style="text-align: left">based</td><td style="text-align: left">based</td><td style="text-align: left">0</td><td style="text-align: left">основывать</td><td style="text-align: left">544</td></tr>
+<tr><td style="text-align: left">eat</td><td style="text-align: left">eats</td><td style="text-align: left">eating</td><td style="text-align: left">ate</td><td style="text-align: left">eaten</td><td style="text-align: left">1</td><td style="text-align: left">есть</td><td style="text-align: left">554</td></tr>
+<tr><td style="text-align: left">teach</td><td style="text-align: left">teaches</td><td style="text-align: left">teaching</td><td style="text-align: left">taught</td><td style="text-align: left">taught</td><td style="text-align: left">1</td><td style="text-align: left">учить,обучать</td><td style="text-align: left">567</td></tr>
+<tr><td style="text-align: left">catch</td><td style="text-align: left">catches</td><td style="text-align: left">catching</td><td style="text-align: left">caught</td><td style="text-align: left">caught</td><td style="text-align: left">1</td><td style="text-align: left">ловить;поймать</td><td style="text-align: left">590</td></tr>
+<tr><td style="text-align: left">draw</td><td style="text-align: left">draws</td><td style="text-align: left">drawing</td><td style="text-align: left">drew</td><td style="text-align: left">drawn</td><td style="text-align: left">1</td><td style="text-align: left">рисовать;чертить</td><td style="text-align: left">601</td></tr>
+<tr><td style="text-align: left">choose</td><td style="text-align: left">chooses</td><td style="text-align: left">choosing</td><td style="text-align: left">chose</td><td style="text-align: left">chosen</td><td style="text-align: left">1</td><td style="text-align: left">выбирать</td><td style="text-align: left">605</td></tr>
+<tr><td style="text-align: left">fuck</td><td style="text-align: left">fucks</td><td style="text-align: left">fucking</td><td style="text-align: left">fucked</td><td style="text-align: left">fucked</td><td style="text-align: left">0</td><td style="text-align: left">трахаться</td><td style="text-align: left">605</td></tr>
+<tr><td style="text-align: left">listen</td><td style="text-align: left">listens</td><td style="text-align: left">listening</td><td style="text-align: left">listened</td><td style="text-align: left">listened</td><td style="text-align: left">0</td><td style="text-align: left">слушать;прослушать</td><td style="text-align: left">619</td></tr>
+<tr><td style="text-align: left">close</td><td style="text-align: left">closes</td><td style="text-align: left">closing</td><td style="text-align: left">closed</td><td style="text-align: left">closed</td><td style="text-align: left">0</td><td style="text-align: left">закрывать</td><td style="text-align: left">653</td></tr>
+<tr><td style="text-align: left">fight</td><td style="text-align: left">fights</td><td style="text-align: left">fighting</td><td style="text-align: left">fought</td><td style="text-align: left">fought</td><td style="text-align: left">1</td><td style="text-align: left">бороться;бой;драка</td><td style="text-align: left">672</td></tr>
+<tr><td style="text-align: left">represent</td><td style="text-align: left">represents</td><td style="text-align: left">representing</td><td style="text-align: left">represented</td><td style="text-align: left">represented</td><td style="text-align: left">0</td><td style="text-align: left">представлять;изображать</td><td style="text-align: left">682</td></tr>
+<tr><td style="text-align: left">recognize</td><td style="text-align: left">recognizes</td><td style="text-align: left">recognizing</td><td style="text-align: left">recognized</td><td style="text-align: left">recognized</td><td style="text-align: left">0</td><td style="text-align: left">распознавать;признавать</td><td style="text-align: left">786</td></tr>
+<tr><td style="text-align: left">check</td><td style="text-align: left">checks</td><td style="text-align: left">checking</td><td style="text-align: left">checked</td><td style="text-align: left">checked</td><td style="text-align: left">0</td><td style="text-align: left">проверять;контролировать</td><td style="text-align: left">830</td></tr>
+<tr><td style="text-align: left">answer</td><td style="text-align: left">answers</td><td style="text-align: left">answering</td><td style="text-align: left">answered</td><td style="text-align: left">answered</td><td style="text-align: left">0</td><td style="text-align: left">отвечать</td><td style="text-align: left">831</td></tr>
+<tr><td style="text-align: left">forget</td><td style="text-align: left">forgets</td><td style="text-align: left">forgetting</td><td style="text-align: left">forgot</td><td style="text-align: left">forgotten</td><td style="text-align: left">1</td><td style="text-align: left">забывать</td><td style="text-align: left">877</td></tr>
+<tr><td style="text-align: left">study</td><td style="text-align: left">studies</td><td style="text-align: left">studying</td><td style="text-align: left">studied</td><td style="text-align: left">studied</td><td style="text-align: left">0</td><td style="text-align: left">изучать</td><td style="text-align: left">884</td></tr>
+<tr><td style="text-align: left">enjoy</td><td style="text-align: left">enjoys</td><td style="text-align: left">enjoying</td><td style="text-align: left">enjoyed</td><td style="text-align: left">enjoyed</td><td style="text-align: left">0</td><td style="text-align: left">наслаждаться</td><td style="text-align: left">893</td></tr>
+<tr><td style="text-align: left">visit</td><td style="text-align: left">visits</td><td style="text-align: left">visiting</td><td style="text-align: left">visited</td><td style="text-align: left">visited</td><td style="text-align: left">0</td><td style="text-align: left">побывать;посещать</td><td style="text-align: left">921</td></tr>
+<tr><td style="text-align: left">finish</td><td style="text-align: left">finishes</td><td style="text-align: left">finishing</td><td style="text-align: left">finished</td><td style="text-align: left">finished</td><td style="text-align: left">0</td><td style="text-align: left">заканчивать;финишировать</td><td style="text-align: left">923</td></tr>
+<tr><td style="text-align: left">fly</td><td style="text-align: left">flies</td><td style="text-align: left">flying</td><td style="text-align: left">flew</td><td style="text-align: left">flown</td><td style="text-align: left">1</td><td style="text-align: left">летать</td><td style="text-align: left">945</td></tr>
+<tr><td style="text-align: left">sing</td><td style="text-align: left">sings</td><td style="text-align: left">singing</td><td style="text-align: left">sang</td><td style="text-align: left">sung</td><td style="text-align: left">1</td><td style="text-align: left">петь</td><td style="text-align: left">1065</td></tr>
+<tr><td style="text-align: left">travel</td><td style="text-align: left">travels</td><td style="text-align: left">travelling</td><td style="text-align: left">travelled</td><td style="text-align: left">travelled</td><td style="text-align: left">0</td><td style="text-align: left">путешествовать;ездить</td><td style="text-align: left">1101</td></tr>
+<tr><td style="text-align: left">sleep</td><td style="text-align: left">sleeps</td><td style="text-align: left">sleeping</td><td style="text-align: left">slept</td><td style="text-align: left">slept</td><td style="text-align: left">1</td><td style="text-align: left">спать</td><td style="text-align: left">1184</td></tr>
+<tr><td style="text-align: left">drink</td><td style="text-align: left">drinks</td><td style="text-align: left">drinking</td><td style="text-align: left">drank</td><td style="text-align: left">drunk</td><td style="text-align: left">1</td><td style="text-align: left">пить</td><td style="text-align: left">1258</td></tr>
+<tr><td style="text-align: left">ride</td><td style="text-align: left">rides</td><td style="text-align: left">riding</td><td style="text-align: left">rode</td><td style="text-align: left">ridden</td><td style="text-align: left">1</td><td style="text-align: left">ездить верхом</td><td style="text-align: left">1373</td></tr>
+<tr><td style="text-align: left">cook</td><td style="text-align: left">cooks</td><td style="text-align: left">cooking</td><td style="text-align: left">cooked</td><td style="text-align: left">cooked</td><td style="text-align: left">0</td><td style="text-align: left">готовить</td><td style="text-align: left">1488</td></tr>
+<tr><td style="text-align: left">invite</td><td style="text-align: left">invites</td><td style="text-align: left">inviting</td><td style="text-align: left">invited</td><td style="text-align: left">invited</td><td style="text-align: left">0</td><td style="text-align: left">приглашать;привлекать</td><td style="text-align: left">1620</td></tr>
+<tr><td style="text-align: left">paint</td><td style="text-align: left">paints</td><td style="text-align: left">painting</td><td style="text-align: left">painted</td><td style="text-align: left">painted</td><td style="text-align: left">0</td><td style="text-align: left">красить</td><td style="text-align: left">1783</td></tr>
+<tr><td style="text-align: left">wake</td><td style="text-align: left">wakes</td><td style="text-align: left">waking</td><td style="text-align: left">woke</td><td style="text-align: left">woken</td><td style="text-align: left">1</td><td style="text-align: left">проснуться;разбудить</td><td style="text-align: left">1804</td></tr>
+<tr><td style="text-align: left">influence</td><td style="text-align: left">influences</td><td style="text-align: left">influencing</td><td style="text-align: left">influenced</td><td style="text-align: left">influenced</td><td style="text-align: left">0</td><td style="text-align: left">оказывать влияние;влиять</td><td style="text-align: left">1806</td></tr>
+<tr><td style="text-align: left">kick</td><td style="text-align: left">kicks</td><td style="text-align: left">kicking</td><td style="text-align: left">kicked</td><td style="text-align: left">kicked</td><td style="text-align: left">0</td><td style="text-align: left">удар;пинок;толчок</td><td style="text-align: left">1852</td></tr>
+<tr><td style="text-align: left">solve</td><td style="text-align: left">solves</td><td style="text-align: left">solving</td><td style="text-align: left">solved</td><td style="text-align: left">solved</td><td style="text-align: left">0</td><td style="text-align: left">решать;разрешать</td><td style="text-align: left">1855</td></tr>
+<tr><td style="text-align: left">fix</td><td style="text-align: left">fixes</td><td style="text-align: left">fixing</td><td style="text-align: left">fixed</td><td style="text-align: left">fixed</td><td style="text-align: left">0</td><td style="text-align: left">фиксировать;исправлять</td><td style="text-align: left">1873</td></tr>
+<tr><td style="text-align: left">clean</td><td style="text-align: left">cleans</td><td style="text-align: left">cleaning</td><td style="text-align: left">cleaned</td><td style="text-align: left">cleaned</td><td style="text-align: left">0</td><td style="text-align: left">чистить</td><td style="text-align: left">1925</td></tr>
+<tr><td style="text-align: left">dance</td><td style="text-align: left">dances</td><td style="text-align: left">dancing</td><td style="text-align: left">danced</td><td style="text-align: left">danced</td><td style="text-align: left">0</td><td style="text-align: left">танцевать</td><td style="text-align: left">1993</td></tr>
+<tr><td style="text-align: left">invest</td><td style="text-align: left">invests</td><td style="text-align: left">investing</td><td style="text-align: left">invested</td><td style="text-align: left">invested</td><td style="text-align: left">0</td><td style="text-align: left">инвестировать;вкладывать</td><td style="text-align: left">2080</td></tr>
+<tr><td style="text-align: left">wash</td><td style="text-align: left">washes</td><td style="text-align: left">washing</td><td style="text-align: left">washed</td><td style="text-align: left">washed</td><td style="text-align: left">0</td><td style="text-align: left">мыть;стирать</td><td style="text-align: left">2175</td></tr>
+<tr><td style="text-align: left">smoke</td><td style="text-align: left">smokes</td><td style="text-align: left">smoking</td><td style="text-align: left">smoked</td><td style="text-align: left">smoked</td><td style="text-align: left">0</td><td style="text-align: left">дымить;коптить;курить</td><td style="text-align: left">2490</td></tr>
+<tr><td style="text-align: left">communicate</td><td style="text-align: left">communicates</td><td style="text-align: left">communicating</td><td style="text-align: left">communicated</td><td style="text-align: left">communicated</td><td style="text-align: left">0</td><td style="text-align: left">сообщить;сообщать;общаться</td><td style="text-align: left">2703</td></tr>
+<tr><td style="text-align: left">swim</td><td style="text-align: left">swims</td><td style="text-align: left">swimming</td><td style="text-align: left">swam</td><td style="text-align: left">swum</td><td style="text-align: left">1</td><td style="text-align: left">плавать;плыть</td><td style="text-align: left">2907</td></tr>
+<tr><td style="text-align: left">practice</td><td style="text-align: left">practices</td><td style="text-align: left">practicing</td><td style="text-align: left">practiced</td><td style="text-align: left">practiced</td><td style="text-align: left">0</td><td style="text-align: left">практиковать;заниматься</td><td style="text-align: left">2912</td></tr>
+<tr><td style="text-align: left">dine</td><td style="text-align: left">dines</td><td style="text-align: left">dining</td><td style="text-align: left">dined</td><td style="text-align: left">dined</td><td style="text-align: left">0</td><td style="text-align: left">обедать</td><td style="text-align: left">3000</td></tr>
+<tr><td style="text-align: left">practise</td><td style="text-align: left">practises</td><td style="text-align: left">practising</td><td style="text-align: left">practised</td><td style="text-align: left">practised</td><td style="text-align: left">0</td><td style="text-align: left">тренироваться</td><td style="text-align: left">3000</td></tr>
+<tr><td style="text-align: left">phone</td><td style="text-align: left">phones</td><td style="text-align: left">phoning</td><td style="text-align: left">phoned</td><td style="text-align: left">phoned</td><td style="text-align: left">0</td><td style="text-align: left">звонить по телефону</td><td style="text-align: left">3000</td></tr>
+<tr><td style="text-align: left">excuse</td><td style="text-align: left">excuses</td><td style="text-align: left">excusing</td><td style="text-align: left">excused</td><td style="text-align: left">excused</td><td style="text-align: left">0</td><td style="text-align: left">извинять;прощать</td><td style="text-align: left">3495</td></tr>
+<tr><td style="text-align: left">rain</td><td style="text-align: left">rains</td><td style="text-align: left">raining</td><td style="text-align: left">rained</td><td style="text-align: left">rained</td><td style="text-align: left">0</td><td style="text-align: left">идет (дождь)</td><td style="text-align: left">4627</td></tr>
+<tr><td style="text-align: left">ask</td><td style="text-align: left">asks</td><td style="text-align: left">asking</td><td style="text-align: left">asked</td><td style="text-align: left">asked</td><td style="text-align: left">0</td><td style="text-align: left">спрашивать;просить</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: left">call</td><td style="text-align: left">calls</td><td style="text-align: left">calling</td><td style="text-align: left">called</td><td style="text-align: left">called</td><td style="text-align: left">0</td><td style="text-align: left">звонить;называть</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: left">try</td><td style="text-align: left">tries</td><td style="text-align: left">trying</td><td style="text-align: left">tried</td><td style="text-align: left">tried</td><td style="text-align: left">0</td><td style="text-align: left">пытаться</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: left">move</td><td style="text-align: left">moves</td><td style="text-align: left">moving</td><td style="text-align: left">moved</td><td style="text-align: left">moved</td><td style="text-align: left">0</td><td style="text-align: left">двигаться</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: left">believe</td><td style="text-align: left">believes</td><td style="text-align: left">believing</td><td style="text-align: left">believed</td><td style="text-align: left">believed</td><td style="text-align: left">0</td><td style="text-align: left">верить</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: left">hold</td><td style="text-align: left">holds</td><td style="text-align: left">holding</td><td style="text-align: left">held</td><td style="text-align: left">held</td><td style="text-align: left">0</td><td style="text-align: left">держать</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: left">agree</td><td style="text-align: left">agrees</td><td style="text-align: left">agreeing</td><td style="text-align: left">agreed</td><td style="text-align: left">agreed</td><td style="text-align: left">0</td><td style="text-align: left">соглашаться</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: left">cut</td><td style="text-align: left">cuts</td><td style="text-align: left">cutting</td><td style="text-align: left">cut</td><td style="text-align: left">cut</td><td style="text-align: left">1</td><td style="text-align: left">резать</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: left">bring</td><td style="text-align: left">brings</td><td style="text-align: left">bringing</td><td style="text-align: left">brought</td><td style="text-align: left">brought</td><td style="text-align: left">1</td><td style="text-align: left">приносить</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: left">fall</td><td style="text-align: left">falls</td><td style="text-align: left">falling</td><td style="text-align: left">fell</td><td style="text-align: left">fallen</td><td style="text-align: left">1</td><td style="text-align: left">падать</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: left">touch</td><td style="text-align: left">touches</td><td style="text-align: left">touching</td><td style="text-align: left">touched</td><td style="text-align: left">touched</td><td style="text-align: left">0</td><td style="text-align: left">трогать</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: left">jump</td><td style="text-align: left">jumps</td><td style="text-align: left">jumping</td><td style="text-align: left">jumped</td><td style="text-align: left">jumped</td><td style="text-align: left">0</td><td style="text-align: left">прыгать</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: left">hate</td><td style="text-align: left">hates</td><td style="text-align: left">hating</td><td style="text-align: left">hated</td><td style="text-align: left">hated</td><td style="text-align: left">0</td><td style="text-align: left">ненавидеть</td><td style="text-align: left">0</td></tr>
+<tr><td style="text-align: left">sell</td><td style="text-align: left">sells</td><td style="text-align: left">selling</td><td style="text-align: left">sold</td><td style="text-align: left">sold</td><td style="text-align: left">1</td><td style="text-align: left">продавать</td><td style="text-align: left">0</td></tr>
+</tbody></table>
+</div>
+<hr />
+</details>
+<details>
+<summary>Verbs modal A1</summary>
+<p><strong>Основные модальные глаголы</strong></p>
+<div class="table-wrapper"><table><thead><tr><th>Глагол</th><th>Перевод</th><th>Время</th><th>Значение</th></tr></thead><tbody>
+<tr><td><strong>can</strong></td><td>мочь;уметь</td><td>present</td><td>способность;возможность;разрешение</td></tr>
+<tr><td><strong>could</strong></td><td>мог;умел</td><td>past</td><td>прошлая способность;вежливая просьба;возможность</td></tr>
+<tr><td><strong>may</strong></td><td>можно;возможно</td><td>present</td><td>разрешение;вероятность</td></tr>
+<tr><td><strong>might</strong></td><td>мог бы;возможно</td><td>past</td><td>меньшая вероятность;предположение</td></tr>
+<tr><td><strong>must</strong></td><td>должен;обязан</td><td>present</td><td>обязанность;уверенность</td></tr>
+<tr><td><strong>shall</strong></td><td>будет;должен</td><td>present</td><td>предложение;будущее действие</td></tr>
+<tr><td><strong>should</strong></td><td>следует;должен</td><td>present</td><td>совет;моральный долг;вероятность</td></tr>
+<tr><td><strong>will</strong></td><td>будет</td><td>present</td><td>будущее время;решимость</td></tr>
+<tr><td><strong>would</strong></td><td>бы</td><td>past</td><td>условное наклонение;вежливая просьба;привычка в прошлом</td></tr>
+</tbody></table>
+</div>
+<p><strong>Модальные выражения (полу-модальные глаголы)</strong></p>
+<div class="table-wrapper"><table><thead><tr><th>Выражение</th><th>Перевод</th><th>Время</th><th>Значение</th></tr></thead><tbody>
+<tr><td><strong>ought to</strong></td><td>следует;должен</td><td>present</td><td>моральный долг;рекомендация</td></tr>
+<tr><td><strong>need to</strong></td><td>нужно;необходимо</td><td>present</td><td>необходимость</td></tr>
+<tr><td><strong>have to</strong></td><td>должен;вынужден</td><td>present</td><td>внешняя необходимость</td></tr>
+<tr><td><strong>has to</strong></td><td>должен;вынужден</td><td>present</td><td>внешняя необходимость (3л.ед.ч.)</td></tr>
+<tr><td><strong>had to</strong></td><td>должен был;вынужден был</td><td>past</td><td>прошлая необходимость</td></tr>
+<tr><td><strong>be able to</strong></td><td>мочь;быть в состоянии</td><td>all</td><td>способность (альтернатива can)</td></tr>
+<tr><td><strong>be allowed to</strong></td><td>иметь разрешение</td><td>all</td><td>разрешение (альтернатива may)</td></tr>
+<tr><td><strong>be supposed to</strong></td><td>предполагается;должен</td><td>all</td><td>ожидание;предположение</td></tr>
+<tr><td><strong>be going to</strong></td><td>собираться</td><td>all</td><td>планы;намерения</td></tr>
+<tr><td><strong>used to</strong></td><td>раньше;бывало</td><td>past</td><td>привычки в прошлом</td></tr>
+</tbody></table>
+</div>
+<p><strong>Отрицательные формы</strong></p>
+<div class="table-wrapper"><table><thead><tr><th>Форма</th><th>Перевод</th><th>Время</th><th>Значение</th></tr></thead><tbody>
+<tr><td><strong>cannot</strong></td><td>не могу;нельзя</td><td>present</td><td>отрицание возможности</td></tr>
+<tr><td><strong>can't</strong></td><td>не могу;нельзя</td><td>present</td><td>сокращенная форма</td></tr>
+<tr><td><strong>could not</strong></td><td>не мог</td><td>past</td><td>отрицание прошлой возможности</td></tr>
+<tr><td><strong>couldn't</strong></td><td>не мог</td><td>past</td><td>сокращенная форма</td></tr>
+<tr><td><strong>may not</strong></td><td>нельзя;возможно нет</td><td>present</td><td>запрет;отрицательная вероятность</td></tr>
+<tr><td><strong>might not</strong></td><td>возможно нет</td><td>past</td><td>отрицательная вероятность</td></tr>
+<tr><td><strong>must not</strong></td><td>нельзя;запрещено</td><td>present</td><td>запрет</td></tr>
+<tr><td><strong>mustn't</strong></td><td>нельзя;запрещено</td><td>present</td><td>сокращенная форма</td></tr>
+<tr><td><strong>shall not</strong></td><td>не будет</td><td>present</td><td>отрицательное будущее</td></tr>
+<tr><td><strong>shan't</strong></td><td>не будет</td><td>present</td><td>сокращенная форма</td></tr>
+<tr><td><strong>should not</strong></td><td>не следует</td><td>present</td><td>совет против чего-либо</td></tr>
+<tr><td><strong>shouldn't</strong></td><td>не следует</td><td>present</td><td>сокращенная форма</td></tr>
+<tr><td><strong>will not</strong></td><td>не будет</td><td>present</td><td>отрицательное будущее</td></tr>
+<tr><td><strong>won't</strong></td><td>не будет</td><td>present</td><td>сокращенная форма</td></tr>
+<tr><td><strong>would not</strong></td><td>не бы</td><td>past</td><td>отрицательное условное</td></tr>
+<tr><td><strong>wouldn't</strong></td><td>не бы</td><td>past</td><td>сокращенная форма</td></tr>
+<tr><td><strong>need not</strong></td><td>не нужно</td><td>present</td><td>отсутствие необходимости</td></tr>
+<tr><td><strong>needn't</strong></td><td>не нужно</td><td>present</td><td>сокращенная форма</td></tr>
+</tbody></table>
+</div>
+<hr />
+</details>
+<details>
+<summary>Irregular Verbs A1</summary>
+<div class="table-wrapper"><table><thead><tr><th>Base</th><th>3rd person</th><th>-ing</th><th>Past</th><th>Past Participle</th><th>Перевод</th><th>Частотность</th></tr></thead><tbody>
+<tr><td>have</td><td>has</td><td>having</td><td>had</td><td>had</td><td>иметь</td><td>8</td></tr>
+<tr><td>do</td><td>does</td><td>doing</td><td>did</td><td>done</td><td>делать</td><td>18</td></tr>
+<tr><td>say</td><td>says</td><td>saying</td><td>said</td><td>said</td><td>сказать; говорить</td><td>20</td></tr>
+<tr><td>go</td><td>goes</td><td>going</td><td>went</td><td>gone</td><td>идти; ехать</td><td>36</td></tr>
+<tr><td>get</td><td>gets</td><td>getting</td><td>got</td><td>got</td><td>получать; становиться</td><td>41</td></tr>
+<tr><td>get</td><td>gets</td><td>getting</td><td>got</td><td>gotten</td><td>получать; становиться (амер.)</td><td>41</td></tr>
+<tr><td>make</td><td>makes</td><td>making</td><td>made</td><td>made</td><td>делать; производить; заставлять</td><td>46</td></tr>
+<tr><td>know</td><td>knows</td><td>knowing</td><td>knew</td><td>known</td><td>знать; узнавать</td><td>49</td></tr>
+<tr><td>think</td><td>thinks</td><td>thinking</td><td>thought</td><td>thought</td><td>думать; мыслить</td><td>57</td></tr>
+<tr><td>see</td><td>sees</td><td>seeing</td><td>saw</td><td>seen</td><td>видеть; смотреть</td><td>58</td></tr>
+<tr><td>take</td><td>takes</td><td>taking</td><td>took</td><td>taken</td><td>брать; взять</td><td>64</td></tr>
+<tr><td>come</td><td>comes</td><td>coming</td><td>came</td><td>come</td><td>приходить; приезжать</td><td>70</td></tr>
+<tr><td>find</td><td>finds</td><td>finding</td><td>found</td><td>found</td><td>находить; обрести</td><td>97</td></tr>
+<tr><td>give</td><td>gives</td><td>giving</td><td>gave</td><td>given</td><td>давать; придавать</td><td>98</td></tr>
+<tr><td>tell</td><td>tells</td><td>telling</td><td>told</td><td>told</td><td>сказать; рассказывать</td><td>104</td></tr>
+<tr><td>feel</td><td>feels</td><td>feeling</td><td>felt</td><td>felt</td><td>чувствовать</td><td>136</td></tr>
+<tr><td>leave</td><td>leaves</td><td>leaving</td><td>left</td><td>left</td><td>оставлять; покидать</td><td>152</td></tr>
+<tr><td>put</td><td>puts</td><td>putting</td><td>put</td><td>put</td><td>класть; ставить</td><td>153</td></tr>
+<tr><td>begin</td><td>begins</td><td>beginning</td><td>began</td><td>begun</td><td>начинать</td><td>164</td></tr>
+<tr><td>show</td><td>shows</td><td>showing</td><td>showed</td><td>shown</td><td>показывать; проявлять</td><td>181</td></tr>
+<tr><td>hear</td><td>hears</td><td>hearing</td><td>heard</td><td>heard</td><td>слышать</td><td>198</td></tr>
+<tr><td>run</td><td>runs</td><td>running</td><td>ran</td><td>run</td><td>бежать; работать</td><td>205</td></tr>
+<tr><td>write</td><td>writes</td><td>writing</td><td>wrote</td><td>written</td><td>писать</td><td>235</td></tr>
+<tr><td>sit</td><td>sits</td><td>sitting</td><td>sat</td><td>sat</td><td>сидеть; заседать</td><td>271</td></tr>
+<tr><td>meet</td><td>meets</td><td>meeting</td><td>met</td><td>met</td><td>встречаться; соответствовать</td><td>292</td></tr>
+<tr><td>pay</td><td>pays</td><td>paying</td><td>paid</td><td>paid</td><td>платить</td><td>293</td></tr>
+<tr><td>learn</td><td>learns</td><td>learning</td><td>learned</td><td>learned</td><td>учиться</td><td>321</td></tr>
+<tr><td>understand</td><td>understands</td><td>understanding</td><td>understood</td><td>understood</td><td>понимать</td><td>326</td></tr>
+<tr><td>speak</td><td>speaks</td><td>speaking</td><td>spoke</td><td>spoken</td><td>говорить; выступать</td><td>341</td></tr>
+<tr><td>read</td><td>reads</td><td>reading</td><td>read</td><td>read</td><td>читать</td><td>346</td></tr>
+<tr><td>buy</td><td>buys</td><td>buying</td><td>bought</td><td>bought</td><td>покупать</td><td>403</td></tr>
+<tr><td>send</td><td>sends</td><td>sending</td><td>sent</td><td>sent</td><td>отправлять; посылать</td><td>407</td></tr>
+<tr><td>drive</td><td>drives</td><td>driving</td><td>drove</td><td>driven</td><td>водить (машину)</td><td>493</td></tr>
+<tr><td>wear</td><td>wears</td><td>wearing</td><td>wore</td><td>worn</td><td>носить (одежду)</td><td>536</td></tr>
+<tr><td>eat</td><td>eats</td><td>eating</td><td>ate</td><td>eaten</td><td>есть</td><td>554</td></tr>
+<tr><td>teach</td><td>teaches</td><td>teaching</td><td>taught</td><td>taught</td><td>учить; обучать</td><td>567</td></tr>
+<tr><td>catch</td><td>catches</td><td>catching</td><td>caught</td><td>caught</td><td>ловить; поймать</td><td>590</td></tr>
+<tr><td>draw</td><td>draws</td><td>drawing</td><td>drew</td><td>drawn</td><td>рисовать; чертить</td><td>601</td></tr>
+<tr><td>choose</td><td>chooses</td><td>choosing</td><td>chose</td><td>chosen</td><td>выбирать</td><td>605</td></tr>
+<tr><td>fight</td><td>fights</td><td>fighting</td><td>fought</td><td>fought</td><td>бороться; драться</td><td>672</td></tr>
+<tr><td>forget</td><td>forgets</td><td>forgetting</td><td>forgot</td><td>forgotten</td><td>забывать</td><td>877</td></tr>
+<tr><td>fly</td><td>flies</td><td>flying</td><td>flew</td><td>flown</td><td>летать</td><td>945</td></tr>
+<tr><td>sing</td><td>sings</td><td>singing</td><td>sang</td><td>sung</td><td>петь</td><td>1065</td></tr>
+<tr><td>sleep</td><td>sleeps</td><td>sleeping</td><td>slept</td><td>slept</td><td>спать</td><td>1184</td></tr>
+<tr><td>drink</td><td>drinks</td><td>drinking</td><td>drank</td><td>drunk</td><td>пить</td><td>1258</td></tr>
+<tr><td>ride</td><td>rides</td><td>riding</td><td>rode</td><td>ridden</td><td>ездить верхом</td><td>1373</td></tr>
+<tr><td>wake</td><td>wakes</td><td>waking</td><td>woke</td><td>woken</td><td>просыпаться; будить</td><td>1804</td></tr>
+<tr><td>swim</td><td>swims</td><td>swimming</td><td>swam</td><td>swum</td><td>плавать; плыть</td><td>2907</td></tr>
+</tbody></table>
+</div>
+<hr />
+</details>
+<details>
+<summary>Adverbs A1</summary>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Adverb</th><th style="text-align: left">Перевод</th><th style="text-align: left">Частота</th></tr></thead><tbody>
+<tr><td style="text-align: left">this</td><td style="text-align: left">это,этот,эта</td><td style="text-align: left">14</td></tr>
+<tr><td style="text-align: left">out</td><td style="text-align: left">наружу, из, вне, снаружи</td><td style="text-align: left">50</td></tr>
+<tr><td style="text-align: left">over</td><td style="text-align: left">через, над, завершено</td><td style="text-align: left">100</td></tr>
+<tr><td style="text-align: left">so</td><td style="text-align: left">так</td><td style="text-align: left">56</td></tr>
+<tr><td style="text-align: left">now</td><td style="text-align: left">сейчас</td><td style="text-align: left">72</td></tr>
+<tr><td style="text-align: left">then</td><td style="text-align: left">затем; тогда; в то время</td><td style="text-align: left">77</td></tr>
+<tr><td style="text-align: left">how</td><td style="text-align: left">как</td><td style="text-align: left">78</td></tr>
+<tr><td style="text-align: left">more</td><td style="text-align: left">больше; более</td><td style="text-align: left">82</td></tr>
+<tr><td style="text-align: left">also</td><td style="text-align: left">также</td><td style="text-align: left">89</td></tr>
+<tr><td style="text-align: left">here</td><td style="text-align: left">здесь</td><td style="text-align: left">96</td></tr>
+<tr><td style="text-align: left">well</td><td style="text-align: left">хорошо</td><td style="text-align: left">100</td></tr>
+<tr><td style="text-align: left">only</td><td style="text-align: left">всего; только; лишь</td><td style="text-align: left">102</td></tr>
+<tr><td style="text-align: left">very</td><td style="text-align: left">очень</td><td style="text-align: left">105</td></tr>
+<tr><td style="text-align: left">back</td><td style="text-align: left">назад</td><td style="text-align: left">109</td></tr>
+<tr><td style="text-align: left">there</td><td style="text-align: left">там</td><td style="text-align: left">117</td></tr>
+<tr><td style="text-align: left">down</td><td style="text-align: left">внизу</td><td style="text-align: left">118</td></tr>
+<tr><td style="text-align: left">too</td><td style="text-align: left">тоже; слишком</td><td style="text-align: left">133</td></tr>
+<tr><td style="text-align: left">never</td><td style="text-align: left">никогда</td><td style="text-align: left">140</td></tr>
+<tr><td style="text-align: left">really</td><td style="text-align: left">в самом деле; действительно</td><td style="text-align: left">144</td></tr>
+<tr><td style="text-align: left">why</td><td style="text-align: left">почему</td><td style="text-align: left">159</td></tr>
+<tr><td style="text-align: left">where</td><td style="text-align: left">где</td><td style="text-align: left">171</td></tr>
+<tr><td style="text-align: left">about</td><td style="text-align: left">около; приблизительно</td><td style="text-align: left">182</td></tr>
+<tr><td style="text-align: left">again</td><td style="text-align: left">снова</td><td style="text-align: left">187</td></tr>
+<tr><td style="text-align: left">always</td><td style="text-align: left">всегда</td><td style="text-align: left">213</td></tr>
+<tr><td style="text-align: left">today</td><td style="text-align: left">сегодня</td><td style="text-align: left">216</td></tr>
+<tr><td style="text-align: left">often</td><td style="text-align: left">часто</td><td style="text-align: left">280</td></tr>
+<tr><td style="text-align: left">later</td><td style="text-align: left">позже; позднее</td><td style="text-align: left">297</td></tr>
+<tr><td style="text-align: left">together</td><td style="text-align: left">вместе</td><td style="text-align: left">330</td></tr>
+<tr><td style="text-align: left">before</td><td style="text-align: left">до; прежде</td><td style="text-align: left">372</td></tr>
+<tr><td style="text-align: left">across</td><td style="text-align: left">через; поперек</td><td style="text-align: left">385</td></tr>
+<tr><td style="text-align: left">late</td><td style="text-align: left">поздно</td><td style="text-align: left">439</td></tr>
+<tr><td style="text-align: left">sometimes</td><td style="text-align: left">иногда</td><td style="text-align: left">450</td></tr>
+<tr><td style="text-align: left">up</td><td style="text-align: left">вверх</td><td style="text-align: left">457</td></tr>
+<tr><td style="text-align: left">less</td><td style="text-align: left">менее; меньше</td><td style="text-align: left">481</td></tr>
+<tr><td style="text-align: left">even</td><td style="text-align: left">даже</td><td style="text-align: left">492</td></tr>
+<tr><td style="text-align: left">early</td><td style="text-align: left">рано</td><td style="text-align: left">522</td></tr>
+<tr><td style="text-align: left">near</td><td style="text-align: left">возле; около</td><td style="text-align: left">709</td></tr>
+<tr><td style="text-align: left">beyond</td><td style="text-align: left">за; вне</td><td style="text-align: left">752</td></tr>
+<tr><td style="text-align: left">outside</td><td style="text-align: left">вне; за пределами</td><td style="text-align: left">815</td></tr>
+<tr><td style="text-align: left">forward</td><td style="text-align: left">вперед</td><td style="text-align: left">834</td></tr>
+<tr><td style="text-align: left">parallel</td><td style="text-align: left">параллельно</td><td style="text-align: left">845</td></tr>
+<tr><td style="text-align: left">hard</td><td style="text-align: left">тяжело</td><td style="text-align: left">929</td></tr>
+<tr><td style="text-align: left">tonight</td><td style="text-align: left">сегодня вечером</td><td style="text-align: left">942</td></tr>
+<tr><td style="text-align: left">inside</td><td style="text-align: left">внутри; в</td><td style="text-align: left">976</td></tr>
+<tr><td style="text-align: left">past</td><td style="text-align: left">мимо; позади</td><td style="text-align: left">991</td></tr>
+<tr><td style="text-align: left">just</td><td style="text-align: left">просто; только что; как раз; всего лишь</td><td style="text-align: left">1000</td></tr>
+<tr><td style="text-align: left">not</td><td style="text-align: left">не; ни</td><td style="text-align: left">1000</td></tr>
+<tr><td style="text-align: left">yes</td><td style="text-align: left">да; так</td><td style="text-align: left">1000</td></tr>
+<tr><td style="text-align: left">beautifully</td><td style="text-align: left">красиво</td><td style="text-align: left">1000</td></tr>
+<tr><td style="text-align: left">tomorrow</td><td style="text-align: left">завтра</td><td style="text-align: left">1337</td></tr>
+<tr><td style="text-align: left">when</td><td style="text-align: left">когда</td><td style="text-align: left">1500</td></tr>
+<tr><td style="text-align: left">yesterday</td><td style="text-align: left">вчера</td><td style="text-align: left">1510</td></tr>
+<tr><td style="text-align: left">below</td><td style="text-align: left">ниже; внизу</td><td style="text-align: left">1547</td></tr>
+<tr><td style="text-align: left">close</td><td style="text-align: left">близко; почти</td><td style="text-align: left">1600</td></tr>
+<tr><td style="text-align: left">behind</td><td style="text-align: left">позади</td><td style="text-align: left">2079</td></tr>
+<tr><td style="text-align: left">downstairs</td><td style="text-align: left">вниз; внизу</td><td style="text-align: left">4000</td></tr>
+<tr><td style="text-align: left">great</td><td style="text-align: left">здорово, замечательно</td><td style="text-align: left">2000</td></tr>
+</tbody></table>
+</div>
+<hr />
+</details>
+<details>
+<summary>Adjective A1</summary>
+<div class="table-wrapper"><table><thead><tr><th>Adjective</th><th>Сравнительная степень (Comparative)</th><th>Превосходная степень (Superlative)</th><th>Translate</th><th>Frequency</th></tr></thead><tbody>
+<tr><td>strong</td><td>stronger</td><td>strongest</td><td>сильный</td><td>463</td></tr>
+<tr><td>new</td><td>newer</td><td>newest</td><td>новый</td><td>90</td></tr>
+<tr><td>good</td><td>better</td><td>best</td><td>хороший</td><td>111</td></tr>
+<tr><td>only</td><td></td><td></td><td>единственный</td><td>146</td></tr>
+<tr><td>autumn</td><td></td><td></td><td>осенний</td><td>147</td></tr>
+<tr><td>old</td><td>older</td><td>oldest</td><td>старый</td><td>154</td></tr>
+<tr><td>great</td><td>greater</td><td>greatest</td><td>большой, великий, отличный</td><td>163</td></tr>
+<tr><td>big</td><td>bigger</td><td>biggest</td><td>большой</td><td>165</td></tr>
+<tr><td>first</td><td></td><td></td><td>первый</td><td>171</td></tr>
+<tr><td>second</td><td></td><td></td><td>второй</td><td>1000</td></tr>
+<tr><td>third</td><td></td><td></td><td>третий</td><td>1000</td></tr>
+<tr><td>fourth</td><td></td><td></td><td>четвертый</td><td>1000</td></tr>
+<tr><td>fifth</td><td></td><td></td><td>пятый</td><td>1000</td></tr>
+<tr><td>sixth</td><td></td><td></td><td>шестой</td><td>1000</td></tr>
+<tr><td>seventh</td><td></td><td></td><td>седьмой</td><td>1000</td></tr>
+<tr><td>eighth</td><td></td><td></td><td>восьмой</td><td>1000</td></tr>
+<tr><td>ninth</td><td></td><td></td><td>девятый</td><td>1000</td></tr>
+<tr><td>tenth</td><td></td><td></td><td>десятый</td><td>1000</td></tr>
+<tr><td>eleventh</td><td></td><td></td><td>одиннадцатый</td><td>1000</td></tr>
+<tr><td>twelfth</td><td></td><td></td><td>двенадцатый</td><td>1000</td></tr>
+<tr><td>thirteenth</td><td></td><td></td><td>тринадцатый</td><td>1000</td></tr>
+<tr><td>fourteenth</td><td></td><td></td><td>четырнадцатый</td><td>1000</td></tr>
+<tr><td>fifteenth</td><td></td><td></td><td>пятнадцатый</td><td>1000</td></tr>
+<tr><td>sixteenth</td><td></td><td></td><td>шестнадцатый</td><td>1000</td></tr>
+<tr><td>seventeenth</td><td></td><td></td><td>семнадцатый</td><td>1000</td></tr>
+<tr><td>eighteenth</td><td></td><td></td><td>восемнадцатый</td><td>1000</td></tr>
+<tr><td>nineteenth</td><td></td><td></td><td>девятнадцатый</td><td>1000</td></tr>
+<tr><td>twentieth</td><td></td><td></td><td>двадцатый</td><td>1000</td></tr>
+<tr><td>thirtieth</td><td></td><td></td><td>тридцатый</td><td>1000</td></tr>
+<tr><td>hundredth</td><td></td><td></td><td>сотый</td><td>1000</td></tr>
+<tr><td>american</td><td>more american</td><td>most american</td><td>американский</td><td>179</td></tr>
+<tr><td>last</td><td></td><td></td><td>последний</td><td>181</td></tr>
+<tr><td>small</td><td>smaller</td><td>smallest</td><td>маленький</td><td>207</td></tr>
+<tr><td>different</td><td>more different</td><td>most different</td><td>другой, различный</td><td>241</td></tr>
+<tr><td>young</td><td>younger</td><td>youngest</td><td>молодой</td><td>242</td></tr>
+<tr><td>long</td><td>longer</td><td>longest</td><td>длинный</td><td>258</td></tr>
+<tr><td>black</td><td>blacker</td><td>blackest</td><td>черный</td><td>259</td></tr>
+<tr><td>little</td><td>less</td><td>least</td><td>маленький, небольшой</td><td>262</td></tr>
+<tr><td>important</td><td>more important</td><td>most important</td><td>важный</td><td>270</td></tr>
+<tr><td>bad</td><td>worse</td><td>worst</td><td>плохой, дурной, нехороший</td><td>290</td></tr>
+<tr><td>white</td><td>whiter</td><td>whitest</td><td>белый</td><td>308</td></tr>
+<tr><td>best</td><td></td><td></td><td>лучший, больший, лучше всего</td><td>316</td></tr>
+<tr><td>right</td><td></td><td></td><td>правый, верный</td><td>317</td></tr>
+<tr><td>early</td><td>earlier</td><td>earliest</td><td>ранний</td><td>368</td></tr>
+<tr><td>possible</td><td>more possible</td><td>most possible</td><td>возможный</td><td>458</td></tr>
+<tr><td>economic</td><td>more economic</td><td>most economic</td><td>экономический</td><td>474</td></tr>
+<tr><td>hard</td><td>harder</td><td>hardest</td><td>жесткий, выносливый, закаленный</td><td>531</td></tr>
+<tr><td>persistent</td><td>more persistent</td><td>most persistent</td><td>настойчивый, постоянный</td><td>537</td></tr>
+<tr><td>easy</td><td>easier</td><td>easiest</td><td>легкий, нетрудный</td><td>559</td></tr>
+<tr><td>open</td><td>more open</td><td>most open</td><td>открытый</td><td>589</td></tr>
+<tr><td>fast</td><td>faster</td><td>fastest</td><td>быстрый (скорость)</td><td>591</td></tr>
+<tr><td>difficult</td><td>more difficult</td><td>most difficult</td><td>трудный</td><td>608</td></tr>
+<tr><td>red</td><td>redder</td><td>reddest</td><td>красный</td><td>611</td></tr>
+<tr><td>short</td><td>shorter</td><td>shortest</td><td>короткий</td><td>632</td></tr>
+<tr><td>wrong</td><td>more wrong</td><td>most wrong</td><td>неправильный</td><td>657</td></tr>
+<tr><td>spatial</td><td>more spatial</td><td>most spatial</td><td>пространственный</td><td>661</td></tr>
+<tr><td>fine</td><td>finer</td><td>finest</td><td>прекрасный</td><td>708</td></tr>
+<tr><td>other</td><td>more other</td><td>most other</td><td>другой</td><td>713</td></tr>
+<tr><td>poor</td><td>poorer</td><td>poorest</td><td>бедный</td><td>718</td></tr>
+<tr><td>hot</td><td>hotter</td><td>hottest</td><td>горячий</td><td>725</td></tr>
+<tr><td>happy</td><td>happier</td><td>happiest</td><td>счастливый</td><td>755</td></tr>
+<tr><td>ready</td><td>more ready</td><td>most ready</td><td>готовый</td><td>763</td></tr>
+<tr><td>left</td><td></td><td></td><td>левый</td><td>788</td></tr>
+<tr><td>standard</td><td>more standard</td><td>most standard</td><td>стандартный</td><td>814</td></tr>
+<tr><td>blue</td><td>bluer</td><td>bluest</td><td>синий</td><td>849</td></tr>
+<tr><td>ok</td><td>more ok</td><td>most ok</td><td>окей, нормально, хорошо</td><td>872</td></tr>
+<tr><td>close</td><td>closer</td><td>closest</td><td>близкий</td><td>883</td></tr>
+<tr><td>democratic</td><td>more democratic</td><td>most democratic</td><td>демократический</td><td>888</td></tr>
+<tr><td>cold</td><td>colder</td><td>coldest</td><td>холодный</td><td>902</td></tr>
+<tr><td>nice</td><td>nicer</td><td>nicest</td><td>хороший</td><td>911</td></tr>
+<tr><td>green</td><td>greener</td><td>greenest</td><td>зеленый</td><td>935</td></tr>
+<tr><td>more</td><td></td><td></td><td>больший, дополнительный</td><td>1000</td></tr>
+<tr><td>one</td><td></td><td></td><td>единственный, единый</td><td>1000</td></tr>
+<tr><td>own</td><td></td><td></td><td>собственный</td><td>1000</td></tr>
+<tr><td>same</td><td></td><td></td><td>одинаковый, тот же самый</td><td>1000</td></tr>
+<tr><td>well</td><td>better</td><td>best</td><td>хороший, здоровый</td><td>1000</td></tr>
+<tr><td>next</td><td></td><td></td><td>следующий, ближайший</td><td>1000</td></tr>
+<tr><td>grey</td><td>greyer</td><td>greyest</td><td>серый, седой</td><td>1000</td></tr>
+<tr><td>back</td><td></td><td></td><td>задний, обратный</td><td>1000</td></tr>
+<tr><td>dark</td><td>darker</td><td>darkest</td><td>темный</td><td>1006</td></tr>
+<tr><td>beautiful</td><td>more beautiful</td><td>most beautiful</td><td>красивый</td><td>1015</td></tr>
+<tr><td>interesting</td><td>more interesting</td><td>most interesting</td><td>интересный, занятный</td><td>1099</td></tr>
+<tr><td>key</td><td>more key</td><td>most key</td><td>ключевой</td><td>1120</td></tr>
+<tr><td>safe</td><td>safer</td><td>safest</td><td>безопасный</td><td>1217</td></tr>
+<tr><td>sorry</td><td>more sorry</td><td>most sorry</td><td>жалкий, сожалеющий</td><td>1231</td></tr>
+<tr><td>quick</td><td>quicker</td><td>quickest</td><td>быстрый (короткий участок времени)</td><td>1339</td></tr>
+<tr><td>light</td><td>lighter</td><td>lightest</td><td>светлый</td><td>1341</td></tr>
+<tr><td>warm</td><td>warmer</td><td>warmest</td><td>теплый</td><td>1394</td></tr>
+<tr><td>famous</td><td>more famous</td><td>most famous</td><td>известный, знаменитый</td><td>1499</td></tr>
+<tr><td>clean</td><td>cleaner</td><td>cleanest</td><td>чистый</td><td>1542</td></tr>
+<tr><td>tall</td><td>taller</td><td>tallest</td><td>высокий</td><td>1562</td></tr>
+<tr><td>sweet</td><td>sweeter</td><td>sweetest</td><td>сладкий</td><td>1608</td></tr>
+<tr><td>yellow</td><td>yellower</td><td>yellowest</td><td>желтый</td><td>1683</td></tr>
+<tr><td>expensive</td><td>more expensive</td><td>most expensive</td><td>дорогой</td><td>1688</td></tr>
+<tr><td>brown</td><td>browner</td><td>brownest</td><td>коричневый</td><td>1695</td></tr>
+<tr><td>slow</td><td>slower</td><td>slowest</td><td>медленный</td><td>1770</td></tr>
+<tr><td>late</td><td>later</td><td>latest</td><td>поздний, последний</td><td>1812</td></tr>
+<tr><td>funny</td><td>funnier</td><td>funniest</td><td>смешной, забавный</td><td>1841</td></tr>
+<tr><td>english</td><td>more english</td><td>most english</td><td>английский</td><td>1931</td></tr>
+<tr><td>busy</td><td>busier</td><td>busiest</td><td>занятой, занятый</td><td>1945</td></tr>
+<tr><td>cheap</td><td>cheaper</td><td>cheapest</td><td>дешевый</td><td>1972</td></tr>
+<tr><td>inside</td><td>more inside</td><td>most inside</td><td>внутренний, скрытый</td><td>2000</td></tr>
+<tr><td>outside</td><td>more outside</td><td>most outside</td><td>внешний</td><td>2060</td></tr>
+<tr><td>sad</td><td>sadder</td><td>saddest</td><td>грустный</td><td>2157</td></tr>
+<tr><td>fat</td><td>fatter</td><td>fattest</td><td>жирный, толстый</td><td>2381</td></tr>
+<tr><td>favorite</td><td>more favorite</td><td>most favorite</td><td>любимый</td><td>2633</td></tr>
+<tr><td>exciting</td><td>more exciting</td><td>most exciting</td><td>захватывающий</td><td>2958</td></tr>
+<tr><td>favourite</td><td>more favourite</td><td>most favourite</td><td>любимый, излюбленный</td><td>3000</td></tr>
+<tr><td>hungry</td><td>hungrier</td><td>hungriest</td><td>голодный</td><td>3200</td></tr>
+<tr><td>dear</td><td>dearer</td><td>dearest</td><td>дорогой, милый</td><td>3433</td></tr>
+<tr><td>excited</td><td>more excited</td><td>most excited</td><td>взволнованный</td><td>3499</td></tr>
+<tr><td>closed</td><td>more closed</td><td>most closed</td><td>замкнутый, закрытый</td><td>3716</td></tr>
+<tr><td>boring</td><td>more boring</td><td>most boring</td><td>скучный</td><td>4968</td></tr>
+<tr><td>slim</td><td>slimmer</td><td>slimmest</td><td>стройный, тонкий</td><td>5000</td></tr>
+<tr><td>clever</td><td>cleverer</td><td>cleverest</td><td>умный</td><td>5000</td></tr>
+<tr><td>bored</td><td>more bored</td><td>most bored</td><td>скучающий</td><td>5000</td></tr>
+<tr><td>tasty</td><td>tastier</td><td>tastiest</td><td>вкусный</td><td>1000</td></tr>
+<tr><td>fun</td><td>more fun</td><td>most fun</td><td>забавный</td><td>5000</td></tr>
+<tr><td>well-known</td><td>more well-known</td><td>most well-known</td><td>хорошо известный</td><td>5000</td></tr>
+<tr><td>rainy</td><td>rainier</td><td>rainiest</td><td>дождливый, дождевой</td><td>5000</td></tr>
+</tbody></table>
+</div>
+<hr />
+</details>
+<details>
+<summary>Other</summary>
+<h3 id="Артикли-article"><a class="header" href="#Артикли-article">Артикли (Article)</a></h3>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Article</th><th style="text-align: left">Translate</th><th style="text-align: left">Frequency</th></tr></thead><tbody>
+<tr><td style="text-align: left">the</td><td style="text-align: left">тот</td><td style="text-align: left">1</td></tr>
+<tr><td style="text-align: left">an</td><td style="text-align: left">неопределённый артикль</td><td style="text-align: left">2</td></tr>
+<tr><td style="text-align: left">a</td><td style="text-align: left">неопределённый артикль (один)</td><td style="text-align: left">5</td></tr>
+</tbody></table>
+</div>
+<h3 id="Местоимения-pronoun"><a class="header" href="#Местоимения-pronoun">Местоимения (Pronoun)</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Pronoun</th><th>Translate</th><th>Frequency</th></tr></thead><tbody>
+<tr><td><strong>I</strong></td><td>я</td><td>11</td></tr>
+<tr><td><strong>you</strong></td><td>ты;вы</td><td>14</td></tr>
+<tr><td><strong>he</strong></td><td>он</td><td>15</td></tr>
+<tr><td><strong>she</strong></td><td>она</td><td>33</td></tr>
+<tr><td><strong>it</strong></td><td>он;она;оно</td><td>10</td></tr>
+<tr><td><strong>we</strong></td><td>мы</td><td>25</td></tr>
+<tr><td><strong>they</strong></td><td>они</td><td>21</td></tr>
+<tr><td><strong>me</strong></td><td>мне;меня</td><td>65</td></tr>
+<tr><td><strong>him</strong></td><td>его;ему</td><td>69</td></tr>
+<tr><td><strong>her</strong></td><td>ей;ее</td><td>108</td></tr>
+<tr><td><strong>us</strong></td><td>нам;нас</td><td>112</td></tr>
+<tr><td><strong>them</strong></td><td>их;им</td><td>62</td></tr>
+<tr><td><strong>my</strong></td><td>мой</td><td>48</td></tr>
+<tr><td><strong>your</strong></td><td>твой</td><td>71</td></tr>
+<tr><td><strong>his</strong></td><td>его</td><td>26</td></tr>
+<tr><td><strong>her</strong></td><td>ее</td><td>45</td></tr>
+<tr><td><strong>its</strong></td><td>его</td><td>79</td></tr>
+<tr><td><strong>our</strong></td><td>наш</td><td>81</td></tr>
+<tr><td><strong>their</strong></td><td>их</td><td>37</td></tr>
+<tr><td><strong>mine</strong></td><td>мой (самостоятельное)</td><td>2261</td></tr>
+<tr><td><strong>yours</strong></td><td>твой;ваш (самостоятельное)</td><td>3182</td></tr>
+<tr><td><strong>his</strong></td><td>его (самостоятельное)</td><td>1896</td></tr>
+<tr><td><strong>hers</strong></td><td>её (самостоятельное)</td><td>3942</td></tr>
+<tr><td><strong>ours</strong></td><td>наш (самостоятельное)</td><td>4098</td></tr>
+<tr><td><strong>theirs</strong></td><td>их (самостоятельное)</td><td>-</td></tr>
+<tr><td><strong>this</strong></td><td>этот;эта;это</td><td>22</td></tr>
+<tr><td><strong>that</strong></td><td>тот;та;то</td><td>12</td></tr>
+<tr><td><strong>these</strong></td><td>эти</td><td>83</td></tr>
+<tr><td><strong>those</strong></td><td>те</td><td>103</td></tr>
+<tr><td><strong>such</strong></td><td>такие;такой</td><td>375</td></tr>
+<tr><td><strong>who</strong></td><td>кто</td><td>39</td></tr>
+<tr><td><strong>whom</strong></td><td>кого;кому</td><td>1039</td></tr>
+<tr><td><strong>whose</strong></td><td>чей</td><td>-</td></tr>
+<tr><td><strong>what</strong></td><td>что;какой</td><td>35</td></tr>
+<tr><td><strong>which</strong></td><td>который;какой</td><td>59</td></tr>
+<tr><td><strong>myself</strong></td><td>себя;сам</td><td>670</td></tr>
+<tr><td><strong>yourself</strong></td><td>себя;сам (ты)</td><td>967</td></tr>
+<tr><td><strong>himself</strong></td><td>себя;сам (он)</td><td>369</td></tr>
+<tr><td><strong>herself</strong></td><td>себя;сама (она)</td><td>804</td></tr>
+<tr><td><strong>itself</strong></td><td>себя;само (оно)</td><td>555</td></tr>
+<tr><td><strong>ourselves</strong></td><td>себя;сами (мы)</td><td>1789</td></tr>
+<tr><td><strong>yourselves</strong></td><td>себя;сами (вы)</td><td>-</td></tr>
+<tr><td><strong>themselves</strong></td><td>себя;сами (они)</td><td>447</td></tr>
+<tr><td><strong>self</strong></td><td>себя</td><td>968</td></tr>
+<tr><td><strong>each other</strong></td><td>друг друга</td><td>-</td></tr>
+<tr><td><strong>one another</strong></td><td>друг друга</td><td>-</td></tr>
+<tr><td><strong>some</strong></td><td>некоторый;кое-какой</td><td>-</td></tr>
+<tr><td><strong>any</strong></td><td>любой;какой-нибудь</td><td>-</td></tr>
+<tr><td><strong>no</strong></td><td>никакой;ни один</td><td>-</td></tr>
+<tr><td><strong>none</strong></td><td>никто;ни один</td><td>1105</td></tr>
+<tr><td><strong>every</strong></td><td>каждый</td><td>-</td></tr>
+<tr><td><strong>all</strong></td><td>все;весь</td><td>43</td></tr>
+<tr><td><strong>each</strong></td><td>каждый</td><td>-</td></tr>
+<tr><td><strong>either</strong></td><td>любой из двух</td><td>-</td></tr>
+<tr><td><strong>neither</strong></td><td>ни один из двух</td><td>-</td></tr>
+<tr><td><strong>both</strong></td><td>оба</td><td>-</td></tr>
+<tr><td><strong>other</strong></td><td>другой</td><td>-</td></tr>
+<tr><td><strong>another</strong></td><td>другой;еще один</td><td>-</td></tr>
+<tr><td><strong>much</strong></td><td>много (неисчисляемое)</td><td>-</td></tr>
+<tr><td><strong>many</strong></td><td>много (исчисляемое)</td><td>-</td></tr>
+<tr><td><strong>few</strong></td><td>мало (исчисляемое)</td><td>-</td></tr>
+<tr><td><strong>little</strong></td><td>мало (неисчисляемое)</td><td>-</td></tr>
+<tr><td><strong>someone</strong></td><td>кто-то</td><td>423</td></tr>
+<tr><td><strong>somebody</strong></td><td>кто-то;кто-нибудь</td><td>1009</td></tr>
+<tr><td><strong>something</strong></td><td>что-то;что-нибудь</td><td>143</td></tr>
+<tr><td><strong>anyone</strong></td><td>кто-нибудь</td><td>665</td></tr>
+<tr><td><strong>anybody</strong></td><td>любой;кто угодно</td><td>1387</td></tr>
+<tr><td><strong>anything</strong></td><td>что-нибудь;всё</td><td>336</td></tr>
+<tr><td><strong>no one</strong></td><td>никто</td><td>-</td></tr>
+<tr><td><strong>nobody</strong></td><td>никто</td><td>1154</td></tr>
+<tr><td><strong>nothing</strong></td><td>ничего;ничто</td><td>314</td></tr>
+<tr><td><strong>everyone</strong></td><td>все;каждый</td><td>541</td></tr>
+<tr><td><strong>everybody</strong></td><td>все;каждый</td><td>798</td></tr>
+<tr><td><strong>everything</strong></td><td>всё</td><td>393</td></tr>
+<tr><td><strong>somewhere</strong></td><td>где-то</td><td>-</td></tr>
+<tr><td><strong>anywhere</strong></td><td>где-нибудь</td><td>-</td></tr>
+<tr><td><strong>nowhere</strong></td><td>нигде</td><td>-</td></tr>
+<tr><td><strong>everywhere</strong></td><td>везде</td><td>-</td></tr>
+<tr><td><strong>one</strong></td><td>заменяет существительное</td><td>106</td></tr>
+<tr><td><strong>ones</strong></td><td>заменяет существительное (мн.ч.)</td><td>106</td></tr>
+<tr><td><strong>others</strong></td><td>другие</td><td>1207</td></tr>
+<tr><td><strong>whichever</strong></td><td>какой бы ни</td><td>441</td></tr>
+<tr><td><strong>lots</strong></td><td>много (исчисляемое)</td><td>1564</td></tr>
+</tbody></table>
+</div>
+<h3 id="Союзы-conjunction"><a class="header" href="#Союзы-conjunction">Союзы (Conjunction)</a></h3>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Conjunction</th><th style="text-align: left">Translate</th><th style="text-align: left">Frequency</th><th style="text-align: left">Тип</th></tr></thead><tbody>
+<tr><td style="text-align: left">and</td><td style="text-align: left">и</td><td style="text-align: left">3</td><td style="text-align: left">Сочинительный</td></tr>
+<tr><td style="text-align: left">but</td><td style="text-align: left">но; однако</td><td style="text-align: left">23</td><td style="text-align: left">Сочинительный</td></tr>
+<tr><td style="text-align: left">or</td><td style="text-align: left">или</td><td style="text-align: left">32</td><td style="text-align: left">Сочинительный</td></tr>
+<tr><td style="text-align: left">nor</td><td style="text-align: left">ни</td><td style="text-align: left">1062</td><td style="text-align: left">Сочинительный</td></tr>
+<tr><td style="text-align: left">for</td><td style="text-align: left">ибо; так как</td><td style="text-align: left">-</td><td style="text-align: left">Сочинительный</td></tr>
+<tr><td style="text-align: left">yet</td><td style="text-align: left">однако; все же</td><td style="text-align: left">-</td><td style="text-align: left">Сочинительный</td></tr>
+<tr><td style="text-align: left">so</td><td style="text-align: left">поэтому; так что</td><td style="text-align: left">1500</td><td style="text-align: left">Сочинительный</td></tr>
+<tr><td style="text-align: left">after</td><td style="text-align: left">после того как</td><td style="text-align: left">180</td><td style="text-align: left">Подчинительный (Время)</td></tr>
+<tr><td style="text-align: left">although</td><td style="text-align: left">хотя</td><td style="text-align: left">362</td><td style="text-align: left">Подчинительный (Уступка)</td></tr>
+<tr><td style="text-align: left">as</td><td style="text-align: left">так как; в то время как; как; поскольку</td><td style="text-align: left">50</td><td style="text-align: left">Подчинительный (Причина/Время)</td></tr>
+<tr><td style="text-align: left">as if</td><td style="text-align: left">как будто</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Сравнение)</td></tr>
+<tr><td style="text-align: left">as long as</td><td style="text-align: left">пока; при условии что</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Условие)</td></tr>
+<tr><td style="text-align: left">as much as</td><td style="text-align: left">столько же сколько</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Сравнение)</td></tr>
+<tr><td style="text-align: left">as soon as</td><td style="text-align: left">как только</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Время)</td></tr>
+<tr><td style="text-align: left">as though</td><td style="text-align: left">как будто</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Сравнение)</td></tr>
+<tr><td style="text-align: left">because</td><td style="text-align: left">потому что</td><td style="text-align: left">91</td><td style="text-align: left">Подчинительный (Причина)</td></tr>
+<tr><td style="text-align: left">before</td><td style="text-align: left">до того как; прежде; раньше</td><td style="text-align: left">707</td><td style="text-align: left">Подчинительный (Время)</td></tr>
+<tr><td style="text-align: left">by the time</td><td style="text-align: left">к тому времени когда</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Время)</td></tr>
+<tr><td style="text-align: left">even if</td><td style="text-align: left">даже если</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Условие)</td></tr>
+<tr><td style="text-align: left">even though</td><td style="text-align: left">хотя; даже though</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Условие)</td></tr>
+<tr><td style="text-align: left">if</td><td style="text-align: left">если</td><td style="text-align: left">42</td><td style="text-align: left">Подчинительный (Условие)</td></tr>
+<tr><td style="text-align: left">if only</td><td style="text-align: left">если бы только</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Условие)</td></tr>
+<tr><td style="text-align: left">if then</td><td style="text-align: left">если то</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Условие)</td></tr>
+<tr><td style="text-align: left">in case</td><td style="text-align: left">в случае если</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Условие)</td></tr>
+<tr><td style="text-align: left">in order that</td><td style="text-align: left">для того чтобы</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Цель)</td></tr>
+<tr><td style="text-align: left">lest</td><td style="text-align: left">чтобы не</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Цель)</td></tr>
+<tr><td style="text-align: left">like</td><td style="text-align: left">как будто</td><td style="text-align: left">1168</td><td style="text-align: left">Подчинительный (Сравнение)</td></tr>
+<tr><td style="text-align: left">now that</td><td style="text-align: left">теперь когда; раз; когда</td><td style="text-align: left">1887</td><td style="text-align: left">Подчинительный (Время/Причина)</td></tr>
+<tr><td style="text-align: left">once</td><td style="text-align: left">как только</td><td style="text-align: left">1209</td><td style="text-align: left">Подчинительный (Время)</td></tr>
+<tr><td style="text-align: left">only if</td><td style="text-align: left">только если</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Условие)</td></tr>
+<tr><td style="text-align: left">provided that</td><td style="text-align: left">при условии что</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Условие)</td></tr>
+<tr><td style="text-align: left">since</td><td style="text-align: left">так как; с тех пор; с; после</td><td style="text-align: left">885</td><td style="text-align: left">Подчинительный (Причина/Время)</td></tr>
+<tr><td style="text-align: left">so that</td><td style="text-align: left">так чтобы</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Цель)</td></tr>
+<tr><td style="text-align: left">than</td><td style="text-align: left">чем; кроме; как</td><td style="text-align: left">74</td><td style="text-align: left">Подчинительный (Сравнение)</td></tr>
+<tr><td style="text-align: left">that</td><td style="text-align: left">что; то</td><td style="text-align: left">7</td><td style="text-align: left">Подчинительный (Изъяснительный)</td></tr>
+<tr><td style="text-align: left">though</td><td style="text-align: left">хотя</td><td style="text-align: left">255</td><td style="text-align: left">Подчинительный (Уступка)</td></tr>
+<tr><td style="text-align: left">till</td><td style="text-align: left">до тех пор пока</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Время)</td></tr>
+<tr><td style="text-align: left">unless</td><td style="text-align: left">если не; пока не</td><td style="text-align: left">1336</td><td style="text-align: left">Подчинительный (Условие)</td></tr>
+<tr><td style="text-align: left">until</td><td style="text-align: left">до тех пор пока; до; до тех пор</td><td style="text-align: left">1383</td><td style="text-align: left">Подчинительный (Время)</td></tr>
+<tr><td style="text-align: left">when</td><td style="text-align: left">когда</td><td style="text-align: left">60</td><td style="text-align: left">Подчинительный (Время)</td></tr>
+<tr><td style="text-align: left">whenever</td><td style="text-align: left">всякий раз когда</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Время)</td></tr>
+<tr><td style="text-align: left">where</td><td style="text-align: left">где</td><td style="text-align: left">194</td><td style="text-align: left">Подчинительный (Место)</td></tr>
+<tr><td style="text-align: left">whereas</td><td style="text-align: left">тогда как</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Сопоставление)</td></tr>
+<tr><td style="text-align: left">wherever</td><td style="text-align: left">где бы ни</td><td style="text-align: left">-</td><td style="text-align: left">Подчинительный (Место)</td></tr>
+<tr><td style="text-align: left">whether</td><td style="text-align: left">ли</td><td style="text-align: left">325</td><td style="text-align: left">Подчинительный (Изъяснительный)</td></tr>
+<tr><td style="text-align: left">while</td><td style="text-align: left">в то время как</td><td style="text-align: left">156</td><td style="text-align: left">Подчинительный (Время)</td></tr>
+<tr><td style="text-align: left">both... and...</td><td style="text-align: left">как... так и...</td><td style="text-align: left">-</td><td style="text-align: left">Сочетающий</td></tr>
+<tr><td style="text-align: left">either... or...</td><td style="text-align: left">или... или...</td><td style="text-align: left">-</td><td style="text-align: left">Сочетающий</td></tr>
+<tr><td style="text-align: left">neither... nor...</td><td style="text-align: left">ни... ни...</td><td style="text-align: left">-</td><td style="text-align: left">Сочетающий</td></tr>
+<tr><td style="text-align: left">not only... but also...</td><td style="text-align: left">не только... но и...</td><td style="text-align: left">-</td><td style="text-align: left">Сочетающий</td></tr>
+<tr><td style="text-align: left">whether... or...</td><td style="text-align: left">ли... или...</td><td style="text-align: left">-</td><td style="text-align: left">Сочетающий</td></tr>
+<tr><td style="text-align: left">as... as...</td><td style="text-align: left">такой же... как...</td><td style="text-align: left">-</td><td style="text-align: left">Сочетающий</td></tr>
+<tr><td style="text-align: left">such... that...</td><td style="text-align: left">такой... что...</td><td style="text-align: left">-</td><td style="text-align: left">Сочетающий</td></tr>
+<tr><td style="text-align: left">scarcely... when...</td><td style="text-align: left">едва... когда...</td><td style="text-align: left">-</td><td style="text-align: left">Сочетающий</td></tr>
+<tr><td style="text-align: left">rather than</td><td style="text-align: left">скорее чем</td><td style="text-align: left">-</td><td style="text-align: left">Сочетающий</td></tr>
+<tr><td style="text-align: left">however</td><td style="text-align: left">однако</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">therefore</td><td style="text-align: left">следовательно</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">moreover</td><td style="text-align: left">более того</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">furthermore</td><td style="text-align: left">кроме того</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">nevertheless</td><td style="text-align: left">тем не менее</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">otherwise</td><td style="text-align: left">иначе</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">then</td><td style="text-align: left">затем</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">thus</td><td style="text-align: left">таким образом</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">hence</td><td style="text-align: left">следовательно</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">accordingly</td><td style="text-align: left">соответственно</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">consequently</td><td style="text-align: left">следовательно</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">still</td><td style="text-align: left">все же</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">instead</td><td style="text-align: left">вместо</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">meanwhile</td><td style="text-align: left">тем временем</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">indeed</td><td style="text-align: left">действительно</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">nonetheless</td><td style="text-align: left">тем не менее</td><td style="text-align: left">-</td><td style="text-align: left">Присоединительное наречие</td></tr>
+<tr><td style="text-align: left">except</td><td style="text-align: left">если не</td><td style="text-align: left">1886</td><td style="text-align: left">Присоединительное наречие</td></tr>
+</tbody></table>
+</div>
+<h3 id="Предлоги-preposition"><a class="header" href="#Предлоги-preposition">Предлоги (Preposition)</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Preposition</th><th>Translate</th><th>Frequency</th></tr></thead><tbody>
+<tr><td><strong>of</strong></td><td>из;о</td><td>4</td></tr>
+<tr><td><strong>in</strong></td><td>в</td><td>6</td></tr>
+<tr><td><strong>to</strong></td><td>к</td><td>9</td></tr>
+<tr><td><strong>for</strong></td><td>для;за</td><td>13</td></tr>
+<tr><td><strong>with</strong></td><td>с</td><td>16</td></tr>
+<tr><td><strong>on</strong></td><td>на</td><td>17</td></tr>
+<tr><td><strong>at</strong></td><td>у;на;в</td><td>24</td></tr>
+<tr><td><strong>from</strong></td><td>от;из</td><td>27</td></tr>
+<tr><td><strong>by</strong></td><td>у;к;по</td><td>31</td></tr>
+<tr><td><strong>up</strong></td><td>вверх</td><td>53</td></tr>
+<tr><td><strong>out</strong></td><td>вне</td><td>66</td></tr>
+<tr><td><strong>about</strong></td><td>о;около</td><td>47</td></tr>
+<tr><td><strong>into</strong></td><td>в</td><td>67</td></tr>
+<tr><td><strong>like</strong></td><td>как;подобно</td><td>75</td></tr>
+<tr><td><strong>after</strong></td><td>после</td><td>120</td></tr>
+<tr><td><strong>between</strong></td><td>между</td><td>141</td></tr>
+<tr><td><strong>before</strong></td><td>до</td><td>224</td></tr>
+<tr><td><strong>under</strong></td><td>под</td><td>230</td></tr>
+<tr><td><strong>until</strong></td><td>до</td><td>281</td></tr>
+<tr><td><strong>around</strong></td><td>вокруг</td><td>332</td></tr>
+<tr><td><strong>behind</strong></td><td>за;позади</td><td>427</td></tr>
+<tr><td><strong>above</strong></td><td>над;выше</td><td>903</td></tr>
+<tr><td><strong>near</strong></td><td>около;возле</td><td>3000</td></tr>
+</tbody></table>
+</div>
+<h3 id="Междометия-interjection"><a class="header" href="#Междометия-interjection">Междометия (Interjection)</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Междометие</th><th>Перевод</th></tr></thead><tbody>
+<tr><td><strong>Wow!</strong></td><td>Вау!;Ого!</td></tr>
+<tr><td><strong>Oh!</strong></td><td>О!;Ах!</td></tr>
+<tr><td><strong>Ouch!</strong></td><td>Ай!;Ой!</td></tr>
+<tr><td><strong>Oops!</strong></td><td>Упс!</td></tr>
+<tr><td><strong>Aha!</strong></td><td>Ага!;Вот оно что!</td></tr>
+<tr><td><strong>Phew!</strong></td><td>Фух!;Слава богу!</td></tr>
+<tr><td><strong>Ugh!</strong></td><td>Фу!;Тьфу!</td></tr>
+<tr><td><strong>Eww!</strong></td><td>Фу!;Бе!</td></tr>
+<tr><td><strong>Yay!</strong></td><td>Ура!;Йей!</td></tr>
+<tr><td><strong>Hooray!</strong></td><td>Ура!</td></tr>
+<tr><td><strong>Bravo!</strong></td><td>Браво!</td></tr>
+<tr><td><strong>Well</strong></td><td>Ну;Что ж</td></tr>
+<tr><td><strong>Ah!</strong></td><td>Ах!;А!</td></tr>
+<tr><td><strong>Aww!</strong></td><td>Ой!;Как мило!</td></tr>
+<tr><td><strong>Boo!</strong></td><td>Бу!;Фу!</td></tr>
+<tr><td><strong>Eh?</strong></td><td>А?;Что?</td></tr>
+<tr><td><strong>Ha!</strong></td><td>Ха!;Ага!</td></tr>
+<tr><td><strong>Hey!</strong></td><td>Эй!;Привет!</td></tr>
+<tr><td><strong>Hmm</strong></td><td>Хмм;Гм</td></tr>
+<tr><td><strong>Huh?</strong></td><td>А?;Что?</td></tr>
+<tr><td><strong>Ooh!</strong></td><td>О-о-о!;Ух ты!</td></tr>
+<tr><td><strong>Whoa!</strong></td><td>Ого!;Тпру!</td></tr>
+<tr><td><strong>Yikes!</strong></td><td>Ой-ой!;Боже!</td></tr>
+<tr><td><strong>Yippee!</strong></td><td>Йии-ха!;Ура!</td></tr>
+<tr><td><strong>Bam!</strong></td><td>Бам!;Бац!</td></tr>
+<tr><td><strong>Bang!</strong></td><td>Бах!;Выстрел!</td></tr>
+<tr><td><strong>Boom!</strong></td><td>Бум!;Взрыв!</td></tr>
+<tr><td><strong>Buzz</strong></td><td>Жжж;Жужжание</td></tr>
+<tr><td><strong>Chirp</strong></td><td>Чик-чирик;Щебет</td></tr>
+<tr><td><strong>Click</strong></td><td>Щелк;Клик</td></tr>
+<tr><td><strong>Crash</strong></td><td>Бах!;Грохот!</td></tr>
+<tr><td><strong>Knock</strong></td><td>Тук-тук;Стук</td></tr>
+<tr><td><strong>Meow</strong></td><td>Мяу</td></tr>
+<tr><td><strong>Moo</strong></td><td>Му</td></tr>
+<tr><td><strong>Pow!</strong></td><td>Бац!;Удар!</td></tr>
+<tr><td><strong>Ring</strong></td><td>Дзинь;Звонок</td></tr>
+<tr><td><strong>Splash</strong></td><td>Плюх!;Всплеск!</td></tr>
+<tr><td><strong>Tick-tock</strong></td><td>Тик-так</td></tr>
+<tr><td><strong>Vroom</strong></td><td>Врум;Рычание мотора</td></tr>
+<tr><td><strong>Woof</strong></td><td>Гав;Тяф</td></tr>
+<tr><td><strong>Zip</strong></td><td>Вжик;Быстро</td></tr>
+<tr><td><strong>Awesome!</strong></td><td>Круто!;Потрясающе!</td></tr>
+<tr><td><strong>Cool!</strong></td><td>Круто!;Клево!</td></tr>
+<tr><td><strong>Duh!</strong></td><td>Еще бы!;Очевидно!</td></tr>
+<tr><td><strong>Gee!</strong></td><td>Боже!;Ничего себе!</td></tr>
+<tr><td><strong>Gosh!</strong></td><td>Боже!;Черт!</td></tr>
+<tr><td><strong>Heck!</strong></td><td>Черт!;Блин!</td></tr>
+<tr><td><strong>Jeez!</strong></td><td>Боже!;Господи!</td></tr>
+<tr><td><strong>Nah</strong></td><td>Неа;Нет</td></tr>
+<tr><td><strong>Shh</strong></td><td>Тссс;Тише</td></tr>
+<tr><td><strong>Sweet!</strong></td><td>Класс!;Здорово!</td></tr>
+<tr><td><strong>Whoops!</strong></td><td>Упс!;Ой!</td></tr>
+<tr><td><strong>Yuck!</strong></td><td>Фу!;Гадость!</td></tr>
+<tr><td><strong>Hello!</strong></td><td>Привет!;Здравствуйте!</td></tr>
+<tr><td><strong>Hi!</strong></td><td>Привет!;Здорово!</td></tr>
+<tr><td><strong>Hey!</strong></td><td>Эй!;Привет!</td></tr>
+<tr><td><strong>Yo!</strong></td><td>Йо!;Привет!</td></tr>
+<tr><td><strong>Howdy!</strong></td><td>Привет!;Здорово!</td></tr>
+<tr><td><strong>Bye!</strong></td><td>Пока!;До свидания!</td></tr>
+<tr><td><strong>Goodbye!</strong></td><td>До свидания!;Прощайте!</td></tr>
+<tr><td><strong>See ya!</strong></td><td>Увидимся!;Пока!</td></tr>
+<tr><td><strong>Adieu!</strong></td><td>Прощай!;Адью!</td></tr>
+<tr><td><strong>Farewell!</strong></td><td>Прощай!;Счастливо!</td></tr>
+<tr><td><strong>Boo</strong></td><td>Милый;Дорогой</td></tr>
+<tr><td><strong>Honey</strong></td><td>Дорогой;Милая</td></tr>
+<tr><td><strong>Sweetie</strong></td><td>Милая;Дорогая</td></tr>
+<tr><td><strong>Darling</strong></td><td>Дорогой;Милая</td></tr>
+<tr><td><strong>Shh!</strong></td><td>Тссс!;Тише!</td></tr>
+<tr><td><strong>Hush!</strong></td><td>Тише!;Молчать!</td></tr>
+<tr><td><strong>Shush!</strong></td><td>Тсс!;Тише!</td></tr>
+<tr><td><strong>Stop!</strong></td><td>Стой!;Остановись!</td></tr>
+<tr><td><strong>Go!</strong></td><td>Вперед!;Иди!</td></tr>
+<tr><td><strong>Wait!</strong></td><td>Жди!;Подожди!</td></tr>
+<tr><td><strong>Halt!</strong></td><td>Стой!;Стоп!</td></tr>
+<tr><td><strong>Amen!</strong></td><td>Аминь!;Да будет так!</td></tr>
+<tr><td><strong>Alas!</strong></td><td>Увы!;О горе!</td></tr>
+<tr><td><strong>Heavens!</strong></td><td>Боже!;Небеса!</td></tr>
+<tr><td><strong>Goodness!</strong></td><td>Боже!;Боже мой!</td></tr>
+<tr><td><strong>Gadzooks!</strong></td><td>Черт возьми!;Боже!</td></tr>
+<tr><td><strong>Zounds!</strong></td><td>Черт побери!;Боже!</td></tr>
+<tr><td><strong>Fie!</strong></td><td>Фу!;Тьфу!</td></tr>
+</tbody></table>
+</div>
+<hr />
+</details>
+<p>В общем, этих 760 основных слов достаточно для освоения грамматики A1 и развития навыка выражать свои мысли, чувства, хотелки ...</p>
+<p>Знать и понимать это конечно - важно, но все эти слова необходимо собирать в предложения и высказывать кому-то или чему-то.</p>
+<style>
+table {
+  margin: 0px !important;  
+  border-collapse: collapse;
+}
+</style>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Check_words.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/Oxford_kit_A1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Check_words.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/Oxford_kit_A1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_img.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+
+
+
+    </div>
+    </body>
+</html>
