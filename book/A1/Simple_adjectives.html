@@ -1,0 +1,932 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Adjectives (прилагательные) - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="simple-adjectives-Простые-прилагательные"><a class="header" href="#simple-adjectives-Простые-прилагательные">Simple Adjectives (Простые прилагательные)</a></h1>
+<p>Прилагательные в английском языке используются для описания существительных (состояния подлежащего) и отвечают на вопросы "какой?", "какая?", "какие?" и "какое?".
+Простые прилагательные помогают дать общую характеристику предметам, людям или явлениям.</p>
+<h4 id="Примеры-простых-прилагательных"><a class="header" href="#Примеры-простых-прилагательных">Примеры простых прилагательных</a></h4>
+<ul>
+<li>big – большой</li>
+<li>small – маленький</li>
+<li>old – старый</li>
+<li>young – молодой</li>
+<li>beautiful – красивый</li>
+<li>ugly – уродливый</li>
+<li>happy – счастливый</li>
+<li>sad – грустный</li>
+</ul>
+<h4 id="Место-прилагательных-в-предложении"><a class="header" href="#Место-прилагательных-в-предложении">Место прилагательных в предложении</a></h4>
+<p>В английском языке прилагательные обычно стоят перед существительными, которые они описывают.
+Например:</p>
+<ul>
+<li>A big house – большой дом</li>
+<li>A small car – маленькая машина</li>
+<li>An old man – старый мужчина</li>
+<li>A beautiful flower – красивый цветок</li>
+</ul>
+<h4 id="Прилагательные-после-глагола-to-be"><a class="header" href="#Прилагательные-после-глагола-to-be">Прилагательные после глагола "to be"</a></h4>
+<p>Прилагательные также могут использоваться после глагола "to be", когда они описывают состояние или характеристику подлежащего:</p>
+<ul>
+<li>The house is big. – Дом большой.</li>
+<li>The car is small. – Машина маленькая.</li>
+<li>The man is old. – Мужчина старый.</li>
+<li>The flowers are beautiful. – Цветы красивые.</li>
+</ul>
+<h4 id="Такой-же-как-as--basic-adjective--as"><a class="header" href="#Такой-же-как-as--basic-adjective--as">Такой же как: <code>as + basic adjective + as</code></a></h4>
+<ul>
+<li>This car is <strong>as fast as</strong> that one. – Эта машина такая же быстрая, как и та.</li>
+<li>My brother is <strong>as tall as</strong> me. – Мой брат такой же высокий, как и я.</li>
+<li>A train is <strong>as fast as</strong> a sports car. – Поезд такой же быстрый, как и спортивная машина.</li>
+<li>This watch is <strong>as expensive as</strong> a small car. – Эти часы такие же дорогие, как и маленькая машина.</li>
+</ul>
+<h2 id="Прилагательные-в-positive-adjective-базовое-значение-и-comparative-сравнительных-и-superlative-превосходных-степенях"><a class="header" href="#Прилагательные-в-positive-adjective-базовое-значение-и-comparative-сравнительных-и-superlative-превосходных-степенях">Прилагательные в positive adjective (базовое значение) и comparative (сравнительных) и superlative (превосходных) степенях</a></h2>
+<p>Простые прилагательные могут изменяться для сравнения. Чтобы образовать сравнительную или превосходную степень прилагательных, обычно добавляются суффиксы в зависимости от количества слогов в слове.</p>
+<p><strong>Возможные формы прилагательных</strong>:</p>
+<ul>
+<li>
+<p><code>tall (высокий) -&gt; taller than/less tall than (выше) -&gt; the tallest (самый высокий)</code></p>
+</li>
+<li>
+<p><code>happy (счастливый) -&gt; happier than/less happy than (счастливее) -&gt; the happiest (самый счастливый)</code></p>
+</li>
+<li>
+<p><code>cold (холодный) –&gt; colder than/less cold than –&gt; the coldest</code></p>
+</li>
+<li>
+<p><code>beautiful (красивый) –&gt; more beautiful than/less beautiful than –&gt; the most beautiful</code></p>
+</li>
+<li>
+<p><code>big (большой) –&gt; bigger than/less big than (больше) –&gt; the biggest (самый большой)</code></p>
+</li>
+<li>
+<p><code>good (хороший) –&gt; better/less good than –&gt; best</code></p>
+</li>
+</ul>
+<h3 id="1-positivebasic-adjective-базовое-значение"><a class="header" href="#1-positivebasic-adjective-базовое-значение">1. Positive/Basic adjective (базовое значение)</a></h3>
+<ul>
+<li>My brother is <strong>tall</strong>. – Мой брат высокий.</li>
+<li>She is a very <strong>happy</strong> person. – Она очень счастливый человек.</li>
+<li>I have a <strong>cold</strong>. – Я простужен.</li>
+<li>The sunset is <strong>beautiful</strong>. – Закат красивый.</li>
+<li>The elephant is <strong>big</strong>. – Слон большой.</li>
+<li>This pizza is <strong>good</strong>. — Эта пицца хорошая.</li>
+</ul>
+<h3 id="2-comparative-adjective-сравнительное-значение"><a class="header" href="#2-comparative-adjective-сравнительное-значение">2. Comparative adjective (сравнительное значение)</a></h3>
+<p>В сравнительной степени (Comparative) можно не ставить союз <strong>than</strong> (чем), если то, с чем производится сравнение, понятно из контекста.</p>
+<p><strong>“Более … чем”</strong>:</p>
+<ol>
+<li>"than" используется только тогда, когда мы сравниваем два объекта:</li>
+</ol>
+<ul>
+<li>My brother is <strong>taller than</strong> me. – Мой брат выше, чем я.</li>
+<li>She is <strong>happier than</strong> her sister. – Она счастливее, чем ее сестра.</li>
+<li>Yesterday was <strong>colder than</strong> today. – Вчера было холоднее, чем сегодня.</li>
+<li>This painting is <strong>more beautiful than</strong> the landscape. – Эта картина красивее, чем пейзаж.</li>
+<li>My suitcase is <strong>bigger than</strong> yours. – Мой чемодан больше, чем твой.</li>
+<li>This pizza is <strong>better than</strong> yesterday’s. — Эта пицца лучше, чем вчерашняя.</li>
+</ul>
+<ol start="2">
+<li>"than" не используется если второй объект очевиден из контекста:</li>
+</ol>
+<ul>
+<li>My brother is <strong>taller</strong> in the morning. – Мой брат выше по утрам.</li>
+<li>She is <strong>happier</strong> now that she has a new job. – Она счастливее теперь, когда у нее новая работа.</li>
+<li>It was <strong>colder</strong> yesterday, after sunset. – Вчера было холоднее, после заката.</li>
+<li>This painting looks <strong>more beautiful</strong> in the dark. – Эта картина красивее смотрится в темноте.</li>
+<li>My suitcase is <strong>bigger</strong> when it's full. – Мой чемодан больше, когда полный вещей.</li>
+</ul>
+<p><strong>“Менее … чем”</strong>:</p>
+<blockquote>
+<p>Конструкция less + прилагательное используется в основном с длинными прилагательными (из двух и более слогов), например: <code>less important, less interesting, less beautiful</code>.</p>
+<p>Для коротких прилагательных (односложных) часто используется противоположное по смыслу прилагательное с <code>more</code>:</p>
+<p>Вместо <code>less easy</code> часто говорят <code>more difficult</code>.</p>
+<p>Вместо <code>less big</code> часто говорят <code>more small</code>.</p>
+<p>Для выражение <code>less little</code> – "менее меньше" есть уже готовое слово <code>less</code> – "меньше"</p>
+<p>Для выражение <code>less elder</code> – "менее страрее" есть уже готовое слово <code>younger</code> – "моложе"</p>
+<p>My car is <strong>younger than</strong> yours. – Моя машина моложе твоей.</p>
+<p>My car is <strong>less old than</strong> yours. (предложение не ошибка, но звучит "тяжело" — как будто мы специально избегаем нормальной формы.)</p>
+</blockquote>
+<ol>
+<li>"than" используется только тогда, когда мы сравниваем два объекта:</li>
+</ol>
+<ul>
+<li>My brother is <strong>less tall than</strong> my father. — Мой брат ниже (менее высокий), чем мой отец.
+<ul>
+<li>My brother is shorter than my father. — Мой брат ниже, чем мой отец. (звучит более естественно)</li>
+</ul>
+</li>
+<li>She is <strong>less happy than</strong> before. — Она менее счастлива, чем раньше.</li>
+<li>It is <strong>less cold than</strong> yesterday. — Сегодня менее холодно, чем вчера.</li>
+<li>The sunset is l<strong>ess beautiful than</strong> yesterday. — Закат менее красивый, чем вчера.</li>
+<li>The elephant is <strong>less big than</strong> I expected. — Слон оказался не таким большим, как я ожидал.</li>
+<li>This pizza is <strong>less good than</strong> yesterday’s. — Эта пицца менее вкусная, чем вчерашняя.</li>
+</ul>
+<ol>
+<li>"than" не используется если второй объект очевиден из контекста:</li>
+</ol>
+<ul>
+<li>My brother is <strong>less tall</strong> today because he is slouching. — Мой брат выглядит менее высоким сегодня, потому что сутулится.</li>
+<li>She is <strong>less happy</strong> today. — Сегодня она менее счастлива.</li>
+<li>It is <strong>less cold</strong> this morning. — Сегодня утром менее холодно.</li>
+<li>The sunset is <strong>less beautiful</strong> today. — Сегодня закат менее красивый.</li>
+<li>The elephant is <strong>less big</strong> in real life. — В жизни слон не такой большой.</li>
+<li>This pizza is <strong>less good</strong> today. — Сегодня пицца не такая вкусная.</li>
+</ul>
+<h3 id="3-superlative-adjective-превосходная-степень"><a class="header" href="#3-superlative-adjective-превосходная-степень">3. Superlative adjective (превосходная степень)</a></h3>
+<p>Слово "than" не используется с превосходной степенью, потому что она уже подразумевает выделение одного объекта "the" среди всех остальных.</p>
+<ul>
+<li>He is <strong>the tallest</strong> player on the team. – Он самый высокий игрок в команде.</li>
+<li>This was <strong>the happiest</strong> day of my life. – Это был самый счастливый день в моей жизни.</li>
+<li>January is <strong>the coldest</strong> month of the year. – Январь — самый холодный месяц в году.</li>
+<li>That gown was <strong>the most beautiful</strong> dress I've ever seen. – То платье было самым красивым платьем, которое я когда-либо видел.</li>
+<li>The whale is <strong>the biggest</strong> animal in the world. – Кит — самое большое животное в мире.</li>
+<li>This pizza is <strong>the best</strong> in the city. — Это лучшая пицца в городе.</li>
+</ul>
+<h2 id="1-Прилагательные-с-одним-слогом-преобразуется-добавлением-суффикса--er-или--r-и-для-superlative--est"><a class="header" href="#1-Прилагательные-с-одним-слогом-преобразуется-добавлением-суффикса--er-или--r-и-для-superlative--est">1. Прилагательные с одним слогом преобразуется добавлением суффикса <code>-er</code> или <code>-r</code> и для superlative <code>-est</code></a></h2>
+<p>tall – высокий:</p>
+<ul>
+<li>Базовое значение (Basic adjective): My brother is <strong>tall</strong>. – Мой брат высокий.</li>
+<li>Сравнительная (Comparative -er) <strong>“Более … чем”</strong>:
+<ul>
+<li>My brother is <strong>taller</strong> in the morning. – Мой брат выше по утрам. (сравниваемое очевидно из контекста)</li>
+<li>My brother is <strong>taller than</strong> me. – Мой брат выше, чем я. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>Сравнительная (Comparative) <strong>“Менее … чем”</strong>:
+<ul>
+<li>My brother is <strong>less tall than</strong> my father. — Мой брат ниже (менее высокий), чем мой отец.</li>
+<li>My brother is <strong>less tall</strong> today because he is slouching. — Мой брат выглядит менее высоким сегодня, потому что сутулится.</li>
+</ul>
+</li>
+<li>Превосходная (Superlative -est): He is <strong>the tallest</strong> player on the team. – Он самый высокий игрок в команде.</li>
+</ul>
+<p>fast – высокий:</p>
+<ul>
+<li>(Basic adjective): A train is <strong>fast</strong>.  – Поезд быстрый.</li>
+<li>(Comparative -er) <strong>“Более … чем”</strong>:
+<ul>
+<li>The train goes <strong>faster</strong> downhill. – Поезд едет быстрее с горки. (сравниваемое очевидно из контекста)</li>
+<li>A train is <strong>faster than</strong> a car. – Поезд быстрее, чем машина. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>(Superlative -est): This plane is <strong>the fastest</strong> in the world. – Этот самолёт самый быстрый в мире.</li>
+</ul>
+<p>cold – холодный:</p>
+<ul>
+<li>(Basic adjective): Yesterday was <strong>cold</strong>. – Вчера было холодно.</li>
+<li>(Comparative -er) <strong>“Более … чем”</strong>:
+<ul>
+<li>It was <strong>colder</strong> yesterday, after sunset. – Вчера было холоднее, после заката. (сравниваемое очевидно из контекста)</li>
+<li>Yesterday was <strong>colder than</strong> today. – Вчера было холоднее, чем сегодня. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>Сравнительная (Comparative) <strong>“Менее … чем”</strong>:
+<ul>
+<li>It is <strong>less cold than</strong> yesterday. — Сегодня менее холодно, чем вчера.</li>
+<li>It is <strong>less cold</strong> this morning. — Сегодня утром менее холодно.</li>
+</ul>
+</li>
+<li>(Superlative -est): January is <strong>the coldest</strong> month of the year. – Январь — самый холодный месяц в году.</li>
+</ul>
+<p>small – маленький:</p>
+<ul>
+<li>(Basic adjective): My apartment is <strong>small</strong>. – Моя квартира маленькая.</li>
+<li>(Comparative -er) <strong>“Более … чем”</strong>:
+<ul>
+<li>My new apartment is <strong>smaller</strong>, after the renovation. — Моя новая квартира меньше, после ремонта. (сравниваемое очевидно из контекста)</li>
+<li>My new apartment is <strong>smaller than</strong> the old one. — Моя новая квартира меньше, чем старая. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>(Superlative -est): The kitten is <strong>the smallest</strong> animal on the farm. — Котёнок — самое маленькое животное на ферме.</li>
+</ul>
+<p>rich – богатый:</p>
+<ul>
+<li>(Basic adjective): She is <strong>rich</strong>. – Она богатая.</li>
+<li>(Comparative -er) <strong>“Более … чем”</strong>:
+<ul>
+<li>She became <strong>richer</strong> after she won the lottery. — Она стала богаче после того, как выиграла в лотерею. (сравниваемое очевидно из контекста)</li>
+<li>She is <strong>richer than</strong> her friend. — Она богаче, чем её подруга. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>(Superlative -est): He is <strong>the richest</strong> man in the city. — Он самый богатый человек в городе.</li>
+</ul>
+<h2 id="2-Прилагательные-с-двумя-слогами-с-окончанием--y-преобразуется-в--ier---iest"><a class="header" href="#2-Прилагательные-с-двумя-слогами-с-окончанием--y-преобразуется-в--ier---iest">2. Прилагательные с двумя слогами с окончанием <code>-y</code> (преобразуется в <code>-ier</code> / <code>-iest</code>)</a></h2>
+<p>happy – счастливый</p>
+<ul>
+<li>(Basic adjective): She is a very <strong>happy</strong> person. – Она очень <strong>счастливый</strong> человек.</li>
+<li>(Comparative -ier) <strong>“Более … чем”</strong>:
+<ul>
+<li>She is <strong>happier</strong> now that she has a new job. – Она <strong>счастливее</strong> теперь, когда у нее новая работа. (сравниваемое очевидно из контекста)</li>
+<li>She is <strong>happier than</strong> her sister. – Она <strong>счастливее, чем</strong> ее сестра. (явно сравниваем двух людей)</li>
+</ul>
+</li>
+<li>Сравнительная (Comparative) <strong>“Менее … чем”</strong>:
+<ul>
+<li>She is <strong>less happy than</strong> before. — Она менее счастлива, чем раньше.</li>
+<li>She is <strong>less happy</strong> today. — Сегодня она менее счастлива.</li>
+</ul>
+</li>
+<li>(Superlative -iest): This was <strong>the happiest</strong> day of my life. – Это был <strong>самый счастливый</strong> день в моей жизни.</li>
+</ul>
+<p>easy – легкий, простой</p>
+<ul>
+<li>(Basic adjective): This test is <strong>easy</strong>. – Этот тест <strong>легкий</strong>.</li>
+<li>(Comparative -ier) <strong>“Более … чем”</strong>:
+<ul>
+<li>Math is <strong>easier</strong> for me than physics. – Математика <strong>легче</strong> для меня, чем физика. (сравниваемое очевидно из контекста)</li>
+<li>This question is <strong>easier than</strong> the last one. – Этот вопрос <strong>легче, чем</strong> предыдущий. (явно сравниваем два вопроса)</li>
+</ul>
+</li>
+<li>(Superlative -iest): This is <strong>the easiest</strong> route to the city center. – Это <strong>самый легкий</strong> маршрут до центра города.</li>
+</ul>
+<p>heavy – тяжелый</p>
+<ul>
+<li>(Basic adjective): The box is quite <strong>heavy</strong>. – Коробка довольно <strong>тяжелая</strong>.</li>
+<li>(Comparative -ier) <strong>“Более … чем”</strong>:
+<ul>
+<li>This bag is <strong>heavier</strong> than I expected. – Эта сумка <strong>тяжелее</strong>, чем я ожидал. (сравниваемое очевидно из контекста)</li>
+<li>Lead is <strong>heavier than</strong> wood. – Свинец <strong>тяжелее, чем</strong> дерево. (явно сравниваем два вещества)</li>
+</ul>
+</li>
+<li>(Superlative -iest): The vault holds <strong>the heaviest</strong> door in the building. – В хранилище <strong>самая тяжелая</strong> дверь в здании.</li>
+</ul>
+<h2 id="3-Прилагательные-с-двумя-и-более-слогами-преобразуется-добавлением-слова-more--than-и-most"><a class="header" href="#3-Прилагательные-с-двумя-и-более-слогами-преобразуется-добавлением-слова-more--than-и-most">3. Прилагательные с двумя и более слогами преобразуется добавлением слова <code>more</code> + than и <code>most</code></a></h2>
+<p>Для этих прилагательных мы используем:</p>
+<ul>
+<li>Сравнительная степень: <strong>more + adjective</strong> (вместо суффикса <strong>-er</strong>)</li>
+<li>Превосходная степень: <strong>most + adjective</strong> (вместо суффикса <strong>-est</strong>)</li>
+</ul>
+<p>boring (скучный) – 2 слога:</p>
+<ul>
+<li>(Basic adjective): The lecture was <strong>boring</strong>. – Лекция была скучной.</li>
+<li>(Comparative <em>more</em>) <strong>“Более … чем”</strong>: his lecture is <strong>more boring than</strong> the previous one. – Эта лекция скучнее предыдущей.</li>
+<li>(Superlative <em>most</em>): That was <strong>the most boring</strong> movie I've ever seen. – Это был самый скучный фильм, который я когда-либо видел</li>
+</ul>
+<p>beautiful (красивый) — 3 слога:</p>
+<ul>
+<li>(Basic adjective): The sunset is <strong>beautiful</strong>. – Закат красивый.</li>
+<li>(Comparative <em>more</em>) <strong>“Более … чем”</strong>:
+<ul>
+<li>This painting is <strong>more beautiful than</strong> the landscape. – Эта картина красивее, чем пейзаж. (явно сравниваем два объекта)</li>
+<li>This painting looks <strong>more beautiful</strong> in the dark. – Эта картина красивее смотрится в темноте. (сравниваемое очевидно из контекста)</li>
+</ul>
+</li>
+<li>Сравнительная (Comparative) <strong>“Менее … чем”</strong>:
+<ul>
+<li>The sunset is l<strong>ess beautiful than</strong> yesterday. — Закат менее красивый, чем вчера.</li>
+<li>The sunset is <strong>less beautiful</strong> today. — Сегодня закат менее красивый.</li>
+</ul>
+</li>
+<li>(Superlative <em>most</em>): That gown was <strong>the most beautiful</strong> dress I've ever seen. – То платье было самым красивым платьем, которое я когда-либо видел.</li>
+</ul>
+<p>expensive (дорогой) — 3 слога:</p>
+<ul>
+<li>(Basic adjective): Buying a house is very <strong>expensive</strong>. – Покупка дома очень дорогая.</li>
+<li>(Comparative <em>more</em>) <strong>“Более … чем”</strong>:
+<ul>
+<li>Diamonds are <strong>more expensive than</strong> gold. – Алмазы дороже, чем золото. (явно сравниваем два объекта)</li>
+<li>Diamonds are <strong>more expensive</strong> after restoration. – Бриллианты дороже после реставрации. (сравниваемое очевидно из контекста)</li>
+</ul>
+</li>
+<li>(Superlative <em>most</em>): This is <strong>the most expensive</strong> watch in the shop. – Это самые дорогие часы в магазине.</li>
+</ul>
+<p>difficult (трудный, сложный) — 3 слога:</p>
+<ul>
+<li>(Basic adjective): The exam was incredibly <strong>difficult</strong>. – Экзамен был невероятно трудным.</li>
+<li>(Comparative <em>more</em>) <strong>“Более … чем”</strong>:
+<ul>
+<li>Learning German is <strong>more difficult</strong> for him <strong>than</strong> learning Spanish. – Изучение немецкого труднее для него, чем изучение испанского.</li>
+</ul>
+</li>
+<li>(Superlative <em>most</em>): This chapter is <strong>the most difficult</strong> part of the book. – Эта глава – самая трудная часть книги.</li>
+</ul>
+<p>expensive (дорогой) – 3 слога:</p>
+<ul>
+<li>(Basic adjective): This watch is <strong>expensive</strong>. – Это часы дорогие.</li>
+<li>(Comparative <em>more</em>) <strong>“Более … чем”</strong>:
+<ul>
+<li>This car is <strong>more expensive than</strong> that one. – Эта машина дороже той.</li>
+</ul>
+</li>
+<li>(Superlative <em>most</em>): This is <strong>the most expensive</strong> restaurant in town. – Это самый дорогой ресторан в городе.</li>
+</ul>
+<h2 id="4-Прилагательные-с-удвоением-конечной-согласной-cvc-те-заканчивающиеся-на-одну-гласную-и-одну-согласную-удваивают-последнюю-букву"><a class="header" href="#4-Прилагательные-с-удвоением-конечной-согласной-cvc-те-заканчивающиеся-на-одну-гласную-и-одну-согласную-удваивают-последнюю-букву">4. Прилагательные с удвоением конечной согласной (CVC) т.е. заканчивающиеся на одну гласную и одну согласную, удваивают последнюю букву</a></h2>
+<p>Это правило применяется к прилагательным, имеющим структуру: <strong>Согласная + Гласная + Согласная</strong> (CVC-структура).</p>
+<p>big – большой:</p>
+<ul>
+<li>(Basic adjective): The elephant is <strong>big</strong>. – Слон большой.</li>
+<li>(Comparative, удваиваем <strong>-g</strong>) <strong>“Более … чем”</strong>:
+<ul>
+<li>My suitcase is <strong>bigger than</strong> yours. – Мой чемодан больше, чем твой. (явно сравниваем два объекта)</li>
+<li>My suitcase is <strong>bigger</strong> when it's full. – Мой чемодан больше, когда полный вещей. (сравниваемое очевидно из контекста)</li>
+</ul>
+</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>:
+<ul>
+<li>The elephant is <strong>less big than</strong> I expected. — Слон оказался не таким большим, как я ожидал.</li>
+<li>The elephant is <strong>less big</strong> in real life. — В жизни слон не такой большой.</li>
+</ul>
+</li>
+<li>(Superlative, удваиваем <strong>-g</strong>): The whale is <strong>the biggest</strong> animal in the world. – Кит — самое большое животное в мире.</li>
+</ul>
+<p>hot – горячий:</p>
+<ul>
+<li>(Basic adjective): The soup is very <strong>hot</strong>. – Суп очень горячий.</li>
+<li>(Comparative, удваиваем <strong>-t</strong>) <strong>“Более … чем”</strong>:
+<ul>
+<li>Summer in Spain is <strong>hotter than</strong> summer in Germany. – Лето в Испании жарче, чем лето в Германии. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>(Superlative, удваиваем <strong>-t</strong>): August is usually <strong>the hottest</strong> month of the year. – Август обычно самый жаркий месяц в году.</li>
+</ul>
+<p>thin – тонкий, худой:</p>
+<ul>
+<li>(Basic adjective): The ice on the pond is <strong>thin</strong>. – Лед на пруду тонкий.</li>
+<li>(Comparative, удваиваем <strong>-n</strong>) <strong>“Более … чем”</strong>:
+<ul>
+<li>This book is <strong>thinner than</strong> that magazine. – Эта книга тоньше, чем тот журнал. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>(Superlative, удваиваем <strong>-n</strong>): He is <strong>the thinnest</strong> person I know. – Он самый худой человек, которого я знаю.</li>
+</ul>
+<h2 id="Неправильные-формы-irregular-adjectives"><a class="header" href="#Неправильные-формы-irregular-adjectives">Неправильные формы (Irregular Adjectives)</a></h2>
+<p>Эти прилагательные не следуют стандартным правилам добавления <strong>-er/-est</strong> или <strong>more/most</strong>, а имеют совершенно уникальные формы для сравнительной и превосходной степени.</p>
+<div class="table-wrapper"><table><thead><tr><th><strong>Positive (обычная форма)</strong></th><th><strong>Comparative (сравнительная)</strong></th><th><strong>Superlative (превосходная)</strong></th><th><strong>Перевод</strong></th></tr></thead><tbody>
+<tr><td>good</td><td>better</td><td>best</td><td>хороший → лучше → лучший</td></tr>
+<tr><td>bad</td><td>worse</td><td>worst</td><td>плохой → хуже → худший</td></tr>
+<tr><td>far</td><td>farther / further</td><td>farthest / furthest</td><td>дальний → дальше → самый дальний</td></tr>
+<tr><td>little</td><td>less</td><td>least</td><td>маленький / немного → меньше → наименьший</td></tr>
+<tr><td>much / many</td><td>more</td><td>most</td><td>много → больше → больше всего</td></tr>
+<tr><td>old</td><td>older / elder</td><td>oldest / eldest</td><td>старый → старше → самый старый <em>(elder/eldest — о людях)</em></td></tr>
+<tr><td>well <em>(в значении “здоровый”)</em></td><td>better</td><td>best</td><td>здоровый → лучше → самый здоровый</td></tr>
+<tr><td>late</td><td>later</td><td>latest</td><td>поздний → позже → самый поздний</td></tr>
+<tr><td>near</td><td>nearer</td><td>nearest</td><td>близкий → ближе → самый близкий</td></tr>
+</tbody></table>
+</div>
+<p><strong>1. good – better – best</strong></p>
+<ul>
+<li>(Basic adjective): This pizza is <strong>good</strong>. — Эта пицца хорошая.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: This pizza is <strong>better</strong> than yesterday’s. — Эта пицца лучше, чем вчерашняя.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: This pizza is <strong>less good than</strong> yesterday’s. — Эта пицца менее вкусная, чем вчерашняя.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: This pizza is <strong>less good</strong> today. — Сегодня пицца не такая вкусная.</li>
+<li>(Superlative): This pizza is the <strong>best</strong> in the city. — Это лучшая пицца в городе.</li>
+</ul>
+<p><strong>2. bad – worse – worst</strong></p>
+<ul>
+<li>(Basic adjective): The weather is <strong>bad</strong> today. — Сегодня плохая погода.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: The weather is <strong>worse</strong> than yesterday. — Погода хуже, чем вчера.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: This movie is <strong>less bad than</strong> the last one. — Этот фильм менее плохой, чем прошлый.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The weather is <strong>less bad</strong> today. — Сегодня погода не такая плохая.</li>
+<li>(Superlative): This is the <strong>worst</strong> day of the week. — Это худший день недели.</li>
+</ul>
+<p><strong>3. far – farther/further – farthest/furthest</strong></p>
+<p>(оба варианта правильны, <strong>farther</strong> чаще про расстояние, <strong>further</strong> — в переносном смысле)</p>
+<ul>
+<li>(Basic adjective): The park is <strong>far</strong> from my house. — Парк далеко от моего дома.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: The zoo is <strong>farther</strong> than the park. — Зоопарк дальше, чем парк.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The park is less far than the beach. — Парк не так далеко, как пляж.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The shop is less far from here. — Магазин не так далеко отсюда.</li>
+<li>(Superlative): The desert is the <strong>farthest</strong> place from here. — Пустыня — самое далёкое место отсюда.</li>
+</ul>
+<p><strong>4. little – less – least</strong></p>
+<ul>
+<li>(Basic adjective): I have <strong>little</strong> time. — У меня мало времени.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: I have <strong>less</strong> time than you. — У меня меньше времени, чем у тебя.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The house is less little than I thought. — Дом оказался не таким маленьким, как я думал.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The cat is less little now; it has grown. — Кот теперь не такой маленький, он вырос.</li>
+<li>(Superlative): I have the <strong>least</strong> time of all. — У меня меньше всего времени.</li>
+</ul>
+<p><strong>5. much / many – more – most</strong></p>
+<ul>
+<li>(Basic adjective): I have <strong>many</strong> books. — У меня много книг.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: She has <strong>more</strong> books than me. — У неё больше книг, чем у меня.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: I have less money today. — У меня меньше денег сегодня.</li>
+<li>(Superlative): He has the <strong>most</strong> books. — У него больше всего книг.</li>
+</ul>
+<p><em>(или с much)</em></p>
+<ul>
+<li>(Basic adjective): There is <strong>much</strong> snow today. — Сегодня много снега.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: There is <strong>more</strong> snow than yesterday. — Сегодня снега больше, чем вчера.</li>
+<li>(Superlative): This is the <strong>most</strong> snow this year. — Это больше всего снега в этом году.</li>
+</ul>
+<p>Почему не говорят “less much”?</p>
+<p>Потому что слово much уже само выражает идею “много”, а “less” делает её отрицательной (“не так много”), поэтому less само по себе заменяет “less much”.</p>
+<p><strong>6. old – older/elder – oldest/eldest</strong></p>
+<ul>
+<li>(Basic adjective): My dog is <strong>old</strong>. — Моя собака старая.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: My cat is <strong>older</strong> than my dog. — Моя кошка старше моей собаки.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: My car is less old than yours. — Моя машина не такая старая, как твоя.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: My phone is less old now after repair. — Мой телефон теперь не такой старый (после ремонта).</li>
+<li>(Superlative): My grandfather is the <strong>oldest</strong> in the family. — Мой дедушка самый старший в семье.</li>
+</ul>
+<p><em>(elder/eldest — о людях, в семье)</em></p>
+<ul>
+<li>(Comparative) <strong>“Более … чем”</strong>: My <strong>elder</strong> brother lives in Canada. — Мой старший брат живёт в Канаде.</li>
+<li>(Superlative): He is the <strong>eldest</strong> son. — Он старший сын.</li>
+</ul>
+<p><strong>7. well (здоровый) – better – best</strong></p>
+<ul>
+<li>(Basic adjective): I feel <strong>well</strong> today. — Я чувствую себя хорошо.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: I feel <strong>better</strong> than yesterday. — Я чувствую себя лучше, чем вчера.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: She feels less well than yesterday. — Она чувствует себя хуже, чем вчера.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: She feels less well today. — Сегодня она чувствует себя не так хорошо.</li>
+<li>(Superlative): I feel the <strong>best</strong> this week. — Сегодня я чувствую себя лучше всего за неделю.</li>
+</ul>
+<p><strong>8. late – later – latest</strong></p>
+<ul>
+<li>(Basic adjective): I am <strong>late</strong> for school. — Я опоздал в школу.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: I came <strong>later</strong> than my friend. — Я пришёл позже, чем мой друг.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: I came less late than last time. — Я пришёл не так поздно, как в прошлый раз.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: I was less late today. — Сегодня я опоздал меньше.</li>
+<li>(Superlative): This is the <strong>latest</strong> bus. — Это самый поздний автобус.</li>
+</ul>
+<p><strong>9. near – nearer – nearest</strong></p>
+<ul>
+<li>(Basic adjective): The shop is <strong>near</strong> my house. — Магазин рядом с моим домом.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: The school is <strong>nearer</strong> than the park. — Школа ближе, чем парк.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The station is less near than the bus stop. — Станция не так близко, как автобусная остановка.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The school is less near than I thought. — Школа оказалась не так близко, как я думал.</li>
+<li>(Superlative): This is the <strong>nearest</strong> hospital. — Это ближайшая больница.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Imperatives.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/Basic_conjunctions.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Imperatives.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/Basic_conjunctions.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_img.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+
+
+
+    </div>
+    </body>
+</html>
