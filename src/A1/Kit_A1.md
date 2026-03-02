@@ -1,370 +1,391 @@
 
 ## Tables words A1
 
-(после добавления новых слов следунт переделать таблицы используя инструменты на [generate_markdown.html](/generate_markdown.html))
+(после добавления новых слов следует переделать таблицы, используя инструменты на [generate_markdown.html](/generate_markdown.html))
 
 <details>
 <summary>Nouns A1</summary>
 
-| Noun singular | Noun plural | Translate | Frequency |
-| --- | --- | --- | --- |
-| time | times | время | 54 |
-| year | years | год | 55 |
-| people | people | люди | 63 |
-| day | days | день | 92 |
-| man | men | мужчина | 95 |
-| thing | things | вещь | 99 |
-| woman | women | женщина | 114 |
-| life | lives | жизнь | 115 |
-| child | children | ребёнок | 116 |
-| world | worlds | мир | 123 |
-| school | schools | школа | 129 |
-| family | families | семья | 149 |
-| house | houses | дом | 151 |
-| group | groups | группа | 167 |
-| country | countries | страна | 168 |
-| problem | problems | проблема | 170 |
-| student | students | студент | 173 |
-| hand | hands | рука | 175 |
-| part | parts | часть | 180 |
-| place | places | место | 186 |
-| city | cities | город | 188 |
-| week | weeks | неделя | 193 |
-| question | questions | вопрос | 201 |
-| work | works | работа, произведения | 204 |
-| number | numbers | номер, число | 206 |
-| night | nights | ночь | 214 |
-| room | rooms | комната | 231 |
-| money |  | деньги | 236 |
-| water |  | вода | 239 |
-| mother | mothers | мама | 240 |
-| month | months | месяц | 243 |
-| book | books | книга | 245 |
-| eye | eyes | глаз | 246 |
-| job | jobs | работа | 248 |
-| word | words | слово | 250 |
-| friend | friends | друг | 273 |
-| father | fathers | папа | 278 |
-| hour | hours | час | 279 |
-| end | ends | конец | 284 |
-| game | games | игра | 287 |
-| car | cars | машина | 296 |
-| name | names | имя | 299 |
-| body | bodies | тело | 320 |
-| minute | minutes | минута | 323 |
-| table | tables | стол | 324 |
-| face | faces | лицо | 335 |
-| parent | parents | родитель | 340 |
-| person | people | человек | 348 |
-| door | doors | дверь | 349 |
-| street | streets | улица | 352 |
-| party | parties | вечеринка | 355 |
-| morning | mornings | утро | 358 |
-| girl | girls | девочка | 381 |
-| boy | boys | мальчик | 382 |
-| food |  | еда | 384 |
-| teacher | teachers | учитель | 412 |
-| home | homes | дом | 413 |
-| class | classes | класс | 438 |
-| photo | photos | фото | 445 |
-| music |  | музыка | 464 |
-| light | lights | свет | 467 |
-| color | colors | цвет | 470 |
-| wife | wives | жена | 475 |
-| son | sons | сын | 494 |
-| arm | arms | рука | 495 |
-| town | towns | город | 506 |
-| road | roads | дорога | 515 |
-| paper | papers | бумага | 533 |
-| player | players | игрок | 540 |
-| picture | pictures | картинка | 562 |
-| wall | walls | стена | 568 |
-| doctor | doctors | врач | 569 |
-| phone | phones | телефон | 574 |
-| test | tests | тест | 580 |
-| computer | computers | компьютер | 586 |
-| movie | movies | фильм | 587 |
-| baby | babies | малыш | 599 |
-| tree | trees | дерево | 603 |
-| film | films | фильм | 604 |
-| window | windows | окно | 614 |
-| park | parks | парк | 615 |
-| hair |  | волосы | 618 |
-| brother | brothers | брат | 623 |
-| summer | summers | лето | 624 |
-| letter | letters | письмо | 629 |
-| floor | floors | пол | 640 |
-| plant | plants | растение | 648 |
-| daughter | daughters | дочь | 654 |
-| husband | husbands | муж | 656 |
-| board | boards | доска | 664 |
-| hospital | hospitals | больница | 667 |
-| subject | subjects | предмет | 673 |
-| bed | beds | кровать | 680 |
-| store | stores | магазин | 697 |
-| bank | banks | банк | 701 |
-| page | pages | страница | 716 |
-| language | languages | язык | 727 |
-| river | rivers | река | 728 |
-| animal | animals | животное | 741 |
-| sport | sports | спорт | 750 |
-| answer | answers | ответ | 769 |
-| dog | dogs | собака | 770 |
-| dollar | dollars | доллар | 795 |
-| box | boxes | коробка | 802 |
-| cup | cups | кружка | 827 |
-| glass | glasses | стакан | 833 |
-| station | stations | станция | 841 |
-| example | examples | пример | 850 |
-| sister | sisters | сестра | 854 |
-| sun | suns | солнце | 861 |
-| leg | legs | нога | 880 |
-| song | songs | песня | 908 |
-| radio | radios | радио | 910 |
-| note | notes | заметка | 943 |
-| ball | balls | мяч | 951 |
-| chair | chairs | стул | 959 |
-| evening | evenings | вечер | 969 |
-| museum | museums | музей | 986 |
-| fish | fish | рыба | 992 |
-| april |  | апрель | 1000 |
-| november |  | ноябрь | 1000 |
-| january |  | январь | 1000 |
-| september |  | сентябрь | 1000 |
-| february |  | февраль | 1000 |
-| may |  | май | 1000 |
-| march |  | март | 1000 |
-| july |  | июль | 1000 |
-| june |  | июнь | 1000 |
-| october |  | октябрь | 1000 |
-| august |  | август | 1000 |
-| december |  | декабрь | 1000 |
-| mobile | mobiles | мобильный телефон | 1000 |
-| camera | cameras | камера | 1018 |
-| bar | bars | бар | 1021 |
-| hotel | hotels | отель | 1022 |
-| sea | seas | море | 1026 |
-| bag | bags | сумка | 1045 |
-| mom | moms | мама | 1054 |
-| thursday | thursdays | четверг | 1068 |
-| wednesday | wednesdays | среда | 1068 |
-| monday | mondays | понедельник | 1068 |
-| saturday | saturdays | суббота | 1068 |
-| friday | fridays | пятница | 1068 |
-| sunday | sundays | воскресенье | 1068 |
-| kitchen | kitchens | кухня | 1074 |
-| mouth | mouths | рот | 1077 |
-| dinner | dinners | ужин | 1094 |
-| newspaper | newspapers | газета | 1123 |
-| wind | winds | ветер | 1124 |
-| garden | gardens | сад | 1130 |
-| restaurant | restaurants | ресторан | 1150 |
-| forest | forests | лес | 1158 |
-| dad | dads | папа | 1159 |
-| plane | planes | самолёт | 1169 |
-| bird | birds | птица | 1176 |
-| afternoon | afternoons | день (после полудня) | 1202 |
-| beach | beaches | пляж | 1216 |
-| weekend | weekends | выходные | 1219 |
-| date | dates | дата | 1220 |
-| winter | winters | зима | 1270 |
-| horse | horses | лошадь | 1292 |
-| farm | farms | ферма | 1305 |
-| village | villages | деревня | 1310 |
-| boat | boats | лодка | 1326 |
-| shop | shops | магазин | 1371 |
-| lesson | lessons | урок | 1384 |
-| band | bands | группа | 1389 |
-| ear | ears | ухо | 1390 |
-| foot | feet | нога, ступня | 1399 |
-| coffee |  | кофе | 1425 |
-| egg | eggs | яйцо | 1445 |
-| shoe | shoes | обувь, туфля | 1457 |
-| clothes |  | одежда | 1458 |
-| internet |  | интернет | 1470 |
-| bus | buses | автобус | 1479 |
-| key | keys | ключ | 1484 |
-| flower | flowers | цветок | 1537 |
-| plate | plates | тарелка | 1540 |
-| rain | rains | дождь | 1569 |
-| football | footballs | футбол | 1571 |
-| ticket | tickets | билет | 1612 |
-| leaf | leaves | лист | 1613 |
-| classroom | classrooms | класс | 1614 |
-| lunch | lunches | обед | 1616 |
-| half | halves | половина | 1639 |
-| weather |  | погода | 1641 |
-| salt |  | соль | 1654 |
-| desk | desks | парта, стол | 1668 |
-| sugar |  | сахар | 1677 |
-| train | trains | поезд | 1694 |
-| moon | moons | луна | 1718 |
-| fruit | fruits | фрукты | 1723 |
-| dance | dances | танец | 1724 |
-| meal | meals | еда | 1751 |
-| nose | noses | нос | 1766 |
-| cat | cats | кот, кошка | 1786 |
-| dress | dresses | платье | 1799 |
-| shirt | shirts | рубашка | 1805 |
-| address | addresses | адрес | 1864 |
-| tooth | teeth | зуб | 1880 |
-| bedroom | bedrooms | спальня | 1889 |
-| ocean | oceans | океан | 1906 |
-| fun |  | веселье | 1919 |
-| apple | apples | яблоко | 1983 |
-| holiday | holidays | праздник, каникулы | 1989 |
-| flat | flats | квартира | 2000 |
-| noise | noises | шум | 2020 |
-| vegetable | vegetables | овощ | 2024 |
-| hat | hats | шляпа | 2030 |
-| grass | grasses | трава | 2034 |
-| sentence | sentences | предложение | 2048 |
-| drink | drinks | напиток | 2054 |
-| milk |  | молоко | 2091 |
-| rice |  | рис | 2131 |
-| bread |  | хлеб | 2142 |
-| factory | factories | завод | 2170 |
-| cheese |  | сыр | 2222 |
-| tea |  | чай | 2230 |
-| present | presents | подарок | 2240 |
-| knife | knives | нож | 2269 |
-| coat | coats | пальто | 2284 |
-| potato | potatoes | картофель | 2311 |
-| jacket | jackets | куртка | 2321 |
-| bean | beans | фасоль | 2390 |
-| stop | stops | остановка | 2419 |
-| juice | juices | сок | 2429 |
-| breakfast | breakfasts | завтрак | 2433 |
-| bathroom | bathrooms | ванная | 2441 |
-| watch | watches | часы | 2471 |
-| boot | boots | сапог | 2476 |
-| birthday | birthdays | день рождения | 2496 |
-| butter |  | масло | 2551 |
-| tomato | tomatoes | помидор | 2581 |
-| vacation | vacations | отпуск, каникулы | 2627 |
-| cake | cakes | торт, пирожное | 2637 |
-| clock | clocks | часы | 2655 |
-| chocolate | chocolates | шоколад | 2736 |
-| pants |  | штаны | 2759 |
-| bike | bikes | велосипед | 3012 |
-| soup | soups | суп | 3049 |
-| cow | cows | корова | 3107 |
-| tennis |  | теннис | 3136 |
-| shower | showers | душ | 3256 |
-| pet | pets | домашнее животное | 3359 |
-| actress | actresses | актриса | 3365 |
-| pig | pigs | свинья | 3527 |
-| jeans |  | джинсы | 3591 |
-| pen | pens | ручка | 3616 |
-| sandwich | sandwiches | бутерброд | 3659 |
-| orange | oranges | апельсин | 3700 |
-| skirt | skirts | юбка | 3754 |
-| cafe | cafes | кафе | 3772 |
-| bat | bats | летучая мышь | 3793 |
-| doll | dolls | кукла | 3820 |
-| bath | baths | ванна | 3915 |
-| guitar | guitars | гитара | 3928 |
-| lamp | lamps | лампа | 3938 |
-| website | websites | веб-сайт | 4000 |
-| waiter | waiters | официант | 4000 |
-| biscuit | biscuits | печенье | 4000 |
-| pizza | pizzas | пицца | 4044 |
-| toilet | toilets | туалет | 4045 |
-| sheep | sheep | овца | 4224 |
-| pencil | pencils | карандаш | 4665 |
-| supermarket | supermarkets | супермаркет | 4721 |
-| beard | beards | борода | 4733 |
-| banana | bananas | банан | 4795 |
-| homework |  | домашнее задание | 4932 |
-| trousers |  | брюки | 5000 |
-| taxi | taxis | такси | 5000 |
-| tuesday |  | вторник | 5000 |
-| bookcase | bookcases | книжный шкаф | 5000 |
-| email | emails | электронная почта | 5000 |
-| blouse | blouses | блузка | 5000 |
-| waitress | waitresses | официантка | 5000 |
-| mum | mums | мама | 6000 |
-| picnic | picnics | пикник | 7000 |
-| zoo | zoos | зоопарк | 7000 |
-| subway | subways | метро | 8000 |
-| classmate | classmates | одноклассник | 9000 |
-| tv | tvs | телевизор, телевидение | 9500 |
-| neighbor | neighbors | сосед | 10000 |
-| milkman | milkmen | молочник | 10001 |
-| postman | postmen | почтальон | 10002 |
-| cupboard | cupboards | шкаф | 10003 |
-| keychain | keychains | брелок | 10004 |
-| notebook | notebooks | тетрадь | 10005 |
-| eraser | erasers | ластик | 10006 |
-| bagpack | bagpacks | рюкзак | 10007 |
-| lampstand | lampstands | подставка для лампы | 10008 |
-| bottle | bottles | бутылка | 10009 |
-| spoon | spoons | ложка | 10010 |
-| fork | forks | вилка | 10011 |
-| knife | knives | нож | 10012 |
-| plate | plates | тарелка | 10013 |
-| cup | cups | чашка | 10014 |
-| clock | clocks | часы | 10015 |
-| window | windows | окно | 10016 |
-| door | doors | дверь | 10017 |
-| chair | chairs | стул | 10018 |
-| table | tables | стол | 10019 |
-| sofa | sofas | диван | 10020 |
-| bed | beds | кровать | 10021 |
-| mirror | mirrors | зеркало | 10022 |
-| television | televisions | телевизор | 10023 |
-| radio | radios | радио | 10024 |
-| computer | computers | компьютер | 10025 |
-| market | markets | рынок, базар | 1000 |
-| snow | snows | снег | 1000 |
-| meat | meats | мясо | 1000 |
-| one |  | один | 1000 |
-| two |  | два | 1000 |
-| three |  | три | 1000 |
-| four |  | четыре | 1000 |
-| five |  | пять | 1000 |
-| six |  | шесть | 1000 |
-| seven |  | семь | 1000 |
-| eight |  | восемь | 1000 |
-| nine |  | девять | 1000 |
-| ten |  | десять | 1000 |
-| eleven |  | одиннадцать | 1000 |
-| twelve |  | двенадцать | 1000 |
-| thirteen |  | тринадцать | 1000 |
-| fourteen |  | четырнадцать | 1000 |
-| fifteen |  | пятнадцать | 1000 |
-| sixteen |  | шестнадцать | 1000 |
-| seventeen |  | семнадцать | 1000 |
-| eighteen |  | восемнадцать | 1000 |
-| nineteen |  | девятнадцать | 1000 |
-| twenty |  | двадцать | 1000 |
-| thirty |  | тридцать | 1000 |
-| forty |  | сорок | 1000 |
-| fifty |  | пятьдесят | 1000 |
-| sixty |  | шестьдесят | 1000 |
-| seventy |  | семьдесят | 1000 |
-| eighty |  | восемьдесят | 1000 |
-| ninety |  | девяносто | 1000 |
-| hundred |  | сто | 1000 |
-| thousand |  | тысяча | 1000 |
-| million |  | миллион | 1000 |
-| billion |  | миллиард | 4324 |
-| mother-in-law |  | теща, свекровь | 1000 |
-| check-in |  | регистрация, отметка о прибытии | 1000 |
-| fox | foxes | лиса, лисица | 5000 |
-| wolf | wolves | волк | 2677 |
-| mouse | mice | мышь | 3345 |
-| piano | pianos | пианино, фортепьяно | 3389 |
-| mistake | mistakes | ошибка | 1454 |
-| kid | kids | ребёнок,  малыш | 322 |
-| printer | printers | принтер | 5000 |
-| grandmother | grandmothers | бабушка | 2545 |
-| way | ways | путь, способ, сторона, дорога | 1000 |
-| message | messages | сообщение, послание, письмо, идея, сигнализировать | 1000 |
-| soda | sodas | сода, газированная вода | 1000 |
-| jam | jams | джем, варенье | 1000 |
-| beginner | beginners | начинающий, новичок | 1000 |
-| toast | toasts | тост, гренки | 1000 | 
+
+| Noun singular | Noun plural | Gerund | Translate | Frequency |
+| --- | --- | --- | --- | --- |
+| time | times |  | время | 54 |
+| year | years |  | год | 55 |
+| people | people |  | люди | 63 |
+| day | days |  | день | 92 |
+| man | men |  | мужчина | 95 |
+| thing | things |  | вещь | 99 |
+| woman | women |  | женщина | 114 |
+| life | lives |  | жизнь | 115 |
+| child | children |  | ребёнок | 116 |
+| world | worlds |  | мир | 123 |
+| school | schools |  | школа | 129 |
+| family | families |  | семья | 149 |
+| house | houses |  | дом | 151 |
+| group | groups |  | группа | 167 |
+| country | countries |  | страна | 168 |
+| problem | problems |  | проблема | 170 |
+| student | students |  | студент | 173 |
+| hand | hands |  | рука | 175 |
+| part | parts |  | часть | 180 |
+| place | places |  | место | 186 |
+| city | cities |  | город | 188 |
+| week | weeks |  | неделя | 193 |
+| question | questions |  | вопрос | 201 |
+| work | works | working | работа, произведения | 204 |
+| number | numbers |  | номер, число | 206 |
+| night | nights |  | ночь | 214 |
+| room | rooms |  | комната | 231 |
+| money |  |  | деньги | 236 |
+| water |  |  | вода | 239 |
+| mother | mothers |  | мама | 240 |
+| month | months |  | месяц | 243 |
+| book | books |  | книга | 245 |
+| eye | eyes |  | глаз | 246 |
+| job | jobs |  | работа | 248 |
+| word | words |  | слово | 250 |
+| friend | friends |  | друг | 273 |
+| father | fathers |  | папа | 278 |
+| hour | hours |  | час | 279 |
+| end | ends | ending | конец | 284 |
+| game | games | gaming | игра | 287 |
+| car | cars |  | машина | 296 |
+| name | names |  | имя | 299 |
+| body | bodies |  | тело | 320 |
+| minute | minutes |  | минута | 323 |
+| table | tables |  | стол | 324 |
+| face | faces |  | лицо | 335 |
+| parent | parents |  | родитель | 340 |
+| person | people |  | человек | 348 |
+| door | doors |  | дверь | 349 |
+| street | streets |  | улица | 352 |
+| party | parties |  | вечеринка | 355 |
+| morning | mornings |  | утро | 358 |
+| girl | girls |  | девочка | 381 |
+| boy | boys |  | мальчик | 382 |
+| food |  |  | еда | 384 |
+| teacher | teachers |  | учитель | 412 |
+| home | homes |  | дом | 413 |
+| class | classes |  | класс | 438 |
+| photo | photos |  | фото | 445 |
+| music |  |  | музыка | 464 |
+| light | lights |  | свет | 467 |
+| color | colors |  | цвет | 470 |
+| wife | wives |  | жена | 475 |
+| son | sons |  | сын | 494 |
+| arm | arms |  | рука | 495 |
+| town | towns |  | город | 506 |
+| road | roads |  | дорога | 515 |
+| paper | papers |  | бумага | 533 |
+| player | players |  | игрок | 540 |
+| picture | pictures |  | картинка | 562 |
+| wall | walls |  | стена | 568 |
+| doctor | doctors |  | врач | 569 |
+| phone | phones |  | телефон | 574 |
+| test | tests | testing | тест | 580 |
+| computer | computers |  | компьютер | 586 |
+| movie | movies |  | фильм | 587 |
+| baby | babies |  | малыш | 599 |
+| tree | trees |  | дерево | 603 |
+| film | films |  | фильм | 604 |
+| window | windows |  | окно | 614 |
+| park | parks | parking | парк | 615 |
+| hair |  |  | волосы | 618 |
+| brother | brothers |  | брат | 623 |
+| summer | summers |  | лето | 624 |
+| letter | letters | lettering | письмо | 629 |
+| floor | floors |  | пол | 640 |
+| plant | plants | planting | растение | 648 |
+| daughter | daughters |  | дочь | 654 |
+| husband | husbands |  | муж | 656 |
+| board | boards |  | доска | 664 |
+| hospital | hospitals |  | больница | 667 |
+| subject | subjects |  | предмет | 673 |
+| bed | beds |  | кровать | 680 |
+| store | stores |  | магазин | 697 |
+| bank | banks |  | банк | 701 |
+| page | pages |  | страница | 716 |
+| language | languages |  | язык | 727 |
+| river | rivers |  | река | 728 |
+| animal | animals |  | животное | 741 |
+| sport | sports |  | спорт | 750 |
+| answer | answers | answering | ответ | 769 |
+| dog | dogs |  | собака | 770 |
+| dollar | dollars |  | доллар | 795 |
+| box | boxes |  | коробка | 802 |
+| cup | cups |  | кружка | 827 |
+| glass | glasses |  | стакан | 833 |
+| station | stations |  | станция | 841 |
+| example | examples |  | пример | 850 |
+| sister | sisters |  | сестра | 854 |
+| sun | suns |  | солнце | 861 |
+| leg | legs |  | нога | 880 |
+| song | songs |  | песня | 908 |
+| radio | radios |  | радио | 910 |
+| note | notes | noting | заметка | 943 |
+| ball | balls |  | мяч | 951 |
+| chair | chairs |  | стул | 959 |
+| evening | evenings |  | вечер | 969 |
+| museum | museums |  | музей | 986 |
+| fish | fish | fishing | рыба | 992 |
+| april |  |  | апрель | 1000 |
+| november |  |  | ноябрь | 1000 |
+| january |  |  | январь | 1000 |
+| september |  |  | сентябрь | 1000 |
+| february |  |  | февраль | 1000 |
+| may |  |  | май | 1000 |
+| march |  |  | март | 1000 |
+| july |  |  | июль | 1000 |
+| june |  |  | июнь | 1000 |
+| october |  |  | октябрь | 1000 |
+| august |  |  | август | 1000 |
+| december |  |  | декабрь | 1000 |
+| mobile | mobiles |  | мобильный телефон | 1000 |
+| camera | cameras |  | камера | 1018 |
+| bar | bars |  | бар | 1021 |
+| hotel | hotels |  | отель | 1022 |
+| sea | seas |  | море | 1026 |
+| bag | bags |  | сумка | 1045 |
+| mom | moms |  | мама | 1054 |
+| thursday | thursdays |  | четверг | 1068 |
+| wednesday | wednesdays |  | среда | 1068 |
+| monday | mondays |  | понедельник | 1068 |
+| saturday | saturdays |  | суббота | 1068 |
+| friday | fridays |  | пятница | 1068 |
+| sunday | sundays |  | воскресенье | 1068 |
+| kitchen | kitchens |  | кухня | 1074 |
+| mouth | mouths |  | рот | 1077 |
+| dinner | dinners |  | ужин | 1094 |
+| newspaper | newspapers |  | газета | 1123 |
+| wind | winds |  | ветер | 1124 |
+| garden | gardens | gardening | сад | 1130 |
+| restaurant | restaurants |  | ресторан | 1150 |
+| forest | forests |  | лес | 1158 |
+| dad | dads |  | папа | 1159 |
+| plane | planes |  | самолёт | 1169 |
+| bird | birds |  | птица | 1176 |
+| afternoon | afternoons |  | день (после полудня) | 1202 |
+| beach | beaches |  | пляж | 1216 |
+| weekend | weekends |  | выходные | 1219 |
+| date | dates | dating | дата | 1220 |
+| winter | winters |  | зима | 1270 |
+| horse | horses |  | лошадь | 1292 |
+| farm | farms | farming | ферма | 1305 |
+| village | villages |  | деревня | 1310 |
+| boat | boats | boating | лодка | 1326 |
+| shop | shops | shopping | магазин | 1371 |
+| lesson | lessons |  | урок | 1384 |
+| band | bands |  | группа | 1389 |
+| ear | ears |  | ухо | 1390 |
+| foot | feet |  | нога, ступня | 1399 |
+| coffee | coffees |  | кофе | 1425 |
+| egg | eggs |  | яйцо | 1445 |
+| shoe | shoes |  | обувь, туфля | 1457 |
+| clothes |  |  | одежда | 1458 |
+| internet |  |  | интернет | 1470 |
+| bus | buses |  | автобус | 1479 |
+| key | keys |  | ключ | 1484 |
+| flower | flowers |  | цветок | 1537 |
+| plate | plates |  | тарелка | 1540 |
+| rain | rains | raining | дождь | 1569 |
+| football | footballs |  | футбол | 1571 |
+| ticket | tickets |  | билет | 1612 |
+| leaf | leaves |  | лист | 1613 |
+| classroom | classrooms |  | класс | 1614 |
+| lunch | lunches |  | обед | 1616 |
+| half | halves |  | половина | 1639 |
+| weather |  |  | погода | 1641 |
+| salt |  |  | соль | 1654 |
+| desk | desks |  | парта, стол | 1668 |
+| sugar |  |  | сахар | 1677 |
+| train | trains | training | поезд | 1694 |
+| moon | moons |  | луна | 1718 |
+| fruit | fruits |  | фрукты | 1723 |
+| dance | dances | dancing | танец | 1724 |
+| meal | meals |  | еда | 1751 |
+| nose | noses |  | нос | 1766 |
+| cat | cats |  | кот, кошка | 1786 |
+| dress | dresses | dressing | платье | 1799 |
+| shirt | shirts |  | рубашка | 1805 |
+| address | addresses | addressing | адрес | 1864 |
+| tooth | teeth |  | зуб | 1880 |
+| bedroom | bedrooms |  | спальня | 1889 |
+| ocean | oceans |  | океан | 1906 |
+| fun |  |  | веселье | 1919 |
+| apple | apples |  | яблоко | 1983 |
+| holiday | holidays |  | праздник, каникулы | 1989 |
+| flat | flats |  | квартира | 2000 |
+| noise | noises | noising | шум | 2020 |
+| vegetable | vegetables |  | овощ | 2024 |
+| hat | hats |  | шляпа | 2030 |
+| grass | grasses |  | трава | 2034 |
+| sentence | sentences | sentencing | предложение | 2048 |
+| drink | drinks | drinking | напиток | 2054 |
+| milk |  |  | молоко | 2091 |
+| rice |  |  | рис | 2131 |
+| bread |  |  | хлеб | 2142 |
+| factory | factories |  | завод | 2170 |
+| cheese |  |  | сыр | 2222 |
+| tea |  |  | чай | 2230 |
+| present | presents | presenting | подарок | 2240 |
+| knife | knives |  | нож | 2269 |
+| coat | coats |  | пальто | 2284 |
+| potato | potatoes |  | картофель | 2311 |
+| jacket | jackets |  | куртка | 2321 |
+| bean | beans |  | фасоль | 2390 |
+| stop | stops | stopping | остановка | 2419 |
+| juice | juices |  | сок | 2429 |
+| breakfast | breakfasts |  | завтрак | 2433 |
+| bathroom | bathrooms |  | ванная | 2441 |
+| watch | watches | watching | часы | 2471 |
+| boot | boots |  | сапог | 2476 |
+| birthday | birthdays |  | день рождения | 2496 |
+| butter |  |  | масло | 2551 |
+| tomato | tomatoes |  | помидор | 2581 |
+| vacation | vacations |  | отпуск, каникулы | 2627 |
+| cake | cakes |  | торт, пирожное | 2637 |
+| clock | clocks |  | часы | 2655 |
+| chocolate | chocolates |  | шоколад | 2736 |
+| pants |  |  | штаны | 2759 |
+| bike | bikes | biking | велосипед | 3012 |
+| soup | soups |  | суп | 3049 |
+| cow | cows |  | корова | 3107 |
+| tennis |  |  | теннис | 3136 |
+| shower | showers | showering | душ | 3256 |
+| pet | pets | petting | домашнее животное | 3359 |
+| actress | actresses |  | актриса | 3365 |
+| pig | pigs |  | свинья | 3527 |
+| jeans |  |  | джинсы | 3591 |
+| pen | pens | penning | ручка | 3616 |
+| sandwich | sandwiches |  | бутерброд | 3659 |
+| orange | oranges |  | апельсин | 3700 |
+| skirt | skirts |  | юбка | 3754 |
+| cafe | cafes |  | кафе | 3772 |
+| bat | bats | batting | летучая мышь | 3793 |
+| doll | dolls |  | кукла | 3820 |
+| bath | baths | bathing | ванна | 3915 |
+| guitar | guitars |  | гитара | 3928 |
+| lamp | lamps |  | лампа | 3938 |
+| website | websites |  | веб-сайт | 4000 |
+| waiter | waiters | waiting | официант | 4000 |
+| biscuit | biscuits |  | печенье | 4000 |
+| pizza | pizzas |  | пицца | 4044 |
+| toilet | toilets |  | туалет | 4045 |
+| sheep | sheep |  | овца | 4224 |
+| pencil | pencils |  | карандаш | 4665 |
+| supermarket | supermarkets |  | супермаркет | 4721 |
+| beard | beards |  | борода | 4733 |
+| banana | bananas |  | банан | 4795 |
+| homework |  |  | домашнее задание | 4932 |
+| trousers |  |  | брюки | 5000 |
+| taxi | taxis |  | такси | 5000 |
+| tuesday |  |  | вторник | 5000 |
+| bookcase | bookcases |  | книжный шкаф | 5000 |
+| email | emails | emailing | электронная почта | 5000 |
+| blouse | blouses |  | блузка | 5000 |
+| waitress | waitresses | waitressing | официантка | 5000 |
+| mum | mums |  | мама | 6000 |
+| picnic | picnics | picnicking | пикник | 7000 |
+| zoo | zoos |  | зоопарк | 7000 |
+| subway | subways |  | метро | 8000 |
+| classmate | classmates |  | одноклассник | 9000 |
+| tv | tvs |  | телевизор, телевидение | 9500 |
+| neighbor | neighbors | neighboring | сосед | 10000 |
+| milkman | milkmen |  | молочник | 10001 |
+| postman | postmen |  | почтальон | 10002 |
+| cupboard | cupboards |  | шкаф | 10003 |
+| keychain | keychains |  | брелок | 10004 |
+| notebook | notebooks |  | тетрадь | 10005 |
+| eraser | erasers |  | ластик | 10006 |
+| bagpack | bagpacks |  | рюкзак | 10007 |
+| lampstand | lampstands |  | подставка для лампы | 10008 |
+| bottle | bottles |  | бутылка | 10009 |
+| spoon | spoons |  | ложка | 10010 |
+| fork | forks |  | вилка | 10011 |
+| knife | knives |  | нож | 10012 |
+| plate | plates |  | тарелка | 10013 |
+| cup | cups |  | чашка | 10014 |
+| clock | clocks |  | часы | 10015 |
+| window | windows |  | окно | 10016 |
+| door | doors |  | дверь | 10017 |
+| chair | chairs |  | стул | 10018 |
+| table | tables |  | стол | 10019 |
+| sofa | sofas |  | диван | 10020 |
+| bed | beds |  | кровать | 10021 |
+| mirror | mirrors |  | зеркало | 10022 |
+| television | televisions |  | телевизор | 10023 |
+| radio | radios |  | радио | 10024 |
+| computer | computers |  | компьютер | 10025 |
+| market | markets | marketing | рынок, базар | 1000 |
+| snow | snows | snowing | снег | 1000 |
+| meat | meats |  | мясо | 1000 |
+| one |  |  | один | 1000 |
+| two |  |  | два | 1000 |
+| three |  |  | три | 1000 |
+| four |  |  | четыре | 1000 |
+| five |  |  | пять | 1000 |
+| six |  |  | шесть | 1000 |
+| seven |  |  | семь | 1000 |
+| eight |  |  | восемь | 1000 |
+| nine |  |  | девять | 1000 |
+| ten |  |  | десять | 1000 |
+| eleven |  |  | одиннадцать | 1000 |
+| twelve |  |  | двенадцать | 1000 |
+| thirteen |  |  | тринадцать | 1000 |
+| fourteen |  |  | четырнадцать | 1000 |
+| fifteen |  |  | пятнадцать | 1000 |
+| sixteen |  |  | шестнадцать | 1000 |
+| seventeen |  |  | семнадцать | 1000 |
+| eighteen |  |  | восемнадцать | 1000 |
+| nineteen |  |  | девятнадцать | 1000 |
+| twenty |  |  | двадцать | 1000 |
+| thirty |  |  | тридцать | 1000 |
+| forty |  |  | сорок | 1000 |
+| fifty |  |  | пятьдесят | 1000 |
+| sixty |  |  | шестьдесят | 1000 |
+| seventy |  |  | семьдесят | 1000 |
+| eighty |  |  | восемьдесят | 1000 |
+| ninety |  |  | девяносто | 1000 |
+| hundred |  |  | сто | 1000 |
+| thousand |  |  | тысяча | 1000 |
+| million |  |  | миллион | 1000 |
+| billion |  |  | миллиард | 4324 |
+| mother-in-law |  |  | теща, свекровь | 1000 |
+| check-in |  |  | регистрация, отметка о прибытии | 1000 |
+| fox | foxes |  | лиса, лисица | 5000 |
+| wolf | wolves |  | волк | 2677 |
+| mouse | mice |  | мышь | 3345 |
+| piano | pianos |  | пианино, фортепьяно | 3389 |
+| mistake | mistakes | mistaking | ошибка | 1454 |
+| kid | kids |  | ребёнок,  малыш | 322 |
+| printer | printers | printing | принтер | 5000 |
+| grandmother | grandmothers |  | бабушка | 2545 |
+| way | ways |  | путь, способ, сторона, дорога | 1000 |
+| message | messages | messaging | сообщение, послание, письмо, идея, сигнализировать | 1000 |
+| soda | sodas |  | сода, газированная вода | 1000 |
+| jam | jams | jamming | джем, варенье | 1000 |
+| beginner | beginners | beginning | начинающий, новичок | 1000 |
+| toast | toasts | toasting | тост, гренки | 1000 |
+| volleyball | volleyballs |  | волейбол | 1000 |
+| copybook | copybooks |  | тетрадь | 1000 |
+| dictionary | dictionaries |  | словарь | 1000 |
+| university | universities |  | университет | 1000 |
+| center |  |  | центр | 1000 |
+| colour | colours |  | цвет | 1000 |
+| tea | teas |  | чаи | 5000 |
+| butterfly | butterflies |  | бабочка | 5000 |
+| highschool | highschools |  | средняя школа (амер. вариант написания) | 5000 |
+| countryside |  |  | сельская местность | 5000 |
+| kilometre | kilometres |  | километр (брит.) | 5000 |
+| kilometer | kilometers |  | километр (амер.) | 5000 |
+| boredom |  |  | скука | 5000 |
+| living-room |  |  | столовая, гостиная, жилая комната | 5000 |
+| pillow | pillows |  | подушка | 4092 |
+| age | ages | aging | возраст, век, эпоха, период, старость | 5000 |
+| scissors | scissors |  | ножницы | 5000 |
+| vase | vases |  | ваза | 5000 |
+| submarine | submarines |  | подводная лодка | 5000 |
+| footballer | footballers |  | футболист | 5000 |
  
 
 ---
@@ -374,128 +395,135 @@
 <details>
 <summary>Verbs A1</summary>
 
-| verb_1_i_you_we_they | verb_1_he_she_it | verb_present_participle | verb_2_past_tense | verb_3_past_participle | verb_irregular | Translate | Frequency |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| am;were | is | being | were;was | been | 0 | быть | 2 |
+
+| i,you,we,they | 3rd person (he,she,it) | Present participle | Past tense | Past participle | verb irregular | Translate | Frequency |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| to be |  |  |  |  | 1 | быть | 2 |
+| are |  |  |  |  | 1 | быть | 2 |
+| am | is | being | were | been | 1 | быть | 2 |
+| were |  |  | was |  | 1 | быть | 2 |
 | have | has | having | had | had | 1 | иметь | 8 |
 | do | does | doing | did | done | 1 | делать | 18 |
-| say | says | saying | said | said | 1 | сказать;говорить | 20 |
-| go | goes | going | went | gone | 1 | идти;ехать | 36 |
-| can | cans | canning | canned | canned | 0 | мочь;иметь возможность | 40 |
-| get | gets | getting | got | got | 1 | получать;попасть;становится | 41 |
-| make | makes | making | made | made | 1 | делать;производить;заставлять | 46 |
-| know | knows | knowing | knew | known | 1 | знать;узнавать | 49 |
-| think | thinks | thinking | thought | thought | 1 | думать;мыслить | 57 |
-| see | sees | seeing | saw | seen | 1 | видеть;смотреть | 58 |
+| say | says | saying | said | said | 1 | сказать, говорить | 20 |
+| go | goes | going | went | gone | 1 | идти, ехать | 36 |
+| get | gets | getting | got | got | 1 | получать, попасть, становится | 41 |
+| get | gets | getting | got | gotten | 1 | получать, попасть, становится (амер.) | 41 |
+| make | makes | making | made | made | 1 | делать, производить, заставлять | 46 |
+| know | knows | knowing | knew | known | 1 | знать, узнавать | 49 |
+| think | thinks | thinking | thought | thought | 1 | думать, мыслить | 57 |
+| see | sees | seeing | saw | seen | 1 | видеть, смотреть | 58 |
 | take | takes | taking | took | taken | 1 | брать, взять | 64 |
-| come | comes | coming | came | come | 1 | приехать;приходить | 70 |
-| want | wants | wanting | wanted | wanted | 0 | нуждаться;хотеть | 84 |
-| look | looks | looking | looked | looked | 0 | посмотреть;выглядеть | 87 |
-| use | uses | using | used | used | 0 | использовать;пользоваться | 94 |
-| find | finds | finding | found | found | 1 | находить;обрести | 97 |
-| give | gives | giving | gave | given | 1 | давать;придавать | 98 |
-| tell | tells | telling | told | told | 1 | сказать;рассказывать | 104 |
-| work | works | working | worked | worked | 0 | работать;трудитьс | 119 |
+| come | comes | coming | came | come | 1 | приехать, приходить | 70 |
+| want | wants | wanting | wanted | wanted | 0 | нуждаться, хотеть | 84 |
+| look | looks | looking | looked | looked | 0 | посмотреть, выглядеть | 87 |
+| use | uses | using | used | used | 0 | использовать, пользоваться | 94 |
+| find | finds | finding | found | found | 1 | находить, обрести | 97 |
+| give | gives | giving | gave | given | 1 | давать, придавать | 98 |
+| tell | tells | telling | told | told | 1 | сказать, рассказывать | 104 |
+| work | works | working | worked | worked | 0 | работать, трудитьс | 119 |
 | need | needs | needing | needed | needed | 0 | нуждаться | 134 |
 | feel | feels | feeling | felt | felt | 1 | чувствовать | 136 |
-| leave | leaves | leaving | left | left | 1 | оставлять;покидать | 152 |
-| put | puts | putting | put | put | 1 | класть;ставить | 153 |
+| leave | leaves | leaving | left | left | 1 | оставлять, покидать | 152 |
+| put | puts | putting | put | put | 1 | класть, ставить | 153 |
 | begin | begins | beginning | began | begun | 1 | начинать | 164 |
-| talk | talks | talking | talked | talked | 0 | говорить;разговаривать | 169 |
+| talk | talks | talking | talked | talked | 0 | говорить, разговаривать | 169 |
 | help | helps | helping | helped | helped | 0 | помогать | 176 |
-| start | starts | starting | started | started | 0 | начинать;стартовать | 178 |
-| show | shows | showing | showed | shown | 1 | показывать;проявлять | 181 |
+| start | starts | starting | started | started | 0 | начинать, стартовать | 178 |
+| show | shows | showing | showed | shown | 1 | показывать, проявлять | 181 |
 | hear | hears | hearing | heard | heard | 1 | слышать | 198 |
-| run | runs | running | ran | run | 1 | бежать;работать | 205 |
+| run | runs | running | ran | run | 1 | бежать, работать | 205 |
 | play | plays | playing | played | played | 0 | играть | 209 |
-| like | likes | liking | liked | liked | 0 | нравиться;любить | 212 |
-| live | lives | living | lived | lived | 0 | жить;дожить | 219 |
+| like | likes | liking | liked | liked | 0 | нравиться, любить | 212 |
+| live | lives | living | lived | lived | 0 | жить, дожить | 219 |
 | write | writes | writing | wrote | written | 1 | писать | 235 |
-| sit | sits | sitting | sat | sat | 1 | сидеть (отдых с телом);заседать | 271 |
-| meet | meets | meeting | met | met | 1 | встречаться;соответствовать | 292 |
+| sit | sits | sitting | sat | sat | 1 | сидеть (отдых с телом), заседать | 271 |
+| meet | meets | meeting | met | met | 1 | встречаться, соответствовать | 292 |
 | pay | pays | paying | paid | paid | 1 | платить | 293 |
 | change | changes | changing | changed | changed | 0 | изменить (что-то) | 309 |
-| learn | learns | learning | learned | learned | 1 | учиться | 321 |
-| understand | understands | understanding | understood | understood | 1 | понять;понимать | 326 |
-| watch | watches | watching | watched | watched | 0 | наблюдать;следить | 329 |
-| stop | stops | stopping | stopped | stopped | 0 | остановить;останавливать | 334 |
-| speak | speaks | speaking | spoke | spoken | 1 | говорить;выступать | 341 |
+| learn | learns | learning | learned | learned | 0 | учиться | 321 |
+| understand | understands | understanding | understood | understood | 1 | понять, понимать | 326 |
+| watch | watches | watching | watched | watched | 0 | наблюдать, следить | 329 |
+| stop | stops | stopping | stopped | stopped | 0 | остановить, останавливать | 334 |
+| speak | speaks | speaking | spoke | spoken | 1 | говорить, выступать | 341 |
 | read | reads | reading | read | read | 1 | читать | 346 |
 | open | opens | opening | opened | opened | 0 | открыть | 359 |
-| walk | walks | walking | walked | walked | 0 | ходить;идти | 363 |
-| remember | remembers | remembering | remembered | remembered | 0 | запомнить;помнить | 378 |
+| walk | walks | walking | walked | walked | 0 | ходить, идти | 363 |
+| remember | remembers | remembering | remembered | remembered | 0 | запомнить, помнить | 378 |
 | damn | damns | damning | damned | damned | 0 | проклинать | 386 |
 | love | loves | loving | loved | loved | 0 | любить | 401 |
 | buy | buys | buying | bought | bought | 1 | покупать | 403 |
-| wait | waits | waiting | waited | waited | 0 | ждать;ожидать;дожидаться | 404 |
+| wait | waits | waiting | waited | waited | 0 | ждать, ожидать, дожидаться | 404 |
 | die | dies | dying | died | died | 0 | умирать | 405 |
-| send | sends | sending | sent | sent | 1 | отправлять;послать | 407 |
-| stay | stays | staying | stayed | stayed | 0 | оставаться;остановиться | 415 |
-| carry | carries | carrying | carried | carried | 0 | нести;проводить | 487 |
+| send | sends | sending | sent | sent | 1 | отправлять, послать | 407 |
+| stay | stays | staying | stayed | stayed | 0 | оставаться, остановиться | 415 |
+| carry | carries | carrying | carried | carried | 0 | нести, проводить | 487 |
 | develop | develops | developing | developed | developed | 0 | развивать | 488 |
 | drive | drives | driving | drove | driven | 1 | водить (машину) | 493 |
-| wear | wears | wearing | wore | worn | 1 | носить (одежду);одевать (одежду) | 536 |
+| wear | wears | wearing | wore | worn | 1 | носить (одежду), одевать (одежду) | 536 |
 | support | supports | supporting | supported | supported | 0 | поддерживать | 538 |
 | base | bases | basing | based | based | 0 | основывать | 544 |
 | eat | eats | eating | ate | eaten | 1 | есть | 554 |
 | teach | teaches | teaching | taught | taught | 1 | учить,обучать | 567 |
-| catch | catches | catching | caught | caught | 1 | ловить;поймать | 590 |
-| draw | draws | drawing | drew | drawn | 1 | рисовать;чертить | 601 |
+| catch | catches | catching | caught | caught | 1 | ловить, поймать | 590 |
+| draw | draws | drawing | drew | drawn | 1 | рисовать, чертить | 601 |
 | choose | chooses | choosing | chose | chosen | 1 | выбирать | 605 |
 | fuck | fucks | fucking | fucked | fucked | 0 | трахаться | 605 |
-| listen | listens | listening | listened | listened | 0 | слушать;прослушать | 619 |
+| listen | listens | listening | listened | listened | 0 | слушать, прослушать | 619 |
 | close | closes | closing | closed | closed | 0 | закрывать | 653 |
-| fight | fights | fighting | fought | fought | 1 | бороться;бой;драка | 672 |
-| represent | represents | representing | represented | represented | 0 | представлять;изображать | 682 |
-| recognize | recognizes | recognizing | recognized | recognized | 0 | распознавать;признавать | 786 |
-| check | checks | checking | checked | checked | 0 | проверять;контролировать | 830 |
+| fight | fights | fighting | fought | fought | 1 | бороться, бой, драка | 672 |
+| represent | represents | representing | represented | represented | 0 | представлять, изображать | 682 |
+| recognize | recognizes | recognizing | recognized | recognized | 0 | распознавать, признавать | 786 |
+| check | checks | checking | checked | checked | 0 | проверять, контролировать | 830 |
 | answer | answers | answering | answered | answered | 0 | отвечать | 831 |
 | forget | forgets | forgetting | forgot | forgotten | 1 | забывать | 877 |
 | study | studies | studying | studied | studied | 0 | изучать | 884 |
 | enjoy | enjoys | enjoying | enjoyed | enjoyed | 0 | наслаждаться | 893 |
-| visit | visits | visiting | visited | visited | 0 | побывать;посещать | 921 |
-| finish | finishes | finishing | finished | finished | 0 | заканчивать;финишировать | 923 |
+| visit | visits | visiting | visited | visited | 0 | побывать, посещать | 921 |
+| finish | finishes | finishing | finished | finished | 0 | заканчивать, финишировать | 923 |
 | fly | flies | flying | flew | flown | 1 | летать | 945 |
 | sing | sings | singing | sang | sung | 1 | петь | 1065 |
-| travel | travels | travelling | travelled | travelled | 0 | путешествовать;ездить | 1101 |
+| travel | travels | travelling | travelled | travelled | 0 | путешествовать, ездить | 1101 |
+| travel | travels | traveling | traveled | traveled | 0 | путешествовать, ездить (амер.вар.) | 1101 |
 | sleep | sleeps | sleeping | slept | slept | 1 | спать | 1184 |
 | drink | drinks | drinking | drank | drunk | 1 | пить | 1258 |
 | ride | rides | riding | rode | ridden | 1 | ездить верхом | 1373 |
 | cook | cooks | cooking | cooked | cooked | 0 | готовить | 1488 |
-| invite | invites | inviting | invited | invited | 0 | приглашать;привлекать | 1620 |
+| invite | invites | inviting | invited | invited | 0 | приглашать, привлекать | 1620 |
 | paint | paints | painting | painted | painted | 0 | красить | 1783 |
-| wake | wakes | waking | woke | woken | 1 | проснуться;разбудить | 1804 |
-| influence | influences | influencing | influenced | influenced | 0 | оказывать влияние;влиять | 1806 |
-| kick | kicks | kicking | kicked | kicked | 0 | удар;пинок;толчок | 1852 |
-| solve | solves | solving | solved | solved | 0 | решать;разрешать | 1855 |
-| fix | fixes | fixing | fixed | fixed | 0 | фиксировать;исправлять | 1873 |
+| wake | wakes | waking | woke | woken | 1 | проснуться, разбудить | 1804 |
+| influence | influences | influencing | influenced | influenced | 0 | оказывать влияние, влиять | 1806 |
+| kick | kicks | kicking | kicked | kicked | 0 | удар, пинок, толчок | 1852 |
+| solve | solves | solving | solved | solved | 0 | решать, разрешать | 1855 |
+| fix | fixes | fixing | fixed | fixed | 0 | фиксировать, исправлять | 1873 |
 | clean | cleans | cleaning | cleaned | cleaned | 0 | чистить | 1925 |
 | dance | dances | dancing | danced | danced | 0 | танцевать | 1993 |
-| invest | invests | investing | invested | invested | 0 | инвестировать;вкладывать | 2080 |
-| wash | washes | washing | washed | washed | 0 | мыть;стирать | 2175 |
-| smoke | smokes | smoking | smoked | smoked | 0 | дымить;коптить;курить | 2490 |
-| communicate | communicates | communicating | communicated | communicated | 0 | сообщить;сообщать;общаться | 2703 |
-| swim | swims | swimming | swam | swum | 1 | плавать;плыть | 2907 |
-| practice | practices | practicing | practiced | practiced | 0 | практиковать;заниматься | 2912 |
+| invest | invests | investing | invested | invested | 0 | инвестировать, вкладывать | 2080 |
+| wash | washes | washing | washed | washed | 0 | мыть, стирать | 2175 |
+| smoke | smokes | smoking | smoked | smoked | 0 | дымить, коптить, курить | 2490 |
+| communicate | communicates | communicating | communicated | communicated | 0 | сообщить, сообщать, общаться | 2703 |
+| swim | swims | swimming | swam | swum | 1 | плавать, плыть | 2907 |
+| practice | practices | practicing | practiced | practiced | 0 | практиковать, заниматься | 2912 |
 | dine | dines | dining | dined | dined | 0 | обедать | 3000 |
 | practise | practises | practising | practised | practised | 0 | тренироваться | 3000 |
 | phone | phones | phoning | phoned | phoned | 0 | звонить по телефону | 3000 |
-| excuse | excuses | excusing | excused | excused | 0 | извинять;прощать | 3495 |
+| excuse | excuses | excusing | excused | excused | 0 | извинять, прощать | 3495 |
 | rain | rains | raining | rained | rained | 0 | идет (дождь) | 4627 |
-| ask | asks | asking | asked | asked | 0 | спрашивать;просить | 0 |
-| call | calls | calling | called | called | 0 | звонить;называть | 0 |
-| try | tries | trying | tried | tried | 0 | пытаться | 0 |
-| move | moves | moving | moved | moved | 0 | двигаться | 0 |
-| believe | believes | believing | believed | believed | 0 | верить | 0 |
-| hold | holds | holding | held | held | 0 | держать | 0 |
-| agree | agrees | agreeing | agreed | agreed | 0 | соглашаться | 0 |
-| cut | cuts | cutting | cut | cut | 1 | резать | 0 |
-| bring | brings | bringing | brought | brought | 1 | приносить | 0 |
-| fall | falls | falling | fell | fallen | 1 | падать | 0 |
-| touch | touches | touching | touched | touched | 0 | трогать | 0 |
-| jump | jumps | jumping | jumped | jumped | 0 | прыгать | 0 |
-| hate | hates | hating | hated | hated | 0 | ненавидеть | 0 |
-| sell | sells | selling | sold | sold | 1 | продавать | 0 |
+| ask | asks | asking | asked | asked | 0 | спрашивать, просить | 132 |
+| call | calls | calling | called | called | 0 | звать, кричать, называть | 121 |
+| try | tries | trying | tried | tried | 0 | пытаться | 127 |
+| move | moves | moving | moved | moved | 0 | двигаться | 211 |
+| believe | believes | believing | believed | believed | 0 | верить | 215 |
+| hold | holds | holding | held | held | 0 | держать | 217 |
+| agree | agrees | agreeing | agreed | agreed | 0 | соглашаться | 523 |
+| cut | cuts | cutting | cut | cut | 1 | резать | 425 |
+| bring | brings | bringing | brought | brought | 1 | приносить, приводить | 221 |
+| fall | falls | falling | fell | fallen | 1 | падать, снижаться | 418 |
+| touch | touches | touching | touched | touched | 0 | трогать,  касаться | 1177 |
+| jump | jumps | jumping | jumped | jumped | 0 | прыгать, вскочить (приземление на две ноги) | 1376 |
+| hate | hates | hating | hated | hated | 0 | ненавидеть | 1545 |
+| sell | sells | selling | sold | sold | 1 | продавать | 446 |
+| snow | snows | snowing | snowed | snowed | 0 | снежыт | 1000 |
+| hike | hikes | hiking | hiked | hiked | 0 | путешествовать, ходить пешком | 10000 |
 
 ---
 
@@ -623,64 +651,67 @@
 <details>
 <summary>Adverbs A1</summary>
 
-| Adverb | Перевод | Частота |
-| :--- | :--- | :--- |
-| this | это,этот,эта | 14            |
-| out | наружу, из, вне, снаружи | 50 |
+
+| Adverbs | Translate | Frequency |
+| --- | --- | --- |
+| this | это,этот,эта | 14 |
+| o'clock | час, на часах, по часам | 100 |
+| out | наружу, из, вне, снаружи | 150 |
 | over | через, над, завершено | 100 |
 | so | так | 56 |
 | now | сейчас | 72 |
-| then | затем; тогда; в то время | 77 |
+| then | затем,  тогда,  в то время | 77 |
 | how | как | 78 |
-| more | больше; более | 82 |
+| more | больше,  более | 82 |
 | also | также | 89 |
 | here | здесь | 96 |
 | well | хорошо | 100 |
-| only | всего; только; лишь | 102 |
+| only | всего,  только,  лишь | 102 |
 | very | очень | 105 |
 | back | назад | 109 |
 | there | там | 117 |
 | down | внизу | 118 |
-| too | тоже; слишком | 133 |
+| too | тоже,  слишком | 133 |
 | never | никогда | 140 |
-| really | в самом деле; действительно | 144 |
+| really | в самом деле,  действительно | 144 |
 | why | почему | 159 |
 | where | где | 171 |
-| about | около; приблизительно | 182 |
+| about | около,  приблизительно | 182 |
 | again | снова | 187 |
 | always | всегда | 213 |
 | today | сегодня | 216 |
 | often | часто | 280 |
-| later | позже; позднее | 297 |
+| hourly | ежечасно | 1000 |
+| later | позже,  позднее | 297 |
 | together | вместе | 330 |
-| before | до; прежде | 372 |
-| across | через; поперек | 385 |
+| before | до,  прежде | 372 |
+| across | через,  поперек | 385 |
 | late | поздно | 439 |
 | sometimes | иногда | 450 |
 | up | вверх | 457 |
-| less | менее; меньше | 481 |
+| less | менее,  меньше | 481 |
 | even | даже | 492 |
 | early | рано | 522 |
-| near | возле; около | 709 |
-| beyond | за; вне | 752 |
-| outside | вне; за пределами | 815 |
+| near | возле,  около | 709 |
+| beyond | за,  вне | 752 |
+| outside | вне,  за пределами | 815 |
 | forward | вперед | 834 |
 | parallel | параллельно | 845 |
 | hard | тяжело | 929 |
 | tonight | сегодня вечером | 942 |
-| inside | внутри; в | 976 |
-| past | мимо; позади | 991 |
-| just | просто; только что; как раз; всего лишь | 1000 |
-| not | не; ни | 1000 |
-| yes | да; так | 1000 |
-| beautifully | красиво | 1000 | 
+| inside | внутри,  в | 976 |
+| past | мимо,  позади | 991 |
+| just | просто,  только что,  как раз,  всего лишь | 1000 |
+| not | не,  ни | 1000 |
+| yes | да,  так | 1000 |
 | tomorrow | завтра | 1337 |
 | when | когда | 1500 |
 | yesterday | вчера | 1510 |
-| below | ниже; внизу | 1547 |
-| close | близко; почти | 1600 |
+| below | ниже,  внизу | 1547 |
+| close | близко,  почти | 1600 |
 | behind | позади | 2079 |
-| downstairs | вниз; внизу | 4000 |
+| downstairs | вниз,  внизу | 4000 |
+| beautifully | красиво | 1000 |
 | great | здорово, замечательно | 2000 |
  
 
@@ -691,8 +722,7 @@
 
 <details>
 <summary>Adjective A1</summary>
-
-
+ 
 | Adjective | Сравнительная степень (Comparative) | Превосходная степень (Superlative) | Translate | Frequency |
 | --- | --- | --- | --- | --- |
 | strong | stronger | strongest | сильный | 463 |
@@ -701,6 +731,7 @@
 | only |  |  | единственный | 146 |
 | autumn |  |  | осенний | 147 |
 | old | older | oldest | старый | 154 |
+| old | elder | eldest | старшый (для людей о порядке кто за кем родился) | 154 |
 | great | greater | greatest | большой, великий, отличный | 163 |
 | big | bigger | biggest | большой | 165 |
 | first |  |  | первый | 171 |
@@ -752,7 +783,7 @@
 | wrong | more wrong | most wrong | неправильный | 657 |
 | spatial | more spatial | most spatial | пространственный | 661 |
 | fine | finer | finest | прекрасный | 708 |
-| other | more other | most other | другой | 713 |
+| other |  |  | другой | 713 |
 | poor | poorer | poorest | бедный | 718 |
 | hot | hotter | hottest | горячий | 725 |
 | happy | happier | happiest | счастливый | 755 |
@@ -760,7 +791,7 @@
 | left |  |  | левый | 788 |
 | standard | more standard | most standard | стандартный | 814 |
 | blue | bluer | bluest | синий | 849 |
-| ok | more ok | most ok | окей, нормально, хорошо | 872 |
+| ok |  |  | окей, нормально, хорошо | 872 |
 | close | closer | closest | близкий | 883 |
 | democratic | more democratic | most democratic | демократический | 888 |
 | cold | colder | coldest | холодный | 902 |
@@ -777,9 +808,9 @@
 | dark | darker | darkest | темный | 1006 |
 | beautiful | more beautiful | most beautiful | красивый | 1015 |
 | interesting | more interesting | most interesting | интересный, занятный | 1099 |
-| key | more key | most key | ключевой | 1120 |
+| key | more important | most important | ключевой | 1120 |
 | safe | safer | safest | безопасный | 1217 |
-| sorry | more sorry | most sorry | жалкий, сожалеющий | 1231 |
+| sorry |  |  | жалкий, сожалеющий | 1231 |
 | quick | quicker | quickest | быстрый (короткий участок времени) | 1339 |
 | light | lighter | lightest | светлый | 1341 |
 | warm | warmer | warmest | теплый | 1394 |
@@ -796,23 +827,23 @@
 | english | more english | most english | английский | 1931 |
 | busy | busier | busiest | занятой, занятый | 1945 |
 | cheap | cheaper | cheapest | дешевый | 1972 |
-| inside | more inside | most inside | внутренний, скрытый | 2000 |
-| outside | more outside | most outside | внешний | 2060 |
+| inside |  |  | внутренний, скрытый | 2000 |
+| outside |  |  | внешний | 2060 |
 | sad | sadder | saddest | грустный | 2157 |
 | fat | fatter | fattest | жирный, толстый | 2381 |
-| favorite | more favorite | most favorite | любимый | 2633 |
+| favorite |  |  | любимый | 2633 |
 | exciting | more exciting | most exciting | захватывающий | 2958 |
-| favourite | more favourite | most favourite | любимый, излюбленный | 3000 |
+| favourite |  |  | любимый, излюбленный | 3000 |
 | hungry | hungrier | hungriest | голодный | 3200 |
 | dear | dearer | dearest | дорогой, милый | 3433 |
 | excited | more excited | most excited | взволнованный | 3499 |
-| closed | more closed | most closed | замкнутый, закрытый | 3716 |
+| closed | more open | less open | замкнутый, закрытый | 3716 |
 | boring | more boring | most boring | скучный | 4968 |
 | slim | slimmer | slimmest | стройный, тонкий | 5000 |
 | clever | cleverer | cleverest | умный | 5000 |
 | bored | more bored | most bored | скучающий | 5000 |
 | tasty | tastier | tastiest | вкусный | 1000 |
-| fun | more fun | most fun | забавный | 5000 |
+| fun | funner | funnest | забавный | 5000 |
 | well-known | more well-known | most well-known | хорошо известный | 5000 |
 | rainy | rainier | rainiest | дождливый, дождевой | 5000 |
  
@@ -1000,31 +1031,32 @@
 
 ### Предлоги (Preposition)
 
-| Preposition | Translate | Frequency  |
-|-------------|-------------|------------|
-| **of** | из;о | 4 |
-| **in** | в | 6 |
-| **to** | к | 9 |
-| **for** | для;за | 13 |
-| **with** | с | 16 |
-| **on** | на | 17 |
-| **at** | у;на;в | 24 |
-| **from** | от;из | 27 |
-| **by** | у;к;по | 31 |
-| **up** | вверх | 53 |
-| **out** | вне | 66 |
-| **about** | о;около | 47 |
-| **into** | в | 67 |
-| **like** | как;подобно | 75 |
-| **after** | после | 120 |
-| **between** | между | 141 |
-| **before** | до | 224 |
-| **under** | под | 230 |
-| **until** | до | 281 |
-| **around** | вокруг | 332 |
-| **behind** | за;позади | 427 |
-| **above** | над;выше | 903 |
-| **near** | около;возле | 3000 |
+
+| Preposition | Translate | Frequency |
+| --- | --- | --- |
+| of | из, о | 4 |
+| in | в | 6 |
+| to | к | 9 |
+| for | для, за | 13 |
+| with | с | 16 |
+| on | на | 17 |
+| at | у, на, в | 24 |
+| from | от, из | 27 |
+| by | у, к, по | 31 |
+| up | вверх | 53 |
+| out | вне | 66 |
+| about | о, около | 47 |
+| into | в | 67 |
+| like | как, подобно | 75 |
+| after | после | 120 |
+| between | между | 141 |
+| before | до | 224 |
+| under | под | 230 |
+| until | до | 281 |
+| around | вокруг | 332 |
+| behind | за, позади | 427 |
+| above | над, выше | 903 |
+| near | около, возле | 3000 |
    
 
 ### Междометия (Interjection)

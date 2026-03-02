@@ -7,7 +7,6 @@ window.globalScriptReady = new Promise(resolve => {
 });
 
 document.addEventListener('keydown', function(e) {
-    // console.log(`key=${e.key}`);
     // не даем mdBook обработать спец. keydown которые будут мешать вводить данные
     if ((e.key === 's' || e.key === 'S' || e.key === 'ы' || e.key === '/') && !e.ctrlKey && !e.metaKey) {
         e.stopImmediatePropagation();
