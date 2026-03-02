@@ -533,6 +533,117 @@
 <li>I wonder when the meeting will start. — Мне интересно, когда начнется встреча.</li>
 </ul>
 <p>Эти вопросы помогают ученикам привыкнуть к базовой структуре английского языка и начать использовать его для простого общения.</p>
+<hr />
+<h2 id="exercise-listen-and-write-general-question"><a class="header" href="#exercise-listen-and-write-general-question">Exercise: listen and write General Question</a></h2>
+<div id="control_general_question"></div>
+<div id="listen_and_write_general_question"></div>
+<script>   
+
+const exercises_easy_listen_and_write_general_question = [
+    ["Do you like coffee? — Yes, I do.", "Ты любишь кофе? — Да."],
+    ["Does she play football? — No, she doesn’t.", "Она играет в футбол? — Нет."],
+    ["Do they go to the beach in summer? — Yes, they do.", "Они ходят на пляж летом? — Да."],
+    ["Do we need a ticket? — Yes, we do.", "Нам нужен билет? — Да."],
+    ["Are you a student? — Yes, I am.", "Ты студент? — Да."],
+    ["Is he at home now? — No, he isn’t.", "Он дома сейчас? — Нет."],
+    ["Are they in the classroom? — Yes, they are.", "Они в классе? — Да."],
+    ["Is she happy? — Yes, she is.", "Она счастлива? — Да."],
+    ["Can you swim? — Yes, I can.", "Ты умеешь плавать? — Да."],
+    ["Can he draw a flower? — No, he can’t.", "Он умеет рисовать цветок? — Нет."],
+    ["Can they travel in December? — Yes, they can.", "Они могут путешествовать в декабре? — Да."],
+    ["Can we catch the bus? — No, we can’t.", "Мы можем успеть на автобус? — Нет."],
+    ["Could you help me? — Yes, I could.", "Ты мог бы мне помочь? — Да."],
+    ["Could she finish the lesson yesterday? — No, she couldn’t.", "Она могла закончить урок вчера? — Нет."],
+    ["Could they visit the shop last weekend? — Yes, they could.", "Они могли сходить в магазин в прошлые выходные? — Да."],
+    ["Don’t you like coffee? — Yes, I do.", "Разве тебе не нравится кофе? — Нравится."],
+    ["Doesn’t she play football? — No, she doesn’t.", "Разве она не играет в футбол? — Нет."],
+    ["Don’t they go to the beach in summer? — Yes, they do.", "Разве они не ходят на пляж летом? — Ходят."],
+    ["Don’t we need a ticket? — No, we don’t.", "Разве нам не нужен билет? — Нет."],
+    ["Aren’t you a student? — Yes, I am.", "Разве ты не студент? — Я студент."],
+    ["Isn’t he at home now? — No, he isn’t.", "Разве он не дома сейчас? — Нет."],
+    ["Aren’t they in the classroom? — Yes, they are.", "Разве они не в классе? — Да."],
+    ["Isn’t she happy? — No, she isn’t.", "Разве она не счастлива? — Нет."],
+    ["Can’t you swim? — Yes, I can.", "Разве ты не умеешь плавать? — Умею."],
+    ["Can’t he draw a flower? — No, he can’t.", "Разве он не умеет рисовать цветок? — Нет."],
+    ["Can’t they travel in December? — Yes, they can.", "Разве они не могут путешествовать в декабре? — Могут."],
+    ["Can’t we catch the bus? — No, we can’t.", "Разве мы не можем успеть на автобус? — Нет."],
+    ["Couldn’t you help me? — Yes, I could.", "Разве ты не мог бы мне помочь? — Мог бы."],
+    ["Couldn’t she finish the lesson yesterday? — No, she couldn’t.", "Разве она не могла закончить урок вчера? — Нет."],
+    ["Couldn’t they visit the shop last weekend? — Yes, they could.", "Разве они не могли сходить в магазин в прошлые выходные? — Могли."],
+    ["Mustn’t I study for the test? — Yes, I must.", "Разве мне не нужно готовиться к тесту? — Нужно."],
+    ["Mustn’t we be quiet? — Yes, we must.", "Разве нам не нужно быть тихими? — Нужно."],
+    ["Mustn’t he answer the question? — No, he mustn’t.", "Разве он не должен ответить на вопрос? — Нет."],
+    ["Mustn’t they finish the work today? — Yes, they must.", "Разве они не должны закончить работу сегодня? — Должны."],
+    ["Must I study for the test? — Yes, I must.", "Мне нужно готовиться к тесту? — Да."],
+    ["Must we be quiet? — Yes, we must.", "Нам нужно быть тихими? — Да."],
+    ["Must he answer the question? — No, he mustn’t.", "Он должен ответить на вопрос? — Нет."],
+    ["Must they finish the work today? — Yes, they must.", "Они должны закончить работу сегодня? — Да."],
+    ["Do you study English every day? — Yes, I do.", "Ты учишь английский каждый день? — Да."],
+    ["Does she listen to music in the evening? — Yes, she does.", "Она слушает музыку вечером? — Да."],
+    ["Do they visit the village on weekends? — No, they don’t.", "Они ездят в деревню по выходным? — Нет."],
+    ["Does he enjoy coffee in the morning? — Yes, he does.", "Он любит кофе по утрам? — Да."],
+    ["Do we play football after school? — Yes, we do.", "Мы играем в футбол после школы? — Да."],
+    ["Did you travel in August? — No, I didn’t.", "Ты путешествовал в августе? — Нет."],
+    ["Did she forget the key yesterday? — Yes, she did.", "Она забыла ключ вчера? — Да."],
+    ["Did they visit the farm last weekend? — No, they didn’t.", "Они ездили на ферму на прошлых выходных? — Нет."],
+    ["Did he draw a horse? — Yes, he did.", "Он нарисовал лошадь? — Да."],
+    ["Did we enjoy the concert? — Yes, we did.", "Нам понравился концерт? — Да."],
+    ["Will you travel in December? — Yes, I will.", "Ты поедешь путешествовать в декабре? — Да."],
+    ["Will they visit the shop tomorrow? — No, they won’t.", "Они пойдут в магазин завтра? — Нет."],
+    ["Will she study for the lesson? — Yes, she will.", "Она будет готовиться к уроку? — Да."],
+    ["Will we catch the bus on time? — Yes, we will.", "Мы успеем на автобус? — Да."],
+    ["Will he enjoy the lunch? — No, he won’t.", "Ему понравится обед? — Нет."],
+    ["Are you studying now? — Yes, I am.", "Ты сейчас учишься? — Да."],
+    ["Is he listening to the band? — Yes, he is.", "Он слушает группу? — Да."],
+    ["Are they playing football? — No, they aren’t.", "Они играют в футбол? — Нет."],
+    ["Is she drawing a flower? — Yes, she is.", "Она рисует цветок? — Да."],
+    ["Are we flying to the village? — No, we aren’t.", "Мы летим в деревню? — Нет."],
+    ["Don’t you enjoy the weekend? — Yes, I do.", "Разве тебе не нравится выходной? — Нравится."],
+    ["Doesn’t he forget the ticket? — No, he doesn’t.", "Разве он не забывает билет? — Нет."],
+    ["Don’t they play football after lunch? — Yes, they do.", "Разве они не играют в футбол после обеда? — Играют."],
+    ["Didn’t she visit the farm in winter? — Yes, she did.", "Разве она не ездила на ферму зимой? — Ездила."],
+    ["Didn’t you close the door? — No, I didn’t.", "Разве ты не закрыл дверь? — Нет."],
+    ["Won’t we travel in October? — Yes, we will.", "Разве мы не поедем в октябре? — Поедем."],
+    ["Won’t he finish the lesson soon? — No, he won’t.", "Разве он не закончит урок скоро? — Нет."],
+    ["Aren’t you listening to music? — Yes, I am.", "Разве ты не слушаешь музыку? — Слушаю."],
+    ["Isn’t she studying in the classroom? — Yes, she is.", "Разве она не учится в классе? — Учится."],
+    ["Aren’t they flying by plane? — No, they aren’t.", "Разве они не летят на самолёте? — Нет."],
+];
+ 
+
+let g_practice = null;
+ 
+
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+ 
+ {
+        let editor_img = new EditorImg({callback: checkAnswerGeneralQuestion, suffix_id: 'general_question'});
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralQuestion, suffix_id: 'general_question'});
+
+        g_practice = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_general_question'), 
+            el_exercise_control: document.getElementById('control_general_question'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_general_question),
+            editor_img: editor_img,
+            editor_symbol: editor_symbol
+        });
+        g_practice.genExercisesListenAndWriteTest();
+     
+ }
+  
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+ 
+function checkAnswerGeneralQuestion(value){
+    value = g_practice.textNormalize(value);
+    return value==g_practice.getAnswer();
+}
+ 
+</script>      
 <style>
 table {
   margin: 0px !important;  

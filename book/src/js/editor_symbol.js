@@ -115,42 +115,38 @@ class EditorSymbol {
             //console.log(`Event: ${e.inputType}`); 
             if (inputType === 'insertText') {
                 if (e.data && this.isAllowedChar(e.data)) {
-                    this.#currentText += e.data;
-                    this.renderText();
-                     
-                } else {
-                    console.log('Недопустимый символ:', e.data);
+                    const pos = this.#getCursorPosition();
+                    this.#currentText = 
+                        this.#currentText.slice(0, pos) + e.data + this.#currentText.slice(pos);
+                    this.#editorText.innerHTML = this.#currentText;
+                    this.userCallback();
+                    this.#restoreCursorPosition(pos + 1);
                 }
             } else if (inputType === 'insertLineBreak') {
                 // Enter
                 this.#currentText += '\n';
                 this.renderText();
             } else if (inputType === 'deleteContentBackward') {
-                /*
-                // Backspace
-                this.#currentText = this.#currentText.slice(0, -1);
-                this.renderText();
-                */
-                // Получаем позицию курсора
                 const sel = window.getSelection();
                 if (sel.rangeCount > 0) { 
                     const range = sel.getRangeAt(0);
                     
-                    // Считаем позицию курсора в тексте
                     const preCaretRange = range.cloneRange();
                     preCaretRange.selectNodeContents(this.#editorText);
                     preCaretRange.setEnd(range.endContainer, range.endOffset);
                     const cursorPosition = preCaretRange.toString().length;
                     
-                    if (cursorPosition > 0) {console.log('.2');
-                        // Удаляем символ перед курсором
+                    if (cursorPosition > 0) {
                         this.#currentText = 
                             this.#currentText.slice(0, cursorPosition - 1) + 
                             this.#currentText.slice(cursorPosition);
                         
-                        this.renderText();
+                        // Рендерим без setCursorPosition внутри
+                        this.#editorText.innerHTML = this.#currentText;
+                        this.userCallback();
                         
-                        this.setCursorPosition();
+                        // Восстанавливаем курсор на нужную позицию
+                        this.#restoreCursorPosition(cursorPosition - 1);
                     }
                 }
                     
@@ -162,28 +158,7 @@ class EditorSymbol {
                 // Вставка (обрабатывается в paste event)
             }
         }.bind(this));
-
-        // keydown event - для стрелок и других спецклавиш
-        /*this.#editorText.addEventListener('keyup', (e) => {
-            //console.log(`Event keyup:${e}`);
-            switch(e.key) {
-                case 'ArrowLeft':
-                    console.log('←');
-                    this.#currentText = this.#currentText.slice(0, -1);
-                    break;
-                case 'ArrowRight':
-                    console.log('→');
-                    this.#currentText = this.#currentText.slice(0, 1);
-                    break;
-                case 'ArrowUp':
-                    console.log('↑');
-                    break;
-                case 'ArrowDown':
-                    console.log('↓');
-                    break;
-            }
-        });*/
-
+   
         // Обработка вставки текста
         this.#editorText.addEventListener('paste', function(e) {
                 e.preventDefault();
@@ -196,6 +171,55 @@ class EditorSymbol {
                 this.#currentText += filteredText;
                 this.renderText();*/
         }.bind(this));
+    }
+
+    #getCursorPosition() {
+        const sel = window.getSelection();
+        if (sel.rangeCount === 0) return this.#currentText.length;
+        
+        const range = sel.getRangeAt(0);
+        const preCaretRange = range.cloneRange();
+        preCaretRange.selectNodeContents(this.#editorText);
+        preCaretRange.setEnd(range.endContainer, range.endOffset);
+        return preCaretRange.toString().length;
+    }
+
+    #restoreCursorPosition(targetPos) {
+        const sel = window.getSelection();
+        const range = document.createRange();
+        
+        let currentPos = 0;
+        let found = false;
+        
+        const traverseNodes = (node) => {
+            if (found) return;
+            
+            if (node.nodeType === Node.TEXT_NODE) {
+                const nodeLength = node.textContent.length;
+                if (currentPos + nodeLength >= targetPos) {
+                    range.setStart(node, targetPos - currentPos);
+                    range.collapse(true);
+                    found = true;
+                } else {
+                    currentPos += nodeLength;
+                }
+            } else {
+                for (const child of node.childNodes) {
+                    traverseNodes(child);
+                }
+            }
+        };
+        
+        traverseNodes(this.#editorText);
+        
+        if (!found) {
+            // Курсор в конец если позиция не найдена
+            range.selectNodeContents(this.#editorText);
+            range.collapse(false);
+        }
+        
+        sel.removeAllRanges();
+        sel.addRange(range);
     }
 }
  
