@@ -24,7 +24,7 @@ const exclude = [];
 
 const others = ["paris","brazil","pm", "lot of","lot", "brazil","max","kate","moscow","john","smiths", "london","york","roberto","volga","japan","europe","france",
     "england","egypt","spain","italian","italy","id","wi-fi","jake", "jane","alice","elisabeth","mister","jack","liza","robert","sarah","olga","alan","james","barbara","sushi",
-    "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa"
+    "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs"
 ];
 
 const a1_words_nouns = [
@@ -404,7 +404,15 @@ const a1_words_nouns = [
     ["scissors", "scissors", "", "ножницы", 5000],
     ["vase", "vases", "", "ваза", 5000],
     ["submarine", "submarines", "", "подводная лодка", 5000],
-    ["footballer", "footballers", "", "футболист", 5000]
+    ["footballer", "footballers", "", "футболист", 5000],
+    ["postcard","postcards","","открытка",5000],
+    ["lemonade","lemonades","","лимонад, ситро",5000],
+    ["playground","playgrounds","","площадка для игр",5000],
+    ["kite","kites","","коршун, воздушный змей",5000],
+    ["scooter","scooters","","скутер, самокат",5000],
+
+     
+    
 ];
 
 
@@ -768,6 +776,8 @@ const a1_words_adjective = [
 
     ["well-known","more well-known","most well-known","хорошо известный",5000],
     ["rainy","rainier","rainiest","дождливый, дождевой",5000],
+    ["handmade","","","изготовленный вручную, ручной работы",5000],
+    
 ];
  
 
@@ -808,6 +818,7 @@ const a1_words_irregular_verbs = [
   ["make", "makes", "making", "made", "made", "делать,  производить,  заставлять", 46],
   ["know", "knows", "knowing", "knew", "known", "знать,  узнавать", 49],
   ["think", "thinks", "thinking", "thought", "thought", "думать,  мыслить", 57],
+
   ["see", "sees", "seeing", "saw", "seen", "видеть,  смотреть", 58],
   ["take", "takes", "taking", "took", "taken", "брать,  взять", 64],
   ["come", "comes", "coming", "came", "come", "приходить,  приезжать", 70],
@@ -818,6 +829,7 @@ const a1_words_irregular_verbs = [
   ["leave", "leaves", "leaving", "left", "left", "оставлять,  покидать", 152],
   ["put", "puts", "putting", "put", "put", "класть,  ставить", 153],
   ["begin", "begins", "beginning", "began", "begun", "начинать", 164],
+
   ["show", "shows", "showing", "showed", "shown", "показывать,  проявлять", 181],
   ["hear", "hears", "hearing", "heard", "heard", "слышать", 198],
   ["run", "runs", "running", "ran", "run", "бежать,  работать", 205],
@@ -830,6 +842,7 @@ const a1_words_irregular_verbs = [
   ["understand", "understands", "understanding", "understood", "understood", "понимать", 326],
   ["speak", "speaks", "speaking", "spoke", "spoken", "говорить,  выступать", 341],
   ["read", "reads", "reading", "read", "read", "читать", 346],
+
   ["buy", "buys", "buying", "bought", "bought", "покупать", 403],
   ["send", "sends", "sending", "sent", "sent", "отправлять,  посылать", 407],
   ["fall", "falls", "falling", "fell", "fallen", "падать, снижаться", 418],
@@ -840,6 +853,7 @@ const a1_words_irregular_verbs = [
   ["eat", "eats", "eating", "ate", "eaten", "есть", 554],
   ["teach", "teaches", "teaching", "taught", "taught", "учить,  обучать", 567],
   ["catch", "catches", "catching", "caught", "caught", "ловить,  поймать", 590],
+
   ["draw", "draws", "drawing", "drew", "drawn", "рисовать,  чертить", 601],
   ["choose", "chooses", "choosing", "chose", "chosen", "выбирать", 605],
   ["fight", "fights", "fighting", "fought", "fought", "бороться,  драться", 672],
