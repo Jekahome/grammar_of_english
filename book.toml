@@ -9,8 +9,16 @@ title = "Grammar of English"
 site-url = "/grammar_of_english/"
 smart-punctuation = false
 no-section-label = false
-additional-css = ["theme/css/theme.css",]
-additional-js = ["src/js/general.js","src/js/practice.js","src/js/editorVoice.js","src/js/editor_img.js","src/js/editor_symbol.js"]
+additional-css = ["theme/css/theme.css","theme/css/listen.css"]
+additional-js = [
+    "src/js/general.js",
+    "src/js/practice.js",
+    "src/js/editorVoice.js",
+    "src/js/editor_img.js",
+    "src/js/editor_symbol.js",
+    "src/js/listen.js",
+    "src/js/textual_analysis.js"
+]
 
 [output.html.print]
 enable = false    
