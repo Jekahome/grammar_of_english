@@ -24,7 +24,7 @@ const exclude = [];
 
 const others = ["paris","brazil","pm", "lot of","lot", "brazil","max","kate","moscow","john","smiths", "london","york","roberto","volga","japan","europe","france",
     "england","egypt","spain","italian","italy","id","wi-fi","jake", "jane","alice","elisabeth","mister","jack","liza","robert","sarah","olga","alan","james","barbara","sushi",
-    "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs"
+    "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs","alissa","webvtt"
 ];
 
 const a1_words_nouns = [
@@ -1071,6 +1071,7 @@ const words_interjection = [
     ["yeah", "ага"],
     ["no", "нет"],  
     ["hello","привет"],
+    ["goodbye", "до свидания!, прощайте!"],
 
     // Основные/common
     ["Wow!", "Вау!, Ого!"],
@@ -3524,6 +3525,7 @@ const b1_words_adjective = [
   ["gentle", "gentler", "gentlest", "нежный, мягкий", 3717],
   ["patient", "more patient", "most patient", "терпеливый", 3726],
   ["grateful", "more grateful", "most grateful", "благодарный", 3734],
+  ["ungrateful", "more ungrateful", "most ungrateful", "неблагодарный", 3734],
   ["intelligent", "more intelligent", "most intelligent", "умный, разумный", 3758],
   ["anxious", "more anxious", "most anxious", "взволнованный", 3863],
   ["frozen", "more frozen", "most frozen", "замороженный", 3865],
@@ -5534,7 +5536,6 @@ const c1_words_nouns = [
   ["fairy","fairies","","фея",5000],
   ["make-up","","making up","макияж,косметика,состав,строение",5000],
   ["scotland","","","Шотландия",5000],
-  ["goodbye","goodbyes","","до свидания,до свидания",5000],
   ["pearl","pearls","","жемчуг",5000],
   ["murderer","murderers","murdering","убийца",5000],
   ["duke","dukes","","герцог",5000],
@@ -7822,3 +7823,4 @@ arrayInclude(c1_words_adjective,b2_words_adjective);
 arrayInclude(c1_words_preposition,b2_words_preposition);
 arrayInclude(c1_words_irregular_verbs,b2_words_irregular_verbs);
 */
+

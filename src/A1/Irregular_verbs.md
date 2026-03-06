@@ -140,6 +140,12 @@
 
 ---
 
+Закрепить неправильные глаголы тут:
+* [www.perfect-english-grammar.com](https://www.perfect-english-grammar.com/irregular-verbs-exercise-2.html)
+* [www.englisch-hilfen.de](https://www.englisch-hilfen.de/en/exercises_list/verbs.htm)
+
+---
+
 <script>
      
 const exercises_easy_listen_and_write_irregular_verbs_sentence = [

@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Check sentence - Grammar of English</title>
+        <title>Textual analysis - Grammar of English</title>
 
 
         <!-- Custom HTML head -->
@@ -29,6 +29,7 @@
 
         <!-- Custom theme stylesheets -->
         <link rel="stylesheet" href="theme/css/theme.css">
+        <link rel="stylesheet" href="theme/css/listen.css">
 
 
         <!-- Provide site root and default themes to javascript -->
@@ -409,7 +410,7 @@
   --color-pink: #d53984;
 }
 </style>
-<h1 id="check-sentence"><a class="header" href="#check-sentence">Check sentence</a></h1>
+<h1 id="textual-analysis"><a class="header" href="#textual-analysis">Textual Analysis</a></h1>
 <style>
     .pixel-table-wrapper {
         font-family: Arial, sans-serif;
@@ -511,14 +512,16 @@
         font-size: 14px;
     }
 </style>
-<textarea id="text" rows="25" cols="160"></textarea>
+<textarea id="text" rows="25" cols="160" placeholder="text..."></textarea>
 <ul>
 <li>
-    <button onclick="checkText()" title="что бы проверить что слова в предложениях не превышают уровень">Сортировка по уровню</button><br><br>
+    <button onclick="checkText()" title="проверить чтобы слова в предложениях не превышали выбранного уровеня">Сортировка слов по уровню</button><br><br>
 </li>
 <li>
-    <button onclick="countWordsInText()" title="что бы убрать из предложений дубли слов">Излишние дубли слов в тексте</button>  
-    <button onclick="textAnalysis()" title="что бы найти не используемые слова">Анализ текста (Pixel)</button> 
+    <button onclick="countWordsInText()">Дубли слов в тексте</button> 
+</li>
+<li>
+    <button onclick="textAnalysis()" title="необходимо предоставить все примеры (в поле text) для анализа использования слов выбранного уровня">Соответствие текста уровню (Pixel)</button> 
     <select id="level" title="уровень">
         <option value="A1">A1</option>
         <option value="A2">A2</option>
@@ -529,18 +532,17 @@
     </select>
 </li>
 <li>
-    <textarea id="nouns" rows="5" cols="30" title="для проверки использования этих слов в примерах" placeholder="list nouns (infinitive)"></textarea>
+    <button onclick="wordsOfLesson()" title="соответвие слов урока и примеров">Наличие слов в примерах уровня</button><br><br>
 </li>
-<li>
-    <textarea id="verbs" rows="5" cols="30" title="для проверки использования этих слов в примерах" placeholder="list verbs (infinitive)"></textarea>
-</li>
+<ul>
+    <li>
+        <textarea id="nouns" rows="5" cols="50" title="для проверки использования этих слов в примерах" placeholder="list nouns (infinitive)">door</textarea>
+    </li>
+    <li>
+        <textarea id="verbs" rows="5" cols="50" title="для проверки использования этих слов в примерах" placeholder="list verbs (infinitive)"></textarea>
+    </li>
 </ul>
-<hr>
-</br>
-<details>
-<summary>соответвие слов урока и примеров</summary>
-    <div id="result_words_of_lesson"></div>
-</details>
+</ul>
 <hr>
 </br>
 <details>
@@ -668,154 +670,10 @@
 </br>
 <div id="result"></div>
 <script>
-//-----------------------------------------------------------------------------------
-function findWordFromPosition(sentence, word, startPosition) {
-    // Проверяем валидность входных данных
-    if (startPosition < 0 || startPosition >= sentence.length) {
-        return false;
-    }
-    
-    // Извлекаем подстроку начиная с указанной позиции
-    const substring = sentence.substring(startPosition);
-    
-    // Разбиваем подстроку на слова (учитываем пробелы и знаки препинания)
-    const words = substring.split(/\s+/);
-    
-    // Проверяем, совпадает ли первое слово с искомым
-    return words[0].toLowerCase() === word.toLowerCase();
-}
-
-function phrasalVerbs(width, level, lowerText){
-    
-    const resultDiv = document.getElementById("result");
-    resultDiv.innerHTML = "";
-
-    const a1_phrasal_verbs_inseparable = [
-        //[["look", "looks", "looking", "looked", "looked"],"after"],// look after
-        //[["look", "looks", "looking", "looked", "looked"],"forward to"],// look forward to
-        //[["look", "looks", "looking", "looked", "looked"],"out"],// look out
-        //[["look", "looks", "looking", "looked", "looked"],"into"],// look into
-        [["look", "looks", "looking", "looked", "looked"],["out", "into","forward to","after"]], 
-        //[["go", "goes", "going", "went", "gone"],"on"], // go on
-        //[["go", "goes", "going", "went", "gone"],"back"], // go back
-        [["go", "goes", "going", "went", "gone"],["back","on"]],  
-        //[["come", "comes", "coming", "came"],"up with"],// come up with
-        //[["come", "comes", "coming", "came"],"across"],// come across
-        [["come", "comes", "coming", "came"],["across","up with"]],
-        [["give", "gives", "giving", "gave", "given"],["in"]], // give in
-        //[["get", "gets", "getting", "got"],"away"], // get away
-        //[["get", "gets", "getting", "got"],"off"], // get off
-        [["get", "gets", "getting", "got"],["off","away"]],
-        [['turn','turns','turning','turned'],["into"]], // turn into 
-    ];
-
-    const a1_phrasal_verbs_separable = [
-        //[["take", "takes", "taking", "took", "taken"],"off"],// take off
-        //[["take", "takes", "taking", "took", "taken"],"out"],// take out
-        //[["take", "takes", "taking", "took", "taken"],"over"],// take over
-        [["take", "takes", "taking", "took", "taken"],["over","out","off"]],
-        //[["put", "puts", "putting"],"off"], // put off
-        //[["put", "puts", "putting"],"on"], // put on
-        [["put", "puts", "putting"],["on","off"]],
-        //[["bring", "brings", "bringing", "brought", "brought"],"up"],// Bring up
-        //[["bring", "brings", "bringing", "brought", "brought"],"back"],// Bring back
-        [["bring", "brings", "bringing", "brought", "brought"],["back","up"]],
-        //[["get", "gets", "getting", "got"],"up"], // get up
-        //[["get", "gets", "getting", "got"],"out"], // get out
-        //[["get", "gets", "getting", "got"],"on"], // get on
-        [["get", "gets", "getting", "got"],["on","out","up"]],
-        [["give", "gives", "giving", "gave", "given"],["up"]], // give up
-        //[['turn','turns','turning','turned'],"on"], // turn on
-        //[['turn','turns','turning','turned'],"off"], // turn off
-        //[['turn','turns','turning','turned'],"up"], // turn up
-        //[['turn','turns','turning','turned'],"out"], // turn out
-        [['turn','turns','turning','turned'],["out","up","off","on"]],
-        [["look", "looks", "looking", "looked", "looked"],["up"]],// look up
-        [["make", "makes", "making", "made"],["up"]],// make up
-        [['call','calls','calling','called'],["off"]],// call off
-        [["set", "sets", "setting"],["up"]],// set up
-    ];
-   
-    let buff = {};
-    for (let i=0; i < a1_phrasal_verbs_inseparable.length; i++){
-        let arr_base = a1_phrasal_verbs_inseparable[i][0];
-        let arr_sufix = a1_phrasal_verbs_inseparable[i][1];
-        for (let b=0; b < arr_base.length; b++){
-            for (let s=0; s < arr_sufix.length; s++){
-                let key = arr_base[b]+ " " +arr_sufix[s];
-                buff[key] = 0;  
-            }
-        }
-    }
-    for (let i=0; i < a1_phrasal_verbs_separable.length; i++){
-        let arr_base = a1_phrasal_verbs_separable[i][0];
-        let arr_sufix = a1_phrasal_verbs_separable[i][1];
-        for (let b=0; b < arr_base.length; b++){
-            for (let s=0; s < arr_sufix.length; s++){
-                let key = arr_base[b]+ " " +arr_sufix[s];
-                buff[key] = 0;  
-            }
-        }
-    }
-   
-    let isFind = false;
-    const sentences = lowerText.split(/\r?\n/);
-    sentences.forEach(sentence => {
-        sentence = sentence.toLowerCase().replaceAll("’","'").replaceAll("‑","-").replaceAll("'s","").replaceAll(/[^a-z \'-]/gi, "");
-        const words = sentence.split(/\W+/).filter(word => word.length > 0);
-        isFind = false;
-        for (let pos=0; pos < words.length-1 && !isFind; pos++){
-            a1_phrasal_verbs_separable.forEach(phrasal_verb => {
-                if (!isFind && phrasal_verb[0].indexOf(words[pos]) !== -1){// совпадение первой части phrasal verbs
-                    let w = wordInSentence(phrasal_verb[1], sentence );
-                    if (w.length > 0){// совпадение второй части phrasal verbs
-                        let key = words[pos]+ " " +w;
-                        buff[key] = (buff[key] || 0) + 1;
-                        isFind=true;
-                         
-                    }
-                }
-            });
-            if(isFind)continue;
-            // TODO: нет учета варианта разделяемого фразового глагола
-            a1_phrasal_verbs_inseparable.forEach(phrasal_verb => {
-                if (!isFind && phrasal_verb[0].indexOf(words[pos]) !== -1){// совпадение первой части phrasal verbs
-                    let w = wordInSentence(phrasal_verb[1], sentence );
-                    if (w.length > 0){// совпадение второй части phrasal verbs
-                        let key = words[pos]+ " " +w;
-                        buff[key] = (buff[key] || 0) + 1;
-                        isFind=true;
-                    }
-                }
-            });
-        }
-    });   
-   
-    const table = document.getElementById(`pixelTable${level}PhrasalVerbs`);
-    const arr_count = [];
-    Object.entries(buff).forEach(([word, count]) => {
-       arr_count.push([word,"",count]);
-    });
-    const height = parseInt(arr_count.length/width)+1;
-    const iterator_count = flatten2DArray(arr_count);
-    const analyzer = createWordAnalyzer(arr_count);
-    generateTable(iterator_count, width, height, table, lowerText, analyzer);  
-}
-
-function wordInSentence(phrasal_verb_words, sentence){
-    for (let i=0; i < phrasal_verb_words.length; i++){
-        if(sentence.includes(phrasal_verb_words[i])){
-            result = phrasal_verb_words[i];
-            return phrasal_verb_words[i];
-        }
-    }
-    return "";
-}
-// ----------------------------------------------------------------------------------
-
-function normalizeWord(word) {
-  return word.toLowerCase().replace(/[^a-z\']/gi, "");
-}
+ 
+// ##############################################################################
+// checkText ####################################################################
+// ##############################################################################
 
 function checkText() {
     const text = document.getElementById("text").value;
@@ -824,178 +682,98 @@ function checkText() {
     }
     const resultDiv = document.getElementById("result");
     resultDiv.innerHTML = "";
+    let head_result = document.createElement("h2");
+    head_result.innerHTML = "Сортировка слов по уровню:";
+    resultDiv.appendChild(head_result);
 
-    const sentences = text.split(/\r?\n/);
+    const {result, show} = getWordLevels(text);
 
-    let result_a1 = [];// 1
-    let result_a2 = [];// 2
-    let result_b1 = [];// 3
-    let result_b2 = [];// 4
-    let result_c1 = [];// 5
-    let result_c2 = [];// 6
-    let result_other = [];// 7
+    console.log('show_a1',show.show_a1);
+    console.log('show_a2',show.show_a2);
+    console.log('show_b1',show.show_b1);
+    console.log('show_b2',show.show_b2);
+    console.log('show_c1',show.show_c1);
+    console.log('show_c2',show.show_c2);
+    console.log('show_other',show.show_other);
 
-    let show_a1 = [];
-    let show_a2 = [];
-    let show_b1 = [];
-    let show_b2 = [];
-    let show_c1 = [];
-    let show_c2 = [];
-    let show_other = [];
-
-    let is_sort = false;
-    sentences.forEach(sentence => {
-        let wordsRaw = sentence.split(/\s+/).filter(Boolean);
-        let word_calculate = [];
-        wordsRaw.forEach(word => {
-            let wordsNormalized = word.toLowerCase().replaceAll("’","'").replaceAll("‑","-").replaceAll("'s","").replace(/'$/, '').replaceAll(/[^a-z\'-]/gi, "");
-            if (wordsNormalized && wordsNormalized!="-"){
-                if (words_common.includes(wordsNormalized)){
-                    word_calculate.push([word,1]);
-                }else if (words_a1.includes(wordsNormalized)){
-                    word_calculate.push([word,1]);
-                }else if (words_a2.includes(wordsNormalized)){
-                    word_calculate.push([word,2]);
-                }else if (words_b1.includes(wordsNormalized)){
-                    word_calculate.push([word,3]);
-                }else if (words_b2.includes(wordsNormalized)){
-                    word_calculate.push([word,4]);
-                }else if (words_c1.includes(wordsNormalized)){
-                    word_calculate.push([word,5]);
-                }else if (words_c2.includes(wordsNormalized)){
-                    word_calculate.push([word,6]);
-                }else {
-                    word_calculate.push([word,7]);
-                }                
-            }
-        });    
- 
-        if (word_calculate.length > 0){
- 
-            word_calculate.sort((a, b) => b[1] - a[1]);
-            let prepare_sentence = sentence.replace(word_calculate[0][0],`<b>${word_calculate[0][0]}</b>`);
-            switch (word_calculate[0][1]) {
-                case 1: 
-                    result_a1.push(prepare_sentence);
-                    if (!show_a1.includes(word_calculate[0][0])){ show_a1.push(word_calculate[0][0]);} 
-                    break;
-                case 2:
-                    result_a2.push(prepare_sentence);
-                    if (!show_a2.includes(word_calculate[0][0])){ show_a2.push(word_calculate[0][0]);} 
-                    break;
-                case 3:
-                    result_b1.push(prepare_sentence);
-                    if (!show_b1.includes(word_calculate[0][0])){ show_b1.push(word_calculate[0][0]);} 
-                    break;
-                case 4:
-                    result_b2.push(prepare_sentence);
-                    if (!show_b2.includes(word_calculate[0][0])){ show_b2.push(word_calculate[0][0]);} 
-                    break;
-                case 5:
-                    result_c1.push(prepare_sentence);
-                    if (!show_c1.includes(word_calculate[0][0])){ show_c1.push(word_calculate[0][0]);} 
-                    break;
-                case 6:
-                    result_c2.push(prepare_sentence);
-                    if (!show_c2.includes(word_calculate[0][0])){ show_c2.push(word_calculate[0][0]);} 
-                    break;
-                case 7:
-                    result_other.push(prepare_sentence);
-                    if (!show_other.includes(word_calculate[0][0])){ show_other.push(word_calculate[0][0]);} 
-                    break;
-                default:
-                    result_other.push(prepare_sentence);
-                    if (!show_other.includes(word_calculate[0][0])){ show_other.push(word_calculate[0][0]);} 
-            } 
-        }
-    }); 
-
-    console.log('show_a1',show_a1);
-    console.log('show_a2',show_a2);
-    console.log('show_b1',show_b1);
-    console.log('show_b2',show_b2);
-    console.log('show_c1',show_c1);
-    console.log('show_c2',show_c2);
-    console.log('show_other',show_other);
-
-    if (result_a1.length > 0){
+    if (result.result_a1.length > 0){
         let details = document.createElement("details");
         let summary = document.createElement("summary");
         summary.innerHTML = "A1";
         details.appendChild(summary);
-        result_a1.forEach(s => {
+        result.result_a1.forEach(s => {
             let block = document.createElement("p");
             block.innerHTML = s;
             details.appendChild(block);
         });
         resultDiv.appendChild(details); 
     }
-    if (result_a2.length > 0){
+    if (result.result_a2.length > 0){
         let details = document.createElement("details");
         let summary = document.createElement("summary");
         summary.innerHTML = "A2";
         details.appendChild(summary);
-        result_a2.forEach(s => {
+        result.result_a2.forEach(s => {
             let block = document.createElement("p");
             block.innerHTML = s;
             details.appendChild(block);
         });
         resultDiv.appendChild(details); 
     }
-    if (result_b1.length > 0){
+    if (result.result_b1.length > 0){
         let details = document.createElement("details");
         let summary = document.createElement("summary");
         summary.innerHTML = "B1";
         details.appendChild(summary);
-        result_b1.forEach(s => {
+        result.result_b1.forEach(s => {
             let block = document.createElement("p");
             block.innerHTML = s;
             details.appendChild(block);
         });
         resultDiv.appendChild(details); 
     }
-    if (result_b2.length > 0){
+    if (result.result_b2.length > 0){
         let details = document.createElement("details");
         let summary = document.createElement("summary");
         summary.innerHTML = "B2";
         details.appendChild(summary);
-        result_b2.forEach(s => {
+        result.result_b2.forEach(s => {
             let block = document.createElement("p");
             block.innerHTML = s;
             details.appendChild(block);
         });
         resultDiv.appendChild(details); 
     }
-    if (result_c1.length > 0){
+    if (result.result_c1.length > 0){
         let details = document.createElement("details");
         let summary = document.createElement("summary");
         summary.innerHTML = "C1";
         details.appendChild(summary);
-        result_c1.forEach(s => {
+        result.result_c1.forEach(s => {
             let block = document.createElement("p");
             block.innerHTML = s;
             details.appendChild(block);
         });
         resultDiv.appendChild(details); 
     }
-    if (result_c2.length > 0){
+    if (result.result_c2.length > 0){
         let details = document.createElement("details");
         let summary = document.createElement("summary");
         summary.innerHTML = "C2";
         details.appendChild(summary);
-        result_c2.forEach(s => {
+        result.result_c2.forEach(s => {
             let block = document.createElement("p");
             block.innerHTML = s;
             details.appendChild(block);
         });
         resultDiv.appendChild(details); 
     }
-    if (result_other.length > 0){
+    if (result.result_other.length > 0){
         let details = document.createElement("details");
         let summary = document.createElement("summary");
         summary.innerHTML = "Other";
         details.appendChild(summary);
-        result_other.forEach(s => {
+        result.result_other.forEach(s => {
             let block = document.createElement("p");
             block.innerHTML = s;
             details.appendChild(block);
@@ -1003,89 +781,54 @@ function checkText() {
         resultDiv.appendChild(details); 
     }
 }
-// ----------------------------------------------------------------------------------
-function words_set_level(level){
 
-    let nouns = {};
-    let verbs = {};
-    let adverbs = {};
-    let adjectives = {};
-    let prepositions = {};
-    let irregular_verbs = {}; 
+// ##############################################################################
+// wordsOfLesson ################################################################
+// ##############################################################################
 
-    if (level == "A1" ){
-        nouns=a1_words_nouns;
-        verbs=a1_words_verbs;
-        adverbs=a1_words_adverbs;
-        adjectives=a1_words_adjective;
-        prepositions=a1_words_preposition;
-        irregular_verbs=a1_words_irregular_verbs;
-        
-    }else if (level == "A2"){
-        nouns=a2_words_nouns;
-        verbs=a2_words_verbs;
-        adverbs=a2_words_adverbs;
-        adjectives=a2_words_adjective;
-        prepositions=a2_words_preposition;
-        irregular_verbs=a2_words_irregular_verbs;
+function wordsOfLesson(){ 
+    const level = document.getElementById("level").value;
+    const words_of_level = words_get_level(level);
 
-    }else if (level == "B1"){
-        nouns=b1_words_nouns;
-        verbs=b1_words_verbs;
-        adverbs=b1_words_adverbs;
-        adjectives=b1_words_adjective;
-        prepositions=b1_words_preposition;
-        irregular_verbs=b1_words_irregular_verbs;
+    const element_text = document.getElementById("text").value;
+    if (!element_text.trim().length){
+        alert("Текст не обнаружен");
+        return;
+    }
+    const text = normalizeText(element_text);
+    const wordsArray = text
+        .replaceAll(/[^a-z \'-]/gi, "")  
+        .split(" ")                      
+        .filter(word => word.length && word!="-");  // убираем пустые строки
 
-    }else if (level == "B2"){
-        nouns=b2_words_nouns;
-        verbs=b2_words_verbs;
-        adverbs=b2_words_adverbs;
-        adjectives=b2_words_adjective;
-        prepositions=b2_words_preposition;
-        irregular_verbs=b2_words_irregular_verbs;
+    // Подсчёт частоты слов
+    const frequency = wordsArray.reduce((acc, word) => {
+        word = word.toLowerCase(); 
+        acc[word] = (acc[word] || 0) + 1;
+        return acc;
+    }, {});
 
-    }else if(level == "C1"){
-         
-        nouns=c1_words_nouns;
-        verbs=c1_words_verbs;
-        adverbs=c1_words_adverbs;
-        adjectives=c1_words_adjective;
-        prepositions=c1_words_preposition;
-        irregular_verbs=c1_words_irregular_verbs;
-
-    }else {
-        console.error("нет уровня");
-        alert("массивы слов по частям речи не готовы");
-        return {};
+    const resultDiv = document.getElementById("result");
+    resultDiv.innerHTML = "";
+    let head_result = document.createElement("h2");
+    head_result.innerHTML = `Наличие слов в примерах уровня ${level}:`;
+    resultDiv.appendChild(head_result);
+  
+    let nouns = document.getElementById("nouns").value;
+    let verbs = document.getElementById("verbs").value;
+    if (nouns.trim().length == 0 && verbs.trim().length == 0){
+        resultDiv.appendChild(document.createTextNode("Нет слов для сравнения"));
+        return;
     }
 
-    return {
-        nouns:nouns,
-        verbs:verbs,
-        adverbs:adverbs,
-        adjectives:adjectives,
-        prepositions:prepositions,
-        irregular_verbs:irregular_verbs
-    };
-}
-
-function words_of_lesson(frequency){ 
-    const level = document.getElementById("level").value;
-    const words_set = words_set_level(level);
-
-    const result_words_of_lesson = document.getElementById("result_words_of_lesson");
-    result_words_of_lesson.innerHTML = "";
-
-    let nouns = document.getElementById("nouns").value;
     if (nouns.trim()){ 
         let div = document.createElement("div");
         let p = document.createElement("p");
         p.innerHTML = `<b>Nouns:</b>`;
         div.appendChild(p);
-        result_words_of_lesson.appendChild(div);
+        resultDiv.appendChild(div);
         nouns = nouns.split("\n").map(w=>w.trim());
-        const nouns_set = words_set.nouns.filter(n=>nouns.includes(n[0]));
+        const nouns_set = words_of_level.nouns.filter(n=>nouns.includes(n[0]));
         const nouns_frequency = nouns_set.reduce((acc, arr_word) => {
             for (let i=0;i<3;i++){
                 if (frequency[arr_word[i]]){
@@ -1100,18 +843,17 @@ function words_of_lesson(frequency){
             block.innerHTML = `<b>${n[0]}</b> - ${n[1]}</br>`;
             div.appendChild(block);
         });
-        result_words_of_lesson.appendChild(div);
+        resultDiv.appendChild(div);
     }
 
-    let verbs = document.getElementById("verbs").value;
     if (verbs.trim()){
         let div = document.createElement("div");
         let p = document.createElement("p");
         p.innerHTML = `<b>Verbs:</b>`;
         div.appendChild(p);
-        result_words_of_lesson.appendChild(div);
+        resultDiv.appendChild(div);
         verbs = verbs.split("\n").map(w=>w.trim());
-        const verbs_set = words_set.verbs.filter(n=>verbs.includes(n[0]));
+        const verbs_set = words_of_level.verbs.filter(n=>verbs.includes(n[0]));
         const verbs_frequency = verbs_set.reduce((acc, arr_word) => {
             for (let i=0;i<5;i++){
                 if (frequency[arr_word[i]]){
@@ -1126,16 +868,13 @@ function words_of_lesson(frequency){
             block.innerHTML = `<b>${n[0]}</b> - ${n[1]}</br>`;
             div.appendChild(block);
         });
-        result_words_of_lesson.appendChild(div);
+        resultDiv.appendChild(div);
     }
 } 
 
-// ----------------------------------------------------------------------------------
-
-function getSelectedWords() {
-    const level = document.getElementById("level").value; // выбранный уровень
-    return window.levels[level] || []; // возвращаем массив слов
-}
+// ##############################################################################
+// countWordsInText #############################################################
+// ##############################################################################
 
 function countWordsInText() {
     
@@ -1144,10 +883,13 @@ function countWordsInText() {
         alert("Текст не обнаружен");
         return;
     }
-    const text = element_text.replaceAll("’","'").replaceAll("."," ").replaceAll(/[^a-z \'-]/gi, "").toLowerCase();
-
+    const text = normalizeText(element_text);
+    
     const resultDiv = document.getElementById("result");
-    resultDiv.innerHTML = "";
+    resultDiv.innerHTML = ""; 
+    let head_result = document.createElement("h2");
+    head_result.innerHTML = "Дубли слов в тексте";
+    resultDiv.appendChild(head_result);
 
     const wordsArray = text
         .replaceAll(/[^a-z \'-]/gi, "")  
@@ -1156,13 +898,12 @@ function countWordsInText() {
 
     // Подсчёт частоты слов
     const frequency = wordsArray.reduce((acc, word) => {
-        word = word.toLowerCase(); // приводим к нижнему регистру
+        word = word.toLowerCase(); 
         acc[word] = (acc[word] || 0) + 1;
         return acc;
     }, {});
     
-    words_of_lesson(frequency);
- 
+    
     // Сортировка по убыванию частоты
     const sortedWords = Object.entries(frequency).sort((a, b) => b[1] - a[1]);  
 
@@ -1328,15 +1069,26 @@ function countWordsInText() {
 }
 
 // Together
+{
+    let details = document.createElement("details");
+    let summary = document.createElement("summary");
+    summary.innerHTML = "All words";
+    details.appendChild(summary);
+
     sortedWords.forEach(w => {
         let block = document.createElement("span");
         block.innerHTML = `<b>${w[0]}</b> - ${w[1]}</br>`;
-        resultDiv.appendChild(block);
+        details.appendChild(block);
     });
-
+    resultDiv.appendChild(details);    
 }
-// ----------------------------------------------------------------------------------
  
+}
+
+// ##############################################################################
+// textAnalysis #################################################################
+// ##############################################################################
+
 function textAnalysis(){
     const resultDiv = document.getElementById("result");
     resultDiv.innerHTML = "";
@@ -1345,7 +1097,7 @@ function textAnalysis(){
         alert("Текст не обнаружен");
     }
 
-    const level = document.getElementById("level").value; // выбранный уровень
+    const level = document.getElementById("level").value; 
     const lowerText = text.replaceAll("’","'").replaceAll("*","").toLowerCase();
 
     // a1_words_determiner
@@ -1362,14 +1114,14 @@ function textAnalysis(){
     // a1_words_modal_verbs
     // a1_words_article
 
-    const words_set = words_set_level(level);
+    const words_of_level = words_get_level(level);
 
-    let nouns = words_set.nouns;
-    let verbs = words_set.verbs;
-    let adverbs = words_set.adverbs;
-    let adjectives = words_set.adjectives;
-    let prepositions = words_set.prepositions;
-    let irregular_verbs = words_set.irregular_verbs; 
+    let nouns = words_of_level.nouns;
+    let verbs = words_of_level.verbs;
+    let adverbs = words_of_level.adverbs;
+    let adjectives = words_of_level.adjectives;
+    let prepositions = words_of_level.prepositions;
+    let irregular_verbs = words_of_level.irregular_verbs; 
 
     let modal_verbs = words_modal_verbs; 
     let conjunctions = words_conjunctions;
@@ -1519,9 +1271,7 @@ function updateTooltipPosition(event) {
     tooltip.style.left = (event.clientX + 15) + 'px';
     tooltip.style.top = (event.clientY - 35) + 'px';
 }
- 
-// --------------------------------------------------------
-
+  
 function createWordAnalyzer(wordFrequencies) {
     const freq_pos = wordFrequencies[0].length-1;
     const frequencies = Object.values(wordFrequencies);
@@ -1546,7 +1296,7 @@ function createWordAnalyzer(wordFrequencies) {
         };
     };
 }
-// --------------------------------------------------------
+ 
 function* flatten2DArray(arr) {
     for (let i = 0; i < arr.length; i++) {
         yield arr[i];
@@ -1749,9 +1499,136 @@ function getColorByPercentile(percentile) {
 }
  
 
-// ----------------------------------------------------------------------------------
+function phrasalVerbs(width, level, lowerText){
+    
+    const resultDiv = document.getElementById("result");
+    resultDiv.innerHTML = "";
 
-window.levels = {};
+    const a1_phrasal_verbs_inseparable = [
+        //[["look", "looks", "looking", "looked", "looked"],"after"],// look after
+        //[["look", "looks", "looking", "looked", "looked"],"forward to"],// look forward to
+        //[["look", "looks", "looking", "looked", "looked"],"out"],// look out
+        //[["look", "looks", "looking", "looked", "looked"],"into"],// look into
+        [["look", "looks", "looking", "looked", "looked"],["out", "into","forward to","after"]], 
+        //[["go", "goes", "going", "went", "gone"],"on"], // go on
+        //[["go", "goes", "going", "went", "gone"],"back"], // go back
+        [["go", "goes", "going", "went", "gone"],["back","on"]],  
+        //[["come", "comes", "coming", "came"],"up with"],// come up with
+        //[["come", "comes", "coming", "came"],"across"],// come across
+        [["come", "comes", "coming", "came"],["across","up with"]],
+        [["give", "gives", "giving", "gave", "given"],["in"]], // give in
+        //[["get", "gets", "getting", "got"],"away"], // get away
+        //[["get", "gets", "getting", "got"],"off"], // get off
+        [["get", "gets", "getting", "got"],["off","away"]],
+        [['turn','turns','turning','turned'],["into"]], // turn into 
+    ];
+
+    const a1_phrasal_verbs_separable = [
+        //[["take", "takes", "taking", "took", "taken"],"off"],// take off
+        //[["take", "takes", "taking", "took", "taken"],"out"],// take out
+        //[["take", "takes", "taking", "took", "taken"],"over"],// take over
+        [["take", "takes", "taking", "took", "taken"],["over","out","off"]],
+        //[["put", "puts", "putting"],"off"], // put off
+        //[["put", "puts", "putting"],"on"], // put on
+        [["put", "puts", "putting"],["on","off"]],
+        //[["bring", "brings", "bringing", "brought", "brought"],"up"],// Bring up
+        //[["bring", "brings", "bringing", "brought", "brought"],"back"],// Bring back
+        [["bring", "brings", "bringing", "brought", "brought"],["back","up"]],
+        //[["get", "gets", "getting", "got"],"up"], // get up
+        //[["get", "gets", "getting", "got"],"out"], // get out
+        //[["get", "gets", "getting", "got"],"on"], // get on
+        [["get", "gets", "getting", "got"],["on","out","up"]],
+        [["give", "gives", "giving", "gave", "given"],["up"]], // give up
+        //[['turn','turns','turning','turned'],"on"], // turn on
+        //[['turn','turns','turning','turned'],"off"], // turn off
+        //[['turn','turns','turning','turned'],"up"], // turn up
+        //[['turn','turns','turning','turned'],"out"], // turn out
+        [['turn','turns','turning','turned'],["out","up","off","on"]],
+        [["look", "looks", "looking", "looked", "looked"],["up"]],// look up
+        [["make", "makes", "making", "made"],["up"]],// make up
+        [['call','calls','calling','called'],["off"]],// call off
+        [["set", "sets", "setting"],["up"]],// set up
+    ];
+   
+    let buff = {};
+    for (let i=0; i < a1_phrasal_verbs_inseparable.length; i++){
+        let arr_base = a1_phrasal_verbs_inseparable[i][0];
+        let arr_sufix = a1_phrasal_verbs_inseparable[i][1];
+        for (let b=0; b < arr_base.length; b++){
+            for (let s=0; s < arr_sufix.length; s++){
+                let key = arr_base[b]+ " " +arr_sufix[s];
+                buff[key] = 0;  
+            }
+        }
+    }
+    for (let i=0; i < a1_phrasal_verbs_separable.length; i++){
+        let arr_base = a1_phrasal_verbs_separable[i][0];
+        let arr_sufix = a1_phrasal_verbs_separable[i][1];
+        for (let b=0; b < arr_base.length; b++){
+            for (let s=0; s < arr_sufix.length; s++){
+                let key = arr_base[b]+ " " +arr_sufix[s];
+                buff[key] = 0;  
+            }
+        }
+    }
+   
+    let isFind = false;
+    const sentences = lowerText.split(/\r?\n/);
+    sentences.forEach(sentence => {
+        sentence = normalizeText(sentence);
+        const words = sentence.split(/\W+/).filter(word => word.length > 0);
+        isFind = false;
+        for (let pos=0; pos < words.length-1 && !isFind; pos++){
+            a1_phrasal_verbs_separable.forEach(phrasal_verb => {
+                if (!isFind && phrasal_verb[0].indexOf(words[pos]) !== -1){// совпадение первой части phrasal verbs
+                    let w = wordInSentence(phrasal_verb[1], sentence );
+                    if (w.length > 0){// совпадение второй части phrasal verbs
+                        let key = words[pos]+ " " +w;
+                        buff[key] = (buff[key] || 0) + 1;
+                        isFind=true;
+                         
+                    }
+                }
+            });
+            if(isFind)continue;
+            // TODO: нет учета варианта разделяемого фразового глагола
+            a1_phrasal_verbs_inseparable.forEach(phrasal_verb => {
+                if (!isFind && phrasal_verb[0].indexOf(words[pos]) !== -1){// совпадение первой части phrasal verbs
+                    let w = wordInSentence(phrasal_verb[1], sentence );
+                    if (w.length > 0){// совпадение второй части phrasal verbs
+                        let key = words[pos]+ " " +w;
+                        buff[key] = (buff[key] || 0) + 1;
+                        isFind=true;
+                    }
+                }
+            });
+        }
+    });   
+   
+    const table = document.getElementById(`pixelTable${level}PhrasalVerbs`);
+    const arr_count = [];
+    Object.entries(buff).forEach(([word, count]) => {
+       arr_count.push([word,"",count]);
+    });
+    const height = parseInt(arr_count.length/width)+1;
+    const iterator_count = flatten2DArray(arr_count);
+    const analyzer = createWordAnalyzer(arr_count);
+    generateTable(iterator_count, width, height, table, lowerText, analyzer);  
+}
+
+function wordInSentence(phrasal_verb_words, sentence){
+    for (let i=0; i < phrasal_verb_words.length; i++){
+        if(sentence.includes(phrasal_verb_words[i])){
+            result = phrasal_verb_words[i];
+            return phrasal_verb_words[i];
+        }
+    }
+    return "";
+}
+
+ 
+/*
+//window.levels = {};
 const levelOrder = ["A1", "A2", "B1", "B2", "C1", "C2", "Other"];
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -1771,12 +1648,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error("Error build:", error);
     }
 });
+*/
 </script>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="B2/Kit_B2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="listen/A1/alissa/alissa.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
@@ -1790,7 +1668,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="B2/Kit_B2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="listen/A1/alissa/alissa.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
@@ -1839,6 +1717,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         <script src="src/js/editorVoice.js"></script>
         <script src="src/js/editor_img.js"></script>
         <script src="src/js/editor_symbol.js"></script>
+        <script src="src/js/listen.js"></script>
+        <script src="src/js/textual_analysis.js"></script>
 
 
 
