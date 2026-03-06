@@ -2,7 +2,7 @@
 
 <br>
 <audio id="listen-audio" controls style="width:100%">
-  <source src="/listen/A1/alissa/alissa.opus" type="audio/ogg">
+  <source src="/grammar_of_english/listen/A1/alissa/alissa.opus" type="audio/ogg">
 </audio>
 <br>
   <details>
@@ -53,6 +53,6 @@ function render(pageSize=10){
     const audio = document.getElementById("listen-audio");
     const showLevel = document.getElementById("showLevel").checked;
     const listen = new Listen({audio:audio, subsDiv:subs, showLevel:showLevel, pageSize:pageSize});
-    listen.loadVTT("/listen/A1/alissa/alissa.vtt");
+    listen.loadVTT("/grammar_of_english/listen/A1/alissa/alissa.vtt");
 }
 </script>
