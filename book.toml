@@ -6,7 +6,7 @@ title = "Grammar of English"
 
 
 [output.html]
-site-url = "/grammar_of_english/"
+site-url = "/grammar_of_english"
 smart-punctuation = false
 no-section-label = false
 additional-css = ["theme/css/theme.css","theme/css/listen.css"]
