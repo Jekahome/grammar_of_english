@@ -35,7 +35,7 @@ class Listen {
         if (this.#showLevel){
             this.wordsLevel = getAllWordsLevels(this.textRaw);
         }
-        //this.page = -1; // Сброс страницы при новой загрузке
+        this.page = -1; // Сброс страницы при новой загрузке
         this.drawPage();
     }
 
