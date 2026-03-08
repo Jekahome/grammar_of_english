@@ -98,7 +98,7 @@
 
 * *My friend Matt <span style="color: blue;">is a kind and intelligent guy</span>. – Мой друг Мэтт – **добрый и умный парень**.*
 
-![table](/img/ex.png "table")
+![table](/grammar_of_english/img/ex.png "table")
 
 [Порядок слов в предложении в английском языке](https://grammarway.com/ru/word-order)
 

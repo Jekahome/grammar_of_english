@@ -224,7 +224,7 @@
 * a slice **of** – ломтик: *a slice **of** pizza – ломтик пиццы.*
 * a loaf **of** – буханка: *a loaf **of** bread – буханка хлеба.*
 
-![containers and quantities](/img/containers_and_quantities_matching_exercises.png)
+![containers and quantities](/grammar_of_english/img/containers_and_quantities_matching_exercises.png)
 
 <h2>Exercise: listen and write</h2>
 <div id="control"></div>
