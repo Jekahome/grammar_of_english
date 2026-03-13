@@ -1,4 +1,4 @@
-import { binaryInlined, WorkerLinter } from '/js/harper_v0.54.0.js'; 
+import { binaryInlined, WorkerLinter } from './harper_v0.54.0.js'; 
 
 class HarperChecker {
     constructor(lang = "AmericanEnglish") {
