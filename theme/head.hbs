@@ -1,4 +1,17 @@
 
-<script type="module" src="../js/grammar_checker.js"></script>
+<!-- <script type="module" src="../js/grammar_checker.js"></script> -->
 
  
+<script>
+    // 1. Автоматически определяем префикс пути
+    const isGithub = window.location.hostname.includes('github.io');
+    const root = isGithub ? '/grammar_of_english/' : '/';
+
+    // 2. Загружаем основной чекер как модуль
+    import(root + 'js/grammar_checker.js')
+        .then(module => {
+            // Теперь модуль загружен правильно по абсолютному пути
+            console.log("Grammar Checker loaded from:", root);
+        })
+        .catch(err => console.error("Loader error:", err));
+</script>
