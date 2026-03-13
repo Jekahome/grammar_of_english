@@ -70,9 +70,39 @@ Infinitive (**Инфинитив**) - частица **to** означает, ч
 Инфинитив глагола *to be* имеет три формы (в активном залоге):
 
 #### 1. 1. Инфинитив настоящего времени (Present Infinitive) — **to be**
-Это то, что ты имеешь в виду. Он описывает действие, которое происходит **одновременно** с действием глагола-сказуемого или будет происходить **после** него.
-*   *I want **to be** a doctor.* (Я хочу быть врачом — в будущем, после того как выучусь).
-*   *He seems **to be** tired.* (Кажется, он устал — прямо сейчас).
+Это то, что мы имеем в виду. Он описывает действие, которое происходит **одновременно** с действием глагола-сказуемого или будет происходить **после** него.
+
+Инфинитив отвечает на вопросы «что делать?», «что сделать?». Он может быть кем угодно в предложении, кроме главного зависимого сказуемого.
+
+##### 1. 1. 1 Как Подлежащее (Кто? Что?):
+Здесь инфинитив стоит в начале предложения и выполняет роль существительного (подлежащего).
+
+* ***To be** happy is all that matters.* — Главное — быть счастливым.
+* ***To be** with you is enough.* — Мне достаточно быть с тобой.
+* ***To be** a doctor is my dream.* — Моя мечта — стать врачом.
+* ***To be** loved is wonderful.* — Быть любимым – это чудесно.
+* ***To be** alone is peaceful.* — Одиночество дарит покой.
+* ***To be** happy is all that matters.* — Быть счастливым — вот что главное.
+  
+##### 1. 1. 2 Как Дополнение (Отвечает на вопросы косвенных падежей):
+
+* *I want **to be** happy.* — Я хочу быть счастливым.
+* *I want **to be** with you.* — Я хочу быть с тобой.
+* *He wants **to be** a doctor.* — Он хочет стать врачом.
+* *She wants **to be** loved.* — Она хочет, чтобы её любили.
+* *He likes **to be** alone.* — Он любит быть один.
+* *He wants **to be** a pilot.* — Он хочет (кем?) быть пилотом.
+
+##### 1. 1. 3 Как Обстоятельство цели (Зачем?):
+* *I work hard **to be** happy.* — Я прилагаю много усилий, чтобы быть счастливым.
+* *I came here **to be** with you.* — Я пришла сюда, чтобы быть с тобой.
+* *He studies **to be** a doctor.* — Он учится на врача.
+* *He left **to be** alone.* — Он ушёл, чтобы побыть одному.
+* *He is training **to be** strong.* — Он тренируется, (для чего?) чтобы быть сильным.
+* *He is training **to be** strong.* — Он тренируется, чтобы быть сильным.
+* *I want **to be** a doctor.* — Я хочу быть врачом — в будущем, после того как выучусь.
+* *He seems **to be** tired.* — Кажется, он устал — прямо сейчас.
+
 
 #### 1. 2. Инфинитив прошедшего времени (Perfect Infinitive) — **to have been**
 Обозначает действие, которое произошло **раньше**, чем действие глагола-сказуемого.
@@ -608,54 +638,6 @@ They decided to be honest. — Они решили быть честными.
 <div id="listen_and_write"></div>
 
 
-<!--
-<h2>Exercise: sentence formation</h2>
-
-```
-Отложить личные формы до изучения времен
-
-В данном уроке только "to be" в роли (неличная форма) Инфинитив настоящего времени (Present Infinitive)
-Для грамматики "to be", слова для пользователя: 
-* что бы пользователь сам выбрал нужную форму "to be"
-* и наоборот, подобрал к "to be" нужный Subject/Object
-
-I want to be a doctor. (Я хочу быть врачом — в будущем, после того как выучусь).
-He seems to be tired. (Кажется, он устал — прямо сейчас).
-
-[
-    ["",""],
-    ["",""],
-
-]
-предоставить набор слов в определенной теме грамматики, для конструирования из них предложения. Можно и звуком давать слова. Слова из доступных на момент урока грамматики
-
-Как проверять то что пользователь сочинил?
-```
--->
-
-<!-- <h3>Listen and write</h3>
-
-
-<details>
-<summary>font HYWenHei:</summary>
-<br>
-<div class="editor-container">
-    <div id="editor2" class="font-HYWenHei" contenteditable="true"></div>
-</div>
-</details>
-<br><br>
-<details>
-<summary>font img:</summary>
-<br>
-<div class="editor-container">
-    <div id="editor" contenteditable="true"></div>
-    <div class="debug">
-        <span id="debugText"></span>
-    </div>
-</div>
-</details> 
-<button class="clear-btn" onclick="clearEditor()">Очистить</button>-->
-
 <script>
 
 // Для "listen and write" данные [["EN","RU"],]
@@ -847,7 +829,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice.genExercisesListenAndWriteTest();
+        g_practice.genExercisesListenAndWrite();
  
     } catch (error) {
         console.error("Error build:", error);
@@ -858,9 +840,6 @@ function checkAnswer(value){
     value = g_practice.textNormalize(value);
     return value==g_practice.getAnswer();
 }
- 
-
- 
 </script>
 
 <style>

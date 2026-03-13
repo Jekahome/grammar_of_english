@@ -336,7 +336,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_markers.genExercisesListenAndWriteTest();
+        g_practice_markers.genExercisesListenAndWrite();
  }
  {
         let editor_img = new EditorImg({callback: checkAnswerGeneralIrregular, suffix_id: 'irregular'});
@@ -349,7 +349,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_irregular.genExercisesListenAndWriteTest();
+        g_practice_irregular.genExercisesListenAndWrite();
  }
  {
         let editor_img = new EditorImg({callback: checkAnswerGeneralQuestion, suffix_id: 'question'});
@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_question.genExercisesListenAndWriteTest();
+        g_practice_question.genExercisesListenAndWrite();
  }
  {
         let editor_img = new EditorImg({callback: checkAnswerGeneralAll, suffix_id: 'all'});
@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_all.genExercisesListenAndWriteTest();
+        g_practice_all.genExercisesListenAndWrite();
      
  }
     } catch (error) {

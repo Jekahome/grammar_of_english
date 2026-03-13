@@ -757,7 +757,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_all.genExercisesListenAndWriteTest();
+        g_practice_all.genExercisesListenAndWrite();
      
  }
  {
@@ -771,7 +771,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_phrasal_verbs.genExercisesListenAndWriteTest();
+        g_practice_phrasal_verbs.genExercisesListenAndWrite();
      
  }
     } catch (error) {

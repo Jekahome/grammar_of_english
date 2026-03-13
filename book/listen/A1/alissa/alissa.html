@@ -7,7 +7,11 @@
 
 
         <!-- Custom HTML head -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <script type="module" src="/js/grammar_checker.js"></script>
+        
+        <script src="/js/compromise_v14.15.0.js"></script>
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -419,6 +423,9 @@
 <li>C1: obey, midday, purse</li>
 </ul>
 <p><em>... Грамматика?</em></p>
+<p><em>для закрепления восприятия на слух - вопрос задается голосом на знание сюжета прослушанного контента.</em></p>
+<p><em>при прослушивании важно не просто читать, важно понять суть, разобрать услышанное, поэтому нужно писать то что слышишь. Как проверить что написанно?</em></p>
+<p><em>добавить возможность вводить голосом ответ, т.е. суфлер, повторять за диктором</em></p>
 <br>
 <audio id="listen-audio" controls style="width:100%">
   <source src="/grammar_of_english/listen/A1/alissa/alissa.opus" type="audio/ogg">
@@ -439,6 +446,7 @@
     <span id="pageSizeValue">10</span> 
     </li> 
     <li>
+    Subtitle styles:<br>
     <textarea id="cssEditor" rows="10" cols="50" placeholder="css for subtitles">
 /* css for subtitles */
 #listen-subs{
@@ -566,6 +574,7 @@ function updateCSS() {
         <!-- Custom JS scripts -->
         <script src="../../../src/js/general.js"></script>
         <script src="../../../src/js/practice.js"></script>
+        <script src="../../../src/js/practice2.js"></script>
         <script src="../../../src/js/editorVoice.js"></script>
         <script src="../../../src/js/editor_img.js"></script>
         <script src="../../../src/js/editor_symbol.js"></script>

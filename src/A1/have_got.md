@@ -373,7 +373,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_have.genExercisesListenAndWriteTest();
+        g_practice_have.genExercisesListenAndWrite();
      
  }
  {
@@ -387,7 +387,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_have_noun.genExercisesListenAndWriteTest();
+        g_practice_have_noun.genExercisesListenAndWrite();
      
  }
  {
@@ -401,7 +401,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_have_obligations.genExercisesListenAndWriteTest();
+        g_practice_have_obligations.genExercisesListenAndWrite();
      
  }
  {
@@ -416,7 +416,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_have_all_exercises.genExercisesListenAndWriteTest();
+        g_practice_have_all_exercises.genExercisesListenAndWrite();
      
  }
     } catch (error) {

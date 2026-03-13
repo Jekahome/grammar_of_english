@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_conj_adv.genExercisesListenAndWriteTest();
+        g_practice_conj_adv.genExercisesListenAndWrite();
      
  }
  {
@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_coord_conj.genExercisesListenAndWriteTest();
+        g_practice_coord_conj.genExercisesListenAndWrite();
      
  }
  {
@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_sub_conj.genExercisesListenAndWriteTest();
+        g_practice_sub_conj.genExercisesListenAndWrite();
      
  }
  {
@@ -367,7 +367,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_all.genExercisesListenAndWriteTest();
+        g_practice_all.genExercisesListenAndWrite();
      
  }
     } catch (error) {

@@ -539,7 +539,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice.genExercisesListenAndWriteTest();
+        g_practice.genExercisesListenAndWrite();
  
     } catch (error) {
         console.error("Error build:", error);

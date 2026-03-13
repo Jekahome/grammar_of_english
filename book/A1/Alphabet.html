@@ -7,7 +7,11 @@
 
 
         <!-- Custom HTML head -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <script type="module" src="/js/grammar_checker.js"></script>
+        
+        <script src="/js/compromise_v14.15.0.js"></script>
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -440,54 +444,6 @@
 <tr><td>Z</td><td>Зи (амер.) / Зэд (брит.)</td></tr>
 </tbody></table>
 </div>
-<p><button id="startRecord">Начать запись</button>
-<button id="stopRecord">Остановить запись</button>
-<button id="speak">Озвучить</button></p>
-<script>
-let recorder;
-let chunks = [];
-
-async function startRecording() {
-  const stream = await navigator.mediaDevices.getDisplayMedia({
-    audio: true,
-    video: true
-  });
-
-  recorder = new MediaRecorder(stream);
-  chunks = [];
-
-  recorder.ondataavailable = e => {
-    if (e.data.size > 0) chunks.push(e.data);
-  };
-
-  recorder.onstop = () => {
-    const blob = new Blob(chunks, { type: "audio/webm" });
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "speech.webm";
-    a.click();
-  };
-
-  recorder.start();
-}
-
-function stopRecording() {
-  if (recorder && recorder.state !== "inactive") {
-    recorder.stop();
-  }
-}
-
-document.getElementById("startRecord").onclick = startRecording;
-document.getElementById("stopRecord").onclick = stopRecording;
-
-document.getElementById("speak").onclick = () => {
-  const utterance = new SpeechSynthesisUtterance("Привет! Проверка записи речи.");
-  speechSynthesis.speak(utterance);
-};
-</script>
-
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -552,6 +508,7 @@ document.getElementById("speak").onclick = () => {
         <!-- Custom JS scripts -->
         <script src="../src/js/general.js"></script>
         <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
         <script src="../src/js/editorVoice.js"></script>
         <script src="../src/js/editor_img.js"></script>
         <script src="../src/js/editor_symbol.js"></script>

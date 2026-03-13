@@ -5,6 +5,21 @@ Infinitive – **to do – делать**, Past Simple (V2) – **did**, Partici
 
 Infinitive – **to be – быть**, Past Simple (V2) – **was (were)**, Participle II (V3) – **been**
 
+#### Infinitive
+
+* ***To be** happy is all that matters.* — Главное — быть счастливым.
+* *I want **to be** happy.* — Я хочу быть счастливым.
+* *I work hard **to be** happy.* — Я прилагаю много усилий, чтобы быть счастливым.
+
+* ***To break** the record requires years of training.* — Побить рекорд требует лет тренировок.
+* *He wants **to break** the record.* — Он хочет побить рекорд.
+* *He trains every day **to break** the record.* — Он тренируется каждый день, чтобы побить рекорд.
+
+* ***To do** it right takes patience.* — Сделать это правильно требует терпения.
+* *He wants **to do** it right.* — Он хочет сделать это правильно.
+* *He works slowly **to do** it right.* — Он работает медленно, чтобы сделать это правильно.
+
+
 ## Частота использования времён в английской речи
 #### (A1) 1. Present Simple (настоящее простое)
 Используется для выражения фактов, привычек, общих истин: 

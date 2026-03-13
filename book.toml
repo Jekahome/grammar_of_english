@@ -11,13 +11,15 @@ smart-punctuation = false
 no-section-label = false
 additional-css = ["theme/css/theme.css","theme/css/listen.css"]
 additional-js = [
+    
     "src/js/general.js",
     "src/js/practice.js",
+    "src/js/practice2.js",
     "src/js/editorVoice.js",
     "src/js/editor_img.js",
     "src/js/editor_symbol.js",
     "src/js/listen.js",
-    "src/js/textual_analysis.js"
+    "src/js/textual_analysis.js",
 ]
 
 [output.html.print]
@@ -28,9 +30,7 @@ page-break = false
 enable = true    
 level = 0         
 
-# ADD THIS https://github.com/GrayJack/rs-mdbook-callouts
-# [preprocessor.callouts]
-
+# https://github.com/GrayJack/rs-mdbook-callouts
 [preprocessor.callouts]
 command = "bin/mdbook-callouts"
 

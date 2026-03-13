@@ -8,6 +8,12 @@
 
 *... Грамматика?*
 
+*для закрепления восприятия на слух - вопрос задается голосом на знание сюжета прослушанного контента.*
+
+*при прослушивании важно не просто читать, важно понять суть, разобрать услышанное, поэтому нужно писать то что слышишь. Как проверить что написанно?*
+
+*добавить возможность вводить голосом ответ, т.е. суфлер, повторять за диктором*
+
 <br>
 <audio id="listen-audio" controls style="width:100%">
   <source src="/grammar_of_english/listen/A1/alissa/alissa.opus" type="audio/ogg">
@@ -28,6 +34,7 @@
     <span id="pageSizeValue">10</span> 
     </li> 
     <li>
+    Subtitle styles:<br>
     <textarea id="cssEditor" rows="10" cols="50" placeholder="css for subtitles">
 /* css for subtitles */
 #listen-subs{

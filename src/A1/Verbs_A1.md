@@ -777,7 +777,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_verbs.genExercisesListenAndWriteTest();
+        g_practice_verbs.genExercisesListenAndWrite();
      
  }
  
