@@ -12,17 +12,10 @@
         
          
         <script>
-            // 1. Автоматически определяем префикс пути
             const isGithub = window.location.hostname.includes('github.io');
-            const root = isGithub ? '/grammar_of_english/' : '/';
-        
-            // 2. Загружаем основной чекер как модуль
-            import(root + 'js/grammar_checker.js')
-                .then(module => {
-                    // Теперь модуль загружен правильно по абсолютному пути
-                    console.log("Grammar Checker loaded from:", root);
-                })
-                .catch(err => console.error("Loader error:", err));
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
         </script>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
