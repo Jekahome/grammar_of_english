@@ -7,7 +7,7 @@
   - [Parts of speech (ознакомительная)](A1/Parts_of_speech.md)
   - [Verb: to be (Present Infinitive)](A1/to_be.md)
   - [Pronouns (personal, demonstrative) (местоимения)](A1/Pronouns_personal_demonstrative.md)
-  - [Workbook 1](A1/workbook_1.md)
+  - [------Workbook 1------](A1/workbook_1.md)
   - [Nouns (countable, uncountable, singular, plural)](A1/Countable_singular_and_plural_nouns.md)
   - [Articles the, a, an](A1/Articles_a_an_the.md)
   - [Table verb tenses (ознакомительная)](A1/Verb_tenses.md)

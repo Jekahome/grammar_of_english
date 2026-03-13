@@ -117,8 +117,7 @@ body {
   font-family: 'HYWenHei';
   src: 
     local('HYWenHei'),
-    url('/grammar_of_english/fonts/HYWenHei.ttf') format('truetype'),
-    url('/fonts/HYWenHei.ttf') format('truetype');
+    url('../../fonts/HYWenHei.ttf') format('truetype');
 }
 
 .font-HYWenHei {
