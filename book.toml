@@ -20,6 +20,7 @@ additional-js = [
     "src/js/editor_symbol.js",
     "src/js/listen.js",
     "src/js/textual_analysis.js",
+    "src/js/compromise_v14.15.0.js"
 ]
 
 [output.html.print]
