@@ -115,7 +115,10 @@ body {
 /* font */
 @font-face {
   font-family: 'HYWenHei';
-  src: url('/grammar_of_english/fonts/HYWenHei.ttf') format('truetype');
+  src: 
+    local('HYWenHei'),
+    url('/grammar_of_english/fonts/HYWenHei.ttf') format('truetype'),
+    url('/fonts/HYWenHei.ttf') format('truetype');
 }
 
 .font-HYWenHei {
@@ -125,4 +128,16 @@ body {
 /* Навигация (если используется) */
 .nav-chapters {
     min-width: 30px;
+}
+
+/* grammar */
+.grammar-error-list {
+    background: #f4f4f4;
+    padding: 15px 30px;
+    border-left: 5px solid #333;
+    border-radius: 4px;
+    min-height: 50px;
+}
+.grammar-input {
+    /*width:100%;*/
 }

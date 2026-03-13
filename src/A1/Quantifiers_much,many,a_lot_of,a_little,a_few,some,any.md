@@ -386,7 +386,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_many.genExercisesListenAndWriteTest();
+        g_practice_many.genExercisesListenAndWrite();
      
  }
  {
@@ -400,7 +400,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_few.genExercisesListenAndWriteTest();
+        g_practice_few.genExercisesListenAndWrite();
      
  }
  {
@@ -414,7 +414,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_some.genExercisesListenAndWriteTest();
+        g_practice_some.genExercisesListenAndWrite();
      
  }
   {
@@ -429,7 +429,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_quantifiers.genExercisesListenAndWriteTest();
+        g_practice_quantifiers.genExercisesListenAndWrite();
      
  }
 

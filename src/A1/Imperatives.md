@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_order.genExercisesListenAndWriteTest();
+        g_practice_order.genExercisesListenAndWrite();
      
  }
  {
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_wish.genExercisesListenAndWriteTest();
+        g_practice_wish.genExercisesListenAndWrite();
      
  } 
  {
@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_instructions.genExercisesListenAndWriteTest();
+        g_practice_instructions.genExercisesListenAndWrite();
      
  }  
  {
@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_proposals.genExercisesListenAndWriteTest();
+        g_practice_proposals.genExercisesListenAndWrite();
      
  }  
  {
@@ -336,7 +336,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_warnings.genExercisesListenAndWriteTest();
+        g_practice_warnings.genExercisesListenAndWrite();
      
  }  
  {
@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_phrasal_verbs.genExercisesListenAndWriteTest();
+        g_practice_phrasal_verbs.genExercisesListenAndWrite();
      
  } 
  {
@@ -369,7 +369,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_all.genExercisesListenAndWriteTest();
+        g_practice_all.genExercisesListenAndWrite();
      
  } 
     } catch (error) {

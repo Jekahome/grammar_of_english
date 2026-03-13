@@ -2100,6 +2100,7 @@ const a2_words_nouns = [
   ["melody", "melodies", "", "мелодия", 5000],
   ["yoga", "", "", "йога", 5000],
   ["rose", "roses", "", "роза", 5000],
+  ["adult","adults","","взрослый", 5000],
 ];
 
 const a2_words_adverbs = [

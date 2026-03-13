@@ -8,8 +8,9 @@ class EditorVoice {
     #voice; 
     #recognizerResult = '';
     #callbackId = null;
-    #micEl = null;
+    static activeMicEl = null;  
     #callbackRecognition = null;
+    static currentCallback = null;
 
     static recognizer = null;
     static synth = null;
@@ -29,14 +30,14 @@ class EditorVoice {
 
     micOn(micEl, id=null){
         this.#callbackId = id;
-        this.#micEl = micEl;
+        EditorVoice.activeMicEl = micEl;
+        EditorVoice.currentCallback = this.#callbackRecognition; // Сохраняем колбэк этого объекта
+        
         if (EditorVoice.speechStart == false){
             EditorVoice.recognizer.start();
-            this.#micEl.style.backgroundColor = '#e95400';
-        }else{
-            EditorVoice.speechStart = false;
+            EditorVoice.activeMicEl.style.backgroundColor = '#e95400';
+        } else {
             EditorVoice.recognizer.stop();
-            this.#micEl.style.backgroundColor = '';
         }
     }
 
@@ -112,9 +113,9 @@ class EditorVoice {
         //  speechRecognitionList.addFromString(grammar, 1);
         //  recognizer.grammars = speechRecognitionList;
         //
-        EditorVoice.recognizer.continuous = true;// true - непрерывный захват результатов/false - только одного результата при каждом запуске распознавания
         EditorVoice.recognizer.lang = 'en-US';// Какой язык будем распознавать? en-US,ru-Ru
-        EditorVoice.recognizer.interimResults = true;// true - распознавание началось ещё до того, как пользователь закончит говорить
+        EditorVoice.recognizer.continuous = false;// true - непрерывный захват результатов/false - только одного результата при каждом запуске распознавания
+        EditorVoice.recognizer.interimResults = false;// true - распознавание началось ещё до того, как пользователь закончит говорить
         EditorVoice.recognizer.maxAlternatives = 2;// максимальное количество SpeechRecognitionAlternatives на результат
 
         EditorVoice.recognizer.onresult = function (event) {
@@ -131,7 +132,7 @@ class EditorVoice {
             } else {
                 //console.log(`Точность ${result[0].confidence.toFixed(4)}: ${result[0].transcript}`);
                 // TODO: даже если ответ не будет распознан до состояния isFinal то возможно промежуточный результат что-то даст
-                if (result[0].confidence > 0.7 /*0.5*/){
+                if (result[0].confidence > 0.6){
                     //result_speak = result[0].transcript;
                     //console.log('Результат: ', result[0].transcript);
                     this.#recognizerResult = result[0].transcript;
@@ -140,15 +141,16 @@ class EditorVoice {
 
             //console.log(`распознано: ${this.#recognizerResult}`)
             if (this.#recognizerResult != ''){
-                this.#callbackRecognition(this.#recognizerResult, this.#callbackId);
+                if (EditorVoice.currentCallback) {
+                    EditorVoice.currentCallback(this.#recognizerResult, this.#callbackId);
+                }
                 // управление должно быть в методе инициировавшим распознание
                 // if (EditorVoice.speechStart == false){EditorVoice.recognizer.start();}
                 this.#recognizerResult='';
-                EditorVoice.recognizer.stop();
-                EditorVoice.speechStart = false;
-                this.#micEl.style.backgroundColor = '';                
+                // EditorVoice.recognizer.stop();
+                // EditorVoice.speechStart = false;
+                // if (EditorVoice.activeMicEl) EditorVoice.activeMicEl.style.backgroundColor = '';              
             }
-
         }.bind(this);
 
         EditorVoice.recognizer.onstart = function (event) {
@@ -193,12 +195,16 @@ class EditorVoice {
             console.info('onaudioend закончил захват звука');
             if (this.#recognizerResult != ''){
                 //console.log('----->',`${this.#recognizerResult}`);
-                this.#callbackRecognition(this.#recognizerResult, this.#callbackId);
+                if (EditorVoice.currentCallback) {
+                    EditorVoice.currentCallback(this.#recognizerResult, this.#callbackId);
+                }
                 this.#recognizerResult='';
             }
             EditorVoice.recognizer.stop();
             EditorVoice.speechStart = false;
-            this.#micEl.style.backgroundColor = '';
+            if (EditorVoice.activeMicEl) {  
+                EditorVoice.activeMicEl.style.backgroundColor = '';
+            }
         }.bind(this);
         
         EditorVoice.recognizer.onnomatch = function (event) {

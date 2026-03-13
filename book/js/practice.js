@@ -9,6 +9,7 @@ class Practice {
     #index_listen_and_write = -1;
     #exercises_listen_and_write = [];
     #answer = '';
+    recognition_timer = null;
  
     constructor({el_listen_and_write, el_exercise_control, exercises_listen_and_write=[], editor_img=null, editor_symbol=null}) {
         this.#el_listen_and_write = el_listen_and_write;
@@ -30,18 +31,29 @@ class Practice {
         button.onclick = this.clearEditor.bind(this);
         button.textContent = 'Очистить';
 
-        el_listen_and_write.appendChild(button);
+        this.#el_listen_and_write.appendChild(button);
+
+        this.recognition_timer = null;
     }
+
     recognition(recognition, id=null){
-        //console.log(`id=${id} recognition=${recognition}`);
-        this.setRecognition(recognition);
+         if (this.recognition_timer) {
+            clearTimeout(this.recognition_timer);
+        }
+        this.recognition_timer = setTimeout(() => {
+            this.setRecognition(recognition);
+            this.recognition_timer = null;  
+        }, 500); 
     }
+
     speak(sentence){
         this.#editor_voice.speak(sentence);
     }
+
     micOn(micEl, id){
         this.#editor_voice.micOn(micEl, id);
     }
+
     clearEditor(){
         if(this.#editor_img){
             this.#editor_img.clearEditor();
@@ -50,6 +62,7 @@ class Practice {
             this.#editor_symbol.clearEditor();
         }
     }
+
     setRecognition(recognition){
         if(this.#editor_img){
             this.#editor_img.setRecognition(recognition);
@@ -58,7 +71,8 @@ class Practice {
             this.#editor_symbol.setRecognition(recognition);
         }
     }
-    genExercisesListenAndWriteTest(){
+
+    genExercisesListenAndWrite(){
         this.#index_listen_and_write += 1; 
         if (this.#index_listen_and_write == this.#exercises_listen_and_write.length){
             this.#index_listen_and_write = 0;
@@ -68,7 +82,7 @@ class Practice {
         let origin = example[0];
         this.#answer = this.textNormalize(origin);
         
-        let sentence = `
+        let control = `
             <span class="icon play-btn-${this.#el_exercise_control.id}">⏯️ listen </span></br></br>
             <span class="icon help-btn-${this.#el_exercise_control.id}">🔎 help</span> (${example[1]}) 
             <span class="text-span" id="clue-easy-${this.#el_exercise_control.id}-${this.#index_listen_and_write}">${origin}</span></br></br>
@@ -76,7 +90,7 @@ class Practice {
             <span class="icon mic-btn-${this.#el_exercise_control.id}">🎙️ say </span></br><br>
         `;
         
-        this.#el_exercise_control.innerHTML = `<p>${sentence}</p>`;
+        this.#el_exercise_control.innerHTML = `<p>${control}</p>`;
         
         // Вешаем обработчики после вставки HTML
         this.#el_exercise_control.querySelector(`.play-btn-${this.#el_exercise_control.id}`).addEventListener('click', () => {
@@ -84,7 +98,8 @@ class Practice {
         });
         
         this.#el_exercise_control.querySelector(`.help-btn-${this.#el_exercise_control.id}`).addEventListener('click', () => {
-            showClue(`clue-easy-${this.#el_exercise_control.id}-${this.#index_listen_and_write}`);// из EditorVoice
+           // TODO: there is no reason to keep the logic of showing the tooltip in EditorVoice
+           showClue(`clue-easy-${this.#el_exercise_control.id}-${this.#index_listen_and_write}`);// from EditorVoice
         });
         
         this.#el_exercise_control.querySelector(`.next-btn-${this.#el_exercise_control.id}`).addEventListener('click', () => {
@@ -95,9 +110,11 @@ class Practice {
             this.micOn(e.target);
         });
     }
+
     playSentence(sentence){
         this.speak(sentence);
     }
+
     textNormalize(input) {
         const contractions = {
             "they're": "they are",
@@ -155,12 +172,13 @@ class Practice {
             .replace(/\s+/g, " ")
             .trim();
     }
+
     nextSentence(){
         this.clearEditor();
-        this.genExercisesListenAndWriteTest();
+        this.genExercisesListenAndWrite();
     }
+
     getAnswer(){
         return this.#answer;
     }
-     
 }

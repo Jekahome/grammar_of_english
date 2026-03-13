@@ -475,7 +475,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice.genExercisesListenAndWriteTest();
+        g_practice.genExercisesListenAndWrite();
      
  }
  {
@@ -489,7 +489,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice2.genExercisesListenAndWriteTest();
+        g_practice2.genExercisesListenAndWrite();
      
  }
  {
@@ -503,7 +503,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_answer.genExercisesListenAndWriteTest();
+        g_practice_answer.genExercisesListenAndWrite();
      
  }
  {
@@ -518,7 +518,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_there_all_exercises.genExercisesListenAndWriteTest();
+        g_practice_there_all_exercises.genExercisesListenAndWrite();
      
  }
     } catch (error) {

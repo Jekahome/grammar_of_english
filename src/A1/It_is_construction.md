@@ -517,7 +517,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_it_is.genExercisesListenAndWriteTest();
+        g_practice_it_is.genExercisesListenAndWrite();
      
  }
  {
@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_time.genExercisesListenAndWriteTest();
+        g_practice_time.genExercisesListenAndWrite();
      
  }
  {
@@ -545,7 +545,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_date.genExercisesListenAndWriteTest();
+        g_practice_date.genExercisesListenAndWrite();
      
  }
  {
@@ -559,7 +559,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_distance.genExercisesListenAndWriteTest();
+        g_practice_distance.genExercisesListenAndWrite();
      
  }
  {
@@ -573,7 +573,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_weather.genExercisesListenAndWriteTest();
+        g_practice_weather.genExercisesListenAndWrite();
      
  } 
  {
@@ -587,7 +587,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_view.genExercisesListenAndWriteTest();
+        g_practice_view.genExercisesListenAndWrite();
      
  }  
  {
@@ -601,7 +601,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_adjective.genExercisesListenAndWriteTest();
+        g_practice_adjective.genExercisesListenAndWrite();
      
  }   
  {
@@ -620,7 +620,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_together.genExercisesListenAndWriteTest();
+        g_practice_together.genExercisesListenAndWrite();
      
  } 
     } catch (error) {

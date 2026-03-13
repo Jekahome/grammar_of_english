@@ -1063,7 +1063,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_irregular_verbs_sentence.genExercisesListenAndWriteTest();
+        g_practice_irregular_verbs_sentence.genExercisesListenAndWrite();
      
  }
  {
@@ -1077,7 +1077,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_irregular_verbs.genExercisesListenAndWriteTest();
+        g_practice_irregular_verbs.genExercisesListenAndWrite();
      
  }
     } catch (error) {

@@ -1222,7 +1222,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_simple.genExercisesListenAndWriteTest(); 
+        g_practice_simple.genExercisesListenAndWrite(); 
  }        
  {
         let editor_img = new EditorImg({callback: checkAnswerGeneralStateSubject, suffix_id: 'state_subject'});
@@ -1235,7 +1235,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_state_subject.genExercisesListenAndWriteTest(); 
+        g_practice_state_subject.genExercisesListenAndWrite(); 
  }        
  {
         let editor_img = new EditorImg({callback: checkAnswerGeneralAs, suffix_id: 'as'});
@@ -1248,7 +1248,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_as.genExercisesListenAndWriteTest(); 
+        g_practice_as.genExercisesListenAndWrite(); 
  }
  {
         let editor_img = new EditorImg({callback: checkAnswerGeneralLess, suffix_id: 'less'});
@@ -1261,7 +1261,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_less.genExercisesListenAndWriteTest(); 
+        g_practice_less.genExercisesListenAndWrite(); 
  }
  {
         let editor_img = new EditorImg({callback: checkAnswerGeneralThan, suffix_id: 'than'});
@@ -1274,7 +1274,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_than.genExercisesListenAndWriteTest();
+        g_practice_than.genExercisesListenAndWrite();
  }
  {
         let editor_img = new EditorImg({callback: checkAnswerGeneralIrregular, suffix_id: 'irregular'});
@@ -1287,7 +1287,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_irregular.genExercisesListenAndWriteTest();
+        g_practice_irregular.genExercisesListenAndWrite();
  }
  {
         let editor_img = new EditorImg({callback: checkAnswerGeneralForms, suffix_id: 'forms'});
@@ -1300,7 +1300,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_forms.genExercisesListenAndWriteTest();
+        g_practice_forms.genExercisesListenAndWrite();
  }
  {
         let editor_img = new EditorImg({callback: checkAnswerGeneralAll, suffix_id: 'all'});
@@ -1319,7 +1319,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_img: editor_img,
             editor_symbol: editor_symbol
         });
-        g_practice_all.genExercisesListenAndWriteTest();
+        g_practice_all.genExercisesListenAndWrite();
  }
  
     } catch (error) {

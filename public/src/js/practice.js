@@ -58,7 +58,7 @@ class Practice {
             this.#editor_symbol.setRecognition(recognition);
         }
     }
-    genExercisesListenAndWriteTest(){
+    genExercisesListenAndWrite(){
         this.#index_listen_and_write += 1; 
         if (this.#index_listen_and_write == this.#exercises_listen_and_write.length){
             this.#index_listen_and_write = 0;
@@ -103,7 +103,7 @@ class Practice {
     }
     nextSentence(){
         this.clearEditor();
-        this.genExercisesListenAndWriteTest();
+        this.genExercisesListenAndWrite();
     }
     getAnswer(){
         return this.#answer;
