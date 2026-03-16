@@ -1,22 +1,14 @@
 # Listen: Alissa
 
-Присутствуют слова выше уровнем:
+Слова не в A1:
 * A2: laugh, smiles, packing, pleased, angry, arrive, thin, shouts, unhappy, cries, pack, away, rest, serves, customers, lady, thank, large
 * B1: steps, Suddenly, owner, count, honest, ungrateful, voice, 
 * B2: slave
 * C1: obey, midday, purse
 
-*... Грамматика?*
-
-*для закрепления восприятия на слух - вопрос задается голосом на знание сюжета прослушанного контента.*
-
-*при прослушивании важно не просто читать, важно понять суть, разобрать услышанное, поэтому нужно писать то что слышишь. Как проверить что написанно?*
-
-*добавить возможность вводить голосом ответ, т.е. суфлер, повторять за диктором*
-
 <br>
 <audio id="listen-audio" controls style="width:100%">
-  <source src="/grammar_of_english/listen/A1/alissa/alissa.opus" type="audio/ogg">
+  <source src="/../listen/A1/alissa/alissa.opus" type="audio/ogg">
 </audio>
 <br>
   <details>
@@ -25,7 +17,7 @@
     <li>
     <label>
       <input type="checkbox" id="showLevel">
-      Show word level
+      Show words level
     </label>
     </li>
      <li>
@@ -94,7 +86,7 @@ function render(pageSize=10){
     const audio = document.getElementById("listen-audio");
     const showLevel = document.getElementById("showLevel").checked;
     const listen = new Listen({audio:audio, subsDiv:subs, showLevel:showLevel, pageSize:pageSize});
-    listen.loadVTT("/grammar_of_english/listen/A1/alissa/alissa.vtt");
+    listen.loadVTT("/../listen/A1/alissa/alissa.vtt");
 }
 function updateCSS() {
     styleBlock.textContent = textarea.value;

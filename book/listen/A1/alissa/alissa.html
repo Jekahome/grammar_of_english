@@ -8,9 +8,6 @@
 
         <!-- Custom HTML head -->
 
-        <!-- <script type="module" src="../js/grammar_checker.js"></script> -->
-        
-         
         <script>
             const isGithub = window.location.hostname.includes('github.io');
             const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
@@ -420,20 +417,16 @@
 }
 </style>
 <h1 id="listen-alissa"><a class="header" href="#listen-alissa">Listen: Alissa</a></h1>
-<p>Присутствуют слова выше уровнем:</p>
+<p>Слова не в A1:</p>
 <ul>
 <li>A2: laugh, smiles, packing, pleased, angry, arrive, thin, shouts, unhappy, cries, pack, away, rest, serves, customers, lady, thank, large</li>
 <li>B1: steps, Suddenly, owner, count, honest, ungrateful, voice,</li>
 <li>B2: slave</li>
 <li>C1: obey, midday, purse</li>
 </ul>
-<p><em>... Грамматика?</em></p>
-<p><em>для закрепления восприятия на слух - вопрос задается голосом на знание сюжета прослушанного контента.</em></p>
-<p><em>при прослушивании важно не просто читать, важно понять суть, разобрать услышанное, поэтому нужно писать то что слышишь. Как проверить что написанно?</em></p>
-<p><em>добавить возможность вводить голосом ответ, т.е. суфлер, повторять за диктором</em></p>
 <br>
 <audio id="listen-audio" controls style="width:100%">
-  <source src="/grammar_of_english/listen/A1/alissa/alissa.opus" type="audio/ogg">
+  <source src="/../listen/A1/alissa/alissa.opus" type="audio/ogg">
 </audio>
 <br>
   <details>
@@ -442,7 +435,7 @@
     <li>
     <label>
       <input type="checkbox" id="showLevel">
-      Show word level
+      Show words level
     </label>
     </li>
      <li>
@@ -508,7 +501,7 @@ function render(pageSize=10){
     const audio = document.getElementById("listen-audio");
     const showLevel = document.getElementById("showLevel").checked;
     const listen = new Listen({audio:audio, subsDiv:subs, showLevel:showLevel, pageSize:pageSize});
-    listen.loadVTT("/grammar_of_english/listen/A1/alissa/alissa.vtt");
+    listen.loadVTT("/../listen/A1/alissa/alissa.vtt");
 }
 function updateCSS() {
     styleBlock.textContent = textarea.value;
