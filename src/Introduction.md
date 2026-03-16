@@ -1991,6 +1991,18 @@ whisper audio.opus --model medium --language en --output_format vtt --device cpu
 whisper audio.opus --model base --language en --output_format vtt --device cpu --temperature 0 --beam_size 5 --word_timestamps True
 ```
 
+```
+# соединить айдио файлы с расширением opus в один общий аудио файл:
+
+# создать список файлов
+for f in *.opus; do echo "file '$f'" >> list.txt; done
+
+# concat
+ffmpeg -f concat -safe 0 -i list.txt -c copy audio.opus
+```
+
+
+
 #### Проверка текста
 
 После получения текста субтитров:

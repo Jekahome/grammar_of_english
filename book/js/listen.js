@@ -5,12 +5,9 @@ class Listen {
     #audio = null;
     #showLevel = true;
     #pageSize = 10;
+    #timer_css_editor = null;
 
-    constructor({audio, subsDiv, showLevel=true, pageSize = 10}) {
-      
-        this.#audio = audio;
-        this.#subsDiv = subsDiv;
-        this.#showLevel = showLevel;
+    constructor({container, sub, pageSize = 10}) {
         
         this.subs = [];
         this.index = -1;
@@ -18,8 +15,9 @@ class Listen {
         this.#pageSize = pageSize;
         this.wordsLevel = [];
         this.textRaw = "";
-
+        this.createAudioSettings(container);
         this.init();
+        this.loadVTT(sub);
     }
 
     init() {
@@ -31,6 +29,10 @@ class Listen {
     }
 
     async loadVTT(url) {
+        const isGithub = window.location.hostname.includes('github.io');
+        url += isGithub ? '/grammar_of_english' : '';
+
+
         this.subs = await this.parseVTT(url);
         if (this.#showLevel){
             this.wordsLevel = getAllWordsLevels(this.textRaw);
@@ -149,6 +151,122 @@ class Listen {
             }
         }
         return subs;
+    }
+
+    createAudioSettings(container) {
+        container.innerHTML = '';
+
+        const listen_subs = document.createElement('div');
+        listen_subs.id="listen-subs";
+        
+        this.#subsDiv = listen_subs;
+
+        // 1. Создаем Audio
+        {
+            const listen_audio = document.createElement('audio');
+            listen_audio.id = 'listen-audio';
+            listen_audio.controls = true;
+            listen_audio.style.width = '100%';
+            
+            const source = document.createElement('source');
+            // Используем относительный путь, чтобы работало и на локалке, и на GitHub
+            const isGithub = window.location.hostname.includes('github.io');
+            source.src = isGithub ? '/grammar_of_english/listen/A1/alissa/alissa.opus' : '/listen/A1/alissa/alissa.opus';
+            source.type = 'audio/ogg';
+            
+            listen_audio.appendChild(source);
+ 
+            container.appendChild(listen_audio);
+            this.#audio = listen_audio;
+        }
+
+        // 2. Создаем Details (Settings Page)
+        const details = document.createElement('details');
+        
+        const summary = document.createElement('summary');
+        summary.textContent = 'settings page';
+        details.appendChild(summary);
+
+        const ul = document.createElement('ul');
+
+        // Лист 1: Checkbox
+        const li1 = document.createElement('li');
+        li1.innerHTML = `
+            <label>
+                <input type="checkbox" id="listen-show-level">
+                Show words level
+            </label>
+        `;
+        ul.appendChild(li1);
+
+        // Лист 2: Range Input
+        const li2 = document.createElement('li');
+        li2.innerHTML = `
+            <label for="pageSize">Number of sentences displayed on the page:</label>
+            <input type="range" id="pageSize" name="pageSize" min="2" max="12" value="10">
+            <span id="pageSizeValue">10</span>
+        `;
+        ul.appendChild(li2);
+
+        // Лист 3: Textarea
+        const li3 = document.createElement('li');
+        li3.innerHTML = `
+            Subtitle styles:<br>
+            <textarea id="listen-css-editor" rows="10" cols="50" placeholder="css for subtitles"></textarea>
+        `;
+        ul.appendChild(li3);
+
+        details.appendChild(ul);
+        details.appendChild(document.createElement('hr'));
+        details.appendChild(document.createElement('br'));
+
+        // Вставляем все в контейнер
+        container.appendChild(document.createElement('br'));
+        container.appendChild(details);
+
+        // 3. Добавляем логику (Events)
+        const range = details.querySelector('#pageSize');
+        const rangeValue = details.querySelector('#pageSizeValue');
+        range.addEventListener('input', (e) => {
+            const val = parseInt(e.target.value);
+            rangeValue.textContent = val;
+            this.#pageSize = val; 
+            this.page = -1;       // Сброс индекса страницы
+            this.drawPage();      // Перерисовываем страницу полностью
+        });
+
+       const listen_css_editor = details.querySelector('#listen-css-editor');
+        listen_css_editor.value = `/* css for subtitles */
+#listen-subs {
+    margin-top: 30px;
+    font-size: 34px;
+    line-height: 1.7;
+    text-align: center;
+}`;
+
+        const listen_show_level = details.querySelector('#listen-show-level');
+        listen_show_level.checked = this.#showLevel;
+        listen_show_level.addEventListener('change', (e) => {
+            this.#showLevel = e.target.checked;
+            this.page = -1; // Сброс страницы при новой загрузке
+            this.drawPage();
+        });
+        this.#showLevel = listen_show_level.checked;
+
+        const styleTag = document.createElement('style');
+        styleTag.id = "listen-user-styles";
+        container.appendChild(styleTag);
+        
+        listen_css_editor.addEventListener("input", () => {
+            clearTimeout(this.#timer_css_editor);
+            this.#timer_css_editor = setTimeout(() => {
+                styleTag.textContent = listen_css_editor.value; // Применяем CSS
+            }, 200);
+        });
+
+        styleTag.textContent = listen_css_editor.value;
+                
+        container.appendChild(listen_subs);
     }
 }
 
