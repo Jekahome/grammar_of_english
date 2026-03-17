@@ -12,8 +12,8 @@ class Listen {
         const isGithub = window.location.hostname.includes('github.io');
         url = isGithub ? '/grammar_of_english' : '';
 
-        let path_audio = path_audio + url;
-        let path_sub = path_sub + url;
+        let path_audio = url + path_audio;
+        let path_sub = url + path_sub;
 
         this.subs = [];
         this.index = -1;
