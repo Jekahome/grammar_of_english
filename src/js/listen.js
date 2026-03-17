@@ -10,10 +10,10 @@ class Listen {
     constructor({container, path_sub, path_audio, pageSize = 10}) {
         
         const isGithub = window.location.hostname.includes('github.io');
-        url = isGithub ? '/grammar_of_english' : '';
+        const url = isGithub ? '/grammar_of_english' : '';
 
-        let path_audio = url + path_audio;
-        let path_sub = url + path_sub;
+        let audio = url + path_audio;
+        let subtitles = url + path_sub;
 
         this.subs = [];
         this.index = -1;
@@ -21,9 +21,9 @@ class Listen {
         this.#pageSize = pageSize;
         this.wordsLevel = [];
         this.textRaw = "";
-        this.createAudioSettings(container, path_audio);
+        this.createAudioSettings(container, audio);
         this.init();
-        this.loadVTT(path_sub);
+        this.loadVTT(subtitles);
     }
 
     init() {
