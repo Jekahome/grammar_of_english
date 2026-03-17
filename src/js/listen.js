@@ -142,7 +142,7 @@ class Listen {
                 }
                 subs.push({ start, end, text: textLines.join(" ") });
                 if (this.#showLevel){
-                    this.textRaw =this.textRaw + " " + textLines;
+                    this.textRaw = this.textRaw + " " + textLines;
                 }
             } else {
                 i++;
@@ -195,6 +195,21 @@ class Listen {
             </label>
         `;
         ul.appendChild(li1);
+        {
+            const ul_inner = document.createElement('ul');
+            const li1_inner = document.createElement('li');
+            li1_inner.innerHTML = `<span class="listen_a2" style="font-size:34px"> A2</span>, \
+            <span class="listen_b1" style="font-size:34px"> B1</span>, \
+            <span class="listen_b2" style="font-size:34px"> B2</span>, \
+            <span class="listen_c1" style="font-size:34px"> C1</span>, \
+            <span class="listen_c2" style="font-size:34px"> C2</span>, \
+            <span class="listen_other" style="font-size:34px"> Other</span>`;
+
+            ul_inner.appendChild(li1_inner);
+  
+          ul.appendChild(ul_inner);
+        }
+ 
 
         // Лист 2: Range Input
         const li2 = document.createElement('li');

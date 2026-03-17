@@ -7,17 +7,23 @@ class Listen {
     #pageSize = 10;
     #timer_css_editor = null;
 
-    constructor({container, sub, pageSize = 10}) {
+    constructor({container, path_sub, path_audio, pageSize = 10}) {
         
+        const isGithub = window.location.hostname.includes('github.io');
+        const url = isGithub ? '/grammar_of_english' : '';
+
+        let audio = url + path_audio;
+        let subtitles = url + path_sub;
+
         this.subs = [];
         this.index = -1;
         this.page = -1;
         this.#pageSize = pageSize;
         this.wordsLevel = [];
         this.textRaw = "";
-        this.createAudioSettings(container);
+        this.createAudioSettings(container, audio);
         this.init();
-        this.loadVTT(sub);
+        this.loadVTT(subtitles);
     }
 
     init() {
@@ -29,10 +35,6 @@ class Listen {
     }
 
     async loadVTT(url) {
-        const isGithub = window.location.hostname.includes('github.io');
-        url += isGithub ? '/grammar_of_english' : '';
-
-
         this.subs = await this.parseVTT(url);
         if (this.#showLevel){
             this.wordsLevel = getAllWordsLevels(this.textRaw);
@@ -87,9 +89,7 @@ class Listen {
             listen_c2: new Set(this.wordsLevel.show_c2),
             listen_other: new Set(this.wordsLevel.show_other)
         };
-
         const words = text.split(/\s+/);
-
         return words.map(word => {
             const classes = [];
 
@@ -98,11 +98,9 @@ class Listen {
                     classes.push(level);
                 }
             }
-
             if (classes.length) {
                 return `<span class="${classes.join(" ")}">${word}</span>`;
             }
-
             return word;
         }).join(" ");
     }
@@ -144,7 +142,7 @@ class Listen {
                 }
                 subs.push({ start, end, text: textLines.join(" ") });
                 if (this.#showLevel){
-                    this.textRaw =this.textRaw + " " + textLines;
+                    this.textRaw = this.textRaw + " " + textLines;
                 }
             } else {
                 i++;
@@ -153,7 +151,7 @@ class Listen {
         return subs;
     }
 
-    createAudioSettings(container) {
+    createAudioSettings(container, path_audio) {
         container.innerHTML = '';
 
         const listen_subs = document.createElement('div');
@@ -169,9 +167,8 @@ class Listen {
             listen_audio.style.width = '100%';
             
             const source = document.createElement('source');
-            // Используем относительный путь, чтобы работало и на локалке, и на GitHub
-            const isGithub = window.location.hostname.includes('github.io');
-            source.src = isGithub ? '/grammar_of_english/listen/A1/alissa/alissa.opus' : '/listen/A1/alissa/alissa.opus';
+            
+            source.src = path_audio;
             source.type = 'audio/ogg';
             
             listen_audio.appendChild(source);
@@ -198,6 +195,21 @@ class Listen {
             </label>
         `;
         ul.appendChild(li1);
+        {
+            const ul_inner = document.createElement('ul');
+            const li1_inner = document.createElement('li');
+            li1_inner.innerHTML = `<span class="listen_a2" style="font-size:34px"> A2</span>, \
+            <span class="listen_b1" style="font-size:34px"> B1</span>, \
+            <span class="listen_b2" style="font-size:34px"> B2</span>, \
+            <span class="listen_c1" style="font-size:34px"> C1</span>, \
+            <span class="listen_c2" style="font-size:34px"> C2</span>, \
+            <span class="listen_other" style="font-size:34px"> Other</span>`;
+
+            ul_inner.appendChild(li1_inner);
+  
+          ul.appendChild(ul_inner);
+        }
+ 
 
         // Лист 2: Range Input
         const li2 = document.createElement('li');
@@ -269,4 +281,3 @@ class Listen {
         container.appendChild(listen_subs);
     }
 }
-
