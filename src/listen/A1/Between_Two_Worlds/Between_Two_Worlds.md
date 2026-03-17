@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const subtitles = "/listen/A1/Between_Two_Worlds/Between_Two_Worlds.vtt";
         const audio = "/listen/A1/Between_Two_Worlds/Between_Two_Worlds.opus";
    
-        const listen = new window.Listen({container:container,sub:subtitles, pageSize:10});
+        const listen = new Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
     } catch (error) {
         console.error("Error build:", error);
     }

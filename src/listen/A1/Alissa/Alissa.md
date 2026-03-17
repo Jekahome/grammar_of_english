@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const audio = "/listen/A1/Alissa/Alissa.opus";
         const subtitles = "/listen/A1/Alissa/Alissa.vtt";
 
-        const listen = new window.Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
+        const listen = new Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
     } catch (error) {
         console.error("Error build:", error);
     }

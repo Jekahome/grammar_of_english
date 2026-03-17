@@ -266,5 +266,3 @@ class Listen {
         container.appendChild(listen_subs);
     }
 }
-
-window.Listen = Listen;
