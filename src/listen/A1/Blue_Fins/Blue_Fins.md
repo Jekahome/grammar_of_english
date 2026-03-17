@@ -1,5 +1,5 @@
 
-# Blue Fins
+# Listen: Blue Fins
 
 <div id="listen-container"></div>
  
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const subtitles = "/listen/A1/Blue_Fins/Blue_Fins.vtt";
         const audio = "/listen/A1/Blue_Fins/Blue_Fins.opus";
    
-        const listen = new Listen({container:container,sub:subtitles, pageSize:10});
+        const listen = new window.Listen({container:container,sub:subtitles, pageSize:10});
     } catch (error) {
         console.error("Error build:", error);
     }

@@ -1,4 +1,4 @@
-# Blue Moon Valley
+# Listen: Blue Moon Valley
 
 
 <div id="listen-container"></div>
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const subtitles = "/listen/A1/Blue_Moon_Valley/Blue_Moon_Valley.vtt";
         const audio = "/listen/A1/Blue_Moon_Valley/Blue_Moon_Valley.opus";
    
-        const listen = new Listen({container:container,sub:subtitles, pageSize:10});
+        const listen = new window.Listen({container:container,sub:subtitles, pageSize:10});
     } catch (error) {
         console.error("Error build:", error);
     }
