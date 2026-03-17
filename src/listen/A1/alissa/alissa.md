@@ -53,8 +53,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
   
         const container = document.getElementById("listen-container");
+        const audio = "/listen/A1/alissa/alissa.opus";
         const subtitles = "/listen/A1/alissa/alissa.vtt";
-        const listen = new Listen({container:container,sub:subtitles, pageSize:10});
+
+        const listen = new Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
     } catch (error) {
         console.error("Error build:", error);
     }

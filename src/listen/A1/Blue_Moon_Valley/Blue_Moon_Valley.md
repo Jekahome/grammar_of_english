@@ -1,4 +1,4 @@
-# Between Two Worlds
+# Blue Moon Valley
 
 
 <div id="listen-container"></div>
@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
   
         const container = document.getElementById("listen-container");
-        const subtitles = "/listen/A1/Between_Two_Worlds/Between_Two_Worlds.vtt";
-        const audio = "/listen/A1/Between_Two_Worlds/Between_Two_Worlds.opus";
+        const subtitles = "/listen/A1/Blue_Moon_Valley/Blue_Moon_Valley.vtt";
+        const audio = "/listen/A1/Blue_Moon_Valley/Blue_Moon_Valley.opus";
    
         const listen = new Listen({container:container,sub:subtitles, pageSize:10});
     } catch (error) {

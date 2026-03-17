@@ -7,17 +7,23 @@ class Listen {
     #pageSize = 10;
     #timer_css_editor = null;
 
-    constructor({container, sub, pageSize = 10}) {
+    constructor({container, path_sub, path_audio, pageSize = 10}) {
         
+        const isGithub = window.location.hostname.includes('github.io');
+        url = isGithub ? '/grammar_of_english' : '';
+
+        let path_audio = path_audio + url;
+        let path_sub = path_sub + url;
+
         this.subs = [];
         this.index = -1;
         this.page = -1;
         this.#pageSize = pageSize;
         this.wordsLevel = [];
         this.textRaw = "";
-        this.createAudioSettings(container);
+        this.createAudioSettings(container, path_audio);
         this.init();
-        this.loadVTT(sub);
+        this.loadVTT(path_sub);
     }
 
     init() {
@@ -29,10 +35,6 @@ class Listen {
     }
 
     async loadVTT(url) {
-        const isGithub = window.location.hostname.includes('github.io');
-        url += isGithub ? '/grammar_of_english' : '';
-
-
         this.subs = await this.parseVTT(url);
         if (this.#showLevel){
             this.wordsLevel = getAllWordsLevels(this.textRaw);
@@ -87,9 +89,7 @@ class Listen {
             listen_c2: new Set(this.wordsLevel.show_c2),
             listen_other: new Set(this.wordsLevel.show_other)
         };
-
         const words = text.split(/\s+/);
-
         return words.map(word => {
             const classes = [];
 
@@ -98,11 +98,9 @@ class Listen {
                     classes.push(level);
                 }
             }
-
             if (classes.length) {
                 return `<span class="${classes.join(" ")}">${word}</span>`;
             }
-
             return word;
         }).join(" ");
     }
@@ -153,7 +151,7 @@ class Listen {
         return subs;
     }
 
-    createAudioSettings(container) {
+    createAudioSettings(container, path_audio) {
         container.innerHTML = '';
 
         const listen_subs = document.createElement('div');
@@ -169,9 +167,8 @@ class Listen {
             listen_audio.style.width = '100%';
             
             const source = document.createElement('source');
-            // Используем относительный путь, чтобы работало и на локалке, и на GitHub
-            const isGithub = window.location.hostname.includes('github.io');
-            source.src = isGithub ? '/grammar_of_english/listen/A1/alissa/alissa.opus' : '/listen/A1/alissa/alissa.opus';
+            
+            source.src = path_audio;
             source.type = 'audio/ogg';
             
             listen_audio.appendChild(source);

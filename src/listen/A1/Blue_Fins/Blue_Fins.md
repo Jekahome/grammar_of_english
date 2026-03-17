@@ -1,5 +1,5 @@
-# Between Two Worlds
 
+# Blue Fins
 
 <div id="listen-container"></div>
  
@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
   
         const container = document.getElementById("listen-container");
-        const subtitles = "/listen/A1/Between_Two_Worlds/Between_Two_Worlds.vtt";
-        const audio = "/listen/A1/Between_Two_Worlds/Between_Two_Worlds.opus";
+        const subtitles = "/listen/A1/Blue_Fins/Blue_Fins.vtt";
+        const audio = "/listen/A1/Blue_Fins/Blue_Fins.opus";
    
         const listen = new Listen({container:container,sub:subtitles, pageSize:10});
     } catch (error) {
