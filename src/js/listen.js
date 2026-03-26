@@ -6,6 +6,7 @@ class Listen {
     #showLevel = true;
     #pageSize = 10;
     #timer_css_editor = null;
+    #mode = "auto";// auto, manual, auto2
 
     constructor({container, path_sub, path_audio, pageSize = 10}) {
         
@@ -43,7 +44,7 @@ class Listen {
         this.drawPage();
     }
 
-    update() {
+    update() {console.log(this.#audio.currentTime)
         const t = this.#audio.currentTime;
         const newIndex = this.subs.findIndex(s => t >= s.start && t <= s.end);
         
@@ -210,7 +211,6 @@ class Listen {
           ul.appendChild(ul_inner);
         }
  
-
         // Лист 2: Range Input
         const li2 = document.createElement('li');
         li2.innerHTML = `
@@ -220,6 +220,7 @@ class Listen {
         `;
         ul.appendChild(li2);
 
+    
         // Лист 3: Textarea
         const li3 = document.createElement('li');
         li3.innerHTML = `
@@ -248,7 +249,7 @@ class Listen {
         });
 
        const listen_css_editor = details.querySelector('#listen-css-editor');
-        listen_css_editor.value = `/* css for subtitles */
+       listen_css_editor.value = `/* css for subtitles */
 #listen-subs {
     margin-top: 30px;
     font-size: 34px;

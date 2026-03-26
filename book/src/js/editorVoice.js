@@ -63,7 +63,7 @@ class EditorVoice {
         }
     }
 
-    constructor({rate=0.9, pitch=0.9, lang='en-US', callback}) {
+    constructor({rate=0.8, pitch=1.0, lang='en-US', callback}) {
 
         EditorVoice.synth = window.speechSynthesis;
         //EditorVoice.storeAudio = storeAudio;

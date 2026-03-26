@@ -104,8 +104,8 @@ body {
 }
 
 .on {
-    border-color: #00ff00;
-    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    border-color: #38d638;
+    box-shadow: 0 0 10px #38d638, 0 0 20px #38d638;
 }
 .error {
     border-color: #f41606;
@@ -139,4 +139,8 @@ body {
 }
 .grammar-input {
     /*width:100%;*/
+}
+
+.success-result{
+    background: #38d638;
 }

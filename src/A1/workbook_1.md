@@ -1,12 +1,14 @@
 # Workbook 1
-
-> Клей слов и грамматики:
+*Смысл Workbook: научиться создавать предложения с начальной грамматикой, пользуясь минимальным набором подходящих слов.*
+ 
+> Грамматика:
 > * Глагол "to be" в форме инфинитива настоящего времени (Present Infinitive)
 > * Pronouns (Personal, Demonstrative)
 
-Смысл Workbook: освоить начальную грамматику с минимальным набором слов, подходящих под тему грамматики. И научиться создавать предложения.
- 
-### Таблица слов
+
+### Применяемые слова
+
+<div data-words>
 
 | № | Глагол (Verb) | Прилагательное (adjective) | Предложная фраза (prepositional phrase) | Существительное (noun) | Наречие (adverb) |
 | --- | --- | --- | --- | --- | --- |
@@ -24,6 +26,8 @@
 | 12 | — | **together** (вместе) | — | — | — |
 | 13 | — | **clear** (ясный) | — | — | — |
 
+<div>
+ 
 <br>
 
 ---
@@ -31,13 +35,15 @@
 <details>
 <summary>Section 1</summary>
  
-#### Section 1
+#### Создать предложение используя:
 * "to be" — инфинитив настоящего времени (Present Infinitive)
 * Личные местоимения в именительном падеже (I, you, he, she, it, we, they)
-* Глаголы: want, need, try, work, study, come
+* Глаголы: want, need, try, work, study, come,...
 
 > [!TIP]
 > Pronoun + verb + to be + (adjective / prepositional phrase / noun / adverb)
+>
+> *I        + want + to be + happy*
 
 > [!EXAMPLE]
 > * I want to be happy (adjective) - Я хочу быть счастливым.
@@ -57,13 +63,15 @@
 <details>
 <summary>Section 2</summary>
 
-#### Section 2
+#### Создать предложение используя:
 * "to be" — инфинитив настоящего времени (Present Infinitive)
 * Личные местоимения в косвенном падеже (me, you, him, her, it, us, them)
-* Глаголы: want, need, ask, tell
+* Глаголы: want, need, ask, tell,...
 
 > [!TIP]
 > Pronoun + verb + object pronoun + to be + (adjective / prepositional phrase / noun / adverb)
+>
+> *I      + want + them           + to be  + happy.*
 
 > [!EXAMPLE]
 > * I want them to be happy. — Я хочу, чтобы они были счастливы.
@@ -84,12 +92,14 @@
 <details>
 <summary>Section 3</summary>
 
-#### Section 3
+#### Создать предложение используя:
 * Указательные местоимения (this, that, these, those)
-* Глагол to be в настоящем времени (is, are)
+* Глагол "to be" в настоящем времени (is, are)
 
 > [!TIP]
 > This/That/These/Those + is/are + (adjective / prepositional phrase / noun / adverb)
+>
+> *This                 + is     + a teacher.*
 
 > [!EXAMPLE]
 > 
@@ -123,7 +133,7 @@
 <details>
 <summary>Section 4</summary>
 
-#### Section 4
+#### Создать предложение используя:
 
 * "to be" — инфинитив настоящего времени (Present Infinitive)
 * Указательные предложения (This is..., These are..., That is..., Those are...)
@@ -133,8 +143,11 @@
 > [!TIP]
 > This/That/These/Those + is/are + to be + (adjective / prepositional phrase / noun / adverb)
 > 
+> *This                 + is     + to be + a doctor.*
+>
 > This/That/These/Those + is/are + noun + to be + (adjective / prepositional phrase / adverb)
-
+>
+> *This                 + is     + a man + to be + happy*
 
 > [!EXAMPLE]
 > 
@@ -395,6 +408,7 @@ const exercises_medium_making_a_sentence_4 = [
 
 let g_practice2_1 = null;
 let g_practice2_2 = null;
+let editor_voice = null;
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     {
@@ -425,7 +439,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       const data = getRandomMix(exercises_medium_making_a_sentence_4);
       const practice2 = new Practice2({el_control: control, el_input: input, el_result: result, parts_of_sentences: data, user_rules_callback: validateSection4});
     }
-    
+
+    editor_voice = new EditorVoice({});
+    document.querySelectorAll('[data-words] strong').forEach(el => {
+        el.style.cursor = 'help';
+        el.addEventListener('click', () => {
+            const word = el.textContent.trim();
+            editor_voice.speak(word);
+        });
+    });
   } catch (error) {
     console.error("Error build:", error);
   }
@@ -442,7 +464,7 @@ table {
 
  
 <!--
-Список всех слов из таблицы:
+Список всех слов из Workbook 1:
 
 **Глаголы (Verbs)**
 *   want (хотеть)

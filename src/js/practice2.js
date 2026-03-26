@@ -96,6 +96,7 @@ class Practice2 {
     }
 
     nextSentence(){
+        this.el_result_list.classList.remove('success-result');
         this.el_result_list.innerHTML = '';
         this.current_index_sentence += 1;
         if (this.current_index_sentence >= this.parts_of_sentences.length){
@@ -106,6 +107,10 @@ class Practice2 {
     }
 
     micOn(){
+        this.el_result_list.classList.remove('success-result');
+        //this.el_make_input.innerHTML = '';
+        this.el_result_list.innerHTML = '';
+
         this.#editor_voice.micOn(this.el_make_mic);
     }
     capitalize(s) {
@@ -187,6 +192,7 @@ class Practice2 {
     }
 
     checkUserRules(input, result){
+        this.el_result_list.classList.remove('success-result');
         if (result.length == 0){
             let result_user_rules = this.user_rules_callback(input);
 
@@ -199,6 +205,7 @@ class Practice2 {
                 });  
             }else{
                 this.el_result_list.innerHTML = `<li>Successfully</li>`;
+                this.el_result_list.classList.add('success-result');
             }
         }else{
             this.el_result_list.innerHTML = '';
