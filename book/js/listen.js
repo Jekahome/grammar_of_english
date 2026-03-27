@@ -7,6 +7,20 @@ class Listen {
     #pageSize = 10;
     #timer_css_editor = null;
     #mode = "auto";// auto, manual, auto2
+    #repeatCount = 0;   // сколько раз уже повторили текущий отрезок
+    #manualBtnNext = null;  // кнопка "следующий" для ручного режима
+    #manualBtnRepeat = null;
+    #manualIsRepeat = false;
+
+    #arrIndexes = [];
+    #currentIndex = 0;
+
+    subs = [];
+    index = 0;
+    page = -1;
+    wordsLevel = [];
+    textRaw = "";
+
 
     constructor({container, path_sub, path_audio, pageSize = 10}) {
         
@@ -25,8 +39,9 @@ class Listen {
         this.createAudioSettings(container, audio);
         this.init();
         this.loadVTT(subtitles);
+       
     }
-
+ 
     init() {
         if (!this.#audio || !this.#subsDiv) {
             console.error("Listen: Элементы не найдены");
@@ -42,24 +57,61 @@ class Listen {
         }
         this.page = -1; // Сброс страницы при новой загрузке
         this.drawPage();
+        this.buildTimeRout();
     }
 
-    update() {console.log(this.#audio.currentTime)
+    buildTimeRout(){
+        const duration = this.subs[this.subs.length - 1]?.end ?? 0;
+        let arr = [];
+        for (let t=0; t < duration; t++){
+            const newIndex = this.subs.findIndex(s => t >= s.start && t <= s.end);
+            if (newIndex !== -1 && !this.#arrIndexes.includes(newIndex)){
+                this.#arrIndexes.push(newIndex);
+            }
+        }
+    }
+
+    update() {  
         const t = this.#audio.currentTime;
         const newIndex = this.subs.findIndex(s => t >= s.start && t <= s.end);
         
-        if (newIndex === -1 || newIndex === this.index) return;
-
+        if (newIndex === -1 || (this.index === newIndex && this.#manualIsRepeat===false) ) return;
+       
         this.index = newIndex;
-        const newPage = Math.floor(this.index / this.#pageSize);
 
+        if (this.#mode === "manual") {
+              
+            if(this.#manualIsRepeat === false) {
+                if(this.index > 0){this.#audio.pause();}
+                this.#currentIndex +=1;
+            }else{
+                if (this.index > this.#arrIndexes[this.#currentIndex]){
+                    this.#manualIsRepeat = false;
+                    this.#audio.pause();
+                    this.#currentIndex +=1;
+                } else{
+                    this.#audio.play();
+                }
+            }
+            
+            this.updateBody();
+            return;
+        }
+
+        this.updateBody();
+    }
+
+    updateBody(){
+        const newPage = Math.floor(this.index / this.#pageSize);
         if (newPage !== this.page) {
             this.page = newPage;
             this.drawPage();
         }
-
         this.highlight();
-    }
+        if (this.#mode === "auto") {
+            this.#currentIndex +=1;
+        }  
+    } 
 
     drawPage() {
         const start = this.page === -1 ? 0 : this.page * this.#pageSize;
@@ -220,6 +272,34 @@ class Listen {
         `;
         ul.appendChild(li2);
 
+        //===========================================
+        {
+
+            const li4 = document.createElement('li');
+            li4.innerHTML = "Режим прослушивания";
+
+
+            const ul_inner = document.createElement('ul');
+            const li1_inner1 = document.createElement('li');
+            li1_inner1.innerHTML = `
+            <label>
+                <input type="radio" name="mode" checked="true" id="listen-mode-auto"> Авто
+            </label>
+            `;
+            ul_inner.appendChild(li1_inner1);
+
+            const li1_inner2 = document.createElement('li');
+            li1_inner2.innerHTML = `
+            <label>
+                <input type="radio" name="mode" id="listen-mode-manual"> Ручной
+            </label>
+            `;
+            ul_inner.appendChild(li1_inner2);
+
+            li4.appendChild(ul_inner);
+            ul.appendChild(li4);
+        }
+        //===========================================
     
         // Лист 3: Textarea
         const li3 = document.createElement('li');
@@ -265,6 +345,64 @@ class Listen {
             this.drawPage();
         });
         this.#showLevel = listen_show_level.checked;
+
+        //===========================================
+        const listen_mode_auto = details.querySelector('#listen-mode-auto');
+        const listen_mode_manual = details.querySelector('#listen-mode-manual');
+
+        /*
+            #manualBtnNext = null;  // кнопка "следующий" для ручного режима
+            #manualBtnRepeat = null;
+        */
+        listen_mode_auto.addEventListener('change', (e) => {
+            if (e.target.checked) { 
+                this.#mode = "auto"; 
+                this.#manualBtnNext.style.display = 'none'; 
+                this.#manualBtnRepeat.style.display = 'none'; 
+            }
+        });
+        listen_mode_manual.addEventListener('change', (e) => {
+            if (e.target.checked) { 
+                this.#mode = "manual"; 
+                this.#manualBtnNext.style.display = ''; 
+                this.#manualBtnRepeat.style.display = ''; 
+
+            }
+        });
+
+        const manualBtnRepeat = document.createElement('button');
+        manualBtnRepeat.textContent = '< Prev';
+        manualBtnRepeat.id = 'listen-manual-repeat';
+        manualBtnRepeat.className = 'control-manual-btn';
+        manualBtnRepeat.style.display = 'none';
+        manualBtnRepeat.addEventListener('click', () => {
+            if(this.#currentIndex > 0){
+                this.#currentIndex=this.index;
+                this.#currentIndex -=1;
+                const next = this.subs[this.#currentIndex];
+                this.#manualIsRepeat = true;
+                this.#audio.play();
+                this.#audio.currentTime = next.start;
+            }  
+        });
+        container.appendChild(manualBtnRepeat);
+        this.#manualBtnRepeat = manualBtnRepeat;
+
+
+        const manualBtnNext = document.createElement('button');
+        manualBtnNext.textContent = 'Next >';
+        manualBtnNext.id = 'listen-manual-next';
+        manualBtnNext.className = 'control-manual-btn';
+        manualBtnNext.style.display = 'none';
+        manualBtnNext.addEventListener('click', () => {
+            this.#currentIndex=this.index;
+            this.#audio.play();
+        });
+        container.appendChild(manualBtnNext);
+        this.#manualBtnNext = manualBtnNext;
+
+        
+        //===========================================
 
         const styleTag = document.createElement('style');
         styleTag.id = "listen-user-styles";

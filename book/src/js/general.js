@@ -13,6 +13,8 @@ document.addEventListener('keydown', function(e) {
     }
     if ((e.key === 'ArrowLeft' || e.key === 'ArrowRight') && !e.ctrlKey && !e.metaKey) {
         e.stopImmediatePropagation();
+        if (e.key === 'ArrowLeft') document.getElementById('listen-manual-repeat')?.click();
+        if (e.key === 'ArrowRight') document.getElementById('listen-manual-next')?.click();
     }
     if (e.shiftKey && e.key === '?') {
         e.stopImmediatePropagation(); 

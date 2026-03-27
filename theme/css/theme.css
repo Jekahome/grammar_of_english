@@ -144,3 +144,16 @@ body {
 .success-result{
     background: #38d638;
 }
+
+.control-manual-btn {
+    /*display: block;*/
+    margin: 20px auto 0;
+    padding: 12px 30px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
