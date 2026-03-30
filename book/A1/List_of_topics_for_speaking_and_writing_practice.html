@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>List of topics for speaking and writing practice - Grammar of English</title>
+        <title>Topics (ознакомительная) - Grammar of English</title>
 
 
         <!-- Custom HTML head -->
@@ -418,8 +418,127 @@
 </style>
 <h1 id="Темы-для-изучения-английского-языка"><a class="header" href="#Темы-для-изучения-английского-языка">Темы для изучения английского языка</a></h1>
 <p><em>какой набор слов и грамматики для темы?</em></p>
+<details>
+<summary><b>Пример генерации голоса и субтитров (TTS + whisper):</b></summary>
+<pre><code>[Anna] Hello! My name is Anna. I am 26 years old. I am from Russia. I live in a flat with my family. I study English at a university. Nice to meet you!
+
+[Mark] Hello, Anna! Nice to meet you! My name is Mark. I am 29 years old. I am from Spain. I live in a house. I work as a teacher. I like my job.
+
+[Lisa] Hi! Nice to meet you! My name is Lisa. I am 23 years old. I am from Germany. I live in a small flat. I am a student. I study medicine.
+
+[Anna] Mark, do you have a family?
+[Mark] Yes, I do. I have a mother, a father, and one sister. My sister is a student. And you, Anna?
+[Anna] I have a mother, a father, and one brother. My brother is a schoolboy.
+
+[Lisa] Anna, what do you do every day?
+[Anna] I get up at 8 o’clock. I have breakfast and drink tea. Then I go to university. In the evening I read books or watch TV. And you, Lisa?
+[Lisa] I get up at 7 o’clock. I go to university. I study and read a lot.
+
+[Mark] Lisa, where do you live?
+[Lisa] I live in a small flat. It has one room, a kitchen, and a bathroom. And you, Mark?
+[Mark] I live in a big house. There are four rooms and a garden.
+
+[Anna] What do you like to do in your free time?
+[Mark] I like sports. I play football. I also like books.
+[Lisa] I like music and films.
+[Anna] I like walking and reading.
+
+[Lisa] What food do you like?
+[Anna] I like soup, rice, and chicken. I drink tea.
+[Mark] I like meat, pasta, and salad. I drink coffee.
+[Lisa] I like vegetables, fruit, and bread. I drink water and juice.
+
+[Mark] Do you like your study, Anna?
+[Anna] Yes, I do. I like English. It is interesting.
+[Lisa] I like my study too.
+
+[Anna] Thank you for the talk!
+[Mark] Thank you!
+[Lisa] Thank you! Nice to meet you!
+</code></pre>
+<p>Сперва генерация голоса с помощью TTS. После генерация субтитров с помощью whisper</p>
+<pre><code class="language-python">import os
+import re
+from TTS.api import TTS
+from pydub import AudioSegment
+
+# 1. Настройка карты голосов
+voice_mapping = {
+    "Anna": "Alison Dietlinde",
+    "Lisa": "Szofi Granger",
+    "Maria": "Alexandra Hisakawa",
+    "Kate": "Daisy Studious",
+    "Mark": "Damien Black",
+    "Tom": "Adde Michal",
+    "Ali": "Kazuhiko Atallah"
+
+}
+
+# 2. Инициализация модели
+tts = TTS(model_name="tts_models/multilingual/multi-dataset/xtts_v2", gpu=False)
+
+def process_dialogue(input_text, output_filename="for_en_lessons/final_dialogue.wav"):
+    combined_audio = AudioSegment.empty()
+    temp_files = []
+    
+    # Разбиваем текст на строки и удаляем пустые
+    lines = [line.strip() for line in input_text.split('\n') if line.strip()]
+
+    for i, line in enumerate(lines):
+        # Проверяем наличие маркера [Name] в начале строки
+        if line.startswith('[') and ']' in line:
+            end_bracket_index = line.find(']')
+            name = line[1:end_bracket_index]  # Извлекаем имя (между [ и ])
+            text = line[end_bracket_index + 1:].strip()  # Оставшийся текст реплики
+            
+            if name in voice_mapping:
+                speaker_voice = voice_mapping[name]
+                temp_file = f"temp_{i}.wav"
+                
+                print(f"Озвучивание {name}: {text[:40]}...")
+                
+                # Генерация реплики
+                tts.tts_to_file(
+                    text=text,
+                    speaker=speaker_voice,
+                    language="en",
+                    file_path=temp_file
+                )
+                
+                # Добавление в общую дорожку
+                new_segment = AudioSegment.from_wav(temp_file)
+                combined_audio += new_segment
+                
+                # Пауза 500 мс между репликами
+                combined_audio += AudioSegment.silent(duration=500)
+                temp_files.append(temp_file)
+            else:
+                print(f"Пропуск: Голос для '{name}' не настроен.")
+    
+    # Сохранение результата
+    if len(combined_audio) &gt; 0:
+        combined_audio.export(output_filename, format="wav")
+        print(f"\nГотово! Результат в файле: {output_filename}")
+    
+    # Очистка временных файлов
+    for f in temp_files:
+        if os.path.exists(f):
+            os.remove(f)
+# ######################################################################
+
+# 3. Запуск процесса
+if __name__ == "__main__":
+    
+    with open("for_en_lessons/input.txt", "r", encoding="utf-8") as f:
+        text = f.read()
+
+    process_dialogue(text)
+</code></pre>
+<pre><code class="language-bash">whisper audio.wav --model base.en --language en --output_format vtt --device cpu --temperature 0 --beam_size 5
+</code></pre>
+</details>
 <h2 id="О-себе"><a class="header" href="#О-себе">О себе</a></h2>
-<h3 id="Личная-информация"><a class="header" href="#Личная-информация">Личная информация</a></h3>
+<h4 id="Личная-информация"><a class="header" href="#Личная-информация">Личная информация</a></h4>
 <ul>
 <li>
 <p>Имя, фамилия, возраст.</p>
@@ -431,10 +550,22 @@
 <p>Родной город, страна, национальность.</p>
 </li>
 <li>
-<p>Профессия или работа.</p>
+<p>Дом и жилье</p>
 </li>
 <li>
 <p>Образование и учебные заведения.</p>
+</li>
+<li>
+<p>Профессия или работа.</p>
+</li>
+<li>
+<p>Хобби и увлечения</p>
+</li>
+<li>
+<p>Ежедневная рутина</p>
+</li>
+<li>
+<p>Еда и напитки</p>
 <p>После темы "Притяжательные формы (Possessive forms)" можно практиковать тему "Личная информация"</p>
 <ul>
 <li>My name is John Smith. I am 30 years old. - Меня зовут Джон Смит. Мне 30 лет.</li>
@@ -445,45 +576,45 @@
 </ul>
 </li>
 </ul>
-<h3 id="Работа-и-профессии"><a class="header" href="#Работа-и-профессии">Работа и профессии</a></h3>
-<ul>
-<li>Профессии и виды деятельности (например, "teacher", "doctor", "student").</li>
-<li>Место работы и обязанности (например, "I work in an office.").</li>
-</ul>
-<h3 id="Хобби-и-увлечения"><a class="header" href="#Хобби-и-увлечения">Хобби и увлечения</a></h3>
-<ul>
-<li>Любимые занятия (например, "I like playing football.", "I love reading books.").</li>
-<li>Спорт, музыка, кино и другие хобби.</li>
-</ul>
-<h3 id="Дом-и-жилье"><a class="header" href="#Дом-и-жилье">Дом и жилье</a></h3>
-<ul>
-<li>Части дома (например, "kitchen", "living room", "bedroom").</li>
-<li>Мебель и бытовая техника (например, "sofa", "fridge", "bed").</li>
-<li>Описание своего жилья (например, "I live in an apartment.").</li>
-</ul>
-<h3 id="Еда-и-напитки"><a class="header" href="#Еда-и-напитки">Еда и напитки</a></h3>
-<ul>
-<li>Названия продуктов питания (например, "bread", "milk", "apple").</li>
-<li>Любимые блюда и напитки.</li>
-<li>Обеденные привычки и приемы пищи (например, "I have breakfast at 8 a.m.").</li>
-</ul>
-<h3 id="Ежедневная-рутина"><a class="header" href="#Ежедневная-рутина">Ежедневная рутина</a></h3>
-<ul>
-<li>Описание ежедневных дел (например, "I get up at 7 a.m.", "I go to work at 9 a.m.").</li>
-<li>Время приема пищи, работа, отдых.</li>
-</ul>
-<h3 id="Города-и-страны"><a class="header" href="#Города-и-страны">Города и страны</a></h3>
-<ul>
-<li>Описание своего города и страны (например, "Moscow is the capital of Russia.").</li>
-<li>Известные места и достопримечательности.</li>
-</ul>
-<hr />
-<h2 id="Приветствия-и-прощания"><a class="header" href="#Приветствия-и-прощания">Приветствия и прощания</a></h2>
+<h4 id="Приветствия-и-прощания"><a class="header" href="#Приветствия-и-прощания">Приветствия и прощания</a></h4>
 <ul>
 <li>Приветствия ("Hello", "Hi", "Good morning").</li>
 <li>Прощания ("Goodbye", "See you later").</li>
 <li>Вежливые фразы ("Please", "Thank you", "You're welcome").</li>
 </ul>
+<h4 id="Работа-и-профессии"><a class="header" href="#Работа-и-профессии">Работа и профессии</a></h4>
+<ul>
+<li>Профессии и виды деятельности (например, "teacher", "doctor", "student").</li>
+<li>Место работы и обязанности (например, "I work in an office.").</li>
+</ul>
+<h4 id="Хобби-и-увлечения"><a class="header" href="#Хобби-и-увлечения">Хобби и увлечения</a></h4>
+<ul>
+<li>Любимые занятия (например, "I like playing football.", "I love reading books.").</li>
+<li>Спорт, музыка, кино и другие хобби.</li>
+</ul>
+<h4 id="Дом-и-жилье"><a class="header" href="#Дом-и-жилье">Дом и жилье</a></h4>
+<ul>
+<li>Части дома (например, "kitchen", "living room", "bedroom").</li>
+<li>Мебель и бытовая техника (например, "sofa", "fridge", "bed").</li>
+<li>Описание своего жилья (например, "I live in an apartment.").</li>
+</ul>
+<h4 id="Еда-и-напитки"><a class="header" href="#Еда-и-напитки">Еда и напитки</a></h4>
+<ul>
+<li>Названия продуктов питания (например, "bread", "milk", "apple").</li>
+<li>Любимые блюда и напитки.</li>
+<li>Обеденные привычки и приемы пищи (например, "I have breakfast at 8 a.m.").</li>
+</ul>
+<h4 id="Ежедневная-рутина"><a class="header" href="#Ежедневная-рутина">Ежедневная рутина</a></h4>
+<ul>
+<li>Описание ежедневных дел (например, "I get up at 7 a.m.", "I go to work at 9 a.m.").</li>
+<li>Время приема пищи, работа, отдых.</li>
+</ul>
+<h4 id="Города-и-страны"><a class="header" href="#Города-и-страны">Города и страны</a></h4>
+<ul>
+<li>Описание своего города и страны (например, "Moscow is the capital of Russia.").</li>
+<li>Известные места и достопримечательности.</li>
+</ul>
+<hr />
 <h2 id="Числа-и-время"><a class="header" href="#Числа-и-время">Числа и время</a></h2>
 <ul>
 <li>Числа (0-100 и выше).</li>
@@ -491,49 +622,59 @@
 <li>Время суток (утро, день, вечер).</li>
 <li>Часы (спрашивать и говорить, который час).</li>
 </ul>
+<hr />
 <h2 id="Тема-меню-в-ресторане"><a class="header" href="#Тема-меню-в-ресторане">Тема меню в ресторане</a></h2>
+<hr />
 <h2 id="Покупки"><a class="header" href="#Покупки">Покупки</a></h2>
 <ul>
 <li>Виды магазинов (например, "supermarket", "pharmacy").</li>
 <li>Названия товаров и цен (например, "How much is it?").</li>
 <li>Покупка еды, одежды, предметов быта.</li>
 </ul>
+<hr />
 <h2 id="Здоровье"><a class="header" href="#Здоровье">Здоровье</a></h2>
 <ul>
 <li>Части тела (например, "head", "arm", "leg").</li>
 <li>Простые симптомы (например, "I have a headache.").</li>
 <li>Посещение врача и аптеки.</li>
 </ul>
+<hr />
 <h2 id="Одежда"><a class="header" href="#Одежда">Одежда</a></h2>
 <ul>
 <li>Названия предметов одежды (например, "shirt", "pants", "shoes").</li>
 <li>Описание того, что ты носишь, или что предпочитаешь носить (например, "I am wearing a jacket.").</li>
 </ul>
+<hr />
 <h2 id="Погода"><a class="header" href="#Погода">Погода</a></h2>
 <ul>
 <li>Сезоны года (например, "spring", "summer").</li>
 <li>Описание погоды (например, "It's sunny today.", "It's cold and windy.").</li>
 </ul>
+<hr />
 <h2 id="Транспорт"><a class="header" href="#Транспорт">Транспорт</a></h2>
 <ul>
 <li>Виды транспорта (например, "bus", "train", "car").</li>
 <li>Маршруты, поездки, путешествия.</li>
 <li>Как добраться до места назначения (например, "I take a bus to work.").</li>
 </ul>
+<hr />
 <h2 id="Путешествия-и-отпуск"><a class="header" href="#Путешествия-и-отпуск">Путешествия и отпуск</a></h2>
 <ul>
 <li>Планы на отпуск (например, "I am going to the beach.").</li>
 <li>Виды отдыха (например, "I like going to the mountains.").</li>
 </ul>
+<hr />
 <h2 id="Школа-и-учеба"><a class="header" href="#Школа-и-учеба">Школа и учеба</a></h2>
 <ul>
 <li>Предметы в школе (например, "math", "history").</li>
 <li>Учебные заведения (например, "I go to school.", "I study at university.").</li>
 </ul>
+<hr />
 <h2 id="Животные"><a class="header" href="#Животные">Животные</a></h2>
 <ul>
 <li>Домашние питомцы и дикие животные (например, "I have a cat.", "Lions live in Africa.").</li>
 </ul>
+<hr />
 <h2 id="Тело-и-здоровье"><a class="header" href="#Тело-и-здоровье">Тело и здоровье</a></h2>
 <ul>
 <li>Названия частей тела.</li>

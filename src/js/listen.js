@@ -274,16 +274,14 @@ class Listen {
 
         //===========================================
         {
-
             const li4 = document.createElement('li');
-            li4.innerHTML = "Режим прослушивания";
-
+            li4.innerHTML = "Listening mode";
 
             const ul_inner = document.createElement('ul');
             const li1_inner1 = document.createElement('li');
             li1_inner1.innerHTML = `
             <label>
-                <input type="radio" name="mode" checked="true" id="listen-mode-auto"> Авто
+                <input type="radio" name="mode" checked="true" id="listen-mode-auto"> Auto
             </label>
             `;
             ul_inner.appendChild(li1_inner1);
@@ -291,7 +289,7 @@ class Listen {
             const li1_inner2 = document.createElement('li');
             li1_inner2.innerHTML = `
             <label>
-                <input type="radio" name="mode" id="listen-mode-manual"> Ручной
+                <input type="radio" name="mode" id="listen-mode-manual"> Manual
             </label>
             `;
             ul_inner.appendChild(li1_inner2);

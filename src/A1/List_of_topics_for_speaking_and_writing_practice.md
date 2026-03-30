@@ -2,14 +2,149 @@
 
 *какой набор слов и грамматики для темы?*
 
+
+<details>
+<summary><b>Пример генерации голоса и субтитров (TTS + whisper):</b></summary>
+
+
+```
+[Anna] Hello! My name is Anna. I am 26 years old. I am from Russia. I live in a flat with my family. I study English at a university. Nice to meet you!
+
+[Mark] Hello, Anna! Nice to meet you! My name is Mark. I am 29 years old. I am from Spain. I live in a house. I work as a teacher. I like my job.
+
+[Lisa] Hi! Nice to meet you! My name is Lisa. I am 23 years old. I am from Germany. I live in a small flat. I am a student. I study medicine.
+
+[Anna] Mark, do you have a family?
+[Mark] Yes, I do. I have a mother, a father, and one sister. My sister is a student. And you, Anna?
+[Anna] I have a mother, a father, and one brother. My brother is a schoolboy.
+
+[Lisa] Anna, what do you do every day?
+[Anna] I get up at 8 o’clock. I have breakfast and drink tea. Then I go to university. In the evening I read books or watch TV. And you, Lisa?
+[Lisa] I get up at 7 o’clock. I go to university. I study and read a lot.
+
+[Mark] Lisa, where do you live?
+[Lisa] I live in a small flat. It has one room, a kitchen, and a bathroom. And you, Mark?
+[Mark] I live in a big house. There are four rooms and a garden.
+
+[Anna] What do you like to do in your free time?
+[Mark] I like sports. I play football. I also like books.
+[Lisa] I like music and films.
+[Anna] I like walking and reading.
+
+[Lisa] What food do you like?
+[Anna] I like soup, rice, and chicken. I drink tea.
+[Mark] I like meat, pasta, and salad. I drink coffee.
+[Lisa] I like vegetables, fruit, and bread. I drink water and juice.
+
+[Mark] Do you like your study, Anna?
+[Anna] Yes, I do. I like English. It is interesting.
+[Lisa] I like my study too.
+
+[Anna] Thank you for the talk!
+[Mark] Thank you!
+[Lisa] Thank you! Nice to meet you!
+```
+
+
+Сперва генерация голоса с помощью TTS. После генерация субтитров с помощью whisper
+```python
+import os
+import re
+from TTS.api import TTS
+from pydub import AudioSegment
+
+# 1. Настройка карты голосов
+voice_mapping = {
+    "Anna": "Alison Dietlinde",
+    "Lisa": "Szofi Granger",
+    "Maria": "Alexandra Hisakawa",
+    "Kate": "Daisy Studious",
+    "Mark": "Damien Black",
+    "Tom": "Adde Michal",
+    "Ali": "Kazuhiko Atallah"
+
+}
+
+# 2. Инициализация модели
+tts = TTS(model_name="tts_models/multilingual/multi-dataset/xtts_v2", gpu=False)
+
+def process_dialogue(input_text, output_filename="for_en_lessons/final_dialogue.wav"):
+    combined_audio = AudioSegment.empty()
+    temp_files = []
+    
+    # Разбиваем текст на строки и удаляем пустые
+    lines = [line.strip() for line in input_text.split('\n') if line.strip()]
+
+    for i, line in enumerate(lines):
+        # Проверяем наличие маркера [Name] в начале строки
+        if line.startswith('[') and ']' in line:
+            end_bracket_index = line.find(']')
+            name = line[1:end_bracket_index]  # Извлекаем имя (между [ и ])
+            text = line[end_bracket_index + 1:].strip()  # Оставшийся текст реплики
+            
+            if name in voice_mapping:
+                speaker_voice = voice_mapping[name]
+                temp_file = f"temp_{i}.wav"
+                
+                print(f"Озвучивание {name}: {text[:40]}...")
+                
+                # Генерация реплики
+                tts.tts_to_file(
+                    text=text,
+                    speaker=speaker_voice,
+                    language="en",
+                    file_path=temp_file
+                )
+                
+                # Добавление в общую дорожку
+                new_segment = AudioSegment.from_wav(temp_file)
+                combined_audio += new_segment
+                
+                # Пауза 500 мс между репликами
+                combined_audio += AudioSegment.silent(duration=500)
+                temp_files.append(temp_file)
+            else:
+                print(f"Пропуск: Голос для '{name}' не настроен.")
+    
+    # Сохранение результата
+    if len(combined_audio) > 0:
+        combined_audio.export(output_filename, format="wav")
+        print(f"\nГотово! Результат в файле: {output_filename}")
+    
+    # Очистка временных файлов
+    for f in temp_files:
+        if os.path.exists(f):
+            os.remove(f)
+# ######################################################################
+
+# 3. Запуск процесса
+if __name__ == "__main__":
+    
+    with open("for_en_lessons/input.txt", "r", encoding="utf-8") as f:
+        text = f.read()
+
+    process_dialogue(text)
+```
+
+```bash
+whisper audio.wav --model base.en --language en --output_format vtt --device cpu --temperature 0 --beam_size 5
+```
+
+</details>
+
+
 ## О себе
 
-### Личная информация
+#### Личная информация
 * Имя, фамилия, возраст.
 * Семья (родители, братья, сестры и т.д.).
 * Родной город, страна, национальность.
-* Профессия или работа.
+* Дом и жилье
 * Образование и учебные заведения.
+* Профессия или работа.
+* Хобби и увлечения
+* Ежедневная рутина
+* Еда и напитки
 
     После темы "Притяжательные формы (Possessive forms)" можно практиковать тему "Личная информация"
     * My name is John Smith. I am 30 years old. - Меня зовут Джон Смит. Мне 30 лет.
@@ -18,38 +153,43 @@
     * I am a teacher. I work at a school. - Я учитель. Я работаю в школе.
     * I have a degree in History. I studied at New York University. - У меня степень по истории. Я учился в Нью-Йоркском университете.
 
-### Работа и профессии
+#### Приветствия и прощания
+* Приветствия ("Hello", "Hi", "Good morning").
+* Прощания ("Goodbye", "See you later").
+* Вежливые фразы ("Please", "Thank you", "You're welcome").
+
+#### Работа и профессии
 * Профессии и виды деятельности (например, "teacher", "doctor", "student").
 * Место работы и обязанности (например, "I work in an office.").
 
-### Хобби и увлечения
+#### Хобби и увлечения
 * Любимые занятия (например, "I like playing football.", "I love reading books.").
 * Спорт, музыка, кино и другие хобби.
 
-### Дом и жилье
+#### Дом и жилье
 * Части дома (например, "kitchen", "living room", "bedroom").
 * Мебель и бытовая техника (например, "sofa", "fridge", "bed").
 * Описание своего жилья (например, "I live in an apartment.").
 
-### Еда и напитки
+#### Еда и напитки
 * Названия продуктов питания (например, "bread", "milk", "apple").
 * Любимые блюда и напитки.
 * Обеденные привычки и приемы пищи (например, "I have breakfast at 8 a.m.").
 
-### Ежедневная рутина
+#### Ежедневная рутина
 * Описание ежедневных дел (например, "I get up at 7 a.m.", "I go to work at 9 a.m.").
 * Время приема пищи, работа, отдых.
 
-### Города и страны
+#### Города и страны
 * Описание своего города и страны (например, "Moscow is the capital of Russia.").
 * Известные места и достопримечательности.
 
+
+
+
 ---
 
-## Приветствия и прощания
-* Приветствия ("Hello", "Hi", "Good morning").
-* Прощания ("Goodbye", "See you later").
-* Вежливые фразы ("Please", "Thank you", "You're welcome").
+
 
 ## Числа и время
 * Числа (0-100 и выше).
@@ -57,37 +197,62 @@
 * Время суток (утро, день, вечер).
 * Часы (спрашивать и говорить, который час).
 
+---
+
 ## Тема меню в ресторане
 
+---
 
 ## Покупки
 * Виды магазинов (например, "supermarket", "pharmacy").
 * Названия товаров и цен (например, "How much is it?").
 * Покупка еды, одежды, предметов быта.
+
+---
+
 ## Здоровье
 * Части тела (например, "head", "arm", "leg").
 * Простые симптомы (например, "I have a headache.").
 * Посещение врача и аптеки.
+
+---
+
 ## Одежда
 * Названия предметов одежды (например, "shirt", "pants", "shoes").
 * Описание того, что ты носишь, или что предпочитаешь носить (например, "I am wearing a jacket.").
+
+---
+
 ## Погода
 * Сезоны года (например, "spring", "summer").
 * Описание погоды (например, "It's sunny today.", "It's cold and windy.").
+
+---
 
 ## Транспорт
 * Виды транспорта (например, "bus", "train", "car").
 * Маршруты, поездки, путешествия.
 * Как добраться до места назначения (например, "I take a bus to work.").
 
+---
+
 ## Путешествия и отпуск
 * Планы на отпуск (например, "I am going to the beach.").
 * Виды отдыха (например, "I like going to the mountains.").
+
+---
+
 ## Школа и учеба
 * Предметы в школе (например, "math", "history").
 * Учебные заведения (например, "I go to school.", "I study at university.").
+
+---
+
 ## Животные
 * Домашние питомцы и дикие животные (например, "I have a cat.", "Lions live in Africa.").
+
+---
+
 ## Тело и здоровье
 * Названия частей тела.
 * Простые симптомы и обращения к врачу.

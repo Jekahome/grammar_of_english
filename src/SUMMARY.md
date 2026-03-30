@@ -1,6 +1,7 @@
 # Summary
 
 - [Introduction](./Introduction.md)
+
 - [A 1 (Beginner / Elementary)](A1/A1.md)
   - [Word order in English](A1/Order_of_words_in_a_sentence.md)
   - [Alphabet (ознакомительная)](A1/Alphabet.md)
@@ -39,7 +40,7 @@
   - [Phrasal Verbs (first 30)](A1/Phrasal_Verbs.md)
   - [Verbs A1](A1/Verbs_A1.md)
   - [Nouns A1](A1/Nouns_A1.md)
-  - [List of topics for speaking and writing practice](A1/List_of_topics_for_speaking_and_writing_practice.md)
+  - [Topics (ознакомительная)](A1/List_of_topics_for_speaking_and_writing_practice.md)
   - [Check words](A1/Check_words.md)
   - [Kit words A1](A1/Kit_A1.md)
   - [Oxford 3000 (first words for A1)](A1/Oxford_kit_A1.md)   
@@ -47,6 +48,7 @@
     - [A1 words oxford3000-5000](https://www.oxfordlearnersdictionaries.com/wordlists/oxford3000-5000) 
     - [Oxford Word Skills Elementary Vocabulary]()
     - [English for Everyone Vocabulary]()
+
 - [A 2 (Pre-Intermediate)](A2/A2.md)
   - [Irregular verbs](A2/Irregular_verbs.md)
   - [Possessive pronouns mine, yours, ours, theirs, his, hers, its](A2/Possessive_pronouns_mine,yours,ours,theirs,his,hers,its.md)
@@ -81,6 +83,7 @@
   - [Обшие сложно-составные и косвенные вопросы, вопросы для расширение информации]() 
   - [Coordinatin conjunctions](A2/Coordinating_conjunctions.md)
   - [Kit words A2](A2/Kit_A2.md)
+
 - [B 1 (Intermediate)](B1/B1.md)
   - [Future Continuous – для действий, которые будут происходить в определённый момент в будущем.]() 
   - [Present Perfect Continuous – для длительных действий, начавшихся в прошлом и продолжающихся в настоящем.]()
@@ -104,6 +107,7 @@
   - [Phrasal verbs (расширенный список B1)]()
   - [Conjunctive Adverbs](B1/Conjunctive_adverbs.md)
   - [Kit words B1](B1/Kit_B1.md)
+
 - [B 2 (Upper-Intermediate)](B2/B2.md)
   - [Past Perfect Continuous – для описания длительных действий, которые завершились до другого действия в прошлом.]()
   - [Future Perfect Continuous – для описания длительных действий, которые будут завершены к определённому моменту в будущем.]()
@@ -134,13 +138,17 @@
 
 ## Listening Skills Training
 
-- [Listening Skills Training]()
-  - [A1](listen/intoduction.md)
+- [Listening Skills Training](listen/Intoduction.md)
+  - [A1](listen/A1/Intoduction.md)
     - [Alissa](listen/A1/Alissa/Alissa.md)
     - [Between Two Worlds](listen/A1/Between_Two_Worlds/Between_Two_Worlds.md)
     - [Blue Fins](listen/A1/Blue_Fins/Blue_Fins.md)
     - [Blue Moon Valley](listen/A1/Blue_Moon_Valley/Blue_Moon_Valley.md)
-
+    - [Topics](listen/A1/Topics.md)
+      - [About myself 1](listen/A1/Topics/About_myself_1/About_myself_1.md)
+      - [About myself 2](listen/A1/Topics/About_myself_2/About_myself_2.md)      
+      - [About myself 3](listen/A1/Topics/About_myself_3/About_myself_3.md)  
+      - [About myself 4](listen/A1/Topics/About_myself_4/About_myself_4.md)  
 
 
 
