@@ -8,6 +8,9 @@
 |---|---|---|---|---|---|---|---|
 ||Я|он|она|оно|мы|вы|они|
 
+
+![nominative case](/grammar_of_english/img/nominative_case.png)
+
 Examples:
 * ***I** am a boy — Я мальчик.*
 * ***He** is a doctor — Он врач.*
@@ -25,6 +28,9 @@ Examples:
 |Личные местоимения в косвенном падеже|me|him|her|it|us|you|them|
 |---|---|---|---|---|---|---|---|
 ||меня, мне, мною|его, ему, него, им, нему|ее, ей, нее, ней, нею|его, ей, им и др.|нас, нам, нами|тебя, тебе, вами|их, им, ими, них, ним|
+
+
+![oblique case](/grammar_of_english/img/oblique_case.png)
 
 Examples:
 * *He sees **me** — Он видит меня.*
@@ -60,7 +66,11 @@ Examples:
 * *The boys are in the garden. Please give the sweets to **them** — Мальчики в саду. Пожалуйста, отдайте сладости им.*
 * *Do you want to help **us**? We are baking pies today. — Вы хотите помочь нам? Сегодня мы печем пироги.*
  
+<h2>Exercise: listen and write (oblique case)</h2>
+<div id="control_oblique_case"></div>
+<div id="listen_and_write_oblique_case"></div>
 
+---
 
 ## Demonstrative pronouns (Указательные местоимения):
 Указательные местоимения в английском языке используются для указания на конкретные предметы или людей.
@@ -78,6 +88,8 @@ Examples:
 звук ð - что бы произнести, следует язык разместить между зубами и произнести звук 'з'
 Но слышится как мягкая 'Д'
 
+![demonstrative pronouns](/grammar_of_english/img/demonstrative_pronouns.png)
+
 Examples:
 * ***This** is my book. — Это моя книга (близко).*
 * ***This** good book — эта хорошая книга.*
@@ -93,29 +105,35 @@ Examples:
 * ***This** word — это слово.*
  
 
-**This** (эта/это)
+**This [ðɪs]** (эта/это)
 
-Мы говорим this об **одном** предмете или о живом существе, которое находится **возле** нас.
+Мы говорим this - речь об **одном** предмете или о живом существе, которое находится **возле** нас.
 
 *This pencil is black. — Этот карандаш черный.*
 
-**These** (эти)
+**These [ðiːz]** (эти)
 
-Мы говорим these о **множестве** предметов или живых существ, которые находятся **возле** нас.
+Мы говорим these - речь о **множестве** предметов или живых существ, которые находятся **возле** нас.
 
 *These books are interesting. — Эти книги интересные.*
 
-**That** (та/тот)
+**That [ðæt]** (та/тот)
 
-Мы говорим that об **одном** предмете или о живом существе, которое находится **далеко** от нас.
+Мы говорим that - речь об **одном** предмете или о живом существе, которое находится **далеко** от нас.
 
 *That pencil is blue. — Тот карандаш голубой.*
 
-**Those** (те)
+**Those [ðəʊz]** (те)
 
-Мы говорим those о **множестве** предметов или живых существ, которое находится **далеко** от нас.
+Мы говорим those - речь о **множестве** предметов или живых существ, которое находится **далеко** от нас.
 
 *Those cats are white. — Те коты белые.*
+
+<h2>Exercise: listen and write (demonstrative pronouns)</h2>
+<div id="control_demonstrative_pronouns"></div>
+<div id="listen_and_write_demonstrative_pronouns"></div>
+
+---
 
 ## Указательные предложения: This is ..., These are ..., That is ..., Those are ...
 Вопросы "Что это?".
@@ -151,7 +169,6 @@ Examples:
 <summary>Примеры:</summary>
 
 ```
-
 I have a family. — У меня есть семья.
 You have time. — У тебя есть время.
 He has a house. — У него есть дом.
@@ -399,13 +416,104 @@ What are those? They are birds. — Что это там? — Это птицы.
 
 ```
 </details>
-<h2>Exercise: listen and write</h2>
-<div id="control"></div>
-<div id="listen_and_write"></div>
+ 
+<h2>Exercise: listen and write (all)</h2>
+<div id="control_all"></div>
+<div id="listen_and_write_all"></div>
 
 <script>
 
-const exercises_easy_listen_and_write = [
+const exercises_easy_listen_and_write_oblique_case = [
+    // --- Личные местоимения в косвенном падеже (Me, You, Him, Her, It, Us, Them) ---
+    ["Call me tonight.", "Позвони мне сегодня вечером."],
+    ["I don't know you.", "Я не знаю тебя."],
+    ["Look at him, he is happy.", "Посмотри на него, он счастлив."],
+    ["Give her a cup of tea.", "Дай ей чашку чая."],
+    ["I found it in the room.", "Я нашел это в комнате."],
+    ["Please, wait for us.", "Пожалуйста, подождите нас."],
+    ["I see them every morning.", "Я вижу их каждое утро."],
+    ["Tell me a story.", "Расскажи мне историю."],
+    ["Show him the photo.", "Покажи ему фото."],
+    ["Ask her a question.", "Задай ей вопрос."],
+    ["Bring it to the kitchen.", "Принеси это на кухню."],
+    ["Visit us on Sunday.", "Навести нас в воскресенье."],
+    ["Help them with the bags.", "Помоги им с сумками."],
+    ["I can hear you clearly.", "Я слышу тебя отчетливо."],
+    ["Listen to me, please.", "Послушай меня, пожалуйста."],
+    ["Send her an email.", "Отправь ей письмо (email)."],
+    ["Take it, it is a gift.", "Возьми это, это подарок."],
+    ["Buy them some bread.", "Купи им немного хлеба."],
+    ["We love our cat, we feed it.", "Мы любим нашего кота, мы кормим его."],
+    ["Don't follow us.", "Не иди за нами."],
+    ["Meet me at 5 o'clock.", "Встреть меня в 5 часов."],
+    ["I believe you.", "Я верю тебе."],
+    ["Can you hear him?", "Ты слышишь его?"],
+    ["Give her your hand.", "Дай ей свою руку."],
+    ["Put it in the box.", "Положи это в коробку."],
+    ["Tell us a joke.", "Расскажи нам шутку."],
+    ["I don't see them.", "Я не вижу их."],
+    ["Write me a letter.", "Напиши мне письмо."],
+    ["Watch him carefully.", "Следи за ним внимательно."],
+    ["I know her very well.", "Я знаю её очень хорошо."],
+    ["Read it again.", "Прочитай это еще раз."],
+    ["Call us later.", "Позвони нам позже."],
+    ["Buy them some milk.", "Купи им немного молока."],
+    ["Trust me.", "Доверься мне."],
+    ["Forget it.", "Забудь об этом."],
+    ["Look at us now.", "Посмотри на нас сейчас."],
+    ["Help them with the homework.", "Помоги им с домашним заданием."],
+    ["I want to see her.", "Я хочу увидеть её."],
+    ["Take him to the doctor.", "Отведи его к врачу."],
+    ["We miss you.", "Мы скучаем по тебе (вам)."],
+];
+
+const exercises_easy_listen_and_write_demonstrative_pronouns  = [
+    // --- Указательные местоимения (This, That, These, Those) ---
+    ["This soup is hot.", "Этот суп горячий."],
+    ["That cloud is black.", "То облако черное."],
+    ["These apples are sweet.", "Эти яблоки сладкие."],
+    ["Those kids are quiet.", "Те дети тихие."],
+    ["This bus goes to the city center.", "Этот автобус идет в центр города."],
+    ["That bird is very small.", "Та птица очень маленькая."],
+    ["These students are smart.", "Эти студенты умные."],
+    ["Those flowers smell good.", "Те цветы приятно пахнут."],
+    ["I don't like this movie.", "Мне не нравится этот фильм."],
+    ["Who lives in that house?", "Кто живет в том доме?"],
+    ["These pencils are long.", "Эти карандаши длинные."],
+    ["Those people are busy.", "Те люди заняты."],
+    ["This milk is fresh.", "Это молоко свежее."],
+    ["That man is a teacher.", "Тот человек — учитель."],
+    ["These chairs are old.", "Эти стулья старые."],
+    ["Those windows are dirty.", "Те окна грязные."],
+    ["Wash this cup.", "Помой эту чашку."],
+    ["Open that door, please.", "Открой ту дверь, пожалуйста."],
+    ["Eat these vegetables.", "Ешь эти овощи."],
+    ["Check those bags.", "Проверь те сумки."],
+ 
+    ["This is my favorite song.", "Это моя любимая песня (эта)."],
+    ["That is a big mountain.", "Вон то — большая гора (та)."],
+    ["These books are heavy.", "Эти книги тяжелые (эти)."],
+    ["Those stars are bright.", "Те звезды яркие (вон те)."],
+    ["I like this coffee.", "Мне нравится этот кофе."],
+    ["Who is that boy over there?", "Кто вон тот мальчик?"],
+    ["These shoes are too small.", "Эти туфли слишком малы."],
+    ["Those cookies are tasty.", "Те печенья вкусные."],
+    ["This water is cold.", "Эта вода холодная."],
+    ["That window is open.", "То окно открыто."],
+    ["Put these keys on the table.", "Положи эти ключи на стол."],
+    ["Don't touch those boxes.", "Не трогай те коробки."],
+    ["Is this your bag?", "Это твоя сумка?"],
+    ["Is that your house?", "Тот дом — твой?"],
+    ["I want these cakes.", "Я хочу эти пирожные."],
+    ["Look at those birds.", "Посмотри на тех птиц."],
+    ["This room is very clean.", "Эта комната очень чистая."],
+    ["That dog is very friendly.", "Та собака очень дружелюбная."],
+    ["These children are noisy.", "Эти дети шумные."],
+    ["Those cars are expensive.", "Те машины дорогие."],
+];
+
+
+const exercises_easy_listen_and_write_all = [
     ["I have a family.", "У меня есть семья."],
     ["You have time.", "У тебя есть время."],
     ["He has a house.", "У него есть дом."],
@@ -651,32 +759,74 @@ const exercises_easy_listen_and_write = [
     ["What are those? They are birds.", "Что это там? — Это птицы."]
 ];
 
-let g_practice = null;
+
+let g_practice_oblique_case = null;
+let g_practice_demonstrative_pronouns = null;
+let g_practice_all = null;
    
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
- 
-        let editor_img = new EditorImg({callback: checkAnswer});
-        let editor_symbol = new EditorSymbol({callback: checkAnswer});
+          {
+            let editor_img = new EditorImg({callback: checkAnswerObliqueCase});
+            let editor_symbol = new EditorSymbol({callback: checkAnswerObliqueCase});
 
-        g_practice = new Practice({
-            el_listen_and_write: document.getElementById('listen_and_write'), 
-            el_exercise_control: document.getElementById('control'), 
-            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write),
-            editor_img: editor_img,
-            editor_symbol: editor_symbol
-        });
-        g_practice.genExercisesListenAndWrite();
+            g_practice_oblique_case = new Practice({
+                el_listen_and_write: document.getElementById('listen_and_write_oblique_case'), 
+                el_exercise_control: document.getElementById('control_oblique_case'), 
+                exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_oblique_case),
+                editor_img: editor_img,
+                editor_symbol: editor_symbol
+            });
+            g_practice_oblique_case.genExercisesListenAndWrite();    
+        }
+
+        {
+            let editor_img = new EditorImg({callback: checkAnswerDemonstrativePronouns});
+            let editor_symbol = new EditorSymbol({callback: checkAnswerDemonstrativePronouns});
+
+            g_practice_demonstrative_pronouns = new Practice({
+                el_listen_and_write: document.getElementById('listen_and_write_demonstrative_pronouns'), 
+                el_exercise_control: document.getElementById('control_demonstrative_pronouns'), 
+                exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_demonstrative_pronouns),
+                editor_img: editor_img,
+                editor_symbol: editor_symbol
+            });
+            g_practice_demonstrative_pronouns.genExercisesListenAndWrite();    
+        }
+
+
+        {
+            let editor_img = new EditorImg({callback: checkAnswerAll});
+            let editor_symbol = new EditorSymbol({callback: checkAnswerAll});
+
+            g_practice_all = new Practice({
+                el_listen_and_write: document.getElementById('listen_and_write_all'), 
+                el_exercise_control: document.getElementById('control_all'), 
+                exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_all),
+                editor_img: editor_img,
+                editor_symbol: editor_symbol
+            });
+            g_practice_all.genExercisesListenAndWrite();    
+        }
+
  
     } catch (error) {
         console.error("Error build:", error);
     }
 });
- 
-function checkAnswer(value){
-    value = g_practice.textNormalize(value);
-    return value==g_practice.getAnswer();
+
+function checkAnswerObliqueCase(value){
+    value = g_practice_oblique_case.textNormalize(value);
+    return value==g_practice_oblique_case.getAnswer();
+}
+function checkAnswerDemonstrativePronouns(value){
+    value = g_practice_demonstrative_pronouns.textNormalize(value);
+    return value==g_practice_demonstrative_pronouns.getAnswer();
+}
+function checkAnswerAll(value){
+    value = g_practice_all.textNormalize(value);
+    return value==g_practice_all.getAnswer();
 }
 </script>
 

@@ -1,12 +1,11 @@
 # Порядок слов в предложении
-За основу взят "Новый Самоучитель английского языка А.В.Петрова, И.С.Орлова"
-
+  
 **Верно**: *What are you talking about? - О чём ты говоришь?*
 
 **Неверно**: *About what are you talking?* 🤪
 
 ## Direct word order (Прямой порядок слов в предложении)
-<span style="color: red;">Subject (подлежащее)</span> → <span style="color: blue;">Predicate (сказуемое)</span> → Object → Adverbial Modifier
+<span style="color: red;">Subject (подлежащее Кто? Что?)</span> → <span style="color: blue;">Predicate (сказуемое Что делает?)</span> → Object → Adverbial Modifier
 
 *<span style="color: red;">I</span> <span style="color: blue;">sent</span> you a letter yesterday. – Я послал тебе письмо вчера.*
 
@@ -18,11 +17,12 @@
 * *<span style="color: red;">It</span> <span style="color: blue;">is</span> great! – Здорово!*
 * *Here <span style="color: red;">he</span> <span style="color: blue;">is</span>. — Вот он.*
 
-<span style="color: red;">Dirty Jenny</span> = кличка, прозвище, характеристика (немного "навешиваем ярлык"). 
+<span style="color: red;">Dirty Jenny</span> - кличка, прозвище, характеристика. 
+* *<span style="color: red;">Dirty Jenny</span> <span style="color: blue;">is</span> dirty – Грязная Дженни - грязная.*
 
-<span style="color: red;">Jenny</span> <span style="color: blue;">is</span> dirty = описание её текущего состояния.
+<span style="color: red;">Jenny</span> <span style="color: blue;">is</span> dirty. (описание её текущего состояния)
 
-* *<span style="color: red;">Dirty Jenny</span> <span style="color: blue;">is</span> dirty - Грязная Дженни грязная.*
+
 
 ## Indirect word order (Непрямой порядок слов в предложении)
 <span style="color: blue;">Predicate</span> → <span style="color: red;">Subject</span> → Object → Adverbial Modifier
