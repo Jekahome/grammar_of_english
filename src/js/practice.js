@@ -102,7 +102,7 @@ class Practice {
     }
 
     textNormalize(input) {
-        return window.textNormalize(input);
+        return textNormalize(input);
     }
 
     nextSentence(){

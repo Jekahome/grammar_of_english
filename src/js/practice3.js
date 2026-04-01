@@ -151,7 +151,7 @@ class Practice3 {
                 clearTimeout(this.input_timer);
             }
 
-            const text = window.textNormalize(this.el_input.value.trim());
+            const text = textNormalize(this.el_input.value.trim());
            
             clearTimeout(idleTimer);
             clearTimeout(punctuationTimer);
