@@ -855,49 +855,42 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
  
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralThere, suffix_id: 'there'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralThere, suffix_id: 'there'});
 
         g_practice = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_there'), 
             el_exercise_control: document.getElementById('control_general_there'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_there),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice.genExercisesListenAndWrite();
      
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralThere2, suffix_id: 'there2'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralThere2, suffix_id: 'there2'});
 
         g_practice2 = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_there2'), 
             el_exercise_control: document.getElementById('control_general_there2'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_there2),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice2.genExercisesListenAndWrite();
      
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralThereAnswer, suffix_id: 'there_answer'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralThereAnswer, suffix_id: 'there_answer'});
 
         g_practice_answer = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_there_answer'), 
             el_exercise_control: document.getElementById('control_general_there_answer'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_there_answer),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_answer.genExercisesListenAndWrite();
      
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralThereAll, suffix_id: 'there_all_exercises'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralThereAll, suffix_id: 'there_all_exercises'});
         const exercises_easy_listen_and_write_there_all_exercises = exercises_easy_listen_and_write_there
           .concat(exercises_easy_listen_and_write_there2, exercises_easy_listen_and_write_there_answer);
@@ -905,7 +898,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             el_listen_and_write: document.getElementById('listen_and_write_there_all_exercises'), 
             el_exercise_control: document.getElementById('control_general_there_all_exercises'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_there_all_exercises),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_there_all_exercises.genExercisesListenAndWrite();
@@ -1004,8 +996,8 @@ table {
         <script src="../src/js/general.js"></script>
         <script src="../src/js/practice.js"></script>
         <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
         <script src="../src/js/editorVoice.js"></script>
-        <script src="../src/js/editor_img.js"></script>
         <script src="../src/js/editor_symbol.js"></script>
         <script src="../src/js/listen.js"></script>
         <script src="../src/js/textual_analysis.js"></script>

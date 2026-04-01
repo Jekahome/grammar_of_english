@@ -1053,28 +1053,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralIrregularVerbsSentence, suffix_id: 'irregular_verbs_sentence'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralIrregularVerbsSentence, suffix_id: 'irregular_verbs_sentence'});
      
         g_practice_irregular_verbs_sentence = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_irregular_verbs_sentence'), 
             el_exercise_control: document.getElementById('control_general_irregular_verbs_sentence'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_irregular_verbs_sentence),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_irregular_verbs_sentence.genExercisesListenAndWrite();
      
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralIrregularVerbs, suffix_id: 'irregular_verbs'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralIrregularVerbs, suffix_id: 'irregular_verbs'});
      
         g_practice_irregular_verbs = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_irregular_verbs'), 
             el_exercise_control: document.getElementById('control_general_irregular_verbs'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_irregular_verbs),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_irregular_verbs.genExercisesListenAndWrite();

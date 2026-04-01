@@ -724,60 +724,48 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
  
  {
-        let editor_img = new EditorImg({callback: checkAnswerCan, suffix_id: 'can'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerCan, suffix_id: 'can'});
 
         g_practice_can = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_can'), 
             el_exercise_control: document.getElementById('control_can'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_can),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_can.genExercisesListenAndWrite();
-     
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerMust, suffix_id: 'must'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerMust, suffix_id: 'must'});
 
         g_practice_must = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_must'), 
             el_exercise_control: document.getElementById('control_must'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_must),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_must.genExercisesListenAndWrite();
- 
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerShould, suffix_id: 'should'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerShould, suffix_id: 'should'});
 
         g_practice_should = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_should'), 
             el_exercise_control: document.getElementById('control_should'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_should),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_should.genExercisesListenAndWrite();
- 
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerWill, suffix_id: 'will'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerWill, suffix_id: 'will'});
 
         g_practice_will = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_will'), 
             el_exercise_control: document.getElementById('control_will'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_will),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_will.genExercisesListenAndWrite();
- 
  }
     } catch (error) {
         console.error("Error build:", error);

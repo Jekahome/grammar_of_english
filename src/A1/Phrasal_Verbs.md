@@ -746,34 +746,28 @@ let g_practice_phrasal_verbs = null;
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
- {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralAll, suffix_id: 'all_exercises'});
+    {
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralAll, suffix_id: 'all_exercises'});
-     
+      
         g_practice_all = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_all_exercises'), 
             el_exercise_control: document.getElementById('control_general_all_exercises'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_all_exercises),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_all.genExercisesListenAndWrite();
-     
- }
- {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralPhrasalVerbs, suffix_id: 'phrasal_verbs'});
+    }
+    {
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralPhrasalVerbs, suffix_id: 'phrasal_verbs'});
-     
+      
         g_practice_phrasal_verbs = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_phrasal_verbs'), 
             el_exercise_control: document.getElementById('control_general_phrasal_verbs'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_phrasal_verbs),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_phrasal_verbs.genExercisesListenAndWrite();
-     
- }
+    }
     } catch (error) {
         console.error("Error build:", error);
     }

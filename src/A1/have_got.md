@@ -363,49 +363,39 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
  
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralHave, suffix_id: 'have'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralHave, suffix_id: 'have'});
 
         g_practice_have = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_have'), 
             el_exercise_control: document.getElementById('control_general_have'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_have),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_have.genExercisesListenAndWrite();
-     
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralHaveNoun, suffix_id: 'have_noun'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralHaveNoun, suffix_id: 'have_noun'});
 
         g_practice_have_noun = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_have_noun'), 
             el_exercise_control: document.getElementById('control_general_have_noun'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_have_noun),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_have_noun.genExercisesListenAndWrite();
-     
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralHaveObligations, suffix_id: 'have_obligations'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralHaveObligations, suffix_id: 'have_obligations'});
 
         g_practice_have_obligations = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_have_obligations'), 
             el_exercise_control: document.getElementById('control_general_have_obligations'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_have_obligations),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_have_obligations.genExercisesListenAndWrite();
-     
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralHaveAll, suffix_id: 'have_all_exercises'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralHaveAll, suffix_id: 'have_all_exercises'});
         const exercises_easy_listen_and_write_have_all_exercises = exercises_easy_listen_and_write_have
           .concat(exercises_easy_listen_and_write_have_noun, exercises_easy_listen_and_write_have_obligations);
@@ -413,11 +403,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             el_listen_and_write: document.getElementById('listen_and_write_have_all_exercises'), 
             el_exercise_control: document.getElementById('control_general_have_all_exercises'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_have_all_exercises),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_have_all_exercises.genExercisesListenAndWrite();
-     
  }
     } catch (error) {
         console.error("Error build:", error);

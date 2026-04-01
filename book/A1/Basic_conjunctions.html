@@ -877,49 +877,42 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
  
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralConjAdv, suffix_id: 'conj_adv'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralConjAdv, suffix_id: 'conj_adv'});
 
         g_practice_conj_adv = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_conj_adv'), 
             el_exercise_control: document.getElementById('control_general_conj_adv'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_conj_adv),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_conj_adv.genExercisesListenAndWrite();
      
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralCoordConj, suffix_id: 'coord_conj'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralCoordConj, suffix_id: 'coord_conj'});
 
         g_practice_coord_conj = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_coord_conj'), 
             el_exercise_control: document.getElementById('control_general_coord_conj'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_coord_conj),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_coord_conj.genExercisesListenAndWrite();
      
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralSubConj, suffix_id: 'sub_conj'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralSubConj, suffix_id: 'sub_conj'});
 
         g_practice_sub_conj = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_sub_conj'), 
             el_exercise_control: document.getElementById('control_general_sub_conj'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_sub_conj),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_sub_conj.genExercisesListenAndWrite();
      
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralAll, suffix_id: 'all'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralAll, suffix_id: 'all'});
         const exercises_easy_listen_and_write_all = exercises_easy_listen_and_write_conj_adv
           .concat(exercises_easy_listen_and_write_coord_conj)
@@ -928,7 +921,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             el_listen_and_write: document.getElementById('listen_and_write_all'), 
             el_exercise_control: document.getElementById('control_general_all'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_all),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_all.genExercisesListenAndWrite();
@@ -1028,8 +1020,8 @@ table {
         <script src="../src/js/general.js"></script>
         <script src="../src/js/practice.js"></script>
         <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
         <script src="../src/js/editorVoice.js"></script>
-        <script src="../src/js/editor_img.js"></script>
         <script src="../src/js/editor_symbol.js"></script>
         <script src="../src/js/listen.js"></script>
         <script src="../src/js/textual_analysis.js"></script>

@@ -992,63 +992,50 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
  
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralIndefinite, suffix_id: 'indefinite'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralIndefinite, suffix_id: 'indefinite'});
 
         g_practice_indefinite = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_indefinite'), 
             el_exercise_control: document.getElementById('control_general_indefinite'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_indefinite),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_indefinite.genExercisesListenAndWrite();
-     
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralDefinite, suffix_id: 'definite'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralDefinite, suffix_id: 'definite'});
 
         g_practice_definite = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_definite'), 
             el_exercise_control: document.getElementById('control_general_definite'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_definite),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_definite.genExercisesListenAndWrite();
-     
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralQuestion, suffix_id: 'question'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralQuestion, suffix_id: 'question'});
 
         g_practice_question = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_question'), 
             el_exercise_control: document.getElementById('control_general_question'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_question),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_question.genExercisesListenAndWrite();
-     
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralModal, suffix_id: 'modal'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralModal, suffix_id: 'modal'});
 
         g_practice_modal = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_modal'), 
             el_exercise_control: document.getElementById('control_general_modal'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_modal),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_modal.genExercisesListenAndWrite();
-     
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralAll, suffix_id: 'all'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralAll, suffix_id: 'all'});
         const exercises_easy_listen_and_write_all = exercises_easy_listen_and_write_definite
           .concat(exercises_easy_listen_and_write_question, exercises_easy_listen_and_write_modal);
@@ -1056,11 +1043,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             el_listen_and_write: document.getElementById('listen_and_write_all'), 
             el_exercise_control: document.getElementById('control_general_all'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_all),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_all.genExercisesListenAndWrite();
-     
  }
     } catch (error) {
         console.error("Error build:", error);
@@ -1154,8 +1139,8 @@ function checkAnswerGeneralAll(value){
         <script src="../src/js/general.js"></script>
         <script src="../src/js/practice.js"></script>
         <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
         <script src="../src/js/editorVoice.js"></script>
-        <script src="../src/js/editor_img.js"></script>
         <script src="../src/js/editor_symbol.js"></script>
         <script src="../src/js/listen.js"></script>
         <script src="../src/js/textual_analysis.js"></script>

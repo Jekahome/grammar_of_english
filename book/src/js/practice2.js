@@ -176,22 +176,23 @@ class Practice2 {
                     punctuationTimer = setTimeout(async () => {
                         clearTimeout(idleTimer);
                         lastCheckedText = text;
-                        this.checkUserRules(text, await window.grammarChecker.checkGrammar(text, this.el_result_list));
+                        this.checkUserRules(text, await window.grammarChecker.checkGrammar(text));
                     }, 500);
                 }
                 // Логика завершения ввода
                 idleTimer = setTimeout(async () => {
                     clearTimeout(punctuationTimer);
                     lastCheckedText = text;
-                    this.checkUserRules(text, await window.grammarChecker.checkGrammar(text, this.el_result_list));
+                    this.checkUserRules(text, await window.grammarChecker.checkGrammar(text));
                 }, 1500);
+                
                 this.input_timer = null;  
             }, 500);  
 
         });
     }
 
-    checkUserRules(input, result){
+    checkUserRules(input, result=[]){
         this.el_result_list.classList.remove('success-result');
         if (result.length == 0){
             let result_user_rules = this.user_rules_callback(input);

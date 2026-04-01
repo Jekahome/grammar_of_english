@@ -914,105 +914,90 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
  
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralItis, suffix_id: 'it_is'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralItis, suffix_id: 'it_is'});
 
         g_practice_it_is = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_it_is'), 
             el_exercise_control: document.getElementById('control_general_it_is'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_it_is),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_it_is.genExercisesListenAndWrite();
      
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralTime, suffix_id: 'time'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralTime, suffix_id: 'time'});
 
         g_practice_time = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_time'), 
             el_exercise_control: document.getElementById('control_general_time'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_time),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_time.genExercisesListenAndWrite();
      
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralDate, suffix_id: 'date'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralDate, suffix_id: 'date'});
 
         g_practice_date = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_date'), 
             el_exercise_control: document.getElementById('control_general_date'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_date),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_date.genExercisesListenAndWrite();
      
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralDistance, suffix_id: 'distance'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralDistance, suffix_id: 'distance'});
 
         g_practice_distance = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_distance'), 
             el_exercise_control: document.getElementById('control_general_distance'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_distance),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_distance.genExercisesListenAndWrite();
      
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralWeather, suffix_id: 'weather'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralWeather, suffix_id: 'weather'});
 
         g_practice_weather = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_weather'), 
             el_exercise_control: document.getElementById('control_general_weather'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_weather),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_weather.genExercisesListenAndWrite();
      
  } 
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralView, suffix_id: 'view'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralView, suffix_id: 'view'});
 
         g_practice_view = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_view'), 
             el_exercise_control: document.getElementById('control_general_view'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_view),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_view.genExercisesListenAndWrite();
      
  }  
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralAdjective, suffix_id: 'adjective'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralAdjective, suffix_id: 'adjective'});
 
         g_practice_adjective = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_adjective'), 
             el_exercise_control: document.getElementById('control_general_adjective'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_adjective),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_adjective.genExercisesListenAndWrite();
      
  }   
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralTogether, suffix_id: 'together'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralTogether, suffix_id: 'together'});
         
         let mix1 = exercises_easy_listen_and_write_it_is
@@ -1024,7 +1009,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             el_listen_and_write: document.getElementById('listen_and_write_together'), 
             el_exercise_control: document.getElementById('control_general_together'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_together),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_together.genExercisesListenAndWrite();
@@ -1139,8 +1123,8 @@ table {
         <script src="../src/js/general.js"></script>
         <script src="../src/js/practice.js"></script>
         <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
         <script src="../src/js/editorVoice.js"></script>
-        <script src="../src/js/editor_img.js"></script>
         <script src="../src/js/editor_symbol.js"></script>
         <script src="../src/js/listen.js"></script>
         <script src="../src/js/textual_analysis.js"></script>

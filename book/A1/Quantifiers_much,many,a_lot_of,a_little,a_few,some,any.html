@@ -796,49 +796,39 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
  
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralMany, suffix_id: 'many'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralMany, suffix_id: 'many'});
 
         g_practice_many = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_many'), 
             el_exercise_control: document.getElementById('control_general_many'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_many),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_many.genExercisesListenAndWrite();
-     
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralFew, suffix_id: 'few'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralFew, suffix_id: 'few'});
 
         g_practice_few = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_few'), 
             el_exercise_control: document.getElementById('control_general_few'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_few),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_few.genExercisesListenAndWrite();
-     
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralSome, suffix_id: 'some'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralSome, suffix_id: 'some'});
 
         g_practice_some = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_some'), 
             el_exercise_control: document.getElementById('control_general_some'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_some),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_some.genExercisesListenAndWrite();
-     
  }
   {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralQuantifiers, suffix_id: 'quantifiers'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralQuantifiers, suffix_id: 'quantifiers'});
         const exercises_easy_listen_and_write_quantifiers = exercises_easy_listen_and_write_many
           .concat(exercises_easy_listen_and_write_few, exercises_easy_listen_and_write_some);
@@ -846,11 +836,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             el_listen_and_write: document.getElementById('listen_and_write_quantifiers'), 
             el_exercise_control: document.getElementById('control_general_quantifiers'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_quantifiers),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_quantifiers.genExercisesListenAndWrite();
-     
  }
 
     } catch (error) {
@@ -946,8 +934,8 @@ table {
         <script src="../src/js/general.js"></script>
         <script src="../src/js/practice.js"></script>
         <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
         <script src="../src/js/editorVoice.js"></script>
-        <script src="../src/js/editor_img.js"></script>
         <script src="../src/js/editor_symbol.js"></script>
         <script src="../src/js/listen.js"></script>
         <script src="../src/js/textual_analysis.js"></script>

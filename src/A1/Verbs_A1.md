@@ -766,20 +766,18 @@ let g_practice_verbs = null;
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
- {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralVerbs, suffix_id: 'verbs'});
+    {
+        
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralVerbs, suffix_id: 'verbs'});
-     
+        
         g_practice_verbs = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_verbs'), 
             el_exercise_control: document.getElementById('control_general_verbs'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_verbs),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_verbs.genExercisesListenAndWrite();
-     
- }
+    }
  
     } catch (error) {
         console.error("Error build:", error);

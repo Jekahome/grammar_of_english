@@ -1212,98 +1212,83 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralSimple, suffix_id: 'simple'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralSimple, suffix_id: 'simple'});
 
         g_practice_simple = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_simple'), 
             el_exercise_control: document.getElementById('control_general_simple'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_simple),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_simple.genExercisesListenAndWrite(); 
  }        
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralStateSubject, suffix_id: 'state_subject'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralStateSubject, suffix_id: 'state_subject'});
 
         g_practice_state_subject = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_state_subject'), 
             el_exercise_control: document.getElementById('control_general_state_subject'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_state_subject),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_state_subject.genExercisesListenAndWrite(); 
  }        
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralAs, suffix_id: 'as'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralAs, suffix_id: 'as'});
 
         g_practice_as = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_as'), 
             el_exercise_control: document.getElementById('control_general_as'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_as),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_as.genExercisesListenAndWrite(); 
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralLess, suffix_id: 'less'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralLess, suffix_id: 'less'});
 
         g_practice_less = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_less'), 
             el_exercise_control: document.getElementById('control_general_less'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_less),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_less.genExercisesListenAndWrite(); 
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralThan, suffix_id: 'than'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralThan, suffix_id: 'than'});
 
         g_practice_than = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_than'), 
             el_exercise_control: document.getElementById('control_general_than'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_than),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_than.genExercisesListenAndWrite();
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralIrregular, suffix_id: 'irregular'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralIrregular, suffix_id: 'irregular'});
 
         g_practice_irregular = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_irregular'), 
             el_exercise_control: document.getElementById('control_general_irregular'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_irregular),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_irregular.genExercisesListenAndWrite();
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralForms, suffix_id: 'forms'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralForms, suffix_id: 'forms'});
 
         g_practice_forms = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_forms'), 
             el_exercise_control: document.getElementById('control_general_forms'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_forms),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_forms.genExercisesListenAndWrite();
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralAll, suffix_id: 'all'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralAll, suffix_id: 'all'});
         const exercises_easy_listen_and_write_all = exercises_easy_listen_and_write_simple
           .concat(exercises_easy_listen_and_write_state_subject)
@@ -1316,7 +1301,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             el_listen_and_write: document.getElementById('listen_and_write_all'), 
             el_exercise_control: document.getElementById('control_general_all'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_all),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_all.genExercisesListenAndWrite();

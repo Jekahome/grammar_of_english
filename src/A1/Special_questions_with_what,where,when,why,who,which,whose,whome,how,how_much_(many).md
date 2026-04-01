@@ -276,14 +276,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
  
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralSpecialQuestions, suffix_id: 'special_questions'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralSpecialQuestions, suffix_id: 'special_questions'});
 
         g_practice = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_special_questions'), 
             el_exercise_control: document.getElementById('control_general_special_questions'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_special_questions),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice.genExercisesListenAndWrite();

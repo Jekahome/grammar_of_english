@@ -55,6 +55,7 @@ body {
     line-height: 40px;
     font-size: 10;
     cursor: text;
+    width: 100%;
 }
 .space-card {
     display: inline-block;

@@ -4,28 +4,24 @@ class Practice {
     #el_listen_and_write = null;
     #el_exercise_control = null
     #editor_voice = null;
-    #editor_img = null;
+ 
     #editor_symbol = null;
     #index_listen_and_write = -1;
     #exercises_listen_and_write = [];
     #answer = '';
     recognition_timer = null;
  
-    constructor({el_listen_and_write, el_exercise_control, exercises_listen_and_write=[], editor_img=null, editor_symbol=null}) {
+    constructor({el_listen_and_write, el_exercise_control, exercises_listen_and_write=[], editor_symbol}) {
         this.#el_listen_and_write = el_listen_and_write;
         this.#el_exercise_control = el_exercise_control;
         this.#exercises_listen_and_write = exercises_listen_and_write;
         this.#editor_voice =  new EditorVoice({callback: (result, id) => this.recognition(result, id)});
-        this.#editor_img = editor_img;
+       
         this.#editor_symbol = editor_symbol;
-
-        if(this.#editor_symbol){
-            this.#editor_symbol.createListenAndWrite(el_listen_and_write);
-        }        
-        if(this.#editor_img){
-           this.#editor_img.createListenAndWrite(el_listen_and_write);
-        }
-
+ 
+        this.#editor_symbol.createListenAndWrite(el_listen_and_write);
+               
+        
         const button = document.createElement('button');
         button.className = 'clear-btn';
         button.onclick = this.clearEditor.bind(this);
@@ -55,21 +51,11 @@ class Practice {
     }
 
     clearEditor(){
-        if(this.#editor_img){
-            this.#editor_img.clearEditor();
-        }
-        if(this.#editor_symbol){
-            this.#editor_symbol.clearEditor();
-        }
+        this.#editor_symbol.clearEditor(); 
     }
 
     setRecognition(recognition){
-        if(this.#editor_img){
-            this.#editor_img.setRecognition(recognition);
-        }
-        if(this.#editor_symbol){
-            this.#editor_symbol.setRecognition(recognition);
-        }
+        this.#editor_symbol.setRecognition(recognition);
     }
 
     genExercisesListenAndWrite(){
@@ -116,61 +102,7 @@ class Practice {
     }
 
     textNormalize(input) {
-        const contractions = {
-            "they're": "they are",
-            "you're": "you are",
-            "we're": "we are",
-            "let's": "let us",
-            "'s": " is",
-            
-            "i'm": "i am",
-
-            "isn't": "is not",
-            "aren't": "are not",
-            "wasn't": "was not",
-            "weren't": "were not",
-            "doesn't": "does not",
-            "don't": "do not",
-            "didn't": "did not",
-            "hasn't": "has not",
-            "haven't": "have not",
-            "can't": "can not",
-            "couldn't": "could not",
-            "won't": "will not",
-            "shan't": "shall not",
-
-            "i'll": "i will",
-            "he'll": "he will",
-            "she'll": "she will",
-            "it'll": "it will",
-            "we'll": "we will",
-            "you'll": "you will",
-            "they'll": "they will",
-            "there'll": "there will",
-
-            "i've": "i have",
-            "they've": "they have",
-            "we've": "we have",
-            "you've": "you have",
-            "must've": "must have",
-            // некорректные формы
-            "dont": "do not"
-        };
-
-        return input
-            .normalize("NFKC")
-            // 1. нормализация апострофов
-            .replace(/[\u2018\u2019\u02BC\u2032]/g, "'")
-
-            // 2. lowercase
-            .toLowerCase()
-
-            // 3. раскрытие сокращений
-            .replace(/\b[\w']+\b/g, word => contractions[word] || word)
-            .replace(/[.—?!]/g, '')
-            // 4. схлопывание пробелов
-            .replace(/\s+/g, " ")
-            .trim();
+        return window.textNormalize(input);
     }
 
     nextSentence(){
@@ -182,3 +114,4 @@ class Practice {
         return this.#answer;
     }
 }
+

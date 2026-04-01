@@ -326,46 +326,39 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
  
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralMarkers, suffix_id: 'markers'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralMarkers, suffix_id: 'markers'});
 
         g_practice_markers = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_markers'), 
             el_exercise_control: document.getElementById('control_general_markers'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_markers),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_markers.genExercisesListenAndWrite();
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralIrregular, suffix_id: 'irregular'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralIrregular, suffix_id: 'irregular'});
 
         g_practice_irregular = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_irregular'), 
             el_exercise_control: document.getElementById('control_general_irregular'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_irregular),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_irregular.genExercisesListenAndWrite();
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralQuestion, suffix_id: 'question'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralQuestion, suffix_id: 'question'});
 
         g_practice_question = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_question'), 
             el_exercise_control: document.getElementById('control_general_question'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_question),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_question.genExercisesListenAndWrite();
  }
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralAll, suffix_id: 'all'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralAll, suffix_id: 'all'});
         const exercises_easy_listen_and_write_all = exercises_easy_listen_and_write_markers
           .concat(exercises_easy_listen_and_write_irregular)
@@ -374,11 +367,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             el_listen_and_write: document.getElementById('listen_and_write_all'), 
             el_exercise_control: document.getElementById('control_general_all'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_all),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_all.genExercisesListenAndWrite();
-     
  }
     } catch (error) {
         console.error("Error build:", error);

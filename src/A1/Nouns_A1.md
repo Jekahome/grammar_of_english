@@ -711,20 +711,17 @@ let g_practice_nouns = null;
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
- {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralNouns, suffix_id: 'nouns'});
+ 
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralNouns, suffix_id: 'nouns'});
      
         g_practice_nouns = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_nouns'), 
             el_exercise_control: document.getElementById('control_general_nouns'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_nouns),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice_nouns.genExercisesListenAndWrite();
-     
- }
+ 
  
     } catch (error) {
         console.error("Error build:", error);

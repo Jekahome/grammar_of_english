@@ -7741,6 +7741,66 @@ const words_c2 = [
 ];
 
 //---------------------------------------------------------------------------
+function textNormalize(input) {
+  const contractions = { 
+    "they're": "they are",
+    "you're": "you are",
+    "we're": "we are",
+    "let's": "let us",
+    "'s": " is",
+    
+    "i'm": "i am",
+
+    "isn't": "is not",
+    "aren't": "are not",
+    "wasn't": "was not",
+    "weren't": "were not",
+    "doesn't": "does not",
+    "don't": "do not",
+    "didn't": "did not",
+    "hasn't": "has not",
+    "haven't": "have not",
+    "can't": "can not",
+    "couldn't": "could not",
+    "won't": "will not",
+    "shan't": "shall not",
+
+    "i'll": "i will",
+    "he'll": "he will",
+    "she'll": "she will",
+    "it'll": "it will",
+    "we'll": "we will",
+    "you'll": "you will",
+    "they'll": "they will",
+    "there'll": "there will",
+
+    "i've": "i have",
+    "they've": "they have",
+    "we've": "we have",
+    "you've": "you have",
+    "must've": "must have",
+    // некорректные формы
+    "dont": "do not"
+};
+
+return input
+    .normalize("NFKC")
+    // 1. нормализация апострофов
+    .replace(/[\u2018\u2019\u02BC\u2032]/g, "'")
+
+    // 2. lowercase
+    .toLowerCase()
+
+    // 3. раскрытие сокращений
+    .replace(/\b[\w']+\b/g, word => contractions[word] || word)
+    .replace(/[.—?!]/g, '')
+    // 4. схлопывание пробелов
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+
+//---------------------------------------------------------------------------
 // Проверка дублей
 
 function arrayInclude(arr1, arr2) {

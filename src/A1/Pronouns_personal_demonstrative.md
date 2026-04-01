@@ -9,7 +9,7 @@
 ||Я|он|она|оно|мы|вы|они|
 
 
-![nominative case](/grammar_of_english/img/nominative_case.png)
+![nominative case](/grammar_of_english/img/pronouns/nominative_case.png)
 
 Examples:
 * ***I** am a boy — Я мальчик.*
@@ -19,6 +19,13 @@ Examples:
 * ***We** are children — Мы дети.*
 * ***You** are kind — Ты добрый.*
 * ***They** are clever — Они умные.*
+ 
+
+<h2>Exercise: Fast carousel (nominative case)</h2>
+<div id="practice3_picture_nominative_case"></div>
+<div id="practice3_control_nominative_case"></div>
+<div id="practice3_result_nominative_case"></div>
+
 
 ## Личные местоимения в косвенном падеже
 Косвенный падеж (oblique case) — это форма местоимения, которая используется, когда местоимение является дополнением в предложении (то есть объектом действия).
@@ -30,7 +37,7 @@ Examples:
 ||меня, мне, мною|его, ему, него, им, нему|ее, ей, нее, ней, нею|его, ей, им и др.|нас, нам, нами|тебя, тебе, вами|их, им, ими, них, ним|
 
 
-![oblique case](/grammar_of_english/img/oblique_case.png)
+![oblique case](/grammar_of_english/img/pronouns/oblique_case.png)
 
 Examples:
 * *He sees **me** — Он видит меня.*
@@ -66,6 +73,10 @@ Examples:
 * *The boys are in the garden. Please give the sweets to **them** — Мальчики в саду. Пожалуйста, отдайте сладости им.*
 * *Do you want to help **us**? We are baking pies today. — Вы хотите помочь нам? Сегодня мы печем пироги.*
  
+
+
+
+
 <h2>Exercise: listen and write (oblique case)</h2>
 <div id="control_oblique_case"></div>
 <div id="listen_and_write_oblique_case"></div>
@@ -88,7 +99,7 @@ Examples:
 звук ð - что бы произнести, следует язык разместить между зубами и произнести звук 'з'
 Но слышится как мягкая 'Д'
 
-![demonstrative pronouns](/grammar_of_english/img/demonstrative_pronouns.png)
+![demonstrative pronouns](/grammar_of_english/img/pronouns/demonstrative_pronouns.png)
 
 Examples:
 * ***This** is my book. — Это моя книга (близко).*
@@ -759,73 +770,153 @@ const exercises_easy_listen_and_write_all = [
     ["What are those? They are birds.", "Что это там? — Это птицы."]
 ];
 
+const exercises_test = [
+  ['/grammar_of_english/img/pronouns/I.png',
+    [
+        [["teacher"], "I am a teacher"],
+        [["president"], "I am a president"],
+        [["student"], "I am a student"],
+        [["hungry"], "I am hungry"],
+        [["happy"], "I am happy"],
+        [["student", "happy"], "I am happy student"],
+        [["Spain"], "I am from Spain"],
+    ]
+  ],
+  ['/grammar_of_english/img/pronouns/it.png',
+    [
+        [["dog"], "It is a dog"],
+        [["big"], "It is big"],
+        [["small"], "It is small"],
+        [["dog","loud"],"It is loud dog"],
+        [["brown"], "It is brown"],
+    ]
+  ],
+  ['/grammar_of_english/img/pronouns/he.png',
+    [
+        [["teacher"], "He is a teacher"],
+        [["doctor"], "He is a doctor"],
+        [["tall"], "He is tall"],
+        [["strong"], "He is strong"],
+        [["student"], "He is a student"],
+    ]
+  ],
+  ['/grammar_of_english/img/pronouns/she.png',
+    [
+        [["teacher"], "She is a teacher"],
+        [["nurse"], "She is a nurse"],
+        [["beautiful"], "She is beautiful"],
+        [["young"], "She is young"],
+        [["doctor"], "She is a doctor"],
+    ]
+  ],
+  ['/grammar_of_english/img/pronouns/we.png',
+    [
+        [["friend"], "We are friends"],
+        [["student"], "We are students"],
+        [["happy"], "We are happy"],
+        [["Spain"], "We are from Spain"],
+        [["team"], "We are a team"],
+        [["hungry"], "We are hungry"],
+    ]
+  ],
+  ['/grammar_of_english/img/pronouns/they.png',
+    [
+        [["friend"], "They are friends"],
+        [["happy"], "They are happy"],
+        [["Spain"], "They are from Spain"],
+        [["student"], "They are students"],
+    ]
+  ]
+];
+
+function validateObliqueCase(input) {
+  if (!window.nlp) return;
+
+  const doc = nlp(input);
+  let result = [];
+
+  // Более гибкий паттерн
+  const pattern = '#Pronoun (am|is|are) .+';
+
+  const check = doc.match(pattern).found;
+
+  if (!check) {
+    result.push({
+      err: true,
+      msg: "The sentence is not grammatical"
+    });
+  }
+  return result;
+}
 
 let g_practice_oblique_case = null;
 let g_practice_demonstrative_pronouns = null;
 let g_practice_all = null;
    
+let g_practice3_test = null;
+
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
           {
-            let editor_img = new EditorImg({callback: checkAnswerObliqueCase});
-            let editor_symbol = new EditorSymbol({callback: checkAnswerObliqueCase});
+            let editor_symbol = new EditorSymbol({callback: checkAnswerObliqueCase, suffix_id: "oblique_case"});
 
             g_practice_oblique_case = new Practice({
                 el_listen_and_write: document.getElementById('listen_and_write_oblique_case'), 
                 el_exercise_control: document.getElementById('control_oblique_case'), 
                 exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_oblique_case),
-                editor_img: editor_img,
                 editor_symbol: editor_symbol
             });
             g_practice_oblique_case.genExercisesListenAndWrite();    
         }
-
         {
-            let editor_img = new EditorImg({callback: checkAnswerDemonstrativePronouns});
-            let editor_symbol = new EditorSymbol({callback: checkAnswerDemonstrativePronouns});
+            let editor_symbol = new EditorSymbol({callback: checkAnswerDemonstrativePronouns, suffix_id: "demonstrative_pronouns"});
 
             g_practice_demonstrative_pronouns = new Practice({
                 el_listen_and_write: document.getElementById('listen_and_write_demonstrative_pronouns'), 
                 el_exercise_control: document.getElementById('control_demonstrative_pronouns'), 
                 exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_demonstrative_pronouns),
-                editor_img: editor_img,
                 editor_symbol: editor_symbol
             });
             g_practice_demonstrative_pronouns.genExercisesListenAndWrite();    
         }
-
-
         {
-            let editor_img = new EditorImg({callback: checkAnswerAll});
-            let editor_symbol = new EditorSymbol({callback: checkAnswerAll});
+            let editor_symbol = new EditorSymbol({callback: checkAnswerAll, suffix_id: "all"});
 
             g_practice_all = new Practice({
                 el_listen_and_write: document.getElementById('listen_and_write_all'), 
                 el_exercise_control: document.getElementById('control_all'), 
                 exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_all),
-                editor_img: editor_img,
                 editor_symbol: editor_symbol
             });
             g_practice_all.genExercisesListenAndWrite();    
         }
-
- 
+        {
+            g_practice3_test = new Practice3({
+                el_picture: document.getElementById('practice3_picture_nominative_case'),
+                el_control: document.getElementById('practice3_control_nominative_case'), 
+                el_result: document.getElementById('practice3_result_nominative_case'), 
+                data: getRandomMix(exercises_test),
+                user_rules_callback: validateObliqueCase
+            });
+        }
     } catch (error) {
         console.error("Error build:", error);
     }
 });
 
 function checkAnswerObliqueCase(value){
-    value = g_practice_oblique_case.textNormalize(value);
+    value = textNormalize(value);
+    console.log(`User callback ${value==g_practice_oblique_case.getAnswer()}`);
+    console.log(`User callback ${value}==${g_practice_oblique_case.getAnswer()}`);
     return value==g_practice_oblique_case.getAnswer();
 }
 function checkAnswerDemonstrativePronouns(value){
-    value = g_practice_demonstrative_pronouns.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_demonstrative_pronouns.getAnswer();
 }
 function checkAnswerAll(value){
-    value = g_practice_all.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_all.getAnswer();
 }
 </script>

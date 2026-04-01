@@ -126,21 +126,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
  
- {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralQuestionInterrogativeAdverbs, suffix_id: 'question_interrogative_adv'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralQuestionInterrogativeAdverbs, suffix_id: 'question_interrogative_adv'});
 
         g_practice = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_question_interrogative_adv'), 
             el_exercise_control: document.getElementById('control_general_question_interrogative_adv'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_question_interrogative_adv),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice.genExercisesListenAndWrite();
      
- }
-  
     } catch (error) {
         console.error("Error build:", error);
     }

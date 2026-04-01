@@ -529,14 +529,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
  
-        let editor_img = new EditorImg({callback: checkAnswer});
         let editor_symbol = new EditorSymbol({callback: checkAnswer});
 
         g_practice = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write'), 
             el_exercise_control: document.getElementById('control'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice.genExercisesListenAndWrite();

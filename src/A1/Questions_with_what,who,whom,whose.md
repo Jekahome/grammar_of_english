@@ -105,14 +105,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
  
  {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralQuestionWithWhat, suffix_id: 'question_with_what'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralQuestionWithWhat, suffix_id: 'question_with_what'});
 
         g_practice = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_question_with_what'), 
             el_exercise_control: document.getElementById('control_general_question_with_what'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_question_with_what),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice.genExercisesListenAndWrite();

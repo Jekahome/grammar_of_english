@@ -189,20 +189,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
  
- {
-        let editor_img = new EditorImg({callback: checkAnswerGeneralQuestion, suffix_id: 'general_question'});
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralQuestion, suffix_id: 'general_question'});
 
         g_practice = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_general_question'), 
             el_exercise_control: document.getElementById('control_general_question'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_general_question),
-            editor_img: editor_img,
             editor_symbol: editor_symbol
         });
         g_practice.genExercisesListenAndWrite();
-     
- }
   
     } catch (error) {
         console.error("Error build:", error);

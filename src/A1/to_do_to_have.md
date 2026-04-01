@@ -629,36 +629,28 @@ let g_practice_to_have = null;
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
- 
- {
-        let editor_img_to_do = new EditorImg({callback: checkAnswerToDo, suffix_id: 'to_do'});
+    {
         let editor_symbol_to_do = new EditorSymbol({callback: checkAnswerToDo, suffix_id: 'to_do'});
 
         g_practice_to_do = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_to_do'), 
             el_exercise_control: document.getElementById('control_to_do'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_to_do),
-            editor_img: editor_img_to_do,
             editor_symbol: editor_symbol_to_do
         });
         g_practice_to_do.genExercisesListenAndWrite();
-     
- }
- {
-        let editor_img_to_have = new EditorImg({callback: checkAnswerToDHave, suffix_id: 'to_have'});
+    }
+    {
         let editor_symbol_to_have = new EditorSymbol({callback: checkAnswerToDHave, suffix_id: 'to_have'});
 
         g_practice_to_have = new Practice({
             el_listen_and_write: document.getElementById('listen_and_write_to_have'), 
             el_exercise_control: document.getElementById('control_to_have'), 
             exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_to_have),
-            editor_img: editor_img_to_have,
             editor_symbol: editor_symbol_to_have
         });
         g_practice_to_have.genExercisesListenAndWrite();
- 
- }
-
+    }
     } catch (error) {
         console.error("Error build:", error);
     }
