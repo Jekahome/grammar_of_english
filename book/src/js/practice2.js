@@ -159,7 +159,7 @@ class Practice2 {
                 clearTimeout(this.input_timer);
             }
 
-            const text = this.el_input.value.trim();
+            const text = this.capitalize(this.el_input.value.trim());
  
             clearTimeout(idleTimer);
             clearTimeout(punctuationTimer);

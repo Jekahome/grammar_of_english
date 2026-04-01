@@ -33,6 +33,7 @@ class Practice3 {
     }
 
     recognition(recognition){
+        console.log(`recognition=${recognition}`);
         if (this.recognition_timer) {
             clearTimeout(this.recognition_timer);
         }
@@ -152,7 +153,7 @@ class Practice3 {
                 clearTimeout(this.input_timer);
             }
 
-            const text = this.capitalize(textNormalize(this.el_input.value.trim()));
+            const text = this.capitalize(this.el_input.value.trim());
            
             clearTimeout(idleTimer);
             clearTimeout(punctuationTimer);

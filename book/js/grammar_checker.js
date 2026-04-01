@@ -35,7 +35,9 @@ class HarperChecker {
             } else {
                 const lints = await this.linter.lint(text, this.settings);
                 if (lints.length !== 0) {
+                    
                     lints.forEach(lint => {
+                        console.log(`text=${text}`,`message=${lint.message()}`);
                         result.push({
                             err: true,
                             msg: lint.message()
