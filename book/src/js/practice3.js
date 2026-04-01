@@ -94,6 +94,7 @@ class Practice3 {
         this.nextSentence();
     }
     micOn(){
+        this.el_input.value = '';
         this.el_result_list.classList.remove('success-result');
         this.el_result_list.innerHTML = '';
         this.#editor_voice.micOn(this.el_make_mic);
@@ -151,7 +152,7 @@ class Practice3 {
                 clearTimeout(this.input_timer);
             }
 
-            const text = textNormalize(this.el_input.value.trim());
+            const text = this.capitalize(textNormalize(this.el_input.value.trim()));
            
             clearTimeout(idleTimer);
             clearTimeout(punctuationTimer);
