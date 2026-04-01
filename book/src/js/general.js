@@ -1,7 +1,11 @@
 
 window.globalScriptReady = new Promise(resolve => {
     document.addEventListener('DOMContentLoaded', async () => {
-
+        nlp.extend((Doc, world) => {
+          world.addWords({
+            Spain: 'Place'
+          });
+        });
         resolve();
     });
 });
@@ -7798,7 +7802,10 @@ return input
     .replace(/\s+/g, " ")
     .trim();
 }
+
+//--------------------------------------------------------------------------
  
+
 
 //---------------------------------------------------------------------------
 // Проверка дублей
