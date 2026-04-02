@@ -6,9 +6,8 @@ class Listen {
     #showLevel = true;
     #pageSize = 10;
     #timer_css_editor = null;
-    #mode = "auto";// auto, manual, auto2
-    #repeatCount = 0;   // сколько раз уже повторили текущий отрезок
-    #manualBtnNext = null;  // кнопка "следующий" для ручного режима
+    #mode = "auto";// auto, manual
+    #manualBtnNext = null;  
     #manualBtnRepeat = null;
     #manualIsRepeat = false;
 
@@ -20,7 +19,6 @@ class Listen {
     page = -1;
     wordsLevel = [];
     textRaw = "";
-
 
     constructor({container, path_sub, path_audio, pageSize = 10}) {
         
@@ -39,7 +37,6 @@ class Listen {
         this.createAudioSettings(container, audio);
         this.init();
         this.loadVTT(subtitles);
-       
     }
  
     init() {
@@ -74,13 +71,9 @@ class Listen {
     update() {  
         const t = this.#audio.currentTime;
         const newIndex = this.subs.findIndex(s => t >= s.start && t <= s.end);
-        
         if (newIndex === -1 || (this.index === newIndex && this.#manualIsRepeat===false) ) return;
-       
         this.index = newIndex;
-
         if (this.#mode === "manual") {
-              
             if(this.#manualIsRepeat === false) {
                 if(this.index > 0){this.#audio.pause();}
                 this.#currentIndex +=1;
@@ -93,11 +86,9 @@ class Listen {
                     this.#audio.play();
                 }
             }
-            
             this.updateBody();
             return;
         }
-
         this.updateBody();
     }
 
@@ -347,11 +338,7 @@ class Listen {
         //===========================================
         const listen_mode_auto = details.querySelector('#listen-mode-auto');
         const listen_mode_manual = details.querySelector('#listen-mode-manual');
-
-        /*
-            #manualBtnNext = null;  // кнопка "следующий" для ручного режима
-            #manualBtnRepeat = null;
-        */
+ 
         listen_mode_auto.addEventListener('change', (e) => {
             if (e.target.checked) { 
                 this.#mode = "auto"; 
@@ -399,7 +386,6 @@ class Listen {
         container.appendChild(manualBtnNext);
         this.#manualBtnNext = manualBtnNext;
 
-        
         //===========================================
 
         const styleTag = document.createElement('style');

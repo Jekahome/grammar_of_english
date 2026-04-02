@@ -25,7 +25,8 @@ const exclude = [];
 
 const others = ["paris","brazil","pm", "lot of","lot", "brazil","max","kate","moscow","john","smiths", "london","york","roberto","volga","japan","europe","france",
     "england","egypt","spain","italian","italy","id","wi-fi","jake", "jane","alice","elisabeth","mister","jack","liza","robert","sarah","olga","alan","james","barbara","sushi",
-    "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs","alissa","webvtt"
+    "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs","alissa","webvtt",
+    "russia","germany","hi","usa","canada","uk","berlin","miller","wilson","lee","australia","bob"
 ];
 
 const a1_words_nouns = [
@@ -5518,6 +5519,8 @@ const c1_words_nouns = [
   ["sexuality","","","сексуальность",4981],
   ["paradise","paradises","","рай",4984],
   ["grandchild","grandchildren","","внук,внучка",4989],
+  ["granddaughter","granddaughters","внучка",5000],
+  ["grandson","grandsons","внук",5000],
   ["tenure","","","пребывание в должности",4990],
   ["slot","slots","slotting","слот,щель,паз",4992],
   ["stereotype","stereotypes","","стереотип",4993],

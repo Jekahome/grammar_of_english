@@ -770,7 +770,7 @@ const exercises_easy_listen_and_write_all = [
     ["What are those? They are birds.", "Что это там? — Это птицы."]
 ];
 
-const exercises_test = [
+const exercises_practice3 = [
   ['/img/pronouns/I.png',
     [
         [["teacher"], "I am a teacher"],
@@ -853,14 +853,13 @@ let g_practice_oblique_case = null;
 let g_practice_demonstrative_pronouns = null;
 let g_practice_all = null;
    
-let g_practice3_test = null;
+let g_practice3 = null;
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
-          {
+        {
             let editor_symbol = new EditorSymbol({callback: checkAnswerObliqueCase, suffix_id: "oblique_case"});
-
             g_practice_oblique_case = new Practice({
                 el_listen_and_write: document.getElementById('listen_and_write_oblique_case'), 
                 el_exercise_control: document.getElementById('control_oblique_case'), 
@@ -871,7 +870,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         {
             let editor_symbol = new EditorSymbol({callback: checkAnswerDemonstrativePronouns, suffix_id: "demonstrative_pronouns"});
-
             g_practice_demonstrative_pronouns = new Practice({
                 el_listen_and_write: document.getElementById('listen_and_write_demonstrative_pronouns'), 
                 el_exercise_control: document.getElementById('control_demonstrative_pronouns'), 
@@ -882,7 +880,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         {
             let editor_symbol = new EditorSymbol({callback: checkAnswerAll, suffix_id: "all"});
-
             g_practice_all = new Practice({
                 el_listen_and_write: document.getElementById('listen_and_write_all'), 
                 el_exercise_control: document.getElementById('control_all'), 
@@ -892,11 +889,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             g_practice_all.genExercisesListenAndWrite();    
         }
         {
-            g_practice3_test = new Practice3({
+            g_practice3 = new Practice3({
                 el_picture: document.getElementById('practice3_picture_nominative_case'),
                 el_control: document.getElementById('practice3_control_nominative_case'), 
                 el_result: document.getElementById('practice3_result_nominative_case'), 
-                data: getRandomMix(exercises_test),
+                data: getRandomMix(exercises_practice3),
                 user_rules_callback: validateObliqueCase
             });
         }
@@ -907,8 +904,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 function checkAnswerObliqueCase(value){
     value = textNormalize(value);
-    console.log(`User callback ${value==g_practice_oblique_case.getAnswer()}`);
-    console.log(`User callback ${value}==${g_practice_oblique_case.getAnswer()}`);
     return value==g_practice_oblique_case.getAnswer();
 }
 function checkAnswerDemonstrativePronouns(value){
