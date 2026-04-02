@@ -16,7 +16,6 @@ class EditorSymbol {
     }
 
     userCallback(){
-        console.log('userCallback');
         let result = this.#callback(this.#elEditorText.value);
 
         if (result){
@@ -29,7 +28,6 @@ class EditorSymbol {
             this.#elEditorText.classList.add('error');
         }
         if (this.#callback_practice){
-            console.log('userCallback callback_practice' );
             this.#callback_practice(result);
         }
     }
@@ -86,7 +84,6 @@ class EditorSymbol {
         container.appendChild(editorContainer);
 
         elEditorText.addEventListener('input', function(e) {
-            console.log('WTF');
            this.userCallback();
         }.bind(this));
 

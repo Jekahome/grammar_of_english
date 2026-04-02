@@ -45,6 +45,14 @@ class Listen {
             return;
         }
         this.#audio.ontimeupdate = this.update.bind(this);
+
+        this.#audio.addEventListener('seeked', () => {
+            const t = this.#audio.currentTime;
+            const newIndex = this.subs.findIndex(s => t >= s.start && t <= s.end);
+            if (newIndex === -1) return;
+            this.index = newIndex;
+            this.updateBody();
+        });
     }
 
     async loadVTT(url) {

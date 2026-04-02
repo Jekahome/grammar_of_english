@@ -15,20 +15,12 @@ class Practice {
         this.#el_listen_and_write = el_listen_and_write;
         this.#el_exercise_control = el_exercise_control;
         this.#exercises_listen_and_write = exercises_listen_and_write;
-        this.#editor_voice =  new EditorVoice({callback: (result, id) => this.recognition(result, id)});
+        this.#editor_voice = new EditorVoice({callback: (result, id) => this.recognition(result, id)});
        
         this.#editor_symbol = editor_symbol;
  
         this.#editor_symbol.createListenAndWrite(el_listen_and_write);
-               
-        
-        const button = document.createElement('button');
-        button.className = 'clear-btn';
-        button.onclick = this.clearEditor.bind(this);
-        button.textContent = 'Очистить';
-
-        this.#el_listen_and_write.appendChild(button);
-
+                 
         this.recognition_timer = null;
     }
 
@@ -49,11 +41,7 @@ class Practice {
     micOn(micEl, id){
         this.#editor_voice.micOn(micEl, id);
     }
-
-    clearEditor(){
-        this.#editor_symbol.clearEditor(); 
-    }
-
+ 
     setRecognition(recognition){
         this.#editor_symbol.setRecognition(recognition);
     }
@@ -106,7 +94,7 @@ class Practice {
     }
 
     nextSentence(){
-        this.clearEditor();
+        this.#editor_symbol.clearEditor(); 
         this.genExercisesListenAndWrite();
     }
 

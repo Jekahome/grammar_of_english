@@ -439,6 +439,7 @@
 <div id="practice3_picture_nominative_case"></div>
 <div id="practice3_control_nominative_case"></div>
 <div id="practice3_result_nominative_case"></div>
+<hr />
 <h2 id="Личные-местоимения-в-косвенном-падеже"><a class="header" href="#Личные-местоимения-в-косвенном-падеже">Личные местоимения в косвенном падеже</a></h2>
 <p>Косвенный падеж (oblique case) — это форма местоимения, которая используется, когда местоимение является дополнением в предложении (то есть объектом действия).</p>
 <p>Косвенный падеж местоимений в английском языке отвечает на вопросы "кому?" (to whom?), "чему?" (to what?), "с кем?" (with whom?), "с чем?" (with what?) и аналогичные.</p>
@@ -516,6 +517,10 @@
 <li><em><strong>That</strong> sea — то море.</em></li>
 <li><em><strong>This</strong> word — это слово.</em></li>
 </ul>
+<h2 id="exercise-fast-carousel-demonstrative-pronouns"><a class="header" href="#exercise-fast-carousel-demonstrative-pronouns">Exercise: Fast carousel (demonstrative pronouns)</a></h2>
+<div id="practice3_picture_demonstrative_pronouns"></div>
+<div id="practice3_control_demonstrative_pronouns"></div>
+<div id="practice3_result_demonstrative_pronouns"></div> 
 <p><strong>This [ðɪs]</strong> (эта/это)</p>
 <p>Мы говорим this - речь об <strong>одном</strong> предмете или о живом существе, которое находится <strong>возле</strong> нас.</p>
 <p><em>This pencil is black. — Этот карандаш черный.</em></p>
@@ -1147,7 +1152,7 @@ const exercises_easy_listen_and_write_all = [
     ["What are those? They are birds.", "Что это там? — Это птицы."]
 ];
 
-const exercises_practice3 = [
+const exercises_practice3_nominative_case = [
   ['/img/pronouns/I.png',
     [
         [["teacher"], "I am a teacher"],
@@ -1205,6 +1210,30 @@ const exercises_practice3 = [
     ]
   ]
 ];
+ 
+const exercises_practice3_demonstrative_pronouns = [
+  ['/img/pronouns/that.png',
+    [
+        [["apple"], "That apple"],
+    ]
+  ],
+  ['/img/pronouns/these.png',
+    [
+       [["apple"], "These apples"],
+    ]
+  ],
+  ['/img/pronouns/this.png',
+    [
+       [["apple"], "This apple"],
+    ]
+  ],
+  ['/img/pronouns/those.png',
+    [
+       [["apple"], "Those apples"],
+    ]
+  ],
+
+];
 
 function validateObliqueCase(input) {
   if (!window.nlp) return;
@@ -1225,12 +1254,33 @@ function validateObliqueCase(input) {
   }
   return result;
 }
+ 
+function validateDemonstrativePronouns(input) {
+  if (!window.nlp) return;
+
+  const doc = nlp(input);
+  let result = [];
+
+  const pattern = '(this|that|these|those) .+';
+
+  const check = doc.match(pattern).found;
+
+  if (!check) {
+    result.push({
+      err: true,
+      msg: "The sentence is not grammatical"
+    });
+  }
+
+  return result;
+}
 
 let g_practice_oblique_case = null;
 let g_practice_demonstrative_pronouns = null;
 let g_practice_all = null;
    
-let g_practice3 = null;
+let g_practice3_nominative_case = null;
+let g_practice3_demonstrative_pronouns = null;
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
@@ -1266,12 +1316,22 @@ document.addEventListener('DOMContentLoaded', async () => {
             g_practice_all.genExercisesListenAndWrite();    
         }
         {
-            g_practice3 = new Practice3({
+            g_practice3_nominative_case = new Practice3({
                 el_picture: document.getElementById('practice3_picture_nominative_case'),
                 el_control: document.getElementById('practice3_control_nominative_case'), 
                 el_result: document.getElementById('practice3_result_nominative_case'), 
-                data: getRandomMix(exercises_practice3),
+                data: getRandomMix(exercises_practice3_nominative_case),
                 user_rules_callback: validateObliqueCase
+            });
+        }
+        {
+ 
+            g_practice3_demonstrative_pronouns = new Practice3({
+                el_picture: document.getElementById('practice3_picture_demonstrative_pronouns'),
+                el_control: document.getElementById('practice3_control_demonstrative_pronouns'), 
+                el_result: document.getElementById('practice3_result_demonstrative_pronouns'), 
+                data: getRandomMix(exercises_practice3_demonstrative_pronouns),
+                user_rules_callback: validateDemonstrativePronouns
             });
         }
     } catch (error) {

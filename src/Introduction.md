@@ -2032,6 +2032,12 @@ ffmpeg -f concat -safe 0 -i list.txt -c copy audio.opus
 ```
 
 
+Захват аудио с динамика 
+
+```
+ffmpeg -f pulse -i alsa_output.pci-0000_05_00.6.analog-stereo.monitor -ac 2 -ar 44100 output.flac
+```
+
 
 #### Проверка текста
 

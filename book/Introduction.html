@@ -2373,6 +2373,9 @@ for f in *.opus; do echo "file '$f'" &gt;&gt; list.txt; done
 # concat
 ffmpeg -f concat -safe 0 -i list.txt -c copy audio.opus
 </code></pre>
+<p>Захват аудио с динамика</p>
+<pre><code>ffmpeg -f pulse -i alsa_output.pci-0000_05_00.6.analog-stereo.monitor -ac 2 -ar 44100 output.flac
+</code></pre>
 <h4 id="Проверка-текста"><a class="header" href="#Проверка-текста">Проверка текста</a></h4>
 <p>После получения текста субтитров:</p>
 <ul>

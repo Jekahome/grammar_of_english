@@ -116,6 +116,10 @@ Examples:
 * ***That** sea — то море.*
 * ***This** word — это слово.*
  
+<h2>Exercise: Fast carousel (demonstrative pronouns)</h2>
+<div id="practice3_picture_demonstrative_pronouns"></div>
+<div id="practice3_control_demonstrative_pronouns"></div>
+<div id="practice3_result_demonstrative_pronouns"></div> 
 
 **This [ðɪs]** (эта/это)
 
@@ -771,7 +775,7 @@ const exercises_easy_listen_and_write_all = [
     ["What are those? They are birds.", "Что это там? — Это птицы."]
 ];
 
-const exercises_practice3 = [
+const exercises_practice3_nominative_case = [
   ['/img/pronouns/I.png',
     [
         [["teacher"], "I am a teacher"],
@@ -829,6 +833,30 @@ const exercises_practice3 = [
     ]
   ]
 ];
+ 
+const exercises_practice3_demonstrative_pronouns = [
+  ['/img/pronouns/that.png',
+    [
+        [["apple"], "That apple"],
+    ]
+  ],
+  ['/img/pronouns/these.png',
+    [
+       [["apple"], "These apples"],
+    ]
+  ],
+  ['/img/pronouns/this.png',
+    [
+       [["apple"], "This apple"],
+    ]
+  ],
+  ['/img/pronouns/those.png',
+    [
+       [["apple"], "Those apples"],
+    ]
+  ],
+
+];
 
 function validateObliqueCase(input) {
   if (!window.nlp) return;
@@ -849,12 +877,33 @@ function validateObliqueCase(input) {
   }
   return result;
 }
+ 
+function validateDemonstrativePronouns(input) {
+  if (!window.nlp) return;
+
+  const doc = nlp(input);
+  let result = [];
+
+  const pattern = '(this|that|these|those) .+';
+
+  const check = doc.match(pattern).found;
+
+  if (!check) {
+    result.push({
+      err: true,
+      msg: "The sentence is not grammatical"
+    });
+  }
+
+  return result;
+}
 
 let g_practice_oblique_case = null;
 let g_practice_demonstrative_pronouns = null;
 let g_practice_all = null;
    
-let g_practice3 = null;
+let g_practice3_nominative_case = null;
+let g_practice3_demonstrative_pronouns = null;
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
@@ -890,12 +939,22 @@ document.addEventListener('DOMContentLoaded', async () => {
             g_practice_all.genExercisesListenAndWrite();    
         }
         {
-            g_practice3 = new Practice3({
+            g_practice3_nominative_case = new Practice3({
                 el_picture: document.getElementById('practice3_picture_nominative_case'),
                 el_control: document.getElementById('practice3_control_nominative_case'), 
                 el_result: document.getElementById('practice3_result_nominative_case'), 
-                data: getRandomMix(exercises_practice3),
+                data: getRandomMix(exercises_practice3_nominative_case),
                 user_rules_callback: validateObliqueCase
+            });
+        }
+        {
+ 
+            g_practice3_demonstrative_pronouns = new Practice3({
+                el_picture: document.getElementById('practice3_picture_demonstrative_pronouns'),
+                el_control: document.getElementById('practice3_control_demonstrative_pronouns'), 
+                el_result: document.getElementById('practice3_result_demonstrative_pronouns'), 
+                data: getRandomMix(exercises_practice3_demonstrative_pronouns),
+                user_rules_callback: validateDemonstrativePronouns
             });
         }
     } catch (error) {
