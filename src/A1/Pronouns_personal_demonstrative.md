@@ -26,6 +26,7 @@ Examples:
 <div id="practice3_control_nominative_case"></div>
 <div id="practice3_result_nominative_case"></div>
 
+---
 
 ## Личные местоимения в косвенном падеже
 Косвенный падеж (oblique case) — это форма местоимения, которая используется, когда местоимение является дополнением в предложении (то есть объектом действия).
