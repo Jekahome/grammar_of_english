@@ -9,7 +9,7 @@
 ||Я|он|она|оно|мы|вы|они|
 
 
-![nominative case](/grammar_of_english/img/pronouns/nominative_case.png)
+![nominative case](../img/pronouns/nominative_case.png)
 
 Examples:
 * ***I** am a boy — Я мальчик.*
@@ -771,7 +771,7 @@ const exercises_easy_listen_and_write_all = [
 ];
 
 const exercises_test = [
-  ['/grammar_of_english/img/pronouns/I.png',
+  ['/img/pronouns/I.png',
     [
         [["teacher"], "I am a teacher"],
         [["president"], "I am a president"],
@@ -782,7 +782,7 @@ const exercises_test = [
         [["Spain"], "I am from Spain"],
     ]
   ],
-  ['/grammar_of_english/img/pronouns/it.png',
+  ['/img/pronouns/it.png',
     [
         [["dog"], "It is a dog"],
         [["big"], "It is big"],
@@ -791,7 +791,7 @@ const exercises_test = [
         [["brown"], "It is brown"],
     ]
   ],
-  ['/grammar_of_english/img/pronouns/he.png',
+  ['/img/pronouns/he.png',
     [
         [["teacher"], "He is a teacher"],
         [["doctor"], "He is a doctor"],
@@ -800,7 +800,7 @@ const exercises_test = [
         [["student"], "He is a student"],
     ]
   ],
-  ['/grammar_of_english/img/pronouns/she.png',
+  ['/img/pronouns/she.png',
     [
         [["teacher"], "She is a teacher"],
         [["nurse"], "She is a nurse"],
@@ -809,7 +809,7 @@ const exercises_test = [
         [["doctor"], "She is a doctor"],
     ]
   ],
-  ['/grammar_of_english/img/pronouns/we.png',
+  ['/img/pronouns/we.png',
     [
         [["friend"], "We are friends"],
         [["student"], "We are students"],

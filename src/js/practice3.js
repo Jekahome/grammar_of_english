@@ -16,6 +16,14 @@ class Practice3 {
 
     constructor({el_picture, el_result, el_control, data, user_rules_callback}){
         this.data = data;
+  
+        const isGithubIO = window.location.hostname.includes('github.io');
+        if (isGithubIO) {
+            this.data = this.data.map(([url, content]) => {
+                return [`/grammar_of_english${url}`, content];
+            });
+        }
+    
         this.el_make_control = el_control;
         this.el_make_result = el_result;
 
