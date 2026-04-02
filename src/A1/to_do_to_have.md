@@ -657,11 +657,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
  
 function checkAnswerToDo(value){
-    value = g_practice_to_do.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_to_do.getAnswer();
 }
 function checkAnswerToDHave(value){
-    value = g_practice_to_have.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_to_have.getAnswer();
 }
 </script>      

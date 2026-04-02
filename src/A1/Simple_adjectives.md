@@ -1311,35 +1311,35 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 function checkAnswerGeneralSimple(value){
-    value = g_practice_simple.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_simple.getAnswer();
 }
 function checkAnswerGeneralStateSubject(value){
-    value = g_practice_state_subject.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_state_subject.getAnswer();
 }
 function checkAnswerGeneralAs(value){
-    value = g_practice_as.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_as.getAnswer();
 }
 function checkAnswerGeneralLess(value){
-    value = g_practice_less.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_less.getAnswer();
 }
 function checkAnswerGeneralThan(value){
-    value = g_practice_than.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_than.getAnswer();
 }
 function checkAnswerGeneralIrregular(value){
-    value = g_practice_irregular.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_irregular.getAnswer();
 }
 function checkAnswerGeneralForms(value){
-    value = g_practice_forms.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_forms.getAnswer();
 }
 function checkAnswerGeneralAll(value){
-    value = g_practice_all.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_all.getAnswer();
 }
 </script>   

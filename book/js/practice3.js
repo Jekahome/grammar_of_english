@@ -182,7 +182,7 @@ class Practice3 {
                     clearTimeout(punctuationTimer);
                     lastCheckedText = text;
                     this.checkUserRules(text, await window.grammarChecker.checkGrammar(text ));
-                }, 1500);
+                }, 1000);
                 this.input_timer = null;  
             }, 500);  
         });

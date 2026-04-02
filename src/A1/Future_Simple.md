@@ -541,7 +541,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
  
 function checkAnswer(value){
-    value = g_practice.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice.getAnswer();
 }
 </script>      

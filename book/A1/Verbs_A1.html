@@ -1201,7 +1201,7 @@ document.addEventListener('DOMContentLoaded', async () => {
  
  
 function checkAnswerGeneralVerbs(value){
-    value = g_practice_verbs.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_verbs.getAnswer();
 }
  

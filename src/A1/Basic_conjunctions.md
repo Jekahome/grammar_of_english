@@ -368,19 +368,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
  
 function checkAnswerGeneralConjAdv(value){
-    value = g_practice_conj_adv.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_conj_adv.getAnswer();
 }
 function checkAnswerGeneralCoordConj(value){
-    value = g_practice_coord_conj.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_coord_conj.getAnswer();
 }
 function checkAnswerGeneralSubConj(value){
-    value = g_practice_sub_conj.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_sub_conj.getAnswer();
 }
 function checkAnswerGeneralAll(value){
-    value = g_practice_all.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_all.getAnswer();
 }
  

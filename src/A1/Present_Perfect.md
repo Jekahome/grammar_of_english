@@ -377,19 +377,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
  
 function checkAnswerGeneralMarkers(value){
-    value = g_practice_markers.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_markers.getAnswer();
 }
 function checkAnswerGeneralIrregular(value){
-    value = g_practice_irregular.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_irregular.getAnswer();
 }
 function  checkAnswerGeneralQuestion(value){
-    value = g_practice_question.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_question.getAnswer();
 }
 function  checkAnswerGeneralAll(value){
-    value = g_practice_all.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_all.getAnswer();
 }
 </script>   

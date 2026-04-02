@@ -728,9 +728,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
  
- 
 function checkAnswerGeneralNouns(value){
-    value = g_practice_nouns.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_nouns.getAnswer();
 }
  

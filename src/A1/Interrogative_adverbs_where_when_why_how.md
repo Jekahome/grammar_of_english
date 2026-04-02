@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
  
 function checkAnswerGeneralQuestionInterrogativeAdverbs(value){
-    value = g_practice.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice.getAnswer();
 }
  

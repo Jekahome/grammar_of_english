@@ -37,7 +37,7 @@ Examples:
 ||меня, мне, мною|его, ему, него, им, нему|ее, ей, нее, ней, нею|его, ей, им и др.|нас, нам, нами|тебя, тебе, вами|их, им, ими, них, ним|
 
 
-![oblique case](/grammar_of_english/img/pronouns/oblique_case.png)
+![oblique case](../img/pronouns/oblique_case.png)
 
 Examples:
 * *He sees **me** — Он видит меня.*
@@ -99,7 +99,7 @@ Examples:
 звук ð - что бы произнести, следует язык разместить между зубами и произнести звук 'з'
 Но слышится как мягкая 'Д'
 
-![demonstrative pronouns](/grammar_of_english/img/pronouns/demonstrative_pronouns.png)
+![demonstrative pronouns](../img/pronouns/demonstrative_pronouns.png)
 
 Examples:
 * ***This** is my book. — Это моя книга (близко).*
@@ -819,7 +819,7 @@ const exercises_test = [
         [["hungry"], "We are hungry"],
     ]
   ],
-  ['/grammar_of_english/img/pronouns/they.png',
+  ['/img/pronouns/they.png',
     [
         [["friend"], "They are friends"],
         [["happy"], "They are happy"],

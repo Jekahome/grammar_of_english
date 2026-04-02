@@ -1083,11 +1083,11 @@ document.addEventListener('DOMContentLoaded', async () => {
  
  
 function checkAnswerGeneralIrregularVerbsSentence(value){
-    value = g_practice_irregular_verbs_sentence.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_irregular_verbs_sentence.getAnswer();
 }
 function checkAnswerGeneralIrregularVerbs(value){
-    value = g_practice_irregular_verbs.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_irregular_verbs.getAnswer();
 }
 </script> 

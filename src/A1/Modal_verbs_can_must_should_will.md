@@ -773,19 +773,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
  
 function checkAnswerCan(value){
-    value = g_practice_can.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_can.getAnswer();
 }
 function checkAnswerMust(value){
-    value = g_practice_must.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_must.getAnswer();
 }
 function checkAnswerShould(value){
-    value = g_practice_should.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_should.getAnswer();
 }
 function checkAnswerWill(value){
-    value = g_practice_will.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_will.getAnswer();
 }
 </script>      

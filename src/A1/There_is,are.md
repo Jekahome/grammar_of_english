@@ -519,19 +519,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
  
 function checkAnswerGeneralThere(value){
-    value = g_practice.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice.getAnswer();
 }
 function checkAnswerGeneralThere2(value){
-    value = g_practice2.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice2.getAnswer();
 }
 function checkAnswerGeneralThereAnswer(value){
-    value = g_practice_answer.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_answer.getAnswer();
 }
 function checkAnswerGeneralThereAll(value){
-    value = g_practice_there_all_exercises.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_there_all_exercises.getAnswer();
 }
 </script>   

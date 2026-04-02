@@ -427,19 +427,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
  
 function checkAnswerGeneralMany(value){
-    value = g_practice_many.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_many.getAnswer();
 }
 function checkAnswerGeneralFew(value){
-    value = g_practice_few.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_few.getAnswer();
 }
 function checkAnswerGeneralSome(value){
-    value = g_practice_some.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_some.getAnswer();
 }
 function checkAnswerGeneralQuantifiers(value){
-    value = g_practice_quantifiers.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_quantifiers.getAnswer();
 }
 </script>   

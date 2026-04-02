@@ -413,19 +413,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
  
 function checkAnswerGeneralHave(value){
-    value = g_practice_have.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_have.getAnswer();
 }
 function checkAnswerGeneralHaveNoun(value){
-    value = g_practice_have_noun.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_have_noun.getAnswer();
 }
 function checkAnswerGeneralHaveObligations(value){
-    value = g_practice_have_obligations.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_have_obligations.getAnswer();
 }
 function checkAnswerGeneralHaveAll(value){
-    value = g_practice_have_all_exercises.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_have_all_exercises.getAnswer();
 }
 </script>   

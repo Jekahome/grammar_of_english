@@ -1053,23 +1053,23 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
  
 function checkAnswerGeneralIndefinite(value){
-    value = g_practice_indefinite.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_indefinite.getAnswer();
 }
 function checkAnswerGeneralDefinite(value){
-    value = g_practice_definite.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_definite.getAnswer();
 }
 function checkAnswerGeneralQuestion(value){
-    value = g_practice_question.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_question.getAnswer();
 }
 function checkAnswerGeneralModal(value){
-    value = g_practice_modal.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_modal.getAnswer();
 }
 function checkAnswerGeneralAll(value){
-    value = g_practice_all.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_all.getAnswer();
 }
 </script>   

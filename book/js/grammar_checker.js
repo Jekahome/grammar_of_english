@@ -37,7 +37,7 @@ class HarperChecker {
                 if (lints.length !== 0) {
                     
                     lints.forEach(lint => {
-                        console.log(`text=${text}`,`message=${lint.message()}`);
+                        //console.log(`text=${text}`,`message=${lint.message()}`);
                         result.push({
                             err: true,
                             msg: lint.message()

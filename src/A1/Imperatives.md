@@ -364,31 +364,31 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
  
 function checkAnswerGeneralOrder(value){
-    value = g_practice_order.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_order.getAnswer();
 }
 function checkAnswerGeneralWish(value){
-    value = g_practice_wish.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_wish.getAnswer();
 }
 function checkAnswerGeneralInstructions(value){
-    value = g_practice_instructions.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_instructions.getAnswer();
 }
 function checkAnswerGeneralProposals(value){
-    value = g_practice_proposals.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_proposals.getAnswer();
 }
 function checkAnswerGeneralWarnings(value){
-    value = g_practice_warnings.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_warnings.getAnswer();
 }
 function checkAnswerGeneralPhrasalVerbs(value){
-    value = g_practice_phrasal_verbs.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_phrasal_verbs.getAnswer();
 }
 function checkAnswerGeneralAll(value){
-    value = g_practice_all.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_all.getAnswer();
 }
 </script>   

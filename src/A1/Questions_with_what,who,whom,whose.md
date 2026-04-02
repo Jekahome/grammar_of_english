@@ -104,7 +104,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
  
- {
         let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralQuestionWithWhat, suffix_id: 'question_with_what'});
 
         g_practice = new Practice({
@@ -114,8 +113,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             editor_symbol: editor_symbol
         });
         g_practice.genExercisesListenAndWrite();
-     
- }
   
     } catch (error) {
         console.error("Error build:", error);
@@ -123,7 +120,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
  
 function checkAnswerGeneralQuestionWithWhat(value){
-    value = g_practice.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice.getAnswer();
 }
  

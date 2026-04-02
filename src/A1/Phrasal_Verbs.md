@@ -773,13 +773,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
  
- 
 function checkAnswerGeneralAll(value){
-    value = g_practice_all.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_all.getAnswer();
 }
 function checkAnswerGeneralPhrasalVerbs(value){
-    value = g_practice_phrasal_verbs.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_phrasal_verbs.getAnswer();
 }
 </script> 

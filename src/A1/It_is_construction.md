@@ -613,35 +613,35 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
  
 function checkAnswerGeneralItis(value){
-    value = g_practice_it_is.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_it_is.getAnswer();
 }
 function checkAnswerGeneralTime(value){
-    value = g_practice_time.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_time.getAnswer();
 }
 function checkAnswerGeneralDate(value){
-    value = g_practice_date.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_date.getAnswer();
 }
 function checkAnswerGeneralDistance(value){
-    value = g_practice_distance.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_distance.getAnswer();
 }
 function checkAnswerGeneralWeather(value){
-    value = g_practice_weather.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_weather.getAnswer();
 }
 function checkAnswerGeneralView(value){
-    value = g_practice_view.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_view.getAnswer();
 }
 function checkAnswerGeneralAdjective(value){
-    value = g_practice_adjective.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_adjective.getAnswer();
 }
 function checkAnswerGeneralTogether(value){
-    value = g_practice_together.textNormalize(value);
+    value = textNormalize(value);
     return value==g_practice_together.getAnswer();
 }
 </script>   
