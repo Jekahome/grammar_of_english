@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   
         const container = document.getElementById("listen-container");
         const subtitles = "/listen/A1/Started/Flying_Home/Flying_Home.vtt";
-        const audio = "/listen/A1/Started/Flying_Home/Flying_Home.mp3";
+        const audio = "/listen/A1/Started/Flying_Home/Flying_Home.opus";
    
         const listen = new Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
     } catch (error) {

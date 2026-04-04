@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   
         const container = document.getElementById("listen-container");
         const subtitles = "/listen/A1/Started/Good_Day_Bad_Day/Good_Day_Bad_Day.vtt";
-        const audio = "/listen/A1/Started/Good_Day_Bad_Day/Good_Day_Bad_Day.mp3";
+        const audio = "/listen/A1/Started/Good_Day_Bad_Day/Good_Day_Bad_Day.opus";
    
         const listen = new Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
     } catch (error) {
