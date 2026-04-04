@@ -1,0 +1,1065 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Articles the, a, an - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+        <link rel="stylesheet" href="../theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="articles-the-a-an"><a class="header" href="#articles-the-a-an">Articles: The, A, An</a></h1>
+<p>Артикль — это служебное слово, обычно ставится перед существительным. Есть два вида артикля — неопределённый <code>a, an</code> и определённый <code>the</code>.</p>
+<h2 id="Грамматическая-функция-артиклей"><a class="header" href="#Грамматическая-функция-артиклей">Грамматическая функция артиклей</a></h2>
+<ul>
+<li>Артикль the - на примере русского, вы можете добавить к существительному слово "этот, эта, это"</li>
+<li>Артикль a, an - на примере русского, вы можете добавить к существительному слово "какой-то, какая-то, какое-то"</li>
+</ul>
+<p>Одна из главных функций артиклей в предложении — это показать, что перед нами слово, которое выступает в качестве существительного. Просто добавив артикль, вы превращаете слово в существительное и немного изменяете значение предложения.</p>
+<p>Сравните пары слов:</p>
+<ul>
+<li>a/the book. (книга) и to book (бронировать)</li>
+<li>a/the house. (дом) и to house (поместить, разместить)</li>
+<li>a/the light. (свет) и to light (светить)</li>
+</ul>
+<p>Примеры использования артиклей в предложениях:</p>
+<ul>
+<li>The book is on the table. — Книга лежит на столе.</li>
+<li>It is better to book a hotel in advance. — Бронировать отель лучше заранее.</li>
+<li>Did he show you a how? — Он тебе показал способ, как это сделать?</li>
+<li>Do you know the where? — Ты знаешь, где это место?</li>
+</ul>
+<h2 id="Место-в-предложении"><a class="header" href="#Место-в-предложении">Место в предложении</a></h2>
+<p>Артикль ставится перед существительным или если есть, перед прилагательным.</p>
+<ul>
+<li>It is an interesting book. — Это интересная книга.</li>
+<li>The red apple is in the room. — Красное яблоко в комнате.</li>
+</ul>
+<pre><code>
+
+                                                Noun 
+                                                |
+                                        ——————————————————      
+                                       /                   \
+                                  ед.число              мн.число
+                                     |                     |
+                                     |                    the
+                                     |
+                                    / \
+                           Считается   Не Считается 
+                              |             |
+                           a,an,the        the
+
+</code></pre>
+<h2 id="Неопределенный-артикль-a-an"><a class="header" href="#Неопределенный-артикль-a-an">Неопределенный артикль a, an</a></h2>
+<p>Исторически произошел от слова, означав­шего «один», и употребляется только с <strong>поддаю­щимися счету</strong> (COUNTABLE NOUNS) существительными в <strong>единственном числе</strong>. Этот артикль означает «один, какой-то, какой-нибудь» и употребляется там, где речь идет об одном (любом) из ряда однородных предметов. Артикли a/an относят существительные к определенному классу, обобщают их, говоря, что предмет или человек является одним из представителей какой-то группы.</p>
+<p>Употребляется:</p>
+<ol>
+<li>Используем a, an, когда говорим о предмете впервые, какой-то один.</li>
+<li>Используем a, an, когда говорим о предмете, который представляет целую группу подобных.</li>
+<li>Используем a, an, когда называем профессию или род деятельности в целом, не имея в виду конкретного человека.</li>
+<li>Используем a, an в значении «один» (вместо числительного «один»).</li>
+<li>Используем a, an со словами rather, quite, such.</li>
+<li>Используем a, an при конкретизации абстракт­ных понятий или ограничении количества вещества.</li>
+<li>Используем a, an со словами school, church, hospital, university, prison и другими учреждениями, когда речь не идет об их прямом назначении.</li>
+</ol>
+<p>Артикли <code>a, an</code> не имеют ударения в предложении и <strong>про­износятся слитно со следующим словом</strong>. В речи обычно если нет акцента на смысл который несет артикль, то он <a href="https://youtu.be/aqF481MMDcs?si=GPMq04HghB3_JR6M&amp;t=242">произносится как русская <code>А</code></a></p>
+<p><strong>Артикль a</strong> — ставится перед согласными звуками: a table, a book.</p>
+<p><strong>Артикль an</strong> — ставится перед гласными звуками: an hour (hour произносится как /aʊər/), an apple.</p>
+<p>Примеры:</p>
+<ul>
+<li>Take a map. — Взять карту. (когда говорим о предмете впервые, какой-то один)
+He bought a new car. — Он купил новую машину. (говорим о предмете впервые)</li>
+<li>I want a donut. — Я хочу пончик. (говорим о предмете, который представляет целую группу подобных)</li>
+<li>I am not unemployed, I am a freelancer. — Я не безработный, я фрилансер. (называем профессию или род деятельности)</li>
+<li>He had a beer and two shots of tequila. — Он выпил одно пиво и два шота текилы. (используем числительное в значении «один»)</li>
+<li>It's a rather difficult question. — Это довольно сложный вопрос. (со словами rather, quite, such)</li>
+<li>a cup of tea — чашка чая (вместо числительного «один»)</li>
+<li>a loaf of bread — булка хлеба (вместо числительного «один»)</li>
+<li>a glass of vine — стакан вина (вместо числительного «один»)</li>
+<li>A coffee and an orange juice, please. — Кофе и апельсиновый сок, пожалуйста. (вместо числительного «один»)</li>
+<li>I had a big breakfast. — Я съел большой завтрак. (прилагательное, говорим о предмете впервые)</li>
+<li>Ann works six hours a day. — Энн работает шесть часов в день. (Устоявшиеся выражения)</li>
+<li>Mark goes to the theatre once a week. — Марк ходит в театр один раз в неделю. (Устоявшиеся выражения)</li>
+</ul>
+<p>Устоявшиеся выражения с <code>a, an</code>:</p>
+<ul>
+<li>in a hurry — в спешке</li>
+<li>as a result — в результате</li>
+<li>to have a good time — хорошо проводить время</li>
+<li>one dollar a kilo — один доллар за килограмм</li>
+<li>120 kilometres an hour — 120 километров за час</li>
+<li>a day — день</li>
+<li>a week — неделя</li>
+<li>a month — месяц</li>
+<li>a year — год</li>
+</ul>
+<h2 id="Определенный-артикль-the"><a class="header" href="#Определенный-артикль-the">Определенный артикль the</a></h2>
+<p>Артикль the имеет общее значение — «тот, данный, этот». Этот артикль употребляется с любыми существительными: исчисляемыми и неисчисляемыми, в единственном и может быть, во мно­жественном числе. Любому существительному, которое стоит после него, он придает индивидуальность, делает его уникальным и особенным.</p>
+<p>Употребляется:</p>
+<ol>
+<li>Используем the с названиями предметов, о кото­рых уже говорилось раньше.</li>
+<li>Используем the с названиями предме­тов, единственных в своем роде или единственных в данной обстановке.</li>
+<li>Используем the с названиями музыкальных инструментов в значении класса инструмента в целом.</li>
+<li>Используем the перед конкретизирующими определениями last, best и т.д.</li>
+<li>Используем the перед порядковыми числительными: первый, второй и т.д.</li>
+<li>Используем the со всем, что связано с водой, пустыни, горные цепи, группы островов, стороны света и полюса.</li>
+<li>Используем the в выражениях go to the cinema, go to the theatre.</li>
+<li>Используем the перед названиями рек, морей, океанов, горных хребтов, а также перед сложными назва­ниями стран.</li>
+<li>Используем the при конкретизации абстракт­ных понятий или ограничении количества вещества.</li>
+</ol>
+<p>Артикль <code>the</code> не имеет ударения в предложении и читается слитно со следующим за ним словом.</p>
+<p><strong>Перед гласными</strong> the произносится как зи.</p>
+<p><strong>Перед согласными</strong> the произносится как зэ.</p>
+<p>Примеры:</p>
+<ul>
+<li>The book — эта книга</li>
+<li>The apples — эти яблоки</li>
+<li>I am not a big fat panda. I'm the big fat panda. — Я не просто большая толстая панда. Я та самая большая толстая панда.</li>
+<li>Take a pen. — Возьмите ручку (какую-нибудь, любую).</li>
+<li>Take the pen. — Возьмите эту ручку.</li>
+<li>Tim read a book. The book was interesting. — Тим читал книгу. Книга была интересная. (с названиями предметов, о кото­рых уже говорилось раньше)</li>
+<li>What is the biggest country in the world? — Какая страна самая большая в мире? (говорим об уникальном предмете, единственном в мире)</li>
+<li>The sun shines bright. — Солнце светит ярко. (говорим об уникальном предмете, единственном в мире)</li>
+<li>I bought a book yesterday. The book is about London. — Вчера я купил книгу. Эта книга про Лондон. (говорим о том, что уже упоминали)</li>
+<li>Pass me the knife, please. — Передай нож, пожалуйста. (говорим о предмете, единственном в данной обстановке)</li>
+<li>Jimi Hendrix could play the guitar. — Джими Хендрикс умел играть на гитаре. (музыкальные инструменты в значении класса инструмента в целом)</li>
+<li>Mary has a piano at home. — У Мэри дома есть пианино. (конкретный инструмент)</li>
+<li>He is the best student in the class. — Он лучший ученик в классе. (перед конкретизирующими определениями: last, best)</li>
+<li>She came the second. — Она пришла второй. (перед порядковыми числительными: первый, второй)</li>
+<li>Do you often go to the cinema? — Ты часто ходишь в кино? (в выражениях: go to the cinema, go to the theatre)</li>
+<li>We are going to the theatre tonight. — Мы идем в театр сегодня вечером. (в выражениях: go to the cinema, go to the theatre)</li>
+</ul>
+<p>Устоявшиеся выражения с <code>the</code>:</p>
+<ul>
+<li>in the morning/evening — утром/вечером</li>
+<li>on the one hand/on the other hand — с одной стороны/с другой стороны</li>
+<li>on the right/on the left — справа/слева</li>
+<li>to play the piano — играть на пианино</li>
+<li>the radio — радио</li>
+<li>at sea — в море (исключение)</li>
+<li>the news — новости (в английском это слово единственного числа)</li>
+</ul>
+<h2 id="Отсутствие-артикля-нулевой-артикль"><a class="header" href="#Отсутствие-артикля-нулевой-артикль">Отсутствие артикля (нулевой артикль)</a></h2>
+<h3 id="Артикль-не-употребляется"><a class="header" href="#Артикль-не-употребляется">Артикль не употребляется:</a></h3>
+<ul>
+<li>с именами собственными (имена, клички животных, названия стран, городов и т.д.).</li>
+<li>с числительными (five books, one kitten).</li>
+<li>с неисчисляемым существительным (UNCOUNTABLE NOUNS).</li>
+<li>с названиями континентов, большинства стран и городов, островов, вулканов, горных вершин.
+там, где должен стоять неопределенный артикль, но существительное во множественном числе.</li>
+<li>с названиями видов спорта.</li>
+<li>с приемами пищи, днями недели, месяцами.</li>
+<li>со словами school, church, hospital, university, prison и другими учреждениями, когда они используются по назначению.</li>
+<li>если с существительным используются местоимения или существительные в притяжательном падеже.</li>
+<li>перед названиями абстрактных понятий и названиями веществ, употребленными в самом общем смысле.</li>
+<li>перед television в смысле «телевидение», но используется в значении «телевизор».</li>
+<li>перед space в смысле «космос», но используется в значении «пространство».</li>
+<li>с выражениями go to bed, stay in bed, кроме конкретной мебели.</li>
+<li>если перед существительным стоит притяжательное местоимение (my, your, his, her, our, their).</li>
+<li>если перед существительным стоит количественное числительное (one, two, three и т.д.).</li>
+<li>если перед существительным стоит указательное местоимение (this, that, these, those).</li>
+<li>если перед существительным стоит определитель (some, any, no).</li>
+<li>если перед существительным стоит вопросительное слово (what, which).</li>
+<li>со словами midday, midnight.</li>
+</ul>
+<p>Примеры отсутствия артикля:</p>
+<ul>
+<li>I go to school every day. — Я хожу в школу учиться.</li>
+<li>Last week I was in hospital. — Прошлую неделю я лечился в госпитале.</li>
+<li>There is sand in my shoes. — У меня в обуви песок.</li>
+<li>We eat rice every day. — Мы едим рис каждый день.</li>
+<li>I hate mice. — Я ненавижу мышей.</li>
+<li>Tony went hiking. — Тони пошел в поход.</li>
+<li>Do you like playing football? — Тебе нравится играть в футбол?</li>
+<li>See you on Monday. — Увидимся в понедельник.</li>
+<li>What do you have for dinner? — Что у тебя на ужин?</li>
+<li>I am going to Greece in June. — В июне я еду в Грецию.</li>
+<li>My brother is still at school. — Мой брат еще в школе.</li>
+<li>This is Andrew's beer. — Это пиво Эндрю.</li>
+<li>Music makes me calm. — Музыка меня успокаивает.</li>
+<li>The statue is made of stone. — Статуя сделана из камня.</li>
+<li>Jane is at school now. — Джейн сейчас в школе.</li>
+<li>to watch television — смотреть телевидение.</li>
+<li>Would you like to travel in space? — Ты хотел бы отправиться в космос?</li>
+<li>It's time to go to bed. — Пора идти спать.</li>
+<li>I never have breakfast. — Я никогда не завтракаю.</li>
+</ul>
+<p>Устоявшиеся выражения без артиклей:</p>
+<ul>
+<li>by chance — случайно</li>
+<li>by mistake — ошибочно</li>
+<li>in fact — на самом деле</li>
+<li>go home — идти домой</li>
+<li>at night — ночью</li>
+<li>to have breakfast — завтракать</li>
+<li>to have lunch — обедать</li>
+<li>to have dinner — ужинать</li>
+</ul>
+<p>Исключения нулевого артикля:</p>
+<ul>
+<li>the Congo — Конго</li>
+<li>the Gambia — Гамбия</li>
+<li>the Hague — Гаага</li>
+<li>the United States of America — Соединенные Штаты Америки</li>
+<li>the United Kingdom — Соединенное Королевство</li>
+<li>the Atlantic Ocean — Атлантический океан</li>
+<li>the Mississippi — Миссисипи</li>
+</ul>
+<p>Примеры отсутствия артикля в устойчивых выражениях:</p>
+<ul>
+<li>I was there in spring — Я был там весной.</li>
+<li>Doctor White, Professor — Доктор Уайт, профессор.</li>
+</ul>
+<p>Артикль несовместим с указательными и притяжательными местоимениями, существительными в родительном падеже и отрицанием no:</p>
+<ul>
+<li>that teacher — тот учитель</li>
+<li>your teacher — ваш учитель</li>
+<li>my son's teacher — учитель моего сына</li>
+<li>They have no new teachers. — У них нет новых учителей.</li>
+</ul>
+<p><a href="https://skyeng.ru/exercises/articles/">Упражнения от skyeng.ru</a></p>
+<p><a href="https://brstu.ru/images/stories/section/facultets/gpf/inyaz/mr/19.pdf">Упражнения</a></p>
+<details>
+<summary>Примеры:</summary>
+<pre><code>
+I have a book. — У меня есть книга.
+She is a teacher. — Она учительница.
+He has a car. — У него есть машина.
+It is a game. — Это игра.
+I need a minute. — Мне нужна минута.
+She tells a story. — Она рассказывает историю.
+We live in a big house. — Мы живём в большом доме.
+I hear a noise. — Я слышу шум.
+He writes a word. — Он пишет слово.
+I have a photo. — У меня есть фотография.
+Do you have a pen? — У тебя есть ручка?
+Is there a table in the room? — В комнате есть стол?
+Are you a student? — Ты студент?
+I don't have a job. — У меня нет работы.
+He is not a parent. — Он не родитель.
+I need an hour. — Мне нужен час.
+She has an apple. — У неё есть яблоко.
+He is an actor. — Он актёр.
+It is an old book. — Это старая книга.
+I see an egg — Я вижу яйцо.
+The book is on the table. — Книга на столе.
+I like the music. — Мне нравится эта музыка.
+Close the door, please. — Закрой дверь, пожалуйста.
+We play the game together. — Мы играем в эту игру вместе.
+The teacher is in the class. — Учитель в классе.
+I see the girl from my street. — Я вижу девочку с моей улицы.
+He is the father of my friend. — Он отец моего друга.
+She shows the photo to her parents. — Она показывает фотографию своим родителям.
+They live in the house at the end of the street. — Они живут в доме в конце улицы.
+I understand the word. — Я понимаю это слово.
+Where is the car? — Где машина?
+Do you know the answer? — Ты знаешь ответ?
+I don't know the boy. — Я не знаю этого мальчика.
+She doesn't like the food. — Ей не нравится еда.
+I see a girl. The girl is my friend. — Я вижу девочку. Девочка — моя подруга.
+He has a car. The car is red. — У него есть машина. Машина красная.
+They play a game. The game is fun. — Они играют в игру. Игра веселая.
+My flat is on the second floor. — Моя квартира на втором этаже.
+This is the first time I see this film. — Это первый раз, когда я смотрю этот фильм.
+We need food and water. — Нам нужны еда и вода.
+They play football. — Они играют в футбол.
+I go to work by car. — Я езжу на работу на машине.
+She listens to music. — Она слушает музыку.
+We are at home. — Мы дома.
+I have breakfast in the morning. — Я завтракаю утром.
+They go to school. — Они ходят в школу.
+I see light from the window. — Я вижу свет из окна.
+Kate likes books. — Кейт любит книги.
+Max plays games with his friends. — Макс играет в игры с друзьями.
+I live in Moscow. — Я живу в Москве.
+We need food and water. — Нам нужны еда и вода.
+She listens to music every morning. — Она слушает музыку каждое утро.
+We have breakfast at 8 o'clock. — Мы завтракаем в 8 часов.
+They meet on Monday. — Они встречаются в понедельник.
+I learn new words every morning. — Я учу новые слова каждое утро.
+She goes to school. — Она ходит в школу.
+They are in class now. — Сейчас они на уроке.
+He is in hospital. — Он в больнице.
+They play football in the street. — Они играют в футбол на улице.
+We like to play games. — Мы любим играть в игры.
+I have two parents. — У меня два родителя.
+She writes sixty words. — Она пишет шестьдесят слов.
+We need five chairs for the game. — Нам нужно пять стульев для игры.
+I go to bed at 10 PM. — Я ложусь спать в 10 вечера.
+She stays in bed on Sundays. — Она остается в постели по воскресеньям.
+The party ends at midnight. — Вечеринка заканчивается в полночь.
+We meet at midday. — Мы встречаемся в полдень.
+They live in Europe. — Они живут в Европе.
+He visits France every year. — Он посещает Францию каждый год.
+We watch television in the evening. — Мы смотрим телевизор вечером.
+Big ships fly in space. — Большие корабли летают в космосе.
+People need freedom. — Людям нужна свобода.
+Children feel fun when they play. — Детям весело, когда они играют.
+She has brothers and sisters. — У нее есть братья и сестры.
+They buy books every month. — Они покупают книги каждый месяц.
+I feel happiness when I see my friends. — Я чувствую счастье, когда вижу своих друзей.
+We have fun at the party. — Мы веселимся на вечеринке.
+She is good with children. — Она хорошо ладит с детьми.
+I learn words by heart. — Я учу слова наизусть.
+We go home by car. — Мы едем домой на машине.
+His name is John. — Его зовут Джон.
+My father helps me with homework. — Мой папа помогает мне с домашней работой.
+Her friend writes words in a notebook. — Её подруга пишет слова в тетради.
+Our teacher shows photos in class. — Наш учитель показывает фотографии в классе.
+This book is interesting. — Эта книга интересная.
+That girl runs fast. — Та девочка бегает быстро.
+These tables are new. — Эти столы новые.
+I see some friends on the street. — Я вижу нескольких друзей на улице.
+Do you have any photos? — У тебя есть какие-нибудь фотографии?
+We have no food at home. — У нас дома нет еды.
+What music do you like? — Какую музыку ты любишь?
+What time do you start work? — Во сколько ты начинаешь работать?
+Which teacher do you have? — Какой учитель у вас?
+In the morning I go to work. — Утром я иду на работу.
+We go to the party in the evening. — Мы идём на вечеринку вечером.
+Let's meet at the end of the day. — Давайте встретимся в конце дня.
+I feel happy in the sun. — Я чувствую себя счастливым на солнце.
+We look at the moon at night. — Мы смотрим на луну ночью.
+The sun is very bright today. — Солнце сегодня очень яркое.
+I can see the stars in the sky. — Я вижу звезды на небе.
+My house is in the east. — Мой дом находится на востоке.
+They live in the north of the country. — Они живут на севере страны.
+She plays the piano very well. — Она очень хорошо играет на фортепиано.
+He is learning to play the guitar. — Он учится играть на гитаре.
+The Smiths come to our party. — Семья Смитов приходит на нашу вечеринку.
+They swim in the Black Sea. — Они плавают в Черном море.
+The Volga is a long river. — Волга — длинная река.
+We go to the cinema every weekend. — Мы ходим в кино каждые выходные.
+I need to go to the bank today. — Мне нужно сходить в банк сегодня.
+Let's meet at the station. — Давай встретимся на станции.
+The school is very old. — Школа очень старая.
+I need to go to the hospital to see my friend. — Мне нужно сходить в больницу навестить друга.
+The church was built in 1812. — Церковь была построена в 1812 году.
+He is the best student in the class. — Он лучший ученик в классе.
+This is the most difficult word. — Это самое сложное слово.
+I have a headache. — У меня болит голова.
+She has a cold. — Она простужена.
+What a beautiful day! — Какой прекрасный день!
+What an interesting book! — Какая интересная книга!
+He is doctor, not teacher. — Он врач, а не учитель.
+This is table, that is chair. — Это стол, то стул.
+She becomes artist after school. — Она становится художником после школы.
+I meet my old friend by chance. — Я встречаю своего старого друга случайно.
+We find the book by chance. — Мы находим книгу случайно.
+I take your pen by mistake. — Я беру твою ручку по ошибке.
+He puts salt in his tea by mistake. — Он кладет соль в чай по ошибке.
+In fact, I don't understand this word. — На самом деле, я не понимаю это слово.
+She says she is busy, but in fact she plays games. — Она говорит, что занята, но на самом деле она играет в игры.
+I hear strange noises at night. — Я слышу странные шумы ночью.
+We like to look at the stars at night. — Мы любим смотреть на звезды ночью.
+My parents usually stay at home in the evening. — Мои родители обычно остаются дома вечером.
+I feel happy at home. — Я чувствую себя счастливым дома.
+My father has breakfast at 7 o'clock. — Мой папа завтракает в 7 часов.
+We have lunch at school. — Мы обедаем в школе.
+They have dinner together. — Они ужинают вместе.
+Children have fun at the party. — Дети веселятся на вечеринке.
+We have fun playing this game. — Мы весело играем в эту игру.
+I have time to help you. — У меня есть время помочь тебе.
+She doesn't have time for breakfast. — У нее нет времени на завтрак.
+After class, I go home immediately. — После урока я сразу иду домой.
+They go home by car. — Они едут домой на машине.
+My brother goes to school in the morning. — Мой брат ходит в школу утром.
+We go to school together. — Мы ходим в школу вместе.
+Her parents go to work early. — Ее родители ходят на работу рано.
+He goes to work by bus. — Он едет на работу на автобусе.
+In the evening, we watch television. — Вечером мы смотрим телевизор.
+The boy watches television after school. — Мальчик смотрит телевизор после школы.
+I listen to music every day. — Я слушаю музыку каждый день.
+She listens to music when she feels sad. — Она слушает музыку, когда ей грустно.
+The boys play football in the street. — Мальчики играют в футбол на улице.
+We play games at the party. — Мы играем в игры на вечеринке.
+They learn English at school. — Они учат английский в школе.
+I want to learn English well. — Я хочу выучить английский хорошо.
+My friend helps me with homework. — Мой друг помогает мне с домашней работой.
+I meet my friend after class. — Я встречаюсь с моим другом после уроков.
+This book is very interesting. — Эта книга очень интересная.
+I don't understand this word. — Я не понимаю это слово.
+I want some water. — Я хочу воды.
+She needs some help. — Ей нужна помощь.
+</code></pre>
+</details>
+<h2 id="exercise-listen-and-write"><a class="header" href="#exercise-listen-and-write">Exercise: listen and write</a></h2>
+<div id="control"></div>
+<div id="listen_and_write"></div>
+<script>
+
+const exercises_easy_listen_and_write = [
+    ["I have a book.", "У меня есть книга."],
+    ["She is a teacher.", "Она учительница."],
+    ["He has a car.", "У него есть машина."],
+    ["It is a game.", "Это игра."],
+    ["I need a minute.", "Мне нужна минута."],
+    ["She tells a story.", "Она рассказывает историю."],
+    ["We live in a big house.", "Мы живём в большом доме."],
+    ["I hear a noise.", "Я слышу шум."],
+    ["He writes a word.", "Он пишет слово."],
+    ["I have a photo.", "У меня есть фотография."],
+    ["Do you have a pen?", "У тебя есть ручка?"],
+    ["Is there a table in the room?", "В комнате есть стол?"],
+    ["Are you a student?", "Ты студент?"],
+    ["I don't have a job.", "У меня нет работы."],
+    ["He is not a parent.", "Он не родитель."],
+    ["I need an hour.", "Мне нужен час."],
+    ["She has an apple.", "У неё есть яблоко."],
+    ["He is an actor.", "Он актёр."],
+    ["It is an old book.", "Это старая книга."],
+    ["I see an egg.", "Я вижу яйцо."],
+    ["The book is on the table.", "Книга на столе."],
+    ["I like the music.", "Мне нравится эта музыка."],
+    ["Close the door, please.", "Закрой дверь, пожалуйста."],
+    ["We play the game together.", "Мы играем в эту игру вместе."],
+    ["The teacher is in the class.", "Учитель в классе."],
+    ["I see the girl from my street.", "Я вижу девочку с моей улицы."],
+    ["He is the father of my friend.", "Он отец моего друга."],
+    ["She shows the photo to her parents.", "Она показывает фотографию своим родителям."],
+    ["They live in the house at the end of the street.", "Они живут в доме в конце улицы."],
+    ["I understand the word.", "Я понимаю это слово."],
+    ["Where is the car?", "Где машина?"],
+    ["Do you know the answer?", "Ты знаешь ответ?"],
+    ["I don't know the boy.", "Я не знаю этого мальчика."],
+    ["She doesn't like the food.", "Ей не нравится еда."],
+    ["I see a girl. The girl is my friend.", "Я вижу девочку. Девочка — моя подруга."],
+    ["He has a car. The car is red.", "У него есть машина. Машина красная."],
+    ["They play a game. The game is fun.", "Они играют в игру. Игра веселая."],
+    ["My flat is on the second floor.", "Моя квартира на втором этаже."],
+    ["This is the first time I see this film.", "Это первый раз, когда я смотрю этот фильм."],
+    ["We need food and water.", "Нам нужны еда и вода."],
+    ["They play football.", "Они играют в футбол."],
+    ["I go to work by car.", "Я езжу на работу на машине."],
+    ["She listens to music.", "Она слушает музыку."],
+    ["We are at home.", "Мы дома."],
+    ["I have breakfast in the morning.", "Я завтракаю утром."],
+    ["They go to school.", "Они ходят в школу."],
+    ["I see light from the window.", "Я вижу свет из окна."],
+    ["Kate likes books.", "Кейт любит книги."],
+    ["Max plays games with his friends.", "Макс играет в игры с друзьями."],
+    ["I live in Moscow.", "Я живу в Москве."],
+    ["We need food and water.", "Нам нужны еда и вода."],
+    ["She listens to music every morning.", "Она слушает музыку каждое утро."],
+    ["We have breakfast at 8 o'clock.", "Мы завтракаем в 8 часов."],
+    ["They meet on Monday.", "Они встречаются в понедельник."],
+    ["I learn new words every morning.", "Я учу новые слова каждое утро."],
+    ["She goes to school.", "Она ходит в школу."],
+    ["They are in class now.", "Сейчас они на уроке."],
+    ["He is in hospital.", "Он в больнице."],
+    ["They play football in the street.", "Они играют в футбол на улице."],
+    ["We like to play games.", "Мы любим играть в игры."],
+    ["I have two parents.", "У меня два родителя."],
+    ["She writes sixty words.", "Она пишет шестьдесят слов."],
+    ["We need five chairs for the game.", "Нам нужно пять стульев для игры."],
+    ["I go to bed at 10 PM.", "Я ложусь спать в 10 вечера."],
+    ["She stays in bed on Sundays.", "Она остается в постели по воскресеньям."],
+    ["The party ends at midnight.", "Вечеринка заканчивается в полночь."],
+    ["We meet at midday.", "Мы встречаемся в полдень."],
+    ["They live in Europe.", "Они живут в Европе."],
+    ["He visits France every year.", "Он посещает Францию каждый год."],
+    ["We watch television in the evening.", "Мы смотрим телевизор вечером."],
+    ["Big ships fly in space.", "Большие корабли летают в космосе."],
+    ["People need freedom.", "Людям нужна свобода."],
+    ["Children feel fun when they play.", "Детям весело, когда они играют."],
+    ["She has brothers and sisters.", "У нее есть братья и сестры."],
+    ["They buy books every month.", "Они покупают книги каждый месяц."],
+    ["I feel happiness when I see my friends.", "Я чувствую счастье, когда вижу своих друзей."],
+    ["We have fun at the party.", "Мы веселимся на вечеринке."],
+    ["She is good with children.", "Она хорошо ладит с детьми."],
+    ["I learn words by heart.", "Я учу слова наизусть."],
+    ["We go home by car.", "Мы едем домой на машине."],
+    ["His name is John.", "Его зовут Джон."],
+    ["My father helps me with homework.", "Мой папа помогает мне с домашней работой."],
+    ["Her friend writes words in a notebook.", "Её подруга пишет слова в тетради."],
+    ["Our teacher shows photos in class.", "Наш учитель показывает фотографии в классе."],
+    ["This book is interesting.", "Эта книга интересная."],
+    ["That girl runs fast.", "Та девочка бегает быстро."],
+    ["These tables are new.", "Эти столы новые."],
+    ["I see some friends on the street.", "Я вижу нескольких друзей на улице."],
+    ["Do you have any photos?", "У тебя есть какие-нибудь фотографии?"],
+    ["We have no food at home.", "У нас дома нет еды."],
+    ["What music do you like?", "Какую музыку ты любишь?"],
+    ["What time do you start work?", "Во сколько ты начинаешь работать?"],
+    ["Which teacher do you have?", "Какой учитель у вас?"],
+    ["In the morning I go to work.", "Утром я иду на работу."],
+    ["We go to the party in the evening.", "Мы идём на вечеринку вечером."],
+    ["Let's meet at the end of the day.", "Давайте встретимся в конце дня."],
+    ["I feel happy in the sun.", "Я чувствую себя счастливым на солнце."],
+    ["We look at the moon at night.", "Мы смотрим на луну ночью."],
+    ["The sun is very bright today.", "Солнце сегодня очень яркое."],
+    ["I can see the stars in the sky.", "Я вижу звезды на небе."],
+    ["My house is in the east.", "Мой дом находится на востоке."],
+    ["They live in the north of the country.", "Они живут на севере страны."],
+    ["She plays the piano very well.", "Она очень хорошо играет на фортепиано."],
+    ["He is learning to play the guitar.", "Он учится играть на гитаре."],
+    ["The Smiths come to our party.", "Семья Смитов приходит на нашу вечеринку."],
+    ["They swim in the Black Sea.", "Они плавают в Черном море."],
+    ["The Volga is a long river.", "Волга — длинная рева."],
+    ["We go to the cinema every weekend.", "Мы ходим в кино каждые выходные."],
+    ["I need to go to the bank today.", "Мне нужно сходить в банк сегодня."],
+    ["Let's meet at the station.", "Давай встретимся на станции."],
+    ["The school is very old.", "Школа очень старая."],
+    ["I need to go to the hospital to see my friend.", "Мне нужно сходить в больницу навестить друга."],
+    ["The church was built in 1812.", "Церковь была построена в 1812 году."],
+    ["He is the best student in the class.", "Он лучший ученик в классе."],
+    ["This is the most difficult word.", "Это самое сложное слово."],
+    ["I have a headache.", "У меня болит голова."],
+    ["She has a cold.", "Она простужена."],
+    ["What a beautiful day!", "Какой прекрасный день!"],
+    ["What an interesting book!", "Какая интересная книга!"],
+    ["He is doctor, not teacher.", "Он врач, а не учитель."],
+    ["This is table, that is chair.", "Это стол, то стул."],
+    ["She becomes artist after school.", "Она становится художником после школы."],
+    ["I meet my old friend by chance.", "Я встречаю своего старого друга случайно."],
+    ["We find the book by chance.", "Мы находим книгу случайно."],
+    ["I take your pen by mistake.", "Я беру твою ручку по ошибке."],
+    ["He puts salt in his tea by mistake.", "Он кладет соль в чай по ошибке."],
+    ["In fact, I don't understand this word.", "На самом деле, я не понимаю это слово."],
+    ["She says she is busy, but in fact she plays games.", "Она говорит, что занята, но на самом деле она играет в игры."],
+    ["I hear strange noises at night.", "Я слышу странные шумы ночью."],
+    ["We like to look at the stars at night.", "Мы любим смотреть на звезды ночью."],
+    ["My parents usually stay at home in the evening.", "Мои родители обычно остаются дома вечером."],
+    ["I feel happy at home.", "Я чувствую себя счастливым дома."],
+    ["My father has breakfast at 7 o'clock.", "Мой папа завтракает в 7 часов."],
+    ["We have lunch at school.", "Мы обедаем в школе."],
+    ["They have dinner together.", "Они ужинают вместе."],
+    ["Children have fun at the party.", "Дети веселятся на вечеринке."],
+    ["We have fun playing this game.", "Мы весело играем в эту игру."],
+    ["I have time to help you.", "У меня есть время помочь тебе."],
+    ["She doesn't have time for breakfast.", "У нее нет времени на завтрак."],
+    ["After class, I go home immediately.", "После урока я сразу иду домой."],
+    ["They go home by car.", "Они едут домой на машине."],
+    ["My brother goes to school in the morning.", "Мой брат ходит в школу утром."],
+    ["We go to school together.", "Мы ходим в школу вместе."],
+    ["Her parents go to work early.", "Ее родители ходят на работу рано."],
+    ["He goes to work by bus.", "Он едет на работу на автобусе."],
+    ["In the evening, we watch television.", "Вечером мы смотрим телевизор."],
+    ["The boy watches television after school.", "Мальчик смотрит телевизор после школы."],
+    ["I listen to music every day.", "Я слушаю музыку каждый день."],
+    ["She listens to music when she feels sad.", "Она слушает музыку, когда ей грустно."],
+    ["The boys play football in the street.", "Мальчики играют в футбол на улице."],
+    ["We play games at the party.", "Мы играем в игры на вечеринке."],
+    ["They learn English at school.", "Они учат английский в школе."],
+    ["I want to learn English well.", "Я хочу выучить английский хорошо."],
+    ["My friend helps me with homework.", "Мой друг помогает мне с домашней работой."],
+    ["I meet my friend after class.", "Я встречаюсь с моим другом после уроков."],
+    ["This book is very interesting.", "Эта книга очень интересная."],
+    ["I don't understand this word.", "Я не понимаю это слово."],
+    ["I want some water.", "Я хочу воды."],
+    ["She needs some help.", "Ей нужна помощь."]
+];
+
+let g_practice = null;
+   
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+ 
+        let editor_symbol = new EditorSymbol({callback: checkAnswer});
+
+        g_practice = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write'), 
+            el_exercise_control: document.getElementById('control'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write),
+            editor_symbol: editor_symbol
+        });
+        g_practice.genExercisesListenAndWrite();
+ 
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+ 
+function checkAnswer(value){
+    value = textNormalize(value);
+    return value==g_practice.getAnswer();
+}
+</script>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Countable_singular_and_plural_nouns.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/workbook_2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Countable_singular_and_plural_nouns.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/workbook_2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+        <script src="../src/js/listen.js"></script>
+        <script src="../src/js/textual_analysis.js"></script>
+        <script src="../src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

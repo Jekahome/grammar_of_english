@@ -1,0 +1,1057 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Past Simple - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+        <link rel="stylesheet" href="../theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="the-past-simple-tense"><a class="header" href="#the-past-simple-tense">The Past Simple Tense</a></h1>
+<p>Завершенное прошедшее время</p>
+<h3 id="Слова-маркеры"><a class="header" href="#Слова-маркеры">Слова маркеры:</a></h3>
+<ul>
+<li>yesterday – вчера</li>
+<li>in 1980 ...</li>
+<li>last year - в прошлом году</li>
+<li>two hours ago – два часа назад</li>
+<li>two days ago – два дня назад</li>
+</ul>
+<p>to be:</p>
+<ul>
+<li>I/he/she/it - was</li>
+<li>you/we/they - were</li>
+</ul>
+<p>to do:</p>
+<ul>
+<li>Do/Does - did</li>
+</ul>
+<p>Past Simple — это время, где <strong>неправильные глаголы</strong> используются "на полную" как и в Present Perfect.</p>
+<ul>
+<li>В Past Simple используется вторая форма (V2) неправильного глагола.</li>
+<li>В Present Perfect используется третья форма (V3).</li>
+</ul>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Base Form (V1)</th><th style="text-align: left">3rd Person Singular (Present Simple)</th><th style="text-align: left">Past Simple (V2)</th><th style="text-align: left">Past Participle (V3)</th><th style="text-align: left">Present Participle (-ing form)</th></tr></thead><tbody>
+<tr><td style="text-align: left">be (am/are)</td><td style="text-align: left">is (для he/she/it)</td><td style="text-align: left"><strong>was</strong>/<strong>were</strong></td><td style="text-align: left">been</td><td style="text-align: left">being</td></tr>
+<tr><td style="text-align: left">do</td><td style="text-align: left">does</td><td style="text-align: left"><strong>did</strong></td><td style="text-align: left">done</td><td style="text-align: left">doing</td></tr>
+<tr><td style="text-align: left">go</td><td style="text-align: left">goes</td><td style="text-align: left"><strong>went</strong></td><td style="text-align: left">gone</td><td style="text-align: left">going</td></tr>
+<tr><td style="text-align: left">can</td><td style="text-align: left">can</td><td style="text-align: left"><strong>could</strong></td><td style="text-align: left">(been able to)</td><td style="text-align: left">(being able to)</td></tr>
+<tr><td style="text-align: left">get</td><td style="text-align: left">gets</td><td style="text-align: left"><strong>got</strong></td><td style="text-align: left">got/gotten</td><td style="text-align: left">getting</td></tr>
+<tr><td style="text-align: left">make</td><td style="text-align: left">makes</td><td style="text-align: left"><strong>made</strong></td><td style="text-align: left">made</td><td style="text-align: left">making</td></tr>
+<tr><td style="text-align: left">have</td><td style="text-align: left">has</td><td style="text-align: left"><strong>had</strong></td><td style="text-align: left">had</td><td style="text-align: left">having</td></tr>
+<tr><td style="text-align: left">...</td><td style="text-align: left"></td><td style="text-align: left"></td><td style="text-align: left"></td><td style="text-align: left"></td></tr>
+</tbody></table>
+</div>
+<h2 id="Утверждение"><a class="header" href="#Утверждение">Утверждение</a></h2>
+<p>Актив:</p>
+<div class="mdbook-callouts mdbook-callouts-tip">
+<p class="mdbook-callouts-title">
+  <span class="mdbook-callouts-icon"></span>
+  tip
+</p>
+<p><strong>Subject + V2</strong> (+ed)</p>
+</div>
+<p>(V2 +ed,ied,d for example: study =&gt; studied, play =&gt; played)</p>
+<ul>
+<li><em>I was at home yesterday.</em> — Я был дома вчера.</li>
+<li><em>He did his work perfectly.</em> — Он сделал свою работу отлично.</li>
+<li><em>They went to the park last Sunday.</em> — Они ходили в парк в прошлое воскресенье.</li>
+<li><em>She could play the piano when she was five.</em> — Она умела играть на пианино, когда ей было пять.</li>
+<li><em>We got a lot of presents for Christmas.</em> — Мы получили много подарков на Рождество.</li>
+<li><em>I made a delicious dinner yesterday.</em> — Я приготовил вкусный ужин вчера.</li>
+<li><em>He had a red car when he lived in Moscow.</em> — У него была красная машина, когда он жил в Москве.</li>
+<li><em>She closed the window - Она закрыла окно.</em> (V1=close/closes, V2=closed)</li>
+<li><em>I saw him yesterday - Я видел его вчера.</em> (V1=see/sees, V2=saw) irregular verb</li>
+<li><em>I was hungry - Я был голоден.</em> (V1=to be-&gt;am,is,are, V2=was/were) irregular verb</li>
+<li><em>But two years ago he was a puppy. - Но два года назад он был щенком.</em></li>
+<li><em>But several days ago we were eggs. - Но несколько дней назад мы были яйцами.</em></li>
+<li><em>He was at the park in the evening. - Он был в парке вечером.</em></li>
+<li><em>They were at home on Saturday. - Они были дома в субботу.</em></li>
+<li><em>He liked milk when he was a child. - Ему нравилось молоко, когда он был ребенком.</em></li>
+<li><em>I usually get up early but yesterday I got up late. - Я обычно поднимаюсь рано, но вчера я поднялся поздно.</em> (V1=get V2=got) irregular verb</li>
+<li><em>Yesterday I met Jane. - Вчера я встретился с Джейн.</em> (V1=meet V2=met) irregular verb</li>
+<li><em>I put them on the table but they aren't there now. - Я положил их на стол, но сейчас их там нет.</em> (V1=put V2=put)</li>
+</ul>
+<p>(Глагол read [ri:d] во второй форме пишется так же но читает по другому [red])</p>
+<p>Пассив:</p>
+<div class="mdbook-callouts mdbook-callouts-tip">
+<p class="mdbook-callouts-title">
+  <span class="mdbook-callouts-icon"></span>
+  tip
+</p>
+<p><strong>I</strong>/<strong>He</strong>/<strong>She</strong>/<strong>It + was + V3</strong> (+ed)</p>
+<p><strong>You</strong>/<strong>We</strong>/<strong>They + were + V3</strong></p>
+</div>
+<ul>
+<li><em>I was told - Мне сказали.</em></li>
+<li><em>We were informed - Мы были проинформированны.</em></li>
+</ul>
+<h2 id="Вопрос"><a class="header" href="#Вопрос">Вопрос</a></h2>
+<p>Актив:</p>
+<div class="mdbook-callouts mdbook-callouts-tip">
+<p class="mdbook-callouts-title">
+  <span class="mdbook-callouts-icon"></span>
+  tip
+</p>
+<p><strong>Did Subject + V</strong></p>
+</div>
+<p><strong>V - т.е. did забирает у глагола для третьего лица (he/she/it) окончание -s</strong></p>
+<ul>
+<li><em>Were you at the cinema yesterday?</em> — Ты был в кино вчера?</li>
+<li><em>Did she do her homework?</em> — Она сделала домашнюю работу?</li>
+<li><em>Did they go to London last year?</em> — Они ездили в Лондон в прошлом году?</li>
+<li><em>Could you swim when you were a child?</em> — Ты умел плавать, когда был ребенком?</li>
+<li><em>Did he get my letter?</em> — Он получил мое письмо?</li>
+<li><em>Did we make a mistake?</em> — Мы сделали ошибку?</li>
+<li><em>Did you have a dog when you were little?</em> — У тебя была собака, когда ты был маленьким?</li>
+<li><em>Did she play with us yesterday? No, she didn't. - Она играла с нами вчера?</em></li>
+<li><em>Did I play? Yes, you did. - Я играл?</em></li>
+<li><em>Did you eat my cheese yesterday? No, I did not eat it! - Ты ел вчера мой сыр? Нет, я не ел его!</em></li>
+</ul>
+<p>Состояние (был, не был):</p>
+<ul>
+<li><em>Were you at the party yesterday? Yes, I was. - Ты был вчера на вечеринке?</em></li>
+<li><em>Was I at school yesterday? No, you weren't.</em></li>
+<li><em>Were you late yesterday? No, I wasn't. - Ты опоздал вчера? Нет, не опоздал.</em></li>
+</ul>
+<p>Пассив:</p>
+<div class="mdbook-callouts mdbook-callouts-tip">
+<p class="mdbook-callouts-title">
+  <span class="mdbook-callouts-icon"></span>
+  tip
+</p>
+<p><strong>Was + I</strong>/<strong>he</strong>/<strong>she</strong>/<strong>it + V3</strong> (+ed)</p>
+<p><strong>Were + you</strong>/<strong>we</strong>/<strong>they + V3</strong> (+ed)</p>
+</div>
+<ul>
+<li><em>Was the contract signed yesterday? - Контракт был подписан вчера?</em></li>
+</ul>
+<h2 id="Отрицание"><a class="header" href="#Отрицание">Отрицание</a></h2>
+<p>Актив:</p>
+<div class="mdbook-callouts mdbook-callouts-tip">
+<p class="mdbook-callouts-title">
+  <span class="mdbook-callouts-icon"></span>
+  tip
+</p>
+<p><strong>Subject + did not + V</strong></p>
+</div>
+<p><strong>V - т.е. did забирает у глагола для третьего лица (he/she/it) окончание <code>-s</code></strong></p>
+<ul>
+<li><em>I was not (wasn't) at school on Monday.</em> — Меня не было в школе в понедельник.</li>
+<li><em>He did not (didn't) do his morning exercises.</em> — Он не сделал утреннюю зарядку.</li>
+<li><em>They did not (didn't) go to the concert.</em> — Они не пошли на концерт.</li>
+<li><em>She could not (couldn't) solve this problem.</em> — Она не смогла решить эту задачу.</li>
+<li><em>We did not (didn't) get enough information.</em> — Мы не получили достаточно информации.</li>
+<li><em>I did not (didn't) make any noise.</em> — Я не шумел.</li>
+<li><em>He did not (didn't) have time for this.</em> — У него не было времени на это.</li>
+<li><em>I did not play - Я не играл.</em></li>
+<li><em>I did not get up early yesterday. - Вчера я встал не рано.</em></li>
+</ul>
+<p>Состояние (был, не был):</p>
+<ul>
+<li><em>I wasn't at school yesterday. - Я не был вчера в школе.</em></li>
+<li><em>It was not windy on Sunday. - В воскресенье не было ветра.</em></li>
+</ul>
+<p>Пассив:</p>
+<div class="mdbook-callouts mdbook-callouts-tip">
+<p class="mdbook-callouts-title">
+  <span class="mdbook-callouts-icon"></span>
+  tip
+</p>
+<p><strong>I</strong>/<strong>he</strong>/<strong>She</strong>/<strong>It + was not + V3</strong> (+ed)</p>
+<p><strong>You</strong>/<strong>We</strong>/<strong>They + were not + V3</strong> (+ed)</p>
+</div>
+<ul>
+<li>The door was not locked - Дверь не была закрыта.</li>
+</ul>
+<details>
+<summary>Примеры:</summary>
+<pre><code>I had a blue color. — У меня был синий цвет.
+Did you have a wife? — У тебя была жена?
+He did not have a son. — У него не было сына.
+
+I did my work. — Я сделал свою работу.
+Did you do this work? — Ты сделал эту работу?
+She did not do the test. — Она не сделала тест.
+
+I said your name. — Я сказал твое имя.
+Did you say "hello"? — Ты сказал "привет"?
+He did not say that. — Он не сказал этого.
+
+We went to town. — Мы поехали в город.
+Did you go to the park? — Вы ходили в парк?
+She did not go to the hospital. — Она не ходила в больницу.
+
+I got a letter. — Я получил письмо.
+Did you get a present? — Ты получил подарок?
+He did not get the paper. — Он не получил газету.
+
+They made a movie. — Они сняли фильм.
+Did you make a picture? — Ты нарисовал картину?
+She did not make a test. — Она не сделала тест.
+
+I knew this doctor. — Я знал этого врача.
+Did you know my brother? — Ты знал моего брата?
+He did not know the player. — Он не знал этого игрока.
+
+We thought about summer. — Мы думали о лете.
+Did you think about your daughter? — Ты думал о своей дочери?
+She did not think about the film. — Она не думала о фильме.
+
+I saw a tree. — Я видел дерево.
+Did you see the window? — Ты видел окно?
+He did not see the board. — Он не видел доску.
+
+You took a phone. — Ты взял телефон.
+Did you take the paper? — Вы взяли газету?
+She did not take the letter. — Она не взяла письмо.
+
+They came home. — Они пришли домой.
+Did you come to the hospital? — Вы приходили в больницу?
+He did not come to the park. — Он не пришел в парк.
+
+I found my phone. — Я нашел свой телефон.
+Did you find the road? — Ты нашел дорогу?
+She did not find the test. — Она не нашла тест.
+
+We gave a present. — Мы подарили подарок.
+Did you give her a letter? — Ты дал ей письмо?
+He did not give money. — Он не дал деньги.
+
+I told a story. — Я рассказал историю.
+Did you tell him about the test? — Ты рассказал ему о тесте?
+She did not tell the story. — Она не рассказала историю.
+
+They felt the summer. — Они чувствовали лето.
+Did you feel the sun? — Ты чувствовал солнце?
+He did not feel well. — Он плохо себя чувствовал.
+
+We left the town. — Мы уехали из города.
+Did you leave the park? — Вы ушли из парка?
+She did not leave the hospital. — Она не ушла из больницы.
+
+I put the book on the board. — Я положил книгу на доску.
+Did you put the plant on the floor? — Ты поставил растение на пол?
+He did not put the picture on the wall. — Он не повесил картину на стену.
+
+The film began at 5 o'clock. — Фильм начался в 5 часов.
+Did the summer begin in June? — Лето началось в июне?
+The test did not begin now. — Тест не начался сейчас.
+
+You showed me your photo. — Ты показал мне свое фото.
+Did you show him the picture? — Ты показал ему картину?
+She did not show her hair. — Она не показала свои волосы.
+
+I heard a baby. — Я слышал ребенка.
+Did you hear the player? — Ты слышал игрока?
+He did not hear the phone. — Он не слышал телефон.
+
+I had a red bag. — У меня была красная сумка.
+Did you have a daughter? — У тебя была дочь?
+He did not have a husband. — У него не было мужа.
+
+I did my project. — Я сделал свой проект.
+Did you do sports? — Ты занимался спортом?
+She did not do the dishes. — Она не помыла посуду.
+
+I said the answer. — Я сказал ответ.
+Did you say "thank you"? — Ты сказал "спасибо"?
+He did not say my name. — Он не сказал мое имя.
+
+We went to the road. — Мы пошли к дороге.
+Did you go to the cinema? — Вы ходили в кино?
+She did not go to work. — Она не пошла на работу.
+
+I got a present. — Я получил подарок.
+Did you get good marks? — Ты получал хорошие оценки?
+He did not get the message. — Он не получил сообщение.
+
+They made a cake. — Они сделали торт.
+Did you make a sandwich? — Ты сделал бутерброд?
+She did not make a mistake. — Она не сделала ошибку.
+
+I knew this town. — Я знал этот город.
+Did you know the way? — Ты знал дорогу?
+He did not know the answer. — Он не знал ответ.
+
+We thought about the future. — Мы думали о будущем.
+Did you think about your work? — Ты думал о своей работе?
+She did not think about it. — Она не думала об этом.
+
+I saw a bird. — Я видел птицу.
+Did you see the house? — Ты видел дом?
+He did not see the car. — Он не видел машину.
+
+You took a pen. — Ты взял ручку.
+Did you take the bus? — Ты ехал на автобусе?
+She did not take sugar. — Она не взяла сахар.
+
+They came to the party. — Они пришли на вечеринку.
+Did you come from London? — Ты был из Лондона?
+He did not come to school. — Он не пришел в школу.
+
+I found my keys. — Я нашел свои ключи.
+Did you find the time? — Ты нашел время?
+She did not find her book. — Она не нашла свою книгу.
+
+We gave help. — Мы оказали помощь.
+Did you give an answer? — Ты дал ответ?
+He did not give presents. — Он не подарил подарки.
+
+I told a joke. — Я рассказал шутку.
+Did you tell stories? — Ты рассказывал истории?
+She did not tell secrets. — Она не выдала секреты.
+
+They felt happy. — Они чувствовали себя счастливыми.
+Did you feel cold? — Тебе было холодно?
+He did not feel sad. — Он не чувствовал грусть.
+
+We left the house. — Мы ушли из дома.
+Did you leave work early? — Ты ушел с работы рано?
+She did not leave her room. — Она не вышла из своей комнаты.
+
+I put the cup on the table. — Я поставил чашку на стол.
+Did you put milk in your tea? — Ты положил молоко в чай?
+He did not put his clothes away. — Он не убрал свою одежду.
+
+The lesson began at nine. — Урок начался в девять.
+Did the game begin now? — Игра началась сейчас?
+The lesson did not begin late. — Урок не начался поздно.
+
+You showed your passport. — Ты показал свой паспорт.
+Did you show him the way? — Ты показал ему дорогу?
+She did not show her feelings. — Она не показала свои чувства.
+
+I heard music. — Я слышал музыку.
+Did you hear the birds? — Ты слышал птиц?
+He did not hear the question. — Он не услышал вопрос.
+
+He fell off the chair. – Он упал со стула.
+The snow fell last night. – Снег падал прошлой ночью.
+We did not fall on the ice. – Мы не упали на льду.
+</code></pre>
+</details>
+<h2 id="exercise-listen-and-write"><a class="header" href="#exercise-listen-and-write">Exercise: listen and write</a></h2>
+<div id="control"></div>
+<div id="listen_and_write"></div>
+<script>
+
+const exercises_easy_listen_and_write = [
+    ["I had a blue color.", "У меня был синий цвет."],
+    ["Did you have a wife?", "У тебя была жена?"],
+    ["He did not have a son.", "У него не было сына."],
+    ["I did my work.", "Я сделал свою работу."],
+    ["Did you do this work?", "Ты сделал эту работу?"],
+    ["She did not do the test.", "Она не сделала тест."],
+    ["I said your name.", "Я сказал твое имя."],
+    ["Did you say \"hello\"?", "Ты сказал \"привет\"?"],
+    ["He did not say that.", "Он не сказал этого."],
+    ["We went to town.", "Мы поехали в город."],
+    ["Did you go to the park?", "Вы ходили в парк?"],
+    ["She did not go to the hospital.", "Она не ходила в больницу."],
+    ["I got a letter.", "Я получил письмо."],
+    ["Did you get a present?", "Ты получил подарок?"],
+    ["He did not get the paper.", "Он не получил газету."],
+    ["They made a movie.", "Они сняли фильм."],
+    ["Did you make a picture?", "Ты нарисовал картину?"],
+    ["She did not make a test.", "Она не сделала тест."],
+    ["I knew this doctor.", "Я знал этого врача."],
+    ["Did you know my brother?", "Ты знал моего брата?"],
+    ["He did not know the player.", "Он не знал этого игрока."],
+    ["We thought about summer.", "Мы думали о лете."],
+    ["Did you think about your daughter?", "Ты думал о своей дочери?"],
+    ["She did not think about the film.", "Она не думала о фильме."],
+    ["I saw a tree.", "Я видел дерево."],
+    ["Did you see the window?", "Ты видел окно?"],
+    ["He did not see the board.", "Он не видел доску."],
+    ["You took a phone.", "Ты взял телефон."],
+    ["Did you take the paper?", "Вы взяли газету?"],
+    ["She did not take the letter.", "Она не взяла письмо."],
+    ["They came home.", "Они пришли домой."],
+    ["Did you come to the hospital?", "Вы приходили в больницу?"],
+    ["He did not come to the park.", "Он не пришел в парк."],
+    ["I found my phone.", "Я нашел свой телефон."],
+    ["Did you find the road?", "Ты нашел дорогу?"],
+    ["She did not find the test.", "Она не нашла тест."],
+    ["We gave a present.", "Мы подарили подарок."],
+    ["Did you give her a letter?", "Ты дал ей письмо?"],
+    ["He did not give money.", "Он не дал деньги."],
+    ["I told a story.", "Я рассказал историю."],
+    ["Did you tell him about the test?", "Ты рассказал ему о тесте?"],
+    ["She did not tell the story.", "Она не рассказала историю."],
+    ["They felt the summer.", "Они чувствовали лето."],
+    ["Did you feel the sun?", "Ты чувствовал солнце?"],
+    ["He did not feel well.", "Он плохо себя чувствовал."],
+    ["We left the town.", "Мы уехали из города."],
+    ["Did you leave the park?", "Вы ушли из парка?"],
+    ["She did not leave the hospital.", "Она не ушла из больницы."],
+    ["I put the book on the board.", "Я положил книгу на доску."],
+    ["Did you put the plant on the floor?", "Ты поставил растение на пол?"],
+    ["He did not put the picture on the wall.", "Он не повесил картину на стену."],
+    ["The film began at 5 o'clock.", "Фильм начался в 5 часов."],
+    ["Did the summer begin in June?", "Лето началось в июне?"],
+    ["The test did not begin now.", "Тест не начался сейчас."],
+    ["You showed me your photo.", "Ты показал мне свое фото."],
+    ["Did you show him the picture?", "Ты показал ему картину?"],
+    ["She did not show her hair.", "Она не показала свои волосы."],
+    ["I heard a baby.", "Я слышал ребенка."],
+    ["Did you hear the player?", "Ты слышал игрока?"],
+    ["He did not hear the phone.", "Он не слышал телефон."],
+    ["I had a red bag.", "У меня была красная сумка."],
+    ["Did you have a daughter?", "У тебя была дочь?"],
+    ["He did not have a husband.", "У него не было мужа."],
+    ["I did my project.", "Я сделал свой проект."],
+    ["Did you do sports?", "Ты занимался спортом?"],
+    ["She did not do the dishes.", "Она не помыла посуду."],
+    ["I said the answer.", "Я сказал ответ."],
+    ["Did you say \"thank you\"?", "Ты сказал \"спасибо\"?"],
+    ["He did not say my name.", "Он не сказал мое имя."],
+    ["We went to the road.", "Мы пошли к дороге."],
+    ["Did you go to the cinema?", "Вы ходили в кино?"],
+    ["She did not go to work.", "Она не пошла на работу."],
+    ["I got a present.", "Я получил подарок."],
+    ["Did you get good marks?", "Ты получал хорошие оценки?"],
+    ["He did not get the message.", "Он не получил сообщение."],
+    ["They made a cake.", "Они сделали торт."],
+    ["Did you make a sandwich?", "Ты сделал бутерброд?"],
+    ["She did not make a mistake.", "Она не сделала ошибку."],
+    ["I knew this town.", "Я знал этот город."],
+    ["Did you know the way?", "Ты знал дорогу?"],
+    ["He did not know the answer.", "Он не знал ответ."],
+    ["We thought about the future.", "Мы думали о будущем."],
+    ["Did you think about your work?", "Ты думал о своей работе?"],
+    ["She did not think about it.", "Она не думала об этом."],
+    ["I saw a bird.", "Я видел птицу."],
+    ["Did you see the house?", "Ты видел дом?"],
+    ["He did not see the car.", "Он не видел машину."],
+    ["You took a pen.", "Ты взял ручку."],
+    ["Did you take the bus?", "Ты ехал на автобусе?"],
+    ["She did not take sugar.", "Она не взяла сахар."],
+    ["They came to the party.", "Они пришли на вечеринку."],
+    ["Did you come from London?", "Ты был из Лондона?"],
+    ["He did not come to school.", "Он не пришел в школу."],
+    ["I found my keys.", "Я нашел свои ключи."],
+    ["Did you find the time?", "Ты нашел время?"],
+    ["She did not find her book.", "Она не нашла свою книгу."],
+    ["We gave help.", "Мы оказали помощь."],
+    ["Did you give an answer?", "Ты дал ответ?"],
+    ["He did not give presents.", "Он не подарил подарки."],
+    ["I told a joke.", "Я рассказал шутку."],
+    ["Did you tell stories?", "Ты рассказывал истории?"],
+    ["She did not tell secrets.", "Она не выдала секреты."],
+    ["They felt happy.", "Они чувствовали себя счастливыми."],
+    ["Did you feel cold?", "Тебе было холодно?"],
+    ["He did not feel sad.", "Он не чувствовал грусть."],
+    ["We left the house.", "Мы ушли из дома."],
+    ["Did you leave work early?", "Ты ушел с работы рано?"],
+    ["She did not leave her room.", "Она не вышла из своей комнаты."],
+    ["I put the cup on the table.", "Я поставил чашку на стол."],
+    ["Did you put milk in your tea?", "Ты положил молоко в чай?"],
+    ["He did not put his clothes away.", "Он не убрал свою одежду."],
+    ["The lesson began at nine.", "Урок начался в девять."],
+    ["Did the game begin now?", "Игра началась сейчас?"],
+    ["The lesson did not begin late.", "Урок не начался поздно."],
+    ["You showed your passport.", "Ты показал свой паспорт."],
+    ["Did you show him the way?", "Ты показал ему дорогу?"],
+    ["She did not show her feelings.", "Она не показала свои чувства."],
+    ["I heard music.", "Я слышал музыку."],
+    ["Did you hear the birds?", "Ты слышал птиц?"],
+    ["He did not hear the question.", "Он не услышал вопрос."],
+    ["He fell off the chair.", "Он упал со стула."],
+    ["The snow fell last night.", "Снег падал прошлой ночью."],
+    ["We did not fall on the ice.", "Мы не упали на льду."],
+    ["I ran to the station yesterday.", "Я бежал на станцию вчера."],
+    ["Did you run in the park?", "Ты бегал в парке?"],
+    ["He did not run in the evening.", "Он не бегал вечером."],
+    ["I wrote the answer on the page.", "Я написал ответ на странице."],
+    ["Did you write notes in April?", "Ты писал заметки в апреле?"],
+    ["She did not write songs.", "Она не писала песни."],
+    ["We sat on the chair.", "Мы сидели на стуле."],
+    ["Did you sit on the bed?", "Ты сидел на кровати?"],
+    ["He did not sit in the museum.", "Он не сидел в музее."],
+    ["I met my sister at the bank.", "Я встретил свою сестру в банке."],
+    ["Did you meet friends in November?", "Ты встречал друзей в ноябре?"],
+    ["She did not meet her teacher.", "Она не встречала своего учителя."],
+    ["He paid dollars in the store.", "Он заплатил доллары в магазине."],
+    ["Did you pay for the sport?", "Ты платил за спорт?"],
+    ["She did not pay for the cup.", "Она не платила за чашку."],
+    ["We learned English language.", "Мы учили английский язык."],
+    ["Did you learn new words?", "Ты учил новые слова?"],
+    ["He did not learn the song.", "Он не учил песню."],
+    ["I understood the example.", "Я понял пример."],
+    ["Did you understand the question?", "Ты понял вопрос?"],
+    ["She did not understand the note.", "Она не поняла заметку."],
+    ["He spoke this language.", "Он говорил на этом языке."],
+    ["Did you speak about animals?", "Ты говорил о животных?"],
+    ["She did not speak on the radio.", "Она не говорила по радио."],
+    ["I read the page.", "Я читал страницу."],
+    ["Did you read books in the evening?", "Ты читал книги вечером?"],
+    ["He did not read the note.", "Он не читал записку."],
+    ["She bought a glass in the store.", "Она купила стакан в магазине."],
+    ["Did you buy fish in April?", "Ты покупал рыбу в апреле?"],
+    ["He did not buy a ball.", "Он не покупал мяч."],
+    ["I sent the letter to the bank.", "Я отправил письмо в банк."],
+    ["Did you send notes to your sister?", "Ты отправлял заметки своей сестре?"],
+    ["She did not send the box.", "Она не отправляла коробку."],
+    ["He drove to the station.", "Он ехал на машине на станцию."],
+    ["Did you drive to the museum?", "Ты ехал в музей?"],
+    ["She did not drive in November.", "Она не водила машину в ноябре."],
+    ["She wore a sport t-shirt.", "Она носила спортивную футболку."],
+    ["Did you wear glasses?", "Ты носил очки?"],
+    ["He did not wear a hat in April.", "Он не носил шляпу в апреле."],
+    ["We ate fish in the evening.", "Мы ели рыбу вечером."],
+    ["Did you eat animals?", "Ты ел животных?"],
+    ["She did not eat from this glass.", "Она не ела из этого стакана."],
+    ["He taught English language.", "Он преподавал английский язык."],
+    ["Did you teach your dog?", "Ты учил свою собаку?"],
+    ["She did not teach sport.", "Она не преподавала спорт."],
+    ["I caught the ball.", "Я поймал мяч."],
+    ["Did you catch fish in the river?", "Ты ловил рыбу в реке?"],
+    ["He did not catch the animal.", "Он не поймал животное."],
+    ["She drew the sun.", "Она нарисовала солнце."],
+    ["Did you draw on the page?", "Ты рисовал на странице?"],
+    ["He did not draw chairs.", "Он не рисовал стулья."],
+    ["We chose the answer.", "Мы выбрали ответ."],
+    ["Did you choose the song?", "Ты выбирал песню?"],
+    ["She did not choose the subject.", "Она не выбирала предмет."],
+    ["They fought in the sport.", "Они дрались в спорте."],
+    ["Did you fight with your sister?", "Ты дрался со своей сестрой?"],
+    ["He did not fight with the dog.", "Он не дрался с собакой."],
+    ["I forgot the words.", "Я забыл слова."],
+    ["Did you forget the examples?", "Ты забывал примеры?"],
+    ["She did not forget the song.", "Она не забыла песню."],
+    ["He flew to another bank.", "Он летал в другой банк."],
+    ["Did you fly in November?", "Ты летал в ноябре?"],
+    ["She did not fly to the river.", "Она не летала к реке."],
+    ["She sang a song on the radio.", "Она пела песню по радио."],
+    ["Did you sing in the evening?", "Ты пел вечером?"],
+    ["He did not sing about animals.", "Он не пел об животных."],
+    ["We slept in the bed.", "Мы спали в кровати."],
+    ["Did you sleep at the station?", "Ты спал на станции?"],
+    ["She did not sleep in the chair.", "Она не спала в кресле."],
+    ["He drank from the glass.", "Он пил из стакана."],
+    ["Did you drink in the museum?", "Ты пил в музее?"],
+    ["She did not drink from the cup.", "Она не пила из чашки."],
+    ["I rode a bike to the river.", "Я ехал на велосипеде к реке."],
+    ["Did you ride in the sport?", "Ты катался в спорте?"],
+    ["He did not ride in April.", "Он не катался в апреле."],
+    ["She woke at the station.", "Она проснулась на станции."],
+    ["Did you wake in the evening?", "Ты просыпался вечером?"],
+    ["He did not wake his sister.", "Он не будил свою сестру."],
+    ["We swam in the river.", "Мы плавали в реке."],
+    ["Did you swim in November?", "Ты плавал в ноябре?"],
+    ["She did not swim with the dog.", "Она не плавала с собакой."]
+];
+
+let g_practice = null;
+   
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+ 
+        let editor_symbol = new EditorSymbol({callback: checkAnswer});
+
+        g_practice = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write'), 
+            el_exercise_control: document.getElementById('control'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write),
+            editor_symbol: editor_symbol
+        });
+        g_practice.genExercisesListenAndWrite();
+ 
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+ 
+function checkAnswer(value){
+    value = textNormalize(value);
+    return value==g_practice.getAnswer();
+}
+</script>      
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Present_Simple.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/Future_Simple.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Present_Simple.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/Future_Simple.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+        <script src="../src/js/listen.js"></script>
+        <script src="../src/js/textual_analysis.js"></script>
+        <script src="../src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

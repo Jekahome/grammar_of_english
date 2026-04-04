@@ -1,0 +1,1153 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Adverbs of frequency always, usually, often, sometimes, never (наречия частоты действия) - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+        <link rel="stylesheet" href="../theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="adverbs-of-frequency-always-usually-often-sometimes-rarely-never"><a class="header" href="#adverbs-of-frequency-always-usually-often-sometimes-rarely-never">Adverbs of Frequency: always, usually, often, sometimes, rarely, never</a></h1>
+<p>Adverbs of Frequency (Наречия частоты действия) — это наречия, которые показывают, <strong>как часто</strong> происходит действие.</p>
+<p>Они отвечают на вопрос «как часто?» и помогают уточнить периодичность.</p>
+<p>В английском языке к этой категории относятся слова вроде <strong>always</strong> (всегда), <strong>usually</strong> (обычно), <strong>often</strong> (часто), <strong>sometimes</strong> (иногда), <strong>rarely</strong> (редко) и <strong>never</strong> (никогда).</p>
+<h3 id="Наречия-неопределенной-частоты-действия"><a class="header" href="#Наречия-неопределенной-частоты-действия">Наречия неопределенной частоты действия:</a></h3>
+<ul>
+<li>always — всегда</li>
+<li>constantly — постоянно</li>
+<li>usually — обычно</li>
+<li>generally — как правило</li>
+<li>often — часто</li>
+<li>sometimes — иногда</li>
+<li>never — никогда</li>
+<li>rarely — редко</li>
+</ul>
+<h2 id="exercise-listen-and-write-adverbs-of-frequency-indefinite"><a class="header" href="#exercise-listen-and-write-adverbs-of-frequency-indefinite">Exercise: listen and write: Adverbs of Frequency (indefinite)</a></h2>
+<div id="control_general_indefinite"></div>
+<div id="listen_and_write_indefinite"></div>
+<hr />
+<h3 id="Наречия-определенной-частоты-действия"><a class="header" href="#Наречия-определенной-частоты-действия">Наречия определенной частоты действия:</a></h3>
+<ul>
+<li>hourly — ежечасно</li>
+<li>daily — ежедневно</li>
+<li>weekly — еженедельно</li>
+<li>monthly — ежемесячно</li>
+<li>annually — ежегодно</li>
+<li>every day/hour/month/year — каждый день/час/месяц/год</li>
+<li>once — однажды</li>
+<li>twice — дважды</li>
+<li>three times — трижды</li>
+<li>once a week/month/year — раз в неделю/месяц/год</li>
+<li>on Mondays/weekends — по понедельникам/выходным</li>
+<li>most mornings — почти каждое утро</li>
+</ul>
+<blockquote>
+<p>Эти наречия не могут стоять в середине предложения</p>
+</blockquote>
+<ul>
+<li>She works a day shift every day. — Она работает в дневную смену каждый день.</li>
+<li>We still hang out on weekends. — Мы до сих пор зависаем по выходным.</li>
+</ul>
+<h2 id="exercise-listen-and-write-adverbs-of-frequency-definite"><a class="header" href="#exercise-listen-and-write-adverbs-of-frequency-definite">Exercise: listen and write: Adverbs of Frequency (definite)</a></h2>
+<div id="control_general_definite"></div>
+<div id="listen_and_write_definite"></div>
+<hr />
+<h2 id="Место-наречия-частоты-в-предложении"><a class="header" href="#Место-наречия-частоты-в-предложении">Место наречия частоты в предложении</a></h2>
+<h3 id="Перед-смысловым-глаголом"><a class="header" href="#Перед-смысловым-глаголом">Перед смысловым глаголом:</a></h3>
+<ul>
+<li>She always arrives on time. — Она всегда приходит вовремя.</li>
+<li>They rarely go to the gym — Они редко ходят в спортзал.</li>
+<li>I sometimes read books — Я иногда читаю книги.</li>
+<li>We never miss our meetings — Мы никогда не пропускаем встречи.</li>
+<li>He often goes to school by bus. — Он часто добирается до школы на автобусе.</li>
+<li>Sara always goes out on Saturday evenings. — Сара всегда гуляет в субботние вечера.</li>
+<li>I sometimes go clubbing with my best friends. — Я иногда хожу в клуб с друзьями.</li>
+<li>Her boyfriend usually picks her up and they drive into the city centre. — Ее парень обычно забирает ее на машине, и они едут в центр города.</li>
+<li>They often meet friends and have a drink together. — Они часто встречаются с друзьями и идут в бар.</li>
+<li>In the winter, they sometimes go to the cinema. — Зимой они иногда ходят в кино.</li>
+<li>They rarely go in the summer because they prefer to stay outside. — Летом они редко ходят в кино, так как предпочитают оставаться на свежем воздухе.</li>
+<li>They never get home before midnight. — Они никогда не возвращаются домой до полуночи.</li>
+<li>He never gets up before 9. — Он никогда не встает до 9.</li>
+</ul>
+<h3 id="С-глаголом-to-be-am-is-are-используется-после-него"><a class="header" href="#С-глаголом-to-be-am-is-are-используется-после-него">С глаголом to be (am, is, are) используется после него:</a></h3>
+<ul>
+<li>He is often late. — Он часто опаздывает.</li>
+<li>I am always late! — Я всегда опаздываю!</li>
+<li>She is usually in Kharkiv during holidays. — Во время каникул она обычно в Харькове.</li>
+<li>There are always lots of people in the city centre on Saturday nights. — По субботним вечерам в центре города всегда много людей.</li>
+<li>It is often difficult to find a place to park. — Часто бывает сложно найти место для парковки.</li>
+<li>Our friends are never on time, so it doesn’t matter if we’re late. — Наши друзья никогда не приходят вовремя, так что неважно, опоздаем ли мы.</li>
+</ul>
+<h3 id="В-начале-предложения"><a class="header" href="#В-начале-предложения">В начале предложения:</a></h3>
+<ul>
+<li>Sometimes, she does her homework with friends. — Иногда она делает домашнее задание с друзьями.</li>
+<li>Usually, they study on their own. — Обычно они занимаются самостоятельно.</li>
+<li>Often, she chose the weak, the sick. — Часто она выбирала слабых, больных.</li>
+</ul>
+<h2 id="Вопрос-Как-часто-совершается-действие"><a class="header" href="#Вопрос-Как-часто-совершается-действие">Вопрос "Как часто" совершается действие:</a></h2>
+<p>How often …? – Как часто…?</p>
+<p>(Для вопросов вместо never используется ever.)</p>
+<ul>
+<li>How often do you watch films? — Как часто ты смотришь фильмы?</li>
+<li>How often does he play tennis? — Как часто он играет в теннис?</li>
+<li>How often do the trains arrive late? — Как часто поезда опаздывают?</li>
+<li>Do you often come here? — Ты часто приходишь сюда?</li>
+<li>Does she always work so hard? — Она всегда работает так усердно?</li>
+<li>Do they ever pay on time? — Они вообще когда-нибудь платят вовремя?</li>
+<li>Do they always work overtime? — Они всегда работают сверхурочно?</li>
+</ul>
+<h2 id="exercise-listen-and-write-adverbs-of-frequency-how-often"><a class="header" href="#exercise-listen-and-write-adverbs-of-frequency-how-often">Exercise: listen and write: Adverbs of Frequency (How often?)</a></h2>
+<div id="control_general_question"></div>
+<div id="listen_and_write_question"></div>
+<hr />
+<h2 id="Наречия-частоты-с-модальными-и-вспомогательными-глаголами"><a class="header" href="#Наречия-частоты-с-модальными-и-вспомогательными-глаголами">Наречия частоты с модальными и вспомогательными глаголами:</a></h2>
+<p>(С модальными глаголами can, may, must, should наречия частоты употребляются после них.)</p>
+<ul>
+<li>I can always help you. — Я всегда могу тебе помочь.</li>
+<li>You must always try your best. — Ты всегда должен стараться изо всех сил.</li>
+<li>We can usually find a seat on our train. — Мы обычно можем найти место в поезде.</li>
+<li>They should never be rude to customers. — Они никогда не должны быть грубы с клиентами.</li>
+</ul>
+<p>(Это же правило действует для вспомогательных глаголов.)</p>
+<ul>
+<li>I have never visited Turkey. — Я никогда не был в Турции.</li>
+<li>He is always taking things from my desk. It’s really annoying. — Он все время берет вещи с моего стола. Это очень раздражает.</li>
+<li>You had rarely arrived late at work until yesterday. — Ты редко опаздывал на работу до вчерашнего дня.</li>
+</ul>
+<p><a href="https://www.wallstreetenglish.ru/blog/adverbs-of-frequency/">Источник: Wall Street English</a></p>
+<h2 id="exercise-listen-and-write-adverbs-of-frequency-modal-verbs"><a class="header" href="#exercise-listen-and-write-adverbs-of-frequency-modal-verbs">Exercise: listen and write: Adverbs of Frequency (Modal Verbs)</a></h2>
+<div id="control_general_modal"></div>
+<div id="listen_and_write_modal"></div>
+<hr />
+<h2 id="exercise-listen-and-write-adverbs-of-frequency"><a class="header" href="#exercise-listen-and-write-adverbs-of-frequency">Exercise: listen and write: Adverbs of Frequency</a></h2>
+<div id="control_general_all"></div>
+<div id="listen_and_write_all"></div>
+<script>   
+
+const exercises_easy_listen_and_write_indefinite = [
+    ["I often drink coffee in the morning.", "Я часто пью кофе утром."],
+    ["Do you often drink coffee in the morning?", "Ты часто пьёшь кофе утром?"],
+    ["I don’t often drink coffee in the morning.", "Я не часто пью кофе утром."],
+    
+    ["She sometimes visited her grandmother.", "Она иногда навещала бабушку."],
+    ["Did she sometimes visit her grandmother?", "Она иногда навещала бабушку?"],
+    ["She didn’t sometimes visit her grandmother.", "Она не часто навещала бабушку."],
+    
+    ["They will usually play football on Sundays.", "Они обычно будут играть в футбол по воскресеньям."],
+    ["Will they usually play football on Sundays?", "Они обычно будут играть в футбол по воскресеньям?"],
+    ["They will not usually play football on Sundays.", "Они обычно не будут играть в футбол по воскресеньям."],
+    
+    ["He is sometimes watching TV in the evening.", "Он иногда смотрит телевизор вечером."],
+    ["Is he sometimes watching TV in the evening?", "Он иногда смотрит телевизор вечером?"],
+    ["He is not sometimes watching TV in the evening.", "Он не часто смотрит телевизор вечером."],
+    
+    ["I always wake up early.", "Я всегда встаю рано."],
+    ["Do you always wake up early?", "Ты всегда встаёшь рано?"],
+    ["I don’t always wake up early.", "Я не всегда встаю рано."],
+    
+    ["She usually goes to the park.", "Она обычно ходит в парк."],
+    ["Does she usually go to the park?", "Она обычно ходит в парк?"],
+    ["She doesn’t usually go to the park.", "Она обычно не ходит в парк."],
+    
+    ["We often play football.", "Мы часто играем в футбол."],
+    ["Do we often play football?", "Мы часто играем в футбол?"],
+    ["We don’t often play football.", "Мы не часто играем в футбол."],
+    
+    ["They sometimes watch movies.", "Они иногда смотрят фильмы."],
+    ["Do they sometimes watch movies?", "Они иногда смотрят фильмы?"],
+    ["They don’t sometimes watch movies.", "Они не часто смотрят фильмы."],
+    
+    ["He rarely eats fast food.", "Он редко ест фастфуд."],
+    ["Does he rarely eat fast food?", "Он редко ест фастфуд?"],
+    ["He doesn’t rarely eat fast food.", "Он не часто ест фастфуд."],
+    
+    ["I never drink soda.", "Я никогда не пью газировку."],
+    ["Do you never drink soda?", "Ты никогда не пьёшь газировку?"],
+    ["I don’t never drink soda.", "Я никогда не пью газировку."],
+    
+    ["I always visited my grandparents when I was a child.", "Я всегда навещал бабушку и дедушку, когда был ребёнком."],
+    ["Did you always visit your grandparents when you were a child?", "Ты всегда навещал бабушку и дедушку, когда был ребёнком?"],
+    ["I didn’t always visit my grandparents when I was a child.", "Я не всегда навещал бабушку и дедушку, когда был ребёнком."],
+    
+    ["She usually studied in the library.", "Она обычно училась в библиотеке."],
+    ["Did she usually study in the library?", "Она обычно училась в библиотеке?"],
+    ["She didn’t usually study in the library.", "Она обычно не училась в библиотеке."],
+    
+    ["We often travelled in summer.", "Мы часто путешествовали летом."],
+    ["Did we often travel in summer?", "Мы часто путешествовали летом?"],
+    ["We didn’t often travel in summer.", "Мы не часто путешествовали летом."],
+    
+    ["They sometimes played chess.", "Они иногда играли в шахматы."],
+    ["Did they sometimes play chess?", "Они иногда играли в шахматы?"],
+    ["They didn’t sometimes play chess.", "Они не часто играли в шахматы."],
+    
+    ["He rarely went to the cinema.", "Он редко ходил в кино."],
+    ["Did he rarely go to the cinema?", "Он редко ходил в кино?"],
+    ["He didn’t rarely go to the cinema.", "Он не часто ходил в кино."],
+    
+    ["I never forgot my homework.", "Я никогда не забывал домашнее задание."],
+    ["Did you never forget your homework?", "Ты никогда не забывал домашнее задание?"],
+    ["I didn’t never forget my homework.", "Я никогда не забывал домашнее задание."],
+    
+    ["I will always help you.", "Я всегда буду помогать тебе."],
+    ["Will you always help me?", "Ты всегда будешь помогать мне?"],
+    ["I will not always help you.", "Я не всегда буду помогать тебе."],
+    
+    ["She will usually work on weekends.", "Она обычно будет работать по выходным."],
+    ["Will she usually work on weekends?", "Она обычно будет работать по выходным?"],
+    ["She will not usually work on weekends.", "Она обычно не будет работать по выходным."],
+    
+    ["We will often meet friends.", "Мы будем часто встречаться с друзьями."],
+    ["Will we often meet friends?", "Мы будем часто встречаться с друзьями?"],
+    ["We will not often meet friends.", "Мы не будем часто встречаться с друзьями."],
+    
+    ["They will sometimes travel there.", "Они иногда будут путешествовать туда."],
+    ["Will they sometimes travel to New York?", "Они иногда будут путешествовать в Нью-Йорк?"],
+    ["They will not sometimes travel to London.", "Они иногда не будут путешествовать в Лондон."],
+    
+    ["He will rarely forget names.", "Он будет редко забывать имена."],
+    ["Will he rarely forget names?", "Он будет редко забывать имена?"],
+    ["He will not rarely forget names.", "Он не будет часто забывать имена."],
+    
+    ["I will never lie to you.", "Я никогда не буду тебе лгать."],
+    ["Will you never lie to me?", "Ты никогда не будешь мне лгать?"],
+    ["I will not never lie to you.", "Я никогда не буду тебе лгать."],
+    
+    ["I am always learning something new.", "Я всегда учусь чему-то новому."],
+    ["Am I always learning something new?", "Я всегда учусь чему-то новому?"],
+    ["I am not always learning something new.", "Я не всегда учусь чему-то новому."],
+    
+    ["She is usually reading in the evening.", "Она обычно читает вечером."],
+    ["Is she usually reading in the evening?", "Она обычно читает вечером?"],
+    ["She is not usually reading in the evening.", "Она обычно не читает вечером."],
+    
+    ["We are often watching TV.", "Мы часто смотрим телевизор."],
+    ["Are we often watching TV?", "Мы часто смотрим телевизор?"],
+    ["We are not often watching TV.", "Мы не часто смотрим телевизор."],
+    
+    ["They are sometimes playing music.", "Они иногда играют музыку."],
+    ["Are they sometimes playing music?", "Они иногда играют музыку?"],
+    ["They are not sometimes playing music.", "Они не часто играют музыку."],
+    
+    ["He is rarely working on Saturdays.", "Он редко работает по субботам."],
+    ["Is he rarely working on Saturdays?", "Он редко работает по субботам?"],
+    ["He is not rarely working on Saturdays.", "Он не часто работает по субботам."],
+ 
+
+    ["I often hold my pen carefully.", "Я часто держу свою ручку аккуратно."],
+    ["He rarely plays the guitar in the evening.", "Он редко играет на гитаре вечером."],
+    ["Do you usually do your homework after school?", "Ты обычно делаешь домашнюю работу после школы?"],
+
+    ["She sometimes buys a skirt at the supermarket.", "Она иногда покупает юбку в супермаркете."],
+    ["We never believe bad stories.", "Мы никогда не верим плохим историям."],
+    ["Does he often eat a sandwich for lunch?", "Он часто ест сэндвич на обед?"],
+
+    ["They always start work at 9 am.", "Они всегда начинают работу в 9 утра."],
+    ["I don't usually drink orange juice.", "Я обычно не пью апельсиновый сок."],
+    ["The waiter often brings the menu quickly.", "Официант часто приносит меню быстро."],
+
+    ["She will sometimes call a taxi.", "Она иногда будет вызывать такси."],
+    ["He won't usually agree immediately.", "Он обычно не будет соглашаться сразу."],
+    ["Will they often visit the cafe?", "Они будут часто посещать кафе?"],
+
+    ["We will rarely move the big lamp.", "Мы редко будем передвигать большую лампу."],
+    ["I will always try to be on time.", "Я всегда буду стараться быть вовремя."],
+    ["She won't often sell her old books.", "Она не будет часто продавать свои старые книги."],
+
+    ["He is now staying in a small hotel.", "Он сейчас останавливается в маленьком отеле."],
+    ["They are not usually playing football in the rain.", "Они обычно не играют в футбол под дождем."],
+    ["Are you often using this website?", "Ты часто используешь этот веб-сайт?"],
+
+    ["I am sometimes carrying my sister's doll.", "Я иногда ношу куклу своей сестры."],
+    ["She is rarely wearing trousers to work.", "Она редко носит брюки на работу."],
+    ["Is he often kicking the ball in the garden?", "Он часто пинает мяч в саду?"],
+
+    ["We sometimes recognize people from school.", "Мы иногда узнаем людей из школы."],
+    ["My mum never forgets to call.", "Моя мама никогда не забывает позвонить."],
+    ["Do you usually take a bath in the morning?", "Ты обычно принимаешь ванну утром?"],
+
+    ["They often jump into the water.", "Они часто прыгают в воду."],
+    ["The bat usually flies at night.", "Летучая мышь обычно летает ночью."],
+    ["Does she often send emails?", "Она часто отправляет электронные письма?"],
+
+    ["I will sometimes excuse small mistakes.", "Я иногда буду прощать небольшие ошибки."],
+    ["He will rarely touch the hot lamp.", "Он редко будет трогать горячую лампу."],
+    ["We will often ask for help.", "Мы часто будем просить о помощи."],
+
+];
+
+const exercises_easy_listen_and_write_definite = [
+    ["I go to the gym once a week.", "Я хожу в спортзал раз в неделю."],
+    ["Do you go to the gym once a week?", "Ты ходишь в спортзал раз в неделю?"],
+    ["I don’t go to the gym once a week.", "Я не хожу в спортзал раз в неделю."],
+
+    ["She visits her grandparents twice a month.", "Она навещает бабушку и дедушку дважды в месяц."],
+    ["Does she visit her grandparents twice a month?", "Она навещает бабушку и дедушку дважды в месяц?"],
+    ["She doesn’t visit her grandparents twice a month.", "Она не навещает бабушку и дедушку дважды в месяц."],
+
+    ["We clean our house every day.", "Мы убираем дом каждый день."],
+    ["Do we clean our house every day?", "Мы убираем дом каждый день?"],
+    ["We don’t clean our house every day.", "Мы не убираем дом каждый день."],
+
+    ["They play football three times a week.", "Они играют в футбол три раза в неделю."],
+    ["Do they play football three times a week?", "Они играют в футбол три раза в неделю?"],
+    ["They don’t play football three times a week.", "Они не играют в футбол три раза в неделю."],
+
+    ["He reads a book once a month.", "Он читает книгу раз в месяц."],
+    ["Does he read a book once a month?", "Он читает книгу раз в месяц?"],
+    ["He doesn’t read a book once a month.", "Он не читает книгу раз в месяц."],
+
+    ["I went to the cinema once a month.", "Я ходил в кино раз в месяц."],
+    ["Did you go to the cinema once a month?", "Ты ходил в кино раз в месяц?"],
+    ["I didn’t go to the cinema once a month.", "Я не ходил в кино раз в месяц."],
+
+    ["She played tennis twice a week.", "Она играла в теннис дважды в неделю."],
+    ["Did she play tennis twice a week?", "Она играла в теннис дважды в неделю?"],
+    ["She didn’t play tennis twice a week.", "Она не играла в теннис дважды в неделю."],
+
+    ["We visited the park every day.", "Мы посещали парк каждый день."],
+    ["Did we visit the park every day?", "Мы посещали парк каждый день?"],
+    ["We didn’t visit the park every day.", "Мы не посещали парк каждый день."],
+
+    ["They met their friends three times a month.", "Они встречались с друзьями три раза в месяц."],
+    ["Did they meet their friends three times a month?", "Они встречались с друзьями три раза в месяц?"],
+    ["They didn’t meet their friends three times a month.", "Они не встречались с друзьями три раза в месяц."],
+
+    ["He called his mother once a week.", "Он звонил маме раз в неделю."],
+    ["Did he call his mother once a week?", "Он звонил маме раз в неделю?"],
+    ["He didn’t call his mother once a week.", "Он не звонил маме раз в неделю."],
+
+    ["I will travel to the city twice a year.", "Я буду путешествовать в город дважды в год."],
+    ["Will you travel to the sea twice a year?", "Ты будешь путешествовать к морю дважды в год?"],
+    ["I will not travel to the park twice a year.", "Я не буду путешествовать в парк дважды в год."],
+
+    ["She will visit her aunt every month.", "Она будет навещать тётю каждый месяц."],
+    ["Will she visit her aunt every month?", "Она будет навещать тётю каждый месяц?"],
+    ["She will not visit her aunt every month.", "Она не будет навещать тётю каждый месяц."],
+
+    ["We will meet friends once a week.", "Мы будем встречаться с друзьями раз в неделю."],
+    ["Will we meet friends once a week?", "Мы будем встречаться с друзьями раз в неделю?"],
+    ["We will not meet friends once a week.", "Мы не будем встречаться с друзьями раз в неделю."],
+
+    ["They will clean the park twice a year.", "Они будут убирать парк дважды в год."],
+    ["Will they clean the park twice a year?", "Они будут убирать парк дважды в год?"],
+    ["They will not clean the park twice a year.", "Они не будут убирать парк дважды в год."],
+
+    ["He will play football three times a week.", "Он будет играть в футбол три раза в неделю."],
+    ["Will he play football three times a week?", "Он будет играть в футбол три раза в неделю?"],
+    ["He will not play football three times a week.", "Он не будет играть в футбол три раза в неделю."],
+
+    ["I am visiting my friend once a month.", "Я навещаю друга раз в месяц."],
+    ["Am I visiting my friend once a month?", "Я навещаю друга раз в месяц?"],
+    ["I am not visiting my friend once a month.", "Я не навещаю друга раз в месяц."],
+
+    ["She is studying English twice a week.", "Она учит английский дважды в неделю."],
+    ["Is she studying English twice a week?", "Она учит английский дважды в неделю?"],
+    ["She is not studying English twice a week.", "Она не учит английский дважды в неделю."],
+
+    ["We are cleaning the house every weekend.", "Мы убираем дом каждые выходные."],
+    ["Are we cleaning the house every weekend?", "Мы убираем дом каждые выходные?"],
+    ["We are not cleaning the house every weekend.", "Мы не убираем дом каждые выходные."],
+
+    ["They are meeting friends three times a month.", "Они встречаются с друзьями три раза в месяц."],
+    ["Are they meeting friends three times a month?", "Они встречаются с друзьями три раза в месяц?"],
+    ["They are not meeting friends three times a month.", "Они не встречаются с друзьями три раза в месяц."],
+
+    ["He is calling his parents once a week.", "Он звонит родителям раз в неделю."],
+    ["Is he calling his parents once a week?", "Он звонит родителям раз в неделю?"],
+    ["He is not calling his parents once a week.", "Он не звонит родителям раз в неделю."],
+
+    ["I visit the supermarket every day.", "Я хожу в супермаркет каждый день."],
+    ["He does not write an email every week.", "Он не пишет электронное письмо каждую неделю."],
+    ["Do you play the guitar every weekend?", "Ты играешь на гитаре каждые выходные?"],
+
+    ["She bought a new skirt last month.", "Она купила новую юбку в прошлом месяце."],
+    ["We did not order pizza yesterday.", "Мы не заказывали пиццу вчера."],
+    ["Did he finish his homework two hours ago?", "Он закончил свою домашнюю работу два часа назад?"],
+
+    ["I will call a taxi in five minutes.", "Я вызову такси через пять минут."],
+    ["She will not water the plants tomorrow.", "Она не будет поливать растения завтра."],
+    ["Will you send the documents next week?", "Ты отправишь документы на следующей неделе?"],
+
+    ["He is reading a book right now.", "Он читает книгу прямо сейчас."],
+    ["They are not watching TV at the moment.", "Они не смотрят телевизор в данный момент."],
+    ["Is she talking to the waitress now?", "Она разговаривает с официанткой сейчас?"],
+
+    ["I eat an orange three times a week.", "Я ем апельсин три раза в неделю."],
+    ["He does not shave his beard every morning.", "Он не бреет бороду каждое утро."],
+    ["Do you see your mum every day?", "Ты видишь свою маму каждый день?"],
+
+    ["She moved the bookcase last year.", "Она передвинула книжный шкаф в прошлом году."],
+    ["We did not ride the taxi last night.", "Мы не ехали на такси прошлой ночью."],
+    ["Did they recognize the actor yesterday?", "Они узнали актера вчера?"],
+
+    ["He will try the new cafe next month.", "Он попробует новое кафе в следующем месяце."],
+    ["I will not buy new jeans tomorrow.", "Я не куплю новые джинсы завтра."],
+    ["Will she play with the doll this evening?", "Она будет играть с куклой сегодня вечером?"],
+
+    ["They are carrying the chair at the moment.", "Они несут стул в данный момент."],
+    ["I am not doing my homework right now.", "Я не делаю домашнюю работу прямо сейчас."],
+    ["Are you using the website now?", "Ты используешь веб-сайт сейчас?"],
+
+    ["The sheep jumps over the wall every day.", "Овца прыгает через стену каждый день."],
+    ["He takes a bath twice a day.", "Он принимает ванну два раза в день."],
+    ["Does it rain here every November?", "Здесь идет дождь каждый ноябрь?"],
+
+    ["We sold the guitar last week.", "Мы продали гитару на прошлой неделе."],
+    ["She did not ask the question yesterday.", "Она не задала вопрос вчера."],
+    ["Did he kick the ball five minutes ago?", "Он пнул мяч пять минут назад?"],
+
+    ["I will hold the umbrella for you tomorrow.", "Я буду держать зонт для тебя завтра."],
+    ["They will not start the project next Monday.", "Они не начнут проект в следующий понедельник."],
+    ["Will you bring the biscuits this afternoon?", "Ты принесешь печенье сегодня днем?"],
+];
+
+const exercises_easy_listen_and_write_question = [
+    ["How often do you go to the gym?", "Как часто ты ходишь в спортзал?"],
+    ["How often does she visit her grandparents?", "Как часто она навещает бабушку и дедушку?"],
+    ["How often do they play football?", "Как часто они играют в футбол?"],
+    ["How often do we clean the house?", "Как часто мы убираем дом?"],
+    ["How often does he read books?", "Как часто он читает книги?"],
+    
+    ["How often did you go to the cinema when you were a child?", "Как часто ты ходил в кино, когда был ребёнком?"],
+    ["How often did she travel to the city last year?", "Как часто она путешествовала в город в прошлом году?"],
+    ["How often did they visit their friends?", "Как часто они навещали друзей?"],
+    ["How often did we meet for lunch?", "Как часто мы встречались на обед?"],
+    ["How often did he play tennis last month?", "Как часто он играл в теннис в прошлом месяце?"],
+    
+    ["How often will you travel next year?", "Как часто ты будешь путешествовать в следующем году?"],
+    ["How often will she call her parents?", "Как часто она будет звонить родителям?"],
+    ["How often will they clean the park?", "Как часто они будут убирать парк?"],
+    ["How often will we meet?", "Как часто мы будем встречаться?"],
+    ["How often will he work late?", "Как часто он будет работать допоздна?"],
+    
+    ["How often are you visiting your friend this month?", "Как часто ты навещаешь друга в этом месяце?"],
+    ["How often is she studying English this week?", "Как часто она учит английский на этой неделе?"],
+    ["How often are they playing football this season?", "Как часто они играют в футбол в этом сезоне?"],
+    ["How often are we meeting for coffee these days?", "Как часто мы встречаемся на кофе в последнее время?"],
+    ["How often is he working on Saturdays?", "Как часто он работает по субботам?"],
+    
+    ["How often do you eat a banana?", "Как часто ты ешь банан?"],
+    ["How often does he wear jeans?", "Как часто он носит джинсы?"],
+    ["How often do they play the guitar?", "Как часто они играют на гитаре?"],
+    
+    ["How often did you visit the cafe last year?", "Как часто ты посещал кафе в прошлом году?"],
+    ["How often did she buy a new skirt?", "Как часто она покупала новую юбку?"],
+    ["How often did they do their homework?", "Как часто они делали домашнюю работу?"],
+    
+    ["How often will you take a taxi to work?", "Как часто ты будешь ездить на такси на работу?"],
+    ["How often will he order pizza?", "Как часто он будет заказывать пиццу?"],
+    ["How often will she send an email?", "Как часто она будет отправлять электронное письмо?"],
+    
+    ["How often are you wearing a blouse this summer?", "Как часто ты носишь блузку этим летом?"],
+    ["How often is he playing the guitar now?", "Как часто он сейчас играет на гитаре?"],
+    ["How often are they moving the bookcase these days?", "Как часто они передвигают книжный шкаф в последнее время?"],
+    
+    ["How often do you hold your pen like that?", "Как часто ты держишь свою ручку так?"],
+    ["How often does the waiter bring the menu quickly?", "Как часто официант приносит меню быстро?"],
+    ["How often do you agree with your mum?", "Как часто ты соглашаешься со своей мамой?"],
+    
+    ["How often did you believe his stories?", "Как часто ты верил его историям?"],
+    ["How often did she touch the hot lamp?", "Как часто она трогала горячую лампу?"],
+    ["How often did they ask for help?", "Как часто они просили о помощи?"],
+    
+    ["How often will you jump into the water?", "Как часто ты будешь прыгать в воду?"],
+    ["How often will he carry the heavy box?", "Как часто он будет носить тяжелую коробку?"],
+    ["How often will she try new things?", "Как часто она будет пробовать новые вещи?"],
+    
+    ["How often do you use this website these days?", "Как часто ты используешь этот веб-сайт в последнее время?"],
+    ["How often is it raining this month?", "Как часто идет дождь в этом месяце?"],
+    ["How often are they selling old books now?", "Как часто они сейчас продают старые книги?"],
+    
+    ["How often do you eat a sandwich for breakfast?", "Как часто ты ешь сэндвич на завтрак?"],
+    ["How often does he shave his beard?", "Как часто он бреет бороду?"],
+    ["How often do you go to the supermarket?", "Как часто ты ходишь в супермаркет?"],
+    
+    ["How often did you see the bat at night?", "Как часто ты видел летучую мышь ночью?"],
+    ["How often did she play with the doll?", "Как часто она играла с куклой?"],
+    ["How often did they kick the ball in the garden?", "Как часто они пинали мяч в саду?"],
+    
+    ["How often will you excuse small mistakes?", "Как часто ты будешь прощать небольшие ошибки?"],
+    ["How often will he stay at this hotel?", "Как часто он будет останавливаться в этом отеле?"],
+    ["How often will she recognize people from school?", "Как часто она будет узнавать людей из школы?"],
+];
+
+const exercises_easy_listen_and_write_modal = [
+    ["I can always help you.", "Я всегда могу помочь тебе."],
+    ["Can you always help me?", "Ты всегда можешь помочь мне?"],
+    ["I can’t always help you.", "Я не всегда могу помочь тебе."],
+
+    ["She should usually finish her homework on time.", "Ей обычно следует заканчивать домашнее задание вовремя."],
+    ["Should she usually finish her homework on time?", "Ей обычно следует заканчивать домашнее задание вовремя?"],
+    ["She shouldn’t usually finish her homework on time.", "Ей обычно не следует заканчивать домашнее задание вовремя."],
+
+    ["We must often check our work.", "Мы должны часто проверять нашу работу."],
+    ["Must we often check our work?", "Мы должны часто проверять нашу работу?"],
+    ["We must not often check our work.", "Мы не должны часто проверять нашу работу."],
+
+    ["They may sometimes visit the museum.", "Они иногда могут посетить музей."],
+    ["May they sometimes visit the museum?", "Они иногда могут посетить музей?"],
+    ["They may not sometimes visit the museum.", "Они иногда не могут посетить музей."],
+
+    ["I could always visit my grandparents when I was a child.", "Я всегда мог навещать бабушку и дедушку, когда был ребёнком."],
+    ["Could you always visit your grandparents when you were a child?", "Ты всегда мог навещать бабушку и дедушку, когда был ребёнком?"],
+    ["I couldn’t always visit my grandparents when I was a child.", "Я не всегда мог навещать бабушку и дедушку, когда был ребёнком."],
+
+    ["She should usually finish her work before leaving.", "Ей обычно следовало заканчивать работу перед уходом."],
+    ["Should she usually finish her work before leaving?", "Ей обычно следовало заканчивать работу перед уходом?"],
+    ["She shouldn’t usually finish her work before leaving.", "Ей обычно не следовало заканчивать работу перед уходом."],
+
+    ["We might sometimes meet in the park.", "Мы могли бы иногда встречаться в парке."],
+    ["Might we sometimes meet in the park?", "Мы могли бы иногда встречаться в парке?"],
+    ["We might not sometimes meet in the park.", "Мы могли бы иногда не встречаться в парке."],
+
+    ["I will always help you.", "Я всегда буду помогать тебе."],
+    ["Will you always help me?", "Ты всегда будешь помогать мне?"],
+    ["I will not always help you.", "Я не всегда буду помогать тебе."],
+
+    ["She should often call her parents.", "Ей следует часто звонить родителям."],
+    ["Should she often call her parents?", "Ей следует часто звонить родителям?"],
+    ["She shouldn’t often call her parents.", "Ей не следует часто звонить родителям."],
+
+    ["We might sometimes travel far.", "Мы могли бы иногда путешествовать далеко."],
+    ["Might we sometimes travel far?", "Мы могли бы иногда путешествовать далеко?"],
+    ["We might not sometimes travel far.", "Мы могли бы иногда не путешествовать далеко."],
+
+    ["I can always be helping you.", "Я всегда могу помогать тебе."],
+    ["Can you always be helping me?", "Ты всегда можешь помогать мне?"],
+    ["I can’t always be helping you.", "Я не всегда могу помогать тебе."],
+
+    ["She should usually be working in the morning.", "Ей обычно следует работать утром."],
+    ["Should she usually be working in the morning?", "Ей обычно следует работать утром?"],
+    ["She shouldn’t usually be working in the morning.", "Ей обычно не следует работать утром."],
+
+    ["They may sometimes be playing football.", "Они иногда могут играть в футбол."],
+    ["May they sometimes be playing football?", "Они иногда могут играть в футбол?"],
+    ["They may not sometimes be playing football.", "Они иногда не могут играть в футбол."],
+
+    ["I can always hold your bag for you.", "Я всегда могу подержать твою сумку."],
+    ["You should often ask questions in class.", "Тебе следует часто задавать вопросы в классе."],
+    ["He must never touch the hot lamp.", "Он никогда не должен трогать горячую лампу."],
+
+    ["We could sometimes see bats in the evening.", "Мы иногда могли видеть летучих мышей вечером."],
+    ["She would never forget her homework.", "Она никогда не забывала бы свою домашнюю работу."],
+    ["They might often order pizza on Fridays.", "Они, возможно, часто заказывают пиццу по пятницам."],
+
+    ["You must always carry your ID.", "Вы всегда должны носить с собой удостоверение личности."],
+    ["I can usually find a pen in my bag.", "Я обычно могу найти ручку в своей сумке."],
+    ["She should sometimes rest more.", "Ей иногда следует больше отдыхать."],
+
+    ["Do you always have to wear a blouse to work?", "Тебе всегда нужно носить блузку на работу?"],
+    ["Does he often have to move the bookcase?", "Ему часто приходится передвигать книжный шкаф?"],
+    ["Do they usually have to wait for the taxi?", "Им обычно приходится ждать такси?"],
+
+    ["I will always remember this cafe.", "Я всегда буду помнить это кафе."],
+    ["She will never sell her grandmother's doll.", "Она никогда не продаст бабушкину куклу."],
+    ["We will often be able to play the guitar together.", "Мы часто сможем играть на гитаре вместе."],
+
+    ["Can you always recognize him by his beard?", "Ты всегда можешь узнать его по бороде?"],
+    ["Should I often practice with the guitar?", "Мне следует часто практиковаться с гитарой?"],
+    ["Must they always finish their homework first?", "Они всегда должны сначала заканчивать домашнюю работу?"],
+
+    ["You could sometimes bring biscuits for tea.", "Ты иногда мог бы приносить печенье к чаю."],
+    ["She might never agree with that idea.", "Она, возможно, никогда не согласится с этой идеей."],
+    ["We would usually start at 9 o'clock.", "Мы обычно начинали бы в 9 часов."],
+
+    ["I may sometimes work as a waiter.", "Я иногда могу работать официантом."],
+    ["You must never jump near the road.", "Тебе никогда нельзя прыгать рядом с дорогой."],
+    ["She can always excuse small mistakes.", "Она всегда может простить небольшие ошибки."],
+
+    ["Are you always having to clean the bathroom?", "Тебе постоянно приходится убирать ванную?"],
+    ["Is he often having to help the waitress?", "Ему часто приходится помогать официантке?"],
+    ["Are they usually having to repair the toilet?", "Им обычно приходится чинить туалет?"],
+
+    ["I would never kick an animal.", "Я никогда бы не пнул животное."],
+    ["She could always try again later.", "Она всегда могла бы попробовать снова позже."],
+    ["We might sometimes stay up late.", "Мы иногда могли бы поздно ложиться."],
+
+    ["You must always believe in yourself.", "Ты всегда должен верить в себя."],
+    ["He should never damn other people's work.", "Ему никогда не следует ругать работу других людей."],
+    ["They can often represent our company.", "Они часто могут представлять нашу компанию."],
+    
+];
+
+
+let g_practice_indefinite = null;
+let g_practice_definite = null;
+let g_practice_question = null;
+let g_practice_modal = null;
+let g_practice_all = null;
+
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+ 
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralIndefinite, suffix_id: 'indefinite'});
+
+        g_practice_indefinite = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_indefinite'), 
+            el_exercise_control: document.getElementById('control_general_indefinite'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_indefinite),
+            editor_symbol: editor_symbol
+        });
+        g_practice_indefinite.genExercisesListenAndWrite();
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralDefinite, suffix_id: 'definite'});
+
+        g_practice_definite = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_definite'), 
+            el_exercise_control: document.getElementById('control_general_definite'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_definite),
+            editor_symbol: editor_symbol
+        });
+        g_practice_definite.genExercisesListenAndWrite();
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralQuestion, suffix_id: 'question'});
+
+        g_practice_question = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_question'), 
+            el_exercise_control: document.getElementById('control_general_question'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_question),
+            editor_symbol: editor_symbol
+        });
+        g_practice_question.genExercisesListenAndWrite();
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralModal, suffix_id: 'modal'});
+
+        g_practice_modal = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_modal'), 
+            el_exercise_control: document.getElementById('control_general_modal'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_modal),
+            editor_symbol: editor_symbol
+        });
+        g_practice_modal.genExercisesListenAndWrite();
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralAll, suffix_id: 'all'});
+        const exercises_easy_listen_and_write_all = exercises_easy_listen_and_write_definite
+          .concat(exercises_easy_listen_and_write_question, exercises_easy_listen_and_write_modal);
+        g_practice_all = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_all'), 
+            el_exercise_control: document.getElementById('control_general_all'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_all),
+            editor_symbol: editor_symbol
+        });
+        g_practice_all.genExercisesListenAndWrite();
+ }
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+ 
+function checkAnswerGeneralIndefinite(value){
+    value = textNormalize(value);
+    return value==g_practice_indefinite.getAnswer();
+}
+function checkAnswerGeneralDefinite(value){
+    value = textNormalize(value);
+    return value==g_practice_definite.getAnswer();
+}
+function checkAnswerGeneralQuestion(value){
+    value = textNormalize(value);
+    return value==g_practice_question.getAnswer();
+}
+function checkAnswerGeneralModal(value){
+    value = textNormalize(value);
+    return value==g_practice_modal.getAnswer();
+}
+function checkAnswerGeneralAll(value){
+    value = textNormalize(value);
+    return value==g_practice_all.getAnswer();
+}
+</script>   
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Adverbs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/It_is_construction.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Adverbs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/It_is_construction.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+        <script src="../src/js/listen.js"></script>
+        <script src="../src/js/textual_analysis.js"></script>
+        <script src="../src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

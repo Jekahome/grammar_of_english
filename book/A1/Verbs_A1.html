@@ -1,0 +1,1291 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Verbs A1 - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+        <link rel="stylesheet" href="../theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="Глаголы-для-a1"><a class="header" href="#Глаголы-для-a1">Глаголы для A1</a></h1>
+<p>Информация о глаголе:</p>
+<ul>
+<li>правильный (regular, окончание <code>ed</code> в прошедшем времени)/неправильный</li>
+<li>используется ли с предлогом в устойчивом выражении</li>
+<li>фразовые глаголы</li>
+</ul>
+<h2 id="exercise-listen-and-write-verbs-126"><a class="header" href="#exercise-listen-and-write-verbs-126">Exercise: listen and write: Verbs (126)</a></h2>
+<div id="control_general_verbs"></div>
+<div id="listen_and_write_verbs"></div>
+<hr />
+<script>
+
+const exercises_easy_listen_and_write_verbs = [
+    // to be
+    ["to be", "быть (V1)"],
+    
+    // are
+    ["are", "быть (V1)"],
+    
+    // am
+    ["am", "быть (V1)"],
+    ["is", "быть (3rd Person Singular)"],
+    ["being", "быть (Present Participle)"],
+    ["were", "быть (Past tense, V2)"],
+    
+    // were
+    ["were", "быть (Past tense, V2)"],
+    ["was", "быть (Past tense, V2)"],
+    
+    // have
+    ["have", "иметь (V1)"],
+    ["has", "иметь (3rd Person Singular)"],
+    ["having", "иметь (Present Participle)"],
+    ["had", "иметь (Past tense, V2)"],
+    
+    // do
+    ["do", "делать (V1)"],
+    ["does", "делать (3rd Person Singular)"],
+    ["doing", "делать (Present Participle)"],
+    ["did", "делать (Past tense, V2)"],
+    
+    // say
+    ["say", "сказать, говорить (V1)"],
+    ["says", "сказать, говорить (3rd Person Singular)"],
+    ["saying", "сказать, говорить (Present Participle)"],
+    ["said", "сказать, говорить (Past tense, V2)"],
+    
+    // go
+    ["go", "идти, ехать (V1)"],
+    ["goes", "идти, ехать (3rd Person Singular)"],
+    ["going", "идти, ехать (Present Participle)"],
+    ["went", "идти, ехать (Past tense, V2)"],
+    
+    // get (британский вариант)
+    ["get", "получать, попадать, становиться (V1)"],
+    ["gets", "получать, попадать, становиться (3rd Person Singular)"],
+    ["getting", "получать, попадать, становиться (Present Participle)"],
+    ["got", "получать, попадать, становиться (Past tense, V2)"],
+    
+    // get (американский вариант)
+    ["get", "получать, попадать, становиться (амер.) (V1)"],
+    ["gets", "получать, попадать, становиться (амер.) (3rd Person Singular)"],
+    ["getting", "получать, попадать, становиться (амер.) (Present Participle)"],
+    ["got", "получать, попадать, становиться (амер.) (Past tense, V2)"],
+    
+    // make
+    ["make", "делать, производить, заставлять (V1)"],
+    ["makes", "делать, производить, заставлять (3rd Person Singular)"],
+    ["making", "делать, производить, заставлять (Present Participle)"],
+    ["made", "делать, производить, заставлять (Past tense, V2)"],
+    
+    // know
+    ["know", "знать, узнавать (V1)"],
+    ["knows", "знать, узнавать (3rd Person Singular)"],
+    ["knowing", "знать, узнавать (Present Participle)"],
+    ["knew", "знать, узнавать (Past tense, V2)"],
+    
+    // think
+    ["think", "думать, мыслить (V1)"],
+    ["thinks", "думать, мыслить (3rd Person Singular)"],
+    ["thinking", "думать, мыслить (Present Participle)"],
+    ["thought", "думать, мыслить (Past tense, V2)"],
+    
+    // see
+    ["see", "видеть, смотреть (V1)"],
+    ["sees", "видеть, смотреть (3rd Person Singular)"],
+    ["seeing", "видеть, смотреть (Present Participle)"],
+    ["saw", "видеть, смотреть (Past tense, V2)"],
+    
+    // take
+    ["take", "брать, взять (V1)"],
+    ["takes", "брать, взять (3rd Person Singular)"],
+    ["taking", "брать, взять (Present Participle)"],
+    ["took", "брать, взять (Past tense, V2)"],
+    
+    // come
+    ["come", "приходить, приезжать (V1)"],
+    ["comes", "приходить, приезжать (3rd Person Singular)"],
+    ["coming", "приходить, приезжать (Present Participle)"],
+    ["came", "приходить, приезжать (Past tense, V2)"],
+    
+    // want
+    ["want", "хотеть, нуждаться (V1)"],
+    ["wants", "хотеть, нуждаться (3rd Person Singular)"],
+    ["wanting", "хотеть, нуждаться (Present Participle)"],
+    ["wanted", "хотеть, нуждаться (Past tense, V2)"],
+    
+    // look
+    ["look", "смотреть, выглядеть (V1)"],
+    ["looks", "смотреть, выглядеть (3rd Person Singular)"],
+    ["looking", "смотреть, выглядеть (Present Participle)"],
+    ["looked", "смотреть, выглядеть (Past tense, V2)"],
+        // use
+    ["use", "использовать, пользоваться (V1)"],
+    ["uses", "использовать, пользоваться (3rd Person Singular)"],
+    ["using", "использовать, пользоваться (Present Participle)"],
+    ["used", "использовать, пользоваться (Past tense, V2)"],
+    
+    // find
+    ["find", "находить, обрести (V1)"],
+    ["finds", "находить, обрести (3rd Person Singular)"],
+    ["finding", "находить, обрести (Present Participle)"],
+    ["found", "находить, обрести (Past tense, V2)"],
+    
+    // give
+    ["give", "давать, придавать (V1)"],
+    ["gives", "давать, придавать (3rd Person Singular)"],
+    ["giving", "давать, придавать (Present Participle)"],
+    ["gave", "давать, придавать (Past tense, V2)"],
+    
+    // tell
+    ["tell", "сказать, рассказывать (V1)"],
+    ["tells", "сказать, рассказывать (3rd Person Singular)"],
+    ["telling", "сказать, рассказывать (Present Participle)"],
+    ["told", "сказать, рассказывать (Past tense, V2)"],
+    
+    // work
+    ["work", "работать, трудиться (V1)"],
+    ["works", "работать, трудиться (3rd Person Singular)"],
+    ["working", "работать, трудиться (Present Participle)"],
+    ["worked", "работать, трудиться (Past tense, V2)"],
+    
+    // need
+    ["need", "нуждаться (V1)"],
+    ["needs", "нуждаться (3rd Person Singular)"],
+    ["needing", "нуждаться (Present Participle)"],
+    ["needed", "нуждаться (Past tense, V2)"],
+    
+    // feel
+    ["feel", "чувствовать (V1)"],
+    ["feels", "чувствовать (3rd Person Singular)"],
+    ["feeling", "чувствовать (Present Participle)"],
+    ["felt", "чувствовать (Past tense, V2)"],
+    
+    // leave
+    ["leave", "оставлять, покидать (V1)"],
+    ["leaves", "оставлять, покидать (3rd Person Singular)"],
+    ["leaving", "оставлять, покидать (Present Participle)"],
+    ["left", "оставлять, покидать (Past tense, V2)"],
+    
+    // put
+    ["put", "класть, ставить (V1)"],
+    ["puts", "класть, ставить (3rd Person Singular)"],
+    ["putting", "класть, ставить (Present Participle)"],
+    ["put", "класть, ставить (Past tense, V2)"],
+    
+    // begin
+    ["begin", "начинать (V1)"],
+    ["begins", "начинать (3rd Person Singular)"],
+    ["beginning", "начинать (Present Participle)"],
+    ["began", "начинать (Past tense, V2)"],
+    // talk
+    ["talk", "говорить, разговаривать (V1)"],
+    ["talks", "говорить, разговаривать (3rd Person Singular)"],
+    ["talking", "говорить, разговаривать (Present Participle)"],
+    ["talked", "говорить, разговаривать (Past tense, V2)"],
+    
+    // help
+    ["help", "помогать (V1)"],
+    ["helps", "помогать (3rd Person Singular)"],
+    ["helping", "помогать (Present Participle)"],
+    ["helped", "помогать (Past tense, V2)"],
+    
+    // start
+    ["start", "начинать, стартовать (V1)"],
+    ["starts", "начинать, стартовать (3rd Person Singular)"],
+    ["starting", "начинать, стартовать (Present Participle)"],
+    ["started", "начинать, стартовать (Past tense, V2)"],
+    
+    // show
+    ["show", "показывать, проявлять (V1)"],
+    ["shows", "показывать, проявлять (3rd Person Singular)"],
+    ["showing", "показывать, проявлять (Present Participle)"],
+    ["showed", "показывать, проявлять (Past tense, V2)"],
+    
+    // hear
+    ["hear", "слышать (V1)"],
+    ["hears", "слышать (3rd Person Singular)"],
+    ["hearing", "слышать (Present Participle)"],
+    ["heard", "слышать (Past tense, V2)"],
+    
+    // run
+    ["run", "бежать, работать (V1)"],
+    ["runs", "бежать, работать (3rd Person Singular)"],
+    ["running", "бежать, работать (Present Participle)"],
+    ["ran", "бежать, работать (Past tense, V2)"],
+    
+    // play
+    ["play", "играть (V1)"],
+    ["plays", "играть (3rd Person Singular)"],
+    ["playing", "играть (Present Participle)"],
+    ["played", "играть (Past tense, V2)"],
+    
+    // like
+    ["like", "нравиться, любить (V1)"],
+    ["likes", "нравиться, любить (3rd Person Singular)"],
+    ["liking", "нравиться, любить (Present Participle)"],
+    ["liked", "нравиться, любить (Past tense, V2)"],
+    
+    // live
+    ["live", "жить, дожить (V1)"],
+    ["lives", "жить, дожить (3rd Person Singular)"],
+    ["living", "жить, дожить (Present Participle)"],
+    ["lived", "жить, дожить (Past tense, V2)"],
+    
+    // write
+    ["write", "писать (V1)"],
+    ["writes", "писать (3rd Person Singular)"],
+    ["writing", "писать (Present Participle)"],
+    ["wrote", "писать (Past tense, V2)"],
+
+        // sit
+    ["sit", "сидеть, заседать (V1)"],
+    ["sits", "сидеть, заседать (3rd Person Singular)"],
+    ["sitting", "сидеть, заседать (Present Participle)"],
+    ["sat", "сидеть, заседать (Past tense, V2)"],
+    
+    // meet
+    ["meet", "встречаться, соответствовать (V1)"],
+    ["meets", "встречаться, соответствовать (3rd Person Singular)"],
+    ["meeting", "встречаться, соответствовать (Present Participle)"],
+    ["met", "встречаться, соответствовать (Past tense, V2)"],
+    
+    // pay
+    ["pay", "платить (V1)"],
+    ["pays", "платить (3rd Person Singular)"],
+    ["paying", "платить (Present Participle)"],
+    ["paid", "платить (Past tense, V2)"],
+    
+    // change
+    ["change", "изменить (что-то) (V1)"],
+    ["changes", "изменить (что-то) (3rd Person Singular)"],
+    ["changing", "изменить (что-то) (Present Participle)"],
+    ["changed", "изменить (что-то) (Past tense, V2)"],
+    
+    // learn
+    ["learn", "учиться (V1)"],
+    ["learns", "учиться (3rd Person Singular)"],
+    ["learning", "учиться (Present Participle)"],
+    ["learned", "учиться (Past tense, V2)"],
+    
+    // understand
+    ["understand", "понимать (V1)"],
+    ["understands", "понимать (3rd Person Singular)"],
+    ["understanding", "понимать (Present Participle)"],
+    ["understood", "понимать (Past tense, V2)"],
+    
+    // watch
+    ["watch", "наблюдать, следить (V1)"],
+    ["watches", "наблюдать, следить (3rd Person Singular)"],
+    ["watching", "наблюдать, следить (Present Participle)"],
+    ["watched", "наблюдать, следить (Past tense, V2)"],
+    
+    // stop
+    ["stop", "останавливать (V1)"],
+    ["stops", "останавливать (3rd Person Singular)"],
+    ["stopping", "останавливать (Present Participle)"],
+    ["stopped", "останавливать (Past tense, V2)"],
+    
+    // speak
+    ["speak", "говорить, выступать (V1)"],
+    ["speaks", "говорить, выступать (3rd Person Singular)"],
+    ["speaking", "говорить, выступать (Present Participle)"],
+    ["spoke", "говорить, выступать (Past tense, V2)"],
+    
+    // read
+    ["read", "читать (V1)"],
+    ["reads", "читать (3rd Person Singular)"],
+    ["reading", "читать (Present Participle)"],
+    ["read", "читать (Past tense, V2)"],
+
+        // open
+    ["open", "открыть (V1)"],
+    ["opens", "открыть (3rd Person Singular)"],
+    ["opening", "открыть (Present Participle)"],
+    ["opened", "открыть (Past tense, V2)"],
+    
+    // walk
+    ["walk", "ходить, идти (V1)"],
+    ["walks", "ходить, идти (3rd Person Singular)"],
+    ["walking", "ходить, идти (Present Participle)"],
+    ["walked", "ходить, идти (Past tense, V2)"],
+    
+    // remember
+    ["remember", "помнить, запомнить (V1)"],
+    ["remembers", "помнить, запомнить (3rd Person Singular)"],
+    ["remembering", "помнить, запомнить (Present Participle)"],
+    ["remembered", "помнить, запомнить (Past tense, V2)"],
+    
+    // damn
+    ["damn", "проклинать (V1)"],
+    ["damns", "проклинать (3rd Person Singular)"],
+    ["damning", "проклинать (Present Participle)"],
+    ["damned", "проклинать (Past tense, V2)"],
+    
+    // love
+    ["love", "любить (V1)"],
+    ["loves", "любить (3rd Person Singular)"],
+    ["loving", "любить (Present Participle)"],
+    ["loved", "любить (Past tense, V2)"],
+    
+    // buy
+    ["buy", "покупать (V1)"],
+    ["buys", "покупать (3rd Person Singular)"],
+    ["buying", "покупать (Present Participle)"],
+    ["bought", "покупать (Past tense, V2)"],
+    
+    // wait
+    ["wait", "ждать, ожидать (V1)"],
+    ["waits", "ждать, ожидать (3rd Person Singular)"],
+    ["waiting", "ждать, ожидать (Present Participle)"],
+    ["waited", "ждать, ожидать (Past tense, V2)"],
+    
+    // die
+    ["die", "умирать (V1)"],
+    ["dies", "умирать (3rd Person Singular)"],
+    ["dying", "умирать (Present Participle)"],
+    ["died", "умирать (Past tense, V2)"],
+    
+    // send
+    ["send", "отправлять, посылать (V1)"],
+    ["sends", "отправлять, посылать (3rd Person Singular)"],
+    ["sending", "отправлять, посылать (Present Participle)"],
+    ["sent", "отправлять, посылать (Past tense, V2)"],
+    
+    // stay
+    ["stay", "оставаться, останавливаться (V1)"],
+    ["stays", "оставаться, останавливаться (3rd Person Singular)"],
+    ["staying", "оставаться, останавливаться (Present Participle)"],
+    ["stayed", "оставаться, останавливаться (Past tense, V2)"],
+    
+    // carry
+    ["carry", "нести, проводить (V1)"],
+    ["carries", "нести, проводить (3rd Person Singular)"],
+    ["carrying", "нести, проводить (Present Participle)"],
+    ["carried", "нести, проводить (Past tense, V2)"],
+    
+    // develop
+    ["develop", "развивать (V1)"],
+    ["develops", "развивать (3rd Person Singular)"],
+    ["developing", "развивать (Present Participle)"],
+    ["developed", "развивать (Past tense, V2)"],
+    
+    // drive
+    ["drive", "водить машину (V1)"],
+    ["drives", "водить машину (3rd Person Singular)"],
+    ["driving", "водить машину (Present Participle)"],
+    ["drove", "водить машину (Past tense, V2)"],
+    
+    // wear
+    ["wear", "носить одежду (V1)"],
+    ["wears", "носить одежду (3rd Person Singular)"],
+    ["wearing", "носить одежду (Present Participle)"],
+    ["wore", "носить одежду (Past tense, V2)"],
+    
+    // support
+    ["support", "поддерживать (V1)"],
+    ["supports", "поддерживать (3rd Person Singular)"],
+    ["supporting", "поддерживать (Present Participle)"],
+    ["supported", "поддерживать (Past tense, V2)"],
+
+        // base
+    ["base", "основывать (V1)"],
+    ["bases", "основывать (3rd Person Singular)"],
+    ["basing", "основывать (Present Participle)"],
+    ["based", "основывать (Past tense, V2)"],
+    
+    // eat
+    ["eat", "есть (V1)"],
+    ["eats", "есть (3rd Person Singular)"],
+    ["eating", "есть (Present Participle)"],
+    ["ate", "есть (Past tense, V2)"],
+    
+    // teach
+    ["teach", "учить, обучать (V1)"],
+    ["teaches", "учить, обучать (3rd Person Singular)"],
+    ["teaching", "учить, обучать (Present Participle)"],
+    ["taught", "учить, обучать (Past tense, V2)"],
+    
+    // catch
+    ["catch", "ловить, поймать (V1)"],
+    ["catches", "ловить, поймать (3rd Person Singular)"],
+    ["catching", "ловить, поймать (Present Participle)"],
+    ["caught", "ловить, поймать (Past tense, V2)"],
+    
+    // draw
+    ["draw", "рисовать, чертить (V1)"],
+    ["draws", "рисовать, чертить (3rd Person Singular)"],
+    ["drawing", "рисовать, чертить (Present Participle)"],
+    ["drew", "рисовать, чертить (Past tense, V2)"],
+    
+    // choose
+    ["choose", "выбирать (V1)"],
+    ["chooses", "выбирать (3rd Person Singular)"],
+    ["choosing", "выбирать (Present Participle)"],
+    ["chose", "выбирать (Past tense, V2)"],
+    
+    // fuck
+    ["fuck", "трахаться (V1)"],
+    ["fucks", "трахаться (3rd Person Singular)"],
+    ["fucking", "трахаться (Present Participle)"],
+    ["fucked", "трахаться (Past tense, V2)"],
+    
+    // listen
+    ["listen", "слушать, прослушать (V1)"],
+    ["listens", "слушать, прослушать (3rd Person Singular)"],
+    ["listening", "слушать, прослушать (Present Participle)"],
+    ["listened", "слушать, прослушать (Past tense, V2)"],
+    
+    // close
+    ["close", "закрывать (V1)"],
+    ["closes", "закрывать (3rd Person Singular)"],
+    ["closing", "закрывать (Present Participle)"],
+    ["closed", "закрывать (Past tense, V2)"],
+    
+    // fight
+    ["fight", "бороться, драться (V1)"],
+    ["fights", "бороться, драться (3rd Person Singular)"],
+    ["fighting", "бороться, драться (Present Participle)"],
+    ["fought", "бороться, драться (Past tense, V2)"],
+    
+    // represent
+    ["represent", "представлять, изображать (V1)"],
+    ["represents", "представлять, изображать (3rd Person Singular)"],
+    ["representing", "представлять, изображать (Present Participle)"],
+    ["represented", "представлять, изображать (Past tense, V2)"],
+    
+    // recognize
+    ["recognize", "распознавать, признавать (V1)"],
+    ["recognizes", "распознавать, признавать (3rd Person Singular)"],
+    ["recognizing", "распознавать, признавать (Present Participle)"],
+    ["recognized", "распознавать, признавать (Past tense, V2)"],
+    
+    // check
+    ["check", "проверять, контролировать (V1)"],
+    ["checks", "проверять, контролировать (3rd Person Singular)"],
+    ["checking", "проверять, контролировать (Present Participle)"],
+    ["checked", "проверять, контролировать (Past tense, V2)"],
+    
+    // answer
+    ["answer", "отвечать (V1)"],
+    ["answers", "отвечать (3rd Person Singular)"],
+    ["answering", "отвечать (Present Participle)"],
+    ["answered", "отвечать (Past tense, V2)"],
+    
+    // forget
+    ["forget", "забывать (V1)"],
+    ["forgets", "забывать (3rd Person Singular)"],
+    ["forgetting", "забывать (Present Participle)"],
+    ["forgot", "забывать (Past tense, V2)"],
+
+        // study
+    ["study", "изучать (V1)"],
+    ["studies", "изучать (3rd Person Singular)"],
+    ["studying", "изучать (Present Participle)"],
+    ["studied", "изучать (Past tense, V2)"],
+    
+    // enjoy
+    ["enjoy", "наслаждаться (V1)"],
+    ["enjoys", "наслаждаться (3rd Person Singular)"],
+    ["enjoying", "наслаждаться (Present Participle)"],
+    ["enjoyed", "наслаждаться (Past tense, V2)"],
+    
+    // visit
+    ["visit", "посещать (V1)"],
+    ["visits", "посещать (3rd Person Singular)"],
+    ["visiting", "посещать (Present Participle)"],
+    ["visited", "посещать (Past tense, V2)"],
+    
+    // finish
+    ["finish", "заканчивать (V1)"],
+    ["finishes", "заканчивать (3rd Person Singular)"],
+    ["finishing", "заканчивать (Present Participle)"],
+    ["finished", "заканчивать (Past tense, V2)"],
+    
+    // fly
+    ["fly", "летать (V1)"],
+    ["flies", "летать (3rd Person Singular)"],
+    ["flying", "летать (Present Participle)"],
+    ["flew", "летать (Past tense, V2)"],
+    
+    // sing
+    ["sing", "петь (V1)"],
+    ["sings", "петь (3rd Person Singular)"],
+    ["singing", "петь (Present Participle)"],
+    ["sang", "петь (Past tense, V2)"],
+    
+    // travel (британский вариант)
+    ["travel", "путешествовать (V1)"],
+    ["travels", "путешествовать (3rd Person Singular)"],
+    ["travelling", "путешествовать (Present Participle)"],
+    ["travelled", "путешествовать (Past tense, V2)"],
+    
+    // travel (американский вариант)
+    ["travel", "путешествовать (амер.) (V1)"],
+    ["travels", "путешествовать (амер.) (3rd Person Singular)"],
+    ["traveling", "путешествовать (амер.) (Present Participle)"],
+    ["traveled", "путешествовать (амер.) (Past tense, V2)"],
+    
+    // sleep
+    ["sleep", "спать (V1)"],
+    ["sleeps", "спать (3rd Person Singular)"],
+    ["sleeping", "спать (Present Participle)"],
+    ["slept", "спать (Past tense, V2)"],
+    
+    // drink
+    ["drink", "пить (V1)"],
+    ["drinks", "пить (3rd Person Singular)"],
+    ["drinking", "пить (Present Participle)"],
+    ["drank", "пить (Past tense, V2)"],
+    
+    // ride
+    ["ride", "ездить верхом (V1)"],
+    ["rides", "ездить верхом (3rd Person Singular)"],
+    ["riding", "ездить верхом (Present Participle)"],
+    ["rode", "ездить верхом (Past tense, V2)"],
+    
+    // cook
+    ["cook", "готовить (V1)"],
+    ["cooks", "готовить (3rd Person Singular)"],
+    ["cooking", "готовить (Present Participle)"],
+    ["cooked", "готовить (Past tense, V2)"],
+    
+    // invite
+    ["invite", "приглашать (V1)"],
+    ["invites", "приглашать (3rd Person Singular)"],
+    ["inviting", "приглашать (Present Participle)"],
+    ["invited", "приглашать (Past tense, V2)"],
+    
+    // paint
+    ["paint", "красить (V1)"],
+    ["paints", "красить (3rd Person Singular)"],
+    ["painting", "красить (Present Participle)"],
+    ["painted", "красить (Past tense, V2)"],
+    
+    // wake
+    ["wake", "просыпаться, будить (V1)"],
+    ["wakes", "просыпаться, будить (3rd Person Singular)"],
+    ["waking", "просыпаться, будить (Present Participle)"],
+    ["woke", "просыпаться, будить (Past tense, V2)"],
+
+        // influence
+    ["influence", "оказывать влияние, влиять (V1)"],
+    ["influences", "оказывать влияние, влиять (3rd Person Singular)"],
+    ["influencing", "оказывать влияние, влиять (Present Participle)"],
+    ["influenced", "оказывать влияние, влиять (Past tense, V2)"],
+    
+    // kick
+    ["kick", "пинать, ударять ногой (V1)"],
+    ["kicks", "пинать, ударять ногой (3rd Person Singular)"],
+    ["kicking", "пинать, ударять ногой (Present Participle)"],
+    ["kicked", "пинать, ударять ногой (Past tense, V2)"],
+    
+    // solve
+    ["solve", "решать, разрешать (V1)"],
+    ["solves", "решать, разрешать (3rd Person Singular)"],
+    ["solving", "решать, разрешать (Present Participle)"],
+    ["solved", "решать, разрешать (Past tense, V2)"],
+    
+    // fix
+    ["fix", "исправлять, чинить (V1)"],
+    ["fixes", "исправлять, чинить (3rd Person Singular)"],
+    ["fixing", "исправлять, чинить (Present Participle)"],
+    ["fixed", "исправлять, чинить (Past tense, V2)"],
+    
+    // clean
+    ["clean", "чистить, убирать (V1)"],
+    ["cleans", "чистить, убирать (3rd Person Singular)"],
+    ["cleaning", "чистить, убирать (Present Participle)"],
+    ["cleaned", "чистить, убирать (Past tense, V2)"],
+    
+    // dance
+    ["dance", "танцевать (V1)"],
+    ["dances", "танцевать (3rd Person Singular)"],
+    ["dancing", "танцевать (Present Participle)"],
+    ["danced", "танцевать (Past tense, V2)"],
+    
+    // invest
+    ["invest", "инвестировать, вкладывать (V1)"],
+    ["invests", "инвестировать, вкладывать (3rd Person Singular)"],
+    ["investing", "инвестировать, вкладывать (Present Participle)"],
+    ["invested", "инвестировать, вкладывать (Past tense, V2)"],
+    
+    // wash
+    ["wash", "мыть, стирать (V1)"],
+    ["washes", "мыть, стирать (3rd Person Singular)"],
+    ["washing", "мыть, стирать (Present Participle)"],
+    ["washed", "мыть, стирать (Past tense, V2)"],
+    
+    // smoke
+    ["smoke", "курить (V1)"],
+    ["smokes", "курить (3rd Person Singular)"],
+    ["smoking", "курить (Present Participle)"],
+    ["smoked", "курить (Past tense, V2)"],
+    
+    // communicate
+    ["communicate", "общаться (V1)"],
+    ["communicates", "общаться (3rd Person Singular)"],
+    ["communicating", "общаться (Present Participle)"],
+    ["communicated", "общаться (Past tense, V2)"],
+    
+    // swim
+    ["swim", "плавать (V1)"],
+    ["swims", "плавать (3rd Person Singular)"],
+    ["swimming", "плавать (Present Participle)"],
+    ["swam", "плавать (Past tense, V2)"],
+    
+    // practice (амер.)
+    ["practice", "практиковать (амер.) (V1)"],
+    ["practices", "практиковать (амер.) (3rd Person Singular)"],
+    ["practicing", "практиковать (амер.) (Present Participle)"],
+    ["practiced", "практиковать (амер.) (Past tense, V2)"],
+    
+    // dine
+    ["dine", "обедать (V1)"],
+    ["dines", "обедать (3rd Person Singular)"],
+    ["dining", "обедать (Present Participle)"],
+    ["dined", "обедать (Past tense, V2)"],
+    
+    // practise (брит.)
+    ["practise", "тренироваться (брит.) (V1)"],
+    ["practises", "тренироваться (брит.) (3rd Person Singular)"],
+    ["practising", "тренироваться (брит.) (Present Participle)"],
+    ["practised", "тренироваться (брит.) (Past tense, V2)"],
+    
+    // phone
+    ["phone", "звонить по телефону (V1)"],
+    ["phones", "звонить по телефону (3rd Person Singular)"],
+    ["phoning", "звонить по телефону (Present Participle)"],
+    ["phoned", "звонить по телефону (Past tense, V2)"],
+        // excuse
+    ["excuse", "извинять, прощать (V1)"],
+    ["excuses", "извинять, прощать (3rd Person Singular)"],
+    ["excusing", "извинять, прощать (Present Participle)"],
+    ["excused", "извинять, прощать (Past tense, V2)"],
+
+    // rain
+    ["rain", "идти (о дожде) (V1)"],
+    ["rains", "идти (о дожде) (3rd Person Singular)"],
+    ["raining", "идти (о дожде) (Present Participle)"],
+    ["rained", "идти (о дожде) (Past tense, V2)"],
+
+    // ask
+    ["ask", "спрашивать, просить (V1)"],
+    ["asks", "спрашивать, просить (3rd Person Singular)"],
+    ["asking", "спрашивать, просить (Present Participle)"],
+    ["asked", "спрашивать, просить (Past tense, V2)"],
+
+    // call
+    ["call", "звать, называть (V1)"],
+    ["calls", "звать, называть (3rd Person Singular)"],
+    ["calling", "звать, называть (Present Participle)"],
+    ["called", "звать, называть (Past tense, V2)"],
+
+    // try
+    ["try", "пытаться (V1)"],
+    ["tries", "пытаться (3rd Person Singular)"],
+    ["trying", "пытаться (Present Participle)"],
+    ["tried", "пытаться (Past tense, V2)"],
+
+    // move
+    ["move", "двигаться (V1)"],
+    ["moves", "двигаться (3rd Person Singular)"],
+    ["moving", "двигаться (Present Participle)"],
+    ["moved", "двигаться (Past tense, V2)"],
+
+    // believe
+    ["believe", "верить (V1)"],
+    ["believes", "верить (3rd Person Singular)"],
+    ["believing", "верить (Present Participle)"],
+    ["believed", "верить (Past tense, V2)"],
+
+    // hold
+    ["hold", "держать (V1)"],
+    ["holds", "держать (3rd Person Singular)"],
+    ["holding", "держать (Present Participle)"],
+    ["held", "держать (Past tense, V2)"],
+
+    // agree
+    ["agree", "соглашаться (V1)"],
+    ["agrees", "соглашаться (3rd Person Singular)"],
+    ["agreeing", "соглашаться (Present Participle)"],
+    ["agreed", "соглашаться (Past tense, V2)"],
+
+    // cut
+    ["cut", "резать (V1)"],
+    ["cuts", "резать (3rd Person Singular)"],
+    ["cutting", "резать (Present Participle)"],
+    ["cut", "резать (Past tense, V2)"],
+
+    // bring
+    ["bring", "приносить, приводить (V1)"],
+    ["brings", "приносить, приводить (3rd Person Singular)"],
+    ["bringing", "приносить, приводить (Present Participle)"],
+    ["brought", "приносить, приводить (Past tense, V2)"],
+
+    // fall
+    ["fall", "падать, снижаться (V1)"],
+    ["falls", "падать, снижаться (3rd Person Singular)"],
+    ["falling", "падать, снижаться (Present Participle)"],
+    ["fell", "падать, снижаться (Past tense, V2)"],
+
+    // touch
+    ["touch", "трогать, касаться (V1)"],
+    ["touches", "трогать, касаться (3rd Person Singular)"],
+    ["touching", "трогать, касаться (Present Participle)"],
+    ["touched", "трогать, касаться (Past tense, V2)"],
+
+    // jump
+    ["jump", "прыгать (V1)"],
+    ["jumps", "прыгать (3rd Person Singular)"],
+    ["jumping", "прыгать (Present Participle)"],
+    ["jumped", "прыгать (Past tense, V2)"],
+
+    // hate
+    ["hate", "ненавидеть (V1)"],
+    ["hates", "ненавидеть (3rd Person Singular)"],
+    ["hating", "ненавидеть (Present Participle)"],
+    ["hated", "ненавидеть (Past tense, V2)"],
+
+    // sell
+    ["sell", "продавать (V1)"],
+    ["sells", "продавать (3rd Person Singular)"],
+    ["selling", "продавать (Present Participle)"],
+    ["sold", "продавать (Past tense, V2)"],
+
+    // snow
+    ["snow", "идти (о снеге) (V1)"],
+    ["snows", "идти (о снеге) (3rd Person Singular)"],
+    ["snowing", "идти (о снеге) (Present Participle)"],
+    ["snowed", "идти (о снеге) (Past tense, V2)"],
+
+    // hike
+    ["hike", "ходить пешком, путешествовать (V1)"],
+    ["hikes", "ходить пешком, путешествовать (3rd Person Singular)"],
+    ["hiking", "ходить пешком, путешествовать (Present Participle)"],
+    ["hiked", "ходить пешком, путешествовать (Past tense, V2)"],
+];
+
+let g_practice_verbs = null;
+     
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+    {
+        
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralVerbs, suffix_id: 'verbs'});
+        
+        g_practice_verbs = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_verbs'), 
+            el_exercise_control: document.getElementById('control_general_verbs'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_verbs),
+            editor_symbol: editor_symbol
+        });
+        g_practice_verbs.genExercisesListenAndWrite();
+    }
+ 
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+ 
+ 
+function checkAnswerGeneralVerbs(value){
+    value = textNormalize(value);
+    return value==g_practice_verbs.getAnswer();
+}
+ 
+</script> 
+<style>
+table {
+  margin: 0px !important;  
+  border-collapse: collapse;
+}
+</style>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Phrasal_Verbs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/Nouns_A1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Phrasal_Verbs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/Nouns_A1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+        <script src="../src/js/listen.js"></script>
+        <script src="../src/js/textual_analysis.js"></script>
+        <script src="../src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

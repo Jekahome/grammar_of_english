@@ -1,0 +1,1032 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Possessive forms of sentences (притяжательные формы предложений) - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+        <link rel="stylesheet" href="../theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="Притяжательные-формы-предложений"><a class="header" href="#Притяжательные-формы-предложений">Притяжательные формы предложений</a></h1>
+<p>Притяжательные местоимения и прилагательные, а также использование апострофа или предлога of — это четыре разных способа выражения принадлежности в английском языке. Каждый из них имеет свои правила и контексты использования.</p>
+<p>Примеры построения притяжательных форм предложений
+Пример для преобразований: John has a bicycle.</p>
+<ul>
+<li>форма с притяжательным прилагательным: This is his bicycle.</li>
+<li>форма с притяжательным местоимением: This bicycle is his.</li>
+<li>форма с притяжательным падежом с апострофом: This is John's bicycle.</li>
+<li>форма с предлог "of": This is the bicycle of John.</li>
+</ul>
+<h2 id="1-possessive-pronouns-притяжательные-местоимения-mine-ours-yours-his-hers-its-theirs"><a class="header" href="#1-possessive-pronouns-притяжательные-местоимения-mine-ours-yours-his-hers-its-theirs">1. Possessive Pronouns (притяжательные местоимения): mine, ours, yours, his, hers, its, theirs</a></h2>
+<p>Притяжательные местоимения тоже указывают на принадлежность, но они заменяют существительное и используются самостоятельно, без существительного.
+Притяжательный падеж существительных отвечает на вопрос Чей? (Whose?)</p>
+<ul>
+<li><strong>Mine</strong> — мой, моя, мое, мои
+<ul>
+<li>This book is mine. — Эта книга моя.</li>
+<li>Whose T-shirt is this? — Чья это рубашка? It's mine. — Это моя.</li>
+</ul>
+</li>
+<li><strong>Yours</strong> — твой, твоя, твое, твои, ваш, ваша, ваше, ваши
+<ul>
+<li>Is this pen yours? — Эта ручка твоя?</li>
+</ul>
+</li>
+<li><strong>His</strong> — его
+<ul>
+<li>The jacket is his. — Куртка его.</li>
+<li>It's his. — Это его.</li>
+</ul>
+</li>
+<li><strong>Hers</strong> — её
+<ul>
+<li>This bag is hers. — Эта сумка её.</li>
+<li>It's hers. — Это её.</li>
+</ul>
+</li>
+<li><strong>Its</strong> — его, её (редко используется)
+<ul>
+<li>This book has lost its cover. — Эта книга потеряла свою обложку.</li>
+</ul>
+</li>
+<li><strong>Ours</strong> — наш, наша, наше, наши
+<ul>
+<li>The house on the corner is ours. — Дом на углу — наш.</li>
+<li>It's ours. — Это наша.</li>
+</ul>
+</li>
+<li><strong>Theirs</strong> — их
+<ul>
+<li>These keys are theirs. — Эти ключи их.</li>
+<li>It's theirs. — Это их.</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-possessive-adjective-притяжательные-прилагательные-my-your-his-her-its-our-their"><a class="header" href="#2-possessive-adjective-притяжательные-прилагательные-my-your-his-her-its-our-their">2. Possessive adjective (притяжательные прилагательные): my, your, his, her, its, our, their</a></h2>
+<p>Possessive adjective (притяжательные прилагательные) всегда употребляются перед существительными, и уточняют, кому что-то принадлежит, как в примерах: <strong>My</strong> book — Моя книга. <strong>Their</strong> house — Их дом.</p>
+<ul>
+<li><strong>My</strong> — мой, моя, мое, мои
+<ul>
+<li>My car is new. — Моя машина новая.</li>
+</ul>
+</li>
+<li><strong>Your</strong> — твой, твоя, твое, твои / ваш, ваша, ваше, ваши
+<ul>
+<li>Your house is big. — Твой дом большой.</li>
+</ul>
+</li>
+<li><strong>His</strong> — его (не изменяется)
+<ul>
+<li>His dog is friendly. — Его собака дружелюбная.</li>
+</ul>
+</li>
+<li><strong>Her</strong> — её
+<ul>
+<li>Her phone is on the table. — Её телефон на столе.</li>
+</ul>
+</li>
+<li><strong>Its</strong> — его, её (для неодушевленных предметов или животных)
+<ul>
+<li>The cat is cute. Its tail is long. — Кот милый. Его хвост длинный.</li>
+</ul>
+</li>
+<li><strong>Our</strong> — наш, наша, наше, наши
+<ul>
+<li>Our friends are coming over. — Наши друзья приедут в гости.</li>
+</ul>
+</li>
+<li><strong>Their</strong> — их
+<ul>
+<li>Their car is parked outside. — Их машина припаркована снаружи.</li>
+</ul>
+</li>
+</ul>
+<p>Притяжательные прилагательные (dependent possessive adjectives)</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Личное местоимение</th><th style="text-align: left">Притяжательное прилагательное</th><th style="text-align: left">Притяжательное местоимение</th><th style="text-align: left">Пример</th></tr></thead><tbody>
+<tr><td style="text-align: left">I</td><td style="text-align: left"><strong>my</strong></td><td style="text-align: left"><strong>mine</strong></td><td style="text-align: left">My room is big. — Моя комната большая.<br>This room is mine. — Эта комната моя.</td></tr>
+<tr><td style="text-align: left">he</td><td style="text-align: left"><strong>his</strong></td><td style="text-align: left"><strong>his</strong></td><td style="text-align: left">His sister is ten. — Его сестре десять лет.<br>This sister is his. — Эта сестра его.</td></tr>
+<tr><td style="text-align: left">she</td><td style="text-align: left"><strong>her</strong></td><td style="text-align: left"><strong>hers</strong></td><td style="text-align: left">Her hair is long. — Её волосы длинные.<br>This hair is hers. — Эти волосы её.</td></tr>
+<tr><td style="text-align: left">it</td><td style="text-align: left"><strong>its</strong></td><td style="text-align: left"><strong>its</strong></td><td style="text-align: left">Its tail is white. — Его хвост белый.<br>This tail is its. — Этот хвост его.</td></tr>
+<tr><td style="text-align: left">we</td><td style="text-align: left"><strong>our</strong></td><td style="text-align: left"><strong>ours</strong></td><td style="text-align: left">Our house is big. — Наш дом большой.<br>This house is ours. — Этот дом наш.</td></tr>
+<tr><td style="text-align: left">you</td><td style="text-align: left"><strong>your</strong></td><td style="text-align: left"><strong>yours</strong></td><td style="text-align: left">Your pen is black. — Твоя ручка чёрная.<br>This pen is yours. — Эта ручка твоя.</td></tr>
+<tr><td style="text-align: left">they</td><td style="text-align: left"><strong>their</strong></td><td style="text-align: left"><strong>theirs</strong></td><td style="text-align: left">Their friend's name is Jack. — Их друга зовут Джек.<br>This friend is theirs. — Этот друг их.</td></tr>
+</tbody></table>
+</div>
+<h2 id="3-Притяжательный-падеж-с-апострофом-s"><a class="header" href="#3-Притяжательный-падеж-с-апострофом-s">3. Притяжательный падеж с апострофом (<code>'s</code>)</a></h2>
+<p>Этот способ используется для существительных, чтобы показать принадлежность.
+Добавляется апостроф и буква s для указания на владельца (или только апостроф для множественного числа).
+Притяжательный падеж с апострофом используется только для существительных, показывая, кому или чему что-то принадлежит.</p>
+<ul>
+<li>Ivan's car — Машина Ивана (указание на владельца — Иван).</li>
+<li>My friend's house — Дом моего друга (один друг).</li>
+<li>My friends' house — Дом моих друзей (больше одного друга, апостроф без "s").</li>
+<li>these girls' dolls — куклы этих девочек</li>
+<li>children's room — детская комната (нестандартный случай)</li>
+<li>men's clothes — мужская одежда (нестандартный случай)</li>
+</ul>
+<h2 id="4-Предлог-of-для-выражения-принадлежности"><a class="header" href="#4-Предлог-of-для-выражения-принадлежности">4. Предлог "of" для выражения принадлежности</a></h2>
+<p>Этот способ чаще используется с неодушевлёнными предметами или абстрактными существительными, но иногда и с людьми, особенно в более формальной речи.
+Использование предлога of встречается, когда конструкция с апострофом ('s) менее естественна, особенно для неодушевленных объектов.</p>
+<ul>
+<li>The door of the house — Дверь дома (реже говорят the house's door).</li>
+<li>The work of the artist — Работа художника.</li>
+<li>A friend of John — Друг Джона.</li>
+</ul>
+<h2 id="Притяжательный-падеж-s-vs-Предлог-of"><a class="header" href="#Притяжательный-падеж-s-vs-Предлог-of">Притяжательный падеж (<code>'s</code>) vs. Предлог "of"</a></h2>
+<p><strong>Притяжательная форма через апостроф <code>'s</code></strong> чаще всего используется с одушевленными существительными (люди, животные):</p>
+<ul>
+<li>The girl's book = The book of the girl (предпочтительнее использовать 's для людей).</li>
+<li>My dog's tail = The tail of my dog.</li>
+</ul>
+<p><strong>Предлог "of"</strong> чаще всего используется с неодушевленными существительными или абстрактными понятиями:</p>
+<ul>
+<li>The roof of the house — Крыша дома.</li>
+<li>The beginning of the story. — Начало истории</li>
+<li>The color of the car. — Цвет автомобиля</li>
+</ul>
+<p><strong>Дополнительные примеры для сравнения</strong></p>
+<p>Человек или животное:</p>
+<ul>
+<li>My sister's friend (лучше использовать 's).</li>
+<li>The dog's owner (лучше использовать 's).</li>
+</ul>
+<p>Вещи, здания, абстрактные понятия:</p>
+<ul>
+<li>The pages of the book (используем "of").</li>
+<li>The door of the car (используем "of").</li>
+</ul>
+<p><strong>Когда использовать оба варианта</strong></p>
+<p>В некоторых случаях допустимы оба варианта, но есть предпочтение в зависимости от контекста:</p>
+<ul>
+<li>The boss's office или The office of the boss – оба корректны, но первый вариант звучит естественнее в повседневной речи.</li>
+<li>A friend of mine – более предпочтительно в разговорной речи, хотя можно сказать и "My friend", но фраза "a friend of mine" добавляет оттенок обобщения или принадлежности к группе.</li>
+</ul>
+<p><strong>Упрощение конструкций</strong></p>
+<p>Для облегчения восприятия, в разговорной речи часто предпочитают конструкцию с 's вместо длинной формы с предлогом "of":</p>
+<ul>
+<li>The girl’s name вместо The name of the girl.</li>
+<li>My brother’s car вместо The car of my brother.</li>
+</ul>
+<h2 id="exercise-listen-and-write"><a class="header" href="#exercise-listen-and-write">Exercise: listen and write</a></h2>
+<div id="control"></div>
+<div id="listen_and_write"></div>
+<script>
+
+const exercises_easy_listen_and_write = [
+
+    // Possessive Pronouns (притяжательные местоимения): mine, ours, yours, his, hers, its, theirs
+
+    ["This phone is mine.", "Этот телефон — мой."],
+    ["That red car is hers.", "Та красная машина — её."],
+    ["Is this bag yours?", "Эта сумка — твоя?"],
+    ["These keys are his.", "Эти ключи — его."],
+    ["The big house is ours.", "Большой дом — наш."],
+    ["Those toys are theirs.", "Те игрушки — их."],
+    ["This book is mine, not yours.", "Эта книга — моя, не твоя."],
+    ["Is this pen his or hers?", "Эта ручка — его или её?"],
+    ["The blue bike is hers.", "Синий велосипед — её."],
+    ["This seat is mine.", "Это место — моё."],
+    ["Is this coat yours?", "Это пальто — твоё?"],
+    ["The black cat is theirs.", "Чёрный кот — их."],
+    ["This coffee is mine.", "Этот кофе — мой."],
+    ["That idea is hers.", "Та идея — её."],
+    ["Is this bag mine or yours?", "Эта сумка — моя или твоя?"],
+    ["The problem is theirs.", "Проблема — их."],
+    ["This desk is his.", "Этот стол — его."],
+    ["The success is ours.", "Успех — наш."],
+    ["Is this money yours?", "Эти деньги — твои?"],
+    ["The mistake is mine.", "Ошибка — моя."],
+    ["This ticket is hers.", "Этот билет — её."],
+    ["Is this room ours?", "Эта комната — наша?"],
+    ["The decision is theirs.", "Решение — их."],
+    ["This cup is mine.", "Эта чашка — моя."],
+    ["That voice is his.", "Тот голос — его."],
+    ["Is this food yours?", "Эта еда — твоя?"],
+    ["This is your food.", "Эта твоя еда"],
+
+    ["The choice is hers.", "Выбор — её."],
+    ["This place is ours.", "Это место — наше."],
+    ["The dog is theirs.", "Собака — их."],
+    ["Is this pencil mine?", "Этот карандаш — мой?"],
+    ["That smile is his.", "Та улыбка — его."],
+    ["This job is mine.", "Эта работа — моя."],
+    ["Is this bag really yours?", "Эта сумка действительно твоя?"],
+    ["The victory is ours.", "Победа — наша."],
+    ["That mistake is mine.", "Та ошибка — моя."],
+    ["Is this book his?", "Эта книга — его?"],
+    ["The car outside is hers.", "Машина снаружи — её."],
+    ["This time is ours.", "Это время — наше."],
+    ["Is this pen really mine?", "Эта ручка действительно моя?"],
+    ["That opinion is hers.", "То мнение — её."],
+    ["This computer is his.", "Этот компьютер — его."],
+    ["Is this chair yours?", "Этот стул — твой?"],
+    ["That garden is theirs.", "Тот сад — их."],
+    ["This chance is ours.", "Этот шанс — наш."],
+    ["Is this phone hers?", "Этот телефон — её?"],
+    ["The answer is mine.", "Ответ — мой."],
+    ["That house is theirs.", "Тот дом — их."],
+    ["Is this drink yours?", "Этот напиток — твой?"],
+    ["The future is ours.", "Будущее — наше."],
+    ["This phone is mine.", "Этот телефон — мой."],
+    ["This phone was mine.", "Этот телефон был моим."],
+    ["This phone will be mine.", "Этот телефон будет моим."],
+    ["This phone is being cleaned by me.", "Этот телефон сейчас чистят (я)."],
+
+    ["That red car is hers.", "Та красная машина — её."],
+    ["That red car was hers.", "Та красная машина была её."],
+    ["That red car will be hers.", "Та красная машина будет её."],
+    ["She is driving her car now.", "Она сейчас ведёт свою машину."],
+
+    ["Is this bag yours?", "Эта сумка — твоя?"],
+    ["Was this bag yours?", "Эта сумка была твоей?"],
+    ["Will this bag be yours?", "Эта сумка будет твоей?"],
+    ["Are you carrying your bag now?", "Ты несешь свою сумку сейчас?"],
+
+    ["These keys are his.", "Эти ключи — его."],
+    ["These keys were his.", "Эти ключи были его."],
+    ["These keys will be his.", "Эти ключи будут его."],
+    ["He is using his keys now.", "Он использует свои ключи сейчас."],
+
+    ["The big house is ours.", "Большой дом — наш."],
+    ["The big house was ours.", "Большой дом был нашим."],
+    ["The big house will be ours.", "Большой дом будет нашим."],
+    ["We are cleaning our house now.", "Мы убираем наш дом сейчас."],
+
+    ["Those toys are theirs.", "Те игрушки — их."],
+    ["Those toys were theirs.", "Те игрушки были их."],
+    ["Those toys will be theirs.", "Те игрушки будут их."],
+    ["They are playing with their toys.", "Они играют со своими игрушками сейчас."],
+
+    ["This book is mine, not yours.", "Эта книга — моя, не твоя."],
+    ["This book was mine, not yours.", "Эта книга была моей, не твоей."],
+    ["This book will be mine, not yours.", "Эта книга будет моей, не твоей."],
+    ["I am reading my book now.", "Я читаю свою книгу сейчас."],
+
+    ["Is this pen his or hers?", "Эта ручка — его или её?"],
+    ["Was this pen his or hers?", "Эта ручка была его или её?"],
+    ["Will this pen be his or hers?", "Эта ручка будет его или её?"],
+    ["Is he writing with his pen now?", "Он пишет своей ручкой сейчас?"],
+
+    ["The blue bike is hers.", "Синий велосипед — её."],
+    ["The blue bike was hers.", "Синий велосипед был её."],
+    ["The blue bike will be hers.", "Синий велосипед будет её."],
+    ["She is riding her bike now.", "Она катается на своём велосипеде сейчас."],
+
+    ["This seat is mine.", "Это место — моё."],
+    ["This seat was mine.", "Это место было моим."],
+    ["This seat will be mine.", "Это место будет моим."],
+    ["I am sitting in my seat now.", "Я сижу на своём месте сейчас."],
+
+    ["Is this coat yours?", "Это пальто — твоё?"],
+    ["Was this coat yours?", "Это пальто было твоим?"],
+    ["Will this coat be yours?", "Это пальто будет твоим?"],
+    ["Are you wearing your coat now?", "Ты носишь своё пальто сейчас?"],
+
+    ["The black cat is theirs.", "Чёрный кот — их."],
+    ["The black cat was theirs.", "Чёрный кот был их."],
+    ["The black cat will be theirs.", "Чёрный кот будет их."],
+    
+    ["They are giving food to their cat now.", "Они дают еду своему коту сейчас."],
+    ["Are they giving food to their cat now?", "Они дают еду своему коту сейчас?"],
+
+    ["This coffee is mine.", "Этот кофе — мой."],
+    ["This coffee was mine.", "Этот кофе был моим."],
+    ["This coffee will be mine.", "Этот кофе будет моим."],
+    ["I am drinking my coffee now.", "Я пью свой кофе сейчас."],
+    ["Is the black cat theirs?", "Чёрный кот — их?"],
+    ["Was the black cat theirs?", "Чёрный кот был их?"],
+    ["Will the black cat be theirs?", "Чёрный кот будет их?"],
+  
+
+    ["Is this coffee mine?", "Этот кофе — мой?"],
+    ["Was this coffee mine?", "Этот кофе был моим?"],
+    ["Will this coffee be mine?", "Этот кофе будет моим?"],
+    ["Am I drinking my coffee now?", "Я пью свой кофе сейчас?"],
+
+    ["That idea is hers.", "Та идея — её."],
+    ["That idea was hers.", "Та идея была её."],
+    ["That idea will be hers.", "Та идея будет её."],
+    ["She is explaining her idea now.", "Она объясняет свою идею сейчас."],
+
+    ["Is this bag mine or yours?", "Эта сумка — моя или твоя?"],
+    ["Was this bag mine or yours?", "Эта сумка была моей или твоей?"],
+    ["Will this bag be mine or yours?", "Эта сумка будет моей или твоей?"],
+    ["Are we checking our bags now?", "Мы проверяем наши сумки сейчас?"],
+
+    // Possessive adjective (притяжательные прилагательные): my, your, his, her, its, our, their
+    ["My cat sleeps on the sofa.", "Мой кот спит на диване."],
+    ["My cat slept all day yesterday.", "Мой кот спал весь день вчера."],
+    ["My cat will sleep in the new bed.", "Мой кот будет спать в новой кровати."],
+    ["My cat is sleeping right now.", "Мой кот спит прямо сейчас."],
+
+    ["Your sister studies at university.", "Твоя сестра учится в университете."],
+    ["Your sister studied medicine last year.", "Твоя сестра изучала медицину в прошлом году."],
+    ["Your sister will study abroad.", "Твоя сестра будет учиться за границей."],
+    ["Your sister is studying for exams now.", "Твоя сестра готовится к экзаменам сейчас."],
+
+    ["His car makes strange noises.", "Его машина издает странные звуки."],
+    ["His car made a loud noise yesterday.", "Его машина издала громкий звук вчера."],
+    ["His car will need repairs soon.", "Его машина скоро потребует ремонта."],
+    ["His car is making that noise again.", "Его машина снова издает тот звук."],
+
+    ["Her garden has beautiful flowers.", "Ее сад имеет красивые цветы."],
+    ["Her garden had roses last summer.", "В ее саду были розы прошлым летом."],
+    ["Her garden will have flowers next spring.", "В ее саду будут цветы следующей весной."],
+    ["Her garden is blooming now.", "Ее сад цветет сейчас."],
+
+    ["Our dog loves walks in the park.", "Наша собака любит прогулки в парке."],
+    ["Our dog loved the beach last summer.", "Наша собака обожала пляж прошлым летом."],
+    ["Our dog will love the new park.", "Наша собака полюбит новый парк."],
+    ["Our dog is running in the park now.", "Наша собака бегает в парке сейчас."],
+
+    ["Their children play football after school.", "Их дети играют в футбол после школы."],
+    ["Their children played in the tournament last month.", "Их дети играли в турнире в прошлом месяце."],
+    ["Their children will play in a new team.", "Их дети будут играть в новой команде."],
+    ["Their children are playing in the yard now.", "Их дети играют во дворе сейчас."],
+
+    ["My brother works in an office.", "Мой брат работает в офисе."],
+    ["My brother worked late yesterday.", "Мой брат работал допоздна вчера."],
+    ["My brother will work from home tomorrow.", "Мой брат будет работать из дома завтра."],
+    ["My brother is working on a project now.", "Мой брат работает над проектом сейчас."],
+
+    ["Your friend speaks three languages.", "Твой друг говорит на трех языках."],
+    ["Your friend spoke at the conference last week.", "Твой друг выступал на конференции на прошлой неделе."],
+    ["Your friend will speak at the meeting.", "Твой друг будет выступать на собрании."],
+    ["Your friend is speaking on the phone now.", "Твой друг разговаривает по телефону сейчас."],
+
+    ["His teacher explains everything clearly.", "Его учитель объясняет все понятно."],
+    ["His teacher explained the grammar yesterday.", "Его учитель объяснял грамматику вчера."],
+    ["His teacher will explain the new topic tomorrow.", "Его учитель объяснит новую тему завтра."],
+    ["His teacher is explaining the exercise now.", "Его учитель объясняет упражнение сейчас."],
+
+    ["Her mother cooks delicious meals.", "Ее мама готовит вкусные блюда."],
+    ["Her mother cooked pasta yesterday.", "Ее мама готовила пасту вчера."],
+    ["Her mother will cook dinner tonight.", "Ее мама приготовит ужин сегодня вечером."],
+    ["Her mother is cooking soup now.", "Ее мама готовит суп сейчас."],
+
+    ["Our team wins many games.", "Наша команда выигрывает много игр."],
+    ["Our team won the championship last year.", "Наша команда выиграла чемпионат в прошлом году."],
+    ["Our team will win the next match.", "Наша команда выиграет следующий матч."],
+    ["Our team is playing very well now.", "Наша команда играет очень хорошо сейчас."],
+
+ 
+    ["Their house needed repairs last month.", "Их дом требовал ремонта в прошлом месяце."],
+    ["Their house will need painting soon.", "Их дом скоро потребует покраски."],
+    ["Their house is getting painted now.", "Их дом красят сейчас."],
+
+    ["My laptop works perfectly.", "Мой ноутбук работает идеально."],
+    ["My laptop worked all night.", "Мой ноутбук работал всю ночь."],
+    ["My laptop will need an upgrade.", "Мой ноутбук потребует обновления."],
+    ["My laptop is updating now.", "Мой ноутбук обновляется сейчас."],
+
+    ["Your idea sounds interesting.", "Твоя идея звучит интересно."],
+    ["Your idea sounded great yesterday.", "Твоя идея звучала отлично вчера."],
+    ["Your idea will help the project.", "Твоя идея поможет проекту."],
+    ["You are developing your idea now.", "Ты развиваешь свою идею сейчас."],
+
+    // Притяжательный падеж с апострофом ('s)
+
+    ["Anna's cat sleeps on the sofa.", "Кот Анны спит на диване."],
+    ["Anna's cat slept all day yesterday.", "Кот Анны спал весь день вчера."],
+    ["Anna's cat will sleep in the new bed.", "Кот Анны будет спать в новой кровати."],
+    ["Anna's cat is sleeping right now.", "Кот Анны спит прямо сейчас."],
+
+    ["Peter's sister studies at university.", "Сестра Петра учится в университете."],
+    ["Peter's sister studied medicine last year.", "Сестра Петра изучала медицину в прошлом году."],
+    ["Peter's sister will study abroad.", "Сестра Петра будет учиться за границей."],
+    ["Peter's sister is studying for exams now.", "Сестра Петра готовится к экзаменам сейчас."],
+
+    ["Mark's car makes strange noises.", "Машина Марка издает странные звуки."],
+    ["Mark's car made a loud noise yesterday.", "Машина Марка издала громкий звук вчера."],
+    ["Mark's car will need repairs soon.", "Машина Марка скоро потребует ремонта."],
+    ["Mark's car is making that noise again.", "Машина Марка снова издает тот звук."],
+
+    ["Maria's garden has beautiful flowers.", "Сад Марии имеет красивые цветы."],
+    ["Maria's garden had roses last summer.", "В саду Марии были розы прошлым летом."],
+    ["Maria's garden will have flowers next spring.", "В саду Марии будут цветы следующей весной."],
+    ["Maria's garden is blooming now.", "Сад Марии цветет сейчас."],
+
+    ["John's dog loves walks in the park.", "Собака Джона любит прогулки в парке."],
+    ["John's dog loved the beach last summer.", "Собака Джона обожала пляж прошлым летом."],
+    ["John's dog will love the new park.", "Собака Джона полюбит новый парк."],
+    ["John's dog is running in the park now.", "Собака Джона бегает в парке сейчас."],
+
+    ["The Smiths' children play football after school.", "Дети Смитов играют в футбол после школы."],
+    ["The Smiths' children played in the tournament last month.", "Дети Смитов играли в турнире в прошлом месяце."],
+    ["The Smiths' children will play in a new team.", "Дети Смитов будут играть в новой команде."],
+    ["The Smiths' children are playing in the yard now.", "Дети Смитов играют во дворе сейчас."],
+
+    ["Tom's brother works in an office.", "Брат Тома работает в офисе."],
+    ["Tom's brother worked late yesterday.", "Брат Тома работал допоздна вчера."],
+    ["Tom's brother will work from home tomorrow.", "Брат Тома будет работать из дома завтра."],
+    ["Tom's brother is working on a project now.", "Брат Тома работает над проектом сейчас."],
+
+    ["Lisa's friend speaks three languages.", "Друг Лизы говорит на трех языках."],
+    ["Lisa's friend spoke at the conference last week.", "Друг Лизы выступал на конференции на прошлой неделе."],
+    ["Lisa's friend will speak at the meeting.", "Друг Лизы будет выступать на собрании."],
+    ["Lisa's friend is speaking on the phone now.", "Друг Лизы разговаривает по телефону сейчас."],
+
+    ["The teacher's answer is very clear.", "Ответ учителя очень понятный."],
+    ["The teacher's answer helped me yesterday.", "Ответ учителя помог мне вчера."],
+    ["The teacher's answer will help everyone.", "Ответ учителя поможет всем."],
+
+    ["My mother's cooking is delicious.", "Готовка моей мамы вкусная."],
+    ["My mother's cooking made everyone happy yesterday.", "Готовка моей мамы сделала всех счастливыми вчера."],
+    ["My mother's cooking will surprise the guests.", "Готовка моей мамы удивит гостей."],
+
+    ["The team's victory brings joy.", "Победа команды приносит радость."],
+    ["The team's victory made history last year.", "Победа команды вошла в историю в прошлом году."],
+    ["The team is winning the game now.", "Команда выигрывает игру сейчас."],
+
+    ["The company's success depends on employees.", "Успех компании зависит от сотрудников."],
+    ["The company's success grew last quarter.", "Успех компании рос в прошлом квартале."],
+    ["The company's success will continue.", "Успех компании продолжится."],
+
+    ["The child's smile warms my heart.", "Улыбка ребенка согревает мое сердце."],
+    ["The child's smile will make everyone happy.", "Улыбка ребенка сделает всех счастливыми."],
+
+    ["My friend's house is big.", "Дом моего друга большой."],
+    ["My friend's house was small.", "Дом моего друга был маленьким."],
+    ["My friend's house will be modern.", "Дом моего друга будет современным."],
+    ["My friend's house is being painted now.", "Дом моего друга красят сейчас."],
+
+    ["Is my friend's house big?", "Дом моего друга большой?"],
+    ["Was my friend's house small?", "Дом моего друга был маленьким?"],
+    ["Will my friend's house be modern?", "Дом моего друга будет современным?"],
+    ["Is my friend's house being painted now?", "Дом моего друга красят сейчас?"],
+
+    ["My friends' apartment isn't expensive.", "Квартира моих друзей недорогая."],
+    ["My friends' apartment wasn't clean.", "Квартира моих друзей не была чистой."],
+    ["My friends' apartment won't be available.", "Квартира моих друзей не будет доступна."],
+    ["My friends' apartment isn't being cleaned now.", "Квартиру моих друзей не убирают сейчас."],
+
+    ["Are my friends' parents at home?", "Родители моих друзей дома?"],
+    ["Were my friends' parents at work?", "Родители моих друзей были на работе?"],
+    ["Will my friends' parents arrive soon?", "Родители моих друзей приедут скоро?"],
+    ["Are my friends' parents traveling now?", "Родители моих друзей путешествуют сейчас?"],
+
+    ["These girls' dolls are beautiful.", "Куклы этих девочек красивые."],
+    ["These girls' dolls were expensive.", "Куклы этих девочек были дорогими."],
+    ["These girls' dolls will be repaired.", "Куклы этих девочек будут починены."],
+    ["These girls' dolls are being washed now.", "Куклы этих девочек моют сейчас."],
+
+    ["Aren't these girls' dolls broken?", "Куклы этих девочек не сломаны?"],
+    ["Weren't these girls' dolls new?", "Куклы этих девочек не были новыми?"],
+    ["Won't these girls' dolls be sold?", "Куклы этих девочек не будут проданы?"],
+    ["Aren't these girls' dolls being played with now?", "С этими куклами девочек не играют сейчас?"],
+
+    ["The children's room is messy.", "Детская комната грязная."],
+    ["The children's room was clean.", "Детская комната была чистой."],
+    ["The children's room will be new again.", "Детская комната будет снова новой."],
+    ["The children's room is being cleaned now.", "Детскую комнату убирают сейчас."],
+
+    ["Is the children's room tidy?", "Детская комната аккуратная?"],
+    ["Was the children's room organized?", "Детская комната была организованной?"],
+    ["Will the children's room be painted?", "Детскую комнату покрасят?"],
+    ["Is the children's room being used now?", "Детскую комнату используют сейчас?"],
+
+    ["Men's clothes aren't in this section.", "Мужская одежда не в этом отделе."],
+    ["Men's clothes weren't on sale.", "Мужская одежда не была на распродаже."],
+    ["Men's clothes won't be delivered today.", "Мужскую одежду не доставят сегодня."],
+    ["Men's clothes aren't being displayed now.", "Мужскую одежду не выставляют сейчас."],
+
+    ["Are women's shoes comfortable?", "Женская обувь удобная?"],
+    ["Were women's shoes popular?", "Женская обувь была популярной?"],
+    ["Will women's shoes be cheaper?", "Женская обувь будет дешевле?"],
+    ["Are women's shoes being tried on now?", "Женскую обувь примеряют сейчас?"],
+
+    ["The dog's food smells good.", "Еда собаки хорошо пахнет."],
+    ["The dog's food smelled bad yesterday.", "Еда собаки плохо пахла вчера."],
+    ["The dog's food will be changed.", "Еду собаки поменяют."],
+    ["The dog's food is being prepared now.", "Еду собаки готовят сейчас."],
+
+    ["Doesn't the cat's bed look soft?", "Лежанка кота не выглядит мягкой?"],
+    ["Didn't the cat's bed cost a lot?", "Лежанка кота не стоила дорого?"],
+    ["Won't the cat's bed be replaced?", "Лежанку кота не заменят?"],
+    ["Isn't the cat's bed being washed now?", "Лежанку кота не моют сейчас?"],
+
+    ["My parents' car needs washing.", "Машина моих родителей нуждается в мойке."],
+    ["My parents' car needed repairs.", "Машина моих родителей нуждалась в ремонте."],
+    ["My parents' car is being serviced now.", "Машину моих родителей обслуживают сейчас."],
+
+    ["Is my sister's boyfriend nice?", "Парень моей сестры хороший?"],
+    ["Was my sister's boyfriend helpful?", "Парень моей сестры был полезным?"],
+    ["Will my sister's boyfriend come?", "Парень моей сестры придет?"],
+    ["Is my sister's boyfriend calling now?", "Парень моей сестры звонит сейчас?"],
+
+
+
+    ];
+
+let g_practice = null;
+   
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+ 
+        let editor_symbol = new EditorSymbol({callback: checkAnswer});
+
+        g_practice = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write'), 
+            el_exercise_control: document.getElementById('control'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write),
+            editor_symbol: editor_symbol
+        });
+        g_practice.genExercisesListenAndWrite();
+ 
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+ 
+function checkAnswer(value){
+    value = textNormalize(value);
+    return value==g_practice.getAnswer();
+}
+</script>    
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Preposition_of.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/Modal_verbs_can_must_should_will.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Preposition_of.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/Modal_verbs_can_must_should_will.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+        <script src="../src/js/listen.js"></script>
+        <script src="../src/js/textual_analysis.js"></script>
+        <script src="../src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

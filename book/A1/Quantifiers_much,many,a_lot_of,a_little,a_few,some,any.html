@@ -1,0 +1,948 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Pronouns for quantity: much, many, a lot of, a little, a few, some, any - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+        <link rel="stylesheet" href="../theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="quantifiers"><a class="header" href="#quantifiers">Quantifiers</a></h1>
+<p>Количественные местоимения в английском языке, это специальные слова, которые помогают обозначить, насколько чего-то много или мало.</p>
+<ul>
+<li><strong>Many</strong> (много) — перед исчисляемыми существительными во множественном числе.</li>
+<li><strong>Much</strong> (много) — перед неисчисляемыми существительными.</li>
+<li><strong>A lot of</strong> / loads of/ plenty of (много) — используется во всех случаях (как правило, в утвердительных предложениях).</li>
+<li><strong>A few</strong> (немного, несколько) — для исчисляемых существительных.</li>
+<li><strong>A little</strong> (немного, некоторое количество) — для неисчисляемых существительных.</li>
+<li><strong>Some</strong> (несколько, неопределенное количество) — используется в утвердительных предложениях с неисчисляемыми и исчисляемыми существительными во множественном числе.</li>
+<li><strong>Any</strong> (какой-нибудь, любой) — почти всегда используется либо с множественным числом исчисляемых, либо с неисчисляемыми (в единственном числе или, точнее, не имеют множественного числа в обычном смысле).</li>
+</ul>
+<h2 id="Аналоги-a-lot-of"><a class="header" href="#Аналоги-a-lot-of">Аналоги <code>a lot of</code></a></h2>
+<ul>
+<li><strong>loads of</strong> – много
+<ul>
+<li>I have loads of work to do today. – У меня куча работы сегодня.</li>
+<li>There were loads of people at the concert. – На концерте было много народу.</li>
+</ul>
+</li>
+<li><strong>a lot of</strong> – много</li>
+<li><strong>lots of</strong> – разг. много</li>
+<li><strong>plenty of</strong> – более чем достаточно</li>
+<li><strong>a great deal of</strong> – много, большое количество</li>
+</ul>
+<h2 id="many-much-a-lot-of"><a class="header" href="#many-much-a-lot-of">Many, much, a lot of</a></h2>
+<p>В современном разговорном английском языке "a lot of" чаще используется в утвердительных предложениях, в то время как "much" более формально и обычно используется в вопросительных и отрицательных предложениях.</p>
+<ul>
+<li><strong>Many</strong> (много) — перед исчисляемыми существительными во множественном числе.</li>
+<li><strong>Much</strong> (много) — перед неисчисляемыми существительными.</li>
+<li><strong>A lot of</strong> (много) — используется во всех случаях (как правило, в утвердительных предложениях).</li>
+</ul>
+<p>Примеры:</p>
+<ul>
+<li>Many (= a lot of) toys — много игрушек (toys — исчисляемое)</li>
+<li>Much (= a lot of) salt — много соли (salt — неисчисляемое)</li>
+<li>Have you got <strong>many</strong> friends? — У тебя много друзей?</li>
+<li>Yes, I've got <strong>a lot of</strong> friends. — Да, у меня много друзей.</li>
+<li>Have you got <strong>much</strong> money? — У тебя много денег? (money — неисчисляемое)</li>
+<li>No, I haven't got <strong>much</strong>. — Нет, у меня не много (денег).</li>
+<li>Peter has got <strong>a lot of</strong> money. — У Питера много денег.</li>
+</ul>
+<p>Вопрос:</p>
+<ul>
+<li>How <strong>many</strong> people are there in the room? — Сколько человек в комнате?</li>
+<li>How <strong>much</strong> milk is there in the fridge? — Сколько молока в холодильнике?</li>
+</ul>
+<h2 id="little-few"><a class="header" href="#little-few">Little, few</a></h2>
+<p>A few (немного, несколько) — для исчисляемых существительных.</p>
+<p>A little (немного, некоторое количество) — для неисчисляемых существительных.</p>
+<h4 id="few"><a class="header" href="#few">Few:</a></h4>
+<ul>
+<li>A few people — несколько людей.</li>
+<li>A few houses — несколько домов.</li>
+<li>A few books — несколько книг.</li>
+<li>A few mistakes — несколько ошибок.</li>
+<li>There are a few people here (=some people, but not many). — Здесь есть несколько человек.</li>
+<li>Your test is very good. You have very few mistakes there. — Твой тест очень хороший. Ты сделал очень мало ошибок.</li>
+<li>I've got a few friends. — У меня есть несколько друзей.</li>
+</ul>
+<h4 id="little"><a class="header" href="#little">Little:</a></h4>
+<ul>
+<li>A little money — немного денег.</li>
+<li>A little sugar — немного сахара.</li>
+<li>A little time — немного времени.</li>
+<li>A little juice — немного сока.</li>
+<li>I can speak a little Chinese. — Я немного говорю по-китайски.</li>
+<li>I can't buy this dress. I have very little money for it. — Я не могу купить это платье. У меня для этого очень мало денег.</li>
+<li>I have a little water. — У меня есть немного воды.</li>
+</ul>
+<h2 id="indefinite-pronouns-неопределенные-местоимения-some-any"><a class="header" href="#indefinite-pronouns-неопределенные-местоимения-some-any">Indefinite pronouns (неопределенные местоимения): some, any</a></h2>
+<p><strong>Some</strong> (немного, несколько, неопределенное количество) — используется в <strong>утвердительных</strong> предложениях с неисчисляемыми и исчисляемыми существительными во множественном числе.</p>
+<ul>
+<li><em>I have some friends. — У меня есть несколько друзей.</em></li>
+<li><strong>Someone / Somebody</strong> — кто-то, кто-нибудь
+<ul>
+<li><em>Someone is here. — Кто-то здесь.</em></li>
+</ul>
+</li>
+<li><strong>Something</strong> — что-то, что-нибудь.
+<ul>
+<li><em>I want something to drink. — Я хочу что-нибудь выпить.</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>Any</strong> (какой-нибудь, любой) — используется в <strong>вопросительных и отрицательных</strong> предложениях.</p>
+<ul>
+<li><em>Do you have any questions? — У вас есть какие-нибудь вопросы?</em></li>
+<li><em>There isn't any milk. — Здесь нет никакого молока.</em></li>
+<li><strong>Anyone / Anybody</strong> — кто-нибудь, никто (в отрицаниях)
+<ul>
+<li><em>Do you know anyone here? — Ты знаешь кого-нибудь здесь?</em></li>
+<li><em>I don't know anybody. — Я не знаю никого.</em></li>
+</ul>
+</li>
+<li><strong>Anything</strong> — что-нибудь, ничего (в отрицаниях)
+<ul>
+<li><em>Is there anything interesting? — Здесь есть что-нибудь интересное?</em></li>
+<li><em>I don't see anything. — Я не вижу ничего.</em></li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>Примеры:</p>
+<ul>
+<li>There are some people in the square. — На площади находятся несколько человек.</li>
+<li>There is some sugar in my cup. — В моей чашке есть немного сахара.</li>
+<li>There are some new houses in this street. — На этой улице есть несколько новых домов.</li>
+<li>There isn't any salt in the soup. — В супе нет соли.</li>
+<li>I haven't got any brothers or sisters. — У меня нет братьев и сестер.</li>
+<li>Are there any books in the bookcase? — Есть ли в книжном шкафу какие-нибудь книги?</li>
+<li>I've got some friends here. — У меня здесь есть несколько друзей.</li>
+<li>Have you got any friends here? — Yes, I have some.</li>
+</ul>
+<h3 id="Устойчивые-выражения-количества"><a class="header" href="#Устойчивые-выражения-количества">Устойчивые выражения количества</a></h3>
+<ul>
+<li>a lot of — много
+<em>There are a lot of people here.</em> — Здесь много людей.</li>
+<li>a piece of — кусок чего-либо
+<em>I want a piece of cake.</em> — Я хочу кусок торта.</li>
+<li>a bit of — немного
+<em>I need a bit of help.</em> — Мне нужна небольшая помощь.</li>
+<li>a cup of — чашка чего-либо
+<em>A cup of tea is ready.</em> — Чашка чая готова.</li>
+<li>a glass of — стакан чего-либо
+<em>A glass of water, please.</em> — Стакан воды, пожалуйста.</li>
+<li>a bottle of — бутылка чего-либо
+<em>A bottle of milk is on the table.</em> — На столе бутылка молока.</li>
+<li>a jar of — банка чего-либо
+<em>A jar of honey.</em> — Банка меда.</li>
+<li>a bag of — сумка/пакет чего-либо
+<em>A bag of apples.</em> — Сумка яблок.</li>
+<li>a box of — коробка чего-либо
+<em>A box of chocolates.</em> — Коробка шоколадок.</li>
+<li>a pair of — пара чего-либо
+<em>A pair of shoes.</em> — Пара обуви.</li>
+<li>a set of — набор чего-либо
+<em>A set of keys.</em> — Набор ключей.</li>
+</ul>
+<h2 id="Список-упражнений-и-игр-по-quantifiers"><a class="header" href="#Список-упражнений-и-игр-по-quantifiers">Список упражнений и игр по Quantifiers</a></h2>
+<p><a href="https://englishwsheets.com/some_any.html">Упражнение some any</a></p>
+<p><a href="https://www.liveworksheets.com/w/en/english-second-language-esl/170555">Quantifiers упражнения</a></p>
+<p><a href="https://www.liveworksheets.com/w/en/english-second-language-esl/943961">Quantifiers упражнения</a></p>
+<p><a href="https://www.liveworksheets.com/w/en/english-language/402196">Quantifiers упражнения</a></p>
+<p><a href="https://www.liveworksheets.com/w/en/english-second-language-esl/1007413">Quantifiers упражнения</a></p>
+<p><a href="https://www.liveworksheets.com/w/en/english-language/1112406">Quantifiers упражнения</a></p>
+<p><a href="https://www.liveworksheets.com/w/en/english-second-language-esl/890811">Quantifiers упражнения</a></p>
+<p><a href="https://wordwall.net/ru-ar/community/quantifiers">Quantifiers games</a></p>
+<p><a href="https://wordwall.net/ru-ar/community/quiz-quantifiers">Quantifiers games</a></p>
+<hr />
+<h2 id="exercise-listen-and-write-manymuch"><a class="header" href="#exercise-listen-and-write-manymuch">Exercise: listen and write: many/much</a></h2>
+<div id="control_general_many"></div>
+<div id="listen_and_write_many"></div>
+<h2 id="exercise-listen-and-write-a-lot-ofa-fewa-little"><a class="header" href="#exercise-listen-and-write-a-lot-ofa-fewa-little">Exercise: listen and write: a lot of/a few/a little</a></h2>
+<div id="control_general_few"></div>
+<div id="listen_and_write_few"></div>
+<h2 id="exercise-listen-and-write-someany-and-others"><a class="header" href="#exercise-listen-and-write-someany-and-others">Exercise: listen and write: some/any and others</a></h2>
+<div id="control_general_some"></div>
+<div id="listen_and_write_some"></div>
+<h2 id="exercise-listen-and-write-quantifiers"><a class="header" href="#exercise-listen-and-write-quantifiers">Exercise: listen and write: Quantifiers</a></h2>
+<div id="control_general_quantifiers"></div>
+<div id="listen_and_write_quantifiers"></div>
+<script>   
+
+const exercises_easy_listen_and_write_many = [
+    ["There isn't much fruit in the fridge.", "В холодильнике не много фруктов."],
+    ["He doesn't drink much milk.", "Он не пьёт много молока."],
+    ["We don't need much salt for this meal.", "Нам не нужно много соли для этого блюда."],
+    ["Do you see many cats in the street?", "Ты видишь много кошек на улице?"],
+    ["She washes many shirts every week.", "Она стирает много рубашек каждую неделю."],
+    ["I practise many dances for the show.", "Я репетирую много танцев для шоу."],
+    ["They don't have much fun on their holiday.", "Они не получают много удовольствия от своего отпуска."],
+    ["We didn't invite many people to our flat.", "Мы не пригласили много людей в нашу квартиру."],
+    ["He didn't eat much bread with his soup.", "Он не съел много хлеба с супом."],
+    ["I cleaned many desks in the office.", "Я вычистил много рабочих столов в офисе."],
+    ["Did you hear much noise from the bedroom?", "Ты слышал много шума из спальни?"],
+    ["She fixed many dresses for the party.", "Она починила много платьев для вечеринки."],
+    ["They didn't plant much grass in their garden.", "Они не посадили много травы в своем саду."],
+    ["I will not need much sugar for the drink.", "Мне не понадобится много сахара для напитка."],
+    ["We won't cook much rice for dinner.", "Мы не будем готовить много риса на ужин."],
+    ["She will paint many pictures this year.", "В этом году она напишет много картин."],
+    ["Will you have many apples from your tree?", "У тебя будет много яблок с твоего дерева?"],
+    ["He will solve many problems at work tomorrow.", "Завтра он решит много проблем на работе."],
+    ["They will not buy many vegetables at the market.", "Они не купят много овощей на рынке."],
+    ["He is not drinking much water right now.", "Он прямо сейчас не пьёт много воды."],
+    ["They are not cooking many meals today.", "Они сегодня не готовят много блюд."],
+    ["Is she making much progress in her practice?", "Она делает большой прогресс в своей практике?"],
+    ["Are you washing many hats for the trip?", "Ты стираешь много шляп для поездки?"],
+    ["He is riding many trains this month.", "В этом месяце он ездит на многих поездах."],
+    ["We don't have many holidays in January.", "У нас не много праздников в январе."],
+    ["She solves many problems at work.", "Она решает много проблем на работе."],
+    ["Does this recipe need much salt?", "В этом рецепте нужно много соли?"],
+    ["Do you have many dresses?", "У тебя много платьев?"],
+    
+    ["We didn't invite many people to the party.", "Мы не пригласили много людей на вечеринку."],
+    ["He didn't eat much fruit yesterday.", "Он не съел много фруктов вчера."],
+    ["I cleaned many desks in the classroom.", "Я вычистил много парт в классе."],
+    ["Did you have much fun at the festival?", "Вы получили много удовольствия на фестивале?"],
+    ["Did she buy many vegetables?", "Она купила много овощей?"],
+    
+    ["I will not need much sugar for the cake.", "Мне не понадобится много сахара для торта."],
+    ["They won't plant many trees in the park.", "Они не посадят много деревьев в парке."],
+    ["She will cook many meals for the guests.", "Она приготовит много блюд для гостей."],
+    ["Will you have much time tomorrow?", "У тебя будет много времени завтра?"],
+    ["Will he write many sentences?", "Он напишет много предложений?"],
+    
+    ["He is not drinking much coffee today.", "Он сегодня не пьёт много кофе."],
+    ["They are not buying many apples now.", "Они сейчас не покупают много яблок."],
+    ["I am reading many books this month.", "В этом месяце я читаю много книг."],
+    ["Is he making much noise?", "Он производит много шума?"],
+    ["Are you washing many shirts?", "Ты стираешь много рубашек?"],
+    
+    ["We don't have many apples.", "У нас не много яблок."],
+    ["He doesn't drink much milk.", "Он не пьёт много молока."],
+    ["She solves many problems at work.", "Она решает много проблем на работе."],
+    ["Does this recipe need much salt?", "В этом рецепте нужно много соли?"],
+    ["Do you have many dresses?", "У тебя много платьев?"],
+    ["I practise many sentences every day.", "Я тренирую много предложений каждый день."],
+    ["They don't need much rice for the meal.", "Им не нужно много риса для блюда."],
+    
+    ["We didn't invite many people to the party.", "Мы не пригласили много людей на вечеринку."],
+    ["He didn't eat much fruit yesterday.", "Он не съел много фруктов вчера."],
+    ["I cleaned many desks in the classroom.", "Я вычистил много парт в классе."],
+    ["Did you have much fun at the dance?", "Ты получил много удовольствия на танцах?"],
+    ["She fixed many chairs last week.", "Она починила много стульев на прошлой неделе."],
+    ["They didn't make much noise during the movie.", "Они не производили много шума во время фильма."],
+    
+    ["I will not need much sugar for the cake.", "Мне не понадобится много сахара для торта."],
+    ["They won't plant much grass in their garden.", "Они не посадят много травы в своем саду."],
+    ["She will cook many meals for the guests.", "Она приготовит много блюд для гостей."],
+    ["Will you have much time for your holiday?", "У тебя будет много времени для отпуска?"],
+    ["He will wash many shirts tomorrow.", "Он постирает много рубашек завтра."],
+    ["We will not have much bread for breakfast.", "У нас не будет много хлеба на завтрак."],
+    
+    ["He is not drinking much water today.", "Он сегодня не пьёт много воды."],
+    ["They are not buying many vegetables at the market now.", "Они сейчас не покупают много овощей на рынке."],
+    ["I am reading many books this month.", "В этом месяце я читаю много книг."],
+    ["Is he making much progress in his practice?", "Он делает много прогресса в своей практике?"],
+    ["Are you painting many pictures for the show?", "Вы пишете много картин для шоу?"],
+    ["She is answering many questions right now.", "Она прямо сейчас отвечает на много вопросов."],
+
+];
+const exercises_easy_listen_and_write_few = [
+   ["We have a lot of fruit in the fridge.", "У нас много фруктов в холодильнике."],
+    ["He doesn't drink a lot of milk.", "Он не пьёт много молока."],
+    ["Do they have a lot of noise from the neighbours?", "Они слышат много шума от соседей?"],
+    
+    ["She invited loads of people to her holiday.", "Она пригласила множество людей на свои праздники."],
+    ["He didn't make loads of sentences for practice.", "Он не составил множество предложений для практики."],
+    ["Will you need loads of apples for the meal?", "Тебе понадобится множество яблок для трапезы?"],
+    
+    ["We have plenty of time to solve the problem.", "У нас много времени, чтобы решить проблему."],
+    ["She isn't buying plenty of vegetables.", "Она не покупает много овощей."],
+    ["Are they finding plenty of addresses?", "Они находят много адресов?"],
+    
+    ["I need a few minutes to fix the desk.", "Мне нужно несколько минут, чтобы починить парту."],
+    ["She didn't write a few sentences.", "Она не написала несколько предложений."],
+    ["Will you buy a few hats?", "Ты купишь несколько шляп?"],
+    
+    ["He drinks a lot of water.", "Он пьёт много воды."],
+    ["She doesn't cook a lot of rice.", "Она не готовит много риса."],
+    ["Do you practice a lot?", "Ты много практикуешься?"],
+    
+    ["We had a lot of fun on the ocean.", "Мы получили много удовольствия в океане."],
+    ["He didn't clean a lot of bedrooms.", "Он не убирал много спален."],
+    ["Did they ride a lot of trains?", "Они проехали на многих поездах?"],
+    
+    ["She will invest a lot of money.", "Она вложит много денег."],
+    ["He won't smoke a lot.", "Он не будет много курить."],
+    ["Will they communicate a lot?", "Они будут много общаться?"],
+    
+    ["I am reading a lot of books.", "Я читаю много книг."],
+    ["He is not eating a lot of bread.", "Он не ест много хлеба."],
+    ["Are you washing a lot of shirts?", "Ты стираешь много рубашек?"],
+    
+    ["There are a few cats in the flat.", "В квартире есть несколько кошек."],
+    ["There weren't a few dances at the party.", "На вечеринке было не так уж много танцев."],
+    ["Will there be a few drinks?", "Будет несколько напитков?"],
+    
+    ["He paints a lot of pictures.", "Он рисует много картин."],
+    ["She didn't wake a lot of people.", "Она не разбудила много людей."],
+    ["Does the moon influence a lot of things?", "Луна влияет на много вещей?"],
+    
+    ["I need a few teeth fixed.", "Мне нужно починить несколько зубов."],
+    ["She didn't cook a few meals.", "Она не приготовила несколько блюд."],
+    ["Are you growing a few vegetables?", "Ты выращиваешь несколько овощей?"],
+    
+    ["I need a little salt for this meal.", "Мне нужно немного соли для этого блюда."],
+    ["She doesn't have a little time to dance.", "У неё нет немного времени потанцевать."],
+    ["Do you need a little sugar in your drink?", "Тебе нужно немного сахара в напиток?"],
+    
+    ["We have a little milk left.", "У нас осталось немного молока."],
+    ["He didn't add a little rice to the soup.", "Он не добавил немного риса в суп."],
+    ["Is there a little bread in the kitchen?", "На кухне есть немного хлеба?"],
+    
+    ["She will need a little practice to swim well.", "Ей понадобится немного практики, чтобы хорошо плавать."],
+    ["He won't have a little fun at the party.", "У него не будет немного веселья на вечеринке."],
+    ["Will you have a little time to fix the desk?", "У тебя будет немного времени починить парту?"],
+    
+    ["I am using a little paint for this dress.", "Я использую немного краски для этого платья."],
+    ["He is not feeling a little better.", "Он не чувствует себя немного лучше."],
+    ["Are you adding a little fruit to the salad?", "Ты добавляешь немного фруктов в салат?"],
+    
+    ["There is a little noise from the street.", "С улицы доносится немного шума."],
+    ["There wasn't a little grass in the garden.", "В саду не было немного травы."],
+    ["Will there be a little light tonight?", "Сегодня вечером будет немного света?"],
+    
+    ["He needs a little help to solve this problem.", "Ему нужно немного помощи, чтобы решить эту проблему."],
+    ["She didn't invite a little number of people.", "Она пригласила не маленькое количество людей."],
+    ["Does the cat need a little milk?", "Коту нужно немного молока?"],
+    
+    ["I have a little money to invest.", "У меня есть немного денег для инвестиций."],
+    ["He didn't drink a little water after practice.", "Он не выпил немного воды после тренировки."],
+    ["Are you cooking a little food for the holiday?", "Ты готовишь немного еды на праздник?"],
+
+];
+const exercises_easy_listen_and_write_some = [
+    ["I need some sugar for the cake.", "Мне нужно немного сахара для торта."],
+    ["She doesn't have any dresses for the party.", "У неё нет никаких платьев для вечеринки."],
+    ["Do you have any fruit in the fridge?", "У тебя есть какие-нибудь фрукты в холодильнике?"],
+    
+    ["We bought some apples at the market.", "Мы купили несколько яблок на рынке."],
+    ["He didn't drink any milk this morning.", "Он не пил молока этим утром."],
+    ["Did they invite any friends for the holiday?", "Они пригласили каких-нибудь друзей на праздник?"],
+    
+    ["She will cook some meals for the week.", "Она приготовит несколько блюд на неделю."],
+    ["He won't have any time to practice.", "У него не будет никакого времени на практику."],
+    ["Will you need any help to clean the flat?", "Тебе понадобится какая-нибудь помощь с уборкой квартиры?"],
+    
+    ["I am reading some interesting sentences.", "Я читаю несколько интересных предложений."],
+    ["He is not making any noise while working.", "Он не производит никакого шума во время работы."],
+    ["Are you growing any vegetables in the garden?", "Ты выращиваешь какие-нибудь овощи в саду?"],
+    
+    ["There is some milk in the bottle.", "В бутылке есть немного молока."],
+    ["There weren't any trains at that time.", "В то время не было никаких поездов."],
+    ["Will there be any drinks at the party?", "Будут ли какие-нибудь напитки на вечеринке?"],
+    
+    ["He needs some new shirts for work.", "Ему нужно несколько новых рубашек на работу."],
+    ["She didn't solve any problems yesterday.", "Она не решила никаких проблем вчера."],
+    ["Does the cat have any toys?", "У кота есть какие-нибудь игрушки?"],
+    
+    ["I have some rice left for dinner.", "У меня осталось немного риса на ужин."],
+    ["He didn't meet any people he knew.", "Он не встретил никаких знакомых людей."],
+    ["Are you waiting for any guests tonight?", "Ты ждёшь каких-нибудь гостей сегодня вечером?"],
+    
+    ["We should buy some bread and milk.", "Нам стоит купить немного хлеба и молока."],
+    ["They don't have any information about it.", "У них нет никакой информации об этом."],
+    ["Do you see any birds in the tree?", "Ты видишь каких-нибудь птиц на дереве?"],
+    
+    ["She wants to paint some pictures this weekend.", "Она хочет нарисовать несколько картин на этих выходных."],
+    ["He can't find any salt in the kitchen.", "Он не может найти соли на кухне."],
+    ["Did you wash any dresses for the trip?", "Ты постирала какие-нибудь платья для поездки?"],
+    
+    ["I have some friends.", "У меня есть несколько друзей."],
+    ["Someone is here.", "Кто-то здесь."],
+    ["I want something to drink.", "Я хочу что-нибудь выпить."],
+    ["Do you have any questions?", "У вас есть какие-нибудь вопросы?"],
+    ["There isn't any milk.", "Здесь нет никакого молока."],
+    ["Do you know anyone here?", "Ты знаешь кого-нибудь здесь?"],
+    ["I don't know anybody.", "Я не знаю никого."],
+    ["Is there anything interesting?", "Здесь есть что-нибудь интересное?"],
+    ["I don't see anything.", "Я не вижу ничего."],
+    ["I see nothing.", "Я не вижу ничего."],
+    ["Nobody knows.", "Никто не знает."],
+
+];
+
+
+
+
+
+let g_practice_many = null;
+let g_practice_few  = null;
+let g_practice_some = null;
+let g_practice_quantifiers = null;
+
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+ 
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralMany, suffix_id: 'many'});
+
+        g_practice_many = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_many'), 
+            el_exercise_control: document.getElementById('control_general_many'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_many),
+            editor_symbol: editor_symbol
+        });
+        g_practice_many.genExercisesListenAndWrite();
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralFew, suffix_id: 'few'});
+
+        g_practice_few = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_few'), 
+            el_exercise_control: document.getElementById('control_general_few'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_few),
+            editor_symbol: editor_symbol
+        });
+        g_practice_few.genExercisesListenAndWrite();
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralSome, suffix_id: 'some'});
+
+        g_practice_some = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_some'), 
+            el_exercise_control: document.getElementById('control_general_some'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_some),
+            editor_symbol: editor_symbol
+        });
+        g_practice_some.genExercisesListenAndWrite();
+ }
+  {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralQuantifiers, suffix_id: 'quantifiers'});
+        const exercises_easy_listen_and_write_quantifiers = exercises_easy_listen_and_write_many
+          .concat(exercises_easy_listen_and_write_few, exercises_easy_listen_and_write_some);
+        g_practice_quantifiers = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_quantifiers'), 
+            el_exercise_control: document.getElementById('control_general_quantifiers'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_quantifiers),
+            editor_symbol: editor_symbol
+        });
+        g_practice_quantifiers.genExercisesListenAndWrite();
+ }
+
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+ 
+function checkAnswerGeneralMany(value){
+    value = textNormalize(value);
+    return value==g_practice_many.getAnswer();
+}
+function checkAnswerGeneralFew(value){
+    value = textNormalize(value);
+    return value==g_practice_few.getAnswer();
+}
+function checkAnswerGeneralSome(value){
+    value = textNormalize(value);
+    return value==g_practice_some.getAnswer();
+}
+function checkAnswerGeneralQuantifiers(value){
+    value = textNormalize(value);
+    return value==g_practice_quantifiers.getAnswer();
+}
+</script>   
+<style>
+table {
+  margin: 0px !important;  
+  border-collapse: collapse;
+}
+</style>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/There_is,are.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/have_got.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/There_is,are.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/have_got.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+        <script src="../src/js/listen.js"></script>
+        <script src="../src/js/textual_analysis.js"></script>
+        <script src="../src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

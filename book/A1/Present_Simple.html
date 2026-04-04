@@ -1,0 +1,1135 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Present Simple - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+        <link rel="stylesheet" href="../theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="the-present-simple-tense"><a class="header" href="#the-present-simple-tense">The Present Simple Tense</a></h1>
+<p><strong>Настоящее простое время</strong></p>
+<p>Про факт, регулярное действие или периодически повторяющиеся события.</p>
+<p>Слова-маркеры:</p>
+<ul>
+<li>usually</li>
+<li>every day/morning</li>
+<li>always</li>
+<li>often</li>
+<li>sometimes</li>
+<li>rarely</li>
+<li>from time to time</li>
+<li>never</li>
+<li>once a month</li>
+<li>twice a year</li>
+<li>... (Adverbs of frequency)</li>
+</ul>
+<p>To be:</p>
+<ul>
+<li>I - am</li>
+<li>He/She/It - is</li>
+<li>We/You/They - are</li>
+</ul>
+<p>Существует четыре формы глагола:</p>
+<ul>
+<li><strong>Base Form (Базовая форма) / Infinitive without 'to'</strong></li>
+<li>Present Participle  — это когда ing-овое окончание</li>
+<li>Past Simple Form (V2) — это когда окончание +ed</li>
+<li>Past Participle (V3) — это когда окончание +ed</li>
+</ul>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Base Form (V1)</th><th style="text-align: left">3rd Person Singular (Present Simple)</th><th style="text-align: left">Past Simple (V2)</th><th style="text-align: left">Past Participle (V3)</th><th style="text-align: left">Present Participle (-ing form)</th></tr></thead><tbody>
+<tr><td style="text-align: left"><strong>be</strong> (<strong>am</strong>/<strong>are</strong>)</td><td style="text-align: left"><strong>is</strong> (для he/she/it)</td><td style="text-align: left">was/were</td><td style="text-align: left">been</td><td style="text-align: left">being</td></tr>
+<tr><td style="text-align: left"><strong>do</strong></td><td style="text-align: left"><strong>does</strong></td><td style="text-align: left">did</td><td style="text-align: left">done</td><td style="text-align: left">doing</td></tr>
+<tr><td style="text-align: left"><strong>go</strong></td><td style="text-align: left"><strong>goes</strong></td><td style="text-align: left">went</td><td style="text-align: left">gone</td><td style="text-align: left">going</td></tr>
+<tr><td style="text-align: left"><strong>can</strong></td><td style="text-align: left"><strong>can</strong></td><td style="text-align: left">could</td><td style="text-align: left">(been able to)</td><td style="text-align: left">(being able to)</td></tr>
+<tr><td style="text-align: left"><strong>get</strong></td><td style="text-align: left"><strong>gets</strong></td><td style="text-align: left">got</td><td style="text-align: left">got/gotten</td><td style="text-align: left">getting</td></tr>
+<tr><td style="text-align: left"><strong>make</strong></td><td style="text-align: left"><strong>makes</strong></td><td style="text-align: left">made</td><td style="text-align: left">made</td><td style="text-align: left">making</td></tr>
+<tr><td style="text-align: left"><strong>have</strong></td><td style="text-align: left"><strong>has</strong></td><td style="text-align: left">had</td><td style="text-align: left">had</td><td style="text-align: left">having</td></tr>
+<tr><td style="text-align: left">...</td><td style="text-align: left"></td><td style="text-align: left"></td><td style="text-align: left"></td><td style="text-align: left"></td></tr>
+</tbody></table>
+</div>
+<h2 id="Утверждение"><a class="header" href="#Утверждение">Утверждение</a></h2>
+<p>Актив:</p>
+<div class="mdbook-callouts mdbook-callouts-tip">
+<p class="mdbook-callouts-title">
+  <span class="mdbook-callouts-icon"></span>
+  tip
+</p>
+<p><strong>I</strong>/<strong>We</strong>/<strong>You</strong>/<strong>They + V1</strong></p>
+<p><strong>She</strong>/<strong>He</strong>/<strong>It + V1</strong> (+s,+es,+ies)</p>
+</div>
+<ul>
+<li><em>I am at home. — Я дома.</em></li>
+<li><em>You are here. — Ты здесь. / Вы здесь.</em></li>
+<li><em>He is a doctor. — Он врач.</em></li>
+<li><em>I have a car. — У меня есть машина.</em></li>
+<li><em>He has a new job. — У него есть новая работа.</em></li>
+<li><em>I do my homework. — Я делаю свою домашнюю работу.</em></li>
+<li><em>He does the shopping. — Он делает покупки (ходит за продуктами).</em></li>
+<li><em>They go to school every day. — Они ходят в школу каждый день.</em></li>
+<li><em>She goes to the gym. — Она ходит в спортзал.</em></li>
+<li><em>I get up early. — Я встаю рано.</em></li>
+<li><em>He gets tired quickly. — Он быстро устает.</em></li>
+<li><em>You make delicious cakes. — Ты делаешь вкусные торты. / Вы делаете вкусные торты.</em></li>
+<li><em>This company makes cars. — Эта компания производит автомобили.</em></li>
+<li><em>I can swim. — Я умею плавать. / Я могу плавать.</em></li>
+<li><em>He can speak French. — Он умеет говорить по-французски. / Он может говорить по-французски.</em></li>
+<li><em>I try → She tries — Она пытается.</em></li>
+<li><em>I play → He plays — Он играет.</em> (не в данный момент, а вообще)</li>
+<li><em>She brings me coffee every morning — Утром она приносит мне кофе.</em></li>
+<li><em>The Earth goes round the Sun. — Земля вращается вокруг Солнца.</em></li>
+<li><em>My brother always gets up early. — Мой брат всегда встает рано.</em></li>
+<li><em>I usually go to bed at 21:00 — Я обычно ложусь спать в 21:00.</em></li>
+<li><em>We often watch TV in the evening. — Мы часто смотрим телевизор вечером.</em></li>
+<li><em>My father sometimes plays tennis. — Мой отец иногда играет в теннис.</em></li>
+<li><em>I very seldom go to the cinema. — Я очень редко хожу в кино.</em></li>
+<li><em>My sister never plays football. — Моя сестра никогда не играет в футбол.</em></li>
+<li><em>The train arrives at 3:45. — Поезд прибывает в 3:45.</em></li>
+<li><em>Every day Barky walks in the garden. — Каждый день Барки гуляет по саду.</em></li>
+</ul>
+<p>Пассив:</p>
+<div class="mdbook-callouts mdbook-callouts-tip">
+<p class="mdbook-callouts-title">
+  <span class="mdbook-callouts-icon"></span>
+  tip
+</p>
+<p><strong>I am + V3 (+ed)</strong></p>
+<p><strong>He</strong>/<strong>She</strong>/<strong>It is + V3 (+ed)</strong></p>
+<p><strong>You</strong>/<strong>We</strong>/<strong>They are + V3 (+ed)</strong></p>
+</div>
+<ul>
+<li><em>The house is built — Дом построен.</em></li>
+</ul>
+<h2 id="Вопрос"><a class="header" href="#Вопрос">Вопрос</a></h2>
+<p>Актив:</p>
+<div class="mdbook-callouts mdbook-callouts-tip">
+<p class="mdbook-callouts-title">
+  <span class="mdbook-callouts-icon"></span>
+  tip
+</p>
+<p><strong>Do + I</strong>/<strong>we</strong>/<strong>you</strong>/<strong>they + V?</strong></p>
+<p><strong>Does + he</strong>/<strong>she</strong>/<strong>it + V?</strong></p>
+</div>
+<p><strong>где - V это V1, но без окончания <code>-s</code>, т.е. Does забирает на себя весь смысл, поэтому глагол play для he/she/it остается play</strong></p>
+<ul>
+<li><em>Am I late?</em> — Я опоздал(а)?</li>
+<li><em>Are you ready?</em> — Ты готов? / Вы готовы?</li>
+<li><em>Is he at work?</em> — Он на работе?</li>
+<li><em>Have you a car?</em> — У тебя есть машина? (Устаревший/формальный вариант)</li>
+<li><em>Has she a cat?</em> — У неё есть кот? (Устаревший/формальный вариант)</li>
+<li><em>Do you do exercises?</em> — Ты делаешь упражнения?</li>
+<li><em>Does she do the dishes?</em> — Она моет посуду?</li>
+<li><em>Do you go to the cinema often?</em> — Ты часто ходишь в кино?</li>
+<li><em>Does he go to work by bus?</em> — Он ездит на работу на автобусе?</li>
+<li><em>Do you get many emails?</em> — Ты получаешь много писем?</li>
+<li><em>Does it get cold in winter?</em> — Здесь становится холодно зимой?</li>
+<li><em>Do they make a lot of noise?</em> — Они сильно шумят?</li>
+<li><em>Does he make his bed?</em> — Он заправляет свою кровать?</li>
+<li><em>Can you help me?</em> — Ты можешь мне помочь?</li>
+<li><em>Can she drive?</em> — Она умеет водить машину?</li>
+<li><em>Do you like pizza? Yes, I do. — Тебе нравится пицца? Да.</em></li>
+<li><em>Does he like Spain? Yes, he does. — Ему нравится в Испании? Да.</em></li>
+<li><em>Do you go to school? Yes, I do. — Ты ходишь в школу? Да.</em></li>
+<li><em>Do you like milk? No, I don't. — Тебе нравится молоко? Нет.</em></li>
+<li><em>Does your brother speak English? No, he doesn't. — Твой брат говорит по-английски? Нет.</em></li>
+<li><em>Does he play football on Sundays? Yes, he does. — Он играет в футбол по воскресеньям? Да.</em></li>
+<li><em>When do your classes finish? — Когда заканчиваются твои занятия?</em></li>
+</ul>
+<p>Так как вспомогательный глагол do/does не переводится, и если нам нужен смысловой do (делать/заниматься), то пишем их дважды:</p>
+<ul>
+<li><em>Do you do sports? — Ты занимаешься спортом?</em></li>
+<li><em>What does he usually do in the evening? — Что он обычно делает по вечерам?</em></li>
+</ul>
+<p>Пассив:</p>
+<div class="mdbook-callouts mdbook-callouts-tip">
+<p class="mdbook-callouts-title">
+  <span class="mdbook-callouts-icon"></span>
+  tip
+</p>
+<p><strong>I am + V3 (+ed)</strong></p>
+<p><strong>He</strong>/<strong>She</strong>/<strong>It is + V3</strong> (+ed)</p>
+<p><strong>You</strong>/<strong>We</strong>/<strong>They are + V3</strong> (+ed)</p>
+</div>
+<ul>
+<li><em>Is the house sold? — Этот дом продан?</em></li>
+</ul>
+<h2 id="Отрицание"><a class="header" href="#Отрицание">Отрицание</a></h2>
+<p>Актив:</p>
+<div class="mdbook-callouts mdbook-callouts-tip">
+<p class="mdbook-callouts-title">
+  <span class="mdbook-callouts-icon"></span>
+  tip
+</p>
+<p><strong>I</strong>/<strong>We</strong>/<strong>You</strong>/<strong>They + do not(don't) + V</strong></p>
+<p><strong>She</strong>/<strong>He</strong>/<strong>It + does not(doesn't) + V</strong></p>
+</div>
+<p><strong>V - т.е. does забирает у глагола для третьего лица (he/she/it) окончание <code>-s</code></strong></p>
+<ul>
+<li><em>I am not tired.</em> — Я не устал(а).</li>
+<li><em>You are not (aren't) students.</em> — Вы не студенты.</li>
+<li><em>She is not (isn't) happy.</em> — Она не счастлива.</li>
+<li><em>I have not (haven't) a brother.</em> — У меня нет брата. (Устаревший/формальный вариант)</li>
+<li><em>She has not (hasn't) a dog.</em> — У неё нет собаки. (Устаревший/формальный вариант)</li>
+<li><em>We do not (don't) do much on Sundays.</em> — Мы мало чем занимаемся по воскресеньям.</li>
+<li><em>It does not (doesn't) do anything.</em> — Он (оно) ничего не делает.</li>
+<li><em>I do not (don't) go there.</em> — Я не хожу туда.</li>
+<li><em>My cat does not (doesn't) go outside.</em> — Мой кот не выходит на улицу.</li>
+<li><em>We do not (don't) get much snow.</em> — У нас не бывает много снега.</li>
+<li><em>She does not (doesn't) get the joke.</em> — Она не понимает эту шутку.</li>
+<li><em>I do not (don't) make mistakes.</em> — Я не делаю ошибок.</li>
+<li><em>The machine does not (doesn't) make coffee.</em> — Этот аппарат не готовит кофе.</li>
+<li><em>They cannot (can't) come.</em> — Они не могут прийти.</li>
+<li><em>It cannot (can't) be true.</em> — Это не может быть правдой.</li>
+<li><em>They don't drink beer - Они не пьют пиво.</em></li>
+<li><em>I do not get up early. - Я не встаю рано.</em></li>
+<li><em>They do not drink tea. - Они не пьют чай.</em></li>
+<li><em>He does not play football. - Он не играет в футбол.</em></li>
+<li><em>She does not like fish. - Она не любит рыбу.</em></li>
+<li><em>We don't work. - Мы не работаем.</em></li>
+<li><em>My brother doesn't like eggs. - Мой брат не любит яиц.</em></li>
+</ul>
+<p>Так как вспомогательный глагол do/does не переводится, и нам нужен смысловой do - делать, то пишем их дважды:</p>
+<ul>
+<li><em>I do not do my homework on Sundays - Я не делаю домашнее задание по воскресеньям.</em></li>
+<li><em>She does not do sports. - Она не занимается спортом.</em></li>
+</ul>
+<p>Пассив:</p>
+<div class="mdbook-callouts mdbook-callouts-tip">
+<p class="mdbook-callouts-title">
+  <span class="mdbook-callouts-icon"></span>
+  tip
+</p>
+<p><strong>I am not (amn't/ain't) + V3 (+ed)</strong></p>
+<p><strong>He</strong>/<strong>She</strong>/<strong>It is not(isn't) + V3</strong> (+ed)</p>
+<p><strong>You</strong>/<strong>We</strong>/<strong>They are not(aren't) + V3</strong> (+ed)</p>
+</div>
+<ul>
+<li><em>The flowers are not watered - Цветы не поливают.</em></li>
+</ul>
+<h2 id="Наречия-частоты-в-present-simple"><a class="header" href="#Наречия-частоты-в-present-simple">Наречия частоты в Present Simple</a></h2>
+<p>Наречия частоты используются для того, чтобы показать, как часто происходит действие. В Present Simple эти наречия особенно важны для описания привычек, регулярных или повторяющихся действий.</p>
+<p>Основные наречия частоты:</p>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: left">Наречие</th><th style="text-align: left">Перевод</th><th style="text-align: left">Частота</th></tr></thead><tbody>
+<tr><td style="text-align: left">Always</td><td style="text-align: left">всегда</td><td style="text-align: left">100%</td></tr>
+<tr><td style="text-align: left">Usually</td><td style="text-align: left">обычно</td><td style="text-align: left">90%</td></tr>
+<tr><td style="text-align: left">Often</td><td style="text-align: left">часто</td><td style="text-align: left">70%</td></tr>
+<tr><td style="text-align: left">Sometimes</td><td style="text-align: left">иногда</td><td style="text-align: left">50%</td></tr>
+<tr><td style="text-align: left">Rarely</td><td style="text-align: left">редко</td><td style="text-align: left">20%</td></tr>
+<tr><td style="text-align: left">Seldom</td><td style="text-align: left">редко</td><td style="text-align: left">10%</td></tr>
+<tr><td style="text-align: left">Never</td><td style="text-align: left">никогда</td><td style="text-align: left">0%</td></tr>
+</tbody></table>
+</div>
+<h4 id="Порядок-слов-с-наречиями-частоты"><a class="header" href="#Порядок-слов-с-наречиями-частоты">Порядок слов с наречиями частоты:</a></h4>
+<p>Наречия частоты ставятся перед основным глаголом, но после глагола "to be".</p>
+<p>Примеры:</p>
+<ul>
+<li><em>I <strong>always</strong> drink coffee in the morning.</em></li>
+<li><em>He is <strong>never</strong> late.</em></li>
+</ul>
+<p>Примеры с наречиями частоты:</p>
+<ul>
+<li><em>She <strong>always</strong> brushes her teeth before bed.</em></li>
+<li><em>We <strong>usually</strong> go to the park on Sundays.</em></li>
+<li><em>He <strong>often</strong> visits his grandparents.</em></li>
+<li><em>They <strong>sometimes</strong> watch movies together.</em></li>
+<li><em>She <strong>rarely</strong> eats out.</em></li>
+<li><em>I <strong>never</strong> smoke.</em></li>
+</ul>
+<p><strong>Можно ли ставить наречие частоты в начале или конце предложения?</strong></p>
+<p>Да, такие наречия, как sometimes и usually, могут стоять в начале предложения для усиления.</p>
+<p>Пример: <em><strong>Sometimes</strong> I go for a walk in the evening. — Иногда я гуляю по вечерам.</em> (Но обычно это характерно для разговорного стиля.)</p>
+<p><strong>Частотные фразы (например, once a week, twice a month):</strong></p>
+<p>Эти фразы обычно ставятся в конце предложения:
+Пример: <em>I go to the gym <strong>twice a week</strong>. — Я хожу в спортзал дважды в неделю.</em></p>
+<details>
+<summary>Примеры:</summary>
+<pre><code>I have a blue color. — У меня есть синий цвет.
+Do you have a wife? — У тебя есть жена?
+He does not have a son. — У него нет сына.
+
+I do my work. — Я делаю свою работу.
+Do you do this test? — Ты делаешь этот тест?
+She does not do the test. — Она не делает тест.
+
+I say your name. — Я говорю твое имя.
+Do you say "hello"? — Ты говоришь "привет"?
+He does not say that. — Он не говорит этого.
+
+We go to town. — Мы едем в город.
+Do you go to the park? — Вы ходите в парк?
+She does not go to the hospital. — Она не ходит в больницу.
+
+I get a letter. — Я получаю письмо.
+Do you get good marks? — Ты получаешь хорошие оценки?
+He does not get the paper. — Он не получает газету.
+
+They make a movie. — Они снимают фильм.
+Do you make a picture? — Ты рисуешь картину?
+She does not make a test. — Она не делает тест.
+
+I know this doctor. — Я знаю этого врача.
+Do you know my brother? — Ты знаешь моего брата?
+He does not know the player. — Он не знает этого игрока.
+
+We think about summer. — Мы думаем о лете.
+Do you think about your daughter? — Ты думаешь о своей дочери?
+She does not think about the film. — Она не думает о фильме.
+
+I see a tree. — Я вижу дерево.
+Do you see the window? — Ты видишь окно?
+He does not see the board. — Он не видит доску.
+
+You take a phone. — Ты берешь телефон.
+Do you take the paper? — Вы берете газету?
+She does not take the letter. — Она не берет письмо.
+
+They come home. — Они приходят домой.
+Do you come to the hospital? — Вы приходите в больницу?
+He does not come to the park. — Он не приходит в парк.
+
+I find my phone. — Я нахожу свой телефон.
+Do you find the road? — Ты находишь дорогу?
+She does not find the test. — Она не находит тест.
+
+We give a present. — Мы дарим подарок.
+Do you give her a letter? — Ты даешь ей письмо?
+He does not give money. — Он не дает деньги.
+
+I tell a story. — Я рассказываю историю.
+Do you tell him about the test? — Ты рассказываешь ему о тесте?
+She does not tell stories. — Она не рассказывает истории.
+
+They feel the summer. — Они чувствуют лето.
+Do you feel the sun? — Ты чувствуешь солнце?
+He does not feel well. — Он плохо себя чувствует.
+
+We leave the town. — Мы уезжаем из города.
+Do you leave the park? — Вы уходите из парка?
+She does not leave the hospital. — Она не уходит из больницы.
+
+I put the book on the board. — Я кладу книгу на доску.
+Do you put the plant on the floor? — Ты ставишь растение на пол?
+He does not put the picture on the wall. — Он не вешает картину на стену.
+
+The film begins at 5 o'clock. — Фильм начинается в 5 часов.
+Does the summer begin in June? — Лето начинается в июне?
+The test does not begin now. — Тест не начинается сейчас.
+
+You show me your photo. — Ты показываешь мне свое фото.
+Do you show him the picture? — Ты показываешь ему картину?
+She does not show her hair. — Она не показывает свои волосы.
+
+I hear a baby. — Я слышу ребенка.
+Do you hear the player? — Ты слышишь игрока?
+He does not hear the phone. — Он не слышит телефон.
+ 
+I have a red bag. — У меня есть красная сумка.
+Do you have a daughter? — У тебя есть дочь?
+He does not have a husband. — У него нет мужа.
+
+I do my project. — Я делаю свой проект.
+Do you do sports? — Ты занимаешься спортом?
+She does not do the dishes. — Она не моет посуду.
+
+I say the answer. — Я говорю ответ.
+Do you say "thank you"? — Ты говоришь "спасибо"?
+He does not say my name. — Он не говорит мое имя.
+
+We go to the road. — Мы идем к дороге.
+Do you go to the cinema? — Вы ходите в кино?
+She does not go to work. — Она не ходит на работу.
+
+I get a present. — Я получаю подарок.
+Do you get good marks? — Ты получаешь хорошие оценки?
+He does not get the message. — Он не получает сообщение.
+
+They make a cake. — Они делают торт.
+Do you make a sandwich? — Ты делаешь бутерброд?
+She does not make a mistake. — Она не делает ошибку.
+
+I know this town. — Я знаю этот город.
+Do you know the way? — Ты знаешь дорогу?
+He does not know the answer. — Он не знает ответ.
+
+We think about the future. — Мы думаем о будущем.
+Do you think about your work? — Ты думаешь о своей работе?
+She does not think about it. — Она не думает об этом.
+
+I see a bird. — Я вижу птицу.
+Do you see the house? — Ты видишь дом?
+He does not see the car. — Он не видит машину.
+
+You take a pen. — Ты берешь ручку.
+Do you take the bus? — Ты едешь на автобусе?
+She does not take sugar. — Она не берет сахар.
+
+They come to the party. — Они приходят на вечеринку.
+Do you come from London? — Ты из Лондона?
+He does not come to school. — Он не приходит в школу.
+
+I find my keys. — Я нахожу свои ключи.
+Do you find the time? — Ты находишь время?
+She does not find her book. — Она не находит свою книгу.
+
+We give help. — Мы оказываем помощь.
+Do you give help? — Ты помогаешь?
+He does not give presents. — Он не дарит подарки.
+
+I tell a joke. — Я рассказываю шутку.
+Do you tell stories? — Ты рассказываешь истории?
+She does not tell secrets. — Она не выдает секреты.
+
+They feel happy. — Они чувствуют себя счастливыми.
+Do you feel cold? — Тебе холодно?
+He does not feel sad. — Он не чувствует грусть.
+
+We leave the house. — Мы уходим из дома.
+Do you leave work early? — Ты уходишь с работы рано?
+She does not leave her room. — Она не выходит из своей комнаты.
+
+I put the cup on the table. — Я ставлю чашку на стол.
+Do you put milk in your tea? — Ты кладешь молоко в чай?
+He does not put his clothes away. — Он не убирает свою одежду.
+
+The lesson begins at nine. — Урок начинается в девять.
+Does the game begin now? — Игра начинается сейчас?
+The film does not begin late. — Фильм не начинается поздно.
+
+You show your passport. — Ты показываешь свой паспорт.
+Do you show him the way? — Ты показываешь ему дорогу?
+She does not show her feelings. — Она не показывает свои чувства.
+
+I hear music. — Я слышу музыку.
+Do you hear the birds? — Ты слышишь птиц?
+He does not hear the question. — Он не слышит вопрос.
+
+I fall down often. – Я часто падаю.
+The ball falls fast. – Мяч падает быстро.
+My friend does not fall here. – Мой друг не падает здесь.
+</code></pre>
+</details>
+<h2 id="exercise-listen-and-write"><a class="header" href="#exercise-listen-and-write">Exercise: listen and write</a></h2>
+<div id="control"></div>
+<div id="listen_and_write"></div>
+<script>
+
+const exercises_easy_listen_and_write = [
+    ["I have a blue color.", "У меня есть синий цвет."],
+    ["Do you have a wife?", "У тебя есть жена?"],
+    ["He does not have a son.", "У него нет сына."],
+    ["I do my work.", "Я делаю свою работу."],
+    ["Do you do this test?", "Ты делаешь этот тест?"],
+    ["She does not do the test.", "Она не делает тест."],
+    ["I say your name.", "Я говорю твое имя."],
+    ["Do you say \"hello\"?", "Ты говоришь \"привет\"?"],
+    ["He does not say that.", "Он не говорит этого."],
+    ["We go to town.", "Мы едем в город."],
+    ["Do you go to the park?", "Вы ходите в парк?"],
+    ["She does not go to the hospital.", "Она не ходит в больницу."],
+    ["I get a letter.", "Я получаю письмо."],
+    ["Do you get good marks?", "Ты получаешь хорошие оценки?"],
+    ["He does not get the paper.", "Он не получает газету."],
+    ["They make a movie.", "Они снимают фильм."],
+    ["Do you make a picture?", "Ты рисуешь картину?"],
+    ["She does not make a test.", "Она не делает тест."],
+    ["I know this doctor.", "Я знаю этого врача."],
+    ["Do you know my brother?", "Ты знаешь моего брата?"],
+    ["He does not know the player.", "Он не знает этого игрока."],
+    ["We think about summer.", "Мы думаем о лете."],
+    ["Do you think about your daughter?", "Ты думаешь о своей дочери?"],
+    ["She does not think about the film.", "Она не думает о фильме."],
+    ["I see a tree.", "Я вижу дерево."],
+    ["Do you see the window?", "Ты видишь окно?"],
+    ["He does not see the board.", "Он не видит доску."],
+    ["You take a phone.", "Ты берешь телефон."],
+    ["Do you take the paper?", "Вы берете газету?"],
+    ["She does not take the letter.", "Она не берет письмо."],
+    ["They come home.", "Они приходят домой."],
+    ["Do you come to the hospital?", "Вы приходите в больницу?"],
+    ["He does not come to the park.", "Он не приходит в парк."],
+    ["I find my phone.", "Я нахожу свой телефон."],
+    ["Do you find the road?", "Ты находишь дорогу?"],
+    ["She does not find the test.", "Она не находит тест."],
+    ["We give a present.", "Мы дарим подарок."],
+    ["Do you give her a letter?", "Ты даешь ей письмо?"],
+    ["He does not give money.", "Он не дает деньги."],
+    ["I tell a story.", "Я рассказываю историю."],
+    ["Do you tell him about the test?", "Ты рассказываешь ему о тесте?"],
+    ["She does not tell stories.", "Она не рассказывает истории."],
+    ["They feel the summer.", "Они чувствуют лето."],
+    ["Do you feel the sun?", "Ты чувствуешь солнце?"],
+    ["He does not feel well.", "Он плохо себя чувствует."],
+    ["We leave the town.", "Мы уезжаем из города."],
+    ["Do you leave the park?", "Вы уходите из парка?"],
+    ["She does not leave the hospital.", "Она не уходит из больницы."],
+    ["I put the book on the board.", "Я кладу книгу на доску."],
+    ["Do you put the plant on the floor?", "Ты ставишь растение на пол?"],
+    ["He does not put the picture on the wall.", "Он не вешает картину на стену."],
+    ["The film begins at 5 o'clock.", "Фильм начинается в 5 часов."],
+    ["Does the summer begin in June?", "Лето начинается в июне?"],
+    ["The test does not begin now.", "Тест не начинается сейчас."],
+    ["You show me your photo.", "Ты показываешь мне свое фото."],
+    ["Do you show him the picture?", "Ты показываешь ему картину?"],
+    ["She does not show her hair.", "Она не показывает свои волосы."],
+    ["I hear a baby.", "Я слышу ребенка."],
+    ["Do you hear the player?", "Ты слышишь игрока?"],
+    ["He does not hear the phone.", "Он не слышит телефон."],
+    ["I have a red bag.", "У меня есть красная сумка."],
+    ["Do you have a daughter?", "У тебя есть дочь?"],
+    ["He does not have a husband.", "У него нет мужа."],
+    ["I do my project.", "Я делаю свой проект."],
+    ["Do you do sports?", "Ты занимаешься спортом?"],
+    ["She does not do the dishes.", "Она не моет посуду."],
+    ["I say the answer.", "Я говорю ответ."],
+    ["Do you say \"thank you\"?", "Ты говоришь \"спасибо\"?"],
+    ["He does not say my name.", "Он не говорит мое имя."],
+    ["We go to the road.", "Мы идем к дороге."],
+    ["Do you go to the cinema?", "Вы ходите в кино?"],
+    ["She does not go to work.", "Она не ходит на работу."],
+    ["I get a present.", "Я получаю подарок."],
+    ["Do you get good marks?", "Ты получаешь хорошие оценки?"],
+    ["He does not get the message.", "Он не получает сообщение."],
+    ["They make a cake.", "Они делают торт."],
+    ["Do you make a sandwich?", "Ты делаешь бутерброд?"],
+    ["She does not make a mistake.", "Она не делает ошибку."],
+    ["I know this town.", "Я знаю этот город."],
+    ["Do you know the way?", "Ты знаешь дорогу?"],
+    ["He does not know the answer.", "Он не знает ответ."],
+    ["We think about the future.", "Мы думаем о будущем."],
+    ["Do you think about your work?", "Ты думаешь о своей работе?"],
+    ["She does not think about it.", "Она не думает об этом."],
+    ["I see a bird.", "Я вижу птицу."],
+    ["Do you see the house?", "Ты видишь дом?"],
+    ["He does not see the car.", "Он не видит машину."],
+    ["You take a pen.", "Ты берешь ручку."],
+    ["Do you take the bus?", "Ты едешь на автобусе?"],
+    ["She does not take sugar.", "Она не берет сахар."],
+    ["They come to the party.", "Они приходят на вечеринку."],
+    ["Do you come from London?", "Ты из Лондона?"],
+    ["He does not come to school.", "Он не приходит в школу."],
+    ["I find my keys.", "Я нахожу свои ключи."],
+    ["Do you find the time?", "Ты находишь время?"],
+    ["She does not find her book.", "Она не находит свою книгу."],
+    ["We give help.", "Мы оказываем помощь."],
+    ["Do you give help?", "Ты помогаешь?"],
+    ["He does not give presents.", "Он не дарит подарки."],
+    ["I tell a joke.", "Я рассказываю шутку."],
+    ["Do you tell stories?", "Ты рассказываешь истории?"],
+    ["She does not tell secrets.", "Она не выдает секреты."],
+    ["They feel happy.", "Они чувствуют себя счастливыми."],
+    ["Do you feel cold?", "Тебе холодно?"],
+    ["He does not feel sad.", "Он не чувствует грусть."],
+    ["We leave the house.", "Мы уходим из дома."],
+    ["Do you leave work early?", "Ты уходишь с работы рано?"],
+    ["She does not leave her room.", "Она не выходит из своей комнаты."],
+    ["I put the cup on the table.", "Я ставлю чашку на стол."],
+    ["Do you put milk in your tea?", "Ты кладешь молоко в чай?"],
+    ["He does not put his clothes away.", "Он не убирает свою одежду."],
+    ["The lesson begins at nine.", "Урок начинается в девять."],
+    ["Does the game begin now?", "Игра начинается сейчас?"],
+    ["The film does not begin late.", "Фильм не начинается поздно."],
+    ["You show your passport.", "Ты показываешь свой паспорт."],
+    ["Do you show him the way?", "Ты показываешь ему дорогу?"],
+    ["She does not show her feelings.", "Она не показывает свои чувства."],
+    ["I hear music.", "Я слышу музыку."],
+    ["Do you hear the birds?", "Ты слышишь птиц?"],
+    ["He does not hear the question.", "Он не слышит вопрос."],
+    ["I fall down often.", "Я часто падаю."],
+    ["The ball falls fast.", "Мяч падает быстро."],
+    ["My friend does not fall here.", "Мой друг не падает здесь."],
+    ["I run to the station every morning.", "Я бегу на станцию каждое утро."],
+    ["Do you run in the park?", "Ты бегаешь в парке?"],
+    ["He does not run in the evening.", "Он не бегает вечером."],
+    ["I write the answer on the page.", "Я пишу ответ на странице."],
+    ["Do you write notes in April?", "Ты пишешь заметки в апреле?"],
+    ["She does not write songs.", "Она не пишет песни."],
+    ["We sit on the chair.", "Мы сидим на стуле."],
+    ["Do you sit on the bed?", "Ты сидишь на кровати?"],
+    ["He does not sit in the museum.", "Он не сидит в музее."],
+    ["I meet my sister at the bank.", "Я встречаю свою сестру в банке."],
+    ["Do you meet friends in November?", "Ты встречаешь друзей в ноябре?"],
+    ["She does not meet her teacher.", "Она не встречает своего учителя."],
+    ["He pays dollars in the store.", "Он платит доллары в магазине."],
+    ["Do you pay for the sport?", "Ты платишь за спорт?"],
+    ["She does not pay for the cup.", "Она не платит за чашку."],
+    ["We learn English language.", "Мы учим английский язык."],
+    ["Do you learn new words?", "Ты учишь новые слова?"],
+    ["He does not learn the song.", "Он не учит песню."],
+    ["I understand the example.", "Я понимаю пример."],
+    ["Do you understand the question?", "Ты понимаешь вопрос?"],
+    ["She does not understand the note.", "Она не понимает заметку."],
+    ["He speaks this language.", "Он говорит на этом языке."],
+    ["Do you speak about animals?", "Ты говоришь о животных?"],
+    ["She does not speak on the radio.", "Она не говорит по радио."],
+    ["I read the page.", "Я читаю страницу."],
+    ["Do you read books in the evening?", "Ты читаешь книги вечером?"],
+    ["He does not read the note.", "Он не читает записку."],
+    ["She buys a glass in the store.", "Она покупает стакан в магазине."],
+    ["Do you buy fish in April?", "Ты покупаешь рыбу в апреле?"],
+    ["He does not buy a ball.", "Он не покупает мяч."],
+    ["I send the letter to the bank.", "Я отправляю письмо в банк."],
+    ["Do you send notes to your sister?", "Ты отправляешь заметки своей сестре?"],
+    ["She does not send the box.", "Она не отправляет коробку."],
+    ["He drives to the station.", "Он едет на машине на станцию."],
+    ["Do you drive to the museum?", "Ты едешь в музей?"],
+    ["She does not drive in November.", "Она не водит машину в ноябре."],
+    ["She wears a sport t-shirt.", "Она носит спортивную футболку."],
+    ["Do you wear glasses?", "Ты носишь очки?"],
+    ["He does not wear a hat in April.", "Он не носит шляпу в апреле."],
+    ["We eat fish in the evening.", "Мы едим рыбу вечером."],
+    ["Do you eat animals?", "Ты ешь животных?"],
+    ["She does not eat from this glass.", "Она не ест из этого стакана."],
+    ["He teaches English language.", "Он преподает английский язык."],
+    ["Do you teach your dog?", "Ты учишь свою собаку?"],
+    ["She does not teach sport.", "Она не преподает спорт."],
+    ["I catch the ball.", "Я ловлю мяч."],
+    ["Do you catch fish in the river?", "Ты ловишь рыбу в реке?"],
+    ["He does not catch the animal.", "Он не ловит животное."],
+    ["She draws the sun.", "Она рисует солнце."],
+    ["Do you draw on the page?", "Ты рисуешь на странице?"],
+    ["He does not draw chairs.", "Он не рисует стулья."],
+    ["We choose the answer.", "Мы выбираем ответ."],
+    ["Do you choose the song?", "Ты выбираешь песню?"],
+    ["She does not choose the subject.", "Она не выбирает предмет."],
+    ["They fight in the sport.", "Они дерутся в спорте."],
+    ["Do you fight with your sister?", "Ты дерешься со своей сестрой?"],
+    ["He does not fight with the dog.", "Он не дерется с собакой."],
+    ["I forget the words.", "Я забываю слова."],
+    ["Do you forget the examples?", "Ты забываешь примеры?"],
+    ["She does not forget the song.", "Она не забывает песню."],
+    ["He flies to another bank.", "Он летает в другой банк."],
+    ["Do you fly in November?", "Ты летаешь в ноябре?"],
+    ["She does not fly to the river.", "Она не летает к реке."],
+    ["She sings a song on the radio.", "Она поет песню по радио."],
+    ["Do you sing in the evening?", "Ты поешь вечером?"],
+    ["He does not sing about animals.", "Он не поет о животных."],
+    ["We sleep in the bed.", "Мы спим в кровати."],
+    ["Do you sleep at the station?", "Ты спишь на станции?"],
+    ["She does not sleep in the chair.", "Она не спит в кресле."],
+    ["He drinks from the glass.", "Он пьет из стакана."],
+    ["Do you drink in the museum?", "Ты пьешь в музее?"],
+    ["She does not drink from the cup.", "Она не пьет из чашки."],
+    ["I ride a bike to the river.", "Я еду на велосипеде к реке."],
+    ["Do you ride in the sport?", "Ты катаешься в спорте?"],
+    ["He does not ride in April.", "Он не катается в апреле."],
+    ["She wakes at the station.", "Она просыпается на станции."],
+    ["Do you wake in the evening?", "Ты просыпаешься вечером?"],
+    ["He does not wake his sister.", "Он не будит свою сестру."],
+    ["We swim in the river.", "Мы плаваем в реке."],
+    ["Do you swim in November?", "Ты плаваешь в ноябре?"],
+    ["She does not swim with the dog.", "Она не плавает с собакой."]
+];
+
+let g_practice = null;
+   
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+ 
+        let editor_symbol = new EditorSymbol({callback: checkAnswer});
+
+        g_practice = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write'), 
+            el_exercise_control: document.getElementById('control'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write),   
+            editor_symbol: editor_symbol
+        });
+        g_practice.genExercisesListenAndWrite();
+ 
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+ 
+function checkAnswer(value){
+    value = textNormalize(value);
+    return value==g_practice.getAnswer();
+}
+</script>    
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Verb_tenses.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/Past_Simple.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Verb_tenses.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/Past_Simple.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+        <script src="../src/js/listen.js"></script>
+        <script src="../src/js/textual_analysis.js"></script>
+        <script src="../src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

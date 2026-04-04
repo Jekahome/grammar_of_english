@@ -1,0 +1,824 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Prepositions of Time/Place in, at, on - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+        <link rel="stylesheet" href="../theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="prepositions-inaton"><a class="header" href="#prepositions-inaton">Prepositions in/at/on</a></h1>
+<p>Предлоги  in/at/on</p>
+<p>Между словами необходимо ставить предлоги, которые отображают связь этих слов между собой
+<code>A group of students went for a walk on Sunday. — Группа студентов пошла на прогулку в воскресенье.</code></p>
+<p>Без предлогов получится примерно следующее:
+<code>A group students went a walk Sunday. — Группа студенты пошла прогулка воскресенье.</code></p>
+<p>Гораздо легче запомнить правописание и перевод предлогов, чем научиться правильно их использовать.
+Если вы будете много читать на английском и слушать английскую речь, изучать английский онлайн,
+то со временем начнете правильно расставлять предлоги на интуитивном уровне.</p>
+<h2 id="Основные-предлоги-места-и-времени"><a class="header" href="#Основные-предлоги-места-и-времени">Основные предлоги места и времени</a></h2>
+<h2 id="prepositions-of-place--предлоги-места-где--в-парке-на-столе-возле-дома-и-тп"><a class="header" href="#prepositions-of-place--предлоги-места-где--в-парке-на-столе-возле-дома-и-тп">Prepositions of Place — предлоги места (где? — в парке, на столе, возле дома и тп.)</a></h2>
+<p>in — в, в пределах(внутри): in the car — в машине</p>
+<p>at — в определенной точке, около ориентира(ориентир): at the table — за столом</p>
+<p>on — на поверхности(в прямом смысле на чем-то): on the table — на столе</p>
+<p><strong>Preposition in</strong></p>
+<p>Предлог in указывает на нахождение объекта внутри определенных границ.</p>
+<ul>
+<li>Местность,помещение или пространство, в которой находится объект:</li>
+</ul>
+<pre><code>    in the woods — в лесу
+    in the sky — на/в небе
+    Don’t get lost in the woods — Не потеряйся в лесу.
+    in the building — в здании
+    I don’t feel comfortable in your room. — Я чувствую себя неуютно в твоей комнате.
+</code></pre>
+<ul>
+<li>С названиями стран, регионов и сторон света:</li>
+</ul>
+<pre><code>    in Ukraine — в Украине
+    in Kharkiv — в Харькове
+    in the west — на западе
+    I’ve lived in Berlin for six years — Я живу в Берлине шесть лет.
+</code></pre>
+<ul>
+<li>К отсыланию содержанию бумажных изданий:</li>
+</ul>
+<pre><code>    in the photo — на фотографии
+    in the newspaper — в газете
+    All you need to know is written in this book — Все, что тебе нужно знать, написано в этой книге.
+</code></pre>
+<ul>
+<li>Отражение в зеркале:</li>
+</ul>
+<pre><code>    in the mirror — в зеркале
+    She stared at her reflection in the mirror — Она уставилась на свое отражение в зеркале.
+</code></pre>
+<ul>
+<li>Устойчивые выражения:</li>
+</ul>
+<pre><code>    in the mood — в настроении
+    be in the pink — быть в расцвете сил
+    Stop making jokes, I’m not in the mood today — Хватит шутить, я сегодня не в настроении.
+</code></pre>
+<p><strong>Preposition at</strong></p>
+<p>Предлог at может иметь значение «в» или «около». Указывает на выбранную точку или ориентир расположения.</p>
+<ul>
+<li>Используется с учереждениями,мероприятиями для обозначения принадлежности к ним:</li>
+</ul>
+<pre><code>    at school — в школе
+    at university — в университете
+    at work — на работе
+    at the library — в библиотеке
+    I never got a single prize while I was at school — Когда я учился в школе, я никогда не получал никаких наград.
+    He got this book at the library — Эту книгу он взял в библиотеке.
+    at a lecture — на лекции
+    at a conference — на конференции
+    at a concert — на концерте
+    I’ll see John tomorrow at the lecture — Я увижу Джона завтра на лекции.
+</code></pre>
+<ul>
+<li>Значение близости к объекту:</li>
+</ul>
+<pre><code>    at the door — у двери
+    at the table — за столом
+    There's a woman at the door, asking for Mr Smith — Какая-то женщина у входа спрашивает мистера Смита.
+</code></pre>
+<ul>
+<li>Фиксирует точку местонахождения:</li>
+</ul>
+<pre><code>    at the bus station — на автобусной остановке
+    Let's meet at the bus station — Давай встретимся на автобусной остановке.
+</code></pre>
+<ul>
+<li>Устойчивые выражения:</li>
+</ul>
+<pre><code>    at the top of — на вершине, наверху
+    at the bottom of — внизу
+    We had to stop at the top of the hill and wait for the engine to cool down — Нам пришлось остановиться на вершине холма и дать двигателю остыть.
+</code></pre>
+<p><strong>Preposition on</strong></p>
+<p>Основное значение предлога on — указание на поверхность</p>
+<pre><code>    on the floor — на полу
+    t down to play with the baby on the floor — Я опустился на колени, чтобы поиграть с ребенком на полу.
+    on the… floor — на…этаже
+    I’m used to live on the first floor — Я привык жить на первом этаже.
+</code></pre>
+<ul>
+<li>Способ передвижения и транспорт:</li>
+</ul>
+<pre><code>    on the bus — в автобусе
+    on foot — пешком
+    There is free wi-fi on the train — В поезде есть бесплатный wi-fi.
+</code></pre>
+<ul>
+<li>Указание на дорогу или путь:</li>
+</ul>
+<pre><code>    on the road — на дороге
+    on my way — в пути
+    There was heavy traffic on the roads — На дорогах было интенсивное движение.
+</code></pre>
+<ul>
+<li>Другие выражения:</li>
+</ul>
+<pre><code>    on the page — на странице
+    This exercise is on page 14 — Это упражнение на странице 14.
+    on the map — на карте
+    on the menu — в меню
+    I cannot find his name on the guest list — Я не могу найти его имя в списке гостей.
+    on television — по телевизору
+    on the radio — по радио
+    I’ve heard this song on the radio — Я услышал эту песню по радио.
+    on the left — слева
+    on the right — справа
+    You will see the hospital on the left — Вы увидите больницу слева.
+    on holiday — в отпуске
+    on sale — в продаже
+    on business — по делу
+    Who will double for the secretary while she is on holiday? — Кто будет замещать секретаря, пока она в отпуске?
+</code></pre>
+<p><strong>Различия/Исключения:</strong></p>
+<pre><code>in the armchair — в кресле
+on the chair — на стуле
+in bed — в постели, в кровати
+on the sofa — на диване
+She threw herself down on the sofa — Она упала на диван.
+</code></pre>
+<ul>
+<li>Не всегда учреждения обязательно используются с предлогом at:</li>
+</ul>
+<pre><code>    in hospital — в больнице
+    in prison — в тюрьме
+    Henry takes charge of it while I am in the hospital — Об этом позаботится Генри, пока я в больнице.
+</code></pre>
+<ul>
+<li>Здания и территория:</li>
+</ul>
+<pre><code>    at home — дома
+    in the house — в доме (то есть в здании, в помещении)
+    I want to stay at home — Я хочу остаться дома.
+    I was at my granny’s house — Я был в доме моей бабушки.
+    It’s so cold in her house — У нее в доме так холодно.
+</code></pre>
+<ul>
+<li>Описания средства передвижения:</li>
+</ul>
+<pre><code>    on the plane — на самолете
+    on the train — на поезде
+    I left my bag in the bus — Я забыл свою сумку в автобусе.(подчеркивается местонахождение внутри)
+</code></pre>
+<ul>
+<li>Когда мы говорим о содержании страницы, то употребляем предлог on (on the page — на странице).</li>
+</ul>
+<pre><code>    Но если речь идет о странице книги как о физическом объекте, то употребляется предлог at
+    I opened the book at page 44 — Я открыл книгу на странице 44.
+    When the teacher saw the boy squinting at the page, she thought that he might need glasses —
+    Когда учительница заметила, что мальчик щурится, глядя на страницу, она подумала, что ему не помешают очки.
+</code></pre>
+<h2 id="prepositions-of-time--предлоги-времени-когда--в-апреле-в-12-часов-к-утру-и-тп"><a class="header" href="#prepositions-of-time--предлоги-времени-когда--в-апреле-в-12-часов-к-утру-и-тп">Prepositions of Time — предлоги времени (когда? — в апреле, в 12 часов, к утру и тп.)</a></h2>
+<p>at — о периоде времени, меньше суток: At 8 o’clock, at midnight, at night, at noon, at daytime, at 5.30 pm at Christmas</p>
+<p>Исключения: <code>in the morning, in the afternoon, in the evening</code></p>
+<p>on — о периоде времени, меньше недели: On Monday, on April day, on Halloween, on 21 May</p>
+<p>Исключения: <code>at weekend, at the weekend</code></p>
+<p>in — о периоде времени, больше недели: In April, in lifetime, in XX century и тд</p>
+<p>Если же у вас в предложении встречаются несколько временных периодов, то ставим меньший переод:</p>
+<p>At 8 am, 15 May, 2006 — 8 утра, 15 мая 2006 г.</p>
+<p>On 15 May 2006 — 15 мая 2006 г.</p>
+<p>In 2006, XXI century. — 2006 год, XXI век.</p>
+<p>Указание отрезка времени то что произойдет через некоторое время:</p>
+<p>In 5 hours/5 days/5 years etc – через 5 часов/5 дней/ 5 лет и тп.</p>
+<h2 id="prepositional-phrases--предопределенные-предлоги-для-глагола"><a class="header" href="#prepositional-phrases--предопределенные-предлоги-для-глагола">Prepositional phrases — предопределенные предлоги для глагола</a></h2>
+<p>В английском языке зачастую предлоги предопределены тем глаголом, который вы используете.
+Это, так называемые, Prepositional phrases (предложные фразы).</p>
+<ul>
+<li>look at — смотреть на</li>
+<li>stare at — таращиться</li>
+<li>at a good price — по хорошей цене</li>
+<li>at our convenience — в удобное для вас время</li>
+<li>succeed in — преуспевать в</li>
+<li>result in — быть следствием</li>
+<li>interested in — заинтересованный в</li>
+<li>in general — в общем</li>
+<li>in time — вовремя</li>
+<li>in advance — заранее</li>
+<li>insist on — настаивать на</li>
+<li>depend on — зависеть от</li>
+<li>congratulate on — поздравлять с</li>
+<li>spend time/money on — тратить время/деньги на</li>
+</ul>
+<h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
+<ul>
+<li>in the woods	-	в лесах</li>
+<li>in the sky	-	в небе</li>
+<li>Don't get lost in the woods	-	Не заблудись в лесу</li>
+<li>in the building	-	в здании</li>
+<li>I don't feel comfortable in your room.	-	Мне некомфортно в твоей комнате.</li>
+<li>in Ukraine	-	в Украине</li>
+<li>in Kharkiv	-	в Харькове</li>
+<li>in the west	-	на Западе</li>
+<li>I've lived in Berlin for six years	-	Я живу в Берлине шесть лет</li>
+<li>in the photo	-	на фотографии</li>
+<li>in the newspaper	-	в газете</li>
+<li>All you need to know is written in this book	-	Все, что вам нужно знать, написано в этой книге</li>
+<li>in the mirror	-	в зеркале</li>
+<li>She stared at her reflection in the mirror	-	Она посмотрела на свое отражение в зеркале</li>
+<li>in the mood	-	в настроении</li>
+<li>be in the pink	-	быть в розовом</li>
+<li>Stop making jokes, I'm not in the mood today	-	Хватит шутить, я сегодня не в настроении.</li>
+<li>at school	-	в школе</li>
+<li>at university	-	в университете</li>
+<li>at work	-	на работе</li>
+<li>at the library	-	в библиотеке</li>
+<li>I never got a single prize while I was at school	-	Пока я учился в школе, я не получил ни одного приза.</li>
+<li>He got this book at the library	-	Он взял эту книгу в библиотеке</li>
+<li>at a lecture	-	на лекции</li>
+<li>at a conference	-	на конференции</li>
+<li>at a concert	-	на концерте</li>
+<li>I'll see John tomorrow at the lecture	-	Увижу Джона завтра на лекции</li>
+<li>at the door	-	у двери</li>
+<li>at the table	-	В таблице</li>
+<li>There's a woman at the door, asking for Mr Smith	-	У двери женщина спрашивает мистера Смита.</li>
+<li>at the bus station	-	на автовокзале</li>
+<li>Let's meet at the bus station	-	Давай встретимся на автовокзале</li>
+<li>at the top of	-	в верхней части</li>
+<li>at the bottom of	-	в нижней части</li>
+<li>We had to stop at the top of the hill and wait for the engine to cool down	-	Нам пришлось остановиться на вершине холма и подождать, пока двигатель остынет.</li>
+<li>on the floor	-	на полу</li>
+<li>It's time for me to play with the baby on the floor	-	Мне пора играть с ребенком на полу</li>
+<li>on the… floor	-	на полу</li>
+<li>I'm used to live on the first floor	-	Я привык жить на первом этаже</li>
+<li>on the bus	-	на автобусе</li>
+<li>on foot	-	пешком</li>
+<li>There is free wi-fi on the train	-	В поезде есть бесплатный Wi-Fi.</li>
+<li>on the road	-	на дороге</li>
+<li>on my way	-	на моем пути</li>
+<li>There was heavy traffic on the roads	-	На дорогах было интенсивное движение</li>
+<li>on the page	-	на странице</li>
+<li>This exercise is on page 14	-	Это упражнение находится на странице 14.</li>
+<li>on the map	-	на карте</li>
+<li>on the menu	-	в меню</li>
+<li>I cannot find his name on the guest list	-	Я не могу найти его имя в списке гостей</li>
+<li>on television	-	по телевизору</li>
+<li>on the radio	-	на радио</li>
+<li>I've heard this song on the radio	-	Я слышал эту песню по радио</li>
+<li>on the left	-	слева</li>
+<li>on the right	-	справа</li>
+<li>You will see the hospital on the left	-	Вы увидите больницу слева.</li>
+<li>on holiday	-	на выходных</li>
+<li>on sale	-	в продаже</li>
+<li>on business	-	по делу</li>
+<li>Who will double for the secretary while she is on holiday?	-	Кто будет дублировать секретаршу, пока она в отпуске?</li>
+<li>in the armchair	-	в кресле</li>
+<li>on the chair	-	на стуле</li>
+<li>in bed	-	в постели</li>
+<li>on the sofa	-	на диван</li>
+<li>She threw herself down on the sofa	-	Она бросилась на диван</li>
+<li>in the armchair	-	в кресле</li>
+<li>on the chair	-	на стуле</li>
+<li>in bed	-	в постели</li>
+<li>on the sofa	-	на диван</li>
+<li>She threw herself down on the sofa	-	Она бросилась на диван</li>
+<li>in hospital	-	в больнице</li>
+<li>in prison	-	в тюрьме</li>
+<li>Henry takes charge of it while I am in the hospital	-	Генри возьмет на себя ответственность, пока я в больнице.</li>
+<li>at home	-	дома</li>
+<li>in the house	-	в доме</li>
+<li>I want to stay at home	-	Я хочу остаться дома</li>
+<li>I was at my granny's house	-	я был в доме моей бабушки</li>
+<li>It's so cold in her house	-	В ее доме так холодно</li>
+<li>on the plane	-	на самолете</li>
+<li>on the train	-	на поезде</li>
+<li>I left my bag in the bus	-	Я оставил свою сумку в автобусе</li>
+<li>I opened the book at page 44	-	Я открыл книгу на странице 44.</li>
+<li>When the teacher saw the boy squinting at the page, she thought that he might need glasses	-	Когда учительница увидела, что мальчик щурится на страницу, она - подумала, что ему, возможно, понадобятся очки.</li>
+<li>At 8 o'clock	-	В 8 часов</li>
+<li>at midnight	-	в полночь</li>
+<li>at night	-	ночью</li>
+<li>at noon	-	в полдень</li>
+<li>at daytime	-	днем</li>
+<li>at 5.30 pm	-	в 17.30</li>
+<li>at Christmas	-	в Рождество</li>
+<li>in the morning	-	утром</li>
+<li>in the afternoon	-	днем</li>
+<li>in the evening	-	вечером</li>
+<li>On Monday	-	В понедельник</li>
+<li>on April day	-	в апрельский день</li>
+<li>on Halloween	-	на Хэллоуин</li>
+<li>on 21 May	-	21 мая</li>
+<li>at weekend	-	в выходные</li>
+<li>at the weekend	-	в выходные</li>
+<li>In April	-	В апреле</li>
+<li>in lifetime	-	при жизни</li>
+<li>in XX century	-	в XX веке</li>
+<li>At 8 am, 15 May, 2006	-	В 8 утра 15 мая 2006 г.</li>
+<li>On 15 May 2006	-	15 мая 2006 г.</li>
+<li>In 2006, XXI century.	-	В 2006 году XXI век.</li>
+<li>In 5 hours	-	Через 5 часов</li>
+<li>In 5 days	-	Через 5 дней</li>
+<li>In 5 years	-	Через 5 лет</li>
+<li>look at	-	посмотри на</li>
+<li>stare at	-	уставиться на</li>
+<li>at a good price	-	по хорошей цене</li>
+<li>at our convenience	-	в удобное для нас время</li>
+<li>succeed in	-	преуспеть в</li>
+<li>result in	-	результат в</li>
+<li>interested in	-	увлекающийся</li>
+<li>in general	-	в общем</li>
+<li>in time	-	во время</li>
+<li>in advance	-	заранее</li>
+<li>insist on	-	настаивать на</li>
+<li>depend on	-	зависит от</li>
+<li>congratulate on	-	поздравить с</li>
+<li>spend time on	-	тратить время на</li>
+<li>spend money on	-	тратить деньги на</li>
+</ul>
+<p><a href="https://puzzle-english.com/directory/prepositions-of-place#:~:text=%D0%97%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%20in%20%2F%20at%20%2F%20on,on%20the%20table%20%E2%80%94%20%D0%BD%D0%B0%20%D1%81%D1%82%D0%BE%D0%BB%D0%B5">puzzle-english.com</a></p>
+<p><a href="https://www.englishdom.com/blog/znaj-raznicu-chto-zhe-postavit-at-on-ili-in/">www.englishdom.com</a></p>
+<p><a href="https://skysmart.ru/articles/english/predlogi-v-anglijskom-yazyke">skysmart.ru</a></p>
+<p><a href="https://www.bkc.ru/blog/about-language/grammar/predlogi-v-angliyskom-yazyke/">www.bkc.ru</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A2/Definite_and_indefinite_pronouns.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A2/Preposition_for.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A2/Definite_and_indefinite_pronouns.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A2/Preposition_for.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+        <script src="../src/js/listen.js"></script>
+        <script src="../src/js/textual_analysis.js"></script>
+        <script src="../src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

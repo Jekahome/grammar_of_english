@@ -1,0 +1,1034 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Conjunctions (союзы) - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+        <link rel="stylesheet" href="../theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="basic-conjunctions-Базовые-союзы"><a class="header" href="#basic-conjunctions-Базовые-союзы">Basic Conjunctions (Базовые союзы)</a></h1>
+<p>Союзы (conjunctions) – это слова, которые соединяют части предложений, словосочетания или отдельные слова.</p>
+<h2 id="Типы-союзов"><a class="header" href="#Типы-союзов">Типы союзов</a></h2>
+<p>Союзы можно разделить на несколько категорий:</p>
+<ol>
+<li>Сочинительные союзы (Coordinating Conjunctions) соединяют равноправные элементы: <strong>and, but, or, nor, for, so, yet</strong>.</li>
+<li>Подчинительные союзы (Subordinating Conjunctions) соединяют главные и зависимые предложения: <strong>because, although, if, when, while, since, that, in order to</strong> и др.</li>
+<li><a href="/A2/Coordinating_conjunctions.html">Сочетающие союзы</a> (Correlative Conjunctions) используются парами: <strong>both...and, either...or, neither...nor</strong>. (для A2)</li>
+<li><a href="/B1/Conjunctive_adverbs.html">Присоединительные наречия</a> (Conjunctive Adverbs)
+<strong>then (затем), so (поэтому), however (однако), therefore (следовательно), also (также), too (тоже), otherwise (иначе), besides (кроме того)</strong> (для B1)</li>
+</ol>
+<h2 id="Присоединительные-наречия-conjunctive-adverbs"><a class="header" href="#Присоединительные-наречия-conjunctive-adverbs">Присоединительные наречия (Conjunctive Adverbs)</a></h2>
+<ul>
+<li><strong>then</strong> – затем, потом, тогда, в таком случае
+<ul>
+<li><em>First we'll eat, <strong>then</strong> we'll go. — Сначала мы поедим, затем пойдём.</em></li>
+<li><em>First, chop the onions. <strong>Then</strong>, fry them in a pan. — Сначала нарежь лук. Затем обжарь его на сковороде.</em></li>
+<li><em>I'll finish my work, and <strong>then</strong> we can go out. — Я закончу свою работу, и потом мы сможем пойти гулять.</em></li>
+<li><em>I was living in London back <strong>then</strong>. — Я жил в Лондоне тогда (в то время).</em></li>
+<li><em>See you next week! Until <strong>then</strong>, take care! — Увидимся на следующей неделе! До тех пор (До того времени), береги себя!</em></li>
+<li><em>If it's not yours, <strong>then</strong> it must be mine. — Если это не твоё, значит, это моё.</em></li>
+</ul>
+</li>
+<li><strong>so</strong> – поэтому, так что, итак
+<ul>
+<li><em>I was tired, <strong>so</strong> I went to bed early. — Я устал, так что я лег спать рано.</em></li>
+<li><em><strong>So</strong>, how was your day? — Ну так (Итак), как прошел твой день?</em></li>
+<li><em><strong>So</strong>, the plan is to meet at 6 pm. — Итак, план — встретиться в 6 вечера.</em></li>
+<li><em>I'm <strong>so</strong> happy to see you! — Я так рад тебя видеть!</em></li>
+<li><em>Don't walk <strong>so</strong> fast! — Не иди так быстро!</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="exercise-listen-and-write-basic-conjunctions-conjunctive-adverbs"><a class="header" href="#exercise-listen-and-write-basic-conjunctions-conjunctive-adverbs">Exercise: listen and write: Basic Conjunctions (conjunctive adverbs)</a></h2>
+<div id="control_general_conj_adv"></div>
+<div id="listen_and_write_conj_adv"></div>
+<hr />
+<h2 id="Сочинительные-союзы-coordinating-conjunctions"><a class="header" href="#Сочинительные-союзы-coordinating-conjunctions">Сочинительные союзы (Coordinating Conjunctions)</a></h2>
+<ul>
+<li><strong>and</strong> – и
+<ul>
+<li><em>I have a cat <strong>and</strong> a dog. – У меня есть кот и собака.</em></li>
+</ul>
+</li>
+<li><strong>but</strong> – но
+<ul>
+<li><em>He is tired but happy. – Он устал, но счастлив.</em></li>
+</ul>
+</li>
+<li><strong>but</strong> (в значении противопоставления) – а
+<ul>
+<li><em>I am reading, <strong>but</strong> he is watching TV. – Я читаю, а он смотрит телевизор.</em></li>
+</ul>
+</li>
+<li><strong>or</strong> – или
+<ul>
+<li><em>Do you want tea <strong>or</strong> coffee? – Ты хочешь чай или кофе?</em></li>
+</ul>
+</li>
+<li><strong>nor</strong> – и не / ни (в русском часто передается конструкцией с «ни»)
+<ul>
+<li><em>I don't like coffee, <strong>nor</strong> do I like tea. – Я не люблю кофе, и чай не люблю. / Я не люблю ни кофе, ни чай.</em></li>
+</ul>
+</li>
+<li><strong>for</strong> – так как, ибо (устаревшее или книжное, в значении причины)
+<ul>
+<li><em>I went to bed early, <strong>for</strong> I was tired. – Я лег спать рано, так как устал.</em></li>
+</ul>
+</li>
+<li><strong>so</strong> – поэтому, итак
+<ul>
+<li><em>It was raining, <strong>so</strong> we stayed home. – Шел дождь, поэтому мы остались дома.</em></li>
+</ul>
+</li>
+<li><strong>yet</strong> – однако, но (при этом)
+<ul>
+<li><em>He is rich, <strong>yet</strong> he is not happy. – Он богат, однако он не счастлив.</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="exercise-listen-and-write-basic-conjunctions-coordinating-conjunctions"><a class="header" href="#exercise-listen-and-write-basic-conjunctions-coordinating-conjunctions">Exercise: listen and write: Basic Conjunctions (coordinating conjunctions)</a></h2>
+<div id="control_general_coord_conj"></div>
+<div id="listen_and_write_coord_conj"></div>
+<hr />
+<h2 id="Подчинительные-союзы-subordinating-conjunctions"><a class="header" href="#Подчинительные-союзы-subordinating-conjunctions">Подчинительные союзы (Subordinating Conjunctions)</a></h2>
+<ul>
+<li>
+<p><strong>because</strong> – потому что</p>
+<ul>
+<li><em>I'm late <strong>because</strong> the bus didn't come. – Я опоздал, потому что автобус не пришел.</em></li>
+</ul>
+</li>
+<li>
+<p><strong>although</strong> – хотя (более формальный и обычно стоит только в начале предложения)</p>
+<ul>
+<li><em><strong>Although</strong> it was cold, we went for a walk. – Хотя было холодно, мы пошли на прогулку.</em></li>
+<li><em><strong>Although</strong> the project was difficult, we completed it on time. – Хотя проект был сложным, мы завершили его вовремя</em></li>
+</ul>
+</li>
+<li>
+<p><strong>though</strong> – хотя (в разговорной речи)</p>
+<ul>
+<li><em><strong>Though</strong> it was expensive, I bought it. – Хоть он и был дорогой, я его купил.</em></li>
+<li><em>It was expensive. I bought it, <strong>though</strong>. – Оно было дорогим. Но я его купил.</em></li>
+</ul>
+</li>
+<li>
+<p><strong>even though</strong> – даже хотя (для усиления)</p>
+<ul>
+<li><em>He went to work <strong>even though</strong> he had a high fever. – Он пошел на работу, даже хотя у него была высокая температура</em></li>
+</ul>
+</li>
+<li>
+<p><strong>if</strong> – если</p>
+<ul>
+<li><em><strong>If</strong> you study, you will pass the exam. – Если ты будешь учиться, ты сдашь экзамен.</em></li>
+</ul>
+</li>
+<li>
+<p><strong>when</strong> – когда</p>
+<ul>
+<li><em>Call me <strong>when</strong> you get home. – Позвони мне, когда ты будешь дома.</em></li>
+</ul>
+</li>
+<li>
+<p><strong>while</strong> – пока, в то время как (указывает на одновременность действий)</p>
+<ul>
+<li><em>I read a book <strong>while</strong> I was waiting. – Я читал книгу, пока ждал.</em></li>
+</ul>
+</li>
+<li>
+<p><strong>since</strong> – так как (причина) / с тех пор как (время)</p>
+<ul>
+<li><em><strong>Since</strong> you are here, let's start. – Так как ты здесь, давай начнем.</em> (Причина, A2)</li>
+<li><em>I haven't seen him <strong>since</strong> he left. – Я не видел его с тех пор как он уехал.</em> (Время, B1)</li>
+</ul>
+</li>
+<li>
+<p><strong>that</strong> – что (часто опускается в разговорной английской речи)</p>
+<ul>
+<li><em>I know <strong>(that)</strong> you are right. – Я знаю, что ты прав.</em></li>
+</ul>
+</li>
+<li>
+<p><strong>in order to</strong> – чтобы (цель, часто используется с инфинитивом)</p>
+<ul>
+<li><em>She is saving money <strong>in order to</strong> buy a car. – Она копит деньги, чтобы купить машину.</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="exercise-listen-and-write-basic-conjunctions-subordinating-conjunctions"><a class="header" href="#exercise-listen-and-write-basic-conjunctions-subordinating-conjunctions">Exercise: listen and write: Basic Conjunctions (subordinating conjunctions)</a></h2>
+<div id="control_general_sub_conj"></div>
+<div id="listen_and_write_sub_conj"></div>
+<hr />
+<p>Их гораздо больше. Они вводят придаточные предложения, которые отвечают на вопросы: Когда? Почему? При каком условии? Несмотря на что?</p>
+<p><strong>Основные категории и примеры:</strong></p>
+<ul>
+<li>
+<p><strong>Время (Time):</strong></p>
+<ul>
+<li><strong>When</strong> – когда
+<ul>
+<li><em>I was happy <strong>when</strong> I saw her. – Я был счастлив, когда увидел её.</em></li>
+</ul>
+</li>
+<li><strong>while</strong> (пока, в то время как)
+<ul>
+<li><em>He called <strong>while</strong> I was cooking. – Он позвонил, пока я готовил.</em></li>
+</ul>
+</li>
+<li><strong>as</strong> – в то время как, когда
+<ul>
+<li><em>She dropped her keys <strong>as</strong> she was leaving. – Она уронила ключи, когда выходила.</em></li>
+</ul>
+</li>
+<li><strong>after</strong> – после того как
+<ul>
+<li><em>We can go <strong>after</strong> you finish your work. – Мы можем пойти после того, как ты закончишь работу.</em></li>
+</ul>
+</li>
+<li><strong>before</strong> – до того как
+<ul>
+<li><em>Wash your hands <strong>before</strong> you eat. – Мой руки до того, как есть.</em></li>
+</ul>
+</li>
+<li><strong>since</strong> – с тех пор как
+<ul>
+<li><em>I haven't seen him <strong>since</strong> he moved. – Я не видел его с тех пор, как он переехал.</em></li>
+</ul>
+</li>
+<li><strong>until/till</strong> – до тех пор пока
+<ul>
+<li><em>Wait here <strong>until</strong> I return. – Жди здесь до тех пор, пока я не вернусь.</em></li>
+</ul>
+</li>
+<li><strong>as soon as</strong> – как только
+<ul>
+<li><em>I will call you <strong>as soon as</strong> I arrive. – Я позвоню тебе, как только приеду.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Причина (Cause):</strong></p>
+<ul>
+<li><strong>Because</strong> – потому что
+<ul>
+<li><em>We stayed home <strong>because</strong> the weather was bad. – Мы остались дома, потому что погода была плохой.</em></li>
+</ul>
+</li>
+<li><strong>Since</strong> – так как
+<ul>
+<li><em>Since you don't have time, I'll go alone. – Так как у тебя нет времени, я пойду один.</em></li>
+</ul>
+</li>
+<li><strong>As</strong> – поскольку
+<ul>
+<li><em>As it's getting late, we should finish. – Поскольку уже поздно, нам стоит закончить.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Условие (Condition):</strong></p>
+<ul>
+<li><strong>If</strong> – если
+<ul>
+<li><em>You will succeed <strong>if</strong> you work hard. – Ты преуспеешь, если будешь усердно работать.</em></li>
+</ul>
+</li>
+<li><strong>Unless</strong> – если не
+<ul>
+<li><em>You will be late <strong>unless</strong> you hurry. – Ты опоздаешь, если не поторопишься.</em></li>
+</ul>
+</li>
+<li><strong>In case</strong> – в случае если
+<ul>
+<li><em>Take an umbrella <strong>in case</strong> it rains. – Возьми зонт, в случае если пойдет дождь.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Противопоставление (Contrast):</strong></p>
+<ul>
+<li><strong>Although</strong> – хотя
+<ul>
+<li><em><strong>Although</strong> it was raining, we went for a walk. – Хотя шел дождь, мы пошли на прогулку.</em></li>
+</ul>
+</li>
+<li><strong>Though</strong> – хотя
+<ul>
+<li><em>I like him, <strong>though</strong> he can be annoying. – Он мне нравится, хотя он может быть надоедливым.</em></li>
+</ul>
+</li>
+<li><strong>Even though</strong> – даже хотя
+<ul>
+<li><em><strong>Even though</strong> she was tired, she finished the work. – Даже хотя она устала, она закончила работу.</em></li>
+</ul>
+</li>
+<li><strong>While</strong> – тогда как
+<ul>
+<li><em>I prefer tea, <strong>while</strong> my brother prefers coffee. – Я предпочитаю чай, тогда как мой брат предпочитает кофе.</em></li>
+</ul>
+</li>
+<li><strong>Whereas</strong> – тогда как
+<ul>
+<li><em>He is very outgoing, <strong>whereas</strong> his sister is quite shy. – Он очень общительный, тогда как его сестра довольно застенчивая.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Цель (Purpose):</strong></p>
+<ul>
+<li><strong>So that</strong> – для того чтобы
+<ul>
+<li><em>He spoke loudly <strong>so that</strong> everyone could hear him. – Он говорил громко, чтобы все его слышали.</em></li>
+</ul>
+</li>
+<li><strong>In order that</strong> – для того чтобы
+<ul>
+<li><em>She left early <strong>in order that</strong> she wouldn't be late. – Она ушла рано, для того чтобы не опоздать.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Результат (Result):</strong></p>
+<ul>
+<li><strong>So... that</strong> – так ... что
+<ul>
+<li><em>She was <strong>so</strong> tired <strong>that</strong> she fell asleep immediately. – Она была так уставшая, что заснула сразу.</em></li>
+</ul>
+</li>
+<li><strong>Such... that</strong> – такой ... что
+<ul>
+<li><em>It was <strong>such</strong> a beautiful day <strong>that</strong> we decided to go to the beach. – Это был такой прекрасный день, что мы решили поехать на пляж.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Важное правило пунктуации с подчинительными союзами:</strong><br>
+Запятая ставится, <strong>когда придаточное предложение стоит в начале главного</strong>.</p>
+<ul>
+<li><strong>Because</strong> he was late, he missed the meeting. – Из-за опоздания он пропустил встречу. (Придаточное в начале – <strong>запятая после него</strong>.)</li>
+<li>He missed the meeting <strong>because</strong> he was late. – Он пропустил встречу, потому что опоздал. (Придаточное в конце – <strong>запятая обычно не ставится</strong>.)</li>
+</ul>
+<h3 id="Ошибки-при-использовании-союзов"><a class="header" href="#Ошибки-при-использовании-союзов">Ошибки при использовании союзов</a></h3>
+<p>Распространенные ошибки при использовании союзов:</p>
+<ul>
+<li>Неправильное употребление: <em>I wanted to go, but I was tired and went to bed.</em></li>
+<li>Правильно: <em>I wanted to go, but I was tired, so I went to bed. – Я хотел пойти, но устал и лег спать.</em></li>
+</ul>
+<hr />
+<h2 id="exercise-listen-and-write-basic-conjunctions-all-exercises"><a class="header" href="#exercise-listen-and-write-basic-conjunctions-all-exercises">Exercise: listen and write: Basic Conjunctions (all exercises)</a></h2>
+<div id="control_general_all"></div>
+<div id="listen_and_write_all"></div>
+<script>   
+
+const exercises_easy_listen_and_write_conj_adv = [
+    ["First we'll eat, then we'll go.", "Сначала мы поедим, затем пойдём."],
+    ["First, cut the carrots. Then, fry them in a pan.", "Сначала нарежь (или порежь) морковь. Затем обжарь её на сковороде."],
+    ["I'll finish my work, and then we can go out.", "Я закончу свою работу, и потом мы сможем пойти гулять."],
+    ["I was living in London back then.", "Я жил в Лондоне тогда (в то время)."],
+    ["See you next week! Until then, take care!", "Увидимся на следующей неделе! До тех пор (До того времени), береги себя!"],
+    ["If it's not yours, then it must be mine.", "Если это не твоё, значит, это моё."],
+    
+    ["I was tired, so I went to bed early.", "Я устал, так что я лег спать рано."],
+    ["So, how was your day?", "Ну так (Итак), как прошел твой день?"],
+    ["So, the plan is to meet at 6 pm.", "Итак, план — встретиться в 6 вечера."],
+    ["I'm so happy to see you!", "Я так рад тебя видеть!"],
+    ["Don't walk so fast!", "Не иди так быстро!"],
+    
+];
+const exercises_easy_listen_and_write_coord_conj = [
+    
+    ["I like cats and dogs.", "Мне нравятся кошки и собаки."],
+    ["She is tall and kind.", "Она высокая и добрая."],
+    ["We have bread and milk.", "У нас есть хлеб и молоко."],
+    ["He has a book and a pen.", "У него есть книга и ручка."],
+    ["I see a car and a bus.", "Я вижу машину и автобус."],
+    ["It is big and red.", "Оно большое и красное."],
+    ["They are happy and tired.", "Они счастливы и устали."],
+    ["I can sing and dance.", "Я умею петь и танцевать."],
+    ["We go to school and work.", "Мы ходим в школу и на работу."],
+    ["She has a brother and a sister.", "У нее есть брат и сестра."],
+    
+    ["I am tired but happy.", "Я устал, но счастлив."],
+    ["It is small but nice.", "Он маленький, но симпатичный."],
+    ["She is young but smart.", "Она молодая, но умная."],
+    ["We are poor but happy.", "Мы бедные, но счастливые."],
+    ["He is old but strong.", "Он старый, но сильный."],
+    ["The room is small but clean.", "Комната маленькая, но чистая."],
+    ["I want to go but I can't.", "Я хочу пойти, но не могу."],
+    ["It is cheap but good.", "Это дешево, но хорошо."],
+    ["I work slowly but carefully.", "Я работаю медленно, но аккуратно."],
+    ["She is sick but she works.", "Она больна, но работает."],
+    
+    ["Do you want tea or coffee?", "Ты хочешь чай или кофе?"],
+    ["Is it big or small?", "Оно большое или маленькое?"],
+    ["Are you happy or sad?", "Ты счастлив или грустен?"],
+    ["Can you read or write?", "Ты умеешь читать или писать?"],
+    ["Do we go left or right?", "Мы идем налево или направо?"],
+    ["Is he a teacher or a doctor?", "Он учитель или врач?"],
+    ["Will you come today or tomorrow?", "Ты придешь сегодня или завтра?"],
+    ["Should I stay or go?", "Мне остаться или уйти?"],
+    ["Does she like apples or oranges?", "Она любит яблоки или апельсины?"],
+    ["Is it your book or my book?", "Это твоя книга или моя книга?"],
+    
+    ["I was tired, so I went to bed.", "Я устал, поэтому я лег спать."],
+    ["It is raining, so take an umbrella.", "Идет дождь, поэтому возьми зонт."],
+    ["She is smart, so she knows the answer.", "Она умная, поэтому она знает ответ."],
+    ["I like him, so I help him.", "Он мне нравится, поэтому я помогаю ему."],
+    ["He was late, so he ran.", "Он опоздал, поэтому он побежал."],
+    ["The shop is closed, so we go home.", "Магазин закрыт, поэтому мы идем домой."],
+    ["I have no money, so I can't buy it.", "У меня нет денег, поэтому я не могу это купить."],
+    ["It is cold, so wear a coat.", "Холодно, поэтому надень пальто."],
+    ["She is busy, so she can't talk.", "Она занята, поэтому она не может говорить."],
+    ["I am hungry, so I eat.", "Я голоден, поэтому я ем."],
+    
+    ["I want to go, yet I am afraid.", "Я хочу пойти, однако я боюсь."],
+    ["It is difficult, yet I like it.", "Это трудно, однако мне это нравится."],
+    ["She is small, yet she is strong.", "Она маленькая, однако она сильная."],
+    ["He is old, yet he works.", "Он старый, однако он работает."],
+    ["I am tired, yet I continue.", "Я устал, однако я продолжаю."],
+    ["It is expensive, yet I buy it.", "Это дорого, однако я это покупаю."],
+    ["The task is hard, yet we do it.", "Задача трудная, однако мы ее делаем."],
+    ["I don't like him, yet I help him.", "Он мне не нравится, однако я помогаю ему."],
+    ["She is sick, yet she smiles.", "Она больна, однако она улыбается."],
+    ["I have no time, yet I read.", "У меня нет времени, однако я читаю."],
+];
+const exercises_easy_listen_and_write_sub_conj = [
+        ["I eat because I am hungry.", "Я ем, потому что я голоден."],
+    ["She is sad because her friend is sick.", "Она грустная, потому что ее подруга больна."],
+    ["We stay home because it is cold.", "Мы остаемся дома, потому что холодно."],
+    ["He drinks water because he is thirsty.", "Он пьет воду, потому что он хочет пить."],
+    ["They sleep because they are tired.", "Они спят, потому что они устали."],
+    ["I work because I need money.", "Я работаю, потому что мне нужны деньги."],
+    ["She studies because she wants to know.", "Она учится, потому что хочет знать."],
+    ["We run because we are late.", "Мы бежим, потому что мы опаздываем."],
+    ["He buys bread because he likes it.", "Он покупает хлеб, потому что он ему нравится."],
+    ["I help because I can.", "Я помогаю, потому что могу."],
+
+    ["If you are tired, go to bed.", "Если ты устал, иди спать."],
+    ["If it rains, we won't go.", "Если пойдет дождь, мы не пойдем."],
+    ["If you are hungry, eat an apple.", "Если ты голоден, съешь яблоко."],
+    ["If he calls, tell him I'm busy.", "Если он позвонит, скажи ему, что я занят."],
+    ["If she comes, we will be happy.", "Если она придет, мы будем счастливы."],
+    ["If I have time, I will read.", "Если у меня будет время, я почитаю."],
+    ["If they study, they will know.", "Если они будут учиться, они будут знать."],
+    ["If we hurry, we won't be late.", "Если мы поторопимся, мы не опоздаем."],
+    ["If you don't go, I will go alone.", "Если ты не пойдешь, я пойду один."],
+    ["If it is cheap, I will buy it.", "Если это будет дешево, я куплю это."],
+
+    ["When I come home, I rest.", "Когда я прихожу домой, я отдыхаю."],
+    ["When she sees me, she smiles.", "Когда она видит меня, она улыбается."],
+    ["When we finish work, we go home.", "Когда мы заканчиваем работу, мы идем домой."],
+    ["When he speaks, people listen.", "Когда он говорит, люди слушают."],
+    ["When it gets dark, we go home.", "Когда темнеет, мы идем домой."],
+    ["When I have money, I buy books.", "Когда у меня есть деньги, я покупаю книги."],
+    ["When they meet, they talk a lot.", "Когда они встречаются, они много разговаривают."],
+    ["When you are ready, tell me.", "Когда ты будешь готов, скажи мне."],
+    ["When winter comes, it gets cold.", "Когда приходит зима, становится холодно."],
+    ["When I hear music, I dance.", "Когда я слышу музыку, я танцую."],
+
+    ["Although it is hard, I do it.", "Хотя это трудно, я делаю это."],
+    ["Although he is old, he works.", "Хотя он старый, он работает."],
+    ["Although she is busy, she helps.", "Хотя она занята, она помогает."],
+    ["Although it is small, it is nice.", "Хотя оно маленькое, оно симпатичное."],
+    ["Although I am tired, I continue.", "Хотя я устал, я продолжаю."],
+    ["Although they are poor, they are happy.", "Хотя они бедные, они счастливы."],
+    ["Although the book is old, it is interesting.", "Хотя книга старая, она интересная."],
+    ["Although the room is dark, I can see.", "Хотя комната темная, я могу видеть."],
+    ["Although the task is easy, he can't do it.", "Хотя задача легкая, он не может ее сделать."],
+    ["Although the water is cold, I swim.", "Хотя вода холодная, я плаваю."],
+
+    ["I study so that I can know.", "Я учусь, чтобы я мог знать."],
+    ["He works so that he has money.", "Он работает, чтобы у него были деньги."],
+    ["She saves money so that she can travel.", "Она экономит деньги, чтобы она могла путешествовать."],
+    ["We get up early so that we are not late.", "Мы встаем рано, чтобы мы не опоздали."],
+    ["They learn English so that they can speak.", "Они учат английский, чтобы они могли говорить."],
+    ["I write so that I remember.", "Я записываю, чтобы я помнил."],
+    ["He reads a lot so that he is smart.", "Он много читает, чтобы он был умным."],
+    ["She practices so that she can play well.", "Она тренируется, чтобы она могла хорошо играть."],
+    ["We buy food so that we can eat.", "Мы покупаем еду, чтобы мы могли есть."],
+    ["I come so that I can help you.", "Я прихожу, чтобы я мог помочь тебе."],
+];
+
+
+let g_practice_conj_adv = null;
+let g_practice_coord_conj = null;
+let g_practice_sub_conj = null;
+let g_practice_all = null;
+
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+ 
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralConjAdv, suffix_id: 'conj_adv'});
+
+        g_practice_conj_adv = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_conj_adv'), 
+            el_exercise_control: document.getElementById('control_general_conj_adv'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_conj_adv),
+            editor_symbol: editor_symbol
+        });
+        g_practice_conj_adv.genExercisesListenAndWrite();
+     
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralCoordConj, suffix_id: 'coord_conj'});
+
+        g_practice_coord_conj = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_coord_conj'), 
+            el_exercise_control: document.getElementById('control_general_coord_conj'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_coord_conj),
+            editor_symbol: editor_symbol
+        });
+        g_practice_coord_conj.genExercisesListenAndWrite();
+     
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralSubConj, suffix_id: 'sub_conj'});
+
+        g_practice_sub_conj = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_sub_conj'), 
+            el_exercise_control: document.getElementById('control_general_sub_conj'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_sub_conj),
+            editor_symbol: editor_symbol
+        });
+        g_practice_sub_conj.genExercisesListenAndWrite();
+     
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralAll, suffix_id: 'all'});
+        const exercises_easy_listen_and_write_all = exercises_easy_listen_and_write_conj_adv
+          .concat(exercises_easy_listen_and_write_coord_conj)
+          .concat(exercises_easy_listen_and_write_sub_conj);
+        g_practice_all = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_all'), 
+            el_exercise_control: document.getElementById('control_general_all'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_all),
+            editor_symbol: editor_symbol
+        });
+        g_practice_all.genExercisesListenAndWrite();
+     
+ }
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+ 
+function checkAnswerGeneralConjAdv(value){
+    value = textNormalize(value);
+    return value==g_practice_conj_adv.getAnswer();
+}
+function checkAnswerGeneralCoordConj(value){
+    value = textNormalize(value);
+    return value==g_practice_coord_conj.getAnswer();
+}
+function checkAnswerGeneralSubConj(value){
+    value = textNormalize(value);
+    return value==g_practice_sub_conj.getAnswer();
+}
+function checkAnswerGeneralAll(value){
+    value = textNormalize(value);
+    return value==g_practice_all.getAnswer();
+}
+ 
+</script>   
+<style>
+table {
+  margin: 0px !important;  
+  border-collapse: collapse;
+}
+</style>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Simple_adjectives.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/Present_Perfect.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Simple_adjectives.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/Present_Perfect.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+        <script src="../src/js/listen.js"></script>
+        <script src="../src/js/textual_analysis.js"></script>
+        <script src="../src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

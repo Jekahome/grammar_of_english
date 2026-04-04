@@ -1,0 +1,1903 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Adjectives (прилагательные) - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+        <link rel="stylesheet" href="../theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="simple-adjectives-Простые-прилагательные"><a class="header" href="#simple-adjectives-Простые-прилагательные">Simple Adjectives (Простые прилагательные)</a></h1>
+<p>Прилагательные в английском языке используются для описания существительных (состояния подлежащего) и отвечают на вопросы "какой?", "какая?", "какие?" и "какое?".
+Простые прилагательные помогают дать общую характеристику предметам, людям или явлениям.</p>
+<h4 id="Примеры-простых-прилагательных"><a class="header" href="#Примеры-простых-прилагательных">Примеры простых прилагательных</a></h4>
+<ul>
+<li>big – большой</li>
+<li>small – маленький</li>
+<li>old – старый</li>
+<li>young – молодой</li>
+<li>beautiful – красивый</li>
+<li>ugly – уродливый</li>
+<li>happy – счастливый</li>
+<li>sad – грустный</li>
+</ul>
+<h2 id="exercise-listen-and-write-simple-adjectives"><a class="header" href="#exercise-listen-and-write-simple-adjectives">Exercise: listen and write: Simple Adjectives</a></h2>
+<div id="control_general_simple"></div>
+<div id="listen_and_write_simple"></div>
+<hr />
+<h4 id="Место-прилагательных-в-предложении"><a class="header" href="#Место-прилагательных-в-предложении">Место прилагательных в предложении</a></h4>
+<p>В английском языке прилагательные обычно стоят перед существительными, которые они описывают.
+Например:</p>
+<ul>
+<li>A big house – большой дом</li>
+<li>A small car – маленькая машина</li>
+<li>An old man – старый мужчина</li>
+<li>A beautiful flower – красивый цветок</li>
+</ul>
+<h4 id="Прилагательные-после-глагола-to-be"><a class="header" href="#Прилагательные-после-глагола-to-be">Прилагательные после глагола "to be"</a></h4>
+<p>Прилагательные также могут использоваться после глагола "to be", когда они описывают состояние или характеристику подлежащего:</p>
+<ul>
+<li>The house is big. – Дом большой.</li>
+<li>The car is small. – Машина маленькая.</li>
+<li>The man is old. – Мужчина старый.</li>
+<li>The flowers are beautiful. – Цветы красивые.</li>
+</ul>
+<h2 id="exercise-listen-and-write-simple-adjectives-state-of-the-subject"><a class="header" href="#exercise-listen-and-write-simple-adjectives-state-of-the-subject">Exercise: listen and write: Simple Adjectives (state of the subject)</a></h2>
+<div id="control_general_state_subject"></div>
+<div id="listen_and_write_state_subject"></div>
+<hr />
+<h4 id="Такой-же-как-as--basic-adjective--as"><a class="header" href="#Такой-же-как-as--basic-adjective--as">Такой же как: <code>as + basic adjective + as</code></a></h4>
+<ul>
+<li>This car is <strong>as fast as</strong> that one. – Эта машина такая же быстрая, как и та.</li>
+<li>My brother is <strong>as tall as</strong> me. – Мой брат такой же высокий, как и я.</li>
+<li>A train is <strong>as fast as</strong> a sports car. – Поезд такой же быстрый, как и спортивная машина.</li>
+<li>This watch is <strong>as expensive as</strong> a small car. – Эти часы такие же дорогие, как и маленькая машина.</li>
+</ul>
+<h2 id="exercise-listen-and-write-simple-adjectives-as"><a class="header" href="#exercise-listen-and-write-simple-adjectives-as">Exercise: listen and write: Simple Adjectives (as)</a></h2>
+<div id="control_general_as"></div>
+<div id="listen_and_write_as"></div>
+<hr />
+<h2 id="Прилагательные-в-positive-adjective-базовое-значение-и-comparative-сравнительных-и-superlative-превосходных-степенях"><a class="header" href="#Прилагательные-в-positive-adjective-базовое-значение-и-comparative-сравнительных-и-superlative-превосходных-степенях">Прилагательные в positive adjective (базовое значение) и comparative (сравнительных) и superlative (превосходных) степенях</a></h2>
+<p>Простые прилагательные могут изменяться для сравнения. Чтобы образовать сравнительную или превосходную степень прилагательных, обычно добавляются суффиксы в зависимости от количества слогов в слове.</p>
+<p><strong>Возможные формы прилагательных</strong>:</p>
+<ul>
+<li>
+<p><code>tall (высокий) -&gt; taller than/less tall than (выше) -&gt; the tallest (самый высокий)</code></p>
+</li>
+<li>
+<p><code>happy (счастливый) -&gt; happier than/less happy than (счастливее) -&gt; the happiest (самый счастливый)</code></p>
+</li>
+<li>
+<p><code>cold (холодный) –&gt; colder than/less cold than –&gt; the coldest</code></p>
+</li>
+<li>
+<p><code>beautiful (красивый) –&gt; more beautiful than/less beautiful than –&gt; the most beautiful</code></p>
+</li>
+<li>
+<p><code>big (большой) –&gt; bigger than/less big than (больше) –&gt; the biggest (самый большой)</code></p>
+</li>
+<li>
+<p><code>good (хороший) –&gt; better/less good than –&gt; best</code></p>
+</li>
+</ul>
+<h3 id="1-positivebasic-adjective-базовое-значение"><a class="header" href="#1-positivebasic-adjective-базовое-значение">1. Positive/Basic adjective (базовое значение)</a></h3>
+<ul>
+<li>My brother is <strong>tall</strong>. – Мой брат высокий.</li>
+<li>She is a very <strong>happy</strong> person. – Она очень счастливый человек.</li>
+<li>I have a <strong>cold</strong>. – Я простужен.</li>
+<li>The sunset is <strong>beautiful</strong>. – Закат красивый.</li>
+<li>The elephant is <strong>big</strong>. – Слон большой.</li>
+<li>This pizza is <strong>good</strong>. — Эта пицца хорошая.</li>
+</ul>
+<h3 id="2-comparative-adjective-сравнительное-значение"><a class="header" href="#2-comparative-adjective-сравнительное-значение">2. Comparative adjective (сравнительное значение)</a></h3>
+<p>В сравнительной степени (Comparative) можно не ставить союз <strong>than</strong> (чем), если то, с чем производится сравнение, понятно из контекста.</p>
+<p><strong>“Более … чем”</strong>:</p>
+<ol>
+<li>"than" используется только тогда, когда мы сравниваем два объекта:</li>
+</ol>
+<ul>
+<li>My brother is <strong>taller than</strong> me. – Мой брат выше, чем я.</li>
+<li>She is <strong>happier than</strong> her sister. – Она счастливее, чем ее сестра.</li>
+<li>Yesterday was <strong>colder than</strong> today. – Вчера было холоднее, чем сегодня.</li>
+<li>This painting is <strong>more beautiful than</strong> the landscape. – Эта картина красивее, чем пейзаж.</li>
+<li>My suitcase is <strong>bigger than</strong> yours. – Мой чемодан больше, чем твой.</li>
+<li>This pizza is <strong>better than</strong> yesterday’s. — Эта пицца лучше, чем вчерашняя.</li>
+</ul>
+<ol start="2">
+<li>"than" не используется если второй объект очевиден из контекста:</li>
+</ol>
+<ul>
+<li>My brother is <strong>taller</strong> in the morning. – Мой брат выше по утрам.</li>
+<li>She is <strong>happier</strong> now that she has a new job. – Она счастливее теперь, когда у нее новая работа.</li>
+<li>It was <strong>colder</strong> yesterday, after sunset. – Вчера было холоднее, после заката.</li>
+<li>This painting looks <strong>more beautiful</strong> in the dark. – Эта картина красивее смотрится в темноте.</li>
+<li>My suitcase is <strong>bigger</strong> when it's full. – Мой чемодан больше, когда полный вещей.</li>
+</ul>
+<h2 id="exercise-listen-and-write-simple-adjectives-than"><a class="header" href="#exercise-listen-and-write-simple-adjectives-than">Exercise: listen and write: Simple Adjectives (than)</a></h2>
+<div id="control_general_than"></div>
+<div id="listen_and_write_than"></div>
+<hr />
+<p><strong>“Менее … чем”</strong>:</p>
+<blockquote>
+<p>Конструкция less + прилагательное используется в основном с длинными прилагательными (из двух и более слогов), например: <code>less important, less interesting, less beautiful</code>.</p>
+<p>Для коротких прилагательных (односложных) часто используется противоположное по смыслу прилагательное с <code>more</code>:</p>
+<p>Вместо <code>less easy</code> часто говорят <code>more difficult</code>.</p>
+<p>Вместо <code>less big</code> часто говорят <code>more small</code>.</p>
+<p>Для выражение <code>less little</code> – "менее меньше" есть уже готовое слово <code>less</code> – "меньше"</p>
+<p>Для выражение <code>less elder</code> – "менее страрее" есть уже готовое слово <code>younger</code> – "моложе"</p>
+<p>My car is <strong>younger than</strong> yours. – Моя машина моложе твоей.</p>
+<p>My car is <strong>less old than</strong> yours. (предложение не ошибка, но звучит "тяжело" — как будто мы специально избегаем нормальной формы.)</p>
+</blockquote>
+<ol>
+<li>"than" используется только тогда, когда мы сравниваем два объекта:</li>
+</ol>
+<ul>
+<li>My brother is <strong>less tall than</strong> my father. — Мой брат ниже (менее высокий), чем мой отец.
+<ul>
+<li>My brother is shorter than my father. — Мой брат ниже, чем мой отец. (звучит более естественно)</li>
+</ul>
+</li>
+<li>She is <strong>less happy than</strong> before. — Она менее счастлива, чем раньше.</li>
+<li>It is <strong>less cold than</strong> yesterday. — Сегодня менее холодно, чем вчера.</li>
+<li>The sunset is l<strong>ess beautiful than</strong> yesterday. — Закат менее красивый, чем вчера.</li>
+<li>The elephant is <strong>less big than</strong> I expected. — Слон оказался не таким большим, как я ожидал.</li>
+<li>This pizza is <strong>less good than</strong> yesterday’s. — Эта пицца менее вкусная, чем вчерашняя.</li>
+</ul>
+<ol>
+<li>"than" не используется если второй объект очевиден из контекста:</li>
+</ol>
+<ul>
+<li>My brother is <strong>less tall</strong> today because he is slouching. — Мой брат выглядит менее высоким сегодня, потому что сутулится.</li>
+<li>She is <strong>less happy</strong> today. — Сегодня она менее счастлива.</li>
+<li>It is <strong>less cold</strong> this morning. — Сегодня утром менее холодно.</li>
+<li>The sunset is <strong>less beautiful</strong> today. — Сегодня закат менее красивый.</li>
+<li>The elephant is <strong>less big</strong> in real life. — В жизни слон не такой большой.</li>
+<li>This pizza is <strong>less good</strong> today. — Сегодня пицца не такая вкусная.</li>
+</ul>
+<h2 id="exercise-listen-and-write-simple-adjectives-less"><a class="header" href="#exercise-listen-and-write-simple-adjectives-less">Exercise: listen and write: Simple Adjectives (less)</a></h2>
+<div id="control_general_less"></div>
+<div id="listen_and_write_less"></div>
+<hr />
+<h3 id="3-superlative-adjective-превосходная-степень"><a class="header" href="#3-superlative-adjective-превосходная-степень">3. Superlative adjective (превосходная степень)</a></h3>
+<p>Слово "than" не используется с превосходной степенью, потому что она уже подразумевает выделение одного объекта "the" среди всех остальных.</p>
+<ul>
+<li>He is <strong>the tallest</strong> player on the team. – Он самый высокий игрок в команде.</li>
+<li>This was <strong>the happiest</strong> day of my life. – Это был самый счастливый день в моей жизни.</li>
+<li>January is <strong>the coldest</strong> month of the year. – Январь — самый холодный месяц в году.</li>
+<li>That gown was <strong>the most beautiful</strong> dress I've ever seen. – То платье было самым красивым платьем, которое я когда-либо видел.</li>
+<li>The whale is <strong>the biggest</strong> animal in the world. – Кит — самое большое животное в мире.</li>
+<li>This pizza is <strong>the best</strong> in the city. — Это лучшая пицца в городе.</li>
+</ul>
+<h2 id="1-Прилагательные-с-одним-слогом-преобразуется-добавлением-суффикса--er-или--r-и-для-superlative--est"><a class="header" href="#1-Прилагательные-с-одним-слогом-преобразуется-добавлением-суффикса--er-или--r-и-для-superlative--est">1. Прилагательные с одним слогом преобразуется добавлением суффикса <code>-er</code> или <code>-r</code> и для superlative <code>-est</code></a></h2>
+<p>tall – высокий:</p>
+<ul>
+<li>Базовое значение (Basic adjective): My brother is <strong>tall</strong>. – Мой брат высокий.</li>
+<li>Сравнительная (Comparative -er) <strong>“Более … чем”</strong>:
+<ul>
+<li>My brother is <strong>taller</strong> in the morning. – Мой брат выше по утрам. (сравниваемое очевидно из контекста)</li>
+<li>My brother is <strong>taller than</strong> me. – Мой брат выше, чем я. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>Сравнительная (Comparative) <strong>“Менее … чем”</strong>:
+<ul>
+<li>My brother is <strong>less tall than</strong> my father. — Мой брат ниже (менее высокий), чем мой отец.</li>
+<li>My brother is <strong>less tall</strong> today because he is slouching. — Мой брат выглядит менее высоким сегодня, потому что сутулится.</li>
+</ul>
+</li>
+<li>Превосходная (Superlative -est): He is <strong>the tallest</strong> player on the team. – Он самый высокий игрок в команде.</li>
+</ul>
+<p>fast – высокий:</p>
+<ul>
+<li>(Basic adjective): A train is <strong>fast</strong>.  – Поезд быстрый.</li>
+<li>(Comparative -er) <strong>“Более … чем”</strong>:
+<ul>
+<li>The train goes <strong>faster</strong> downhill. – Поезд едет быстрее с горки. (сравниваемое очевидно из контекста)</li>
+<li>A train is <strong>faster than</strong> a car. – Поезд быстрее, чем машина. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>(Superlative -est): This plane is <strong>the fastest</strong> in the world. – Этот самолёт самый быстрый в мире.</li>
+</ul>
+<p>cold – холодный:</p>
+<ul>
+<li>(Basic adjective): Yesterday was <strong>cold</strong>. – Вчера было холодно.</li>
+<li>(Comparative -er) <strong>“Более … чем”</strong>:
+<ul>
+<li>It was <strong>colder</strong> yesterday, after sunset. – Вчера было холоднее, после заката. (сравниваемое очевидно из контекста)</li>
+<li>Yesterday was <strong>colder than</strong> today. – Вчера было холоднее, чем сегодня. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>Сравнительная (Comparative) <strong>“Менее … чем”</strong>:
+<ul>
+<li>It is <strong>less cold than</strong> yesterday. — Сегодня менее холодно, чем вчера.</li>
+<li>It is <strong>less cold</strong> this morning. — Сегодня утром менее холодно.</li>
+</ul>
+</li>
+<li>(Superlative -est): January is <strong>the coldest</strong> month of the year. – Январь — самый холодный месяц в году.</li>
+</ul>
+<p>small – маленький:</p>
+<ul>
+<li>(Basic adjective): My apartment is <strong>small</strong>. – Моя квартира маленькая.</li>
+<li>(Comparative -er) <strong>“Более … чем”</strong>:
+<ul>
+<li>My new apartment is <strong>smaller</strong>, after the renovation. — Моя новая квартира меньше, после ремонта. (сравниваемое очевидно из контекста)</li>
+<li>My new apartment is <strong>smaller than</strong> the old one. — Моя новая квартира меньше, чем старая. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>(Superlative -est): The kitten is <strong>the smallest</strong> animal on the farm. — Котёнок — самое маленькое животное на ферме.</li>
+</ul>
+<p>rich – богатый:</p>
+<ul>
+<li>(Basic adjective): She is <strong>rich</strong>. – Она богатая.</li>
+<li>(Comparative -er) <strong>“Более … чем”</strong>:
+<ul>
+<li>She became <strong>richer</strong> after she won the lottery. — Она стала богаче после того, как выиграла в лотерею. (сравниваемое очевидно из контекста)</li>
+<li>She is <strong>richer than</strong> her friend. — Она богаче, чем её подруга. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>(Superlative -est): He is <strong>the richest</strong> man in the city. — Он самый богатый человек в городе.</li>
+</ul>
+<h2 id="2-Прилагательные-с-двумя-слогами-с-окончанием--y-преобразуется-в--ier---iest"><a class="header" href="#2-Прилагательные-с-двумя-слогами-с-окончанием--y-преобразуется-в--ier---iest">2. Прилагательные с двумя слогами с окончанием <code>-y</code> (преобразуется в <code>-ier</code> / <code>-iest</code>)</a></h2>
+<p>happy – счастливый</p>
+<ul>
+<li>(Basic adjective): She is a very <strong>happy</strong> person. – Она очень <strong>счастливый</strong> человек.</li>
+<li>(Comparative -ier) <strong>“Более … чем”</strong>:
+<ul>
+<li>She is <strong>happier</strong> now that she has a new job. – Она <strong>счастливее</strong> теперь, когда у нее новая работа. (сравниваемое очевидно из контекста)</li>
+<li>She is <strong>happier than</strong> her sister. – Она <strong>счастливее, чем</strong> ее сестра. (явно сравниваем двух людей)</li>
+</ul>
+</li>
+<li>Сравнительная (Comparative) <strong>“Менее … чем”</strong>:
+<ul>
+<li>She is <strong>less happy than</strong> before. — Она менее счастлива, чем раньше.</li>
+<li>She is <strong>less happy</strong> today. — Сегодня она менее счастлива.</li>
+</ul>
+</li>
+<li>(Superlative -iest): This was <strong>the happiest</strong> day of my life. – Это был <strong>самый счастливый</strong> день в моей жизни.</li>
+</ul>
+<p>easy – легкий, простой</p>
+<ul>
+<li>(Basic adjective): This test is <strong>easy</strong>. – Этот тест <strong>легкий</strong>.</li>
+<li>(Comparative -ier) <strong>“Более … чем”</strong>:
+<ul>
+<li>Math is <strong>easier</strong> for me than physics. – Математика <strong>легче</strong> для меня, чем физика. (сравниваемое очевидно из контекста)</li>
+<li>This question is <strong>easier than</strong> the last one. – Этот вопрос <strong>легче, чем</strong> предыдущий. (явно сравниваем два вопроса)</li>
+</ul>
+</li>
+<li>(Superlative -iest): This is <strong>the easiest</strong> route to the city center. – Это <strong>самый легкий</strong> маршрут до центра города.</li>
+</ul>
+<p>heavy – тяжелый</p>
+<ul>
+<li>(Basic adjective): The box is quite <strong>heavy</strong>. – Коробка довольно <strong>тяжелая</strong>.</li>
+<li>(Comparative -ier) <strong>“Более … чем”</strong>:
+<ul>
+<li>This bag is <strong>heavier</strong> than I expected. – Эта сумка <strong>тяжелее</strong>, чем я ожидал. (сравниваемое очевидно из контекста)</li>
+<li>Lead is <strong>heavier than</strong> wood. – Свинец <strong>тяжелее, чем</strong> дерево. (явно сравниваем два вещества)</li>
+</ul>
+</li>
+<li>(Superlative -iest): The vault holds <strong>the heaviest</strong> door in the building. – В хранилище <strong>самая тяжелая</strong> дверь в здании.</li>
+</ul>
+<h2 id="3-Прилагательные-с-двумя-и-более-слогами-преобразуется-добавлением-слова-more--than-и-most"><a class="header" href="#3-Прилагательные-с-двумя-и-более-слогами-преобразуется-добавлением-слова-more--than-и-most">3. Прилагательные с двумя и более слогами преобразуется добавлением слова <code>more</code> + than и <code>most</code></a></h2>
+<p>Для этих прилагательных мы используем:</p>
+<ul>
+<li>Сравнительная степень: <strong>more + adjective</strong> (вместо суффикса <strong>-er</strong>)</li>
+<li>Превосходная степень: <strong>most + adjective</strong> (вместо суффикса <strong>-est</strong>)</li>
+</ul>
+<p>boring (скучный) – 2 слога:</p>
+<ul>
+<li>(Basic adjective): The lecture was <strong>boring</strong>. – Лекция была скучной.</li>
+<li>(Comparative <em>more</em>) <strong>“Более … чем”</strong>: his lecture is <strong>more boring than</strong> the previous one. – Эта лекция скучнее предыдущей.</li>
+<li>(Superlative <em>most</em>): That was <strong>the most boring</strong> movie I've ever seen. – Это был самый скучный фильм, который я когда-либо видел</li>
+</ul>
+<p>beautiful (красивый) — 3 слога:</p>
+<ul>
+<li>(Basic adjective): The sunset is <strong>beautiful</strong>. – Закат красивый.</li>
+<li>(Comparative <em>more</em>) <strong>“Более … чем”</strong>:
+<ul>
+<li>This painting is <strong>more beautiful than</strong> the landscape. – Эта картина красивее, чем пейзаж. (явно сравниваем два объекта)</li>
+<li>This painting looks <strong>more beautiful</strong> in the dark. – Эта картина красивее смотрится в темноте. (сравниваемое очевидно из контекста)</li>
+</ul>
+</li>
+<li>Сравнительная (Comparative) <strong>“Менее … чем”</strong>:
+<ul>
+<li>The sunset is l<strong>ess beautiful than</strong> yesterday. — Закат менее красивый, чем вчера.</li>
+<li>The sunset is <strong>less beautiful</strong> today. — Сегодня закат менее красивый.</li>
+</ul>
+</li>
+<li>(Superlative <em>most</em>): That gown was <strong>the most beautiful</strong> dress I've ever seen. – То платье было самым красивым платьем, которое я когда-либо видел.</li>
+</ul>
+<p>expensive (дорогой) — 3 слога:</p>
+<ul>
+<li>(Basic adjective): Buying a house is very <strong>expensive</strong>. – Покупка дома очень дорогая.</li>
+<li>(Comparative <em>more</em>) <strong>“Более … чем”</strong>:
+<ul>
+<li>Diamonds are <strong>more expensive than</strong> gold. – Алмазы дороже, чем золото. (явно сравниваем два объекта)</li>
+<li>Diamonds are <strong>more expensive</strong> after restoration. – Бриллианты дороже после реставрации. (сравниваемое очевидно из контекста)</li>
+</ul>
+</li>
+<li>(Superlative <em>most</em>): This is <strong>the most expensive</strong> watch in the shop. – Это самые дорогие часы в магазине.</li>
+</ul>
+<p>difficult (трудный, сложный) — 3 слога:</p>
+<ul>
+<li>(Basic adjective): The exam was incredibly <strong>difficult</strong>. – Экзамен был невероятно трудным.</li>
+<li>(Comparative <em>more</em>) <strong>“Более … чем”</strong>:
+<ul>
+<li>Learning German is <strong>more difficult</strong> for him <strong>than</strong> learning Spanish. – Изучение немецкого труднее для него, чем изучение испанского.</li>
+</ul>
+</li>
+<li>(Superlative <em>most</em>): This chapter is <strong>the most difficult</strong> part of the book. – Эта глава – самая трудная часть книги.</li>
+</ul>
+<p>expensive (дорогой) – 3 слога:</p>
+<ul>
+<li>(Basic adjective): This watch is <strong>expensive</strong>. – Это часы дорогие.</li>
+<li>(Comparative <em>more</em>) <strong>“Более … чем”</strong>:
+<ul>
+<li>This car is <strong>more expensive than</strong> that one. – Эта машина дороже той.</li>
+</ul>
+</li>
+<li>(Superlative <em>most</em>): This is <strong>the most expensive</strong> restaurant in town. – Это самый дорогой ресторан в городе.</li>
+</ul>
+<h2 id="4-Прилагательные-с-удвоением-конечной-согласной-cvc-те-заканчивающиеся-на-одну-гласную-и-одну-согласную-удваивают-последнюю-букву"><a class="header" href="#4-Прилагательные-с-удвоением-конечной-согласной-cvc-те-заканчивающиеся-на-одну-гласную-и-одну-согласную-удваивают-последнюю-букву">4. Прилагательные с удвоением конечной согласной (CVC) т.е. заканчивающиеся на одну гласную и одну согласную, удваивают последнюю букву</a></h2>
+<p>Это правило применяется к прилагательным, имеющим структуру: <strong>Согласная + Гласная + Согласная</strong> (CVC-структура).</p>
+<p>big – большой:</p>
+<ul>
+<li>(Basic adjective): The elephant is <strong>big</strong>. – Слон большой.</li>
+<li>(Comparative, удваиваем <strong>-g</strong>) <strong>“Более … чем”</strong>:
+<ul>
+<li>My suitcase is <strong>bigger than</strong> yours. – Мой чемодан больше, чем твой. (явно сравниваем два объекта)</li>
+<li>My suitcase is <strong>bigger</strong> when it's full. – Мой чемодан больше, когда полный вещей. (сравниваемое очевидно из контекста)</li>
+</ul>
+</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>:
+<ul>
+<li>The elephant is <strong>less big than</strong> I expected. — Слон оказался не таким большим, как я ожидал.</li>
+<li>The elephant is <strong>less big</strong> in real life. — В жизни слон не такой большой.</li>
+</ul>
+</li>
+<li>(Superlative, удваиваем <strong>-g</strong>): The whale is <strong>the biggest</strong> animal in the world. – Кит — самое большое животное в мире.</li>
+</ul>
+<p>hot – горячий:</p>
+<ul>
+<li>(Basic adjective): The soup is very <strong>hot</strong>. – Суп очень горячий.</li>
+<li>(Comparative, удваиваем <strong>-t</strong>) <strong>“Более … чем”</strong>:
+<ul>
+<li>Summer in Spain is <strong>hotter than</strong> summer in Germany. – Лето в Испании жарче, чем лето в Германии. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>(Superlative, удваиваем <strong>-t</strong>): August is usually <strong>the hottest</strong> month of the year. – Август обычно самый жаркий месяц в году.</li>
+</ul>
+<p>thin – тонкий, худой:</p>
+<ul>
+<li>(Basic adjective): The ice on the pond is <strong>thin</strong>. – Лед на пруду тонкий.</li>
+<li>(Comparative, удваиваем <strong>-n</strong>) <strong>“Более … чем”</strong>:
+<ul>
+<li>This book is <strong>thinner than</strong> that magazine. – Эта книга тоньше, чем тот журнал. (явно сравниваем два объекта)</li>
+</ul>
+</li>
+<li>(Superlative, удваиваем <strong>-n</strong>): He is <strong>the thinnest</strong> person I know. – Он самый худой человек, которого я знаю.</li>
+</ul>
+<h2 id="exercise-listen-and-write-simple-adjectives-forms"><a class="header" href="#exercise-listen-and-write-simple-adjectives-forms">Exercise: listen and write: Simple Adjectives (forms)</a></h2>
+<div id="control_general_forms"></div>
+<div id="listen_and_write_forms"></div>
+<hr />
+<h2 id="Неправильные-формы-irregular-adjectives"><a class="header" href="#Неправильные-формы-irregular-adjectives">Неправильные формы (Irregular Adjectives)</a></h2>
+<p>Эти прилагательные не следуют стандартным правилам добавления <strong>-er/-est</strong> или <strong>more/most</strong>, а имеют совершенно уникальные формы для сравнительной и превосходной степени.</p>
+<div class="table-wrapper"><table><thead><tr><th><strong>Positive (обычная форма)</strong></th><th><strong>Comparative (сравнительная)</strong></th><th><strong>Superlative (превосходная)</strong></th><th><strong>Перевод</strong></th></tr></thead><tbody>
+<tr><td>good</td><td>better</td><td>best</td><td>хороший → лучше → лучший</td></tr>
+<tr><td>bad</td><td>worse</td><td>worst</td><td>плохой → хуже → худший</td></tr>
+<tr><td>far</td><td>farther / further</td><td>farthest / furthest</td><td>дальний → дальше → самый дальний</td></tr>
+<tr><td>little</td><td>less</td><td>least</td><td>маленький / немного → меньше → наименьший</td></tr>
+<tr><td>much / many</td><td>more</td><td>most</td><td>много → больше → больше всего</td></tr>
+<tr><td>old</td><td>older / elder</td><td>oldest / eldest</td><td>старый → старше → самый старый <em>(elder/eldest — о людях)</em></td></tr>
+<tr><td>well <em>(в значении “здоровый”)</em></td><td>better</td><td>best</td><td>здоровый → лучше → самый здоровый</td></tr>
+<tr><td>late</td><td>later</td><td>latest</td><td>поздний → позже → самый поздний</td></tr>
+<tr><td>near</td><td>nearer</td><td>nearest</td><td>близкий → ближе → самый близкий</td></tr>
+</tbody></table>
+</div>
+<p><strong>1. good – better – best</strong></p>
+<ul>
+<li>(Basic adjective): This pizza is <strong>good</strong>. — Эта пицца хорошая.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: This pizza is <strong>better</strong> than yesterday’s. — Эта пицца лучше, чем вчерашняя.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: This pizza is <strong>less good than</strong> yesterday’s. — Эта пицца менее вкусная, чем вчерашняя.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: This pizza is <strong>less good</strong> today. — Сегодня пицца не такая вкусная.</li>
+<li>(Superlative): This pizza is the <strong>best</strong> in the city. — Это лучшая пицца в городе.</li>
+</ul>
+<p><strong>2. bad – worse – worst</strong></p>
+<ul>
+<li>(Basic adjective): The weather is <strong>bad</strong> today. — Сегодня плохая погода.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: The weather is <strong>worse</strong> than yesterday. — Погода хуже, чем вчера.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: This movie is <strong>less bad than</strong> the last one. — Этот фильм менее плохой, чем прошлый.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The weather is <strong>less bad</strong> today. — Сегодня погода не такая плохая.</li>
+<li>(Superlative): This is the <strong>worst</strong> day of the week. — Это худший день недели.</li>
+</ul>
+<p><strong>3. far – farther/further – farthest/furthest</strong></p>
+<p>(оба варианта правильны, <strong>farther</strong> чаще про расстояние, <strong>further</strong> — в переносном смысле)</p>
+<ul>
+<li>(Basic adjective): The park is <strong>far</strong> from my house. — Парк далеко от моего дома.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: The zoo is <strong>farther</strong> than the park. — Зоопарк дальше, чем парк.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The park is less far than the beach. — Парк не так далеко, как пляж.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The shop is less far from here. — Магазин не так далеко отсюда.</li>
+<li>(Superlative): The desert is the <strong>farthest</strong> place from here. — Пустыня — самое далёкое место отсюда.</li>
+</ul>
+<p><strong>4. little – less – least</strong></p>
+<ul>
+<li>(Basic adjective): I have <strong>little</strong> time. — У меня мало времени.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: I have <strong>less</strong> time than you. — У меня меньше времени, чем у тебя.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The house is less little than I thought. — Дом оказался не таким маленьким, как я думал.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The cat is less little now; it has grown. — Кот теперь не такой маленький, он вырос.</li>
+<li>(Superlative): I have the <strong>least</strong> time of all. — У меня меньше всего времени.</li>
+</ul>
+<p><strong>5. much / many – more – most</strong></p>
+<ul>
+<li>(Basic adjective): I have <strong>many</strong> books. — У меня много книг.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: She has <strong>more</strong> books than me. — У неё больше книг, чем у меня.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: I have less money today. — У меня меньше денег сегодня.</li>
+<li>(Superlative): He has the <strong>most</strong> books. — У него больше всего книг.</li>
+</ul>
+<p><em>(или с much)</em></p>
+<ul>
+<li>(Basic adjective): There is <strong>much</strong> snow today. — Сегодня много снега.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: There is <strong>more</strong> snow than yesterday. — Сегодня снега больше, чем вчера.</li>
+<li>(Superlative): This is the <strong>most</strong> snow this year. — Это больше всего снега в этом году.</li>
+</ul>
+<p>Почему не говорят “less much”?</p>
+<p>Потому что слово much уже само выражает идею “много”, а “less” делает её отрицательной (“не так много”), поэтому less само по себе заменяет “less much”.</p>
+<p><strong>6. old – older/elder – oldest/eldest</strong></p>
+<ul>
+<li>(Basic adjective): My dog is <strong>old</strong>. — Моя собака старая.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: My cat is <strong>older</strong> than my dog. — Моя кошка старше моей собаки.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: My car is less old than yours. — Моя машина не такая старая, как твоя.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: My phone is less old now after repair. — Мой телефон теперь не такой старый (после ремонта).</li>
+<li>(Superlative): My grandfather is the <strong>oldest</strong> in the family. — Мой дедушка самый старший в семье.</li>
+</ul>
+<p><em>(elder/eldest — о людях, в семье)</em></p>
+<ul>
+<li>(Comparative) <strong>“Более … чем”</strong>: My <strong>elder</strong> brother lives in Canada. — Мой старший брат живёт в Канаде.</li>
+<li>(Superlative): He is the <strong>eldest</strong> son. — Он старший сын.</li>
+</ul>
+<p><strong>7. well (здоровый) – better – best</strong></p>
+<ul>
+<li>(Basic adjective): I feel <strong>well</strong> today. — Я чувствую себя хорошо.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: I feel <strong>better</strong> than yesterday. — Я чувствую себя лучше, чем вчера.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: She feels less well than yesterday. — Она чувствует себя хуже, чем вчера.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: She feels less well today. — Сегодня она чувствует себя не так хорошо.</li>
+<li>(Superlative): I feel the <strong>best</strong> this week. — Сегодня я чувствую себя лучше всего за неделю.</li>
+</ul>
+<p><strong>8. late – later – latest</strong></p>
+<ul>
+<li>(Basic adjective): I am <strong>late</strong> for school. — Я опоздал в школу.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: I came <strong>later</strong> than my friend. — Я пришёл позже, чем мой друг.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: I came less late than last time. — Я пришёл не так поздно, как в прошлый раз.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: I was less late today. — Сегодня я опоздал меньше.</li>
+<li>(Superlative): This is the <strong>latest</strong> bus. — Это самый поздний автобус.</li>
+</ul>
+<p><strong>9. near – nearer – nearest</strong></p>
+<ul>
+<li>(Basic adjective): The shop is <strong>near</strong> my house. — Магазин рядом с моим домом.</li>
+<li>(Comparative) <strong>“Более … чем”</strong>: The school is <strong>nearer</strong> than the park. — Школа ближе, чем парк.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The station is less near than the bus stop. — Станция не так близко, как автобусная остановка.</li>
+<li>(Comparative) <strong>“Менее … чем”</strong>: The school is less near than I thought. — Школа оказалась не так близко, как я думал.</li>
+<li>(Superlative): This is the <strong>nearest</strong> hospital. — Это ближайшая больница.</li>
+</ul>
+<h2 id="exercise-listen-and-write-simple-adjectives-irregular"><a class="header" href="#exercise-listen-and-write-simple-adjectives-irregular">Exercise: listen and write: Simple Adjectives (irregular)</a></h2>
+<div id="control_general_irregular"></div>
+<div id="listen_and_write_irregular"></div>
+<hr />
+<h2 id="exercise-listen-and-write-simple-adjectives-all-exercises"><a class="header" href="#exercise-listen-and-write-simple-adjectives-all-exercises">Exercise: listen and write: Simple Adjectives (all exercises)</a></h2>
+<div id="control_general_all"></div>
+<div id="listen_and_write_all"></div>
+<script>   
+
+const exercises_easy_listen_and_write_simple = [
+    ["I am happy today.", "Я сегодня счастлив."],
+    ["I am not happy today.", "Я сегодня не счастлив."],
+    ["Am I happy today?", "Я сегодня счастлив?"],
+    
+    ["I am happier than my friend today.", "Я сегодня счастливее своего друга."],
+    ["I am not happier than my friend today.", "Я сегодня не счастливее своего друга."],
+    ["Am I happier than my friend today?", "Я сегодня счастливее своего друга?"],
+    
+    ["I am the happiest in my class today.", "Сегодня я самый счастливый в классе."],
+    ["I am not the happiest in my class today.", "Сегодня я не самый счастливый в классе."],
+    ["Am I the happiest in my class today?", "Сегодня я самый счастливый в классе?"],
+    
+    ["I was happy yesterday.", "Вчера я был счастлив."],
+    ["I was not happy yesterday.", "Вчера я не был счастлив."],
+    ["Was I happy yesterday?", "Вчера я был счастлив?"],
+    
+    ["I was happier than my friend yesterday.", "Вчера я был счастливее своего друга."],
+    ["I was not happier than my friend yesterday.", "Вчера я не был счастливее своего друга."],
+    ["Was I happier than my friend yesterday?", "Вчера я был счастливее своего друга?"],
+    
+    ["I was the happiest person yesterday.", "Вчера я был самым счастливым человеком."],
+    ["I was not the happiest person yesterday.", "Вчера я не был самым счастливым человеком."],
+    ["Was I the happiest person yesterday?", "Вчера я был самым счастливым человеком?"],
+    
+    ["I will be happy tomorrow.", "Завтра я буду счастлив."],
+    ["I will not be happy tomorrow.", "Завтра я не буду счастлив."],
+    ["Will I be happy tomorrow?", "Завтра я буду счастлив?"],
+
+    ["I will be happier than my friend tomorrow.", "Завтра я буду счастливее своего друга."],
+    ["I will not be happier than my friend tomorrow.", "Завтра я не буду счастливее своего друга."],
+    ["Will I be happier than my friend tomorrow?", "Завтра я буду счастливее своего друга?"],
+    
+    ["I will be the happiest person at the party.", "Завтра я буду самым счастливым человеком на вечеринке."],
+    ["I will not be the happiest person at the party.", "Завтра я не буду самым счастливым человеком на вечеринке."],
+    ["Will I be the happiest person at the party?", "Завтра я буду самым счастливым человеком на вечеринке?"],
+
+    ["I am being happy now.", "Сейчас я счастлив."],
+    ["I am not being happy now.", "Сейчас я не счастлив."],
+    ["Am I being happy now?", "Сейчас я счастлив?"],
+    
+    ["I am being happier than my friend now.", "Сейчас я счастливее своего друга."],
+    ["I am not being happier than my friend now.", "Сейчас я не счастливее своего друга."],
+    ["Am I being happier than my friend now?", "Сейчас я счастливее своего друга?"],
+    
+    ["I am the happiest now.", "Сейчас я самый счастливый."],
+    ["I am not the happiest now.", "Сейчас я не самый счастливый."],
+    ["Am I the happiest now?", "Сейчас я самый счастливый?"],
+
+    ["I am strong today.", "Я сегодня сильный."],
+    ["I am not strong today.", "Я сегодня не сильный."],
+    ["Am I strong today?", "Я сегодня сильный?"],
+    
+    ["I am stronger than my friend today.", "Сегодня я сильнее своего друга."],
+    ["I am not stronger than my friend today.", "Сегодня я не сильнее своего друга."],
+    ["Am I stronger than my friend today?", "Сегодня я сильнее своего друга?"],
+    
+    ["I am the strongest in my class today.", "Сегодня я самый сильный в классе."],
+    ["I am not the strongest in my class today.", "Сегодня я не самый сильный в классе."],
+    ["Am I the strongest in my class today?", "Сегодня я самый сильный в классе?"],
+    
+    ["I was strong yesterday.", "Вчера я был сильным."],
+    ["I was not strong yesterday.", "Вчера я не был сильным."],
+    ["Was I strong yesterday?", "Вчера я был сильным?"],
+    
+    ["I was stronger than my friend yesterday.", "Вчера я был сильнее своего друга."],
+    ["I was not stronger than my friend yesterday.", "Вчера я не был сильнее своего друга."],
+    ["Was I stronger than my friend yesterday?", "Вчера я был сильнее своего друга?"],
+    
+    ["I was the strongest person yesterday.", "Вчера я был самым сильным."],
+    ["I was not the strongest person yesterday.", "Вчера я не был самым сильным."],
+    ["Was I the strongest person yesterday?", "Вчера я был самым сильным?"],
+    
+    ["I will be strong tomorrow.", "Завтра я буду сильным."],
+    ["I will not be strong tomorrow.", "Завтра я не буду сильным."],
+    ["Will I be strong tomorrow?", "Завтра я буду сильным?"],
+    
+    ["I will be stronger than my friend tomorrow.", "Завтра я буду сильнее своего друга."],
+    ["I will not be stronger than my friend tomorrow.", "Завтра я не буду сильнее своего друга."],
+    ["Will I be stronger than my friend tomorrow?", "Завтра я буду сильнее своего друга?"],
+    
+    ["I will be the strongest at the gym.", "Я буду самым сильным в спортзале."],
+    ["I will not be the strongest at the gym.", "Я не буду самым сильным в спортзале."],
+    ["Will I be the strongest at the gym?", "Я буду самым сильным в спортзале?"],
+    
+    ["I am being strong now.", "Сейчас я сильный."],
+    ["I am not being strong now.", "Сейчас я не сильный."],
+    ["Am I being strong now?", "Сейчас я сильный?"],
+    
+    ["I am being stronger than my friend now.", "Сейчас я сильнее своего друга."],
+    ["I am not being stronger than my friend now.", "Сейчас я не сильнее своего друга."],
+    ["Am I being stronger than my friend now?", "Сейчас я сильнее своего друга?"],
+    
+    ["I am the strongest now.", "Сейчас я самый сильный."],
+    ["I am not the strongest now.", "Сейчас я не самый сильный."],
+    ["Am I the strongest now?", "Сейчас я самый сильный?"],
+
+    ["I am new here.", "Я новый здесь."],
+    ["I am not new here.", "Я не новый здесь."],
+    ["Am I new here?", "Я новый здесь?"],
+    
+    ["I am newer than my friend.", "Я новее, чем мой друг."],
+    ["I am not newer than my friend.", "Я не новее, чем мой друг."],
+    ["Am I newer than my friend?", "Я новее, чем мой друг?"],
+    
+    ["I am the newest student.", "Я самый новый студент."],
+    ["I am not the newest student.", "Я не самый новый студент."],
+    ["Am I the newest student?", "Я самый новый студент?"],
+    
+    ["I was new yesterday.", "Вчера я был новым."],
+    ["I was not new yesterday.", "Вчера я не был новым."],
+    ["Was I new yesterday?", "Вчера я был новым?"],
+    
+    ["I was newer than my classmate.", "Я был новее, чем мой одноклассник."],
+    ["I was not newer than my classmate.", "Я не был новее, чем мой одноклассник."],
+    ["Was I newer than my classmate?", "Я был новее, чем мой одноклассник?"],
+    
+    ["I was the newest in the team.", "Я был самым новым в команде."],
+    ["I was not the newest in the team.", "Я не был самым новым в команде."],
+    ["Was I the newest in the team?", "Я был самым новым в команде?"],
+    
+    ["I will be new tomorrow.", "Завтра я буду новым."],
+    ["I will not be new tomorrow.", "Завтра я не буду новым."],
+    ["Will I be new tomorrow?", "Завтра я буду новым?"],
+    
+    ["I will be newer than others.", "Я буду новее других."],
+    ["I will not be newer than others.", "Я не буду новее других."],
+    ["Will I be newer than others?", "Я буду новее других?"],
+    
+    ["I will be the newest employee.", "Я буду самым новым сотрудником."],
+    ["I will not be the newest employee.", "Я не буду самым новым сотрудником."],
+    ["Will I be the newest employee?", "Я буду самым новым сотрудником?"],
+    
+    ["I am being new now.", "Сейчас я новый."],
+    ["I am not being new now.", "Сейчас я не новый."],
+    ["Am I being new now?", "Сейчас я новый?"],
+    
+    ["I am being newer than before.", "Сейчас я новее, чем раньше."],
+    ["I am not being newer than before.", "Сейчас я не новее, чем раньше."],
+    ["Am I being newer than before?", "Сейчас я новее, чем раньше?"],
+    
+    ["I am the newest now.", "Сейчас я самый новый."],
+    ["I am not the newest now.", "Сейчас я не самый новый."],
+    ["Am I the newest now?", "Сейчас я самый новый?"],
+    ["I am good today.", "Я хороший сегодня."],
+    ["I am not good today.", "Я не хороший сегодня."],
+    ["Am I good today?", "Я хороший сегодня?"],
+    
+    ["I am better than my friend.", "Я лучше своего друга."],
+    ["I am not better than my friend.", "Я не лучше своего друга."],
+    ["Am I better than my friend?", "Я лучше своего друга?"],
+    
+    ["I am the best in my group.", "Я лучший в своей группе."],
+    ["I am not the best in my group.", "Я не лучший в своей группе."],
+    ["Am I the best in my group?", "Я лучший в своей группе?"],
+    
+    ["I was good yesterday.", "Вчера я был хорошим."],
+    ["I was not good yesterday.", "Вчера я не был хорошим."],
+    ["Was I good yesterday?", "Вчера я был хорошим?"],
+    
+    ["I was better than before.", "Я был лучше, чем раньше."],
+    ["I was not better than before.", "Я не был лучше, чем раньше."],
+    ["Was I better than before?", "Я был лучше, чем раньше?"],
+    
+    ["I was the best in the team.", "Я был лучшим в команде."],
+    ["I was not the best in the team.", "Я не был лучшим в команде."],
+    ["Was I the best in the team?", "Я был лучшим в команде?"],
+    
+    ["I will be good tomorrow.", "Завтра я буду хорошим."],
+    ["I will not be good tomorrow.", "Завтра я не буду хорошим."],
+    ["Will I be good tomorrow?", "Завтра я буду хорошим?"],
+    
+    ["I will be better than my friend.", "Я буду лучше своего друга."],
+    ["I will not be better than my friend.", "Я не буду лучше своего друга."],
+    ["Will I be better than my friend?", "Я буду лучше своего друга?"],
+    
+    ["I will be the best player.", "Я буду лучшим игроком."],
+    ["I will not be the best player.", "Я не буду лучшим игроком."],
+    ["Will I be the best player?", "Я буду лучшим игроком?"],
+    
+    ["I am being good now.", "Сейчас я хороший."],
+    ["I am not being good now.", "Сейчас я не хороший."],
+    ["Am I being good now?", "Сейчас я хороший?"],
+    
+    ["I am being better now.", "Сейчас я лучше."],
+    ["I am not being better now.", "Сейчас я не лучше."],
+    ["Am I being better now?", "Сейчас я лучше?"],
+    
+    ["I am the best now.", "Сейчас я лучший."],
+    ["I am not the best now.", "Сейчас я не лучший."],
+    ["Am I the best now?", "Сейчас я лучший?"],
+
+    ["I am the only student here.", "Я единственный ученик здесь."],
+    ["I am not the only student here.", "Я не единственный ученик здесь."],
+    ["Am I the only student here?", "Я единственный ученик здесь?"],
+
+    ["I like autumn days.", "Мне нравятся осенние дни."],
+    ["I don’t like autumn days.", "Мне не нравятся осенние дни."],
+    ["Do I like autumn days?", "Мне нравятся осенние дни?"],
+
+    ["I am old now.", "Я старый теперь."],
+    ["I am not old now.", "Я не старый теперь."],
+    ["Am I old now?", "Я старый теперь?"],
+    
+    ["I am older than my brother.", "Я старше своего брата."],
+    ["I am not older than my brother.", "Я не старше своего брата."],
+    ["Am I older than my brother?", "Я старше своего брата?"],
+    
+    ["I am the oldest in my family.", "Я самый старший в семье."],
+    ["I am not the oldest in my family.", "Я не самый старший в семье."],
+    ["Am I the oldest in my family?", "Я самый старший в семье?"],
+
+    ["I am great today.", "Я замечательный сегодня."],
+    ["I am not great today.", "Я не замечательный сегодня."],
+    ["Am I great today?", "Я замечательный сегодня?"],
+    
+    ["I am greater than before.", "Я лучше, чем раньше."],
+    ["I am not greater than before.", "Я не лучше, чем раньше."],
+    ["Am I greater than before?", "Я лучше, чем раньше?"],
+    
+    ["I am the greatest person here.", "Я самый замечательный человек здесь."],
+    ["I am not the greatest person here.", "Я не самый замечательный человек здесь."],
+    ["Am I the greatest person here?", "Я самый замечательный человек здесь?"],
+
+    ["I am big today.", "Я большой сегодня."],
+    ["I am not big today.", "Я не большой сегодня."],
+    ["Am I big today?", "Я большой сегодня?"],
+    
+    ["I am bigger than my friend.", "Я больше своего друга."],
+    ["I am not bigger than my friend.", "Я не больше своего друга."],
+    ["Am I bigger than my friend?", "Я больше своего друга?"],
+    
+    ["I am the biggest in the group.", "Я самый большой в группе."],
+    ["I am not the biggest in the group.", "Я не самый большой в группе."],
+    ["Am I the biggest in the group?", "Я самый большой в группе?"],
+
+    ["I am the first student.", "Я первый ученик."],
+    ["I am not the first student.", "Я не первый ученик."],
+    ["Am I the first student?", "Я первый ученик?"],
+    
+    ["I was the first yesterday.", "Вчера я был первым."],
+    ["I was not the first yesterday.", "Вчера я не был первым."],
+    ["Was I the first yesterday?", "Вчера я был первым?"],
+    
+    ["I will be the first tomorrow.", "Завтра я буду первым."],
+    ["I will not be the first tomorrow.", "Завтра я не буду первым."],
+    ["Will I be the first tomorrow?", "Завтра я буду первым?"],
+    
+    ["I am being the first now.", "Сейчас я первый."],
+    ["I am not being the first now.", "Сейчас я не первый."],
+    ["Am I being the first now?", "Сейчас я первый?"],
+
+];
+const exercises_easy_listen_and_write_state_subject = [
+    ["The cat is happy.", "Кот счастлив."],
+    ["The book is interesting.", "Книга интересная."],
+    ["My bag is heavy.", "Моя сумка тяжелая."],
+    
+    ["Is the cat happy?", "Кот счастлив?"],
+    ["Is the book interesting?", "Книга интересная?"],
+    ["Is your bag heavy?", "Твоя сумка тяжелая?"],
+    
+    ["The cat is not (isn't) happy.", "Кот не счастлив."],
+    ["The book is not (isn't) interesting.", "Книга не интересная."],
+    ["My bag is not (isn't) heavy.", "Моя сумка не тяжелая."],
+    
+    ["He was tired yesterday.", "Он был уставшим вчера."],
+    ["The test was easy.", "Тест был легким."],
+    ["We were late.", "Мы опоздали."],
+    
+    ["Was he tired yesterday?", "Он был уставшим вчера?"],
+    ["Was the test easy?", "Тест был легким?"],
+    ["Were you late?", "Вы опоздали?"],
+    
+    ["He was not tired.", "Он не был уставшим."],
+    ["The test was not easy.", "Тест не был легким."],
+    ["We were not late.", "Мы не опоздали."],
+    
+    ["The weather will be good tomorrow.", "Погода будет хорошей завтра."],
+    ["She will be happy to see you.", "Она будет рада тебя видеть."],
+    ["It will be cold in the evening.", "Вечером будет холодно."],
+    
+    ["Will the weather be good tomorrow?", "Погода будет хорошей завтра?"],
+    ["Will she be happy?", "Она будет счастлива?"],
+    ["Will it be cold?", "Будет холодно?"],
+    
+    ["The weather will not be good.", "Погода не будет хорошей."],
+    ["She will not be happy.", "Она не будет счастлива."],
+    ["It will not be cold.", "Не будет холодно."],
+    
+    ["You are being quiet today.", "Ты сегодня ведешь себя тихо."],
+    ["He is being bad.", "Он плохо себя ведет (дурачится)."],
+    ["Is he being bad again?", "Он снова плохо себя ведет?"],
+    ["The children are being good.", "Дети ведут себя хорошо."],
+    
+    ["Why are you being so quiet?", "Почему ты такой тихий?"],
+    ["Are the children being good?", "Дети хорошо себя ведут?"],
+    
+    ["You are not being helpful.", "Ты не помогаешь (не проявляешь помощь)."],
+    ["He is not being serious.", "Он несерьезно относится."],
+    ["They are not being friendly.", "Они недружелюбны (сейчас)."],
+    
+    ["This book is more interesting than that one.", "Эта книга интереснее, чем та."],
+    ["My brother is taller than me.", "Мой брат выше меня."],
+    ["The test was easier than I thought.", "Тест был легче, чем я думал."],
+    ["Today is colder than yesterday.", "Сегодня холоднее, чем вчера."],
+    
+    ["This is the most interesting book in the library.", "Это самая интересная книга в библиотеке."],
+    ["He is the tallest boy in the class.", "Он самый высокий мальчик в классе."],
+    ["It was the easiest question.", "Это был самый легкий вопрос."],
+    ["January is the coldest month.", "Январь – самый холодный месяц."],
+
+];
+const exercises_easy_listen_and_write_as = [
+    ["My bag is as heavy as your bag.", "Моя сумка такая же тяжелая, как твоя."],
+    ["He is as tall as his brother.", "Он такой же высокий, как его брат."],
+    ["This book is as interesting as that film.", "Эта книга такая же интересная, как тот фильм."],
+    
+    ["This exercise is not as difficult as that one.", "Это упражнение не такое сложное, как то."],
+    ["I am not as happy as you.", "Я не такой счастливый, как ты."],
+    ["The coffee is not as hot as the tea.", "Кофе не такой горячий, как чай."],
+    
+    ["Is your sister as old as you?", "Твоя сестра такого же возраста, как ты?"],
+    ["Is this street as long as that street?", "Эта улица такая же длинная, как та улица?"],
+    ["Are you as tired as me?", "Ты такой же уставший, как я?"],
+    
+    ["Our house is as big as their house.", "Наш дом такой же большой, как их дом."],
+    ["This apple is not as big as that one.", "Это яблоко не такое большое, как то."],
+    
+    ["My room is as small as your room.", "Моя комната такая же маленькая, как твоя."],
+    ["Your idea is as good as my idea.", "Твоя идея такая же хорошая, как моя."],
+    
+    ["English is as easy as Spanish for me.", "Английский для меня такой же легкий, как испанский."],
+    ["The water is as cold as ice.", "Вода такая же холодная, как лёд."],
+    
+    ["I am as happy as you.", "Я такой же счастливый, как ты."],
+    ["He is as sad as she is.", "Он такой же грустный, как она."],
+];
+const exercises_easy_listen_and_write_less = [
+    ["This book is less interesting than that one.", "Эта книга менее интересная, чем та."],
+    ["My job is less difficult than her job.", "Моя работа менее сложная, чем ее работа."],
+    ["He is less famous than his brother.", "Он менее известный, чем его брат."],
+    
+    ["I am less tired today.", "Сегодня я менее уставший."],
+    ["This street is less crowded in the morning.", "Эта улица менее многолюдная утром."],
+    
+    ["The test was less easy than I thought.", "Тест был менее легким, чем я думал."],
+    ["The movie was less exciting than the book.", "Фильм был менее захватывающим, чем книга."],
+    ["She was less happy in her old job.", "Она была менее счастлива на своей старой работе."],
+    ["The weather was less cold yesterday.", "Вчера погода была менее холодной."],
+    ["His answer was less polite this time.", "На этот раз его ответ был менее вежливым."],
+    
+    ["The new software will be less hard.", "Новое программное обеспечение будет менее трудным (менее сложным)."],
+    ["I hope the next lesson will be less boring.", "Надеюсь, следующий урок будет менее скучным."],
+    ["Your new work will be less important.", "Ваша новая работа будет менее важной."],
+    ["It will be less windy tomorrow.", "Завтра будет менее ветрено."],
+    ["This method will be less expensive.", "Этот метод будет менее затратным."],
+    
+    ["Why are you being less helpful today?", "Почему ты сегодня менее полезный? (ведешь себя менее помогающе)"],
+    ["He is being less careful than usual.", "Он ведет себя менее осторожно, чем обычно."],
+    ["The children are being less noisy now.", "Сейчас дети ведут себя менее шумно."],
+    ["She is being less friendly to her colleagues.", "Она стала менее дружелюбной с коллегами."],
+    ["You are being less nice with me.", "Ты становишься менее милым (добрым/приятным) со мной."],
+];
+const exercises_easy_listen_and_write_than = [
+    ["He is taller than his sister.", "Он выше, чем его сестра."],
+    ["The new building is much taller.", "Новое здание намного выше."],
+
+    ["My house is bigger than yours.", "Мой дом больше, чем твой."],
+    ["We need a bigger table.", "Нам нужен стол побольше."],
+
+    ["This train is faster than the bus.", "Этот поезд быстрее, чем автобус."],
+    ["You should drive faster.", "Тебе следует ехать быстрее."],
+
+    ["Her presentation was better than mine.", "Её презентация была лучше, чем моя."],
+    ["I feel better today.", "Я чувствую себя лучше сегодня."],
+
+    ["This article is more interesting than the previous one.", "Эта статья интереснее, чем предыдущая."],
+    ["Can you tell us something more interesting?", "Ты можешь рассказать нам что-то поинтереснее?"],
+
+    ["A taxi is more expensive than the metro.", "Такси дороже, чем метро."],
+    ["We chose the more expensive option.", "Мы выбрали более дорогой вариант."],
+
+    ["The traffic jam was worse than yesterday.", "Пробка была хуже, чем вчера."],
+    ["It started raining, and the situation became worse.", "Пошёл дождь, и ситуация стала хуже."],
+
+    ["Their offer is cheaper than our initial quote.", "Их предложение дешевле, чем наша первоначальная смета."],
+    ["Do you have anything cheaper?", "У вас есть что-нибудь подешевле?"],
+
+    ["This jacket is nicer than the blue one.", "Эта куртка лучше, чем синяя."],
+    ["The weather is much nicer today.", "Погода сегодня намного лучше."],
+
+    ["We arrived later than the others.", "Мы приехали позже, чем остальные."],
+    ["Let's meet later this week.", "Давай встретимся позже на этой неделе."],
+
+    ["My hair is shorter than yours now.", "Мои волосы теперь короче, чем твои."],
+    ["I'm looking for a shorter route.", "Я ищу маршрут покороче."],
+
+    ["The library is quieter than the hall.", "Библиотека тише, чем зал."],
+    ["Please speak a little quieter.", "Пожалуйста, говорите немного тише."],
+
+    ["This game is easier than the first one.", "Эта игра легче, чем первая."],
+    ["They made the task much easier.", "Они сделали задание гораздо проще."],
+
+    ["Eating fruit is healthier than eating candy.", "Есть фрукты полезнее, чем есть конфеты."],
+    ["She looks a lot healthier now.", "Она выглядит сейчас намного здоровее."],
+
+    ["My dog is cleverer than the neighbor's cat.", "Моя собака умнее, чем соседская кошка."],
+    ["He always has a more clever answer.", "У него всегда есть более умный ответ."],
+
+    ["Your phone is newer than mine.", "Твой телефон новее, чем мой."],
+    ["I want a newer model.", "Я хочу модель поновее."],
+
+    ["The kitchen is warmer than the bedroom.", "Кухня теплее, чем спальня."],
+    ["We need something warmer for the winter.", "Нам нужно что-то потеплее для зимы."],
+
+    ["He is kinder than I thought.", "Он добрее, чем я думал."],
+    ["Try to be a bit kinder.", "Постарайся быть подобрее."],
+
+    ["The music is louder than the TV.", "Музыка громче, чем телевизор."],
+    ["Can you make it louder?", "Можешь сделать погромче?"],
+
+    ["This month is busier than the last one.", "Этот месяц загруженнее, чем прошлый."],
+    ["I'll call you when I am less busy.", "Я позвоню тебе, когда буду менее занят."],
+
+    ["My coffee is hotter than yours.", "Мой кофе горячее, чем твой."],
+    ["Be careful, the oven is much hotter.", "Будь осторожен, духовка намного горячее."],
+
+    ["The blue bag is heavier than the red one.", "Синяя сумка тяжелее, чем красная."],
+    ["I don't need a heavier coat.", "Мне не нужно более тяжелое пальто."],
+
+    ["This park is closer than the beach.", "Этот парк ближе, чем пляж."],
+    ["The second stop is closer.", "Вторая остановка ближе."],
+
+    ["His answer was simpler than the teacher's.", "Его ответ был проще, чем ответ учителя."],
+    ["I prefer a simpler design.", "Я предпочитаю более простой дизайн."],
+
+    ["Our journey was shorter than theirs.", "Наше путешествие было короче, чем их."],
+    ["Let's take a shorter break.", "Давай сделаем перерыв покороче."],
+
+    ["The small car is slower than the big one.", "Маленькая машина медленнее, чем большая."],
+    ["We can't go slower.", "Мы не можем ехать медленнее."],
+
+    ["The bed is softer than the sofa.", "Кровать мягче, чем диван."],
+    ["I want a softer pillow.", "Я хочу подушку помягче."],
+];
+const exercises_easy_listen_and_write_irregular = [
+  ["This book is good, but that one is better. The third book is the best.", "Эта книга хорошая, но та – лучше. Третья книга – самая лучшая."],
+    ["His answer was good, her answer was better, but my answer was the best.", "Его ответ был хорошим, ее ответ был лучше, но мой ответ был самым лучшим."],
+    ["I think the weather will be good tomorrow. I hope Friday will be better. And Saturday will be the best day of the week.", "Думаю, завтра погода будет хорошей. Надеюсь, в пятницу будет лучше. А суббота будет самым лучшим днем недели."],
+    ["His performance is good now, but it's getting better with every game. Soon it will be the best in the team.", "Его игра сейчас хорошая, но она становится лучше с каждой игрой. Скоро она станет самой лучшей в команде."],
+
+    ["The situation is bad. Yesterday it was worse. This is the worst day of my life.", "Ситуация плохая. Вчера она была хуже. Это самый худший день в моей жизни."],
+    ["The movie was bad, the popcorn was worse, but the sound was the worst.", "Фильм был плохим, попкорн был хуже, но звук был самым худшим."],
+    ["If you don't study, your grades will be bad. Without practice, they will be worse. And that will be the worst scenario.", "Если ты не будешь учиться, твои оценки будут плохими. Без практики они будут хуже. И это будет самый худший сценарий."],
+    ["His cough is bad today, and it's getting worse. Soon he will feel the worst.", "Его кашель сегодня плохой, и он становится хуже. Скоро он почувствует себя самым худшим образом."],
+
+    ["The park is far. The forest is farther. The mountain is the farthest.", "Парк далеко. Лес дальше. Гора – самая дальняя."],
+    ["His house was far, but her house was further. The school was the farthest.", "Его дом был далеко, но ее дом был дальше. Школа была самой дальней."],
+    ["We will walk to a far point. Then to a farther one. Our goal is the farthest point on the map.", "Мы дойдем до далекой точки. Потом до более дальней. Наша цель – самая дальняя точка на карте."],
+    ["He is walking further and further away. Soon he will be at the farthest point.", "Он идет все дальше и дальше. Скоро он будет в самой дальней точке."],
+
+    ["I have little time. You have less time. He has the least time.", "У меня мало времени. У тебя меньше времени. У него меньше всего времени."],
+    ["There was little sugar. There was less milk. There was the least water.", "Сахарa было мало. Молока было меньше. Воды было меньше всего."],
+    ["Tomorrow we will have little work. On Friday less. On Sunday the least work.", "Завтра у нас будет мало работы. В пятницу – меньше. В воскресенье – меньше всего работы."],
+    ["Our energy is becoming less and less. Soon we will have the least amount of energy.", "Нашей энергии становится все меньше и меньше. Скоро у нас будет наименьшее количество энергии."],
+
+    ["I have many books. She has more books. He has the most books.", "У меня много книг. У нее больше книг. У него больше всего книг."],
+    ["He spent much money. I spent more money. You spent the most money.", "Он потратил много денег. Я потратил больше денег. Ты потратил больше всего денег."],
+    ["We need more time. They will need even more. You will need the most time.", "Нам нужно больше времени. Им понадобится еще больше. Тебе понадобится больше всего времени."],
+    ["He is asking more questions now. Soon he will ask the most questions.", "Сейчас он задает больше вопросов. Скоро он задаст больше всего вопросов."],
+
+    ["This house is old. That house is older. It is the oldest house in the city.", "Этот дом старый. Тот дом старше. Это самый старый дом в городе."],
+    ["My brother was older than me. My sister was the eldest in our family.", "Мой брат был старше меня. Моя сестра была самой старшей в нашей семье."],
+    ["This computer will be old in a year. Your phone will be older. My tablet will be the oldest.", "Этот компьютер будет старым через год. Твой телефон будет старше. Мой планшет будет самым старым."],
+    ["As time passes, our car is getting older. Soon it will be the oldest on our street.", "С течением времени наша машина становится старше. Скоро она будет самой старой на нашей улице."],
+
+    ["I feel well today. She feels better. He feels the best.", "Сегодня я чувствую себя хорошо. Она чувствует себя лучше. Он чувствует себя лучше всех."],
+    ["Yesterday he was well. In the evening he felt better. By night he felt the best.", "Вчера он чувствовал себя хорошо. Вечером он почувствовал себя лучше. К ночи он чувствовал себя лучше всего."],
+    ["After the medicine, you will feel well. After rest, you will feel better. After the holiday, you will feel the best.", "После лекарства ты будешь чувствовать себя хорошо. После отдыха ты будешь чувствовать себя лучше. После отпуска ты будешь чувствовать себя лучше всего."],
+    ["The friend is getting better now. Soon he will be the best he has ever been.", "Другу сейчас становится лучше. Скоро он будет чувствовать себя лучше, чем когда-либо."],
+
+    ["This train is late. The next one is later. The last train is the latest.", "Этот поезд опаздывает. Следующий будет позже. Последний поезд – самый поздний."],
+    ["His reply was late. Her reply was later. Your reply was the latest.", "Его ответ был поздним. Ее ответ был еще более поздним. Твой ответ был самым поздним."],
+    ["The meeting will be late. The dinner will be later. The party will be the latest event.", "Встреча будет поздней. Ужин будет еще позже. Вечеринка будет самым поздним мероприятием."],
+    ["He is coming home later and later. Soon he will come at the latest possible time.", "Он приходит домой все позже и позже. Скоро он будет приходить в самое позднее возможное время."],
+
+    ["The bus stop is near. The metro is nearer. That shop is the nearest.", "Автобусная остановка близко. Метро ближе. Тот магазин – самый близкий."],
+    ["We were near the park. They were nearer to the center. You were at the nearest point to the finish.", "Мы были близко к парку. Они были ближе к центру. Ты был в самой близкой точке к финишу."],
+    ["We will stay near the city. They will stay nearer to the airport. I will stay at the nearest hotel.", "Мы остановимся недалеко от города. Они остановятся ближе к аэропорту. Я остановлюсь в ближайшем отеле."],
+    ["As we walk, the building is getting nearer. Soon we will reach the nearest entrance.", "Пока мы идем, здание становится ближе. Скоро мы достигнем ближайшего входа."],
+];
+const exercises_easy_listen_and_write_forms = [
+    ["He is strong.", "Он сильный."],
+    ["His brother is stronger.", "Его брат сильнее."],
+    ["My father is the strongest.", "Мой папа самый сильный."],
+
+    ["This is a new phone.", "Это новый телефон."],
+    ["That phone is newer.", "Тот телефон новее."],
+    ["His phone is the newest.", "Его телефон самый новый."],
+
+    ["The movie is good.", "Фильм хороший."],
+    ["The book is better.", "Книга лучше."],
+    ["This play is the best.", "Эта пьеса самая лучшая."],
+
+    ["She is an only child.", "Она единственный ребенок в семье."],
+    ["We love autumn colours.", "Мы любим осенние цвета."],
+
+    ["This is an old car.", "Это старая машина."],
+    ["That car is older.", "Та машина старше."],
+    ["His car is the oldest.", "Его машина самая старая."],
+
+    ["It was a great day.", "Это был отличный день."],
+    ["It was a greater success.", "Это был больший успех."],
+    ["It was the greatest gift.", "Это был величайший подарок."],
+
+    ["I have a big bag.", "У меня большая сумка."],
+    ["You have a bigger bag.", "У тебя сумка больше."],
+    ["He has the biggest bag.", "У него самая большая сумка."],
+
+    ["This is my first job.", "Это моя первая работа."],
+    ["This is my second coffee.", "Это мой второй кофе."],
+    ["This is my third call.", "Это мой третий звонок."],
+
+    ["He is American.", "Он американец."],
+    ["This is my last question.", "Это мой последний вопрос."],
+
+    ["I have a small room.", "У меня маленькая комната."],
+    ["You have a smaller room.", "У тебя комната меньше."],
+    ["He has the smallest room.", "У него самая маленькая комната."],
+
+    ["They are different.", "Они разные."],
+    ["They are more different.", "Они более разные."],
+    ["They are the most different.", "Они самые разные."],
+
+    ["She is young.", "Она молодая."],
+    ["She is younger.", "Она моложе."],
+    ["She is the youngest.", "Она самая молодая."],
+
+    ["This is a long street.", "Это длинная улица."],
+    ["That is a longer road.", "Это более длинная дорога."],
+    ["This is the longest river.", "Это самая длинная река."],
+
+    ["I have a black jacket.", "У меня черная куртка."],
+
+    ["We have little time.", "У нас мало времени."],
+    ["We have less time.", "У нас меньше времени."],
+    ["We have the least time.", "У нас меньше всего времени."],
+
+    ["English is important.", "Английский важен."],
+    ["Math is more important.", "Математика важнее."],
+    ["Science is the most important.", "Наука самая важная."],
+
+    ["The weather is bad.", "Погода плохая."],
+    ["The news is worse.", "Новости хуже."],
+    ["This is the worst day.", "Это самый плохой день."],
+
+    ["She has a white dress.", "У нее белое платье."],
+    ["This is the best option.", "Это лучший вариант."],
+    ["Your answer is right.", "Твой ответ правильный."],
+
+    ["I am early.", "Я рано."],
+    ["He is earlier.", "Он раньше."],
+    ["She is the earliest.", "Она самая ранняя."],
+
+    ["It is possible.", "Это возможно."],
+    ["It is more possible.", "Это более возможно."],
+    ["It is the most possible.", "Это наиболее возможно."],
+
+    ["This is an economic problem.", "Это экономическая проблема."],
+
+    ["The bed is hard.", "Кровать жесткая."],
+    ["The floor is harder.", "Пол жестче."],
+    ["The stone is the hardest.", "Камень самый жесткий."],
+
+    ["He is persistent.", "Он настойчивый."],
+    ["She is more persistent.", "Она более настойчивая."],
+    ["You are the most persistent.", "Ты самый настойчивый."],
+
+    ["The task is easy.", "Задание легкое."],
+    ["The test is easier.", "Тест легче."],
+    ["The game is the easiest.", "Игра самая легкая."],
+
+    ["The door is open.", "Дверь открыта."],
+
+    ["The car is fast.", "Машина быстрая."],
+    ["The train is faster.", "Поезд быстрее."],
+    ["The plane is the fastest.", "Самолет самый быстрый."],
+
+    ["The question is difficult.", "Вопрос трудный."],
+    ["The exercise is more difficult.", "Упражнение труднее."],
+    ["The exam is the most difficult.", "Экзамен самый трудный."],
+
+    ["I have a red apple.", "У меня красное яблоко."],
+
+    ["The rope is short.", "Веревка короткая."],
+    ["The string is shorter.", "Нить короче."],
+    ["The finger is the shortest.", "Палец самый короткий."],
+
+    ["Your answer is wrong.", "Твой ответ неправильный."],
+    ["This is a spatial task.", "Это пространственная задача."],
+
+    ["I feel fine.", "Я чувствую себя хорошо."],
+    ["She feels finer.", "Она чувствует себя лучше."],
+    ["He feels the finest.", "Он чувствует себя лучше всех."],
+
+    ["I have other plans.", "У меня другие планы."],
+
+    ["He is a poor man.", "Он бедный человек."],
+    ["He is poorer.", "Он беднее."],
+    ["He is the poorest.", "Он самый бедный."],
+
+    ["The tea is hot.", "Чай горячий."],
+    ["The coffee is hotter.", "Кофе горячее."],
+    ["The soup is the hottest.", "Суп самый горячий."],
+
+    ["He is happy.", "Он счастлив."],
+    ["She is happier.", "Она счастливее."],
+    ["I am the happiest.", "Я самый счастливый."],
+
+    ["I am ready.", "Я готов."],
+    ["Turn left.", "Поверни налево."],
+    ["This is a standard procedure.", "Это стандартная процедура."],
+    ["The sky is blue.", "Небо голубое."],
+    ["It's OK.", "Все в порядке."],
+    ["The shop is close.", "Магазин близко."],
+    ["It is a democratic country.", "Это демократическая страна."],
+
+    ["The water is cold.", "Вода холодная."],
+    ["The juice is colder.", "Сок холоднее."],
+    ["The ice cream is the coldest.", "Мороженое самое холодное."],
+
+    ["She is nice.", "Она приятная."],
+    ["He is nicer.", "Он приятнее."],
+    ["You are the nicest.", "Ты самый приятный."],
+
+    ["The grass is green.", "Трава зеленая."],
+    ["I want more juice.", "Я хочу еще сока."],
+    ["This is one example.", "Это один пример."],
+    ["It's my own room.", "Это моя собственная комната."],
+    ["We have the same bag.", "У нас одинаковая сумка."],
+
+    ["I am well.", "Я здоров."],
+    ["He is better.", "Он здоровее."],
+    ["She is the best.", "Она самая здоровая."],
+
+    ["See you next week.", "Увидимся на следующей неделе."],
+    ["The wall is grey.", "Стена серая."],
+    ["He is in the back row.", "Он в заднем ряду."],
+
+    ["The room is dark.", "Комната темная."],
+    ["The street is darker.", "Улица темнее."],
+    ["The night is the darkest.", "Ночь самая темная."],
+
+    ["She is beautiful.", "Она красивая."],
+    ["Her sister is more beautiful.", "Ее сестра красивее."],
+    ["Her mother is the most beautiful.", "Ее мама самая красивая."],
+
+    ["The book is interesting.", "Книга интересная."],
+    ["The film is more interesting.", "Фильм интереснее."],
+    ["The story is the most interesting.", "История самая интересная."],
+
+    ["This is a key moment.", "Это ключевой момент."],
+    ["It is a safe place.", "Это безопасное место."],
+    ["I am sorry.", "Мне жаль."],
+
+    ["He is quick.", "Он быстрый."],
+    ["She is quicker.", "Она быстрее."],
+    ["You are the quickest.", "Ты самый быстрый."],
+
+    ["The box is light.", "Коробка легкая."],
+    ["The bag is lighter.", "Сумка легче."],
+    ["The feather is the lightest.", "Перо самое легкое."],
+
+    ["The weather is warm.", "Погода теплая."],
+    ["The water is warmer.", "Вода теплее."],
+    ["The room is the warmest.", "Комната самая теплая."],
+
+    ["He is a famous actor.", "Он известный актер."],
+    ["She is more famous.", "Она более известная."],
+    ["You are the most famous.", "Ты самый известный."],
+
+    ["The floor is clean.", "Пол чистый."],
+    ["The table is cleaner.", "Стол чище."],
+    ["The window is the cleanest.", "Окно самое чистое."],
+
+    ["He is tall.", "Он высокий."],
+    ["His father is taller.", "Его папа выше."],
+    ["His brother is the tallest.", "Его брат самый высокий."],
+
+    ["The cake is sweet.", "Торт сладкий."],
+    ["The chocolate is sweeter.", "Шоколад слаще."],
+    ["The honey is the sweetest.", "Мед самый сладкий."],
+
+    ["The pencil is yellow.", "Карандаш желтый."],
+
+    ["The car is expensive.", "Машина дорогая."],
+    ["The watch is more expensive.", "Часы дороже."],
+    ["The painting is the most expensive.", "Картина самая дорогая."],
+
+    ["His shoes are brown.", "Его туфли коричневые."],
+
+    ["The turtle is slow.", "Черепаха медленная."],
+    ["The sloth is slower.", "Ленивец медленнее."],
+    ["The snail is the slowest.", "Улитка самая медленная."],
+
+    ["He is late.", "Он опоздал."],
+    ["She is later.", "Она опоздала больше."],
+    ["I am the latest.", "Я опоздал больше всех."],
+
+    ["The joke is funny.", "Шутка смешная."],
+    ["The story is funnier.", "История смешнее."],
+    ["The comedy is the funniest.", "Комедия самая смешная."],
+
+    ["It is an English tradition.", "Это английская традиция."],
+    ["I am busy.", "Я занят."],
+
+    ["The shirt is cheap.", "Рубашка дешевая."],
+    ["The socks are cheaper.", "Носки дешевле."],
+    ["The pen is the cheapest.", "Ручка самая дешевая."],
+
+    ["It's inside the box.", "Это внутри коробки."],
+    ["It's outside the house.", "Это снаружи дома."],
+
+    ["He is sad.", "Он грустный."],
+    ["She is sadder.", "Она грустнее."],
+    ["I am the saddest.", "Я самый грустный."],
+
+    ["The cat is fat.", "Кот толстый."],
+    ["The dog is fatter.", "Собака толще."],
+    ["The pig is the fattest.", "Свинья самая толстая."],
+
+    ["This is my favorite book.", "Это моя любимая книга."],
+
+    ["The ride is exciting.", "Поездка захватывающая."],
+    ["The film is more exciting.", "Фильм более захватывающий."],
+    ["The adventure is the most exciting.", "Приключение самое захватывающее."],
+
+    ["This is my favourite song.", "Это моя любимая песня."],
+
+    ["I am hungry.", "Я голоден."],
+    ["He is hungrier.", "Он более голоден."],
+    ["She is the hungriest.", "Она самая голодная."],
+
+    ["He is my dear friend.", "Он мой дорогой друг."],
+    ["The children are excited.", "Дети взволнованы."],
+    ["The door is closed.", "Дверь закрыта."],
+
+    ["The lesson is boring.", "Урок скучный."],
+    ["The book is more boring.", "Книга скучнее."],
+    ["The lecture is the most boring.", "Лекция самая скучная."],
+
+    ["She is slim.", "Она стройная."],
+    ["Her sister is slimmer.", "Ее сестра стройнее."],
+    ["Her friend is the slimmest.", "Ее подруга самая стройная."],
+
+    ["He is clever.", "Он умный."],
+    ["She is cleverer.", "Она умнее."],
+    ["You are the cleverest.", "Ты самый умный."],
+
+    ["He is bored.", "Ему скучно."],
+
+    ["The soup is tasty.", "Суп вкусный."],
+    ["The salad is tastier.", "Салат вкуснее."],
+    ["The cake is the tastiest.", "Торт самый вкусный."],
+
+    ["It was fun.", "Это было весело."],
+
+    ["The writer is well-known.", "Писатель хорошо известен."],
+    ["The actor is more well-known.", "Актер более известен."],
+    ["The singer is the most well-known.", "Певец самый известный."],
+
+    ["It is a rainy day.", "Это дождливый день."]
+];
+
+
+let g_practice_simple = null;
+let g_practice_state_subject = null;
+let g_practice_as = null;
+let g_practice_less = null;
+let g_practice_than = null;
+let g_practice_irregular = null;
+let g_practice_forms = null;
+let g_practice_all = null;
+
+
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralSimple, suffix_id: 'simple'});
+
+        g_practice_simple = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_simple'), 
+            el_exercise_control: document.getElementById('control_general_simple'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_simple),
+            editor_symbol: editor_symbol
+        });
+        g_practice_simple.genExercisesListenAndWrite(); 
+ }        
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralStateSubject, suffix_id: 'state_subject'});
+
+        g_practice_state_subject = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_state_subject'), 
+            el_exercise_control: document.getElementById('control_general_state_subject'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_state_subject),
+            editor_symbol: editor_symbol
+        });
+        g_practice_state_subject.genExercisesListenAndWrite(); 
+ }        
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralAs, suffix_id: 'as'});
+
+        g_practice_as = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_as'), 
+            el_exercise_control: document.getElementById('control_general_as'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_as),
+            editor_symbol: editor_symbol
+        });
+        g_practice_as.genExercisesListenAndWrite(); 
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralLess, suffix_id: 'less'});
+
+        g_practice_less = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_less'), 
+            el_exercise_control: document.getElementById('control_general_less'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_less),
+            editor_symbol: editor_symbol
+        });
+        g_practice_less.genExercisesListenAndWrite(); 
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralThan, suffix_id: 'than'});
+
+        g_practice_than = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_than'), 
+            el_exercise_control: document.getElementById('control_general_than'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_than),
+            editor_symbol: editor_symbol
+        });
+        g_practice_than.genExercisesListenAndWrite();
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralIrregular, suffix_id: 'irregular'});
+
+        g_practice_irregular = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_irregular'), 
+            el_exercise_control: document.getElementById('control_general_irregular'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_irregular),
+            editor_symbol: editor_symbol
+        });
+        g_practice_irregular.genExercisesListenAndWrite();
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralForms, suffix_id: 'forms'});
+
+        g_practice_forms = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_forms'), 
+            el_exercise_control: document.getElementById('control_general_forms'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_forms),
+            editor_symbol: editor_symbol
+        });
+        g_practice_forms.genExercisesListenAndWrite();
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralAll, suffix_id: 'all'});
+        const exercises_easy_listen_and_write_all = exercises_easy_listen_and_write_simple
+          .concat(exercises_easy_listen_and_write_state_subject)
+          .concat(exercises_easy_listen_and_write_as)
+          .concat(exercises_easy_listen_and_write_less)
+          .concat(exercises_easy_listen_and_write_than)
+          .concat(exercises_easy_listen_and_write_irregular)
+          .concat(exercises_easy_listen_and_write_forms);
+        g_practice_all = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_all'), 
+            el_exercise_control: document.getElementById('control_general_all'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_all),
+            editor_symbol: editor_symbol
+        });
+        g_practice_all.genExercisesListenAndWrite();
+ }
+ 
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+function checkAnswerGeneralSimple(value){
+    value = textNormalize(value);
+    return value==g_practice_simple.getAnswer();
+}
+function checkAnswerGeneralStateSubject(value){
+    value = textNormalize(value);
+    return value==g_practice_state_subject.getAnswer();
+}
+function checkAnswerGeneralAs(value){
+    value = textNormalize(value);
+    return value==g_practice_as.getAnswer();
+}
+function checkAnswerGeneralLess(value){
+    value = textNormalize(value);
+    return value==g_practice_less.getAnswer();
+}
+function checkAnswerGeneralThan(value){
+    value = textNormalize(value);
+    return value==g_practice_than.getAnswer();
+}
+function checkAnswerGeneralIrregular(value){
+    value = textNormalize(value);
+    return value==g_practice_irregular.getAnswer();
+}
+function checkAnswerGeneralForms(value){
+    value = textNormalize(value);
+    return value==g_practice_forms.getAnswer();
+}
+function checkAnswerGeneralAll(value){
+    value = textNormalize(value);
+    return value==g_practice_all.getAnswer();
+}
+</script>   
+<style>
+table {
+  margin: 0px !important;  
+  border-collapse: collapse;
+}
+</style>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Imperatives.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/Basic_conjunctions.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Imperatives.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/Basic_conjunctions.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+        <script src="../src/js/listen.js"></script>
+        <script src="../src/js/textual_analysis.js"></script>
+        <script src="../src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

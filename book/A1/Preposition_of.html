@@ -1,0 +1,1457 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Preposition of, Possessive &#x27;s, Quantity nouns (принадлежность) - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+        <link rel="stylesheet" href="../theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="preposition-of-quantity-nouns"><a class="header" href="#preposition-of-quantity-nouns">Preposition of, Quantity nouns</a></h1>
+<blockquote>
+<p>В естественной речи, носители языка могут опускать озвучивание <code>of</code>. Вместо "a cap of coffee" говорят просто "a cap coffee"</p>
+</blockquote>
+<h2 id="preposition-of"><a class="header" href="#preposition-of">Preposition of</a></h2>
+<p>Обозначение принадлежности предмета или лица чему-либо, а также для выражения связи между предметом и его составляющей.
+Предлог <strong>of</strong> более универсален чем апостроф <code>'s</code> и может использоваться для выражения принадлежности в более широком смысле, включая неодушевленные объекты.</p>
+<ul>
+<li>
+<p>a piece cake – кусочек торт (пример без предлога) 🤪</p>
+</li>
+<li>
+<p>a piece <strong>of</strong> cake – кусочек торта (пример с предлогом)</p>
+</li>
+</ul>
+<h4 id="Притяжательный-предлог-of"><a class="header" href="#Притяжательный-предлог-of">Притяжательный предлог of:</a></h4>
+<ul>
+<li><em>The door <strong>of</strong> the house — Дверь дома (реже говорят the house's door).</em></li>
+<li><em>The work <strong>of</strong> the artist — Работа художника.</em></li>
+<li><em>A friend <strong>of</strong> John — Друг Джона.</em></li>
+<li><em>The brother <strong>of</strong> my friend — брат моего друга.</em></li>
+<li><em>The title <strong>of</strong> the movie — название фильма.</em></li>
+<li><em>The traditions <strong>of</strong> local people are completely different. – Традиции местных людей совершенно другие.</em></li>
+<li><em>This is a car <strong>of</strong> my girlfriend. – Это машина моей девушки.</em></li>
+<li><em>The ro<strong>of</strong> <strong>of</strong> the house is brown. – Крыша дома коричневая.</em></li>
+<li><em>I don’t like the smell <strong>of</strong> this perfume. – Мне не нравится запах этих духов.</em></li>
+<li><em>She was a friend <strong>of</strong> mine. – Она была моей подругой.</em></li>
+<li><em>Sri Lanka remains a Member <strong>of</strong> the United Nations. – Шри-Ланка остается членом ООН.</em></li>
+</ul>
+<p>С существительными (живые существа) и некоторыми абстрактными понятиями, употребляется притяжательный падеж (с апострофом <code>'s</code>).
+В случае с одушевленными существами (людьми и животными) апостроф чаще всего предпочтительнее</p>
+<ul>
+<li>the cat's toy – игрушка кошки</li>
+<li>the girl's name – имя девочки (предлог of уместен, но не используется the name of the girl)</li>
+<li>the company's policy – политика компании</li>
+</ul>
+<h4 id="Количество-единицы-измерения-выделение-из-группы"><a class="header" href="#Количество-единицы-измерения-выделение-из-группы">Количество, единицы измерения, выделение из группы:</a></h4>
+<ul>
+<li><em>One <strong>of</strong> your children has broken my window. – Один из ваших детей разбил мое окно.</em></li>
+<li><em>One <strong>of</strong> my friends called me yesterday. – Один из моих друзей позвонил мне вчера.</em></li>
+<li><em>I bought a kilogram <strong>of</strong> nuts. – Я купил килограмм орехов.</em></li>
+<li><em>There were loads <strong>of</strong> food on the tables. – На столах было много еды.</em></li>
+<li><em>Thousands <strong>of</strong> people came to the concert. – Тысячи людей пришли на концерт.</em></li>
+<li><em>I ate three <strong>of</strong> these apples. – Я съел три из этих яблок.</em></li>
+</ul>
+<h4 id="Материал-из-чего-что-то-сделано-или-что-то-содержит"><a class="header" href="#Материал-из-чего-что-то-сделано-или-что-то-содержит">Материал, из чего что-то сделано или что-то содержит:</a></h4>
+<ul>
+<li><em>The ring is made <strong>of</strong> silver. – Кольцо изготовлено из серебра.</em></li>
+<li><em>The sculptures on the beach were made <strong>of</strong> sand. – Скульптуры на пляже были сделаны из песка.</em></li>
+<li><em>The house is made <strong>of</strong> brick. – Дом сделан из кирпича.</em></li>
+<li><em>Such huts are made <strong>of</strong> clay. – Такие хижины строятся из глины.</em></li>
+<li><em>The stable was made <strong>of</strong> wood. – Конюшня была построена из дерева.</em></li>
+<li><em>She brought a large bag <strong>of</strong> books. – Она принесла большую сумку с книгами.</em></li>
+<li><em>There were dusty bottles <strong>of</strong> wine in the basement. – В подвале стояли запылившиеся бутылки вина.</em></li>
+<li><em>She wears clothes <strong>of</strong> cotton and silk. – Она носит одежду из хлопка и шелка.</em></li>
+</ul>
+<h4 id="Дата-число-и-месяц"><a class="header" href="#Дата-число-и-месяц">Дата (число и месяц):</a></h4>
+<ul>
+<li><em>The eleventh <strong>of</strong> March – Одиннадцатое марта.</em></li>
+<li><em>The first <strong>of</strong> the month – Первое число месяца.</em></li>
+<li><em>The fifth <strong>of</strong> May – Пятое мая.</em></li>
+<li><em>The twentieth <strong>of</strong> June – Двадцатое июня.</em></li>
+<li><em>The third <strong>of</strong> September – Третье сентября.</em></li>
+<li><em>The fifteenth <strong>of</strong> July – Пятнадцатое июля.</em></li>
+<li><em>The fourth <strong>of</strong> April – Четвертое апреля.</em></li>
+<li><em>The twenty-second <strong>of</strong> October – Двадцать второе октября.</em></li>
+<li><em>The twelfth <strong>of</strong> November – Двенадцатое ноября.</em></li>
+<li><em>The thirtieth <strong>of</strong> December – Тридцатое декабря.</em></li>
+</ul>
+<h4 id="Характерный-для-похожий-на"><a class="header" href="#Характерный-для-похожий-на">Характерный для, похожий на:</a></h4>
+<ul>
+<li><em>He has the patience <strong>of</strong> a saint. – У него терпение святого.</em></li>
+<li><em>He has the confidence <strong>of</strong> a king. – У него уверенность короля.</em></li>
+<li><em>She has the face <strong>of</strong> an angel. – У нее лицо ангела.</em></li>
+<li><em>She has the heart <strong>of</strong> a lion. – У нее сердце льва.</em></li>
+<li><em>He has the strength <strong>of</strong> an ox. – У него сила быка.</em></li>
+<li><em>They have the spirit <strong>of</strong> a champion. – У них дух чемпиона.</em></li>
+<li><em>He has the voice <strong>of</strong> a tenor. – У него голос тенора.</em></li>
+<li><em>She has the beauty <strong>of</strong> a goddess. – У нее красота богини.</em></li>
+<li><em>He has the mind <strong>of</strong> a genius. – У него ум гения.</em></li>
+<li><em>She has the energy <strong>of</strong> a child. – У нее энергия ребенка.</em></li>
+</ul>
+<h4 id="О-относительно-чего-то"><a class="header" href="#О-относительно-чего-то">О, относительно чего-то:</a></h4>
+<ul>
+<li><em>He speaks <strong>of</strong> his family. – Он говорит о своей семье.</em></li>
+<li><em>I know <strong>of</strong> her. – Я знаю о ней.</em></li>
+<li><em>She talks <strong>of</strong> the park. – Она говорит о парке.</em></li>
+<li><em>I dream <strong>of</strong> Paris. – Я мечтаю о Париже.</em></li>
+<li><em>They think <strong>of</strong> the party. – Они думают о вечеринке.</em></li>
+<li><em>He writes <strong>of</strong> the trip. – Он пишет о поездке.</em></li>
+<li><em>I heard <strong>of</strong> the book. – Я слышал о книге.</em></li>
+<li><em>We speak <strong>of</strong> the weather. – Мы говорим о погоде.</em></li>
+<li><em>She tells <strong>of</strong> the past. – Она рассказывает о прошлом.</em></li>
+<li><em>They think <strong>of</strong> the future. – Они думают о будущем.</em></li>
+<li><em>I am proud <strong>of</strong> you. – Я горжусь тобой.</em></li>
+<li><em>He is afraid <strong>of</strong> spiders. – Он боится пауков.</em></li>
+</ul>
+<h4 id="Причина-чего-то"><a class="header" href="#Причина-чего-то">Причина чего-то:</a></h4>
+<ul>
+<li><em>He died <strong>of</strong> old age. – Он умер от старости.</em></li>
+<li><em>It couldn’t have happened <strong>of</strong> itself. – Это не могло случиться само по себе.</em></li>
+<li><em>She is suffering <strong>of</strong> a cold. – Она страдает от простуды.</em></li>
+<li><em>They were punished <strong>of</strong> their mistakes. – Их наказали за ошибки.</em></li>
+<li><em>He died <strong>of</strong> a heart attack. – Он умер от сердечного приступа.</em></li>
+<li><em>The house fell <strong>of</strong> neglect. – Дом разрушился от запущенности.</em></li>
+<li><em>He was tired <strong>of</strong> waiting. – Он устал от ожидания.</em></li>
+<li><em>She was afraid <strong>of</strong> the dark. – Она боялась темноты.</em></li>
+<li><em>The city suffered <strong>of</strong> a lack <strong>of</strong> resources. – Город страдал из-за нехватки ресурсов.</em></li>
+<li><em>He was happy <strong>of</strong> his success. – Он был счастлив из-за своего успеха.</em></li>
+</ul>
+<h4 id="Оценка-поведения"><a class="header" href="#Оценка-поведения">Оценка поведения:</a></h4>
+<ul>
+<li><em>It was nice <strong>of</strong> you to help. – С твоей стороны было мило помочь.</em></li>
+<li><em>How kind <strong>of</strong> her! – Как доброжелательно с ее стороны!</em></li>
+<li><em>It was wrong <strong>of</strong> him to lie. – С его стороны было неправильно лгать.</em></li>
+<li><em>How smart <strong>of</strong> you! – Как умно с твоей стороны!</em></li>
+<li><em>It was rude <strong>of</strong> them to shout. – С их стороны было грубо кричать.</em></li>
+<li><em>How thoughtful <strong>of</strong> you! – Как предусмотрительно с твоей стороны!</em></li>
+<li><em>It was good <strong>of</strong> her to share. – С ее стороны было хорошо поделиться.</em></li>
+<li><em>How brave <strong>of</strong> him! – Как смело с его стороны!</em></li>
+<li><em>It was silly <strong>of</strong> me to forget. – С моей стороны было глупо забыть.</em></li>
+<li><em>How generous <strong>of</strong> them! – Как щедро с их стороны!</em></li>
+</ul>
+<h4 id="Сравнение-с-остальными"><a class="header" href="#Сравнение-с-остальными">Сравнение с остальными:</a></h4>
+<ul>
+<li><em>I like the red car best <strong>of</strong> all. – Красный автомобиль нравится мне больше всех.</em></li>
+<li><em>Worst <strong>of</strong> all was the food! – Хуже всего была еда!</em></li>
+<li><em>She is the nicest <strong>of</strong> all. – Она самая милая из всех.</em></li>
+<li><em>The blue shirt is the best <strong>of</strong> all. – Синяя рубашка лучше всех.</em></li>
+<li><em>He is the strongest <strong>of</strong> the team. – Он самый сильный в команде.</em></li>
+<li><em>That was the worst day <strong>of</strong> my life. – Это был самый плохой день в моей жизни.</em></li>
+<li><em>The book is the most interesting <strong>of</strong> all. – Книга самая интересная из всех.</em></li>
+<li><em>Her dress is the most beautiful <strong>of</strong> all. – Ее платье самое красивое из всех.</em></li>
+<li><em>The movie was the funniest <strong>of</strong> all. – Фильм был самый смешной из всех.</em></li>
+<li><em>The red apple is the sweetest <strong>of</strong> all. – Красное яблоко самое сладкое из всех.</em></li>
+</ul>
+<h4 id="Потеря-или-лишение-чего-то"><a class="header" href="#Потеря-или-лишение-чего-то">Потеря или лишение чего-то:</a></h4>
+<ul>
+<li><em>He was robbed <strong>of</strong> his money. – У него украли деньги.</em></li>
+<li><em>She cried because <strong>of</strong> her broken toy. – Она плакала из-за своей сломанной игрушки.</em></li>
+<li><em>They lost the key <strong>of</strong> the house. – Они потеряли ключ от дома.</em></li>
+<li><em>He said I took a book <strong>of</strong> his. – Он сказал, что я взял одну из его книг.</em></li>
+<li><em>She lost the help <strong>of</strong> her friend. – Она потеряла помощь друга.</em></li>
+<li><em>The color <strong>of</strong> his shirt was gone. – Цвет его рубашки исчез.</em></li>
+<li><em>The team lost because <strong>of</strong> the weather. – Команда проиграла из-за погоды.</em></li>
+<li><em>She was sad because <strong>of</strong> the loss <strong>of</strong> her book. – Она была грустной из-за потери книги.</em></li>
+<li><em>He was not part <strong>of</strong> the group. – Он не был частью группы.</em></li>
+<li><em>They were scared <strong>of</strong> the loss <strong>of</strong> their home. – Они боялись потери своего дома.</em></li>
+</ul>
+<h4 id="Устойчивые-выражения-с-предлогом-of"><a class="header" href="#Устойчивые-выражения-с-предлогом-of">Устойчивые выражения с предлогом of:</a></h4>
+<ul>
+<li><strong>To be fond of</strong> – быть в восторге от чего-то
+<ul>
+<li><em>He <strong>is fond of</strong> painting. – Он в восторге от рисования.</em></li>
+</ul>
+</li>
+<li><strong>To be sick of</strong> – быть сытым по горло чем-то
+<ul>
+<li><em>I'm <strong>sick of</strong> waiting in line. – Мне надоело стоять в очереди.</em></li>
+</ul>
+</li>
+<li><strong>To be scared of</strong> – бояться чего-то
+<ul>
+<li><em>She <strong>is scared of</strong> spiders. – Она боится пауков.</em></li>
+</ul>
+</li>
+<li><strong>To be bored of</strong> – чувствовать скуку от чего-то
+<ul>
+<li><em>He <strong>is bored of</strong> the movie. – Ему скучно на фильме.</em></li>
+</ul>
+</li>
+<li><strong>To be sure of</strong> – быть уверенным в чем-то
+<ul>
+<li><em>I'm <strong>sure of</strong> my decision. – Я уверен в своем решении.</em></li>
+</ul>
+</li>
+<li><strong>To be wary of</strong> – остерегаться чего-то
+<ul>
+<li><em>They <strong>are wary of</strong> the new manager. – Они настороженно относятся к новому менеджеру.</em></li>
+</ul>
+</li>
+<li><strong>To be tired of</strong> – устать от чего-то
+<ul>
+<li><em>She <strong>is tired of</strong> her job. – Ей надоела работа.</em></li>
+</ul>
+</li>
+<li><strong>Of all time</strong> – всех времен
+<ul>
+<li><em>This is the greatest movie <strong>of all time</strong>. – Это величайший фильм всех времен.</em></li>
+</ul>
+</li>
+<li><strong>Of course</strong> – конечно
+<ul>
+<li><em><strong>Of course</strong>, I'll help you. – Конечно, я помогу тебе.</em></li>
+<li><em><strong>Of all types</strong> – всех видов</em></li>
+<li><em>We sell shoes <strong>of all types</strong>. – Мы продаем обувь всех видов.</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>Выражения описания и характеристик</strong></p>
+<ul>
+<li><strong>full of</strong> — полный чего-либо
+<ul>
+<li><em>The box is full of books.</em> — Коробка полна книг.</li>
+</ul>
+</li>
+<li><strong>tired of</strong> — усталый от
+<ul>
+<li><em>I’m tired of waiting.</em> — Я устал ждать.</li>
+</ul>
+</li>
+<li><strong>afraid of</strong> — бояться чего-либо
+<ul>
+<li><em>She’s afraid of spiders.</em> — Она боится пауков.</li>
+</ul>
+</li>
+<li><strong>proud of</strong> — гордиться
+<ul>
+<li><em>I’m proud of you.</em> — Я горжусь тобой.</li>
+</ul>
+</li>
+<li><strong>aware of</strong> — осознавать
+<ul>
+<li><em>Are you aware of the problem?</em> — Ты осознаешь проблему?</li>
+</ul>
+</li>
+<li><strong>capable of</strong> — способный на
+<ul>
+<li><em>He is capable of great things.</em> — Он способен на великие дела.</li>
+</ul>
+</li>
+<li><strong>jealous of</strong> — завидовать
+<ul>
+<li><em>She’s jealous of her sister.</em> — Она завидует своей сестре.</li>
+</ul>
+</li>
+<li><strong>full of life</strong> — полный энергии
+<ul>
+<li><em>He’s full of life.</em> — Он полон энергии.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Выражения отношений</strong></p>
+<ul>
+<li><strong>friend of</strong> — друг кого-либо
+<ul>
+<li><em>She’s a friend of mine.</em> — Она моя подруга.</li>
+</ul>
+</li>
+<li><strong>member of</strong> — член чего-либо
+<ul>
+<li><em>He is a member of the club.</em> — Он член клуба.</li>
+</ul>
+</li>
+<li><strong>part of</strong> — часть чего-либо
+<ul>
+<li><em>This is part of the plan.</em> — Это часть плана.</li>
+</ul>
+</li>
+<li><strong>kind of</strong> — вид чего-либо
+<ul>
+<li><em>It’s a kind of fruit.</em> — Это вид фрукта.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Другие устойчивые выражения</strong></p>
+<ul>
+<li><strong>in front of</strong> — перед
+<ul>
+<li><em>He is in front of the house.</em> — Он перед домом.</li>
+</ul>
+</li>
+<li><strong>out of</strong> — вне чего-либо / из
+<ul>
+<li><em>She ran out of the room.</em> — Она выбежала из комнаты.</li>
+</ul>
+</li>
+<li><strong>because of</strong> — из-за
+<ul>
+<li><em>We stayed home because of the rain.</em> — Мы остались дома из-за дождя.</li>
+</ul>
+</li>
+<li><strong>instead of</strong> — вместо
+<ul>
+<li><em>I’ll have tea instead of coffee.</em> — Я выпью чай вместо кофе.</li>
+</ul>
+</li>
+<li><strong>on behalf of</strong> — от имени
+<ul>
+<li><em>I speak on behalf of the team.</em> — Я говорю от имени команды.</li>
+</ul>
+</li>
+<li><strong>of course</strong> — конечно
+<ul>
+<li><em>Of course, you can come.</em> — Конечно, ты можешь прийти.</li>
+</ul>
+</li>
+<li><strong>out of order</strong> — не в порядке
+<ul>
+<li><em>The elevator is out of order.</em> — Лифт не работает.</li>
+</ul>
+</li>
+</ul>
+<h2 id="quantity-nouns-containers-and-quantities"><a class="header" href="#quantity-nouns-containers-and-quantities">Quantity nouns (containers and quantities)</a></h2>
+<p>Количественная оценка существительных (контейнеры и количества)</p>
+<p>Примеры:</p>
+<ul>
+<li>a piece <strong>of</strong> – кусочек: <em>A piece <strong>of</strong> cheese – Кусочек сыра.</em></li>
+<li>a slice <strong>of</strong> – ломтик: <em>A slice <strong>of</strong> bread – Ломтик хлеба.</em></li>
+<li>a bar <strong>of</strong> – плитка: <em>A bar <strong>of</strong> chocolate – Плитка шоколада.</em></li>
+<li>a drop <strong>of</strong> – капля: <em>A drop <strong>of</strong> rain – Капля дождя.</em></li>
+<li>a crumb <strong>of</strong> – крошка: <em>A crumb <strong>of</strong> pie – Крошка пирога.</em></li>
+<li>a glass <strong>of</strong> – стакан: <em>A glass <strong>of</strong> juice – Стакан сока.</em></li>
+<li>a scoop <strong>of</strong> – ложка: <em>A scoop <strong>of</strong> sugar – Ложка сахара.</em></li>
+<li>a pair <strong>of</strong> – пара: <em>a pair <strong>of</strong> gloves – пара перчаток.</em></li>
+<li>a set <strong>of</strong> – набор: <em>a set <strong>of</strong> rules – набор правил.</em></li>
+<li>a pack <strong>of</strong> – пачка: <em>a pack <strong>of</strong> candy – пачка конфет.</em></li>
+<li>a bar <strong>of</strong> – плитка: <em>a bar <strong>of</strong> chocolate – плитка шоколада.</em></li>
+<li>a slice <strong>of</strong> – ломтик: <em>a slice <strong>of</strong> pizza – ломтик пиццы.</em></li>
+<li>a loaf <strong>of</strong> – буханка: <em>a loaf <strong>of</strong> bread – буханка хлеба.</em></li>
+</ul>
+<p><img src="/grammar_of_english/img/containers_and_quantities_matching_exercises.png" alt="containers and quantities" /></p>
+<h2 id="exercise-listen-and-write"><a class="header" href="#exercise-listen-and-write">Exercise: listen and write</a></h2>
+<div id="control"></div>
+<div id="listen_and_write"></div>
+<script>
+
+const exercises_easy_listen_and_write = [
+  ["She will open the mouth of the bag.","Она откроет горловину сумки."],
+  ["The water came out of the mouth of the bottle.","Вода вылилась из горлышка бутылки."],
+  ["I see a photo of a big plane.","Я вижу фото большого самолета."],
+  ["I see a picture of a red bird.","Я вижу картинку красной птицы."],
+  ["I see a photo of my friend's mouth.","Я вижу фото рта моего друга."],
+  ["I see a new car of my dad.","Я вижу новую машину моего папы."],
+  ["I will send a photo of my family.","Я отправлю фото моей семьи."],
+  ["He sends a letter of his mother.","Он отправляет письмо своей матери."],
+  ["She did not send a card of her friend.","Она не отправила открытку своей подруги."],
+  ["She will draw the head of the bird.","Она нарисует голову птицы."],
+  ["She will draw the door of the plane.","Она нарисует дверь самолета."],
+  ["The sound of the plane is loud.","Звук самолета громкий."],
+  ["He watches the window of the plane.","Он смотрит в окно самолета."],
+  ["The friend of my dad is here.","Друг моего папы здесь."],
+  ["She will make coffee for the friend of her dad.","Она сделает кофе для друга своего папы."],
+  ["He reads the book of his dad.","Он читает книгу своего папы."],
+  ["He wears a shirt of his brother.","Он носит рубашку своего брата."],
+  ["She will wear the dress of her friend.","Она наденет платье своей подруги."],
+  ["I do not wear the shoes of my dad.","Я не ношу туфли моего папы."],
+  ["Please, open the door of the room.","Пожалуйста, открой дверь комнаты."],
+  ["She will open the window of the kitchen.","Она откроет окно на кухне."],
+  ["He drives the car of his dad.","Он водит машину своего папы."],
+  ["He teaches the son of my friend.","Он учит сына моего друга."],
+  ["She will choose the colour of the wall.","Она выберет цвет стены."],
+  ["He chooses the taste of the ice cream.","Он выбирает вкус мороженого."],
+  ["We did not choose the day of the meeting.","Мы не выбирали день встречи."],
+  ["He reads the book of his teacher.","Он читает книгу своего учителя."],
+  ["She will read the name of the street.","Она прочитает название улицы."],
+  ["We will walk to the house of my sister.","Мы пойдем пешком к дому моей сестры."],
+  ["He will carry the bag of his mother.","Он понесет сумку своей матери."],
+  ["She carries the key of the door.","Она носит ключ от двери."],
+
+  // Количество, единицы измерения, выделение из группы
+  ["One of your brothers has broken my window.", "Один из твоих братьев разбил мое окно."],
+  ["One of my sisters called me yesterday.", "Одна из моих сестёр позвонила мне вчера."],
+  ["Does one of your cousins watch birds in the garden?", "Одна из твоих кузин наблюдает за птицами в саду?"],
+  ["Some of our parents will wait at the restaurant on Tuesday.", "Несколько наших родителей будут ждать в ресторане во вторник."],
+  ["Are many of your classmates eating dinner in the garden?", "Многие из твоих одноклассников ужинают в саду?"],
+  ["Do most of your neighbours remember dates in December?", "Большинство твоих соседей помнят даты в декабре?"],
+  ["Did none of your guests wait at the bar?", "Ни один из твоих гостей не ждал в баре?"],
+  ["Are some of your colleagues eating at the restaurant?", "Некоторые из твоих коллег ужинают в ресторане?"],
+  ["One of the boys is not drawing in the kitchen now.", "Один из мальчиков сейчас не рисует на кухне."],
+  ["Some of the girls will not swim at the beach in August.", "Несколько девочек не будут плавать на пляже в августе."],
+  ["All of the people are not watching planes this Monday.", "Все люди не смотрят на самолеты в этот понедельник."],
+  ["Some of the men did not draw birds in April.", "Некоторые из мужчин не рисовали птиц в апреле."],
+  ["I bought a kilogram of apples.", "Я купил килограмм яблок."],
+  ["There were loads of food on the tables.", "На столах было много еды."],
+  ["Thousands of people came to the show.", "Тысячи людей пришли на шоу."],
+  ["I ate three of these apples.", "Я съел три из этих яблок."],
+  ["One of my brothers reads a newspaper every Monday.", "Один из моих братьев читает газету каждый понедельник."],
+  ["Two of my sisters bought bags in September.", "Две из моих сестер купили сумки в сентябре."],
+  ["Did two of your teachers speak about winter?", "Двое из твоих учителей говорили о зиме?"],
+  ["Two of the birds did not fly to the sea in November.", "Две из птиц не улетели к морю в ноябре."],
+  ["Will some of the students stay at the hotel in July?", "Несколько студентов останутся в отеле в июле?"],
+  ["Many of the birds are flying to the forest in October.", "Многие из птиц летят в лес в октябре."],
+  ["Many of the students are not walking on the beach this afternoon.", "Многие из студентов не гуляют на пляже сегодня днем."],
+  ["Most of my family drives to the sea in June.", "Большинство моей семьи ездит на море в июне."],
+  ["Most of the birds did not stay for the winter in January.", "Большинство птиц не остались на зиму в январе."],
+  ["All of my brothers will carry bags to the hotel in February.", "Все мои братья будут нести сумки в отель в феврале."],
+  ["Will all of the students open books in March?", "Все студенты откроют книги в марте?"],
+  ["None of my sisters wears a dress in November.", "Ни одна из моих сестер не носит платье в ноябре."],
+  ["None of the birds will die in December.", "Ни одна из птиц не умрет в декабре."],
+  ["Some of the students are reading newspapers in the garden.", "Некоторые из студентов читают газеты в саду."],
+  ["Each of my brothers loves the sea in July.", "Каждый из моих братьев любит море в июле."],
+  ["Does each of your sisters have a mobile?", "Каждая из твоих сестер имеет мобильный?"],
+  ["Each of the students is not catching fish this afternoon.", "Каждый из студентов не ловит рыбу сегодня днем."],
+
+  // Материал, из чего что-то сделано или что-то содержит
+  ["He opened the book of poems.", "Он открыл книгу стихов."],
+  ["The ring is made of silver.", "Кольцо изготовлено из серебра."],
+  ["The pictures were made of stone.", "Картины были сделаны из камня."],
+  ["She is not making a boat of cloth.", "Она не делает лодку из ткани."],
+  ["He is not making a toy of ice.", "Он не делает игрушку из льда."],
+  ["Is she making a ring of cheese?", "Она делает кольцо из сыра?"],
+  ["The table is made of plastic.", "Стол сделан из пластика."],
+  ["We are not making a chair of stone.", "Мы не делаем стул из камня."],
+  ["Such houses are made of brick.", "Такие дома строятся из кирпича."],
+  ["The walls of my kitchen are made of glass.", "Стены моей кухни сделаны из стекла."],
+  ["Was the floor of the restaurant made of stone?", "Пол ресторана был сделан из камня?"],
+  ["The new chairs in the bar will be made of metal.", "Новые стулья в баре будут сделаны из металла."],
+  ["They are making a wall of brick for the garden.", "Они делают стену из кирпича для сада."],
+  ["The table of the kitchen was made of glass.", "Стол на кухне был сделан из стекла."],
+  ["Will the doors of the hotel be made of metal?", "Двери отеля будут сделаны из металла?"],
+  ["The car of my father is red.", "Машина моего отца красная."],
+  ["The new bag of my sister was nice.", "Новая сумка моей сестры была красивой."],
+  ["Are they making a tower of blocks?", "Они строят башню из кубиков?"],
+  ["The walls of the room were white.", "Стены комнаты были белыми."],
+  ["Was the roof of the garage made of metal?", "Крыша гаража была сделана из металла?"],
+  ["He is building a fence of brick.", "Он строит забор из кирпича."],
+  ["The building of the school was made of stone.", "Здание школы было построено из камня."],
+  ["She brought a large bag of books.", "Она принесла большую сумку с книгами."],
+  ["There were bottles of water in the room.", "В комнате были бутылки воды."],
+  ["Are the bags of your mom made of leather?", "Сумки твоей мамы сделаны из кожи?"],
+  ["The table in the garden is not made of plastic.", "Стол в саду не сделан из пластика."],
+  ["The roof of the hotel was made of stone.", "Крыша отеля была сделана из камня."],
+  ["The bridge over the river was not made of iron.", "Мост через реку не был сделан из железа."],
+  ["Will the tables for the garden be made of plastic?", "Столы для сада будут сделаны из пластика?"],
+  ["The figure in the forest will not be made of stone.", "Фигура в лесу не будет сделана из камня."],
+  ["The taste of the soup was good.", "Вкус супа был хорошим."],
+  ["Was the color of her dress bright?", "Цвет ее платья был ярким?"],
+  ["The sound of the wind was not strong.", "Звук ветра не был сильным."],
+  ["The pages of this book are made of paper.", "Страницы этой книги сделаны из бумаги."],
+  ["Are the windows of the hotel made of glass?", "Окна отеля сделаны из стекла?"],
+  ["The toys in the garden are not made of metal.", "Игрушки в саду не сделаны из металла."],
+  ["The floor of the restaurant was made of stone.", "Пол ресторана был сделан из камня."],
+  ["The road of the town was not made of stone.", "Дорога города не была сделана из камня."],
+  ["The new tables will be made of glass.", "Новые столы будут сделаны из стекла."],
+  ["The chairs for the bar will not be made of plastic.", "Стулья для бара не будут сделаны из пластика."],
+  ["Are they making a path of stone?", "Они делают дорожку из камня?"],
+
+  // Дата (число и месяц)
+  ["The eleventh of March", "Одиннадцатое марта."],
+  ["The first of the month", "Первое число месяца."],
+  ["The fifth of May", "Пятое мая."],
+  ["The twentieth of June", "Двадцатое июня."],
+  ["The third of September", "Третье сентября."],
+  ["The fifteenth of July", "Пятнадцатое июля."],
+  ["The fourth of April", "Четвертое апреля."],
+  ["The twenty-second of October", "Двадцать второе октября."],
+  ["The twelfth of November", "Двенадцатое ноября."],
+  ["The thirtieth of December", "Тридцатое декабря."],
+  ["The morning of Wednesday is cold.", "Утро среды холодное."],
+  ["She will come on the afternoon of Wednesday.", "Она придет днем в среду."],
+  ["He reads the book of Wednesday evening.", "Он читает книгу в вечер среды."],
+  ["She will come on Tuesday afternoon.", "Она придет во вторник днем."],
+  ["I think of the plan for Monday afternoon.", "Я думаю о плане на понедельник днем."],
+  ["They talk of the film of Sunday afternoon.", "Они говорят о фильме в воскресенье днем."],
+  ["I know the date of the party.", "Я знаю дату вечеринки."],
+  ["She will tell me the date of the test.", "Она скажет мне дату теста."],
+  ["He does not know the date of the meeting.", "Он не знает дату встречи."],
+  ["They talk of the date of the concert.", "Они говорят о дате концерта."],
+  ["What is the date of your birthday?", "Какова дата твоего дня рождения?."],
+  ["Today is the first of April.", "Сегодня первое апреля."],
+  ["Is your birthday on the third of May?", "Твое день рождения третьего мая?"],
+  ["The show is not on the tenth of June.", "Шоу не десятого июня."],
+  ["She arrived on the fifteenth of January.", "Она прибыла пятнадцатого января."],
+  ["Did they leave on the twenty-second of February?", "Они уехали двадцать второго февраля?"],
+  ["We did not meet on the eighth of March.", "Мы не встречались восьмого марта."],
+  ["The exam will be on the fifth of September.", "Экзамен будет пятого сентября."],
+  ["Will the party be on the thirtieth of November?", "Вечеринка будет тридцатого ноября?"],
+  ["They will not come on the twelfth of December.", "Они не приедут двенадцатого декабря."],
+  ["I am leaving on the third of October.", "Я уезжаю третьего октября."],
+  ["Are you coming on the eighteenth of August?", "Ты приедешь восемнадцатого августа?"],
+  ["He is not returning on the twenty-fifth of July.", "Он не возвращается двадцать пятого июля."],
+  ["The meeting is on Monday, the second of May.", "Встреча в понедельник, второго мая."],
+  ["Is the flight on Tuesday, the ninth of March?", "Рейс во вторник, девятого марта?"],
+  ["The meeting is not on Wednesday, the fourteenth of June.", "Встреча не в среду, четырнадцатого июня."],
+  ["We met on the first of January.", "Мы встретились первого января."],
+  ["Did they marry on the seventh of July?", "Они поженились седьмого июля?"],
+  ["He did not finish on the thirty-first of October.", "Он не закончил тридцать первого октября."],
+  ["She will graduate on the twenty-fourth of May.", "Она окончит учебу двадцать четвертого мая."],
+  ["Will you start on the fifteenth of September?", "Ты начнешь пятнадцатого сентября?"],
+  ["They will not move on the eleventh of August.", "Они не переедут одиннадцатого августа."],
+  ["I am flying on the sixth of December.", "Я лечу шестого декабря."],
+  ["Are you free on the twentieth of February?", "Ты свободен двадцатого февраля?"],
+  ["He is not working on the thirteenth of April.", "Он не работает тринадцатого апреля."],
+  ["The morning of Monday was very windy.", "Утро понедельника было очень ветреным."],
+  ["Is the weather of April usually warm?", "Погода в апреле обычно теплая?"],
+  ["The wind of November is not cold yet.", "Ветер ноября еще не холодный."],
+  ["The weekend of December was snowy last year.", "Выходные декабря были снежными в прошлом году."],
+  ["Did you remember the date of January?", "Ты помнил дату в январе?"],
+  ["The winter of February was not very cold.", "Зима февраля была не очень холодной."],
+  ["The afternoon of Tuesday will be sunny.", "День вторника будет солнечным."],
+  ["Will you wait for the weekend of October?", "Ты будешь ждать выходные октября?"],
+  ["The evening of Wednesday will not be long.", "Вечер среды не будет длинным."],
+  ["I am watching the sky of September.", "Я наблюдаю за сентябрьским небом."],
+  ["Are you reading the newspaper of Monday?", "Ты читаешь газету понедельника?"],
+  ["He is not wearing clothes of August heat.", "Он не носит одежду августовской жары."],
+  ["We love the sea of September.", "Мы любим сентябрьское море."],
+  ["Do you support the team of this month?", "Ты поддерживаешь команду этого месяца?"],
+  ["They are not eating the fruits of October.", "Они не едят октябрьские фрукты."],
+  ["My mom bought a dress of May fashion.", "Моя мама купила платье майской моды."],
+  ["Did your dad carry the bags of December buying?", "Твой папа нес сумки декабрьских покупок?"],
+  ["She did not draw the flowers of March.", "Она не рисовала мартовские цветы."],
+  ["The birds of June will fly south.", "Птицы июня улетят на юг."],
+  ["Will you catch the fish of April?", "Ты будешь ловить апрельскую рыбу?"],
+  ["They will not teach the class of January.", "Они не будут преподавать курс января."],
+  ["I am opening the window of May morning.", "Я открываю окно майского утра."],
+  ["Are you choosing the path of August trip?", "Ты выбираешь путь августской поездки?"],
+  ["He is not driving the car of November ice.", "Он не ведет машину по ноябрьскому льду."],
+  ["We remember the summer of July.", "Мы помним июльское лето."],
+  ["Do you watch the stars of December night?", "Ты наблюдаешь звезды декабрьской ночи?"],
+  ["She is not sending the photos of October trip.", "Она не отправляет фото октябрьской поездки."],
+  ["They stay at the hotel of February time.", "Они останавливаются в отеле февральского времени."],
+  ["Did you eat the dinner of Monday evening?", "Ты ужинал в понедельник вечером?"],
+  ["He did not walk in the forest of September.", "Он не гулял в сентябрьском лесу."],
+  ["The plane of March flight was comfortable.", "Самолет мартовского рейса был комфортным."],
+  ["Was the beach of August vacation clean?", "Пляж августского отдыха был чистым?"],
+  ["The restaurant of Friday evening was not crowded.", "Ресторан пятничного вечера не был переполнен."],
+  // Характерный для, похожий на
+    ["He has the smile of a king.", "У него улыбка, как у короля."],
+  ["She has the face of a friend.", "У нее лицо друга."],
+  ["She has the heart of a cat.", "У неё сердце кошки."],
+  ["He has the body of his father.", "У него тело его отца."],
+  ["They have the heart of a winner.", "У них сердце победителя."],
+  ["He has the sound of a singer.", "У него звук певца."],
+  ["She has the beauty of a queen.", "У неё красота королевы."],
+  ["He has the brain of a good teacher.", "У него ум великого учителя."],
+  ["She has the energy of a child.", "У нее энергия ребенка."],
+  ["The sun of the afternoon is hot.", "Солнце дня жаркое."],
+  ["He drinks coffee in the afternoon of the day.", "Он пьет кофе днем."],
+  ["She catches the bus of the morning.", "Она ловит утренний автобус."],
+  ["He walks in the park of the city.", "Он гуляет в парке города."],
+  ["I watch the birds of the garden.", "Я наблюдаю за птицами сада."],
+  ["She will watch the planes of the sky.", "Она будет наблюдать за самолетами в небе."],
+  ["Are you speaking with the sound of a teacher?", "Ты говоришь звуком учителя?"],
+  ["The weather of April is warm and sunny.", "Погода в апреле теплая и солнечная."],
+  ["Is the wind of March always so strong?", "Ветер в марте всегда такой сильный?"],
+  ["The snow of January is not cold yet.", "Снег января еще не холодный."],
+  ["The sea of July was very quiet.", "Море в июле было очень спокойным."],
+  ["Was the forest of October beautiful?", "Лес в октябре был красивым?"],
+  ["The garden of August was not dry.", "Сад в августе не был сухим."],
+  ["The beach of June will be full.", "Пляж в июне будет переполнен."],
+  ["Will the hotel of December be expensive?", "Отель в декабре будет дорогим?"],
+  ["The restaurant of February will not be busy.", "Ресторан в феврале не будет загруженным."],
+  ["I am watching the light of the day.", "Я наблюдаю за светом дня."],
+  ["Are you reading the paper of Monday?", "Ты читаешь понедельничную газету?"],
+  ["He is wearing clothes of August style.", "Он носит одежду августовского стиля."],
+  ["We love the sun of May.", "Мы любим майское солнце."],
+  ["Do you remember the wind of November?", "Ты помнишь ноябрьский ветер?"],
+  ["They are not eating the fruits of October.", "Они не едят октябрьские фрукты."],
+  ["My mom bought a dress of summer style.", "Моя мама купила платье летнего стиля."],
+  ["Did your dad carry the bags of weekend shopping?", "Твой папа нес сумки выходных покупок?"],
+  ["She did not draw the flowers of spring.", "Она не рисовала весенние цветы."],
+  ["The birds of the forest will fly south.", "Птицы леса улетят на юг."],
+  ["Will you catch the fish of this river?", "Ты поймаешь рыбу этой реки?"],
+  ["He will not read the book of stories.", "Он не будет читать книгу рассказов."],
+  ["I am opening the window of morning air.", "Я открываю окно утреннего воздуха."],
+  ["Are you choosing the way of summer trip?", "Ты выбираешь путь летней поездки?"],
+  ["He is not driving the car of winter conditions.", "Он не ведет машину в зимних условиях."],
+  ["We remember the sun of July.", "Мы помним июльское солнце."],
+  ["Do you watch the stars of December night?", "Ты наблюдаешь звезды декабрьской ночи?"],
+  ["She is not sending the photos of beach vacation.", "Она не отправляет фото пляжного отдыха."],
+  ["They stay at the hotel of winter time.", "Они останавливаются в отеле зимнего времени."],
+  ["He is not swimming with the skill of a fish.", "Он не плавает с умением рыбы."],
+  ["Did you eat the food of Italy?", "Ты ел еду Италии?"],
+  ["He did not walk in the forest of autumn colors.", "Он не гулял в лесу осенних красок."],
+  ["The plane of morning flight was comfortable.", "Самолет утреннего рейса был удобным."],
+  ["Was the beach of the city clean?", "Пляж города был чистым?"],
+  ["The restaurant of Friday night was not full.", "Ресторан пятничного вечера не был переполнен."],
+  ["He has the sound of a singer.", "У него звук певца."],
+  ["Does she have the speed of a runner?", "У нее скорость бегуна?"],
+  ["Did he have the knowledge of a doctor?", "У него были знания врача?"],
+  ["We did not have the luck of winners.", "У нас не было удачи победителей."],
+  ["You will have the freedom of a bird.", "У тебя будет свобода птицы."],
+  ["Will he have the heart of a hero?", "У него будет сердце героя?"],
+  ["They will not have the toys of their friends.", "У них не будет игрушек их друзей."],
+  ["I am watching with the eyes of a student.", "Я смотрю глазами ученика."],
+  ["He is not working with the help of his friend.", "Он не работает с помощью своего друга."],
+  ["She eats with the speed of a child.", "Она ест со скоростью ребенка."],
+  ["Do they drive with the help of a teacher?", "Они водят с помощью учителя?"],
+  ["We remember with the memory of elephants.", "Мы помним с памятью слонов."],
+  ["Did you choose with the taste of an artist?", "Ты выбирал со вкусом художника?"],
+  ["She did not draw with the colours of her teacher.", "Она не рисовала красками своего учителя."],
+  ["They will sleep with the peace of babies.", "Они будут спать со спокойствием младенцев."],
+  ["He will not speak with the way of a boy.", "Он не будет говорить так, как мальчик."],
+  // О, относительно чего-то
+  ["He speaks of his family.", "Он говорит о своей семье."],
+  ["I know of her.", "Я знаю о ней."],
+  ["She talks of the park.", "Она говорит о парке."],
+  ["I dream of Paris.", "Я мечтаю о Париже."],
+  ["They talk of the party.", "Они говорят о вечеринке."],
+  ["He thinks of the taste of the apple.", "Он думает о вкусе яблока."],
+  ["They talk of the big mouth of the animal.", "Они говорят о большой пасти животного."],
+  ["They talk of the small bird in the garden.", "Они говорят о маленькой птице в саду."],
+  ["I think of my plan for Wednesday.", "Я думаю о своем плане на среду."],
+  ["They talk of the party on Wednesday.", "Они говорят о вечеринке в среду."],
+  ["They talk of the fast plane in the sky.", "Они говорят о быстром самолете в небе."],
+  ["They talk of the job of his dad.", "Они говорят о работе его папы."],
+  ["My dad taught the rules of the game.", "Мой папа учил правилам игры."],
+  ["I did not catch the name of the film.", "Я не поймал название фильма."],
+  ["They did not watch the end of the film.", "Они не смотрели конец фильма."],
+  ["They dream of the future.", "Они мечтают о будущем."],
+  ["I often dream of April when I see flowers.", "Я часто мечтаю об апреле, когда вижу цветы."],
+  ["They did not talk of the winter cold.", "Они не говорили о зимнем холоде."],
+  ["Do you dream of your family often?", "Ты часто мечтаешь о своей семье?"],
+  ["He does not talk of this idea.", "Он не говорит об этой идее."],
+  ["We did not know of him sleeping.", "Мы не знали о том, что он спит."],
+  ["She will not know of him taking things.", "Она не будет знать о том, что он берет вещи."],
+  ["He writes of the trip.", "Он пишет о поездке."],
+  ["I heard of the book.", "Я слышал о книге."],
+  ["We speak of the weather.", "Мы говорим о погоде."],
+  ["She tells of the past.", "Она рассказывает о прошлом."],
+  ["I am glad of you.", "Я рад за тебя."],
+  ["He is afraid of insects.", "Он боится насекомых."],
+  ["Do you know of this restaurant?", "Ты знаешь об этом ресторане?"],
+  ["She does not speak of her work.", "Она не говорит о своей работе."],
+  ["He told me of his plan to buy a car.", "Он рассказал мне о своем плане купить машину."],
+  ["Did you hear of the storm in July?", "Ты слышал о шторме в июле?"],
+  ["We will learn of the new rules in September.", "Мы узнаем о новых условиях в сентябре."],
+  ["Will you read of the event in the newspaper?", "Ты прочитаешь о происшествии в газете?"],
+  ["I will not forget of your help.", "Я не забуду о твоей помощи."],
+  ["They are talking of their trip to the sea.", "Они говорят о своей поездке к морю."],
+  ["Is he dreaming of a new mobile?", "Он мечтает о новом телефоне?"],
+  ["We are not talking of the weather.", "Мы не говорим о погоде."],
+  ["I know of this beach from my friends.", "Я знаю об этом пляже от друзей."],
+  ["She heard of the accident in August.", "Она слышала о происшествии в августе."],
+  ["Did they inform you of the change?", "Они сообщили тебе об изменении?"],
+  ["They will tell us of their plan.", "Они расскажут нам о своем плане."],
+  ["Will you tell me of the date?", "Ты расскажешь мне о дате?"],
+  ["I will not say of him this.", "Я не буду говорить об этом о нём."],
+  ["He is speaking of his family.", "Он говорит о своей семье."],
+  ["Are you thinking of moving?", "Ты думаешь о переезде?"],
+  ["She is not talking of her success.", "Она не говорит о своем достижении."],
+  ["She is not telling of her success.", "Она не рассказывает о своем достижении."],
+  ["We read of the festival in the newspaper.", "Мы прочитали о празднике в газете."],
+  ["Did you hear of the new hotel?", "Ты слышал о новом отеле?"],
+  ["They did not tell us of the danger.", "Они не рассказали нам об опасности."],
+  ["I will inform you of the results.", "Я сообщу тебе о результатах."],
+  ["Will they notify us of the time?", "Они уведомят нас о времени?"],
+  ["He is talking of his new job.", "Он говорит о своей новой работе."],
+  ["Are they dreaming of a vacation?", "Они мечтают об отпуске?"],
+  // Причина чего-то
+    ["He died of old age.", "Он умер от старости."],
+  ["It couldn’t have happened of itself.", "Это не могло случиться само по себе."],
+  ["She is tired of her work.", "Она устала от своей работы."],
+  ["She died of hunger in January.", "Она умерла от голода в январе."],
+  ["Are the animals dying of thirst in the forest?", "Животные умирают от жажды в лесу?"],
+  ["Did he die of hunger in December?", "Он умер от голода в декабре?"],
+  ["The plant will not die of heat.", "Растение не умрёт от жары."],
+  ["She is not dying of boredom.", "Она не умирает от скуки."],
+  ["The city is in front of a big problem.", "Город стоит перед большой проблемой."],
+  ["They were tired of their mistakes.", "Они устали от своих ошибок."],
+  ["He died of a heart attack.", "Он умер от сердечного приступа."],
+  ["The house fell of old age.", "Дом разрушился от старости."],
+  ["He was tired of waiting.", "Он устал от ожидания."],
+  ["She was afraid of the dark.", "Она боялась темноты."],
+  ["He was happy of his success.", "Он был счастлив из-за своего успеха."],
+  ["They did not die of old age.", "Они не умерли от старости."],
+  ["He will die of thirst in the desert.", "Он умрет от жажды в пустыне."],
+  ["Will the flowers die of frost in November?", "Цветы умрут от мороза в ноябре?"],
+  ["The man is dying of cancer.", "Мужчина умирает от болезни."],
+  ["I am tired of waiting for Monday.", "Я устал ждать понедельник."],
+  ["Are you afraid of the dark winter?", "Ты боишься темной зимы?"],
+  ["He is not happy with his broken mobile.", "Он не доволен своим сломанным телефоном."],
+  ["We are sick of the rainy September.", "Мы устали от дождливого сентября."],
+  ["They are not afraid of their old car.", "Они не боятся своей старой машины."],
+  ["He became rich of his business in August.", "Он разбогател от своего бизнеса в августе."],
+  ["Did she become happy of her new bag?", "Она стала счастлива от своей новой сумки?"],
+  ["The children became tired of the long game.", "Дети устали от долгой игры."],
+  ["You will become strong of regular sport.", "Ты станешь сильным от регулярного спорта."],
+  ["Will he become good of reading books?", "Он станет хорошим от чтения книг?"],
+  ["She will not become tired of walking in the garden.", "Она не устанет от прогулок в саду."],
+  ["They are making money of their hotel.", "Они зарабатывают деньги на своем отеле."],
+  ["Is he making a problem of nothing?", "Он делает проблему из ничего?"],
+  ["We are not making fun of her dress.", "Мы не смеемся над ее платьем."],
+  // Оценка поведения
+  ["It was nice of you to help.", "С твоей стороны было мило помочь."],
+  ["How kind of her!", "Как доброжелательно с ее стороны!"],
+  ["It was wrong of him to tell a lie.", "С его стороны было неправильно говорить неправду."],
+  ["How clever of you!", "Как умно с твоей стороны!"],
+  ["It was not nice of them to shout.", "С их стороны было нехорошо кричать."],
+  ["How kind of you!", "Как мило с твоей стороны!"],
+  ["How good of you!", "Как хорошо с твоей стороны!"],
+  ["How nice of you!", "Как любезно с твоей стороны!"],
+  ["It was good of her to share.", "С ее стороны было хорошо поделиться."],
+  ["It was good of your dad to swim in the sea in April.", "Это было хорошо с его стороны плавать в море"],
+  ["It will be good of him to swim.", "Это будет хорошо с его стороны плавать."],
+  ["It was bad of me to forget.", "С моей стороны было плохо забыть."],
+  ["Wouldn't it be bad of us to go to the beach in December?", "Разве не было бы плохо с нашей стороны поехать на пляж в декабре?"],
+  ["It will be nice of you to buy dinner.", "Это будет мило с твоей стороны купить ужин."],
+  ["That's very kind of your mom to help.", "Это очень мило с твоей мамы, что помогает."],
+  ["It was bad of me to forget the date.", "Это было плохо с моей стороны забыть дату."],
+  ["Was it bad of me?", "Это было плохо с моей стороны?"],
+  ["It was wrong of me.", "Это было неправильно с моей стороны."],
+  ["Is it usual of him to be late on Monday?", "Это обычно для него опаздывать в понедельник?"],
+  ["Wasn't it bad of them to lose the camera?", "Разве это не было плохо с их стороны потерять камеру?"],
+  ["It wasn't very polite of you to leave the restaurant early.", "Это было не очень вежливо с твоей стороны уйти из ресторана рано."],
+  ["Won't it be good of us to wait until Tuesday?", "Разве не будет хорошо с нашей стороны подождать до вторника?"],
+  ["It is not good of the driver.", "Это нехорошо с стороны водителя."],
+  ["It won't be fair of him to take the best room in the hotel.", "Это будет несправедливо с его стороны занять лучший номер в отеле."],
+  ["It's clever of her to choose this beach in July.", "Это умно с ее стороны выбрать этот пляж в июле."],
+  ["Is it good of them to remember our weekend?", "Это хорошо с их стороны помнить о нашем выходном?"],
+  ["It isn't right of you to speak like that in the garden.", "Это неправильно с твоей стороны так говорить в саду."],
+  ["It was good of him to return the mobile.", "Это было хорошо с его стороны вернуть телефон."],
+  ["Wasn't it bad of me to walk in the forest in November?", "Разве не было плохо с моей стороны гулять в лесу в ноябре?"],
+  ["It wasn't nice of her to not send the newspaper.", "Это было нехорошо с ее стороны не прислать газету."],
+  ["It would be clever of you to book the hotel in February.", "Было бы умно с твоей стороны забронировать отель в феврале."],
+  ["It wouldn't be usual of him to not support his brother.", "Это было бы необычно с его стороны не поддержать брата."],
+  ["That is kind of your mom.", "Это добро с стороны твоей мамы."],
+  ["It was nice of him.", "Это было мило с его стороны."],
+  ["Is it good of them?", "Это хорошо с их стороны?"],
+  ["It was clever of you to come.", "Это было умно с твоей стороны прийти."],
+  ["Is it right of her to say this?", "Это правильно с ее стороны говорить это?"],
+  ["It is not fair of my brother.", "Это нечестно с стороны моего брата."],
+  ["Will it be kind of you to help?", "Это будет мило с твоей стороны помочь?"],
+  ["It will not be polite of children to run.", "Это будет невежливо с стороны детей бегать."],
+  ["It is clever of the student.", "Это умно с стороны студента."],
+  ["This bag is full of books.", "Эта сумка полна книг."],
+  ["The glass is full of juice.", "Стакан полный сока."],
+  ["The room is full of people.", "Комната полна людей."],
+  ["The picture is made of colors.", "Картина сделана из цветов."],
+  ["The house is made of wood.", "Дом сделан из дерева."],
+  ["That is a picture of a house.", "Это картина дома."],
+  ["The table is made of plastic.", "Стол сделан из пластика."],
+  ["I think of my family.", "Я думаю о своей семье."],
+  ["She dreams of summer.", "Она мечтает о лете."],
+  ["They talk of school.", "Они говорят о школе."],
+  ["He is afraid of dogs.", "Он боится собак."],
+  ["She is tired of work.", "Она устала от работы."],
+  ["We are happy with our son.", "Мы довольны нашим сыном."],
+  ["The book tells of animals.", "Книга рассказывает о животных."],
+  ["The song tells of love.", "Песня рассказывает о любви."],
+  ["The film tells of friendship.", "Фильм рассказывает о дружбы."],
+  ["This is a photo of my mom.", "Это фото моей мамы."],
+  ["Here is a map of the city.", "Вот карта города."],
+  ["The color of the sky is blue.", "Цвет неба голубой."],
+  ["The sound of music is loud.", "Звук музыки громкий."],
+  ["The taste of apple is sweet.", "Вкус яблока сладкий."],
+  ["One of the boys is my brother.", "Один из мальчиков — мой брат."],
+  ["Two of the girls are students.", "Две из девочек — студентки."],
+  ["Some of the books are new.", "Некоторые из книг новые."],
+  ["The first of May is a holiday.", "Первое мая — праздник."],
+  ["The third of June is my birthday.", "Третье июня — мой день рождения."],
+  ["The tenth of September is Sunday.", "Десятое сентября — воскресенье."],
+  ["That is very kind of you.", "Это очень мило с твоей стороны."],
+  ["Is this usual of him?", "Это обычно для него?"],
+
+  // Сравнение с остальными
+  ["I like the red car best of all.", "Красный автомобиль нравится мне больше всех."],
+  ["Worst of all was the food!", "Хуже всего была еда!"],
+  ["She is the nicest of all.", "Она самая милая из всех."],
+  ["The blue shirt is the best of all.", "Синяя рубашка лучше всех."],
+  ["He is the strongest of the team.", "Он самый сильный в команде."],
+  ["That was the worst day of my life.", "Это был самый плохой день в моей жизни."],
+  ["The book is the most interesting of all.", "Книга самая интересная из всех."],
+  ["Her dress is the most beautiful of all.", "Ее платье самое красивое из всех."],
+  ["The movie was the funniest of all.", "Фильм был самый смешной из всех."],
+  ["The red apple is the sweetest of all.", "Красное яблоко самое сладкое из всех."],
+  ["Of all months, I like August the most.", "Из всех месяцев я больше всего люблю август."],
+  ["Of all the days, Monday is the busiest.", "Из всех дней понедельник самый занятой."],
+  ["Of all the places, this beach is not the cleanest.", "Из всех мест этот пляж не самый чистый."],
+  ["Of all my things, the mobile was the most expensive.", "Из всех моих вещей телефон был самым дорогим."],
+  ["Of all the times, was winter the coldest?", "Из всех времен зима была самой холодной?"],
+  ["Of all the rooms, the kitchen was not the biggest.", "Из всех комнат кухня не была самой большой."],
+  ["Of all the cities, this one will be the most beautiful.", "Из всех городов этот будет самым красивым."],
+  ["Of all the hotels, will this one be the best?", "Из всех отелей этот будет лучшим?"],
+  ["Of all the gifts, the camera will not be the most expensive.", "Из всех подарков камера не будет самой дорогой."],
+  ["Of all the students, he is studying the hardest.", "Из всех студентов он учится усерднее всех."],
+  ["Of all the birds, are these flying the highest?", "Из всех птиц эти летят выше всех?"],
+  ["Of all the fruits, these apples are not selling the best.", "Из всех фруктов эти яблоки продаются не лучше всех."],
+  ["Of all drinks, I love juice the most.", "Из всех напитков я больше всего люблю сок."],
+  ["Of all colors, does she like blue the most?", "Из всех цветов она больше всего любит синий?"],
+  ["Of all subjects, he does not like English the most.", "Из всех предметов он больше всего не любит английский."],
+  ["Of all the bags, this one was the lightest.", "Из всех сумок эта была самой легкой."],
+  ["Of all the newspapers, was this the most interesting?", "Из всех газет эта была самой интересной?"],
+  ["Of all the restaurants, that one was not the cheapest.", "Из всех ресторанов тот не был самым дешевым."],
+  ["Of all the planes, this type will be the fastest.", "Из всех самолетов этот тип будет самым быстрым."],
+  ["Of all the weekends, will this be the most fun?", "Из всех выходных эти будут самыми веселыми?"],
+  ["Of all the cameras, this one will not be the simplest.", "Из всех камер эта не будет самой простой."],
+  ["Of all the children, she is reading the most.", "Из всех детей она читает больше всех."],
+  ["Of all the people, are they walking the fastest?", "Из всех людей они идут быстрее всех?"],
+  ["Of all the students, he is not trying the hardest.", "Из всех студентов он не старается больше всех."],
+
+  // Потеря или лишение чего-то
+  ["He was robbed of his money.", "У него украли деньги."],
+  ["She cried because of her broken toy.", "Она плакала из-за своей сломанной игрушки."],
+  ["They lost the key of the house.", "Они потеряли ключ от дома."],
+  ["He said I took a book of his.", "Он сказал, что я взял одну из его книг."],
+  ["She lost the help of her friend.", "Она потеряла помощь друга."],
+  ["The color of his shirt was gone.", "Цвет его рубашки исчез."],
+  ["The team lost because of the weather.", "Команда проиграла из-за погоды."],
+  ["She was sad because of the missing of her book.", "Она была грустной из-за отсутствия книги."],
+  ["They were scared of the missing of their home.", "Они боялись отсутствия своего дома."],
+  ["He was not part of the group.", "Он не был частью группы."],
+  ["The tree lost all of its leaves in November.", "Дерево потеряло все свои листья в ноябре."],
+  ["Did the hotel lose most of its guests in September?", "Отель потерял большинство своих гостей в сентябре?"],
+  ["The garden did not lose any of its flowers in May.", "Сад не потерял ни одного своего цветка в мае."],
+  ["The phone will lose all of its charge quickly.", "Телефон быстро потеряет весь свой заряд."],
+  ["Will the tree lose some of its leaves after the storm?", "Дерево потеряет часть своих листьев после шторма?"],
+  ["The restaurant will not lose any of its customers.", "Ресторан не потеряет ни одного своего клиента."],
+  ["The city is losing many of its old buildings.", "Город теряет многие из своих старых зданий."],
+  ["Is the forest losing most of its animals?", "Лес теряет большинство своих животных?"],
+  ["The museum is not losing any of its visitors.", "Музей не теряет ни одного своего посетителя."],
+  ["She was robbed of her mobile in January.", "У нее украли телефон в январе."],
+  ["Were you robbed of your camera in August?", "У тебя украли камеру в августе?"],
+  ["He was not robbed of his money.", "У него не украли деньги."],
+  ["The box was emptied of toys.", "Коробку освободили от игрушек."],
+  ["Was the room emptied of people?", "Комнату освободили от людей?"],
+  ["The plate was not cleared of food.", "Тарелку не очистили от еды."],
+  ["Will the street be cleaned of snow in December?", "Улицу очистят от снега в декабре?"],
+  ["The bottle will not be emptied of water.", "Бутылку не опустошат от воды."],
+  ["The sky is clearing of clouds.", "Небо очищается от облаков."],
+  ["Is the road being cleared of cars?", "Дорогу очищают от машин?"],
+  ["The park is not being cleaned of leaves.", "Парк не очищают от листьев."],
+  ["The town was out of electricity.", "У города не было электричества."],
+  ["The children were out of sweets.", "У детей не было сладостей."],
+  ["The family was not out of their home.", "Семья не лишена их дома."],
+  ["Soon I will be free of this cold.", "Скоро я буду свободен от этой простуды."],
+  ["Will the food be free of salt?", "Еда будет без соли?"],
+  ["The water will not be pure of dirt.", "Вода не будет чистой от грязи."],
+  ["The air is being cleaned of smoke.", "Воздух очищают от дыма."],
+  ["Is the water being cleaned of dirt?", "Воду очищают от грязи."],
+  ["The food is not being checked of quality.", "Еду не проверяют на качество."],
+
+  // Устойчивые выражения с предлогом of
+  ["To be fond of", "быть в восторге от чего-то"],
+  ["He is fond of painting.", "Он в восторге от рисования."],
+  ["To be sick of", "быть сытым по горло чем-то"],
+  ["I'm sick of waiting in line.", "Мне надоело стоять в очереди."],
+  ["To be scared of", "бояться чего-то"],
+  ["She is scared of spiders.", "Она боится пауков."],
+  ["To be bored of", "чувствовать скуку от чего-то"],
+  ["He is bored of the movie.", "Ему скучно на фильме."],
+  ["To be sure of", "быть уверенным в чем-то"],
+  ["I'm sure of my plan.", "Я уверен в своем плане."],
+  ["To be wary of", "остерегаться чего-то"],
+  ["They are wary of the new manager.", "Они настороженно относятся к новому менеджеру."],
+  ["To be tired of", "устать от чего-то"],
+  ["She is tired of her job.", "Ей надоела работа."],
+  ["Of all time", "всех времен"],
+  ["This is the greatest movie of all time.", "Это величайший фильм всех времен."],
+  ["Of course", "конечно"],
+  ["Of course, I'll help you.", "Конечно, я помогу тебе."],
+  ["Of all types", "всех видов"],
+  ["We sell shoes of all types.", "Мы продаем обувь всех видов."],
+  ["The bus stops in front of the school.", "Автобус останавливается перед школой."],
+  ["She did not stop at the end of the road.", "Она не остановилась в конце дороги."],
+  ["He will stop at the door of the house.", "Он остановится у двери дома."],
+  ["She did not walk at the end of the day.", "Она не гуляла в конце дня."],
+  ["Of course I remember your birthday in April.", "Конечно, я помню твой день рождения в апреле."],
+  ["Of course we will go to the sea in July.", "Конечно, мы поедем на море в июле."],
+  ["Of course not - I don't like November weather.", "Конечно нет - мне не нравится погода в ноябре."],
+  ["I think of my mom every day.", "Я думаю о своей маме каждый день."],
+  ["Do you think of summer in December?", "Ты думаешь о лете в декабре?"],
+  ["He does not think of work on weekend.", "Он не думает о работе в выходные."],
+  ["We hear of this restaurant from friends.", "Мы слышали об этом ресторане от друзей."],
+  ["Did you hear of the storm in February?", "Ты слышал о шторме в феврале?"],
+  ["They did not hear of this hotel.", "Они не слышали об этом отеле."],
+  ["She will look after her bag.", "Она позаботится о своей сумке."],
+  ["Will you look after the garden in August?", "Ты позаботишься о саде в августе?"],
+  ["I will not look after his mobile.", "Я не буду заботиться о его телефоне."],
+  ["He is happy with his new camera.", "Он доволен своей новой камерой."],
+  ["Are you happy with your test results?", "Ты доволен своими результатами теста?"],
+  ["They are not happy with their old car.", "Они не довольны своей старой машиной."],
+  ["I am afraid of dark nights in January.", "Я боюсь темных ночей в январе."],
+  ["Is she afraid of big dogs?", "Она боится больших собак?"],
+  ["We are not afraid of cold wind.", "Мы не боимся холодного ветра."],
+  ["It was kind of you to wait on Tuesday.", "Это было мило с твоей стороны ждать во вторник."],
+  ["Was it nice of him to buy dinner?", "Это было мило с его стороны купить ужин?"],
+  ["It was not good of them to be late.", "Это было нехорошо с их стороны опаздывать."],
+  ["The glass is full of juice.", "Стакан полон сока."],
+  ["Is the bag full of books?", "Сумка полна книг?"],
+  ["The room is not full of people.", "Комната не полна людей."],
+  ["This is made of wood.", "Это сделано из дерева."],
+  ["Is that made of plastic?", "Это сделано из пластика?"],
+  ["It is not made of metal.", "Это не сделано из металла."],
+
+  // Quantity nouns (containers and quantities)
+  ["He will catch the ball of the children.", "Он поймает мяч детей."],
+  ["She will teach the children of the school.", "Она будет учить детей школы."],
+  ["I did not read the list of the things.", "Я не читал список вещей."],
+  ["I did not carry the box of books.", "Я не нес коробку книг."],
+  ["A cup of tea is on the table.", "Чашка чая на столе."],
+  ["Do you want a glass of water?", "Ты хочешь стакан воды?"],
+  ["He needs a bottle of juice.", "Ему нужна бутылка сока."],
+  ["A bag of apples is heavy.", "Сумка яблок тяжелая."],
+  ["Did you buy a box of candy?", "Ты купил коробку конфет?"],
+  ["She has a bag of cookies.", "У нее сумка печенья."],
+  ["A piece of cake is sweet.", "Кусок торта сладкий."],
+  ["Is this a slice of bread?", "Это ломтик хлеба?"],
+  ["I want a bar of chocolate.", "Я хочу плитку шоколада."],
+  ["A group of children plays in the park.", "Группа детей играет в парке."],
+  ["Do you see a team of players?", "Ты видишь команду игроков?"],
+  ["A class of students reads books.", "Класс студентов читает книги."],
+  ["A pair of shoes is by the door.", "Пара обуви у двери."],
+  ["Do you have a set of keys?", "У тебя есть набор ключей?"],
+  ["She needs a group of flowers.", "Ей нужна группа цветов."],
+  ["A liter of milk is in the fridge.", "Литр молока в холодильнике."],
+  ["Did you buy a kilo of potatoes?", "Ты купил килограмм картошки?"],
+  ["We need a piece of paper.", "Нам нужен кусок бумаги."],
+  ["We do not have a piece of paper for the windows.", "У нас нет куска бумаги для окон."],
+  ["A can of soda is cold.", "Банка газировки холодная."],
+  ["Is this a box of honey?", "Это коробка мёда?"],
+  ["She wants a roll of paper.", "Она хочет рулон бумаги."],
+  ["A bowl of soup is hot.", "Миска супа горячая."],
+  ["Do you like a plate of food?", "Тебе нравится тарелка еды?"],
+  ["He cooks a pan of rice.", "Он готовит сковороду риса."],
+  ["A bit of water is on the floor.", "Немного воды на полу."],
+  ["A cup of tea is on the table in the kitchen.", "Чашка чая стоит на стуле на кухне."],
+  ["Do you want a glass of juice from the bar?", "Ты хочешь стакан сока из бара?"],
+  ["He did not drink a bottle of water in the restaurant.", "Он не выпил бутылку воды в ресторане."],
+  ["A bag of food is in the car.", "Сумка еды в машине."],
+  ["Did you buy a box of chocolates for your mom?", "Ты купил коробку шоколада для своей мамы?"],
+  ["We will not need a bag of sugar for dinner.", "Нам не понадобится сумка сахара для ужина."],
+  ["A piece of cake is on the plate.", "Кусок торта на тарелке."],
+  ["Is there a slice of bread on the table?", "Есть ломтик хлеба на столе?"],
+  ["There was not a bar of soap in the hotel.", "В отеле не было куска мыла."],
+  ["A group of people visits the museum in April.", "Группа людей посещает музей в апреле."],
+  ["Did you see a team of players in the park?", "Ты видел команду игроков в парке?"],
+  ["A group of people will not come to the beach in November.", "Группа людей не придёт на пляж в ноябре."],
+  ["A pair of shoes is by the door.", "Пара обуви у двери."],
+  ["Do you need a set of keys for the house?", "Тебе нужен набор ключей для дома?"],
+  ["She did not take a group of flowers to the party.", "Она не взяла группу цветов на вечеринку."],
+  ["A liter of milk is in the fridge.", "Литр молока в холодильнике."],
+  ["Will you buy a kilo of apples at the market?", "Ты купишь килограмм яблок на рынке?"],
+  ["A can of soda is on the table.", "Банка газировки на столе."],
+  ["Is there a box of jam in the kitchen?", "В кухне есть коробка джема?"],
+  ["There will not be a roll of paper in the hotel.", "В отеле не будет рулона бумаги."],
+  ["A bowl of soup is hot.", "Миска супа горячая."],
+  ["Did you eat a plate of food for lunch?", "Ты съел тарелку еды на обед?"],
+  ["He will not cook a pan of rice for dinner.", "Он не будет готовить сковороду риса на ужин."],
+  ["A bit of water fell in March.", "Немного воды упало в марте."],
+  ["A piece of cake is on the plate.", "Кусок торта на тарелке."],
+  ["I see a bit of earth.", "Я вижу немного земли."],
+
+  ];
+
+let g_practice = null;
+   
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+ 
+        let editor_symbol = new EditorSymbol({callback: checkAnswer});
+
+        g_practice = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write'), 
+            el_exercise_control: document.getElementById('control'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write),
+            editor_symbol: editor_symbol
+        });
+        g_practice.genExercisesListenAndWrite();
+ 
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+ 
+function checkAnswer(value){
+    value = textNormalize(value);
+    return value==g_practice.getAnswer();
+}
+</script>      
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Irregular_verbs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/Possessive_forms_of_sentences.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Irregular_verbs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/Possessive_forms_of_sentences.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+        <script src="../src/js/listen.js"></script>
+        <script src="../src/js/textual_analysis.js"></script>
+        <script src="../src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,912 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Present Perfect (beginner) - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+        <link rel="stylesheet" href="../theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="present-perfect-Настоящее-совершенное-время"><a class="header" href="#present-perfect-Настоящее-совершенное-время">Present Perfect (Настоящее совершенное время)</a></h1>
+<p>Present Perfect используется для описания действий, которые произошли в прошлом, но имеют связь с настоящим.</p>
+<p>Это время подчеркивает результат действия, а не само время его совершения.</p>
+<h2 id="Формирование-present-perfect"><a class="header" href="#Формирование-present-perfect">Формирование Present Perfect</a></h2>
+<p>Present Perfect образуется с помощью вспомогательного глагола <strong>have/has</strong> + <code>Past Participle</code> (<strong>V3</strong> – третья форма глагола).</p>
+<div class="mdbook-callouts mdbook-callouts-tip">
+<p class="mdbook-callouts-title">
+  <span class="mdbook-callouts-icon"></span>
+  tip
+</p>
+<p>I/You/We/They <strong>have</strong> + <strong>V3</strong> третья форма глагола (Past Participle)</p>
+<p>He/She/It <strong>has</strong> + <strong>V3</strong> третья форма глагола (Past Participle)</p>
+</div>
+<p>Время Present Perfect — это один из главных «полигонов» для использования неправильных глаголов (Irregular Verbs). Здесь они «работают на полную катушку».</p>
+<h2 id="Важные-маркеры-времени-для-present-perfect"><a class="header" href="#Важные-маркеры-времени-для-present-perfect">Важные маркеры времени для Present Perfect</a></h2>
+<p>Есть определенные слова и выражения, которые часто используются с Present Perfect:</p>
+<ul>
+<li><strong>already</strong> – уже (<em>I <strong>have</strong> already eaten. – Я уже поел.</em>)</li>
+<li><strong>just</strong> – только что (<em>She <strong>has</strong> just arrived. – Она только что приехала.</em>)</li>
+<li><strong>yet</strong> – еще (в вопросах и отрицаниях) (<em><strong>Has</strong> he called you yet? – Он тебе уже звонил?</em>)</li>
+<li><strong>ever</strong> – когда-либо (<em><strong>Have</strong> you ever been to Japan? – Ты когда-нибудь был в Японии?</em>)</li>
+<li><strong>never</strong> – никогда (<em>I <strong>have</strong> never tried sushi. – Я никогда не пробовал суши.</em>)</li>
+<li><strong>for</strong> – на протяжении (<em>They <strong>have</strong> lived here for five years. – Они живут здесь пять лет.</em>)</li>
+<li><strong>since</strong> – с какого-то момента (<em>We <strong>have</strong> known each other since 2010. – Мы знаем друг друга с 2010 года.</em>)</li>
+</ul>
+<h2 id="exercise-listen-and-write-present-perfect-markers"><a class="header" href="#exercise-listen-and-write-present-perfect-markers">Exercise: listen and write: Present Perfect (markers)</a></h2>
+<div id="control_general_markers"></div>
+<div id="listen_and_write_markers"></div>
+<hr />
+<h2 id="Употребление-present-perfect"><a class="header" href="#Употребление-present-perfect">Употребление Present Perfect</a></h2>
+<p>Present Perfect используется в следующих случаях:</p>
+<ul>
+<li>
+<p>Для описания опыта:</p>
+<p><em>I <strong>have</strong> been to France. – Я был во Франции.</em></p>
+</li>
+<li>
+<p>Для описания действий, которые произошли недавно:</p>
+<p><em>She <strong>has</strong> just left the room. – Она только что вышла из комнаты.</em></p>
+</li>
+<li>
+<p>Для действий, которые начались в прошлом и продолжаются до настоящего:</p>
+<p><em>They <strong>have</strong> lived here for five years. – Они живут здесь пять лет.</em></p>
+</li>
+</ul>
+<p>В этом времени часто не указывается точный момент времени, когда произошло действие.
+Важно, что это действие имеет значение в настоящем.</p>
+<ol>
+<li>to be (been)</li>
+</ol>
+<ul>
+<li><em>I <strong>have been</strong> to London.  — Я был в Лондоне.</em></li>
+<li><em>He <strong>has been</strong> ill for a week. — Он болеет уже неделю.</em></li>
+<li><em>We <strong>have been</strong> friends since childhood. — Мы дружим с детства.</em></li>
+</ul>
+<ol start="2">
+<li>to do (done)</li>
+</ol>
+<ul>
+<li><em>She <strong>has done</strong> her homework. — Она сделала свою домашнюю работу.</em></li>
+<li><em><strong>Have you done</strong> the dishes? — Ты помыл посуду?</em></li>
+<li><em>I <strong>haven't done</strong> my work yet. — Я еще не сделал свою работу.</em></li>
+</ul>
+<ol start="3">
+<li>to go (gone)</li>
+</ol>
+<ul>
+<li><em>They have <strong>gone</strong> to the shop. — Они ушли в магазин.</em></li>
+<li><em>My sister <strong>has gone</strong> to the cinema. — Моя сестра ушла в кино (и ее сейчас нет).</em></li>
+<li><em><strong>Have</strong> you ever <strong>gone</strong> skiing? — Ты когда-нибудь ездил на лыжах?</em></li>
+</ul>
+<ol start="4">
+<li>can → to be able to (been able to)</li>
+</ol>
+<ul>
+<li><em>He has <strong>been able to</strong> swim since he was five. — Он умел плавать с пяти лет.</em></li>
+<li><em>I <strong>have been able to</strong> drive for years. — Я умею водить машину уже много лет.</em></li>
+<li><em>She <strong>hasn't been able to</strong> find her keys. — Она не смогла найти свои ключи.</em></li>
+</ul>
+<ol start="5">
+<li>to get (got/gotten)</li>
+</ol>
+<ul>
+<li><em>We have <strong>got</strong> a new car. — У нас появилась новая машина.</em></li>
+<li><em>He <strong>has got</strong> a promotion. — Он получил повышение.</em></li>
+<li><em>She <strong>has gotten</strong> much better at English. — Ее английский стал намного лучше.</em></li>
+</ul>
+<ol start="6">
+<li>to make (made)</li>
+</ol>
+<ul>
+<li><em>You have <strong>made</strong> a mistake. — Ты сделал(а) ошибку.</em></li>
+<li><em>They <strong>have made</strong> a delicious cake. — Они приготовили вкусный торт.</em></li>
+<li><em><strong>Have</strong> you <strong>made</strong> a decision? — Ты принял решение?</em></li>
+</ul>
+<ol start="7">
+<li>
+<p>to have (had)</p>
+<p><strong>Первый <code>have</code></strong> — это <strong>вспомогательный глагол</strong>. Он не переводится, а только показывает время (Present Perfect).</p>
+<p><strong>Второй <code>had</code></strong> — это <strong>основной (смысловой) глагол</strong> в форме Past Participle (V3). Он переводится как <strong>"иметь", "обладать", "получать"</strong> и т.д.</p>
+</li>
+</ol>
+<ul>
+<li><em>I <strong>have had</strong> a lot of work today. — У меня <strong>было</strong> много работы сегодня.</em></li>
+<li><em>She <strong>has had</strong> three lessons this morning. — У нее <strong>было</strong> три урока этим утром.</em></li>
+<li><em>They <strong>have had</strong> a car for two years. — У них <strong>есть</strong> машина уже два года.</em> (и она у них все еще есть)</li>
+<li><em>He <strong>has had</strong> a headache since yesterday. — У него <strong>болит</strong> голова со вчерашнего дня.</em></li>
+</ul>
+<ol start="8">
+<li>...</li>
+</ol>
+<ul>
+<li><em>I <strong>have</strong> visited London. – Я побывал в Лондоне.</em> (Когда именно не важно, важно, что это произошло)</li>
+<li><em>She <strong>has</strong> finished her homework. – Она закончила домашнее задание.</em> (Результат важен в настоящем)</li>
+<li><em>We <strong>have</strong> just arrived. – Мы только что приехали.</em></li>
+<li><em>I <strong>have</strong> seen him. — Я видел его.</em> (Или: Я его видел.)</li>
+<li><em>She <strong>has</strong> taken the key. — Она взяла ключ.</em></li>
+<li><em>We <strong>have</strong> eaten pizza. — Мы поели пиццу.</em> (Или: Мы съели пиццу.)</li>
+<li><em>He <strong>has</strong> written a letter. — Он написал письмо.</em></li>
+</ul>
+<h2 id="exercise-listen-and-write-present-perfect-irregular"><a class="header" href="#exercise-listen-and-write-present-perfect-irregular">Exercise: listen and write: Present Perfect (irregular)</a></h2>
+<div id="control_general_irregular"></div>
+<div id="listen_and_write_irregular"></div>
+<hr />
+<h2 id="Вопросы-и-отрицания-в-present-perfect"><a class="header" href="#Вопросы-и-отрицания-в-present-perfect">Вопросы и отрицания в Present Perfect</a></h2>
+<p>Общие вопросы (требуют ответа "да" или "нет"):</p>
+<p>Для образования вопросов, глаголы <strong>have</strong> или <strong>has</strong> ставят в начале вопроса.</p>
+<ul>
+<li><em><strong>Have</strong> you seen this movie? – Ты видел этот фильм?</em></li>
+<li><em><strong>Has</strong> she finished her work? – Она закончила работу?</em></li>
+</ul>
+<p>Специальные вопросы (начинаются с вопросительного слова):</p>
+<ul>
+<li><em>Why haven't you called me? — Почему ты не позвонил мне?</em></li>
+<li><em>What have you done? — Что ты сделал?</em></li>
+<li><em>Where has she gone? — Куда она ушла?</em></li>
+<li><em>How long have you lived here? — Как долго ты здесь живешь?</em></li>
+<li><em>Who has taken my pen? — Кто взял мою ручку?</em></li>
+</ul>
+<p>Вопросы к подлежащему (начинаются с Who/What):</p>
+<ul>
+<li><em>Who has finished the test? — Кто закончил тест?</em> (Ответ: "I have" / "She has")</li>
+<li><em>What has happened? — Что случилось?</em></li>
+</ul>
+<p>Краткие ответы</p>
+<ul>
+<li><em>Have you eaten? Yes, I have. — Ты поел? Да.</em></li>
+<li><em>Have you eaten? No, I haven't. — Ты поел? Нет.</em></li>
+<li><em>Has he arrived? Yes, he has. — Он приехал? Да.</em></li>
+<li><em>Has he arrived? No, he hasn't. — Он приехал? Нет.</em></li>
+<li><em>Have they seen it? Yes, they have. — Они это видели? Да.</em></li>
+<li><em>Have they seen it? No, they haven't. — Они это видели? Нет.</em></li>
+</ul>
+<p>Для образования отрицаний используют формы глагол <strong>have not</strong>/<strong>haven’t</strong> или <strong>has not</strong> /<strong>hasn’t</strong>.</p>
+<ul>
+<li><em>I <strong>haven’t</strong> visited that museum. – Я не был в этом музее.</em></li>
+<li><em>He <strong>hasn’t</strong> called me yet. – Он еще не позвонил мне.</em></li>
+</ul>
+<h2 id="exercise-listen-and-write-present-perfect-question"><a class="header" href="#exercise-listen-and-write-present-perfect-question">Exercise: listen and write: Present Perfect (question)</a></h2>
+<div id="control_general_question"></div>
+<div id="listen_and_write_question"></div>
+<hr />
+<h2 id="exercise-listen-and-write-present-perfect-all-exercises"><a class="header" href="#exercise-listen-and-write-present-perfect-all-exercises">Exercise: listen and write: Present Perfect (all exercises)</a></h2>
+<div id="control_general_all"></div>
+<div id="listen_and_write_all"></div>
+<script>   
+
+const exercises_easy_listen_and_write_markers = [
+    ["I have already seen this film.", "Я уже смотрел этот фильм."],
+    ["She has already finished her work.", "Она уже закончила свою работу."],
+    ["They have already paid the bill.", "Они уже заплатили по счёту."],
+    
+    ["He has just left.", "Он только что вышел."],
+    ["We have just heard the news.", "Мы только что услышали новость."],
+    ["I have just woken up.", "Я только что проснулся."],
+    
+    ["Have you done your homework yet?", "Ты уже сделал домашнюю работу?"],
+    ["She hasn't replied to my message yet.", "Она ещё не ответила на моё сообщение."],
+    ["Has the post arrived yet?", "Почта уже пришла?"],
+    
+    ["Have you ever been to London?", "Ты когда-нибудь был в Лондоне?"],
+    ["Has she ever tried Italian food?", "Она когда-нибудь пробовала итальянскую еду?"],
+    ["Have they ever seen a snowstorm?", "Они когда-нибудь видели снежную бурю?"],
+    
+    ["I have never ridden a horse.", "Я никогда не катался на лошади."],
+    ["He has never told a lie.", "Он никогда не говорил неправды."],
+    ["We have never met before.", "Мы никогда раньше не встречались."],
+    
+    ["They have been married for twenty years.", "Они женаты уже двадцать лет."],
+    ["I have lived in this city for a long time.", "Я живу в этом городе уже долгое время."],
+    ["She has had this bag for two months.", "У неё есть эта сумка уже два месяца."],
+    
+    ["He has worked here since 2020.", "Он работает здесь с 2020 года."],
+    ["We have been friends since university.", "Мы дружим со времён университета."],
+    ["It hasn't rained since Monday.", "Дождь не шёл с понедельника."],
+];
+const exercises_easy_listen_and_write_irregular = [
+    ["I have had this dog for three years.", "У меня есть эта собака уже три года."],
+    ["She has done her exercises.", "Она сделала свои упражнения."],
+    ["He has said something important.", "Он сказал что-то важное."],
+    ["They have gone to the park.", "Они ушли в парк."],
+    ["We have got a new flat.", "У нас появилась новая квартира."],
+    ["You have made a good choice.", "Ты сделал хороший выбор."],
+    ["I have known her for a long time.", "Я знаю её давно."],
+    ["She has thought about it.", "Она подумала об этом."],
+    ["He has seen that movie.", "Он видел этот фильм."],
+    ["They have taken my pen.", "Они взяли мою ручку."],
+    ["My friend has come to visit me.", "Мой друг пришёл навестить меня."],
+    ["I have found my phone.", "Я нашёл свой телефон."],
+    ["She has given him a book.", "Она дала ему книгу."],
+    ["He has told us a story.", "Он рассказал нам историю."],
+    ["I have felt better today.", "Я чувствовал себя лучше сегодня."],
+    ["She has left the party.", "Она ушла с вечеринки."],
+    ["He has put the money in his pocket.", "Он положил деньги в карман."],
+    ["The lesson has begun.", "Урок начался."],
+    ["They have shown me their project.", "Они показали мне свой проект."],
+    ["I have heard this news.", "Я слышал эту новость."],
+    ["He has run ten kilometres.", "Он пробежал десять километров."],
+    ["She has written a letter.", "Она написала письмо."],
+    ["We have sat here for an hour.", "Мы сидели здесь уже час."],
+    ["I have met my teacher in the shop.", "Я встретил своего учителя в магазине."],
+    ["He has paid for the coffee.", "Он заплатил за кофе."],
+    ["She has learned a new language.", "Она выучила новый язык."],
+    ["I have understood the rule.", "Я понял правило."],
+    ["He has spoken to the director.", "Он поговорил с директором."],
+    ["She has read this article.", "Она прочитала эту статью."],
+    ["They have bought a car.", "Они купили машину."],
+    ["I have sent a message.", "Я послал сообщение."],
+    ["He has driven to another city.", "Он уехал в другой город (на машине)."],
+    ["She has worn her new dress.", "Она надела своё новое платье."],
+    ["He has eaten his lunch.", "Он съел свой обед."],
+    ["She has taught me how to swim.", "Она научила меня плавать."],
+    ["I have caught a cold.", "Я простудился."],
+    ["He has drawn a portrait.", "Он нарисовал портрет."],
+    ["We have chosen a present.", "Мы выбрали подарок."],
+    ["The kids have fought over a toy.", "Дети подрались из-за игрушки."],
+    ["She has forgotten his name.", "Она забыла его имя."],
+    ["They have flown to Egypt.", "Они улетели в Египет."],
+    ["He has sung a beautiful song.", "Он спел красивую песню."],
+    ["I have slept for eight hours.", "Я проспал восемь часов."],
+    ["She has drunk all the juice.", "Она выпила весь сок."],
+    ["He has ridden a bicycle.", "Он покатался на велосипеде."],
+    ["I have woken up late.", "Я проснулся поздно."],
+    ["They have swum in the sea.", "Они поплавали в море."],
+    
+    ["I have had a great idea.", "У меня появилась отличная идея."],
+    ["He has done nothing wrong.", "Он не сделал ничего плохого."],
+    ["The weather has said it will be sunny.", "В прогнозе погоды сказали, что будет солнечно."],
+    ["Milk has gone bad.", "Молоко испортилось."],
+    ["She has gotten a new job.", "Она получила новую работу."],
+    ["We have made a plan.", "Мы составили план."],
+    ["They have known each other since school.", "Они знают друг друга со школы."],
+    ["I have thought of a solution.", "Я нашёл решение (букв.: подумал о решении)."],
+    ["He has seen a cat.", "Он видел кошку."],
+    ["The cat has taken a fish from the table.", "Кот утащил рыбу со стола."],
+    ["Winter has come early this year.", "В этом году зима пришла рано."],
+    ["Scientists have found a new planet.", "Учёные обнаружили новую планету."],
+    ["He has given up smoking.", "Он бросил курить."],
+    ["She has told me a secret.", "Она рассказала мне секрет."],
+    ["I have felt happy all week.", "Я чувствую себя счастливым всю неделю."],
+    ["Someone has left a message for you.", "Кто-то оставил вам сообщение."],
+    ["She has put on weight.", "Она поправилась."],
+    ["A new era has begun.", "Началась новая эра."],
+    ["Experience has shown that it's true.", "Опыт показал, что это правда."],
+    ["Have you heard the latest news?", "Ты слышал последние новости?"],
+    ["Time has run out.", "Время вышло."],
+    ["He has written his name in the book.", "Он написал своё имя в книге."],
+    ["The bird has sat on a branch.", "Птица села на ветку."],
+    ["I have met my deadline.", "Я уложился в срок."],
+    ["He has paid his debts.", "Он заплатил свои долги."],
+    ["She has learned from her mistakes.", "Она научилась на своих ошибках."],
+    ["Have you understood the task?", "Вы поняли задание?"],
+    ["He has spoken too much.", "Он сказал слишком много."],
+    ["I have read your report.", "Я прочитал ваш отчёт."],
+    ["She has bought groceries for the whole week.", "Она купила продукты на всю неделю."],
+    ["We have sent you an invitation.", "Мы отправили вам приглашение."],
+    ["He has driven all night.", "Он ехал за рулём всю ночь."],
+    ["She has worn out her shoes.", "Она стоптала свою обувь."],
+    ["The children have eaten all the candy.", "Дети съели все конфеты."],
+    ["Life has taught me to be quiet.", "Жизнь научила меня быть тихим (спокойным, не волноваться)."],
+    ["The police have caught the thief.", "Полиция поймала вора."],
+    ["She has drawn a map for us.", "Она нарисовала для нас карту."],
+    ["We have chosen you as our leader.", "Мы выбрали тебя своим лидером."],
+    ["He has fought for his country.", "Он сражался за свою страну."],
+    ["I have forgotten where I put my glasses.", "Я забыл, куда положил очки."],
+    ["The bird has flown away.", "Птица улетела."],
+    ["She has sung a song to the baby.", "Она спела песню малышу."],
+    ["He hasn't slept at all.", "Он совсем не спал."],
+    ["Who has drunk my coffee?", "Кто выпил мой кофе?"],
+    ["I have never ridden a camel.", "Я никогда не катался на верблюде."],
+    ["The noise has woken the baby.", "Шум разбудил ребёнка."],
+    ["He has swum across the river.", "Он переплыл реку."],
+];
+const exercises_easy_listen_and_write_question = [
+    ["I haven't finished my book yet.", "Я еще не закончил свою книгу."],
+    ["She hasn't spoken to him since Monday.", "Она не разговаривала с ним с понедельника."],
+    ["They haven't found their keys.", "Они не нашли свои ключи."],
+    ["He has never eaten sushi.", "Он никогда не ел суши."],
+    ["We haven't decided where to go yet.", "Мы еще не решили, куда поехать."],
+    ["It hasn't stopped raining.", "Дождь не прекратился."],
+    ["I haven't seen that movie.", "Я не видел этот фильм."],
+    ["She hasn't bought a new dress for the party.", "Она не купила новое платье на вечеринку."],
+    
+    ["Have you ever been to Paris?", "Ты когда-нибудь был в Париже?"],
+    ["Has she done her homework?", "Она сделала домашнюю работу?"],
+    ["Have they fixed the car yet?", "Они уже починили машину?"],
+    ["Has he left already?", "Он уже ушел?"],
+    ["Have we met before?", "Мы встречались раньше?"],
+    ["Has it been cold this week?", "На этой неделе было холодно?"],
+
+    ["Why haven't you called me?", "Почему ты не позвонил мне?"],
+    ["What have you done?", "Что ты сделал?"],
+    ["Where has she gone?", "Куда она ушла?"],
+    ["How long have you lived here?", "Как долго ты здесь живешь?"],
+    ["Who has taken my pen?", "Кто взял мою ручку?"],
+    ["Who has finished the test?", "Кто закончил тест?"],
+    ["What has happened?", "Что случилось?"],
+    
+    ["Have you eaten? Yes, I have.", "Ты поел? Да."],
+    ["Have you eaten? No, I haven't.", "Ты поел? Нет."],
+    ["Has he arrived? Yes, he has.", "Он приехал? Да."],
+    ["Has he arrived? No, he hasn't.", "Он приехал? Нет."],
+    ["Have they seen it? Yes, they have.", "Они это видели? Да."],
+    ["Have they seen it? No, they haven't.", "Они это видели? Нет."],
+    
+    ["The leaves have fallen from the trees.", "Листья опали с деревьев."],
+    ["Snow has fallen during the night.", "Ночью выпал снег."],
+    ["The book has fallen off the table.", "Книга упала со стола."],
+    ["The price has fallen this week.", "Цена упала на этой неделе."],
+    ["The temperature has fallen today.", "Температура понизилась сегодня."],
+    ["The building has fallen into ruin.", "Здание превратилось в руины."],
+];
+
+let g_practice_markers = null;
+let g_practice_irregular = null;
+let g_practice_question = null;
+let g_practice_all = null;
+
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+ 
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralMarkers, suffix_id: 'markers'});
+
+        g_practice_markers = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_markers'), 
+            el_exercise_control: document.getElementById('control_general_markers'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_markers),
+            editor_symbol: editor_symbol
+        });
+        g_practice_markers.genExercisesListenAndWrite();
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralIrregular, suffix_id: 'irregular'});
+
+        g_practice_irregular = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_irregular'), 
+            el_exercise_control: document.getElementById('control_general_irregular'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_irregular),
+            editor_symbol: editor_symbol
+        });
+        g_practice_irregular.genExercisesListenAndWrite();
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralQuestion, suffix_id: 'question'});
+
+        g_practice_question = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_question'), 
+            el_exercise_control: document.getElementById('control_general_question'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_question),
+            editor_symbol: editor_symbol
+        });
+        g_practice_question.genExercisesListenAndWrite();
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralAll, suffix_id: 'all'});
+        const exercises_easy_listen_and_write_all = exercises_easy_listen_and_write_markers
+          .concat(exercises_easy_listen_and_write_irregular)
+          .concat(exercises_easy_listen_and_write_question);
+        g_practice_all = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_all'), 
+            el_exercise_control: document.getElementById('control_general_all'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_all),
+            editor_symbol: editor_symbol
+        });
+        g_practice_all.genExercisesListenAndWrite();
+ }
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+ 
+function checkAnswerGeneralMarkers(value){
+    value = textNormalize(value);
+    return value==g_practice_markers.getAnswer();
+}
+function checkAnswerGeneralIrregular(value){
+    value = textNormalize(value);
+    return value==g_practice_irregular.getAnswer();
+}
+function  checkAnswerGeneralQuestion(value){
+    value = textNormalize(value);
+    return value==g_practice_question.getAnswer();
+}
+function  checkAnswerGeneralAll(value){
+    value = textNormalize(value);
+    return value==g_practice_all.getAnswer();
+}
+</script>   
+<style>
+table {
+  margin: 0px !important;  
+  border-collapse: collapse;
+}
+</style>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Basic_conjunctions.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/Phrasal_Verbs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Basic_conjunctions.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/Phrasal_Verbs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+        <script src="../src/js/listen.js"></script>
+        <script src="../src/js/textual_analysis.js"></script>
+        <script src="../src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

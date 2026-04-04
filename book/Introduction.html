@@ -1,0 +1,2538 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Introduction - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/css/theme.css">
+        <link rel="stylesheet" href="theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="Размышления-о-задаче-изучения-языка"><a class="header" href="#Размышления-о-задаче-изучения-языка">Размышления о задаче изучения языка</a></h1>
+<p>При структурированной и постепенно усложняющейся модели обучения, процесс усвоения языка обычно эффективнее чем хаотичный или несистемный подход преподавателей с сетевым типом мышления, потому что снижается когнитивная нагрузка.</p>
+<h2 id="1-Какие-знания-необходимы-для-достижения-уровня-b2"><a class="header" href="#1-Какие-знания-необходимы-для-достижения-уровня-b2">1. Какие знания необходимы для достижения уровня B2</a></h2>
+<p>Для уровня B1-B2 достаточно 3 тыс. слов (7 тыс. — это около 80% текста). Слова имеют конкретную частоту встречаемости, поэтому следует начать с самых частотных, сгруппированных по частям речи (глаголы, существительные, наречия и т. д.). Также, стоит учитывать фразовые глаголы — у них тоже есть своя частота употребления в речи.</p>
+<p>Грамматика распределяется по уровням сложности A1–C2. Противопоказано её изучать в формате заучивания и зубрёжки. С ней следует <strong>ознакомиться</strong> и при необходимости к ней возвращаться для толкования. По мере привыкания к языку, грамматика станет более понятной. Конечно, уроки стоит проходить от одной грамматической темы к другой, то есть опираясь на неё: она задаёт тему урока. Но язык не нужно просто изучать — к нему нужно привыкать, его нужно пробовать использовать, а не слепо следовать чётким правилам грамматики.</p>
+<br>
+<details>
+<summary>Ошибка языковых курсов</summary>
+<blockquote>
+<p>На курсах рассказывают грамматику, тратя драгоценное время урока, и тут же пытаются практиковать её со студентами, которые испытывают колоссальную когнитивную нагрузку, что, в свою очередь, малоэффективно с точки зрения процесса обучения. Информация должна быть понятной <strong>при</strong> её применении, а знакомиться с ней лучше заранее, самостоятельно, и лишь на уроке закреплять. Лучше, чтобы студенты подготовились дома с теорией, а на уроке практиковались в речи и на следующих нескольких занятиях повторяли эту же тему снова, доводя её до уверенного использования. К тому же темы уроков должны быть чётко выстроены по уровню и с учётом полученных знаний на предыдущих занятиях: все слова и грамматика, используемые в уроке, должны быть знакомы, то есть пройдены ранее. Конечно, новые слова тоже изучаются по уровню и снова применяются на следующих уроках — словно нарастающий ком снега, катящийся с горки. Новые слова повторяются снова и снова в последующих занятиях; для этого и нужно возвращаться к одной и той же теме грамматики с разным набором уже изученных слов и конструкций.</p>
+<p>Если выстроить в начале то, что действительно нужно в начале, то есть дать студенту последовательную базу, на которую он сможет опереться в любом непонятном случае, у него появится уверенность в себе и стремление исследовать дальше, а не молчать и забрасывать учёбу. База грамматики — это пирамида: в основании самые часто используемые правила и конструкции, выше — уже реже используемые. Не нужна в начале сложная система артиклей и их исключений — она требуется только для ознакомления, чтобы развеять «магию незнания» и т. д.</p>
+<p>Также ошибочно смотреть блогеров, которые объясняют английский, то есть пытаются научить вас ему так, будто английский — это формула из математики: просто бери и подставляй. Но, нам же, нужно усвоение языка и его активное применение, а не просто понимание того, как он устроен и как переводится. Как он устроен, вы и сами разберётесь по грамматике — это не занимает много времени: поняли и всё. Заучивать до дыр нет смысла, дальше должна идти долгая практика.</p>
+</blockquote>
+</details>
+<hr />
+<h2 id="2-Что-конкретно"><a class="header" href="#2-Что-конкретно">2. Что конкретно</a></h2>
+<p><strong>Есть в наличии или можно скачать:</strong></p>
+<ul>
+<li>Слова 6 тыс (частотных);</li>
+<li>Грамматика по уровням;</li>
+<li>Адаптивные книги:
+<ul>
+<li><a href="https://www.newsinlevels.com/">Адаптивные книги www.newsinlevels.com</a></li>
+<li><a href="https://easylang.ru/">Адаптивные книги easylang.ru</a></li>
+<li><a href="https://fobook.ru/">Адаптивные книги fobook.ru</a></li>
+<li><a href="https://vocab.today/reader/">vocab.toda</a></li>
+<li><a href="https://english-e-reader.net/level/starter">english-e-reader.net</a></li>
+<li><a href="https://2books.su/">Книги на английском языке с параллельным переводом</a></li>
+</ul>
+</li>
+<li>Видео фильмы, сериалы, мультики, видео на Youtube</li>
+</ul>
+<p>Для просмотров фильмов на английском с субтитрами:</p>
+<ul>
+<li><a href="http://www.hamatata.com/">www.hamatata.com</a></li>
+<li><a href="https://www.friends10.ru/category/filmy/">www.friends10.ru</a></li>
+</ul>
+<p>В идеале — иметь видео на <em>определённые темы</em> грамматики с понятным вводом (English Comprehensible Input).</p>
+<p>Или, как неплохой вариант, — аудио с хорошей дикцией на <em>определённые темы</em> грамматики с понятным вводом (English Comprehensible Input).</p>
+<p><strong>Почему именно на определённые темы?</strong> - Потому что, просто слушать простую речь с целью привыкнуть - не так эффективно, как привыкать к тому, что <strong>нужно в первую очередь</strong>. Именно это и поднимет на ступень выше в понимании языка и развеет «туман» непонятности в <strong>большинстве случаев</strong> соприкосновения с языком, так как первые темы — самые популярные и простые. Например, тема с <a href="A1/to_be.html"><code>to be</code></a> и <a href="A1/Pronouns_personal_demonstrative.html"><code>pronouns</code></a> встречается почти в каждом предложении, так, может, стоит начать с них, а не с: фруктов, динозавров, погоды, времени или местоположения?!</p>
+<p>Для таких <em>идеальных</em> данных нужен текст, готовые предложения. Где их взять? - Искать в словарях, запрашивать у LLM.</p>
+<p>Хорошо бы подобрать примеры для практики, следуя определённой очерёдности изучения грамматики и используя конкретный набор слов определённого уровня. По итогу проработки всех примеров уровня необходимо соприкоснуться со всеми словами в их контексте. Более частотные и простые слова, конечно, будут встречаться в примерах чаще, но они не должны затмевать остальные слова уровня. Такую тенденцию к затмеванию создаёт применение LLM, поэтому потребуется ручная работа по фильтрации и <a href="textual_analysis.html">корректировке качества примеров</a>.</p>
+<p>А если писать под диктовку? Здесь есть и вслушивание, и сразу письмо. Ведь понятный ввод предполагает, что мы знакомы с контентом, поэтому можно и писать его. А слушать непонятный ввод — это скорее фоновая практика для расслабления.</p>
+<blockquote>
+<p>Идея: телеграм-бот или скрипт cron, который пушит уведомления с вопросами на английском в течение дня по текущей изучаемой теме — в роли тренера, мотиватора и просто напоминания.</p>
+</blockquote>
+<hr />
+<h2 id="3-Как-это-лучше-сделать"><a class="header" href="#3-Как-это-лучше-сделать">3. Как это лучше сделать</a></h2>
+<p>Практика состоит из навыков, где нужно: ГОВОРИТЬ, СЛУШАТЬ, ПИСАТЬ, ЧИТАТЬ.<br />
+Самый важный навык — это СЛУШАТЬ (аудирование), то есть умение распознавать речь на слух. Так как, зная, как звучит английская речь, вы будете иметь пример звучания, которому сможете подражать, а также примерное представление о её написании. То есть это охватывает все необходимые навыки. Следующее на что обратить внимание, умение составлять предложения, сперва процесс долгий, поэтому через письмо, после овладения навыком - станет возможным составлять предложения на лету, и речь станет без пауз.</p>
+<h3 id="1-Распознавать-на-слух"><a class="header" href="#1-Распознавать-на-слух">1. Распознавать на слух</a></h3>
+<p>Речь носителей отличается от правильного (раздельного) произношения слов в предложении. Носители оперируют слитыми вместе словами в фразы. Эти слитые слова в фразы часто применяются вместе, так что можно считать их шаблонами из которых строится реплика.  (Например сочетание <code>isn't it</code> может звучать как <code>is need</code>)</p>
+<p><code>LISTEN</code> Аудирование (и письмо) развивается через письмо под диктовку определённых предложений по грамматике — от уровня к уровню, с определённым набором слов. То есть все предложения должны состоять <strong>только</strong> из слов уровня, в основном из изученных ранее и в меньшей мере из новых, изучаемых в данный момент. Да, на уровне A0 слова нужно зубрить карточками, первую 1000 слов необходимо набрать зубрежкой. Т.е. мы должны "плавать в темплом лягушатнике" из знакомых слов, пока мы привыкаем к тому как устроен язык, имея уверенную опору из грамматики уровня прежде чем переходить на новые глубины.</p>
+<pre><code>Для прокачки Listening skills очень рекомендую слушать радио (помогает даже прослушивание на фоне - научитесь понимать речь и усвоите интонацию и произношение):
+Для прокачки восприятия американской речи:
+📻 National Public Radio
+Для прокачки восприятия британской речи:
+📻 LBC News
+Также советую поглядывать YouTube блоггеров (носителей языка):
+Преподаватели, которые в наглядной и яркой форме объяснят грамматику и дают повседневную лексику:
+📺 @LearnEnglishwithHarry
+📺 @papateachme
+Девушка web &amp; graphic designer, рассказывате про свою рабочую рутину и много других интересных фишек (отлично подходит для IT сектора):
+📺 @charlimarieTV
+Для тех, кто хочет знать всю про мир компьютеров и их беспощадные новинки:
+📺 @PcCentric
+Если вам интересна наука, то одназначно вам к этой дамочке:
+📺 @DrawCuriosity
+</code></pre>
+<pre><code>https://www.englishclub.com/listening/guide.php
+
+Слушайте естественную речь: слушать учителя, одноклассников и даже аудиозаписи из учебника недостаточно. 
+
+Вам также нужно слушать реальных людей, говорящих на настоящем английском языке. 
+
+Вы заметите следующее:
+
+1) Люди связывают слова в цепочку. Например: turn off -&gt; tur-noff.
+2) Некоторые гласные звуки затихают при произнесении вслух. 
+   Они становятся слабыми и почти незаметными. Например: Can I talk t[to] you?
+3) Некоторые звуки и слоги полностью исчезают. Это называется элизией. 
+   Это часто встречается, когда в начале слова стоит буква «h». Например: What will [h]e do?
+4) Иногда люди пропускают целые слова. Это называется эллипсисом . Например: Have you got a second? -&gt; Got a sec?
+</code></pre>
+<h3 id="2-Привыкать"><a class="header" href="#2-Привыкать">2. Привыкать</a></h3>
+<p>Ни слова, ни словесные конструкции, ни грамматика не запомнятся без необходимого контекста, эмоциональной «добавки», многократного использования и периодического повторения в окружении языка. Поэтому материал необходимо закреплять фоном.</p>
+<p>Для закрепления и привыкания подходит пассивный способ:</p>
+<ul>
+<li>просмотр видео <a href="https://www.youtube.com/results?search_query=English">youtube English A1</a>,</li>
+<li><a href="https://www.youtube.com/watch?v=xEf8OYRJtws&amp;list=PLTI5VrQW0CazhyD9Kyj7Srs-S1iT0WIul">Slow English</a>,</li>
+<li><a href="https://www.youtube.com/watch?v=ri2uKTpw4lQ&amp;list=PL5uXqO84WYGuBKdwWMjxYGmF4am771fxS">Easy English</a>,</li>
+<li><a href="https://www.youtube.com/watch?v=hBVequEEoAQ&amp;list=PLv4XgHS4V3TJsIpVSOwhfJ3uexzSCf7QA">A1 English</a>,</li>
+<li><a href="https://www.youtube.com/playlist?list=PLhNRdHEdUQewzYZ0X6gt3x9_CVen_HldI">A1 English Listening Practice</a>,</li>
+<li>English Comprehensible Input,</li>
+<li>сериалов по типу: Friends, <a href="https://www.youtube.com/playlist?list=PLdYSWqTrWP2jyqWIdjsATbrb11uN_BMrF">Extra English</a>,</li>
+<li>мультики A1-A2: Finding Nemo, Winnie The Pooh, Up!, Anastasia, Soul, Zootopia,</li>
+<li><a href="https://www.youtube.com/results?search_query=Educational+video+lessons+for+toddlers">Educational video lessons for toddlers</a>,</li>
+<li>простые фильмы: 100 days of Summer.</li>
+</ul>
+<p>Что можно слушать:</p>
+<ul>
+<li>мультики, фильмы;</li>
+<li>прослушивать адаптивные книги;</li>
+<li>найти приятный голос блогера;</li>
+<li>записать аудио в формате "вопрос en — пауза — ответ en" и во время прогулки отвечать на эти вопросы;</li>
+<li>самостоятельно создать файл субтитров (в формате VTT для видео в формате MKV), придется слушать каждую реплику в адаптированном/легком видео и переводить для себя.</li>
+<li>готовые <a href="https://www.learnenglish.de/dictationpage.html#elem">Онлайн-диктанты</a>, <a href="https://www.englishclub.com/listening/dictation.php">Онлайн-диктанты</a>.</li>
+</ul>
+<h3 id="3-Произносить"><a class="header" href="#3-Произносить">3. Произносить</a></h3>
+<p><a href="https://www.youtube.com/watch?v=aqF481MMDcs">метод тренера по речи Сергея Че</a></p>
+<p><code>SPEAK</code> — учиться/привыкать следует при чтении вслух и повторяя за диктором с
+<a href="https://www.google.com/intl/en/chrome/demos/speech.html">самопроверкой</a>, <a href="https://voicenotebook.com/">самопроверкой</a> (проверить в браузере, как распознается речь).
+Для привыкания речевого аппарата необходим объем наговоренного текста, можно читать вслух, повторять за диктором и произвольно сочинять.</p>
+<p>На каждый уровень есть определенные <a href="A1/List_of_topics_for_speaking_and_writing_practice.html">темы</a> которые надо уметь использовать, вот их можно и проговаривать:</p>
+<ul>
+<li>Научиться говорить о себе: личная информация, распорядок дня, привычки, погода, работа, увлечения...</li>
+<li>Записывать аудио-сообщения о планах на день, и как прошел день.</li>
+<li>Отвечать/задавать вопросы в тренажере, который реагирует (приложения могут такое или самостоятельно разработать, используя возможности браузерного API распознавать речь speech-to-text, библиотеки на Python могут text-to-speech).</li>
+<li>Брать картинку и описывать все, что на ней происходит.</li>
+</ul>
+<p><em>Все же лучшим решением будет ежедневный собеседник.</em></p>
+<p>Рассмотреть различные подходы для улучшения навыка говорить —
+<a href="/sources/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%BD%D0%B0%20%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%BC%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5.html">методика обучения говорению на английском языке</a>.</p>
+<p>Легче всего усвоить язык, разговаривая с человеком. Так как активное использование языка способствует его запоминанию, мозг сохраняет надолго, если <strong>он искал и нашел то, что помогло</strong>.</p>
+<p>По-видимому, живое общение — это очень мощный стимул, причём в группе оно ещё эффективнее, чем один на один с преподавателем.
+Лучшее, что можно сделать для освоения языка, — это обсуждение изучаемых тем/слов с другими людьми или AI.
+Но поскольку найти людей, которым было бы интересно обсуждать ваши темы, непросто (например, через приложение <a href="https://www.hellotalk.com/en">HelloTalk</a>, <a href="https://speakandimprove.com/">speakandimprove.com</a>), основное время обучения придётся уделять самостоятельной работе.</p>
+<p>Возможна компенсация недостатка общения с человеком, используя возможности браузера и библиотек работы с голосом. Браузер может выполнять <strong>voice to text</strong> и <strong>text to voice</strong>, эта комбинация может заменить роль тренера. Также, вы можете настроить LLM в качестве собеседника для вашего уровня английского.</p>
+<p>Но остается проблема с контентом — трудно подобрать обучающий материал по уровню и теме. Необходимо показать <strong>контекст</strong> с озвучиванием, в нужной грамматике и с нужными словами.</p>
+<h3 id="4-Читать-все-что-вам-интересно"><a class="header" href="#4-Читать-все-что-вам-интересно">4. Читать, все что вам интересно</a></h3>
+<p><code>READ</code> — адаптивные книги по уровням.</p>
+<p>Можно субтитры отдельно от видео почитать, ознакомиться, и смотреть видео без них.</p>
+<h3 id="5-Развивать-навык-писать-английские-предложения"><a class="header" href="#5-Развивать-навык-писать-английские-предложения">5. Развивать навык "писать" английские предложения</a></h3>
+<p><code>WRITE</code> — при прослушивании адаптивных книг, при прохождении грамматики по учебникам, отвечать на форумах, вести личный блог о том, как идет изучение языка.
+Составлять простые предложения в различных Simple временах из слов набора A1 и проверять их грамматику <a href="https://languagetool.org/ru">тут</a> или <a href="https://www.onlinecorrection.com/">тут</a>.</p>
+<p>Можно расписывать <a href="A1/List_of_topics_for_speaking_and_writing_practice.html">темы уровня</a>, которые придется все равно использовать, так что можно их расписывать в различных вариантах, да хоть сочиняя.</p>
+<h3 id="vocabular"><a class="header" href="#vocabular">VOCABULAR</a></h3>
+<p>VOCABULAR (Словарный запас) — один из вариантов ознакомления с новыми словами — это карточки слов: с лицевой стороны — "en + транскрипция", с обратной стороны — "перевод".
+Перебирать карточки с лицевой стороны, потом наоборот — с обратной стороны, переводить на английский.
+Для запоминания слова оно должно быть использовано нами много раз в его контексте, сначала в письме, потом при произношении.</p>
+<p><i>Проходить по уровням грамматики с текущим набором частотных слов.
+Разработать bot-trainer или найти аналог по типу "Andy", <a href="https://chat.kuki.ai/">chat.kuki.ai</a>, для закрепления тем грамматики и слов.</i></p>
+<p>Важный ньюанс, если понимать значение <em>всех</em> слов из A1 (до 1000 слов) то вы <strong>УЖЕ</strong> должны говорить и воспринимать на слух предложения в пределеах грамматики A1, состоящие из этих слов, соответвенно на это надо делеть упор, переносить понимание в использование.
+<strong>Но не следует делать лишнюю работу</strong>, начав изучать еще слова из A2,B1... в надежде на то, что вы сможете наконец лучше понимать английский.
+Сперва закрепите понимае на этом уровне, используя <strong>ТОЛЬКО</strong> грамматику для A1, говорите простые предложения, воспринимайте их на слух, пишите под диктовку. Когда вы "выростите" из этого уровня, у вас будет "тяга" к новому уровню A2.</p>
+<p><a href="https://youtu.be/BzIVOhOTtSU?si=lrjTGxR7_w9BmFZd">Метод Борисова</a> Понятный ввод (Comprehensible Input), т.е. пытаться услишать английскую речь только если вы уже знаете как это звучит на русском, а не пытаться угадать/распознать. На этот этап, Денис рекомендует пол года, и только после привыкания к звучанию языка переходить на метод "тени" это когда повторяем за диктором.</p>
+<hr />
+<h2 id="Как-может-выглядеть-процесс"><a class="header" href="#Как-может-выглядеть-процесс">Как может выглядеть процесс</a></h2>
+<h3 id="Последовательность-овладения-языком"><a class="header" href="#Последовательность-овладения-языком">Последовательность овладения языком</a></h3>
+<h4 id="1-Сбор-данных"><a class="header" href="#1-Сбор-данных">1. Сбор данных</a></h4>
+<p>В начале необходим объем слов, самых простых и частотных, это из набора <code>A1</code>.</p>
+<p>Слова будут поступать из:</p>
+<ul>
+<li>набор A1 (последовательно начиная с глаголов <code>to be, have, want, do, go, get, take, make, come, let me</code> и модальных глаголов <code>can, could, may, might, must, have to</code>);</li>
+<li>читая адаптивные книги (Started, Beginner);</li>
+<li>просмотра адаптивных видео;</li>
+<li>уроков грамматики;</li>
+</ul>
+<p>Далее, с этими словами необходимо самостоятельно составлять простые предложения/истории, используя времена: Present Simple, Past Simple, Future Simple, Present Continuous.</p>
+<p>Есть две категории грамматики:</p>
+<ul>
+<li><strong>структурная</strong>, например порядок слов в предложении, все времена такие как present simple, past simple</li>
+<li><strong>контентная</strong>, она дает слова. Например "to be", "Pronouns"</li>
+</ul>
+<p>Составлять простые предложение комбинируя эти две категории.</p>
+<p>Для основных глаголов, количество ваших предложений должно доходить до 50 шт., для остальных частей речи 15-20 шт.</p>
+<p>Хорошо бы, по началу, озвучить предложения на простые темы A1 - "to be", "Pronouns"</p>
+<p><strong>Как составлять предложения:</strong></p>
+<p>Для частей речи Verb, Nouns, Adjectives, Adverbs по отдельности:</p>
+<ul>
+<li>Взять контекст из словарей (тут примеры  <a href="https://dictionary.cambridge.org/ru/%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C/%D0%B0%D0%BD%D0%B3%D0%BB%D0%BE-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/get">dictionary.cambridge</a>,  <a href="https://wooordhunt.ru/">wooordhunt</a>,  <a href="https://word-by-word.ru/">word-by-word</a>, <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ08-R271pHZ6ClqDj5Wuhbj4Bvhbkgb1NZl-lKMLtGg&amp;s">самоучитель английского языка 177 конструкций</a>)</li>
+<li>Разнообразить с помощью LLMs</li>
+<li>Придумать самостоятельные примеры (на основе уже имеющихся примеров это легче сделать)</li>
+</ul>
+<p><strong>Помощь LLM:</strong></p>
+<ul>
+<li>“Создай простые предложения, состоящие из слова: <code>get</code> (verb) в таких временах: Present Simple, Past Simple, Future Simple, Present Continuous”</li>
+<li>“Продолжи несколько раз предложение на английском и добавь перевод: I take”</li>
+</ul>
+<p><strong>Пример составления предложений для глагола <code>to be</code>:</strong></p>
+<pre><code>be, am, is, are, was, were - быть, являться
+She is a doctor. - Она врач.
+I am a good friend. - Я хороший друг.
+They are good friends. - Они хорошие друзья.
+I am not a thing, I'm a man - Я не вещь, я мужчина.
+Who are you? - Кто ты?
+Do you at home? - Ты дома?
+No, I do not at home. - Нет, меня нет дома.
+Does she at home? - Она дома?
+Am I a man? - Я мужчина?
+Are you a man? - Вы мужчина?
+Yes, I am a man - Да, я мужчина!
+
+I was tired yesterday. - Вчера я устал.
+I was a good friend. - Я был хорошим другом.
+I was a child - я был ребенком.
+We were children - Мы были детьми.
+Did you tire yesterday? - Ты вчера устал?
+Yes, I was tired yesterday. - Да, я вчера устал.
+
+I will be happy tomorrow. - Завтра я буду счастлив.
+I will be strong and smart. - Я буду сильным и умным.
+Will you be smart or stupid? - Ты будешь умным или глупым?
+I will be smart. - Я буду умным.
+</code></pre>
+<p>Имея собственные составленные предложения, а также предложения из грамматики соответствующего уровня (A1,...) и адаптированных книг того же уровня, переходим ко второму пункту.</p>
+<h4 id="2-Чтение-в-голос"><a class="header" href="#2-Чтение-в-голос">2. Чтение в голос</a></h4>
+<ul>
+<li>Повторять эти предложения за диктором, слушать и повторять. (<a href="https://github.com/Jekahome/grammar_of_english/tree/main/src/tools">создать аудио</a>)</li>
+<li>Самостоятельно читать в голос EN предложения до полного понимания всех слов. Несколько проходов. (привыкаем к построению предложения)</li>
+</ul>
+<h4 id="3-Письменный-перевод"><a class="header" href="#3-Письменный-перевод">3. Письменный перевод</a></h4>
+<p>Перевести письменно с RU на EN. Несколько проходов. (нарабатываем READ и WRITE)</p>
+<h4 id="4-Как-развивать-listen"><a class="header" href="#4-Как-развивать-listen">4. Как развивать LISTEN</a></h4>
+<p>Слушать уже понятные предложения с известными словами и грамматикой, что бы небыло догадок. Тут, мы только привыкаем к звучанию, а не учим новые слова и грамматику!</p>
+<p>Писать под диктовку предложения с EN на EN. Несколько проходов. (тренируется LISTEN и WRITE)</p>
+<p><a href="https://github.com/Jekahome/grammar_of_english/tree/main/src/tools">создать аудио</a> в формате "EN - пауза - RU", прослушивать и писать их снова под диктовку.</p>
+<ul>
+<li>слушать <a href="https://www.newsinlevels.com/level/level-1/">www.newsinlevels.com</a>, <a href="https://www.youtube.com/playlist?list=PLpuZM1CUg1Df9W1WhUJ6pFUBpj-6h9RFn">www.youtube.com/playlist</a>
+<ul>
+<li><a href="https://www.daysinlevels.com/">www.daysinlevels.com</a></li>
+</ul>
+</li>
+<li>слушать (и писать под диктовку) на английском адаптивные книги;</li>
+<li>переводить фильмы в субтитры с английского на английский;</li>
+<li>слушать подкасты <a href="https://www.leonardoenglish.com/free-transcripts">www.leonardoenglish.com</a> с расшифровкой</li>
+<li>Shadowing <a href="https://www.leonardoenglish.com/blog/what-is-shadowing">www.leonardoenglish.com</a></li>
+</ul>
+<p><strong>Найти спикера с понятным произношением:</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/@rachelsenglish/playlists">Rachel's English</a></li>
+<li><a href="https://www.leonardoenglish.com/podcasts">English Learning for Curious Minds — подкаст, созданный Leonardo English</a></li>
+<li><a href="https://teacherluke.co.uk/2021/12/09/753-visiting-the-louvre-museum-with-amber-paul/">Luke’s ENGLISH Podcast</a></li>
+<li><a href="https://www.send7.org/podcast">Новости</a></li>
+<li><a href="https://www.youtube.com/@themoth">The Moth</a></li>
+</ul>
+<h4 id="5-Отвечать-и-задавать-вопросы-с-собой-или-chatgpt"><a class="header" href="#5-Отвечать-и-задавать-вопросы-с-собой-или-chatgpt">5. Отвечать и задавать вопросы (с собой или chatGPT)</a></h4>
+<p>Говорить... Мы уже знаем смысл слов, и как строится предложение, и даже как оно звучит, и можем его произнести. Осталось сформировать в нужный момент эти знания прямо в голове.
+В идеале, этот важный этап отрабатывается в паре, задавая друг другу вопросы из этих предложений.
+Но вы можете взять вопросительные предложения на RU, например: 'Умеешь ли ты водить машину?' и переводить их устно, задавая EN вопросы воображаемому собеседнику: 'Can you drive a car?' и отвечать на них. Конечно, нет момента неожиданности — это минус.
+Еще вариант: записать аудио с вопросами на RU, например: 'Спроси меня, умею ли я водить машину', и, прослушав, вы в голос задаете вопрос: 'Can you drive a car?' и сами же отвечаете: 'Yes, I can drive a car'.</p>
+<p>Как развивать SPEAK:</p>
+<ul>
+<li>создать аудио с вопросами и отвечать на них в свободное время;</li>
+<li><a href="https://callannie.ai/call">речевой тренажер</a>;</li>
+<li>читать вслух или дублировать;</li>
+<li>пересказывать текст.</li>
+</ul>
+<hr />
+<p>Далее... так как владение английским — это не знание, а НАВЫК, его необходимо применять и практиковать. Как еще увеличить применение?</p>
+<p>(в процессе)</p>
+<p>Два варианта:</p>
+<ul>
+<li>
+<p>Найти собеседника/группу и обмениваться/проговаривать заданную тему/слова каждый день/через день. Не раз в неделю с преподавателем в течение одного часа, где вы говорите от силы 15 минут, а остальное время погружаетесь в грамматику (проблема в том, что трудно найти таких людей). Но если такие люди есть, можно организоваться без модератора и обсуждать:</p>
+<ul>
+<li>Что вы сделали и что будете делать, задавая друг другу уточняющие вопросы;</li>
+<li>Просить сказать, как собеседник понимает очередное слово из набора A1;</li>
+<li>Использовать в течение разговора предложения только с конкретным глаголом.</li>
+</ul>
+</li>
+<li>
+<p>Использовать <a href="https://callannie.ai/call">речевой тренажер</a> или приложение Andy. Пробую сделать свой вариант с моими сценариями нужных тем и слов.</p>
+</li>
+<li>
+<p>Вариант для владельцев iPhone и платной версии ChatGPT. Настроить чат на роль репетитора (используя различные prompts) и разговаривать с ним. Настроить <a href="/sources/Customize%20chatGPT.html">Customize ChatGPT</a> для удобства.</p>
+</li>
+</ul>
+<hr />
+<h4 id="Дополнительно-ежедневное-занятие"><a class="header" href="#Дополнительно-ежедневное-занятие">Дополнительно ежедневное занятие:</a></h4>
+<ul>
+<li>
+<p>написать и записать аудио о плане на день (<code>Future Simple</code>), и о том, что было вчера (<code>Present Simple</code>) (хорошо бы обмениваться с кем-то и переводить);</p>
+</li>
+<li>
+<p>повторять пройденные темы грамматики (необходимо сделать для себя "выжимку" с примерами предложений);</p>
+</li>
+<li>
+<p>брать любое слово из текущего уровня A1 и писать про него все, что знаете: "круг слова", темы, в которых его часто используют, слово, как вы его понимаете. Несколько предложений на английском.</p>
+</li>
+<li>
+<p>Описывать диалоги об обыденных ситуациях (общение с продавцом, ситуация в такси, в лифте, в тренажерном зале, ресторане, холле гостиницы). Продумать простой диалог, что бы вы спросили или ответили. Каждая такая тема имеет уникальные слова, которые часто употребляются в выбранной ситуации. Что-то похожее на сценарий, который следует проговорить. Коллекционируйте такие мини-сценарии.</p>
+</li>
+</ul>
+<p>Кроме работы с отдельными словами, есть еще две важные группы тем, которые обладают уникальным набором слов и реплик, и с которыми следует работать, как и со словами:</p>
+<ul>
+<li>Темы, такие как погода, еда, настроение...</li>
+<li>Темы, связанные с встречами с людьми в различных ситуациях, например, в кинотеатре, такси и т.д.</li>
+</ul>
+<p>Придумайте себе хобби на английском.</p>
+<p><strong>Инсайд</strong>: когда думаешь — "Почему я не знаю этого слова?", но потом, посчитав сколько раз ты его использовал в быту, понимаешь, что не использовал. Ну так делаем вывод...</p>
+<hr />
+<h3 id="Техника-Комментатор"><a class="header" href="#Техника-Комментатор">Техника «Комментатор»</a></h3>
+<p>Называйте все предметы, действия, характеристики вещей на английском, когда что-то делаете дома. Например, наводите порядок, готовите, складываете одежду. Называйте знакомые вам слова на улице, в магазине, в кино, на выставке. Если нет возможности говорить вслух или вы стесняетесь – заведите блокнот, в котором можно в конце дня писать все слова, которые вам встречались за день. Такие упражнения позволят вам тренироваться каждый день, соотносить слово и его образ, запоминать часто встречающую лексику.</p>
+<h3 id="Техника-Домашний-актёр"><a class="header" href="#Техника-Домашний-актёр">Техника «Домашний актёр»</a></h3>
+<p>Выберите любой фильм, сериал или мультик и выключите звук. А дальше попробуйте произносить слова и реплики вместо главных героев на экране. Эта забавная техника повеселит вас от души и постепенно уберет страх устной речи. Поначалу вы будете говорить односложно, затем вы втянетесь в процесс и будете использовать фразы из 5 и более структурных единиц. Очень здорово, если вы будете подбирать лексику под тематику фильма и пытаться отразить сюжет.</p>
+<h3 id="Техника-Радужный-текст"><a class="header" href="#Техника-Радужный-текст">Техника «Радужный текст»</a></h3>
+<p>Нужен адаптированный художественный текст минимальной сложности, в котором вы выделяете зеленым маркером те слова, которые точно знаете, желтым – в которых сомневаетесь и красным – незнакомые. Затем текст надо несколько раз прочитать вслух, перевести, а потом по памяти назвать зеленые, желтые и красные слова. Зачастую в процессе человек интуитивно догадывается, что означают непонятные слова, а многократное произнесение вслух способствует запоминаю контекста.</p>
+<hr />
+<h2 id="links"><a class="header" href="#links">Links</a></h2>
+<ul>
+<li><a href="https://github.com/Jekahome/Frequency-Dictionary-of-English-Words">Частотные слова</a></li>
+<li><a href="https://www.wordfrequency.info/files/book.pdf">A Frequency Dictionary of Contemporary American English filetype:pdf</a></li>
+<li><a href="https://www.google.com/search?q=https://libguides.tii.qa/c.php%3Fg%3D655316%26p%3D8065488%23:~:text%3DThe%2520Oxford%25203000%2520is%2520a,know%2520at%2520A1%252DB2%2520level.">Список слов</a></li>
+<li><a href="https://www.google.com/search?q=/Checklist.md">Список грамматики по уровням</a></li>
+<li><a href="https://vocab.today/reader/">Книги бесплатно по уровню vocab.today</a></li>
+<li><a href="https://english-e-reader.net/level/starter">Книги бесплатно по уровню english-e-reader.net</a></li>
+<li><a href="https://english-e-reader.net/findbook?title=Song">Книги поиск english-e-reader.net</a></li>
+<li><a href="https://www.gutenberg.org/">Книги бесплатно без уровня gutenberg.org</a></li>
+<li><a href="https://archive.org/">Книги https://archive.org/</a></li>
+<li><a href="https://www.topenglishcenter.com/zona-del-estudiante/english-reader-plan.php">Книги</a></li>
+<li><a href="https://ntbooks.pro/zhivaja-grammatika-anglijskogo-jazyka-uroven-1.html">Книга по грамматике</a></li>
+<li><a href="https://english-abc.ru/">Иллюстратор слов english-abc.ru</a></li>
+<li><a href="https://www.bbc.co.uk/learningenglish/english/features/pronunciation">Британское произношение: слушайте и повторяйте слова</a></li>
+<li><a href="https://www.youtube.com/@rachelsenglish/playlists">Американское произношение: слушайте и повторяйте слова</a></li>
+<li><a href="https://englishwsheets.com/hobbies.html">Наборы слов</a></li>
+<li><a href="https://englex.ru/english-levels-table/">Таблица уровней английского языка</a></li>
+<li><a href="https://englex.ru/how-to-start-learning-english/">how-to-start-learning-english</a></li>
+</ul>
+<p>Courses:</p>
+<ul>
+<li><a href="https://www.edx.org/certificates/professional-certificate/uct-english-and-soft-skills-for-tech-professionals">English and Soft Skills For Tech Professionals</a></li>
+</ul>
+<hr />
+<details>
+<summary>Грамматика</summary>
+<pre><code>A1 (Beginner, Elementary)
+Порядок слов
+Глагол to be
+Артикли a/an/the
+Единственное и множественное число существительных (-s, -es)
+Личные местоимения I, we, you, they, he, she, it
+Present Simple
+Past Simple
+Future Simple
+Present Continuous
+Указательные местоимения this, that, these, those
+Притяжательные местоимения my, our, your, his, her, its
+There is, are
+Притяжательный предлог of
+Вопросы с what, who, whose
+Вопросы с where, when, why, how, how much (many)
+Модальный глагол can, can't
+Исчисляемые и неисчисляемые существительные (some, any, many, much, a lot)
+Наречия частотности always, often, never
+It is construction
+Конкретный набор слов
+
+A2 (Pre-Intermediate)
+Притяжательные местоимения mine, yours, ours, theirs, his, hers, its
+Предлоги времени in, on, at
+Предлоги направления to, into
+Модальный глагол could, couldn't
+Сравнительная и превосходная степень прилагательных
+Конструкция to be going to (Future)
+Конструкция would like
+Наречия с ly, ily
+Условные предложения нулевого типа
+Present Perfect
+
+B1 (Intermediate)
+Глаголы состояния
+Определенные придаточные предложения с that, who, which, where
+Герундий
+Модальные глаголы have to, don't have to, must, mustn't, should, shouldn't, may, might, might not
+Условные предложения первого, второго и третьего типа
+Пассивный залог
+Конструкция used to, didn't use to
+Косвенная речь, разница между say и tell
+Квантификаторы too much, too many, enough
+Фразовые глаголы
+Обороты с наречиями so, neither, nor
+Союзы because, so, but, although
+Разделительные вопросы
+Past Continuous, Present Perfect Continuous
+Наречия для выражения мнений, вероятности (probably, definitely), манеры действия (quickly, slowly)
+Наречия меры и степени (Adverbs of Degree) (very, quite, too, enough, almost)
+Разделительный вопрос (Tag Question)
+
+B2 (Upper Intermediate)
+Нулевой артикль
+Модальные глаголы для выражения предположений can't, might, must
+Указатели множества a little, little, a few, few, plenty of, a lot of, all, every, both, no, none, most
+Косвенные вопросы
+Глаголы для передачи косвенной речи
+Собирательные существительные
+Придаточные предложения цели и противопоставления
+Придаточные предложения будущего времени
+Конструкция с wish/if only
+Глаголы, обозначающие чувства восприятия
+Герундий и инфинитив — разница употребления
+Эмфатические конструкции (выделяют слово или фразу в предложении)
+Past Perfect Continuous, Future Continuous, Future Perfect
+Вопросы с инверсией (Inversion Question)
+
+C1 (Advanced)
+Модальные глаголы в прошедшем времени
+Смешанный тип условных предложений
+Инверсия
+Побудительные обороты с get и have (каузатив)
+Пунктуация
+Расщепленные предложения
+Future Perfect Continuous
+Future in the Past
+Риторические вопросы (Rhetorical Question)
+</code></pre>
+</details>
+<hr />
+<details>
+<summary>Задачи</summary>
+<ul>
+<li>
+<p><input disabled="" type="checkbox"/>
+<strong>1</strong> Workbook</p>
+<ul>
+<li>создать активную практику. После listen, нужна активная практика - говорить, повторяя за диктором. Начать можно в первых уроках с активного формирования в мыслях предложений и написания перевода, на английских элементарных примерах по данной грамматике и произносить в слух за диктором, в следующих уроках уже учитывать пройденную грамматику. <strong>В конце концов, эта активная практика должна привести к закрытию тем для уровня A1... т.е. шаг за шагом мы должны свободно рассуждать на заданные темы (семья, хобби ...)</strong></li>
+<li>Workbook 2</li>
+<li>Workbook 3</li>
+<li>....</li>
+</ul>
+</li>
+<li>
+<p><input disabled="" type="checkbox"/>
+<strong>2.</strong> Темы уровня</p>
+<ul>
+<li>задействовать <a href="A1/List_of_topics_for_speaking_and_writing_practice.html">темы</a> для разговора после овладения A1. Добавить практику для их отработки.</li>
+<li>LLM создаст текст, а TTS озвучит и whisper создаст субтитры</li>
+<li>нет практики задавать вопросы</li>
+</ul>
+</li>
+<li>
+<p><input disabled="" type="checkbox"/>
+<strong>3</strong> listen</p>
+<ul>
+<li>для закрепления восприятия на слух -
+<ul>
+<li>Quiz задать вопрос (голосом) на знание сюжета прослушанного контента.</li>
+<li>перефразировать услышанное. (тоже LLM)</li>
+<li>желательно сразу писать за диктором т.е. письмо под диктовку</li>
+</ul>
+</li>
+<li>добавить остальные адаптивные книги с озвучкой (начать с подходящим набором слов уровня)</li>
+<li>где найти видео (мультики, сказки для детей) по субтитрам что бы понять к какому уровню его применять для практики?
+<ul>
+<li>https://www.eslfast.com/</li>
+<li>https://www.esl-lab.com/basic-english/</li>
+<li>https://2sub-tv.space/</li>
+</ul>
+</li>
+<li>нужно ли показывать используемую грамматику в прослушиваемой книге?</li>
+<li>добавить возможность вводить ответ голосом (т.е. суфлер, повторять за диктором)?</li>
+</ul>
+</li>
+<li>
+<p><input disabled="" type="checkbox"/>
+<strong>4.</strong> ежедневный собеседник (напоминатор)</p>
+<ul>
+<li>создать скрипт бот, сервер на локальной машине, переодически навязывается с вопросами и напоминаниями сделать работу (записать планы на день, как прошел день, отрабатывает нужную тему), проговаривает набор слов определенной темы (погода, еда, дом, хобби...)</li>
+</ul>
+</li>
+<li>
+<p><input disabled="" type="checkbox"/>
+Читать на русском и переводить голосом на английский (зачем?)</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"/>
+Нет применения! слов из набора примеров для Урока audio/A1/lesson_17.md. (Для выравнивания статистики использования слов)</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"/>
+Слова</p>
+<ul>
+<li><input disabled="" type="checkbox"/>
+на каждое английское слово в A2-C2 создать мини историю, где это слово используется часто, идеально - оно или его смысл, и есть тема истории! Тогда легче запомнится за счет контекста.</li>
+<li><input disabled="" type="checkbox"/>
+учить глаголы можно через круг слова, когда у слова есть другие часто используемые вместе с ним в предложении слова.</li>
+<li><input disabled="" type="checkbox"/>
+можно ли создать субтитры и озвучить любой интересный фильм для A1 только словами уровня?.</li>
+<li><input disabled="" type="checkbox"/>
+книга "Кратчайший путь к устной речи на английском языке Литвинов П.П. стр. 77" Озвучить слова и научиться их переводить прослушивая их
+<ul>
+<li><input disabled="" type="checkbox"/>
+первые 77 страниц дается базовая грамматика</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<strong>правила грамматики не учить как формулы, а смотреть много примеров и привыкать к шаблонам конкретной грамматики</strong></li>
+<li><input disabled="" type="checkbox"/>
+предложения лучше группировать по теме и подобию, а не в разброс. (I have a lot of …  I have a lot of … I have a lot of …)</li>
+</ul>
+</li>
+<li>
+<p><input disabled="" type="checkbox"/>
+Найти место <strong>использования</strong> языка т.е. где идет практика применения</p>
+<ul>
+<li>исследование мира...</li>
+<li><input disabled="" type="checkbox"/>
+в адаптивных книгах заменить слова которые не по уровню на нужный уровень (зачем?)</li>
+</ul>
+</li>
+<li>
+<p><input disabled="" type="checkbox"/>
+Грамматика, раз ее не надо зубрить/заучивать, но надо понимать, то вместо подстановки верных слов в предложениях, <strong>нужно выбирать из списка причин, то или иное грамматическое правило</strong>, т.е. почему это предложение именно так используется? Какое правило ему соответсвует?</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"/>
+Учесть в обучении тесты английского https://www.examenglish.com/, https://test-english.com/</p>
+</li>
+</ul>
+<hr />
+</details>
+<details>
+<summary>Уроки. Предложения для озвучивания</summary>
+<h3 id="Урок-1"><a class="header" href="#Урок-1">Урок 1</a></h3>
+<p>Составь простые примеры для изучающего английский для уровня A1.</p>
+<p>На тему:</p>
+<ul>
+<li>"to be" (Неличные формы т.е. инфинитив и личная форм:а am, is, are)</li>
+<li>"pronouns" (Personal, Demonstrative) и Указательные предложения</li>
+<li>все примеры в Present Simple</li>
+<li>должны присутcтвовать вопросы, отрицания и утверждения</li>
+<li>Например: I am a doctor.</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<ol>
+<li>Составь простые 50 примеров с переводом (вопросы, отрицания, утверждения) из моего набора существительных и глаголов, на тему грамматики Иинфинитив to be для A1 в Present Simple</li>
+<li>Составь простые 50 примеров с переводом (вопросы, отрицания, утверждения) из моего набора существительных и глаголов, на тему Личная форма глагола to be для A1 в Present Simple</li>
+<li>Составь простые 50 примеров с переводом (вопросы, отрицания, утверждения) из моего набора существительных и глаголов, на тему Личные местоимения в именительном падеже для A1 в Present Simple</li>
+<li>Составь простые 50 примеров с переводом (вопросы, отрицания, утверждения) из моего набора существительных и глаголов, на тему Личные местоимения в косвенном падеже для A1 в Present Simple</li>
+<li>Составь простые 50 примеров с переводом (вопросы, отрицания, утверждения) из моего набора существительных и глаголов, на тему Demonstrative pronouns (Указательные местоимения) для A1 в Present Simple. Например так: What is this? — This is a pen.</li>
+</ol>
+<p>Набор из 30 существительных:</p>
+<p>time
+year
+people
+day
+man
+thing
+woman
+life
+child
+world
+school
+family
+house
+group
+country
+problem
+student
+hand
+part
+place
+city
+week
+question
+work
+number
+night
+room
+money
+water
+mother</p>
+<p>Набор из 20 глаголов:</p>
+<p>have
+do
+say
+go
+can
+get
+make
+know
+think
+see
+take
+come
+want
+look
+use
+find
+give
+tell
+work
+need</p>
+</details>
+<h3 id="Урок-2"><a class="header" href="#Урок-2">Урок 2</a></h3>
+<p>На тему Uncountable nouns and Articles</p>
+<ul>
+<li>все примеры в Present Simple</li>
+<li>должны присутcтвовать вопросы, отрицания и утверждения</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<blockquote>
+<p>Есть темы грамматики в которых нужен список определенных слов, что бы ее показать и понимание не изученных еще тем грамматики.
+Уровень слов может не совпадать с уровнем грамматики</p>
+</blockquote>
+<ol>
+<li>Составь простые 50 примеров с переводом (вопросы, отрицания, утверждения) из моего набора существительных ед. и множественного числа и глаголов, на тему грамматики Существительные единственного и множественного числа, добавь исключения.</li>
+</ol>
+<ul>
+<li>Дай примеры во множественном и в единственном числе с окончанием: s, es, o, f, fe, y</li>
+<li>И дай примеры с исключениями</li>
+</ul>
+<ol start="2">
+<li>
+<p>Составь простые 50 примеров с переводом (вопросы, отрицания, утверждения) из моего набора существительных ед. и множественного числа и глаголов, на тему грамматики Uncountable nouns для A1 в Present Simple. Предложения должны иметь множественный контекст, так станет понятно что слово не отличается от множественной формы.</p>
+</li>
+<li>
+<p>Составь простые 50 примеров с переводом (вопросы, отрицания, утверждения) из моего набора существительных ед. и множественного числа и глаголов, на тему грамматики Articles (a,an,the, устоявшиеся выражения, отсутствие артикля, исключения) для A1 в Present Simple</p>
+</li>
+</ol>
+<p>Набор из 30 существительных:
+book
+eye
+job
+word
+friend
+father
+hour
+end
+game
+car
+name
+body
+minute
+table
+face
+parent
+person
+door
+street
+party
+morning
+girl
+boy
+food
+teacher
+home
+class
+photo
+music
+light</p>
+<p>Набор из 20 глаголов:
+feel
+leave
+put
+begin
+talk
+help
+start
+show
+hear
+run
+play
+like
+live
+write
+sit
+meet
+pay
+change
+learn
+understand</p>
+</details>
+<h3 id="Урок-3"><a class="header" href="#Урок-3">Урок 3</a></h3>
+<p>На тему времен Present, Past, Future Simple and Present Continuous, все в активной форме.</p>
+<ul>
+<li>первые 20 irregular verbs</li>
+<li>должны присутcтвовать вопросы, отрицания и утверждения</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<ol>
+<li>
+<p>Составь простые примеры с переводом для каждого слова irregular verbs (вопрос, отрицание, утверждение) из моего набора существительных ед. и множественного числа, на тему грамматики для A1 в Present Simple.</p>
+</li>
+<li>
+<p>Составь простые примеры с переводом для каждого слова irregular verbs (вопрос, отрицание, утверждение) из моего набора существительных ед. и множественного числа, на тему грамматики для A1 в Past Simple.</p>
+</li>
+<li>
+<p>Составь простые примеры с переводом для каждого слова irregular verbs (вопрос, отрицание, утверждение) из моего набора существительных ед. и множественного числа, на тему грамматики для A1 в Future Simple.</p>
+</li>
+<li>
+<p>Составь простые примеры с переводом для каждого слова irregular verbs (вопрос, отрицание, утверждение) из моего набора существительных ед. и множественного числа, на тему грамматики для A1 в Present Continuous.</p>
+</li>
+</ol>
+<p>Формат - просто список, без заголовков
+He is not feeling the wall with his hand. — Он не чувствует стену рукой (сейчас).</p>
+<p>Набор из 30 существительных:
+color
+wife
+son
+arm
+town
+road
+paper
+player
+picture
+wall
+doctor
+phone
+test
+computer
+movie
+baby
+tree
+film
+window
+park
+hair
+brother
+summer
+letter
+floor
+plant
+daughter
+husband
+board
+hospital</p>
+<p>Первые 20 irregular verbs:
+have
+do
+say
+go
+get
+make
+know
+think
+see
+take
+come
+find
+give
+tell
+feel
+leave
+put
+begin
+show
+hear</p>
+</details>
+<h3 id="Урок-32"><a class="header" href="#Урок-32">Урок 3.2</a></h3>
+<p>На тему с урока 3
+вторая часть irregular verbs</p>
+<details>
+<summary>запрос для примеров</summary>
+<p>Набор из 30 существительных:
+subject
+bed
+store
+bank
+page
+language
+river
+animal
+sport
+answer
+dog
+dollar
+box
+cup
+glass
+station
+example
+sister
+sun
+leg
+song
+radio
+note
+ball
+chair
+evening
+museum
+fish
+april
+november</p>
+<p>Irregular verbs:
+run
+write
+sit
+meet
+pay
+learn
+understand
+speak
+read
+buy
+send
+drive
+wear
+eat
+teach
+catch
+draw
+choose
+fight
+forget
+fly
+sing
+sleep
+drink
+ride
+wake
+swim</p>
+</details>
+<h3 id="Урок-4"><a class="header" href="#Урок-4">Урок 4</a></h3>
+<p>На тему Preposition of and Possessive forms</p>
+<ul>
+<li>во всех изучаемых A1 временах</li>
+<li>с irregular verbs</li>
+<li>должны присутcтвовать вопросы, отрицания и утверждения</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<p>Составь простые примеры с переводом (вопрос, отрицание, утверждение) на тему грамматики для A1 Притяжательный предлог of.
+Предложения должны быть во временах Present Simple, Past Simple, Future Simple, Present Continuous
+Постарайся использовать слова из предоставленного списка существительных ед. и множественного числа и глаголов. Используй глаголы в предложения, а не просто принадлежность.</p>
+<p>Тема для примеров:</p>
+<ol>
+<li>Количество, единицы измерения, выделение из группы:</li>
+</ol>
+<ul>
+<li>One of your children has broken my window. – Один из ваших детей разбил мое окно.</li>
+</ul>
+<ol start="2">
+<li>Материал, из чего что-то сделано или что-то содержит:</li>
+</ol>
+<ul>
+<li>The ring is made of silver. – Кольцо изготовлено из серебра.</li>
+</ul>
+<ol start="3">
+<li>Дата (число и месяц):</li>
+</ol>
+<ul>
+<li>The eleventh of March – Одиннадцатое марта.</li>
+</ul>
+<ol start="4">
+<li>Характерный для, похожий на:</li>
+</ol>
+<ul>
+<li>He has the patience of a saint. – У него терпение святого.</li>
+</ul>
+<ol start="5">
+<li>О, относительно чего-то:</li>
+</ol>
+<ul>
+<li>He speaks of his family. – Он говорит о своей семье.</li>
+</ul>
+<ol start="6">
+<li>Причина чего-то:</li>
+</ol>
+<ul>
+<li>He died of old age. – Он умер от старости.</li>
+</ul>
+<ol start="7">
+<li>Оценка поведения:</li>
+</ol>
+<ul>
+<li>It was nice of you to help. – С твоей стороны было мило помочь.</li>
+</ul>
+<ol start="8">
+<li>Сравнение с остальными:</li>
+</ol>
+<ul>
+<li>I like the red car best of all. – Красный автомобиль нравится мне больше всех.</li>
+</ul>
+<ol start="9">
+<li>Потеря или лишение чего-то:</li>
+</ol>
+<ul>
+<li>He was robbed of his money. – У него украли деньги.</li>
+</ul>
+<ol start="10">
+<li>Устойчивые выражения с предлогом of:</li>
+</ol>
+<ul>
+<li>To be fond of – быть в восторге от чего-то</li>
+</ul>
+<ol start="11">
+<li>Quantity nouns (containers and quantities)</li>
+</ol>
+<ul>
+<li>A piece of cheese – Кусочек сыра.</li>
+</ul>
+<p>Набор из существительных:
+april<br />
+november<br />
+january<br />
+september<br />
+february<br />
+may<br />
+march<br />
+july<br />
+june<br />
+october<br />
+august<br />
+december<br />
+mobile
+camera
+bar
+hotel
+sea
+bag
+mom
+monday
+tuesday
+wednesday
+kitchen
+mouth
+dinner
+newspaper
+wind
+garden
+restaurant
+forest
+dad
+plane
+bird
+afternoon
+beach
+weekend
+date
+winter</p>
+<p>Набор из 25 глаголов:
+watch
+stop
+speak
+read
+open
+walk
+remember
+damn
+love
+buy
+wait
+die
+send
+stay
+carry
+develop
+drive
+wear
+support
+base
+eat
+teach
+catch
+draw
+choose</p>
+<p>Формат - просто список, без заголовков
+He is not feeling the wall with his hand. — Он не чувствует стену рукой.</p>
+</details>
+<h3 id="Урок-5"><a class="header" href="#Урок-5">Урок 5</a></h3>
+<p>На тему Modal Verbs Can, Must, Should, Will</p>
+<ul>
+<li>во всех изучаемых A1 временах с irregular verbs</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<p>Составь простые примеры с переводом (вопрос, отрицание, утверждение) на тему грамматики для A1 Модаьный глагол Can.
+Предложения должны быть во временах Present Simple, Past Simple, Future Simple, Present Continuous
+Постарайся использовать слова из предоставленного списка существительных ед. и множественного числа и глаголов.</p>
+<p>Набор из 30 существительных:
+year
+world
+eye
+body
+face
+hour
+name
+minute
+parent
+person
+door
+arm
+color
+dollar
+leg
+thursday
+friday
+saturday
+sunday
+kitchen
+mouth
+dinner
+newspaper
+wind
+garden
+restaurant
+forest
+dad
+plane
+bird
+afternoon</p>
+<p>Набор из 20 глаголов:
+say
+get
+make
+give
+leave
+begin
+talk
+show
+run
+write
+sit
+pay
+change
+damn
+develop
+base
+drive
+stop
+wear
+support
+teach</p>
+<p>Формат - просто список, без заголовков
+He is not feeling the wall with his hand. — Он не чувствует стену рукой.</p>
+</details>
+<h3 id="Урок-6"><a class="header" href="#Урок-6">Урок 6</a></h3>
+<p>На тему Questions все три темы вопросов</p>
+<ul>
+<li>во всех изучаемых A1 временах с irregular verbs</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<ol>
+<li>
+<p>Составь простые примеры с переводом на тему грамматики для A1 General Question и Отрицательные общие вопросы.
+Предложения должны быть во временах Present Simple, Past Simple, Future Simple, Present Continuous
+Постарайся использовать слова из предоставленного списка существительных ед. и множественного числа и глаголов.</p>
+</li>
+<li>
+<p>Special questions with what, where, when, why, who, which, whose, whom, how, how much (many)</p>
+</li>
+<li>
+<p>Questions - what, who, whom, whose</p>
+</li>
+<li>
+<p>Interrogative Adverbs - where, when, why, how</p>
+</li>
+<li>
+<p>General Question и Отрицательные общие вопросы</p>
+</li>
+</ol>
+<p>Набор из 30 существительных:
+october<br />
+august<br />
+december
+beach
+weekend
+date
+winter
+horse
+farm
+village
+boat
+shop
+lesson
+band
+ear
+foot
+coffee
+egg
+shoe
+clothes
+internet
+bus
+key
+flower
+plate
+rain
+football
+ticket
+leaf
+classroom
+lunch
+half</p>
+<p>Набор из 20 глаголов:
+catch
+draw
+choose
+fuck
+listen
+close
+fight
+represent
+recognize
+check
+answer
+forget
+study
+enjoy
+visit
+finish
+fly
+sing
+travel
+sleep</p>
+<p>Формат - просто список, без заголовков
+Can you play the piano? — Yes, I can. Ты умеешь играть на пианино? — Да, умею.</p>
+</details>
+<h3 id="Урок-7"><a class="header" href="#Урок-7">Урок 7</a></h3>
+<p>На тему There is/are and Quantifiers</p>
+<ul>
+<li>во всех изучаемых A1 временах с irregular verbs</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<ol>
+<li>
+<p>Составь простые примеры с переводом (вопрос, отрицание, утверждение) на тему грамматики для A1: There is/are.
+Предложения должны быть во временах Present Simple, Past Simple, Future Simple, Present Continuous
+Постарайся использовать слова хотя бы раз в предложениях из предоставленного списка существительных ед. и множественного числа и глаголов.</p>
+</li>
+<li>
+<p>There в значении — "там"</p>
+</li>
+<li>
+<p>There is/are при ответах на вопросы (What,Where, How many, How much, Who), которые требуют информации о существовании, наличии или количестве чего-либо в определённом месте.</p>
+<p>Например: What is there in the box? — There is a gift inside. — Что находится в коробке? — Там подарок.</p>
+</li>
+<li>
+<p>Составь простые примеры с переводом (вопрос, отрицание, утверждение) на тему грамматики Quantifiers:</p>
+</li>
+</ol>
+<ul>
+<li><strong>Many</strong> (много) — перед исчисляемыми существительными во множественном числе.</li>
+<li><strong>Much</strong> (много) — перед неисчисляемыми существительными.</li>
+<li><strong>A lot of</strong> / loads of/ plenty of (много) — используется во всех случаях (как правило, в утвердительных предложениях).</li>
+<li><strong>A few</strong> (немного, несколько) — для исчисляемых существительных.</li>
+<li><strong>A little</strong> (немного, некоторое количество) — для неисчисляемых существительных.</li>
+<li><strong>Some</strong> (несколько, неопределенное количество) — используется в утвердительных предложениях с неисчисляемыми и исчисляемыми существительными во множественном числе.</li>
+<li><strong>Any</strong> (какой-нибудь, любой) — почти всегда используется либо с множественным числом исчисляемых, либо с неисчисляемыми (в единственном числе или, точнее, не имеют множественного числа в обычном смысле).</li>
+</ul>
+<p>Предложения должны быть во временах Present Simple, Past Simple, Future Simple, Present Continuous
+Постарайся использовать слова хотя бы раз в предложениях из предоставленного списка существительных ед. и множественного числа и глаголов.</p>
+<p>Набор из 30 существительных:
+weather
+salt
+desk
+sugar
+train
+moon
+fruit
+dance
+meal
+nose
+cat
+dress
+shirt
+address
+tooth
+bedroom
+ocean
+fun
+apple
+holiday
+flat
+noise
+vegetable
+hat
+grass
+sentence
+drink
+milk
+rice
+bread</p>
+<p>Набор из 20 глаголов:
+drink
+ride
+cook
+invite
+paint
+wake
+influence
+kick
+solve
+fix
+clean
+dance
+invest
+wash
+smoke
+communicate
+swim
+practice
+dine
+practise</p>
+<p>Формат - просто список, без заголовков
+He is not feeling the wall with his hand. — Он не чувствует стену рукой.</p>
+</details>
+<h3 id="Урок-8"><a class="header" href="#Урок-8">Урок 8</a></h3>
+<p>На тему Have/Has</p>
+<ul>
+<li>во всех изучаемых A1 временах с irregular verbs</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<p>Составь простые примеры с переводом (вопрос, отрицание, утверждение) на тему грамматики для A1: to have/to has.
+Предложения должны быть во временах: Present Simple, Past Simple, Future Simple, Present Continuous
+В каждом предложении должно быть слово из предоставленного списка существительных ед. и множественного числа или глаголов.</p>
+<ol start="2">
+<li><code>to have/to has</code> в сочетании с существительными</li>
+</ol>
+<ul>
+<li>to have breakfast – завтракать</li>
+<li>to have lunch – обедать</li>
+</ul>
+<ol start="3">
+<li><code>have to/has to</code> для выражения обязательства или необходимости что-то сделать.
+Например: I have breakfast at 8 a.m. – Я завтракаю в 8 утра.</li>
+</ol>
+<p>Набор из 30 существительных:
+factory
+cheese
+tea
+present
+knife
+coat
+potato
+jacket
+bean
+stop
+juice
+breakfast
+bathroom
+watch
+boot
+birthday
+butter
+tomato
+vacation
+cake
+clock
+chocolate
+pants
+bike
+soup
+cow
+tennis
+shower
+pet
+actress</p>
+<p>Набор из 20 глаголов:
+phone
+excuse
+rain
+ask
+call
+try
+move
+believe
+hold
+agree
+cut
+bring
+fall
+touch
+jump
+hate
+sell</p>
+<p>Формат без лишних заголовков и форматирования вот такой используй:
+I have breakfast at 8 a.m. – Я завтракаю в 8 утра.</p>
+</details>
+<h3 id="Урок-9"><a class="header" href="#Урок-9">Урок 9</a></h3>
+<p>На тему Adverbs of frequency always, usually, often, sometimes, never</p>
+<ul>
+<li>во всех изучаемых A1 временах с irregular verbs</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<p>Составь простые примеры с переводом (вопрос, отрицание, утверждение) на тему грамматики для A1: Adverbs of Frequency.
+Предложения должны быть во временах: Present Simple, Past Simple, Future Simple, Present Continuous
+В каждом предложении должно быть слово из предоставленного списка существительных ед. и множественного числа или глаголов.</p>
+<ol>
+<li>Наречия неопределенной частоты действия</li>
+<li>Наречия определенной частоты действия</li>
+<li>Adverbs of Frequency: Вопрос по типу "Как часто" совершается действие</li>
+<li>Наречия частоты с модальными и вспомогательными глаголами</li>
+</ol>
+<p>Набор из 30 существительных:
+pig
+jeans
+pen
+sandwich
+orange
+skirt
+cafe
+bat
+doll
+bath
+guitar
+lamp
+website
+waiter
+biscuit
+pizza
+toilet
+sheep
+pencil
+supermarket
+beard
+banana
+homework
+trousers
+taxi
+bookcase
+email
+blouse
+waitress
+mum</p>
+<p>Набор из 20 глаголов:
+hold
+start
+represent
+excuse
+agree
+damn
+believe
+touch
+ask
+bring
+jump
+recognize
+stay
+carry
+base
+rain
+kick
+try
+move
+sell</p>
+<p>Формат без лишних заголовков и форматирования вот такой используй:
+She always arrives on time. — Она всегда приходит вовремя.</p>
+</details>
+<h3 id="Урок-10"><a class="header" href="#Урок-10">Урок 10</a></h3>
+<p>На тему It is construction</p>
+<ul>
+<li>во всех изучаемых A1 временах с irregular verbs</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<p>Составь простые примеры с переводом (вопрос, отрицание, утверждение) на тему грамматики для A1: It is construction.
+Предложения должны быть во временах: Present Simple, Past Simple, Future Simple, Present Continuous
+В каждом предложении должно быть слово из предоставленного списка существительных ед. и множественного числа или глаголов.</p>
+<ol>
+<li>Время</li>
+<li>День, месяц, год</li>
+<li>Расстояние</li>
+<li>Погода и окружающая среда</li>
+<li>Наше мнение о чем-то</li>
+<li>Конструкция "It is + прилагательное + to + инфинитив". Например: It is nice to meet you. — Приятно с вами познакомиться.</li>
+</ol>
+<p>Набор из 30 существительных:
+picnic
+zoo
+subway
+classmate
+tv
+neighbor
+business
+market
+office
+history
+industry
+technology
+education
+government
+university
+company
+police
+magazine
+airport
+pilot
+engine
+mountain
+valley
+desert
+experiment
+theory
+snow
+meat
+eleven
+twelve
+thirteen
+fourteen</p>
+<p>Набор из 20 глаголов:
+hold
+start
+represent
+excuse
+agree
+remember
+influence
+communicate
+practice
+fall
+develop
+invest
+dine
+cut
+change
+walk
+smoke
+love
+look
+live
+solve
+use
+support
+die
+listen</p>
+</details>
+<h3 id="Урок-11"><a class="header" href="#Урок-11">Урок 11</a></h3>
+<p>На тему Imperatives</p>
+<ul>
+<li>во всех изучаемых A1 временах с irregular verbs</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<p>Составь простые примеры с переводом (вопрос, отрицание, утверждение) на тему грамматики для A1: Imperatives.</p>
+<ol>
+<li>Отдача команд и приказов</li>
+<li>Просьбы</li>
+<li>Советы и инструкции</li>
+<li>Предложения или приглашения</li>
+<li>Предупреждения</li>
+</ol>
+<p>Набор из 30 существительных:
+fifteen
+sixteen
+seventeen
+eighteen
+nineteen
+twenty
+thirty
+forty
+fifty
+sixty
+seventy
+eighty
+ninety
+hundred
+thousand
+million
+billion
+mother-in-law
+check-in
+fox
+wolf
+mouse
+piano
+mistake
+kid
+printer
+grandmother
+way
+message
+soda
+jam
+beginner</p>
+<p>Набор из 20 глаголов:
+hold
+start
+represent
+excuse
+agree
+wait
+close
+check
+paint
+fix
+invite
+dance
+practise
+call
+send
+forget
+sleep
+learn
+understand
+watch
+stop
+speak
+drive
+enjoy
+wake</p>
+</details>
+<h3 id="Урок-12"><a class="header" href="#Урок-12">Урок 12</a></h3>
+<p>На тему Simple adjectives</p>
+<ul>
+<li>во всех изучаемых A1 временах с irregular verbs</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<p>Составь простые примеры с переводом (вопрос, отрицание, утверждение) на тему грамматики для A1:
+Предложения должны быть во временах: Present Simple, Past Simple, Future Simple, Present Continuous.
+Так же предложения должны быть в positive adjective (базовое значение) и comparative (сравнительных) и superlative (превосходных) степенях.
+Используй прилагательные из моего набора.</p>
+<ol>
+<li>прилагательные которые стоят перед существительными, которые они описывают</li>
+<li>прилагательные которые стоят после глагола "to be", когда они описывают состояние или характеристику подлежащего</li>
+<li>Прилагательные в
+<ul>
+<li>positive adjective (базовое значение),</li>
+<li>comparative (сравнительных)
+<ul>
+<li>с than и без него</li>
+<li>more более и less менее чем,</li>
+</ul>
+</li>
+<li>superlative (превосходных) степенях</li>
+</ul>
+</li>
+<li>Неправильные формы (Irregular Adjectives)</li>
+<li>Такой же как <code>as + basic adjective + as</code></li>
+</ol>
+<p>Набор из прилагательных A1:
+strong
+new
+good
+only
+autumn
+old
+great
+big
+first
+second
+third
+fourth
+fifth
+sixth
+seventh
+eighth
+ninth
+tenth
+eleventh
+twelfth
+thirteenth
+fourteenth
+fifteenth
+sixteenth
+seventeenth
+eighteenth
+nineteenth
+twentieth
+thirtieth
+hundredth
+american
+last
+small
+different
+young
+long
+black
+little
+important
+bad
+white
+best
+right
+early
+possible
+economic
+hard
+persistent
+easy
+open
+fast
+difficult
+red
+short
+wrong
+spatial
+fine
+other
+poor
+hot
+happy
+ready
+left
+standard
+blue
+ok
+close
+democratic
+cold
+nice
+green
+more
+one
+own
+same
+well
+next
+grey
+back
+dark
+beautiful
+interesting
+key
+safe
+sorry
+quick
+light
+warm
+famous
+clean
+tall
+sweet
+yellow
+expensive
+brown
+slow
+late
+funny
+english
+busy
+cheap
+inside
+outside
+sad
+fat
+favorite
+exciting
+favourite
+hungry
+dear
+excited
+closed
+boring
+slim
+clever
+bored
+tasty
+fun
+well-known
+rainy</p>
+</details>
+<h3 id="Урок-13"><a class="header" href="#Урок-13">Урок 13</a></h3>
+<p>На тему Basic conjunctions</p>
+<ul>
+<li>во всех изучаемых A1 временах с irregular verbs</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<p>Набор из 30 существительных:</p>
+<p>Набор из 20 глаголов:</p>
+</details>
+<h3 id="Урок-14"><a class="header" href="#Урок-14">Урок 14</a></h3>
+<p>На тему Basic Adverbs</p>
+<details>
+<summary>запрос для примеров</summary>
+<ol>
+<li>Для темы Наречия образа действия (How?)</li>
+</ol>
+<p><strong>beautifully, well, hard, really, great, together, also, just, even</strong></p>
+<ol start="2">
+<li>Наречия времени (When?)</li>
+</ol>
+<p><strong>now, then, today, yesterday, tomorrow, later, before, early, late, tonight, o'clock, this, when</strong></p>
+<ol start="3">
+<li>Наречия частоты (How often?)</li>
+</ol>
+<p><strong>always, often, sometimes, never</strong></p>
+<ol start="4">
+<li>Наречия степени (How much?)</li>
+</ol>
+<p><strong>very, so, too, more, less, really, just, even</strong></p>
+<ol start="5">
+<li>Вопросительные наречия</li>
+</ol>
+<p><strong>where, when, why, how</strong></p>
+<ol start="6">
+<li>Утвердительные и отрицательные наречия</li>
+</ol>
+<p><strong>yes, no, not</strong></p>
+<ul>
+<li><em>Yes, I do. No, thanks.</em></li>
+</ul>
+<ol start="7">
+<li>Особые / контекстные наречия (могут использоваться в разных значениях)</li>
+</ol>
+<p><strong>about, across, around, inside, outside, back, past, close, forward, beyond, parallel, down, up, out, over, near, late, early, together, even, really, just, this, o'clock, then, hard, beautifully, great</strong></p>
+<p>Дай примеры для каждого слова и используй разные времена: Present Simple, Past Simple, Future Simple, Present Continuous</p>
+<p>Adverbs:
+this
+o'clock
+out
+over
+so
+now
+then
+how
+more
+also
+here
+well
+only
+very
+back
+there
+down
+too
+never
+really
+why
+where
+about
+again
+always
+today
+often
+later
+together
+before
+across
+late
+sometimes
+up
+less
+even
+early
+near
+beyond
+outside
+forward
+parallel
+hard
+tonight
+inside
+past
+just
+not
+yes
+beautifully
+tomorrow
+when
+yesterday
+below
+close
+behind
+downstairs
+great</p>
+<p>Набор из 30 существительных:</p>
+<p>Набор из 20 глаголов:</p>
+</details>
+<h3 id="Урок-15"><a class="header" href="#Урок-15">Урок 15</a></h3>
+<p>На тему Present Perfect (beginner)</p>
+<ul>
+<li>во всех изучаемых A1 временах с irregular verbs</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<p>Дай с каждым из этих irregular verbs по три простых предложения в Present Perfect с переводом</p>
+</details>
+<h3 id="Урок-16"><a class="header" href="#Урок-16">Урок 16</a></h3>
+<p>На тему Phrasal Verbs (first 30)</p>
+<ul>
+<li>во всех изучаемых A1 временах с irregular verbs</li>
+</ul>
+<details>
+<summary>запрос для примеров</summary>
+<p>Дай с каждым из этих Phrasal Verbs по три простых предложения</p>
+</details>
+<h3 id="Урок-17"><a class="header" href="#Урок-17">Урок 17</a></h3>
+<p>Для выравнивания статистики использования слов</p>
+<p>Нет примения!!!</p>
+<details>
+<summary>запрос для примеров</summary>
+<p>Составь простые 3 примера с переводом (вопрос, отрицание, утверждение) уровня A1 с моим списком слов, имеено в этой форме слова!.
+Предложения должны быть во временах: Present Simple, Past Simple, Future Simple, Present Continuous.</p>
+<p>Эти слова ни разу не использовались в этой форме.
+Nouns:
+postman
+postmen
+cupboard
+bagpack
+lives
+worlds
+families
+countries
+weeks
+numbers
+mothers
+jobs
+fathers
+homes
+parties
+streets
+faces
+bodies
+wives
+sons
+arms
+towns
+roads
+phones
+computers
+films
+rivers
+languages
+banks
+stores</p>
+<p>beds
+hospitals
+boards
+husbands
+daughters
+floors
+letters
+parks
+stations
+legs
+evenings
+museums
+meats
+snows
+markets
+mobiles
+seventeen
+universities
+dictionaries
+beginners
+million
+ninety
+seventy
+bars (от слова bar)
+seas (от слова sea)
+moms
+mouths
+winds
+gardens
+forests
+ears</p>
+<p>bands
+shops
+villages
+farms
+beaches
+dads
+tickets
+classrooms
+halves
+grasses
+flats
+factories
+coats (от слова coat)
+jackets
+juices
+boot
+pigs
+actresses
+pets
+soups
+clocks
+cakes
+grandmothers
+sandwiches
+skirts
+dolls
+lamps
+waiters
+discuit
+pizzas
+pillows
+billion
+pencils
+supermarkets
+butterflies
+beards
+mums
+eraser
+sofas
+beds
+computers</p>
+</details>
+</details>
+<h3 id="audio"><a class="header" href="#audio">Audio</a></h3>
+<p>Задача автоматизировать создание субтитров (временные метки текста).</p>
+<h4 id="whisper"><a class="header" href="#whisper">whisper</a></h4>
+<ul>
+<li>достать из аудио временные метки в формат vtt</li>
+<li>парсить vtt в обьекты js для гибкого вывода текста по меткам</li>
+</ul>
+<p>Создание WebVTT</p>
+<pre><code>cd /home/&lt;$USER&gt;/Documents/wisper
+
+# create virtualenv
+python3 -m venv whisper-env
+
+# Активировать окружение:
+source whisper-env/bin/activate
+ 
+# format vtt 
+whisper audio.opus --model base.en --language en --output_format vtt --device cpu --temperature 0 --beam_size 5
+ 
+# или 
+whisper audio.opus --model medium --language en --output_format vtt --device cpu --temperature 0 --beam_size 5
+
+
+whisper audio.opus --model base.en --language en --output_format vtt --device cpu --word_timestamps True --temperature 0 --beam_size 5 --max_words_per_line 12
+
+# Деактивация окружения:
+deactivate
+</code></pre>
+<p>Тестирование моделей:</p>
+<pre><code>whisper audio.opus --model medium --language en --output_format vtt --device cpu --max_line_width 90 --word_timestamps True --temperature 0 --beam_size 5
+
+  --max_line_width 80   # максимум 80 символов в строке
+
+  Настройка температуры/beam (для точности)
+  --temperature 0       # минимальная случайность
+  --beam_size 5         # стандартный beam search
+
+whisper audio.opus --model small --language en --output_format vtt --device cpu --max_line_width 60 --word_timestamps True --temperature 0 --beam_size 5 --max_words_per_line 10
+
+# 1
+whisper audio.opus --model medium --language en --output_format vtt --device cpu --temperature 0 --beam_size 5
+
+# 2
+whisper audio.opus --model base.en --language en --output_format vtt --device cpu --temperature 0 --beam_size 5
+
+# 3
+whisper audio.opus --model medium.en --language en --output_format vtt --device cpu --temperature 0 --beam_size 5
+
+# 4
+whisper audio.opus --model small.en --language en --output_format vtt --device cpu --temperature 0 --beam_size 5
+
+# 5
+whisper audio.opus --model medium --language en --output_format vtt --device cpu --max_line_width 60 --word_timestamps True --temperature 0 --beam_size 5 --max_words_per_line 16
+
+# 6
+whisper audio.opus --model medium --language en --output_format vtt --device cpu --word_timestamps True --temperature 0 --beam_size 5 
+
+# 7
+whisper audio.opus --model small --language en --output_format vtt --device cpu
+
+# 8
+whisper audio.opus --model small --language en --output_format vtt --device cpu --temperature 0 --beam_size 5 
+
+# 9
+whisper audio.opus --model medium --language en --output_format vtt --device cpu --temperature 0 --beam_size 5 
+
+# 10
+whisper audio.opus --model base --language en --output_format vtt --device cpu --temperature 0 --beam_size 5 --word_timestamps True
+</code></pre>
+<p>Соединить айдио файлы</p>
+<pre><code># соединить айдио файлы с расширением opus в один общий аудио файл:
+
+# создать список файлов
+for f in *.opus; do echo "file '$f'" &gt;&gt; list.txt; done
+
+# concat
+ffmpeg -f concat -safe 0 -i list.txt -c copy audio.opus
+</code></pre>
+<p>Захват аудио с динамика</p>
+<pre><code>ffmpeg -f pulse -i alsa_output.pci-0000_05_00.6.analog-stereo.monitor -ac 2 -ar 44100 output.flac
+</code></pre>
+<h4 id="Проверка-текста"><a class="header" href="#Проверка-текста">Проверка текста</a></h4>
+<p>После получения текста субтитров:</p>
+<ul>
+<li>поправить временные метки, модель base хорошо разделяет предложения, но иногда остаются склеенные вместе</li>
+<li>проверить грамматику и орфографию (LLMs: поправить только грамматику и орфографию, таймкоды не трогать)</li>
+<li>анализ соответствия слов уровню</li>
+</ul>
+<details>
+<summary>Video + WebVTT:</summary>
+<p>Багованный вариант:</p>
+<ul>
+<li>ограничен в работе с текстом</li>
+<li>формат плохо поддерживается браузерами</li>
+<li>зависит от видео с определенным форматом</li>
+</ul>
+<p>File audio: audio.opus</p>
+<p>Субтитры формата <a href="https://developer.mozilla.org/ru/docs/Web/API/WebVTT_API">WebVTT</a> (поддерживаются в браузере). Формат vtt имеет особый бинарный заголовок в отличии от формата srt</p>
+<ul>
+<li>формат времени в vtt
+<pre><code>HH:MM:SS.mmm
+</code></pre>
+</li>
+</ul>
+<pre><code>ffmpeg -i subs.srt subs.vtt
+</code></pre>
+<p>File subs.vtt, сразу добавить 12 рядов текста и проставить метки времени на реплики, что бы выделить цветом:</p>
+<pre><code>WEBVTT
+
+STYLE
+::cue(#label_box_1) {
+  color: red;
+  font-weight: bold;
+}
+
+00:13.000 --&gt; 00:18.000
+&lt;c&gt;Alissa&lt;/c&gt; &lt;00:15.000&gt;&lt;c&gt;by C. J. MOORE&lt;/c&gt;
+
+00:19.000 --&gt; 00:27.000
+&lt;00:20.000&gt;&lt;c&gt;&lt;b&gt;Alissa&lt;/b&gt; is reading.&lt;/c&gt; 
+&lt;00:22.000&gt;&lt;c&gt;Her father calls to her.&lt;/c&gt; 
+&lt;00:24.000&gt;&lt;c&gt;"Alissa! Alissa!"&lt;/c&gt;
+
+label_box_1
+00:28.000 --&gt; 00:58.000
+&lt;00:28.000&gt;&lt;c&gt;Alissa runs to the door.&lt;/c&gt;
+&lt;00:30.000&gt;&lt;c&gt;There is a car outside the house.&lt;/c&gt;
+&lt;00:32.000&gt;&lt;c&gt;Her father is talking to a fat man.&lt;/c&gt;
+&lt;00:36.500&gt;&lt;c&gt;This is Alissa.&lt;/c&gt; 
+&lt;00:38.000&gt;&lt;c&gt;She reads all day, her father says.&lt;/c&gt; 
+&lt;00:41.000&gt;&lt;c&gt;The two men laugh.&lt;/c&gt;
+&lt;00:47.000&gt;&lt;c&gt;"Alissa", her father says.&lt;/c&gt; 
+&lt;00:50.000&gt;&lt;c&gt;My friend has work for you in the city.&lt;/c&gt; 
+&lt;00:53.000&gt;&lt;c&gt;There isn't any work here in the village.&lt;/c&gt; 
+&lt;00:56.000&gt;&lt;c&gt;You must go with him.&lt;/c&gt; 
+ 
+</code></pre>
+<p>Создание видео для поддержки браузером в формате mp4</p>
+<p>File Makefile:</p>
+<pre><code>.PHONY: all create_video  
+
+all: create_video  
+
+ffmpeg -f lavfi -i "color=c=black:s=640x360:r=5" \
+	-i audio.opus \
+	-c:v libx264 -crf 32 -pix_fmt yuv420p \
+	-c:a aac \
+	-shortest \
+	final.mp4
+
+</code></pre>
+<p>Отображение на странице:</p>
+<pre><code>&lt;video controls style="width:100%"&gt;
+  &lt;source src="audio/A1/final.mp4" type="video/mp4"&gt;
+  &lt;track src="audio/A1/subs.vtt" kind="subtitles" srclang="en" default&gt;
+&lt;/video&gt;
+
+&lt;style&gt;
+  video::cue {
+    color: #000000ff !important; 
+    background: transparent; 
+  }
+  video::cue(b) {
+    color: #df4141ff; 
+  }
+&lt;/style&gt;
+</code></pre>
+</details>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+                            <a rel="next prefetch" href="A1/A1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+                    <a rel="next prefetch" href="A1/A1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="src/js/general.js"></script>
+        <script src="src/js/practice.js"></script>
+        <script src="src/js/practice2.js"></script>
+        <script src="src/js/practice3.js"></script>
+        <script src="src/js/editorVoice.js"></script>
+        <script src="src/js/editor_symbol.js"></script>
+        <script src="src/js/listen.js"></script>
+        <script src="src/js/textual_analysis.js"></script>
+        <script src="src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,1010 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>There is,are (указания на место) - Grammar of English</title>
+
+
+        <!-- Custom HTML head -->
+
+        <script>
+            const isGithub = window.location.hostname.includes('github.io');
+            const path = isGithub ? '/grammar_of_english/js/grammar_checker.js' : '/js/grammar_checker.js';
+            
+            document.write('<script type="module" src="' + path + '"><\/script>');
+        </script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/css/theme.css">
+        <link rel="stylesheet" href="../theme/css/listen.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grammar of English</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <style>
+.mdbook-callouts {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  /* border-left: 0.25em solid var(--mdbook-callouts-color); */
+  background: var(--mdbook-callouts-background);
+}
+
+.mdbook-callouts > *:first-child {
+  margin-top: 0;
+}
+
+.mdbook-callouts > *:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-callouts-title {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1;
+  color: var(--mdbook-callouts-color);
+  text-transform: capitalize;
+}
+
+.mdbook-callouts-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-callouts-icon);
+  mask-image: var(--mdbook-callouts-icon);
+}
+
+/* icons at: https://lucide.dev/icons/ */
+
+.mdbook-callouts-info {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/info */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8iPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDE2di00Ii8+PHBhdGggZD0iTTEyIDhoLjAxIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-note {
+  --mdbook-callouts-color: rgb(var(--color-blue-rgb));
+  --mdbook-callouts-background: rgba(var(--color-blue-rgb), 0.1);
+  /* https://lucide.dev/icons/pencil */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBlbmNpbCI+PHBhdGggZD0iTTE3IDNhMi44NSAyLjgzIDAgMSAxIDQgNEw3LjUgMjAuNSAyIDIybDEuNS01LjVaIi8+PHBhdGggZD0ibTE1IDUgNCA0Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-tip,
+.mdbook-callouts-hint {
+  --mdbook-callouts-color: rgb(var(--color-cyan-rgb));
+  --mdbook-callouts-background: rgba(var(--color-cyan-rgb), 0.1);
+  /* https://lucide.dev/icons/flame */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZsYW1lIj48cGF0aCBkPSJNOC41IDE0LjVBMi41IDIuNSAwIDAgMCAxMSAxMmMwLTEuMzgtLjUtMi0xLTMtMS4wNzItMi4xNDMtLjIyNC00LjA1NCAyLTYgLjUgMi41IDIgNC45IDQgNi41IDIgMS42IDMgMy41IDMgNS41YTcgNyAwIDEgMS0xNCAwYzAtMS4xNTMuNDMzLTIuMjk0IDEtM2EyLjUgMi41IDAgMCAwIDIuNSAyLjV6Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-important {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LWNpcmNsZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjgiIHkyPSIxMiIvPjxsaW5lIHgxPSIxMiIgeDI9IjEyLjAxIiB5MT0iMTYiIHkyPSIxNiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-success,
+.mdbook-callouts-check,
+.mdbook-callouts-done {
+  --mdbook-callouts-color: rgb(var(--color-green-rgb));
+  --mdbook-callouts-background: rgba(var(--color-green-rgb), 0.1);
+  /* https://lucide.dev/icons/check */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-question,
+.mdbook-callouts-help,
+.mdbook-callouts-faq {
+  --mdbook-callouts-color: rgb(var(--color-pink-rgb));
+  --mdbook-callouts-background: rgba(var(--color-pink-rgb), 0.1);
+  /* https://lucide.dev/icons/help-circle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhlbHAtY2lyY2xlIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxwYXRoIGQ9Ik05LjA5IDlhMyAzIDAgMCAxIDUuODMgMWMwIDItMyAzLTMgMyIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-warning,
+.mdbook-callouts-warn {
+  --mdbook-callouts-color: rgb(var(--color-orange-rgb));
+  --mdbook-callouts-background: rgba(var(--color-orange-rgb), 0.1);
+  /* https://lucide.dev/icons/alert-triangle */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFsZXJ0LXRyaWFuZ2xlIj48cGF0aCBkPSJtMjEuNzMgMTgtOC0xNGEyIDIgMCAwIDAtMy40OCAwbC04IDE0QTIgMiAwIDAgMCA0IDIxaDE2YTIgMiAwIDAgMCAxLjczLTNaIi8+PHBhdGggZD0iTTEyIDl2NCIvPjxwYXRoIGQ9Ik0xMiAxN2guMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-caution {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/shield-alert */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNoaWVsZC1hbGVydCI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEwIi8+PHBhdGggZD0iTTEyIDh2NCIvPjxwYXRoIGQ9Ik0xMiAxNmguMDEiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-failure,
+.mdbook-callouts-fail,
+.mdbook-callouts-missing {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/x */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXgiPjxwYXRoIGQ9Ik0xOCA2IDYgMTgiLz48cGF0aCBkPSJtNiA2IDEyIDEyIi8+PC9zdmc+');
+}
+
+.mdbook-callouts-error,
+.mdbook-callouts-danger {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/zap */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXphcCI+PHBvbHlnb24gcG9pbnRzPSIxMyAyIDMgMTQgMTIgMTQgMTEgMjIgMjEgMTAgMTIgMTAgMTMgMiIvPjwvc3ZnPg==');
+}
+
+.mdbook-callouts-bug {
+  --mdbook-callouts-color: rgb(var(--color-red-rgb));
+  --mdbook-callouts-background: rgba(var(--color-red-rgb), 0.1);
+  /* https://lucide.dev/icons/bug */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJ1ZyI+PHBhdGggZD0ibTggMiAxLjg4IDEuODgiLz48cGF0aCBkPSJNMTQuMTIgMy44OCAxNiAyIi8+PHBhdGggZD0iTTkgNy4xM3YtMWEzLjAwMyAzLjAwMyAwIDEgMSA2IDB2MSIvPjxwYXRoIGQ9Ik0xMiAyMGMtMy4zIDAtNi0yLjctNi02di0zYTQgNCAwIDAgMSA0LTRoNGE0IDQgMCAwIDEgNCA0djNjMCAzLjMtMi43IDYtNiA2Ii8+PHBhdGggZD0iTTEyIDIwdi05Ii8+PHBhdGggZD0iTTYuNTMgOUM0LjYgOC44IDMgNy4xIDMgNSIvPjxwYXRoIGQ9Ik02IDEzSDIiLz48cGF0aCBkPSJNMyAyMWMwLTIuMSAxLjctMy45IDMuOC00Ii8+PHBhdGggZD0iTTIwLjk3IDVjMCAyLjEtMS42IDMuOC0zLjUgNCIvPjxwYXRoIGQ9Ik0yMiAxM2gtNCIvPjxwYXRoIGQ9Ik0xNy4yIDE3YzIuMS4xIDMuOCAxLjkgMy44IDQiLz48L3N2Zz4=');
+}
+
+.mdbook-callouts-examples,
+.mdbook-callouts-example {
+  --mdbook-callouts-color: rgb(var(--color-purple-rgb));
+  --mdbook-callouts-background: rgba(var(--color-purple-rgb), 0.1);
+  /* https://lucide.dev/icons/list */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxpc3QiPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSI4IiB4Mj0iMjEiIHkxPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjgiIHgyPSIyMSIgeTE9IjE4IiB5Mj0iMTgiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSI2IiB5Mj0iNiIvPjxsaW5lIHgxPSIzIiB4Mj0iMy4wMSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMyIgeDI9IjMuMDEiIHkxPSIxOCIgeTI9IjE4Ii8+PC9zdmc+');
+}
+
+.mdbook-callouts-quote {
+  --mdbook-callouts-color: rgb(158, 158, 158);
+  --mdbook-callouts-background: rgba(158, 158, 158, 0.1);
+  /* https://lucide.dev/icons/quote */
+  --mdbook-callouts-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXF1b3RlIj48cGF0aCBkPSJNMyAyMWMzIDAgNy0xIDctOFY1YzAtMS4yNS0uNzU2LTIuMDE3LTItMkg0Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDIgMSAwIDEgMCAxIDF2MWMwIDEtMSAyLTIgMnMtMSAuMDA4LTEgMS4wMzFWMjBjMCAxIDAgMSAxIDF6Ii8+PHBhdGggZD0iTTE1IDIxYzMgMCA3LTEgNy04VjVjMC0xLjI1LS43NTctMi4wMTctMi0yaC00Yy0xLjI1IDAtMiAuNzUtMiAxLjk3MlYxMWMwIDEuMjUuNzUgMiAyIDJoLjc1YzAgMi4yNS4yNSA0LTIuNzUgNHYzYzAgMSAwIDEgMSAxeiIvPjwvc3ZnPg==');
+}
+
+
+.ayu {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.light {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+
+.coal {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.navy {
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #fb464c;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 2, 122, 255;
+  --color-blue: #027aff;
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+}
+
+.rust {
+  --color-red-rgb: 233, 49, 71;
+  --color-red: #e93147;
+  --color-orange-rgb: 236, 117, 0;
+  --color-orange: #ec7500;
+  --color-yellow-rgb: 224, 172, 0;
+  --color-yellow: #e0ac00;
+  --color-green-rgb: 8, 185, 78;
+  --color-green: #08b94e;
+  --color-cyan-rgb: 0, 191, 188;
+  --color-cyan: #00bfbc;
+  --color-blue-rgb: 8, 109, 221;
+  --color-blue: #086ddd;
+  --color-purple-rgb: 120, 82, 238;
+  --color-purple: #7852ee;
+  --color-pink-rgb: 213, 57, 132;
+  --color-pink: #d53984;
+}
+</style>
+<h1 id="there-isare"><a class="header" href="#there-isare">There is/are</a></h1>
+<p><strong>There</strong> - в смысле "там".
+Используется для указания на наличие или отсутствие чего-либо в определённом месте.
+Этот оборот помогает сказать "где-то что-то есть" или "где-то чего-то нет".</p>
+<p><strong>There is/There's</strong> - для ед. числа</p>
+<ul>
+<li>There is a book on the table. — На столе есть книга.</li>
+</ul>
+<p><strong>There are/There're</strong> - для мн. числа</p>
+<ul>
+<li>There are three books on the table. — На столе есть три книги.</li>
+</ul>
+<h2 id="ВопросыОтрицание-с-there"><a class="header" href="#ВопросыОтрицание-с-there">Вопросы/Отрицание с There</a></h2>
+<p>При вопросе ставим форму <strong>to be</strong> (is/are) перед there.</p>
+<ul>
+<li><strong>Is</strong> there a book on the table? — На столе есть книга?</li>
+<li><strong>Are</strong> there any cookies left in the jar? — В банке остались печенья?</li>
+</ul>
+<p>При отрицании ставим частицу <strong>not</strong> после there is/are.</p>
+<ul>
+<li>There isn’t a book on the table. — На столе нет книги.</li>
+<li>There aren’t any cookies left in the jar. — В банке не осталось печенья.</li>
+</ul>
+<p>Слово <strong>some</strong> в вопросах превращается в <strong>any</strong> (какой-нибудь/никакого)</p>
+<ul>
+<li>Is there <strong>any</strong> water in your cup? - <strong>There isn't</strong> any water in my cup (В твоей чашке есть вода? - В моей чашке нет воды.)</li>
+<li>Is there a pen in your bag? - Yes, <strong>there is</strong> (В твоей сумке есть ручка? - Да, (там) есть.)</li>
+<li>Are there <strong>any</strong> pictures on the wall? - No, <strong>there aren't</strong> (На стене есть картины? - Нет.)</li>
+</ul>
+<h2 id="there-в-значении--там"><a class="header" href="#there-в-значении--там">There в значении — "там"</a></h2>
+<p>В конструкции there is/are слово <strong>there</strong> не переводится. Если мы хотим сказать "там", мы должны его <strong>повторить</strong> в конце предложения.</p>
+<ul>
+<li>How many children are in the house? - <strong>There are</strong> ten children <strong>there</strong>. (Сколько детей в доме? - Там десять детей.)</li>
+<li><strong>Are there</strong> any apples <strong>there</strong>? - Там есть яблоки?</li>
+<li><strong>Are there</strong> books in your bag? - There aren't any books <strong>there</strong>. (В твоей сумке книги? - Там нет никаких книг.)</li>
+</ul>
+<h2 id="using-there-is--there-are-in-answers-to-question-words"><a class="header" href="#using-there-is--there-are-in-answers-to-question-words">Using "There is / There are" in Answers to Question Words</a></h2>
+<p>Конструкцию there is / there are мы используем при ответах на вопросы, которые требуют информации о существовании, наличии или количестве чего-либо в определённом месте.</p>
+<p><strong>1. What (Что)</strong></p>
+<p>Question: What is there in the box? — Что находится в коробке?</p>
+<p>Answer: There is a gift inside. — Там подарок.</p>
+<p>Question: What is in your bag? — Что у тебя в сумке?</p>
+<p>Answer:There is a cat in my bag. — Там кот/У меня в сумке кот.</p>
+<p>Question: What is in your pocket? — Что в твоем кармане?</p>
+<p>Answer:There are two pencils in my pocket. — Там два карандаша/В моем кармане два карандаша.</p>
+<p><strong>2. Where (Где)</strong></p>
+<p>Question: Where is there a pharmacy nearby? — Где поблизости есть аптека?</p>
+<p>Answer: There is one around the corner. — За углом есть одна.</p>
+<p><strong>3. How many (Сколько — для исчисляемых предметов)</strong></p>
+<p>Question: How many students are there in the class? — Сколько студентов в классе?</p>
+<p>Answer: There are 20 students in the class. — В классе 20 студентов.</p>
+<p><strong>4. How much (Сколько — для неисчисляемых)</strong></p>
+<p>Question: How much water is there in the bottle? — Сколько воды в бутылке?</p>
+<p>Answer: There is half a liter of water. — Там пол-литра воды.</p>
+<p><strong>5. Who (Кто)</strong></p>
+<p>Question: Who is there at the door? — Кто там у двери?</p>
+<p>Answer: There is a delivery person. — Там курьер.</p>
+<hr />
+<h2 id="exercise-listen-and-write-there-isare"><a class="header" href="#exercise-listen-and-write-there-isare">Exercise: listen and write There is/are</a></h2>
+<div id="control_general_there"></div>
+<div id="listen_and_write_there"></div>
+<h2 id="exercise-listen-and-write-there-isare-1"><a class="header" href="#exercise-listen-and-write-there-isare-1">Exercise: listen and write There is/are</a></h2>
+<div id="control_general_there2"></div>
+<div id="listen_and_write_there2"></div>
+<h2 id="exercise-listen-and-write-there-isare-answer"><a class="header" href="#exercise-listen-and-write-there-isare-answer">Exercise: listen and write There is/are (answer)</a></h2>
+<div id="control_general_there_answer"></div>
+<div id="listen_and_write_there_answer"></div>
+<h2 id="exercise-listen-and-write-there-isare-all-exercises"><a class="header" href="#exercise-listen-and-write-there-isare-all-exercises">Exercise: listen and write There is/are (all exercises)</a></h2>
+<div id="control_general_there_all_exercises"></div>
+<div id="listen_and_write_there_all_exercises"></div>
+<script>   
+
+const exercises_easy_listen_and_write_there = [
+    ["There is a cat in the bedroom.", "В спальне есть кот."],
+    ["There are apples on the table.", "На столе есть яблоки."],
+    ["There is no sugar in the kitchen.", "На кухне нет сахара."],
+    ["There are no trains today.", "Сегодня нет поездов."],
+    
+    ["There was a noise last night.", "Прошлой ночью был шум."],
+    ["There were vegetables in the fridge.", "В холодильнике были овощи."],
+    ["There was not a hat on the chair.", "На стуле не было шляпы."],
+    ["There were no apples in the basket.", "В корзине не было яблок."],
+    
+    ["There will be a party tomorrow.", "Завтра будет вечеринка."],
+    ["There will be rice for dinner.", "На ужин будет рис."],
+    ["There will not be milk in the fridge.", "В холодильнике не будет молока."],
+    ["There will not be fruits in the shop.", "В магазине не будет фруктов."],
+    
+    ["There is dancing in the square now.", "Сейчас на площади танцуют."],
+    ["There are people swimming in the ocean.", "В океане плавают люди."],
+    ["There is not a person cooking in the kitchen.", "На кухне никто не готовит."],
+    ["There are not chairs near the desk.", "Возле стола нет стульев."],
+    
+    ["There was dancing at the party yesterday.", "Вчера на вечеринке танцевали."],
+    ["There were guests dining in the restaurant.", "В ресторане ужинали гости."],
+    ["There was not rice in the meal.", "В еде не было риса."],
+    ["There were not people riding bikes.", "Не было людей, едущих на велосипедах."],
+    
+    ["There will be fun at the holiday next week.", "На празднике на следующей неделе будет весело."],
+    ["There will be vegetables for dinner.", "На ужин будут овощи."],
+    ["There will not be noise in the flat tomorrow.", "Завтра в квартире не будет шума."],
+    ["There will not be milk in the shop.", "В магазине не будет молока."],
+    
+    ["There is a sentence to practise.", "Есть предложение, чтобы потренироваться."],
+    ["There are hats on the grass.", "На траве лежат шляпы."],
+    
+    ["There is salt on the table.", "На столе есть соль."],
+    ["There are dresses in the shop.", "В магазине есть платья."],
+    ["There is a moon in the sky tonight.", "Сегодня ночью на небе есть луна."],
+    ["There are shirts in my bedroom.", "В моей спальне есть рубашки."],
+    
+    ["There was a dress at the party.", "На вечеринке было платье."],
+    ["There were meals for everyone yesterday.", "Вчера были блюда для всех."],
+    ["There was not a tooth in the glass.", "В стакане не было зуба."],
+    ["There were no addresses in the letter.", "В письме не было адресов."],
+    
+    ["There will be a bedroom in the new flat.", "В новой квартире будет спальня."],
+    ["There will be bread for breakfast.", "На завтрак будет хлеб."],
+    ["There will not be rice in the shop tomorrow.", "Завтра в магазине не будет риса."],
+    ["There will not be fun without music.", "Без музыки не будет веселья."],
+    
+    ["There is a noise in the kitchen now.", "Сейчас на кухне шум."],
+    ["There are fruits on the table.", "На столе есть фрукты."],
+    ["There is no ocean near here.", "Здесь рядом нет океана."],
+    ["There are hats on the grass now.", "Сейчас на траве лежат шляпы."],
+    
+    ["There was dancing at the event yesterday.", "Вчера на мероприятии танцевали."],
+    ["There were vegetables for lunch.", "На обед были овощи."],
+    ["There was not milk in the fridge.", "В холодильнике не было молока."],
+    ["There were no apples in the basket.", "В корзине не было яблок."],
+    
+    ["There will be a meal at the restaurant tomorrow.", "Завтра в ресторане будет еда."],
+    ["There will be a dance show tonight.", "Сегодня вечером будет танцевальное шоу."],
+    ["There will not be noise in the flat later.", "Позже в квартире не будет шума."],
+    ["There will not be salt in the soup.", "В супе не будет соли."],
+    
+    ["There is a sentence to fix.", "Есть предложение, которое нужно исправить."],
+    ["There are drinks for everyone.", "Для всех есть напитки."],
+    
+    ["There is good weather today.", "Сегодня хорошая погода."],
+    ["There are trains at the station.", "На станции есть поезда."],
+    ["There is fruit on the table.", "На столе есть фрукты."],
+    ["There are apples in the basket.", "В корзине есть яблоки."],
+    ["There is a nose on the doll.", "На кукле есть нос."],
+    ["There are shirts in the shop.", "В магазине есть рубашки."],
+    ["There is an address in the letter.", "В письме есть адрес."],
+    ["There is a drink on the desk.", "На столе есть напиток."],
+    ["There are vegetables in the fridge.", "В холодильнике есть овощи."],
+    
+    ["There was good weather yesterday.", "Вчера была хорошая погода."],
+    ["There were trains late at night.", "Поздно ночью были поезда."],
+    ["There was fruit at the party.", "На вечеринке были фрукты."],
+    ["There were apples on the plate.", "На тарелке были яблоки."],
+    ["There was a nose in the picture.", "На картине был нос."],
+    ["There were shirts in the closet.", "В шкафу были рубашки."],
+    ["There was an address in the note.", "В записке был адрес."],
+    ["There was a drink in the glass.", "В стакане был напиток."],
+    ["There were vegetables in the soup.", "В супе были овощи."],
+    
+    ["There will be good weather tomorrow.", "Завтра будет хорошая погода."],
+    ["There will be trains in the morning.", "Утром будут поезда."],
+    ["There will be fruit for dinner.", "На ужин будут фрукты."],
+    ["There will be apples in the shop.", "В магазине будут яблоки."],
+    ["There will be shirts in the sale.", "На распродаже будут рубашки."],
+    ["There will be a drink for everyone.", "Для всех будет напиток."],
+    ["There will be vegetables for lunch.", "На обед будут овощи."],
+    
+    ["There is a man drinking tea.", "Мужчина пьёт чай."],
+    ["There are people riding bikes.", "Люди катаются на велосипедах."],
+    ["There is a woman cooking dinner.", "Женщина готовит ужин."],
+    ["There are children inviting friends.", "Дети приглашают друзей."],
+    ["There is an artist painting a wall.", "Художник красит стену."],
+    ["There is a boy waking up early.", "Мальчик просыпается рано."],
+    ["There is news influencing people.", "Новости влияют на людей."],
+    ["There is a player kicking the ball.", "Игрок бьёт по мячу."],
+    ["There is a teacher solving a problem.", "Учитель решает задачу."],
+    ["There are people fixing a car.", "Люди чинят машину."],
+    ["There is a woman cleaning the room.", "Женщина убирает комнату."],
+    ["There is a man investing money.", "Мужчина вкладывает деньги."],
+    ["There is a child washing hands.", "Ребёнок моет руки."],
+    ["There is a man smoking outside.", "Мужчина курит на улице."],
+    ["There are people communicating online.", "Люди общаются онлайн."],
+    ["There are swimmers swimming in the pool.", "Пловцы плавают в бассейне."],
+    ["There is a student practising English.", "Студент тренирует английский."],
+    ["There are guests dining in the restaurant.", "Гости ужинают в ресторане."],
+];
+
+const exercises_easy_listen_and_write_there2 = [
+    ["There is good weather there today.", "Там сегодня хорошая погода."],
+    ["There is fruit there in the basket.", "Там есть фрукты в корзине."],
+    ["There is a dance there every Friday.", "Там каждую пятницу танцы."],
+    ["There is a nose there on the statue.", "Там нос на статуе."],
+    ["There is an address there in the letter.", "Там адрес в письме."],
+    ["There are vegetables there in the market.", "Там овощи на рынке."],
+    ["There is a drink there on the desk.", "Там напиток на столе."],
+    ["There is salt there in the bowl.", "Там соль в миске."],
+    ["There is sugar there in the cup.", "Там сахар в чашке."],
+    ["There is a train there every morning.", "Там поезд каждое утро."],
+    ["There is the moon there tonight.", "Там сегодня ночь и луна."],
+    ["There is a meal there after the meeting.", "Там еда после встречи."],
+    ["There is a cat there under the tree.", "Там кот под деревом."],
+    ["There is a dress there in the shop.", "Там платье в магазине."],
+    ["There is a shirt there on the bed.", "Там рубашка на кровати."],
+    ["There is a tooth there in the glass.", "Там зуб в стакане."],
+    ["There is a bedroom there upstairs.", "Там спальня наверху."],
+    ["There is the ocean there in the distance.", "Там океан вдали."],
+    ["There is fun there for everyone.", "Там весело для всех."],
+    ["There is an apple there on the table.", "Там яблоко на столе."],
+    ["There is a holiday there next week.", "Там праздник на следующей неделе."],
+    ["There is a flat there near the park.", "Там квартира рядом с парком."],
+    ["There is noise there in the street.", "Там шум на улице."],
+    ["There is a hat there on the grass.", "Там шляпа на траве."],
+    ["There is grass there in the garden.", "Там трава в саду."],
+    ["There is a sentence there in the book.", "Там предложение в книге."],
+    ["There is milk there in the fridge.", "Там молоко в холодильнике."],
+    ["There is rice there for dinner.", "Там рис на ужин."],
+    ["There is bread there on the plate.", "Там хлеб на тарелке."],
+    
+    ["There was fruit there at the party.", "Там были фрукты на вечеринке."],
+    ["There was a dance there last night.", "Там была танцевальная вечеринка вчера."],
+    ["There was an address there in the document.", "Там был адрес в документе."],
+    ["There were vegetables there yesterday.", "Там вчера были овощи."],
+    ["There was a drink there before dinner.", "Там был напиток перед ужином."],
+    ["There was salt there in the soup.", "Там была соль в супе."],
+    ["There was sugar there in the cake.", "Там был сахар в торте."],
+    ["There was a train there last night.", "Там был поезд прошлой ночью."],
+    ["There was the moon there last evening.", "Там была луна вчера вечером."],
+    ["There was a meal there after the event.", "Там был ужин после мероприятия."],
+    ["There was a cat there in the room.", "Там был кот в комнате."],
+    ["There was a dress there for the party.", "Там было платье для вечеринки."],
+    ["There was a shirt there in the box.", "Там была рубашка в коробке."],
+    ["There was a tooth there in the box.", "Там был зуб в коробке."],
+    ["There was a bedroom there for guests.", "Там была спальня для гостей."],
+    ["There was the ocean there in summer.", "Там был океан летом."],
+    ["There was fun there at the festival.", "Там было весело на фестивале."],
+    ["There was an apple there on the branch.", "Там было яблоко на ветке."],
+    ["There was a holiday there in December.", "Там был праздник в декабре."],
+    ["There was a flat there in the city.", "Там была квартира в городе."],
+    ["There was noise there during the night.", "Там был шум ночью."],
+    ["There was a hat there in the shop.", "Там была шляпа в магазине."],
+    ["There was grass there in the park.", "Там была трава в парке."],
+    ["There was a sentence there in the text.", "Там было предложение в тексте."],
+    ["There was milk there in the glass.", "Там было молоко в стакане."],
+    ["There was rice there at dinner.", "Там был рис на ужин."],
+    ["There was bread there on the table.", "Там был хлеб на столе."],
+    
+    ["There will be weather there tomorrow.", "Там завтра будет погода."],
+    ["There will be fruit there at the market.", "Там будут фрукты на рынке."],
+    ["There will be a dance there next Friday.", "Там будут танцы в следующую пятницу."],
+    ["There will be a nose there on the face.", "Там будет нос на лице."],
+    ["There will be an address there in the letter.", "Там будет адрес в письме."],
+    ["There will be vegetables there for lunch.", "Там будут овощи на обед."],
+    ["There will be a drink there after the meeting.", "Там будет напиток после встречи."],
+    ["There will be salt there in the soup.", "Там будет соль в супе."],
+    ["There will be sugar there in the cake.", "Там будет сахар в торте."],
+    ["There will be a train there in the morning.", "Там будет поезд утром."],
+    ["There will be the moon there tonight.", "Там будет луна сегодня вечером."],
+    ["There will be a meal there for everyone.", "Там будет еда для всех."],
+    ["There will be a cat there in the garden.", "Там будет кот в саду."],
+    ["There will be a dress there for the party.", "Там будет платье на вечеринку."],
+    ["There will be a shirt there in the shop.", "Там будет рубашка в магазине."],
+    ["There will be a tooth there in the cup.", "Там будет зуб в чашке."],
+    ["There will be a bedroom there for guests.", "Там будет спальня для гостей."],
+    ["There will be the ocean there in summer.", "Там будет океан летом."],
+    ["There will be fun there at the holiday camp.", "Там будет весело в лагере."],
+    ["There will be an apple there on the tree.", "Там будет яблоко на дереве."],
+    ["There will be a holiday there in July.", "Там будет праздник в июле."],
+    ["There will be a flat there near the park.", "Там будет квартира рядом с парком."],
+    ["There will be noise there during the festival.", "Там будет шум во время фестиваля."],
+    ["There will be a hat there on the grass.", "Там будет шляпа на траве."],
+    ["There will be grass there in the field.", "Там будет трава на поле."],
+    ["There will be a sentence there in the book.", "Там будет предложение в книге."],
+    ["There will be milk there in the cup.", "Там будет молоко в чашке."],
+    ["There will be rice there for lunch.", "Там будет рис на обед."],
+    ["There will be bread there in the bakery.", "Там будет хлеб в пекарне."],
+    
+    ["There is a man drinking tea there now.", "Там сейчас мужчина пьёт чай."],
+    ["There are people riding bikes there now.", "Там сейчас люди катаются на велосипедах."],
+    ["There is a woman cooking dinner there now.", "Там сейчас женщина готовит ужин."],
+    ["There are children inviting friends there now.", "Там сейчас дети приглашают друзей."],
+    ["There is an artist painting a wall there now.", "Там сейчас художник красит стену."],
+    ["There is a boy waking up early there.", "Там мальчик просыпается рано."],
+    ["There is news influencing people there now.", "Там новости влияют на людей."],
+    ["There is a player kicking the ball there now.", "Там игрок бьёт по мячу."],
+    ["There is a teacher solving a problem there now.", "Там учитель решает задачу."],
+    ["There are people fixing a car there now.", "Там люди чинят машину."],
+    ["There is a woman cleaning the room there now.", "Там женщина убирает комнату."],
+    ["There is a man investing money there now.", "Там мужчина вкладывает деньги."],
+    ["There is a child washing hands there now.", "Там ребёнок моет руки."],
+    ["There is a man smoking outside there now.", "Там мужчина курит на улице."],
+    ["There are people communicating online there now.", "Там люди общаются онлайн."],
+    ["There are swimmers swimming in the pool there now.", "Там пловцы плавают в бассейне."],
+    ["There is a student practising English there now.", "Там студент тренирует английский."],
+    ["There are guests dining in the restaurant there now.", "Там гости ужинают в ресторане."],
+    
+    ["There is someone who rides a bike there.", "Там кто-то катается на велосипеде."],
+    ["There is a chef who cooks dinner there.", "Там шеф готовит ужин."],
+    ["There are people who invite friends there.", "Там люди приглашают друзей."],
+    ["There is an artist who paints a wall there.", "Там художник красит стену."],
+    ["There is a boy who wakes up early there.", "Там мальчик просыпается рано."],
+    ["There is news which influences people there.", "Там новости влияют на людей."],
+    ["There is a player who kicks the ball there.", "Там игрок бьёт мяч."],
+    ["There is a teacher who solves problems there.", "Там учитель решает задачи."],
+    ["There are mechanics who fix a car there.", "Там механики чинят машину."],
+    ["There is a cleaner who cleans a room there.", "Там уборщик убирает комнату."],
+    ["There is an investor who invests money there.", "Там инвестор вкладывает деньги."],
+    ["There is a child who washes dishes there.", "Там ребёнок моет посуду."],
+    ["There is a man who smokes outside there.", "Там мужчина курит на улице."],
+    ["There are people who communicate there.", "Там люди общаются."],
+    ["There are swimmers who swim there.", "Там пловцы плавают."],
+    ["There is a student who practises English there.", "Там студент практикует английский."],
+    ["There are guests who dine there.", "Там гости ужинают."],
+    ["There is a person who practises dance there.", "Там человек тренирует танец."],
+
+    ["There was a boy who rode a bike there yesterday.", "Там был мальчик, который катался на велосипеде вчера."],
+    ["There was a chef who cooked dinner there last night.", "Там был повар, который готовил ужин прошлой ночью."],
+    ["There were people who invited friends there.", "Там были люди, которые приглашали друзей."],
+    ["There was an artist who painted a wall there.", "Там был художник, который рисовал на стене."],
+    ["There was a child who woke up early there.", "Там был ребёнок, который проснулся рано."],
+    ["There was news which influenced people there.", "Там были новости, которые повлияли на людей."],
+    ["There was a player who kicked the ball there.", "Там был игрок, который пнул мяч."],
+    ["There was a teacher who solved problems there.", "Там был учитель, который решал проблемы."],
+    ["There were mechanics who fixed a car there.", "Там были механики, которые чинили машину."],
+    ["There was a cleaner who cleaned a room there.", "Там был уборщик, который убирал комнату."],
+    ["There was an investor who invested money there.", "Там был инвестор, который вкладывал деньги."],
+    ["There was a child who washed dishes there.", "Там был ребёнок, который мыл посуду."],
+    ["There was a man who smoked outside there.", "Там был мужчина, который курил на улице."],
+    ["There were people who communicated there.", "Там были люди, которые общались."],
+    ["There were swimmers who swam there.", "Там были пловцы, которые плавали."],
+    ["There was a student who practised English there.", "Там был студент, который практиковал английский."],
+    ["There were guests who dined there.", "Там были гости, которые ужинали."],
+    ["There was a person who practised dance there.", "Там был человек, который практиковал танец."],
+    ["There will be someone who rides a bike there tomorrow.", "Там будет кто-то, кто катается на велосипеде завтра."],
+    ["There will be a chef who cooks dinner there.", "Там будет повар, который готовит ужин."],
+    ["There will be people who invite guests there.", "Там будут люди, которые приглашают гостей."],
+    ["There will be an artist who paints a wall there.", "Там будет художник, который рисует на стене."],
+    ["There will be a child who wakes up early there.", "Там будет ребёнок, который просыпается рано."],
+    ["There will be news which influences people there.", "Там будут новости, которые влияют на людей."],
+    ["There will be a player who kicks a ball there.", "Там будет игрок, который пинает мяч."],
+    ["There will be a teacher who solves problems there.", "Там будет учитель, который решает проблемы."],
+    ["There will be mechanics who fix a car there.", "Там будут механики, которые чинят машину."],
+    ["There will be a cleaner who cleans a room there.", "Там будет уборщик, который убирает комнату."],
+    ["There will be an investor who invests money there.", "Там будет инвестор, который вкладывает деньги."],
+    ["There will be a child who washes dishes there.", "Там будет ребёнок, который моет посуду."],
+    ["There will be a man who smokes outside there.", "Там будет мужчина, который курит на улице."],
+    ["There will be people who communicate there.", "Там будут люди, которые общаются."],
+    ["There will be swimmers who swim there.", "Там будут пловцы, которые плавают."],
+    ["There will be a student who practises English there.", "Там будет студент, который практикует английский."],
+    ["There will be guests who dine there.", "Там будут гости, которые ужинают."],
+    ["There will be a person who practises dance there.", "Там будет человек, который практикует танец."],
+    ["There is someone riding a bike there.", "Там кто-то катается на велосипеде."],
+    ["There is a chef cooking dinner there.", "Там повар готовит ужин."],
+    ["There are people inviting friends there.", "Там люди приглашают друзей."],
+    ["There is an artist painting a wall there.", "Там художник рисует на стене."],
+    ["There is a boy waking up early there.", "Там мальчик просыпается рано."],
+    ["There is news influencing people there.", "Там новости влияют на людей."],
+    ["There is a player kicking the ball there.", "Там игрок пинает мяч."],
+    ["There is a teacher solving problems there.", "Там учитель решает проблемы."],
+    ["There are mechanics fixing a car there.", "Там механики чинят машину."],
+    ["There is a cleaner cleaning a room there.", "Там уборщик убирает комнату."],
+    ["There is an investor investing money there.", "Там инвестор вкладывает деньги."],
+    ["There is a child washing dishes there.", "Там ребёнок моет посуду."],
+    ["There is a man smoking outside there.", "Там мужчина курит на улице."],
+    ["There are people communicating there.", "Там люди общаются."],
+    ["There are swimmers swimming there.", "Там пловцы плавают."],
+    ["There is a student practising English there.", "Там студент практикует английский."],
+    ["There are guests dining there.", "Там гости ужинают."],
+    ["There is a person practising dance there.", "Там человек практикует танец."],
+];
+const exercises_easy_listen_and_write_there_answer = [
+    ["What is there on the desk? — There is sugar on the desk.", "Что на столе? — На столе сахар."],
+    ["Where are there apples? — There are apples in the basket.", "Где яблоки? — Яблоки в корзине."],
+    ["How many cats are there? — There are three cats in the room.", "Сколько там кошек? — В комнате три кошки."],
+    ["Who is there? — There is a man cooking dinner.", "Кто там? — Там мужчина готовит ужин."],
+    ["What is there near the ocean? — There is fun for tourists.", "Что там рядом с океаном? — Там развлечения для туристов."],
+    ["What was there on the table yesterday? — There was bread on the table.", "Что было на столе вчера? — На столе был хлеб."],
+    ["Where were there vegetables? — There were vegetables at the market.", "Где были овощи? — Овощи были на рынке."],
+    ["How much milk was there? — There was some milk in the fridge.", "Сколько там было молока? — В холодильнике было немного молока."],
+    ["What was there in the bedroom? — There was a shirt on the bed.", "Что было в спальне? — На кровати была рубашка."],
+    
+    ["What will be there in the kitchen tomorrow? — There will be salt in the bowl.", "Что будет завтра на кухне? — В миске будет соль."],
+    ["Where will there be noise? — There will be noise in the street.", "Где будет шум? — На улице будет шум."],
+    ["How many trains will be there? — There will be two trains in the station.", "Сколько там будет поездов? — На станции будет два поезда."],
+    ["Who will be there at the party? — There will be friends inviting guests.", "Кто будет там на вечеринке? — Там будут друзья, приглашающие гостей."],
+    ["What will be there for dinner? — There will be rice and bread.", "Что будет на ужин? — Будет рис и хлеб."],
+    
+    ["What is there now in the shop? — There is a dress being painted.", "Что сейчас в магазине? — Там платье, которое раскрашивают."],
+    ["Where are there people? — There are people swimming in the ocean.", "Где люди? — В океане плавают люди."],
+    ["How much sugar is there? — There is sugar in the cup.", "Сколько там сахара? — В чашке есть сахар."],
+    ["Who is there now? — There is a boy waking up early.", "Кто там сейчас? — Там мальчик, который просыпается рано."],
+    ["What is there near the desk? — There is a drink being prepared.", "Что там возле стола? — Там готовят напиток."],
+    ["What is there in the bedroom? — There is a hat on the bed.", "Что в спальне? — На кровати шляпа."],
+    ["Where is there grass? — There is grass in the garden.", "Где там трава? — В саду трава."],
+    ["How many holidays are there this year? — There are two holidays this year.", "Сколько праздников в этом году? — В этом году два праздника."],
+    ["Who is there at the restaurant? — There is a man dining with guests.", "Кто там в ресторане? — Там мужчина ужинает с гостями."],
+    ["What is there in the address? — There is a sentence with information.", "Что там в адресе? — Там предложение с информацией."],
+    ["Where are there trains? — There are trains at the station every morning.", "Где там поезда? — Поезда на станции каждое утро."],
+    ["How much salt is there in the soup? — There is a lot of salt in the soup.", "Сколько соли в супе? — В супе много соли."],
+    ["Who is there at the party? — There is a woman inviting guests.", "Кто там на вечеринке? — Там женщина приглашает гостей."],
+    ["What is there in the flat? — There is a bedroom and a kitchen.", "Что там в квартире? — Там спальня и кухня."],
+    ["Where is there fun? — There is fun at the holiday camp.", "Где там веселье? — В лагере отдыха весело."],
+    
+    ["How many apples are there on the desk? — There are three apples on the desk.", "Сколько яблок на столе? — На столе три яблока."],
+    ["How many apples are there on the desk? — There aren't any apples on the desk.", "Сколько яблок на столе? — На столе нет никаких яблок."],
+    ["Is there enough salt in the soup? — Yes, there is enough salt in the soup.", "Достаточно ли соли в супе? — Да, в супе достаточно соли."],
+    ["Is there enough salt in the soup? — No, there isn't enough salt in the soup.", "Достаточно ли соли в супе? — Нет, в супе недостаточно соли."],
+    ["Where do you clean the flat? — I clean the flat in the morning.", "Где ты убираешь квартиру? — Я убираю квартиру утром."],
+    ["Where do you clean the flat? — I don't clean the flat in the evening.", "Где ты убираешь квартиру? — Я не убираю квартиру вечером."],
+    ["How much milk was in the bottle? — There was a little milk in the bottle.", "Сколько молока было в бутылке? — В бутылке было немного молока."],
+    ["How much milk was in the bottle? — There wasn't any milk in the bottle.", "Сколько молока было в бутылке? — В бутылке не было никакого молока."],
+    ["Were there any hats in the shop? — Yes, there were many cool hats there.", "Были ли какие-нибудь шляпы в магазине? — Да, там было много классных шляп."],
+    ["Were there any hats in the shop? — No, there weren't any hats there.", "Были ли какие-нибудь шляпы в магазине? — Нет, там не было никаких шляп."],
+    ["Where did he paint the bedroom? — He painted the bedroom blue.", "Где он покрасил спальню? — Он покрасил спальню в синий цвет."],
+    ["Where did he paint the bedroom? — He didn't paint the bedroom blue.", "Где он покрасил спальню? — Он не покрасил спальню в синий цвет."],
+    ["Will there be much noise at the party? — Yes, there will be a lot of noise there.", "Будет ли много шума на вечеринке? — Да, там будет много шума."],
+    ["Will there be much noise at the party? — No, there won't be much noise.", "Будет ли много шума на вечеринке? — Нет, там не будет много шума."],
+    ["Where will you wash your dress? — I will wash my dress at home.", "Где ты будешь стирать свое платье? — Я буду стирать свое платье дома."],
+    ["Where will you wash your dress? — I won't wash my dress at work.", "Где ты будешь стирать свое платье? — Я не буду стирать свое платье на работе."],
+    ["How many meals will you cook? — I will cook two big meals today.", "Сколько блюд ты приготовишь? — Я приготовлю два больших блюда сегодня."],
+    ["How many meals will you cook? — I won't cook any meals.", "Сколько блюд ты приготовишь? — Я не буду готовить никаких блюд."],
+    ["What is he drinking now? — He is drinking water (a drink).", "Что он пьет сейчас? — Он пьет воду (напиток)."],
+    ["What is he drinking now? — He is not drinking milk.", "Что он пьет сейчас? — Он не пьет молоко."],
+    ["Where are they practising their dance? — They are practising their dance in the hall.", "Где они репетируют свой танец? — Они репетируют свой танец в зале."],
+    ["Where are they practising their dance? — They are not practising their dance outside.", "Где они репетируют свой танец? — Они не репетируют свой танец на улице."],
+    ["How many vegetables are you washing? — I am washing a few vegetables for dinner.", "Сколько овощей ты моешь? — Я мою несколько овощей для ужина."],
+    ["How many vegetables are you washing? — I am not washing many vegetables.", "Сколько овощей ты моешь? — Я не мою много овощей."],
+];    
+
+
+let g_practice = null;
+let g_practice2 = null;
+let g_practice_answer = null;
+let g_practice_there_all_exercises = null;
+
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        await window.globalScriptReady; 
+ 
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralThere, suffix_id: 'there'});
+
+        g_practice = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_there'), 
+            el_exercise_control: document.getElementById('control_general_there'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_there),
+            editor_symbol: editor_symbol
+        });
+        g_practice.genExercisesListenAndWrite();
+     
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralThere2, suffix_id: 'there2'});
+
+        g_practice2 = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_there2'), 
+            el_exercise_control: document.getElementById('control_general_there2'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_there2),
+            editor_symbol: editor_symbol
+        });
+        g_practice2.genExercisesListenAndWrite();
+     
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralThereAnswer, suffix_id: 'there_answer'});
+
+        g_practice_answer = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_there_answer'), 
+            el_exercise_control: document.getElementById('control_general_there_answer'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_there_answer),
+            editor_symbol: editor_symbol
+        });
+        g_practice_answer.genExercisesListenAndWrite();
+     
+ }
+ {
+        let editor_symbol = new EditorSymbol({callback: checkAnswerGeneralThereAll, suffix_id: 'there_all_exercises'});
+        const exercises_easy_listen_and_write_there_all_exercises = exercises_easy_listen_and_write_there
+          .concat(exercises_easy_listen_and_write_there2, exercises_easy_listen_and_write_there_answer);
+        g_practice_there_all_exercises = new Practice({
+            el_listen_and_write: document.getElementById('listen_and_write_there_all_exercises'), 
+            el_exercise_control: document.getElementById('control_general_there_all_exercises'), 
+            exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_there_all_exercises),
+            editor_symbol: editor_symbol
+        });
+        g_practice_there_all_exercises.genExercisesListenAndWrite();
+     
+ }
+    } catch (error) {
+        console.error("Error build:", error);
+    }
+});
+ 
+function checkAnswerGeneralThere(value){
+    value = textNormalize(value);
+    return value==g_practice.getAnswer();
+}
+function checkAnswerGeneralThere2(value){
+    value = textNormalize(value);
+    return value==g_practice2.getAnswer();
+}
+function checkAnswerGeneralThereAnswer(value){
+    value = textNormalize(value);
+    return value==g_practice_answer.getAnswer();
+}
+function checkAnswerGeneralThereAll(value){
+    value = textNormalize(value);
+    return value==g_practice_there_all_exercises.getAnswer();
+}
+</script>   
+<style>
+table {
+  margin: 0px !important;  
+  border-collapse: collapse;
+}
+</style>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../A1/Special_questions_with_what,where,when,why,who,which,whose,whome,how,how_much_(many).html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../A1/Quantifiers_much,many,a_lot_of,a_little,a_few,some,any.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../A1/Special_questions_with_what,where,when,why,who,which,whose,whome,how,how_much_(many).html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../A1/Quantifiers_much,many,a_lot_of,a_little,a_few,some,any.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../src/js/general.js"></script>
+        <script src="../src/js/practice.js"></script>
+        <script src="../src/js/practice2.js"></script>
+        <script src="../src/js/practice3.js"></script>
+        <script src="../src/js/editorVoice.js"></script>
+        <script src="../src/js/editor_symbol.js"></script>
+        <script src="../src/js/listen.js"></script>
+        <script src="../src/js/textual_analysis.js"></script>
+        <script src="../src/js/compromise_v14.15.0.js"></script>
+
+
+
+    </div>
+    </body>
+</html>
