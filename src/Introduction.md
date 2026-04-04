@@ -1972,6 +1972,8 @@ whisper audio.opus --model base.en --language en --output_format vtt --device cp
 whisper audio.opus --model medium --language en --output_format vtt --device cpu --temperature 0 --beam_size 5
 
 
+whisper audio.opus --model base.en --language en --output_format vtt --device cpu --word_timestamps True --temperature 0 --beam_size 5 --max_words_per_line 12
+
 # Деактивация окружения:
 deactivate
 ```
