@@ -182,7 +182,7 @@ function getAllWordsLevels(text){
                     
                 if (o[1] == 3 && !show_b1.includes(o[0])){ show_b1.push(o[0]);} 
                 
-                if (o[1] == 4 && !show_b2.includes(o[0])){ show_b2.push(o[0][0]);}              
+                if (o[1] == 4 && !show_b2.includes(o[0])){ show_b2.push(o[0]);}              
                 
                 if (o[1] == 5 && !show_c1.includes(o[0])){ show_c1.push(o[0]);}                
                     

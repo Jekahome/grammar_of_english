@@ -34,9 +34,21 @@ class Listen {
         this.#pageSize = pageSize;
         this.wordsLevel = [];
         this.textRaw = "";
+
+        const container_complexity = document.createElement('div');
+        container_complexity.id="listen-complexity";     
+        container.appendChild(container_complexity);
+        const br = document.createElement('br');
+        container.appendChild(br);
+ 
+ 
         this.createAudioSettings(container, audio);
         this.init();
-        this.loadVTT(subtitles);
+        this.loadVTT(subtitles).then(e=>{
+            const container_complexity = document.getElementById('listen-complexity');
+            this.renderComplexity(container_complexity);
+        });
+        
     }
  
     init() {
@@ -57,9 +69,9 @@ class Listen {
 
     async loadVTT(url) {
         this.subs = await this.parseVTT(url);
-        if (this.#showLevel){
-            this.wordsLevel = getAllWordsLevels(this.textRaw);
-        }
+         
+        this.wordsLevel = getAllWordsLevels(this.textRaw);
+         
         this.page = -1; // Сброс страницы при новой загрузке
         this.drawPage();
         this.buildTimeRout();
@@ -204,8 +216,7 @@ class Listen {
     }
 
     createAudioSettings(container, path_audio) {
-        container.innerHTML = '';
-
+          
         const listen_subs = document.createElement('div');
         listen_subs.id="listen-subs";
         
@@ -215,6 +226,7 @@ class Listen {
         {
             const listen_audio = document.createElement('audio');
             listen_audio.id = 'listen-audio';
+            listen_audio.preload="none";
             listen_audio.controls = true;
             listen_audio.style.width = '100%';
             
@@ -411,4 +423,40 @@ class Listen {
                 
         container.appendChild(listen_subs);
     }
+
+    renderComplexity(container_complexity) {
+        const SKIP = new Set(['show_a1', 'show_other']);
+        const ul = document.createElement('ul');
+
+        for (const [key, words] of Object.entries(this.wordsLevel)) {
+            if (SKIP.has(key)) continue;
+            const match = key.match(/^show_([a-c]\d)$/);
+            if (!match || words.length === 0) continue;
+
+            const label = match[1].toUpperCase();
+
+            const cleaned = words
+                .map(w => w.replace(/[^a-zA-Z\-]/g, ''))
+                .filter(w => w.length > 0);
+
+            const seen = new Map();
+            for (const w of cleaned) {
+                if (!seen.has(w.toLowerCase())) seen.set(w.toLowerCase(), w);
+            }
+            const deduped = [...seen.values()]
+                .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+
+            const li = document.createElement('li');
+            li.textContent = `${label}: ${deduped.join(', ')}`;
+            ul.appendChild(li);
+        }
+
+        container_complexity.appendChild(ul);
+    }
 }
+
+
+
+
+
+
