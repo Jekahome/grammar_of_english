@@ -9,7 +9,7 @@ title = "Grammar of English"
 site-url = "/grammar_of_english/"
 smart-punctuation = false
 no-section-label = false
-additional-css = ["theme/css/theme.css","theme/css/listen.css"]
+additional-css = ["theme/css/theme.css","theme/css/listen.css","theme/css/Garamond.font.css"]
 additional-js = [
     
     "src/js/general.js",

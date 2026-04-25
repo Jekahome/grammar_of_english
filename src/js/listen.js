@@ -48,7 +48,7 @@ class Listen {
             const container_complexity = document.getElementById('listen-complexity');
             this.renderComplexity(container_complexity);
         });
-        
+  
     }
  
     init() {
@@ -426,6 +426,12 @@ class Listen {
 
     renderComplexity(container_complexity) {
         const SKIP = new Set(['show_a1', 'show_other']);
+ 
+        const h4 = document.createElement('h4');
+        h4.innerText = "Advanced vocabulary in this text";
+        container_complexity.appendChild(h4);
+
+
         const ul = document.createElement('ul');
 
         for (const [key, words] of Object.entries(this.wordsLevel)) {

@@ -49,3 +49,104 @@
   text-decoration-color: rgb(119, 119, 119);
   text-decoration-line: underline;
 }
+
+#listen-read {
+    font-family: "Garamond", "Georgia", serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* READ */ 
+ 
+#listen-read .book-page {
+      max-width: 1260px;
+      margin: 2rem auto;
+      padding: 3rem 3.5rem;
+      background: var(--color-background-primary);
+      border: 0.5px solid var(--color-border-tertiary);
+      border-radius: var(--border-radius-lg);
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.85;
+      color: var(--color-text-primary);
+      position: relative;
+    }
+
+#listen-read .chapter-label {
+      font-family: 'Cinzel', serif;
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--color-text-secondary);
+      text-align: center;
+      margin-bottom: 0.4rem;
+    }
+
+#listen-read .chapter-title {
+      font-family: 'Cinzel', serif;
+      font-size: 22px;
+      font-weight: 600;
+      text-align: center;
+      margin: 0 0 2.4rem;
+      color: var(--color-text-primary);
+      letter-spacing: 0.03em;
+    }
+
+#listen-read .chapter-divider {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+#listen-read .chapter-divider::before,
+#listen-read .chapter-divider::after {
+      content: '';
+      flex: 1;
+      height: 0.5px;
+      background: var(--color-border-secondary);
+    }
+
+#listen-read .chapter-divider span {
+      font-size: 14px;
+      color: var(--color-text-secondary);
+    }
+
+#listen-read .book-body p {
+      margin: 0 0 1em;
+      text-align: justify;
+      hyphens: auto;
+      font-size: 21px;
+      line-height: 1.85;
+    }
+
+#listen-read .book-body p.first-para::first-letter {
+      font-family: 'Cinzel', serif;
+      float: left;
+      font-size: 4em;
+      line-height: 0.75;
+      margin: 0.05em 0.08em 0 0;
+      color: var(--color-text-primary);
+      font-weight: 600;
+    }
+
+#listen-read .book-body em {
+      font-style: italic;
+    }
+
+#listen-read .page-number {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 12px;
+      color: var(--color-text-secondary);
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.1em;
+    }
+
+#listen-read .dialogue-line {
+      margin: 0 0 0.5em;
+      padding-left: 1.2em;
+      text-indent: -1.2em;
+    }
+ 
