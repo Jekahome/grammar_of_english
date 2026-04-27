@@ -1,24 +1,9 @@
 # Listen: Beauty and the Beast
 
 <div id="listen-read">
+
+<details> <summary>Chapter One</summary><div class="book-page"> <div class="chapter-label">Chapter One</div> <div class="chapter-title">Beauty's Family</div> <div class="chapter-divider"><span> ~ ~ ~ </span></div> <div class="book-body"> <p class="first-para">A rich man lives in a big city near the sea. He has got three daughters and three sons. One daughter is called Beauty because she is very beautiful. The other two daughters are called Rosalind and Hortensia. They are lazy and unfriendly. They like going out and having fun. They both want to find a rich husband. They do not like Beauty because she is beautiful.</p><p>Beauty has got long red hair. She is kind and friendly. She likes staying at home and reading books. She also likes playing the piano.</p><p>Beauty's father is a merchant. One day he loses all his money because his ship is lost at sea.</p><p>"My dear children," he says sadly. "I haven't got much money. We're poor. We must leave this big house and go and live in the country."</p>  
  
-
-<details>
-<summary>Chapter One</summary>
-
-<div class="book-page">
-  <div class="chapter-label">Chapter One</div>
-  <div class="chapter-title">Beauty's Family</div>
-  <div class="chapter-divider"><span> ~ ~ ~ </span></div>
-  <div class="book-body">
-    <p class="first-para">A rich man lives in a big city near the sea. He has got three daughters and three sons. One daughter is called Beauty because she is very beautiful. The other two daughters are called Rosalind and Hortensia. They are lazy and unfriendly. They like going out and having fun. They both want to find a rich husband. They do not like Beauty because she is beautiful.</p>
-
-<p>Beauty has got long red hair. She is kind and friendly. She likes staying at home and reading books. She also likes playing the piano.</p>
-
-<p>Beauty's father is a merchant. One day he loses all his money because his ship is lost at sea.</p>
-
-<p>"My dear children," he says sadly. "I haven't got much money. We're poor. We must leave this big house and go and live in the country."</p>
-
 <p>"Oh dear," say the two sisters. "We are poor. This is terrible. What bad luck."</p>
 
 <p>"Now we have to work," says Beauty's father.</p>
@@ -35,23 +20,39 @@
 
 <div class="chapter-divider"><span> ~ * ~ </span></div>
 
-<p><em>Listening activity. Here is an example.</em></p>
-<p><em>"What does Rosalind want to buy for the summer?"</em></p>
-<p><em>"I want to buy a new red hat for the summer."</em></p>
-<p><em>"But you have already got a pink one. What about a nice blue hat?"</em></p>
-<p><em>"No. I like red."</em></p>
-<p><em>"One. Which shop is next to Marie's hat shop?"</em></p>
-<p><em>"Well, let's go to Marie's hat shop."</em></p>
-<p><em>"Is the shop near the park?"</em></p>
-<p><em>"No. It's next to the bakery. Oh, I remember. Opposite the library."</em></p>
-<p><em>"Two. What does Rosalind want to buy at the bakery?"</em></p>
-<p><em>"Oh good. Then we can buy some chocolate biscuits at the bakery. I love them."</em></p>
-<p><em>"Me too. I like chocolate cake and chocolate biscuits. Do we need to get some bread too?"</em></p>
-<p><em>"I don't think so. There is lots of bread at home."</em></p>
-<p><em>"Three. What time does Marie's hat shop open on Saturdays?"</em></p>
-<p><em>"What time does the hat shop open? It usually opens at nine, but today is Saturday and it opens at half past nine. We must wait for fifteen minutes then."</em></p>
-<p><em>"Four. What does Hortensia want to buy for the party?"</em></p>
-<p><em>"Let's put our coats on and go. Okay. Today I want to buy some new white shoes to wear with my white dress for the party. But you have already got nine pairs of white shoes."</em></p>
+<p>Listening activity. Here is an example.</p>
+
+<p>"What does Rosalind want to buy for the summer?"</p>
+
+<p>"I want to buy a new red hat for the summer."</p>
+
+<p>"But you have already got a pink one. What about a nice blue hat?"</p>
+
+<p>"No. I like red."</p>
+
+<p>"One. Which shop is next to Marie's hat shop?"</p>
+
+<p>"Well, let's go to Marie's hat shop."</p>
+
+<p>"Is the shop near the park?"</p>
+
+<p>"No. It's next to the bakery. Oh, I remember. Opposite the library."</p>
+
+<p>"Two. What does Rosalind want to buy at the bakery?"</p>
+
+<p>"Oh good. Then we can buy some chocolate biscuits at the bakery. I love them."</p>
+
+<p>"Me too. I like chocolate cake and chocolate biscuits. Do we need to get some bread too?"</p>
+
+<p>"I don't think so. There is lots of bread at home."</p>
+
+<p>"Three. What time does Marie's hat shop open on Saturdays?"</p>
+
+<p>"What time does the hat shop open? It usually opens at nine, but today is Saturday and it opens at half past nine. We must wait for fifteen minutes then."</p>
+
+<p>"Four. What does Hortensia want to buy for the party?"</p>
+
+<p>"Let's put our coats on and go. Okay. Today I want to buy some new white shoes to wear with my white dress for the party. But you have already got nine pairs of white shoes."</p>
 
   </div>
   <div class="page-number">· 1 ·</div>
@@ -127,31 +128,47 @@
 
 <div class="chapter-divider"><span> ~ * ~ </span></div>
 
-<p><em>Listening activity. Here is an example.</em></p>
-<p><em>"Where does Beauty's father's ship come from?"</em></p>
-<p><em>"Good morning. Can you help me? I'm looking for my ship."</em></p>
-<p><em>"There are eleven ships in the port this morning. What's the name of the ship?"</em></p>
-<p><em>"I don't know. It's a big ship and it comes from Italy."</em></p>
-<p><em>"There are two big ships in the port. One from England and another from Turkey."</em></p>
-<p><em>"No. My ship is from Italy. One. What is the ship like?"</em></p>
-<p><em>"Oh, perhaps you're looking for the blue one."</em></p>
-<p><em>"No. The ship is red and black."</em></p>
-<p><em>"Now I remember. It's near the black ship from Turkey. Two. Who is the captain of the ship?"</em></p>
-<p><em>"Good. Who is the captain of the ship?"</em></p>
-<p><em>"I don't know his name, but he is a young man with brown hair."</em></p>
-<p><em>"Does he wear glasses?"</em></p>
-<p><em>"Yes, he does. Three. What time does the captain go to his ship?"</em></p>
-<p><em>"What time does he usually come here? He usually comes very early, at half past six in the morning, and he goes to his office. Then, at eight o'clock, he goes to his ship. Four. How does he usually travel to work?"</em></p>
-<p><em>"Does he ride his horse to work in the morning?"</em></p>
-<p><em>"Well, he usually comes by boat. He sometimes comes here on foot in summer. Thank you."</em></p>
+<p>Listening activity. Here is an example.</p>
+
+<p>"Where does Beauty's father's ship come from?"</p>
+
+<p>"Good morning. Can you help me? I'm looking for my ship."</p>
+
+<p>"There are eleven ships in the port this morning. What's the name of the ship?"</p>
+
+<p>"I don't know. It's a big ship and it comes from Italy."</p>
+
+<p>"There are two big ships in the port. One from England and another from Turkey."</p>
+
+<p>"No. My ship is from Italy. One. What is the ship like?"</p>
+
+<p>"Oh, perhaps you're looking for the blue one."</p>
+
+<p>"No. The ship is red and black."</p>
+
+<p>"Now I remember. It's near the black ship from Turkey. Two. Who is the captain of the ship?"</p>
+
+<p>"Good. Who is the captain of the ship?"</p>
+
+<p>"I don't know his name, but he is a young man with brown hair."</p>
+
+<p>"Does he wear glasses?"</p>
+
+<p>"Yes, he does. Three. What time does the captain go to his ship?"</p>
+
+<p>"What time does he usually come here? He usually comes very early, at half past six in the morning, and he goes to his office. Then, at eight o'clock, he goes to his ship. Four. How does he usually travel to work?"</p>
+
+<p>"Does he ride his horse to work in the morning?"</p>
+
+<p>"Well, he usually comes by boat. He sometimes comes here on foot in summer. Thank you."</p>
 
 <div class="chapter-divider"><span> ~ * ~ </span></div>
 
-<p><em>Castles. What is a castle? A castle is the home of a king or a very rich family. It protects the people who live there. Castles have got high walls and small windows, so they are difficult to attack. Castles are usually near rivers, near the sea, on hills or on mountains.</em></p>
+<p>Castles. What is a castle? A castle is the home of a king or a very rich family. It protects the people who live there. Castles have got high walls and small windows, so they are difficult to attack. Castles are usually near rivers, near the sea, on hills or on mountains.</p>
 
-<p><em>History of castles. In the 10th century, people build small wooden castles in Europe. In 1066, William the Conqueror attacks England. He is from Normandy in France. He builds the first big stone castles in England. He builds the Tower of London in about 1078. The Normans build about 80 stone castles in England. There are a lot of stone castles in Europe in the 12th and 13th centuries. They are big, and they can protect a lot of people.</em></p>
+<p>History of castles. In the 10th century, people build small wooden castles in Europe. In 1066, William the Conqueror attacks England. He is from Normandy in France. He builds the first big stone castles in England. He builds the Tower of London in about 1078. The Normans build about 80 stone castles in England. There are a lot of stone castles in Europe in the 12th and 13th centuries. They are big, and they can protect a lot of people.</p>
 
-<p><em>Let's look at some important castles in Europe. Bodiam Castle, East Sussex, England. This is an old medieval castle with big square walls and a moat around it. Cawdor Castle, Scotland. This big castle has got a long history of ghosts and terrible secrets. It has got more than 100 rooms. Chenonceau Castle, France. Chenonceau Castle is on the Cher River in the famous Loire Valley. There are a lot of beautiful castles in this valley. Neuschwanstein Castle, Germany. This castle is like a picture in a fairy tale book. King Ludwig II built it in 1869 as his home.</em></p>
+<p>Let's look at some important castles in Europe. Bodiam Castle, East Sussex, England. This is an old medieval castle with big square walls and a moat around it. Cawdor Castle, Scotland. This big castle has got a long history of ghosts and terrible secrets. It has got more than 100 rooms. Chenonceau Castle, France. Chenonceau Castle is on the Cher River in the famous Loire Valley. There are a lot of beautiful castles in this valley. Neuschwanstein Castle, Germany. This castle is like a picture in a fairy tale book. King Ludwig II built it in 1869 as his home.</p>
 
   </div>
   <div class="page-number">· 2 ·</div>
@@ -235,6 +252,7 @@
 
 </details>
 
+ 
 <details>
 <summary>Chapter Four</summary>
 
@@ -359,21 +377,21 @@
 
 <div class="chapter-divider"><span> ~ * ~ </span></div>
 
-<p><em>Flowers. There are about 200,000 different kinds of flowers in the world. Some are very small and others are very big, like the giant rafflesia. Let's look at some of these flowers.</em></p>
+<p>Flowers. There are about 200,000 different kinds of flowers in the world. Some are very small and others are very big, like the giant rafflesia. Let's look at some of these flowers.</p>
 
-<p><em>Flowers that grow in the desert. Some flowers grow in the desert. They need hot weather, but they do not need much water. Some of these flowers are the Apache plume, the desert lily, the yucca, and the prickly pear.</em></p>
+<p>Flowers that grow in the desert. Some flowers grow in the desert. They need hot weather, but they do not need much water. Some of these flowers are the Apache plume, the desert lily, the yucca, and the prickly pear.</p>
 
-<p><em>Flowers that grow on water. Flowers like the lotus, the water lily, and the Louisiana iris grow in water. These flowers need very warm weather. You can see them in ponds and lakes.</em></p>
+<p>Flowers that grow on water. Flowers like the lotus, the water lily, and the Louisiana iris grow in water. These flowers need very warm weather. You can see them in ponds and lakes.</p>
 
-<p><em>Tropical flowers. There are hundreds of beautiful tropical flowers in Hawaii and in the islands of the South Pacific. Hawaiian orchids are famous everywhere. Hawaiians make leis. They are colourful flower necklaces. They wear them and give them to tourists.</em></p>
+<p>Tropical flowers. There are hundreds of beautiful tropical flowers in Hawaii and in the islands of the South Pacific. Hawaiian orchids are famous everywhere. Hawaiians make leis. They are colourful flower necklaces. They wear them and give them to tourists.</p>
 
-<p><em>Flowers as decorations. People use flowers as decorations for festivities like birthdays and weddings. On St. Valentine's Day, the favourite flower is the red rose.</em></p>
+<p>Flowers as decorations. People use flowers as decorations for festivities like birthdays and weddings. On St. Valentine's Day, the favourite flower is the red rose.</p>
 
-<p><em>Flowers in art. Flowers are the favourite subject of a lot of painters. Van Gogh, Monet, and Renoir all paint flowers. Van Gogh is famous for sunflowers, and Monet is famous for water lilies.</em></p>
+<p>Flowers in art. Flowers are the favourite subject of a lot of painters. Van Gogh, Monet, and Renoir all paint flowers. Van Gogh is famous for sunflowers, and Monet is famous for water lilies.</p>
 
-<p><em>Flowers we can eat. Did you know that you can eat flowers? Some of the vegetables we eat are flowers. Broccoli, cauliflowers, and artichokes are flower vegetables. In Japan, people like eating cherry blossom soup. Some people make tea with rose petals, and others put them in salads.</em></p>
+<p>Flowers we can eat. Did you know that you can eat flowers? Some of the vegetables we eat are flowers. Broccoli, cauliflowers, and artichokes are flower vegetables. In Japan, people like eating cherry blossom soup. Some people make tea with rose petals, and others put them in salads.</p>
 
-<p><em>Flowers and perfumes. People make wonderful perfumes with flowers like roses, jasmine, violets, lilacs, orange blossoms, red tulips and peonies.</em></p>
+<p>Flowers and perfumes. People make wonderful perfumes with flowers like roses, jasmine, violets, lilacs, orange blossoms, red tulips and peonies.</p>
 
   </div>
   <div class="page-number">· 5 ·</div>
@@ -569,7 +587,7 @@
 
 ---
 
-</details>
+</details>  
 
 </div>
 
