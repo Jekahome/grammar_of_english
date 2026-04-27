@@ -425,7 +425,7 @@ class Listen {
     }
 
     renderComplexity(container_complexity) {
-        const SKIP = new Set(['show_a1', 'show_other']);
+        const SKIP = new Set(['show_a1']);//  'show_other'
  
         const h4 = document.createElement('h4');
         h4.innerText = "Advanced vocabulary in this text";
