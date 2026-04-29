@@ -453,7 +453,7 @@ class Listen {
                 .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 
             const li = document.createElement('li');
-            li.textContent = `${label}: ${deduped.join(', ')}`;
+            li.innerHTML = `<b>${label}</b>: ${deduped.join(', ')}`;
             ul.appendChild(li);
         }
 
