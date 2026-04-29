@@ -506,6 +506,7 @@ Future in the Past
   * нет практики задавать вопросы
 
 * [ ] **3** listen
+  * сортировать аудиокниги по уровню сложности (количество слов выше уровня)
   * править текст субтитров
   * найти на youtube [1](https://www.youtube.com/results?search_query=Adaptive+Level+0+AudioBooks), [2](https://www.youtube.com/playlist?list=PLsABmu-DQz-6WxP9pGjR9-SsiFJpwMRpE), [3](https://www.youtube.com/@englishconversation4703/videos) адаптивные аудио
   * для закрепления восприятия на слух - 

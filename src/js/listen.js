@@ -233,7 +233,7 @@ class Listen {
             const source = document.createElement('source');
             
             source.src = path_audio;
-            source.type = 'audio/ogg';
+            source.type = 'audio/ogg; codecs=opus';
             
             listen_audio.appendChild(source);
  
