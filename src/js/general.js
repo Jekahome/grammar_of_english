@@ -6,6 +6,11 @@ window.globalScriptReady = new Promise(resolve => {
         document.querySelectorAll('.quiet-loop').forEach(function(audio) {
           audio.volume = 0.2;
           audio.loop = true;
+
+          const isGithub = window.location.hostname.includes('github.io');
+          const url = isGithub ? '/grammar_of_english' : '';
+          audio.src=url+audio.src;
+
         });
 
     });
