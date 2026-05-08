@@ -114,6 +114,7 @@ https://www.englishclub.com/listening/guide.php
 
 Для закрепления и привыкания подходит пассивный способ: 
 * просмотр видео [youtube English A1](https://www.youtube.com/results?search_query=English), 
+* [English Conversation](https://www.youtube.com/playlist?list=PLzVm1SmjPKc_OnC56MbILOmdXvGV_3kE9)
 * [Slow English](https://www.youtube.com/watch?v=xEf8OYRJtws&list=PLTI5VrQW0CazhyD9Kyj7Srs-S1iT0WIul), 
 * [Easy English](https://www.youtube.com/watch?v=ri2uKTpw4lQ&list=PL5uXqO84WYGuBKdwWMjxYGmF4am771fxS), 
 * [A1 English](https://www.youtube.com/watch?v=hBVequEEoAQ&list=PLv4XgHS4V3TJsIpVSOwhfJ3uexzSCf7QA), 
@@ -302,7 +303,7 @@ I will be smart. - Я буду умным.
 
 
 
-#### 5. Отвечать и задавать вопросы (с собой или chatGPT)
+#### 5. Отвечать и задавать вопросы (с собой или LLM's)
 
 Говорить... Мы уже знаем смысл слов, и как строится предложение, и даже как оно звучит, и можем его произнести. Осталось сформировать в нужный момент эти знания прямо в голове. 
 В идеале, этот важный этап отрабатывается в паре, задавая друг другу вопросы из этих предложений. 
@@ -506,15 +507,13 @@ Future in the Past
   * нет практики задавать вопросы
 
 * [ ] **3** listen
-  * формат аудио opus не воспроизводится на ios (нужно mp3)
-  * сортировать аудиокниги по уровню сложности (количество слов выше уровня)
+  * формат аудио opus не воспроизводится в мобильном браузере ios (нужно mp3)
   * править текст субтитров
   * найти на youtube [1](https://www.youtube.com/results?search_query=Adaptive+Level+0+AudioBooks), [2](https://www.youtube.com/playlist?list=PLsABmu-DQz-6WxP9pGjR9-SsiFJpwMRpE), [3](https://www.youtube.com/@englishconversation4703/videos) адаптивные аудио
-  * для закрепления восприятия на слух - 
+  * для закрепления восприятия на слух 
     * Quiz задать вопрос (голосом) на знание сюжета прослушанного контента. 
     * перефразировать услышанное. (тоже LLM)
     * желательно сразу писать за диктором т.е. письмо под диктовку
-  * добавить остальные адаптивные книги с озвучкой (начать с подходящим набором слов уровня)
   * где найти видео (мультики, сказки для детей) по субтитрам что бы понять к какому уровню его применять для практики?
       * https://www.eslfast.com/
       * https://www.esl-lab.com/basic-english/
@@ -2062,7 +2061,15 @@ ffmpeg -f concat -safe 0 -i list.txt -c copy output.mp3
 Захват аудио с динамика 
 
 ```
-ffmpeg -f pulse -i alsa_output.pci-0000_05_00.6.analog-stereo.monitor -ac 2 -ar 44100 output.flac
+$ ffmpeg -f pulse -i default -ac 2 -ar 44100 output.flac
+
+# все доступные источники звука (запустите прослушивание, чтобы найти источник для захвата звука. Пометка RUNNING и есть наш источник)
+$ pactl list short sources
+868	alsa_output.pci-0000_05_00.6.analog-stereo.monitor	PipeWire	s32le 2ch 48000Hz	RUNNING
+869	alsa_input.pci-0000_05_00.6.analog-stereo	PipeWire	s32le 2ch 48000Hz	SUSPENDED
+1027	alsa_output.pci-0000_01_00.1.hdmi-stereo.monitor	PipeWire	s32le 2ch 48000Hz	SUSPENDED
+  
+$ ffmpeg -f pulse -i alsa_output.pci-0000_05_00.6.analog-stereo.monitor -ac 2 -ar 44100 output.flac
 ```
 
 

@@ -1,10 +1,390 @@
 # Pronouns (Personal, Demonstrative)
 **Personal pronouns (личные местоимения)** имеют два падежа — **именительный** и **косвенный**.
 
+## Звук TH широко распространен в лексике, начиная с артикля the и местоимений...
+
+**Звонкий звук ${\eth}$, требует участия голосовых связок.**
+При произношении вибрирует гортань.
+
+
+[Как произносить слово that, звук ð, th](https://www.youtube.com/shorts/uYBm4T9bWGI)
+
+<video width="400" controls volume="0.3" class="quiet-loop">
+  <source src="/sources/that.mp4" type="video/mp4">
+</video>
+
+[englishbad: Th](https://www.youtube.com/watch?v=w5ZhhGQrAwE)
+
+<video width="400" controls volume="0.3" class="quiet-loop">
+  <source src="/sources/englishbad_th.mp4" type="video/mp4">
+</video>
+ 
+Тренировка: слушать и повторять
+
+* They gather. Those other. This brother. These mothers. That feather.
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/th_pronouns.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/th_pronouns_tophonetics.mp3" type="audio/mpeg">
+  </audio>
+
+<details>
+<summary> <b> Звонкий звук ${\eth}$ </b></summary>
+ 
+
+Сочетания $[\eth]$ с другими звуками:
+
+1. Звонкий $[\eth]$ + Гласные
+
+Звук $[\eth]$ может сочетаться практически с любой гласной:
+*   **С "a":** *than* $[\eth æn]$, *that* $[\eth æt]$, *father* $[ˈf\text{ɑː}\ethə(r)]$.
+
+  ```
+    Bigger than a house — больше, чем дом.
+    More than usual — больше, чем обычно.
+    Rather than waiting — вместо того чтобы ждать.
+    Less than half — меньше половины.
+  ```
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/than_google.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/than_tophonetics.mp3" type="audio/mpeg">
+  </audio>
+
+  ```
+    That is right for us. — Это правильно для нас / Это нам подходит.
+    That one over there. — Вон тот (который находится далеко).
+    Soon after that. — Вскоре после этого.
+  ```
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/that_google.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/that_tophonetics.mp3" type="audio/mpeg">
+  </audio>
+  
+  ```
+    One of the founding fathers... — Один из отцов-основателей (проекта, компании).
+    Just like father, like son. — Прямо как отец и сын (в плане сходства привычек).
+    He was a father figure to me. — Он был для меня как отец.
+  ```
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/father_google.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/father_tophonetics.mp3" type="audio/mpeg">
+  </audio>
+
+
+*   **С "e":** *the* $[\ethə]$, *them* $[\eth em]$, *then* $[\eth en]$, *weather* $[ˈwe\ethə(r)]$.
+
+  ```
+    At the moment, I’m busy. — В данный момент я занят.
+    Take all of them. — Возьми их все.
+    Since then, life has changed. — С тех пор жизнь изменилась.
+    The weather is nice. — Погода хорошая.
+  ```
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/them_google.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/them_tophonetics.mp3" type="audio/mpeg">
+  </audio>
+
+
+*   **С "i":** *this* $[\eth\text{ɪ}s]$, *with* $[w\text{ɪ}\eth]$, *hither* (сюда — устар.).
+
+  ```
+  This way, please. — Сюда, пожалуйста.
+  Come this way. — Идите этим путем / Проходите сюда.
+  Go with me. — Пойдем со мной.
+  ```
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/this_google.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/this_tophonetics.mp3" type="audio/mpeg">
+  </audio>
+
+
+*   **С "o":** *those* $[\eth əʊz]$, *mother* $[ˈm\text{ʌ}\ethə(r)]$, *other* $[ˈ\text{ʌ}\ethə(r)]$.
+
+  ```
+  Those who know me... — Те, кто меня знают...
+  Respect Mother Nature. — Уважайте мать-природу.
+  Other people. — Другие люди.
+  Some other time. — Как-нибудь в другой раз.
+  ```
+ 
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/other_google.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/other_tophonetics.mp3" type="audio/mpeg">
+  </audio>
+
+
+*   **С "u":** *thus* $[\eth \text{ʌ}s]$ — таким образом.
+
+  ```
+  Thus far... — До сих пор / На данный момент / Пока что.
+  Not thus. — Не так / Не таким образом.
+  He spoke thus. — Он говорил так / Он выразился следующим образом.
+  Thus, we win. — Итак, мы побеждаем.
+  It is thus. — Это так / Таким образом, дело обстоит именно так.
+  ```
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/thus_google.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/thus_tophonetics.mp3" type="audio/mpeg">
+  </audio>
+
+
+2. Звонкий $[\eth]$ + Немая "e" (на конце слов)
+Это важное правило: добавление немой **e** в конце слова превращает глухой $[\theta]$ в звонкий $[\eth]$.
+*   *Breath* $[\theta]$ (дыхание) $\rightarrow$ *Breath**e*** $[\eth]$ (дышать).
+*   *Bath* $[\theta]$ (ванна) $\rightarrow$ *Bath**e*** $[\eth]$ (принимать ванну).
+*   *Cloth* $[\theta]$ (ткань) $\rightarrow$ *Cloth**e*** $[\eth]$ (одевать).
+*   *Teeth* $[\theta]$ (зубы) $\rightarrow$ *Teeth**e*** $[\eth]$ (прорезаться — о зубах).
+
+  ```
+  Breathe deeply and relax. — Дышите глубоко и расслабьтесь.
+  To bathe in the sun's rays. — Купаться в лучах солнца.
+  I will clothe you. — Я одену тебя.
+  ```
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/clothe_google.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/clothe_tophonetics.mp3" type="audio/mpeg">
+  </audio>
+
+
+
+3. Звонкий $[\eth]$ + Согласный "r"
+В некоторых словах звонкий звук плавно перетекает в звук $[r]$.
+*   **Brethren** $[ˈbre\eth rən]$ — (собратья).
+*   **Farther** $[ˈf\text{ɑː}\ethə(r)]$ — (дальше).
+*   **Further** $[ˈf\text{ɜː}\ethə(r)]$ — (дальнейший).
+*   **Northern** $[ˈnɔː\ethə(r)n]$ — (северный).
+
+  ```
+  Go farther. — Иди дальше.
+  Much farther. — Гораздо дальше.
+  Northern lights. — Северное сияние.
+  No further questions. — Вопросов больше нет.
+  ```
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/farther_google.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/farther_tophonetics.mp3" type="audio/mpeg">
+  </audio>
+
+
+
+4. Звонкий $[\eth]$ + Окончание "s" (Множественное число)
+Это сложный случай. В некоторых словах при добавлении **-s** глухой звук становится звонким перед $[\text{z}]$.
+*   *Mouth* $[\text{maʊ}\theta]$ (рот) $\rightarrow$ *Mouths* $[\text{maʊ}\eth z]$ (рты).
+*   *Path* $[\text{p\text{ɑː}}\theta]$ (путь) $\rightarrow$ *Paths* $[\text{p\text{ɑː}}\eth z]$ (пути).
+    > *Примечание: современные носители языка часто оставляют звук глухим и в этих формах, но классический вариант — звонкий.*
+
+  ```
+  Shut your mouths! — Закройте свои рты!
+  Many mouths to feed. — Нужно прокормить много ртов.
+  Different paths. — Разные пути.
+  All paths lead to Rome. — Все пути ведут в Рим.
+  ```
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/mouths_google.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/mouths_tophonetics.mp3" type="audio/mpeg">
+  </audio>
+
+
+---
+
+Указательные и личные местоимения:
+* The — определенный артикль: The best (лучший), the only (единственный), at the moment (в данный момент), the rest of... (остальная часть чего-либо), the apple (яблоко)
+  * Перед гласными звуками (например, the apple) артикль the часто произносится как $[ðі]$, а перед согласными — как $[ðə]$.
+* This — этот: This way (сюда/этим путем), this morning (этим утром), this kind of... (такого рода). 
+* That — тот: That’s right (верно/правильно), that one (вон тот), after that (после этого).
+* These — эти: These days (в наши дни/в последнее время), these people (эти люди).  
+* Those — те: Those who... (те, кто...), in those days (в те времена/в те дни).
+* They — они: They say (говорят/люди говорят), they are (они есть), they both (они оба).
+* Them — их, им: All of them (все они/всех их), tell them (скажи им), with them (с ними).  
+* Their — их (чей?): Their own (их собственный), their children (их дети), in their opinion (по их мнению).
+
+Наречия и союзы
+* There — там: There is / There are (конструкция наличия), over there (вон там), hi there! (привет!).
+* Then — тогда, потом: Back then (в те времена), since then (с тех пор), just then (как раз тогда), see you then (до встречи/увидимся тогда).
+* Than — чем (при сравнении: bigger than...): More than (больше чем), rather than (скорее чем / вместо того чтобы), less than (меньше чем).
+  * Не путайте в письме и произношении then (время) и than (сравнение). В than звук $[a]$ более открытый.
+* Though — хотя: Even though (даже если/хотя), as though (как будто), thanks, though (все равно спасибо — в конце предложения).  
+* Although — несмотря на то что: Although it was raining... (хотя шел дождь...), although possible... (хотя это и возможно...).
+* Thus — таким образом: Thus far (до настоящего времени/пока что), and thus (и таким образом).
+* Therefore — поэтому: I think, therefore I am (Я мыслю, следовательно, я существую), therefore, it is important... (следовательно, важно...).
+
+Слова, связанные с семьей
+* Mother — мать: Mother nature (мать-природа), expectant mother (будущая мама), single mother (мать-одиночка).
+* Father — отец: Founding fathers (отцы-основатели), like father, like son (яблоко от яблони / каков отец, таков и сын), father figure (фигура отца).
+* Brother — брат: Big brother (старший брат), younger brother (младший брат), brother-in-law (деверь/шурин/зять).
+* Another — другой: Another one (еще один), one after another (один за другим), in another way (другим способом/иначе), another time (в другой раз).
+
+Глаголы и предлоги
+* With — с, вместе с: With me/you (со мной/с тобой), deal with (иметь дело с...), along with (вместе с), with ease (с легкостью).
+* Breathe — дышать: Breathe deeply (дышать глубоко), breathe life into (вдохнуть жизнь в...), breathe freely (дышать свободно).
+* Bathe — принимать ванну: Bathe a wound (промыть рану), bathe in the sun (нежиться на солнце).
+  * В отличие от существительного bath (глухой звук), в слове bathe звук th всегда звонкий.
+* Soothe — успокаивать: Soothe a baby (успокоить ребенка), soothe the pain (унять боль), soothing music (успокаивающая музыка).
+* Gather — собирать: Gather speed (набирать скорость), gather dust (пылиться/собирать пыль), gather friends (собирать друзей).
+
+
+</details>
+
+<br>
+
+**Прослушать текст со звонким звуком $[\eth]$ и посчитать его количество:**
+
+<audio controls loop volume="0.3" class="quiet-loop">
+  <source src="/sources/the_ringing_sound_of_th_google.mp3" type="audio/mpeg">
+</audio>
+
+<details>
+<summary> help text </summary>
+
+*   **This** is a cat. *(Это кот).*
+*   **That** is a car. *(То — машина).*
+*   **These** are my books. *(Это мои книги).*
+*   **Those** are my friends. *(Вон то — мои друзья).*
+*   **They** are happy. *(Они счастливы).*
+*   I see **them**. *(Я вижу их).*
+*   It is **their** house. *(Это их дом).*
+*   Look over **there**. *(Посмотри вон туда).*
+*   My **mother** is kind. *(Моя мама добрая).*
+*   My **father** is tall. *(Мой папа высокий).*
+*   I have a **brother**. *(У меня есть брат).*
+*   Open your **mouths**. *(Откройте рты).*
+*   I want the **other** pen. *(Я хочу другую ручку).*
+*   Give me **another** apple. *(Дай мне еще одно яблоко).*
+*   The **weather** is good. *(Погода хорошая).*
+*   Come **with** me. *(Пойдем со мной).*
+*   He is older **than** me. *(Он старше, чем я).*
+*   Eat, **then** sleep. *(Поешь, затем поспи).*
+*   It works **thus**. *(Это работает так / таким образом).*
+*   It is cold, **therefore** I stay home. *(Холодно, поэтому я остаюсь дома).*
+*   It is small, **though** strong. *(Он маленький, хотя сильный).*
+*   **Although** it’s late, I’m not tired. *(Хотя уже поздно, я не устал).*
+
+</details>
+
+ 
+<br>
+ 
+---
+
+
+<details>
+<summary><b>Глухой звук $[\theta]$, без участия голосовых связок.<b></summary>
+
+ 
+Если Вы положите пальцы на гортань и произнесете эти слова, вы не должны почувствовать вибрацию на звуке `th`. Если горло «дрожит», значит, Вы непроизвольно переходите на звонкий вариант.
+
+Начало слова (Существительные и прилагательные):
+*   Thing — вещь: The main thing (главное), the right thing (правильный поступок), one more thing (кое-что еще). 
+*   Something — что-то: Something else (что-то другое), something new (что-то новое), tell me something (скажи мне кое-что).
+*   Think — думать: Think about it (подумай об этом), think twice (подумай дважды), think big (мысли масштабно).  
+*   Thought — мысль: Deep thought (глубокая мысль), the very thought of... (одна лишь мысль о...), second thoughts (сомнения/передумки).
+*   Thank — благодарить: Thank you very much (большое спасибо), thank goodness (слава богу), no, thank you (нет, спасибо).
+*   Three — три: Three times (трижды/три раза), top three (тройка лидеров).  
+*   Third — третий: Third floor (четвертый этаж — в Британии это 3-й над уровнем земли), the third time's a charm (бог троицу любит). 
+*   Thirty — тридцать: Thirty minutes (тридцать минут), in his/her thirties (в возрасте от 30 до 39 лет).
+*   Through — через, сквозь: Go through (пройти сквозь/испытать), look through (просматривать), all through the night (всю ночь напролет).
+*   Thief — вор: Identity thief (вор личных данных), car thief (угонщик машин), stop, thief! (держите вора!).
+*   Theme — тема: Main theme (основная тема), theme park (парк аттракционов), recurring theme (повторяющаяся тема).
+*   Thick — толстый: Thick fog (густой туман), thick walls (толстые стены), thick hair (густые волосы). 
+*   Thin — тонкий: Thin slice (тонкий ломтик), thin air (разреженный воздух/пустота), thin line (тонкая грань).
+*   Thirsty — испытывающий жажду: Get thirsty (захотеть пить), thirsty for knowledge (жаждущий знаний).
+
+Конец слова:
+*   Bath — ванна: Take a bath (принимать ванну), bubble bath (пена для ванны), hot bath (горячая ванна).
+*   Breath — дыхание: Deep breath (глубокий вдох), short of breath (одышка), hold your breath (задержать дыхание), bad breath (неприятный запах изо рта). 
+*   Cloth — ткань, тряпка: Cotton cloth (хлопковая ткань), table cloth (скатерть), wash cloth (тряпка для мытья).
+*   Earth — Земля: Planet Earth (планета Земля), on Earth (на земле/в мире), earth surface (поверхность земли).
+*   Health — здоровье: Good health (хорошее здоровье), public health (здравоохранение), mental health (психическое здоровье).
+*   Month — месяц: Last month (в прошлом месяце), once a month (раз в месяц), for a month (в течение месяца).
+*   Mouth — рот: Keep your mouth shut (молчать/держать рот на замке), open your mouth (открой рот), word of mouth (сарафанное радио).
+*   Path — путь, тропа: Follow the path (следовать по пути/тропе), career path (карьерный путь), bike path (велосипедная дорожка).
+*   North — север: North Pole (Северный полюс), due north (строго на север), North America (Северная Америка).  
+*   South — юг: South coast (южное побережье), go south (идти на юг / идиома: ухудшаться), South Pole (Южный полюс).
+*   Wealth — богатство: Great wealth (огромное богатство), wealth distribution (распределение благ).
+
+Порядковые числительные:
+*   Fourth — четвертый: The fourth of July (четвертое июля), fourth floor (пятый этаж — по британской системе), fourth quarter (четвертый квартал).
+*   Fifth — пятый: Fifth Avenue (Пятая авеню), take the fifth (отказаться от дачи показаний — из права США), one-fifth (одна пятая часть).
+*   Sixth — шестой: Sixth sense (шестое чувство), the sixth grade (шестой класс), sixth row (шестой ряд).
+*   Tenth — десятый: Tenth anniversary (десятая годовщина), top tenth (верхняя десятая часть), the tenth century (десятый век).
+*   Twentieth — двадцатый: Twentieth century (двадцатый век), twentieth floor (двадцать первый этаж), his/her twentieth birthday (его/ее двадцатилетие).
+
+Звук $[\theta]$ сохраняется в середине слова, если за ним следует согласный или если это сложное слово:
+*   Healthy — здоровый: Healthy lifestyle (здоровый образ жизни), healthy diet (здоровая диета), healthy competition (здоровая конкуренция).
+*   Wealthy — богатый: Wealthy family (богатая семья), wealthy nation (богатое государство), become wealthy (разбогатеть).
+*   Anything — что угодно: Anything else? (Что-нибудь еще?), hardly anything (почти ничего), if anything (если уж на то пошло).
+*   Nothing — ничего: Nothing special (ничего особенного), nothing personal (ничего личного), better than nothing (лучше, чем ничего).
+*   Toothbrush — зубная щетка: Electric toothbrush (электрическая зубная щетка), soft toothbrush (мягкая зубная щетка), use a toothbrush (пользоваться зубной щеткой).
+*   Athlete — атлет: Professional athlete (профессиональный атлет), Olympic athlete (олимпийский атлет), natural athlete (прирожденный спортсмен).
+*   Birthday — день рождения: Happy birthday! (С днем рождения!), birthday present (подарок на день рождения), birthday cake (именинный торт).
+
 ```
-!!! разработать упражнения (просто набор словосочетаний для быстрого повтора как скороговорка) для отработки произношения звука TH в сочетании со следующим звуком (гласным, согласным)
-так как the и местоимения с th обильно распространены в самом начале 
+Do the right thing. — Делай то, что правильно.
+I need something else. — Мне нужно что-то другое.
+I wish you good health. — Я желаю вам хорошего здоровья.
+We live on the south coast. — Мы живем на южном побережье.
+It is like a sixth sense. — Это как шестое чувство.
+Do you need anything else? — Вам нужно что-нибудь еще?
+
 ```
+
+<audio controls loop volume="0.3" class="quiet-loop">
+  <source src="/sources/dull_sound_th.mp3" type="audio/mpeg">
+</audio>
+ 
+
+---
+
+</details>
+
+---
 
 ## Личные местоимения в именительном падеже:
 Именительный падеж (nominative case) — это форма местоимения, которая используется, когда местоимение является подлежащим (субъектом) предложения.
@@ -979,6 +1359,8 @@ function checkAnswerAll(value){
     value = textNormalize(value);
     return value==g_practice_all.getAnswer();
 }
+ 
+
 </script>
 
 <style>

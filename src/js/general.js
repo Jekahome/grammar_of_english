@@ -2,6 +2,12 @@
 window.globalScriptReady = new Promise(resolve => {
     document.addEventListener('DOMContentLoaded', async () => {
         resolve();
+
+        document.querySelectorAll('.quiet-loop').forEach(function(audio) {
+          audio.volume = 0.2;
+          audio.loop = true;
+        });
+
     });
 });
 

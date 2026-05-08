@@ -35,6 +35,11 @@ level = 0
 [preprocessor.callouts]
 command = "bin/mdbook-callouts"
 
+[preprocessor.katex]
+no-css = false
+macros = {}
+inline-delimiter = { left = "$", right = "$" }
+
 [build]
 build-dir = "book"
 create-missing = true

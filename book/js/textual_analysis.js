@@ -17,7 +17,7 @@ function normalizeText(word) {
 
 function getWordLevels(text){
 
-    const sentences = text.split(/\r?\n/);
+    const sentences = text.split(/(?<=[.!?])\s+/);
 
     let result_a1 = [];// 1
     let result_a2 = [];// 2
@@ -133,7 +133,7 @@ function getWordLevels(text){
 
 function getAllWordsLevels(text){
 
-    const sentences = text.split(/\r?\n/);
+    const sentences = text.split(/(?<=[.!?])\s+/);
  
     let show_a1 = [];
     let show_a2 = [];
