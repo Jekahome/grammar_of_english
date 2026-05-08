@@ -47,7 +47,7 @@
 [@yaread самый простой способ правильно произносить звук Th](https://www.youtube.com/shorts/a-6HqsgI70s)
  
 <video width="400" controls>
-  <source src="/sources/самый простой способ правильно произносить звук Th.mp4" type="video/mp4">
+  <source src="sources/самый простой способ правильно произносить звук Th.mp4" type="video/mp4">
 </video>
  
  
