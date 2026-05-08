@@ -46,7 +46,7 @@
 
 [@yaread самый простой способ правильно произносить звук Th](https://www.youtube.com/shorts/a-6HqsgI70s)
  
-<video width="400" controls>
+<video width="400" controls  class="quiet-loop">
   <source src="/sources/самый простой способ правильно произносить звук Th.mp4" type="video/mp4">
 </video>
  
@@ -54,14 +54,14 @@
 
 [@yaread Звук "R" - правильное произношение](https://www.youtube.com/watch?v=3W9Ajnz9vZY)
 
-<video width="400" controls>
+<video width="400" controls  class="quiet-loop">
   <source src="/sources/звук_R.mp4" type="video/mp4">
 </video>
 
  
 [@englishbad Звучи как американец. Ужасная буква Т в английском языке.](https://www.youtube.com/watch?v=aaGQVPQ5tBQ)
 
-<video width="600" controls>
+<video width="600" controls  class="quiet-loop">
   <source src="/sources/буква_Т.mp4" type="video/mp4">
 </video>
 

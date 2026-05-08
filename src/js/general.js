@@ -8,8 +8,13 @@ window.globalScriptReady = new Promise(resolve => {
           audio.loop = true;
 
           const isGithub = window.location.hostname.includes('github.io');
-          const url = isGithub ? '/grammar_of_english' : '';
-          audio.src=url+audio.src;
+          const base = isGithub ? '/grammar_of_english' : '';
+          const source = audio.querySelector('source');
+          if (source) {
+            const originalSrc = source.getAttribute('src');
+            source.src = base + originalSrc;
+            audio.load();
+          }
 
         });
 
