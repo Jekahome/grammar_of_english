@@ -13,7 +13,7 @@
   <source src="/sources/that.mp4" type="video/mp4">
 </video>
 
-[englishbad: Th](https://www.youtube.com/watch?v=w5ZhhGQrAwE)
+Как произносят сочетания TH носители языка ([englishbad: Th](https://www.youtube.com/watch?v=w5ZhhGQrAwE))
 
 <video width="400" controls volume="0.3" class="quiet-loop">
   <source src="/sources/englishbad_th.mp4" type="video/mp4">
@@ -313,11 +313,9 @@
  
 ---
 
-
 <details>
-<summary><b>Глухой звук $[\theta]$, без участия голосовых связок.<b></summary>
+<summary><b>Глухой звук $[\theta]$, без участия голосовых связок.</b></summary>
 
- 
 Если Вы положите пальцы на гортань и произнесете эти слова, вы не должны почувствовать вибрацию на звуке `th`. Если горло «дрожит», значит, Вы непроизвольно переходите на звонкий вариант.
 
 Начало слова (Существительные и прилагательные):
@@ -379,7 +377,6 @@ Do you need anything else? — Вам нужно что-нибудь еще?
   <source src="/sources/dull_sound_th.mp3" type="audio/mpeg">
 </audio>
  
-
 ---
 
 </details>
@@ -405,8 +402,13 @@ Examples:
 * ***You** are kind — Ты добрый.*
 * ***They** are clever — Они умные.*
  
+<h2>Exercise: listen and write (nominative case)</h2>
+<div id="control_nominative_case"></div>
+<div id="listen_and_write_nominative_case"></div>
 
 <h2>Exercise: Fast carousel (nominative case)</h2>
+(сопоставить картинку как местоименение со словом)<br>
+
 <div id="practice3_picture_nominative_case"></div>
 <div id="practice3_control_nominative_case"></div>
 <div id="practice3_result_nominative_case"></div>
@@ -460,9 +462,6 @@ Examples:
 * *Do you want to help **us**? We are baking pies today. — Вы хотите помочь нам? Сегодня мы печем пироги.*
  
 
-
-
-
 <h2>Exercise: listen and write (oblique case)</h2>
 <div id="control_oblique_case"></div>
 <div id="listen_and_write_oblique_case"></div>
@@ -488,18 +487,18 @@ Examples:
 ![demonstrative pronouns](../img/pronouns/demonstrative_pronouns.png)
 
 Examples:
-* ***This** is my book. — Это моя книга (близко).*
-* ***This** good book — эта хорошая книга.*
-* ***That** is your car. — То твоя машина (далеко).*
-* ***That** white apple — это белое яблоко.*
-* ***These** are my friends. — Это мои друзья (близко).*
-* ***These** words — эти слова.*
-* ***These** good books — эти хорошие книги.*
-* ***Those** seas — те моря*
-* ***Those** are your keys. — Те твои ключи (далеко).*
-* ***Those** white apples — те белые яблоки.*
-* ***That** sea — то море.*
-* ***This** word — это слово.*
+* **This** is my book. — *Это моя книга (близко).*
+* **This** good book — *эта хорошая книга.*
+* **That** is your car. — *То твоя машина (далеко).*
+* **That** white apple — *это белое яблоко.*
+* **These** are my friends. — *Это мои друзья (близко).*
+* **These** words — *эти слова.*
+* **These** good books — *эти хорошие книги.*
+* **Those** seas — *те моря*
+* **Those** are your keys. — *Те твои ключи (далеко).*
+* **Those** white apples — *те белые яблоки.*
+* **That** sea — *то море.*
+* **This** word — *это слово.*
  
 <h2>Exercise: Fast carousel (demonstrative pronouns)</h2>
 <div id="practice3_picture_demonstrative_pronouns"></div>
@@ -818,11 +817,31 @@ What are those? They are birds. — Что это там? — Это птицы.
 ```
 </details>
  
+ ---
+
 <h2>Exercise: listen and write (all)</h2>
 <div id="control_all"></div>
 <div id="listen_and_write_all"></div>
+<br>
+
+
+Распознать в речи сочетание слов:
+* `are in the` (These groups are in the school)
+* `What are` (What are these things?)
+
+
 
 <script>
+
+const exercises_easy_listen_and_write_nominative_case = [
+    ["I am a boy", "Я мальчик."],
+    ["He is a doctor", "Он врач."],
+    ["She is a teacher", "Она учительница."],
+    ["It is big", "Оно большое."],
+    ["We are children", "Мы дети."],
+    ["You are kind", "Ты добрый."],
+    ["They are clever", "Они умные."]
+];
 
 const exercises_easy_listen_and_write_oblique_case = [
     // --- Личные местоимения в косвенном падеже (Me, You, Him, Her, It, Us, Them) ---
@@ -891,10 +910,10 @@ const exercises_easy_listen_and_write_demonstrative_pronouns  = [
     ["Eat these vegetables.", "Ешь эти овощи."],
     ["Check those bags.", "Проверь те сумки."],
  
-    ["This is my favorite song.", "Это моя любимая песня (эта)."],
-    ["That is a big mountain.", "Вон то — большая гора (та)."],
-    ["These books are heavy.", "Эти книги тяжелые (эти)."],
-    ["Those stars are bright.", "Те звезды яркие (вон те)."],
+    ["This is my favorite song.", "Это моя любимая песня."],
+    ["That is a big mountain.", "Вон то — большая гора."],
+    ["These books are heavy.", "Эти книги тяжелые."],
+    ["Those stars are bright.", "Те звезды яркие."],
     ["I like this coffee.", "Мне нравится этот кофе."],
     ["Who is that boy over there?", "Кто вон тот мальчик?"],
     ["These shoes are too small.", "Эти туфли слишком малы."],
@@ -1283,6 +1302,7 @@ function validateDemonstrativePronouns(input) {
   return result;
 }
 
+let g_practice_nominative_case = null;
 let g_practice_oblique_case = null;
 let g_practice_demonstrative_pronouns = null;
 let g_practice_all = null;
@@ -1293,6 +1313,17 @@ let g_practice3_demonstrative_pronouns = null;
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         await window.globalScriptReady; 
+        {
+          
+            let editor_symbol = new EditorSymbol({callback: checkAnswerNominativeCase, suffix_id: "nominative_case"});
+            g_practice_nominative_case = new Practice({
+                el_listen_and_write: document.getElementById('listen_and_write_nominative_case'), 
+                el_exercise_control: document.getElementById('control_nominative_case'), 
+                exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_nominative_case),
+                editor_symbol: editor_symbol
+            });
+            g_practice_nominative_case.genExercisesListenAndWrite(); 
+        }
         {
             let editor_symbol = new EditorSymbol({callback: checkAnswerObliqueCase, suffix_id: "oblique_case"});
             g_practice_oblique_case = new Practice({
@@ -1347,6 +1378,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
+function checkAnswerNominativeCase(value){
+    value = textNormalize(value);
+    return value==g_practice_nominative_case.getAnswer();
+}
 function checkAnswerObliqueCase(value){
     value = textNormalize(value);
     return value==g_practice_oblique_case.getAnswer();
