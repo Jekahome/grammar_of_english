@@ -58,6 +58,8 @@
   <source src="/sources/звук_R.mp4" type="video/mp4">
 </video>
 
+---
+
 ### Произношение Т
 
 [@englishbad Звучи как американец. Ужасная буква Т в английском языке.](https://www.youtube.com/watch?v=aaGQVPQ5tBQ)
@@ -66,9 +68,9 @@
   <source src="/sources/буква_Т.mp4" type="video/mp4">
 </video>
 
+---
 
-
-### Звук $[ɪ]$ и $[iː]$  
+### Звук [ɪ] и [iː]
 
 1. Краткий звук $[ɪ]$  
 Это очень короткий, расслабленный звук. Он больше похож на нечто среднее между русскими **«и»** и **«ы»**. 
@@ -115,6 +117,8 @@
    <audio controls loop volume="0.3" class="quiet-loop">
     <source src="/sources/sheet_or_shit.mp3" type="audio/mpeg">
    </audio>
+
+---
 
 ### Сокращения в речи
 
@@ -251,15 +255,19 @@ Where are you going? -> Where ya going?
 
 Did you try it -> didja try it
 
+---
+
 ### Stop T
 
 Опускают звук T в конце слова, обрубая речь.
 
-I go out wvwry night -> I go ou' wvwry nigh' 
+I go out every night -> I go ou' every nigh' 
 
 <audio controls loop volume="0.3" class="quiet-loop">
   <source src="/sources/stop_t.mp3" type="audio/mpeg">
 </audio>
+
+---
 
 #### Сокращение местоимений
 (могут не произносить начало местоимения)
@@ -271,7 +279,9 @@ I go out wvwry night -> I go ou' wvwry nigh'
 
 I think he's right -> I think 'e's right
 
-### flap T
+---
+
+### Flap T
 
 Когда буква `T` находится между двумя гласными, произношение `T` похоже на русскую `Р` в словах `НОРА`, `КОРА`
  
@@ -295,6 +305,7 @@ city -> cidy:
   <source src="/sources/city.mp3" type="audio/mpeg">
 </audio>
 
+ 
 Can I get a bottle of water -> Can I geda boddle of wader
 <audio controls loop volume="0.3" class="quiet-loop">
   <source src="/sources/dd.mp3" type="audio/mpeg">
@@ -307,6 +318,31 @@ Didja know tha' he's gonna meet 'er an' go ea' some foo' an' drink some wader
   <source src="/sources/flap_T2.mp3" type="audio/mpeg">
 </audio>
 
+* Звук `/t/` меняется на звук `/ɾ/`
+ 
+  What is this?  
+  * В медленной речи или если после `T` идет согласная, то `T` звучит как `/t/`:  
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/t_to_r_2.mp3" type="audio/mpeg">
+  </audio>
+
+  What right?
+  * После `T` следует согласная `r`: 
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/t_to_r_3.mp3" type="audio/mpeg">
+  </audio>
+
+  What is this?
+  * В быстрой речи звук `/t/` меняется на звук `/ɾ/` (альвеолярный одноударный) средний звук между «Д» и «Р», если после `Т` идет гласный звук:
+
+  <audio controls loop volume="0.3" class="quiet-loop">
+    <source src="/sources/t_to_r.mp3" type="audio/mpeg">
+  </audio>
+
+
+
+---
+
 ### Звук 'schwa' [ə]
 Звук Schwa — это самый важный, самый ленивый и самый частотный звук в английском языке.
 
@@ -316,22 +352,22 @@ Didja know tha' he's gonna meet 'er an' go ea' some foo' an' drink some wader
 
 Schwa может обозначаться любой гласной буквой (a, e, i, o, u). Как только на букву падает ударение — она звучит четко. Как только ударение уходит — она превращается в schwa.
 
-* Для булвы A: About [əˈbaʊt] — (э-Баут). Первый звук — шва.
-* Для булвы A: Banana - ударный только второй слог: [bəˈnɑːnə]. Первая и последняя «а» — это шва.
-* Для булвы O: Computer [kəmˈpjuːtə] — (кэм-Пью-тэ). Здесь сразу два звука шва: в начале и в конце.
-* Для булвы E: Teacher [ˈtiːtʃə] — (Ти-чэ). Окончание -er почти всегда превращается в шва.
+* Для булвы A: About [əˈbaʊt] — (э-Баут). Первый звук — schwa.
+* Для булвы A: Banana - ударный только второй слог: [bəˈnɑːnə]. Первая и последняя «а» — это schwa.
+* Для булвы O: Computer [kəmˈpjuːtə] — (кэм-Пью-тэ). Здесь сразу два звука schwa: в начале и в конце.
+* Для булвы E: Teacher [ˈtiːtʃə] — (Ти-чэ). Окончание -er почти всегда превращается в schwa.
 * Для булвы U: Support [səˈpɔːt] — (сэ-Порт).
 
 
 A cup of tea. — Чашка чая.
-(Здесь артикль "A" и предлог "of" произносятся как шва)
+(Здесь артикль "A" и предлог "of" произносятся как [ə])
 <audio controls loop volume="0.3" class="quiet-loop">
   <source src="/sources/Schwa1.mp3" type="audio/mpeg">
 </audio>
 
  
 Today at seven. — Сегодня в семь.
-(В слове Today первый слог — это шва, в слове Seven второй слог — это шва).
+(В слове Today первый слог — это шва, в слове Seven второй слог — это [ə]).
 <audio controls loop volume="0.3" class="quiet-loop">
   <source src="/sources/Schwa2.mp3" type="audio/mpeg">
 </audio>

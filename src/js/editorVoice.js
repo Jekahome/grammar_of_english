@@ -224,7 +224,7 @@ function showClue(id) {
 
     setTimeout(function() {
         el.style.visibility = "hidden";
-    }, 3000);
+    }, 5000);
 }
 
 // Перемегивать слова вв педложении

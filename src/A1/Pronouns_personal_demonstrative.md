@@ -828,6 +828,8 @@ What are those? They are birds. — Что это там? — Это птицы.
 Распознать в речи сочетание слов:
 * `are in the` (These groups are in the school)
 * `What are` (What are these things?)
+* `What is` (What is this?)
+* `her` (who helps her)
 
 
 
