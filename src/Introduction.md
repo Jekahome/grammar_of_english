@@ -85,7 +85,7 @@ Comprehensible Input - Это когда вы знаете/догадывает�
 Преподаватели, которые в наглядной и яркой форме объяснят грамматику и дают повседневную лексику:
 📺 @LearnEnglishwithHarry
 📺 @papateachme
-Девушка web & graphic designer, рассказывате про свою рабочую рутину и много других интересных фишек (отлично подходит для IT сектора):
+Девушка web & graphic designer, рассказывате про свою рабочую рутину и много других интересных фишек (отлично подходит для IT сектора):0
 📺 @charlimarieTV
 Для тех, кто хочет знать всю про мир компьютеров и их беспощадные новинки:
 📺 @PcCentric
@@ -520,6 +520,7 @@ Future in the Past
       * https://www.eslfast.com/
       * https://www.esl-lab.com/basic-english/
       * https://2sub-tv.space/
+      * https://www.youtube.com/watch?v=MeSRtUNuIo0&list=PLzVm1SmjPKc_OnC56MbILOmdXvGV_3kE9&index=1
   * нужно ли показывать используемую грамматику в прослушиваемой книге?
   * добавить возможность вводить ответ голосом (т.е. суфлер, повторять за диктором)?
 

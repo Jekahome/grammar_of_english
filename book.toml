@@ -31,6 +31,9 @@ page-break = false
 enable = true    
 level = 0         
 
+[output.html.search]
+enable = false 
+
 # https://github.com/GrayJack/rs-mdbook-callouts
 [preprocessor.callouts]
 command = "bin/mdbook-callouts"

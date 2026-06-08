@@ -746,6 +746,13 @@ A soldier says, "I can't cut off its head because it hasn't got a body."
 
 </details>
 
+
+[(youtube, cartoon) Alice in Wonderland Full Movie - Animated Fairy Tales - Bedtime Stories For Kids](https://www.youtube.com/watch?v=Oc7WuYfGbrA)
+
+[(youtube, cartoon) Alice's Adventures in Wonderland Full Story| White Rabbit, Queen Of Hearts, Cheshire Cat| Little Fox](https://www.youtube.com/watch?v=IDujfwZqpgA)
+
+[(youtube, film) Alice In Wonderland (1999) | Whoopi Goldberg, Ben Kingsley](https://www.youtube.com/watch?v=FbQ8DnOL2GU)
+
 <script>
   
 document.addEventListener('DOMContentLoaded', async () => {

@@ -17,7 +17,9 @@
 <button onclick="show()">show</button>
 <textarea id="result" rows="25" cols="160"></textarea>
 
+
 <script>
+
 function arrayToMarkdownTable(arr, headers = []) {
   if (!Array.isArray(arr)) {
     throw new TypeError("❌ Ожидался массив (Array) в аргументе arr");

@@ -4,36 +4,36 @@
 ### Окончание `-s`
 Подавляющее большинство существительных превращается из формы единственного числа в форму множественного при помощи окончания `-s`.
 
-* Game — games
-* Computer — computers
-* Phone — phones
-* Friend — friends
+* Game — game**s**
+* Computer — computer**s**
+* Phone — phone**s**
+* Friend — friend**s**
 
 ### Окончание `-es`
 Если же существительное в единственном числе заканчивается на шипящий или свистящий звук `-ss, -sh, -ch, -x, -z`, подставляется `-es`.
 
-* Bus — buses
-* Boss — bosses
-* Bush — bushes
-* Sandwich — sandwiches
-* Quiz — quizzes
+* Bus — bus**es**
+* Boss — boss**es**
+* Bush — bush**es**
+* Sandwich — sandwich**es**
+* Quiz — quizz**es**
 
 ### Окончание `-o`
 Если существительное заканчивается на `-o`, важно обратить внимание на предпоследнюю букву.
 
-* Если это гласная: Portfolio — portfolios, zoo — zoos
-* Если это согласная: Potato — potatoes, tomato — tomatoes
+* Если это гласная, подставляется `-s`: Portfolio — portfolio**s**, zoo — zoo**s**
+* Если это согласная, подставляется `-es`: Potato — potato**es**, tomato — tomato**es**
 
 ### Окончание `-f` и `-fe`
 Если слово заканчивается на -`f`, `-fe`, то меняем окончание на `-ves`:
 
-* Knife — knives
-* Leaf — leaves
+* Knife — kni**ves**
+* Leaf — lea**ves**
 * Исключения: Roof — roofs, giraffe — giraffes
 
 ### Окончание `-y`
-* Body — bodies (если перед -y стоит согласная)
-* Boy — boys (если перед -y стоит гласная)
+* Body — bod**ies** (если перед -y стоит согласная, подставляется `-ies`)
+* Boy — boy**s** (если перед -y стоит гласная, подставляется `-s`)
 
 ### Исключения
 
@@ -71,21 +71,18 @@
 | Alumnus (выпускник)        | Alumni (выпускники)         |
 
 
-## Countable, Uncountable Nouns
-Исчисляемые и неисчисляемые существительные.
-
-### Countable Nouns (Исчисляемые существительные)
+## Countable Nouns (Исчисляемые существительные)
 Исчисляемые существительные – это отдельные предметы, люди, места и вещи, которые можно посчитать.
 
 Например: книги, дома, американцы, кошки, собаки, машины и т. д.
 
-Исчисляемое существительное может быть в единственном числе (a book) или во множественном числе (two books).
+Исчисляемое существительное может быть в единственном числе (a book, the book, this book, that book) или во множественном числе (two books, the books, those books, their books).
 
 Форма глагола в ед. числе употребляется с исчисляемым существительным в ед. числе: ***the apple is red***.
 
 Глагол во мн. числе употребляется с исчисляемым существительным во мн. числе: ***the apples are red***.
 
-### Uncountable Nouns (Неисчисляемые существительные)
+## Uncountable Nouns (Неисчисляемые существительные)
 Неисчисляемые существительные – это вещества, понятия, информация, материалы и т.п., которые не являются отдельными объектами и не могут быть посчитаны с помощью чисел. **У них нет формы множественного числа**. Например: «information» или «news». Мы не можем сказать «two informations» или «three news».
 
 **Разница по смыслу**
@@ -107,7 +104,7 @@
 * **Gases (Газы)**: air, oxygen, helium, nitrogen, fog, smoke, steam
 * **Natural phenomena (Природные явления)**: electricity, gravity, heat, rain, dew, snow, sunshine, lightning
 
-## Особенности использования неисчисляемых существительных
+### Особенности использования неисчисляемых существительных
 
 Некоторые слова могут быть **как исчисляемыми, так и неисчисляемыми** в зависимости от значения:
 
@@ -128,25 +125,25 @@
     * Correct: The news is interesting.
     * Incorrect: The news are interesting.
 
-    А когда речь идет не о самом неисчисляемом существительном, а например о его количестве, то глагол во множественном числе:
-    * Water **is** on the table. — Вода на столе. (речь про вещество, а оно неисчисляемое)
-    * Two bottles of water **are** on the table. — Две бутылки воды на столе. (речь про две бутылки, а они исчисляемые)
-    * Rice **is** in the kitchen. — Рис на кухне. 
-    * Two bags of rice **are** in the kitchen. — Два пакета риса на кухне.
-    * This wood **is** good. — Это дерево хорошее.
-    * These pieces of wood **are** good. — Эти куски дерева хорошие.
-    * This information **is** useful. — Эта информация полезна.
-    * These pieces of information **are** useful. — Эти сведения полезны.
-    * The new furniture **is** in the room. — Новая мебель в комнате.
-    * Three pieces of furniture **are** in the room. — Три предмета мебели в комнате.
-    * My homework **is** difficult. — Моя домашняя работа трудная. 
-    * My three homework assignments **are** difficult. — Мои три домашних задания трудные.
+    А когда речь идет не о самом неисчисляемом существительном, а например о его количестве, то глагол уже во множественном числе:
+    * *Water **is** on the table. — Вода на столе.* (речь про вещество, а оно неисчисляемое)
+    * *Two bottles of water **are** on the table. — Две бутылки воды на столе.* (речь про две бутылки, а они исчисляемые)
+    * *Rice **is** in the kitchen. — Рис на кухне.* 
+    * *Two bags of rice **are** in the kitchen. — Два пакета риса на кухне.*
+    * *This wood **is** good. — Это дерево хорошее.*
+    * *These pieces of wood **are** good. — Эти куски дерева хорошие.*
+    * *This information **is** useful. — Эта информация полезна.*
+    * *These pieces of information **are** useful. — Эти сведения полезны.*
+    * *The new furniture **is** in the room. — Новая мебель в комнате.*
+    * *Three pieces of furniture **are** in the room. — Три предмета мебели в комнате.*
+    * *My homework **is** difficult. — Моя домашняя работа трудная.* 
+    * *My three homework assignments **are** difficult. — Мои три домашних задания трудные.*
     
 
 * **Определители и количество**: Для указания количества неисчисляемых существительных используются слова-маркеры количества, такие как some, any, much, little, a bit of, a piece of, a glass of и другие.
-    * Can I have some water?
-    * There isn't much information available.
-    * I need a piece of advice.
+    * *Can I have some water?*
+    * *There isn't much information available.*
+    * *I need a piece of advice.*
 
 * **Изменение контекста**: Некоторые существительные могут быть исчисляемыми или неисчисляемыми в зависимости от контекста, например когде речт иден не о веществе кофе, а о количестве порций кофе:
     * Coffee (неисчисляемое): I drank some coffee this morning.
@@ -156,23 +153,23 @@
 
     **Неисчисляемое (вещество):** 
     
-    I don't drink **coffee** in the evening. — Я не пью **кофе** вечером.
+    *I don't drink **coffee** in the evening. — Я не пью **кофе** вечером.*
    
-    I smell coffee. — Я чувствую запах кофе.
+    *I smell coffee. — Я чувствую запах кофе.*
 
-    There is too much coffee in my cup. — В моей чашке слишком много кофе.
+    *There is too much coffee in my cup. — В моей чашке слишком много кофе.*
 
-    Brazil exports a lot of coffee. — Бразилия экспортирует много кофе.
+    *Brazil exports a lot of coffee. — Бразилия экспортирует много кофе.*
     
     **Исчисляемое (порция):** 
     
-    We ordered three **coffees** and two teas. — Мы заказали три **кофе** и два чая.
+    *We ordered three **coffees** and two teas. — Мы заказали три **кофе** и два чая.*
     
-    Let's have a coffee. — Давай выпьем кофе (чашку кофе).
+    *Let's have a coffee. — Давай выпьем кофе (чашку кофе).*
 
-    We ordered two coffees. — Мы заказали две порции кофе.
+    *We ordered two coffees. — Мы заказали две порции кофе.*
 
-    Three coffees, please. — Три кофе, пожалуйста.
+    *Three coffees, please. — Три кофе, пожалуйста.*
 
 
     **Неисчисляемое (вещество):** This cake has too much **chocolate**. — В этом торте слишком много **шоколада**.
@@ -246,8 +243,8 @@
     
 
 * **Совместимость с артиклями**: Неисчисляемые существительные могут использоваться с неопределенным артиклем a/an только в связке с выражениями количества, такими как a piece of, a bottle of, и т.д. С определенным артиклем the можно использовать неисчисляемое существительное, когда речь идет о чем-то конкретном.
-    * I need a piece of information.
-    * The furniture in this room is new.
+    * *I need a piece of information.*
+    * *The furniture in this room is new.*
 
 * **Не могут использоваться с числительными напрямую**: Неисчисляемые существительные, обозначающие вещества или абстрактные понятия, не сочетаются с числительными. Для указания количества используются единицы измерения (счетные слова).
  
@@ -261,8 +258,6 @@
 
 
 ### Примеры:
-
-
 
 * Water is good. - Вода - это хорошо. (здесь главное слово water – это вещество, COUNTABLE NOUNS, поэтому глагол в ед. ч.исле `is`)
 * Two bottles of water are good. - Две бутылки воды - это хорошо. (здесь главное слово "bottles" является исчисляемым и стоит во мн. числе, поэтому глагол тоже используется во множественном числе `are`.)

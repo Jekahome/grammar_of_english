@@ -157,7 +157,7 @@
 
 <p>"That's all right. That's all right. Hold my box a minute. I'll go to the river and find a frog for you," said Smiley.</p>
 
-<p>The stranger took the box and bet his $40. Smiley bet his $40, too, and went to the river. The stranger sat down and waited for Smiley. He sat there a long time, and he began to think. Suddenly, he took Daniel Webster out of the box and opened his mouth. With a teaspoon, he put some shotgun pellets into the frog's mouth. Then he put him on the floor.</p>
+<p>The stranger took the box and bet his \$40. Smiley bet his $40, too, and went to the river. The stranger sat down and waited for Smiley. He sat there a long time, and he began to think. Suddenly, he took Daniel Webster out of the box and opened his mouth. With a teaspoon, he put some shotgun pellets into the frog's mouth. Then he put him on the floor.</p>
   </div>
   <div class="page-number">· 7 ·</div>
 </div>
