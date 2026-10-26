@@ -1,6 +1,6 @@
 'use strict';
  
-class Listen2 { 
+class Listen { 
     #subsDiv = null;
     #audio = null;
     #showLevel = true;
