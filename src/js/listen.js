@@ -1,6 +1,6 @@
 'use strict';
  
-class Listen { 
+class Listen2 { 
     #subsDiv = null;
     #audio = null;
     #showLevel = true;
@@ -9,11 +9,8 @@ class Listen {
     #mode = "auto";// auto, manual
     #manualBtnNext = null;  
     #manualBtnRepeat = null;
-    #manualIsRepeat = false;
-
-    #arrIndexes = [];
-    #currentIndex = 0;
-
+    #manualBtnReplay = null;
+  
     subs = [];
     index = 0;
     page = -1;
@@ -56,14 +53,20 @@ class Listen {
             console.error("Listen: Элементы не найдены");
             return;
         }
-        this.#audio.ontimeupdate = this.update.bind(this);
+
+        this.#audio.addEventListener('timeupdate', () => this.update());
 
         this.#audio.addEventListener('seeked', () => {
             const t = this.#audio.currentTime;
-            const newIndex = this.subs.findIndex(s => t >= s.start && t <= s.end);
-            if (newIndex === -1) return;
-            this.index = newIndex;
-            this.updateBody();
+
+            const newIndex = this.subs.findIndex(
+                s => t >= s.start && t < s.end
+            );
+
+            if (newIndex !== -1) {
+                this.index = newIndex;
+                this.updateBody();
+            }
         });
     }
 
@@ -74,41 +77,30 @@ class Listen {
          
         this.page = -1; // Сброс страницы при новой загрузке
         this.drawPage();
-        this.buildTimeRout();
+       
     }
-
-    buildTimeRout(){
-        const duration = this.subs[this.subs.length - 1]?.end ?? 0;
-        let arr = [];
-        for (let t=0; t < duration; t++){
-            const newIndex = this.subs.findIndex(s => t >= s.start && t <= s.end);
-            if (newIndex !== -1 && !this.#arrIndexes.includes(newIndex)){
-                this.#arrIndexes.push(newIndex);
-            }
-        }
-    }
-
-    update() {  
+ 
+    update() {
         const t = this.#audio.currentTime;
-        const newIndex = this.subs.findIndex(s => t >= s.start && t <= s.end);
-        if (newIndex === -1 || (this.index === newIndex && this.#manualIsRepeat===false) ) return;
-        this.index = newIndex;
+
         if (this.#mode === "manual") {
-            if(this.#manualIsRepeat === false) {
-                if(this.index > 0){this.#audio.pause();}
-                this.#currentIndex +=1;
-            }else{
-                if (this.index > this.#arrIndexes[this.#currentIndex]){
-                    this.#manualIsRepeat = false;
-                    this.#audio.pause();
-                    this.#currentIndex +=1;
-                } else{
-                    this.#audio.play();
-                }
+            const current = this.subs[this.index];
+
+            if (current && t >= current.end) {
+                this.#audio.pause();
+                this.#audio.currentTime = current.end;
             }
-            this.updateBody();
+
             return;
         }
+
+        const newIndex = this.subs.findIndex(
+            s => t >= s.start && t < s.end
+        );
+
+        if (newIndex === -1 || newIndex === this.index) return;
+
+        this.index = newIndex;
         this.updateBody();
     }
 
@@ -119,9 +111,6 @@ class Listen {
             this.drawPage();
         }
         this.highlight();
-        if (this.#mode === "auto") {
-            this.#currentIndex +=1;
-        }  
     } 
 
     drawPage() {
@@ -364,6 +353,7 @@ class Listen {
                 this.#mode = "auto"; 
                 this.#manualBtnNext.style.display = 'none'; 
                 this.#manualBtnRepeat.style.display = 'none'; 
+                this.#manualBtnReplay.style.display = 'none';
             }
         });
         listen_mode_manual.addEventListener('change', (e) => {
@@ -371,6 +361,7 @@ class Listen {
                 this.#mode = "manual"; 
                 this.#manualBtnNext.style.display = ''; 
                 this.#manualBtnRepeat.style.display = ''; 
+                this.#manualBtnReplay.style.display = '';
 
             }
         });
@@ -381,18 +372,38 @@ class Listen {
         manualBtnRepeat.className = 'control-manual-btn';
         manualBtnRepeat.style.display = 'none';
         manualBtnRepeat.addEventListener('click', () => {
-            if(this.#currentIndex > 0){
-                this.#currentIndex=this.index;
-                this.#currentIndex -=1;
-                const next = this.subs[this.#currentIndex];
-                this.#manualIsRepeat = true;
-                this.#audio.play();
-                this.#audio.currentTime = next.start;
-            }  
+            if (!this.subs.length) return;
+
+            this.index = Math.max(0, this.index - 1);
+
+            this.#audio.pause();
+            this.#audio.currentTime = this.subs[this.index].start;
+
+            this.updateBody();
+            this.#audio.play();
         });
         container.appendChild(manualBtnRepeat);
         this.#manualBtnRepeat = manualBtnRepeat;
 
+
+        const manualBtnReplay = document.createElement('button');
+        manualBtnReplay.textContent = '↻ Repeat';
+        manualBtnReplay.id = 'listen-manual-replay';
+        manualBtnReplay.className = 'control-manual-btn';
+        manualBtnReplay.style.display = 'none';
+
+        manualBtnReplay.addEventListener('click', () => {
+            const current = this.subs[this.index];
+            if (!current) return;
+
+            this.#audio.pause();
+            this.#audio.currentTime = current.start;
+            this.#audio.play();
+        });
+        container.appendChild(manualBtnReplay);
+        this.#manualBtnReplay = manualBtnReplay;
+
+        
 
         const manualBtnNext = document.createElement('button');
         manualBtnNext.textContent = 'Next >';
@@ -400,7 +411,17 @@ class Listen {
         manualBtnNext.className = 'control-manual-btn';
         manualBtnNext.style.display = 'none';
         manualBtnNext.addEventListener('click', () => {
-            this.#currentIndex=this.index;
+            if (!this.subs.length) return;
+
+            this.index = Math.min(
+                this.subs.length - 1,
+                this.index + 1
+            );
+
+            this.#audio.pause();
+            this.#audio.currentTime = this.subs[this.index].start;
+
+            this.updateBody();
             this.#audio.play();
         });
         container.appendChild(manualBtnNext);
