@@ -440,7 +440,7 @@ Examples:
 * *Give **them** a lamp — Дай им лампу.*
 * *Give **us** the boxes — Дайте нам коробки.*
 * *Put **them** on the table — Положи их на стол.*
-* *He sees **me** — Он меня.*
+* *He sees **me** — Он видит меня.*
 * *Tell **us** — Скажите нам.*
 * *Tell **them** — Скажите им.*
 * *Tell **her** — Скажите ей.*
@@ -471,9 +471,9 @@ Examples:
 ## Demonstrative pronouns (Указательные местоимения):
 Указательные местоимения в английском языке используются для указания на конкретные предметы или людей.
 
-|Указательные местоимения|this (/ðɪs/)| 	that (/ðæt/)| 	these (/ðiːz/)| 	those (/ðoʊz/)|
-|---                     |---         |---              |---              |---                |
-|                        |этот, эта, это|	тот, та, то |	эти           |	те                |
+|Указательные местоимения|this (/ðɪs/ )  | these (/ðiːz/) | that (/ðæt/) | those (/ðoʊz/) |
+|---                     |---            |---             |---           |---             |
+|                        |этот, эта, это |	  эти         |  тот, та, то |	те            |
 
 
 * This (/ðɪs/) — этот, эта, это (для указания на один предмет, находящийся **близко** к говорящему).
@@ -484,22 +484,31 @@ Examples:
 звук ð - что бы произнести, следует язык разместить между зубами и произнести звук 'з'
 Но слышится как мягкая 'Д'
 
+> хорошо запоминается если сказать: 
+> * это это и это мое, и эти тоже мои
+> * то то и то мое, и те тоже мои
+
 ![demonstrative pronouns](../img/pronouns/demonstrative_pronouns.png)
 
 Examples:
 * **This** is my book. — *Это моя книга (близко).*
-* **This** good book — *эта хорошая книга.*
+* **This** is a good book. — *Это хорошая книга.*
 * **That** is your car. — *То твоя машина (далеко).*
-* **That** white apple — *это белое яблоко.*
+* **That** is a white apple. — *То белое яблоко.*
 * **These** are my friends. — *Это мои друзья (близко).*
 * **These** words — *эти слова.*
-* **These** good books — *эти хорошие книги.*
+* **These** are good books. — *Это хорошие книги.*
 * **Those** seas — *те моря*
 * **Those** are your keys. — *Те твои ключи (далеко).*
-* **Those** white apples — *те белые яблоки.*
+* **Those** are white apples. — *Вон те белые яблоки.*
 * **That** sea — *то море.*
 * **This** word — *это слово.*
+* **These** are my glasses. — *Это мои очки.* (очки одни, но используется мн. ч.)
  
+* **This** is my book and **these** books are theirs. — *Это моя книга, а эти книги — их.*
+* **These** are my books, and **those** books are theirs.  — *Это мои книги, а эти книги — их.*
+* **This** is a book, and **this** is also my book, in general, all **these** books are mine.  —  *Это книга, и это также моя книга, вообще все эти книги принадлежат мне.*
+
 <h2>Exercise: Fast carousel (demonstrative pronouns)</h2>
 <div id="practice3_picture_demonstrative_pronouns"></div>
 <div id="practice3_control_demonstrative_pronouns"></div>
