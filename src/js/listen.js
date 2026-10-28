@@ -10,6 +10,7 @@ class Listen {
     #manualBtnNext = null;  
     #manualBtnRepeat = null;
     #manualBtnReplay = null;
+    subtitleTimeInfo = null;
   
     subs = [];
     index = 0;
@@ -102,6 +103,7 @@ class Listen {
 
         this.index = newIndex;
         this.updateBody();
+        this.updateSubtitleTimeInfo();
     }
 
     updateBody(){
@@ -111,6 +113,7 @@ class Listen {
             this.drawPage();
         }
         this.highlight();
+        this.updateSubtitleTimeInfo();
     } 
 
     drawPage() {
@@ -427,6 +430,19 @@ class Listen {
         container.appendChild(manualBtnNext);
         this.#manualBtnNext = manualBtnNext;
 
+
+
+        const subtitleTimeInfo = document.createElement("span");
+        subtitleTimeInfo.style.cssText = `
+            font-family: monospace;
+            font-size: 13px;
+            white-space: nowrap;
+            margin: 0 10px;
+        `;
+        this.subtitleTimeInfo = subtitleTimeInfo;
+        this.startSubtitleTimeTracking();
+        container.appendChild(this.subtitleTimeInfo);
+
         //===========================================
 
         const styleTag = document.createElement('style');
@@ -479,6 +495,49 @@ class Listen {
         }
 
         container_complexity.appendChild(ul);
+    }
+
+
+
+
+    formatSubtitleTime(seconds) {
+        const ms = Math.round(seconds * 1000);
+        const hours = Math.floor(ms / 3600000);
+        const minutes = Math.floor((ms % 3600000) / 60000);
+        const secs = Math.floor((ms % 60000) / 1000);
+        const millis = ms % 1000;
+
+        const time = `${String(minutes).padStart(2, "0")}:${String(secs).padStart(2, "0")}.${String(millis).padStart(3, "0")}`;
+
+        return hours > 0
+            ? `${String(hours).padStart(2, "0")}:${time}`
+            : time;
+    }
+
+    updateSubtitleTimeInfo() {
+        if (!this.subtitleTimeInfo) return;
+
+        const sub = this.subs[this.index];
+        if (!sub) return;
+
+        const start = this.formatSubtitleTime(sub.start);
+        const current = this.formatSubtitleTime(this.#audio.currentTime);
+        const end = this.formatSubtitleTime(sub.end);
+
+        this.subtitleTimeInfo.textContent =
+            `Start: ${start} | Current: ${current} | End: ${end}`;
+    }
+
+    startSubtitleTimeTracking() {
+        if (this.subtitleTimeTrackingId) return;
+
+        const tick = () => {
+            this.updateSubtitleTimeInfo();
+
+            this.subtitleTimeTrackingId = requestAnimationFrame(tick);
+        };
+
+        this.subtitleTimeTrackingId = requestAnimationFrame(tick);
     }
 }
 
