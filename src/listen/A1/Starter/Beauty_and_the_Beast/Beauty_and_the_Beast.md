@@ -373,7 +373,9 @@
 
 <p>"Oh, thank you," says Beauty happily. "Please don't be sad, Beast. I'm going to come back in a week."</p>
 
-<p>"You can visit your father tomorrow morning," says the Beast. "But remember, you must come back in a week. Before you come back, put this ring on a table near your bed. It's a magic ring. Goodbye, Beauty."</p>
+<p>"All right," says Beauty.</p>
+
+<p>"You can visit your father tomorrow morning. But remember, you must come back in a week. Before you come back, put this ring on a table near your bed. It's a magic ring. Goodbye, Beauty."</p>
 
 <div class="chapter-divider"><span> ~ * ~ </span></div>
 

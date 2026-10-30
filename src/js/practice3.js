@@ -7,6 +7,7 @@ class Practice3 {
     current_index_inner_data = 0;
     recognition_timer = null;
     input_timer = null;
+    check_id = 0;
    
     el_make_control = null;
     el_input = null;
@@ -131,6 +132,7 @@ class Practice3 {
         showClue(`clue-medium-${this.el_make_control.id}`); // from EditorVoice
     }
     nextSentence(){
+        this.check_id++;
         this.el_input.value = '';
         this.el_result_list.classList.remove('success-result');
         this.el_result_list.innerHTML = '';
@@ -148,50 +150,66 @@ class Practice3 {
     bindInput() {
         let idleTimer = null;
         let punctuationTimer = null;
-        let lastCheckedText = ""; 
 
-        // Обработка вставки текста
         this.el_input.addEventListener('paste', function(e) {
             e.preventDefault();
             console.log("you need write");
-        }.bind(this));
+        });
 
         this.el_input.addEventListener('input', () => {
-            if (this.input_timer) {
-                clearTimeout(this.input_timer);
-            }
-
-            const text = this.capitalize(this.el_input.value.trim());
-           
+            clearTimeout(this.input_timer);
             clearTimeout(idleTimer);
             clearTimeout(punctuationTimer);
- 
-            if (text === "" || text === lastCheckedText) return;
-            
+
+            const text = this.capitalize(this.el_input.value.trim());
+
+            if (text === "") return;
+
             this.input_timer = setTimeout(() => {
-                // Логика маркера завершения
                 if (/[.!?]$/.test(text)) {
-                    punctuationTimer = setTimeout(async () => {
+                    punctuationTimer = setTimeout(() => {
                         clearTimeout(idleTimer);
-                        lastCheckedText = text;
-                        this.checkUserRules(text, await window.grammarChecker.checkGrammar(text ));
+                        this.checkInput(text);
                     }, 500);
+                } else {
+                    idleTimer = setTimeout(() => {
+                        this.checkInput(text);
+                    }, 1000);
                 }
-                // Логика завершения ввода
-                idleTimer = setTimeout(async () => {
-                    clearTimeout(punctuationTimer);
-                    lastCheckedText = text;
-                    this.checkUserRules(text, await window.grammarChecker.checkGrammar(text ));
-                }, 1000);
-                this.input_timer = null;  
-            }, 500);  
+
+                this.input_timer = null;
+            }, 500);
         });
+    }
+
+    async checkInput(text) {
+        const checkId = ++this.check_id;
+
+        const result = await window.grammarChecker.checkGrammar(text);
+
+        // Если после начала проверки текст изменился,
+        // не показываем устаревший результат.
+        if (checkId !== this.check_id) return;
+
+        // Дополнительно проверяем актуальное содержимое поля.
+        if (text !== this.capitalize(this.el_input.value.trim())) return;
+
+        this.checkUserRules(text, result ?? []);
     }
 
     checkUserRules(input, result=[]){
         this.el_result_list.classList.remove('success-result');
         if (result.length == 0){
-            let result_user_rules = this.user_rules_callback(input);
+            const [imagePath, exercises] = this.data[this.current_index_data];
+            const requiredWords = exercises[this.current_index_inner_data][0];
+            // Получаем местоимение из имени файла картинки: she.png -> she
+            const pronoun = imagePath
+                .split('/')
+                .pop()
+                .replace(/\.[^.]+$/, '')
+                .toLowerCase();
+            const result_user_rules = this.user_rules_callback(input, requiredWords, pronoun);
+
 
             if (result_user_rules.length !== 0){
                 this.el_result_list.innerHTML = '';

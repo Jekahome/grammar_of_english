@@ -1,5 +1,5 @@
 # Pronouns (Personal, Demonstrative)
-**Personal pronouns (личные местоимения)** имеют два падежа — **именительный** и **косвенный**.
+**Personal pronouns (личные местоимения)** имеют два падежа — **именительный** (he, she) и **косвенный** (him, her).
 
 ## Звук TH широко распространен в лексике, начиная с артикля the и местоимений...
 
@@ -383,7 +383,7 @@ Do you need anything else? — Вам нужно что-нибудь еще?
 
 ---
 
-## Личные местоимения в именительном падеже:
+# Личные местоимения в именительном падеже:
 Именительный падеж (nominative case) — это форма местоимения, которая используется, когда местоимение является подлежащим (субъектом) предложения.
 
 |Личные местоимения в именительном падеже|I|he|she|it|we|you|they|
@@ -393,18 +393,29 @@ Do you need anything else? — Вам нужно что-нибудь еще?
 
 ![nominative case](../img/pronouns/nominative_case.png)
 
+> Сокращенная форма: `They + are = They're` и др. `she's, he's, i'm, we're, you're, it's`
+>
+> They're my friends. — *Они мои друзья.*
+
 Examples:
-* ***I** am a boy — Я мальчик.*
-* ***He** is a doctor — Он врач.*
-* ***She** is a teacher — Она учительница.*
-* ***It** is big — Оно большое.*
-* ***We** are children — Мы дети.*
-* ***You** are kind — Ты добрый.*
-* ***They** are clever — Они умные.*
+* ***I** am a boy. — Я мальчик.*
+* ***He** is a doctor. — Он врач.*
+* ***She** is a teacher. — Она учительница.*
+* ***She's** a driver. — Она водитель.*
+* ***It** is big. — Оно большое.*
+* ***We** are children. — Мы дети.*
+* ***You** are kind. — Ты добрый.*
+* ***They** are clever. — Они умные.*
+* ***They're** my friends. — Они мои друзья.*
  
 <h2>Exercise: listen and write (nominative case)</h2>
 <div id="control_nominative_case"></div>
 <div id="listen_and_write_nominative_case"></div>
+
+
+<br>
+<details>
+<summary>Fast carousel</summary>
 
 <h2>Exercise: Fast carousel (nominative case)</h2>
 (сопоставить картинку как местоименение со словом)<br>
@@ -412,10 +423,12 @@ Examples:
 <div id="practice3_picture_nominative_case"></div>
 <div id="practice3_control_nominative_case"></div>
 <div id="practice3_result_nominative_case"></div>
+</details>
+<br>
 
 ---
 
-## Личные местоимения в косвенном падеже
+# Личные местоимения в косвенном падеже
 Косвенный падеж (oblique case) — это форма местоимения, которая используется, когда местоимение является дополнением в предложении (то есть объектом действия).
 
 Косвенный падеж местоимений в английском языке отвечает на вопросы "кому?" (to whom?), "чему?" (to what?), "с кем?" (with whom?), "с чем?" (with what?) и аналогичные.
@@ -466,9 +479,16 @@ Examples:
 <div id="control_oblique_case"></div>
 <div id="listen_and_write_oblique_case"></div>
 
+ 
+<h2>Advanced Exercise: listen and write (oblique case with modal verbs)</h2>
+<div id="control_oblique_case_2"></div>
+<div id="listen_and_write_oblique_case_2"></div>
+
+
+
 ---
 
-## Demonstrative pronouns (Указательные местоимения):
+# Demonstrative pronouns (Указательные местоимения):
 Указательные местоимения в английском языке используются для указания на конкретные предметы или людей.
 
 |Указательные местоимения|this (/ðɪs/ )  | these (/ðiːz/) | that (/ðæt/) | those (/ðoʊz/) |
@@ -484,16 +504,20 @@ Examples:
 звук ð - что бы произнести, следует язык разместить между зубами и произнести звук 'з'
 Но слышится как мягкая 'Д'
 
-> хорошо запоминается если сказать: 
+> хорошо запоминается если перечислять то что вас окружает: 
 > * это это и это мое, и эти тоже мои
 > * то то и то мое, и те тоже мои
 
 ![demonstrative pronouns](../img/pronouns/demonstrative_pronouns.png)
 
+> Сокращенная форма: `That + is = That's`
+>
+> That's my book. — *Это моя книга.*
+
 Examples:
 * **This** is my book. — *Это моя книга (близко).*
 * **This** is a good book. — *Это хорошая книга.*
-* **That** is your car. — *То твоя машина (далеко).*
+* **That** is my car. — *То моя машина (далеко).*
 * **That** is a white apple. — *То белое яблоко.*
 * **These** are my friends. — *Это мои друзья (близко).*
 * **These** words — *эти слова.*
@@ -504,50 +528,39 @@ Examples:
 * **That** sea — *то море.*
 * **This** word — *это слово.*
 * **These** are my glasses. — *Это мои очки.* (очки одни, но используется мн. ч.)
- 
 * **This** is my book and **these** books are theirs. — *Это моя книга, а эти книги — их.*
 * **These** are my books, and **those** books are theirs.  — *Это мои книги, а эти книги — их.*
 * **This** is a book, and **this** is also my book, in general, all **these** books are mine.  —  *Это книга, и это также моя книга, вообще все эти книги принадлежат мне.*
+* **This** pencil is black. — *Этот карандаш черный.*
+* **These** books are interesting. — *Эти книги интересные.*
+* **That** pencil is blue. — *Тот карандаш голубой.*
+* **Those** cats are white. — *Те коты белые.*
+
+
+<h2>Exercise: listen and write (demonstrative pronouns)</h2>
+<div id="control_demonstrative_pronouns"></div>
+<div id="listen_and_write_demonstrative_pronouns"></div>
+
+
+
+<br>
+<details>
+<summary>Fast carousel</summary>
 
 <h2>Exercise: Fast carousel (demonstrative pronouns)</h2>
 <div id="practice3_picture_demonstrative_pronouns"></div>
 <div id="practice3_control_demonstrative_pronouns"></div>
 <div id="practice3_result_demonstrative_pronouns"></div> 
 
-**This [ðɪs]** (эта/это)
-
-Мы говорим this - речь об **одном** предмете или о живом существе, которое находится **возле** нас.
-
-*This pencil is black. — Этот карандаш черный.*
-
-**These [ðiːz]** (эти)
-
-Мы говорим these - речь о **множестве** предметов или живых существ, которые находятся **возле** нас.
-
-*These books are interesting. — Эти книги интересные.*
-
-**That [ðæt]** (та/тот)
-
-Мы говорим that - речь об **одном** предмете или о живом существе, которое находится **далеко** от нас.
-
-*That pencil is blue. — Тот карандаш голубой.*
-
-**Those [ðəʊz]** (те)
-
-Мы говорим those - речь о **множестве** предметов или живых существ, которое находится **далеко** от нас.
-
-*Those cats are white. — Те коты белые.*
-
-<h2>Exercise: listen and write (demonstrative pronouns)</h2>
-<div id="control_demonstrative_pronouns"></div>
-<div id="listen_and_write_demonstrative_pronouns"></div>
+</details>
+<br>
 
 ---
 
-## Указательные предложения: This is ..., These are ..., That is ..., Those are ...
+# Указательные предложения: This is ..., These are ..., That is ..., Those are ...
 Вопросы "Что это?".
 
-Для вопроса в ед. числе **What is this/it?** и мн. числе **What are these?** ответы **This is...** и **These/They are...**
+Для вопроса в ед.ч. **What is this/it?** и мн.ч. **What are these?** ответы **This is...** и **These/They are...**
 
 * *What is this? — **This is** a doll.* (Что это? — Это кукла.)
 * *What are these? — **These are** houses.* (Что это? — Это дома.)
@@ -556,7 +569,7 @@ Examples:
 
 Вопросы "Что то?".
 
-Для вопроса в ед. числе **What is that?** и мн. числе **What are those?** ответы **That is...** и **Those/They are...**
+Для вопроса в ед.ч. **What is that?** и мн.ч. **What are those?** ответы **That is...** и **Those/They are...**
 
 * *What is that? — **That/It is** a book.* (Что то? — То книга.)
 * *What are those? — **Those/They are** shoes.* (Что то? — То туфли.)
@@ -567,12 +580,29 @@ Examples:
  
 ---
 
-## Артикль не нужен
+# Артикль не нужен
 Когда перед существительным ("book") стоит указательное местоимение ("this" — этот, эта), артикль не нужен, потому что "this" **уже** выполняет функцию определения конкретного объекта.
 
 Пример:
 * "This is a book." → правильная форма в предложении, потому что здесь артикль "a" указывает на неопределенный объект.
 * "This book is interesting." → правильно, здесь артикль не нужен, потому что "this" уже делает существительное определенным.
+
+ 
+---
+
+<h2>Exercise: listen and write (all)</h2>
+<div id="control_all"></div>
+<div id="listen_and_write_all"></div>
+<br>
+
+
+Распознать в речи сочетание слов:
+* `are in the` (These groups are in the school)
+* `What are` (What are these things?)
+* `What is` (What is this?)
+* `her` (who helps her)
+
+
 
 <details>
 <summary>Примеры:</summary>
@@ -825,21 +855,6 @@ What are those? They are birds. — Что это там? — Это птицы.
 
 ```
 </details>
- 
- ---
-
-<h2>Exercise: listen and write (all)</h2>
-<div id="control_all"></div>
-<div id="listen_and_write_all"></div>
-<br>
-
-
-Распознать в речи сочетание слов:
-* `are in the` (These groups are in the school)
-* `What are` (What are these things?)
-* `What is` (What is this?)
-* `her` (who helps her)
-
 
 
 <script>
@@ -848,10 +863,12 @@ const exercises_easy_listen_and_write_nominative_case = [
     ["I am a boy", "Я мальчик."],
     ["He is a doctor", "Он врач."],
     ["She is a teacher", "Она учительница."],
+    ["She is a driver", "Она водитель."],
     ["It is big", "Оно большое."],
     ["We are children", "Мы дети."],
     ["You are kind", "Ты добрый."],
-    ["They are clever", "Они умные."]
+    ["They are clever", "Они умные."],
+    ["They are my friends", "Они мои друзья."]
 ];
 
 const exercises_easy_listen_and_write_oblique_case = [
@@ -896,6 +913,173 @@ const exercises_easy_listen_and_write_oblique_case = [
     ["I want to see her.", "Я хочу увидеть её."],
     ["Take him to the doctor.", "Отведи его к врачу."],
     ["We miss you.", "Мы скучаем по тебе (вам)."],
+
+    ["He sees me.", "Он видит меня."],
+    ["Give them the books.", "Дайте им книги."],
+    ["Tell him.", "Скажите ему."],
+    ["I give her a notebook.", "Я даю ей тетрадь."],
+    ["I look at him.", "Я смотрю на него."],
+    ["I see you.", "Я вижу тебя."],
+    ["Tell me.", "Скажи мне."],
+    ["Let me take an apple.", "Позвольте мне взять яблоко."],
+    ["Give them a lamp.", "Дай им лампу."],
+    ["Give us the boxes.", "Дайте нам коробки."],
+    ["Put them on the table.", "Положи их на стол."],
+    ["Tell them.", "Скажите им."],
+    ["Tell her.", "Скажите ей."],
+    ["Find it.", "Найдите это."],
+    ["Find it (the book).", "Найдите её (книгу)."],
+    ["Find her (the student).", "Найдите её (студентку)."],
+    ["Find them.", "Найдите их."],
+    ["I see them.", "Я вижу их."],
+    ["They see me.", "Они видят меня."],
+    ["We see him.", "Мы видим его."],
+    ["He sees her.", "Он видит её."],
+    ["You see us.", "Вы видите нас."],
+    ["She sees you.", "Она видит вас."],
+    ["Look at her.", "Посмотри на неё."],
+    ["She looks at us.", "Она смотрит на нас."]
+];
+
+
+
+const exercises_easy_listen_and_write_oblique_case_2 = [
+    // --- Личные местоимения в косвенном падеже (Me, You, Him, Her, It, Us, Them) ---
+    // --- Распространённые глаголы и модальные глаголы ---
+    // --- Have ---
+    ["I have it.", "У меня это есть."],
+    ["Do you have them?", "Они у тебя есть?"],
+    ["We have it for you.", "У нас это есть для тебя."],
+
+    // --- Want ---
+    ["I want you to help me.", "Я хочу, чтобы ты помог мне."],
+    ["She wants him to come.", "Она хочет, чтобы он пришёл."],
+    ["They want us to help them.", "Они хотят, чтобы мы помогли им."],
+
+    // --- Go ---
+    ["Go with me.", "Иди со мной."],
+    ["I go to him every day.", "Я хожу к нему каждый день."],
+    ["She goes with them.", "Она ходит с ними."],
+
+    // --- Get ---
+    ["Get it for me, please.", "Достань это для меня, пожалуйста."],
+    ["I got it from her.", "Я получил это от неё."],
+    ["Can you get them for us?", "Ты можешь достать их для нас?"],
+
+    // --- Take ---
+    ["Take it with you.", "Возьми это с собой."],
+    ["Take them to him.", "Отнеси их ему."],
+    ["She took me to the doctor.", "Она отвела меня к врачу."],
+
+    // --- Make ---
+    ["Make it for me.", "Сделай это для меня."],
+    ["She made them for us.", "Она сделала их для нас."],
+    ["I can make it for you.", "Я могу сделать это для тебя."],
+
+    // --- Come ---
+    ["Come with me.", "Пойдём со мной."],
+    ["Come to us tomorrow.", "Приходи к нам завтра."],
+    ["He came to see her.", "Он пришёл навестить её."],
+
+    // --- Can ---
+    ["Can you help me?", "Ты можешь помочь мне?"],
+    ["I can see them.", "Я могу видеть их."],
+    ["She can take us home.", "Она может отвезти нас домой."],
+
+    // --- Could ---
+    ["Could you help him?", "Не могли бы вы помочь ему?"],
+    ["Could you give it to me?", "Не могли бы вы дать это мне?"],
+    ["I could hear them.", "Я мог слышать их."],
+
+    // --- May ---
+    ["May I ask you a question?", "Можно задать тебе вопрос?"],
+    ["You may take it.", "Ты можешь взять это."],
+    ["She may visit us tomorrow.", "Возможно, она навестит нас завтра."],
+
+    // --- Might ---
+    ["He might call me later.", "Возможно, он позвонит мне позже."],
+    ["They might invite us.", "Возможно, они пригласят нас."],
+    ["I might give it to her.", "Возможно, я отдам это ей."],
+
+    // --- Must ---
+    ["You must help him.", "Ты должен помочь ему."],
+    ["We must find them.", "Мы должны найти их."],
+    ["She must tell us the truth.", "Она должна сказать нам правду."],
+
+    // --- Will ---
+    ["I will call you tomorrow.", "Я позвоню тебе завтра."],
+    ["They will help us.", "Они помогут нам."],
+    ["She will give it to him.", "Она отдаст это ему."],
+
+    // --- Would ---
+    ["Would you help me?", "Не могли бы вы помочь мне?"],
+    ["I would like to see her.", "Я хотел бы увидеть её."],
+    ["He would take us home.", "Он отвёз бы нас домой."],
+
+    // --- Should ---
+    ["You should tell him.", "Тебе следует сказать ему."],
+    ["We should help them.", "Нам следует помочь им."],
+    ["Should I call her?", "Мне следует позвонить ей?"],
+
+    // --- Do ---
+    ["Do you know me?", "Ты знаешь меня?"],
+    ["I do it for you.", "Я делаю это для тебя."],
+    ["She doesn't understand us.", "Она не понимает нас."],
+
+    // --- Say ---
+    ["Say it to me.", "Скажи это мне."],
+    ["He said it to her.", "Он сказал это ей."],
+    ["What did you say to them?", "Что ты сказал им?"],
+
+    // --- Know ---
+    ["I know him very well.", "Я очень хорошо знаю его."],
+    ["Do you know them?", "Ты знаешь их?"],
+    ["She knows us.", "Она знает нас."],
+
+    // --- Think ---
+    ["I think about you every day.", "Я думаю о тебе каждый день."],
+    ["What do you think of him?", "Что ты думаешь о нём?"],
+    ["She thinks about them a lot.", "Она много думает о них."],
+
+    // --- See ---
+    ["I see her every morning.", "Я вижу её каждое утро."],
+    ["Can you see it?", "Ты можешь это видеть?"],
+    ["We saw them yesterday.", "Мы видели их вчера."],
+
+    // --- Give ---
+    ["Give it to me.", "Дай это мне."],
+    ["He gave them to us.", "Он дал их нам."],
+    ["I will give her the book.", "Я дам ей книгу."],
+
+    // --- Use ---
+    ["You can use it.", "Ты можешь использовать это."],
+    ["I use it every day.", "Я использую это каждый день."],
+    ["She uses them at work.", "Она использует их на работе."],
+
+    // --- Need ---
+    ["I need you.", "Ты мне нужен / нужна."],
+    ["We need them today.", "Они нужны нам сегодня."],
+    ["Do you need it?", "Тебе это нужно?"],
+
+    // --- Like ---
+    ["I like it.", "Мне это нравится."],
+    ["She likes him.", "Он ей нравится."],
+    ["They like us.", "Мы им нравимся."],
+
+    // --- Help ---
+    ["Please, help me.", "Пожалуйста, помоги мне."],
+    ["I can help them.", "Я могу помочь им."],
+    ["He helped us yesterday.", "Он помог нам вчера."],
+
+    // --- Ask ---
+    ["Ask her about it.", "Спроси её об этом."],
+    ["I asked him a question.", "Я задал ему вопрос."],
+    ["Can I ask you something?", "Можно спросить тебя кое о чём?"],
+
+    // --- Tell ---
+    ["Tell me the truth.", "Скажи мне правду."],
+    ["Tell them about us.", "Расскажи им о нас."],
+    ["She told him everything.", "Она рассказала ему всё."]
 ];
 
 const exercises_easy_listen_and_write_demonstrative_pronouns  = [
@@ -903,7 +1087,7 @@ const exercises_easy_listen_and_write_demonstrative_pronouns  = [
     ["This soup is hot.", "Этот суп горячий."],
     ["That cloud is black.", "То облако черное."],
     ["These apples are sweet.", "Эти яблоки сладкие."],
-    ["Those kids are quiet.", "Те дети тихие."],
+    ["Those children are quiet.", "Те дети тихие."],
     ["This bus goes to the city center.", "Этот автобус идет в центр города."],
     ["That bird is very small.", "Та птица очень маленькая."],
     ["These students are smart.", "Эти студенты умные."],
@@ -922,29 +1106,47 @@ const exercises_easy_listen_and_write_demonstrative_pronouns  = [
     ["Check those bags.", "Проверь те сумки."],
  
     ["This is my favorite song.", "Это моя любимая песня."],
-    ["That is a big mountain.", "Вон то — большая гора."],
+    ["That mountain is big.", "Эта гора большая."],
     ["These books are heavy.", "Эти книги тяжелые."],
     ["Those stars are bright.", "Те звезды яркие."],
     ["I like this coffee.", "Мне нравится этот кофе."],
     ["Who is that boy over there?", "Кто вон тот мальчик?"],
-    ["These shoes are too small.", "Эти туфли слишком малы."],
+    ["These shoes are too small.", "Эти туфли слишком маленькие."],
     ["Those cookies are tasty.", "Те печенья вкусные."],
     ["This water is cold.", "Эта вода холодная."],
     ["That window is open.", "То окно открыто."],
     ["Put these keys on the table.", "Положи эти ключи на стол."],
     ["Don't touch those boxes.", "Не трогай те коробки."],
     ["Is this your bag?", "Это твоя сумка?"],
-    ["Is that your house?", "Тот дом — твой?"],
+    ["Is that your house?", "Вон тот дом — твой?"],
     ["I want these cakes.", "Я хочу эти пирожные."],
     ["Look at those birds.", "Посмотри на тех птиц."],
     ["This room is very clean.", "Эта комната очень чистая."],
     ["That dog is very friendly.", "Та собака очень дружелюбная."],
     ["These children are noisy.", "Эти дети шумные."],
     ["Those cars are expensive.", "Те машины дорогие."],
+
+    ["This is my brother.", "Это мой брат."],
+    ["That isn't my coat.", "Это не моё пальто."],
+    ["Are these your keys?", "Это твои ключи?"],
+    ["Are those your shoes?", "Это твоя обувь?"],
+    ["I want that book.", "Я хочу ту книгу."],
+    ["Give me those pens.", "Дай мне те ручки."],
+    ["I can't see those birds.", "Я не вижу тех птиц."],
+    ["Who are these people?", "Кто эти люди?"],
 ];
 
 
 const exercises_easy_listen_and_write_all = [
+    ["This is my brother.", "Это мой брат."],
+    ["That isn't my coat.", "Это не моё пальто."],
+    ["Are these your keys?", "Это твои ключи?"],
+    ["Are those your shoes?", "Это твоя обувь?"],
+    ["I want that book.", "Я хочу ту книгу."],
+    ["Give me those pens.", "Дай мне те ручки."],
+    ["I can't see those birds.", "Я не вижу тех птиц."],
+    ["Who are these people?", "Кто эти люди?"],
+
     ["I have a family.", "У меня есть семья."],
     ["You have time.", "У тебя есть время."],
     ["He has a house.", "У него есть дом."],
@@ -1187,7 +1389,141 @@ const exercises_easy_listen_and_write_all = [
     ["What are those? Those are boats.", "Что это там? — Это лодки."],
     ["What are those? They are boats.", "Что это там? — Это лодки."],
     ["What are those? Those are birds.", "Что это там? — Это птицы."],
-    ["What are those? They are birds.", "Что это там? — Это птицы."]
+    ["What are those? They are birds.", "Что это там? — Это птицы."],
+
+    ["I have it.", "У меня это есть."],
+    ["Do you have them?", "Они у тебя есть?"],
+    ["We have it for you.", "У нас это есть для тебя."],
+
+    // --- Want ---
+    ["I want you to help me.", "Я хочу, чтобы ты помог мне."],
+    ["She wants him to come.", "Она хочет, чтобы он пришёл."],
+    ["They want us to help them.", "Они хотят, чтобы мы помогли им."],
+
+    // --- Go ---
+    ["Go with me.", "Иди со мной."],
+    ["I go to him every day.", "Я хожу к нему каждый день."],
+    ["She goes with them.", "Она ходит с ними."],
+
+    // --- Get ---
+    ["Get it for me, please.", "Достань это для меня, пожалуйста."],
+    ["I got it from her.", "Я получил это от неё."],
+    ["Can you get them for us?", "Ты можешь достать их для нас?"],
+
+    // --- Take ---
+    ["Take it with you.", "Возьми это с собой."],
+    ["Take them to him.", "Отнеси их ему."],
+    ["She took me to the doctor.", "Она отвела меня к врачу."],
+
+    // --- Make ---
+    ["Make it for me.", "Сделай это для меня."],
+    ["She made them for us.", "Она сделала их для нас."],
+    ["I can make it for you.", "Я могу сделать это для тебя."],
+
+    // --- Come ---
+    ["Come with me.", "Пойдём со мной."],
+    ["Come to us tomorrow.", "Приходи к нам завтра."],
+    ["He came to see her.", "Он пришёл навестить её."],
+
+    // --- Can ---
+    ["Can you help me?", "Ты можешь помочь мне?"],
+    ["I can see them.", "Я могу видеть их."],
+    ["She can take us home.", "Она может отвезти нас домой."],
+
+    // --- Could ---
+    ["Could you help him?", "Не могли бы вы помочь ему?"],
+    ["Could you give it to me?", "Не могли бы вы дать это мне?"],
+    ["I could hear them.", "Я мог слышать их."],
+
+    // --- May ---
+    ["May I ask you a question?", "Можно задать тебе вопрос?"],
+    ["You may take it.", "Ты можешь взять это."],
+    ["She may visit us tomorrow.", "Возможно, она навестит нас завтра."],
+
+    // --- Might ---
+    ["He might call me later.", "Возможно, он позвонит мне позже."],
+    ["They might invite us.", "Возможно, они пригласят нас."],
+    ["I might give it to her.", "Возможно, я отдам это ей."],
+
+    // --- Must ---
+    ["You must help him.", "Ты должен помочь ему."],
+    ["We must find them.", "Мы должны найти их."],
+    ["She must tell us the truth.", "Она должна сказать нам правду."],
+
+    // --- Will ---
+    ["I will call you tomorrow.", "Я позвоню тебе завтра."],
+    ["They will help us.", "Они помогут нам."],
+    ["She will give it to him.", "Она отдаст это ему."],
+
+    // --- Would ---
+    ["Would you help me?", "Не могли бы вы помочь мне?"],
+    ["I would like to see her.", "Я хотел бы увидеть её."],
+    ["He would take us home.", "Он отвёз бы нас домой."],
+
+    // --- Should ---
+    ["You should tell him.", "Тебе следует сказать ему."],
+    ["We should help them.", "Нам следует помочь им."],
+    ["Should I call her?", "Мне следует позвонить ей?"],
+
+    // --- Do ---
+    ["Do you know me?", "Ты знаешь меня?"],
+    ["I do it for you.", "Я делаю это для тебя."],
+    ["She doesn't understand us.", "Она не понимает нас."],
+
+    // --- Say ---
+    ["Say it to me.", "Скажи это мне."],
+    ["He said it to her.", "Он сказал это ей."],
+    ["What did you say to them?", "Что ты сказал им?"],
+
+    // --- Know ---
+    ["I know him very well.", "Я очень хорошо знаю его."],
+    ["Do you know them?", "Ты знаешь их?"],
+    ["She knows us.", "Она знает нас."],
+
+    // --- Think ---
+    ["I think about you every day.", "Я думаю о тебе каждый день."],
+    ["What do you think of him?", "Что ты думаешь о нём?"],
+    ["She thinks about them a lot.", "Она много думает о них."],
+
+    // --- See ---
+    ["I see her every morning.", "Я вижу её каждое утро."],
+    ["Can you see it?", "Ты можешь это видеть?"],
+    ["We saw them yesterday.", "Мы видели их вчера."],
+
+    // --- Give ---
+    ["Give it to me.", "Дай это мне."],
+    ["He gave them to us.", "Он дал их нам."],
+    ["I will give her the book.", "Я дам ей книгу."],
+
+    // --- Use ---
+    ["You can use it.", "Ты можешь использовать это."],
+    ["I use it every day.", "Я использую это каждый день."],
+    ["She uses them at work.", "Она использует их на работе."],
+
+    // --- Need ---
+    ["I need you.", "Ты мне нужен / нужна."],
+    ["We need them today.", "Они нужны нам сегодня."],
+    ["Do you need it?", "Тебе это нужно?"],
+
+    // --- Like ---
+    ["I like it.", "Мне это нравится."],
+    ["She likes him.", "Он ей нравится."],
+    ["They like us.", "Мы им нравимся."],
+
+    // --- Help ---
+    ["Please, help me.", "Пожалуйста, помоги мне."],
+    ["I can help them.", "Я могу помочь им."],
+    ["He helped us yesterday.", "Он помог нам вчера."],
+
+    // --- Ask ---
+    ["Ask her about it.", "Спроси её об этом."],
+    ["I asked him a question.", "Я задал ему вопрос."],
+    ["Can I ask you something?", "Можно спросить тебя кое о чём?"],
+
+    // --- Tell ---
+    ["Tell me the truth.", "Скажи мне правду."],
+    ["Tell them about us.", "Расскажи им о нас."],
+    ["She told him everything.", "Она рассказала ему всё."],
 ];
 
 const exercises_practice3_nominative_case = [
@@ -1273,26 +1609,56 @@ const exercises_practice3_demonstrative_pronouns = [
 
 ];
 
-function validateObliqueCase(input) {
-  if (!window.nlp) return;
+function validateObliqueCase(input, requiredWords, requiredPronoun) {
+    if (!window.nlp) return [];
 
-  const doc = nlp(input);
-  let result = [];
+    const result = [];
+    const doc = nlp(input);
 
-  // Более гибкий паттерн
-  const pattern = '#Pronoun (am|is|are) .+';
+    // Проверяем, что предложение начинается с нужного местоимения.
+    const firstWord = input.trim().split(/\s+/)[0].toLowerCase();
 
-  const check = doc.match(pattern).found;
+    if (firstWord !== requiredPronoun) {
+        result.push({
+            err: true,
+            msg: `You must start the sentence with "${requiredPronoun}".`
+        });
 
-  if (!check) {
-    result.push({
-      err: true,
-      msg: "The sentence is not grammatical"
-    });
-  }
-  return result;
+        return result;
+    }
+
+    // Проверяем конструкцию предложения.
+    const pattern = '#Pronoun (am|is|are) .+';
+
+    if (!doc.match(pattern).found) {
+        result.push({
+            err: true,
+            msg: 'The sentence is not grammatical.'
+        });
+
+        return result;
+    }
+
+    // Проверяем обязательные слова.
+    for (const word of requiredWords) {
+        const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+        const wordPattern = new RegExp(
+            `\\b(?:${escapedWord}|${escapedWord}s|${escapedWord}es)\\b`,
+            'i'
+        );
+
+        if (!wordPattern.test(input)) {
+            result.push({
+                err: true,
+                msg: `You must use the word "${word}".`
+            });
+        }
+    }
+
+    return result;
 }
- 
+
 function validateDemonstrativePronouns(input) {
   if (!window.nlp) return;
 
@@ -1315,6 +1681,7 @@ function validateDemonstrativePronouns(input) {
 
 let g_practice_nominative_case = null;
 let g_practice_oblique_case = null;
+let g_practice_oblique_case_2 = null;
 let g_practice_demonstrative_pronouns = null;
 let g_practice_all = null;
    
@@ -1345,6 +1712,20 @@ document.addEventListener('DOMContentLoaded', async () => {
             });
             g_practice_oblique_case.genExercisesListenAndWrite();    
         }
+
+        {
+            let editor_symbol = new EditorSymbol({callback: checkAnswerObliqueCase, suffix_id: "oblique_case_2"});
+            g_practice_oblique_case_2 = new Practice({
+                el_listen_and_write: document.getElementById('listen_and_write_oblique_case_2'), 
+                el_exercise_control: document.getElementById('control_oblique_case_2'), 
+                exercises_listen_and_write: getRandomMix(exercises_easy_listen_and_write_oblique_case_2),
+                editor_symbol: editor_symbol
+            });
+            g_practice_oblique_case_2.genExercisesListenAndWrite();    
+        }
+
+
+
         {
             let editor_symbol = new EditorSymbol({callback: checkAnswerDemonstrativePronouns, suffix_id: "demonstrative_pronouns"});
             g_practice_demonstrative_pronouns = new Practice({

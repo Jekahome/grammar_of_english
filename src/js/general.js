@@ -42,7 +42,7 @@ const exclude = [];
 const others = ["paris","brazil","pm", "lot of","lot", "brazil","max","kate","moscow","john","smiths", "london","york","roberto","volga","japan","europe","france",
     "england","egypt","spain","italian","italy","id","wi-fi","jake", "jane","alice","elisabeth","mister","jack","liza","robert","sarah","olga","alan","james","barbara","sushi",
     "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs","alissa","webvtt",
-    "russia","germany","hi","usa","canada","uk","berlin","miller","wilson","lee","australia","bob"
+    "russia","germany","hi","usa","canada","uk","berlin","miller","wilson","lee","australia","bob","rosalind", "hortensia"
 ];
 
 const a1_words_nouns = [
@@ -2339,6 +2339,7 @@ const a2_words_adjective = [
     ["mad", "madder", "maddest", "безумный", 2599],
     ["alternative", "more alternative", "most alternative", "альтернативный", 2600],
     ["friendly", "friendlier", "friendliest", "дружелюбный", 2757],
+    ["unfriendly", "unfriendlier", "unfriendliest", "недружелюбный", 2757],
     ["square", "more square", "most square", "квадратный", 2811],
     ["attractive", "more attractive", "most attractive", "привлекательный", 2817],
     ["sudden", "more sudden", "most sudden", "внезапный", 2886],

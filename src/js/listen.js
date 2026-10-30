@@ -365,7 +365,7 @@ class Listen {
                 this.#manualBtnNext.style.display = ''; 
                 this.#manualBtnRepeat.style.display = ''; 
                 this.#manualBtnReplay.style.display = '';
-
+                this.subtitleTimeInfo.style.display = '';
             }
         });
 
@@ -438,6 +438,7 @@ class Listen {
             font-size: 13px;
             white-space: nowrap;
             margin: 0 10px;
+            display: none
         `;
         this.subtitleTimeInfo = subtitleTimeInfo;
         this.startSubtitleTimeTracking();
@@ -515,7 +516,10 @@ class Listen {
     }
 
     updateSubtitleTimeInfo() {
-        if (!this.subtitleTimeInfo) return;
+        if (!this.subtitleTimeInfo ||
+            this.subtitleTimeInfo.style.display === "none") {
+            return;
+        }
 
         const sub = this.subs[this.index];
         if (!sub) return;
