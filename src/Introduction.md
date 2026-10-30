@@ -586,8 +586,8 @@ Future in the Past
     - [x] Alice's Adventures in Wonderland
     - [x] Alissa
     - [x] Beauty and the Beast
-    - [ ] Between Two Worlds
-    - [ ] Blue Fins
+    - [x] Between Two Worlds
+    - [x] Blue Fins
     - [ ] Blue Moon Valley
     - [ ] Dino's Day In London
     - [ ] Flying Home
