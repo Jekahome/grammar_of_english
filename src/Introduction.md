@@ -588,8 +588,8 @@ Future in the Past
     - [x] Beauty and the Beast
     - [x] Between Two Worlds
     - [x] Blue Fins
-    - [ ] Blue Moon Valley
-    - [ ] Dino's Day In London
+    - [x] Blue Moon Valley
+    - [x] Dino's Day In London
     - [ ] Flying Home
     - [ ] Girl On A Motorcycle
     - [ ] Good Day Bad Day

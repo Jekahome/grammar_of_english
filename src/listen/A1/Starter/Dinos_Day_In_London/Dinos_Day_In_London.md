@@ -1,5 +1,7 @@
 # Listen: Dino's Day In London
 
+автор Stephen Rabley
+
 <div id="listen-read">
  
 <details>

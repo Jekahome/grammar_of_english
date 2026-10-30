@@ -3088,6 +3088,7 @@ const b1_words_nouns = [
   ["quarter", "quarters", "", "квартал, четверть", 10000],
   ["tire", "tires", "", "шина (авто)", 5000],
   ["grammar", "grammars", "", "грамматика", 5000],
+  ["horseman","horsemen","","наездник",5000],
 
 ];
 
