@@ -123,6 +123,7 @@
 * Грамматика по уровням;
 * [Аудио адаптивных книг](https://jekahome.github.io/grammar_of_english/listen/Intoduction.html)
 * Адаптивные книги:
+  * [speakalong 👌](https://speakalong.app/?utm_source=chatgpt.com#por-que)
   * [Адаптивные книги www.newsinlevels.com](https://www.newsinlevels.com/)
   * [Адаптивные книги easylang.ru](https://easylang.ru/)
   * [Адаптивные книги fobook.ru](https://fobook.ru/)
@@ -130,6 +131,12 @@
   * [english-e-reader.net](https://english-e-reader.net/level/starter)
   * [Книги на английском языке с параллельным переводом](https://2books.su/)
 * Видео фильмы, сериалы, мультики, видео на Youtube
+  * [Youtube](https://www.youtube.com/playlist list=PLRGfOKGDVbwK9fpGUt6RvRnq7GPlt97Jb)
+  * [Youtube](https://www.youtube.com/playlist?list=PLRGfOKGDVbwI70HtdXTABaPqghBaQMOBA)
+  * [Youtube](https://www.youtube.com/playlist?list=PLW8vWfE1ixfdffOuwgtpSCllUFMvKas_d)
+  * [Youtube](https://www.youtube.com/playlist?list=PLdVPxg2JI1Q0MoVCkMFPNxA6_ooIXLNA4)
+  * [Youtube](https://www.youtube.com/@Angloteka_app/playlists)
+  * [readingcorner](https://readingcorner.uk/ru/library)
  
  
 Для просмотров фильмов на английском с субтитрами:
@@ -155,7 +162,7 @@
 
 ## 3. Как это лучше сделать
 
-Практика состоит из навыков, где нужно: ГОВОРИТЬ, СЛУШАТЬ, ПИСАТЬ, ЧИТАТЬ.  
+Практика состоит из навыков, где нужно: ГОВОРИТЬ, СЛУШАТЬ, ПИСАТЬ, ЧИТАТЬ. 
 Самый важный навык — это СЛУШАТЬ (аудирование), т.е.  умение распознавать речь на слух. Так как, зная, как звучит английская речь, вы будете иметь пример звучания, которому сможете подражать, а также примерное представление о её написании. т.е.  это охватывает все необходимые навыки. Следующее на что обратить внимание, умение составлять предложения, сперва процесс долгий, поэтому через письмо, после овладения навыком - станет возможным составлять предложения на лету, и речь станет без пауз. 
 
 > "Якориться" - свободно применять пройденную тему/грамматику/слова. Освоить тему достаточно уверенно прежде чем переходить к новой. 
