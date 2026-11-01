@@ -16,6 +16,7 @@
 При вопросе ставим форму **to be** (is/are) перед there.
 
 * **Is** there a book on the table? — На столе есть книга?
+* **Is** there a motel, do you know? — Вы знаете, есть ли здесь мотель?
 * **Are** there any cookies left in the jar? — В банке остались печенья?
 
 При отрицании ставим частицу **not** после there is/are.

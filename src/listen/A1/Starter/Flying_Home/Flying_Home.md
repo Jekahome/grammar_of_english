@@ -1,5 +1,7 @@
 # Listen: Flying Home
 
+Автор Stephen Rabley, серия Penguin Readers Easystarts.
+  
 <div id="listen-read">
 
 <details>

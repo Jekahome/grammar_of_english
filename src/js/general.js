@@ -42,7 +42,8 @@ const exclude = [];
 const others = ["paris","brazil","pm", "lot of","lot", "brazil","max","kate","moscow","john","smiths", "london","york","roberto","volga","japan","europe","france",
     "england","egypt","spain","italian","italy","id","wi-fi","jake", "jane","alice","elisabeth","mister","jack","liza","robert","sarah","olga","alan","james","barbara","sushi",
     "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs","alissa","webvtt",
-    "russia","germany","hi","usa","canada","uk","berlin","miller","wilson","lee","australia","bob","rosalind", "hortensia"
+    "russia","germany","hi","usa","canada","uk","berlin","miller","wilson","lee","australia","bob","rosalind", "hortensia", "kenny", "america", "oxford", "copyright",
+    "california", "bookworms", "escott", "carrie","mike","rosie","sally"
 ];
 
 const a1_words_nouns = [
@@ -428,6 +429,7 @@ const a1_words_nouns = [
     ["playground","playgrounds","","площадка для игр",5000],
     ["kite","kites","","коршун, воздушный змей",5000],
     ["scooter","scooters","","скутер, самокат",5000],
+    ["motorcycle","motorcycles","","мотоцикл",5000],
 
      
     
@@ -2119,6 +2121,8 @@ const a2_words_nouns = [
   ["yoga", "", "", "йога", 5000],
   ["rose", "roses", "", "роза", 5000],
   ["adult","adults","","взрослый", 5000],
+  ["robber","robbers","","разбойник, грабитель",5000],
+  ["motel","motels","","мотель, автопансионат",5000],
 ];
 
 const a2_words_adverbs = [
@@ -3089,6 +3093,8 @@ const b1_words_nouns = [
   ["tire", "tires", "", "шина (авто)", 5000],
   ["grammar", "grammars", "", "грамматика", 5000],
   ["horseman","horsemen","","наездник",5000],
+  ["teller","tellers","","банковский служащий, повествователь",5000],
+  ["seagull","seagulls","","чайка",5000],
 
 ];
 

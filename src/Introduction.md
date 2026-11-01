@@ -590,9 +590,9 @@ Future in the Past
     - [x] Blue Fins
     - [x] Blue Moon Valley
     - [x] Dino's Day In London
-    - [ ] Flying Home
-    - [ ] Girl On A Motorcycle
-    - [ ] Good Day Bad Day
+    - [x] Flying Home
+    - [x] Girl On A Motorcycle
+    - [x] Good Day Bad Day
     - [ ] Hannah And The Hurricane
     - [ ] In The Frame
     - [ ] L.A. Detective
