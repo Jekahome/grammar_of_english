@@ -602,8 +602,8 @@ Future in the Past
     - [x] Good Day Bad Day
     - [x] Hannah And The Hurricane
     - [x] In The Frame
-    - [ ] L.A. Detective
-    - [ ] Lisa's Song
+    - [x] L.A. Detective
+    - [x] Lisa's Song
     - [ ] Lucky Number
     - [ ] Maisie And The Dolphin
     - [ ] Marcel And The Mona Lisa
@@ -798,7 +798,7 @@ source whisper-env/bin/activate
 # Установить Whisper
 pip install -U openai-whisper
 whisper --help
-
+ 
 # format vtt 
 whisper audio.opus --model base.en --language en --output_format vtt --device cpu --temperature 0 --beam_size 5
  
@@ -807,6 +807,12 @@ whisper audio.opus --model medium --language en --output_format vtt --device cpu
 
 
 whisper audio.opus --model base.en --language en --output_format vtt --device cpu --word_timestamps True --temperature 0 --beam_size 5 --max_words_per_line 10
+
+
+# or use whisperx with python script
+pip install whisperx
+wisper python whisper_sentences.py audio.opus
+
 
 # Деактивация окружения:
 deactivate

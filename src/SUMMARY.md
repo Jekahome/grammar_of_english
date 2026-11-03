@@ -158,7 +158,7 @@
       - [Good Day Bad Day](listen/A1/Starter/Good_Day_Bad_Day/Good_Day_Bad_Day.md)
       - [Hannah And The Hurricane](listen/A1/Starter/Hannah_And_The_Hurricane/Hannah_And_The_Hurricane.md)
       - [In The Frame](listen/A1/Starter/In_The_Frame/In_The_Frame.md)
-      - [L.A. Detective](listen/A1/Starter/L.A.Detective/L.A.Detective.md)
+      - [L.A. Detective](listen/A1/Starter/L_A_Detective/L_A_Detective.md)
       - [Lisa's Song](listen/A1/Starter/Lisas_Song/Lisas_Song.md)
       - [Lucky Number](listen/A1/Starter/Lucky_Number/Lucky_Number.md)
       - [Maisie And The Dolphin](listen/A1/Starter/Maisie_And_The_Dolphin/Maisie_And_The_Dolphin.md)

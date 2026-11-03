@@ -204,7 +204,6 @@
 </details>
 </div>
 
-
 <div id="listen-container"></div>
 
 <br>
@@ -323,5 +322,4 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error("Error build:", error);
     }
 });
- 
 </script>
