@@ -604,9 +604,8 @@ Future in the Past
     - [x] In The Frame
     - [x] L.A. Detective
     - [x] Lisa's Song
-    - [ ] Lucky Number
-    - [ ] Maisie And The Dolphin
-    - [ ] Marcel And The Mona Lisa
+    - [x] Lucky Number
+    - [x] Marcel And The Mona Lisa
     - [ ] Marcel And The White Star
     - [ ] Merlin
     - [ ] Newspaper Chase

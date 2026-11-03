@@ -161,7 +161,6 @@
       - [L.A. Detective](listen/A1/Starter/L_A_Detective/L_A_Detective.md)
       - [Lisa's Song](listen/A1/Starter/Lisas_Song/Lisas_Song.md)
       - [Lucky Number](listen/A1/Starter/Lucky_Number/Lucky_Number.md)
-      - [Maisie And The Dolphin](listen/A1/Starter/Maisie_And_The_Dolphin/Maisie_And_The_Dolphin.md)
       - [Marcel And The Mona Lisa](listen/A1/Starter/Marcel_And_The_Mona_Lisa/Marcel_And_The_Mona_Lisa.md)
       - [Marcel And The White Star](listen/A1/Starter/Marcel_And_The_White_Star/Marcel_And_The_White_Star.md)
       - [Merlin](listen/A1/Starter/Merlin/Merlin.md)
