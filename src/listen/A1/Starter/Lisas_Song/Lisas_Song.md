@@ -12,25 +12,23 @@
   <div class="book-body">
     <p class="first-para">Al Brown is 13. He lives with his parents in a little house. It's in Nottingham in England. The family are happy, but they have not got much money. So life is not easy.</p>
 
-<p>When our story begins, Mrs. Brown is expecting a baby. Al is waiting excitedly for his new little brother or sister.</p>
+<p>When our story begins, Mrs Brown is expecting a baby. Al is waiting excitedly for his new little brother or sister.</p>
 
 <p>Al's first love is music. He can play the guitar very well. He is in a band, Fast Cars, with three of his friends. They are Emma, Mick, and Ben. Ben and Al play the guitars in the band. Emma sings, and Mick plays the drums. Al writes songs for the band. They play at Ben's house. Al's parents often come and listen to them. They are good friends with Ben's parents.</p>
 
 <p>"Our boy can't live without his music," Al's parents tell everyone.</p>
 
-<p>MUSIC</p>
-
-<p>One morning, Mrs. Brown does not feel well.</p>
+<p>One morning, Mrs Brown does not feel well.</p>
 
 <p>"The baby's coming," she says.</p>
 
-<p>"What? It's six weeks early," Mr. Brown cries.</p>
+<p>"What? It's six weeks early!" Mr Brown cries.</p>
 
 <p>"Yes, I know. But please, take me to the hospital. This baby can't wait."</p>
 
-<p>Mrs. Brown is right. After six hours, Lisa arrives. She is beautiful, but she is very little. She must stay in hospital for two weeks.</p>
+<p>Mrs Brown is right. After six hours, Lisa arrives. She is beautiful, but she is very little. She must stay in hospital for two weeks.</p>
 
-<p>When Lisa comes home, life is not the same. The baby cries a lot, and she doesn't eat much. Is the little girl all right? Everyone is tired. When Al tries to play his guitar, his mother says, "Shh, Lisa's sleeping." Mr. Brown says, "You must help more in the house, Al. Your mother's very tired."</p>
+<p>When Lisa comes home, life is not the same. The baby cries a lot, and she doesn't eat much. Is the little girl all right? Everyone is tired. When Al tries to play his guitar, his mother says, "Shh! Lisa's sleeping." Mr Brown says, "You must help more in the house, Al. Your mother's very tired."</p>
 
 <p>Al tries to help, but he is tired too. He can't concentrate at school, and he forgets to do his homework.</p>
 
@@ -74,7 +72,7 @@
 
 <p>"Where are you? We're waiting for you. Get here fast and say sorry. Then perhaps we can forget these last weeks. But you must change, Al. You must give more time to the band."</p>
 
-<p>Al is in an internet cafe. He is trying to do his homework. "Emma, things aren't easy for me these days. I can't work at home. Lisa's always crying. My parents are always with her. They tell me, do this. Do that. Now you're doing the same. Leave me alone." And he stops the call and puts the phone down.</p>
+<p>Al is in an internet café. He is trying to do his homework. "Emma, things aren't easy for me these days. I can't work at home. Lisa's always crying. My parents are always with her. They tell me, 'Do this. Do that.' Now you're doing the same. Leave me alone!" And he stops the call and puts the phone down.</p>
 
 <p>Emma is very angry. "I'm trying to help Al, but he's not interested," she thinks. She quickly sends him a phone message. "Fast Cars is looking for a new guitar player. Don't worry about us. We don't need you anymore, Al. Goodbye."</p>
 
@@ -92,11 +90,15 @@
 
 <p>"Ill?"</p>
 
-<p>"Her heart isn't right, Al. She needs an operation, and quickly. There's more. It's a difficult operation. No hospital in England can do it. Lisa needs to go to the United States for it."</p>
+<p>"Her heart isn't right, Al. She needs an operation, and quickly."</p>
+
+<p>"Oh."</p>
+
+<p>"There's more. It's a difficult operation. No hospital in England can do it. Lisa needs to go to the United States for it."</p>
 
 <p>"I see. So, when are you going?"</p>
 
-<p>"We don't know. The operation's expensive. And there are the plane tickets and the hotel, too." Mr. Brown tries to smile. "But we can find the money. Don't worry about it."</p>
+<p>"We don't know. The operation's expensive. And there are the plane tickets and the hotel, too." Mr Brown tries to smile. "But we can find the money. Don't worry about it."</p>
 
 <p>Now Al is very sad and alone. Lisa is very ill, he knows. Perhaps he can phone Emma.</p>
 
@@ -106,7 +108,7 @@
 
 <p>"Granddad, what can we do? Where can we find the money for Lisa's operation?"</p>
 
-<p>"Take it easy, Al," says Granddad. "I've got an idea. Tell your friends in the band, write a song for Lisa."</p>
+<p>"Take it easy, Al," says Granddad. "I've got an idea. Tell your friends in the band. Write a song for Lisa."</p>
 
 <p>"A song for Lisa? How can that help?"</p>
 
@@ -130,37 +132,37 @@
   <div class="book-body">
     <p class="first-para">Back home, Al talks to his parents. "I want to write a song for Lisa. I want to tell everyone about her."</p>
 
-<p>Mr. and Mrs. Brown smile. "What a nice idea," his mum says. "Thanks, Al."</p>
+<p>Mr and Mrs Brown smile. "What a nice idea!" his mum says. "Thanks, Al."</p>
 
-<p>Al phones his friends. He meets them at Ben's house. He says sorry. Then, he tells them all about Lisa and the song.</p>
+<p>Al phones his friends. He meets them at Ben's house. He says sorry. Then he tells them all about Lisa and the song.</p>
 
 <p>Emma looks at Mick and Ben. "What do you think, boys? Can Al come back to the band now?" she asks.</p>
 
-<p>"Yes," Ben laughs. "We need him. My brother can't play the guitar at all."</p>
+<p>"Yes," Ben laughs. "We need him. My brother can't play the guitar at all!"</p>
 
-<p>"And he can't write songs," Mick says.</p>
+<p>"And he can't write songs!" Mick says.</p>
 
 <p>"I've got an idea," Emma says. "We can play Al's new song at our gig."</p>
 
-<p>"What gig?"</p>
+<p>"What gig?" Al asks.</p>
 
-<p>"The gig for Lisa," Emma says. "People can pay at the door. With their help, Lisa can have her operation."</p>
+<p>"The gig for Lisa!" Emma says. "People can pay at the door. With their help, Lisa can have her operation."</p>
 
-<p>"Good idea," Ben cries excitedly. "Let's tell people about it on our website."</p>
+<p>"Good idea!" Ben cries excitedly. "Let's tell people about it on our website."</p>
 
 <p>So Mick puts the day and time of their next gig up on the band's website.</p>
 
-<p>Two weeks later, after lots of work, the band plays at Al's school. Al's family and friends are there. Late in the evening, Al sings Lisa's song. Some people from the radio are there too. They record the song.</p>
+<p>Two weeks later, after lots of work, the band plays at Al's school. Al's family and friends are there. Late in the evening, Al sings Lisa's Song. Some people from the radio are there too. They record the song.</p>
 
-<p>"Let's sing for Lisa and her life. The future's in her eyes are blue. A bright tomorrow's endless smile. So let's all help those times come true."</p>
+<p>"Let's sing for Lisa and her life.<br>The future's in her eyes of blue.<br>A bright tomorrow's in her smile.<br>So let's all help those times come true!"</p>
 
 <p>Next day, Al and his friends look at the money from the gig. How much is there? Can Lisa have her operation now?</p>
 
 <p>"We need more money," Al says.</p>
 
-<p>"Then let's put Lisa's song on our website," Ben cries. "People can pay for it and download it."</p>
+<p>"Then let's put Lisa's Song on our website!" Ben cries. "People can pay for it and download it."</p>
 
-<p>People hear about Lisa's song on the radio. They pay and download it from the website.</p>
+<p>People hear about Lisa's Song on the radio. They pay and download it from the website.</p>
 
 <p>Soon, Al's family have the money for America.</p>
 
@@ -174,13 +176,13 @@
 
 <p>Later, he is working at the hospital. Bombs are dropping. The sky is red. Then someone says, "Jack, there's a bomb in your street. Your house is on fire."</p>
 
-<p>"Alice?" he cries. He runs home. But he can do nothing. He never sees Alice again.</p>
+<p>"Alice!" he cries. He runs home, but he can do nothing. He never sees Alice again.</p>
 
 <p>"What's the matter, Grandad?" Al asks.</p>
 
-<p>Jack smiles at his grandson. He sees a lot of Alice in the boy. "Sometimes, past experience teaches you things. Oh, it's not important now. But you must write some more songs. When's the band's next concert?"</p>
+<p>Jack smiles at his grandson. He sees a lot of Alice in the boy. "Sometimes past experience teaches you things. Oh, it's not important now. But you must write some more songs. When's the band's next concert? Er ... gig."</p>
 
-<p>"Er, gig. Soon, Grandad."</p>
+<p>"Soon, Grandad."</p>
 
 <p>With that, grandfather and grandson leave the airport and go home.</p>
 
@@ -191,6 +193,7 @@
 ---
 
 </details>
+
 </div>
 
 

@@ -16,7 +16,7 @@
 
 <p>One bright April morning, she says to Lee Sun, "Sit down, granddaughter. I have something to tell you."</p>
 
-<p>"What is it, grandmother?" asks Lee Sun.</p>
+<p>"What is it, Grandmother?" asks Lee Sun.</p>
 
 <p>The old woman's eyes are sad and tired. "Read this letter," she says. "It's for your uncle in the big city. I want you to go and talk to him."</p>
 
@@ -28,7 +28,7 @@
 
 <p>"But every child leaves home one day," the old woman answers. "And you're not a child now. You're a young woman. I want you to be free."</p>
 
-<p>In the end, Lee Sun looks at the floor and says, "Yes, grandmother."</p>
+<p>In the end, Lee Sun looks at the floor and says, "Yes, Grandmother."</p>
 
 <p>Two days later, she leaves the village.</p>
 
@@ -44,11 +44,11 @@
 
 <p>"Oh, yes, of course you can have a job," he says. "Come with me."</p>
 
-<p>Behind the circus, there are some big cages. "Here we are," says Lee Sun's uncle. "You can help to wash the animals," he smiles. "And you can help to give them their food too. Do you understand?"</p>
+<p>Behind the circus, there are some big cages. "Here we are," says Lee Sun's uncle. "You can help to wash the animals," he says with a smile. "And you can help to give them their food too. Do you understand?"</p>
 
 <p>Lee Sun looks at all the animals. There are monkeys, tigers, elephants, horses and lions. Then she looks at her uncle again.</p>
 
-<p>"Yes, uncle," she says.</p>
+<p>"Yes, Uncle," she says.</p>
 
   </div>
   <div class="page-number">· 1 ·</div>
@@ -80,7 +80,7 @@
 
 <p>After she leaves, Lee Sun's uncle looks at Wu Chi. "Oh, now what can we do?" he asks. A moment later, he sees Lee Sun.</p>
 
-<p>"Of course," he says. "Lee Sun. She can help you this evening."</p>
+<p>"Of course," he says. "Lee Sun! She can help you this evening."</p>
 
 <p>"What?" Wu Chi laughs. "But she can't learn Yume's job in one day."</p>
 
@@ -98,7 +98,7 @@
 
 <p>The emperor smiles. "She's young, but very good."</p>
 
-<p>"Oh, thank you, emperor," says Lee Sun's uncle.</p>
+<p>"Oh, thank you, Emperor," says Lee Sun's uncle.</p>
 
 <p>After that evening, Lee Sun doesn't clean the animals' cages anymore. She works with Wu Chi every day.</p>
 
@@ -124,7 +124,7 @@
 
 <p>"Lee Sun's going to be my wife," he says. "But that's not all. We are leaving the circus. I'm going to be a farmer in Blue Moon Valley."</p>
 
-<p>"Oh, Wu Chi," says Lee Sun. She is very, very happy.</p>
+<p>"Oh, Wu Chi!" says Lee Sun. She is very, very happy.</p>
 
 <p>One week later, Lee Sun and Wu Chi leave the city. Everyone comes to say goodbye.</p>
 
@@ -136,7 +136,7 @@
 
 <p>Lee Sun opens the box.</p>
 
-<p>"Oh, Choo Choo," she says. "Oh, uncle, thank you. Thank you."</p>
+<p>"Oh, Choo Choo!" she says. "Oh, Uncle, thank you! Thank you!"</p>
 
   </div>
   <div class="page-number">· 2 ·</div>
@@ -145,6 +145,7 @@
 ---
 
 </details>
+
 </div>
 
 

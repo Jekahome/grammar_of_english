@@ -23,7 +23,7 @@
 
 <p>Lisa and Alice help the woman with her luggage. They help her with the pushchair. They help her with her children.</p>
 
-<p>"I'm Lisa and this is my friend, Alice."</p>
+<p>"I'm Lisa, and this is my friend, Alice."</p>
 
 <p>"Thank you, Lisa. Thank you, Alice. My name is Vera Brown. My children's names are Peter and Helen. I'm very worried. My husband is ill. He is in England. I must go to him. I'm going home."</p>
 
@@ -57,9 +57,9 @@
   <div class="chapter-title">At the Airport</div>
   <div class="chapter-divider"><span> ~ ~ ~ </span></div>
   <div class="book-body">
-    <p class="first-para">Lisa, Alice and Vera are in the airport. Alice is getting their luggage.</p>
+    <p class="first-para">Lisa, Alice and Vera are at the airport. Alice is getting their luggage.</p>
 
-<p>"This is our last bag. Now we have everything. Now we must go to Customs."</p>
+<p>"This is our last bag. Now we have everything. Now we must go to customs."</p>
 
 <p>"Please, I must go to the toilet!"</p>
 
@@ -69,11 +69,11 @@
 
 <p>"Oh, thank you, Alice!"</p>
 
-<p>"Lisa, please go through Customs with Helen. Wait for Alice and me in the cafe."</p>
+<p>"Lisa, please go through customs with Helen. Wait for Alice and me in the café."</p>
 
 <p>"OK."</p>
 
-<p>Vera is at Customs. A customs officer is searching her luggage. Alice hears two customs officers talking. She is surprised.</p>
+<p>Vera is at customs. A customs officer is searching her luggage. Alice hears two customs officers talking. She is surprised.</p>
 
 <p>"That is Vera Brownlow. She's an art thief! She steals paintings."</p>
 
@@ -83,11 +83,11 @@
 
 <p>"There's Alice! But where is Vera? Is she all right? Is Peter all right?"</p>
 
-<p>Vera comes into the cafe. She is holding Peter's hand.</p>
+<p>Vera comes into the café. She is holding Peter's hand.</p>
 
 <p>"Here we are at last! The customs officers are searching many travellers today. I'll take Helen and the pushchair now. My sister is going to meet me. She will help me with my luggage."</p>
 
-<p>Suddenly, there are customs officers and police officers in the cafe. One officer is searching the pushchair. He is looking in the frame.</p>
+<p>Suddenly, there are customs officers and police officers in the café. One officer is searching the pushchair. He is looking in the frame.</p>
 
 <p>"What is happening?"</p>
 
@@ -95,13 +95,11 @@
 
 <p>The customs officers have the stolen painting. They are very pleased.</p>
 
-<p>Vera's sister has her children. She is very pleased, too.</p>
+<p>Vera's sister has her children. She is very pleased too.</p>
 
 <p>"Well done, Lisa and Alice! There is a big reward for this painting. You'll get the money."</p>
 
 <p>"That's great! We'll go on another holiday next year."</p>
-
-<p>LAUGHTER</p>
 
   </div>
   <div class="page-number">· 2 ·</div>
@@ -110,6 +108,7 @@
 ---
 
 </details>
+
 </div>
 
 

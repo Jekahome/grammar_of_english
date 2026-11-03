@@ -10,35 +10,35 @@
   <div class="chapter-title">The House in the Forest</div>
   <div class="chapter-divider"><span> ~ ~ ~ </span></div>
   <div class="book-body">
-    <p class="first-para">In the middle of a dark forest on the top of a high mountain there is a black house. The garden gate is black, the flowers in the garden are black and the front door is black too. A witch lives in this house.</p>
+    <p class="first-para">In the middle of a dark forest, on the top of a high mountain, there is a black house. The garden gate is black, the flowers in the garden are black, and the front door is black too. A witch lives in this house.</p>
 
 <p>Witches in stories are usually bad. They have got big noses and long black hair. They make terrible potions and spells. They go out at night on their broomsticks and their clothes are always black.</p>
 
-<p>But this witch, the witch in this story, is different. Her name is Bathsheba and she is a good and beautiful witch. Her hair is curly and blonde and she has got a small nose. She buys her fashionable clothes from magazines.</p>
+<p>But this witch — the witch in this story — is different. Her name is Bathsheba and she is a good and beautiful witch. Her hair is curly and blonde and she has got a small nose. She buys her fashionable clothes from magazines.</p>
 
 <p>Bathsheba lives alone in the black house with her white cat, Cobweb. She has got a very important job. Bathsheba is a weather witch.</p>
 
-<p>Down in the valley just below the dark forest there is a pretty village called Sunnyville. In Sunnyville the weather is always good. In summer the sky is blue and it is never too hot. In autumn the red and orange leaves fly into the next village. In winter icicles hang from the trees. Ice covers the roofs in December and on Christmas day the snow always falls. When spring arrives the new flowers grow fast in the good weather. It doesn't rain in Sunnyville, well only at night, and every day it is sunny.</p>
+<p>Down in the valley, just below the dark forest, there is a pretty village called Sunnyville. In Sunnyville, the weather is always good. In summer, the sky is blue and it is never too hot. In autumn, the red and orange leaves fly into the next village. In winter, icicles hang from the trees. Ice covers the roofs in December, and on Christmas Day the snow always falls. When spring arrives, the new flowers grow fast in the good weather. It doesn't rain in Sunnyville — well, only at night — and every day it is sunny.</p>
 
-<p>No one in the village knows about the witch. No one knows that Bathsheba on her new turbo broom paints the dark clouds white and makes the grey sky blue. Bathsheba the witch pushes the storm clouds into the next valley.</p>
+<p>No one in the village knows about the witch. No one knows that Bathsheba, on her new turbo broom, paints the dark clouds white and makes the grey sky blue. Bathsheba the witch pushes the storm clouds into the next valley.</p>
 
-<p>Bathsheba and Cobweb have got a very difficult job. Sometimes they work all night. They change the weather for the next day and when morning comes they are very tired. They go back to the black house for breakfast.</p>
+<p>Bathsheba and Cobweb have got a very difficult job. Sometimes they work all night. They change the weather for the next day, and when morning comes, they are very tired. They go back to the black house for breakfast.</p>
 
-<p>Everything is sunny in Sunnyville until one day.</p>
+<p>Everything is sunny in Sunnyville until one day ...</p>
 
 <div class="chapter-divider"><span> ~ * ~ </span></div>
 
-<p><em>The weather in Great Britain. In Britain the weather changes very often. It can be sunny one day and rainy the next and so it is difficult to know what the weather is going to be like. In the story Bathsheba changes the weather with her turbo broom. Now let's look at some things which really change the weather in Great Britain.</em></p>
+<p><em>The weather in Great Britain. In Britain, the weather changes very often. It can be sunny one day and rainy the next, and so it is difficult to know what the weather is going to be like. In the story, Bathsheba changes the weather with her turbo broom. Now let's look at some things which really change the weather in Great Britain.</em></p>
 
-<p><em>The wind. Different parts of Britain have different weather because the winds come from different directions. The origin of the wind influences the weather in Britain. In the north a very cold wind blows from the Arctic. In the east the winds are cold and dry. These winds come from the continents of Europe and Asia and we call them continental winds. In the south the winds can be warm and tropical. They come from the area near the equator, the tropics. In the west they are warm and wet. This is because the wind crosses the Atlantic Ocean and brings clouds and rain.</em></p>
+<p><em>The wind. Different parts of Britain have different weather because the winds come from different directions. The origin of the wind influences the weather in Britain. In the north, a very cold wind blows from the Arctic. In the east, the winds are cold and dry. These winds come from the continents of Europe and Asia and we call them continental winds. In the south, the winds can be warm and tropical. They come from the area near the equator, the tropics. In the west, they are warm and wet. This is because the wind crosses the Atlantic Ocean and brings clouds and rain.</em></p>
 
 <p><em>The Gulf Stream. The sea is very important in Britain. Britain is a small island and the sea around it also influences the weather. The ocean near Mexico and the Caribbean is warm and a current of this warm water comes across the Atlantic Ocean to the west coast of Britain. This is called the Gulf Stream and it can increase the temperature of the air by 5 to 8 degrees Celsius.</em></p>
 
-<p><em>The seasons. Britain has a temperate climate. This means that it is usually warm and it often rains. There are four seasons in Britain: spring, summer, autumn and winter. The typical weather is different in each season but there isn't usually any extreme weather because of the influence of the sea. In winter it is often cold, wet and windy. Sometimes it can snow but the temperature doesn't usually go below zero degrees Celsius. In summer it can be hot but temperatures are usually about 26 degrees Celsius.</em></p>
+<p><em>The seasons. Britain has a temperate climate. This means that it is usually warm and it often rains. There are four seasons in Britain: spring, summer, autumn and winter. The typical weather is different in each season but there isn't usually any extreme weather because of the influence of the sea. In winter, it is often cold, wet and windy. Sometimes it can snow but the temperature doesn't usually go below zero degrees Celsius. In summer, it can be hot but temperatures are usually about 26 degrees Celsius.</em></p>
 
-<p><em>Differences in the regions. There are some big differences in the weather between the different regions of Britain. On the west coast of Britain the weather is usually warm and wet. This is because of the wind, the Gulf Stream and because some of the land is high. In the east of Britain however the land is low and the weather is usually dry. The average temperatures in the north of England and Scotland are different from those in the south of England. The average high temperature in London in July is 22 degrees Celsius but in Glasgow it is 19 degrees Celsius.</em></p>
+<p><em>Differences in the regions. There are some big differences in the weather between the different regions of Britain. On the west coast of Britain the weather is usually warm and wet. This is because of the wind, the Gulf Stream and because some of the land is high. In the east of Britain, however, the land is low and the weather is usually dry. The average temperatures in the north of England and Scotland are different from those in the south of England. The average high temperature in London in July is 22 degrees Celsius but in Glasgow it is 19 degrees Celsius.</em></p>
 
-<p><em>Hours of daylight. The number of hours of daylight also changes with the season and the region. The latitude influences the number of hours of daylight in a country. London is at 51 degrees north latitude and Lerwick in the north of Scotland is at 60 degrees north. In December in London there are 7 hours 50 minutes of daylight and in Lerwick there are 5 hours 50 minutes. In summer the number of hours of daylight is very different. In June in London there are 16 hours and 40 minutes of daylight and in Lerwick there are 18 hours and 50 minutes.</em></p>
+<p><em>Hours of daylight. The number of hours of daylight also changes with the season and the region. The latitude influences the number of hours of daylight in a country. London is at 51 degrees north latitude and Lerwick in the north of Scotland is at 60 degrees north. In December, in London, there are 7 hours 50 minutes of daylight and in Lerwick there are 5 hours 50 minutes. In summer, the number of hours of daylight is very different. In June, in London, there are 16 hours and 40 minutes of daylight and in Lerwick there are 18 hours and 50 minutes.</em></p>
 
   </div>
   <div class="page-number">· 1 ·</div>
@@ -56,9 +56,9 @@
   <div class="chapter-title">The Invisible Potion</div>
   <div class="chapter-divider"><span> ~ ~ ~ </span></div>
   <div class="book-body">
-    <p class="first-para">One summer day a wind arrives from the east. It is a warm wind, a wind that plays in the gardens, a wind of change.</p>
+    <p class="first-para">One summer day, a wind arrives from the east. It is a warm wind, a wind that plays in the gardens, a wind of change.</p>
 
-<p>Bathsheba wakes up early and she feels different.</p>
+<p>Bathsheba wakes up early, and she feels different.</p>
 
 <p>"I want to go down to the village," she says to Cobweb.</p>
 
@@ -78,19 +78,19 @@
 
 <p>Bathsheba is free. She runs across a meadow near the stream and through the forest. She jumps over stones and under branches. She goes down the mountain and into the village. She dreams so often of this world where the humans live and now she is there.</p>
 
-<p>In the middle of the village there is an area of grass called the Green. Around the Green there are shops, a cafe and lots of small cottages. There is a pub called the Green Dragon.</p>
+<p>In the middle of the village there is an area of grass called the Green. Around the Green, there are shops, a café and lots of small cottages. There is a pub called the Green Dragon.</p>
 
-<p>"How strange!" Bathsheba thinks. "That the villagers know about the green dragon."</p>
+<p>"How strange!" Bathsheba thinks. "The villagers know about the Green Dragon."</p>
 
 <p>There is a pond. There are ducks swimming in the pond and there are benches where people can sit.</p>
 
 <p>"It's beautiful," Bathsheba says.</p>
 
-<p>She wants to know more about the people who live here. Bathsheba goes into the butcher's. Here they sell steaks and other meat. And Mr Jones, the butcher, has got a kind red face and a big nose. He is wearing a white apron and a butcher's hat. Bathsheba doesn't like meat so she goes next door.</p>
+<p>She wants to know more about the people who live here. Bathsheba goes into the butcher's. Here they sell steaks and other meat. Mr Jones, the butcher, has got a kind red face and a big nose. He is wearing a white apron and a butcher's hat. Bathsheba doesn't like meat, so she goes next door.</p>
 
 <p>The next shop is the baker's. There are lots of different kinds of bread and hundreds of delicious cakes.</p>
 
-<p>"My invisible spell is fun," thinks Bathsheba. And she takes a cake. Mr Smith, the baker, can see a cream cake flying out of the shop.</p>
+<p>"My invisible spell is fun," thinks Bathsheba. She takes a cake. Mr Smith, the baker, can see a cream cake flying out of the shop.</p>
 
 <p>Then Bathsheba goes into the greengrocer's. There are lots of people in the shop. There are old ladies with bags of fruit, children with apples and there is a soldier. He is wearing a beautiful red jacket, black trousers and black boots. He has got dark brown hair and light grey eyes. He is very handsome.</p>
 
@@ -124,35 +124,35 @@
 
 <p>She dances around the kitchen with her broomstick. Then she sits down and says, "But I'm a witch. And he's a soldier. He can't be my boyfriend."</p>
 
-<p>Bathsheba cries all day. She can't eat and when evening comes her eyes are red and she is very tired. She goes to sleep.</p>
+<p>Bathsheba cries all day. She can't eat, and when evening comes, her eyes are red and she is very tired. She goes to sleep.</p>
 
-<p>At midnight her alarm clock rings but Bathsheba sleeps and sleeps. There is thunder and lightning in the sky. She doesn't hear it. Cobweb tries to wake her up but it is not possible.</p>
+<p>At midnight, her alarm clock rings, but Bathsheba sleeps and sleeps. There is thunder and lightning in the sky. She doesn't hear it. Cobweb tries to wake her up but it is not possible.</p>
 
-<p>At 8am the morning sky is grey, not blue. The rain falls but Bathsheba is asleep.</p>
+<p>At 8 a.m., the morning sky is grey, not blue. The rain falls but Bathsheba is asleep.</p>
 
 <p>All the people in the village come out of their houses. They look at the sky.</p>
 
-<p>"It's not possible," says Mr Jones the butcher. "It never rains during the day."</p>
+<p>"It's not possible," says Mr Jones, the butcher. "It never rains during the day."</p>
 
-<p>"Thunder! How strange!" says Mr Smith the baker.</p>
+<p>"Thunder! How strange!" says Mr Smith, the baker.</p>
 
-<p>"The sky is always blue. Where's the sun today?" Mr Cherry says.</p>
+<p>"The sky is always blue. Where's the sun today?" says Mr Cherry.</p>
 
-<p>Sunnyville is famous for its good weather. "Every year when all the villages enter the Good Weather Competition we always win. Because our village has the best weather. This is a disaster!"</p>
+<p>Sunnyville is famous for its good weather. "Every year, when all the villages enter the Good Weather Competition, we always win because our village has the best weather. This is a disaster!"</p>
 
 <p>And they have a meeting about the problem in the pub.</p>
 
-<p>At midday Bathsheba wakes up. She looks at the grey sky. She sees the rain. Then she looks at her watch.</p>
+<p>At midday, Bathsheba wakes up. She looks at the grey sky. She sees the rain. Then she looks at her watch.</p>
 
-<p>"Twelve o'clock," she says. "Oh no!" And she starts to cry again.</p>
+<p>"Twelve o'clock," she says. "Oh no!" She starts to cry again.</p>
 
 <p>"I love a soldier and I can't do my job," she says to Cobweb. "The Weather Wizard only likes witches who work. Witches who don't work get terrible jobs. They have to look after wizards' children. And you know how terrible they can be."</p>
 
 <p>Then the telephone rings. Bathsheba is afraid.</p>
 
-<p>"Seven four nine three," she says quietly.</p>
+<p>"Seven, four, nine, three," she says quietly.</p>
 
-<p>"Can I speak to the weather witch please?" a happy voice says.</p>
+<p>"Can I speak to the weather witch, please?" a happy voice says.</p>
 
 <p>"Speaking."</p>
 
@@ -168,7 +168,7 @@
 
 <div class="chapter-divider"><span> ~ * ~ </span></div>
 
-<p><em>The Fair Weather Competition. Is the weather in your village always good? In summer is the sky always blue? Does it snow on Christmas day? If the answer is yes enter the Fair Weather Competition. The competition is on the 21st of June at two p.m. in the Town Hall in the center of Oxford. To enter the competition bring four photographs of your village. One of each season. And we can choose a winner. The first prize is five hundred pounds for your village and the chance to see your photographs in the local paper. Phone the Tourist Office on 01802 659 874 for more information.</em></p>
+<p><em>The Fair Weather Competition. Is the weather in your village always good? In summer is the sky always blue? Does it snow on Christmas day? If the answer is yes, enter the Fair Weather Competition. The competition is on the 21st of June at two p.m. in the Town Hall in the center of Oxford. To enter the competition, bring four photographs of your village, one of each season. And we can choose a winner. The first prize is five hundred pounds for your village and the chance to see your photographs in the local paper. Phone the Tourist Office on 01802 659 874 for more information.</em></p>
 
   </div>
   <div class="page-number">· 3 ·</div>
@@ -186,7 +186,7 @@
   <div class="chapter-title">Marvellous Dr Miracle</div>
   <div class="chapter-divider"><span> ~ ~ ~ </span></div>
   <div class="book-body">
-    <p class="first-para">At two o'clock a limousine arrives at the black house. Dr Miracle is a large man. He has got a round pink face and a long moustache. He is wearing a long dark cloak over his brown suit. He has got a yellow waistcoat and his shoes are long and striped. In his hand he is carrying a large red bag.</p>
+    <p class="first-para">At two o'clock, a limousine arrives at the black house. Dr Miracle is a large man. He has got a round pink face and a long moustache. He is wearing a long dark cloak over his brown suit. He has got a yellow waistcoat and his shoes are long and striped. In his hand he is carrying a large red bag.</p>
 
 <p>"So you're the village's weather witch?" he says. "Where's your computer?"</p>
 
@@ -196,7 +196,7 @@
 
 <p>He takes a small white computer out of his bag. "This weather computer does everything," he explains.</p>
 
-<p>When he turns it on there are a lot of colors on the screen. Bathsheba can see a bright green light under the keyboard.</p>
+<p>When he turns it on, there are a lot of colours on the screen. Bathsheba can see a bright green light under the keyboard.</p>
 
 <p>"Every evening you can program the weather. Then the computer does the work," says Dr Miracle. "It moves the dark clouds and paints the sky."</p>
 
@@ -214,11 +214,11 @@
 
 <p>"Because humans don't like witches," Bathsheba replies.</p>
 
-<p>Dr Miracle laughs. "Only bad witches and only witches in stories."</p>
+<p>Dr Miracle laughs. "Only bad witches, and only witches in stories."</p>
 
 <p>"You need one of my special love potions."</p>
 
-<p>Dr Miracle opens his cloak. Inside there are lots of little pockets and in every pocket there are some bottles. There are small bottles, round bottles and square bottles in every color.</p>
+<p>Dr Miracle opens his cloak. Inside there are lots of little pockets and in every pocket there are some bottles. There are small bottles, round bottles and square bottles in every colour.</p>
 
 <p>He gives her a small bottle with a pink potion in it.</p>
 
@@ -230,17 +230,17 @@
 
 <p>Cobweb comes into the bedroom. The wardrobe doors are open and clothes fly over his head. A pair of jeans falls onto the bed. There is a white blouse on the bedside table. A pink skirt is next to the lamp. There are eight pairs of shoes on the floor.</p>
 
-<p>"How do I look?" Bathsheba finally says.</p>
+<p>"How do I look?" Bathsheba finally asks.</p>
 
-<p>Cobweb looks at her from under the bed. Cobweb is wearing white leggings, a white skirt and a pink and grey t-shirt. She looks lovely.</p>
+<p>Cobweb looks at her from under the bed. Bathsheba is wearing white leggings, a white skirt and a pink and grey T-shirt. She looks lovely.</p>
 
 <p>She puts the love potion in her bag and goes out. Cobweb says goodbye from the front door. Then he sees Bathsheba's glasses on the table. She can't see very well without her glasses.</p>
 
-<p>Down in the village, the sun is shining and the villagers are happy again. People are sitting at tables outside the cafe drinking tea. And when they see Bathsheba, they are surprised. They want to know who she is.</p>
+<p>Down in the village, the sun is shining, and the villagers are happy again. People are sitting at tables outside the café drinking tea. And when they see Bathsheba, they are surprised. They want to know who she is.</p>
 
 <p>"Good afternoon," Bathsheba says. She is a little afraid. Do they know that she is a witch?</p>
 
-<p>"You're new to the village?" says Mrs Daly, the florist.</p>
+<p>"You're new to the village?" asks Mrs Daly, the florist.</p>
 
 <p>"I'm just visiting," says Bathsheba. And then she sees a red jacket.</p>
 
@@ -282,7 +282,7 @@
 
 <p>"My darling, you're very beautiful," the man in the red coat says, and he takes her hand.</p>
 
-<p>Bathsheba takes her hand away. "I'm sorry," she says to the man. "It's all a mistake, a big mistake." And then she runs.</p>
+<p>Bathsheba takes her hand away. "I'm sorry," she says to the man. "It's all a mistake, a big mistake." Then she runs.</p>
 
 <p>The man in the red jacket runs too.</p>
 
@@ -302,7 +302,7 @@
 
 <p>"You!" a voice says. The man with the small dark eyes has got his arms around her. "My darling, finally," he says. But Bathsheba is quick. Her arms are strong from pushing clouds and painting the sky. She turns around and runs.</p>
 
-<p>She is fast, but the man follows her. He shouts words of love. She asks people to stop her, but no one can.</p>
+<p>She is fast, but the man follows her. He shouts words of love. She asks people to stop him, but no one can.</p>
 
 <p>Bathsheba runs in front of the school, through the sports centre, and finally she arrives at the forest. It is not far to her home, but suddenly she sees a man in a red jacket come out from behind a tree.</p>
 
@@ -316,7 +316,7 @@
 
 <p>"Are you new to the village?" Captain Troy asks her.</p>
 
-<p>Bathsheba gets up. "Yes, quite new," she replies. "And now I really must go." And she walks away from Captain Troy.</p>
+<p>Bathsheba gets up. "Yes, quite new," she replies. "And now I really must go." She walks away from Captain Troy.</p>
 
 <p>"But I don't know your name, or where you live," he says.</p>
 
@@ -352,7 +352,7 @@
 
 <p><em>"Who does she meet?"</em></p>
 
-<p><em>"She meets Paris. But then Menelaus' brother is very angry, and the Trojan War starts."</em></p>
+<p><em>"She meets Paris. But then Menelaus's brother is very angry, and the Trojan War starts."</em></p>
 
 <p><em>"Thank you, John. Let's talk about Hercules now."</em></p>
 
@@ -406,7 +406,7 @@
 
 <p>"Mrs Daly, you're very beautiful," he says. "And I want to tell you that I'm completely in love with you."</p>
 
-<p>"Captain Troy!" Mrs Daly says. Mrs Daly is married and she is very happy. She has got four children. She likes Captain Troy, but she is surprised at what he says to her.</p>
+<p>"Captain Troy!" says Mrs Daly. She is married and she is very happy. She has got four children. She likes Captain Troy, but she is surprised at what he says to her.</p>
 
 <p>He tries to take her hand, but she runs into the kitchen and takes a plate out of the cupboard.</p>
 
@@ -422,7 +422,7 @@
 
 <p>"Is anything the matter?" the vicar calls.</p>
 
-<p>"The captain is not well!" Mrs Daly shouts. "Call the doctor immediately." And she runs across the road and into the house opposite.</p>
+<p>"The captain is not well!" Mrs Daly shouts. "Call the doctor immediately." She runs across the road and into the house opposite.</p>
 
 <p>Captain Troy comes out of his house. "I'm in love with Mrs Daly," he says. "She's very beautiful." And he gives the bag and the bottle of pink potion to Miss Price.</p>
 
@@ -526,15 +526,15 @@
 
 <p>"Oh yes," says the wizard. "Sometimes you don't think before you do things. And that can be very dangerous. So, I want you to take this letter to the Green Dragon."</p>
 
-<p>"Not the Green Dragon?" Bathsheba is afraid.</p>
+<p>"Not the Green Dragon!" Bathsheba is afraid.</p>
 
-<p>The wizard gives her the letter and leaves her house. He takes the man in the red jacket to his house. Once he is in his bed, he is human again. Not a statue.</p>
+<p>The wizard gives her the letter and leaves her house. He takes the man in the red jacket to his house. Once he is in his bed, he is human again, not a statue.</p>
 
 <p>The wizard puts his potion that makes people forget in the eyes of all the villagers. And before he leaves, he puts love powder into every house.</p>
 
 <p>The next morning, when the people wake up, they can't remember anything. But they all feel very happy.</p>
 
-<p>And Bathsheba...</p>
+<p>And Bathsheba ...</p>
 
   </div>
   <div class="page-number">· 8 ·</div>
@@ -566,7 +566,7 @@
 
 <p>"Who are you?" it says angrily.</p>
 
-<p>"Um, I'm Bathsheba the weather witch," she says in a very small voice.</p>
+<p>"Um, I'm Bathsheba, the weather witch," she says in a very small voice.</p>
 
 <p>"Why are you here?" the voice shouts again.</p>
 
@@ -633,7 +633,7 @@
 
 <p>Bathsheba smiles. "I do," she says. "I've got a gold letter too. It's a letter from Miracle Supermarket. There's a prize for their special customers." And she takes it from her bag.</p>
 
-<p>Miracle Supermarket first prize. A day at five-star Glencrag Castle. Travel by dragon with free dragon parking. Dancing in the dragon disco. Friday morning, 9am.</p>
+<p>Miracle Supermarket. First prize: a day at five-star Glencrag Castle. Travel by dragon with free dragon parking. Dancing in the dragon disco. Friday morning, 9 a.m.</p>
 
 <p>Captain Troy laughs. "It can't be true. I don't believe it. We all know that there are only dragons in stories. There aren't any dragons in Sunnyville."</p>
 
@@ -641,7 +641,7 @@
 
 <p>"Wow," says Captain Troy. "I can't believe it. There really are dragons."</p>
 
-<p>"Of course there are," says Gulliver. "Climb up and fasten your seatbelt."</p>
+<p>"Of course there are," says Gulliver. "Climb up and fasten your seat belt."</p>
 
 <p>"But what about Bathsheba?" Captain Troy asks.</p>
 
@@ -649,7 +649,7 @@
 
 <p>"Who's Sophia?" Bathsheba asks.</p>
 
-<p>"You hear him!" says a voice in the sky.</p>
+<p>"You heard him!" says a voice in the sky.</p>
 
 <p>Something large flies over the trees. It is another dragon. Her silver scales shine in the sunshine. She is a small dragon, but her unusual color and purple eyes make her very beautiful.</p>
 
@@ -677,7 +677,7 @@
 
 <p>The dragons and the day at Glencrag Castle become a wonderful dream. But there is a girl he can't forget.</p>
 
-<p>Bathsheba and Captain Troy meet in the village and have cups of hot chocolate in the cafe. They go walking in the park and dancing in the evening.</p>
+<p>Bathsheba and Captain Troy meet in the village and have cups of hot chocolate in the café. They go walking in the park and dancing in the evening.</p>
 
 <p>Bathsheba has got a boyfriend at last. She has also got two new dragon friends and she lives happily and peacefully.</p>
 

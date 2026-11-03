@@ -13,7 +13,7 @@
   <div class="chapter-title">Is there a motel?</div>
   <div class="chapter-divider"><span> ~ ~ ~ </span></div>
   <div class="book-body">
-    <p class="first-para">Kenny is going across America by bus. One evening, in summer, his bus arrives in a little town in California.</p>
+    <p class="first-para">Kenny is going across America by bus. One evening in summer, his bus arrives in a little town in California.</p>
 
 <p>"I want to stop here tonight," says Kenny to the bus driver. "Is there a motel, do you know?"</p>
 
@@ -45,7 +45,7 @@
 
 <p>"Give me the money!" the robber tells the security guard.</p>
 
-<p>"OK, OK!" says the security guard, and gives the robber the money.</p>
+<p>"OK, OK!" says the security guard and gives the robber the money.</p>
 
 <p>Then the robber rides away.</p>
 
@@ -69,15 +69,15 @@
   <div class="chapter-title">Room 23</div>
   <div class="chapter-divider"><span> ~ ~ ~ </span></div>
   <div class="book-body">
-    <p class="first-para">In the little town, 50 kilometers away from Los Angeles, Kenny goes into the motel and asks for a room.</p>
+    <p class="first-para">In the little town, 50 kilometres away from Los Angeles, Kenny goes into the motel and asks for a room.</p>
 
 <p>"Room 23," says the man at the desk. He gives Kenny a key.</p>
 
-<p>"Thank you," says Kenny. And he goes up to his room.</p>
+<p>"Thank you," says Kenny, and he goes up to his room.</p>
 
 <p>An hour later, Kenny comes down to eat. "I'm hungry," he thinks.</p>
 
-<p>He sees a girl arrive on a motorcycle. She walks to the front desk, and the woman gives her a key.</p>
+<p>He sees a girl arrive on a motorcycle. She walks to the front desk and the woman gives her a key.</p>
 
 <p>"Room 17," says the woman at the desk.</p>
 
@@ -125,11 +125,11 @@
   <div class="book-body">
     <p class="first-para">He goes for breakfast. The girl is eating her breakfast at a table near the window. Kenny looks at her.</p>
 
-<p>"Is it her?" he thinks. "I think I know her," but he walks across to her table.</p>
+<p>"Is it her?" he thinks. "I think I know her." But he walks across to her table.</p>
 
 <p>"Can I sit here?" he asks.</p>
 
-<p>The girl looks up. "Well... OK," she says.</p>
+<p>The girl looks up. "Well ... OK," she says.</p>
 
 <p>Kenny sits down.</p>
 
@@ -185,7 +185,7 @@
 
 <p>Kenny looks carefully at him. "What's the matter? Are you afraid of something?" he asks.</p>
 
-<p>"No, but perhaps she's got a gun!" says Ned. "I'm sorry."</p>
+<p>"No, but perhaps she's got a gun!" says Ned.</p>
 
   </div>
   <div class="page-number">· 6 ·</div>
@@ -250,8 +250,6 @@
 <p>"I must get away from here!" he thinks.</p>
 
 <p>Kenny cannot go back into room 17, but he can open the window to room 18.</p>
-
-<p>"I must get away from here."</p>
 
   </div>
   <div class="page-number">· 8 ·</div>
@@ -319,11 +317,11 @@
 
 <p>"That man!" says Kenny. "He's the Los Angeles supermarket robber! Stop him, somebody!"</p>
 
-<p>Ned hears him, and looks up. Then he gets on his motorcycle and drives off quickly.</p>
+<p>Ned hears him and looks up. Then he gets on his motorcycle and drives off quickly.</p>
 
 <p>"I can stop him," says Mel.</p>
 
-<p>She climbs down from her room. She runs around the motel, gets on her motorcycle, and goes after Ned.</p>
+<p>She climbs down from her room. She runs around the motel, gets on her motorcycle and goes after Ned.</p>
 
 <p>Mel rides her motorcycle quickly towards the river. When she gets to the river, she jumps across the river on the motorcycle and stops in front of Ned.</p>
 
@@ -355,13 +353,13 @@
 
 <p>"Yes," says Kenny. "I'm all right."</p>
 
-<p>Soon after, the police arrive and take Ned away. Kenny tells a policeman his story. Then, Mel tells the policewoman her story.</p>
+<p>Soon after, the police arrive and take Ned away. Kenny tells a policeman his story. Then Mel tells the policewoman her story.</p>
 
 <p>"Do I know your face?" the policewoman asks Mel. "Are you famous?"</p>
 
 <p>Mel laughs. "Perhaps you do," she says. "I'm on TV sometimes."</p>
 
-<p>"Now I remember you," Kenny says to Mel. "You're Mel Palmer, the famous stunt girl! I see you on 'Stunt Girls, USA' on TV sometimes."</p>
+<p>"Now I remember you," Kenny says to Mel. "You're Mel Palmer, the famous stunt girl! I see you on Stunt Girls USA on TV sometimes."</p>
 
 <p>Mel smiles. "Yes, that's me," she says. "Now, do you want to come to San Francisco on my motorcycle, or do you want to go on the bus?"</p>
 

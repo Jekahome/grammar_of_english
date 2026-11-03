@@ -20,11 +20,11 @@
 
 <p>"This is Alissa. She reads all day," her father says. The two men laugh.</p>
 
-<p>"Alissa?" Her father says, "My friend has work for you in the city. There isn't any work here in the village. You must go with him."</p>
+<p>"Alissa," her father says, "my friend has work for you in the city. There isn't any work here in the village. You must go with him."</p>
 
 <p>The fat man smiles at Alissa. "How old are you?" he asks.</p>
 
-<p>"I'm 12," she says. The fat man laughs again.</p>
+<p>"I'm twelve," she says. The fat man laughs again.</p>
 
 <p>Alissa doesn't like him. She doesn't want to go with this man. She wants to go to school in the village. She likes school. She likes reading.</p>
 
@@ -36,7 +36,7 @@
 
 <p>Alissa and the fat man arrive in the city. They drive to a house. A thin man comes to the door. The two men talk.</p>
 
-<p>"Here is your room." The thin man says to Alissa. He points to a door under the steps.</p>
+<p>"Here is your room," the thin man says to Alissa. He points to a door under the steps.</p>
 
 <p>Alissa goes into the room. The room is small and dark. It is her new home.</p>
 
@@ -44,11 +44,12 @@
 
 <p>Suddenly, the woman shouts at Alissa. "You aren't going to read here," she shouts. "You're going to cook and clean and wash."</p>
 
-<p>Alissa works 15 hours a day. The woman shouts at her every day. Alissa is very unhappy. She cries every night.</p>
+<p>Alissa works fifteen hours a day. The woman shouts at her every day. Alissa is very unhappy. She cries every night.</p>
 
 <p>One day, the thin man says to Alissa, "Pack your things. You must go. My wife doesn't like you."</p>
 
 <p>The thin man takes her to a clothes shop in the city. The shop owner is a large woman. She gives the man some money. He goes away. He doesn't say goodbye to Alissa.</p>
+
   </div>
   <div class="page-number">· 1 ·</div>
 </div>
@@ -65,9 +66,9 @@
   <div class="chapter-title">The Shop</div>
   <div class="chapter-divider"><span> ~ ~ ~ </span></div>
   <div class="book-body">
-    <p class="first-para">Alissa works with five other girls. They work in a small, dark room. The girls work all day. They make clothes. They work 12 hours a day.</p>
+    <p class="first-para">Alissa works with five other girls. They work in a small, dark room. The girls work all day. They make clothes. They work twelve hours a day.</p>
 
-<p>At midday, they eat lunch. After lunch, they rest for 10 minutes. At night, they sleep on the floor.</p>
+<p>At midday, they eat lunch. After lunch, they rest for ten minutes. At night, they sleep on the floor.</p>
 
 <p>Each month, the shop owner gives the girls a little money. Alissa buys a book with her money. She reads the book after lunch.</p>
 
@@ -89,7 +90,7 @@
 
 <p>The lady smiles. She takes the money from the purse. "Thank you," she says to Alissa. "You are an honest girl. Take this money."</p>
 
-<p>"No. No," says Alissa. "I don't want your money."</p>
+<p>"No, no," says Alissa. "I don't want your money."</p>
 
 <p>She runs back to the shop.</p>
 
@@ -101,7 +102,7 @@
 
 <p>"Yes, I do," Alissa says. She is crying now.</p>
 
-<p>"Wait." A quiet voice says.</p>
+<p>"Wait," a quiet voice says.</p>
 
 <p>The tall lady is standing at the door. "Alissa isn't ungrateful," the tall lady says. "She is an honest girl."</p>
 
@@ -116,6 +117,7 @@
 <p>"No," the tall lady says. "Alissa isn't a slave. Pack your things, Alissa. We will go home now."</p>
 
 <p>Alissa goes with the tall lady. She is going to a new home. She is going to be happy.</p>
+
   </div>
   <div class="page-number">· 2 ·</div>
 </div>
@@ -123,6 +125,7 @@
 ---
 
 </details>
+
 
 </div>
 

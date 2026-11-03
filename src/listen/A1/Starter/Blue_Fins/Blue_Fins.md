@@ -43,7 +43,7 @@
 
 <p>Jen swims up to get air. Her snorkel comes out of the water. Jen takes a big breath. She dives down under the water again.</p>
 
-<p>Jen swims past a large rock. Suddenly she stops. She sees a dolphin. It cannot swim. The dolphin is in a net.</p>
+<p>Jen swims past a large rock. Suddenly, she stops. She sees a dolphin. It cannot swim. The dolphin is in a net.</p>
 
 <p>The net is around the dolphin's body. The net is around the rocks. The dolphin cannot swim up to get air. The beautiful blue dolphin is dying.</p>
 
@@ -77,7 +77,7 @@
 
 <p>Men, women and children are in the sea. They are playing and laughing. Everybody is happy.</p>
 
-<p>The lifeguard watches the sea. He looks at the people swimming. Suddenly he shouts loudly.</p>
+<p>The lifeguard watches the sea. He looks at the people swimming. Suddenly, he shouts loudly.</p>
 
 <p>"Shark! Quick! Get out of the water!"</p>
 
@@ -91,11 +91,11 @@
 
 <p>"Rick! Look out!"</p>
 
-<p>Rick sees the shark's black fin above the water. The shark is 30 meters away.</p>
+<p>Rick sees the shark's black fin above the water. The shark is 30 metres away.</p>
 
-<p>Jen and Rick swim towards the beach. Now the shark is 15 meters away. Jen can see the shark's sharp white teeth.</p>
+<p>Jen and Rick swim towards the beach. Now the shark is 15 metres away. Jen can see the shark's sharp white teeth.</p>
 
-<p>Suddenly they see another fin in the water. A blue fin. It is a dolphin. It is the beautiful blue dolphin.</p>
+<p>Suddenly, they see another fin in the water. A blue fin. It is a dolphin. It is the beautiful blue dolphin.</p>
 
 <p>The dolphin is swimming towards the shark. The dolphin hits the shark. The dolphin hits the shark again and again. The shark swims away.</p>
 
@@ -110,6 +110,7 @@
 ---
 
 </details>
+
 </div>
 
 

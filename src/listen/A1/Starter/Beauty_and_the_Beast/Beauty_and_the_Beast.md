@@ -2,21 +2,29 @@
 
 <div id="listen-read">
 
-<details> <summary>Chapter One</summary><div class="book-page"> <div class="chapter-label">Chapter One</div> <div class="chapter-title">Beauty's Family</div> <div class="chapter-divider"><span> ~ ~ ~ </span></div> <div class="book-body"> <p class="first-para">A rich man lives in a big city near the sea. He has got three daughters and three sons. One daughter is called Beauty because she is very beautiful. The other two daughters are called Rosalind and Hortensia. They are lazy and unfriendly. They like going out and having fun. They both want to find a rich husband. They do not like Beauty because she is beautiful.</p><p>Beauty has got long red hair. She is kind and friendly. She likes staying at home and reading books. She also likes playing the piano.</p><p>Beauty's father is a merchant. One day he loses all his money because his ship is lost at sea.</p><p>"My dear children," he says sadly. "I haven't got much money. We're poor. We must leave this big house and go and live in the country."</p>  
+<details>
+<summary>Chapter One</summary>
+
+<div class="book-page">
+  <div class="chapter-label">Chapter One</div>
+  <div class="chapter-title">Beauty's Family</div>
+  <div class="chapter-divider"><span> ~ ~ ~ </span></div>
+  <div class="book-body">
+    <p class="first-para">A rich man lives in a big city near the sea. He has got three daughters and three sons. One daughter is called Beauty because she is very beautiful. The other two daughters are called Rosalind and Hortensia. They are lazy and unfriendly. They like going out and having fun. They both want to find a rich husband. They do not like Beauty because she is beautiful.</p><p>Beauty has got long red hair. She is kind and friendly. She likes staying at home and reading books. She also likes playing the piano.</p><p>Beauty's father is a merchant. One day he loses all his money because his ship is lost at sea.</p><p>"My dear children," he says sadly. "I haven't got much money. We're poor. We must leave this big house and go and live in the country."</p>  
  
-<p>"Oh dear," say the two sisters. "We are poor. This is terrible. What bad luck."</p>
+<p>"Oh dear," say the two sisters. "We are poor. This is terrible. What bad luck!"</p>
 
 <p>"Now we have to work," says Beauty's father.</p>
 
-<p>"Work?" say the two sisters. "No. We don't want to work. And we don't want to live in the country." They start to cry.</p>
+<p>"Work?" say the two sisters. "No! We don't want to work. And we don't want to live in the country." They start to cry.</p>
 
-<p>Beauty is sad but she says, "Let's not cry. We can work and be happy without money."</p>
+<p>Beauty is sad, but she says, "Let's not cry. We can work and be happy without money."</p>
 
 <p>The family goes to the country and lives in a small house. Beauty gets up at four o'clock every morning to clean the house and cook. Then she washes the family's clothes in the river. The three brothers work in the country. Rosalind and Hortensia do not work. They do nothing all day. They sleep all morning and walk in the woods in the afternoon.</p>
 
 <p>"I'm unhappy," says Rosalind. "I don't like the country because there's nothing to do. We can't go to the theatre and wear nice clothes. And we haven't got any friends. Look at Beauty," says Rosalind angrily. "She works and she's happy in this terrible place."</p>
 
-<p>Beauty's father says, "Dear Beauty. You work a lot and you're always happy. You're a wonderful daughter."</p>
+<p>Beauty's father says, "Dear Beauty, you work a lot and you're always happy. You're a wonderful daughter."</p>
 
 <div class="chapter-divider"><span> ~ * ~ </span></div>
 
@@ -96,13 +104,13 @@
 
 <p>"What bad luck!" he says angrily. "I must go home and tell the children the bad news."</p>
 
-<p>On the way home he crosses a big forest. It is snowing and windy. He is lost.</p>
+<p>On the way home, he crosses a big forest. It is snowing and windy. He is lost.</p>
 
 <p>"Where am I?" he thinks. "Where can I go? I'm very cold and tired."</p>
 
 <p>He hears some wolves and he is afraid. Suddenly he sees a big castle in the forest. And there are lights in the windows.</p>
 
-<p>"Oh good," he thinks. "Perhaps the people in the castle can help me."</p>
+<p>"Oh, good," he thinks. "Perhaps the people in the castle can help me."</p>
 
 <p>He takes his horse to the stable near the castle. He knocks on the big door of the castle but no one answers. He waits outside the door. Then he opens the door and goes inside.</p>
 
@@ -112,19 +120,19 @@
 
 <p>He is hungry and sits down at the table and starts to eat. Then he is sleepy. He finds a warm, comfortable bed and falls asleep.</p>
 
-<p>The next morning he finds some new clothes near his bed.</p>
+<p>The next morning, he finds some new clothes near his bed.</p>
 
-<p>"How nice. New clothes," he thinks. "A kind person lives in this castle."</p>
+<p>"How nice! New clothes," he thinks. "A kind person lives in this castle."</p>
 
-<p>He looks out of the window and is surprised. It's not snowing and it's a beautiful day. He thinks. And there are flowers in the garden.</p>
+<p>He looks out of the window and is surprised. It's not snowing, and it's a beautiful day. And there are flowers in the garden.</p>
 
-<p>He gets dressed and goes to the hall. There are biscuits, chocolate and milk on the long table. He sits down and says, "Thank you for this lovely breakfast." He looks round but sees no one.</p>
+<p>He gets dressed and goes to the hall. There are biscuits, chocolate and milk on the long table. He sits down and says, "Thank you for this lovely breakfast." He looks round, but sees no one.</p>
 
 <p>He eats and decides to go home. He goes to the stable and gets his horse. In the garden he sees some roses.</p>
 
 <p>"Beauty wants a rose," he thinks. He takes a lovely one.</p>
 
-<p>Suddenly he hears a terrible noise.</p>
+<p>Suddenly, he hears a terrible noise.</p>
 
 <div class="chapter-divider"><span> ~ * ~ </span></div>
 
@@ -186,7 +194,7 @@
   <div class="chapter-title">The Beast</div>
   <div class="chapter-divider"><span> ~ ~ ~ </span></div>
   <div class="book-body">
-    <p class="first-para">"You're a bad man," cries the Beast angrily. "You come to my castle and I save your life. You eat here and you sleep here. And then you take one of my beautiful roses. For this you must die."</p>
+    <p class="first-para">"You're a bad man," cries the Beast angrily. "You come to my castle and I save your life. You eat here and you sleep here. And then you take one of my beautiful roses. For this, you must die."</p>
 
 <p>Beauty's father starts to cry. "Oh, sir, I'm sorry. You're very kind. Please don't be angry with me. This rose is for one of my daughters."</p>
 
@@ -212,7 +220,7 @@
 
 <p>"No. That's not possible," says their father. "The Beast is very big and strong. I'm old. I must go and die."</p>
 
-<p>But Beauty does not agree. She decides to go to the Beast's castle. "No, father," she says. "You must not go. I want to go."</p>
+<p>But Beauty does not agree. She decides to go to the Beast's castle. "No, Father," she says. "You must not go. I want to go."</p>
 
 <p>"Never, my dear Beauty," says her father.</p>
 
@@ -269,9 +277,9 @@
 
 <p>Beauty is terrified. "The Beast is going to eat me tonight," she thinks. "I want to enjoy my last day. I'm going to visit the garden of the castle."</p>
 
-<p>She goes to see the big garden and she is surprised. It is a beautiful garden with a lot of lovely flowers. Then she goes to see the big castle. She looks in all the rooms. On one door, she sees this sign: Beauty's Room.</p>
+<p>She goes to see the big garden and she is surprised. It is a beautiful garden with a lot of lovely flowers. Then she goes to see the big castle. She looks in all the rooms. On one door, she sees this sign: "Beauty's Room."</p>
 
-<p>She opens the door and sees a lovely room. There is a nice bed and a mirror on the wall. Beauty looks round and thinks. There's a piano and a lot of books for me.</p>
+<p>She opens the door and sees a lovely room. There is a nice bed and a mirror on the wall. Beauty looks round and thinks, "There's a piano and a lot of books for me."</p>
 
 <p>"How strange," she thinks. "Perhaps the Beast doesn't want to eat me tonight."</p>
 
@@ -291,7 +299,7 @@
 
 <p>She goes to the garden and stays there all afternoon. She looks at the flowers and feels happy.</p>
 
-<p>At dinner time, she sits down at the long table and then she hears the Beast coming. She is terrified.</p>
+<p>At dinner time, she sits down at the long table, and then she hears the Beast coming. She is terrified.</p>
 
 <p>"Beauty, can I sit here with you?" asks the Beast.</p>
 
@@ -313,9 +321,9 @@
 
 <p>Now Beauty is not afraid of the Beast and she eats a big dinner. The Beast looks at her and asks a question. "Do you want to marry me, Beauty?"</p>
 
-<p>"What a question," Beauty thinks. She is terrified. "What can I say?"</p>
+<p>"What a question!" Beauty thinks. She is terrified. "What can I say?"</p>
 
-<p>She is silent for a moment and then she says, "No, I'm sorry, I don't want to marry you."</p>
+<p>She is silent for a moment, and then she says, "No, I'm sorry, I don't want to marry you."</p>
 
 <p>The Beast is angry and Beauty is afraid. Then he goes out of the room and says, "Goodbye, Beauty."</p>
 
@@ -373,7 +381,7 @@
 
 <p>"Oh, thank you," says Beauty happily. "Please don't be sad, Beast. I'm going to come back in a week."</p>
 
-<p>"All right," says Beauty.</p>
+<p>"All right," says the Beast.</p>
 
 <p>"You can visit your father tomorrow morning. But remember, you must come back in a week. Before you come back, put this ring on a table near your bed. It's a magic ring. Goodbye, Beauty."</p>
 
@@ -465,9 +473,9 @@
 
 <p>"Rosalind and Hortensia love me," Beauty thinks. "They're good sisters and I love them a lot."</p>
 
-<p>At the end of the week Beauty says, "I must go back to the Beast's castle."</p>
+<p>At the end of the week, Beauty says, "I must go back to the Beast's castle."</p>
 
-<p>But her sisters start to cry. "Oh, oh, Beauty," says Rosalind. "Please stay with us another week. We need you."</p>
+<p>But her sisters start to cry. "Oh, Beauty," says Rosalind. "Please stay with us another week. We need you."</p>
 
 <p>"Yes, Beauty," says Hortensia. "Please don't leave us. We have fun with you and we love you."</p>
 
@@ -495,7 +503,7 @@
 
 <p>Beauty thinks about the Beast. She misses him.</p>
 
-<p>Ten days later Beauty dreams about the Beast. In her dream the Beast is on the grass in the garden of the castle. And he's going to die.</p>
+<p>Ten days later, Beauty dreams about the Beast. In her dream, the Beast is on the grass in the garden of the castle. And he's going to die.</p>
 
 <p>"Beauty," whispers the Beast. "Today is the tenth day and you're not here. I can't live without you. I can't eat or drink."</p>
 
@@ -515,7 +523,7 @@
 
 <p>She opens the doors of all the rooms and looks everywhere in the castle. But she cannot find him.</p>
 
-<p>Suddenly she remembers her dream. She runs to the garden and sees the Beast on the grass.</p>
+<p>Suddenly, she remembers her dream. She runs to the garden and sees the Beast on the grass.</p>
 
 <p>"Oh no!" she cries. "Is he dead?"</p>
 
@@ -545,7 +553,7 @@
   <div class="chapter-title">The Prince</div>
   <div class="chapter-divider"><span> ~ ~ ~ </span></div>
   <div class="book-body">
-    <p class="first-para">Suddenly all the lights of the castle and the garden turn on. There are beautiful fireworks in the sky. Beauty is surprised and looks at the castle. Then she turns round and looks at the Beast.</p>
+    <p class="first-para">Suddenly, all the lights of the castle and the garden come on. There are beautiful fireworks in the sky. Beauty is surprised and looks at the castle. Then she turns round and looks at the Beast.</p>
 
 <p>What a surprise! She sees a handsome young man.</p>
 
@@ -563,11 +571,11 @@
 
 <p>Beauty looks at the handsome prince and says, "Yes, I do."</p>
 
-<p>Beauty and the prince go to the castle. When she opens the door she is surprised.</p>
+<p>Beauty and the prince go to the castle. When she opens the door, she is surprised.</p>
 
 <p>"My family! You're all here!" cries Beauty.</p>
 
-<p>She is happy when she sees her family. They talk and laugh together. Suddenly she sees the good fairy from her dream.</p>
+<p>She is happy when she sees her family. They talk and laugh together. Suddenly, she sees the good fairy from her dream.</p>
 
 <p>"Beauty," says the good fairy. "You've got a kind heart. And you're going to marry the prince and become a princess."</p>
 
@@ -575,11 +583,11 @@
 
 <p>The fairy says some magic words. And suddenly Rosalind and Hortensia become statues.</p>
 
-<p>"Oh no!" cries Beauty. "My sisters are statues."</p>
+<p>"Oh no!" cries Beauty. "My sisters are statues!"</p>
 
 <p>"Your sisters have got hearts of stone," says the fairy. "Now they can't move. But they can see and hear everything. When they understand their mistakes, they can become Rosalind and Hortensia again."</p>
 
-<p>The next day Beauty and the prince get married. Everyone dances and sings in the castle. It is a happy day. People give flowers to Beauty and the prince.</p>
+<p>The next day, Beauty and the prince get married. Everyone dances and sings in the castle. It is a happy day. People give flowers to Beauty and the prince.</p>
 
 <p>The prince sees tears in Beauty's eyes and says, "Don't cry, my Beauty. We are going to be very happy together."</p>
 

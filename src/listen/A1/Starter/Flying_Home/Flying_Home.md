@@ -20,21 +20,21 @@
 
 <p>Every night, Felix looks up at the sky. He can see the whole city. It's big and exciting. It's home for the Baxters, but not for Felix.</p>
 
-<p>He remembers the big, yellow moon in Brazil. Then he remembers his last day in the jungle. The two men with white hats. The big box. The long plane journey. The shop. Beautiful Birds in New York.</p>
+<p>He remembers the big, yellow moon in Brazil. Then he remembers his last day in the jungle. The two men with white hats. The big box. The long plane journey. The shop, Beautiful Birds, in New York.</p>
 
 <p>Felix closes his eyes. Now he can't see the city and the snow. He can see other things. He can see the life he loves.</p>
 
 <p>"I want to be with my family again," he thinks. "I want to fly home to the jungle. It's warm there, and the trees are always green."</p>
 
-<p>He puts his head under one wing. "One day," he says, "one day."</p>
+<p>He puts his head under one wing. "One day," he says. "One day."</p>
 
 <p>One day comes two weeks later.</p>
 
-<p>Mr. Baxter opens Felix's cage to give him some food. Then he hears the telephone.</p>
+<p>Mr Baxter opens Felix's cage to give him some food. Then he hears the telephone.</p>
 
-<p>"Can you answer that, George?" asks Mrs. Baxter. "I'm in the bath."</p>
+<p>"Can you answer that, George?" asks Mrs Baxter. "I'm in the bath."</p>
 
-<p>"Okay," says Mr. Baxter. He goes to the phone, but forgets to shut Felix's cage.</p>
+<p>"OK," says Mr Baxter. He goes to the phone, but forgets to shut Felix's cage.</p>
 
 <p>Felix can see an open window. "This is it!" he thinks.</p>
 
@@ -42,7 +42,7 @@
 
 <p>He looks down at the streets and buildings and flies through the city.</p>
 
-<p>A girl in a cafe with her mother sees him. "Look!" she says. Her mother doesn't hear. She's reading her newspaper.</p>
+<p>A girl in a café with her mother sees him. "Look!" she says. Her mother doesn't hear. She's reading her newspaper.</p>
 
 <p>After an hour, Felix stops. He stands on the head of the Statue of Liberty.</p>
 
@@ -72,13 +72,13 @@
   <div class="book-body">
     <p class="first-para">Felix flies south. Soon he can't see New York. All he can see is the Atlantic Ocean.</p>
 
-<p>In the evening the sun starts to go down. Then the sky is red, yellow and blue. It's very beautiful.</p>
+<p>In the evening, the sun starts to go down. Then the sky is red, yellow and blue. It's very beautiful.</p>
 
 <p>Felix is hungry, but he's happy too. For the first time in two years, he's free. He wants to fly all night.</p>
 
 <p>Two hours later, it starts to rain. Now the sky's black. Soon Felix can't see the moon or the stars.</p>
 
-<p>"Where am I?"</p>
+<p>"Where am I?" he thinks.</p>
 
 <p>He remembers his warm cage. "Am I doing the right thing?"</p>
 
@@ -88,7 +88,7 @@
 
 <p>Felix flies down to the ship. There are hundreds of fish on it. He eats twenty in five minutes. Then he sleeps.</p>
 
-<p>In the morning a man on the ship sees him. "Oh no!" thinks Felix. But it's all right. The man only wants to take a photograph of him.</p>
+<p>In the morning, a man on the ship sees him. "Oh no!" thinks Felix. But it's all right. The man only wants to take a photograph of him.</p>
 
 <p>Felix flies into the sky again. "Good," he thinks. "It's not raining now, and I'm not hungry."</p>
 
@@ -110,7 +110,7 @@
 
 <p>Felix flies from Peru to Rio. There he sees a lot of people in the street. He can hear music and see some birds in a tree.</p>
 
-<p>"Is one of them Aca? Aca! Aca!" he says.</p>
+<p>Is one of them Aca? "Aca! Aca!" he says.</p>
 
 <p>"Yes, that's me," answers one of the birds. Felix can't see him.</p>
 
@@ -134,7 +134,7 @@
 
 <p>Felix and Aca fly from Rio to the jungle.</p>
 
-<p>In the evening, Felix says, "Yes, I remember that village. My home's very near here. It's only..." then he stops.</p>
+<p>In the evening, Felix says, "Yes, I remember that village. My home's very near here. It's only ..." Then he stops.</p>
 
 <p>In front of them there are a lot of men and machines.</p>
 
@@ -165,6 +165,7 @@
 ---
 
 </details>
+
 </div>
 
 

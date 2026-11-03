@@ -587,7 +587,7 @@ Future in the Past
 ---
 
 
-## Правки меток времени субтитров в аудиокнигах
+## Правки меток времени субтитров и текста в аудиокнигах
 
 - [ ] Starter
     - [x] Alice's Adventures in Wonderland
@@ -606,7 +606,7 @@ Future in the Past
     - [x] Lisa's Song
     - [x] Lucky Number
     - [x] Marcel And The Mona Lisa
-    - [ ] Marcel And The White Star
+    - [x] Marcel And The White Star
     - [ ] Merlin
     - [ ] Newspaper Chase
     - [ ] Photo Finish

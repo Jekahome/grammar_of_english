@@ -16,7 +16,7 @@
 
 <p>One day, Tommy's boss, Sam, telephones him. It is very early in the morning.</p>
 
-<p>"Tommy," says Sam. "Can you be at The Ritz Hotel at 9:00 o'clock?"</p>
+<p>"Tommy," says Sam. "Can you be at the Ritz Hotel at nine o'clock?"</p>
 
 <p>"Yes," says Tommy, "but why?"</p>
 
@@ -26,23 +26,23 @@
 
 <p>"Gloria Brash!" says Tommy. "The film star! Where do you want me to drive her?"</p>
 
-<p>"Not her," says Sam. "Him. Her 12-year-old son Dino wants to see London today. His mother's working. There's a letter for you at The Ritz. There's 50 pounds, too. That's for Dino."</p>
+<p>"Not her," says Sam. "Him. Her twelve-year-old son Dino wants to see London today. His mother's working. There's a letter for you at the Ritz. There's £50, too. That's for Dino."</p>
 
-<p>"50 pounds for one day in London!" says Tommy. "That's a lot of money."</p>
+<p>"£50 for one day in London!" says Tommy. "That's a lot of money."</p>
 
 <p>"I know," says Sam. "Be very nice to the boy, Tommy, and don't be late."</p>
 
 <p>"You know me," says Tommy. "I'm always early."</p>
 
-<p>It is 8:45. Tommy is at The Ritz 15 minutes early. He goes to the desk.</p>
+<p>It is 8:45. Tommy is at the Ritz fifteen minutes early. He goes to the desk.</p>
 
 <p>"I'm from TOP TAXIS," he says.</p>
 
 <p>The woman behind the desk gives him the letter and the money.</p>
 
-<p>The letter says, "It's Dino's first time in London. Please take him to all these places. One, Buckingham Palace. Two, Harrods. Three, the British Museum."</p>
+<p>The letter says, "It's Dino's first time in London. Please take him to all these places. One: Buckingham Palace. Two: Harrods. Three: the British Museum."</p>
 
-<p>"OK," thinks Tommy. "Now, is Dino here?" I know I'm early, but he sees a boy in a chair.</p>
+<p>"OK," thinks Tommy. "Now, is Dino here? I know I'm early, but ..." He sees a boy in a chair.</p>
 
 <p>"Hello," he says. "Are you Dino?"</p>
 
@@ -54,11 +54,11 @@
 
 <p>The boy stands up. "OK," he says. "Let's go."</p>
 
-<p>First, Tommy drives to Buckingham Palace. The home of the Queen. He stops the taxi.</p>
+<p>First, Tommy drives to Buckingham Palace, the home of the Queen. He stops the taxi.</p>
 
 <p>"What are you doing?" asks Dino. "I don't want to see this old place."</p>
 
-<p>Tommy looks at him. "But I..." then he remembers Sam's words. "Be very nice to the boy."</p>
+<p>Tommy looks at him. "But I ..." Then he remembers Sam's words: "Be very nice to the boy."</p>
 
 <p>"OK, Dino," he says. "Where do you want to go?"</p>
 
@@ -66,11 +66,11 @@
 
 <p>"Is this the place?" he asks.</p>
 
-<p>"That's right," answers Dino. "Can I have 20 pounds, please?"</p>
+<p>"That's right," answers Dino. "Can I have £20, please?"</p>
 
-<p>"But I don't think your mother..."</p>
+<p>"But I don't think your mother ..."</p>
 
-<p>"I want 20 pounds now."</p>
+<p>"I want £20 now."</p>
 
 <p>Tommy gives Dino the money. Then he sits in the car and waits.</p>
 
@@ -86,9 +86,9 @@
 
 <p>"Where?" asks Tommy. He looks across the road.</p>
 
-<p>Dino goes into the Big Burger Bar with another 20 pounds. He eats a mountain of food and drinks four milkshakes.</p>
+<p>Dino goes into the Big Burger Bar with another £20. He eats a mountain of food and drinks four milkshakes.</p>
 
-<p>Tommy eats his lunch in the taxi. "20 pounds for lunch!" he thinks. "I can buy a week's food with 20 pounds."</p>
+<p>Tommy eats his lunch in the taxi. "£20 for lunch!" he thinks. "I can buy a week's food with £20."</p>
 
 <p>He looks out of the window and eats another sandwich.</p>
 
@@ -100,7 +100,7 @@
 
 <p>"OK," answers Dino.</p>
 
-<p>Tommy looks at him. Yes! Tommy is very happy. He drives to the British Museum and gives Dino 10 pounds.</p>
+<p>Tommy looks at him. Yes! Tommy is very happy. He drives to the British Museum and gives Dino £10.</p>
 
 <p>"Thanks," says Dino. "Wait here."</p>
 
@@ -108,9 +108,9 @@
 
 <p>At 4:15, Dino comes out of the cinema. Tommy's sitting in the cab. He's very angry.</p>
 
-<p>"Where do you want to go now?" he asks.</p>
+<p>"Where — do — you — want — to — go — now?" he asks.</p>
 
-<p>"Oh, back to The Ritz, I think," says Dino. "I'm tired and I want to have a bath before dinner."</p>
+<p>"Oh, back to the Ritz, I think," says Dino. "I'm tired and I want to have a bath before dinner."</p>
 
 <p>"Good," thinks Tommy.</p>
 
@@ -118,7 +118,7 @@
 
 <p>"Here we are," he says. He opens the door for Dino.</p>
 
-<p>Then he sees a beautiful woman in a very expensive coat. She's walking out of The Ritz and she's looking at him.</p>
+<p>Then he sees a beautiful woman in a very expensive coat. She's walking out of the Ritz and she's looking at him.</p>
 
 <p>"I know that woman," thinks Tommy. Then he remembers. "Of course, it's Gloria Brash!"</p>
 
@@ -132,7 +132,7 @@
 
 <p>"This is Dino," she says.</p>
 
-<p>"But... but..." Tommy can't speak.</p>
+<p>"But ... but ..." Tommy can't speak.</p>
 
 <p>"I am very angry," says Gloria.</p>
 
@@ -140,11 +140,11 @@
 
 <p>"But this can't be Dino!" he says.</p>
 
-<p>"Young man, I know my son!" answers Gloria. "Now, where is my 50 pounds?"</p>
+<p>"Young man, I know my son!" answers Gloria. "Now, where is my £50?"</p>
 
 <p>Tommy's face goes white. He looks out of the window. His taxi is there, but Dino is not.</p>
 
-<p>It is 5:00 o'clock in the afternoon. Tommy's boss, Sam, is at home. He and his wife are having a cup of tea.</p>
+<p>It is five o'clock in the afternoon. Tommy's boss, Sam, is at home. He and his wife are having a cup of tea.</p>
 
 <p>The door opens and their son, Billy, walks in.</p>
 
@@ -161,6 +161,7 @@
 ---
 
 </details>
+
 </div>
 
 
