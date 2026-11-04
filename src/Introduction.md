@@ -607,7 +607,7 @@ Future in the Past
     - [x] Lucky Number
     - [x] Marcel And The Mona Lisa
     - [x] Marcel And The White Star
-    - [ ] Merlin
+    - [x] Merlin
     - [ ] Newspaper Chase
     - [ ] Photo Finish
     - [ ] Police TV
