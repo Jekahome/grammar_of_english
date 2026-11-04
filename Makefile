@@ -15,6 +15,7 @@ commit:  pull
 
 run:
 	mdbook serve --hostname 127.0.0.1 --port $(PORT) 
+	@ln -sfn ../../grammar_of_english_audio book/local_audio
 
 stop:
 	kill $(shell lsof -t -i :$(PORT)) || echo "No process running on port $(PORT)"

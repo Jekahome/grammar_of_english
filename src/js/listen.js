@@ -21,10 +21,22 @@ class Listen {
     constructor({container, path_sub, path_audio, pageSize = 10}) {
         
         const isGithub = window.location.hostname.includes('github.io');
-        const url = isGithub ? '/grammar_of_english' : '';
+        //const url = isGithub ? '/grammar_of_english' : '';
+        //let audio = url + path_audio;
+        //let subtitles = url + path_sub;
 
-        let audio = url + path_audio;
-        let subtitles = url + path_sub;
+        const url = isGithub
+            ? 'https://raw.githubusercontent.com/Jekahome/grammar_of_english_audio/main'
+            : '/local_audio';
+        // TODO: ссылка на папку local_audio должна быть в папке генерации mdbook т.е. в /book    
+        // ln -sfn ../../grammar_of_english_audio book/local_audio
+        
+
+        const audio = `${url}${path_audio}`;
+        const subtitles = (isGithub ? '/grammar_of_english' : '') + path_sub;
+
+        console.log('url=',url);
+        console.log('audio=',audio);
 
         this.subs = [];
         this.index = -1;
