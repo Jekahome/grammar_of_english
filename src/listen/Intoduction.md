@@ -9,4 +9,6 @@
     * слушать по предложениям, пытаясь все понять и при этом писать английский текст вслед за диктором, и повторяя в голос;
     * свободно слушать, привыкая к диктору, не пытаясь понять все что сказано
 
-    
+---
+
+Оригиналы аудио продаются тут: [codigosoxford.com](https://codigosoxford.com/index.php/categoria/young_learners/serie/40?level=82), [www.oup.es](https://www.oup.es/dominoes)
