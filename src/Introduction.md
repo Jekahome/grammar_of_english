@@ -589,7 +589,7 @@ Future in the Past
 
 ## Правки меток времени субтитров и текста в аудиокнигах
 
-- [ ] Starter
+- [ ] Starter (только правка меток времени)
     - [x] Alice's Adventures in Wonderland
     - [x] Alissa
     - [x] Beauty and the Beast
@@ -641,7 +641,7 @@ Future in the Past
     - [x] Peter Pan
     - [ ] The Wonderful Wizard of Oz
 
-- [ ] Beginner
+- [ ] Beginner (правка ошибок транскрибации и меток времени)
     - [ ] 20000 Leagues Under The Sea
     - [ ] African Safari
     - [ ] A Ghost In Love
@@ -771,7 +771,65 @@ Future in the Past
     - [ ] The Secret Garden
     - [ ] The Wind In The Willows
 
-
+# New beginner book (правка ошибок транскрибации и меток времени)
+```
+- [Aladdin](listen/A1/Beginner/Aladdin/Aladdin.md)
+- [Ali Baba and the Forty Thieves World Literature](listen/A1/Beginner/Ali_Baba_and_the_Forty_Thieves_World_Literature/Ali_Baba_and_the_Forty_Thieves_World_Literature.md)
+- [Amrita and the Trees](listen/A1/Beginner/Amrita_and_the_Trees/Amrita_and_the_Trees.md)
+- [Bambi and the Prince of the Forest](listen/A1/Beginner/Bambi_and_the_Prince_of_the_Forest/Bambi_and_the_Prince_of_the_Forest.md)
+- [Big Baby Finn](listen/A1/Beginner/Big_Baby_Finn/Big_Baby_Finn.md)
+- [Blackbeard](listen/A1/Beginner/Blackbeard/Blackbeard.md)
+- [Changing Places](listen/A1/Beginner/Changing_Places/Changing_Places.md)
+- [Crying Wolf and Other Tales](listen/A1/Beginner/Crying_Wolf_and_Other_Tales/Crying_Wolf_and_Other_Tales.md)
+- [Goldilocks and the Three Bears](listen/A1/Beginner/Goldilocks_and_the_Three_Bears/Goldilocks_and_the_Three_Bears.md)
+- [Heidi](listen/A1/Beginner/Heidi/Heidi.md)
+- [Hercules](listen/A1/Beginner/Hercules/Hercules.md)
+- [Jack and the Beanstalk](listen/A1/Beginner/Jack_and_the_Beanstalk/Jack_and_the_Beanstalk.md)
+- [Journey to the Centre of the Earth](listen/A1/Beginner/Journey_to_the_Centre_of_the_Earth/Journey_to_the_Centre_of_the_Earth.md)
+- [Kidnap!](listen/A1/Beginner/Kidnap/Kidnap.md)
+- [King Arthur and the Sword](listen/A1/Beginner/King_Arthur_and_the_Sword/King_Arthur_and_the_Sword.md)
+- [Last Chance](listen/A1/Beginner/Last_Chance/Last_Chance.md)
+- [Little Red Riding Hood](listen/A1/Beginner/Little_Red_Riding_Hood/Little_Red_Riding_Hood.md)
+- [Lownu Mends the Sky](listen/A1/Beginner/Lownu_Mends_the_Sky/Lownu_Mends_the_Sky.md)
+- [Mansour and the Donkey](listen/A1/Beginner/Mansour_and_the_Donkey/Mansour_and_the_Donkey.md)
+- [Moby Dick](listen/A1/Beginner/Moby_Dick/Moby_Dick.md)
+- [Mulan](listen/A1/Beginner/Mulan/Mulan.md)
+- [New York Cafe](listen/A1/Beginner/New_York_Cafe/New_York_Cafe.md)
+- [Orca](listen/A1/Beginner/Orca/Orca.md)
+- [Peach Boy](listen/A1/Beginner/Peach_Boy/Peach_Boy.md)
+- [Pebbles on the Beach](listen/A1/Beginner/Pebbles_on_the_Beach/Pebbles_on_the_Beach.md)
+- [Perseus TV and Film Adventure](listen/A1/Beginner/Perseus_TV_and_Film_Adventure/Perseus_TV_and_Film_Adventure.md)
+- [Rainforest Boy](listen/A1/Beginner/Rainforest_Boy/Rainforest_Boy.md)
+- [Rapunzel](listen/A1/Beginner/Rapunzel/Rapunzel.md)
+- [Red Roses](listen/A1/Beginner/Red_Roses/Red_Roses.md)
+- [Rumpelstiltskin](listen/A1/Beginner/Rumpelstiltskin/Rumpelstiltskin.md)
+- [Sallys Phone](listen/A1/Beginner/Sallys_Phone/Sallys_Phone.md)
+- [Sheherazade](listen/A1/Beginner/Sheherazade/Sheherazade.md)
+- [Sinbad](listen/A1/Beginner/Sinbad/Sinbad.md)
+- [Sing to Win](listen/A1/Beginner/Sing_to_Win/Sing_to_Win.md)
+- [The Big Game](listen/A1/Beginner/The_Big_Game/The_Big_Game.md)
+- [The Big Story](listen/A1/Beginner/The_Big_Story/The_Big_Story.md)
+- [The Bottle Imp Mystery and Horror](listen/A1/Beginner/The_Bottle_Imp_Mystery_and_Horror/The_Bottle_Imp_Mystery_and_Horror.md)
+- [The Cat](listen/A1/Beginner/The_Cat/The_Cat.md)
+- [The Enormous Turnip](listen/A1/Beginner/The_Enormous_Turnip/The_Enormous_Turnip.md)
+- [The Fisherman and His Wife](listen/A1/Beginner/The_Fisherman_and_His_Wife/The_Fisherman_and_His_Wife.md)
+- [The Gingerbread Man](listen/A1/Beginner/The_Gingerbread_Man/The_Gingerbread_Man.md)
+- [The Great Fire of London](listen/A1/Beginner/The_Great_Fire_of_London/The_Great_Fire_of_London.md)
+- [The Heron and the Hummingbird](listen/A1/Beginner/The_Heron_and_the_Hummingbird/The_Heron_and_the_Hummingbird.md)
+- [The Lazy Grasshopper](listen/A1/Beginner/The_Lazy_Grasshopper/The_Lazy_Grasshopper.md)
+- [The Little Match Girl](listen/A1/Beginner/The_Little_Match_Girl/The_Little_Match_Girl.md)
+- [The Little Red Hen](listen/A1/Beginner/The_Little_Red_Hen/The_Little_Red_Hen.md)
+- [The Magic Cooking Pot](listen/A1/Beginner/The_Magic_Cooking_Pot/The_Magic_Cooking_Pot.md)
+- [The Magpie and the Milk](listen/A1/Beginner/The_Magpie_and_the_Milk/The_Magpie_and_the_Milk.md)
+- [The Princess and the Pea](listen/A1/Beginner/The_Princess_and_the_Pea/The_Princess_and_the_Pea.md)
+- [The Shoemaker and the Elves](listen/A1/Beginner/The_Shoemaker_and_the_Elves/The_Shoemaker_and_the_Elves.md)
+- [The Sorcerer's Apprentice](listen/A1/Beginner/The_Sorcerers_Apprentice/The_Sorcerers_Apprentice.md)
+- [The Sorcerers Apprentice Mystery and Horror](listen/A1/Beginner/The_Sorcerers_Apprentice_Mystery_and_Horror/The_Sorcerers_Apprentice_Mystery_and_Horror.md)
+- [The Town Mouse and the Country Mouse](listen/A1/Beginner/The_Town_Mouse_and_the_Country_Mouse/The_Town_Mouse_and_the_Country_Mouse.md)
+- [The Ugly Duckling](listen/A1/Beginner/The_Ugly_Duckling/The_Ugly_Duckling.md)
+- [Three Billy Goats](listen/A1/Beginner/Three_Billy_Goats/Three_Billy_Goats.md)
+- [Thumbelina](listen/A1/Beginner/Thumbelina/Thumbelina.md)
+```
 
 ### Audio
 

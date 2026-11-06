@@ -1,203 +1,107 @@
 # Listen: The Selfish Giant
 
 <div id="listen-read">
- 
-<details>
-<summary>Chapter 1</summary>
-
+ <details>
+<summary>Chapter 1: The Giant comes home</summary>
 <div class="book-page">
-  <div class="chapter-label">Chapter 1</div>
-  <div class="chapter-title">The Giant Comes Home</div>
-  <div class="chapter-divider"><span> ~ ~ ~ </span></div>
-  <div class="book-body">
-    <p class="first-para">Every afternoon, when school finishes, the children play in the giant's garden. It's a wonderful, big, green garden. There are beautiful flowers in it, and twelve tall trees. Birds like sitting and singing in these trees. The children often stop playing and listen to them.</p>
-
-<p>"We're very happy here," they say.</p>
-
-<p>For seven years, the giant stays away in Cornwall, at the house of his friend, the Cornish giant. One day, he comes home, and he finds all the children in the garden.</p>
-
-<p>"What are you doing here?" he cries angrily, and the children run away.</p>
-
-<p>"It's my garden," the giant says. "People must understand, and nobody can play here. Only me."</p>
-
-<p>So, he puts a wall around the garden, with a big notice on it. "No children."</p>
-
-<p>He is a very selfish giant.</p>
-
-<p>Where can the children go now? They don't like playing in the road, so, after school, they walk around the wall, and they look at it, and they remember the beautiful garden behind it too.</p>
-
-  </div>
-  <div class="page-number">· 1 ·</div>
+<div class="chapter-label">CHAPTER 1</div>
+<div class="chapter-title">The Giant comes home</div>
+<div class="chapter-divider"><span> ~ ~ ~ </span></div>
+<div class="book-body">
+<p class="first-para">Every afternoon, when school finishes, the children play in the Giant's garden. It's a wonderful, big, green garden. There are beautiful flowers in it and twelve tall trees. Birds like sitting and singing in these trees. The children often stop playing and listen to them.</p>
+<p class="para">“We're very happy here,” they say. For seven years, the Giant stays away in Cornwall at the house of his friend, the Cornish Giant. Then, one day, he comes home and he finds all the children in the garden. “What are you doing here?”</p>
+<p class="para">he cries angrily, and the children run away. “It's my garden,” the Giant says. “People must understand. And nobody can play here— only me!”</p>
+<p class="para">So he puts a wall around the garden with a big notice on it. NO CHILDREN. He is a very selfish Giant. Where can the children go now? They don't like playing in the road, so after school they walk around the wall and they look at it and they remember the beautiful garden behind it too.</p>
 </div>
-
----
-
+<div class="page-number">· 1 ·</div>
+</div>
 </details>
-
 <details>
-<summary>Chapter 2</summary>
-
+<summary>Chapter 2: Always winter</summary>
 <div class="book-page">
-  <div class="chapter-label">Chapter 2</div>
-  <div class="chapter-title">Always Winter</div>
-  <div class="chapter-divider"><span> ~ ~ ~ </span></div>
-  <div class="book-body">
-    <p class="first-para">Then, the spring comes. All over the country, there are spring flowers and little birds in the green trees. But in the selfish giant's garden, it stays winter. The birds don't want to sing in it, because there are no children. The trees there stay dark.</p>
-
-<p>One beautiful flower puts its head up out of the ground, but it sees the notice and is very sorry for the children. So, it goes back under the ground and sleeps again.</p>
-
-<p>Nobody is happy about this. Only the snow and the frost. "Spring doesn't come to this garden," they cry, "so we can live here all year."</p>
-
-<p>The snow puts her cold white coat on the ground, and the frost puts silver on the dark trees. They tell the North wind, "You must stay with us." So he comes in his big brown coat. He makes lots of noise up and down the garden, and he moves things here and there all day.</p>
-
-<p>"This is wonderful!" he cries. "Let's ask the hail to come here too."</p>
-
-<p>So, the hail comes. Every day, he sits on the roof of the giant's big old house. He never stops hitting it noisily, hour after hour. His suit is the colour of smoke. And cold smoke comes from his mouth when he opens it.</p>
-
-<p>The selfish giant sits at his window. He looks out at his cold white garden.</p>
-
-<p>"I don't understand," he says. "The spring's very late this year. When is it coming? And when is this winter finishing?"</p>
-
-  </div>
-  <div class="page-number">· 2 ·</div>
+<div class="chapter-label">CHAPTER 2</div>
+<div class="chapter-title">Always winter</div>
+<div class="chapter-divider"><span> ~ ~ ~ </span></div>
+<div class="book-body">
+<p class="first-para">Then the spring comes. All over the country, there are spring flowers and little birds in the green trees. But in the Selfish Giant's garden, it stays winter. The birds don't want to sing in it because there are no children. The trees there stay dark.</p>
+<p class="para">One beautiful flower puts its head up out of the ground. But it sees the notice and is very sorry for the children. So it goes back under the ground and sleeps again. Nobody is happy about this. Only the Snow and the Frost.</p>
+<p class="para">“Spring doesn't come to this garden,” they cry. “So we can live here all year!” The Snow puts her cold white coat on the ground and the Frost puts silver on the dark trees. They tell the North Wind, “You must stay with us.”</p>
+<p class="para">So he comes in his big brown coat. He makes lots of noise up and down the garden. And he moves things here and there all day. “This is wonderful!” he cries.</p>
+<p class="para">“Let's ask the Hail here too.” So the Hail comes. Every day he sits on the roof of the Giant's big old house. He never stops hitting it noisily hour after hour. His suit is the colour of smoke.</p>
+<p class="para">And cold smoke comes from his mouth when he opens it. The Selfish Giant sits at his window. He looks out at his cold white garden. “I don't understand,” he says. “The spring's very late this year.</p>
+<p class="para">When is it coming? And when is this winter finishing?”</p>
 </div>
-
----
-
+<div class="page-number">· 2 ·</div>
+</div>
 </details>
-
 <details>
-<summary>Chapter 3</summary>
-
+<summary>Chapter 3: The hole in the wall</summary>
 <div class="book-page">
-  <div class="chapter-label">Chapter 3</div>
-  <div class="chapter-title">The Hole in the Wall</div>
-  <div class="chapter-divider"><span> ~ ~ ~ </span></div>
-  <div class="book-body">
-    <p class="first-para">The spring and the summer never come to the giant's garden. The autumn brings golden apples to most people's gardens, but to the giant's garden she brings nothing.</p>
-
-<p>"I don't give to selfish people," she says.</p>
-
-<p>So, it is always winter there. And the north wind, the hail, the frost and the snow run about in it.</p>
-
-<p>One morning, when the giant opens his eyes in bed, he hears some music.</p>
-
-<p>"That's beautiful," he cries. "But what is it?"</p>
-
-<p>A little bird is singing near his window. That's all. But after the long winter in his garden, the giant can't remember the noise very well. Then, the hail stops hitting the roof. And the north wind is quiet. Suddenly, a wonderful perfume comes to the giant through the open window.</p>
-
-<p>"The spring's here at last, I think," he cries.</p>
-
-<p>Then, he gets up and looks out. What a wonderful thing. The children are coming into the garden through a little hole in the wall. And they are sitting in the trees. And the trees are happy because the children are back. They begin to blossom and move their arms about. The birds are singing happily in the sky. The flowers are coming out of the ground and laughing.</p>
-
-<p>But far across the garden, in one corner, it isn't spring. A young boy is standing there. There is frost and snow on his tree. And he cannot get up into it, so he is crying.</p>
-
-  </div>
-  <div class="page-number">· 3 ·</div>
+<div class="chapter-label">CHAPTER 3</div>
+<div class="chapter-title">The hole in the wall</div>
+<div class="chapter-divider"><span> ~ ~ ~ </span></div>
+<div class="book-body">
+<p class="first-para">The spring and the summer never come to the Giant's garden. The autumn brings golden apples to most people's gardens. But to the Giant's garden, she brings nothing. “I don't give to selfish people,” she says. So it is always winter there.</p>
+<p class="para">And the North Wind, the Hail, the Frost and the Snow run about in it. One morning, when the Giant opens his eyes in bed, he hears some music. “That's beautiful!” he cries. “But what is it?”</p>
+<p class="para">A little bird is singing near his window. That's all. But after the long winter in his garden, the Giant can't remember the noise very well. Then the Hail stops hitting the roof. And the North Wind is quiet.</p>
+<p class="para">Suddenly, a wonderful perfume comes to the Giant through the open window. “The spring's here at last, I think!” he cries. Then he gets up and looks out. What a wonderful thing!</p>
+<p class="para">The children are coming into the garden through a little hole in the wall. And they are sitting in the trees. And the trees are happy because the children are back. They begin to blossom and move their arms about. The birds are singing happily in the sky.</p>
+<p class="para">The flowers are coming out of the ground and laughing. But far across the garden, in one corner, it isn't spring. A young boy is standing there. There is frost and snow on his tree, and he cannot get up into it. So he is crying.</p>
 </div>
-
----
-
+<div class="page-number">· 3 ·</div>
+</div>
 </details>
-
 <details>
-<summary>Chapter 4</summary>
-
+<summary>Chapter 4: The boy in the tree</summary>
 <div class="book-page">
-  <div class="chapter-label">Chapter 4</div>
-  <div class="chapter-title">The Boy in the Tree</div>
-  <div class="chapter-divider"><span> ~ ~ ~ </span></div>
-  <div class="book-body">
-    <p class="first-para">"Get up, little boy," says the tree in that corner of the garden. And it puts its branches nearer the ground for the young boy. But he is very little and he can't get on them.</p>
-
-<p>The giant watches from his window and his cold heart is suddenly warmer.</p>
-
-<p>"Now I see," he cries. "The spring doesn't come here because I'm selfish." He is truly sorry. "I know," he says. "I can put the little boy up in the tree and knock down the wall. Then the children can always play in my garden."</p>
-
-<p>So he goes quietly down to his front door and he opens it. Then he goes out into the garden. When the children see him, they are very afraid. So they all run away. And it is winter in the garden again. But the little boy has his head in his hands. He can't see the giant. So the giant goes very quietly over to him. He takes the little boy carefully in his hand and he puts him up in the tree.</p>
-
-<p>At once the tree blossoms and the birds come and sing in it. Then the little boy puts his arms around the giant's neck and he kisses him.</p>
-
-<p>When the other children see this, they understand. The giant isn't bad any more. So they run back into the garden and the spring comes with them.</p>
-
-<p>"It's your garden now, little children," the giant says. Then he takes a big axe and he knocks down the wall.</p>
-
-  </div>
-  <div class="page-number">· 4 ·</div>
+<div class="chapter-label">CHAPTER 4</div>
+<div class="chapter-title">The boy in the tree</div>
+<div class="chapter-divider"><span> ~ ~ ~ </span></div>
+<div class="book-body">
+<p class="first-para">“Get up, little boy,” says the tree in that corner of the garden. And it puts its branches nearer the ground for the young boy. But he is very little, and he can't get on them. The Giant watches from his window, and his cold heart is suddenly warmer.</p>
+<p class="para">“Now I see!” he cries. “The spring doesn't come here because I'm selfish.” He is truly sorry. “I know,” he says.</p>
+<p class="para">“I can put the little boy up in the tree and knock down the wall. Then the children can always play in my garden.” So he goes quietly down to his front door and he opens it. Then he goes out into the garden. When the children see him, they are very afraid.</p>
+<p class="para">So they all run away. And it is winter in the garden again. But the little boy has his head in his hands. He can't see the Giant. So the Giant goes very quietly over to him. He takes the little boy carefully in his hand and he puts him up in the tree.</p>
+<p class="para">At once the tree blossoms and the birds come and sing in it. Then the little boy puts his arms around the Giant's neck and he kisses him. When the other children see this, they understand. The Giant isn't bad anymore. So they run back into the garden and the spring comes with them. “It's your garden now, little children,”</p>
+<p class="para">the Giant says. Then he takes a big axe and he knocks down the wall.</p>
 </div>
-
----
-
+<div class="page-number">· 4 ·</div>
+</div>
 </details>
-
 <details>
-<summary>Chapter 5</summary>
-
+<summary>Chapter 5: The most beautiful flowers</summary>
 <div class="book-page">
-  <div class="chapter-label">Chapter 5</div>
-  <div class="chapter-title">The Most Beautiful Flowers</div>
-  <div class="chapter-divider"><span> ~ ~ ~ </span></div>
-  <div class="book-body">
-    <p class="first-para">At 12 o'clock that day, the people are going to the shops. They see the giant. He is playing with the children in the most beautiful garden. All day long the children play. In the evening, they come and say goodbye to the giant.</p>
-
-<p>"But where's your little friend?" he asks them. The young boy is the giant's favourite because he remembers the child's kiss.</p>
-
-<p>"We don't know," one of the children answers. "He isn't here now."</p>
-
-<p>"Well, he must come again tomorrow. Please tell him that," the giant says.</p>
-
-<p>"Where does he live?"</p>
-
-<p>"We're not sure," a different child says. "We don't know him."</p>
-
-<p>When the giant hears this, he is very sad.</p>
-
-<p>Every afternoon, when school finishes, the children come and play with the giant. But the giant's favourite, the little boy, never comes back. The giant is very nice to all the children. But he wants to see his first little friend again. He speaks about him a lot. "I'd like to see him again one day," he often says.</p>
-
-<p>After many years, the giant is old and weak. He cannot play any more. So he sits in a nice big chair. And he watches the children's games. He looks at his garden happily too.</p>
-
-<p>"I have many beautiful flowers," he says. "But the children are the most beautiful flowers of all."</p>
-
-  </div>
-  <div class="page-number">· 5 ·</div>
+<div class="chapter-label">CHAPTER 5</div>
+<div class="chapter-title">The most beautiful flowers</div>
+<div class="chapter-divider"><span> ~ ~ ~ </span></div>
+<div class="book-body">
+<p class="first-para">At twelve o'clock that day, the people are going to the shops. They see the Giant. He is playing with the children in the most beautiful garden. All day long, the children play. In the evening, they come and say goodbye to the Giant.</p>
+<p class="para">“But where's your little friend?” he asks them. The young boy is the Giant's favourite because he remembers the child's kiss. “We don't know,” one of the children answers.</p>
+<p class="para">“He isn't here now.” “Well, he must come again tomorrow. Please tell him that,” the Giant says. “Where does he live?” “We're not sure,”</p>
+<p class="para">a different child says. “We don't know him.” When the Giant hears this, he is very sad. Every afternoon, when school finishes, the children come and play with the Giant. But the Giant's favourite, the little boy, never comes back.</p>
+<p class="para">The Giant is very nice to all the children, but he wants to see his first little friend again. He speaks about him a lot. “I'd like to see him again one day,” he often says. After many years, the Giant is old and weak.</p>
+<p class="para">He cannot play anymore. So he sits in a nice big chair. And he watches the children's games. He looks at his garden happily too. “I have many beautiful flowers,” he says.</p>
+<p class="para">“But the children are the most beautiful flowers of all.”</p>
 </div>
-
----
-
+<div class="page-number">· 5 ·</div>
+</div>
 </details>
-
 <details>
-<summary>Chapter 6</summary>
-
+<summary>Chapter 6: The wounds of love</summary>
 <div class="book-page">
-  <div class="chapter-label">Chapter 6</div>
-  <div class="chapter-title">The Wounds of Love</div>
-  <div class="chapter-divider"><span> ~ ~ ~ </span></div>
-  <div class="book-body">
-    <p class="first-para">One winter morning, when he is getting up, the giant looks out of his window. The winter doesn't matter to him now. The spring is sleeping at that time of the year he knows. And the flowers are in their beds under the ground. Suddenly, he sees something wonderful.</p>
-
-<p>"Can it be true?" he cries.</p>
-
-<p>Far across the garden, in one corner, there is a tree with beautiful white blossoms all over it. There are silver apples on its golden branches. And the little boy, his favourite, is standing under the tree. He is all in white.</p>
-
-<p>The giant runs down to his front door and out into the garden. He goes quickly across it to the child. But when he comes near, his face is suddenly angry.</p>
-
-<p>"Where do these wounds come from?" he cries. Because there, on the boy's hands, are the wounds of two nails. And the wounds of two nails are on his little feet. "Who is guilty of this? Tell me, and I can take my big sword and kill him."</p>
-
-<p>"No," the child answers, "because these are the wounds of love."</p>
-
-<p>"Who are you?" the giant says quietly, and he kneels before the child.</p>
-
-<p>Then, the child smiles at the giant and tells him, "You remember me from before, here in your garden. And today, you are coming away with me to my garden. Paradise."</p>
-
-<p>When the children run into the garden that afternoon, they find the giant under the tree. He is dead now. And there are beautiful white blossoms all over him.</p>
-
-  </div>
-  <div class="page-number">· 6 ·</div>
+<div class="chapter-label">CHAPTER 6</div>
+<div class="chapter-title">The wounds of love</div>
+<div class="chapter-divider"><span> ~ ~ ~ </span></div>
+<div class="book-body">
+<p class="first-para">One winter morning, when he is getting up, the Giant looks out of his window. The winter doesn't matter to him now. The spring is sleeping at that time of the year, he knows, and the flowers are in their beds under the ground. Suddenly he sees something wonderful. “Can it be true?”</p>
+<p class="para">he cries. Far across the garden in one corner, there is a tree with beautiful white blossoms all over it. There are silver apples on its golden branches. And the little boy, his favourite, is standing under the tree. He is all in white.</p>
+<p class="para">The Giant runs down to his front door and out into the garden. He goes quickly across it to the child. But when he comes near, his face is suddenly angry. “Where do these wounds come from?” he cries, because there, on the boy's hands, are the wounds of two nails, and the wounds of two nails are on his little feet.</p>
+<p class="para">“Who is guilty of this? Tell me, and I can take my big sword and kill him.” “No,” the child answers, “because these are the wounds of love.” “Who are you?”</p>
+<p class="para">the Giant says quietly, and he kneels before the child. Then the child smiles at the Giant and tells him, “You remember me from before, here in your garden. And today, you are coming away with me to my garden— Paradise.” When the children run into the garden that afternoon, they find the Giant under the tree.</p>
+<p class="para">He is dead now. And there are beautiful white blossoms all over him.</p>
 </div>
-
----
-
+<div class="page-number">· 6 ·</div>
+</div>
 </details>
 </div>
 
