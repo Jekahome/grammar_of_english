@@ -2127,6 +2127,7 @@ const a2_words_nouns = [
   ["crocodile","crocodiles","","крокодил",8000],
   ["gramme","grammes","","грамм (брит.)",150000],
   ["schoolboy","schoolboys","","школьник",150000],
+  ["balcony","balconies","","балкон",5000],
 ];
 
 const a2_words_adverbs = [
@@ -3102,6 +3103,7 @@ const b1_words_nouns = [
   ["nursery","nurseries","","детский сад, питомник",5000],
   ["tattoo","tattoos","","татуировка",8000],
   ["jogger","joggers","","бегун трусцой",15000],
+  ["souvenir","souvenirs","","сувенир",8000],
 
 ];
 
@@ -3429,6 +3431,7 @@ const b1_words_adverbs = [
   ["honestly", "честно", 5000],
   ["politely", "вежливо, любезно", 5000],
   ["farther","дальше (о расстоянии)",5000],
+  ["brightly","ярко",5000],
 ];
 
 const b1_words_adjective = [
@@ -3619,7 +3622,7 @@ const b1_words_adjective = [
   ["gotten","","","полученный, добытый, погашенный",10000],
 
   ["dishonest","more dishonest", "most dishonest", "нечестный", 10000],
-
+ 
 ];
 
 const b1_words_irregular_verbs = [
@@ -4373,6 +4376,7 @@ const b2_words_nouns = [
     ["culprit","culprits","виновник",10000],
     ["sloth","sloths","ленивец (животное)",10000],
     ["plantation","plantations","","плантация", 7000],
+    ["fiancee","fiancees","","невеста",15000],
 
 ];
 
