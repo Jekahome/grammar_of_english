@@ -34,6 +34,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
+      - name: Install mdbook-katex
+        run: |
+          cargo install mdbook-katex --locked
+      
       - name: Make binaries executable (mdbook 0.4.52)
         run: |
           chmod +x ./bin/mdbook
