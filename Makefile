@@ -1,6 +1,5 @@
-PORT ?= 3003
 
-.PHONY: all pull commit run stop
+PORT ?= 3003
 
 all: commit
 
@@ -15,7 +14,6 @@ commit:  pull
 
 run:
 	mdbook serve --hostname 127.0.0.1 --port $(PORT) 
-	@ln -sfn ../../grammar_of_english_audio book/local_audio
 
 stop:
 	kill $(shell lsof -t -i :$(PORT)) || echo "No process running on port $(PORT)"

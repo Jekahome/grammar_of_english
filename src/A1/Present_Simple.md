@@ -122,6 +122,25 @@ To be:
 * *Does your brother speak English? No, he doesn't. — Твой брат говорит по-английски? Нет.*
 * *Does he play football on Sundays? Yes, he does. — Он играет в футбол по воскресеньям? Да.*
 * *When do your classes finish? — Когда заканчиваются твои занятия?*
+* *Do you drink coffee in the morning? — I don't drink coffee in the morning.*
+* *Does she eat meat? — She doesn't eat meat.*
+* *Do they have lunch at home? — They don't have lunch at home.*
+* *Does he like fish? — He doesn't like fish.*
+ 
+* *Do you get up early? — I don't get up early.*
+* *Does he watch TV in the evening? — He doesn't watch TV in the evening.*
+* *Do they go to the gym every day? — They don't go to the gym every day.*
+* *Does she read books before bed? — She doesn't read books before bed.*
+ 
+* *Do you work on Saturdays? — I don't work on Saturdays.*
+* *Does he speak French? — He doesn't speak French.*
+* *Do they study at the university? — They don't study at the university.*
+ 
+* *Do you play the guitar? — I don't play the guitar.*
+* *Does she dance well? — She doesn't dance well.*
+* *Do they travel in summer? — They don't travel in summer.*
+
+
 
 Так как вспомогательный глагол do/does не переводится, и если нам нужен смысловой do (делать/заниматься), то пишем их дважды:
 

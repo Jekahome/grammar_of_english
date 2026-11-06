@@ -39,11 +39,11 @@ document.addEventListener('keydown', function(e) {
 
 const exclude = [];
 
-const others = ["paris","brazil","pm", "lot of","lot", "brazil","max","kate","moscow","john","smiths", "london","york","roberto","volga","japan","europe","france",
+const others = ["paris","brazil","pm", "lot of","lot", "brazil","max","kate","moscow","john","smiths", "london","york","roberto","volga","japan","europe","france","greece",
     "england","egypt","spain","italian","italy","id","wi-fi","jake", "jane","alice","elisabeth","mister","jack","liza","robert","sarah","olga","alan","james","barbara","sushi",
     "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs","alissa","webvtt",
     "russia","germany","hi","usa","canada","uk","berlin","miller","wilson","lee","australia","bob","rosalind", "hortensia", "kenny", "america", "oxford", "copyright",
-    "california", "bookworms", "escott", "carrie","mike","rosie","sally"
+    "california", "bookworms", "escott", "carrie","mike","rosie","sally","mrs","mr"
 ];
 
 const a1_words_nouns = [
@@ -2123,6 +2123,10 @@ const a2_words_nouns = [
   ["adult","adults","","взрослый", 5000],
   ["robber","robbers","","разбойник, грабитель",5000],
   ["motel","motels","","мотель, автопансионат",5000],
+  ["pirate","pirates","","пират",8000],
+  ["crocodile","crocodiles","","крокодил",8000],
+  ["gramme","grammes","","грамм (брит.)",150000],
+  ["schoolboy","schoolboys","","школьник",150000],
 ];
 
 const a2_words_adverbs = [
@@ -3095,6 +3099,9 @@ const b1_words_nouns = [
   ["horseman","horsemen","","наездник",5000],
   ["teller","tellers","","банковский служащий, повествователь",5000],
   ["seagull","seagulls","","чайка",5000],
+  ["nursery","nurseries","","детский сад, питомник",5000],
+  ["tattoo","tattoos","","татуировка",8000],
+  ["jogger","joggers","","бегун трусцой",15000],
 
 ];
 
@@ -3611,6 +3618,8 @@ const b1_words_adjective = [
   ["well-timed","","","своевременный",10000],
   ["gotten","","","полученный, добытый, погашенный",10000],
 
+  ["dishonest","more dishonest", "most dishonest", "нечестный", 10000],
+
 ];
 
 const b1_words_irregular_verbs = [
@@ -3901,7 +3910,7 @@ const b2_words_nouns = [
     ['cooperation', "", 'сотрудничество, взаимодействие, кооперация', 2756],
     ['chart', 'charts', 'диаграмма, график', 2769],
     ['pack', 'packs', 'пачка, связка, колода', 2773],
-    ['shooting', 'shootings', 'стрельба', 2781],
+    ['shooting', 'shootings', 'стрельба, съёмка фильма', 2781],
     ['aircraft', 'aircraft', 'самолет', 2790],
     ['bench', 'benches', 'скамейка, скамья, верстак', 2808],
     ['bullet', 'bullets', 'пуля', 2809],
@@ -4363,6 +4372,7 @@ const b2_words_nouns = [
     ["necklace","necklaces","ожерелье, колье",10000],
     ["culprit","culprits","виновник",10000],
     ["sloth","sloths","ленивец (животное)",10000],
+    ["plantation","plantations","","плантация", 7000],
 
 ];
 
@@ -4923,6 +4933,7 @@ const b2_words_adjective = [
     ["initial", "more initial", "most initial", "исходный, начальный, первоначальный", 7000],
     ["wary","warier","wariest","осторожный, осмотрительный",10000],
     ["abandoned","","","заброшенный",10000],
+    ["contagious","more contagious","most contagious","заразный",15000],
 ];
 
 const b2_words_preposition = [
@@ -5610,6 +5621,7 @@ const c1_words_nouns = [
   ["spear","spears","spearing","копье",5000],
   ["majesty","","","величие",5000],
   ["emergence","","emerging","появление,возникновение",8000],
+  ["scullery","sculleries","","моечная",70000],
 ];
 
 

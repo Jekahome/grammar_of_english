@@ -26,7 +26,7 @@ class Listen {
             ? 'https://raw.githubusercontent.com/Jekahome/grammar_of_english_audio/main'
             : '/local_audio';
         // TODO: ссылка на папку local_audio должна быть в папке генерации mdbook т.е. в /book    
-        // ln -sfn ../../grammar_of_english_audio book/local_audio
+        // ln -sfn ../../grammar_of_english_audio src/local_audio
         
         const audio = `${url}${path_audio}`;
         const subtitles = (isGithub ? '/grammar_of_english' : '') + path_sub;

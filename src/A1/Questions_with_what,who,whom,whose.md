@@ -15,12 +15,35 @@
 
 Примеры:
 
-* What helps you stay active? — Что помогает тебе оставаться активным?
-* Who made a mess in my room? — Кто устроил беспорядок в моей комнате?
-* Who can catch a taxi for me? — Кто может вызвать мне такси?
-* What made Ann so happy? — Что сделало Энн такой счастливой?
-* Who sings a song? — Кто поет песню?
-* Who laughs at me at school? — Кто смеется надо мной в школе?
+* *What helps you stay active?* — Что помогает тебе оставаться активным?
+* *Who made a mess in my room?* — Кто устроил беспорядок в моей комнате?
+* *Who can catch a taxi for me?* — Кто может вызвать мне такси?
+* *What made Ann so happy?* — Что сделало Энн такой счастливой?
+* *Who sings a song?* — Кто поет песню?
+* *Who laughs at me at school?* — Кто смеется надо мной в школе?
+
+* *Who drinks coffee every morning? — My dad does. / I do.*
+* *Who eats fruit every day? — Anna does.*
+* *Who doesn't eat meat? — My brother doesn't.*
+* *Who has lunch at work? — We do*.
+* *Who cooks dinner at home? — My mum does.*
+ 
+* *Who gets up early? — Tom does.*
+* *Who goes to bed late? — I do.*
+* *Who doesn't watch TV? — My sister doesn't.*
+* *Who exercises in the morning? — They do.*
+* *Who walks to school? — Kate does.*
+ 
+* *Who works on Saturdays? — My father does.*
+* *Who speaks English at work? — We do.*
+* *Who doesn't like their job? — He doesn't.*
+* *Who studies at university? — My cousin does.*
+ 
+* *Who plays football? — My friends do.*
+* *Who doesn't like sport? — She doesn't.*
+* *Who reads before bed? — I do.*
+* *Who travels a lot? — They do.*
+
 
 ## Вопросы к объекту/дополнению (whom, what)
 Whom и What используются для вопросов к дополнению.

@@ -608,12 +608,12 @@ Future in the Past
     - [x] Marcel And The Mona Lisa
     - [x] Marcel And The White Star
     - [x] Merlin
-    - [ ] Newspaper Chase
-    - [ ] Photo Finish
-    - [ ] Police TV
-    - [ ] Sara Says No!
-    - [ ] Sherlock Holmes The Dying Detective
-    - [ ] Shooting Stars
+    - [x] Newspaper Chase
+    - [x] Photo Finish
+    - [x] Police TV
+    - [x] Sara Says No!
+    - [x] Sherlock Holmes The Dying Detective
+    - [x] Shooting Stars
     - [ ] Simon And The Spy
     - [ ] Ski Race
     - [ ] The Black Pearls
@@ -638,7 +638,7 @@ Future in the Past
     - [ ] Zorro!
     - [ ] Bathsheba the Witch
     - [ ] It is a Long Story
-    - [ ] Peter Pan
+    - [x] Peter Pan
     - [ ] The Wonderful Wizard of Oz
 
 - [ ] Beginner
