@@ -614,10 +614,10 @@ Future in the Past
     - [x] Sara Says No!
     - [x] Sherlock Holmes The Dying Detective
     - [x] Shooting Stars
-    - [ ] Simon And The Spy
-    - [ ] Ski Race
+    - [x] Simon And The Spy
+    - [x] Ski Race
     - [ ] The Black Pearls
-    - [ ] The Cup In The Forest
+    - [x] The Cup In The Forest
     - [ ] The Fifteenth Character
     - [ ] The Fireboy
     - [ ] The First Flying Man
@@ -641,18 +641,26 @@ Future in the Past
     - [x] Peter Pan
     - [ ] The Wonderful Wizard of Oz
 
-- [ ] Beginner (правка ошибок транскрибации и меток времени)
+- [ ] Beginner 
+
+         (правка меток времени)
+    - [ ] 30 Short Stories
     - [ ] 20000 Leagues Under The Sea
-    - [ ] African Safari
+    - [ ] A Connecticut Yankee in King Arthur's Court
     - [ ] A Ghost In Love
+    - [ ] A Midsummer Night's Dream
+    - [ ] A Pretty Face
+    - [ ] A Tale of Two Cities
+    - [ ] African Safari
+    - [ ] All About India
+    - [ ] All About South Africa
+
+         (правка ошибок транскрибации и меток времени)
     - [ ] Amazon Rally
     - [ ] American Folk Tales
-    - [ ] A Midsummer Night's Dream
     - [ ] Anna And The Fighter
-    - [ ] A Pretty Face
     - [ ] Around the World in 80 Days
     - [ ] Billy Elliot
-    - [ ] A Tale of Two Cities
     - [ ] Black Beauty
     - [ ] Blog love
     - [ ] Christmas In Prague
@@ -741,10 +749,6 @@ Future in the Past
     - [ ] Voodoo Tales
     - [ ] Weddings
     - [ ] William Tell
-    - [ ] 30 Short Stories
-    - [ ] A Connecticut Yankee in King Arthur's Court
-    - [ ] All About India
-    - [ ] All About South Africa
     - [ ] All About Wales
     - [ ] Animal Tales
     - [ ] British and American Festivities

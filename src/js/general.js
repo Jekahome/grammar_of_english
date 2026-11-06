@@ -43,7 +43,7 @@ const others = ["paris","brazil","pm", "lot of","lot", "brazil","max","kate","mo
     "england","egypt","spain","italian","italy","id","wi-fi","jake", "jane","alice","elisabeth","mister","jack","liza","robert","sarah","olga","alan","james","barbara","sushi",
     "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs","alissa","webvtt",
     "russia","germany","hi","usa","canada","uk","berlin","miller","wilson","lee","australia","bob","rosalind", "hortensia", "kenny", "america", "oxford", "copyright",
-    "california", "bookworms", "escott", "carrie","mike","rosie","sally","mrs","mr"
+    "california", "bookworms", "escott", "carrie","mike","rosie","sally","mrs","mr", "oslo", "norway"
 ];
 
 const a1_words_nouns = [
@@ -2128,6 +2128,11 @@ const a2_words_nouns = [
   ["gramme","grammes","","грамм (брит.)",150000],
   ["schoolboy","schoolboys","","школьник",150000],
   ["balcony","balconies","","балкон",5000],
+  ["skier","skiers","","лыжник",8000],
+  ["hamburger","hamburgers","","гамбургер",2000],
+  ["coce","","","Coca-Cola",7000],
+  ["congratulations","","","поздравления",2000],
+  
 ];
 
 const a2_words_adverbs = [
@@ -3104,6 +3109,7 @@ const b1_words_nouns = [
   ["tattoo","tattoos","","татуировка",8000],
   ["jogger","joggers","","бегун трусцой",15000],
   ["souvenir","souvenirs","","сувенир",8000],
+  ["chalet","chalets","","загородный дом",15000],
 
 ];
 
@@ -3338,6 +3344,8 @@ const b1_words_verbs = [
   ["brighten", "brightens", "brightening", "brightened", "brightened",   "осветить, прояснить", 10000],
   ["redecorate", "redecorates", "redecorating", "redecorated", "redecorated",   "переделанный, заново украшенный", 10000],
   ["service", "services", "servicing", "serviced", "serviced",   "обслуживать", 10000],
+  ["undo", "undoes", "undoing", "undid", "undone",   "отменять, развязывать", 7000],
+  
 
 ]; 
  
@@ -4377,6 +4385,9 @@ const b2_words_nouns = [
     ["sloth","sloths","ленивец (животное)",10000],
     ["plantation","plantations","","плантация", 7000],
     ["fiancee","fiancees","","невеста",15000],
+    ["piste","pistes","","лыжная трасса",50000],
+    ["curator","curators","","куратор",15000],
+    
 
 ];
 
