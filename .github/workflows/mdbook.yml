@@ -33,10 +33,10 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Install mdbook-katex
         run: |
-          cargo install mdbook-katex --locked
+          cargo install mdbook-katex --version 0.9.4 --locked --force  
       
       - name: Make binaries executable (mdbook 0.4.52)
         run: |
