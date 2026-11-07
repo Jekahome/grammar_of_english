@@ -616,7 +616,7 @@ Future in the Past
     - [x] Shooting Stars
     - [x] Simon And The Spy
     - [x] Ski Race
-    - [ ] The Black Pearls
+    - [x] The Black Pearls
     - [x] The Cup In The Forest
     - [ ] The Fifteenth Character
     - [ ] The Fireboy
@@ -654,10 +654,12 @@ Future in the Past
     - [ ] African Safari
     - [ ] All About India
     - [ ] All About South Africa
-
-         (правка ошибок транскрибации и меток времени)
     - [ ] Amazon Rally
     - [ ] American Folk Tales
+    - [ ] All About Wales
+    
+         (правка ошибок транскрибации и меток времени)
+
     - [ ] Anna And The Fighter
     - [ ] Around the World in 80 Days
     - [ ] Billy Elliot
@@ -749,7 +751,6 @@ Future in the Past
     - [ ] Voodoo Tales
     - [ ] Weddings
     - [ ] William Tell
-    - [ ] All About Wales
     - [ ] Animal Tales
     - [ ] British and American Festivities
     - [ ] Gulliver's Travels

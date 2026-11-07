@@ -43,7 +43,9 @@ const others = ["paris","brazil","pm", "lot of","lot", "brazil","max","kate","mo
     "england","egypt","spain","italian","italy","id","wi-fi","jake", "jane","alice","elisabeth","mister","jack","liza","robert","sarah","olga","alan","james","barbara","sushi",
     "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs","alissa","webvtt",
     "russia","germany","hi","usa","canada","uk","berlin","miller","wilson","lee","australia","bob","rosalind", "hortensia", "kenny", "america", "oxford", "copyright",
-    "california", "bookworms", "escott", "carrie","mike","rosie","sally","mrs","mr", "oslo", "norway"
+    "california", "bookworms", "escott", "carrie","mike","rosie","sally","mrs","mr", "oslo", "norway",
+    "zealand", "pacific", "st", "petersburg", "hollywood", "fiji"
+ 
 ];
 
 const a1_words_nouns = [

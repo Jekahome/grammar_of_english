@@ -141,27 +141,6 @@
 </div>
 ---
 </details>
-<details>
-<summary>Preview — A Death in Oxford</summary>
-<div class="book-page">
-<div class="chapter-label">Preview</div>
-<div class="chapter-title">A Death in Oxford</div>
-<div class="chapter-divider"><span> ~ ~ ~ </span></div>
-<div class="book-body">
-<p class="first-para">It's 630 in the morning. Inspector Frank Williams of the Oxford Police is in bed. He hears his phone and answers it. Williams, he says. It's Kate Miller, Inspector. I'm at 17B St John Street. The house of Dr Janet Layton. She's dead. I'm coming, says Williams. Give me 15 minutes.</p>
-<p>At 645, Williams walks into the front room of a tall house on St. John Street. He stops. There are books and papers everywhere, and a body next to the coffee table. Sergeant Kate Miller is by the window. She's waiting for him. There's a police scientist in the room too. What's all this? asks Williams. “Someone wanting money or things to sell, I think,” says Miller.</p>
-<p>This is Dr. Layton's computer table, but there's no computer. And there's her bag. Williams looks down at the body. It's the body of a fifty-year-old woman, dark trousers and a white shirt, with a lot of red. Miller speaks again. And there's this. In her hand is a bag. And in the bag is a knife. Ah, says Williams. He looks slowly at the room again. He looks at the Chinese dog.</p>
-<p>He turns it over. What do you think, Sergeant? He asks. Someone gets into the house to take things, she says. Dr. Layton tries to stop them, but maybe there's a knife on the table and she stops speaking. Williams says nothing for a minute. He looks at the Chinese dog again. I don't know, says Williams. He turns to the police scientist. Jenkins, he says, can I have a photograph of this dog?</p>
-<p>Okay, Inspector, says the scientist. Williams looks at the book on the coffee table. Our Beautiful World. He reads the name of the book. Photographs from all over the world. There's a receipt by the book. He looks at that.</p>
-<p>It's a new book, too, he says. Next, Williams looks at the papers on the computer table. One is a letter. He reads it. Interesting, he says. It's about Dr. Layton's will. From her lawyer. I want to know about her will. Now she's dead. Who gets her money? Her husband? Children? Miller comes over and reads the letter. The lawyer's name is Elizabeth Morgan of Morgan and Free Body Lawyers, she says.</p>
-<p>We can talk to her this morning. Yes, says Williams. But first I want to see a Dr. Barbara Collins." Miller looks at Williams, but he turns to the scientist. Jenkins, can you come and see me this afternoon? Okay, Inspector, says the scientist. You can tell me all about this room then," says Williams. And about the knife. Williams turns to Miller. Okay, Sergeant. We can go.</p>
-<p>Who's Dr. Barbara Collins? asks Miller. Williams and Miller are in Williams' car. They are driving up the Woodstock Road. It's a beautiful Oxford street, with trees and houses to the left and the right. You're new in Oxford, I know, says Williams. But don't you read the Oxford Post? I don't have time, answers Miller. Williams turns left into French Road and stops in front of a big house.</p>
-<p>He looks at Miller and smiles. He looks at Miller and smiles.</p>
-</div>
-<div class="page-number">· 8 ·</div>
-</div>
----
-</details>
 </div>
 
 <div id="listen-container"></div>

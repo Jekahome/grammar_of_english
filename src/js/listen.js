@@ -410,6 +410,23 @@ class Listen {
         container.appendChild(manualBtnReplay);
         this.#manualBtnReplay = manualBtnReplay;
 
+        document.addEventListener('keydown', (event) => {
+            if (event.code !== 'ArrowUp' && event.code !== 'ArrowDown') return;
+            if (event.repeat) return;
+
+            if (
+                event.target instanceof HTMLInputElement ||
+                event.target instanceof HTMLTextAreaElement ||
+                event.target.isContentEditable
+            ) {
+                return;
+            }
+
+            event.preventDefault();
+            manualBtnReplay.click();
+        });
+
+
         
 
         const manualBtnNext = document.createElement('button');
