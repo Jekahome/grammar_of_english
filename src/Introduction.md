@@ -618,10 +618,10 @@ Future in the Past
     - [x] Ski Race
     - [x] The Black Pearls
     - [x] The Cup In The Forest
-    - [ ] The Fifteenth Character
-    - [ ] The Fireboy
-    - [ ] The First Flying Man
-    - [ ] The Girl With Green Eyes
+    - [x] The Fifteenth Character
+    - [x] The Fireboy
+    - [x] The First Flying Man
+    - [x] The Girl With Green Eyes
     - [ ] The Girl With Red Hair
     - [ ] The Lost Ship
     - [ ] The Magic Barber
@@ -657,7 +657,8 @@ Future in the Past
     - [ ] Amazon Rally
     - [ ] American Folk Tales
     - [ ] All About Wales
-    
+    - [ ] Animal Tales
+
          (правка ошибок транскрибации и меток времени)
 
     - [ ] Anna And The Fighter
@@ -751,7 +752,6 @@ Future in the Past
     - [ ] Voodoo Tales
     - [ ] Weddings
     - [ ] William Tell
-    - [ ] Animal Tales
     - [ ] British and American Festivities
     - [ ] Gulliver's Travels
     - [ ] Halloween Horror
@@ -786,6 +786,7 @@ Future in the Past
 - [Blackbeard](listen/A1/Beginner/Blackbeard/Blackbeard.md)
 - [Changing Places](listen/A1/Beginner/Changing_Places/Changing_Places.md)
 - [Crying Wolf and Other Tales](listen/A1/Beginner/Crying_Wolf_and_Other_Tales/Crying_Wolf_and_Other_Tales.md)
+- [Drive into Danger](listen/A1/Beginner/Drive_into_Danger/Drive_into_Danger.md)
 - [Goldilocks and the Three Bears](listen/A1/Beginner/Goldilocks_and_the_Three_Bears/Goldilocks_and_the_Three_Bears.md)
 - [Heidi](listen/A1/Beginner/Heidi/Heidi.md)
 - [Hercules](listen/A1/Beginner/Hercules/Hercules.md)

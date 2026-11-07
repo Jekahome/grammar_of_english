@@ -44,8 +44,8 @@ const others = ["paris","brazil","pm", "lot of","lot", "brazil","max","kate","mo
     "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs","alissa","webvtt",
     "russia","germany","hi","usa","canada","uk","berlin","miller","wilson","lee","australia","bob","rosalind", "hortensia", "kenny", "america", "oxford", "copyright",
     "california", "bookworms", "escott", "carrie","mike","rosie","sally","mrs","mr", "oslo", "norway",
-    "zealand", "pacific", "st", "petersburg", "hollywood", "fiji"
- 
+    "zealand", "pacific", "st", "petersburg", "hollywood", "fiji", "cd", "bosphorus", "istanbul", "algeria"
+
 ];
 
 const a1_words_nouns = [
@@ -2134,6 +2134,8 @@ const a2_words_nouns = [
   ["hamburger","hamburgers","","гамбургер",2000],
   ["coce","","","Coca-Cola",7000],
   ["congratulations","","","поздравления",2000],
+  ["canteen","canteens","","столовая (брит.), фляга",7000],
+  ["helper","helpers","","помощник",5000],
   
 ];
 
@@ -2398,6 +2400,9 @@ const a2_words_adjective = [
     ["delicious","more delicious","most delicious","восхитительный, очень вкусный, приятный, прелестный",5000],
     ["messy","messier","messiest","грязный, беспорядочный, неряшливый",5000],
     ["tidy","tidier","tidiest","опрятный, аккуратный, убирать, приборка, уборка",5000],
+
+    ["nervous","more nervous","most nervous","нервный",2000],
+    
 
 ];
  
@@ -3113,6 +3118,10 @@ const b1_words_nouns = [
   ["souvenir","souvenirs","","сувенир",8000],
   ["chalet","chalets","","загородный дом",15000],
 
+  ["porter","porters","","носильщик, портье",5000],
+  ["stepfather","stepfathers","","отчим",7000],
+  ["sketch","sketches","","набросок, эскиз",5000],
+  
 ];
 
 
@@ -3442,6 +3451,8 @@ const b1_words_adverbs = [
   ["politely", "вежливо, любезно", 5000],
   ["farther","дальше (о расстоянии)",5000],
   ["brightly","ярко",5000],
+  ["excitedly","взволнованно",7000],
+  
 ];
 
 const b1_words_adjective = [
@@ -4389,7 +4400,9 @@ const b2_words_nouns = [
     ["fiancee","fiancees","","невеста",15000],
     ["piste","pistes","","лыжная трасса",50000],
     ["curator","curators","","куратор",15000],
-    
+    ["strait","straits","","пролив",10000],
+    ["highness","highnesses","","высочество (титул)",10000],
+    ["sultan","sultans","","султан",7000],
 
 ];
 
@@ -4683,8 +4696,7 @@ const b2_words_verbs = [
     ["ski","skis","skiing","skied","skied",0,"ходить на лыжах",10000],
     ["deprive","deprives","depriving","deprived","deprived",0,"лишать",10000],
     ["beware","","","","",0,"остерегаться, беречься",10000],
-    
-
+    ["exile","exiles","exiling","exiled","exiled",0,"изгонять, ссылать",5000],
 
     
 ];
@@ -5639,6 +5651,11 @@ const c1_words_nouns = [
   ["majesty","","","величие",5000],
   ["emergence","","emerging","появление,возникновение",8000],
   ["scullery","sculleries","","моечная",70000],
+  ["fireboy","fireboys","","мальчик работающий с огнём",50000],
+  ["simit","simits","","турецкий хлеб в форме кольца",50000],
+  ["vizier","viziers","","высокопоставленный советник",20000],
+
+  
 ];
 
 
@@ -7687,6 +7704,7 @@ const c1_words_adverbs = [
   ["deeper","глубже",4972],
   ["forwards","вперед",5000],
   ["presently","в настоящее время",5000],
+  ["tiredly","устало", 20000],
 ];
 
 
