@@ -628,8 +628,8 @@ Future in the Past
     - [x] The Selfish Giant
     - [x] The Skateboarder
     - [ ] The Troy Stone
-    - [ ] The Umbrella
-    - [ ] The Well
+    - [x] The Umbrella
+    - [x] The Well
     - [ ] Tinker's Farm
     - [ ] Troy
     - [ ] Who Wants To Be A Star

@@ -432,7 +432,7 @@ const a1_words_nouns = [
     ["kite","kites","","коршун, воздушный змей",5000],
     ["scooter","scooters","","скутер, самокат",5000],
     ["motorcycle","motorcycles","","мотоцикл",5000],
-
+    ["sausage","sausages","","сосиска",2000],
      
     
 ];
@@ -3134,7 +3134,8 @@ const b1_words_nouns = [
   ["blossom","blossoms","","цветы на дереве",5000],
   ["skatepark","skateparks","","скейт-парк",25000],
   ["bruise","bruises","","синяк",5000],
-  
+  ["checkpoint","checkpoints","","контрольный пункт",7000],
+  ["sickness","","","болезнь, недомогание",5000],
   
 ];
 
