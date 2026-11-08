@@ -44,7 +44,7 @@ const others = ["paris","brazil","pm", "lot of","lot", "brazil","max","kate","mo
     "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs","alissa","webvtt",
     "russia","germany","hi","usa","canada","uk","berlin","miller","wilson","lee","australia","bob","rosalind", "hortensia", "kenny", "america", "oxford", "copyright",
     "california", "bookworms", "escott", "carrie","mike","rosie","sally","mrs","mr", "oslo", "norway",
-    "zealand", "pacific", "st", "petersburg", "hollywood", "fiji", "cd", "bosphorus", "istanbul", "algeria"
+    "zealand", "pacific", "st", "petersburg", "hollywood", "fiji", "cd", "bosphorus", "istanbul", "algeria","wow"
 
 ];
 
@@ -3117,10 +3117,11 @@ const b1_words_nouns = [
   ["jogger","joggers","","бегун трусцой",15000],
   ["souvenir","souvenirs","","сувенир",8000],
   ["chalet","chalets","","загородный дом",15000],
-
   ["porter","porters","","носильщик, портье",5000],
   ["stepfather","stepfathers","","отчим",7000],
   ["sketch","sketches","","набросок, эскиз",5000],
+  ["ashtray","ashtrays","","пепельница",7000],
+  ["cigar","cigars","","сигара",5000],
   
 ];
 

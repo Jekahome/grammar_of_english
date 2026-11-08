@@ -45,7 +45,7 @@
 
 ### *#2 Now, Today, Yesterday, Tomorrow*
 
-Пишите эти предложения в отдельную тетрадь.
+Пишите и проговаривайте (говорить с разной интонацией и громкостью) эти предложения в отдельную тетрадь. Вообщем, говорите сами с собой.
 
 **1. What are you going to do now?** (*Что ты собираешься делать сейчас?*)
 
@@ -87,7 +87,7 @@
 
 ### *#3 Walk*
  
-Прослушивать записанное аудио с вопросами и отвечать на них вголос. Аудио в формате - "вопрос-пауза-пример ответа" (Did you eat pizza yesterday? ...pause... No, I didn't)
+Прослушивать записанное аудио с вопросами и отвечать на них вголос (говорить с разной интонацией и громкостью). Аудио в формате - "вопрос-пауза-пример ответа" (Did you eat pizza yesterday? ...pause... No, I didn't)
 
 ### *#4 New word*
 
@@ -98,8 +98,7 @@
 ### *#5 Picture*
 
 Любая картинка, описывается что на ней: какие предметы, какое действие происходит, ваше мнение по поводу картинки ...
-
-
+ 
 > Составьте расписание и карту тем занятий:
 > 1. Пройти упражнения по грамматике
 > 2. Читать адаптивную книгу
@@ -622,9 +621,9 @@ Future in the Past
     - [x] The Fireboy
     - [x] The First Flying Man
     - [x] The Girl With Green Eyes
-    - [ ] The Girl With Red Hair
-    - [ ] The Lost Ship
-    - [ ] The Magic Barber
+    - [x] The Girl With Red Hair
+    - [x] The Lost Ship
+    - [x] The Magic Barber
     - [ ] The Mystery Of Manor Hall
     - [ ] The Selfish Giant
     - [ ] The Skateboarder
