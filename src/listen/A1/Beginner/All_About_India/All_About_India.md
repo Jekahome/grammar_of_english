@@ -161,7 +161,7 @@
 <div class="chapter-divider"><span> ~ ~ ~ </span></div>
 <div class="book-body">
 <h3>The Taj Mahal</h3>
-<p class="first-para">The Taj Mahal in Agra is one of the seven wonders of the modern world. You may think $827 million is a lot to spend on someone you love, but Emperor Shah Jahan didn&#x27;t think twice. In the 17th century, he built the Taj Mahal as a symbol of love in memory of his third and favorite wife, the Persian princess Mumtaz Mahal. Shah loved Mumtaz with all his heart, and when she died, while giving birth to their 14th child, he was heartbroken.</p>
+<p class="first-para">The Taj Mahal in Agra is one of the seven wonders of the modern world. You may think &#36;827 million is a lot to spend on someone you love, but Emperor Shah Jahan didn&#x27;t think twice. In the 17th century, he built the Taj Mahal as a symbol of love in memory of his third and favorite wife, the Persian princess Mumtaz Mahal. Shah loved Mumtaz with all his heart, and when she died, while giving birth to their 14th child, he was heartbroken.</p>
 <p>He wanted to do something to honour her. So he designed and ordered the building of the world&#x27;s most beautiful tomb on the banks of the Yamuna River. It took 20,000 workers, almost 22 years to build this spectacular mausoleum from white marble, with floral decorations made from precious stones. Every year, around 6 million people visit the Taj Mahal and admire its splendour.</p>
 <h3>Mumbai</h3>
 <p>Mumbai is the most overpopulated city in India. It&#x27;s busy, crowded and unpredictable. Don&#x27;t be surprised to see a poor hut next to a multi-million dollar home or a national park in the middle of the city with wild animals walking around freely. Almost 14 million people live in Mumbai.</p>

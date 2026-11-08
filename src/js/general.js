@@ -2139,6 +2139,8 @@ const a2_words_nouns = [
   ["donkey","donkeys","","осёл",5000],
   ["barber","barbers","","барбер",5000],
   ["trumpet","trumpets","","труба (музыкальный инструмент)",5000],
+  ["skateboard","skateboards","","скейтборд",7000],
+
   
 ];
 
@@ -2221,7 +2223,8 @@ const a2_words_adverbs = [
     ['rather', 'скорее,  довольно', 864],
     ["downhill","вниз, под уклон, под гору",5000],
     ["blond","светловолосый, блондин",5000],
-
+    ["nicely","хорошо, приятно, красиво",5000],
+    
 
 ];
 
@@ -2407,8 +2410,9 @@ const a2_words_adjective = [
     ["tidy","tidier","tidiest","опрятный, аккуратный, убирать, приборка, уборка",5000],
 
     ["nervous","more nervous","most nervous","нервный",2000],
-    
+    ["awesome","more awesome","most awesome","потрясающий",2000],    
 
+    
 ];
  
 const a2_words_preposition = [
@@ -3127,6 +3131,10 @@ const b1_words_nouns = [
   ["sketch","sketches","","набросок, эскиз",5000],
   ["ashtray","ashtrays","","пепельница",7000],
   ["cigar","cigars","","сигара",5000],
+  ["blossom","blossoms","","цветы на дереве",5000],
+  ["skatepark","skateparks","","скейт-парк",25000],
+  ["bruise","bruises","","синяк",5000],
+  
   
 ];
 
@@ -3362,8 +3370,7 @@ const b1_words_verbs = [
   ["redecorate", "redecorates", "redecorating", "redecorated", "redecorated",   "переделанный, заново украшенный", 10000],
   ["service", "services", "servicing", "serviced", "serviced",   "обслуживать", 10000],
   ["undo", "undoes", "undoing", "undid", "undone",   "отменять, развязывать", 7000],
-  
-
+  ["blossom", "blossoms", "blossoming", "blossomed", "blossomed",   "цвести, расцветать, распускаться", 7000],
 ]; 
  
 const b1_words_preposition = [
@@ -3458,7 +3465,7 @@ const b1_words_adverbs = [
   ["farther","дальше (о расстоянии)",5000],
   ["brightly","ярко",5000],
   ["excitedly","взволнованно",7000],
-  
+  ["noisily","шумно",7000],
 ];
 
 const b1_words_adjective = [

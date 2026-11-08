@@ -624,9 +624,9 @@ Future in the Past
     - [x] The Girl With Red Hair
     - [x] The Lost Ship
     - [x] The Magic Barber
-    - [ ] The Mystery Of Manor Hall
-    - [ ] The Selfish Giant
-    - [ ] The Skateboarder
+    - [x] The Mystery Of Manor Hall
+    - [x] The Selfish Giant
+    - [x] The Skateboarder
     - [ ] The Troy Stone
     - [ ] The Umbrella
     - [ ] The Well
