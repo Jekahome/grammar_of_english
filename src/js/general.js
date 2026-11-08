@@ -2136,6 +2136,9 @@ const a2_words_nouns = [
   ["congratulations","","","поздравления",2000],
   ["canteen","canteens","","столовая (брит.), фляга",7000],
   ["helper","helpers","","помощник",5000],
+  ["donkey","donkeys","","осёл",5000],
+  ["barber","barbers","","барбер",5000],
+  ["trumpet","trumpets","","труба (музыкальный инструмент)",5000],
   
 ];
 
@@ -2218,6 +2221,8 @@ const a2_words_adverbs = [
     ['rather', 'скорее,  довольно', 864],
     ["downhill","вниз, под уклон, под гору",5000],
     ["blond","светловолосый, блондин",5000],
+
+
 ];
 
 const a2_words_adjective = [
