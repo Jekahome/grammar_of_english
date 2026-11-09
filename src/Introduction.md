@@ -45,7 +45,7 @@
 
 ### *#2 Now, Today, Yesterday, Tomorrow*
 
-Пишите и проговаривайте (говорить с разной интонацией и громкостью) эти предложения в отдельную тетрадь. Вообщем, говорите сами с собой.
+Пишите и проговаривайте (говорить с разной интонацией и громкостью) эти предложения в отдельную тетрадь. Вообщем, говорите сами с собой. Если описывать окружающую вас среду имеющимися словами, вы должны отвыкнуть переводить с русского, т.е. имея ограниченный набор реплик вы начнете выражать/думать на английском.
 
 **1. What are you going to do now?** (*Что ты собираешься делать сейчас?*)
 
@@ -627,12 +627,11 @@ Future in the Past
     - [x] The Mystery Of Manor Hall
     - [x] The Selfish Giant
     - [x] The Skateboarder
-    - [ ] The Troy Stone
+    - [x] The Troy Stone
     - [x] The Umbrella
     - [x] The Well
-    - [ ] Tinker's Farm
+    - [x] Tinker's Farm
     - [ ] Troy
-    - [ ] Who Wants To Be A Star
     - [ ] Why?
     - [ ] Zorro!
     - [ ] Bathsheba the Witch

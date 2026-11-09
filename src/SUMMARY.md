@@ -189,7 +189,6 @@
       - [The Well](listen/A1/Starter/The_Well/The_Well.md)
       - [Tinker's Farm](listen/A1/Starter/Tinkers_Farm/Tinkers_Farm.md)
       - [Troy](listen/A1/Starter/Troy/Troy.md)
-      - [Who Wants To Be A Star](listen/A1/Starter/Who_Wants_To_Be_A_Star/Who_Wants_To_Be_A_Star.md)
       - [Why?](listen/A1/Starter/Why/Why.md)
       - [Zorro!](listen/A1/Starter/Zorro/Zorro.md)
       - [Bathsheba the Witch](listen/A1/Starter/Bathsheba_the_Witch/Bathsheba_the_Witch.md)

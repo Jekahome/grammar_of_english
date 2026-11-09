@@ -1,5 +1,7 @@
 # Listen: The Troy Stone
 
+by Stephen Rabley
+
 <div id="listen-read">
 <details>
 <summary>The Troy Stone</summary>

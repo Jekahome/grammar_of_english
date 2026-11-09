@@ -44,7 +44,8 @@ const others = ["paris","brazil","pm", "lot of","lot", "brazil","max","kate","mo
     "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs","alissa","webvtt",
     "russia","germany","hi","usa","canada","uk","berlin","miller","wilson","lee","australia","bob","rosalind", "hortensia", "kenny", "america", "oxford", "copyright",
     "california", "bookworms", "escott", "carrie","mike","rosie","sally","mrs","mr", "oslo", "norway",
-    "zealand", "pacific", "st", "petersburg", "hollywood", "fiji", "cd", "bosphorus", "istanbul", "algeria","wow"
+    "zealand", "pacific", "st", "petersburg", "hollywood", "fiji", "cd", "bosphorus", "istanbul", "algeria","wow", "turkey","holland","britain",
+
 
 ];
 
@@ -3136,6 +3137,8 @@ const b1_words_nouns = [
   ["bruise","bruises","","синяк",5000],
   ["checkpoint","checkpoints","","контрольный пункт",7000],
   ["sickness","","","болезнь, недомогание",5000],
+  ["farmhouse","farmhouses","","фермерский дом",7000],
+  
   
 ];
 
