@@ -259,8 +259,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
   
         const container = document.getElementById("listen-container");
-        const subtitles = "/listen/A1/Starter/The_Wonderful_Wizard_of_Oz/The_Wonderful_Wizard_of_Oz.vtt";
-        const audio = "/listen/A1/Starter/The_Wonderful_Wizard_of_Oz/The_Wonderful_Wizard_of_Oz.opus";
+        const subtitles = "/listen/A1/Beginner/The_Wonderful_Wizard_of_Oz/The_Wonderful_Wizard_of_Oz.vtt";
+        const audio = "/listen/A1/Beginner/The_Wonderful_Wizard_of_Oz/The_Wonderful_Wizard_of_Oz.opus";
    
         const listen = new Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
     } catch (error) {

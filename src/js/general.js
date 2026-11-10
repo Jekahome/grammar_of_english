@@ -3138,8 +3138,8 @@ const b1_words_nouns = [
   ["checkpoint","checkpoints","","контрольный пункт",7000],
   ["sickness","","","болезнь, недомогание",5000],
   ["farmhouse","farmhouses","","фермерский дом",7000],
-  
-  
+  ["disagreement","disagreements","","разногласие, спор",5000],
+  ["armour","armours","","броня, доспехи",7000],
 ];
 
 

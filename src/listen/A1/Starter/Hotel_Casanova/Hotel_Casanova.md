@@ -228,8 +228,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
   
         const container = document.getElementById("listen-container");
-        const subtitles = "/listen/A1/Beginner/Hotel_Casanova/Hotel_Casanova.vtt";
-        const audio = "/listen/A1/Beginner/Hotel_Casanova/Hotel_Casanova.opus";
+        const subtitles = "/listen/A1/Starter/Hotel_Casanova/Hotel_Casanova.vtt";
+        const audio = "/listen/A1/Starter/Hotel_Casanova/Hotel_Casanova.opus";
    
         const listen = new Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
     } catch (error) {

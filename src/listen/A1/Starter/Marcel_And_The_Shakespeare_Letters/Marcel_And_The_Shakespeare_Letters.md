@@ -363,8 +363,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
   
         const container = document.getElementById("listen-container");
-        const subtitles = "/listen/A1/Beginner/Marcel_And_The_Shakespeare_Letters/Marcel_And_The_Shakespeare_Letters.vtt";
-        const audio = "/listen/A1/Beginner/Marcel_And_The_Shakespeare_Letters/Marcel_And_The_Shakespeare_Letters.opus";
+        const subtitles = "/listen/A1/Starter/Marcel_And_The_Shakespeare_Letters/Marcel_And_The_Shakespeare_Letters.vtt";
+        const audio = "/listen/A1/Starter/Marcel_And_The_Shakespeare_Letters/Marcel_And_The_Shakespeare_Letters.opus";
    
         const listen = new Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
     } catch (error) {

@@ -335,8 +335,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
   
         const container = document.getElementById("listen-container");
-        const audio = "/listen/A1/Starter/Zorro/Zorro.opus";
-        const subtitles = "/listen/A1/Starter/Zorro/Zorro.vtt";
+        const audio = "/listen/A1/Beginner/Zorro/Zorro.opus";
+        const subtitles = "/listen/A1/Beginner/Zorro/Zorro.vtt";
 
         const listen = new Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
     } catch (error) {

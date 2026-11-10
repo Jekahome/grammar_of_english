@@ -115,8 +115,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
   
         const container = document.getElementById("listen-container");
-        const subtitles = "/listen/A1/Beginner/Amazon_Rally/Amazon_Rally.vtt";
-        const audio = "/listen/A1/Beginner/Amazon_Rally/Amazon_Rally.opus";
+        const subtitles = "/listen/A1/Starter/Amazon_Rally/Amazon_Rally.vtt";
+        const audio = "/listen/A1/Starter/Amazon_Rally/Amazon_Rally.opus";
    
         const listen = new Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
     } catch (error) {

@@ -183,8 +183,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
   
         const container = document.getElementById("listen-container");
-        const subtitles = "/listen/A1/Beginner/Blog_love/Blog_love.vtt";
-        const audio = "/listen/A1/Beginner/Blog_love/Blog_love.opus";
+        const subtitles = "/listen/A1/Starter/Blog_love/Blog_love.vtt";
+        const audio = "/listen/A1/Starter/Blog_love/Blog_love.opus";
    
         const listen = new Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
     } catch (error) {

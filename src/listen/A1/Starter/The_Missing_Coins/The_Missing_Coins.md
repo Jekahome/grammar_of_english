@@ -345,8 +345,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
   
         const container = document.getElementById("listen-container");
-        const subtitles = "/listen/A1/Beginner/The_Missing_Coins/The_Missing_Coins.vtt";
-        const audio = "/listen/A1/Beginner/The_Missing_Coins/The_Missing_Coins.opus";
+        const subtitles = "/listen/A1/Starter/The_Missing_Coins/The_Missing_Coins.vtt";
+        const audio = "/listen/A1/Starter/The_Missing_Coins/The_Missing_Coins.opus";
    
         const listen = new Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
     } catch (error) {

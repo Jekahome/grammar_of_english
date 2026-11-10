@@ -631,14 +631,16 @@ Future in the Past
     - [x] The Umbrella
     - [x] The Well
     - [x] Tinker's Farm
-    - [ ] Troy
-    - [ ] Why?
-    - [ ] Zorro!
-    - [ ] Bathsheba the Witch
-    - [ ] It is a Long Story
+    - [x] Troy
+    - [x] Why?
     - [x] Peter Pan
-    - [ ] The Wonderful Wizard of Oz
-
+    - [ ] Amazon Rally
+    - [ ] Blog love
+    - [ ] Hotel Casanova
+    - [ ] Island For Sale
+    - [ ] Marcel And The Shakespeare Letters
+    - [ ] The Missing Coins
+    
 - [ ] Beginner 
 
          (правка меток времени)
@@ -652,10 +654,13 @@ Future in the Past
     - [ ] African Safari
     - [ ] All About India
     - [ ] All About South Africa
-    - [ ] Amazon Rally
     - [ ] American Folk Tales
     - [ ] All About Wales
     - [ ] Animal Tales
+    - [ ] Zorro!
+    - [ ] Bathsheba the Witch
+    - [ ] It is a Long Story
+    - [ ] The Wonderful Wizard of Oz
 
          (правка ошибок транскрибации и меток времени)
 
@@ -663,7 +668,6 @@ Future in the Past
     - [ ] Around the World in 80 Days
     - [ ] Billy Elliot
     - [ ] Black Beauty
-    - [ ] Blog love
     - [ ] Christmas In Prague
     - [ ] Dangerous Journey
     - [ ] English Fairy Tales
@@ -673,16 +677,13 @@ Future in the Past
     - [ ] Gone
     - [ ] Goodbye Mr Hollywood
     - [ ] Great Expectations
-    - [ ] Hotel Casanova
     - [ ] Humpty And His Family
-    - [ ] Island For Sale
     - [ ] Jane Eyre
     - [ ] Jennifer Lopez
     - [ ] Just So Stories
     - [ ] Land Of Gold
     - [ ] Little Women
     - [ ] London
-    - [ ] Marcel And The Shakespeare Letters
     - [ ] Mary Queen Of Scots
     - [ ] Michael Jordan
     - [ ] Money For A Motorbike
@@ -728,7 +729,6 @@ Future in the Past
     - [ ] The Jungle Book
     - [ ] The Last Of The Mohicans
     - [ ] The Locked Room
-    - [ ] The Missing Coins
     - [ ] The Monkey's Paw
     - [ ] The Omega Files
     - [ ] The Phantom Of The Opera

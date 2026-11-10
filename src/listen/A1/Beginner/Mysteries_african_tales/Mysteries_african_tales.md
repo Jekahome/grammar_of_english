@@ -3,7 +3,6 @@
 <div id="listen-read">
 Вот субтитры, преобразованные в книгу в указанном формате. Я разбил текст на главы по смыслу.
 
-```html
 <details>
 <summary>Chapter One</summary>
 

@@ -868,8 +868,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         await window.globalScriptReady; 
   
         const container = document.getElementById("listen-container");
-        const audio = "/listen/A1/Starter/Bathsheba_the_Witch/Bathsheba_the_Witch.opus";
-        const subtitles = "/listen/A1/Starter/Bathsheba_the_Witch/Bathsheba_the_Witch.vtt";
+        const audio = "/listen/A1/Beginner/Bathsheba_the_Witch/Bathsheba_the_Witch.opus";
+        const subtitles = "/listen/A1/Beginner/Bathsheba_the_Witch/Bathsheba_the_Witch.vtt";
 
         const listen = new Listen({container:container, path_sub:subtitles, path_audio:audio, pageSize:10});
     } catch (error) {

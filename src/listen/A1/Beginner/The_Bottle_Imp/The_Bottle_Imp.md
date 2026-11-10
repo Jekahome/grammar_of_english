@@ -44,9 +44,9 @@
 
 <p>"You can have a house like this. Do you have any money?" asked the old man.</p>
 
-<p>Keawe shook his head sadly and said, "I only have $50, so I can't buy a beautiful house like this."</p>
+<p>Keawe shook his head sadly and said, "I only have &#36;50, so I can't buy a beautiful house like this."</p>
 
-<p>"I am sorry you do not have much money. So take this. It is yours for $50."</p>
+<p>"I am sorry you do not have much money. So take this. It is yours for &#36;50."</p>
 
 <p>"The house?" asked Keawe, surprised.</p>
 
@@ -83,9 +83,9 @@
 
 <p>The old man said, "I am sad because I am old and ill and I must sell this bottle before I die. In the past, the bottle was very expensive, but every time someone sells it, the price must go down. You cannot sell the bottle for more money or for the same amount of money. It always returns to you. Also, you must pay with coins. People do not believe you because it is so cheap."</p>
 
-<p>"Why don't you try it? Give me your $50 and make a wish. Wish for another $50."</p>
+<p>"Why don't you try it? Give me your &#36;50 and make a wish. Wish for another &#36;50."</p>
 
-<p>So Keawe gave the old man the money and wished for $50. Immediately, there was another $50 in his pocket. Keawe was very surprised, but he was also afraid and didn't want to keep the bottle.</p>
+<p>So Keawe gave the old man the money and wished for &#36;50. Immediately, there was another &#36;50 in his pocket. Keawe was very surprised, but he was also afraid and didn't want to keep the bottle.</p>
 
 <p>The old man said, "It is yours now. Goodbye."</p>
   </div>
@@ -104,7 +104,7 @@
   <div class="chapter-title">Keawe's Wish Comes True</div>
   <div class="chapter-divider"><span> ~ ~ ~ </span></div>
   <div class="book-body">
-    <p class="first-para">At first, Keawe thought the bottle wasn't really magical, so he left it in the middle of the road. But when he turned the corner, the bottle was once again in his pocket. Then he bought a corkscrew and tried to open the bottle, but it was impossible. He suddenly became very afraid. He went into a shop and sold it for $60, but later he found the bottle in his chest.</p>
+    <p class="first-para">At first, Keawe thought the bottle wasn't really magical, so he left it in the middle of the road. But when he turned the corner, the bottle was once again in his pocket. Then he bought a corkscrew and tried to open the bottle, but it was impossible. He suddenly became very afraid. He went into a shop and sold it for &#36;60, but later he found the bottle in his chest.</p>
 
 <p>Keawe told his good friend Lopaka the story, and asked him to keep it a secret. Lopaka told him, "I am afraid this bottle will give you problems. Decide what you want from it, and then sell it to me, because I have a project. I want a sailing ship so that I can travel and buy and sell many objects on the islands."</p>
 
@@ -304,7 +304,7 @@
 * Какую цену Ки-Аве заплатил за бутылку и какое первое желание он загадал?
   <details> 
   <summary>ответ:</summary>
-  Он заплатил 50 долларов ($50) и загадал ещё 50 долларов.
+  Он заплатил 50 долларов (&#36;50) и загадал ещё 50 долларов.
   </details>
 
 * Что происходит с бутылкой, когда Ки-Аве пытается от неё избавиться?
