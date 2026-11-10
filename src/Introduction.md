@@ -47,6 +47,8 @@
 
 Пишите и проговаривайте (говорить с разной интонацией и громкостью) эти предложения в отдельную тетрадь. Вообщем, говорите сами с собой. Если описывать окружающую вас среду имеющимися словами, вы должны отвыкнуть переводить с русского, т.е. имея ограниченный набор реплик вы начнете выражать/думать на английском.
 
+Попробуйте составить предложения на темы окружающей вас остановки (кто что делает и во что одет) или темы перечисленные ниже, используя голоса с [elevenlabs.io](https://elevenlabs.io/app/speech-synthesis/text-to-speech) (бесплатно)
+
 **1. What are you going to do now?** (*Что ты собираешься делать сейчас?*)
 
 Говорим о том, что собираемся делать в ближайшее время. Можно использовать be going to или Present Continuous, если речь о запланированном действии.
@@ -207,6 +209,7 @@
 
 **Найти спикера с понятным произношением:**
 
+* [www.spreaker.com](https://www.spreaker.com/episode/how-the-moon-became-beautiful-beginner--69602534)
 * [Rachel's English](https://www.youtube.com/@rachelsenglish/playlists)
 * [English Learning for Curious Minds — подкаст, созданный Leonardo English](https://www.leonardoenglish.com/podcasts)
 * [Luke’s ENGLISH Podcast](https://teacherluke.co.uk/2021/12/09/753-visiting-the-louvre-museum-with-amber-paul/)
