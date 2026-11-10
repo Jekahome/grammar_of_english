@@ -44,7 +44,7 @@ const others = ["paris","brazil","pm", "lot of","lot", "brazil","max","kate","mo
     "app","spanish","metro","popcorn","mary","wales","italians","ceo","anna","peter","maria","smiths","tom","lisa","cs","alissa","webvtt",
     "russia","germany","hi","usa","canada","uk","berlin","miller","wilson","lee","australia","bob","rosalind", "hortensia", "kenny", "america", "oxford", "copyright",
     "california", "bookworms", "escott", "carrie","mike","rosie","sally","mrs","mr", "oslo", "norway",
-    "zealand", "pacific", "st", "petersburg", "hollywood", "fiji", "cd", "bosphorus", "istanbul", "algeria","wow", "turkey","holland","britain",
+    "zealand", "pacific", "st", "petersburg", "hollywood", "fiji", "cd", "bosphorus", "istanbul", "algeria","wow", "turkey","holland","britain","tokyo",
 
 
 ];
@@ -434,7 +434,8 @@ const a1_words_nouns = [
     ["scooter","scooters","","скутер, самокат",5000],
     ["motorcycle","motorcycles","","мотоцикл",5000],
     ["sausage","sausages","","сосиска",2000],
-     
+    ["indian","indians","","индиец",2000], 
+    
     
 ];
 
@@ -2141,8 +2142,11 @@ const a2_words_nouns = [
   ["barber","barbers","","барбер",5000],
   ["trumpet","trumpets","","труба (музыкальный инструмент)",5000],
   ["skateboard","skateboards","","скейтборд",7000],
-
-  
+  ["glue","glues","","клей",5000],
+  ["blog","blogs","","блог",5000],
+  ["motorbike","motorbikes","","мотоцикл",5000],  
+  ["lunchtime","","","время обеда",5000],  
+   
 ];
 
 const a2_words_adverbs = [
@@ -3140,6 +3144,10 @@ const b1_words_nouns = [
   ["farmhouse","farmhouses","","фермерский дом",7000],
   ["disagreement","disagreements","","разногласие, спор",5000],
   ["armour","armours","","броня, доспехи",7000],
+
+ ["racer","racers","","гонщик",7000],
+ ["miner","miners","","шахтёр",7000],
+
 ];
 
 
@@ -3375,6 +3383,9 @@ const b1_words_verbs = [
   ["service", "services", "servicing", "serviced", "serviced",   "обслуживать", 10000],
   ["undo", "undoes", "undoing", "undid", "undone",   "отменять, развязывать", 7000],
   ["blossom", "blossoms", "blossoming", "blossomed", "blossomed",   "цвести, расцветать, распускаться", 7000],
+  ["leak", "leaks", "leaking", "leaked", "leaked",   "протекать, просачиваться, разглашать", 5000],
+
+
 ]; 
  
 const b1_words_preposition = [
@@ -5671,7 +5682,7 @@ const c1_words_nouns = [
   ["fireboy","fireboys","","мальчик работающий с огнём",50000],
   ["simit","simits","","турецкий хлеб в форме кольца",50000],
   ["vizier","viziers","","высокопоставленный советник",20000],
-
+  ["roadbook","roadbooks","","дорожная книга",50000],
   
 ];
 

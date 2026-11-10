@@ -1,7 +1,7 @@
 # Listen: Amazon Rally
 
 <div id="listen-read">
- <details>
+<details>
 <summary>Amazon Rally</summary>
 <div class="book-page">
 <div class="chapter-title">Amazon Rally</div>

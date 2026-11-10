@@ -634,13 +634,13 @@ Future in the Past
     - [x] Troy
     - [x] Why?
     - [x] Peter Pan
-    - [ ] Amazon Rally
-    - [ ] Blog love
+    - [x] Amazon Rally
+    - [x] Blog love
     - [ ] Hotel Casanova
     - [ ] Island For Sale
     - [ ] Marcel And The Shakespeare Letters
     - [ ] The Missing Coins
-    
+
 - [ ] Beginner 
 
          (правка меток времени)
