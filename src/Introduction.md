@@ -47,7 +47,7 @@
 
 Пишите и проговаривайте (говорить с разной интонацией и громкостью) эти предложения в отдельную тетрадь. Вообщем, говорите сами с собой. Если описывать окружающую вас среду имеющимися словами, вы должны отвыкнуть переводить с русского, т.е. имея ограниченный набор реплик вы начнете выражать/думать на английском.
 
-Попробуйте составить предложения на темы окружающей вас остановки (кто что делает и во что одет) или темы перечисленные ниже, используя голоса с [elevenlabs.io](https://elevenlabs.io/app/speech-synthesis/text-to-speech) (бесплатно)
+Попробуйте составить предложения на темы окружающей вас обстановки (кто что делает и во что одет) или темы перечисленные ниже, используя голоса с [elevenlabs.io](https://elevenlabs.io/app/speech-synthesis/text-to-speech) (бесплатно)
 
 **1. What are you going to do now?** (*Что ты собираешься делать сейчас?*)
 
@@ -639,7 +639,7 @@ Future in the Past
     - [x] Peter Pan
     - [x] Amazon Rally
     - [x] Blog love
-    - [ ] Hotel Casanova
+    - [x] Hotel Casanova
     - [ ] Island For Sale
     - [ ] Marcel And The Shakespeare Letters
     - [ ] The Missing Coins
@@ -778,6 +778,7 @@ Future in the Past
     - [ ] The Wind In The Willows
 
 # New beginner book (правка ошибок транскрибации и меток времени)
+
 ```
 - [Aladdin](listen/A1/Beginner/Aladdin/Aladdin.md)
 - [Ali Baba and the Forty Thieves World Literature](listen/A1/Beginner/Ali_Baba_and_the_Forty_Thieves_World_Literature/Ali_Baba_and_the_Forty_Thieves_World_Literature.md)
