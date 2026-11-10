@@ -1517,6 +1517,8 @@ const a2_words_verbs = [
   ["cough","coughs","coughing","coughed","coughed",0, "кашлять", 5000],
   ["bloom","blooms","blooming","bloomed","bloomed",0,"цвести, расцветать, покрываться налётом", 5000],
 
+  ["bear","bears","bearing","bore","born",0, "рожать, рождённый", 1000],
+  
 ]; 
 
 const a2_words_nouns = [
@@ -2413,10 +2415,9 @@ const a2_words_adjective = [
     ["delicious","more delicious","most delicious","восхитительный, очень вкусный, приятный, прелестный",5000],
     ["messy","messier","messiest","грязный, беспорядочный, неряшливый",5000],
     ["tidy","tidier","tidiest","опрятный, аккуратный, убирать, приборка, уборка",5000],
-
     ["nervous","more nervous","most nervous","нервный",2000],
     ["awesome","more awesome","most awesome","потрясающий",2000],    
-
+    ["curly","curlier","curliest","кудрявый",5000],
     
 ];
  
@@ -3147,6 +3148,8 @@ const b1_words_nouns = [
 
  ["racer","racers","","гонщик",7000],
  ["miner","miners","","шахтёр",7000],
+ ["madam","madams","","госпожа, мадам",5000],
+ 
 
 ];
 
@@ -3663,14 +3666,14 @@ const b1_words_adjective = [
   ["threefold", "", "", "трехкратный, тройной", 5000],
   ["tenfold", "", "", "десятикратный", 5000],
   ["hundredfold", "", "", "стократный", 5000],
-
   ["dusty","dustier","dustiest","пыльный",5000],
   ["careless","more careless","most careless","небрежный",5000],
   ["respectful", "more respectful", "most respectful", "почтительный", 10000],
   ["well-timed","","","своевременный",10000],
   ["gotten","","","полученный, добытый, погашенный",10000],
-
   ["dishonest","more dishonest", "most dishonest", "нечестный", 10000],
+  ["elegant","more elegant", "most elegant", "элегантный, изящный", 5000],
+  
  
 ];
 
