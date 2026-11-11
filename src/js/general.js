@@ -2151,7 +2151,7 @@ const a2_words_nouns = [
   ["motorbike","motorbikes","","мотоцикл",5000],  
   ["lunchtime","","","время обеда",5000],  
   ["notepad","notepads","","блокнот",4000],  
-  
+  ["stamp","stamps","","почтовая марка",3000], 
    
 ];
 
@@ -3155,6 +3155,10 @@ const b1_words_nouns = [
   ["madam","madams","","госпожа, мадам",5000],
   ["firework","fireworks","","фейерверк",5000],
   ["dial","dials","","циферблат",5000],
+  ["abbey","abbeys","","монастырь",7000],
+  ["flute","flutes","","флейта",7000],
+  ["shopkeeper","shopkeepers","","хозяин лавки",7000],
+  
   
 ];
 

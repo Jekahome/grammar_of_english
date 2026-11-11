@@ -641,8 +641,8 @@ Future in the Past
     - [x] Blog love
     - [x] Hotel Casanova
     - [x] Island For Sale
-    - [ ] Marcel And The Shakespeare Letters
-    - [ ] The Missing Coins
+    - [x] Marcel And The Shakespeare Letters
+    - [x] The Missing Coins
     - [ ] The Beginning of the Armadilloes
 
 - [ ] Beginner 
