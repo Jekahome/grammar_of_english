@@ -435,7 +435,7 @@ const a1_words_nouns = [
     ["motorcycle","motorcycles","","мотоцикл",5000],
     ["sausage","sausages","","сосиска",2000],
     ["indian","indians","","индиец",2000], 
-    
+    ["hundred","hundreds","","сотня",500], 
     
 ];
 
@@ -1518,6 +1518,8 @@ const a2_words_verbs = [
   ["bloom","blooms","blooming","bloomed","bloomed",0,"цвести, расцветать, покрываться налётом", 5000],
 
   ["bear","bears","bearing","bore","born",0, "рожать, рождённый", 1000],
+  ["telephone","telephones","telephoning","telephoned","telephoned",0, "звонить по телефону", 1000],
+
   
 ]; 
 
@@ -2148,6 +2150,8 @@ const a2_words_nouns = [
   ["blog","blogs","","блог",5000],
   ["motorbike","motorbikes","","мотоцикл",5000],  
   ["lunchtime","","","время обеда",5000],  
+  ["notepad","notepads","","блокнот",4000],  
+  
    
 ];
 
@@ -3146,11 +3150,12 @@ const b1_words_nouns = [
   ["disagreement","disagreements","","разногласие, спор",5000],
   ["armour","armours","","броня, доспехи",7000],
 
- ["racer","racers","","гонщик",7000],
- ["miner","miners","","шахтёр",7000],
- ["madam","madams","","госпожа, мадам",5000],
- 
-
+  ["racer","racers","","гонщик",7000],
+  ["miner","miners","","шахтёр",7000],
+  ["madam","madams","","госпожа, мадам",5000],
+  ["firework","fireworks","","фейерверк",5000],
+  ["dial","dials","","циферблат",5000],
+  
 ];
 
 

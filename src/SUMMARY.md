@@ -197,6 +197,7 @@
       - [Island For Sale](listen/A1/Starter/Island_For_Sale/Island_For_Sale.md)
       - [Marcel And The Shakespeare Letters](listen/A1/Starter/Marcel_And_The_Shakespeare_Letters/Marcel_And_The_Shakespeare_Letters.md)
       - [The Missing Coins](listen/A1/Starter/The_Missing_Coins/The_Missing_Coins.md)
+      - [The Beginning of the Armadilloes](listen/A1/Starter/The_Beginning_of_the_Armadilloes/The_Beginning_of_the_Armadilloes.md)
     - [Beginner]()
       - [African Safari](listen/A1/Beginner/African_Safari/African_Safari.md)
       - [George Sees Stars](listen/A1/Beginner/George_Sees_Stars/George_Sees_Stars.md)

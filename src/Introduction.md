@@ -640,9 +640,10 @@ Future in the Past
     - [x] Amazon Rally
     - [x] Blog love
     - [x] Hotel Casanova
-    - [ ] Island For Sale
+    - [x] Island For Sale
     - [ ] Marcel And The Shakespeare Letters
     - [ ] The Missing Coins
+    - [ ] The Beginning of the Armadilloes
 
 - [ ] Beginner 
 
