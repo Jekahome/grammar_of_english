@@ -45,7 +45,7 @@
 
 Попробуйте составить предложения на темы окружающей вас обстановки (кто что делает и во что одет) или темы перечисленные ниже, используя голоса с [elevenlabs.io](https://elevenlabs.io/app/speech-synthesis/text-to-speech) (бесплатно)
 
-Например, такие примеры можно создать в программе Audacity:
+Напримеры Present Continuous, такие примеры можно создать в программе Audacity:
 ```
 This old man is wearing black shoes. 
 ... pause (3 sec)
