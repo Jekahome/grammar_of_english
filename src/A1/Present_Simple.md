@@ -98,23 +98,23 @@ To be:
 >
 > **Does + he**/**she**/**it + V?**
 
-**где - V это V1, но без окончания `-s`, т.е. Does забирает на себя весь смысл, поэтому глагол play для he/she/it остается play**
+(где - `V` это `V1`, но без окончания `-s`, т.е. `Does` забирает на себя весь смысл, поэтому глагол `play` для `he/she/it` остается `play`)
 
-*   *Am I late?* — Я опоздал(а)?
-*   *Are you ready?* — Ты готов? / Вы готовы?
-*   *Is he at work?* — Он на работе?
-*   *Have you a car?* — У тебя есть машина? (Устаревший/формальный вариант)
-*   *Has she a cat?* — У неё есть кот? (Устаревший/формальный вариант)
-*   *Do you do exercises?* — Ты делаешь упражнения?
-*   *Does she do the dishes?* — Она моет посуду?
-*   *Do you go to the cinema often?* — Ты часто ходишь в кино?
-*   *Does he go to work by bus?* — Он ездит на работу на автобусе?
-*   *Do you get many emails?* — Ты получаешь много писем?
-*   *Does it get cold in winter?* — Здесь становится холодно зимой?
-*   *Do they make a lot of noise?* — Они сильно шумят?
-*   *Does he make his bed?* — Он заправляет свою кровать?
-*   *Can you help me?* — Ты можешь мне помочь?
-*   *Can she drive?* — Она умеет водить машину?
+* *Am I late?* — Я опоздал(а)?
+* *Are you ready?* — Ты готов? / Вы готовы?
+* *Is he at work?* — Он на работе?
+* *Have you a car?* — У тебя есть машина? (Устаревший/формальный вариант)
+* *Has she a cat?* — У неё есть кот? (Устаревший/формальный вариант)
+* *Do you do exercises?* — Ты делаешь упражнения?
+* *Does she do the dishes?* — Она моет посуду?
+* *Do you go to the cinema often?* — Ты часто ходишь в кино?
+* *Does he go to work by bus?* — Он ездит на работу на автобусе?
+* *Do you get many emails?* — Ты получаешь много писем?
+* *Does it get cold in winter?* — Здесь становится холодно зимой?
+* *Do they make a lot of noise?* — Они сильно шумят?
+* *Does he make his bed?* — Он заправляет свою кровать?
+* *Can you help me?* — Ты можешь мне помочь?
+* *Can she drive?* — Она умеет водить машину?
 * *Do you like pizza? Yes, I do. — Тебе нравится пицца? Да.*
 * *Does he like Spain? Yes, he does. — Ему нравится в Испании? Да.*
 * *Do you go to school? Yes, I do. — Ты ходишь в школу? Да.*
@@ -126,24 +126,18 @@ To be:
 * *Does she eat meat? — She doesn't eat meat.*
 * *Do they have lunch at home? — They don't have lunch at home.*
 * *Does he like fish? — He doesn't like fish.*
- 
 * *Do you get up early? — I don't get up early.*
 * *Does he watch TV in the evening? — He doesn't watch TV in the evening.*
 * *Do they go to the gym every day? — They don't go to the gym every day.*
 * *Does she read books before bed? — She doesn't read books before bed.*
- 
 * *Do you work on Saturdays? — I don't work on Saturdays.*
 * *Does he speak French? — He doesn't speak French.*
 * *Do they study at the university? — They don't study at the university.*
- 
 * *Do you play the guitar? — I don't play the guitar.*
 * *Does she dance well? — She doesn't dance well.*
 * *Do they travel in summer? — They don't travel in summer.*
 
-
-
 Так как вспомогательный глагол do/does не переводится, и если нам нужен смысловой do (делать/заниматься), то пишем их дважды:
-
 * *Do you do sports? — Ты занимаешься спортом?*
 * *What does he usually do in the evening? — Что он обычно делает по вечерам?*
 
@@ -167,7 +161,7 @@ To be:
 >
 > **She**/**He**/**It + does not(doesn't) + V**
 
-**V - т.е. does забирает у глагола для третьего лица (he/she/it) окончание `-s`**
+(`V` - т.е. does забирает у глагола для третьего лица (he/she/it) окончание `-s`)
 
 *   *I am not tired.* — Я не устал(а).
 *   *You are not (aren't) students.* — Вы не студенты.
