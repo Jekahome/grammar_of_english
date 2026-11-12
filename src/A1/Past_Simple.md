@@ -38,7 +38,7 @@ Past Simple — это время, где **неправильные глаго�
 > [!TIP]
 > **Subject + V2** (+ed)
 
-(V2 +ed,ied,d for example: `study => studied, play => played`)
+(`V2` `+ed,ied,d` for example: `study => studied, play => played`)
 
 * *I was at home yesterday.* — Я был дома вчера.
 * *He did his work perfectly.* — Он сделал свою работу отлично.
@@ -78,7 +78,7 @@ Past Simple — это время, где **неправильные глаго�
 > [!TIP]
 > **Did Subject + V**
 
-(V - т.е. did забирает у глагола для третьего лица (he/she/it) окончание -s)
+(`V` - т.е. `did` забирает у глагола для третьего лица (`he/she/it`) окончание `-s`)
 * *Were you at the cinema yesterday?* — Ты был в кино вчера?
 * *Did she do her homework?* — Она сделала домашнюю работу?
 * *Did they go to London last year?* — Они ездили в Лондон в прошлом году?
@@ -86,14 +86,14 @@ Past Simple — это время, где **неправильные глаго�
 * *Did he get my letter?* — Он получил мое письмо?
 * *Did we make a mistake?* — Мы сделали ошибку?
 * *Did you have a dog when you were little?* — У тебя была собака, когда ты был маленьким?
-* *Did she play with us yesterday? No, she didn't. - Она играла с нами вчера?*
-* *Did I play? Yes, you did. - Я играл?*
-* *Did you eat my cheese yesterday? No, I did not eat it! - Ты ел вчера мой сыр? Нет, я не ел его!*
+* *Did she play with us yesterday? No, she didn't.*  — Она играла с нами вчера?
+* *Did I play? Yes, you did.*  — Я играл?
+* *Did you eat my cheese yesterday? No, I did not eat it!*  — Ты ел вчера мой сыр? Нет, я не ел его!
 
 Состояние (был, не был):
-* *Were you at the party yesterday? Yes, I was. - Ты был вчера на вечеринке?*
-* *Was I at school yesterday? No, you weren't.*
-* *Were you late yesterday? No, I wasn't. - Ты опоздал вчера? Нет, не опоздал.*
+* *Were you at the party yesterday? Yes, I was.*  — Ты был вчера на вечеринке?
+* *Was I at school yesterday? No, you weren't.*  — Я вчера был в школе? Нет, меня там не было.
+* *Were you late yesterday? No, I wasn't.*  — Ты опоздал вчера? Нет, не опоздал.
 
 Пассив:
 
@@ -111,7 +111,7 @@ Past Simple — это время, где **неправильные глаго�
 > [!TIP]
 > **Subject + did not + V**
 
-**V - т.е. did забирает у глагола для третьего лица (he/she/it) окончание `-s`**
+(`V` - т.е. `did` забирает у глагола для третьего лица (`he/she/it`) окончание `-s`)
 
 * *I was not (wasn't) at school on Monday.* — Меня не было в школе в понедельник.
 * *He did not (didn't) do his morning exercises.* — Он не сделал утреннюю зарядку.
