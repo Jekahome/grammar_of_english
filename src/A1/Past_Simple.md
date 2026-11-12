@@ -38,15 +38,15 @@ Past Simple — это время, где **неправильные глаго�
 > [!TIP]
 > **Subject + V2** (+ed)
 
-(V2 +ed,ied,d for example: study => studied, play => played)
+(V2 +ed,ied,d for example: `study => studied, play => played`)
 
-*   *I was at home yesterday.* — Я был дома вчера.
-*   *He did his work perfectly.* — Он сделал свою работу отлично.
-*   *They went to the park last Sunday.* — Они ходили в парк в прошлое воскресенье.
-*   *She could play the piano when she was five.* — Она умела играть на пианино, когда ей было пять.
-*   *We got a lot of presents for Christmas.* — Мы получили много подарков на Рождество.
-*   *I made a delicious dinner yesterday.* — Я приготовил вкусный ужин вчера.
-*   *He had a red car when he lived in Moscow.* — У него была красная машина, когда он жил в Москве.
+* *I was at home yesterday.* — Я был дома вчера.
+* *He did his work perfectly.* — Он сделал свою работу отлично.
+* *They went to the park last Sunday.* — Они ходили в парк в прошлое воскресенье.
+* *She could play the piano when she was five.* — Она умела играть на пианино, когда ей было пять.
+* *We got a lot of presents for Christmas.* — Мы получили много подарков на Рождество.
+* *I made a delicious dinner yesterday.* — Я приготовил вкусный ужин вчера.
+* *He had a red car when he lived in Moscow.* — У него была красная машина, когда он жил в Москве.
 * *She closed the window - Она закрыла окно.* (V1=close/closes, V2=closed)
 * *I saw him yesterday - Я видел его вчера.* (V1=see/sees, V2=saw) irregular verb
 * *I was hungry - Я был голоден.* (V1=to be->am,is,are, V2=was/were) irregular verb
@@ -78,21 +78,19 @@ Past Simple — это время, где **неправильные глаго�
 > [!TIP]
 > **Did Subject + V**
 
-**V - т.е. did забирает у глагола для третьего лица (he/she/it) окончание -s**
-
-*   *Were you at the cinema yesterday?* — Ты был в кино вчера?
-*   *Did she do her homework?* — Она сделала домашнюю работу?
-*   *Did they go to London last year?* — Они ездили в Лондон в прошлом году?
-*   *Could you swim when you were a child?* — Ты умел плавать, когда был ребенком?
-*   *Did he get my letter?* — Он получил мое письмо?
-*   *Did we make a mistake?* — Мы сделали ошибку?
-*   *Did you have a dog when you were little?* — У тебя была собака, когда ты был маленьким?
+(V - т.е. did забирает у глагола для третьего лица (he/she/it) окончание -s)
+* *Were you at the cinema yesterday?* — Ты был в кино вчера?
+* *Did she do her homework?* — Она сделала домашнюю работу?
+* *Did they go to London last year?* — Они ездили в Лондон в прошлом году?
+* *Could you swim when you were a child?* — Ты умел плавать, когда был ребенком?
+* *Did he get my letter?* — Он получил мое письмо?
+* *Did we make a mistake?* — Мы сделали ошибку?
+* *Did you have a dog when you were little?* — У тебя была собака, когда ты был маленьким?
 * *Did she play with us yesterday? No, she didn't. - Она играла с нами вчера?*
 * *Did I play? Yes, you did. - Я играл?*
 * *Did you eat my cheese yesterday? No, I did not eat it! - Ты ел вчера мой сыр? Нет, я не ел его!*
 
 Состояние (был, не был):
-
 * *Were you at the party yesterday? Yes, I was. - Ты был вчера на вечеринке?*
 * *Was I at school yesterday? No, you weren't.*
 * *Were you late yesterday? No, I wasn't. - Ты опоздал вчера? Нет, не опоздал.*
@@ -115,13 +113,13 @@ Past Simple — это время, где **неправильные глаго�
 
 **V - т.е. did забирает у глагола для третьего лица (he/she/it) окончание `-s`**
 
-*   *I was not (wasn't) at school on Monday.* — Меня не было в школе в понедельник.
-*   *He did not (didn't) do his morning exercises.* — Он не сделал утреннюю зарядку.
-*   *They did not (didn't) go to the concert.* — Они не пошли на концерт.
-*   *She could not (couldn't) solve this problem.* — Она не смогла решить эту задачу.
-*   *We did not (didn't) get enough information.* — Мы не получили достаточно информации.
-*   *I did not (didn't) make any noise.* — Я не шумел.
-*   *He did not (didn't) have time for this.* — У него не было времени на это.
+* *I was not (wasn't) at school on Monday.* — Меня не было в школе в понедельник.
+* *He did not (didn't) do his morning exercises.* — Он не сделал утреннюю зарядку.
+* *They did not (didn't) go to the concert.* — Они не пошли на концерт.
+* *She could not (couldn't) solve this problem.* — Она не смогла решить эту задачу.
+* *We did not (didn't) get enough information.* — Мы не получили достаточно информации.
+* *I did not (didn't) make any noise.* — Я не шумел.
+* *He did not (didn't) have time for this.* — У него не было времени на это.
 * *I did not play - Я не играл.*
 * *I did not get up early yesterday. - Вчера я встал не рано.*
 
