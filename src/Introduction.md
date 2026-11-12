@@ -591,7 +591,7 @@ Future in the Past
 
 ## Правки меток времени субтитров и текста в аудиокнигах
 
-- [ ] Starter (только правка меток времени)
+- [x] Starter (только правка меток времени)
     - [x] Alice's Adventures in Wonderland
     - [x] Alissa
     - [x] Beauty and the Beast
@@ -643,7 +643,7 @@ Future in the Past
     - [x] Island For Sale
     - [x] Marcel And The Shakespeare Letters
     - [x] The Missing Coins
-    - [ ] The Beginning of the Armadilloes
+    - [x] The Beginning of the Armadilloes
 
 - [ ] Beginner 
 

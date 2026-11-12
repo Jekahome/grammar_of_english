@@ -436,6 +436,7 @@ const a1_words_nouns = [
     ["sausage","sausages","","сосиска",2000],
     ["indian","indians","","индиец",2000], 
     ["hundred","hundreds","","сотня",500], 
+    ["frog","frogs","","лягушка",2000], 
     
 ];
 
@@ -2152,6 +2153,8 @@ const a2_words_nouns = [
   ["lunchtime","","","время обеда",5000],  
   ["notepad","notepads","","блокнот",4000],  
   ["stamp","stamps","","почтовая марка",3000], 
+  ["lettuce","lettuces","","листовой салат",3000], 
+  ["beetle","beetles","","жук",3000],
    
 ];
 
@@ -3158,6 +3161,10 @@ const b1_words_nouns = [
   ["abbey","abbeys","","монастырь",7000],
   ["flute","flutes","","флейта",7000],
   ["shopkeeper","shopkeepers","","хозяин лавки",7000],
+  ["claw","claws","","коготь",5000],
+  ["hedgehog","hedgehogs","","ёж",7000],
+  ["tortoise","tortoises","","сухопутная черепаха",7000],
+  ["jaguar","jaguars","","ягуар",10000],
   
   
 ];
@@ -3396,8 +3403,9 @@ const b1_words_verbs = [
   ["undo", "undoes", "undoing", "undid", "undone",   "отменять, развязывать", 7000],
   ["blossom", "blossoms", "blossoming", "blossomed", "blossomed",   "цвести, расцветать, распускаться", 7000],
   ["leak", "leaks", "leaking", "leaked", "leaked",   "протекать, просачиваться, разглашать", 5000],
+  ["curl", "curls", "curling", "curled", "curled",  "завить, виться, завивать, завиваться", 5000],
 
-
+   
 ]; 
  
 const b1_words_preposition = [
@@ -4443,7 +4451,9 @@ const b2_words_nouns = [
     ["strait","straits","","пролив",10000],
     ["highness","highnesses","","высочество (титул)",10000],
     ["sultan","sultans","","султан",7000],
+    ["clump","clumps","","комок, пучок",10000],
 
+    
 ];
 
 const b2_words_verbs = [
@@ -4763,6 +4773,9 @@ const b2_words_irregular_verbs = [
   ["shrink", "shrinks", "shrinking", "shrunk", "shrunk",  "сокращаться, сжиматься", 4516],
   ["broadcast", "broadcasts", "broadcasting", "broadcast", "broadcast",  "вещать, распространять", 4851],
   ["kneel", "kneels", "kneeling", "knelt", "knelt", "становиться на колени, стоять на коленях", 4949],
+  ["uncoil", "uncoils", "uncoiling", "uncoiled", "uncoiled", "раскручиваться, разматывать", 15000],
+
+
 ];
 
 const b2_words_adjective = [
@@ -5003,6 +5016,10 @@ const b2_words_adjective = [
     ["wary","warier","wariest","осторожный, осмотрительный",10000],
     ["abandoned","","","заброшенный",10000],
     ["contagious","more contagious","most contagious","заразный",15000],
+    ["jumpy","jumpier","jumpiest","нервный, дёрганый, легко вздрагивающий",7000],
+    ["prickly","pricklier","prickliest","колючий",10000], 
+
+    
 ];
 
 const b2_words_preposition = [
