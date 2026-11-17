@@ -327,6 +327,11 @@
       - [The Wind In The Willows](listen/A1/Beginner/The_Wind_In_The_Willows/The_Wind_In_The_Willows.md)
 
 
+## Daily Practice
+
+- [Daily Practice](daily_practice/daily_practice.md)
+ 
+
  
 ---
 

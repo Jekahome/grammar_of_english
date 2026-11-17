@@ -3,3 +3,4 @@ tools/sound
 tools/model_en.pt
 tools/model_ru.pt
 src/local_audio
+src/daily_practice/daily_practice.md

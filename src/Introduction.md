@@ -39,7 +39,7 @@
 
 ## Ежедневное занятие ... привычка
 
-Пишите эти предложения в отдельную тетрадь и проговаривайте (говорить с разной интонацией и громкостью). Вообщем, говорите сами с собой. Да, это напоминает раздражающую рекомендацию - работайте с языком каждый день, по час-два .... но они не дают контент для этой работы на час-два в день! 
+Пишите эти предложения в отдельную тетрадь и проговаривайте (говорить с разной интонацией и громкостью). Вообщем, говорите сами с собой. Да, это напоминает раздражающую рекомендацию - работайте с языком каждый день, по час-два .... но при этом, они не дают контент для этой работы обьемом на час-два в день! 
 
 Если описывать окружающую вас среду имеющимися словами, вы должны отвыкнуть переводить с русского, т.е. имея ограниченный набор реплик вы начнете выражать/думать на английском используя только их.
 
@@ -48,24 +48,24 @@
 Например, такие примеры в Present Continuous можно создать с паузами в программе Audacity:
 ```
 This old man is wearing black shoes. 
-... pause (3 sec)
+... pause (3 - 5 sec)
 This old man is wearing black shoes. 
-... pause (3 sec)
+... pause (3 - 5 sec)
 
 This young woman is wearing a beautiful red coat.
-... pause (3 sec)
+... pause (3 - 5 sec)
 This young woman is wearing a beautiful red coat.
-... pause (3 sec)
+... pause (3 - 5 sec)
 
 That young man is wearing brown trousers.
-... pause (3 sec)
+... pause (3 - 5 sec)
 That young man is wearing brown trousers.
-... pause (3 sec)
+... pause (3 - 5 sec)
 ```
 
-Пауза необходима что бы вы успели повторить, а повтор нужен что бы успели закрепить и запомнить. 
+Пауза необходима, что бы вы успели повторить, а повтор нужен что бы смогли лучше усвоить. 
 
-Перед прослушиванием вы должны понимать текст полностью, т.е. читая его вы все понимаете. Но так как понимать текст это не эквивалентно его *использованию*, поэтому теперь его нужно слушать и повторять ... слушать и повторять ...
+Перед прослушиванием вы должны понимать текст **полностью**, т.е. читая его вы все понимаете. Но так как понимать текст это не эквивалентно его *использованию*, поэтому теперь его нужно слушать и повторять ... слушать и повторять ... Последовательность всегда такая: `понять - написать - прослушать - произнести` 
 
 После того как вы освоитесь с конструкцией предложений, вы начнете сами их составлять, комбинируя словосочетания.
 
@@ -80,20 +80,33 @@ That young man is wearing brown trousers.
 
 Говорим о том, что собираемся делать в ближайшее время. Можно использовать be going to или Present Continuous, если речь о запланированном действии.
 
-- I'm going to make some coffee. — Я собираюсь приготовить кофе.
-- I'm going to study English. — Я собираюсь заниматься английским.
+- I am going to make some coffee. — Я собираюсь приготовить кофе.
+- I am going to study English. — Я собираюсь заниматься английским.
+- I need to study English. — Мне нужно позаниматься английским.
 - I'm meeting my friend now. — Я сейчас встречаюсь с другом.
 - I'm going to watch a movie. — Я собираюсь посмотреть фильм.
+- I'm watching a movie right now. — Я сейчас смотрю фильм.
+- I think I'll go for a walk. — Думаю, я пойду прогуляюсь.
+- Nothing special. I'm just relaxing. — Ничего особенного. Просто отдыхаю.
+- I'm waiting for a friend. — Я жду друга.
+- I'm having lunch — Я обедаю.
+- I need to make a phone call — Мне нужно позвонить.
 
 **2. What are your plans for today?** (*Какие у тебя планы на сегодня?*)
 
 Рассказываем о планах на день. Используем be going to для намерений или Present Simple для расписаний.
 
 - I'm going to work today. — Сегодня я собираюсь работать.
+- I'm working today. — Сегодня я работаю.
 - I am going to go shopping. — Я собираюсь сходить за покупками.
 - I have an English lesson at 6 PM. — У меня урок английского в 6 вечера.
 - I am going to cook dinner and relax. — Я собираюсь приготовить ужин и отдохнуть.
-
+- I have an English lesson at 6 PM. — У меня урок английского в 6 вечера.
+- I need to go shopping. — Мне нужно сходить за покупками.
+- I'm meeting a friend this afternoon. — Сегодня днём я встречаюсь с другом.
+- I'll probably stay at home. — Наверное, я останусь дома.
+- I don't have any special plans. — У меня нет особых планов.
+- Maybe I'll watch a movie tonight. — Может быть, вечером посмотрю фильм.
 
 **3. What did you do yesterday?** (*Что ты делал вчера?*)
 
@@ -103,7 +116,9 @@ That young man is wearing brown trousers.
 - I watched a movie. — Я посмотрел фильм.
 - I went to the supermarket. — Я ходил в супермаркет.
 - I stayed at home and read a book. — Я остался дома и читал книгу.
-
+- I didn't do much yesterday. — Вчера я особо ничего не делал.
+- I met my friend for coffee. — Я встретился с другом за кофе.
+- I was very tired, so I went to bed early. — Я очень устал, поэтому рано лёг спать.
 
 **4. What are you going to do tomorrow?** (*Что ты собираешься делать завтра?*)
 
@@ -111,9 +126,13 @@ That young man is wearing brown trousers.
 
 - I'm going to go to the gym. — Я собираюсь пойти в спортзал.
 - I am going to study English in the evening. — Я собираюсь заниматься английским вечером.
+- I'm studying English tomorrow morning. — Завтра утром я занимаюсь английским.
 - I will call my friend tomorrow. — Я позвоню другу завтра.
  - I am going to call my friend tomorrow. — Я собираюсь позвонить другу завтра.
 - I think I will stay at home. — Думаю, я останусь дома.
+- I have to work tomorrow. — Завтра мне нужно работать.
+- I'm not sure yet. Maybe I'll go shopping. — Я пока не уверен. Может быть, схожу за покупками.
+- Nothing is planned for tomorrow. — На завтра ничего не запланировано.
 
 ### *#3 Walk*
  
