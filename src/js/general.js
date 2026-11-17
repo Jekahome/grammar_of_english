@@ -2156,6 +2156,8 @@ const a2_words_nouns = [
   ["lettuce","lettuces","","листовой салат",3000], 
   ["beetle","beetles","","жук",3000],
    
+  ["inside","insides","","внутренняя часть, внутренности",1000],
+  
 ];
 
 const a2_words_adverbs = [

@@ -45,7 +45,7 @@
 
 Попробуйте составить предложения на темы окружающей вас обстановки (кто что делает и во что одет) или темы перечисленные ниже, используя голоса с [elevenlabs.io](https://elevenlabs.io/app/speech-synthesis/text-to-speech) (бесплатно)
 
-Напримеры Present Continuous, такие примеры можно создать в программе Audacity:
+Например, такие примеры в Present Continuous можно создать с паузами в программе Audacity:
 ```
 This old man is wearing black shoes. 
 ... pause (3 sec)
@@ -90,9 +90,9 @@ That young man is wearing brown trousers.
 Рассказываем о планах на день. Используем be going to для намерений или Present Simple для расписаний.
 
 - I'm going to work today. — Сегодня я собираюсь работать.
-- I'm going to go shopping. — Я собираюсь сходить за покупками.
+- I am going to go shopping. — Я собираюсь сходить за покупками.
 - I have an English lesson at 6 PM. — У меня урок английского в 6 вечера.
-- I'm going to cook dinner and relax. — Я собираюсь приготовить ужин и отдохнуть.
+- I am going to cook dinner and relax. — Я собираюсь приготовить ужин и отдохнуть.
 
 
 **3. What did you do yesterday?** (*Что ты делал вчера?*)
@@ -110,9 +110,10 @@ That young man is wearing brown trousers.
 Рассказываем о планах на завтра. Используем be going to для намерений или Future Simple для предположений, обещаний и решений.
 
 - I'm going to go to the gym. — Я собираюсь пойти в спортзал.
-- I'm going to study English in the evening. — Я собираюсь заниматься английским вечером.
-- I'll call my friend tomorrow. — Я позвоню другу завтра.
-- I think I'll stay at home. — Думаю, я останусь дома.
+- I am going to study English in the evening. — Я собираюсь заниматься английским вечером.
+- I will call my friend tomorrow. — Я позвоню другу завтра.
+ - I am going to call my friend tomorrow. — Я собираюсь позвонить другу завтра.
+- I think I will stay at home. — Думаю, я останусь дома.
 
 ### *#3 Walk*
  
@@ -412,6 +413,7 @@ VOCABULAR (Словарный запас) — один из вариантов �
 Перебирать карточки с лицевой стороны, потом наоборот — с обратной стороны, переводить на английский. 
 Для запоминания слова оно должно быть использовано нами много раз в его контексте, сначала в письме, потом при произношении.
 
+Писать в тетрадь новые слова из адаптивных книг, **нет смысла**, они там и "умрут". Их нужно сохранять в программу которая будет автоматически вам напоминать про них, например предлагая предложение с контекстом в котором оно используется (Telegram bot хорошо подходит)
 
 <i>Проходить по уровням грамматики с текущим набором частотных слов. 
 Разработать bot-trainer или найти аналог по типу "Andy", [chat.kuki.ai](https://chat.kuki.ai/), для закрепления тем грамматики и слов.</i>

@@ -4,6 +4,7 @@ class Listen {
     #subsDiv = null;
     #audio = null;
     #showLevel = true;
+    #showLevelOther = true;
     #pageSize = 10;
     #timer_css_editor = null;
     #mode = "auto";// auto, manual
@@ -140,6 +141,7 @@ class Listen {
     }
 
     highlightLevels(text) {
+
         const levelMap = {
             listen_a1: new Set(this.wordsLevel.show_a1),
             listen_a2: new Set(this.wordsLevel.show_a2),
@@ -147,8 +149,12 @@ class Listen {
             listen_b2: new Set(this.wordsLevel.show_b2),
             listen_c1: new Set(this.wordsLevel.show_c1),
             listen_c2: new Set(this.wordsLevel.show_c2),
-            listen_other: new Set(this.wordsLevel.show_other)
-        };
+            listen_other: new Set()
+        };        
+        if (this.#showLevelOther == true){
+            levelMap.listen_other = new Set(this.wordsLevel.show_other);
+        }
+
         const words = text.split(/\s+/);
         return words.map(word => {
             const classes = [];
@@ -254,6 +260,10 @@ class Listen {
                 Show words level
             </label>
         `;
+
+      
+
+
         ul.appendChild(li1);
         {
             const ul_inner = document.createElement('ul');
@@ -263,9 +273,18 @@ class Listen {
             <span class="listen_b2" style="font-size:34px"> B2</span>, \
             <span class="listen_c1" style="font-size:34px"> C1</span>, \
             <span class="listen_c2" style="font-size:34px"> C2</span>, \
-            <span class="listen_other" style="font-size:34px"> Other</span>`;
+            `;
+
+            const li1_inner_2 = document.createElement('li');
+            li1_inner_2.innerHTML = `
+            <label>
+                <input type="checkbox" checked="true" id="listen-show-level-other">
+                <span class="listen_other" style="font-size:34px"> Other</span>
+            </label>
+            `;
 
             ul_inner.appendChild(li1_inner);
+            ul_inner.appendChild(li1_inner_2);
   
           ul.appendChild(ul_inner);
         }
@@ -351,6 +370,15 @@ class Listen {
         });
         this.#showLevel = listen_show_level.checked;
 
+
+        const listen_show_level_other = details.querySelector('#listen-show-level-other');
+        listen_show_level_other.checked = this.#showLevelOther;
+        listen_show_level_other.addEventListener('change', (e) => {
+            this.#showLevelOther = e.target.checked;
+            this.page = -1; // Сброс страницы при новой загрузке
+            this.drawPage();
+        });
+        
         //===========================================
         const listen_mode_auto = details.querySelector('#listen-mode-auto');
         const listen_mode_manual = details.querySelector('#listen-mode-manual');
