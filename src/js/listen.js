@@ -22,7 +22,6 @@ class Listen {
     constructor({container, path_sub, path_audio, pageSize = 10}) {
         
         const isGithub = window.location.hostname.includes('github.io');
-       
         const url = isGithub
             ? 'https://raw.githubusercontent.com/Jekahome/grammar_of_english_audio/main'
             : '/local_audio';
@@ -51,7 +50,6 @@ class Listen {
             const container_complexity = document.getElementById('listen-complexity');
             this.renderComplexity(container_complexity);
         });
-  
     }
  
     init() {
@@ -59,16 +57,12 @@ class Listen {
             console.error("Listen: Элементы не найдены");
             return;
         }
-
         this.#audio.addEventListener('timeupdate', () => this.update());
-
         this.#audio.addEventListener('seeked', () => {
             const t = this.#audio.currentTime;
-
             const newIndex = this.subs.findIndex(
                 s => t >= s.start && t < s.end
             );
-
             if (newIndex !== -1) {
                 this.index = newIndex;
                 this.updateBody();
@@ -78,34 +72,25 @@ class Listen {
 
     async loadVTT(url) {
         this.subs = await this.parseVTT(url);
-         
         this.wordsLevel = getAllWordsLevels(this.textRaw);
-         
         this.page = -1; // Сброс страницы при новой загрузке
         this.drawPage();
-       
     }
  
     update() {
         const t = this.#audio.currentTime;
-
         if (this.#mode === "manual") {
             const current = this.subs[this.index];
-
             if (current && t >= current.end) {
                 this.#audio.pause();
                 this.#audio.currentTime = current.end;
             }
-
             return;
         }
-
         const newIndex = this.subs.findIndex(
             s => t >= s.start && t < s.end
         );
-
         if (newIndex === -1 || newIndex === this.index) return;
-
         this.index = newIndex;
         this.updateBody();
         this.updateSubtitleTimeInfo();
@@ -141,7 +126,6 @@ class Listen {
     }
 
     highlightLevels(text) {
-
         const levelMap = {
             listen_a1: new Set(this.wordsLevel.show_a1),
             listen_a2: new Set(this.wordsLevel.show_a2),
@@ -154,11 +138,9 @@ class Listen {
         if (this.#showLevelOther == true){
             levelMap.listen_other = new Set(this.wordsLevel.show_other);
         }
-
         const words = text.split(/\s+/);
         return words.map(word => {
             const classes = [];
-
             for (const level in levelMap) {
                 if (levelMap[level].has(word)) {
                     classes.push(level);
@@ -260,8 +242,6 @@ class Listen {
                 Show words level
             </label>
         `;
-
-      
 
 
         ul.appendChild(li1);
@@ -455,8 +435,6 @@ class Listen {
         });
 
 
-        
-
         const manualBtnNext = document.createElement('button');
         manualBtnNext.textContent = 'Next >';
         manualBtnNext.id = 'listen-manual-next';
@@ -478,7 +456,6 @@ class Listen {
         });
         container.appendChild(manualBtnNext);
         this.#manualBtnNext = manualBtnNext;
-
 
 
         const subtitleTimeInfo = document.createElement("span");
@@ -506,8 +483,7 @@ class Listen {
             }, 200);
         });
 
-        styleTag.textContent = listen_css_editor.value;
-                
+        styleTag.textContent = listen_css_editor.value;   
         container.appendChild(listen_subs);
     }
 
@@ -517,7 +493,6 @@ class Listen {
         const h4 = document.createElement('h4');
         h4.innerText = "Advanced vocabulary in this text";
         container_complexity.appendChild(h4);
-
 
         const ul = document.createElement('ul');
 
@@ -546,9 +521,6 @@ class Listen {
 
         container_complexity.appendChild(ul);
     }
-
-
-
 
     formatSubtitleTime(seconds) {
         const ms = Math.round(seconds * 1000);

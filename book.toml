@@ -16,6 +16,7 @@ additional-js = [
     "src/js/practice.js",
     "src/js/practice2.js",
     "src/js/practice3.js",
+    "src/js/practice_words.js",
     "src/js/editorVoice.js",
     "src/js/editor_symbol.js",
     "src/js/listen.js",

@@ -68,6 +68,7 @@ class Practice {
         
         // Вешаем обработчики после вставки HTML
         this.#el_exercise_control.querySelector(`.play-btn-${this.#el_exercise_control.id}`).addEventListener('click', () => {
+            console.log("Practice play");
             this.playSentence(origin);
         });
         

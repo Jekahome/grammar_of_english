@@ -330,6 +330,7 @@
 ## Daily Practice
 
 - [Daily Practice](daily_practice/daily_practice.md)
+- [Practice understanding words](daily_practice/practice_understanding_words.md)
  
 
  

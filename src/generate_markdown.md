@@ -54,19 +54,19 @@ function show(){
    let headers = [];
     switch (type) {
         case "nouns": 
-            headers = ["Noun singular", "Noun plural", "Gerund", "Translate", "Frequency"];
+            headers = ["Noun singular", "Noun plural", "Gerund", "Translate", "Frequency", "Example"];
             break;
         case "verbs":  
-            headers = ["i,you,we,they", "3rd person (he,she,it)", "Present participle","Past tense", "Past participle","verb irregular", "Translate", "Frequency"];
+            headers = ["i,you,we,they", "3rd person (he,she,it)", "Present participle","Past tense", "Past participle","verb irregular", "Translate", "Frequency", "Example"];
             break;
         case "adverbs": 
-            headers = ["Adverbs", "Translate", "Frequency"];
+            headers = ["Adverbs", "Translate", "Frequency", "Example"];
             break;
         case "adjective": 
-            headers = ["Adjective", "Сравнительная степень (Comparative)", "Превосходная степень (Superlative)", "Translate", "Frequency"];
+            headers = ["Adjective", "Сравнительная степень (Comparative)", "Превосходная степень (Superlative)", "Translate", "Frequency", "Example"];
             break;
         case "preposition": 
-            headers = ["Preposition", "Translate", "Frequency"];
+            headers = ["Preposition", "Translate", "Frequency", "Example"];
             break;
         case "irregular_verbs": 
             headers = ["i,you,we,they", "3rd person (he,she,it)", "Present participle","Past tense", "Past participle", "Translate", "Frequency"];

@@ -14,18 +14,32 @@ class EditorVoice {
 
     static recognizer = null;
     static synth = null;
-    static utterThis = null;
+    //static utterThis = null;
     static speechStart = false;
     static storeAudio = null;
     static isActivePractice3 = false;
 
     speak(val){
-        //console.log(val);
-        // Browser speak
-        EditorVoice.synth.cancel();
-        EditorVoice.utterThis.text = val;
-        EditorVoice.synth.speak(EditorVoice.utterThis);
-        EditorVoice.utterThis.text = null;                
+        const synth = window.speechSynthesis;
+        synth.cancel();  // Останавливаем предыдущее воспроизведение
+        // Создаём отдельный объект для каждого предложения
+        const utterance = new SpeechSynthesisUtterance(val);
+        utterance.rate = 0.8;// скорость
+        utterance.pitch = 1.0;// 0-2.0 высота голоса
+        utterance.lang = 'en-US';
+        if (this.#voice) {
+            utterance.voice = this.#voice;
+        }
+        utterance.onstart = () => {
+            console.log('Speech started:', val);
+        };
+        utterance.onend = () => {
+            console.log('Speech finished:', val);
+        };
+        utterance.onerror = (event) => {
+            console.error('Speech error:', event.error, event);
+        };
+        synth.speak(utterance);            
     }
 
     micOn(micEl, id=null){
@@ -40,27 +54,14 @@ class EditorVoice {
             EditorVoice.recognizer.stop();
         }
     }
-
-    /*
-    EditorVoice.synth = window.speechSynthesis;
-    EditorVoice.utterThis = new SpeechSynthesisUtterance();
-    EditorVoice.utterThis.rate = 0.9;// скорость
-    EditorVoice.utterThis.pitch = 0.9;// 0-2.0 высота голоса
-    EditorVoice.utterThis.lang = 'en-US';
-    (function(){
-        var voices = EditorVoice.synth.getVoices();// list voices
-        let index = voices.findIndex( o => o.lang == lang);
-        if (index!=-1){
-            EditorVoice.utterThis.voice = voices[index];
-        } 
-    })();
-    */
+ 
     #setVoice(lang = "en-US") {
-        var voices = EditorVoice.synth.getVoices();// list voices
-        let index = voices.findIndex( o => o.lang == lang);
-        if (index!=-1){
-            this.#voice = voices[index];
-        }
+        const voices = EditorVoice.synth.getVoices();
+        this.#voice =
+            voices.find(voice => voice.lang === lang) ??
+            voices.find(voice => voice.lang.startsWith('en-')) ??
+            null;
+        console.log('Selected voice:', this.#voice);
     }
 
     constructor({rate=0.8, pitch=1.0, lang='en-US', callback}) {
@@ -75,14 +76,12 @@ class EditorVoice {
         //this.#play_success.volume = 0.3;
 
         // in Google Chrome the voices are not ready on page load
-        if ('onvoiceschanged' in EditorVoice.synth) {
-            EditorVoice.synth.onvoiceschanged = this.#setVoice;
-            //console.log(EditorVoice.synth.getVoices().filter(o => o.lang == 'en-US'));
-        } else {
+        this.#setVoice(lang);
+        EditorVoice.synth.addEventListener('voiceschanged', () => {
             this.#setVoice(lang);
-        }
+        });
 
-        EditorVoice.utterThis = new SpeechSynthesisUtterance();
+        /*EditorVoice.utterThis = new SpeechSynthesisUtterance();
         EditorVoice.utterThis.rate = rate;// скорость
         EditorVoice.utterThis.pitch = pitch;// 0-2.0 высота голоса
         EditorVoice.utterThis.voice = this.#voice;
@@ -94,7 +93,7 @@ class EditorVoice {
 
         EditorVoice.utterThis.onend = function (event) {
             console.log('onend SpeechSynthesisUtterance');
-        };
+        };*/
 
         //EditorVoice.utterThis.onerror = function (event) {console.log('onerror SpeechSynthesisUtterance ',event);};
         //EditorVoice.utterThis.onpause = function (event) {console.log('onpause SpeechSynthesisUtterance');};
@@ -125,7 +124,7 @@ class EditorVoice {
             if (result.isFinal) {
                 //console.log(`Точность: ${result[0].confidence.toFixed(4)}: ${result[0].transcript}`);
                 //result_speak = result[0].transcript;
-                // TODO:перенес показ конечного результата в событие завершения прослушивания
+                // TODO: перенес показ конечного результата в событие завершения прослушивания
                 //textarea.value = result[0].transcript; 
                 //if (colors.indexOf(result[0].transcript,0) != -1){ bg.style.backgroundColor = result[0].transcript;}
                 this.#recognizerResult = result[0].transcript;
@@ -243,11 +242,19 @@ function shuffleSentence(sentence) {
 }
 
 // Выдать рандомный вариант
-function getRandomMix(arr) {
-    let thirdLength = Math.ceil(arr.length / 3); 
-    if (arr.length <= 20){thirdLength = arr.length};
+function getRandomMix(arr, is_third_length=true) {
+    let random_size_arr = 0; 
+    
+    if (is_third_length){
+        random_size_arr = Math.ceil(arr.length / 3); 
+    }else{
+        random_size_arr = arr.length
+    }
+
+    if (arr.length <= 20){random_size_arr = arr.length};
+    
     const randomIndices = new Set(); 
-    while (randomIndices.size < thirdLength) {
+    while (randomIndices.size < random_size_arr) {
         const randomIndex = Math.floor(Math.random() * arr.length);
         randomIndices.add(randomIndex);
     }
