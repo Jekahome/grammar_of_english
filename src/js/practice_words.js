@@ -133,7 +133,7 @@ class PracticeWords {
 
         let control = `
             <span class="icon play-btn-${this.#el_exercise_control.id}">⏯️ listen </span></br></br>
-            <span class="icon help-btn-${this.#el_exercise_control.id}">🔎 help</span> (${word_help}): <i>${sentence_help}</i>
+            <span class="icon help-btn-${this.#el_exercise_control.id}">🔎 </span> <b>${word_help}</b>: <i>${sentence_help}</i>
             <span class="text-span" id="clue-easy-${this.#el_exercise_control.id}-${this.#index_listen_and_write}">${origin}</span></br></br>
             
             <span> choose the correct answer:</br>

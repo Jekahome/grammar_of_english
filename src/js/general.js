@@ -2148,6 +2148,12 @@ const a2_words_nouns = [
   ["wood","woods","","лес, роща, древесина, дерево как материал",1000, "This chair is made of wood."],
   ["parrot","parrots","","попугай",1000, "The parrot can say a few words."],
   ["gardener","gardeners","","садовник",1000, "The gardener waters the flowers."],
+  ["glove", "gloves", "перчатки", 3080, "He wore a glove to protect his injured hand."],
+
+  ["rucksack", "rucksacks", "рюкзак", 5000, "I put my books in my rucksack."],
+  ["earring", "earrings", "серьга", 5000, "She is wearing gold earrings."],
+  ["bracelet", "bracelets", "браслет", 5000, "He gave her a silver bracelet."],
+
 ];
 
 const a2_words_adverbs = [
@@ -4013,7 +4019,6 @@ const b2_words_nouns = [
     ['opera', 'operas', 'опера', 3073, "She bought tickets for the opera."],
     ['preference', 'preferences', 'предпочтение', 3075, "My preference is to travel by train."],
     ['maintenance', "", 'обслуживание', 3078, "The equipment requires regular maintenance."],
-    ['glove', 'gloves', 'перчатки', 3080, "He wore a glove to protect his injured hand."],
     ['scholarship', 'scholarships', 'стипендия', 3081, "She received a scholarship to study abroad."],
     ['proportion', 'proportions', 'пропорция, доля, часть', 3083, "A large proportion of the population lives in cities."],
     ['myth', 'myths', 'миф, вымысел', 3087, "The legend has been told for generations."],

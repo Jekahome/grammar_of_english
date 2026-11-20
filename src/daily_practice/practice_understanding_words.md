@@ -7,6 +7,25 @@
 <br>
 <table id="pixel" class="pixel-table"></table><br>
 
+
+---
+
+Подборка уроков по группе слов 
+* [learnenglish.britishcouncil.org](https://learnenglish.britishcouncil.org/free-resources/vocabulary/a1-a2)
+
+
+<style>
+.pixel-table td {
+    width: 1px;
+    height: 1px;
+    padding: 10px 15px !important;
+    margin: 15px 15px !important;
+   
+    position: relative;
+    transition: background-color 0.1s ease;
+}
+</style>
+
 <script>
 let g_practice = null;
 document.addEventListener('DOMContentLoaded', async () => {
