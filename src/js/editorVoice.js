@@ -61,7 +61,7 @@ class EditorVoice {
             voices.find(voice => voice.lang === lang) ??
             voices.find(voice => voice.lang.startsWith('en-')) ??
             null;
-        console.log('Selected voice:', this.#voice);
+        if(this.#voice != null){console.log('Selected voice:', this.#voice);}
     }
 
     constructor({rate=0.8, pitch=1.0, lang='en-US', callback}) {

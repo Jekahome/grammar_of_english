@@ -66,6 +66,37 @@ class EditorSymbol {
     }
 
     createListenAndWrite(container) {
+        
+        // Создаем div с классом editor-container
+        const editorContainer = document.createElement('div');
+        editorContainer.className = 'editor-container';
+
+        // Создаем редактор
+        const elEditorText = document.createElement('textarea');
+        elEditorText.id = this.#id;
+        elEditorText.className = 'editor_symbol font-HYWenHei';
+        elEditorText.spellcheck = true;
+        elEditorText.lang = 'en';
+        elEditorText.rows = 1;
+
+        // Собираем структуру
+        editorContainer.appendChild(elEditorText);
+        container.appendChild(editorContainer);
+
+        elEditorText.addEventListener('input', function(e) {
+            this.userCallback();
+        }.bind(this));
+
+        // Обработка вставки текста
+        elEditorText.addEventListener('paste', function(e) {
+            e.preventDefault();
+            console.log("you need write");
+        }.bind(this));
+
+        this.#elEditorText = elEditorText;
+    }
+
+    /*createListenAndWrite(container) {
           
         // Создаем div с классом editor-container
         const editorContainer = document.createElement('div');
@@ -77,6 +108,7 @@ class EditorSymbol {
         elEditorText.id = this.#id;
         elEditorText.className = 'editor_symbol font-HYWenHei';
         elEditorText.contentEditable = 'true';
+        elEditorText.spellcheck = 'true';
         
         // Собираем структуру
         editorContainer.appendChild(elEditorText);
@@ -94,6 +126,6 @@ class EditorSymbol {
         }.bind(this));
 
        this.#elEditorText = elEditorText;//document.getElementById(this.#id);
-    }
+    }*/
 }
  

@@ -1,14 +1,15 @@
 'use strict';
- 
-class Practice3 { 
+
+class Practice3 {
     #editor_voice = null;
     #editor_symbol = null;
+    #record = null;
     current_index_data = 0;
     current_index_inner_data = 0;
     recognition_timer = null;
     input_timer = null;
     check_id = 0;
-   
+
     el_make_control = null;
     el_input = null;
     el_make_result = null;
@@ -17,14 +18,14 @@ class Practice3 {
 
     constructor({el_picture, el_result, el_control, data, user_rules_callback}){
         this.data = data;
-  
+
         const isGithubIO = window.location.hostname.includes('github.io');
         if (isGithubIO) {
             this.data = this.data.map(([url, content]) => {
                 return [`/grammar_of_english${url}`, content];
             });
         }
-    
+
         this.el_make_control = el_control;
         this.el_make_result = el_result;
 
@@ -33,7 +34,7 @@ class Practice3 {
         this.input_timer = null;
 
         this.user_rules_callback = user_rules_callback;
-         
+
         this.#editor_voice = new EditorVoice({callback: (result) => this.recognition(result)});
         this.buildInterface(el_picture);
     }
@@ -49,8 +50,8 @@ class Practice3 {
         this.recognition_timer = setTimeout(() => {
             this.el_input.value = this.capitalize(recognition) + '.';
             this.el_input.dispatchEvent(new Event('input'));
-            this.recognition_timer = null;  
-        }, 500);       
+            this.recognition_timer = null;
+        }, 500);
     }
 
     buildInterface(el_picture){
@@ -62,8 +63,8 @@ class Practice3 {
 
         let control = `
             <span class="icon play-btn" data-action="play">⏯️ listen </span></br></br>
-            <span class="icon help-btn" data-action="help">🔎 help</span> 
-            <span id="make-help-${this.el_make_control.id}"></span> 
+            <span class="icon help-btn" data-action="help">🔎 help</span>
+            <span id="make-help-${this.el_make_control.id}"></span>
             <span class="text-span" id="clue-medium-${this.el_make_control.id}"></span></br></br>
             <span class="icon next-btn" data-action="next">⏭️ next </span></br></br>
             <span class="icon mic-btn" id="mic-${this.el_make_control.id}" data-action="mic">🎙️ say </span></br><br>
@@ -74,7 +75,7 @@ class Practice3 {
             const target = e.target.closest('.icon');
             if (!target) return;
 
-            const action = target.dataset.action; 
+            const action = target.dataset.action;
 
             // Вызываем методы класса в зависимости от action
             if (action === 'play') this.playSentence();
@@ -85,21 +86,29 @@ class Practice3 {
 
         this.el_input = document.createElement('textarea');
         this.el_input.id = `input_${this.el_make_control.id}`;
-        this.el_input.className = 'grammar-input font-HYWenHei';  
+        this.el_input.className = 'grammar-input font-HYWenHei';
         this.el_input.rows = 2;
         this.el_input.cols = 80;
         this.el_make_result.appendChild(this.el_input);
+
+        // Плеер для записи произношения: Record получает только элемент <audio>.
+        this.el_recorded_audio = document.createElement('audio');
+        this.el_recorded_audio.id = `recorded-audio-${this.el_make_control.id}`;
+        this.el_recorded_audio.controls = true;
+        this.el_recorded_audio.style.display = 'none';
+        this.el_recorded_audio.style.width = '100%';
+        this.el_make_result.appendChild(this.el_recorded_audio);
+        this.#record = new Record(this.el_recorded_audio);
 
         this.el_result_list = document.createElement('ul');
         this.el_result_list.id = `result_${this.el_make_result.id}`;
         this.el_result_list.className = 'grammar-error-list';
         this.el_make_result.appendChild(this.el_result_list);
 
-        this.el_make_help = document.getElementById(`make-help-${this.el_make_control.id}`); 
-        this.el_make_clue = document.getElementById(`clue-medium-${this.el_make_control.id}`); 
-        this.el_make_mic = document.getElementById(`mic-${this.el_make_control.id}`); 
+        this.el_make_help = document.getElementById(`make-help-${this.el_make_control.id}`);
+        this.el_make_clue = document.getElementById(`clue-medium-${this.el_make_control.id}`);
+        this.el_make_mic = document.getElementById(`mic-${this.el_make_control.id}`);
 
- 
         this.bindInput();
         this.nextSentence();
     }
@@ -107,6 +116,8 @@ class Practice3 {
         this.el_input.value = '';
         this.el_result_list.classList.remove('success-result');
         this.el_result_list.innerHTML = '';
+        // Запись автоматически завершается после паузы в речи.
+        this.#record.start();
         this.#editor_voice.micOn(this.el_make_mic);
     }
     capitalize(s) {
@@ -119,7 +130,7 @@ class Practice3 {
         this.speak(this.getTask());
     }
     getTask(){
-        return `(`+this.data[this.current_index_data][1][this.current_index_inner_data][0].join(", ")+`)`;
+        return `(`+this.data[this.current_index_data][1][this.current_index_inner_data][0].join(", ") +`)`;
     }
     getClue(){
         return this.data[this.current_index_data][1][this.current_index_inner_data][1];
@@ -132,6 +143,13 @@ class Practice3 {
         showClue(`clue-medium-${this.el_make_control.id}`); // from EditorVoice
     }
     nextSentence(){
+        // Освободить микрофон и предыдущую запись, затем подготовить новую.
+        if (this.#record) {
+            this.#record.destroy();
+        }
+        this.el_recorded_audio.style.display = 'none';
+        this.#record = new Record(this.el_recorded_audio);
+
         this.check_id++;
         this.el_input.value = '';
         this.el_result_list.classList.remove('success-result');
@@ -140,7 +158,7 @@ class Practice3 {
         if (this.current_index_data >= this.data.length){
             this.current_index_data = 0;
         }
-        this.current_index_inner_data = Math.floor(Math.random() * this.data[this.current_index_data][1].length);  
+        this.current_index_inner_data = Math.floor(Math.random() * this.data[this.current_index_data][1].length);
 
         this.el_make_help.innerHTML = this.getTask();
         this.el_make_clue.innerHTML = this.getClue();
@@ -217,13 +235,13 @@ class Practice3 {
                     const item = document.createElement('LI');
                     item.textContent = obj.msg;
                     this.el_result_list.appendChild(item);
-                });  
+                });
             }else{
                 this.el_result_list.innerHTML = `<li>Successfully</li>`;
                 this.el_result_list.classList.add('success-result');
-                setTimeout(async () => {
+                /*setTimeout(async () => {
                     this.nextSentence();
-                }, 500);
+                }, 500);*/
             }
         }else{
             this.el_result_list.innerHTML = '';
@@ -231,8 +249,8 @@ class Practice3 {
                 const item = document.createElement('LI');
                 item.textContent = obj.msg;
                 this.el_result_list.appendChild(item);
-            });            
+            });
         }
     }
- 
+
 }

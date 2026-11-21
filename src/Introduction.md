@@ -76,63 +76,47 @@ That young man is wearing brown trousers.
 
 ### *#2 Now, Today, Yesterday, Tomorrow*
  
-**1. What are you going to do now?** (*Что ты собираешься делать сейчас?*)
+1. **What are you doing now?** (Что вы делаете сейчас?) — Present Continuous.
+    - I'm making some coffee. — Я готовлю кофе.
+    - I'm studying English. — Я изучаю английский.
+    - I'm listening to music. — Я слушаю музыку.
+    - I'm working on my computer. — Я работаю за компьютером.
+    - Nothing special. I'm just relaxing. — Ничего особенного. Я просто отдыхаю.
 
-Говорим о том, что собираемся делать в ближайшее время. Можно использовать be going to или Present Continuous, если речь о запланированном действии.
+2. **What do you usually do every day?** (Что вы обычно делаете каждый день?) — Present Simple.
+    - I usually get up at 7 AM. — Обычно я встаю в 7 утра.
+    - I drink coffee every morning. — Я пью кофе каждое утро.
+    - I go to work by bus. — Я езжу на работу на автобусе.
+    - I study English every day. — Я изучаю английский каждый день.
+    - I usually cook dinner at home. — Обычно я готовлю ужин дома.
+    - I don't usually watch TV. — Обычно я не смотрю телевизор.
 
-- I am going to make some coffee. — Я собираюсь приготовить кофе.
-- I am going to study English. — Я собираюсь заниматься английским.
-- I need to study English. — Мне нужно позаниматься английским.
-- I'm meeting my friend now. — Я сейчас встречаюсь с другом.
-- I'm going to watch a movie. — Я собираюсь посмотреть фильм.
-- I'm watching a movie right now. — Я сейчас смотрю фильм.
-- I think I'll go for a walk. — Думаю, я пойду прогуляюсь.
-- Nothing special. I'm just relaxing. — Ничего особенного. Просто отдыхаю.
-- I'm waiting for a friend. — Я жду друга.
-- I'm having lunch — Я обедаю.
-- I need to make a phone call — Мне нужно позвонить.
+3. **What did you do yesterday?** (Что вы делали вчера?) — Past Simple.
+    - I worked yesterday. — Вчера я работал(а).
+    - I went to the supermarket. — Я ходил(а) в супермаркет.
+    - I had a sandwich for lunch yesterday. — Вчера на обед я ел(а) сэндвич.
+    - I didn't do much yesterday. — Вчера я почти ничего не делал(а).
+    - I met my friend for coffee. — Я встретился(-ась) с другом за чашкой кофе.
+    - I was very tired, so I went to bed early. — Я очень устал(а), поэтому рано лёг (легла) спать.
 
-**2. What are your plans for today?** (*Какие у тебя планы на сегодня?*)
+4. **What are you going to do tomorrow?** (Что вы собираетесь делать завтра?) — Future (going to / will).
+    - I'm going to go to the gym. — Я собираюсь пойти в спортзал.
+    - I'll cook dinner tomorrow. — Завтра я приготовлю ужин.
+    - I'm going to call my friend tomorrow. — Я собираюсь позвонить другу завтра.
+    - I'll probably go for a walk. — Наверное, я пойду погулять.
+    - I'm going to study English tomorrow. — Завтра я собираюсь заниматься английским.
+    - I haven't made any plans for tomorrow. — Я ещё ничего не запланировал(а) на завтра.
+    - I will call my friend tomorrow. — Я позвоню другу завтра.
+    - I am going to call my friend tomorrow. — Я собираюсь позвонить другу завтра.
 
-Рассказываем о планах на день. Используем be going to для намерений или Present Simple для расписаний.
-
-- I'm going to work today. — Сегодня я собираюсь работать.
-- I'm working today. — Сегодня я работаю.
-- I am going to go shopping. — Я собираюсь сходить за покупками.
-- I have an English lesson at 6 PM. — У меня урок английского в 6 вечера.
-- I am going to cook dinner and relax. — Я собираюсь приготовить ужин и отдохнуть.
-- I have an English lesson at 6 PM. — У меня урок английского в 6 вечера.
-- I need to go shopping. — Мне нужно сходить за покупками.
-- I'm meeting a friend this afternoon. — Сегодня днём я встречаюсь с другом.
-- I'll probably stay at home. — Наверное, я останусь дома.
-- I don't have any special plans. — У меня нет особых планов.
-- Maybe I'll watch a movie tonight. — Может быть, вечером посмотрю фильм.
-
-**3. What did you do yesterday?** (*Что ты делал вчера?*)
-
-Рассказываем о завершённых действиях в прошлом. Используем Past Simple.
-
-- I worked yesterday. — Вчера я работал.
-- I watched a movie. — Я посмотрел фильм.
-- I went to the supermarket. — Я ходил в супермаркет.
-- I stayed at home and read a book. — Я остался дома и читал книгу.
-- I didn't do much yesterday. — Вчера я особо ничего не делал.
-- I met my friend for coffee. — Я встретился с другом за кофе.
-- I was very tired, so I went to bed early. — Я очень устал, поэтому рано лёг спать.
-
-**4. What are you going to do tomorrow?** (*Что ты собираешься делать завтра?*)
-
-Рассказываем о планах на завтра. Используем be going to для намерений или Future Simple для предположений, обещаний и решений.
-
-- I'm going to go to the gym. — Я собираюсь пойти в спортзал.
-- I am going to study English in the evening. — Я собираюсь заниматься английским вечером.
-- I'm studying English tomorrow morning. — Завтра утром я занимаюсь английским.
-- I will call my friend tomorrow. — Я позвоню другу завтра.
- - I am going to call my friend tomorrow. — Я собираюсь позвонить другу завтра.
-- I think I will stay at home. — Думаю, я останусь дома.
-- I have to work tomorrow. — Завтра мне нужно работать.
-- I'm not sure yet. Maybe I'll go shopping. — Я пока не уверен. Может быть, схожу за покупками.
-- Nothing is planned for tomorrow. — На завтра ничего не запланировано.
+5. **What are your plans for today?** (Какие у вас планы на сегодня?) — Планы и намерения (going to / will / need to / want to / have to).
+    - I'm going to work today. — Сегодня я собираюсь работать.
+    - I have an English lesson at 6 PM. — У меня урок английского в 6 вечера.
+    - I need to go shopping. — Мне нужно сходить за покупками.
+    - I want to go for a walk. — Я хочу пойти погулять.
+    - I have to finish my homework. — Мне необходимо закончить домашнее задание.
+    - I'm meeting a friend this evening. — Сегодня вечером я встречаюсь с другом.
+    - I'll probably stay at home. — Наверное, я останусь дома.
 
 ### *#3 Walk*
  
@@ -156,9 +140,11 @@ That young man is wearing brown trousers.
 > Идея: телеграм-бот или скрипт cron, который пушит уведомления с вопросами на английском в течение дня по текущей изучаемой теме — в роли тренера, мотиватора и просто напоминания. Задает вопросы про планы, просит совета, просит привести пример употребления сслова в разных контекстах... симулирует ситуации из локальных тем ресторан, транспорт.. там где специфичные слова только для этих ситуаций
 
 
-> Хобби: может быть занимательно, самостоятельно создать файл субтитров (в формате VTT для видео в формате MKV), придется слушать каждую реплику в адаптированном/легком видео и переводить для себя
+> Хобби: 
+> * может быть занимательно, самостоятельно создать файл субтитров (в формате VTT для видео в формате MKV), придется слушать каждую реплику в адаптированном/легком видео и переводить для себя
+> * переозвучить адаптивную книгу
 
-> Как использовать chatGPT для разговора...
+> Как использовать (методика) chatGPT для разговора... ?
 
 
 ---

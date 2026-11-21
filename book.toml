@@ -13,15 +13,18 @@ additional-css = ["theme/css/theme.css","theme/css/listen.css","theme/css/Garamo
 additional-js = [
     
     "src/js/general.js",
+    "src/js/record.js",
     "src/js/practice.js",
     "src/js/practice2.js",
     "src/js/practice3.js",
     "src/js/practice_words.js",
+    "src/js/practice_your_plans.js",
     "src/js/editorVoice.js",
     "src/js/editor_symbol.js",
     "src/js/listen.js",
     "src/js/textual_analysis.js",
-    "src/js/compromise_v14.15.0.js"
+    "src/js/compromise_v14.15.0.js",
+    
 ]
 
 [output.html.print]
