@@ -134,10 +134,12 @@ class PracticeYourPlans {
         let question_3 = example[4];
         let question_4 = example[5];
         let question_5 = example[6];
+        let nouns = example[7];
 
  
         let control = `
-            <b>Use the word <i>"${origin}"</i></b>:<br><br>
+            <b>Use the word <i>"${origin}"</i></b>:<br>
+            Use nouns for context: ${nouns.join(", ")}<br>
 
             <span class="icon play-btn-1-${this.#el_exercise_control.id}">⏯️ (What are you doing now?) </span></br></br>
             <span class="icon help-btn-1-${this.#el_exercise_control.id}">🔎 </span> For example: <i>${question_1[1]}</i>
