@@ -495,7 +495,7 @@ const a1_words_verbs = [
     ["go", "goes", "going", "went", "gone", 1, "идти, ехать", 36, "We went to the park yesterday."],
     ["get", "gets", "getting", "got", "got", 1, "получать, попасть, становится", 41, "I got a new book yesterday."],
     ["get", "gets", "getting", "got", "gotten", 1, "получать, попасть, становится (амер.)", 41, "He got home at six."],
-    ["make", "makes", "making", "made", "made", 1, "делать, производить, заставлять", 46, "My dad made dinner yesterday."],
+    ["make", "makes", "making", "made", "made", 1, "делать, производить, готовить, заставлять", 46, "My dad made dinner yesterday."],
     ["know", "knows", "knowing", "knew", "known", 1, "знать, узнавать", 49, "I knew the answer."],
     ["think", "thinks", "thinking", "thought", "thought", 1, "думать, мыслить", 57, "I thought about my friend."],
     ["see", "sees", "seeing", "saw", "seen", 1, "видеть, смотреть", 58, "I saw a cat in the garden."],

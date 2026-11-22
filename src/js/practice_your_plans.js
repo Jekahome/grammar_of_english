@@ -136,11 +136,9 @@ class PracticeYourPlans {
         let question_5 = example[6];
         let nouns = example[7];
 
- 
         let control = `
-            <b>Use the word <i>"${origin}"</i></b>:<br>
-            Use nouns for context: ${nouns.join(", ")}<br>
-
+            Use the verb <b><i>"${origin}"</i></b> with the nouns:<br> ${nouns.join(", ")}<br><br>
+             
             <span class="icon play-btn-1-${this.#el_exercise_control.id}">⏯️ (What are you doing now?) </span></br></br>
             <span class="icon help-btn-1-${this.#el_exercise_control.id}">🔎 </span> For example: <i>${question_1[1]}</i>
             <span class="text-span" id="clue-easy-1-${this.#el_exercise_control.id}-${this.#index_listen_and_write}"><b>${translate}</b> (для формы ${question_1[0]})</span></br></br>
